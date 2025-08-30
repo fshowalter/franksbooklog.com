@@ -90,8 +90,11 @@ export default tsEslint.config(
     rules: {
       ...react.configs.recommended.rules,
       "react-compiler/react-compiler": "error",
+      "react/boolean-prop-naming": "error",
+      "react/button-has-type": "error",
       "react/react-in-jsx-scope": "off",
       ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
+      "@typescript-eslint/explicit-function-return-type": "error",
       "better-tailwindcss/no-conflicting-classes": "error",
       "better-tailwindcss/no-unregistered-classes": [
         "error",

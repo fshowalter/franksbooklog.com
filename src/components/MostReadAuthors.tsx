@@ -122,11 +122,11 @@ function MostReadAuthorReadingListItem({
   value,
 }: {
   value: ReadingSubListItemValue;
-}) {
+}): React.JSX.Element {
   return (
     <CoverListItem
       className={`
-        ${value.reviewed ? "bg-default" : "bg-unreviewed"}
+        ${value.reviewed ? "bg-default" : "bg-transparent"}
       `}
       coverImageProps={value.coverImageProps}
     >
@@ -152,11 +152,11 @@ function Name({ value }: { value: MostReadAuthorsListItemValue }): JSX.Element {
     return (
       <a
         className={`
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         `}
         href={`/authors/${value.slug}/`}
@@ -167,7 +167,11 @@ function Name({ value }: { value: MostReadAuthorsListItemValue }): JSX.Element {
   }
 
   return (
-    <span className={`inline-block font-serif text-base leading-6 font-normal`}>
+    <span
+      className={`
+        inline-block font-serif text-base leading-6 font-normal text-muted
+      `}
+    >
       {value.name}
     </span>
   );

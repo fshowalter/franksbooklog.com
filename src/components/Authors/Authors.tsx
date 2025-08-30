@@ -1,4 +1,4 @@
-import { type JSX, useReducer, useState } from "react";
+import { useReducer, useState } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
@@ -30,7 +30,7 @@ type InteractiveProps = {
 export function Authors({
   initialSort,
   values,
-}: InteractiveProps): JSX.Element {
+}: InteractiveProps): React.JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -108,9 +108,9 @@ function AlphabetSubNav({
 }: {
   groupedValues: Map<string, ListItemValue[]>;
   sortValue: Sort;
-}) {
+}): false | React.JSX.Element {
   if (!sortValue.startsWith("name-")) {
-    return;
+    return false;
   }
 
   const letters = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
@@ -134,7 +134,7 @@ function AlphabetSubNav({
               letter={letter}
               linkFunc={
                 groupedValues.has(letter)
-                  ? (letter: string) => `#${letter}`
+                  ? (letter: string): string => `#${letter}`
                   : undefined
               }
             />
@@ -145,13 +145,22 @@ function AlphabetSubNav({
   );
 }
 
-function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
+function AuthorListItem({
+  value,
+}: {
+  value: ListItemValue;
+}): React.JSX.Element {
   return (
     <AvatarListItem avatarImageProps={value.avatarImageProps}>
       <div className="flex flex-col justify-center">
         <AuthorName name={value.name} slug={value.slug} />
-        <div className={`mt-[6px] font-sans text-sm text-nowrap text-subtle`}>
-          {value.reviewCount} Review{value.reviewCount > 1 ? "s" : ""}
+        <div
+          className={`
+            mt-[6px] font-sans text-[13px] font-normal tracking-prose
+            text-nowrap text-subtle
+          `}
+        >
+          {value.reviewCount} {value.reviewCount > 1 ? "Reviews" : "Review"}
         </div>
       </div>
     </AvatarListItem>
@@ -164,13 +173,15 @@ function AuthorName({
 }: {
   name: ListItemValue["name"];
   slug: string;
-}) {
+}): React.JSX.Element {
   return (
     <a
       className={`
-        text-base leading-normal font-semibold text-accent
+        text-base leading-normal font-semibold text-default transition-all
+        duration-500
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:opacity-0
+        hover:text-accent
       `}
       href={`/authors/${slug}/`}
     >
@@ -185,7 +196,7 @@ function LetterLink({
 }: {
   letter: string;
   linkFunc?: (letter: string) => string;
-}) {
+}): React.JSX.Element {
   return (
     <li
       className={`

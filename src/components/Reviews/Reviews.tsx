@@ -1,4 +1,4 @@
-import { type JSX, useReducer, useState } from "react";
+import React, { type JSX, useReducer, useState } from "react";
 
 import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
@@ -140,7 +140,7 @@ function Authors({
 }: {
   className: string;
   values: Author[];
-}) {
+}): React.JSX.Element {
   return (
     <div className={className}>
       {toSentenceArray(

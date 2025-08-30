@@ -82,7 +82,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/"
@@ -103,7 +103,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/how-i-grade/"
@@ -124,7 +124,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/reviews/"
@@ -145,7 +145,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/authors/"
@@ -166,7 +166,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/readings/"
@@ -261,10 +261,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
           <nav
             aria-label="Main navigation"
           >
-            <ol
+            <div
               class="
-        flex w-full flex-col gap-y-6
-        
             invisible fixed top-0 right-0 h-full w-0
             transform-[translateX(100%)] overflow-hidden bg-canvas text-left
             text-default opacity-0 duration-200 ease-in-out
@@ -278,132 +276,140 @@ exports[`/readings/stats > matches snapshot 1`] = `
             [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
             [body.nav-open_&]:drop-shadow-2xl [body.nav-open_&]:tablet:px-10
             [body.nav-open_&]:tablet:pt-40 [body.nav-open_&]:laptop:px-20
-          
-      "
+          "
               data-nav-menu="true"
               id="nav-menu"
             >
-              <li
-                class="
+              <ol
+                class="flex flex-col gap-y-6"
+              >
+                <li
+                  class="
         block w-1/2 text-2xl whitespace-nowrap
         laptop:w-full
       "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/"
                 >
-                  Home
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/how-i-grade/"
-                >
-                  How I Grade
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/reviews/"
-                >
-                  Reviews
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/authors/"
-                >
-                  Authors
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/readings/"
-                >
-                  Reading Log
-                </a>
-                <ol
-                  class="mt-4"
-                >
-                  <li
+                  <a
                     class="
-              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
-              uppercase
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="
+              mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
+              text-subtle uppercase
               last:-mb-1
             "
-                  >
-                    <a
-                      class="
+                    >
+                      <a
+                        class="
                 relative inline-block origin-left transform-gpu pb-1
-                transition-all
+                transition-all duration-500
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-accent after:transition-transform
+                after:bg-accent after:transition-transform after:duration-500
                 hover:text-accent hover:after:scale-x-100
               "
-                      href="/readings/stats/"
-                    >
-                      Stats
-                    </a>
-                  </li>
-                </ol>
-              </li>
-            </ol>
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
           </nav>
         </div>
       </header>
@@ -449,10 +455,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-        relative inline-block font-sans text-sm tracking-wide uppercase
+        relative inline-block font-sans text-sm font-bold tracking-wide
+        text-[#fff]/85 uppercase
         after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
         after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75
-        after:transition-transform
+        after:transition-transform after:duration-500
         hover:after:scale-x-100
       "
                 href="/readings/"
@@ -485,7 +492,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </div>
         </header>
         <nav
-          class="bg-[#333] z-10 mb-12 w-full"
+          class="
+        bg-footer
+        z-10 mb-12 w-full
+      "
         >
           <ul
             class="
@@ -496,7 +506,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
           >
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse
+      "
             >
               <div
                 class="
@@ -508,12 +521,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2025/"
@@ -524,6 +540,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -532,12 +549,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2024/"
@@ -548,6 +568,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -556,12 +577,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2023/"
@@ -572,6 +596,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -580,12 +605,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2022/"
@@ -596,6 +624,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -604,12 +633,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2019/"
@@ -620,6 +652,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -628,12 +661,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2018/"
@@ -644,6 +680,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -652,12 +689,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2017/"
@@ -668,6 +708,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -676,12 +717,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2016/"
@@ -692,6 +736,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -700,12 +745,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2015/"
@@ -716,6 +764,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -724,12 +773,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2014/"
@@ -740,6 +792,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -748,12 +801,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2012/"
@@ -764,6 +820,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -772,12 +829,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </a>
             </li>
             <li
-              class="snap-start text-center"
+              class="
+        snap-start text-center
+        text-inverse-subtle
+      "
             >
               <a
                 class="
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2011/"
@@ -788,6 +848,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             "
                 >
@@ -904,11 +965,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/richard-laymon/"
@@ -964,14 +1025,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1007,7 +1068,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1029,9 +1092,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-cellar-by-richard-laymon/"
                               >
@@ -1053,14 +1118,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1096,7 +1161,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1117,7 +1184,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Your Secret Admirer
                               </span>
@@ -1137,14 +1204,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1180,7 +1247,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1202,9 +1271,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-woods-are-dark-by-richard-laymon/"
                               >
@@ -1226,14 +1297,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1269,7 +1340,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1290,7 +1363,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Nightmare Lake
                               </span>
@@ -1310,14 +1383,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1353,7 +1426,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1374,7 +1449,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Lawmen
                               </span>
@@ -1394,14 +1469,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1437,7 +1512,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1459,9 +1536,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/out-are-the-lights-by-richard-laymon/"
                               >
@@ -1483,14 +1562,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1526,7 +1605,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1547,7 +1628,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Night Show
                               </span>
@@ -1567,14 +1648,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1610,7 +1691,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1631,7 +1714,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Shootout at Joe's
                               </span>
@@ -1651,14 +1734,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1694,7 +1777,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1715,7 +1800,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Dawson's City
                               </span>
@@ -1735,14 +1820,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1778,7 +1863,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1799,7 +1886,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Allhallow's Eve
                               </span>
@@ -1819,14 +1906,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1862,7 +1949,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1884,9 +1973,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/beware-by-richard-laymon/"
                               >
@@ -1908,14 +1999,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -1951,7 +2042,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -1973,9 +2066,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-last-hand-by-richard-laymon/"
                               >
@@ -1997,14 +2092,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2040,7 +2135,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2061,7 +2158,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Beast House
                               </span>
@@ -2081,14 +2178,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2124,7 +2221,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2146,9 +2245,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-intruder-by-richard-laymon/"
                               >
@@ -2170,14 +2271,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2213,7 +2314,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2235,9 +2338,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/tread-softly-by-richard-laymon/"
                               >
@@ -2259,14 +2364,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2302,7 +2407,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2324,9 +2431,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-lonely-one-by-richard-laymon/"
                               >
@@ -2348,14 +2457,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2391,7 +2500,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2412,7 +2523,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Live Bait
                               </span>
@@ -2432,14 +2543,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2475,7 +2586,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2497,9 +2610,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-lonely-one-by-richard-laymon/"
                               >
@@ -2521,14 +2636,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2564,7 +2679,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2585,7 +2702,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Flesh
                               </span>
@@ -2605,14 +2722,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2648,7 +2765,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2669,7 +2788,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Midnight's Lair
                               </span>
@@ -2689,14 +2808,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2732,7 +2851,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2754,9 +2875,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-cellar-by-richard-laymon/"
                               >
@@ -2778,14 +2901,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2821,7 +2944,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2843,9 +2968,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/desert-pickup-by-richard-laymon/"
                               >
@@ -2867,14 +2994,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2910,7 +3037,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -2932,9 +3061,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-woods-are-dark-by-richard-laymon/"
                               >
@@ -2956,14 +3087,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -2999,7 +3130,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3021,9 +3154,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/out-are-the-lights-by-richard-laymon/"
                               >
@@ -3045,14 +3180,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3088,7 +3223,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3110,9 +3247,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/roadside-pickup-by-richard-laymon/"
                               >
@@ -3134,14 +3273,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3177,7 +3316,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3199,9 +3340,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-lonely-one-by-richard-laymon/"
                               >
@@ -3242,11 +3385,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/stephen-king/"
@@ -3302,14 +3445,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3345,7 +3488,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3367,9 +3512,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-shining-by-stephen-king/"
                               >
@@ -3391,14 +3538,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3434,7 +3581,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3456,9 +3605,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/rage-by-stephen-king/"
                               >
@@ -3480,14 +3631,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3523,7 +3674,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3545,9 +3698,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/night-shift-by-stephen-king/"
                               >
@@ -3569,14 +3724,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3612,7 +3767,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3634,9 +3791,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-stand-by-stephen-king/"
                               >
@@ -3658,14 +3817,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3701,7 +3860,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3723,9 +3884,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-long-walk-by-stephen-king/"
                               >
@@ -3747,14 +3910,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3790,7 +3953,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3811,7 +3976,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Dead Zone
                               </span>
@@ -3831,14 +3996,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3874,7 +4039,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3895,7 +4062,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Firestarter
                               </span>
@@ -3915,14 +4082,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -3958,7 +4125,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -3979,7 +4148,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Roadwork
                               </span>
@@ -3999,14 +4168,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4042,7 +4211,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4063,7 +4234,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Danse Macabre
                               </span>
@@ -4083,14 +4254,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4126,7 +4297,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4148,9 +4321,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/cujo-by-stephen-king/"
                               >
@@ -4172,14 +4347,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4215,7 +4390,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4236,7 +4413,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Running Man
                               </span>
@@ -4256,14 +4433,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4299,7 +4476,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4320,7 +4499,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Gunslinger
                               </span>
@@ -4340,14 +4519,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4383,7 +4562,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4404,7 +4585,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Different Seasons
                               </span>
@@ -4424,14 +4605,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4467,7 +4648,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4488,7 +4671,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Christine
                               </span>
@@ -4508,14 +4691,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4551,7 +4734,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4572,7 +4757,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Pet Sematary
                               </span>
@@ -4592,14 +4777,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4635,7 +4820,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4656,7 +4843,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Gunslinger
                               </span>
@@ -4676,14 +4863,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4719,7 +4906,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4741,9 +4930,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/on-writing-by-stephen-king/"
                               >
@@ -4765,14 +4956,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4808,7 +4999,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4830,9 +5023,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/carrie-by-stephen-king/"
                               >
@@ -4854,14 +5049,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4897,7 +5092,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -4919,9 +5116,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/salems-lot-by-stephen-king/"
                               >
@@ -4943,14 +5142,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -4986,7 +5185,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5008,9 +5209,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-shining-by-stephen-king/"
                               >
@@ -5032,14 +5235,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5075,7 +5278,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5097,9 +5302,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/doctor-sleep-by-stephen-king/"
                               >
@@ -5140,11 +5347,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/philip-fracassi/"
@@ -5200,14 +5407,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5243,7 +5450,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5265,9 +5474,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/soft-construction-of-a-sunset-by-philip-fracassi/"
                               >
@@ -5289,14 +5500,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5332,7 +5543,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5354,9 +5567,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/altar-by-philip-fracassi/"
                               >
@@ -5378,14 +5593,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5421,7 +5636,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5443,9 +5660,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-horse-thief-by-philip-fracassi/"
                               >
@@ -5467,14 +5686,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5510,7 +5729,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5532,9 +5753,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/coffin-by-philip-fracassi/"
                               >
@@ -5556,14 +5779,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5599,7 +5822,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5621,9 +5846,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-baby-farmer-by-philip-fracassi/"
                               >
@@ -5645,14 +5872,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5688,7 +5915,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5710,9 +5939,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/surfer-girl-by-philip-fracassi/"
                               >
@@ -5734,14 +5965,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5777,7 +6008,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5799,9 +6032,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/mother-by-philip-fracassi/"
                               >
@@ -5823,14 +6058,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5866,7 +6101,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5888,9 +6125,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/fail-safe-by-philip-fracassi/"
                               >
@@ -5912,14 +6151,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -5955,7 +6194,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -5977,9 +6218,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/mandala-by-philip-fracassi/"
                               >
@@ -6001,14 +6244,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6044,7 +6287,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6066,9 +6311,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/behold-the-void-by-philip-fracassi/"
                               >
@@ -6090,14 +6337,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6133,7 +6380,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6155,9 +6404,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/sacculina-by-philip-fracassi/"
                               >
@@ -6179,14 +6430,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6222,7 +6473,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6244,9 +6497,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                               >
@@ -6268,14 +6523,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6311,7 +6566,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6333,9 +6590,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/gothic-by-philip-fracassi/"
                               >
@@ -6376,11 +6635,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/james-kaplan/"
@@ -6436,14 +6695,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6479,7 +6738,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6500,7 +6761,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Frank
                               </span>
@@ -6520,14 +6781,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6563,7 +6824,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6584,7 +6847,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Sinatra
                               </span>
@@ -6604,14 +6867,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6647,7 +6910,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6668,7 +6933,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 LIFE The Rat Pack
                               </span>
@@ -6707,11 +6972,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/stephen-morris/"
@@ -6767,14 +7032,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6810,7 +7075,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6832,9 +7099,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/record-play-pause-by-stephen-morris/"
                               >
@@ -6856,14 +7125,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6899,7 +7168,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -6921,9 +7192,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/fast-forward-by-stephen-morris/"
                               >
@@ -6945,14 +7218,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -6988,7 +7261,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7010,9 +7285,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/fast-forward-by-stephen-morris/"
                               >
@@ -7053,11 +7330,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/ian-fleming/"
@@ -7113,14 +7390,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7156,7 +7433,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7178,9 +7457,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/casino-royale-by-ian-fleming/"
                               >
@@ -7202,14 +7483,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7245,7 +7526,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7267,9 +7550,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/live-and-let-die-by-ian-fleming/"
                               >
@@ -7291,14 +7576,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7334,7 +7619,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7356,9 +7643,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/moonraker-by-ian-fleming/"
                               >
@@ -7399,11 +7688,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/chuck-palahniuk/"
@@ -7459,14 +7748,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7502,7 +7791,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7524,9 +7815,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/fight-club-by-chuck-palahniuk/"
                               >
@@ -7548,14 +7841,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7591,7 +7884,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7613,9 +7908,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/consider-this-by-chuck-palahniuk/"
                               >
@@ -7656,11 +7953,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/raymond-chandler/"
@@ -7716,14 +8013,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7759,7 +8056,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7781,9 +8080,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-big-sleep-by-raymond-chandler/"
                               >
@@ -7805,14 +8106,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -7848,7 +8149,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -7870,9 +8173,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-big-sleep-by-raymond-chandler/"
                               >
@@ -7913,11 +8218,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/bret-easton-ellis/"
@@ -7973,14 +8278,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -8016,7 +8321,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -8038,9 +8345,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/less-than-zero-by-bret-easton-ellis/"
                               >
@@ -8062,14 +8371,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-default
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -8105,7 +8414,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -8127,9 +8438,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             >
                               <a
                                 class="
-          text-base leading-5 font-semibold text-accent
+          text-base leading-5 font-semibold text-default transition-all
+          duration-500
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:opacity-0
+          hover:text-accent
         "
                                 href="/reviews/the-rules-of-attraction-by-bret-easton-ellis/"
                               >
@@ -8170,11 +8483,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="
-          relative inline-block font-serif text-base leading-6 font-normal
+          relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-all after:duration-500
           hover:after:scale-x-100
         "
                         href="/authors/roger-ebert/"
@@ -8230,14 +8543,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -8273,7 +8586,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -8294,7 +8609,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 The Great Movies
                               </span>
@@ -8314,14 +8629,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             class="
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
+        tablet:px-6 tablet:py-6
         
-        bg-unreviewed
-      
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
       "
                           >
                             <div
@@ -8357,7 +8672,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                   <img
                                     alt=""
                                     class="
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             "
                                     decoding="async"
@@ -8378,7 +8695,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
                             >
                               <span
-                                class="block text-base leading-5 font-semibold text-muted"
+                                class="block text-base leading-5 font-semibold text-subtle"
                               >
                                 Life Itself
                               </span>
@@ -9845,10 +10162,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             "
             >
               <ol
-                class="
-        flex w-full flex-col gap-y-6
-        desktop:w-auto
-      "
+                class="flex flex-col gap-y-6"
               >
                 <li
                   class="
@@ -9859,9 +10173,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/"
@@ -9878,9 +10193,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/how-i-grade/"
@@ -9897,9 +10213,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/reviews/"
@@ -9916,9 +10233,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/authors/"
@@ -9935,9 +10253,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/readings/"
@@ -9949,18 +10268,18 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <li
                       class="
-              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
-              uppercase
+              mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
+              text-subtle uppercase
               last:-mb-1
             "
                     >
                       <a
                         class="
                 relative inline-block origin-left transform-gpu pb-1
-                transition-all
+                transition-all duration-500
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-accent after:transition-transform
+                after:bg-accent after:transition-transform after:duration-500
                 hover:text-accent hover:after:scale-x-100
               "
                         href="/readings/stats/"
@@ -9984,7 +10303,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           <a
             class="
             relative inline-block pr-4 text-inherit underline underline-offset-3
-            hover:bg-default hover:text-accent
+            hover:text-accent
           "
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"

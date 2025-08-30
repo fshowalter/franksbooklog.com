@@ -1,10 +1,12 @@
+import type React from "react";
+
 export function Abandoned({
   className,
   value,
 }: {
   className?: string;
   value: string | undefined;
-}) {
+}): false | React.JSX.Element {
   if (value !== "Abandoned") {
     return false;
   }
@@ -12,8 +14,8 @@ export function Abandoned({
   return (
     <div
       className={`
-        rounded-sm bg-abandoned px-2 py-1 font-sans text-xxs font-semibold
-        text-inverse uppercase
+        rounded-sm bg-abandoned px-2 py-1 font-sans text-xxs font-bold
+        tracking-prose text-inverse uppercase
         ${className}
       `}
     >

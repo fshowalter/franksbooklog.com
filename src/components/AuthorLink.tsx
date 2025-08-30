@@ -1,7 +1,5 @@
-import type { ElementType, JSX } from "react";
-
 type Props = {
-  as?: ElementType;
+  as?: React.ElementType;
   className?: string;
   name: string;
   notes?: string;
@@ -14,7 +12,7 @@ export function AuthorLink({
   name,
   notes,
   slug,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   const Component = as;
 
   if (slug) {
@@ -34,7 +32,7 @@ export function AuthorLink({
   );
 }
 
-function AuthorNotes({ notes }: { notes?: string }) {
+function AuthorNotes({ notes }: { notes?: string }): false | React.JSX.Element {
   if (!notes) {
     return false;
   }

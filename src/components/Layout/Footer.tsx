@@ -100,7 +100,7 @@ export function Footer(): JSX.Element {
               tablet:basis-button tablet:pr-10
             `}
           >
-            <TableOfContents className={`desktop:w-auto`} />
+            <TableOfContents />
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ export function Footer(): JSX.Element {
         <a
           className={`
             relative inline-block pr-4 text-inherit underline underline-offset-3
-            hover:bg-default hover:text-accent
+            hover:text-accent
           `}
           href="http://www.copyright.gov/title17/92chap1.html#107"
           rel="nofollow"
@@ -141,7 +141,13 @@ export function Footer(): JSX.Element {
   );
 }
 
-function FooterLink({ href, text }: { href: string; text: string }) {
+function FooterLink({
+  href,
+  text,
+}: {
+  href: string;
+  text: string;
+}): React.JSX.Element {
   return (
     <a
       className={`

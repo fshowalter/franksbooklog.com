@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
@@ -39,7 +37,7 @@ export function Review({
   moreReviews,
   structuredDataCoverSrc,
   value,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   return (
     <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
       <header
@@ -89,7 +87,7 @@ export function Review({
         </div>
         <YearAndKind
           className={`
-            mt-5 mb-4 font-sans text-xs font-light tracking-wide text-subtle
+            mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle
             uppercase
             tablet:mb-6
           `}
@@ -191,7 +189,7 @@ function Authors({
 }: {
   className: string;
   values: ReviewWithContent["authors"];
-}) {
+}): React.JSX.Element {
   return (
     <div className={className}>
       by{" "}
@@ -221,7 +219,7 @@ function ReviewCover({
   coverImageProps,
 }: {
   coverImageProps: CoverImageProps;
-}) {
+}): React.JSX.Element {
   return (
     <div
       className={`
@@ -252,7 +250,11 @@ function ReviewCover({
   );
 }
 
-function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
+function ReviewGrade({
+  value,
+}: {
+  value: ReviewWithContent["grade"];
+}): React.JSX.Element {
   if (value == "Abandoned") {
     return (
       <div
@@ -276,10 +278,10 @@ function YearAndKind({
   className: string;
   kind: ReviewWithContent["kind"];
   workYear: ReviewWithContent["workYear"];
-}) {
+}): React.JSX.Element {
   return (
     <div className={className}>
-      <span className="tracking-wide">{workYear}</span> | {kind}
+      {workYear} | {kind}
     </div>
   );
 }

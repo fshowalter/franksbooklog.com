@@ -1,8 +1,6 @@
-import type { JSX } from "react";
-
 export type HomeOpenGraphImageComponentType = (
   props: HomeOpenGraphImageProps,
-) => JSX.Element;
+) => React.JSX.Element;
 
 type HomeOpenGraphImageProps = {
   backdrop: string;
@@ -10,11 +8,10 @@ type HomeOpenGraphImageProps = {
 
 export function OpenGraphImage({
   backdrop,
-}: HomeOpenGraphImageProps): JSX.Element {
+}: HomeOpenGraphImageProps): React.JSX.Element {
   return (
     <div
       style={{
-        backgroundColor: "#f2f0e8",
         display: "flex",
         height: "630px",
         position: "relative",
@@ -32,15 +29,17 @@ export function OpenGraphImage({
       <div
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0)) 20%",
+            "radial-gradient(500px at left bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75) 15%, rgba(0, 0, 0, 0)) 45%",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
+          height: 630,
           paddingBottom: "64px",
           paddingLeft: "80px",
           paddingRight: "80px",
-          paddingTop: "32px",
+          paddingTop: "332px",
           position: "absolute",
+          top: 0,
           width: "1200px",
         }}
       >
@@ -48,24 +47,24 @@ export function OpenGraphImage({
           style={{
             color: "#fff",
             display: "flex",
-            flexWrap: "wrap",
             fontFamily: "FrankRuhlLibre",
-            fontSize: "88px",
+            fontSize: "72px",
             fontWeight: 800,
             lineHeight: 1,
-            textShadow: "1px 1px 2px rgba(0,0,0,.25)",
-            textWrap: "balance",
+            marginTop: "auto",
+            textShadow: "1px 1px 2px black",
           }}
         >
           Frank&apos;s Book Log
         </div>
         <div
           style={{
-            color: "#fafafa",
+            color: "#c29d52",
             fontFamily: "Assistant",
+            fontSize: "20px",
             fontWeight: 700,
             marginBottom: "8px",
-            textTransform: "uppercase",
+            textShadow: "1px 1px 2px black",
           }}
         >
           Literature is a relative term.

@@ -201,7 +201,8 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
   return (
     <td
       className={`
-        mb-2 block min-h-[100px] w-full border-default bg-default py-2 align-top
+        mb-2 block min-h-[100px] w-full border-default bg-calendar py-2
+        align-top
         tablet:border tablet:px-2
         tablet-landscape:mb-0 tablet-landscape:table-cell
         tablet-landscape:w-[14.28%]
@@ -243,7 +244,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                 className={`
                   group/list-item relative mb-1 flex w-full
                   max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-default px-container py-4 transition-transform
+                  bg-calendar px-container py-4 transition-transform
                   tablet-landscape:w-(--cover-list-item-width)
                   tablet-landscape:flex-col tablet-landscape:items-center
                   tablet-landscape:bg-transparent tablet-landscape:px-6
@@ -251,7 +252,6 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                   tablet-landscape:has-[a:hover]:-translate-y-2
                   tablet-landscape:has-[a:hover]:bg-default
                   tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                  dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_2px_15px_rgb(0_0_0_/_0.7)]
                 `}
                 key={reading.timelineSequence}
               >
@@ -355,15 +355,16 @@ function CalendarHeader({
             aria-disabled={false}
             aria-label={`Navigate to previous month: ${prevMonthName}`}
             className={`
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent)
-              after:transition-transform
+              after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
             onClick={() => dispatch({ type: Actions.PREV_MONTH })}
+            type="button"
           >
             ← {prevMonthName}
           </button>
@@ -384,15 +385,16 @@ function CalendarHeader({
             aria-disabled={false}
             aria-label={`Navigate to next month: ${nextMonthName}`}
             className={`
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
-              after:transition-transform
+              after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
             onClick={() => dispatch({ type: Actions.NEXT_MONTH })}
+            type="button"
           >
             {nextMonthName} →
           </button>
@@ -428,7 +430,7 @@ function CalendarMonth({
       >
         <thead
           className={`
-            hidden transform-gpu bg-default
+            hidden transform-gpu bg-calendar
             tablet-landscape:sticky
             tablet-landscape:top-(--calendar-scroll-offset)
             tablet-landscape:z-sticky tablet-landscape:table-header-group
@@ -538,7 +540,7 @@ function getCalendarWeeks(days: CalendarDayData[]): CalendarDayData[][] {
   return weeks;
 }
 
-function parseProgress(progress: string) {
+function parseProgress(progress: string): number {
   const progressNumber = progress.split("%", 1)[0];
 
   if (progressNumber === "Finished") {
@@ -552,7 +554,11 @@ function parseProgress(progress: string) {
   return 100;
 }
 
-function WeekdayHeader({ children }: { children: React.ReactNode }) {
+function WeekdayHeader({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.JSX.Element {
   return (
     <th
       className={`
