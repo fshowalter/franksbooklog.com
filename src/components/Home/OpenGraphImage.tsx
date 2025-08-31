@@ -39,6 +39,7 @@ export function OpenGraphImage({
           width: "1200px",
         }}
       >
+        <div>Franks Book Log</div>
       </div>
     </div>
   );
