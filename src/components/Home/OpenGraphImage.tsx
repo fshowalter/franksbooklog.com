@@ -28,8 +28,6 @@ export function OpenGraphImage({
       />
       <div
         style={{
-          backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0)) 25%",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
