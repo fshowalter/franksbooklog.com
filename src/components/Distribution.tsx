@@ -11,7 +11,7 @@ export function Distribution({
 }: {
   title: string;
   values: readonly Value[];
-}) {
+}): React.JSX.Element {
   const maxBar = values.reduce((total, value) => total + value.count, 0);
 
   return (

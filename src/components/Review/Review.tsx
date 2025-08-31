@@ -241,7 +241,7 @@ function ReviewCover({
         }}
       />
       <Cover
-        className={`relative -top-[2.5%]`}
+        className={`-top-[2.5%]`}
         decoding="auto"
         imageProps={coverImageProps}
         loading="eager"

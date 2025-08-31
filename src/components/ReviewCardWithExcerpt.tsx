@@ -31,7 +31,7 @@ export function ReviewCardWithExcerpt({
   value,
 }: {
   value: ReviewCardWithExcerptReview;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <li
       className={`

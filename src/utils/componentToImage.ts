@@ -1,4 +1,3 @@
-import type { JSX, ReactElement } from "react";
 import type { Font } from "satori";
 
 import fs from "node:fs/promises";
@@ -29,7 +28,7 @@ type OpenGraphImageComponent =
   | OpenGraphImageComponentType
   | ReviewOpenGraphImageComponentType;
 
-type ReactElementWithType = ReactElement & {
+type ReactElementWithType = React.ReactElement & {
   $$typeof?: symbol;
   props: {
     [key: string]: unknown;
@@ -146,7 +145,7 @@ async function getFontData() {
  * AIDEV-NOTE: This function is only used for OG image caching and handles
  * the specific JSX structures used in OG images (HTML elements, strings, arrays).
  */
-function serializeJsx(element: JSX.Element): string {
+function serializeJsx(element: React.JSX.Element): string {
   // Handle primitive values (strings, numbers, booleans)
   if (
     typeof element !== "object" ||
@@ -158,7 +157,7 @@ function serializeJsx(element: JSX.Element): string {
 
   // Handle arrays
   if (Array.isArray(element)) {
-    return `[${element.map((item) => serializeJsx(item as JSX.Element)).join(",")}]`;
+    return `[${element.map((item) => serializeJsx(item as React.JSX.Element)).join(",")}]`;
   }
 
   // Handle React elements
@@ -186,7 +185,9 @@ function serializeJsx(element: JSX.Element): string {
 
   // Serialize children
   const children = reactElement.props?.children;
-  const childrenStr = children ? serializeJsx(children as JSX.Element) : "";
+  const childrenStr = children
+    ? serializeJsx(children as React.JSX.Element)
+    : "";
 
   // Combine into a stable string representation
   return `<${typeName}:${sortedPropsStr}>${childrenStr}</${typeName}>`;

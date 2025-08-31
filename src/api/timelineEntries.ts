@@ -1,7 +1,8 @@
+import { perfLogger } from "~/utils/performanceLogger";
+
 import type { TimelineEntryJson } from "./data/timelineEntriesJson";
 
 import { allTimelineEntriesJson } from "./data/timelineEntriesJson";
-import { perfLogger } from "./data/utils/performanceLogger";
 
 export type TimelineEntry = TimelineEntryJson & {};
 

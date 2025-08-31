@@ -1,6 +1,6 @@
 export type AuthorOpenGraphImageComponentType = (
   props: AuthorOpenGraphImageProps,
-) => JSX.Element;
+) => React.JSX.Element;
 
 type AuthorOpenGraphImageProps = {
   avatar?: string;
@@ -12,7 +12,7 @@ export function OpenGraphImage({
   avatar,
   backdrop,
   name,
-}: AuthorOpenGraphImageProps): JSX.Element {
+}: AuthorOpenGraphImageProps): React.JSX.Element {
   return (
     <div
       style={{

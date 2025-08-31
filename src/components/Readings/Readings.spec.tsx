@@ -10,7 +10,7 @@ import {
 } from "~/components/ListWithFilters/ListWithFilters.testHelper";
 import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 import {
-  clickKindFilter,
+  clickKindFilterOption,
   fillTitleFilter,
   fillWorkYearFilter,
   getTitleFilter,
@@ -19,7 +19,7 @@ import {
 import { getProps } from "./getProps";
 import { Readings } from "./Readings";
 import {
-  clickEditionFilter,
+  clickEditionFilterOption,
   clickNextMonthButton,
   clickPreviousMonthButton,
   fillReadingYearFilter,
@@ -83,7 +83,7 @@ describe("Readings", () => {
 
     await clickToggleFilters(user);
 
-    await clickEditionFilter(user, "Paperback");
+    await clickEditionFilterOption(user, "Paperback");
 
     // Apply the filter
     await clickViewResults(user);
@@ -102,7 +102,7 @@ describe("Readings", () => {
 
     await clickToggleFilters(user);
 
-    await clickEditionFilter(user, "Paperback");
+    await clickEditionFilterOption(user, "Paperback");
 
     // Apply the filter
     await clickViewResults(user);
@@ -110,7 +110,7 @@ describe("Readings", () => {
     // Open filter drawer again
     await clickToggleFilters(user);
 
-    await clickEditionFilter(user, "All");
+    await clickEditionFilterOption(user, "All");
 
     // Apply the filter
     await clickViewResults(user);
@@ -129,7 +129,7 @@ describe("Readings", () => {
 
     await clickToggleFilters(user);
 
-    await clickKindFilter(user, "Novel");
+    await clickKindFilterOption(user, "Novel");
 
     // Apply the filter
     await clickViewResults(user);
@@ -147,7 +147,7 @@ describe("Readings", () => {
 
     await clickToggleFilters(user);
 
-    await clickKindFilter(user, "Novel");
+    await clickKindFilterOption(user, "Novel");
 
     // Apply the filter
     await clickViewResults(user);
@@ -155,7 +155,7 @@ describe("Readings", () => {
     // Open filter drawer again
     await clickToggleFilters(user);
 
-    await clickKindFilter(user, "All");
+    await clickKindFilterOption(user, "All");
 
     // Apply the filter
     await clickViewResults(user);
@@ -344,7 +344,7 @@ describe("Readings", () => {
     // Apply multiple filters
     await fillTitleFilter(user, "The Shining");
 
-    await clickEditionFilter(user, "Paperback");
+    await clickEditionFilterOption(user, "Paperback");
 
     await clickViewResults(user);
 

@@ -414,7 +414,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
         </div>
       </header>
       <main
-        class="grow flex flex-col items-center bg-subtle"
+        class="
+            grow
+            flex flex-col items-center bg-subtle
+          "
         id="content"
       >
         <header

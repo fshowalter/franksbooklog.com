@@ -2,11 +2,11 @@ import type { UserEvent } from "@testing-library/user-event";
 
 import { screen } from "@testing-library/react";
 
-import { clickSelectField } from "~/components/SelectField.testHelper";
+import { clickSelectFieldOption } from "~/components/SelectField.testHelper";
 import { fillYearField } from "~/components/YearField.testHelper";
 
-export async function clickEditionFilter(user: UserEvent, value: string) {
-  await clickSelectField(user, "Edition", value);
+export async function clickEditionFilterOption(user: UserEvent, value: string) {
+  await clickSelectFieldOption(user, "Edition", value);
 }
 
 export async function clickNextMonthButton(user: UserEvent) {

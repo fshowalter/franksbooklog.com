@@ -27,7 +27,7 @@ export function MostReadAuthors({
   values,
 }: {
   values: readonly MostReadAuthorsListItemValue[];
-}): false | JSX.Element {
+}): false | React.JSX.Element {
   if (values.length === 0) {
     return false;
   }
@@ -145,7 +145,11 @@ function MostReadAuthorReadingListItem({
   );
 }
 
-function Name({ value }: { value: MostReadAuthorsListItemValue }): JSX.Element {
+function Name({
+  value,
+}: {
+  value: MostReadAuthorsListItemValue;
+}): React.JSX.Element {
   if (value.reviewed) {
     return (
       <a

@@ -12,9 +12,9 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/ListWithFilters/testUtils";
-import { getUserWithFakeTimers } from "~/components/testUtils";
+import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 import {
-  clickKindFilter,
+  clickKindFilterOption,
   fillGradeFilter,
   fillReviewYearFilter,
   fillTitleFilter,
@@ -241,7 +241,7 @@ describe("Author", () => {
 
     await clickToggleFilters(user);
 
-    await clickKindFilter(user, "Novel");
+    await clickKindFilterOption(user, "Novel");
 
     await clickViewResults(user);
 
@@ -305,7 +305,7 @@ describe("Author", () => {
     // Apply multiple filters
     await fillTitleFilter(user, "The Cellar");
 
-    await clickKindFilter(user, "Novel");
+    await clickKindFilterOption(user, "Novel");
 
     await clickViewResults(user);
 

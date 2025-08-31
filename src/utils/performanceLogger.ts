@@ -10,7 +10,7 @@ type TimingEntry = {
   startTime: number;
 };
 
-class PerformanceLogger {
+export class PerformanceLogger {
   private callCounts: Map<string, number> = new Map();
   private completedTimings: TimingEntry[] = [];
   private counter = 0;
@@ -151,6 +151,13 @@ class PerformanceLogger {
     } finally {
       this.endWithId(id);
     }
+  }
+
+  reset(): void {
+    this.callCounts.clear();
+    this.completedTimings = [];
+    this.counter = 0;
+    this.timings.clear();
   }
 
   start(name: string, metadata?: Record<string, unknown>): void {

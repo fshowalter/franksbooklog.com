@@ -1,9 +1,14 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": ["src/pages/**/*.astro", "src/layouts/search.ts"],
+  "entry": [
+    "src/pages/**/*.astro",
+    "src/layouts/search.ts",
+    "eslint.html.config.js"
+  ],
   "project": ["**/*", "!src/**/__mocks__/**"],
   "ignoreDependencies": [
     "@prettier/plugin-xml",
+    "@anthropic-ai/claude-code",
     "@vitest/coverage-v8",
     "babel-plugin-react-compiler"
   ]

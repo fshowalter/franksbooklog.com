@@ -4,7 +4,11 @@ type ListItemAuthor = {
   name: string;
 };
 
-export function ListItemAuthors({ values }: { values: ListItemAuthor[] }) {
+export function ListItemAuthors({
+  values,
+}: {
+  values: ListItemAuthor[];
+}): React.JSX.Element {
   return (
     <div
       className={`text-[15px] leading-4 font-normal tracking-prose text-muted`}

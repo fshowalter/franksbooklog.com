@@ -1,13 +1,13 @@
-export function toSentenceArray<T extends JSX.Element | string>(
+export function toSentenceArray<T extends React.JSX.Element | string>(
   values: readonly T[],
 ): T[] {
-  const words = values.filter(Boolean);
+  const items = values.filter(Boolean);
 
-  if (words.length < 2) {
-    return words;
+  if (items.length < 2) {
+    return items;
   }
 
-  const lastWord = words.pop()!;
-  const lastWords = [" and ", lastWord];
-  return [...words, ...lastWords] as T[];
+  const lastItem = items.pop()!;
+  const lastItems = [" and ", lastItem];
+  return [...items, ...lastItems] as T[];
 }

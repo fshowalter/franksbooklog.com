@@ -1,14 +1,12 @@
-import type { ReactNode } from "react";
-
 export function GroupingListItem({
   children,
   className,
   groupText,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
   groupText: string;
-}) {
+}): React.JSX.Element {
   return (
     <li
       className={`

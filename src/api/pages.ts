@@ -4,6 +4,7 @@ import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
 import { ENABLE_CACHE } from "~/utils/cache";
+import { perfLogger } from "~/utils/performanceLogger";
 
 import type { MarkdownPage as RawMarkdownPage } from "./data/pagesMarkdown";
 
@@ -12,7 +13,6 @@ import {
   allReviewedWorksJson,
   type ReviewedWorkJson,
 } from "./data/reviewedWorksJson";
-import { perfLogger } from "./data/utils/performanceLogger";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 

@@ -1,6 +1,8 @@
-import type { ReactNode } from "react";
-
-export function ListItemDetails({ children }: { children: ReactNode }) {
+export function ListItemDetails({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.JSX.Element {
   return (
     <div
       className={`

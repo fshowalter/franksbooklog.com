@@ -13,7 +13,7 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/ListWithFilters/testUtils";
-import { getUserWithFakeTimers } from "~/components/testUtils";
+import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 
 import { Authors } from "./Authors";
 import { getProps } from "./getProps";

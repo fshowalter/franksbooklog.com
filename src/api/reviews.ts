@@ -7,6 +7,7 @@ import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
 import { ENABLE_CACHE } from "~/utils/cache";
+import { perfLogger } from "~/utils/performanceLogger";
 
 import type { MarkdownReading } from "./data/readingsMarkdown";
 import type {
@@ -18,7 +19,6 @@ import type { MarkdownReview } from "./data/reviewsMarkdown";
 import { allReadingsMarkdown } from "./data/readingsMarkdown";
 import { allReviewedWorksJson } from "./data/reviewedWorksJson";
 import { allReviewsMarkdown } from "./data/reviewsMarkdown";
-import { perfLogger } from "./data/utils/performanceLogger";
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";

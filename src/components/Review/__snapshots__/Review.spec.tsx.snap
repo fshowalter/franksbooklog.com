@@ -408,7 +408,10 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -510,7 +513,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -533,7 +536,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -560,10 +563,12 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -574,7 +579,9 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               A transcendent work of science fiction that explores humanity’s place in the cosmos. Clarke’s vision of our evolutionary journey, from the dawn of consciousness to our destiny among the stars, remains as compelling today as when it was first published.
@@ -594,7 +601,10 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -652,7 +662,10 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           First Edition
@@ -777,7 +790,10 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -1564,7 +1580,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -1691,7 +1710,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -1714,7 +1733,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -1741,10 +1760,12 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -1755,7 +1776,9 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               A candid and rollicking memoir by a flawed man but gifted leader.
@@ -1878,7 +1901,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -1936,7 +1962,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by John Pruden
@@ -2194,7 +2223,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -2359,7 +2391,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Two collegiate girls stop at a roadside diner in a small town in the California wilderness. Across the street at the town’s lone motel, Lander Dills pulls in with his wife, their collegiate daughter and her boyfriend. All six soon discover the town’s dark secret when they’re abducted and ferried out to the wilderness as tribute to the Krulls, a clan of cannibalistic forest denizens.
@@ -2499,7 +2534,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -2650,7 +2688,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           I struggle to remember the last time a story evoked such a visceral sense of dread. Both 
@@ -2805,7 +2846,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           An accomplished debut collection from Fracassi. 
@@ -3580,7 +3624,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -3682,7 +3729,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -3705,7 +3752,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -3732,10 +3779,12 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -3746,7 +3795,9 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               I struggle to remember the last time a story evoked such a visceral sense of dread. Both Chuck Palahniuk’s “Guts” and Bret Easton Ellis’s 
@@ -3810,7 +3861,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -3868,7 +3922,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <a
@@ -3907,7 +3964,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -4072,7 +4132,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -4227,7 +4290,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A candid and rollicking memoir by a flawed man but gifted leader.
@@ -4990,7 +5056,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -5092,7 +5161,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -5115,7 +5184,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -5142,10 +5211,12 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -5156,7 +5227,9 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               An accomplished debut collection from Fracassi. 
@@ -5178,7 +5251,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Included Works
             </h2>
@@ -5727,7 +5803,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -5785,7 +5864,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Lovecraft eZine Press, 2018
@@ -6248,7 +6330,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -6413,7 +6498,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -6568,7 +6656,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A candid and rollicking memoir by a flawed man but gifted leader.
@@ -7331,7 +7422,10 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -7441,7 +7535,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -7464,7 +7558,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -7491,10 +7585,12 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -7505,7 +7601,9 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               David Goggins escapes an abusive home and overcomes a dead-end career to become a Navy Seal and world-class endurance athlete.
@@ -7533,7 +7631,10 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -7591,7 +7692,10 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Adam Skolnick
@@ -7849,7 +7953,10 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -8014,7 +8121,10 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -8780,7 +8890,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -8882,7 +8995,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -8905,7 +9018,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -8932,10 +9045,12 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -8946,7 +9061,9 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               <strong>
@@ -9068,7 +9185,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -9126,7 +9246,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Thomas & Mercer, 2012
@@ -9384,7 +9507,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -9549,7 +9675,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           David Goggins escapes an abusive home and overcomes a dead-end career to become a Navy Seal and world-class endurance athlete.
@@ -9689,7 +9818,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -9832,7 +9964,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           After finishing 
@@ -10603,7 +10738,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -10713,7 +10851,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -10736,7 +10874,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -10763,10 +10901,12 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -10777,7 +10917,9 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               After finishing 
@@ -10924,7 +11066,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -10982,7 +11127,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Stephen Thorne
@@ -11322,7 +11470,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -11487,7 +11638,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -11630,7 +11784,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -12396,7 +12553,10 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -12498,7 +12658,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -12521,7 +12681,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
           "
                   decoding="auto"
                   height="248"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=248&h=248&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=248&h=248&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=496&h=496&q=80&f=avif 2x"
                   width="248"
@@ -12548,10 +12708,12 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -12562,7 +12724,9 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               A vampire travels from Transylvania to London where a motley group, including his real-estate agent, realizes his true nature and set out to end his existence.
@@ -12845,7 +13009,10 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -12903,7 +13070,10 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Narrated by Alan Cumming, Simon Vance, Katy Kellgren, Susan Duerden, and Tim Curry
@@ -13161,7 +13331,10 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -13330,7 +13503,10 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -14096,7 +14272,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -14223,7 +14402,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -14246,7 +14425,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -14273,10 +14452,12 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -14287,7 +14468,9 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               <strong>
@@ -14342,7 +14525,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -14400,7 +14586,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Jocko Willink and Leif Babin
@@ -14432,7 +14621,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -14597,7 +14789,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A vampire travels from Transylvania to London where a motley group, including his real-estate agent, realizes his true nature and set out to end his existence.
@@ -14737,7 +14932,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           The narrator, a young, single man plagued by insomnia, meets a charismatic nihilist named Tyler. One night, after returning home to find his apartment destroyed via a gas explosion, the narrator reaches out to Tyler for a place to crash. Tyler agrees under one condition. “I want you to hit me as hard as you can,” he says.
@@ -15500,7 +15698,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -15602,7 +15803,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -15625,7 +15826,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -15652,10 +15853,12 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -15666,7 +15869,9 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               The narrator, a young, single man plagued by insomnia, meets a charismatic nihilist named Tyler. One night, after returning home to find his apartment destroyed via a gas explosion, the narrator reaches out to Tyler for a place to crash. Tyler agrees under one condition. “I want you to hit me as hard as you can,” he says.
@@ -15808,7 +16013,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -15866,7 +16074,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Jim Colby
@@ -16001,7 +16212,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -16170,7 +16384,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -16317,7 +16534,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help.
@@ -17080,7 +17300,10 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -17199,7 +17422,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -17222,7 +17445,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -17249,10 +17472,12 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -17263,7 +17488,9 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help.
@@ -17505,7 +17732,10 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -17563,7 +17793,10 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Crossroad Press, 2019
@@ -17862,7 +18095,10 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -18027,7 +18263,10 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           The narrator, a young, single man plagued by insomnia, meets a charismatic nihilist named Tyler. One night, after returning home to find his apartment destroyed via a gas explosion, the narrator reaches out to Tyler for a place to crash. Tyler agrees under one condition. “I want you to hit me as hard as you can,” he says.
@@ -18790,7 +19029,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -18896,7 +19138,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -18919,7 +19161,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -18946,10 +19188,12 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -18960,7 +19204,9 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.
@@ -19001,7 +19247,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -19059,7 +19308,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Center Street, 2015
@@ -19225,7 +19477,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -19390,7 +19645,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           At the Santa Monica pier, Doreen rides alone on the merry-go-round until a handsome young man named Ron takes an interest. Despite her warnings that anyone who gets close to her ends up dead, Ron persists, convincing her to let him win her a stuffed animal at the carnival games. As he tries, she flees and hides beneath the pier. There, a vagrant assaults her. Ron comes to her rescue—only to reveal that the attacker is the least of his problems.
@@ -19530,7 +19788,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           At the beach, twelve-year-olds Mike and Joe play, unaware of the malevolent forces at work around them.
@@ -20288,7 +20549,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -20390,7 +20654,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -20413,7 +20677,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -20440,10 +20704,12 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -20454,7 +20720,9 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               At the beach, twelve-year-olds Mike and Joe play, unaware of the malevolent forces at work around them.
@@ -20530,7 +20798,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -20588,7 +20859,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <a
@@ -20730,7 +21004,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -20881,7 +21158,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                       </div>
                       <div />
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.
@@ -21021,7 +21301,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           At the Santa Monica pier, Doreen rides alone on the merry-go-round until a handsome young man named Ron takes an interest. Despite her warnings that anyone who gets close to her ends up dead, Ron persists, convincing her to let him win her a stuffed animal at the carnival games. As he tries, she flees and hides beneath the pier. There, a vagrant assaults her. Ron comes to her rescue—only to reveal that the attacker is the least of his problems.
@@ -21784,7 +22067,10 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -21886,7 +22172,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -21909,7 +22195,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -21936,10 +22222,12 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -21950,7 +22238,9 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Though most of tales are EC Comics style setups for twist endings, they’re well executed, and the others such as the opening “Jerusalem’s Lot”, which borrows from Bram Stoker’s 
@@ -21964,7 +22254,10 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Included Works
             </h2>
@@ -22902,7 +23195,10 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -22960,7 +23256,10 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           New American Library / Signet, 1986
@@ -23095,7 +23394,10 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -23260,7 +23562,10 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           In a small California town, the Haunted Palace cinema specializes in horror films. Between showings of 
@@ -24031,7 +24336,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -24133,7 +24441,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -24156,7 +24464,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -24183,10 +24491,12 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -24197,7 +24507,9 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               In a small California town, the Haunted Palace cinema specializes in horror films. Between showings of 
@@ -24314,7 +24626,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -24372,7 +24687,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -24666,7 +24984,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -24927,7 +25248,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -25092,7 +25416,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Though most of tales are EC Comics style setups for twist endings, they’re well executed, and the others such as the opening “Jerusalem’s Lot”, which borrows from Bram Stoker’s 
@@ -25859,7 +26186,10 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -25957,7 +26287,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -25980,7 +26310,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
           "
                   decoding="auto"
                   height="377.952"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=496&h=756&q=80&f=avif 2x"
                   width="248"
@@ -26007,10 +26337,12 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -26021,7 +26353,9 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               My last read left me excited to discover what other surprises awaited me amongst my Dad’s books.
@@ -26133,7 +26467,10 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -26191,7 +26528,10 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Avon Books, 1983
@@ -26398,7 +26738,10 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -26563,7 +26906,10 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           An immersive epic that celebrates—but never sugar-coats—its subject.
@@ -26703,7 +27049,10 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?
@@ -27461,7 +27810,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -27563,7 +27915,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -27586,7 +27938,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -27613,10 +27965,12 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -27627,7 +27981,9 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?
@@ -27642,7 +27998,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -27700,7 +28059,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -27735,7 +28097,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -27886,7 +28251,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                       </div>
                       <div />
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           My 
@@ -28032,7 +28400,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           An immersive epic that celebrates—but never sugar-coats—its subject.
@@ -28795,7 +29166,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -28897,7 +29271,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -28920,7 +29294,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -28947,10 +29321,12 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -28961,7 +29337,9 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               <strong>
@@ -29161,7 +29539,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -29219,7 +29600,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Ron McLarty
@@ -29518,7 +29902,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -29683,7 +30070,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Two collegiate girls stop at a roadside diner in a small town in the California wilderness. Across the street at the town’s lone motel, Lander Dills pulls in with his wife, their collegiate daughter and her boyfriend. All six soon discover the town’s dark secret when they’re abducted and ferried out to the wilderness as tribute to the Krulls, a clan of cannibalistic forest denizens.
@@ -29827,7 +30217,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A candid and rollicking memoir by a flawed man but gifted leader.
@@ -29967,7 +30360,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           I struggle to remember the last time a story evoked such a visceral sense of dread. Both 
@@ -30745,7 +31141,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -30847,7 +31246,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -30870,7 +31269,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -30897,10 +31296,12 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -30911,7 +31312,9 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Tom receives a frantic pre-dawn call from long-time friend Marcus. Arriving at Marcus’s apartment, Tom discovers a surreal horror. Fracassi’s 
@@ -30925,7 +31328,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -30983,7 +31389,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <a
@@ -31022,7 +31431,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -31187,7 +31599,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends.
@@ -31327,7 +31742,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming.
@@ -32090,7 +32508,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -32192,7 +32613,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -32215,7 +32636,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -32242,10 +32663,12 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -32256,7 +32679,9 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               <strong>
@@ -32329,7 +32754,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -32387,7 +32815,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -32640,7 +33071,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -32860,7 +33294,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -33025,7 +33462,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -33168,7 +33608,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           After finishing 
@@ -33939,7 +34382,10 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -34041,7 +34487,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -34064,7 +34510,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
           "
                   decoding="auto"
                   height="331.32800000000003"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=248&h=331&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=248&h=331&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=496&h=662&q=80&f=avif 2x"
                   width="248"
@@ -34091,10 +34537,12 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -34105,7 +34553,9 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               The sound of breaking glass wakes Goldie. It’s dark. She hears footsteps in the hall. Heavy breathing. Someone’s in the house.
@@ -34132,7 +34582,10 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -34190,7 +34643,10 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Globe Fearon Co, 1984
@@ -34222,7 +34678,10 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -35009,7 +35468,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -35111,7 +35573,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -35134,7 +35596,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
           "
                   decoding="auto"
                   height="330.832"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=496&h=662&q=80&f=avif 2x"
                   width="248"
@@ -35161,10 +35623,12 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -35175,7 +35639,9 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               At the Santa Monica pier, Doreen rides alone on the merry-go-round until a handsome young man named Ron takes an interest. Despite her warnings that anyone who gets close to her ends up dead, Ron persists, convincing her to let him win her a stuffed animal at the carnival games. As he tries, she flees and hides beneath the pier. There, a vagrant assaults her. Ron comes to her rescue—only to reveal that the attacker is the least of his problems.
@@ -35202,7 +35668,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -35260,7 +35729,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Fearon, 2003
@@ -35325,7 +35797,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Fearon, 2003
@@ -35390,7 +35865,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Fearon, 2003
@@ -35422,7 +35900,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -35573,7 +36054,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                       </div>
                       <div />
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.
@@ -35713,7 +36197,10 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           At the beach, twelve-year-olds Mike and Joe play, unaware of the malevolent forces at work around them.
@@ -36476,7 +36963,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -36578,7 +37068,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -36601,7 +37091,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -36628,10 +37118,12 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -36642,7 +37134,9 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               An immersive epic that celebrates—but never sugar-coats—its subject.
@@ -36665,7 +37159,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -36723,7 +37220,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Mark Deakins
@@ -37104,7 +37604,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -37255,7 +37758,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                       </div>
                       <div />
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           My 
@@ -37401,7 +37907,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?
@@ -38164,7 +38673,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -38266,7 +38778,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -38289,7 +38801,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -38316,10 +38828,12 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -38330,7 +38844,9 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends.
@@ -38487,7 +39003,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -38545,7 +39064,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           New American Library
@@ -38754,7 +39276,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           New American Library
@@ -38930,7 +39455,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -39095,7 +39623,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming.
@@ -39235,7 +39766,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Tom receives a frantic pre-dawn call from long-time friend Marcus. Arriving at Marcus’s apartment, Tom discovers a surreal horror. Fracassi’s 
@@ -40002,7 +40536,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -40112,7 +40649,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -40135,7 +40672,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -40162,10 +40699,12 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -40176,7 +40715,9 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming.
@@ -40273,7 +40814,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -40331,7 +40875,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           Read by Steven Novella
@@ -40548,7 +41095,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -40713,7 +41263,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends.
@@ -40853,7 +41406,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Tom receives a frantic pre-dawn call from long-time friend Marcus. Arriving at Marcus’s apartment, Tom discovers a surreal horror. Fracassi’s 
@@ -41620,7 +42176,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -41722,7 +42281,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -41745,7 +42304,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
           "
                   decoding="auto"
                   height="372"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
@@ -41772,10 +42331,12 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -41786,7 +42347,9 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Two collegiate girls stop at a roadside diner in a small town in the California wilderness. Across the street at the town’s lone motel, Lander Dills pulls in with his wife, their collegiate daughter and her boyfriend. All six soon discover the town’s dark secret when they’re abducted and ferried out to the wilderness as tribute to the Krulls, a clan of cannibalistic forest denizens.
@@ -41912,7 +42475,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -41970,7 +42536,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -42264,7 +42833,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -42525,7 +43097,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -42690,7 +43265,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Two families go camping in the California mountains. They cross paths with a backwoods witch and her murderous son. They kill the son and escape but not before the old woman puts a curse on them. The families return home, eager to put the horrific trip behind them, but strange things start happening. Small things at first. One slips in the shower. Another gets cramps in both legs while swimming in the pool. But soon, the coincidences begin to pile up. People end up in the hospital. Or worse. Soon, the remaining unharmed members travel back to the mountains to deal with the witch and remove the curse.
@@ -42830,7 +43408,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           <strong>
@@ -42985,7 +43566,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           A candid and rollicking memoir by a flawed man but gifted leader.
@@ -43748,7 +44332,10 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
         </div>
       </header>
       <main
-        class="grow flex flex-col"
+        class="
+            grow
+            flex flex-col
+          "
         data-pagefind-body="true"
         id="content"
       >
@@ -43855,7 +44442,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
         after:absolute after:top-0 after:left-0 after:z-20 after:block
         after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
-        relative -top-[2.5%]
+        -top-[2.5%]
       "
             >
               <div
@@ -43878,7 +44465,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
           "
                   decoding="auto"
                   height="394.81600000000003"
-                  loading="eager"
+                  loading="lazy"
                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif"
                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=496&h=790&q=80&f=avif 2x"
                   width="248"
@@ -43905,10 +44492,12 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
         "
         >
           <div
-            class="rendered-markdown 
-          text-md/7 tracking-[0.3px]
-          tablet:text-xl/8
-         
+            class="
+        rendered-markdown
+        
+        text-md/7 tracking-[0.3px]
+        tablet:text-xl/8
+        
             max-w-prose
             first-letter:leading-[.8] first-letter:text-default
             tablet:first-letter:pr-3
@@ -43919,7 +44508,9 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
             [&>p:first-child]:first-letter:font-sans
             [&>p:first-child]:first-letter:text-[56px]
             [&>p:first-child]:first-letter:font-bold
-          "
+          
+      
+      "
           >
             <p>
               Two families go camping in the California mountains. They cross paths with a backwoods witch and her murderous son. They kill the son and escape but not before the old woman puts a curse on them. The families return home, eager to put the horrific trip behind them, but strange things start happening. Small things at first. One slips in the shower. Another gets cramps in both legs while swimming in the pool. But soon, the coincidences begin to pile up. People end up in the hospital. Or worse. Soon, the remaining unharmed members travel back to the mountains to deal with the witch and remove the curse.
@@ -43963,7 +44554,10 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
             class="w-full max-w-popout"
           >
             <h2
-              class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        text-center shadow-bottom
+      "
             >
               Reading History
             </h2>
@@ -44021,7 +44615,10 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                     >
                        (
                       <span
-                        class="rendered-markdown leading-none"
+                        class="
+        rendered-markdown
+        leading-none
+      "
                       >
                         <span>
                           <em>
@@ -44774,7 +45371,10 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
           >
             <div>
               <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
               >
                 <a
                   class="
@@ -44939,7 +45539,10 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                         </picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                       >
                         <p>
                           Two collegiate girls stop at a roadside diner in a small town in the California wilderness. Across the street at the town’s lone motel, Lander Dills pulls in with his wife, their collegiate daughter and her boyfriend. All six soon discover the town’s dark secret when they’re abducted and ferried out to the wilderness as tribute to the Krulls, a clan of cannibalistic forest denizens.

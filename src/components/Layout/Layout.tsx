@@ -1,5 +1,3 @@
-import { ccn } from "~/utils/concatClassNames";
-
 import { Footer } from "./Footer";
 import { Mast } from "./Mast";
 
@@ -17,7 +15,7 @@ export function Layout({
   className?: string;
   hasBackdrop?: boolean;
   hideLogo?: boolean;
-}): JSX.Element {
+}): React.JSX.Element {
   if (addGradient === undefined) {
     addGradient = hasBackdrop;
   }
@@ -41,7 +39,14 @@ export function Layout({
           hasBackdrop={hasBackdrop}
           hideLogo={hideLogo}
         />
-        <main className={ccn("grow", className)} id="content" {...rest}>
+        <main
+          className={`
+            grow
+            ${className ?? ""}
+          `}
+          id="content"
+          {...rest}
+        >
           {children}
         </main>
         <Footer />

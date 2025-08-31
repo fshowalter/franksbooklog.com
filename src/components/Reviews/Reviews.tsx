@@ -12,6 +12,7 @@ import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
+import { WorkSortOptions } from "~/components/WorkSortOptions";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { ReviewsSort } from "./Reviews.reducer";
@@ -118,14 +119,9 @@ export function Reviews({
           <>
             <option value="author-asc">Author (A &rarr; Z)</option>
             <option value="author-desc">Author (Z &rarr; A)</option>
-            <option value="review-date-desc">Review Date (Newest First)</option>
-            <option value="review-date-asc">Review Date (Oldest First)</option>
-            <option value="work-year-desc">Work Year (Newest First)</option>
-            <option value="work-year-asc">Work Year (Oldest First)</option>
-            <option value="title-asc">Title (A &rarr; Z)</option>
-            <option value="title-desc">Title (Z &rarr; A)</option>
-            <option value="grade-desc">Grade (Best First)</option>
-            <option value="grade-asc">Grade (Worst First)</option>
+            <WorkSortOptions
+              options={["grade", "review-date", "title", "work-year"]}
+            />
           </>
         ),
       }}

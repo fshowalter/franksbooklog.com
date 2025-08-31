@@ -1,4 +1,8 @@
-export function ListItemEdition({ value }: { value: string }): JSX.Element {
+export function ListItemEdition({
+  value,
+}: {
+  value: string;
+}): React.JSX.Element {
   return (
     <div className={`font-sans text-xs leading-4 tracking-prose text-subtle`}>
       {value}

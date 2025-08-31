@@ -1,7 +1,8 @@
+import { perfLogger } from "~/utils/performanceLogger";
+
 import type { AlltimeStatsJson } from "./data/alltimeStatsJson";
 
 import { alltimeStatsJson } from "./data/alltimeStatsJson";
-import { perfLogger } from "./data/utils/performanceLogger";
 
 export type AlltimeStats = AlltimeStatsJson & {};
 

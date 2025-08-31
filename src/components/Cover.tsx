@@ -1,5 +1,3 @@
-import React, { type JSX } from "react";
-
 import type { CoverImageProps } from "~/api/covers";
 
 type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
@@ -11,11 +9,9 @@ type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
 
 export function Cover({
   className,
-  decoding = "async",
   imageProps,
-  loading = "lazy",
   ...rest
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   return (
     <div
       className={`
@@ -46,8 +42,7 @@ export function Cover({
             rounded-[2.5px] bg-default shadow-sm
             @min-[160px]:shadow-lg
           `}
-          decoding={decoding}
-          loading={loading}
+          loading="lazy"
         />
       </div>
     </div>

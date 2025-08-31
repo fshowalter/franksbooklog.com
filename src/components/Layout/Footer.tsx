@@ -1,7 +1,7 @@
 import { Logo } from "./Logo";
 import { TableOfContents } from "./TableOfContents";
 
-export function Footer(): JSX.Element {
+export function Footer(): React.JSX.Element {
   return (
     <footer className="bg-canvas">
       <div className="mx-auto max-w-(--breakpoint-laptop) px-container py-20">

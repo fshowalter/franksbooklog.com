@@ -4,6 +4,6 @@ export function KindDistribution({
   values,
 }: {
   values: React.ComponentProps<typeof Distribution>["values"];
-}): JSX.Element {
+}): React.JSX.Element {
   return <Distribution title="By Kind" values={values} />;
 }

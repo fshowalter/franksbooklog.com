@@ -40,13 +40,6 @@ export enum WorksActions {
 }
 
 /**
- * Extended state for pagination support
- */
-export type PaginationState = {
-  showCount: number;
-};
-
-/**
  * Type for title filter values with known keys
  */
 export type WorkFilterValues = {

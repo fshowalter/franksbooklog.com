@@ -45,6 +45,8 @@ const gradeOptions = [
   </option>,
 ];
 
+const reversedOptions = [...gradeOptions].reverse();
+
 export function GradeField({
   initialValues,
   label,
@@ -95,7 +97,7 @@ export function GradeField({
             onChange={(e) => handleMinChange(e.target.value)}
             value={minValue}
           >
-            {[...gradeOptions].reverse()}
+            {reversedOptions}
           </SelectInput>
         </label>
         <label className="flex flex-1 items-center">
@@ -106,7 +108,7 @@ export function GradeField({
             onChange={(e) => handleMaxChange(e.target.value)}
             value={maxValue}
           >
-            {[...gradeOptions]}
+            {gradeOptions}
           </SelectInput>
         </label>
       </div>

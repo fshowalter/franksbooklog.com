@@ -30,7 +30,7 @@ export function MoreReviews({
 }: {
   children: React.ReactNode;
   values: MoreReviewsValue[];
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <nav
       className={`
