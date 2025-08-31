@@ -43,7 +43,10 @@ export async function getOpenGraphBackdropAsBase64String(slug: string) {
   const imageBuffer = await sharp(
     path.resolve(`./content/assets/backdrops/${slug}.png`),
   )
-    .resize(1200)
+    .resize(1200, null, {
+      kernel: sharp.kernel.cubic,
+      fastShrinkOnLoad: false,
+    })
     .toFormat("png")
     .toBuffer();
 
