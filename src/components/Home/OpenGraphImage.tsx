@@ -17,6 +17,14 @@ export function OpenGraphImage({
         width: "1200px",
       }}
     >
+      <img
+        height={630}
+        src={backdrop}
+        style={{
+          objectFit: "cover",
+        }}
+        width={1200}
+      />
     </div>
   );
 }
