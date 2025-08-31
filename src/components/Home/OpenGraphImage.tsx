@@ -42,6 +42,7 @@ export function OpenGraphImage({
         <div
           style={{
             color: "#fff",
+            display: "flex",
             fontFamily: "FrankRuhlLibre",
             fontSize: "72px",
             fontWeight: 800,
