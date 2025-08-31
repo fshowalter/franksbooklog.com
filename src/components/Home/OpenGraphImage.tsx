@@ -28,6 +28,8 @@ export function OpenGraphImage({
       />
       <div
         style={{
+          backgroundImage:
+            "linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0,0,0,.2) 200px, rgba(0, 0, 0, 0) 300px, rgba(0, 0, 0, 0)",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
@@ -36,6 +38,7 @@ export function OpenGraphImage({
           paddingRight: "80px",
           paddingTop: "332px",
           position: "absolute",
+          top: 0,
           width: "1200px",
         }}
       >
@@ -47,6 +50,7 @@ export function OpenGraphImage({
             fontSize: "72px",
             fontWeight: 800,
             lineHeight: 1,
+            marginTop: "auto",
             textShadow: "1px 1px 2px black",
           }}
         >

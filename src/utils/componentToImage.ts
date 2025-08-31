@@ -45,9 +45,9 @@ export async function componentToImage(
     const svg = await componentToSvg(component);
     return (await sharp(Buffer.from(svg))
       .jpeg({
-        quality: 90,
-        progressive: false,
         mozjpeg: false,
+        progressive: false,
+        quality: 90,
       })
       .toBuffer()) as Uint8Array<ArrayBuffer>;
   }
@@ -77,11 +77,7 @@ export async function componentToImage(
 
   // Convert SVG to JPEG
   const imageBuffer = (await sharp(Buffer.from(svg))
-    .jpeg({
-      quality: 90,
-      progressive: false,
-      mozjpeg: false,
-    })
+    .jpeg()
     .toBuffer()) as Uint8Array<ArrayBuffer>;
 
   // Save to cache

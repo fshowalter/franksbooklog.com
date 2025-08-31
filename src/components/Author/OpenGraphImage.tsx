@@ -36,7 +36,7 @@ export function OpenGraphImage({
         style={{
           alignItems: "center",
           backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0)) 20%",
+            "linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0,0,0,.2) 250px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0)",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
@@ -81,10 +81,12 @@ export function OpenGraphImage({
         >
           <div
             style={{
-              color: "#fafafa",
+              color: "#c29d52",
               fontFamily: "Assistant",
-              fontWeight: 700,
+              fontSize: "20px",
+              fontWeight: 800,
               marginBottom: "8px",
+              textShadow: "1px 1px 2px black",
               textTransform: "uppercase",
             }}
           >
