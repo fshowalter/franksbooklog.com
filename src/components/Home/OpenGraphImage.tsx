@@ -29,17 +29,16 @@ export function OpenGraphImage({
       <div
         style={{
           backgroundImage:
-            "radial-gradient(400px at left bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75) 15%, rgba(0, 0, 0, 0)) 25%",
+            "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0)) 25%",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
-          height: 630,
+          marginTop: "auto",
           paddingBottom: "64px",
           paddingLeft: "80px",
           paddingRight: "80px",
-          paddingTop: "332px",
+          paddingTop: "32px",
           position: "absolute",
-          top: 0,
           width: "1200px",
         }}
       >
