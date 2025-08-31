@@ -6,7 +6,7 @@ import { Cover } from "~/components/Cover";
 import { Grade } from "~/components/Grade";
 import { Layout } from "~/components/Layout/Layout";
 import { LongFormText } from "~/components/LongFormText";
-import { MoreReviews } from "~/components/MoreReviews";
+import { MoreReviews, MoreReviewsHeading } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
@@ -157,21 +157,11 @@ export function Review({
         data-pagefind-ignore
       >
         <MoreReviews values={moreReviews}>
-          <SubHeading as="h2">
-            <a
-              className={`
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              `}
-              href={`/reviews/`}
-            >
-              More <span className={`text-accent`}>Reviews</span>
-            </a>
-          </SubHeading>
+          <MoreReviewsHeading
+            accentText="Reviews"
+            href={`/reviews/`}
+            text="More"
+          />
         </MoreReviews>
       </div>
       <StructuredData
