@@ -100,6 +100,7 @@ async function getFontData() {
   const [
     frankRuhlLibreExtraBold,
     frankRuhlLibreSemiBold,
+    frankRuhlLibreRegular,
     assistantRegular,
     assistantSemiBold,
   ] = await Promise.all([
@@ -109,6 +110,7 @@ async function getFontData() {
     fs.readFile(
       "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-SemiBold.ttf",
     ),
+    fs.readFile("./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf"),
     fs.readFile("./public/fonts/Assistant/Assistant-Bold.ttf"),
     fs.readFile("./public/fonts/Assistant/Assistant-SemiBold.ttf"),
   ]);
@@ -123,6 +125,11 @@ async function getFontData() {
       data: frankRuhlLibreSemiBold.buffer as ArrayBuffer,
       name: "FrankRuhlLibre",
       weight: 600,
+    },
+    {
+      data: frankRuhlLibreRegular.buffer as ArrayBuffer,
+      name: "FrankRuhlLibre",
+      weight: 400,
     },
     {
       data: assistantRegular.buffer as ArrayBuffer,
