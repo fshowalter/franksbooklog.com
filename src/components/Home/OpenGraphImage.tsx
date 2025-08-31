@@ -50,7 +50,7 @@ export function OpenGraphImage({
             textShadow: "1px 1px 2px black",
           }}
         >
-          Franks Book Log
+          Frank&apos;s Book Log
         </div>
       </div>
     </div>
