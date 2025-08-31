@@ -46,6 +46,7 @@ export function OpenGraphImage({
             fontFamily: "FrankRuhlLibre",
             fontSize: "72px",
             fontWeight: 800,
+            lineHeight: 1,
           }}
         >
           Franks Book Log
