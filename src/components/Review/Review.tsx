@@ -1,7 +1,6 @@
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
-import { AuthorLink } from "~/components/AuthorLink";
 import { Cover } from "~/components/Cover";
 import { Grade } from "~/components/Grade";
 import { Layout } from "~/components/Layout/Layout";
@@ -10,6 +9,7 @@ import { MoreReviews, MoreReviewsHeading } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
+import { AuthorLink } from "./AuthorLink";
 import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
 import { StructuredData } from "./StructuredData";

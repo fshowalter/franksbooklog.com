@@ -12,7 +12,7 @@ export const CoverImageConfig = {
   width: 248,
 };
 
-export type ReviewCardWithExcerptReview = Pick<
+export type ReviewCardProps = Pick<
   ReviewWithExcerpt,
   | "excerpt"
   | "grade"
@@ -27,10 +27,10 @@ export type ReviewCardWithExcerptReview = Pick<
   reviewDate?: string;
 };
 
-export function ReviewCardWithExcerpt({
+export function ReviewCard({
   value,
 }: {
-  value: ReviewCardWithExcerptReview;
+  value: ReviewCardProps;
 }): React.JSX.Element {
   return (
     <li

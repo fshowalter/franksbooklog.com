@@ -1,7 +1,7 @@
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithExcerpt } from "~/api/reviews";
 
-import { ReviewCardWithExcerpt } from "./ReviewCardWithExcerpt";
+import { ReviewCard } from "./ReviewCard";
 import { SubHeading } from "./SubHeading";
 
 export const MoreReviewsImageConfig = {
@@ -54,7 +54,7 @@ export function MoreReviews({
           `}
         >
           {values.map((value) => {
-            return <ReviewCardWithExcerpt key={value.slug} value={value} />;
+            return <ReviewCard key={value.slug} value={value} />;
           })}
         </ol>
       </div>

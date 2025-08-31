@@ -1,15 +1,15 @@
 import type { BackdropImageProps } from "~/api/backdrops";
-import type { ReviewCardWithExcerptReview } from "~/components/ReviewCardWithExcerpt";
+import type { ReviewCardProps } from "~/components/ReviewCard";
 
 import { Backdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout/Layout";
-import { ReviewCardWithExcerpt } from "~/components/ReviewCardWithExcerpt";
+import { ReviewCard } from "~/components/ReviewCard";
 import { SubHeading } from "~/components/SubHeading";
 
 export type Props = {
   backdropImageProps: BackdropImageProps;
   deck: string;
-  values: ReviewCardWithExcerptReview[];
+  values: ReviewCardProps[];
 };
 
 export function Home({
@@ -43,9 +43,7 @@ export function Home({
           `}
         >
           {values.map((value) => {
-            return (
-              <ReviewCardWithExcerpt key={value.reviewSequence} value={value} />
-            );
+            return <ReviewCard key={value.reviewSequence} value={value} />;
           })}
         </ol>
         <div
