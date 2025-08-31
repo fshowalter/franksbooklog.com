@@ -31,11 +31,10 @@ export function OpenGraphImage({
           bottom: 0,
           display: "flex",
           flexDirection: "column",
-          marginTop: "auto",
           paddingBottom: "64px",
           paddingLeft: "80px",
           paddingRight: "80px",
-          paddingTop: "32px",
+          paddingTop: "332px",
           position: "absolute",
           width: "1200px",
         }}
@@ -48,7 +47,6 @@ export function OpenGraphImage({
             fontSize: "72px",
             fontWeight: 800,
             lineHeight: 1,
-            marginTop: "auto",
             textShadow: "1px 1px 2px black",
           }}
         >

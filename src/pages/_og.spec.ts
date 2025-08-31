@@ -28,6 +28,25 @@ describe("/og.jpg", () => {
 
     const snapshot = fs.readFileSync(snapshotFile);
 
-    void expect(result.compare(snapshot)).toBe(0);
+    const comparison = result.compare(snapshot);
+    if (comparison !== 0) {
+      console.log(`Image comparison failed. Difference: ${comparison}`);
+      console.log(`Expected size: ${snapshot.length} bytes`);
+      console.log(`Actual size: ${result.length} bytes`);
+      console.log(`Platform: ${process.platform}`);
+      console.log(`Node version: ${process.version}`);
+      
+      // Check if running in CI
+      console.log(`CI environment: ${process.env.CI || 'false'}`);
+      
+      // Output hash of the images to see if they're completely different
+      const crypto = await import('crypto');
+      const expectedHash = crypto.createHash('md5').update(snapshot).digest('hex');
+      const actualHash = crypto.createHash('md5').update(result).digest('hex');
+      console.log(`Expected MD5: ${expectedHash}`);
+      console.log(`Actual MD5: ${actualHash}`);
+    }
+
+    void expect(comparison).toBe(0);
   });
 });
