@@ -52,6 +52,18 @@ export function OpenGraphImage({
         >
           Frank&apos;s Book Log
         </div>
+        <div
+          style={{
+            color: "#c29d52",
+            fontFamily: "Assistant",
+            fontSize: "20px",
+            fontWeight: 700,
+            marginBottom: "8px",
+            textShadow: "1px 1px 2px black",
+          }}
+        >
+          Literature is a relative term.
+        </div>
       </div>
     </div>
   );
