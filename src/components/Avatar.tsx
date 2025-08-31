@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { AvatarImageProps } from "~/api/avatars";
 
 type AvatarProps = React.ImgHTMLAttributes<HTMLImageElement> & {
@@ -16,7 +14,7 @@ export function Avatar({
   fill,
   imageProps,
   ...rest
-}: AvatarProps): JSX.Element {
+}: AvatarProps): React.JSX.Element {
   if (imageProps) {
     return <img {...imageProps} alt="" {...rest} className={className} />;
   }
@@ -24,7 +22,7 @@ export function Avatar({
   return (
     <div className={className}>
       <svg
-        fill={fill || "var(--bg-avatar-default)"}
+        fill={fill || "var(--bg-subtle)"}
         viewBox="0 0 16 16"
         width="100%"
         xmlns="http://www.w3.org/2000/svg"

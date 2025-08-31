@@ -2,22 +2,25 @@ import type {
   GroupFn,
   ListWithFiltersActionType,
   ListWithFiltersState,
-} from "~/components/ListWithFilters/reducerUtils";
-import type { WorksFilterActionType } from "~/components/ListWithFilters/worksReducerUtils";
+} from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
+import type {
+  WorkFilterValues,
+  WorksActionType,
+} from "~/components/ListWithFilters/worksReducerUtils";
 
 import {
-  buildSortValues,
   createInitialState,
   handleListWithFiltersAction,
   ListWithFiltersActions,
   updatePendingFilter,
-} from "~/components/ListWithFilters/reducerUtils";
+} from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 import {
   handleKindFilterAction,
   handleTitleFilterAction,
   handleWorkYearFilterAction,
-  WorksFilterActions,
+  WorksActions,
 } from "~/components/ListWithFilters/worksReducerUtils";
+import { buildSortValues } from "~/components/utils/reducerUtils";
 
 import type { ListItemValue } from "./Readings";
 
@@ -28,20 +31,34 @@ enum ReadingsActions {
   PREV_MONTH = "PREV_MONTH",
 }
 
+export type ReadingsFilterValues = Pick<
+  WorkFilterValues,
+  "kind" | "title" | "workYear"
+> & {
+  edition?: string;
+  readingYear?: string[];
+};
+
 // Re-export shared actions for component convenience
 export const Actions = {
   ...ListWithFiltersActions,
-  ...WorksFilterActions,
+  ...WorksActions,
   ...ReadingsActions,
 } as const;
 
 export type ActionType =
+  | Extract<
+      WorksActionType,
+      | { type: WorksActions.PENDING_FILTER_KIND }
+      | { type: WorksActions.PENDING_FILTER_TITLE }
+      | { type: WorksActions.PENDING_FILTER_WORK_YEAR }
+    >
   | ListWithFiltersActionType<Sort>
   | NextMonthAction
   | PendingFilterEditionAction
   | PendingFilterReadingYearAction
   | PrevMonthAction
-  | WorksFilterActionType;
+  | WorksActionType;
 
 export type Sort = "reading-date-asc" | "reading-date-desc";
 
@@ -89,6 +106,7 @@ export function initState({
   const baseState = createInitialState({
     groupFn: groupValuesSortedBySequence,
     initialSort,
+    showCount: undefined, // Viewings don't paginate
     sortFn: sortValues,
     values,
   });
@@ -200,7 +218,7 @@ export function reducer(state: State, action: ActionType): State {
         prevMonth: prevMonthPrev,
       };
     }
-    case WorksFilterActions.PENDING_FILTER_KIND: {
+    case WorksActions.PENDING_FILTER_KIND: {
       return handleKindFilterAction(state, action, {
         currentMonth: state.currentMonth,
         hasNextMonth: state.hasNextMonth,
@@ -211,7 +229,7 @@ export function reducer(state: State, action: ActionType): State {
       });
     }
 
-    case WorksFilterActions.PENDING_FILTER_TITLE: {
+    case WorksActions.PENDING_FILTER_TITLE: {
       return handleTitleFilterAction(state, action, {
         currentMonth: state.currentMonth,
         hasNextMonth: state.hasNextMonth,
@@ -223,7 +241,7 @@ export function reducer(state: State, action: ActionType): State {
     }
 
     // Field-specific shared filters
-    case WorksFilterActions.PENDING_FILTER_WORK_YEAR: {
+    case WorksActions.PENDING_FILTER_WORK_YEAR: {
       return handleWorkYearFilterAction(state, action, {
         currentMonth: state.currentMonth,
         hasNextMonth: state.hasNextMonth,

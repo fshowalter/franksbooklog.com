@@ -1,21 +1,11 @@
-import type { JSX } from "react";
-
 import { SelectField } from "~/components/SelectField";
 import { SelectOptions } from "~/components/SelectOptions";
-import { TextFilter } from "~/components/TextFilter";
-import { YearInput } from "~/components/YearInput";
+import { WorkFilters } from "~/components/WorkFilters";
+import { YearField } from "~/components/YearField";
 
-import type { ActionType } from "./Readings.reducer";
+import type { ActionType, ReadingsFilterValues } from "./Readings.reducer";
 
 import { Actions } from "./Readings.reducer";
-
-type FilterValues = {
-  edition?: string;
-  kind?: string;
-  readingYears?: string[];
-  title?: string;
-  workYears?: string[];
-};
 
 export function Filters({
   dispatch,
@@ -23,7 +13,6 @@ export function Filters({
   distinctKinds,
   distinctReadingYears,
   distinctWorkYears,
-  filterKey,
   filterValues,
 }: {
   dispatch: React.Dispatch<ActionType>;
@@ -31,32 +20,34 @@ export function Filters({
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
-  filterKey?: string;
-  filterValues: FilterValues;
-}): JSX.Element {
+  filterValues: ReadingsFilterValues;
+}): React.JSX.Element {
   return (
     <>
-      <TextFilter
-        initialValue={filterValues.title || ""}
-        key={`title-${filterKey}`}
-        label="Title"
-        onInputChange={(value) =>
-          dispatch({ type: Actions.PENDING_FILTER_TITLE, value })
-        }
-        placeholder="Enter all or part of a title"
+      <WorkFilters
+        kind={{
+          initialValue: filterValues.kind,
+          onChange: (value) =>
+            dispatch({
+              type: Actions.PENDING_FILTER_KIND,
+              value,
+            }),
+          values: distinctKinds,
+        }}
+        title={{
+          initialValue: filterValues.title,
+          onChange: (value) =>
+            dispatch({ type: Actions.PENDING_FILTER_TITLE, value }),
+        }}
+        workYear={{
+          initialValue: filterValues.workYear,
+          onChange: (values) =>
+            dispatch({ type: Actions.PENDING_FILTER_WORK_YEAR, values }),
+          values: distinctWorkYears,
+        }}
       />
-      <YearInput
-        initialValues={filterValues.workYears || []}
-        key={`work-year-${filterKey}`}
-        label="Work Year"
-        onYearChange={(values) =>
-          dispatch({ type: Actions.PENDING_FILTER_WORK_YEAR, values })
-        }
-        years={distinctWorkYears}
-      />
-      <YearInput
-        initialValues={filterValues.readingYears || []}
-        key={`reading-year-${filterKey}`}
+      <YearField
+        initialValues={filterValues.readingYear}
         label="Reading Year"
         onYearChange={(values) =>
           dispatch({ type: Actions.PENDING_FILTER_READING_YEAR, values })
@@ -64,26 +55,14 @@ export function Filters({
         years={distinctReadingYears}
       />
       <SelectField
-        label="Kind"
-        onChange={(e) =>
-          dispatch({
-            type: Actions.PENDING_FILTER_KIND,
-            value: e.target.value,
-          })
-        }
-        value={filterValues.kind || "All"}
-      >
-        <SelectOptions options={distinctKinds} />
-      </SelectField>
-      <SelectField
+        initialValue={filterValues.edition}
         label="Edition"
-        onChange={(e) =>
+        onChange={(value) =>
           dispatch({
             type: Actions.PENDING_FILTER_EDITION,
-            value: e.target.value,
+            value,
           })
         }
-        value={filterValues.edition || "All"}
       >
         <SelectOptions options={distinctEditions} />
       </SelectField>

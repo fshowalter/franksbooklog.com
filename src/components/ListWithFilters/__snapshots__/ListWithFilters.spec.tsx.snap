@@ -24,7 +24,7 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = 
       class="
                   absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
-                  bg-canvas text-default drop-shadow-md transition-transform
+                  bg-canvas text-default drop-shadow-sm transition-transform
                   hover:scale-105 hover:drop-shadow-md
                   
                 "
@@ -51,9 +51,9 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = 
     </button>
     <fieldset
       class="
-                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  mt-0 flex grow flex-col gap-5 px-container py-10
                   tablet:gap-8
-                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:grow-0 tablet-landscape:gap-10
                   tablet-landscape:px-12
                 "
     >
@@ -81,8 +81,8 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = 
     </fieldset>
     <div
       class="
-                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
-                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  sticky bottom-0 z-filter-footer mt-auto w-full border-t
+                  border-t-default bg-default px-8 py-4 drop-shadow-2xl
                   tablet-landscape:px-12
                 "
     >
@@ -98,7 +98,6 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = 
                       enabled:hover:scale-105 enabled:hover:drop-shadow-md
                       cursor-not-allowed text-muted opacity-50
                     "
-          disabled=""
           type="button"
         >
           Clear
@@ -152,7 +151,7 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = 
       class="
                   absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
-                  bg-canvas text-default drop-shadow-md transition-transform
+                  bg-canvas text-default drop-shadow-sm transition-transform
                   hover:scale-105 hover:drop-shadow-md
                   
                 "
@@ -179,9 +178,9 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = 
     </button>
     <fieldset
       class="
-                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  mt-0 flex grow flex-col gap-5 px-container py-10
                   tablet:gap-8
-                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:grow-0 tablet-landscape:gap-10
                   tablet-landscape:px-12
                 "
     >
@@ -209,8 +208,8 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = 
     </fieldset>
     <div
       class="
-                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
-                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  sticky bottom-0 z-filter-footer mt-auto w-full border-t
+                  border-t-default bg-default px-8 py-4 drop-shadow-2xl
                   tablet-landscape:px-12
                 "
     >
@@ -226,7 +225,6 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = 
                       enabled:hover:scale-105 enabled:hover:drop-shadow-md
                       cursor-not-allowed text-muted opacity-50
                     "
-          disabled=""
           type="button"
         >
           Clear
@@ -265,7 +263,7 @@ exports[`ListWithFilters > renders 1`] = `
     >
       <div
         class="
-            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-sticky
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20
             scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
             border-default bg-default text-xs
             tablet:col-span-full
@@ -290,7 +288,7 @@ exports[`ListWithFilters > renders 1`] = `
               100
             </span>
             <span
-              class="text-xs leading-none font-medium tracking-wide"
+              class="text-xs leading-none font-normal tracking-wide"
             >
                Results
             </span>
@@ -403,7 +401,7 @@ exports[`ListWithFilters > renders 1`] = `
               class="
                   absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
-                  bg-canvas text-default drop-shadow-md transition-transform
+                  bg-canvas text-default drop-shadow-sm transition-transform
                   hover:scale-105 hover:drop-shadow-md
                   
                 "
@@ -430,9 +428,9 @@ exports[`ListWithFilters > renders 1`] = `
             </button>
             <fieldset
               class="
-                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  mt-0 flex grow flex-col gap-5 px-container py-10
                   tablet:gap-8
-                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:grow-0 tablet-landscape:gap-10
                   tablet-landscape:px-12
                 "
             >
@@ -460,8 +458,8 @@ exports[`ListWithFilters > renders 1`] = `
             </fieldset>
             <div
               class="
-                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
-                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  sticky bottom-0 z-filter-footer mt-auto w-full border-t
+                  border-t-default bg-default px-8 py-4 drop-shadow-2xl
                   tablet-landscape:px-12
                 "
             >
@@ -477,7 +475,6 @@ exports[`ListWithFilters > renders 1`] = `
                       enabled:hover:scale-105 enabled:hover:drop-shadow-md
                       cursor-not-allowed text-muted opacity-50
                     "
-                  disabled=""
                   type="button"
                 >
                   Clear

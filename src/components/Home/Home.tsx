@@ -1,10 +1,8 @@
-import type { JSX } from "react";
-
 import type { BackdropImageProps } from "~/api/backdrops";
 import type { ReviewCardWithExcerptReview } from "~/components/ReviewCardWithExcerpt";
 
 import { Backdrop } from "~/components/Backdrop";
-import { Layout } from "~/components/Layout";
+import { Layout } from "~/components/Layout/Layout";
 import { ReviewCardWithExcerpt } from "~/components/ReviewCardWithExcerpt";
 import { SubHeading } from "~/components/SubHeading";
 
@@ -14,7 +12,11 @@ export type Props = {
   values: ReviewCardWithExcerptReview[];
 };
 
-export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
+export function Home({
+  backdropImageProps,
+  deck,
+  values,
+}: Props): React.JSX.Element {
   return (
     <Layout className="bg-subtle pb-8" hasBackdrop={true} hideLogo={true}>
       <Backdrop
@@ -67,7 +69,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
                 after:absolute after:bottom-0 after:left-0 after:h-0.5
                 after:w-full after:origin-center after:scale-x-0
                 after:transform-gpu after:bg-(--fg-inverse)
-                after:transition-transform
+                after:transition-transform after:duration-500
                 group-hover/all-reviews:after:scale-x-100
               `}
             >

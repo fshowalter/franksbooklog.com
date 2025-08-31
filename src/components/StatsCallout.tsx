@@ -1,11 +1,10 @@
-import type { JSX } from "react";
 export function StatsCallout({
   label,
   value,
 }: {
   label: string;
   value: number;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <div
       className={`

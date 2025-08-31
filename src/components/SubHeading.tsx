@@ -1,5 +1,3 @@
-import { ccn } from "~/utils/concatClassNames";
-
 export function SubHeading({
   as,
   children,
@@ -8,15 +6,15 @@ export function SubHeading({
   as: "h2" | "h3" | "h4" | "h5";
   children: React.ReactNode;
   className?: string;
-}) {
+}): React.JSX.Element {
   const Component = as;
 
   return (
     <Component
-      className={ccn(
-        `py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase`,
-        className,
-      )}
+      className={`
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        ${className ?? ""}
+      `}
     >
       {children}
     </Component>

@@ -1,9 +1,6 @@
-import type { JSX } from "react";
-
 import type { AvatarImageProps } from "~/api/avatars";
 
 import { Avatar } from "~/components/Avatar";
-import { ccn } from "~/utils/concatClassNames";
 
 import { GroupingListItem } from "./GroupingListItem";
 
@@ -20,20 +17,20 @@ export function AvatarListItem({
   avatarImageProps: AvatarImageProps | undefined;
   children: React.ReactNode;
   className?: string;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <li
       className={`
-        group/list-item relative mb-1 flex max-w-(--breakpoint-desktop)
-        transform-gpu flex-row gap-x-4 bg-default px-container py-4
-        transition-transform
+        group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) flex-row
+        gap-x-4 bg-default px-container py-4 transition-all
         tablet:gap-x-6 tablet:px-4
         tablet-landscape:has-[a:hover]:z-5
         tablet-landscape:has-[a:hover]:scale-[102.5%]
+        tablet-landscape:has-[a:hover]:transform-gpu
         tablet-landscape:has-[a:hover]:shadow-all
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
+        tablet-landscape:has-[a:hover]:duration-500
         laptop:px-6
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         ${className}
       `}
     >
@@ -41,7 +38,8 @@ export function AvatarListItem({
         className={`
           relative rounded-full
           after:absolute after:top-0 after:left-0 after:size-full
-          after:bg-default after:opacity-15 after:transition-opacity
+          after:bg-default after:opacity-20 after:transition-opacity
+          after:duration-500
           group-has-[a:hover]/list-item:after:opacity-0
           ${className}
         `}
@@ -64,7 +62,7 @@ export function GroupedAvatarList<T>({
   className?: string;
   groupedValues: Map<string, Iterable<T>>;
   groupItemClassName?: string;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <>
       <ol
@@ -92,15 +90,16 @@ export function GroupedAvatarList<T>({
 }
 
 function ListItemAvatar({
-  className,
   imageProps,
 }: {
-  className?: string;
   imageProps: AvatarImageProps | undefined;
-}) {
+}): React.JSX.Element {
   const avatar = (
     <Avatar
-      className="w-full"
+      className={`
+        w-full transform-gpu transition-transform duration-500
+        group-has-[a:hover]/list-item:scale-110
+      `}
       height={AvatarListItemImageConfig.height}
       imageProps={imageProps}
       loading="lazy"
@@ -110,14 +109,11 @@ function ListItemAvatar({
 
   return (
     <div
-      className={ccn(
-        `
-          w-16 safari-border-radius-fix overflow-hidden rounded-full
-          drop-shadow-md
-          tablet:w-20
-        `,
-        className,
-      )}
+      className={`
+        w-16 safari-border-radius-fix overflow-hidden rounded-full
+        ${imageProps ? `drop-shadow-md` : ``}
+        tablet:w-20
+      `}
     >
       {avatar}
     </div>

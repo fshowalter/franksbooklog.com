@@ -1,7 +1,3 @@
-import type { JSX } from "react";
-
-import { ccn } from "~/utils/concatClassNames";
-
 export function StatsNavigation({
   className,
   currentYear,
@@ -12,9 +8,14 @@ export function StatsNavigation({
   currentYear: string;
   linkFunc: (year: string) => string;
   years: readonly string[];
-}): JSX.Element {
+}): React.JSX.Element {
   return (
-    <nav className={ccn("bg-[#333]", className)}>
+    <nav
+      className={`
+        bg-footer
+        ${className ?? ""}
+      `}
+    >
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
@@ -45,9 +46,14 @@ function AllTimeLink({
 }: {
   currentYear: string;
   linkFunc: (year: string) => string;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
-    <li className={`snap-start text-center`}>
+    <li
+      className={`
+        snap-start text-center
+        ${"all" === currentYear ? "text-inverse" : `text-inverse-subtle`}
+      `}
+    >
       {"all" === currentYear ? (
         <div
           className={`
@@ -61,7 +67,7 @@ function AllTimeLink({
         <a
           className={`
             group/all-time block transform-gpu px-4 pt-4 pb-3 whitespace-nowrap
-            text-inverse-subtle transition-all
+            transition-all duration-500
             hover:bg-accent hover:text-inverse
           `}
           href={linkFunc("all")}
@@ -72,6 +78,7 @@ function AllTimeLink({
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/all-time:after:scale-x-100
             `}
           >
@@ -91,9 +98,14 @@ function YearLink({
   currentYear: string;
   linkFunc: (y: string) => string;
   year: string;
-}) {
+}): React.JSX.Element {
   return (
-    <li className={`snap-start text-center`}>
+    <li
+      className={`
+        snap-start text-center
+        ${year === currentYear ? "text-inverse" : `text-inverse-subtle`}
+      `}
+    >
       {year === currentYear ? (
         <div
           className={`
@@ -106,8 +118,8 @@ function YearLink({
       ) : (
         <a
           className={`
-            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
-            transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            duration-500
             hover:bg-accent hover:text-inverse
           `}
           href={linkFunc(year)}
@@ -118,6 +130,7 @@ function YearLink({
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
               after:bg-(--fg-inverse) after:transition-transform
+              after:duration-500
               group-hover/year:after:scale-x-100
             `}
           >

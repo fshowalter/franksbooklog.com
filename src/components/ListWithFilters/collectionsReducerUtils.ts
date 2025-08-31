@@ -1,41 +1,100 @@
-import { sortNumber, sortString } from "~/components/utils/reducerUtils";
+/**
+ * Reducer utilities for collection-based lists (groups of items).
+ * Used by Collections and CastAndCrew components.
+ */
+
+import type {
+  ListWithFiltersActionType,
+  ListWithFiltersState,
+} from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
+
+import { updatePendingFilter } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
+import {
+  getGroupLetter,
+  sortNumber,
+  sortString,
+} from "~/components/utils/reducerUtils";
 
 /**
- * Collection-specific reducer utilities for lists of collections (Authors page).
- *
- * Handles collection-specific filtering logic including:
- * - Name filtering
- *
- * Note: Collections do not use pagination (Show More functionality)
- *
- * These utilities build on top of the base reducerUtils
+ * Collection-specific filter actions
  */
-import type { ListWithFiltersState } from "./reducerUtils";
-
-import { updatePendingFilter } from "./reducerUtils";
-
-/**
- * Collection-specific action types
- */
-export enum CollectionsFilterActions {
+export enum CollectionsActions {
   PENDING_FILTER_NAME = "PENDING_FILTER_NAME",
 }
 
 /**
- * Union type of all collection-specific filter actions
+ * Type for collection filter values with known keys
  */
-export type CollectionsFilterActionType = PendingFilterNameAction;
+export type CollectionFilterValues = {
+  name?: string;
+};
+
+// Union type for all collection-specific actions
+export type CollectionsActionType<TSortValue = unknown> =
+  | ListWithFiltersActionType<TSortValue>
+  | PendingFilterNameAction;
+
+// ============================================================================
+// Collection-specific Action Types
+// ============================================================================
 
 /**
- * Collection-specific action type definitions
+ * Specialized state type for collection-based lists with typed filter values
  */
+export type CollectionsListState<TItem, TSortValue> = Omit<
+  ListWithFiltersState<TItem, TSortValue>,
+  "filterValues" | "pendingFilterValues"
+> & {
+  filterValues: CollectionFilterValues;
+  pendingFilterValues: CollectionFilterValues;
+};
+
+export type CollectionsSortType =
+  | "name-asc"
+  | "name-desc"
+  | "review-count-asc"
+  | "review-count-desc";
+
+/**
+ * Base type for items that can be grouped by common title sorts
+ */
+type GroupableCollectionItem = {
+  name: string;
+  reviewCount: number;
+};
+
 type PendingFilterNameAction = {
-  type: CollectionsFilterActions.PENDING_FILTER_NAME;
+  type: CollectionsActions.PENDING_FILTER_NAME;
   value: string;
 };
 
 /**
- * Handle Name filter action
+ * Creates a generic groupForValue function for title-based lists
+ */
+export function createCollectionGroupForValue<
+  T extends GroupableCollectionItem,
+  TSortValue extends CollectionsSortType,
+>(): (value: T, sortValue: TSortValue) => string {
+  return (value: T, sortValue: TSortValue): string => {
+    switch (sortValue) {
+      case "name-asc":
+      case "name-desc": {
+        return getGroupLetter(value.name);
+      }
+      case "review-count-asc":
+      case "review-count-desc": {
+        return "";
+      }
+    }
+  };
+}
+
+// ============================================================================
+// Collection-specific Filter Handlers
+// ============================================================================
+
+/**
+ * Handle Name filter action for collections
  */
 export function handleNameFilterAction<
   TItem extends { name: string },
@@ -47,19 +106,26 @@ export function handleNameFilterAction<
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createNameFilter(action.value);
-  const baseState = updatePendingFilter(state, "name", filterFn, action.value);
+  const filterKey: keyof CollectionFilterValues = "name";
+  const baseState = updatePendingFilter(
+    state,
+    filterKey,
+    filterFn,
+    action.value,
+  );
   return extendedState
     ? { ...baseState, ...extendedState }
     : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
 }
 
-/**
- * Collection-specific sort helpers
- */
-export function sortName<T extends { sortName: string }>() {
+// ============================================================================
+// Collection-specific Sort Functions
+// ============================================================================
+
+export function sortName<T extends { name: string }>() {
   return {
-    "name-asc": (a: T, b: T) => sortString(a.sortName, b.sortName),
-    "name-desc": (a: T, b: T) => sortString(a.sortName, b.sortName) * -1,
+    "name-asc": (a: T, b: T) => sortString(a.name, b.name),
+    "name-desc": (a: T, b: T) => sortString(a.name, b.name) * -1,
   };
 }
 
@@ -72,9 +138,10 @@ export function sortReviewCount<T extends { reviewCount: number }>() {
   };
 }
 
-/**
- * Create a Name filter function
- */
+// ============================================================================
+// Private Filter Creation Functions
+// ============================================================================
+
 function createNameFilter(value: string | undefined) {
   if (!value) return;
   const regex = new RegExp(value, "i");

@@ -1,8 +1,5 @@
-import type { JSX } from "react";
-
 import type { CoverImageProps } from "~/api/covers";
 
-import { Button } from "./Button";
 import { GroupingListItem } from "./GroupingListItem";
 
 export const CoverListItemImageConfig = {
@@ -24,7 +21,7 @@ export function CoverList({
 }: {
   children: React.ReactNode;
   className?: string;
-}) {
+}): React.JSX.Element {
   return (
     <div className="@container/cover-list">
       {/* AIDEV-NOTE: The 250px values below cannot be extracted to a constant/variable
@@ -53,24 +50,31 @@ export function CoverList({
 
 export function CoverListItem({
   children,
-  className,
   coverImageProps,
+  hasReview = true,
 }: {
   children: React.ReactNode;
   className?: string;
   coverImageProps: CoverImageProps;
-}) {
+  hasReview?: boolean;
+}): React.JSX.Element {
   return (
     <li
       className={`
         group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
-        transition-transform
+        transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
-        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
-        ${className ?? ""}
+        tablet:px-6 tablet:py-6
+        ${
+          hasReview
+            ? `
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            `
+            : `bg-transparent`
+        }
       `}
     >
       <CoverListItemCover imageProps={coverImageProps} />
@@ -79,7 +83,65 @@ export function CoverListItem({
   );
 }
 
-export function CoverListItemCover({
+export function GroupedCoverList<T>({
+  children,
+  groupedValues,
+  groupItemClassName,
+  onShowMore,
+  totalCount,
+  visibleCount,
+  ...rest
+}: {
+  children: (item: T) => React.ReactNode;
+  groupedValues: Map<string, Iterable<T>>;
+  groupItemClassName?: string;
+  onShowMore?: () => void;
+  totalCount: number;
+  visibleCount: number;
+}): React.JSX.Element {
+  return (
+    <>
+      <ol data-testid="grouped-cover-list" {...rest}>
+        {[...groupedValues].map((groupedValue) => {
+          const [group, groupValues] = groupedValue;
+          return (
+            <GroupingListItem
+              className={groupItemClassName}
+              groupText={group}
+              key={group}
+            >
+              {" "}
+              <div className="tablet:-mx-6">
+                <CoverList>
+                  {[...groupValues].map((value) => children(value))}
+                </CoverList>
+              </div>
+            </GroupingListItem>
+          );
+        })}
+      </ol>
+      {onShowMore && (
+        <div className="flex flex-col items-center px-container py-10">
+          {totalCount > visibleCount && (
+            <button
+              className={`
+                mx-auto w-full max-w-button bg-canvas py-5 text-center font-sans
+                text-xs font-semibold tracking-wide uppercase shadow-all
+                hover:bg-footer hover:text-inverse
+              `}
+              onClick={onShowMore}
+              type="button"
+            >
+              Show More
+            </button>
+          )}
+        </div>
+      )}
+    </>
+  );
+}
+
+function CoverListItemCover({
   className,
   imageConfig = CoverListItemImageConfig,
   imageProps,
@@ -87,7 +149,7 @@ export function CoverListItemCover({
   className?: string;
   imageConfig?: CoverListItemImageConfigType;
   imageProps: CoverImageProps;
-}) {
+}): React.JSX.Element {
   return (
     <div
       className={`
@@ -124,7 +186,9 @@ export function CoverListItemCover({
             alt=""
             {...imageConfig}
             className={`
-              rounded-[2.5px] bg-default shadow-sm
+              transform-gpu rounded-[2.5px] bg-default shadow-sm
+              transition-transform duration-500
+              group-has-[a:hover]/list-item:scale-105
               @min-[160px]:shadow-lg
             `}
             decoding="async"
@@ -133,53 +197,5 @@ export function CoverListItemCover({
         </div>
       </div>
     </div>
-  );
-}
-
-export function GroupedCoverList<T>({
-  children,
-  groupedValues,
-  groupItemClassName,
-  onShowMore,
-  totalCount,
-  visibleCount,
-  ...rest
-}: {
-  children: (item: T) => React.ReactNode;
-  groupedValues: Map<string, Iterable<T>>;
-  groupItemClassName?: string;
-  onShowMore?: () => void;
-  totalCount: number;
-  visibleCount: number;
-}): JSX.Element {
-  return (
-    <>
-      <ol data-testid="grouped-cover-list" {...rest}>
-        {[...groupedValues].map((groupedValue) => {
-          const [group, groupValues] = groupedValue;
-          return (
-            <GroupingListItem
-              className={groupItemClassName}
-              groupText={group}
-              key={group}
-            >
-              {" "}
-              <div className="tablet:-mx-6">
-                <CoverList>
-                  {[...groupValues].map((value) => children(value))}
-                </CoverList>
-              </div>
-            </GroupingListItem>
-          );
-        })}
-      </ol>
-      {onShowMore && (
-        <div className="flex flex-col items-center px-container py-10">
-          {totalCount > visibleCount && (
-            <Button onClick={onShowMore}>Show More</Button>
-          )}
-        </div>
-      )}
-    </>
   );
 }

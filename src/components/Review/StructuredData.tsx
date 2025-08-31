@@ -4,26 +4,11 @@ type Props = Pick<ReviewWithContent, "grade" | "title"> & {
   coverImgSrc: string;
 };
 
-export function StructuredData({ coverImgSrc, grade, title }: Props) {
-  const structuredData = buildStructuredData(title, grade, coverImgSrc);
-
-  if (!structuredData) {
-    return false;
-  }
-
-  return (
-    <script
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      type="application/ld+json"
-    />
-  );
-}
-
-function buildStructuredData(
-  title: Props["title"],
-  grade: Props["grade"],
-  imageSrc: Props["coverImgSrc"],
-) {
+export function StructuredData({
+  coverImgSrc,
+  grade,
+  title,
+}: Props): false | React.JSX.Element {
   if (grade == "Abandoned") {
     return false;
   }
@@ -36,7 +21,7 @@ function buildStructuredData(
     F: 1,
   };
 
-  return {
+  const structuredData = {
     "@context": "http://schema.org",
     "@type": "Review",
     author: {
@@ -45,7 +30,7 @@ function buildStructuredData(
     },
     itemReviewed: {
       "@type": "Book",
-      image: imageSrc,
+      image: coverImgSrc,
       name: title,
     },
     reviewRating: {
@@ -53,4 +38,11 @@ function buildStructuredData(
       ratingValue: gradeMap[grade[0]],
     },
   };
+
+  return (
+    <script
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      type="application/ld+json"
+    />
+  );
 }

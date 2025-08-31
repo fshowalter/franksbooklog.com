@@ -58,7 +58,7 @@ exports[`Home > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/"
@@ -79,7 +79,7 @@ exports[`Home > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/how-i-grade/"
@@ -100,7 +100,7 @@ exports[`Home > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/reviews/"
@@ -121,7 +121,7 @@ exports[`Home > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/authors/"
@@ -142,7 +142,7 @@ exports[`Home > matches snapshot 1`] = `
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         "
                   href="/readings/"
@@ -237,10 +237,8 @@ exports[`Home > matches snapshot 1`] = `
           <nav
             aria-label="Main navigation"
           >
-            <ol
+            <div
               class="
-        flex w-full flex-col gap-y-6
-        
             invisible fixed top-0 right-0 h-full w-0
             transform-[translateX(100%)] overflow-hidden bg-canvas text-left
             text-default opacity-0 duration-200 ease-in-out
@@ -254,137 +252,148 @@ exports[`Home > matches snapshot 1`] = `
             [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
             [body.nav-open_&]:drop-shadow-2xl [body.nav-open_&]:tablet:px-10
             [body.nav-open_&]:tablet:pt-40 [body.nav-open_&]:laptop:px-20
-          
-      "
+          "
               data-nav-menu="true"
               id="nav-menu"
             >
-              <li
-                class="
+              <ol
+                class="flex flex-col gap-y-6"
+              >
+                <li
+                  class="
         block w-1/2 text-2xl whitespace-nowrap
         laptop:w-full
       "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/"
                 >
-                  Home
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/how-i-grade/"
-                >
-                  How I Grade
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/reviews/"
-                >
-                  Reviews
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/authors/"
-                >
-                  Authors
-                </a>
-              </li>
-              <li
-                class="
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      "
-              >
-                <a
-                  class="
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
-          hover:text-accent hover:after:scale-x-100
-        "
-                  href="/readings/"
-                >
-                  Reading Log
-                </a>
-                <ol
-                  class="mt-4"
-                >
-                  <li
+                  <a
                     class="
-              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
-              uppercase
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="
+        block w-1/2 text-2xl whitespace-nowrap
+        laptop:w-full
+      "
+                >
+                  <a
+                    class="
+          relative inline-block origin-left transform-gpu transition-all
+          duration-500
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:text-accent hover:after:scale-x-100
+        "
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="
+              mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
+              text-subtle uppercase
               last:-mb-1
             "
-                  >
-                    <a
-                      class="
+                    >
+                      <a
+                        class="
                 relative inline-block origin-left transform-gpu pb-1
-                transition-all
+                transition-all duration-500
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-accent after:transition-transform
+                after:bg-accent after:transition-transform after:duration-500
                 hover:text-accent hover:after:scale-x-100
               "
-                      href="/readings/stats/"
-                    >
-                      Stats
-                    </a>
-                  </li>
-                </ol>
-              </li>
-            </ol>
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
           </nav>
         </div>
       </header>
       <main
-        class="grow bg-subtle pb-8"
+        class="
+            grow
+            bg-subtle pb-8
+          "
         id="content"
       >
         <header
@@ -449,7 +458,10 @@ exports[`Home > matches snapshot 1`] = `
         "
         >
           <h2
-            class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+            class="
+        py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase
+        
+      "
           >
             Latest Reviews
           </h2>
@@ -463,9 +475,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -526,7 +538,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -541,8 +557,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -556,7 +572,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -595,7 +611,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       Two families go camping in the California mountains. They cross paths with a backwoods witch and her murderous son. They kill the son and escape but not before the old woman puts a curse on them. The families return home, eager to put the horrific trip behind them, but strange things start happening. Small things at first. One slips in the shower. Another gets cramps in both legs while swimming in the pool. But soon, the coincidences begin to pile up. People end up in the hospital. Or worse. Soon, the remaining unharmed members travel back to the mountains to deal with the witch and remove the curse.
@@ -608,9 +627,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -671,7 +690,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -686,8 +709,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -701,7 +724,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -740,7 +763,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       Two collegiate girls stop at a roadside diner in a small town in the California wilderness. Across the street at the town’s lone motel, Lander Dills pulls in with his wife, their collegiate daughter and her boyfriend. All six soon discover the town’s dark secret when they’re abducted and ferried out to the wilderness as tribute to the Krulls, a clan of cannibalistic forest denizens.
@@ -753,9 +779,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -816,7 +842,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -831,8 +861,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -846,7 +876,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -885,7 +915,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming.
@@ -898,9 +931,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -961,7 +994,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -976,8 +1013,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -991,7 +1028,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1030,7 +1067,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends.
@@ -1043,9 +1083,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1106,7 +1146,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -1121,8 +1165,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -1136,7 +1180,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1175,7 +1219,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       An immersive epic that celebrates—but never sugar-coats—its subject.
@@ -1188,9 +1235,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1251,7 +1298,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -1266,8 +1317,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -1281,7 +1332,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1320,7 +1371,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       At the Santa Monica pier, Doreen rides alone on the merry-go-round until a handsome young man named Ron takes an interest. Despite her warnings that anyone who gets close to her ends up dead, Ron persists, convincing her to let him win her a stuffed animal at the carnival games. As he tries, she flees and hides beneath the pier. There, a vagrant assaults her. Ron comes to her rescue—only to reveal that the attacker is the least of his problems.
@@ -1333,9 +1387,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1396,7 +1450,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -1411,8 +1469,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -1426,7 +1484,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1465,7 +1523,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       The sound of breaking glass wakes Goldie. It’s dark. She hears footsteps in the hall. Heavy breathing. Someone’s in the house.
@@ -1478,9 +1539,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1541,7 +1602,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -1556,8 +1621,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -1571,7 +1636,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1610,7 +1675,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       <strong>
@@ -1626,9 +1694,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1689,7 +1757,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -1704,8 +1776,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -1719,7 +1791,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1758,7 +1830,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       Tom receives a frantic pre-dawn call from long-time friend Marcus. Arriving at Marcus’s apartment, Tom discovers a surreal horror. Fracassi’s 
@@ -1775,9 +1850,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1838,7 +1913,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -1853,8 +1932,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -1868,7 +1947,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -1907,7 +1986,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       <strong>
@@ -1931,9 +2013,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -1994,7 +2076,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -2009,8 +2095,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -2024,7 +2110,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -2063,7 +2149,10 @@ exports[`Home > matches snapshot 1`] = `
                     </picture>
                   </div>
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?
@@ -2076,9 +2165,9 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       "
             >
               <div
@@ -2139,7 +2228,11 @@ exports[`Home > matches snapshot 1`] = `
                       >
                         <img
                           alt=""
-                          class="rounded-[2.5px] bg-default"
+                          class="
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  "
                           decoding="async"
                           height="372"
                           loading="lazy"
@@ -2154,8 +2247,8 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <div
                   class="
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           "
                 >
                   <div
@@ -2169,7 +2262,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <a
                     class="
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -2194,7 +2287,10 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div />
                   <div
-                    class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                    class="
+        rendered-markdown
+        mb-6 text-lg leading-normal tracking-prose text-muted
+      "
                   >
                     <p>
                       My 
@@ -2231,7 +2327,7 @@ exports[`Home > matches snapshot 1`] = `
                 after:absolute after:bottom-0 after:left-0 after:h-0.5
                 after:w-full after:origin-center after:scale-x-0
                 after:transform-gpu after:bg-(--fg-inverse)
-                after:transition-transform
+                after:transition-transform after:duration-500
                 group-hover/all-reviews:after:scale-x-100
               "
               >
@@ -2407,10 +2503,7 @@ exports[`Home > matches snapshot 1`] = `
             "
             >
               <ol
-                class="
-        flex w-full flex-col gap-y-6
-        desktop:w-auto
-      "
+                class="flex flex-col gap-y-6"
               >
                 <li
                   class="
@@ -2421,9 +2514,10 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/"
@@ -2440,9 +2534,10 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/how-i-grade/"
@@ -2459,9 +2554,10 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/reviews/"
@@ -2478,9 +2574,10 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/authors/"
@@ -2497,9 +2594,10 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
           relative inline-block origin-left transform-gpu transition-all
+          duration-500
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-accent
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:text-accent hover:after:scale-x-100
         "
                     href="/readings/"
@@ -2511,18 +2609,18 @@ exports[`Home > matches snapshot 1`] = `
                   >
                     <li
                       class="
-              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
-              uppercase
+              mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
+              text-subtle uppercase
               last:-mb-1
             "
                     >
                       <a
                         class="
                 relative inline-block origin-left transform-gpu pb-1
-                transition-all
+                transition-all duration-500
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-accent after:transition-transform
+                after:bg-accent after:transition-transform after:duration-500
                 hover:text-accent hover:after:scale-x-100
               "
                         href="/readings/stats/"
@@ -2546,7 +2644,7 @@ exports[`Home > matches snapshot 1`] = `
           <a
             class="
             relative inline-block pr-4 text-inherit underline underline-offset-3
-            hover:bg-default hover:text-accent
+            hover:text-accent
           "
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"

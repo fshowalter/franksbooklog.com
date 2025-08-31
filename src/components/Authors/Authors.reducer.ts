@@ -1,37 +1,53 @@
-import type { CollectionsFilterActionType } from "~/components/ListWithFilters/collectionsReducerUtils";
 import type {
-  ListWithFiltersActionType,
-  ListWithFiltersState,
-} from "~/components/ListWithFilters/reducerUtils";
+  CollectionsActionType,
+  CollectionsListState,
+  CollectionsSortType,
+} from "~/components/ListWithFilters/collectionsReducerUtils";
+import type { ListWithFiltersActionType } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 
 import {
-  CollectionsFilterActions,
+  CollectionsActions,
+  createCollectionGroupForValue,
   handleNameFilterAction,
   sortName,
   sortReviewCount,
 } from "~/components/ListWithFilters/collectionsReducerUtils";
 import {
-  buildGroupValues,
-  buildSortValues,
   createInitialState,
-  getGroupLetter,
   handleListWithFiltersAction,
   ListWithFiltersActions,
-} from "~/components/ListWithFilters/reducerUtils";
+} from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
+import {
+  buildGroupValues,
+  buildSortValues,
+} from "~/components/utils/reducerUtils";
 
 import type { ListItemValue } from "./Authors";
 
+export const Actions = {
+  ...ListWithFiltersActions,
+  ...CollectionsActions,
+} as const;
+
 export type ActionType =
-  | CollectionsFilterActionType
+  | CollectionsActionType<Sort>
   | ListWithFiltersActionType<Sort>;
 
-export type Sort =
-  | "name-asc"
-  | "name-desc"
-  | "review-count-asc"
-  | "review-count-desc";
+export type Sort = CollectionsSortType;
 
-type State = ListWithFiltersState<ListItemValue, Sort>;
+type State = CollectionsListState<ListItemValue, Sort>;
+
+const groupForValue = createCollectionGroupForValue<
+  ListItemValue,
+  CollectionsSortType
+>();
+
+const sortValues = buildSortValues<ListItemValue, Sort>({
+  ...sortName<ListItemValue>(),
+  ...sortReviewCount<ListItemValue>(),
+});
+
+const groupValues = buildGroupValues(groupForValue);
 
 export function initState({
   initialSort,
@@ -43,20 +59,16 @@ export function initState({
   return createInitialState({
     groupFn: groupValues,
     initialSort,
+    showCount: undefined, // CastAndCrew doesn't paginate
     sortFn: sortValues,
     values,
-  });
+  }) as State;
 }
-
-const sortValues = buildSortValues<ListItemValue, Sort>({
-  ...sortName<ListItemValue>(),
-  ...sortReviewCount<ListItemValue>(),
-});
 
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
     // Field-specific shared filter
-    case CollectionsFilterActions.PENDING_FILTER_NAME: {
+    case CollectionsActions.PENDING_FILTER_NAME: {
       return handleNameFilterAction(state, action);
     }
 
@@ -69,26 +81,3 @@ export function reducer(state: State, action: ActionType): State {
     }
   }
 }
-
-const groupValues = buildGroupValues(groupForValue);
-
-// Helper functions
-function groupForValue(item: ListItemValue, sortValue: Sort): string {
-  switch (sortValue) {
-    case "name-asc":
-    case "name-desc": {
-      return getGroupLetter(item.sortName);
-    }
-    case "review-count-asc":
-    case "review-count-desc": {
-      return "";
-    }
-    // no default
-  }
-}
-
-// Re-export shared actions for component convenience
-export const Actions = {
-  ...ListWithFiltersActions,
-  ...CollectionsFilterActions,
-} as const;

@@ -14,7 +14,7 @@ const gradeMap: Record<string, [string, string]> = {
   F: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
 
-export function fileForGrade(value: string) {
+export function fileForGrade(value: string): string | undefined {
   if (!value || value == "Abandoned") {
     return;
   }
@@ -32,9 +32,9 @@ export function Grade({
   className?: string;
   height: 15 | 16 | 18 | 24 | 32;
   value?: string;
-}) {
+}): false | React.JSX.Element {
   if (!value || value == "Abandoned") {
-    return;
+    return false;
   }
 
   const [src, alt] = gradeMap[value];

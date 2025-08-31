@@ -15,15 +15,13 @@
   --z-index-search-backdrop: 50;
   --z-index-watchlist-overlay: 60;
   --z-index-filter-drawer: 80;
-  --z-index-mast-backdrop: 90;
   --z-index-search-button: 1000;
 
   --background-color-*: initial;
   --background-color-abandoned: var(--bg-abandoned);
   --background-color-accent: var(--bg-accent);
-  --background-color-button: var(--bg-button);
   --background-color-canvas: var(--bg-canvas);
-  --background-color-cover-back: var(--bg-cover);
+  --background-color-calendar: var(--bg-calendar);
   --background-color-default: var(--bg-default);
   --background-color-footer: var(--bg-footer);
   --background-color-group: var(--bg-group);
@@ -31,8 +29,6 @@
   --background-color-inverse: var(--bg-inverse);
   --background-color-stripe: var(--bg-stripe);
   --background-color-subtle: var(--bg-subtle);
-  --background-color-unreviewed: var(--bg-unreviewed);
-  --background-color-unset: unset;
 
   --border-color-*: initial;
   --border-color-default: var(--border-default);
@@ -40,14 +36,11 @@
   --color-*: initial;
   --color-accent: var(--fg-accent);
   --color-border: var(--border-default);
-  --color-border-accent: var(--border-accent);
   --color-default: var(--fg-default);
-  --color-emphasis: var(--fg-emphasis);
   --color-inherit: inherit;
   --color-inverse: var(--fg-inverse);
   --color-inverse-subtle: var(--fg-inverse-subtle);
   --color-muted: var(--fg-muted);
-  --color-progress: var(--fg-progress);
   --color-subtle: var(--fg-subtle);
 
   --tracking-*: initial;
@@ -64,12 +57,14 @@
   --breakpoint-laptop: 1280px;
   --breakpoint-desktop: 1696px;
 
+  --aspect-poster: 1 / 1.5;
+
   --shadow-all: 0 0 0 1px var(--border-default);
   --shadow-bottom: 0px 1px var(--border-default);
   --shadow-hover: 0 0 1px 1px var(--border-default);
 
-  --font-sans: "Assistant";
-  --font-serif: "FrankRuhlLibre";
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 
   --text-2_5xl: 1.625rem;
   --text-md: 1.125rem;
@@ -77,53 +72,58 @@
   --text-xxs: 0.6875rem;
 
   --container-button: 430px;
-  --container-popout: calc(64px + var(--max-width-prose));
-  --container-prose: var(--max-width-prose);
+  --container-popout: calc(64px + 39rem);
+  --container-prose: 39rem;
   --container-unset: unset;
 
   --padding-container: var(--container-padding);
-  --max-width-prose: 36rem;
+  --max-width-prose: 39rem;
 
   --width-list-item-cover: var(--list-item-cover-width);
 }
 
 @layer base {
   :root {
-    --bg-abandoned: #da0101;
-    --bg-accent: #00635d;
-    --bg-avatar-default: #ededed;
+    --bg-calendar: #fbfaf8;
+    --bg-accent: #b4841e;
     --bg-canvas: #f4f1ea;
-    --bg-cover: rgb(10 10 10);
-    --bg-default-alpha: 0.4;
-    --bg-default-rgb: 255, 255, 255;
     --bg-default: #fff;
-    --bg-footer: #333;
-    --bg-group: #f7f5f3;
+    --bg-footer: #2b292b;
     --bg-hover: #f7f5f3;
     --bg-inverse: rgb(0 0 0 / 75%);
     --bg-progress: #14bd41;
-    --bg-stripe: #f7f5f3;
+    --bg-stripe: #fcfcfc;
+    --bg-group: #ededed;
     --bg-subtle: #f9f7f4;
-    --bg-button: #bbaf9e;
-    --bg-unreviewed: #fefefe;
-    --border-accent: #054a93;
+
     --border-default: #e9e7e0;
-    --container-padding: 8%;
-    --fg-accent: #00635d;
+    --fg-accent: #bf8a00;
     --fg-default: #252525;
-    --fg-emphasis: rgb(0 0 0 / 95%);
-    --fg-inverse-subtle: #b0b0b0;
     --fg-inverse: #fff;
-    --fg-muted: rgb(0 0 0 / 72%);
+    --fg-inverse-subtle: #b0b0b0;
+    --fg-muted: #4a4a4a;
     --fg-subtle: rgb(0 0 0 / 60%);
-
-    --gutter-width: 20px;
-    --header-offset: 0;
     --image-filter: initial;
-    --list-item-cover-width: 64px;
-    --search-dialog-padding: 8%;
+    --container-padding: 8%;
+    --font-sans: "Assistant";
+    --font-serif: "FrankRuhlLibre";
+    --list-item-poster-width: 64px;
+    --hero-gradient: linear-gradient(
+      to top,
+      rgb(0 0 0 / 55%),
+      rgb(0 0 0 / 17%) 25%,
+      transparent 40%,
+      rgb(0 0 0 / 17%) 75%,
+      rgb(0 0 0 / 55%) 100%
+    );
+    --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 15%);
+    --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 12%);
+    --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 15%);
+    --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 15%);
 
-    text-size-adjust: none;
+    --bg-default-rgb: 255, 255, 255;
+    --bg-default-alpha: 0.4;
+    --bg-abandoned: #c02b30;
   }
 
   body {
@@ -141,31 +141,40 @@
     filter: var(--image-filter);
   }
 
+  @media (prefers-contrast: more) {
+    :root {
+      --fg-accent: #986d00;
+    }
+  }
+
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg-accent: #a52422;
-      --bg-avatar-default: #252525;
+      --bg-calendar: #393938;
+      --bg-accent: #aa7f33;
       --bg-canvas: #484745;
-      --bg-default-alpha: 0.5;
-      --bg-default-rgb: 50, 47, 47;
       --bg-default: #322f2f;
-      --bg-footer: #252525;
-      --bg-group: #3c393a;
       --bg-hover: #3c393a;
       --bg-inverse: #322f2f;
       --bg-progress: #379634;
+      --bg-group: #464646;
       --bg-stripe: #3c393a;
-      --bg-subtle: #373434;
-      --bg-unreviewed: #3c393a;
-      --border-accent: #499ef8;
+      --bg-subtle: #3e3d3c;
       --border-default: #484745;
-      --fg-accent: #c86666;
+      --fg-accent: #bf8a00;
       --fg-default: rgb(255 255 255 / 75%);
-      --fg-emphasis: rgb(255 255 255 / 95%);
-      --fg-inverse: #e6e6e6;
-      --fg-muted: rgb(255 255 255 / 72%);
-      --fg-subtle: rgb(255 255 255 / 70%);
+      --fg-muted: rgb(255 255 255 / 65%);
+      --fg-subtle: #b2b0b0;
+      --fg-inverse: rgb(255 255 255 / 85%);
       --image-filter: brightness(0.8) contrast(1);
+      --hero-gradient: unset;
+      --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 80%);
+      --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 80%);
+      --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 65%);
+      --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 25%);
+
+      --bg-default-rgb: 50, 47, 47;
+      --bg-default-alpha: 0.5;
+      --bg-abandoned: #952d30;
     }
   }
 
@@ -173,7 +182,6 @@
     :root {
       --container-padding: 48px;
       --list-item-cover-width: 76px;
-      --search-dialog-padding: 24px;
     }
   }
 
@@ -181,7 +189,6 @@
     :root {
       --container-padding: 80px;
       --list-item-cover-width: 80px;
-      --search-dialog-padding: 32px;
     }
   }
 
@@ -194,11 +201,17 @@
   }
 
   @font-face {
+    font-family: Assistant;
+    src: url("/fonts/Assistant/AssistantSymbols.woff2") format("woff2");
+    unicode-range: U+21A9; /* Only for the arrow */
+  }
+
+  @font-face {
     font-display: swap;
     font-family: FrankRuhlLibre;
     font-style: normal;
     font-weight: 300 900;
-    src: url("/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre_latin_300 900_normal.woff2")
+    src: url("/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre_latin_300-900_normal.woff2")
       format("woff2");
     unicode-range:
       U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -391,12 +404,38 @@
   .rendered-markdown {
     a {
       text-decoration: underline;
+      text-decoration-thickness: 1px;
       transition: all 150ms ease-out;
     }
 
     sup a,
     .data-footnote-backref {
       color: var(--fg-accent);
+      text-decoration-thickness: auto;
+    }
+
+    .data-footnote-backref {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .data-footnote-backref::after {
+      background-color: var(--bg-accent);
+      bottom: 1px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      transform: scale(0, 1);
+      transform-origin: center;
+      transition: all;
+      transition-duration: 500ms;
+      width: 100%;
+    }
+
+    .data-footnote-backref:hover::after {
+      transform: scale(1, 1);
     }
 
     sup a {
@@ -413,6 +452,13 @@
       transition: all 80ms ease-in;
     }
 
+    sup a:hover {
+      background-color: var(--bg-accent);
+      border-color: transparent;
+      color: var(--fg-inverse);
+      filter: drop-shadow(0 1px 2px rgb(0 0 0 / 15%));
+    }
+
     sup {
       display: inline-block;
     }
@@ -420,10 +466,7 @@
     sup:hover {
       transform: scale(1.1);
       transition: all;
-    }
-
-    sup a:hover {
-      border-color: var(--fg-accent);
+      transition-duration: 500ms;
     }
 
     p {
@@ -516,9 +559,9 @@
 
       li {
         font-family: var(--font-sans);
-        font-size: 0.875rem;
-        font-weight: 300;
-        line-height: 1.25rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5rem;
       }
 
       li::before {

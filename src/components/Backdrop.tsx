@@ -17,7 +17,7 @@ export function AvatarBackdrop({
   breadcrumb?: React.ReactNode;
   deck: React.ReactNode;
   name: string;
-}) {
+}): React.JSX.Element {
   const heroImage = (
     <img
       className={`
@@ -82,7 +82,7 @@ export function Backdrop({
   size?: "default" | "large";
   title: string;
   titleClasses?: string;
-}) {
+}): React.JSX.Element {
   const heroImage = (
     <img
       className={`absolute inset-0 size-full object-cover object-top`}
@@ -114,14 +114,15 @@ export function BreadcrumbLink({
 }: {
   children: React.ReactNode;
   href: string;
-}) {
+}): React.JSX.Element {
   return (
     <a
       className={`
-        relative inline-block font-sans text-sm tracking-wide uppercase
+        relative inline-block font-sans text-sm font-bold tracking-wide
+        text-[#fff]/85 uppercase
         after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
         after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75
-        after:transition-transform
+        after:transition-transform after:duration-500
         hover:after:scale-x-100
       `}
       href={href}
@@ -131,7 +132,11 @@ export function BreadcrumbLink({
   );
 }
 
-function Breadcrumb({ value }: { value?: React.ReactNode }) {
+function Breadcrumb({
+  value,
+}: {
+  value?: React.ReactNode;
+}): false | React.JSX.Element {
   if (!value) {
     return false;
   }
@@ -146,12 +151,8 @@ function Deck({
 }: {
   center?: boolean;
   shadow: boolean;
-  value?: React.ReactNode;
-}) {
-  if (!value) {
-    return false;
-  }
-
+  value: React.ReactNode;
+}): React.JSX.Element {
   return (
     <p
       className={`
@@ -174,7 +175,7 @@ function Title({
   center?: boolean;
   className?: string;
   value: string;
-}) {
+}): React.JSX.Element {
   return (
     <h1
       className={
@@ -206,7 +207,7 @@ function Wrapper({
   children: React.ReactNode;
   heroImage?: React.ReactNode;
   size?: "default" | "large" | "small";
-}) {
+}): React.JSX.Element {
   const defaultSizes =
     "min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)]";
 

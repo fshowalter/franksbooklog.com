@@ -1,20 +1,10 @@
-import { GradeInput } from "~/components/GradeInput";
-import { SelectField } from "~/components/SelectField";
-import { SelectOptions } from "~/components/SelectOptions";
-import { TextFilter } from "~/components/TextFilter";
-import { YearInput } from "~/components/YearInput";
+import type { WorkFilterValues } from "~/components/ListWithFilters/worksReducerUtils";
+
+import { WorkFilters } from "~/components/WorkFilters";
 
 import type { ActionType } from "./Author.reducer";
 
 import { Actions } from "./Author.reducer";
-
-type FilterValues = {
-  grade?: [number, number];
-  kind?: string;
-  reviewYear?: [string, string];
-  title?: string;
-  workYear?: [string, string];
-};
 
 export function Filters({
   dispatch,
@@ -27,52 +17,39 @@ export function Filters({
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
   distinctWorkYears: readonly string[];
-  filterValues: FilterValues;
-}) {
+  filterValues: WorkFilterValues;
+}): React.JSX.Element {
   return (
-    <>
-      <TextFilter
-        initialValue={filterValues.title || ""}
-        label="Title"
-        onInputChange={(value) =>
-          dispatch({ type: Actions.PENDING_FILTER_TITLE, value })
-        }
-        placeholder="Enter all or part of a title"
-      />
-      <YearInput
-        label="Work Year"
-        onYearChange={(values) =>
-          dispatch({ type: Actions.PENDING_FILTER_WORK_YEAR, values })
-        }
-        years={distinctWorkYears}
-      />
-      <YearInput
-        label="Review Year"
-        onYearChange={(values) =>
-          dispatch({ type: Actions.PENDING_FILTER_REVIEW_YEAR, values })
-        }
-        years={distinctReviewYears}
-      />
-      <GradeInput
-        label="Grade"
-        onGradeChange={(values) =>
-          dispatch({
-            type: Actions.PENDING_FILTER_GRADE,
-            values,
-          })
-        }
-      />
-      <SelectField
-        label="Kind"
-        onChange={(e) =>
-          dispatch({
-            type: Actions.PENDING_FILTER_KIND,
-            value: e.target.value,
-          })
-        }
-      >
-        <SelectOptions options={distinctKinds} />
-      </SelectField>
-    </>
+    <WorkFilters
+      grade={{
+        initialValue: filterValues.grade,
+        onChange: (values) =>
+          dispatch({ type: Actions.PENDING_FILTER_GRADE, values }),
+      }}
+      kind={{
+        initialValue: filterValues.kind,
+        onChange: (value) =>
+          dispatch({ type: Actions.PENDING_FILTER_KIND, value }),
+        values: distinctKinds,
+      }}
+      reviewYear={{
+        initialValue: filterValues.reviewYear,
+        onChange: (values) =>
+          dispatch({ type: Actions.PENDING_FILTER_REVIEW_YEAR, values }),
+        values: distinctReviewYears,
+      }}
+      title={{
+        initialValue: filterValues.title,
+        onChange: (value) =>
+          dispatch({ type: Actions.PENDING_FILTER_TITLE, value }),
+      }}
+      workYear={{
+        initialValue: filterValues.workYear,
+        onChange: (values) =>
+          dispatch({ type: Actions.PENDING_FILTER_WORK_YEAR, values }),
+
+        values: distinctWorkYears,
+      }}
+    />
   );
 }

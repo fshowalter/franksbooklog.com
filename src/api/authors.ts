@@ -1,7 +1,7 @@
 import { ENABLE_CACHE } from "~/utils/cache";
+import { perfLogger } from "~/utils/performanceLogger";
 
 import { allAuthorsJson, type AuthorJson } from "./data/authorsJson";
-import { perfLogger } from "./data/utils/performanceLogger";
 export type Author = AuthorJson & {};
 
 type AuthorDetails = {

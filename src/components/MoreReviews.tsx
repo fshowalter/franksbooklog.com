@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithExcerpt } from "~/api/reviews";
 
@@ -32,7 +30,7 @@ export function MoreReviews({
 }: {
   children: React.ReactNode;
   values: MoreReviewsValue[];
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <nav
       className={`

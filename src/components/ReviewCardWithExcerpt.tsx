@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { CoverImageProps } from "~/api/covers";
 import type { ReviewWithExcerpt } from "~/api/reviews";
 
@@ -33,15 +31,15 @@ export function ReviewCardWithExcerpt({
   value,
 }: {
   value: ReviewCardWithExcerptReview;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <li
       className={`
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
-        tablet-landscape:has-[a:hover]:-translate-y-2
+        duration-500
+        tablet-landscape:has-[a:hover]:scale-105
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
-        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       `}
     >
       <div
@@ -107,7 +105,11 @@ export function ReviewCardWithExcerpt({
                   {...value.coverImageProps}
                   alt=""
                   {...CoverImageConfig}
-                  className={`rounded-[2.5px] bg-default`}
+                  className={`
+                    transform-gpu rounded-[2.5px] bg-default
+                    transition-transform duration-500
+                    group-has-[a:hover]/list-item:scale-105
+                  `}
                   decoding="async"
                   loading="lazy"
                 />
@@ -118,8 +120,8 @@ export function ReviewCardWithExcerpt({
 
         <div
           className={`
-            row-start-2 mt-4 flex flex-col gap-y-2
-            @min-[500px]/card:mt-0
+            row-start-2 mt-4 flex flex-col gap-y-2 px-[8%]
+            @min-[500px]/card:mt-0 @min-[500px]/card:px-0
           `}
         >
           {value.reviewDate && (
@@ -135,7 +137,7 @@ export function ReviewCardWithExcerpt({
           )}
           <a
             className={`
-              block text-2xl font-medium transition-colors
+              block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
               hover:text-accent hover:before:opacity-0
@@ -171,7 +173,7 @@ export function ReviewCardWithExcerpt({
   );
 }
 
-function formatDate(reviewDate: string) {
+function formatDate(reviewDate: string): string {
   return new Date(reviewDate).toLocaleString("en-GB", {
     day: "2-digit",
     month: "short",

@@ -1,4 +1,3 @@
-import type { JSX, ReactElement } from "react";
 import type { Font } from "satori";
 
 import fs from "node:fs/promises";
@@ -29,7 +28,7 @@ type OpenGraphImageComponent =
   | OpenGraphImageComponentType
   | ReviewOpenGraphImageComponentType;
 
-type ReactElementWithType = ReactElement & {
+type ReactElementWithType = React.ReactElement & {
   $$typeof?: symbol;
   props: {
     [key: string]: unknown;
@@ -45,7 +44,11 @@ export async function componentToImage(
   if (!cacheConfig.enableCache) {
     const svg = await componentToSvg(component);
     return (await sharp(Buffer.from(svg))
-      .jpeg()
+      .jpeg({
+        mozjpeg: false,
+        progressive: false,
+        quality: 90,
+      })
       .toBuffer()) as Uint8Array<ArrayBuffer>;
   }
 
@@ -99,43 +102,38 @@ async function getFontData() {
   }
 
   const [
-    frankRuhlLibre,
     frankRuhlLibreExtraBold,
-    assistantRegular,
-    assistantSemiBold,
+    frankRuhlLibreSemiBold,
+    frankRuhlLibreRegular,
     assistantBold,
-    assistantExtraBold,
+    assistantSemiBold,
   ] = await Promise.all([
-    fs.readFile("./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf"),
     fs.readFile(
       "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-ExtraBold.ttf",
     ),
-    fs.readFile("./public/fonts/Assistant/Assistant-Regular.ttf"),
-    fs.readFile("./public/fonts/Assistant/Assistant-SemiBold.ttf"),
+    fs.readFile(
+      "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-SemiBold.ttf",
+    ),
+    fs.readFile("./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf"),
     fs.readFile("./public/fonts/Assistant/Assistant-Bold.ttf"),
-    fs.readFile("./public/fonts/Assistant/Assistant-ExtraBold.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-SemiBold.ttf"),
   ]);
 
   fontDataCache = [
-    {
-      data: frankRuhlLibre.buffer as ArrayBuffer,
-      name: "FrankRuhlLibre",
-      weight: 400,
-    },
     {
       data: frankRuhlLibreExtraBold.buffer as ArrayBuffer,
       name: "FrankRuhlLibre",
       weight: 800,
     },
     {
-      data: assistantRegular.buffer as ArrayBuffer,
-      name: "Assistant",
-      weight: 400,
+      data: frankRuhlLibreSemiBold.buffer as ArrayBuffer,
+      name: "FrankRuhlLibre",
+      weight: 600,
     },
     {
-      data: assistantSemiBold.buffer as ArrayBuffer,
-      name: "Assistant",
-      weight: 600,
+      data: frankRuhlLibreRegular.buffer as ArrayBuffer,
+      name: "FrankRuhlLibre",
+      weight: 400,
     },
     {
       data: assistantBold.buffer as ArrayBuffer,
@@ -143,9 +141,9 @@ async function getFontData() {
       weight: 700,
     },
     {
-      data: assistantExtraBold.buffer as ArrayBuffer,
+      data: assistantSemiBold.buffer as ArrayBuffer,
       name: "Assistant",
-      weight: 800,
+      weight: 600,
     },
   ];
 
@@ -158,7 +156,7 @@ async function getFontData() {
  * AIDEV-NOTE: This function is only used for OG image caching and handles
  * the specific JSX structures used in OG images (HTML elements, strings, arrays).
  */
-function serializeJsx(element: JSX.Element): string {
+function serializeJsx(element: React.JSX.Element): string {
   // Handle primitive values (strings, numbers, booleans)
   if (
     typeof element !== "object" ||
@@ -170,7 +168,7 @@ function serializeJsx(element: JSX.Element): string {
 
   // Handle arrays
   if (Array.isArray(element)) {
-    return `[${element.map((item) => serializeJsx(item as JSX.Element)).join(",")}]`;
+    return `[${element.map((item) => serializeJsx(item as React.JSX.Element)).join(",")}]`;
   }
 
   // Handle React elements
@@ -198,7 +196,9 @@ function serializeJsx(element: JSX.Element): string {
 
   // Serialize children
   const children = reactElement.props?.children;
-  const childrenStr = children ? serializeJsx(children as JSX.Element) : "";
+  const childrenStr = children
+    ? serializeJsx(children as React.JSX.Element)
+    : "";
 
   // Combine into a stable string representation
   return `<${typeName}:${sortedPropsStr}>${childrenStr}</${typeName}>`;

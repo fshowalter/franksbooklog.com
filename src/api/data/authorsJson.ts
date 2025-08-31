@@ -1,9 +1,10 @@
 import { promises as fs } from "node:fs";
 import { z } from "zod";
 
+import { perfLogger } from "~/utils/performanceLogger";
+
 import { getContentPath } from "./utils/getContentPath";
 import { nullableString } from "./utils/nullable";
-import { perfLogger } from "./utils/performanceLogger";
 import { WorkKindSchema } from "./WorkKindSchema";
 
 const authorsJsonDirectory = getContentPath("data", "authors");

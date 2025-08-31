@@ -1,5 +1,3 @@
-import type { JSX, ReactNode } from "react";
-
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const DRAWER_CLOSE_ANIMATION_MS = 250;
@@ -9,7 +7,7 @@ type Props<T extends string> = {
   className?: string;
   dynamicSubNav?: React.ReactNode;
   filters: React.ReactNode;
-  hasActiveFilters?: boolean;
+  hasActiveFilters: boolean;
   list: React.ReactNode;
   listHeaderButtons?: React.ReactNode;
   onApplyFilters?: () => void;
@@ -34,11 +32,11 @@ export function ListHeaderButton({
 }: {
   href: string;
   text: string;
-}) {
+}): React.JSX.Element {
   return (
     <div
       className={`
-        flex items-start gap-x-4 bg-default px-4 font-sans text-sm font-bold
+        flex items-start gap-x-4 bg-default px-4 font-sans text-[13px] font-bold
         text-nowrap text-accent uppercase
       `}
     >
@@ -46,8 +44,8 @@ export function ListHeaderButton({
         className={`
           relative inline-block transform-gpu py-1 transition-transform
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-center after:scale-x-0 after:bg-(--fg-accent)
-          after:transition-transform
+          after:origin-center after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         `}
         href={href}
@@ -72,7 +70,7 @@ export function ListWithFilters<T extends string>({
   pendingFilteredCount,
   sortProps,
   totalCount,
-}: Props<T>): JSX.Element {
+}: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [isOpening, setIsOpening] = useState(false);
@@ -135,7 +133,7 @@ export function ListWithFilters<T extends string>({
 
   // Cleanup timeouts on unmount
   useEffect(() => {
-    return () => {
+    return (): void => {
       for (const timeoutId of timeoutRefs.current) clearTimeout(timeoutId);
       timeoutRefs.current.clear();
     };
@@ -143,7 +141,7 @@ export function ListWithFilters<T extends string>({
 
   // Handle escape key
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
+    const handleKeyDown = (e: KeyboardEvent): void => {
       if (e.key === "Escape" && filterDrawerVisible && !isClosing) {
         handleCloseDrawer();
         toggleButtonRef.current?.focus();
@@ -151,7 +149,7 @@ export function ListWithFilters<T extends string>({
     };
 
     document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
+    return (): void => document.removeEventListener("keydown", handleKeyDown);
   }, [filterDrawerVisible, handleCloseDrawer, isClosing]);
 
   // Scroll to top of list when sort changes
@@ -174,7 +172,7 @@ export function ListWithFilters<T extends string>({
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
-            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-sticky
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20
             scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
             border-default bg-default text-xs
             tablet:col-span-full
@@ -259,7 +257,7 @@ export function ListWithFilters<T extends string>({
                 className={`
                   absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
-                  bg-canvas text-default drop-shadow-md transition-transform
+                  bg-canvas text-default drop-shadow-sm transition-transform
                   hover:scale-105 hover:drop-shadow-md
                   ${isClosing ? "pointer-events-none" : ""}
                 `}
@@ -292,9 +290,9 @@ export function ListWithFilters<T extends string>({
               </button>
               <fieldset
                 className={`
-                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  mt-0 flex grow flex-col gap-5 px-container py-10
                   tablet:gap-8
-                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:grow-0 tablet-landscape:gap-10
                   tablet-landscape:px-12
                 `}
               >
@@ -310,8 +308,8 @@ export function ListWithFilters<T extends string>({
               </fieldset>
               <div
                 className={`
-                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
-                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  sticky bottom-0 z-filter-footer mt-auto w-full border-t
+                  border-t-default bg-default px-8 py-4 drop-shadow-2xl
                   tablet-landscape:px-12
                 `}
               >
@@ -329,7 +327,7 @@ export function ListWithFilters<T extends string>({
                           : "cursor-not-allowed text-muted opacity-50"
                       }
                     `}
-                    disabled={!hasActiveFilters}
+                    disabled={hasActiveFilters ? undefined : false}
                     onClick={() => {
                       if (hasActiveFilters) {
                         onClearFilters?.();
@@ -382,12 +380,12 @@ function ListHeader<T extends string>({
   totalCount,
 }: {
   filterDrawerVisible: boolean;
-  listHeaderButtons?: ReactNode;
+  listHeaderButtons?: React.ReactNode;
   onFilterClick: (event: React.MouseEvent) => void;
   sortProps: SortProps<T>;
   toggleButtonRef: React.RefObject<HTMLButtonElement | null>;
   totalCount: number;
-}): JSX.Element {
+}): React.JSX.Element {
   const { currentSortValue, onSortChange, sortOptions } = sortProps;
 
   return (
@@ -405,7 +403,7 @@ function ListHeader<T extends string>({
         <span className={`text-sm font-bold text-default`}>
           {totalCount.toLocaleString()}
         </span>
-        <span className="text-xs leading-none font-medium tracking-wide">
+        <span className="text-xs leading-none font-normal tracking-wide">
           {" "}
           Results
         </span>

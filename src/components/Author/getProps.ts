@@ -52,7 +52,7 @@ export async function getProps(slug: string): Promise<Props> {
     distinctKinds,
     distinctReviewYears,
     distinctWorkYears,
-    initialSort: "work-year-asc",
+    initialSort: "title-asc",
     name: author.name,
     values: works,
   };

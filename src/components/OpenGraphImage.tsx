@@ -1,8 +1,6 @@
-import type { JSX } from "react";
-
 export type OpenGraphImageComponentType = (
   props: OpenGraphImageProps,
-) => JSX.Element;
+) => React.JSX.Element;
 
 type OpenGraphImageProps = {
   backdrop: string;
@@ -14,11 +12,10 @@ export function OpenGraphImage({
   backdrop,
   sectionHead = "Frank's Book Log",
   title,
-}: OpenGraphImageProps): JSX.Element {
+}: OpenGraphImageProps): React.JSX.Element {
   return (
     <div
       style={{
-        backgroundColor: "#f2f0e8",
         display: "flex",
         height: "630px",
         position: "relative",
@@ -36,24 +33,26 @@ export function OpenGraphImage({
       <div
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0)) 20%",
+            "linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0,0,0,.2) 200px, rgba(0, 0, 0, 0) 300px, rgba(0, 0, 0, 0)",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
           paddingBottom: "64px",
           paddingLeft: "80px",
           paddingRight: "80px",
-          paddingTop: "32px",
+          paddingTop: "332px",
           position: "absolute",
           width: "1200px",
         }}
       >
         <div
           style={{
-            color: "#fafafa",
+            color: "#c29d52",
             fontFamily: "Assistant",
-            fontWeight: 700,
+            fontSize: "20px",
+            fontWeight: 800,
             marginBottom: "8px",
+            textShadow: "1px 1px 2px black",
             textTransform: "uppercase",
           }}
         >
@@ -68,7 +67,7 @@ export function OpenGraphImage({
             fontSize: "88px",
             fontWeight: 800,
             lineHeight: 1,
-            textShadow: "1px 1px 2px rgba(0,0,0,.25)",
+            textShadow: "1px 1px 2px black",
             textWrap: "balance",
           }}
         >

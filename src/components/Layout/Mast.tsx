@@ -1,4 +1,4 @@
-import type { JSX } from "react";
+import type React from "react";
 
 import type { NavItem } from "./navItems";
 
@@ -14,7 +14,7 @@ export function Mast({
   addGradient: boolean;
   hasBackdrop: boolean;
   hideLogo: boolean;
-}) {
+}): React.JSX.Element {
   return (
     <header
       className={`
@@ -68,7 +68,11 @@ export function Mast({
   );
 }
 
-function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
+function HamburgerMenu({
+  hasBackdrop,
+}: {
+  hasBackdrop: boolean;
+}): React.JSX.Element {
   return (
     <>
       <div
@@ -118,7 +122,7 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
         />
       </button>
       <nav aria-label="Main navigation">
-        <TableOfContents
+        <div
           className={`
             invisible fixed top-0 right-0 h-full w-0
             transform-[translateX(100%)] overflow-hidden bg-canvas text-left
@@ -136,7 +140,9 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
           `}
           data-nav-menu
           id="nav-menu"
-        />
+        >
+          <TableOfContents />
+        </div>
       </nav>
     </>
   );
@@ -148,7 +154,7 @@ function NavListItem({
 }: {
   hasBackdrop: boolean;
   value: NavItem;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <li
       className={`
@@ -162,7 +168,7 @@ function NavListItem({
           relative block text-inherit
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
-          after:transition-transform
+          after:transition-transform after:duration-500
           hover:after:scale-x-100
         `}
         href={value.target}
@@ -176,7 +182,7 @@ function NavListItem({
   );
 }
 
-function SearchButton() {
+function SearchButton(): React.JSX.Element {
   return (
     <div
       className={`

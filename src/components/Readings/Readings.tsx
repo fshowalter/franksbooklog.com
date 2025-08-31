@@ -1,12 +1,11 @@
-import type { JSX } from "react";
-
 import { useEffect, useReducer, useRef, useState } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
+import { Abandoned } from "~/components/Abandoned";
 import { BarGradient } from "~/components/BarGradient";
-import { CoverListItemCover } from "~/components/CoverList";
+import { CoverListItem } from "~/components/CoverList";
 import { ListItemAuthors } from "~/components/ListItemAuthors";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import {
@@ -96,7 +95,7 @@ export function Readings({
   distinctWorkYears,
   initialSort,
   values,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -129,8 +128,8 @@ export function Readings({
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
-          filterKey={String(filterKey)}
           filterValues={state.pendingFilterValues}
+          key={filterKey}
         />
       }
       hasActiveFilters={state.hasActiveFilters}
@@ -183,7 +182,7 @@ export function Readings({
   );
 }
 
-function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
+function CalendarDay({ day }: { day: CalendarDayData }): React.JSX.Element {
   if (!day.date) {
     return (
       <td
@@ -201,18 +200,19 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
   return (
     <td
       className={`
-        mb-2 block min-h-[100px] w-full border-default bg-default py-2 align-top
+        min-h-[100px] w-full border-default bg-calendar align-top
         tablet:border tablet:px-2
         tablet-landscape:mb-0 tablet-landscape:table-cell
-        tablet-landscape:w-[14.28%]
-        ${day.readings.length === 0 ? `hidden` : ""}
+        tablet-landscape:w-[14.28%] tablet-landscape:py-2
+        ${day.readings.length === 0 ? `hidden` : `block`}
       `}
       data-weekday={weekday}
     >
       <div
         className={`
-          mb-1 px-container text-sm font-medium
+          mb-1 px-container py-2 text-sm font-medium
           tablet:px-6 tablet:text-xl tablet:font-normal
+          tablet-landscape:py-0
           ${day.readings.length > 0 ? "text-default" : "text-muted"}
         `}
       >
@@ -239,27 +239,11 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
             `}
           >
             {day.readings.map((reading) => (
-              <li
-                className={`
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-default px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                  dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_2px_15px_rgb(0_0_0_/_0.7)]
-                `}
+              <CoverListItem
+                className={`items-center`}
+                coverImageProps={reading.coverImageProps}
                 key={reading.timelineSequence}
               >
-                <CoverListItemCover
-                  className="tablet-landscape:w-auto"
-                  imageConfig={ReadingsItemImageConfig}
-                  imageProps={reading.coverImageProps}
-                />
                 <div
                   className={`
                     flex grow flex-col items-start gap-y-2
@@ -280,7 +264,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                     {reading.edition}
                   </div>
                   {reading.progress === "Abandoned" ? (
-                    <div>Abandoned</div>
+                    <Abandoned className="mt-1" value={reading.progress} />
                   ) : (
                     <div
                       className={`
@@ -299,7 +283,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                     </div>
                   )}
                 </div>
-              </li>
+              </CoverListItem>
             ))}
           </ol>
         </div>
@@ -315,7 +299,7 @@ function CalendarHeader({
   hasPrevMonth,
   nextMonth,
   prevMonth,
-}: CalendarHeaderProps): JSX.Element {
+}: CalendarHeaderProps): React.JSX.Element {
   const monthName = currentMonth.toLocaleString("en-US", {
     month: "long",
     timeZone: "UTC",
@@ -355,15 +339,16 @@ function CalendarHeader({
             aria-disabled={false}
             aria-label={`Navigate to previous month: ${prevMonthName}`}
             className={`
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent)
-              after:transition-transform
+              after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
             onClick={() => dispatch({ type: Actions.PREV_MONTH })}
+            type="button"
           >
             ← {prevMonthName}
           </button>
@@ -384,15 +369,16 @@ function CalendarHeader({
             aria-disabled={false}
             aria-label={`Navigate to next month: ${nextMonthName}`}
             className={`
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
-              after:transition-transform
+              after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
             onClick={() => dispatch({ type: Actions.NEXT_MONTH })}
+            type="button"
           >
             {nextMonthName} →
           </button>
@@ -405,7 +391,7 @@ function CalendarHeader({
 function CalendarMonth({
   currentMonth,
   groupedValues,
-}: CalendarMonthProps): JSX.Element {
+}: CalendarMonthProps): React.JSX.Element {
   const calendarDays = getCalendarDays(currentMonth, groupedValues);
   const weeks = getCalendarWeeks(calendarDays);
 
@@ -428,7 +414,7 @@ function CalendarMonth({
       >
         <thead
           className={`
-            hidden transform-gpu bg-default
+            hidden transform-gpu bg-calendar
             tablet-landscape:sticky
             tablet-landscape:top-(--calendar-scroll-offset)
             tablet-landscape:z-sticky tablet-landscape:table-header-group
@@ -466,7 +452,7 @@ function CalendarView({
   hasPrevMonth,
   nextMonth,
   prevMonth,
-}: CalendarViewProps): JSX.Element {
+}: CalendarViewProps): React.JSX.Element {
   return (
     <div className="mx-auto w-full max-w-(--breakpoint-desktop)">
       <CalendarHeader
@@ -538,7 +524,7 @@ function getCalendarWeeks(days: CalendarDayData[]): CalendarDayData[][] {
   return weeks;
 }
 
-function parseProgress(progress: string) {
+function parseProgress(progress: string): number {
   const progressNumber = progress.split("%", 1)[0];
 
   if (progressNumber === "Finished") {
@@ -552,7 +538,11 @@ function parseProgress(progress: string) {
   return 100;
 }
 
-function WeekdayHeader({ children }: { children: React.ReactNode }) {
+function WeekdayHeader({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.JSX.Element {
   return (
     <th
       className={`

@@ -1,6 +1,6 @@
 import { ENABLE_CACHE } from "~/utils/cache";
+import { perfLogger } from "~/utils/performanceLogger";
 
-import { perfLogger } from "./data/utils/performanceLogger";
 import { allYearStatsJson, type YearStatsJson } from "./data/yearStatsJson";
 
 export type YearStats = YearStatsJson & {};

@@ -1,12 +1,10 @@
-import type { JSX } from "react";
-
 import type { YearStats } from "~/api/yearStats";
 
 import { StatsCallout } from "~/components/StatsCallout";
 
 type Props = Pick<YearStats, "bookCount" | "workCount"> & {};
 
-export function Callouts({ bookCount, workCount }: Props): JSX.Element {
+export function Callouts({ bookCount, workCount }: Props): React.JSX.Element {
   return (
     <div
       className={`

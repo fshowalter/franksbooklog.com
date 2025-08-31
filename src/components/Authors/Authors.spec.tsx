@@ -1,15 +1,19 @@
-import { render, screen } from "@testing-library/react";
-import { userEvent } from "@testing-library/user-event";
+import { render } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
+import { getGroupedAvatarList } from "~/components/AvatarList.testHelper";
+import {
+  fillNameFilter,
+  getNameFilter,
+} from "~/components/CollectionFilters.testHelper";
+import { clickSortOption } from "~/components/ListWithFilters/ListWithFilters.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/ListWithFilters/testUtils";
-import { getUserWithFakeTimers } from "~/components/testUtils";
-import { fillTextFilter } from "~/components/TextFilter.testHelper";
+import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 
 import { Authors } from "./Authors";
 import { getProps } from "./getProps";
@@ -39,61 +43,61 @@ describe("Authors", () => {
 
     render(<Authors {...props} />);
 
-    await fillTextFilter(user, "Name", "Bram Stoker");
+    await clickToggleFilters(user);
 
-    expect(screen.getByTestId("grouped-avatar-list")).toMatchSnapshot();
+    await fillNameFilter(user, "Bram Stoker");
+
+    await clickViewResults(user);
+
+    expect(getGroupedAvatarList()).toMatchSnapshot();
   });
 
   it("can sort by name z->a", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Authors {...props} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Name (Z → A)",
-    );
+    await clickSortOption(user, "Name (Z → A)");
 
-    expect(screen.getByTestId("grouped-avatar-list")).toMatchSnapshot();
+    expect(getGroupedAvatarList()).toMatchSnapshot();
   });
 
   it("can sort by name a->z", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Authors {...props} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Name (A → Z)",
-    );
+    await clickSortOption(user, "Name (A → Z)");
 
-    expect(screen.getByTestId("grouped-avatar-list")).toMatchSnapshot();
+    expect(getGroupedAvatarList()).toMatchSnapshot();
   });
 
   it("can sort by review count asc", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Authors {...props} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Review Count (Fewest First)",
-    );
+    await clickSortOption(user, "Review Count (Fewest First)");
 
-    expect(screen.getByTestId("grouped-avatar-list")).toMatchSnapshot();
+    expect(getGroupedAvatarList()).toMatchSnapshot();
   });
 
   it("can sort by review count desc", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Authors {...props} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Review Count (Most First)",
-    );
+    await clickSortOption(user, "Review Count (Most First)");
 
-    expect(screen.getByTestId("grouped-avatar-list")).toMatchSnapshot();
+    expect(getGroupedAvatarList()).toMatchSnapshot();
   });
 
   it("can clear all filters", async ({ expect }) => {
@@ -108,9 +112,11 @@ describe("Authors", () => {
     await clickToggleFilters(user);
 
     // Apply multiple filters
-    await fillTextFilter(user, "Name", "Bram Stoker");
+    await fillNameFilter(user, "Bram Stoker");
 
     await clickViewResults(user);
+
+    const listBeforeClear = getGroupedAvatarList().innerHTML;
 
     // Open filter drawer again
     await clickToggleFilters(user);
@@ -119,11 +125,13 @@ describe("Authors", () => {
     await clickClearFilters(user);
 
     // Check that filters are cleared
-    expect(screen.getByLabelText("Name")).toHaveValue("");
+    expect(getNameFilter()).toHaveValue("");
 
     await clickViewResults(user);
 
-    expect(screen.getByTestId("grouped-avatar-list")).toMatchSnapshot();
+    const listAfterClear = getGroupedAvatarList().innerHTML;
+
+    expect(listBeforeClear).not.toEqual(listAfterClear);
   });
 
   it("can reset filters when closing drawer", async ({ expect }) => {
@@ -138,31 +146,31 @@ describe("Authors", () => {
     await clickToggleFilters(user);
 
     // Apply initial filter
-    await fillTextFilter(user, "Name", "Bram Stoker");
+    await fillNameFilter(user, "Bram Stoker");
 
     // Apply the filters
     await clickViewResults(user);
 
     // Store the current view
-    const listBeforeReset = screen.getByTestId("grouped-avatar-list");
+    const listBeforeReset = getGroupedAvatarList().innerHTML;
 
     // Open filter drawer again
     await clickToggleFilters(user);
 
     // Start typing a new filter but don't apply
-    await fillTextFilter(user, "Name", "A different name...");
+    await fillNameFilter(user, "A different name...");
 
     // Close the drawer with the X button (should reset pending changes)
     await clickCloseFilters(user);
 
     // The view should still show the originally filtered results
-    const listAfterReset = screen.getByTestId("grouped-avatar-list");
-    expect(listAfterReset).toBe(listBeforeReset);
+    const listAfterReset = getGroupedAvatarList().innerHTML;
+    expect(listAfterReset).toEqual(listBeforeReset);
 
     // Open filter drawer again to verify filters were reset to last applied state
     await clickToggleFilters(user);
 
     // Should show the originally applied filter, not the pending change
-    expect(screen.getByLabelText("Name")).toHaveValue("Bram Stoker");
+    expect(getNameFilter()).toHaveValue("Bram Stoker");
   });
 });

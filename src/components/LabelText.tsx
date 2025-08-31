@@ -1,14 +1,12 @@
-import type { ElementType } from "react";
-
 export function LabelText({
   as = "span",
   htmlFor,
   value,
 }: {
-  as?: ElementType;
+  as?: React.ElementType;
   htmlFor?: string;
   value: string;
-}) {
+}): React.JSX.Element {
   const Component = as;
 
   return (
