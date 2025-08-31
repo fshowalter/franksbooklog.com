@@ -28,26 +28,6 @@ describe("/og.jpg", () => {
 
     const snapshot = fs.readFileSync(snapshotFile);
 
-    const comparison = result.compare(snapshot);
-    if (comparison !== 0) {
-      // Write the CI-generated image for debugging
-      const debugFile = path.join(
-        import.meta.dirname,
-        "__image_snapshots__",
-        "og-ci-debug.jpg",
-      );
-      fs.writeFileSync(debugFile, result);
-      
-      console.log(`Image comparison failed. Difference: ${comparison}`);
-      console.log(`Expected size: ${snapshot.length} bytes`);
-      console.log(`Actual size: ${result.length} bytes`);
-      console.log(`Debug image written to: ${debugFile}`);
-      
-      // Also output first few bytes to see if there's a pattern
-      console.log(`First 20 bytes of expected:`, snapshot.subarray(0, 20));
-      console.log(`First 20 bytes of actual:`, result.subarray(0, 20));
-    }
-
-    void expect(comparison).toBe(0);
+    void expect(result.compare(snapshot)).toBe(0);
   });
 });
