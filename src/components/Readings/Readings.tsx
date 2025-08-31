@@ -3,8 +3,9 @@ import { useEffect, useReducer, useRef, useState } from "react";
 import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
+import { Abandoned } from "~/components/Abandoned";
 import { BarGradient } from "~/components/BarGradient";
-import { CoverListItemCover } from "~/components/CoverList";
+import { CoverListItem } from "~/components/CoverList";
 import { ListItemAuthors } from "~/components/ListItemAuthors";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import {
@@ -94,7 +95,7 @@ export function Readings({
   distinctWorkYears,
   initialSort,
   values,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -181,7 +182,7 @@ export function Readings({
   );
 }
 
-function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
+function CalendarDay({ day }: { day: CalendarDayData }): React.JSX.Element {
   if (!day.date) {
     return (
       <td
@@ -238,26 +239,11 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
             `}
           >
             {day.readings.map((reading) => (
-              <li
-                className={`
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                `}
+              <CoverListItem
+                className={`items-center`}
+                coverImageProps={reading.coverImageProps}
                 key={reading.timelineSequence}
               >
-                <CoverListItemCover
-                  className="tablet-landscape:w-auto"
-                  imageConfig={ReadingsItemImageConfig}
-                  imageProps={reading.coverImageProps}
-                />
                 <div
                   className={`
                     flex grow flex-col items-start gap-y-2
@@ -278,7 +264,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                     {reading.edition}
                   </div>
                   {reading.progress === "Abandoned" ? (
-                    <div>Abandoned</div>
+                    <Abandoned className="mt-1" value={reading.progress} />
                   ) : (
                     <div
                       className={`
@@ -297,7 +283,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                     </div>
                   )}
                 </div>
-              </li>
+              </CoverListItem>
             ))}
           </ol>
         </div>
@@ -313,7 +299,7 @@ function CalendarHeader({
   hasPrevMonth,
   nextMonth,
   prevMonth,
-}: CalendarHeaderProps): JSX.Element {
+}: CalendarHeaderProps): React.JSX.Element {
   const monthName = currentMonth.toLocaleString("en-US", {
     month: "long",
     timeZone: "UTC",
@@ -405,7 +391,7 @@ function CalendarHeader({
 function CalendarMonth({
   currentMonth,
   groupedValues,
-}: CalendarMonthProps): JSX.Element {
+}: CalendarMonthProps): React.JSX.Element {
   const calendarDays = getCalendarDays(currentMonth, groupedValues);
   const weeks = getCalendarWeeks(calendarDays);
 
@@ -466,7 +452,7 @@ function CalendarView({
   hasPrevMonth,
   nextMonth,
   prevMonth,
-}: CalendarViewProps): JSX.Element {
+}: CalendarViewProps): React.JSX.Element {
   return (
     <div className="mx-auto w-full max-w-(--breakpoint-desktop)">
       <CalendarHeader

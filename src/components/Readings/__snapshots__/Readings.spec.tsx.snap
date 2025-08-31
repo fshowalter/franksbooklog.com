@@ -589,17 +589,17 @@ exports[`Readings > can filter by edition 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -608,7 +608,7 @@ exports[`Readings > can filter by edition 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -1699,17 +1699,17 @@ exports[`Readings > can filter by edition then show all 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -1718,7 +1718,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -2567,17 +2567,17 @@ exports[`Readings > can filter by kind 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -2586,7 +2586,7 @@ exports[`Readings > can filter by kind 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -2911,17 +2911,17 @@ exports[`Readings > can filter by kind 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -2930,7 +2930,7 @@ exports[`Readings > can filter by kind 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -4122,17 +4122,17 @@ exports[`Readings > can filter by kind then show all 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -4141,7 +4141,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -5182,17 +5182,17 @@ exports[`Readings > can filter by reading year 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -5201,7 +5201,7 @@ exports[`Readings > can filter by reading year 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -5929,17 +5929,17 @@ exports[`Readings > can filter by reading year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -5948,7 +5948,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -7141,17 +7141,17 @@ exports[`Readings > can filter by title 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -7160,7 +7160,7 @@ exports[`Readings > can filter by title 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -7311,17 +7311,17 @@ exports[`Readings > can filter by title 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -7330,7 +7330,7 @@ exports[`Readings > can filter by title 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -7506,17 +7506,17 @@ exports[`Readings > can filter by title 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -7525,7 +7525,7 @@ exports[`Readings > can filter by title 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -7730,17 +7730,17 @@ exports[`Readings > can filter by title 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -7749,7 +7749,7 @@ exports[`Readings > can filter by title 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -7896,17 +7896,17 @@ exports[`Readings > can filter by title 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -7915,7 +7915,7 @@ exports[`Readings > can filter by title 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -9028,17 +9028,17 @@ exports[`Readings > can filter by work year 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -9047,7 +9047,7 @@ exports[`Readings > can filter by work year 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -10250,17 +10250,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -10269,7 +10269,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -10416,17 +10416,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -10435,7 +10435,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -10586,17 +10586,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -10605,7 +10605,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -10752,17 +10752,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -10771,7 +10771,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -10976,17 +10976,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -10995,7 +10995,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -11142,17 +11142,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -11161,7 +11161,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -11341,17 +11341,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -11360,7 +11360,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -11507,17 +11507,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -11526,7 +11526,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -11673,17 +11673,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -11692,7 +11692,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -11839,17 +11839,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -11858,7 +11858,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -12005,17 +12005,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -12024,7 +12024,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -12171,17 +12171,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -12190,7 +12190,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -12337,17 +12337,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -12356,7 +12356,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -12652,17 +12652,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -12671,7 +12671,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -12818,17 +12818,17 @@ exports[`Readings > can filter by work year reversed 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -12837,7 +12837,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -13325,17 +13325,17 @@ exports[`Readings > can navigate to next month 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -13344,7 +13344,7 @@ exports[`Readings > can navigate to next month 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -14567,17 +14567,17 @@ exports[`Readings > can navigate to previous month 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -14586,7 +14586,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -14911,17 +14911,17 @@ exports[`Readings > can navigate to previous month 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -14930,7 +14930,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -16122,17 +16122,17 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -16141,7 +16141,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -16877,17 +16877,17 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
             >
               <li
                 class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
               >
                 <div
                   class="
@@ -16896,7 +16896,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                 >
                   <div
@@ -18564,17 +18564,17 @@ exports[`Readings > renders 1`] = `
                         >
                           <li
                             class="
-                  group/list-item relative mb-1 flex w-full
-                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
-                  bg-calendar px-container py-4 transition-transform
-                  tablet-landscape:w-(--cover-list-item-width)
-                  tablet-landscape:flex-col tablet-landscape:items-center
-                  tablet-landscape:bg-transparent tablet-landscape:px-6
-                  tablet-landscape:py-6
-                  tablet-landscape:has-[a:hover]:-translate-y-2
-                  tablet-landscape:has-[a:hover]:bg-default
-                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
-                "
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform duration-500
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6
+        
+              tablet:has-[a:hover]:-translate-y-2
+              tablet:has-[a:hover]:bg-default
+              tablet:has-[a:hover]:drop-shadow-2xl
+            
+      "
                           >
                             <div
                               class="
@@ -18583,7 +18583,7 @@ exports[`Readings > renders 1`] = `
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
-        tablet-landscape:w-auto
+        tablet:w-auto
       "
                             >
                               <div

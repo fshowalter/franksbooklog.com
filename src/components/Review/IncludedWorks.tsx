@@ -11,7 +11,7 @@ type Props = {
   values: ReviewWithContent["includedWorks"];
 };
 
-export function IncludedWorks({ values }: Props) {
+export function IncludedWorks({ values }: Props): React.JSX.Element {
   return (
     <>
       <SubHeading as="h2" className="text-center shadow-bottom">

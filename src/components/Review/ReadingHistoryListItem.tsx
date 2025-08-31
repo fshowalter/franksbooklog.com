@@ -1,3 +1,5 @@
+import type React from "react";
+
 import type { ReviewWithContent } from "~/api/reviews";
 
 import { BarGradient } from "~/components/BarGradient";
@@ -34,7 +36,7 @@ type Props = {
   value: ReviewWithContent["readings"][0];
 };
 
-export function ReadingHistoryListItem({ value }: Props) {
+export function ReadingHistoryListItem({ value }: Props): React.JSX.Element {
   return (
     <li
       className={`
@@ -64,7 +66,7 @@ export function ReadingHistoryListItem({ value }: Props) {
   );
 }
 
-function Date({ date }: { date: Date }) {
+function Date({ date }: { date: Date }): React.JSX.Element {
   return (
     <div className="bg-subtle py-2 text-center">
       <div className="px-4 pb-2 font-serif text-md font-normal text-subtle">
@@ -83,7 +85,11 @@ function Date({ date }: { date: Date }) {
   );
 }
 
-function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
+function Details({
+  value,
+}: {
+  value: ReviewWithContent["readings"][0];
+}): false | React.JSX.Element {
   if (value.readingTime === 1) {
     return false;
   }
@@ -170,7 +176,7 @@ function Edition({
   value,
 }: {
   value: ReviewWithContent["readings"][0]["edition"];
-}) {
+}): React.JSX.Element {
   return (
     <span className="font-serif text-base font-normal text-default">
       {value}
@@ -182,7 +188,7 @@ function EditionNotes({
   value,
 }: {
   value: ReviewWithContent["readings"][0]["editionNotes"];
-}) {
+}): false | React.JSX.Element {
   if (!value) {
     return false;
   }
@@ -199,7 +205,7 @@ function ReadingNotes({
   value,
 }: {
   value: ReviewWithContent["readings"][0]["readingNotes"];
-}) {
+}): false | React.JSX.Element {
   if (!value) {
     return false;
   }

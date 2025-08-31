@@ -2,7 +2,7 @@ import { toSentenceArray } from "~/utils/toSentenceArray";
 
 export type ReviewOpenGraphImageComponentType = (
   props: ReviewOpenGraphImageProps,
-) => JSX.Element;
+) => React.JSX.Element;
 
 type ReviewOpenGraphImageProps = {
   authors: string[];
@@ -20,7 +20,7 @@ export function OpenGraphImage({
   coverWidth,
   grade,
   title,
-}: ReviewOpenGraphImageProps): JSX.Element {
+}: ReviewOpenGraphImageProps): React.JSX.Element {
   return (
     <div
       style={{
