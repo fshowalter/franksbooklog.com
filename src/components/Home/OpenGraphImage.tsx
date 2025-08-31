@@ -14,6 +14,7 @@ export function OpenGraphImage({
       style={{
         display: "flex",
         height: "630px",
+        position: "relative",
         width: "1200px",
       }}
     >
@@ -25,6 +26,20 @@ export function OpenGraphImage({
         }}
         width={1200}
       />
+      <div
+        style={{
+          bottom: 0,
+          display: "flex",
+          flexDirection: "column",
+          paddingBottom: "64px",
+          paddingLeft: "80px",
+          paddingRight: "80px",
+          paddingTop: "332px",
+          position: "absolute",
+          width: "1200px",
+        }}
+      >
+      </div>
     </div>
   );
 }
