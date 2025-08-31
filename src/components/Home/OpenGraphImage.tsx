@@ -62,7 +62,7 @@ export function OpenGraphImage({
             textShadow: "1px 1px 2px black",
           }}
         >
-          Test
+          Literature
         </div>
       </div>
     </div>
