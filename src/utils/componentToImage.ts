@@ -101,7 +101,7 @@ async function getFontData() {
     frankRuhlLibreExtraBold,
     frankRuhlLibreSemiBold,
     frankRuhlLibreRegular,
-    assistantRegular,
+    assistantBold,
     assistantSemiBold,
   ] = await Promise.all([
     fs.readFile(
@@ -132,7 +132,7 @@ async function getFontData() {
       weight: 400,
     },
     {
-      data: assistantRegular.buffer as ArrayBuffer,
+      data: assistantBold.buffer as ArrayBuffer,
       name: "Assistant",
       weight: 700,
     },
