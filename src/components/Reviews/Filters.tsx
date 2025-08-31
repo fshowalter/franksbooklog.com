@@ -1,8 +1,8 @@
-import { GradeInput } from "~/components/GradeInput";
+import { GradeInput } from "~/components/GradeField";
 import { SelectField } from "~/components/SelectField";
 import { SelectOptions } from "~/components/SelectOptions";
-import { TextFilter } from "~/components/TextFilter";
-import { YearInput } from "~/components/YearInput";
+import { TextField } from "~/components/TextField";
+import { YearField } from "~/components/YearField";
 
 import type { ActionType } from "./Reviews.reducer";
 
@@ -31,7 +31,7 @@ export function Filters({
 }) {
   return (
     <>
-      <TextFilter
+      <TextField
         initialValue={filterValues.title || ""}
         label="Title"
         onInputChange={(value) =>
@@ -39,14 +39,14 @@ export function Filters({
         }
         placeholder="Enter all or part of a title"
       />
-      <YearInput
+      <YearField
         label="Work Year"
         onYearChange={(values) =>
           dispatch({ type: Actions.PENDING_FILTER_WORK_YEAR, values })
         }
         years={distinctWorkYears}
       />
-      <YearInput
+      <YearField
         label="Review Year"
         onYearChange={(values) =>
           dispatch({ type: Actions.PENDING_FILTER_REVIEW_YEAR, values })

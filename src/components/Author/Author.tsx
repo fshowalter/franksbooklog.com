@@ -1,4 +1,4 @@
-import { type JSX, useReducer, useState } from "react";
+import { useReducer, useState } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
@@ -13,6 +13,7 @@ import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
+import { WorkSortOptions } from "~/components/WorkSortOptions";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { Sort } from "./Author.reducer";
@@ -68,7 +69,7 @@ export function Author({
   distinctWorkYears,
   initialSort,
   values,
-}: InteractiveProps): JSX.Element {
+}: InteractiveProps): React.JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -123,16 +124,9 @@ export function Author({
             value: e.target.value as Sort,
           }),
         sortOptions: (
-          <>
-            <option value="work-year-asc">Work Year (Oldest First)</option>
-            <option value="work-year-desc">Work Year (Newest First)</option>
-            <option value="review-date-asc">Review Date (Oldest First)</option>
-            <option value="review-date-desc">Review Date (Newest First)</option>
-            <option value="title-asc">Title (A &rarr; Z)</option>
-            <option value="title-desc">Title (Z &rarr; A)</option>
-            <option value="grade-desc">Grade (Best First)</option>
-            <option value="grade-asc">Grade (Worst First)</option>
-          </>
+          <WorkSortOptions
+            options={["grade", "review-date", "title", "work-year"]}
+          />
         ),
       }}
       totalCount={state.filteredValues.length}
@@ -140,7 +134,11 @@ export function Author({
   );
 }
 
-function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
+function OtherAuthors({
+  values,
+}: {
+  values: ListItemValue["otherAuthors"];
+}): false | React.JSX.Element {
   if (values.length === 0) {
     return false;
   }
@@ -152,7 +150,7 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
   );
 }
 
-function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
+function WorkListItem({ value }: { value: ListItemValue }): React.JSX.Element {
   return (
     <CoverListItem coverImageProps={value.coverImageProps}>
       <ListItemDetails>

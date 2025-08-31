@@ -3,9 +3,9 @@ import type { UserEvent } from "@testing-library/user-event";
 import { act, screen } from "@testing-library/react";
 import { vi } from "vitest";
 
-import { TEXT_FILTER_DEBOUNCE_MS } from "./TextFilter";
+import { TEXT_FILTER_DEBOUNCE_MS } from "./TextField";
 
-export async function fillTextFilter(
+export async function fillTextField(
   user: UserEvent,
   labelText: string,
   value: string,

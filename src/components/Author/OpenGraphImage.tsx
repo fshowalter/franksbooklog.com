@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 export type AuthorOpenGraphImageComponentType = (
   props: AuthorOpenGraphImageProps,
 ) => JSX.Element;

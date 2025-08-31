@@ -29,13 +29,6 @@ export enum ListWithFiltersActions {
   SORT = "SORT",
 }
 
-// Re-export types and functions from generic utils for backward compatibility
-export {
-  buildGroupValues,
-  buildSortValues,
-  getGroupLetter,
-  sortNumber,
-} from "~/components/utils/reducerUtils";
 export type { GroupFn } from "~/components/utils/reducerUtils";
 
 /**
@@ -92,21 +85,34 @@ type SortAction<TSortValue> = {
 /**
  * Helper to create initial state with pending filters support
  */
-export function createInitialState<TItem, TSortValue>({
+export function createInitialState<
+  TItem,
+  TSortValue,
+  TExtendedState extends Record<string, unknown> = Record<string, never>,
+>({
+  extendedState,
   groupFn,
   initialSort,
+  showCount,
   sortFn,
   values,
 }: {
-  groupFn: GroupFn<TItem, TSortValue>;
+  extendedState?: TExtendedState;
+  groupFn?: GroupFn<TItem, TSortValue>;
   initialSort: TSortValue;
+  showCount?: number;
   sortFn: (values: TItem[], sort: TSortValue) => TItem[];
   values: TItem[];
-}): ListWithFiltersState<TItem, TSortValue> {
+}): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const sortedValues = sortFn(values, initialSort);
-  const groupedValues = groupFn(sortedValues, initialSort);
+  const valuesToGroup = showCount
+    ? sortedValues.slice(0, showCount)
+    : sortedValues;
+  const groupedValues = groupFn
+    ? groupFn(valuesToGroup, initialSort)
+    : new Map<string, TItem[]>();
 
-  return {
+  const baseState: ListWithFiltersState<TItem, TSortValue> = {
     allValues: values,
     filteredValues: sortedValues,
     filters: {},
@@ -118,6 +124,10 @@ export function createInitialState<TItem, TSortValue>({
     pendingFilterValues: {},
     sortValue: initialSort,
   };
+
+  return extendedState
+    ? { ...baseState, ...extendedState }
+    : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
 }
 
 /**

@@ -1,4 +1,10 @@
-import { sortNumber, sortString } from "~/components/utils/reducerUtils";
+import type { GroupFn } from "~/components/utils/reducerUtils";
+
+import {
+  getGroupLetter,
+  sortNumber,
+  sortString,
+} from "~/components/utils/reducerUtils";
 
 /**
  * Work-specific reducer utilities for lists of works (Reviews, Readings, Author pages).
@@ -12,19 +18,19 @@ import { sortNumber, sortString } from "~/components/utils/reducerUtils";
  *
  * These utilities build on top of the base reducerUtils
  */
-import type { ListWithFiltersState } from "./reducerUtils";
+import type { ListWithFiltersState } from "./ListWithFilters.reducerUtils";
 
-import { createInitialState, updatePendingFilter } from "./reducerUtils";
+import { updatePendingFilter } from "./ListWithFilters.reducerUtils";
 
 /**
  * Default number of items to show per page for paginated work lists
  */
-const SHOW_COUNT_DEFAULT = 100;
+export const SHOW_COUNT_DEFAULT = 100;
 
 /**
  * Work-specific action types
  */
-export enum WorksFilterActions {
+export enum WorksActions {
   PENDING_FILTER_GRADE = "PENDING_FILTER_GRADE",
   PENDING_FILTER_KIND = "PENDING_FILTER_KIND",
   PENDING_FILTER_REVIEW_YEAR = "PENDING_FILTER_REVIEW_YEAR",
@@ -41,9 +47,20 @@ export type PaginationState = {
 };
 
 /**
+ * Type for title filter values with known keys
+ */
+export type WorkFilterValues = {
+  grade?: [number, number];
+  kind?: string;
+  reviewYear?: [string, string];
+  title?: string;
+  workYear?: [string, string];
+};
+
+/**
  * Union type of all work-specific filter actions
  */
-export type WorksFilterActionType =
+export type WorksActionType =
   | PendingFilterGradeAction
   | PendingFilterKindAction
   | PendingFilterReviewYearAction
@@ -51,8 +68,43 @@ export type WorksFilterActionType =
   | PendingFilterWorkYearAction
   | ShowMoreAction;
 
+/**
+ * Specialized state type for title-based lists with typed filter values
+ */
+export type WorksListState<TItem, TSortValue> = Omit<
+  ListWithFiltersState<TItem, TSortValue>,
+  "filterValues" | "pendingFilterValues"
+> & {
+  filterValues: WorkFilterValues;
+  pendingFilterValues: WorkFilterValues;
+};
+
+/**
+ * Common sort types for title-based lists
+ */
+export type WorkSortType =
+  | "grade-asc"
+  | "grade-desc"
+  | "review-date-asc"
+  | "review-date-desc"
+  | "title-asc"
+  | "title-desc"
+  | "work-year-asc"
+  | "work-year-desc";
+
+/**
+ * Base type for items that can be grouped by common title sorts
+ */
+type GroupableWorkItem = {
+  grade?: string;
+  reviewMonth?: string;
+  reviewYear?: string;
+  sortTitle: string;
+  workYear: string;
+};
+
 type PendingFilterGradeAction = {
-  type: WorksFilterActions.PENDING_FILTER_GRADE;
+  type: WorksActions.PENDING_FILTER_GRADE;
   values: [number, number];
 };
 
@@ -60,87 +112,76 @@ type PendingFilterGradeAction = {
  * Work-specific action type definitions
  */
 type PendingFilterKindAction = {
-  type: WorksFilterActions.PENDING_FILTER_KIND;
+  type: WorksActions.PENDING_FILTER_KIND;
   value: string;
 };
 
 type PendingFilterReviewYearAction = {
-  type: WorksFilterActions.PENDING_FILTER_REVIEW_YEAR;
+  type: WorksActions.PENDING_FILTER_REVIEW_YEAR;
   values: [string, string];
 };
 
 type PendingFilterTitleAction = {
-  type: WorksFilterActions.PENDING_FILTER_TITLE;
+  type: WorksActions.PENDING_FILTER_TITLE;
   value: string;
 };
 
 type PendingFilterWorkYearAction = {
-  type: WorksFilterActions.PENDING_FILTER_WORK_YEAR;
+  type: WorksActions.PENDING_FILTER_WORK_YEAR;
   values: [string, string];
 };
 
 type ShowMoreAction = {
   increment?: number;
-  type: WorksFilterActions.SHOW_MORE;
+  type: WorksActions.SHOW_MORE;
 };
 
 /**
- * Apply pending filters with pagination support
+ * Creates a pagination-aware group function that slices items before grouping
  */
-export function applyPendingFiltersWithPagination<
-  TItem,
-  TSortValue,
-  TState extends ListWithFiltersState<TItem, TSortValue> & PaginationState,
->(
-  state: TState,
-  baseResult: ListWithFiltersState<TItem, TSortValue>,
-  groupFn: (items: TItem[], sortValue: TSortValue) => Map<string, TItem[]>,
-): TState {
-  const paginatedGroupFn = createPaginatedGroupFn(groupFn, state.showCount);
-  const groupedValues = paginatedGroupFn(
-    baseResult.filteredValues,
-    baseResult.sortValue,
-  );
-  return {
-    ...state,
-    ...baseResult,
-    groupedValues,
+export function createPaginatedGroupFn<TItem, TSortValue>(
+  baseGroupFn: GroupFn<TItem, TSortValue>,
+  showCount: number,
+): GroupFn<TItem, TSortValue> {
+  return (items: TItem[], sortValue: TSortValue) => {
+    const paginatedItems = items.slice(0, showCount);
+    return baseGroupFn(paginatedItems, sortValue);
   };
 }
 
 /**
- * Create initial state with optional pagination support
+ * Creates a generic groupForValue function for title-based lists
  */
-export function createInitialStateWithPagination<TItem, TSortValue>({
-  groupFn,
-  initialSort,
-  showMoreEnabled = true,
-  sortFn,
-  values,
-}: {
-  groupFn: (items: TItem[], sortValue: TSortValue) => Map<string, TItem[]>;
-  initialSort: TSortValue;
-  showMoreEnabled?: boolean;
-  sortFn: (values: TItem[], sort: TSortValue) => TItem[];
-  values: TItem[];
-}): ListWithFiltersState<TItem, TSortValue> & Partial<PaginationState> {
-  const baseState = createInitialState({
-    groupFn: showMoreEnabled
-      ? createPaginatedGroupFn(groupFn, SHOW_COUNT_DEFAULT)
-      : groupFn,
-    initialSort,
-    sortFn,
-    values,
-  });
-
-  if (showMoreEnabled) {
-    return {
-      ...baseState,
-      showCount: SHOW_COUNT_DEFAULT,
-    };
-  }
-
-  return baseState;
+export function createWorkGroupForValue<
+  T extends GroupableWorkItem,
+  TSortValue extends WorkSortType,
+>(): (value: T, sortValue: TSortValue) => string {
+  return (value: T, sortValue: TSortValue): string => {
+    switch (sortValue) {
+      case "grade-asc":
+      case "grade-desc": {
+        return value.grade || "Unreviewed";
+      }
+      case "review-date-asc":
+      case "review-date-desc": {
+        if (!value.reviewYear) {
+          return "Unreviewed";
+        }
+        if (value.reviewMonth) {
+          return `${value.reviewMonth} ${value.reviewYear}`;
+        }
+        return value.reviewYear;
+      }
+      case "title-asc":
+      case "title-desc": {
+        return getGroupLetter(value.sortTitle);
+      }
+      case "work-year-asc":
+      case "work-year-desc": {
+        return value.workYear;
+      }
+    }
+  };
 }
 
 /**
@@ -156,9 +197,10 @@ export function handleGradeFilterAction<
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createGradeFilter(action.values[0], action.values[1]);
+  const filterKey: keyof WorkFilterValues = "grade";
   const baseState = updatePendingFilter(
     state,
-    "grade",
+    filterKey,
     filterFn,
     action.values,
   );
@@ -180,7 +222,13 @@ export function handleKindFilterAction<
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createKindFilter(action.value);
-  const baseState = updatePendingFilter(state, "kind", filterFn, action.value);
+  const filterKey: keyof WorkFilterValues = "kind";
+  const baseState = updatePendingFilter(
+    state,
+    filterKey,
+    filterFn,
+    action.value,
+  );
   return extendedState
     ? { ...baseState, ...extendedState }
     : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
@@ -199,9 +247,10 @@ export function handleReviewYearFilterAction<
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createReviewYearFilter(action.values[0], action.values[1]);
+  const filterKey: keyof WorkFilterValues = "reviewYear";
   const baseState = updatePendingFilter(
     state,
-    "reviewYear",
+    filterKey,
     filterFn,
     action.values,
   );
@@ -211,27 +260,19 @@ export function handleReviewYearFilterAction<
 }
 
 /**
- * Handle "Show More" pagination action
+ * Handle "Show More" action for title lists with pagination
  */
 export function handleShowMoreAction<
   TItem,
   TSortValue,
-  TState extends ListWithFiltersState<TItem, TSortValue> & PaginationState,
+  TExtendedState extends { showCount: number },
 >(
-  state: TState,
+  state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
   action: ShowMoreAction,
-  groupFn: (items: TItem[], sortValue: TSortValue) => Map<string, TItem[]>,
-): TState {
+  groupFn: GroupFn<TItem, TSortValue>,
+): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const increment = action.increment ?? SHOW_COUNT_DEFAULT;
-  const showCount = state.showCount + increment;
-  const paginatedGroupFn = createPaginatedGroupFn(groupFn, showCount);
-  const groupedValues = paginatedGroupFn(state.filteredValues, state.sortValue);
-
-  return {
-    ...state,
-    groupedValues,
-    showCount,
-  };
+  return showMore(state, increment, groupFn);
 }
 
 /**
@@ -247,7 +288,13 @@ export function handleTitleFilterAction<
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createTitleFilter(action.value);
-  const baseState = updatePendingFilter(state, "title", filterFn, action.value);
+  const filterKey: keyof WorkFilterValues = "title";
+  const baseState = updatePendingFilter(
+    state,
+    filterKey,
+    filterFn,
+    action.value,
+  );
   return extendedState
     ? { ...baseState, ...extendedState }
     : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
@@ -266,9 +313,10 @@ export function handleWorkYearFilterAction<
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createWorkYearFilter(action.values[0], action.values[1]);
+  const filterKey: keyof WorkFilterValues = "workYear";
   const baseState = updatePendingFilter(
     state,
-    "workYear",
+    filterKey,
     filterFn,
     action.values,
   );
@@ -315,30 +363,6 @@ export function sortWorkYear<T extends { workYearSequence: number }>() {
 }
 
 /**
- * Update sort with pagination support
- */
-export function updateSortWithPagination<
-  TItem,
-  TSortValue,
-  TState extends ListWithFiltersState<TItem, TSortValue> & PaginationState,
->(
-  state: TState,
-  baseResult: ListWithFiltersState<TItem, TSortValue>,
-  groupFn: (items: TItem[], sortValue: TSortValue) => Map<string, TItem[]>,
-): TState {
-  const paginatedGroupFn = createPaginatedGroupFn(groupFn, state.showCount);
-  const groupedValues = paginatedGroupFn(
-    baseResult.filteredValues,
-    baseResult.sortValue,
-  );
-  return {
-    ...state,
-    ...baseResult,
-    groupedValues,
-  };
-}
-
-/**
  * Create a Grade filter function
  */
 function createGradeFilter(minGradeValue: number, maxGradeValue: number) {
@@ -353,22 +377,6 @@ function createGradeFilter(minGradeValue: number, maxGradeValue: number) {
 function createKindFilter(kind: string) {
   return <T extends { kind: string }>(item: T) => {
     return kind == "All" || item.kind == kind;
-  };
-}
-
-/**
- * Create a paginated version of a group function
- */
-function createPaginatedGroupFn<TItem, TSortValue>(
-  originalGroupFn: (
-    items: TItem[],
-    sortValue: TSortValue,
-  ) => Map<string, TItem[]>,
-  limit: number,
-): (items: TItem[], sortValue: TSortValue) => Map<string, TItem[]> {
-  return (items: TItem[], sortValue: TSortValue) => {
-    const slicedItems = items.slice(0, limit);
-    return originalGroupFn(slicedItems, sortValue);
   };
 }
 
@@ -398,5 +406,30 @@ function createTitleFilter(value: string | undefined) {
 function createWorkYearFilter(minYear: string, maxYear: string) {
   return <T extends { workYear: string }>(item: T) => {
     return item.workYear >= minYear && item.workYear <= maxYear;
+  };
+}
+
+/**
+ * Handle "Show More" pagination for title lists
+ */
+function showMore<
+  TItem,
+  TSortValue,
+  TExtendedState extends { showCount: number },
+>(
+  state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
+  increment: number,
+  groupFn: GroupFn<TItem, TSortValue>,
+): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
+  const showCount = state.showCount + increment;
+  const groupedValues = groupFn(
+    state.filteredValues.slice(0, showCount),
+    state.sortValue,
+  );
+
+  return {
+    ...state,
+    groupedValues,
+    showCount,
   };
 }

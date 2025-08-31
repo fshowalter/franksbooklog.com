@@ -1,4 +1,3 @@
-import type { JSX } from "react";
 import type React from "react";
 
 import type { CoverImageProps } from "~/api/covers";

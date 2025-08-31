@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { BackdropImageProps } from "~/api/backdrops";
 import type { YearStats } from "~/api/yearStats";
 
@@ -7,7 +5,7 @@ import { Backdrop, BreadcrumbLink } from "~/components/Backdrop";
 import { DecadeDistribution } from "~/components/DecadeDistribution";
 import { EditionDistribution } from "~/components/EditionDistribution";
 import { KindDistribution } from "~/components/KindDistribution";
-import { Layout } from "~/components/Layout";
+import { Layout } from "~/components/Layout/Layout";
 import { MostReadAuthors } from "~/components/MostReadAuthors";
 import { StatsNavigation } from "~/components/StatsNavigation";
 
@@ -29,7 +27,7 @@ export function YearStats({
   mostReadAuthors,
   stats,
   year,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   return (
     <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
       <Backdrop

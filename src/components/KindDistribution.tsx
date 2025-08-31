@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import { Distribution } from "./Distribution";
 
 export function KindDistribution({

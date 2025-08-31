@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import { useEffect, useReducer, useRef, useState } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
@@ -129,8 +127,8 @@ export function Readings({
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
-          filterKey={String(filterKey)}
           filterValues={state.pendingFilterValues}
+          key={filterKey}
         />
       }
       hasActiveFilters={state.hasActiveFilters}

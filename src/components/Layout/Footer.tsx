@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import { Logo } from "./Logo";
 import { TableOfContents } from "./TableOfContents";
 

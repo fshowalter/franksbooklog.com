@@ -1,4 +1,3 @@
-import type { JSX } from "react";
 import type React from "react";
 
 import type { NavItem } from "./navItems";
@@ -155,7 +154,7 @@ function NavListItem({
 }: {
   hasBackdrop: boolean;
   value: NavItem;
-}): JSX.Element {
+}): React.JSX.Element {
   return (
     <li
       className={`

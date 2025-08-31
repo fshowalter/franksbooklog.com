@@ -1,10 +1,8 @@
-import type { JSX } from "react";
-
 import type { BackdropImageProps } from "~/api/backdrops";
 import type { MoreReviewsValue } from "~/components/MoreReviews";
 
 import { Backdrop } from "~/components/Backdrop";
-import { Layout } from "~/components/Layout";
+import { Layout } from "~/components/Layout/Layout";
 import { LongFormText } from "~/components/LongFormText";
 import { MoreReviews } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";
@@ -23,7 +21,7 @@ export function Article({
   deck,
   recentReviews,
   title,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   return (
     <Layout hasBackdrop={true}>
       <article>

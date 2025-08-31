@@ -4,7 +4,7 @@ import type { Review, ReviewWithContent } from "~/api/reviews";
 import { AuthorLink } from "~/components/AuthorLink";
 import { Cover } from "~/components/Cover";
 import { Grade } from "~/components/Grade";
-import { Layout } from "~/components/Layout";
+import { Layout } from "~/components/Layout/Layout";
 import { LongFormText } from "~/components/LongFormText";
 import { MoreReviews } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";

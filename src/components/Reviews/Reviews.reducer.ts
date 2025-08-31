@@ -1,59 +1,59 @@
 /**
  * Reviews reducer with pending filters support
  */
+import type { ListWithFiltersActionType } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 import type {
-  ListWithFiltersActionType,
-  ListWithFiltersState,
-} from "~/components/ListWithFilters/reducerUtils";
-import type {
-  PaginationState,
-  WorksFilterActionType,
+  WorksActionType,
+  WorksListState,
+  WorkSortType,
 } from "~/components/ListWithFilters/worksReducerUtils";
 
 import {
-  buildGroupValues,
-  buildSortValues,
-  getGroupLetter,
+  createInitialState,
   handleListWithFiltersAction,
   ListWithFiltersActions,
-  sortNumber,
-} from "~/components/ListWithFilters/reducerUtils";
+} from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 import {
-  applyPendingFiltersWithPagination,
-  createInitialStateWithPagination,
+  createPaginatedGroupFn,
+  createWorkGroupForValue,
   handleGradeFilterAction,
   handleKindFilterAction,
   handleReviewYearFilterAction,
   handleShowMoreAction,
   handleTitleFilterAction,
   handleWorkYearFilterAction,
+  SHOW_COUNT_DEFAULT,
   sortGrade,
   sortReviewDate,
   sortTitle,
   sortWorkYear,
-  updateSortWithPagination,
-  WorksFilterActions,
+  WorksActions,
 } from "~/components/ListWithFilters/worksReducerUtils";
+import {
+  buildGroupValues,
+  buildSortValues,
+  sortNumber,
+} from "~/components/utils/reducerUtils";
 
 import type { ReviewsListItemValue } from "./Reviews";
 
-export type ReviewsSort =
-  | "author-asc"
-  | "author-desc"
-  | "grade-asc"
-  | "grade-desc"
-  | "review-date-asc"
-  | "review-date-desc"
-  | "title-asc"
-  | "title-desc"
-  | "work-year-asc"
-  | "work-year-desc";
+export type ReviewsSort = "author-asc" | "author-desc" | WorkSortType;
 
 // Re-export shared actions for component convenience
 export const Actions = {
   ...ListWithFiltersActions,
-  ...WorksFilterActions,
+  ...WorksActions,
 } as const;
+
+type State = WorksListState<ReviewsListItemValue, ReviewsSort> & {
+  showCount: number;
+};
+
+// Create the groupForValue function using the generic builder
+const baseGroupForValue = createWorkGroupForValue<
+  ReviewsListItemValue,
+  WorkSortType
+>();
 
 function groupForValue(
   value: ReviewsListItemValue,
@@ -64,21 +64,8 @@ function groupForValue(
     case "author-desc": {
       return value.authors[0].sortName[0];
     }
-    case "grade-asc":
-    case "grade-desc": {
-      return value.grade;
-    }
-    case "review-date-asc":
-    case "review-date-desc": {
-      return monthGroupFormat.format(value.date);
-    }
-    case "title-asc":
-    case "title-desc": {
-      return getGroupLetter(value.sortTitle);
-    }
-    case "work-year-asc":
-    case "work-year-desc": {
-      return value.workYear;
+    default: {
+      return baseGroupForValue(value, sortValue);
     }
   }
 }
@@ -87,7 +74,7 @@ const groupValues = buildGroupValues(groupForValue);
 
 export type ActionType =
   | ListWithFiltersActionType<ReviewsSort>
-  | WorksFilterActionType;
+  | WorksActionType;
 
 const sortValues = buildSortValues<ReviewsListItemValue, ReviewsSort>({
   ...sortGrade<ReviewsListItemValue>(),
@@ -98,15 +85,6 @@ const sortValues = buildSortValues<ReviewsListItemValue, ReviewsSort>({
   "author-desc": (a, b) => sortNumber(a.authorSequence, b.authorSequence) * -1,
 });
 
-const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
-  month: "long",
-  timeZone: "UTC",
-  year: "numeric",
-});
-
-type State = ListWithFiltersState<ReviewsListItemValue, ReviewsSort> &
-  PaginationState;
-
 export function initState({
   initialSort,
   values,
@@ -114,10 +92,14 @@ export function initState({
   initialSort: ReviewsSort;
   values: ReviewsListItemValue[];
 }): State {
-  return createInitialStateWithPagination({
+  const showCount = SHOW_COUNT_DEFAULT;
+  return createInitialState({
+    extendedState: {
+      showCount,
+    },
     groupFn: groupValues,
     initialSort,
-    showMoreEnabled: true,
+    showCount,
     sortFn: sortValues,
     values,
   }) as State;
@@ -126,53 +108,46 @@ export function initState({
 // Create reducer function
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
-    case ListWithFiltersActions.APPLY_PENDING_FILTERS: {
-      const baseResult = handleListWithFiltersAction(state, action, {
-        groupFn: groupValues,
-        sortFn: sortValues,
-      });
-      return applyPendingFiltersWithPagination(state, baseResult, groupValues);
-    }
-
-    case ListWithFiltersActions.SORT: {
-      const baseResult = handleListWithFiltersAction(state, action, {
-        groupFn: groupValues,
-        sortFn: sortValues,
-      });
-      return updateSortWithPagination(state, baseResult, groupValues);
-    }
-
-    case WorksFilterActions.PENDING_FILTER_GRADE: {
+    case WorksActions.PENDING_FILTER_GRADE: {
       return handleGradeFilterAction(state, action);
     }
 
     // Field-specific shared filters
-    case WorksFilterActions.PENDING_FILTER_KIND: {
+    case WorksActions.PENDING_FILTER_KIND: {
       return handleKindFilterAction(state, action);
     }
 
-    case WorksFilterActions.PENDING_FILTER_REVIEW_YEAR: {
+    case WorksActions.PENDING_FILTER_REVIEW_YEAR: {
       return handleReviewYearFilterAction(state, action);
     }
 
-    case WorksFilterActions.PENDING_FILTER_TITLE: {
+    case WorksActions.PENDING_FILTER_TITLE: {
       return handleTitleFilterAction(state, action);
     }
 
-    case WorksFilterActions.PENDING_FILTER_WORK_YEAR: {
+    case WorksActions.PENDING_FILTER_WORK_YEAR: {
       return handleWorkYearFilterAction(state, action);
     }
 
-    case WorksFilterActions.SHOW_MORE: {
+    case WorksActions.SHOW_MORE: {
       return handleShowMoreAction(state, action, groupValues);
     }
 
     default: {
       // Handle shared list structure actions
-      return handleListWithFiltersAction(state, action, {
-        groupFn: groupValues,
-        sortFn: sortValues,
-      });
+      const paginatedGroupFn = createPaginatedGroupFn(
+        groupValues,
+        state.showCount,
+      );
+      return handleListWithFiltersAction(
+        state,
+        action,
+        {
+          groupFn: paginatedGroupFn,
+          sortFn: sortValues,
+        },
+        { showCount: state.showCount },
+      );
     }
   }
 }

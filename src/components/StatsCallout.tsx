@@ -1,4 +1,3 @@
-import type { JSX } from "react";
 export function StatsCallout({
   label,
   value,

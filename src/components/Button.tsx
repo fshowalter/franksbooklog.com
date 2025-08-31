@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import { ccn } from "~/utils/concatClassNames";
 
 export function Button({

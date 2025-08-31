@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import { useState } from "react";
 
 import { debounceOnChange } from "~/utils/debounce";
@@ -10,17 +8,17 @@ export const TEXT_FILTER_DEBOUNCE_MS = 150;
 
 type onChangeHandler = (value: string) => void;
 
-export function TextFilter({
+export function TextField({
   initialValue,
   label,
   onInputChange,
   placeholder,
 }: {
-  initialValue?: string;
+  initialValue: string | undefined;
   label: string;
   onInputChange: onChangeHandler;
   placeholder: string;
-}): JSX.Element {
+}): React.JSX.Element {
   // Initialize with the initial value, then manage state internally
   const [localValue, setLocalValue] = useState(initialValue || "");
   const debouncedHandleChange = debounceOnChange(
@@ -28,7 +26,7 @@ export function TextFilter({
     TEXT_FILTER_DEBOUNCE_MS,
   );
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
     const newValue = (e.target as HTMLInputElement).value;
     setLocalValue(newValue); // Update immediately for responsive typing
     debouncedHandleChange(newValue); // Debounce the callback

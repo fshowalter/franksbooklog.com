@@ -9,7 +9,7 @@ import {
   clickViewResults,
 } from "~/components/ListWithFilters/testUtils";
 import { getUserWithFakeTimers } from "~/components/testUtils";
-import { fillTextFilter } from "~/components/TextFilter.testHelper";
+import { fillTextField } from "~/components/TextField.testHelper";
 
 import { getProps } from "./getProps";
 import { Reviews } from "./Reviews";
@@ -44,7 +44,7 @@ describe("Reviews", () => {
 
     const user = getUserWithFakeTimers();
 
-    await fillTextFilter(user, "Title", "Dracula");
+    await fillTextField(user, "Title", "Dracula");
 
     expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
@@ -339,7 +339,7 @@ describe("Reviews", () => {
     await clickToggleFilters(user);
 
     // Apply multiple filters
-    await fillTextFilter(user, "Title", "Dracula");
+    await fillTextField(user, "Title", "Dracula");
 
     await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
 
@@ -372,7 +372,7 @@ describe("Reviews", () => {
     await clickToggleFilters(user);
 
     // Apply initial filter
-    await fillTextFilter(user, "Title", "Dracula");
+    await fillTextField(user, "Title", "Dracula");
 
     // Apply the filters
     await clickViewResults(user);
@@ -384,7 +384,7 @@ describe("Reviews", () => {
     await clickToggleFilters(user);
 
     // Start typing a new filter but don't apply
-    await fillTextFilter(user, "Title", "A different title...");
+    await fillTextField(user, "Title", "A different title...");
 
     // Close the drawer with the X button (should reset pending changes)
     await clickCloseFilters(user);

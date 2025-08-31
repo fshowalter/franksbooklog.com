@@ -1,12 +1,33 @@
-import { act, render, screen, within } from "@testing-library/react";
-import { userEvent } from "@testing-library/user-event";
+import { render } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import { DRAWER_CLOSE_ANIMATION_MS } from "~/components/ListWithFilters/ListWithFilters";
-import { TEXT_FILTER_DEBOUNCE_MS } from "~/components/TextFilter";
+import {
+  clickClearFilters,
+  clickCloseFilters,
+  clickSortOption,
+  clickToggleFilters,
+  clickViewResults,
+} from "~/components/ListWithFilters/ListWithFilters.testHelper";
+import { getUserWithFakeTimers } from "~/components/utils/testUtils";
+import {
+  clickKindFilter,
+  fillTitleFilter,
+  fillWorkYearFilter,
+  getTitleFilter,
+} from "~/components/WorkFilters.testHelper";
 
 import { getProps } from "./getProps";
 import { Readings } from "./Readings";
+import {
+  clickEditionFilter,
+  clickNextMonthButton,
+  clickPreviousMonthButton,
+  fillReadingYearFilter,
+  getCalendar,
+  getEditionFilter,
+  queryNextMonthButton,
+  queryPreviousMonthButton,
+} from "./Readings.testHelper";
 
 export const props = await getProps();
 
@@ -36,353 +57,274 @@ describe("Readings", () => {
     expect.hasAssertions();
 
     // Setup userEvent with advanceTimers
-    const user = userEvent.setup({
-      advanceTimers: vi.advanceTimersByTime,
-    });
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
     // Open filter drawer
-    await user.click(screen.getByRole("button", { name: "Toggle filters" }));
+    await clickToggleFilters(user);
 
     // Type the filter text
-    await user.type(screen.getByLabelText("Title"), "Rio Bravo");
-    act(() => {
-      vi.advanceTimersByTime(TEXT_FILTER_DEBOUNCE_MS);
-    });
+    await fillTitleFilter(user, "Dracula");
 
-    // Apply the filter
-    await user.click(screen.getByRole("button", { name: /View \d+ Results/ }));
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
-  });
-
-  it("can filter by kind", async ({ expect }) => {
-    expect.hasAssertions();
-    render(<Readings {...props} />);
-
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
-
-    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
-
-    // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
-
-    // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
-  });
-
-  it("can filter by kind then show all", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Readings {...props} />);
-
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
-
-    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
-
-    // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
-
-    // Open filter drawer again
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
-
-    await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
-
-    // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
-
-    // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can filter by edition", async ({ expect }) => {
     expect.hasAssertions();
+
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
+
     render(<Readings {...props} />);
 
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "Audible");
+    await clickEditionFilter(user, "Paperback");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can filter by edition then show all", async ({ expect }) => {
     expect.hasAssertions();
+
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
+
     render(<Readings {...props} />);
 
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "Audible");
+    await clickEditionFilter(user, "Paperback");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
 
     // Open filter drawer again
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "All");
+    await clickEditionFilter(user, "All");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
 
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
+  });
+
+  it("can filter by kind", async ({ expect }) => {
+    expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
+
+    render(<Readings {...props} />);
+
+    await clickToggleFilters(user);
+
+    await clickKindFilter(user, "Novel");
+
+    // Apply the filter
+    await clickViewResults(user);
+
+    // Calendar updates synchronously with fake timers
+    expect(getCalendar()).toMatchSnapshot();
+  });
+
+  it("can filter by kind then show all", async ({ expect }) => {
+    expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
+
+    render(<Readings {...props} />);
+
+    await clickToggleFilters(user);
+
+    await clickKindFilter(user, "Novel");
+
+    // Apply the filter
+    await clickViewResults(user);
+
+    // Open filter drawer again
+    await clickToggleFilters(user);
+
+    await clickKindFilter(user, "All");
+
+    // Apply the filter
+    await clickViewResults(user);
+
+    // Calendar updates synchronously with fake timers
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can sort by reading date with newest first", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Readings {...props} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Reading Date (Newest First)",
-    );
+    await clickSortOption(user, "Reading Date (Newest First)");
 
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can sort by reading date with oldest first", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Readings {...props} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Reading Date (Oldest First)",
-    );
+    await clickSortOption(user, "Reading Date (Oldest First)");
 
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can filter by work year", async ({ expect }) => {
     expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    const fieldset = screen.getByRole("group", { name: "Work Year" });
-    const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("to");
-
-    await userEvent.selectOptions(fromInput, "1980");
-    await userEvent.selectOptions(toInput, "1989");
+    await fillWorkYearFilter(user, "1978", "1980");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can filter by work year reversed", async ({ expect }) => {
     expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    const fieldset = screen.getByRole("group", { name: "Work Year" });
-    const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("to");
-
-    await userEvent.selectOptions(fromInput, "1980");
-    await userEvent.selectOptions(toInput, "1989");
-    await userEvent.selectOptions(fromInput, "2015");
-    await userEvent.selectOptions(toInput, "1977");
+    await fillWorkYearFilter(user, "1953", "1975");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
+
+    await clickToggleFilters(user);
+
+    await fillWorkYearFilter(user, "1979", "1975");
+
+    // Apply the filter
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can filter by reading year", async ({ expect }) => {
     expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    const fieldset = screen.getByRole("group", { name: "Reading Year" });
-    const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("to");
-
-    // Use a narrower range that will actually filter out some data
-    await userEvent.selectOptions(fromInput, "2022");
-    await userEvent.selectOptions(toInput, "2023");
+    await fillReadingYearFilter(user, "2012", "2012");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can filter by reading year reversed", async ({ expect }) => {
     expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
-    // Open filter drawer
-    await userEvent.click(
-      screen.getByRole("button", { name: "Toggle filters" }),
-    );
+    await clickToggleFilters(user);
 
-    const fieldset = screen.getByRole("group", { name: "Reading Year" });
-    const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("to");
-
-    await userEvent.selectOptions(fromInput, "2022");
-    await userEvent.selectOptions(toInput, "2023");
-    await userEvent.selectOptions(fromInput, "2023");
-    await userEvent.selectOptions(toInput, "2022");
+    await fillReadingYearFilter(user, "2012", "2014");
 
     // Apply the filter
-    await userEvent.click(
-      screen.getByRole("button", { name: /View \d+ Results/ }),
-    );
+    await clickViewResults(user);
+
+    await clickToggleFilters(user);
+
+    await fillReadingYearFilter(user, "2015", "2012");
+
+    // Apply the filter
+    await clickViewResults(user);
 
     // Calendar updates synchronously with fake timers
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can navigate to previous month", async ({ expect }) => {
     expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
     // Sort by oldest first to ensure we have a next month button
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Reading Date (Oldest First)",
-    );
+    await clickSortOption(user, "Reading Date (Newest First)");
 
-    // Find and click the next month button first to ensure we can go back
-    const nextMonthButton = await screen.findByRole("button", {
-      name: /Navigate to next month:/,
-    });
-    await userEvent.click(nextMonthButton);
+    await clickPreviousMonthButton(user);
 
-    // Now find and click the previous month button
-    const prevMonthButton = await screen.findByRole("button", {
-      name: /Navigate to previous month:/,
-    });
-    await userEvent.click(prevMonthButton);
-
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("can navigate to next month", async ({ expect }) => {
     expect.hasAssertions();
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
-    // Sort by oldest first to ensure we start at the beginning
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Reading Date (Oldest First)",
-    );
+    // Sort by oldest first to ensure we have a next month button
+    await clickSortOption(user, "Reading Date (Oldest First)");
 
-    // Find and click the next month button
-    const nextMonthButton = await screen.findByRole("button", {
-      name: /Navigate to next month:/,
-    });
-    await userEvent.click(nextMonthButton);
+    await clickNextMonthButton(user);
 
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    expect(getCalendar()).toMatchSnapshot();
   });
 
   it("shows correct month navigation buttons", async ({ expect }) => {
     expect.hasAssertions();
 
+    const user = getUserWithFakeTimers();
+
     render(<Readings {...props} />);
 
     // Default sort is newest first, should show previous month button
-    const prevMonthButton = screen.queryByRole("button", {
-      name: /Navigate to previous month:/,
-    });
-    const nextMonthButton = screen.queryByRole("button", {
-      name: /Navigate to next month:/,
-    });
+    const prevMonthButton = queryPreviousMonthButton();
+    const nextMonthButton = queryNextMonthButton();
 
     // At newest month, should only have previous month button
     expect(prevMonthButton).toBeInTheDocument();
     expect(nextMonthButton).not.toBeInTheDocument();
 
     // Sort by oldest first
-    await userEvent.selectOptions(
-      screen.getByLabelText("Sort"),
-      "Reading Date (Oldest First)",
-    );
+    await clickSortOption(user, "Reading Date (Oldest First)");
 
     // At oldest month, should only have next month button
-    const prevMonthButtonAfterSort = screen.queryByRole("button", {
-      name: /Navigate to previous month:/,
-    });
-    const nextMonthButtonAfterSort = screen.queryByRole("button", {
-      name: /Navigate to next month:/,
-    });
+    const prevMonthButtonAfterSort = queryPreviousMonthButton();
+    const nextMonthButtonAfterSort = queryNextMonthButton();
 
     expect(prevMonthButtonAfterSort).not.toBeInTheDocument();
     expect(nextMonthButtonAfterSort).toBeInTheDocument();
@@ -392,98 +334,77 @@ describe("Readings", () => {
     expect.hasAssertions();
 
     // Setup userEvent with advanceTimers
-    const user = userEvent.setup({
-      advanceTimers: vi.advanceTimersByTime,
-    });
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
     // Open filter drawer
-    await user.click(screen.getByRole("button", { name: "Toggle filters" }));
+    await clickToggleFilters(user);
 
     // Apply multiple filters
-    await user.type(screen.getByLabelText("Title"), "Dracula");
-    act(() => {
-      vi.advanceTimersByTime(TEXT_FILTER_DEBOUNCE_MS);
-    });
+    await fillTitleFilter(user, "The Shining");
 
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "Audible");
+    await clickEditionFilter(user, "Paperback");
 
-    await user.click(screen.getByRole("button", { name: /View \d+ Results/ }));
+    await clickViewResults(user);
+
+    const listBeforeClear = getCalendar().innerHTML;
 
     // Open filter drawer again
-    await user.click(screen.getByRole("button", { name: "Toggle filters" }));
+    await clickToggleFilters(user);
 
     // Clear all filters
-    await user.click(screen.getByRole("button", { name: "Clear all filters" }));
+    await clickClearFilters(user);
 
     // Check that filters are cleared
-    expect(screen.getByLabelText("Title")).toHaveValue("");
-    expect(screen.getByLabelText("Edition")).toHaveValue("All");
+    expect(getTitleFilter()).toHaveValue("");
+    expect(getEditionFilter()).toHaveValue("All");
 
-    await user.click(screen.getByRole("button", { name: /View \d+ Results/ }));
+    await clickViewResults(user);
 
-    expect(screen.getByTestId("calendar")).toMatchSnapshot();
+    const listAfterClear = getCalendar().innerHTML;
+
+    expect(listBeforeClear).not.toEqual(listAfterClear);
   });
 
   it("can reset filters when closing drawer", async ({ expect }) => {
     expect.hasAssertions();
 
     // Setup userEvent with advanceTimers
-    const user = userEvent.setup({
-      advanceTimers: vi.advanceTimersByTime,
-    });
+    const user = getUserWithFakeTimers();
 
     render(<Readings {...props} />);
 
     // Open filter drawer
-    await user.click(screen.getByRole("button", { name: "Toggle filters" }));
+    await clickToggleFilters(user);
 
     // Apply initial filter
-    await user.type(screen.getByLabelText("Title"), "Dracula");
-    act(() => {
-      vi.advanceTimersByTime(TEXT_FILTER_DEBOUNCE_MS);
-    });
+    await fillTitleFilter(user, "Dracula");
 
     // Apply the filters
-    await user.click(screen.getByRole("button", { name: /View \d+ Results/ }));
+    await clickViewResults(user);
 
     // Store the current view
-    const calendarFiltered = screen.getByTestId("calendar");
-    const monthsFiltered = within(calendarFiltered).queryAllByRole("heading", {
-      level: 2,
-    }).length;
+    const listBeforeReset = getCalendar().innerHTML;
 
     // Open filter drawer again
-    await user.click(screen.getByRole("button", { name: "Toggle filters" }));
+    await clickToggleFilters(user);
 
     // Start typing a new filter but don't apply
-    await user.clear(screen.getByLabelText("Title"));
-    await user.type(screen.getByLabelText("Title"), "Different Book");
-    act(() => {
-      vi.advanceTimersByTime(TEXT_FILTER_DEBOUNCE_MS);
-    });
+    await fillTitleFilter(user, "Different Movie");
 
     // Close the drawer with the X button (should reset pending changes)
-    await user.click(screen.getByRole("button", { name: "Close filters" }));
-
-    // Wait for drawer close animation
-    act(() => {
-      vi.advanceTimersByTime(DRAWER_CLOSE_ANIMATION_MS);
-    });
+    await clickCloseFilters(user);
 
     // The view should still show the originally filtered results
-    const calendarAfterReset = screen.getByTestId("calendar");
-    const monthsAfterReset = within(calendarAfterReset).queryAllByRole(
-      "heading",
-      { level: 2 },
-    ).length;
-    expect(monthsAfterReset).toBe(monthsFiltered);
+    const listAfterReset = getCalendar().innerHTML;
+
+    expect(listBeforeReset).toEqual(listAfterReset);
 
     // Open filter drawer again to verify filters were reset to last applied state
-    await user.click(screen.getByRole("button", { name: "Toggle filters" }));
+    await clickToggleFilters(user);
 
     // Should show the originally applied filter, not the pending change
-    expect(screen.getByLabelText("Title")).toHaveValue("Dracula");
+    expect(getTitleFilter()).toHaveValue("Dracula");
   });
 });

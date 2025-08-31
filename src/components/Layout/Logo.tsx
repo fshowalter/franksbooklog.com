@@ -1,4 +1,4 @@
-export function Logo({ className }: { className?: string }) {
+export function Logo({ className }: { className?: string }): React.JSX.Element {
   return (
     <div
       className={`

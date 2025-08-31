@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { AlltimeStats } from "~/api/alltimeStats";
 
 import { StatsCallout } from "~/components/StatsCallout";
@@ -10,7 +8,7 @@ export function Callouts({
   bookCount,
   reviewCount,
   workCount,
-}: Props): JSX.Element {
+}: Props): React.JSX.Element {
   return (
     <div
       className={`

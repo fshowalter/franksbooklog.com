@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 export type ReviewOpenGraphImageComponentType = (

@@ -18,6 +18,7 @@ const mockProps = {
       <button type="button">Filter button</button>
     </div>
   ),
+  hasActiveFilters: false,
   list: <div data-testid="list">Test List Content</div>,
   sortProps: {
     currentSortValue: "title-asc",

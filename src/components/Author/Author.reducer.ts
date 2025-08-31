@@ -1,83 +1,54 @@
 /**
  * Author page reducer with pending filters support
  */
+import type { ListWithFiltersActionType } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 import type {
-  ListWithFiltersActionType,
-  ListWithFiltersState,
-} from "~/components/ListWithFilters/reducerUtils";
-import type {
-  PaginationState,
-  WorksFilterActionType,
+  WorksActionType,
+  WorksListState,
+  WorkSortType,
 } from "~/components/ListWithFilters/worksReducerUtils";
 
 import {
-  buildGroupValues,
-  buildSortValues,
-  getGroupLetter,
+  createInitialState,
   handleListWithFiltersAction,
   ListWithFiltersActions,
-} from "~/components/ListWithFilters/reducerUtils";
+} from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 import {
-  applyPendingFiltersWithPagination,
-  createInitialStateWithPagination,
+  createPaginatedGroupFn,
+  createWorkGroupForValue,
   handleGradeFilterAction,
   handleKindFilterAction,
   handleReviewYearFilterAction,
   handleShowMoreAction,
   handleTitleFilterAction,
   handleWorkYearFilterAction,
+  SHOW_COUNT_DEFAULT,
   sortGrade,
   sortReviewDate,
   sortTitle,
   sortWorkYear,
-  updateSortWithPagination,
-  WorksFilterActions,
+  WorksActions,
 } from "~/components/ListWithFilters/worksReducerUtils";
+import {
+  buildGroupValues,
+  buildSortValues,
+} from "~/components/utils/reducerUtils";
 
 import type { ListItemValue } from "./Author";
-
-export type Sort =
-  | "grade-asc"
-  | "grade-desc"
-  | "review-date-asc"
-  | "review-date-desc"
-  | "title-asc"
-  | "title-desc"
-  | "work-year-asc"
-  | "work-year-desc";
 
 // Re-export shared actions for component convenience
 export const Actions = {
   ...ListWithFiltersActions,
-  ...WorksFilterActions,
+  ...WorksActions,
 } as const;
 
-function groupForValue(value: ListItemValue, sortValue: Sort): string {
-  switch (sortValue) {
-    case "grade-asc":
-    case "grade-desc": {
-      return value.grade;
-    }
-    case "review-date-asc":
-    case "review-date-desc": {
-      return monthGroupFormat.format(value.reviewDate);
-    }
-    case "title-asc":
-    case "title-desc": {
-      return getGroupLetter(value.sortTitle);
-    }
-    case "work-year-asc":
-    case "work-year-desc": {
-      return value.workYear;
-    }
-  }
-}
+// Re-export sort type for convenience
+export type Sort = WorkSortType;
 
-const groupValues = buildGroupValues(groupForValue);
+// Create the groupForValue function using the generic builder
+const groupForValue = createWorkGroupForValue<ListItemValue, Sort>();
 
-export type ActionType =
-  | ListWithFiltersActionType<Sort>
-  | WorksFilterActionType;
+export type ActionType = ListWithFiltersActionType<Sort> | WorksActionType;
 
 const sortValues = buildSortValues<ListItemValue, Sort>({
   ...sortGrade<ListItemValue>(),
@@ -86,13 +57,11 @@ const sortValues = buildSortValues<ListItemValue, Sort>({
   ...sortWorkYear<ListItemValue>(),
 });
 
-const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
-  month: "long",
-  timeZone: "UTC",
-  year: "numeric",
-});
+type State = WorksListState<ListItemValue, Sort> & {
+  showCount: number;
+};
 
-type State = ListWithFiltersState<ListItemValue, Sort> & PaginationState;
+const groupValues = buildGroupValues(groupForValue);
 
 export function initState({
   initialSort,
@@ -101,65 +70,64 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return createInitialStateWithPagination({
+  const showCount = SHOW_COUNT_DEFAULT;
+  const baseState = createInitialState({
+    extendedState: {
+      showCount,
+    },
     groupFn: groupValues,
     initialSort,
-    showMoreEnabled: true,
+    showCount,
     sortFn: sortValues,
     values,
-  }) as State;
+  });
+
+  return baseState;
 }
 
 // Create reducer function
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
-    case ListWithFiltersActions.APPLY_PENDING_FILTERS: {
-      const baseResult = handleListWithFiltersAction(state, action, {
-        groupFn: groupValues,
-        sortFn: sortValues,
-      });
-      return applyPendingFiltersWithPagination(state, baseResult, groupValues);
-    }
-
-    case ListWithFiltersActions.SORT: {
-      const baseResult = handleListWithFiltersAction(state, action, {
-        groupFn: groupValues,
-        sortFn: sortValues,
-      });
-      return updateSortWithPagination(state, baseResult, groupValues);
-    }
-
-    case WorksFilterActions.PENDING_FILTER_GRADE: {
+    case WorksActions.PENDING_FILTER_GRADE: {
       return handleGradeFilterAction(state, action);
     }
 
     // Field-specific shared filters
-    case WorksFilterActions.PENDING_FILTER_KIND: {
+    case WorksActions.PENDING_FILTER_KIND: {
       return handleKindFilterAction(state, action);
     }
 
-    case WorksFilterActions.PENDING_FILTER_REVIEW_YEAR: {
+    case WorksActions.PENDING_FILTER_REVIEW_YEAR: {
       return handleReviewYearFilterAction(state, action);
     }
 
-    case WorksFilterActions.PENDING_FILTER_TITLE: {
+    case WorksActions.PENDING_FILTER_TITLE: {
       return handleTitleFilterAction(state, action);
     }
 
-    case WorksFilterActions.PENDING_FILTER_WORK_YEAR: {
+    case WorksActions.PENDING_FILTER_WORK_YEAR: {
       return handleWorkYearFilterAction(state, action);
     }
 
-    case WorksFilterActions.SHOW_MORE: {
+    case WorksActions.SHOW_MORE: {
       return handleShowMoreAction(state, action, groupValues);
     }
 
     default: {
       // Handle shared list structure actions
-      return handleListWithFiltersAction(state, action, {
-        groupFn: groupValues,
-        sortFn: sortValues,
-      });
+      const paginatedGroupFn = createPaginatedGroupFn(
+        groupValues,
+        state.showCount,
+      );
+      return handleListWithFiltersAction(
+        state,
+        action,
+        {
+          groupFn: paginatedGroupFn,
+          sortFn: sortValues,
+        },
+        { showCount: state.showCount },
+      );
     }
   }
 }

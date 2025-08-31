@@ -491,12 +491,12 @@
             </div>
           </header>
           <astro-island
-            uid="Z25Oa2g"
+            uid="12uO2I"
             prefix="r3"
             component-url="~/components/Author/Author"
             component-export="Author"
             renderer-url="@astrojs/react/client.js"
-            props='{"distinctKinds":[1,[[0,"Nonfiction"]]],"distinctReviewYears":[1,[[0,"2022"]]],"distinctWorkYears":[1,[[0,"2000"]]],"initialSort":[0,"work-year-asc"],"values":[1,[[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Jun 01, 2022"],"grade":[0,"Abandoned"],"gradeValue":[0,0],"kind":[0,"Nonfiction"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-06-01T00:00:00.000Z"],"reviewSequence":[0,280],"reviewYear":[0,"2022"],"slug":[0,"living-with-a-seal-by-jesse-itzler"],"sortTitle":[0,"Living with a SEAL: 31 Days Training with the Toughest Man on the Planet"],"title":[0,"Living with a SEAL"],"workYear":[0,"2000"],"workYearSequence":[0,124]}]]],"name":[0,"Jesse Itzler"]}'
+            props='{"distinctKinds":[1,[[0,"Nonfiction"]]],"distinctReviewYears":[1,[[0,"2022"]]],"distinctWorkYears":[1,[[0,"2000"]]],"initialSort":[0,"title-asc"],"values":[1,[[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Jun 01, 2022"],"grade":[0,"Abandoned"],"gradeValue":[0,0],"kind":[0,"Nonfiction"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-06-01T00:00:00.000Z"],"reviewSequence":[0,280],"reviewYear":[0,"2022"],"slug":[0,"living-with-a-seal-by-jesse-itzler"],"sortTitle":[0,"Living with a SEAL: 31 Days Training with the Toughest Man on the Planet"],"title":[0,"Living with a SEAL"],"workYear":[0,"2000"],"workYearSequence":[0,124]}]]],"name":[0,"Jesse Itzler"]}'
             ssr
             client="load"
             before-hydration-url="astro:scripts/before-hydration.js"
@@ -532,22 +532,24 @@
                         <select
                           class="flex w-full appearance-none border-none bg-default py-2 pr-4 pl-4 font-serif text-base font-normal tracking-normal overflow-ellipsis text-default shadow-all outline-accent"
                         >
-                          <option value="work-year-asc" selected="">
-                            Work Year (Oldest First)
+                          <option value="title-asc" selected="">
+                            Title (A → Z)
                           </option>
+                          <option value="title-desc">Title (Z → A)</option>
+                          <option value="grade-desc">Grade (Best First)</option>
+                          <option value="grade-asc">Grade (Worst First)</option>
                           <option value="work-year-desc">
                             Work Year (Newest First)
                           </option>
-                          <option value="review-date-asc">
-                            Review Date (Oldest First)
+                          <option value="work-year-asc">
+                            Work Year (Oldest First)
                           </option>
                           <option value="review-date-desc">
                             Review Date (Newest First)
                           </option>
-                          <option value="title-asc">Title (A → Z)</option>
-                          <option value="title-desc">Title (Z → A)</option>
-                          <option value="grade-desc">Grade (Best First)</option>
-                          <option value="grade-asc">Grade (Worst First)</option>
+                          <option value="review-date-asc">
+                            Review Date (Oldest First)
+                          </option>
                         </select></label
                       >
                     </div>
@@ -570,12 +572,12 @@
                     id="list"
                   >
                     <ol data-testid="grouped-cover-list">
-                      <li class="block first-of-type:mt-4" id="2000">
+                      <li class="block first-of-type:mt-4" id="L">
                         <div class="pt-0 text-md">
                           <div
                             class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
                           >
-                            2000
+                            L
                           </div>
                         </div>
                         <div class="bg-subtle">
@@ -710,7 +712,7 @@
                                 class="min-w-10 text-left text-sm tracking-serif-wide"
                                 >From</span
                               ><select
-                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2000" selected="">2000</option>
                               </select></label
@@ -719,7 +721,7 @@
                                 class="min-w-10 text-center text-sm tracking-serif-wide"
                                 >to</span
                               ><select
-                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2000" selected="">2000</option>
                               </select></label
@@ -738,7 +740,7 @@
                                 class="min-w-10 text-left text-sm tracking-serif-wide"
                                 >From</span
                               ><select
-                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2022" selected="">2022</option>
                               </select></label
@@ -747,7 +749,7 @@
                                 class="min-w-10 text-center text-sm tracking-serif-wide"
                                 >to</span
                               ><select
-                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2022" selected="">2022</option>
                               </select></label
@@ -766,7 +768,7 @@
                                 class="min-w-10 text-left text-sm tracking-serif-wide"
                                 >From</span
                               ><select
-                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="1" selected="">F</option>
                                 <option value="2">D-</option>
@@ -787,7 +789,7 @@
                                 class="min-w-10 text-center text-sm tracking-serif-wide"
                                 >to</span
                               ><select
-                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="13" selected="">A+</option>
                                 <option value="12">A</option>
@@ -811,7 +813,7 @@
                             class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
                             >Kind</span
                           ><select
-                            class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                            class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                           >
                             <option value="All">All</option>
                             <option value="Nonfiction">Nonfiction</option>

@@ -1,10 +1,8 @@
-import type { JSX } from "react";
-
 import type { BackdropImageProps } from "~/api/backdrops";
 import type { ReviewCardWithExcerptReview } from "~/components/ReviewCardWithExcerpt";
 
 import { Backdrop } from "~/components/Backdrop";
-import { Layout } from "~/components/Layout";
+import { Layout } from "~/components/Layout/Layout";
 import { ReviewCardWithExcerpt } from "~/components/ReviewCardWithExcerpt";
 import { SubHeading } from "~/components/SubHeading";
 
@@ -14,7 +12,11 @@ export type Props = {
   values: ReviewCardWithExcerptReview[];
 };
 
-export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
+export function Home({
+  backdropImageProps,
+  deck,
+  values,
+}: Props): React.JSX.Element {
   return (
     <Layout className="bg-subtle pb-8" hasBackdrop={true} hideLogo={true}>
       <Backdrop

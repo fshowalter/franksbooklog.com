@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 import type { CoverImageProps } from "~/api/covers";
 
 import { CoverList, CoverListItem } from "./CoverList";

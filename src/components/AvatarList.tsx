@@ -9,20 +9,6 @@ export const AvatarListItemImageConfig = {
   width: 80,
 };
 
-export function AvatarList({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}): React.JSX.Element {
-  return (
-    <ol className={className} data-testid="avatar-list">
-      {children}
-    </ol>
-  );
-}
-
 export function AvatarListItem({
   avatarImageProps,
   children,

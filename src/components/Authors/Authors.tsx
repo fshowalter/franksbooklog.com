@@ -5,6 +5,7 @@ import type { AvatarImageProps } from "~/api/avatars";
 import type { BackdropImageProps } from "~/api/backdrops";
 
 import { AvatarListItem, GroupedAvatarList } from "~/components/AvatarList";
+import { CollectionSortOptions } from "~/components/CollectionSortOptions";
 import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
 
 import type { Sort } from "./Authors.reducer";
@@ -87,14 +88,7 @@ export function Authors({
         onSortChange: (e) =>
           dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
         sortOptions: (
-          <>
-            <option value="name-asc">Name (A &rarr; Z)</option>
-            <option value="name-desc">Name (Z &rarr; A)</option>
-            <option value="review-count-desc">Review Count (Most First)</option>
-            <option value="review-count-asc">
-              Review Count (Fewest First)
-            </option>
-          </>
+          <CollectionSortOptions options={["name", "review-count"]} />
         ),
       }}
       totalCount={state.filteredValues.length}
