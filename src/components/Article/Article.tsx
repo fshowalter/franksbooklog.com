@@ -4,8 +4,7 @@ import type { MoreReviewsValue } from "~/components/MoreReviews";
 import { Backdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout/Layout";
 import { LongFormText } from "~/components/LongFormText";
-import { MoreReviews } from "~/components/MoreReviews";
-import { SubHeading } from "~/components/SubHeading";
+import { MoreReviews, MoreReviewsHeading } from "~/components/MoreReviews";
 
 export type Props = {
   backdropImageProps: BackdropImageProps;
@@ -46,21 +45,11 @@ export function Article({
         data-pagefind-ignore
       >
         <MoreReviews values={recentReviews}>
-          <SubHeading as="h2">
-            <a
-              className={`
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              `}
-              href={`/reviews/`}
-            >
-              Recent <span className={`text-accent`}>Reviews</span>
-            </a>
-          </SubHeading>
+          <MoreReviewsHeading
+            accentText="Reviews"
+            href={`/reviews/`}
+            text="Recent"
+          />
         </MoreReviews>
       </div>
     </Layout>

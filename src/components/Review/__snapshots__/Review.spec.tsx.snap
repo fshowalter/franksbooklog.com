@@ -797,13 +797,12 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -2230,13 +2229,12 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -3971,13 +3969,12 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -6337,13 +6334,12 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -7960,13 +7956,12 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -9514,13 +9509,12 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -11477,13 +11471,12 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -13338,13 +13331,12 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -14628,13 +14620,12 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -16219,13 +16210,12 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -18102,13 +18092,12 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -19484,13 +19473,12 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -21011,13 +20999,12 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -23401,13 +23388,12 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -25255,13 +25241,12 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -26745,13 +26730,12 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -28104,13 +28088,12 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -29909,13 +29892,12 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -31438,13 +31420,12 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -33301,13 +33282,12 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -34685,13 +34665,12 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -35907,13 +35886,12 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -37611,13 +37589,12 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -39462,13 +39439,12 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -41102,13 +41078,12 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -43104,13 +43079,12 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
@@ -45378,13 +45352,12 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
               >
                 <a
                   class="
-                relative -mb-1 inline-block transform-gpu pb-1
-                transition-transform
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-right after:scale-x-0
-                after:bg-(--fg-accent) after:transition-transform
-                hover:after:scale-x-100
-              "
+          relative -mb-1 inline-block transform-gpu pb-1 transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-right after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        "
                   href="/reviews/"
                 >
                   More 
