@@ -188,7 +188,7 @@ function CoverListItemCover({
             className={`
               transform-gpu rounded-[2.5px] bg-default shadow-sm
               transition-transform duration-500
-              group-has-[a:hover]/list-item:scale-105
+              group-has-[a:hover]/list-item:scale-110
               @min-[160px]:shadow-lg
             `}
             decoding="async"
