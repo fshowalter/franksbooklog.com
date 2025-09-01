@@ -108,7 +108,7 @@ export function ReviewCard({
                   className={`
                     transform-gpu rounded-[2.5px] bg-default
                     transition-transform duration-500
-                    group-has-[a:hover]/list-item:scale-105
+                    group-has-[a:hover]/list-item:scale-110
                   `}
                   decoding="async"
                   loading="lazy"
