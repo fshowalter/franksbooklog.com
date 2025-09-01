@@ -38,7 +38,7 @@ export function ReviewCard({
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       `}
     >
