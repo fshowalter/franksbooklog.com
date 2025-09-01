@@ -2263,7 +2263,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -2406,7 +2406,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -2560,7 +2560,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -2718,7 +2718,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -4003,7 +4003,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -4157,7 +4157,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -6368,7 +6368,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -6522,7 +6522,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -7990,7 +7990,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -9543,7 +9543,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -9686,7 +9686,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -9832,7 +9832,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -11505,7 +11505,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -11651,7 +11651,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -13365,7 +13365,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -14654,7 +14654,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -14797,7 +14797,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -16244,7 +16244,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -16394,7 +16394,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -18126,7 +18126,7 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -19507,7 +19507,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -19650,7 +19650,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -21033,7 +21033,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -21162,7 +21162,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -23422,7 +23422,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -25275,7 +25275,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -26764,7 +26764,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -26907,7 +26907,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -28122,7 +28122,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -28257,7 +28257,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -29926,7 +29926,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -30069,7 +30069,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -30216,7 +30216,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -31454,7 +31454,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -31597,7 +31597,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -33316,7 +33316,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -33462,7 +33462,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -35920,7 +35920,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -36049,7 +36049,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -37623,7 +37623,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -37758,7 +37758,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -39473,7 +39473,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -39616,7 +39616,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -41112,7 +41112,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -41255,7 +41255,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -43113,7 +43113,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -43256,7 +43256,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -43410,7 +43410,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
@@ -45386,7 +45386,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
         group/list-item @container/card relative row-span-2 grid transform-gpu
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         duration-500
-        tablet-landscape:has-[a:hover]:scale-105
+        tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
       "
                 >
