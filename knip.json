@@ -3,7 +3,8 @@
   "entry": [
     "src/pages/**/*.astro",
     "src/layouts/search.ts",
-    "eslint.html.config.js"
+    "eslint.html.config.js",
+    "src/pages/**/*.spec.ts"
   ],
   "project": ["**/*", "!src/**/__mocks__/**"],
   "ignoreDependencies": [
