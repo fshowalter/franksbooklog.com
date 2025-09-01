@@ -19675,7 +19675,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -19721,8 +19721,8 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                               height="372"
                               loading="lazy"
                               sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                               width="248"
                             />
                           </div>
@@ -20624,7 +20624,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             class="
         @container relative my-12 flex w-full max-w-popout flex-col items-center
       "
-            data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+            data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
           >
             <div
               class="
@@ -20634,7 +20634,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -20666,8 +20666,8 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   decoding="auto"
                   height="372"
                   loading="lazy"
-                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
                 />
               </div>
@@ -21307,7 +21307,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"Review","author":{"@type":"Person","name":"Frank Showalter"},"itemReviewed":{"@type":"Book","image":"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg","name":"Mandala"},"reviewRating":{"@type":"Rating","ratingValue":4}}
+          {"@context":"http://schema.org","@type":"Review","author":{"@type":"Person","name":"Frank Showalter"},"itemReviewed":{"@type":"Book","image":"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg","name":"Mandala"},"reviewRating":{"@type":"Rating","ratingValue":4}}
         </script>
       </main>
       <footer
@@ -23447,7 +23447,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -23493,8 +23493,8 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                               height="372"
                               loading="lazy"
                               sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                               width="248"
                             />
                           </div>
@@ -24409,7 +24409,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             class="
         @container relative my-12 flex w-full max-w-popout flex-col items-center
       "
-            data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+            data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
           >
             <div
               class="
@@ -24419,7 +24419,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -24451,8 +24451,8 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   decoding="auto"
                   height="372"
                   loading="lazy"
-                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
                 />
               </div>
@@ -25424,7 +25424,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"Review","author":{"@type":"Person","name":"Frank Showalter"},"itemReviewed":{"@type":"Book","image":"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg","name":"Out Are the Lights"},"reviewRating":{"@type":"Rating","ratingValue":3}}
+          {"@context":"http://schema.org","@type":"Review","author":{"@type":"Person","name":"Frank Showalter"},"itemReviewed":{"@type":"Book","image":"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg","name":"Out Are the Lights"},"reviewRating":{"@type":"Rating","ratingValue":3}}
         </script>
       </main>
       <footer
@@ -31210,7 +31210,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             class="
         @container relative my-12 flex w-full max-w-popout flex-col items-center
       "
-            data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+            data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
           >
             <div
               class="
@@ -31220,7 +31220,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -31252,8 +31252,8 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   decoding="auto"
                   height="372"
                   loading="lazy"
-                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 2x"
                   width="248"
                 />
               </div>
@@ -31742,7 +31742,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"Review","author":{"@type":"Person","name":"Frank Showalter"},"itemReviewed":{"@type":"Book","image":"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg","name":"Soft Construction of a Sunset"},"reviewRating":{"@type":"Rating","ratingValue":4}}
+          {"@context":"http://schema.org","@type":"Review","author":{"@type":"Person","name":"Frank Showalter"},"itemReviewed":{"@type":"Book","image":"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg","name":"Soft Construction of a Sunset"},"reviewRating":{"@type":"Rating","ratingValue":4}}
         </script>
       </main>
       <footer
@@ -36074,7 +36074,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -36120,8 +36120,8 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                               height="372"
                               loading="lazy"
                               sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                               width="248"
                             />
                           </div>
@@ -39641,7 +39641,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -39687,8 +39687,8 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                               height="372"
                               loading="lazy"
                               sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                               width="248"
                             />
                           </div>
@@ -41280,7 +41280,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -41326,8 +41326,8 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                               height="372"
                               loading="lazy"
                               sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                               width="248"
                             />
                           </div>
