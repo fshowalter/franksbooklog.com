@@ -30,7 +30,7 @@ export function Mast({
             `
             : `
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             `
         }
         text-(--mast-color)
@@ -110,14 +110,14 @@ function HamburgerMenu({
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           `}
           style={{
-            backgroundColor: hasBackdrop ? "#fff" : "var(--fg-default)",
+            backgroundColor: hasBackdrop ? "#fff" : "var(--color-default)",
           }}
         />
       </button>

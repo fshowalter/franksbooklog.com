@@ -27,7 +27,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -243,13 +243,13 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -505,7 +505,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -1198,7 +1198,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -1414,13 +1414,13 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -1701,7 +1701,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -2288,7 +2288,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -2431,7 +2431,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -2585,7 +2585,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -2743,7 +2743,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -3241,7 +3241,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -3457,13 +3457,13 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -3719,7 +3719,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -4028,7 +4028,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -4182,7 +4182,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -4672,7 +4672,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -4888,13 +4888,13 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -5150,7 +5150,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -6393,7 +6393,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -6547,7 +6547,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -7037,7 +7037,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -7253,13 +7253,13 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -7523,7 +7523,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -8015,7 +8015,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -8504,7 +8504,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -8720,13 +8720,13 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -8982,7 +8982,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -9568,7 +9568,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -9711,7 +9711,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -9857,7 +9857,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -10351,7 +10351,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -10567,13 +10567,13 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -10837,7 +10837,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -11530,7 +11530,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -11676,7 +11676,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -12165,7 +12165,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -12381,13 +12381,13 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -12643,7 +12643,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=248&h=248&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=248&h=248&q=80&f=avif);"
             />
             <div
               class="
@@ -13390,7 +13390,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -13883,7 +13883,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -14099,13 +14099,13 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -14386,7 +14386,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -14679,7 +14679,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=248&h=248&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=248&h=248&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -14822,7 +14822,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -15308,7 +15308,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -15524,13 +15524,13 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -15786,7 +15786,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -16269,7 +16269,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -16419,7 +16419,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -16909,7 +16909,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -17125,13 +17125,13 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -17404,7 +17404,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -18151,7 +18151,7 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -18637,7 +18637,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -18853,13 +18853,13 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -19119,7 +19119,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -19532,7 +19532,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -19675,7 +19675,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -20156,7 +20156,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -20372,13 +20372,13 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -20634,7 +20634,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -21058,7 +21058,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -21187,7 +21187,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -21673,7 +21673,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -21889,13 +21889,13 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -22151,7 +22151,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -23447,7 +23447,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -23941,7 +23941,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -24157,13 +24157,13 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -24419,7 +24419,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -25300,7 +25300,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -25790,7 +25790,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -26006,13 +26006,13 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -26264,7 +26264,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
             />
             <div
               class="
@@ -26789,7 +26789,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -26932,7 +26932,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -27413,7 +27413,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -27629,13 +27629,13 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -27891,7 +27891,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -28147,7 +28147,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -28282,7 +28282,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -28768,7 +28768,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -28984,13 +28984,13 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -29246,7 +29246,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -29951,7 +29951,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -30094,7 +30094,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -30241,7 +30241,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -30742,7 +30742,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -30958,13 +30958,13 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -31220,7 +31220,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -31479,7 +31479,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -31622,7 +31622,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -32108,7 +32108,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -32324,13 +32324,13 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -32586,7 +32586,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -33341,7 +33341,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -33487,7 +33487,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -33981,7 +33981,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -34197,13 +34197,13 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -34459,7 +34459,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
             />
             <div
               class="
@@ -35066,7 +35066,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -35282,13 +35282,13 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -35544,7 +35544,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
             />
             <div
               class="
@@ -35945,7 +35945,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -36074,7 +36074,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmandala-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -36560,7 +36560,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -36776,13 +36776,13 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -37038,7 +37038,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -37648,7 +37648,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -37783,7 +37783,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -38269,7 +38269,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -38485,13 +38485,13 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -38747,7 +38747,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -39498,7 +39498,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -39641,7 +39641,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -40131,7 +40131,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -40347,13 +40347,13 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -40617,7 +40617,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -41137,7 +41137,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -41280,7 +41280,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -41770,7 +41770,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -41986,13 +41986,13 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -42248,7 +42248,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
             />
             <div
               class="
@@ -43138,7 +43138,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -43281,7 +43281,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -43435,7 +43435,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="
@@ -43925,7 +43925,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
         laptop:px-16 laptop:py-8 laptop:text-left
         
               static
-              [--mast-color:var(--fg-default)]
+              [--mast-color:var(--color-default)]
             
         text-(--mast-color)
       "
@@ -44141,13 +44141,13 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
           "
-              style="background-color: var(--fg-default);"
+              style="background-color: var(--color-default);"
             />
           </button>
           <nav
@@ -44408,7 +44408,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
           after:clip-path-cover
           tablet:-left-[2.5%] tablet:w-[105%]
         "
-              style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif);"
+              style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif);"
             />
             <div
               class="
@@ -45411,7 +45411,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                        style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                        style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                       />
                       <div
                         class="

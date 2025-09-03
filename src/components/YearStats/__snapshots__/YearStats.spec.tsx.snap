@@ -249,7 +249,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -1673,7 +1673,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -3527,7 +3527,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -7817,7 +7817,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -9693,7 +9693,7 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -11369,7 +11369,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -13117,7 +13117,7 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -14649,7 +14649,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -16073,7 +16073,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -20821,7 +20821,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -23084,7 +23084,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -24652,7 +24652,7 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0

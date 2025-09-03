@@ -18,30 +18,31 @@
   --z-index-search-button: 1000;
 
   --background-color-*: initial;
-  --background-color-abandoned: var(--bg-abandoned);
-  --background-color-accent: var(--bg-accent);
-  --background-color-canvas: var(--bg-canvas);
-  --background-color-calendar: var(--bg-calendar);
-  --background-color-default: var(--bg-default);
-  --background-color-footer: var(--bg-footer);
-  --background-color-group: var(--bg-group);
-  --background-color-hover: var(--bg-hover);
-  --background-color-inverse: var(--bg-inverse);
-  --background-color-stripe: var(--bg-stripe);
-  --background-color-subtle: var(--bg-subtle);
+  --background-color-abandoned: light-dark(#c02b30, #952d30);
+  --background-color-accent: light-dark(#b4841e, #aa7f33);
+  --background-color-canvas: light-dark(#f4f1ea, #484745);
+  --background-color-calendar: light-dark(#fbfaf8, #393938);
+  --background-color-default: light-dark(#fff, #322f2f);
+  --background-color-footer: #2b292b;
+  --background-color-group: light-dark(#ededed, #464646);
+  --background-color-hover: light-dark(#f7f5f3, #3c393a);
+  --background-color-inverse: light-dark(rgb(0 0 0 / 75%), #322f2f);
+  --background-color-progress: light-dark(#14bd41, #379634);
+  --background-color-subtle: light-dark(#f9f7f4, #3e3d3c);
 
   --border-color-*: initial;
-  --border-color-default: var(--border-default);
+  --border-color-default: var(--color-border);
 
   --color-*: initial;
-  --color-accent: var(--fg-accent);
-  --color-border: var(--border-default);
-  --color-default: var(--fg-default);
+
+  --color-accent: light-dark(#bf8a00, #bf8a00);
+  --color-border: light-dark(#e9e7e0, #484745);
+  --color-default: light-dark(#252525, rgb(255 255 255 / 75%));
+  --color-grey: #b0b0b0;
   --color-inherit: inherit;
-  --color-inverse: var(--fg-inverse);
-  --color-inverse-subtle: var(--fg-inverse-subtle);
-  --color-muted: var(--fg-muted);
-  --color-subtle: var(--fg-subtle);
+  --color-inverse: light-dark(#fff, rgb(255 255 255 / 85%));
+  --color-muted: light-dark(#4a4a4a, rgb(255 255 255 / 65%));
+  --color-subtle: light-dark(rgb(0 0 0 / 60%), #b2b0b0);
 
   --tracking-*: initial;
   --tracking-normal: 0;
@@ -59,9 +60,9 @@
 
   --aspect-poster: 1 / 1.5;
 
-  --shadow-all: 0 0 0 1px var(--border-default);
-  --shadow-bottom: 0px 1px var(--border-default);
-  --shadow-hover: 0 0 1px 1px var(--border-default);
+  --shadow-all: 0 0 0 1px var(--color-border);
+  --shadow-bottom: 0px 1px var(--color-border);
+  --shadow-hover: 0 0 1px 1px var(--color-border);
 
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
@@ -84,30 +85,15 @@
 
 @layer base {
   :root {
-    --bg-calendar: #fbfaf8;
-    --bg-accent: #b4841e;
-    --bg-canvas: #f4f1ea;
-    --bg-default: #fff;
-    --bg-footer: #2b292b;
-    --bg-hover: #f7f5f3;
-    --bg-inverse: rgb(0 0 0 / 75%);
-    --bg-progress: #14bd41;
-    --bg-stripe: #fcfcfc;
-    --bg-group: #ededed;
-    --bg-subtle: #f9f7f4;
-
-    --border-default: #e9e7e0;
-    --fg-accent: #bf8a00;
-    --fg-default: #252525;
-    --fg-inverse: #fff;
-    --fg-inverse-subtle: #b0b0b0;
-    --fg-muted: #4a4a4a;
-    --fg-subtle: rgb(0 0 0 / 60%);
     --image-filter: initial;
+
     --container-padding: 8%;
+
     --font-sans: "Assistant";
     --font-serif: "FrankRuhlLibre";
+
     --list-item-poster-width: 64px;
+
     --hero-gradient: linear-gradient(
       to top,
       rgb(0 0 0 / 55%),
@@ -116,14 +102,16 @@
       rgb(0 0 0 / 17%) 75%,
       rgb(0 0 0 / 55%) 100%
     );
+
     --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 15%);
     --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 12%);
-    --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 15%);
     --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 15%);
+    --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 15%);
 
     --bg-default-rgb: 255, 255, 255;
     --bg-default-alpha: 0.4;
-    --bg-abandoned: #c02b30;
+
+    color-scheme: light dark;
   }
 
   body {
@@ -143,38 +131,23 @@
 
   @media (prefers-contrast: more) {
     :root {
-      --fg-accent: #986d00;
+      --color-accent: #986d00;
     }
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg-calendar: #393938;
-      --bg-accent: #aa7f33;
-      --bg-canvas: #484745;
-      --bg-default: #322f2f;
-      --bg-hover: #3c393a;
-      --bg-inverse: #322f2f;
-      --bg-progress: #379634;
-      --bg-group: #464646;
-      --bg-stripe: #3c393a;
-      --bg-subtle: #3e3d3c;
-      --border-default: #484745;
-      --fg-accent: #bf8a00;
-      --fg-default: rgb(255 255 255 / 75%);
-      --fg-muted: rgb(255 255 255 / 65%);
-      --fg-subtle: #b2b0b0;
-      --fg-inverse: rgb(255 255 255 / 85%);
       --image-filter: brightness(0.8) contrast(1);
+
       --hero-gradient: unset;
+
       --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 80%);
       --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 80%);
-      --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 65%);
       --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 25%);
+      --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 65%);
 
       --bg-default-rgb: 50, 47, 47;
       --bg-default-alpha: 0.5;
-      --bg-abandoned: #952d30;
     }
   }
 
@@ -240,8 +213,8 @@
 @utility bg-progress-bar {
   background-image: linear-gradient(
     to right,
-    var(--bg-progress),
-    var(--bg-progress) var(--bar-percent),
+    var(--background-color-progress),
+    var(--background-color-progress) var(--bar-percent),
     transparent var(--bar-percent),
     transparent
   );
@@ -427,7 +400,7 @@
 
     sup a,
     .data-footnote-backref {
-      color: var(--fg-accent);
+      color: var(--color-accent);
       text-decoration-thickness: auto;
     }
 
@@ -438,7 +411,7 @@
     }
 
     .data-footnote-backref::after {
-      background-color: var(--bg-accent);
+      background-color: var(--background-color-accent);
       bottom: 1px;
       content: "";
       height: 1px;
@@ -465,14 +438,14 @@
     }
 
     a:hover {
-      color: var(--fg-accent);
+      color: var(--color-accent);
       transition: all 80ms ease-in;
     }
 
     sup a:hover {
-      background-color: var(--bg-accent);
+      background-color: var(--color-accent);
       border-color: transparent;
-      color: var(--fg-inverse);
+      color: var(--color-inverse);
       filter: drop-shadow(0 1px 2px rgb(0 0 0 / 15%));
     }
 
@@ -495,8 +468,8 @@
     }
 
     blockquote {
-      border-left: 0.5rem solid var(--border-default);
-      color: var(--fg-muted);
+      border-left: 0.5rem solid var(--color-border);
+      color: var(--color-muted);
       font-style: italic;
       margin: 24px 0;
       padding: 0 24px;
