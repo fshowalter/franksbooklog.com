@@ -426,7 +426,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -454,7 +454,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -549,7 +549,7 @@ exports[`Review > matches snapshot for slug '2001-a-space-odyssey-by-arthur-c-cl
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -1597,7 +1597,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -1633,7 +1633,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -1650,7 +1650,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -1745,7 +1745,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -3640,7 +3640,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -3668,7 +3668,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -3763,7 +3763,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -5071,7 +5071,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -5099,7 +5099,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -5194,7 +5194,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -7436,7 +7436,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -7472,7 +7472,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -7567,7 +7567,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -8903,7 +8903,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -8931,7 +8931,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -9026,7 +9026,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -10750,7 +10750,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -10786,7 +10786,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -10881,7 +10881,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -12564,7 +12564,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -12592,7 +12592,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -12687,7 +12687,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -14282,7 +14282,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -14318,7 +14318,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -14335,7 +14335,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -14430,7 +14430,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -15707,7 +15707,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -15735,7 +15735,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -15830,7 +15830,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -17308,7 +17308,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -17336,7 +17336,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -17353,7 +17353,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -17448,7 +17448,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -19036,7 +19036,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -19072,7 +19072,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -19163,7 +19163,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -20555,7 +20555,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -20583,7 +20583,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -20678,7 +20678,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -22072,7 +22072,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -22100,7 +22100,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -22195,7 +22195,7 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -24340,7 +24340,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -24368,7 +24368,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -24463,7 +24463,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -26189,7 +26189,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -26217,7 +26217,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -26308,7 +26308,7 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -27812,7 +27812,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -27840,7 +27840,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -27935,7 +27935,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -29167,7 +29167,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -29195,7 +29195,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -29290,7 +29290,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -31141,7 +31141,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -31169,7 +31169,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -31264,7 +31264,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -32507,7 +32507,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -32535,7 +32535,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -32630,7 +32630,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -34380,7 +34380,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -34408,7 +34408,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -34503,7 +34503,7 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -35465,7 +35465,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -35493,7 +35493,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -35588,7 +35588,7 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -36959,7 +36959,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -36987,7 +36987,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -37082,7 +37082,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -38668,7 +38668,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -38696,7 +38696,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -38791,7 +38791,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -40530,7 +40530,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -40566,7 +40566,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -40661,7 +40661,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -42169,7 +42169,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -42197,7 +42197,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -42292,7 +42292,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
@@ -44324,7 +44324,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             "
@@ -44352,7 +44352,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             "
@@ -44452,7 +44452,7 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           "
           >
