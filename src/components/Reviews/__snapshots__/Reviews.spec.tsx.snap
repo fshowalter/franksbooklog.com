@@ -77145,7 +77145,6 @@ exports[`Reviews > renders 1`] = `
                   cursor-pointer items-center justify-center rounded-full
                   bg-canvas text-default drop-shadow-sm transition-transform
                   hover:scale-105 hover:drop-shadow-md
-                  
                 "
               type="button"
             >
@@ -77153,7 +77152,6 @@ exports[`Reviews > renders 1`] = `
                 aria-hidden="true"
                 class="
                     h-4 w-4 transform-gpu
-                    
                     
                   "
                 fill="none"
