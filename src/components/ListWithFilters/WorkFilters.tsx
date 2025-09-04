@@ -1,10 +1,10 @@
-import { GradeField } from "~/components/GradeField";
-import { SelectField } from "~/components/SelectField";
-import { SelectOptions } from "~/components/SelectOptions";
-import { TextField } from "~/components/TextField";
-import { YearField } from "~/components/YearField";
+import { GradeField } from "~/components/Fields/GradeField";
+import { SelectField } from "~/components/Fields/SelectField";
+import { SelectOptions } from "~/components/Fields/SelectOptions";
+import { TextField } from "~/components/Fields/TextField";
+import { YearField } from "~/components/Fields/YearField";
 
-import type { WorkFilterValues } from "./ListWithFilters/worksReducerUtils";
+import type { WorkFilterValues } from "./worksReducerUtils";
 
 export function WorkFilters({
   grade,

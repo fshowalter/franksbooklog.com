@@ -8,13 +8,13 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/ListWithFilters/ListWithFilters.testHelper";
-import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   fillWorkYearFilter,
   getTitleFilter,
-} from "~/components/WorkFilters.testHelper";
+} from "~/components/ListWithFilters/WorkFilters.testHelper";
+import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 
 import { getProps } from "./getProps";
 import { Readings } from "./Readings";

@@ -2,8 +2,8 @@ import type { UserEvent } from "@testing-library/user-event";
 
 import { screen, within } from "@testing-library/react";
 
-import { fillTextField } from "./TextField.testHelper";
-import { fillYearField } from "./YearField.testHelper";
+import { fillTextField } from "~/components/Fields/TextField.testHelper";
+import { fillYearField } from "~/components/Fields/YearField.testHelper";
 
 export async function clickKindFilterOption(user: UserEvent, value: string) {
   await user.selectOptions(screen.getByLabelText("Kind"), value);
