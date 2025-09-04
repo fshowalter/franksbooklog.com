@@ -12,7 +12,6 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/ListWithFilters/testUtils";
-import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 import {
   clickKindFilterOption,
   fillGradeFilter,
@@ -21,7 +20,8 @@ import {
   fillWorkYearFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/WorkFilters.testHelper";
+} from "~/components/ListWithFilters/WorkFilters.testHelper";
+import { getUserWithFakeTimers } from "~/components/utils/testUtils";
 
 import { Author } from "./Author";
 import { getProps } from "./getProps";

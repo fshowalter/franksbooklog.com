@@ -1,6 +1,6 @@
 import type { WorkFilterValues } from "~/components/ListWithFilters/worksReducerUtils";
 
-import { WorkFilters } from "~/components/WorkFilters";
+import { WorkFilters } from "~/components/ListWithFilters/WorkFilters";
 
 import type { ActionType } from "./Reviews.reducer";
 

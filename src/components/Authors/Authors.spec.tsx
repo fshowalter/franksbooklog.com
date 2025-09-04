@@ -5,7 +5,7 @@ import { getGroupedAvatarList } from "~/components/AvatarList.testHelper";
 import {
   fillNameFilter,
   getNameFilter,
-} from "~/components/CollectionFilters.testHelper";
+} from "~/components/ListWithFilters/CollectionFilters.testHelper";
 import { clickSortOption } from "~/components/ListWithFilters/ListWithFilters.testHelper";
 import {
   clickClearFilters,

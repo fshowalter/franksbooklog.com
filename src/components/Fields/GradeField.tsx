@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { LabelText } from "~/components/LabelText";
-import { SelectInput } from "~/components/SelectInput";
+import { LabelText } from "./LabelText";
+import { SelectInput } from "./SelectInput";
 
 const gradeOptions = [
   <option key={13} value={13}>

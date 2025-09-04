@@ -1,6 +1,6 @@
 import type { CollectionFilterValues } from "~/components/ListWithFilters/collectionsReducerUtils";
 
-import { CollectionFilters } from "~/components/CollectionFilters";
+import { CollectionFilters } from "~/components/ListWithFilters/CollectionFilters";
 
 import type { ActionType } from "./Authors.reducer";
 

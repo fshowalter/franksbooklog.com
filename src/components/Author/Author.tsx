@@ -13,7 +13,7 @@ import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
-import { WorkSortOptions } from "~/components/WorkSortOptions";
+import { WorkSortOptions } from "~/components/ListWithFilters/WorkSortOptions";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { Sort } from "./Author.reducer";
