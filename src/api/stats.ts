@@ -1,7 +1,13 @@
 import { ENABLE_CACHE } from "~/utils/cache";
 import { perfLogger } from "~/utils/performanceLogger";
 
-import { allYearStatsJson, type YearStatsJson } from "./data/yearStatsJson";
+import type { AlltimeStatsJson } from "./data/alltimeStatsJson";
+import type { YearStatsJson } from "./data/yearStatsJson";
+
+import { alltimeStatsJson } from "./data/alltimeStatsJson";
+import { allYearStatsJson } from "./data/yearStatsJson";
+
+export type AlltimeStats = AlltimeStatsJson & {};
 
 export type YearStats = YearStatsJson & {};
 
@@ -25,6 +31,12 @@ export async function allStatYears() {
     }
 
     return [...statYears].toSorted();
+  });
+}
+
+export async function alltimeStats(): Promise<AlltimeStats> {
+  return await perfLogger.measure("alltimeStats", async () => {
+    return await alltimeStatsJson();
   });
 }
 

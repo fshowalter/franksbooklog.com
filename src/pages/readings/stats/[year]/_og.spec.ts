@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, it } from "vitest";
 
-import { allStatYears } from "~/api/yearStats.ts";
+import { allStatYears } from "~/api/stats.ts";
 
 import * as OgEndpoint from "./og.jpg.ts";
 
