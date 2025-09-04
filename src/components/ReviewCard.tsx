@@ -64,7 +64,7 @@ export function ReviewCard({
               @min-[500px]/card:hidden
             `}
             style={{
-              backgroundColor: "var(--bg-default)",
+              backgroundColor: "var(--background-color-default)",
               backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${value.coverImageProps.src})`,
             }}
           />

@@ -225,7 +225,7 @@ exports[`Home > matches snapshot 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -501,7 +501,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=248&h=395&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -653,7 +653,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -805,7 +805,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -957,7 +957,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -1109,7 +1109,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -1261,7 +1261,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -1413,7 +1413,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=248&h=331&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -1565,7 +1565,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -1720,7 +1720,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsoft-construction-of-a-sunset-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -1876,7 +1876,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -2039,7 +2039,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -2191,7 +2191,7 @@ exports[`Home > matches snapshot 1`] = `
               after:clip-path-cover
               @min-[500px]/card:hidden
             "
-                    style="background-color: var(--bg-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
+                    style="background-color: var(--background-color-default); background-image: linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&w=248&h=378&q=80&f=avif);"
                   />
                   <div
                     class="
@@ -2326,7 +2326,7 @@ exports[`Home > matches snapshot 1`] = `
                 relative inline-block pb-1
                 after:absolute after:bottom-0 after:left-0 after:h-0.5
                 after:w-full after:origin-center after:scale-x-0
-                after:transform-gpu after:bg-(--fg-inverse)
+                after:transform-gpu after:bg-(--color-inverse)
                 after:transition-transform after:duration-500
                 group-hover/all-reviews:after:scale-x-100
               "

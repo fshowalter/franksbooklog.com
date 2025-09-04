@@ -66,7 +66,7 @@ export function Home({
                 relative inline-block pb-1
                 after:absolute after:bottom-0 after:left-0 after:h-0.5
                 after:w-full after:origin-center after:scale-x-0
-                after:transform-gpu after:bg-(--fg-inverse)
+                after:transform-gpu after:bg-(--color-inverse)
                 after:transition-transform after:duration-500
                 group-hover/all-reviews:after:scale-x-100
               `}

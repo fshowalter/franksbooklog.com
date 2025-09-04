@@ -342,8 +342,9 @@ function CalendarHeader({
               -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent)
-              after:transition-transform after:duration-500
+              after:origin-bottom-right after:scale-x-0
+              after:bg-(--color-accent) after:transition-transform
+              after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
@@ -372,7 +373,7 @@ function CalendarHeader({
               -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase

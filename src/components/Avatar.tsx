@@ -22,7 +22,7 @@ export function Avatar({
   return (
     <div className={className}>
       <svg
-        fill={fill || "var(--bg-subtle)"}
+        fill={fill || "var(--background-color-subtle)"}
         viewBox="0 0 16 16"
         width="100%"
         xmlns="http://www.w3.org/2000/svg"

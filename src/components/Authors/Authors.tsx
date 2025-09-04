@@ -195,7 +195,7 @@ function LetterLink({
     <li
       className={`
         snap-start text-center font-sans
-        ${linkFunc ? "text-inverse" : `text-inverse-subtle`}
+        ${linkFunc ? "text-inverse" : `text-grey`}
       `}
     >
       {linkFunc ? (

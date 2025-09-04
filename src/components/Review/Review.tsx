@@ -49,7 +49,7 @@ export function Review({
               relative inline-block pb-1 font-sans text-xs tracking-wider
               text-subtle uppercase transition-all
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:text-accent hover:after:scale-x-100
             `}
@@ -100,7 +100,7 @@ export function Review({
             relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
             text-subtle uppercase
             after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
+            after:w-[122%] after:border-t after:border-subtle
             tablet:mt-6
           `}
         >
@@ -190,7 +190,7 @@ function Authors({
               relative inline-block transform-gpu text-accent
               transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
               hover:after:scale-x-100
             `}
@@ -226,7 +226,7 @@ function ReviewCover({
           tablet:-left-[2.5%] tablet:w-[105%]
         `}
         style={{
-          backgroundColor: "var(--bg-default)",
+          backgroundColor: "var(--background-color-default)",
           backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
         }}
       />

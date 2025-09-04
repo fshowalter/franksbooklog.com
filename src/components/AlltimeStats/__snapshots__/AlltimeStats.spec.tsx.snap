@@ -249,7 +249,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:!bg-[var(--color-default)]
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
@@ -461,7 +461,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         relative inline-block font-sans text-sm font-bold tracking-wide
         text-[#fff]/85 uppercase
         after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
-        after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75
+        after:origin-center after:scale-x-0 after:bg-(--color-inverse)/75
         after:transition-transform after:duration-500
         hover:after:scale-x-100
       "
@@ -526,7 +526,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -542,7 +542,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -554,7 +554,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -570,7 +570,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -582,7 +582,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -598,7 +598,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -610,7 +610,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -626,7 +626,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -638,7 +638,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -654,7 +654,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -666,7 +666,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -682,7 +682,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -694,7 +694,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -710,7 +710,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -722,7 +722,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -738,7 +738,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -750,7 +750,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -766,7 +766,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -778,7 +778,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -794,7 +794,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -806,7 +806,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -822,7 +822,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -834,7 +834,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <li
               class="
         snap-start text-center
-        text-inverse-subtle
+        text-grey
       "
             >
               <a
@@ -850,7 +850,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
               relative inline-block pb-1
               after:absolute after:bottom-0 after:left-0 after:h-0.5
               after:w-full after:origin-center after:scale-x-0
-              after:bg-(--fg-inverse) after:transition-transform
+              after:bg-(--color-inverse) after:transition-transform
               after:duration-500
               group-hover/year:after:scale-x-100
             "
@@ -971,7 +971,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -3391,7 +3391,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -5353,7 +5353,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -6641,7 +6641,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -6978,7 +6978,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -7336,7 +7336,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -7694,7 +7694,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -7959,7 +7959,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -8224,7 +8224,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
@@ -8489,7 +8489,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           relative inline-block font-serif text-base leading-6 font-medium
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
           hover:after:scale-x-100
         "
