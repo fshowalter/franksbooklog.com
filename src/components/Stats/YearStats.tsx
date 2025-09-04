@@ -1,32 +1,33 @@
-import type { AlltimeStats } from "~/api/alltimeStats";
 import type { BackdropImageProps } from "~/api/backdrops";
+import type { YearStats } from "~/api/stats";
 
 import { Backdrop, BreadcrumbLink } from "~/components/Backdrop";
-import { DecadeDistribution } from "~/components/DecadeDistribution";
-import { EditionDistribution } from "~/components/EditionDistribution";
-import { KindDistribution } from "~/components/KindDistribution";
 import { Layout } from "~/components/Layout/Layout";
-import { MostReadAuthors } from "~/components/MostReadAuthors";
-import { StatsNavigation } from "~/components/StatsNavigation";
 
 import { Callouts } from "./Callouts";
-import { GradeDistribution } from "./GradeDistribution";
+import { DecadeDistribution } from "./DecadeDistribution";
+import { EditionDistribution } from "./EditionDistribution";
+import { KindDistribution } from "./KindDistribution";
+import { MostReadAuthors } from "./MostReadAuthors";
+import { StatsNavigation } from "./StatsNavigation";
 
-export type Props = {
+export type YearStatsProps = {
   backdropImageProps: BackdropImageProps;
   deck: string;
-  distinctStatYears: string[];
+  distinctStatYears: readonly string[];
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
-  stats: AlltimeStats;
+  stats: YearStats;
+  year: string;
 };
 
-export function AlltimeStats({
+export function YearStats({
   backdropImageProps,
   deck,
   distinctStatYears,
   mostReadAuthors,
   stats,
-}: Props): React.JSX.Element {
+  year,
+}: YearStatsProps): React.JSX.Element {
   return (
     <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
       <Backdrop
@@ -36,25 +37,30 @@ export function AlltimeStats({
         centerText={true}
         deck={deck}
         imageProps={backdropImageProps}
-        title="All-Time Stats"
+        title={`${year} Stats`}
       />
       <StatsNavigation
         className="z-10 mb-12 w-full"
-        currentYear={"all"}
+        currentYear={year}
         linkFunc={(year: string) => {
+          if (year === "all") {
+            return "/readings/stats/";
+          }
+
           return `/readings/stats/${year}/`;
         }}
         years={distinctStatYears}
       />
       <Callouts
-        bookCount={stats.bookCount}
-        reviewCount={stats.reviewCount}
-        workCount={stats.workCount}
+        stats={[
+          { label: "Titles", value: stats.workCount },
+          { label: "Books", value: stats.bookCount },
+        ]}
       />
       <div
         className={`
-          mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
-          items-stretch gap-y-8 py-10
+          mx-auto flex w-full max-w-(--breakpoint-laptop) flex-col items-stretch
+          gap-y-8 py-10
           tablet:px-container
         `}
       >
@@ -70,9 +76,6 @@ export function AlltimeStats({
           <DecadeDistribution values={stats.decadeDistribution} />
           <KindDistribution values={stats.kindDistribution} />
           <EditionDistribution values={stats.editionDistribution} />
-        </div>
-        <div className="mx-auto w-full max-w-popout">
-          <GradeDistribution values={stats.gradeDistribution} />
         </div>
       </div>
     </Layout>

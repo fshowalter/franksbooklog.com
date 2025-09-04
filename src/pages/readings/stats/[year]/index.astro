@@ -1,7 +1,7 @@
 ---
-import { allStatYears } from "~/api/yearStats";
-import { getProps } from "~/components/YearStats/getProps";
-import { YearStats } from "~/components/YearStats/YearStats";
+import { allStatYears } from "~/api/stats";
+import { getYearStatsProps } from "~/components/Stats/getProps";
+import { YearStats } from "~/components/Stats/YearStats";
 import Layout from "~/layouts/Layout.astro";
 
 interface Props {
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 
 const { year } = Astro.props;
 
-const props = await getProps(year);
+const props = await getYearStatsProps(year);
 ---
 
 <Layout

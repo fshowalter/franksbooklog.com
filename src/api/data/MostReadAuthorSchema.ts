@@ -24,3 +24,5 @@ export const MostReadAuthorSchema = z
     // fix zod making anything with undefined optional
     return { count, name, readings, reviewed, slug };
   });
+
+export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;

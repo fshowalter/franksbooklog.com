@@ -6,7 +6,7 @@ import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
-import { allStatYears } from "~/api/yearStats";
+import { allStatYears } from "~/api/stats";
 import { normalizeScriptSrc } from "~/utils/normalizeScriptSrc";
 
 import YearStats from "./index.astro";

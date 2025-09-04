@@ -1,11 +1,11 @@
 import type { CoverImageProps } from "~/api/covers";
 
-import { CoverList, CoverListItem } from "./CoverList";
-import { ListItemEdition } from "./ListItemEdition";
-import { ListItemReviewDate } from "./ListItemReviewDate";
-import { ListItemTitle } from "./ListItemTitle";
+import { CoverList, CoverListItem } from "~/components/CoverList";
+import { ListItemEdition } from "~/components/ListItemEdition";
+import { ListItemReviewDate } from "~/components/ListItemReviewDate";
+import { ListItemTitle } from "~/components/ListItemTitle";
 
-type MostReadAuthorsListItemValue = {
+export type MostReadAuthorsListItemValue = {
   count: number;
   name: string;
   readings: ReadingSubListItemValue[];

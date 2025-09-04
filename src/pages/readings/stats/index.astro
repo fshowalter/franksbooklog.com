@@ -1,9 +1,9 @@
 ---
-import { AlltimeStats } from "~/components/AlltimeStats/AlltimeStats";
-import { getProps } from "~/components/AlltimeStats/getProps";
+import { AlltimeStats } from "~/components/Stats/AlltimeStats";
+import { getAlltimeStatsProps } from "~/components/Stats/getProps";
 import Layout from "~/layouts/Layout.astro";
 
-const props = await getProps();
+const props = await getAlltimeStatsProps();
 ---
 
 <Layout
