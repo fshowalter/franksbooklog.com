@@ -1,11 +1,19 @@
-import { getBackdropImageProps } from "~/api/backdrops";
+import {
+  type BackdropImageProps,
+  getBackdropImageProps,
+} from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
 import { BackdropImageConfig } from "~/components/Backdrop";
 import { CoverListItemImageConfig } from "~/components/CoverList";
 import { displayDate } from "~/utils/displayDate";
 
-import type { Props, ReviewsListItemValue } from "./Reviews";
+import type { ReviewsProps, ReviewsValue } from "./Reviews";
+
+type Props = ReviewsProps & {
+  backdropImageProps: BackdropImageProps;
+  deck: string;
+};
 
 export async function getProps(): Promise<Props> {
   const { distinctKinds, distinctReviewYears, distinctWorkYears, reviews } =
@@ -17,9 +25,9 @@ export async function getProps(): Promise<Props> {
 
   const values = await Promise.all(
     reviews.map(async (review) => {
-      const value: ReviewsListItemValue = {
+      const value: ReviewsValue = {
         authors: review.authors.map((author) => {
-          const authorValue: ReviewsListItemValue["authors"][number] = {
+          const authorValue: ReviewsValue["authors"][number] = {
             name: author.name,
             sortName: author.sortName,
           };
@@ -31,7 +39,6 @@ export async function getProps(): Promise<Props> {
           review,
           CoverListItemImageConfig,
         ),
-        date: review.date,
         displayDate: displayDate(review.date),
         grade: review.grade,
         gradeValue: review.gradeValue,

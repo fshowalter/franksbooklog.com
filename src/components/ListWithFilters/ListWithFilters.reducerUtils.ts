@@ -15,9 +15,9 @@
  * - TItem: The type of items in the list
  * - TSortValue: The type of sort values
  */
-import type { GroupFn } from "~/components/utils/reducerUtils";
+import type { GroupFn } from "~/utils/reducerUtils";
 
-import { filterValues } from "~/components/utils/reducerUtils";
+import { filterValues } from "~/utils/reducerUtils";
 
 /**
  * Base Action Types for ListWithFilters component
@@ -29,7 +29,7 @@ export enum ListWithFiltersActions {
   SORT = "SORT",
 }
 
-export type { GroupFn } from "~/components/utils/reducerUtils";
+export type { GroupFn } from "~/utils/reducerUtils";
 
 /**
  * Base ListWithFilters action types
@@ -46,7 +46,7 @@ export type ListWithFiltersActionType<TSortValue = unknown> =
 export type ListWithFiltersState<TItem, TSortValue> = {
   allValues: TItem[];
   filteredValues: TItem[];
-  filters: Record<string, (item: TItem) => boolean>;
+  filters: Record<string, (value: TItem) => boolean>;
   filterValues: Record<
     string,
     [number, number] | [string, string] | readonly string[] | string
@@ -54,7 +54,7 @@ export type ListWithFiltersState<TItem, TSortValue> = {
   groupedValues: Map<string, TItem[]>;
   hasActiveFilters: boolean;
   pendingFilteredCount: number;
-  pendingFilters: Record<string, (item: TItem) => boolean>;
+  pendingFilters: Record<string, (value: TItem) => boolean>;
   pendingFilterValues: Record<
     string,
     [number, number] | [string, string] | readonly string[] | string

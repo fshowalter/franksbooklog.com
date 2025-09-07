@@ -1,12 +1,21 @@
 import { type Author, getAuthorDetails } from "~/api/authors";
-import { getAvatarImageProps } from "~/api/avatars";
-import { getBackdropImageProps } from "~/api/backdrops";
+import { type AvatarImageProps, getAvatarImageProps } from "~/api/avatars";
+import {
+  type BackdropImageProps,
+  getBackdropImageProps,
+} from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { BackdropImageConfig } from "~/components/Backdrop";
 import { CoverListItemImageConfig } from "~/components/CoverList";
 import { displayDate } from "~/utils/displayDate";
 
-import type { ListItemValue, Props } from "./Author";
+import type { AuthorProps, AuthorValue } from "./Author";
+
+type Props = AuthorProps & {
+  avatarImageProps: AvatarImageProps | undefined;
+  backdropImageProps: BackdropImageProps;
+  deck: string;
+};
 
 import { AvatarImageConfig } from "./Author";
 
@@ -18,7 +27,7 @@ export async function getProps(slug: string): Promise<Props> {
 
   const works = await Promise.all(
     author.reviewedWorks.map(async (work) => {
-      const value: ListItemValue = {
+      const value: AuthorValue = {
         coverImageProps: await getFluidCoverImageProps(
           work,
           CoverListItemImageConfig,

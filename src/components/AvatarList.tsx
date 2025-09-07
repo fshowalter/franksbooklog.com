@@ -2,7 +2,7 @@ import type { AvatarImageProps } from "~/api/avatars";
 
 import { Avatar } from "~/components/Avatar";
 
-import { GroupingListItem } from "./GroupingListItem";
+import { GroupingListItem } from "./GroupingListItem/GroupingListItem";
 
 export const AvatarListItemImageConfig = {
   height: 80,

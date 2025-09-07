@@ -1,6 +1,6 @@
 import type { CoverImageProps } from "~/api/covers";
 
-import { GroupingListItem } from "./GroupingListItem";
+import { GroupingListItem } from "./GroupingListItem/GroupingListItem";
 
 export const CoverListItemImageConfig = {
   height: 375,

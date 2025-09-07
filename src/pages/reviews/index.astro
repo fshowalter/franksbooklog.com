@@ -1,14 +1,14 @@
 ---
 import { Backdrop } from "~/components/Backdrop";
 import { Layout as ComponentLayout } from "~/components/Layout/Layout";
-import { getProps } from "~/components/Reviews/getProps";
-import { Reviews } from "~/components/Reviews/Reviews";
+import { getProps } from "~/features/reviews/getProps";
+import { Reviews } from "~/features/reviews/Reviews";
 import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
 
 // Separate layout props from interactive props
-const { backdropImageProps, deck, ...interactiveProps } = props;
+const { backdropImageProps, deck, ...clientProps } = props;
 ---
 
 <Layout
@@ -25,6 +25,6 @@ const { backdropImageProps, deck, ...interactiveProps } = props;
   </Fragment>
   <ComponentLayout className="bg-subtle">
     <Backdrop deck={deck} imageProps={backdropImageProps} title="Reviews" />
-    <Reviews client:load {...interactiveProps} />
+    <Reviews client:load {...clientProps} />
   </ComponentLayout>
 </Layout>

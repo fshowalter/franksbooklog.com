@@ -9,11 +9,7 @@ import type {
 } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
 
 import { updatePendingFilter } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
-import {
-  getGroupLetter,
-  sortNumber,
-  sortString,
-} from "~/components/utils/reducerUtils";
+import { getGroupLetter, sortNumber, sortString } from "~/utils/reducerUtils";
 
 /**
  * Collection-specific filter actions

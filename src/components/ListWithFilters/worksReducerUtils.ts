@@ -1,10 +1,6 @@
-import type { GroupFn } from "~/components/utils/reducerUtils";
+import type { GroupFn } from "~/utils/reducerUtils";
 
-import {
-  getGroupLetter,
-  sortNumber,
-  sortString,
-} from "~/components/utils/reducerUtils";
+import { getGroupLetter, sortNumber, sortString } from "~/utils/reducerUtils";
 
 /**
  * Work-specific reducer utilities for lists of works (Reviews, Readings, Author pages).

@@ -20,7 +20,7 @@ import {
   handleWorkYearFilterAction,
   WorksActions,
 } from "~/components/ListWithFilters/worksReducerUtils";
-import { buildSortValues } from "~/components/utils/reducerUtils";
+import { buildSortValues } from "~/utils/reducerUtils";
 
 import type { ListItemValue } from "./Readings";
 

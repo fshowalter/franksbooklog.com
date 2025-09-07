@@ -17,10 +17,7 @@ import {
   handleListWithFiltersAction,
   ListWithFiltersActions,
 } from "~/components/ListWithFilters/ListWithFilters.reducerUtils";
-import {
-  buildGroupValues,
-  buildSortValues,
-} from "~/components/utils/reducerUtils";
+import { buildGroupValues, buildSortValues } from "~/utils/reducerUtils";
 
 import type { ListItemValue } from "./Authors";
 

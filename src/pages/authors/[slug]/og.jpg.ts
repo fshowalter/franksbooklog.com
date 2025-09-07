@@ -3,7 +3,7 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 import { allAuthors } from "~/api/authors";
 import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
 import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
-import { OpenGraphImage } from "~/components/Author/OpenGraphImage";
+import { OpenGraphImage } from "~/features/author/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;

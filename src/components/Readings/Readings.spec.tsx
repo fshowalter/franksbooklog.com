@@ -14,7 +14,7 @@ import {
   fillWorkYearFilter,
   getTitleFilter,
 } from "~/components/ListWithFilters/WorkFilters.testHelper";
-import { getUserWithFakeTimers } from "~/components/utils/testUtils";
+import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import { getProps } from "./getProps";
 import { Readings } from "./Readings";
