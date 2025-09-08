@@ -18,10 +18,8 @@ type CalendarDay = {
 
 const sortValues = createSortValues<ReadingsValue, ReadingsSort>({
   // Note: Lower timelineSequence = older date (in real data)
-  "reading-date-asc": (a, b) =>
-    sortNumber(a.timelineSequence, b.timelineSequence), // Oldest first
-  "reading-date-desc": (a, b) =>
-    sortNumber(b.timelineSequence, a.timelineSequence), // Newest first
+  "reading-date-asc": (a, b) => sortNumber(a.entrySequence, b.entrySequence), // Oldest first
+  "reading-date-desc": (a, b) => sortNumber(b.entrySequence, a.entrySequence), // Newest first
 });
 
 export const selectSortedFilteredValues = createSelectSortedFilteredValues<
@@ -29,11 +27,13 @@ export const selectSortedFilteredValues = createSelectSortedFilteredValues<
   ReadingsSort
 >(sortValues);
 
-export function selectCalendarWeeks(
-  utcMonth: number,
-  utcYear: number,
+export function selectWeeksForMonth(
+  month: Date,
   filteredReadings: ReadingsValue[],
 ): CalendarWeek[] {
+  const utcMonth = month.getUTCMonth();
+  const utcYear = month.getUTCFullYear();
+
   const groupedReadings = groupValues(filteredReadings);
   const days = getCalendarDays(utcMonth, utcYear, groupedReadings);
   const weeks: CalendarDay[][] = [];
@@ -108,7 +108,7 @@ function groupValues(values: ReadingsValue[]): Map<string, ReadingsValue[]> {
 
   // Sort readings within each day by sequence (higher sequence = older, so reverse sort)
   for (const dayReadings of grouped.values()) {
-    dayReadings.sort((a, b) => a.timelineSequence - b.timelineSequence);
+    dayReadings.sort((a, b) => a.entrySequence - b.entrySequence);
   }
 
   return grouped;

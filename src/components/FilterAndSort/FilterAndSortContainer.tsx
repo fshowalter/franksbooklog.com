@@ -134,7 +134,7 @@ export function FilterAndSortContainer<T extends string>({
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
-            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-10
             scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
             border-default bg-default text-xs
             tablet:col-span-full

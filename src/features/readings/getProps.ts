@@ -2,37 +2,35 @@ import type { BackdropImageProps } from "~/api/backdrops";
 
 import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
-import { allTimelineEntries } from "~/api/timelineEntries";
+import { allReadingEntries } from "~/api/readings";
 import { BackdropImageConfig } from "~/components/Backdrop";
 
-import type { ListItemValue } from "./Readings";
-import type { Props } from "./Readings";
+import type { ReadingsValue } from "./Readings";
+import type { ReadingsProps } from "./Readings";
 
 import { ReadingsItemImageConfig } from "./Readings";
 
 export async function getProps(): Promise<
-  Props & { backdropImageProps: BackdropImageProps; deck: string }
+  ReadingsProps & { backdropImageProps: BackdropImageProps; deck: string }
 > {
   const {
     distinctEditions,
     distinctKinds,
     distinctReadingYears,
     distinctWorkYears,
-    timelineEntries,
-  } = await allTimelineEntries();
+    readingEntries,
+  } = await allReadingEntries();
 
   // Don't pre-sort here - let the component handle sorting
   // timelineEntries.sort((a, b) => b.timelineSequence - a.timelineSequence);
 
   const values = await Promise.all(
-    timelineEntries.map(async (entry) => {
-      const readingDate = new Date(entry.timelineDate);
-      const value: ListItemValue = {
+    readingEntries.map(async (entry) => {
+      const readingDate = new Date(entry.readingEntryDate);
+      const value: ReadingsValue = {
         authors: entry.authors.map((author) => {
-          const authorValue: ListItemValue["authors"][0] = {
+          const authorValue: ReadingsValue["authors"][0] = {
             name: author.name,
-            slug: author.slug,
-            sortName: author.sortName,
           };
 
           return authorValue;
@@ -42,9 +40,10 @@ export async function getProps(): Promise<
           ReadingsItemImageConfig,
         ),
         edition: entry.edition,
+        entrySequence: entry.readingEntrySequence,
         kind: entry.kind,
         progress: entry.progress,
-        readingDate: entry.timelineDate, // Keep original date string for calendar
+        readingDate: entry.readingEntryDate, // Keep original date string for calendar
         readingDay: readingDate.toLocaleString("en-US", {
           timeZone: "UTC",
           weekday: "short",
@@ -63,7 +62,6 @@ export async function getProps(): Promise<
         }),
         reviewed: entry.reviewed,
         slug: entry.slug,
-        timelineSequence: entry.timelineSequence,
         title: entry.title,
         workYear: entry.workYear,
       };

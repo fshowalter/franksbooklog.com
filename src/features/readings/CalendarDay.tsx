@@ -69,7 +69,7 @@ export function CalendarDay({
               <CoverListItem
                 className={`items-center`}
                 coverImageProps={reading.coverImageProps}
-                key={reading.timelineSequence}
+                key={reading.entrySequence}
               >
                 <div
                   className={`

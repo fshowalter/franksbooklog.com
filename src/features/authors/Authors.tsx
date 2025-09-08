@@ -2,7 +2,7 @@ import { useReducer, useState } from "react";
 
 import type { AvatarImageProps } from "~/api/avatars";
 
-import { GroupedAvatarList } from "~/components/AvatarList";
+import { GroupedAvatarList } from "~/components/AvatarList/AvatarList";
 import { CollectionSortOptions } from "~/components/FilterAndSort/CollectionSortOptions";
 import { FilterAndSortContainer } from "~/components/FilterAndSort/FilterAndSortContainer";
 

@@ -1,5 +1,6 @@
 import {
   createInitialWorkFiltersState,
+  createSortActionCreator,
   createWorkFiltersReducer,
   updatePendingFilter,
   type WorkFiltersActionType,
@@ -15,6 +16,8 @@ export {
   createSetTitlePendingFilterAction,
   createSetWorkYearPendingFilterAction,
 } from "~/components/FilterAndSort/WorkFilters.reducer";
+
+import { FiltersActions } from "~/components/FilterAndSort/filters.reducer";
 
 import type { ReadingsValue } from "./Readings";
 import type { ReadingsSort } from "./Readings.sorter";
@@ -121,6 +124,20 @@ export function createPreviousMonthAction(): PreviousMonthAction {
   return { type: ReadingsActions.Previous_Month };
 }
 
+export function createSetEditionPendingFilterAction(
+  value: string,
+): SetEditionPendingFilterAction {
+  return { type: ReadingsActions.Set_Edition_Pending_Filter, value };
+}
+
+export function createSetReadingYearPendingFilterAction(
+  values: [string, string],
+): SetReadingYearPendingFilterAction {
+  return { type: ReadingsActions.Set_Reading_Year_Pending_Filter, values };
+}
+
+export const createSortAction = createSortActionCreator<ReadingsSort>();
+
 export function readingsReducer(
   state: ReadingsState,
   action: ReadingsActionType,
@@ -208,7 +225,41 @@ export function readingsReducer(
     }
 
     default: {
-      return workFiltersReducer(state, action);
+      const newState = workFiltersReducer(state, action);
+
+      switch (action.type) {
+        case FiltersActions.Apply_Pending_Filters:
+        case FiltersActions.Sort: {
+          const currentMonth = getInitialMonth(
+            newState.filteredValues,
+            newState.sort,
+          );
+          const monthReadings = getMonthReadings(
+            newState.filteredValues,
+            currentMonth,
+          );
+          const nextMonth = getNextMonthWithReadings(
+            currentMonth,
+            newState.filteredValues,
+          );
+          const prevMonth = getPrevMonthWithReadings(
+            currentMonth,
+            newState.filteredValues,
+          );
+
+          return {
+            ...newState,
+            currentMonth,
+            hasNextMonth: nextMonth !== undefined,
+            hasPrevMonth: prevMonth !== undefined,
+            monthReadings,
+            nextMonth,
+            prevMonth,
+          };
+        }
+      }
+
+      return newState;
     }
   }
 }
@@ -262,7 +313,7 @@ function getMostRecentMonth(values: ReadingsValue[]): Date {
   // Get the most recent reading date
   // Note: Higher timelineSequence = more recent
   const sortedValues = [...values].sort(
-    (a, b) => b.timelineSequence - a.timelineSequence,
+    (a, b) => b.entrySequence - a.entrySequence,
   );
   const mostRecentDate = new Date(sortedValues[0].readingDate);
 
@@ -301,7 +352,7 @@ function getOldestMonth(values: ReadingsValue[]): Date {
   // Get the oldest reading date
   // Note: Lower timelineSequence = older
   const sortedValues = [...values].sort(
-    (a, b) => a.timelineSequence - b.timelineSequence,
+    (a, b) => a.entrySequence - b.entrySequence,
   );
   const oldestDate = new Date(sortedValues[0].readingDate);
 

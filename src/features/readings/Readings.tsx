@@ -1,40 +1,28 @@
 import { useEffect, useReducer, useRef, useState } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
-import type { TimelineEntry } from "~/api/timelineEntries";
 
-import { Abandoned } from "~/components/Abandoned";
-import { BarGradient } from "~/components/BarGradient";
-import { CoverListItem } from "~/components/CoverList";
 import { FilterAndSortContainer } from "~/components/FilterAndSort/FilterAndSortContainer";
 import { FilterAndSortHeaderLink } from "~/components/FilterAndSort/FilterAndSortHeaderLink";
-import { ListItemAuthors } from "~/components/ListItemAuthors";
-import { ListItemTitle } from "~/components/ListItemTitle";
-import {
-  ListHeaderButton,
-  ListWithFilters,
-} from "~/components/ListWithFilters/ListWithFilters";
 
-import type { ReadingsSort } from "./Readings.sorter";
-
+import { CalendarMonth } from "./CalendarMonth";
 import { Filters } from "./Filters";
 import { MonthNavHeader } from "./MonthNavHeader";
 import {
-  Actions,
-  type ActionType,
   createApplyPendingFiltersAction,
   createClearPendingFiltersAction,
   createResetPendingFiltersAction,
+  createSortAction,
   initState,
   readingsReducer,
-  reducer,
-  type Sort,
 } from "./Readings.reducer";
+import { type ReadingsSort, selectWeeksForMonth } from "./Readings.sorter";
 
 export type ReadingsValue = {
   authors: { name: string }[];
   coverImageProps: CoverImageProps;
   edition: string;
+  entrySequence: number;
   kind: string;
   progress: string;
   readingDate: string; // Full date string YYYY-MM-DD
@@ -44,7 +32,6 @@ export type ReadingsValue = {
   readingYear: string;
   reviewed: boolean;
   slug: string;
-  timelineSequence: number;
   title: string;
   workYear: string;
 };
@@ -65,36 +52,6 @@ export type ReadingsProps = {
   values: ReadingsValue[];
 };
 
-type CalendarDayData = {
-  date: number | undefined;
-  readings: ListItemValue[];
-  weekday?: string;
-};
-
-type CalendarHeaderProps = {
-  currentMonth: Date;
-  dispatch: React.Dispatch<ActionType>;
-  hasNextMonth: boolean;
-  hasPrevMonth: boolean;
-  nextMonth: Date | undefined;
-  prevMonth: Date | undefined;
-};
-
-type CalendarMonthProps = {
-  currentMonth: Date;
-  groupedValues: Map<string, ListItemValue[]>;
-};
-
-type CalendarViewProps = {
-  currentMonth: Date;
-  dispatch: React.Dispatch<ActionType>;
-  groupedValues: Map<string, ListItemValue[]>;
-  hasNextMonth: boolean;
-  hasPrevMonth: boolean;
-  nextMonth: Date | undefined;
-  prevMonth: Date | undefined;
-};
-
 export function Readings({
   distinctEditions,
   distinctKinds,
@@ -113,6 +70,11 @@ export function Readings({
   );
   const [filterKey, setFilterKey] = useState(0);
   const prevMonthRef = useRef(state.currentMonth);
+
+  const weeksForMonth = selectWeeksForMonth(
+    state.currentMonth,
+    state.filteredValues,
+  );
 
   // Scroll to top of calendar when month changes
   useEffect(() => {
@@ -158,10 +120,7 @@ export function Readings({
       sortProps={{
         currentSortValue: state.sort,
         onSortChange: (e) =>
-          dispatch({
-            type: Actions.SORT,
-            value: e.target.value as ReadingsSort,
-          }),
+          dispatch(createSortAction(e.target.value as ReadingsSort)),
         sortOptions: (
           <>
             <option value="reading-date-desc">
@@ -175,182 +134,17 @@ export function Readings({
       }}
       totalCount={state.filteredValues.length}
     >
-      <CalendarView
-        currentMonth={state.currentMonth}
-        dispatch={dispatch}
-        groupedValues={state.groupedValues}
-        hasNextMonth={state.hasNextMonth}
-        hasPrevMonth={state.hasPrevMonth}
-        nextMonth={state.nextMonth}
-        prevMonth={state.prevMonth}
-      />
+      <div className="mx-auto w-full max-w-(--breakpoint-desktop)">
+        <MonthNavHeader
+          currentMonth={state.currentMonth}
+          dispatch={dispatch}
+          hasNextMonth={state.hasNextMonth}
+          hasPrevMonth={state.hasPrevMonth}
+          nextMonth={state.nextMonth}
+          prevMonth={state.prevMonth}
+        />
+        <CalendarMonth weeks={weeksForMonth} />
+      </div>
     </FilterAndSortContainer>
-  );
-}
-
-function CalendarMonth({
-  currentMonth,
-  groupedValues,
-}: CalendarMonthProps): React.JSX.Element {
-  const calendarDays = getCalendarDays(currentMonth, groupedValues);
-  const weeks = getCalendarWeeks(calendarDays);
-
-  return (
-    <div
-      className={`
-        scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
-        tablet:mt-8
-        tablet-landscape:mt-16
-      `}
-      data-testid="calendar"
-      id="calendar"
-    >
-      <table
-        className={`
-          w-full border-default
-          tablet-landscape:border-collapse tablet-landscape:border
-        `}
-      >
-        <thead
-          className={`
-            hidden transform-gpu bg-calendar
-            tablet-landscape:sticky
-            tablet-landscape:top-(--calendar-scroll-offset)
-            tablet-landscape:z-sticky tablet-landscape:table-header-group
-          `}
-        >
-          <tr className={`tablet-landscape:shadow-all`}>
-            <WeekdayHeader>Sun</WeekdayHeader>
-            <WeekdayHeader> Mon</WeekdayHeader>
-            <WeekdayHeader>Tue</WeekdayHeader>
-            <WeekdayHeader>Wed</WeekdayHeader>
-            <WeekdayHeader>Thu</WeekdayHeader>
-            <WeekdayHeader>Fri</WeekdayHeader>
-            <WeekdayHeader>Sat</WeekdayHeader>
-          </tr>
-        </thead>
-        <tbody>
-          {weeks.map((week, weekIndex) => (
-            <tr className="tablet-landscape:table-row" key={weekIndex}>
-              {week.map((day, dayIndex) => (
-                <CalendarDay day={day} key={`${weekIndex}-${dayIndex}`} />
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function CalendarView({
-  currentMonth,
-  dispatch,
-  groupedValues,
-  hasNextMonth,
-  hasPrevMonth,
-  nextMonth,
-  prevMonth,
-}: CalendarViewProps): React.JSX.Element {
-  return (
-    <div className="mx-auto w-full max-w-(--breakpoint-desktop)">
-      <MonthNavHeader
-        currentMonth={currentMonth}
-        dispatch={dispatch}
-        hasNextMonth={hasNextMonth}
-        hasPrevMonth={hasPrevMonth}
-        nextMonth={nextMonth}
-        prevMonth={prevMonth}
-      />
-      <CalendarMonth
-        currentMonth={currentMonth}
-        groupedValues={groupedValues}
-      />
-    </div>
-  );
-}
-
-function getCalendarDays(
-  month: Date,
-  groupedValues: Map<string, ListItemValue[]>,
-): CalendarDayData[] {
-  const year = month.getUTCFullYear();
-  const monthIndex = month.getUTCMonth();
-  const firstDay = new Date(Date.UTC(year, monthIndex, 1));
-  const lastDay = new Date(Date.UTC(year, monthIndex + 1, 0));
-  const startPadding = firstDay.getUTCDay();
-  const daysInMonth = lastDay.getUTCDate();
-
-  const days: CalendarDayData[] = [];
-  const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  // Add empty cells for days before month starts
-  for (let i = 0; i < startPadding; i++) {
-    days.push({ date: undefined, readings: [] });
-  }
-
-  // Add days of the month
-  for (let date = 1; date <= daysInMonth; date++) {
-    const currentDate = new Date(Date.UTC(year, monthIndex, date));
-    const weekday = weekdays[currentDate.getUTCDay()];
-
-    // Use pre-indexed viewings for O(1) lookup
-    // Key format: "year-month-day" without padding
-    const dateKey = `${year}-${monthIndex + 1}-${date}`;
-    const dayReadings = groupedValues.get(dateKey) || [];
-    // Viewings are already sorted in the reducer
-
-    days.push({
-      date,
-      readings: dayReadings,
-      weekday,
-    });
-  }
-
-  // Fill remaining cells to complete the grid
-  while (days.length % 7 !== 0) {
-    days.push({ date: undefined, readings: [] });
-  }
-
-  return days;
-}
-
-function getCalendarWeeks(days: CalendarDayData[]): CalendarDayData[][] {
-  const weeks: CalendarDayData[][] = [];
-  for (let i = 0; i < days.length; i += 7) {
-    weeks.push(days.slice(i, i + 7));
-  }
-  return weeks;
-}
-
-function parseProgress(progress: string): number {
-  const progressNumber = progress.split("%", 1)[0];
-
-  if (progressNumber === "Finished") {
-    return 100;
-  }
-
-  if (!Number.isNaN(Number(progressNumber))) {
-    return Number.parseInt(progressNumber);
-  }
-
-  return 100;
-}
-
-function WeekdayHeader({
-  children,
-}: {
-  children: React.ReactNode;
-}): React.JSX.Element {
-  return (
-    <th
-      className={`
-        border-separate border border-default px-2 py-3 text-center font-sans
-        text-sm font-normal tracking-wide text-subtle uppercase
-      `}
-    >
-      {children}
-    </th>
   );
 }

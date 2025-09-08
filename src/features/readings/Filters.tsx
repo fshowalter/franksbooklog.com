@@ -3,9 +3,18 @@ import { SelectOptions } from "~/components/Fields/SelectOptions";
 import { YearField } from "~/components/Fields/YearField";
 import { WorkFilters } from "~/components/ListWithFilters/WorkFilters";
 
-import type { ActionType, ReadingsFilterValues } from "./Readings.reducer";
+import type {
+  ReadingsActionType,
+  ReadingsFiltersValues,
+} from "./Readings.reducer";
 
-import { Actions } from "./Readings.reducer";
+import {
+  createSetEditionPendingFilterAction,
+  createSetKindPendingFilterAction,
+  createSetReadingYearPendingFilterAction,
+  createSetTitlePendingFilterAction,
+  createSetWorkYearPendingFilterAction,
+} from "./Readings.reducer";
 
 export function Filters({
   dispatch,
@@ -15,12 +24,12 @@ export function Filters({
   distinctWorkYears,
   filterValues,
 }: {
-  dispatch: React.Dispatch<ActionType>;
+  dispatch: React.Dispatch<ReadingsActionType>;
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
-  filterValues: ReadingsFilterValues;
+  filterValues: ReadingsFiltersValues;
 }): React.JSX.Element {
   return (
     <>
@@ -28,21 +37,18 @@ export function Filters({
         kind={{
           initialValue: filterValues.kind,
           onChange: (value) =>
-            dispatch({
-              type: Actions.PENDING_FILTER_KIND,
-              value,
-            }),
+            dispatch(createSetKindPendingFilterAction(value)),
           values: distinctKinds,
         }}
         title={{
           initialValue: filterValues.title,
           onChange: (value) =>
-            dispatch({ type: Actions.PENDING_FILTER_TITLE, value }),
+            dispatch(createSetTitlePendingFilterAction(value)),
         }}
         workYear={{
           initialValue: filterValues.workYear,
           onChange: (values) =>
-            dispatch({ type: Actions.PENDING_FILTER_WORK_YEAR, values }),
+            dispatch(createSetWorkYearPendingFilterAction(values)),
           values: distinctWorkYears,
         }}
       />
@@ -50,7 +56,7 @@ export function Filters({
         initialValues={filterValues.readingYear}
         label="Reading Year"
         onYearChange={(values) =>
-          dispatch({ type: Actions.PENDING_FILTER_READING_YEAR, values })
+          dispatch(createSetReadingYearPendingFilterAction(values))
         }
         years={distinctReadingYears}
       />
@@ -58,10 +64,7 @@ export function Filters({
         initialValue={filterValues.edition}
         label="Edition"
         onChange={(value) =>
-          dispatch({
-            type: Actions.PENDING_FILTER_EDITION,
-            value,
-          })
+          dispatch(createSetEditionPendingFilterAction(value))
         }
       >
         <SelectOptions options={distinctEditions} />

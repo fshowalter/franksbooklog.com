@@ -4,7 +4,7 @@ exports[`Readings > can filter by edition 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -42,7 +42,7 @@ exports[`Readings > can filter by edition 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -1114,7 +1114,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -1152,7 +1152,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -2224,7 +2224,7 @@ exports[`Readings > can filter by kind 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -2262,7 +2262,7 @@ exports[`Readings > can filter by kind 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -3537,7 +3537,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -3575,7 +3575,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -4647,7 +4647,7 @@ exports[`Readings > can filter by reading year 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -4685,7 +4685,7 @@ exports[`Readings > can filter by reading year 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -5779,7 +5779,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -5817,7 +5817,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -6948,7 +6948,7 @@ exports[`Readings > can filter by title 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -6986,7 +6986,7 @@ exports[`Readings > can filter by title 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -8725,7 +8725,7 @@ exports[`Readings > can filter by work year 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -8763,7 +8763,7 @@ exports[`Readings > can filter by work year 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -9901,7 +9901,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -9939,7 +9939,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -13048,7 +13048,7 @@ exports[`Readings > can navigate to next month 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -13086,7 +13086,7 @@ exports[`Readings > can navigate to next month 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -14224,7 +14224,7 @@ exports[`Readings > can navigate to previous month 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -14262,7 +14262,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -15537,7 +15537,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -15575,7 +15575,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -16647,7 +16647,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
 <div
   class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -16685,7 +16685,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
-           Mon
+          Mon
         </th>
         <th
           class="
@@ -17809,7 +17809,7 @@ exports[`Readings > renders 1`] = `
     >
       <div
         class="
-            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-10
             scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
             border-default bg-default text-xs
             tablet:col-span-full
@@ -17923,10 +17923,10 @@ exports[`Readings > renders 1`] = `
         <div
           class="
               mx-auto max-w-[var(--breakpoint-desktop)] grow
-              scroll-mt-[calc(var(--list-scroll-offset)_+_var(--scroll-offset,0px))]
+              scroll-mt-[calc(var(--filter-and-sort-container-scroll-offset)_+_var(--scroll-offset,0px))]
               pb-10
-              [--list-scroll-offset:181px]
-              tablet:[--list-scroll-offset:121px]
+              [--filter-and-sort-container-scroll-offset:181px]
+              tablet:[--filter-and-sort-container-scroll-offset:121px]
             "
           id="list"
         >
@@ -17935,7 +17935,7 @@ exports[`Readings > renders 1`] = `
           >
             <div
               class="
-        sticky top-(--list-scroll-offset) z-sticky flex
+        sticky top-(--filter-and-sort-container-scroll-offset) z-sticky flex
         max-w-(--breakpoint-desktop) items-center justify-between border-b
         border-default bg-subtle px-container py-4
         tablet:-mx-(--container-padding) tablet:py-6
@@ -17980,7 +17980,7 @@ exports[`Readings > renders 1`] = `
             <div
               class="
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--filter-and-sort-container-scroll-offset)_+_92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       "
@@ -18018,7 +18018,7 @@ exports[`Readings > renders 1`] = `
         text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
-                       Mon
+                      Mon
                     </th>
                     <th
                       class="
