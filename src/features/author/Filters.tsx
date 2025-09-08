@@ -1,8 +1,6 @@
-import type { ReviewedWorkFiltersValues } from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
-
 import { ReviewedWorkFilters } from "~/components/FilterAndSort/ReviewedWorkFilters";
 
-import type { AuthorActionType } from "./Author.reducer";
+import type { AuthorActionType, AuthorFiltersValues } from "./Author.reducer";
 
 import {
   createSetGradePendingFilterAction,
@@ -23,7 +21,7 @@ export function Filters({
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
   distinctWorkYears: readonly string[];
-  filterValues: ReviewedWorkFiltersValues;
+  filterValues: AuthorFiltersValues;
 }): React.JSX.Element {
   return (
     <ReviewedWorkFilters

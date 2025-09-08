@@ -1,6 +1,5 @@
 export {
   createGroupValues,
-  createSelectGroupedValues,
   createSelectSortedFilteredValues,
   createSortValues,
 } from "./sorter";
@@ -35,6 +34,19 @@ export function createReviewedWorkSortMap<
     ...sortReviewDate<TValue>(),
     ...sortTitle<TValue>(),
     ...sortWorkYear<TValue>(),
+  };
+}
+
+export function createSelectGroupedValues<TValue, TSort>(
+  groupFn: (values: TValue[], sort: TSort) => Map<string, TValue[]>,
+) {
+  return function selectGroupedValues(
+    sortedValues: TValue[],
+    showCount: number,
+    sort: TSort,
+  ): Map<string, TValue[]> {
+    const paginatedItems = sortedValues.slice(0, showCount);
+    return groupFn(paginatedItems, sort);
   };
 }
 

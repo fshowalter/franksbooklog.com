@@ -18,11 +18,14 @@ import {
   createSortActionCreator,
   type ReviewedWorkFiltersActionType,
   type ReviewedWorkFiltersState,
+  type ReviewedWorkFiltersValues,
 } from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
+
+export type AuthorActionType = ReviewedWorkFiltersActionType<AuthorSort>;
 
 import type { AuthorSort } from "./Author.sorter";
 
-export type AuthorActionType = ReviewedWorkFiltersActionType<AuthorSort>;
+export type AuthorFiltersValues = ReviewedWorkFiltersValues;
 
 type AuthorState = ReviewedWorkFiltersState<AuthorValue, AuthorSort>;
 

@@ -4,6 +4,7 @@ import {
   createSortActionCreator,
   type ReviewedWorkFiltersActionType,
   type ReviewedWorkFiltersState,
+  type ReviewedWorkFiltersValues,
 } from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
 
 export {
@@ -25,6 +26,8 @@ import type { ReviewsSort } from "./Reviews.sorter";
  * Union type of all reviewed work-specific filter actions
  */
 export type ReviewsActionType = ReviewedWorkFiltersActionType<ReviewsSort>;
+
+export type ReviewsFiltersValues = ReviewedWorkFiltersValues;
 
 type ReviewsState = ReviewedWorkFiltersState<ReviewsValue, ReviewsSort>;
 

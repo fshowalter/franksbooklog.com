@@ -1,6 +1,6 @@
-import type { CollectionFilterValues } from "~/components/ListWithFilters/collectionsReducerUtils";
+import type { CollectionFiltersValues } from "~/components/FilterAndSort/CollectionFilters.reducer";
 
-import { CollectionFilters } from "~/components/ListWithFilters/CollectionFilters";
+import { CollectionFilters } from "~/components/FilterAndSort/CollectionFilters";
 
 import type { ActionType } from "./Authors.reducer";
 
@@ -11,7 +11,7 @@ export function Filters({
   filterValues,
 }: {
   dispatch: React.Dispatch<ActionType>;
-  filterValues: CollectionFilterValues;
+  filterValues: CollectionFiltersValues;
 }): React.JSX.Element {
   return (
     <>

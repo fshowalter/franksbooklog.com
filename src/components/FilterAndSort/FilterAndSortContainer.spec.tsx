@@ -33,7 +33,7 @@ const mockProps = {
   totalCount: 250,
 };
 
-describe("ListWithFilters", () => {
+describe("FilterAndSortContainer", () => {
   it("renders", ({ expect }) => {
     const { asFragment } = render(
       <FilterAndSortContainer {...mockProps}>Test</FilterAndSortContainer>,
