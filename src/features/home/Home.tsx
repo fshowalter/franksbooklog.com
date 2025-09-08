@@ -6,7 +6,7 @@ import { Layout } from "~/components/Layout/Layout";
 import { ReviewCard } from "~/components/ReviewCard";
 import { SubHeading } from "~/components/SubHeading";
 
-export type Props = {
+export type HomeProps = {
   backdropImageProps: BackdropImageProps;
   deck: string;
   values: ReviewCardProps[];
@@ -16,7 +16,7 @@ export function Home({
   backdropImageProps,
   deck,
   values,
-}: Props): React.JSX.Element {
+}: HomeProps): React.JSX.Element {
   return (
     <Layout className="bg-subtle pb-8" hasBackdrop={true} hideLogo={true}>
       <Backdrop

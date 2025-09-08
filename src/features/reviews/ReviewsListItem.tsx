@@ -1,13 +1,12 @@
 import type { CoverImageProps } from "~/api/covers";
 
 import { CoverListItem } from "~/components/CoverList/CoverListItem";
+import { ListItemAuthors } from "~/components/ListItemAuthors/ListItemAuthors";
 import { ListItemDetails } from "~/components/ListItemDetails/ListItemDetails";
 import { ListItemGrade } from "~/components/ListItemGrade/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle/ListItemTitle";
-
-import { ListItemAuthors } from "./ListItemAuthors";
 
 type ReviewsListItemValue = {
   authors: {

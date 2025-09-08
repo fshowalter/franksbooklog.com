@@ -4,9 +4,9 @@ import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { BackdropImageConfig } from "~/components/Backdrop";
 import { CoverImageConfig } from "~/components/ReviewCard";
 
-import type { Props } from "./Home";
+import type { HomeProps } from "./Home";
 
-export async function getProps(): Promise<Props> {
+export async function getProps(): Promise<HomeProps> {
   const works = await mostRecentReviews(12);
 
   const reviews = await Promise.all(

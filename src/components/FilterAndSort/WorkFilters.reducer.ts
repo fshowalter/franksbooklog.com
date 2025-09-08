@@ -5,6 +5,7 @@ export {
   createClearPendingFiltersAction,
   createResetPendingFiltersAction,
   createSortActionCreator,
+  updatePendingFilter,
 } from "./filters.reducer";
 
 import {
