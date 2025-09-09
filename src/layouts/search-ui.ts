@@ -459,15 +459,15 @@ export class SearchUI {
     const { image, image_alt, title } = result.meta;
 
     return `
-        <li class="gap-x-6 tablet:px-6 laptop:px-8 py-6 px-[8%] hover:bg-subtle border-t border-default last-of-type:border-b grid grid-cols-[min(25%,80px)_1fr] focus-within:bg-subtle focus-within:outline-[rgb(38,132,255)] focus-within:outline-1 focus-within:-outline-offset-2">
+        <li class="group/list-item transition-colors duration-500 relative gap-x-6 tablet:px-6 laptop:px-8 py-6 px-[8%] has-[a:hover]:bg-subtle border-t border-default last-of-type:border-b grid grid-cols-[min(25%,80px)_1fr] focus-within:bg-subtle focus-within:outline-[rgb(38,132,255)] focus-within:outline-1 focus-within:-outline-offset-2">
           ${
             this.config.showImages && image
               ? `
-            <div class="shrink-0 drop-shadow-md">
+            <div class="shrink-0 drop-shadow-md relative after:size-full after:absolute after:transition-opacity after:duration-500 after:top-0 after:left-0 after:opacity-15 after:bg-[#fff] group-has-[a:hover]/list-item:after:opacity-0">
               <img 
                 src="${image}" 
                 alt="${image_alt || ""}"
-                class="h-auto w-full"
+                class="h-auto w-full after:absolute "
                 loading="lazy"
               >
             </div>
@@ -475,8 +475,8 @@ export class SearchUI {
               : ""
           }
           <div class="min-w-0 flex-1">
-            <h3 class="font-sans text-base font-semibold text-accent">
-              <a href="${result.url}" class="block">
+            <h3 class="font-serif text-base transition-colors duration-500 font-medium text-default has-[a:hover]:text-accent">
+              <a href="${result.url}" class="block after:absolute after:top-0 after:left-0 after:size-full">
                 ${title}
               </a>
             </h3>
