@@ -107,7 +107,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
         <button
           class={`
             absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none
-            bg-subtle px-2 font-mono text-xs font-light text-muted
+            bg-subtle px-2 font-sans text-sm font-light text-muted
             hover:bg-inverse hover:text-inverse
             focus:outline-accent
             tablet:right-6
@@ -197,7 +197,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
             aria-atomic="true"
             aria-live="polite"
             class={`
-              px-4 py-4 font-sans text-xs font-normal text-subtle
+              px-4 py-4 font-sans text-sm font-normal text-subtle
               empty:hidden
             `}
             id="pagefind-results-counter"
@@ -224,10 +224,10 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
             <button
               aria-controls="pagefind-results"
               class={`
-                mx-auto block h-10 w-full max-w-[430px] bg-canvas font-sans
-                text-xs font-medium tracking-[0.8px] text-default uppercase
-                hover:bg-inverse hover:text-inverse
-                focus:-outline-offset-2 focus:outline-accent
+                mx-auto block w-full max-w-button cursor-pointer bg-canvas py-5
+                text-center font-sans text-xs font-bold tracking-wide uppercase
+                shadow-all
+                hover:bg-footer hover:text-inverse
               `}
               id="pagefind-load-more"
               type="button"
@@ -239,16 +239,16 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 
         <div
           class={`
-            px-4 py-4 font-sans text-xs font-light tracking-wide text-subtle
+            px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle
             tablet:px-6
             laptop:block laptop:px-8
           `}
         >
-          <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
+          <kbd class="rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >Tab</kbd
           > to navigate
           <kbd
-            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            class="ml-4 rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >ESC</kbd
           > to close
         </div>

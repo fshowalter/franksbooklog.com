@@ -28,7 +28,7 @@ export function AlphabetNav({
   }
 
   return (
-    <nav className={`sticky top-0 z-10 bg-[#333]`}>
+    <nav className={`sticky top-0 z-15 bg-[#333]`}>
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
@@ -81,21 +81,14 @@ function LetterLink({
         <a
           className={`
             block transform-gpu p-4 transition-all
-            hover:scale-105 hover:bg-canvas hover:text-default
+            hover:bg-canvas hover:text-default
           `}
           href={linkFunc(letter)}
         >
           {letter}
         </a>
       ) : (
-        <div
-          className={`
-            p-4
-            laptop:py-4
-          `}
-        >
-          {letter}
-        </div>
+        <div className={`p-4`}>{letter}</div>
       )}
     </li>
   );
