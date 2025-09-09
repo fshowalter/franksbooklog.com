@@ -32,33 +32,13 @@ export class PerformanceLogger {
   private timings: Map<string, TimingEntry> = new Map();
 
   /**
-   * Ends a timing measurement by name (backward compatibility method).
-   * Finds the first timing entry with matching name and ends it.
-   *
-   * @param name - The name of the timing to end
-   * @returns Duration in milliseconds, or 0 if timing not found
-   * @deprecated Use endWithId() for better precision in concurrent scenarios
-   */
-  end(name: string): number {
-    // For backward compatibility, try to find by name pattern
-    const entry = [...this.timings.entries()].find(
-      ([, timing]) => timing.name === name,
-    );
-    if (!entry) {
-      console.warn(`No timing found for: ${name}`);
-      return 0;
-    }
-    return this.endWithId(entry[0]);
-  }
-
-  /**
    * Ends a timing measurement by its unique ID.
    * Calculates duration, logs if debug mode is enabled, and moves entry to completed list.
    *
    * @param id - The unique ID of the timing to end
    * @returns Duration in milliseconds, or 0 if timing not found
    */
-  endWithId(id: string): number {
+  private endWithId(id: string): number {
     const timing = this.timings.get(id);
     if (!timing) {
       return 0;
@@ -221,26 +201,14 @@ export class PerformanceLogger {
   }
 
   /**
-   * Starts a timing measurement with an auto-generated ID.
-   * For manual timing control when you can't use measure() wrapper.
-   *
-   * @param name - Human-readable name for the operation
-   * @param metadata - Optional metadata to associate with this measurement
-   */
-  start(name: string, metadata?: Record<string, unknown>): void {
-    const id = `${name}_${++this.counter}_${Date.now()}`;
-    this.startWithId(id, name, metadata);
-  }
-
-  /**
    * Starts a timing measurement with a specific ID.
-   * Useful for precise timing control in concurrent scenarios.
+   * For internal use by measure() and measureSync().
    *
    * @param id - Unique identifier for this timing measurement
    * @param name - Human-readable name for the operation
    * @param metadata - Optional metadata to associate with this measurement
    */
-  startWithId(
+  private startWithId(
     id: string,
     name: string,
     metadata?: Record<string, unknown>,

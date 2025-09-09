@@ -19124,10 +19124,7 @@ exports[`Readings > renders 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="
-                    h-4 w-4 transform-gpu
-                    
-                  "
+                class="h-4 w-4"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"

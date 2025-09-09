@@ -25,7 +25,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
  * Generates a static path for each review in the system, enabling pre-built Open Graph images
  * with book covers, titles, authors, and grade information at build time.
  *
- * @returns {Promise<Array>} Array of path objects with params (slug) and props (work data) for each review
+ * @returns Array of path objects with params (slug) and props (work data) for each review
  */
 export async function getStaticPaths() {
   const { reviews } = await allReviews();
@@ -54,9 +54,9 @@ export async function getStaticPaths() {
  * - Converts cover images to base64 data URIs for React component rendering
  * - Maintains aspect ratios while ensuring consistent layout
  *
- * @param {Object} context - Astro API context object
- * @param {Props} context.props - Review props containing complete work/review data from getStaticPaths
- * @returns {Promise<Response>} HTTP response containing the generated JPEG image with appropriate content-type headers
+ * @param context - Astro API context object
+ * @param context.props - Review props containing complete work/review data from getStaticPaths
+ * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get({ props }) {
   const { work } = props as Props;

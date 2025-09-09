@@ -219,3 +219,4 @@ Pagefind integration builds search index at build time and serves it in dev mode
 ## TypeScript Best Practices
 
 - Don't use the `any` type. The linter will error on it.
+- **Use TypeScript types, not JSDoc types**: When functions have TypeScript type annotations, avoid duplicate type information in JSDoc comments. Use `@param name - description` instead of `@param {Type} name - description`. Keep the descriptive text but remove type annotations in curly braces.

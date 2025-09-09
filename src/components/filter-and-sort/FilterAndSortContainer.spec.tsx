@@ -20,6 +20,11 @@ const mockProps = {
   ),
   hasActiveFilters: false,
   list: <div data-testid="list">Test List Content</div>,
+  onApplyFilters: vi.fn(),
+  onClearFilters: vi.fn(),
+  onFilterDrawerOpen: vi.fn(),
+  onResetFilters: vi.fn(),
+  pendingFilteredCount: 250,
   sortProps: {
     currentSortValue: "title-asc",
     onSortChange: vi.fn(),

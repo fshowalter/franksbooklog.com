@@ -9,7 +9,7 @@ import { componentToImage } from "~/utils/componentToImage";
  * Creates a JPEG image with the home backdrop and renders it as an HTTP response
  * for social media sharing platforms like Facebook, Twitter, etc.
  *
- * @returns {Promise<Response>} HTTP response containing the generated JPEG image with appropriate content-type headers
+ * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
   const jpeg = await componentToImage(
