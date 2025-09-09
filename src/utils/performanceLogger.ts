@@ -32,35 +32,6 @@ export class PerformanceLogger {
   private timings: Map<string, TimingEntry> = new Map();
 
   /**
-   * Ends a timing measurement by its unique ID.
-   * Calculates duration, logs if debug mode is enabled, and moves entry to completed list.
-   *
-   * @param id - The unique ID of the timing to end
-   * @returns Duration in milliseconds, or 0 if timing not found
-   */
-  private endWithId(id: string): number {
-    const timing = this.timings.get(id);
-    if (!timing) {
-      return 0;
-    }
-
-    timing.endTime = performance.now();
-    timing.duration = timing.endTime - timing.startTime;
-
-    this.completedTimings.push(timing);
-    this.timings.delete(id);
-
-    if (process.env.DEBUG_PERF === "true") {
-      console.log(
-        `[PERF] ${timing.name}: ${timing.duration.toFixed(2)}ms`,
-        timing.metadata || "",
-      );
-    }
-
-    return timing.duration;
-  }
-
-  /**
    * Generates a comprehensive performance report with operation statistics.
    * Groups timings by name and provides max duration, call counts, and totals.
    *
@@ -201,6 +172,48 @@ export class PerformanceLogger {
   }
 
   /**
+   * Writes the performance report to a file in the current working directory.
+   * Only executes when DEBUG_PERF environment variable is set to "true".
+   * File is saved as "performance-report.txt" in the project root.
+   */
+  writeReportToFile(): void {
+    if (process.env.DEBUG_PERF === "true") {
+      const reportPath = path.join(process.cwd(), "performance-report.txt");
+      writeFileSync(reportPath, this.getReport());
+      console.log(`\nPerformance report written to: ${reportPath}`);
+    }
+  }
+
+  /**
+   * Ends a timing measurement by its unique ID.
+   * Calculates duration, logs if debug mode is enabled, and moves entry to completed list.
+   *
+   * @param id - The unique ID of the timing to end
+   * @returns Duration in milliseconds, or 0 if timing not found
+   */
+  private endWithId(id: string): number {
+    const timing = this.timings.get(id);
+    if (!timing) {
+      return 0;
+    }
+
+    timing.endTime = performance.now();
+    timing.duration = timing.endTime - timing.startTime;
+
+    this.completedTimings.push(timing);
+    this.timings.delete(id);
+
+    if (process.env.DEBUG_PERF === "true") {
+      console.log(
+        `[PERF] ${timing.name}: ${timing.duration.toFixed(2)}ms`,
+        timing.metadata || "",
+      );
+    }
+
+    return timing.duration;
+  }
+
+  /**
    * Starts a timing measurement with a specific ID.
    * For internal use by measure() and measureSync().
    *
@@ -222,19 +235,6 @@ export class PerformanceLogger {
 
     // Track call counts - use full name for accuracy
     this.callCounts.set(name, (this.callCounts.get(name) || 0) + 1);
-  }
-
-  /**
-   * Writes the performance report to a file in the current working directory.
-   * Only executes when DEBUG_PERF environment variable is set to "true".
-   * File is saved as "performance-report.txt" in the project root.
-   */
-  writeReportToFile(): void {
-    if (process.env.DEBUG_PERF === "true") {
-      const reportPath = path.join(process.cwd(), "performance-report.txt");
-      writeFileSync(reportPath, this.getReport());
-      console.log(`\nPerformance report written to: ${reportPath}`);
-    }
   }
 }
 

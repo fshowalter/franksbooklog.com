@@ -126,9 +126,7 @@ describe("PerformanceLogger", () => {
       const metadata = { key: "value" };
       const result = await perfLogger.measure(
         "metadata-op",
-        async () => {
-          return "test-result";
-        },
+        () => Promise.resolve("test-result"),
         metadata,
       );
 
