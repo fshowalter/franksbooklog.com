@@ -35,7 +35,7 @@ const yearFormatter = new Intl.DateTimeFormat("en-US", {
  * Retrieves all reading entries with aggregated metadata and statistics.
  * Processes reading history to extract distinct values for filtering and provides
  * counts for different types of works (books, short stories, abandoned).
- * 
+ *
  * @returns Promise resolving to reading entries with metadata and counts
  */
 export async function allReadingEntries(): Promise<ReadingEntries> {

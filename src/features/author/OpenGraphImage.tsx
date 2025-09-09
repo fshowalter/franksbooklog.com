@@ -21,7 +21,7 @@ type AuthorOpenGraphImageProps = {
  * Open Graph image component for author pages.
  * Renders a 1200x630 image with backdrop, optional author avatar, and author name.
  * Used for social media sharing and SEO meta image tags.
- * 
+ *
  * @param props - Component props
  * @param props.avatar - Optional author avatar image URL
  * @param props.backdrop - Background image URL

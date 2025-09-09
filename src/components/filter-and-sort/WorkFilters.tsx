@@ -9,7 +9,7 @@ import type { WorkFiltersValues } from "./WorkFilters.reducer";
  * Renders filter controls for work-based listings.
  * Provides filtering options for title search, work year range, and work kind/type.
  * Each filter includes its own state management and change handlers.
- * 
+ *
  * @param props - The component props
  * @param props.kind - Kind/type filter configuration with values and handlers
  * @param props.title - Title search filter configuration with handlers

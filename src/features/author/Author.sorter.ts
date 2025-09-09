@@ -36,7 +36,7 @@ const sortValues = createSortValues<AuthorValue, AuthorSort>({
 /**
  * Selects and groups author values for display in the UI.
  * Groups the values by the appropriate criteria based on the current sort order.
- * 
+ *
  * @param sortedValues - Array of sorted author values
  * @param showCount - Number of items to show (for pagination)
  * @param sort - Current sort order
@@ -50,7 +50,7 @@ export const selectGroupedValues = createSelectGroupedValues<
 /**
  * Selects, sorts, and filters author values based on current state.
  * Applies the sort order to the filtered values array.
- * 
+ *
  * @param filteredValues - Array of filtered author values
  * @param sort - Current sort order to apply
  * @returns Sorted array of author values

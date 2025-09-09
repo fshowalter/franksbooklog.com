@@ -23,7 +23,7 @@ type OpenGraphImageProps = {
  * Renders an Open Graph image for social media sharing.
  * Creates a 1200x630 image with backdrop, gradient overlay, and styled text
  * optimized for social media platforms like Twitter and Facebook.
- * 
+ *
  * @param props - The component props
  * @param props.backdrop - URL of the backdrop image
  * @param props.sectionHead - Section heading text (defaults to "Frank's Book Log")

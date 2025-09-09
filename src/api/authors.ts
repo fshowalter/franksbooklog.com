@@ -26,7 +26,7 @@ const cachedAuthorDetails: Map<string, AuthorDetails> = new Map();
 /**
  * Retrieves all authors with their associated reviewed works.
  * Results are cached in production for performance.
- * 
+ *
  * @returns Promise resolving to an array of all authors
  */
 export async function allAuthors(): Promise<Author[]> {
@@ -48,7 +48,7 @@ export async function allAuthors(): Promise<Author[]> {
  * Retrieves detailed information for a specific author including metadata about their works.
  * Extracts and sorts distinct kinds, work years, and review years for filtering.
  * Results are cached in production for performance.
- * 
+ *
  * @param slug - The unique slug identifier for the author
  * @returns Promise resolving to author details with distinct metadata arrays
  */

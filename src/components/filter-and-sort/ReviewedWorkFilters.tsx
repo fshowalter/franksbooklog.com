@@ -30,7 +30,7 @@ type Props = ComponentProps<typeof WorkFilters> & {
  * Extends WorkFilters with additional review-specific filters including
  * grade range and review year range. Composes the base work filters
  * with review-specific filter controls.
- * 
+ *
  * @param props - The component props extending WorkFilters props
  * @param props.grade - Grade range filter configuration
  * @param props.reviewYear - Review year range filter configuration

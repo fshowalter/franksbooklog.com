@@ -3,7 +3,7 @@
  * Uses container queries to adjust the number of columns based on available width,
  * ensuring covers maintain their minimum width of 250px. Automatically adjusts
  * from 2 columns up to 6 columns as space permits.
- * 
+ *
  * @param props - The component props
  * @param props.children - The cover list items to render within the grid
  * @param props.className - Optional additional CSS classes to apply

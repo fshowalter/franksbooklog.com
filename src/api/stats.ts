@@ -24,7 +24,7 @@ const statYears = new Set<string>();
 /**
  * Retrieves all years for which reading statistics are available.
  * Results are cached after first load for performance.
- * 
+ *
  * @returns Promise resolving to sorted array of year strings
  */
 export async function allStatYears() {
@@ -48,7 +48,7 @@ export async function allStatYears() {
 
 /**
  * Retrieves all-time reading statistics including distributions and totals.
- * 
+ *
  * @returns Promise resolving to all-time statistics data
  */
 export async function alltimeStats(): Promise<AlltimeStats> {
@@ -60,7 +60,7 @@ export async function alltimeStats(): Promise<AlltimeStats> {
 /**
  * Retrieves reading statistics for a specific year.
  * Results are cached in production for performance.
- * 
+ *
  * @param year - The year to get statistics for (e.g., "2024")
  * @returns Promise resolving to year-specific statistics data
  */

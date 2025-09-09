@@ -6,7 +6,7 @@ import { CoverList } from "./CoverList";
  * Renders a grouped cover list with optional "Show More" functionality.
  * Generic component that organizes covers into groups with headers and provides
  * pagination through a "Show More" button when there are more items to display.
- * 
+ *
  * @template T - The type of items being rendered
  * @param props - The component props
  * @param props.children - Function that renders each individual item

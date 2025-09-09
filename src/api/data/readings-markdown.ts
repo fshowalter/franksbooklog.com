@@ -62,10 +62,10 @@ const ENABLE_CACHE = !import.meta.env.DEV;
 /**
  * Loads and parses all reading Markdown files from the content directory.
  * Readings contain timeline data and notes about specific reading sessions.
- * 
+ *
  * @returns Promise resolving to array of parsed reading entries
  * @throws ZodError if any reading's frontmatter doesn't match the expected schema
- * 
+ *
  * @example
  * ```typescript
  * const readings = await allReadingsMarkdown();
@@ -92,7 +92,7 @@ export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
 /**
  * Internal function to parse all reading Markdown files from the file system.
  * Processes each .md file with gray-matter and validates the frontmatter.
- * 
+ *
  * @returns Promise resolving to array of parsed and validated reading data
  * @throws ZodError if any reading's frontmatter doesn't match the expected schema
  */

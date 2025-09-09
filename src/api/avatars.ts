@@ -22,13 +22,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
  * Retrieves optimized avatar image properties for a given author slug.
  * Processes the avatar image with Astro's image optimization pipeline,
  * generating responsive images in AVIF format with multiple densities.
- * 
+ *
  * @param slug - The author's unique slug identifier
  * @param dimensions - Target dimensions for the avatar image
  * @param dimensions.height - Target height in pixels
  * @param dimensions.width - Target width in pixels
  * @returns Promise resolving to avatar image properties, or undefined if no avatar exists
- * 
+ *
  * @example
  * ```typescript
  * const avatarProps = await getAvatarImageProps('author-slug', { width: 100, height: 100 });
@@ -67,10 +67,10 @@ export async function getAvatarImageProps(
  * Generates a base64-encoded avatar image for Open Graph meta tags.
  * Processes the avatar with Sharp to create a 250px PNG suitable for
  * social media previews and embedding in meta tags.
- * 
+ *
  * @param slug - The author's unique slug identifier
  * @returns Promise resolving to base64 data URL string, or undefined if no avatar exists
- * 
+ *
  * @example
  * ```typescript
  * const base64Avatar = await getOpenGraphAvatarAsBase64String('author-slug');
@@ -97,7 +97,7 @@ export async function getOpenGraphAvatarAsBase64String(slug: string) {
 /**
  * Internal function to resolve the file system path for an avatar image.
  * Checks if the avatar file exists in the content/assets/avatars directory.
- * 
+ *
  * @param slug - The author's unique slug identifier
  * @returns Absolute file path if avatar exists, undefined otherwise
  */
@@ -113,7 +113,7 @@ function avatarPath(slug: string) {
 /**
  * Internal function to load avatar file metadata using Vite's glob imports.
  * Searches through the imported avatar files to find a matching slug.
- * 
+ *
  * @param slug - The author's unique slug identifier
  * @returns Promise resolving to image metadata, or undefined if not found
  */

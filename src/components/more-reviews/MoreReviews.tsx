@@ -52,7 +52,7 @@ type Author = Pick<Review["authors"][0], "name" | "notes"> & {};
  * Renders a "More Reviews" section with a grid of review cards.
  * Displays related reviews in a responsive two-column grid layout
  * with proper spacing and container queries for optimal display.
- * 
+ *
  * @param props - The component props
  * @param props.children - Content to display above the review grid (typically heading)
  * @param props.values - Array of review data to display as cards
@@ -99,7 +99,7 @@ export function MoreReviews({
  * Renders a styled heading for "More Reviews" sections.
  * Creates a heading with accent text and hover effects, linking to
  * a page with more content. Polymorphic component supporting different heading levels.
- * 
+ *
  * @param props - The component props
  * @param props.accentText - Text to display with accent styling (typically a count)
  * @param props.as - The HTML heading element to render (defaults to "h2")

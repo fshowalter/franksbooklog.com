@@ -198,10 +198,10 @@ const ENABLE_CACHE = !import.meta.env.DEV;
 /**
  * Loads and validates all reviewed works from the JSON file.
  * Contains comprehensive data about all books that have been reviewed.
- * 
+ *
  * @returns Promise resolving to array of validated reviewed work data
  * @throws ZodError if any work doesn't match the expected schema
- * 
+ *
  * @example
  * ```typescript
  * const works = await allReviewedWorksJson();
@@ -228,7 +228,7 @@ export async function allReviewedWorksJson(): Promise<ReviewedWorkJson[]> {
 /**
  * Internal function to parse reviewed works from the JSON file.
  * Reads the file and validates each work against the schema.
- * 
+ *
  * @returns Promise resolving to array of parsed and validated reviewed works
  * @throws ZodError if any work doesn't match the expected schema
  */

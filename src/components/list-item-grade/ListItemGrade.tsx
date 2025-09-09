@@ -4,7 +4,7 @@ import { Grade } from "~/components/grade/Grade";
  * Renders a grade display for a list item, with special handling for "Abandoned" items.
  * For abandoned items, displays a distinctive badge. For all other grades, renders
  * the grade using the Grade component with star visualization.
- * 
+ *
  * @param props - The component props
  * @param props.grade - The grade value to display (e.g., "A+", "B-", "Abandoned", etc.)
  * @returns A JSX element containing either an "Abandoned" badge or a Grade component

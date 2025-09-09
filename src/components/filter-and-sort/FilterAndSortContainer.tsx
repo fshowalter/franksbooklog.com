@@ -94,7 +94,6 @@ export function FilterAndSortContainer<T extends string>({
     [filterDrawerVisible, handleCloseDrawer, onFilterDrawerOpen],
   );
 
-
   // Handle escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent): void => {

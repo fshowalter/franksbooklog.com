@@ -22,7 +22,7 @@ const gradeMap: Record<string, string> = {
 /**
  * Converts a letter grade to its HTML entity star representation.
  * Returns a string of HTML entities representing stars for the given grade.
- * 
+ *
  * @param grade - The letter grade (e.g., "A+", "B-", "C", etc.)
  * @returns HTML entity string representing the star rating
  */

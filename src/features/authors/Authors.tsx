@@ -55,7 +55,7 @@ export type AuthorsValue = {
  * Authors page component displaying a filterable and sortable list of all authors.
  * Features avatar grid display, name filtering, sorting options, and alphabet navigation.
  * Uses reducer pattern for complex state management of filters and display options.
- * 
+ *
  * @param props - Component props
  * @param props.initialSort - Initial sort order for the authors list
  * @param props.values - Array of author data to display

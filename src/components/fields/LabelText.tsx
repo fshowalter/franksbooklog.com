@@ -2,7 +2,7 @@
  * Renders a styled label text component for form fields.
  * Polymorphic component that can render as different HTML elements
  * while maintaining consistent label styling. Typically used with form inputs.
- * 
+ *
  * @param props - The component props
  * @param props.as - The HTML element type to render (defaults to "span")
  * @param props.htmlFor - Optional ID of the form element this label is for

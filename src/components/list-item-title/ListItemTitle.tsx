@@ -2,7 +2,7 @@
  * Renders a title for a list item, either as a clickable link or static text.
  * When a slug is provided, the title becomes a clickable link to the review page.
  * When no slug is provided, renders as static text with subtle styling.
- * 
+ *
  * @param props - The component props
  * @param props.slug - Optional URL slug to make the title a clickable link to the review
  * @param props.title - The title text to display

@@ -17,7 +17,7 @@ type HomeOpenGraphImageProps = {
  * Open Graph image component for the home page.
  * Renders a 1200x630 image with backdrop, site title, and tagline.
  * Used for social media sharing and SEO meta image tags.
- * 
+ *
  * @param props - Component props
  * @param props.backdrop - Background image URL
  * @returns Open Graph image JSX for the home page

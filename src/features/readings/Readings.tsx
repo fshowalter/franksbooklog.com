@@ -92,7 +92,7 @@ export type ReadingsProps = {
  * Readings page component displaying a calendar view of reading history.
  * Features month-by-month calendar layout, filtering by various criteria, and navigation.
  * Uses reducer pattern for complex state management including current month selection.
- * 
+ *
  * @param props - Component props
  * @param props.distinctEditions - Available editions for filtering
  * @param props.distinctKinds - Available work kinds for filtering

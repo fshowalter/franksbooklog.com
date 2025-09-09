@@ -7,7 +7,7 @@ import { SelectInput } from "./SelectInput";
  * Renders a year range selection field with "From" and "To" dropdowns.
  * Provides a way to select a range of years with automatic value sorting
  * to ensure the range is always valid. Handles state management internally.
- * 
+ *
  * @param props - The component props
  * @param props.initialValues - Initial [min, max] year values for the range
  * @param props.label - The label text for the fieldset

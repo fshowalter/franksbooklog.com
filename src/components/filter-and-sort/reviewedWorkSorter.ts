@@ -44,7 +44,7 @@ type SortableReviewedWork = {
 /**
  * Creates a complete sort map for reviewed works.
  * Combines all individual sort functions into a single mapping object.
- * 
+ *
  * @template TValue - Type extending SortableReviewedWork
  * @returns Object mapping sort keys to comparison functions
  */
@@ -62,7 +62,7 @@ export function createReviewedWorkSortMap<
 /**
  * Creates a function to select and group paginated values.
  * Higher-order function that applies pagination before grouping.
- * 
+ *
  * @template TValue - The type of values being grouped
  * @template TSort - The type of sort criteria
  * @param groupFn - Function that groups values based on sort criteria
@@ -84,7 +84,7 @@ export function createSelectGroupedValues<TValue, TSort>(
 /**
  * Determines the group key for a reviewed work based on sort criteria.
  * Returns appropriate grouping value (grade, year, letter, etc.) based on current sort.
- * 
+ *
  * @template TSort - The specific sort type being used
  * @param value - The reviewed work item to group
  * @param sort - The current sort criteria
@@ -116,7 +116,7 @@ export function groupForSortableReviewedWork<TSort extends ReviewedWorkSort>(
 
 /**
  * Creates grade-based sort functions.
- * 
+ *
  * @template TValue - Type extending SortableReviewedWork
  * @returns Object with grade sort functions
  */
@@ -131,7 +131,7 @@ function sortGrade<TValue extends SortableReviewedWork>() {
 
 /**
  * Creates review date-based sort functions.
- * 
+ *
  * @template TValue - Type extending SortableReviewedWork
  * @returns Object with review date sort functions
  */
@@ -146,7 +146,7 @@ function sortReviewDate<TValue extends SortableReviewedWork>() {
 
 /**
  * Creates title-based sort functions.
- * 
+ *
  * @template TValue - Type extending SortableReviewedWork
  * @returns Object with title sort functions
  */
@@ -160,7 +160,7 @@ function sortTitle<TValue extends SortableReviewedWork>() {
 
 /**
  * Creates work year-based sort functions.
- * 
+ *
  * @template TValue - Type extending SortableReviewedWork
  * @returns Object with work year sort functions
  */

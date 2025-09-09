@@ -85,7 +85,7 @@ type Reviews = {
  * Retrieves all reviews with their metadata and distinct filter values.
  * Combines JSON metadata with markdown content for complete review data.
  * Results are cached in production for performance.
- * 
+ *
  * @returns Promise resolving to reviews data with filter metadata
  */
 export async function allReviews(): Promise<Reviews> {
@@ -113,7 +113,7 @@ export async function allReviews(): Promise<Reviews> {
 /**
  * Converts raw markdown content to plain text by removing footnotes and markdown formatting.
  * Used for generating excerpt text and search indexing.
- * 
+ *
  * @param rawContent - The raw markdown content to process
  * @returns Plain text version of the content
  */
@@ -128,7 +128,7 @@ export function getContentPlainText(rawContent: string): string {
 /**
  * Loads and processes complete review content including HTML and enriched reading data.
  * Converts markdown to HTML, processes reading notes, and sorts readings by date.
- * 
+ *
  * @param review - The base review to load content for
  * @returns Promise resolving to review with processed content and readings
  */
@@ -195,7 +195,7 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
  * Loads and processes HTML excerpt for a review.
  * Uses synopsis if available, otherwise truncates main content.
  * Results are cached in production for performance.
- * 
+ *
  * @param review - The review object with slug to load excerpt for
  * @returns Promise resolving to review with HTML excerpt
  */
@@ -247,7 +247,7 @@ export async function loadExcerptHtml<T extends { slug: string }>(
 /**
  * Retrieves the most recently published reviews.
  * Sorts by review sequence and limits results to specified count.
- * 
+ *
  * @param limit - Maximum number of recent reviews to return
  * @returns Promise resolving to array of recent reviews
  */
@@ -271,7 +271,7 @@ export async function mostRecentReviews(limit: number) {
 /**
  * Internal function to process markdown content as inline HTML (span).
  * Used for edition notes and other content that should be inline.
- * 
+ *
  * @param content - Markdown content to process, may be undefined
  * @param reviewedWorks - Array of reviewed works for automatic linking
  * @returns Processed HTML as inline content, or undefined if no content
@@ -298,7 +298,7 @@ function getHtmlAsSpan(
 /**
  * Internal function to create a configured remark processor.
  * Includes GitHub Flavored Markdown and smart typography processing.
- * 
+ *
  * @returns Configured remark processor instance
  */
 function getMastProcessor() {
@@ -308,7 +308,7 @@ function getMastProcessor() {
 /**
  * Internal function to parse and combine JSON metadata with markdown reviews.
  * Merges reviewed works data with review markdown content and calculates distinct values.
- * 
+ *
  * @param reviewedWorksJson - Array of reviewed work metadata from JSON
  * @returns Promise resolving to reviews data with combined metadata
  */

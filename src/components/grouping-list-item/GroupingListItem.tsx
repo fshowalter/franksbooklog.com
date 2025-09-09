@@ -3,7 +3,7 @@
  * Creates a sectioned list item with a distinctive header displaying the group text
  * and a content area for child elements. Includes responsive styling and proper
  * accessibility with an ID matching the group text.
- * 
+ *
  * @param props - The component props
  * @param props.children - The content to render within the group's content area
  * @param props.className - Optional additional CSS classes to apply to the list item

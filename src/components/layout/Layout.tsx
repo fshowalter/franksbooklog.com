@@ -5,7 +5,7 @@ import { Mast } from "./Mast";
  * Main layout component providing the overall page structure.
  * Includes skip-to-content link for accessibility, masthead with navigation,
  * main content area, and footer. Handles backdrop and gradient styling.
- * 
+ *
  * @param props - Component props
  * @param props.addGradient - Whether to add gradient overlay (defaults to hasBackdrop value)
  * @param props.children - Page content to render in main area

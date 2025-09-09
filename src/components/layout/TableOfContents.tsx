@@ -6,7 +6,7 @@ import { navItems } from "./navItems";
  * Renders a table of contents navigation menu.
  * Displays the main navigation items as an ordered list with sub-menus
  * when items have child navigation items. Used in footer and mobile menu.
- * 
+ *
  * @returns A JSX element containing the table of contents navigation
  */
 export function TableOfContents(): React.JSX.Element {
@@ -23,7 +23,7 @@ export function TableOfContents(): React.JSX.Element {
  * Internal component for rendering individual menu items.
  * Handles main navigation items and their associated sub-menus.
  * Includes hover effects and responsive styling.
- * 
+ *
  * @param props - The component props
  * @param props.value - The navigation item data to render
  * @returns A JSX element containing the menu item and any sub-menu
@@ -58,7 +58,7 @@ function MenuItem({ value }: { value: NavItem }): React.JSX.Element {
  * Internal component for rendering sub-navigation menus.
  * Only renders if there are sub-items to display. Uses smaller styling
  * appropriate for secondary navigation items.
- * 
+ *
  * @param props - The component props
  * @param props.values - Array of sub-navigation items to render
  * @returns A JSX element containing the sub-menu, or false if no items

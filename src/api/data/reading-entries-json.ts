@@ -44,7 +44,7 @@ export type ReadingEntryJson = z.infer<typeof ReadingEntryJsonSchema>;
 /**
  * Loads and validates all reading entries from the reading-entries.json file.
  * Each entry represents a single reading session with progress tracking.
- * 
+ *
  * @returns Promise resolving to array of validated reading entry data
  */
 export async function allReadingEntriesJson(): Promise<ReadingEntryJson[]> {
@@ -56,7 +56,7 @@ export async function allReadingEntriesJson(): Promise<ReadingEntryJson[]> {
 /**
  * Internal function to parse reading entries from the JSON file.
  * Reads the file and validates each entry against the schema.
- * 
+ *
  * @returns Promise resolving to array of parsed and validated reading entries
  * @throws ZodError if any entry doesn't match the expected schema
  */

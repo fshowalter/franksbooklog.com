@@ -15,7 +15,7 @@ type onChangeHandler = (value: string) => void;
  * Text input field component with debounced change handling.
  * Provides immediate visual feedback while debouncing the actual callback
  * to prevent excessive event firing during typing.
- * 
+ *
  * @param props - Component props
  * @param props.initialValue - Initial text value
  * @param props.label - Label text to display above the input

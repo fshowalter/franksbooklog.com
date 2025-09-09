@@ -40,7 +40,7 @@ type ReviewsState = ReviewedWorkFiltersState<ReviewsValue, ReviewsSort>;
 /**
  * Initializes the state for the Reviews page reducer.
  * Sets up initial filtering state, sort order, and processes the review values.
- * 
+ *
  * @param params - Initialization parameters
  * @param params.initialSort - Initial sort order for the reviews
  * @param params.values - Array of review data to initialize with

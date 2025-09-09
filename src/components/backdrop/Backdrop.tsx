@@ -8,7 +8,7 @@ import { Avatar } from "~/components/avatar/Avatar";
 /**
  * Backdrop component specifically designed for author pages with avatar display.
  * Combines a full-screen backdrop image with a centered avatar, name, and description.
- * 
+ *
  * @param props - Component props
  * @param props.avatarImageProps - Avatar image properties, if available
  * @param props.backdropImageProps - Background image properties
@@ -82,7 +82,7 @@ export const BackdropImageConfig = {
 /**
  * General-purpose backdrop component for hero sections with customizable content.
  * Provides a full-screen background image with overlay text and optional elements.
- * 
+ *
  * @param props - Component props
  * @param props.bottomShadow - Whether to add a bottom shadow gradient (defaults to true)
  * @param props.breadcrumb - Optional breadcrumb navigation elements
@@ -141,7 +141,7 @@ export function Backdrop({
 /**
  * Styled link component for breadcrumb navigation in backdrop headers.
  * Features hover animations and consistent styling for navigation elements.
- * 
+ *
  * @param props - Component props
  * @param props.children - Link text or content to display
  * @param props.href - URL destination for the link

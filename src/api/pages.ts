@@ -33,10 +33,10 @@ type MarkdownPage = {
  * Converts markdown content to plain text by stripping all formatting.
  * Removes footnotes, markdown syntax, and HTML to produce clean text
  * suitable for meta descriptions or text-only contexts.
- * 
+ *
  * @param rawContent - Raw markdown content to convert
  * @returns Plain text version of the content
- * 
+ *
  * @example
  * ```typescript
  * const plainText = getContentPlainText('**Bold** text with [link](url)');
@@ -55,10 +55,10 @@ export function getContentPlainText(rawContent: string): string {
  * Retrieves and processes a specific page by slug.
  * Loads the page markdown, processes it to HTML with linked works,
  * and returns both raw and processed content with caching.
- * 
+ *
  * @param slug - The unique slug identifier for the page
  * @returns Promise resolving to processed page data with HTML content
- * 
+ *
  * @example
  * ```typescript
  * const aboutPage = await getPage('about');
@@ -95,7 +95,7 @@ export async function getPage(slug: string): Promise<MarkdownPage> {
 /**
  * Internal function to create a configured remark processor.
  * Includes GitHub Flavored Markdown and smart typography processing.
- * 
+ *
  * @returns Configured remark processor instance
  */
 function getMastProcessor() {

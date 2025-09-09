@@ -1,7 +1,7 @@
 /**
  * Renders a progress bar with gradient styling based on a value relative to a maximum.
  * Creates a visual representation of progress using CSS custom properties for the percentage.
- * 
+ *
  * @param props - The component props
  * @param props.maxValue - The maximum value for calculating percentage (100%)
  * @param props.value - The current value to display as a percentage of maxValue

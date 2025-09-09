@@ -12,7 +12,7 @@ type ListItemAuthor = {
  * Renders a list of authors in a readable sentence format.
  * Uses the toSentenceArray utility to format multiple authors with proper
  * punctuation and conjunctions (e.g., "Author A, Author B, and Author C").
- * 
+ *
  * @param props - The component props
  * @param props.values - Array of author objects to display
  * @returns A JSX element containing the formatted author list

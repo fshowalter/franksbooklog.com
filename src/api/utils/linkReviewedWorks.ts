@@ -2,7 +2,7 @@
  * Converts special work reference spans into links to reviewed works.
  * Processes HTML text to find spans with data-work-slug attributes and
  * replaces them with links to review pages if the work has been reviewed.
- * 
+ *
  * @param text - HTML text containing work reference spans
  * @param reviewedWorks - Array of reviewed works with slugs
  * @returns HTML text with work references converted to links

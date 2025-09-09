@@ -17,7 +17,7 @@ import {
  * Filter controls component for the Reviews page.
  * Provides filtering interface for grade, kind, review year, title, and work year.
  * Manages filter state through Redux-style reducer actions.
- * 
+ *
  * @param props - Component props
  * @param props.dispatch - Reducer dispatch function for filter actions
  * @param props.distinctKinds - Available book kinds for filtering

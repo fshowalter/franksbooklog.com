@@ -18,7 +18,7 @@ type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
  * Displays a book cover with realistic styling effects.
  * Adds spine gradients, spot lighting, and shadow effects to create
  * a three-dimensional book cover appearance.
- * 
+ *
  * @param props - Cover component props including image properties
  * @returns Cover component with styled book appearance
  */

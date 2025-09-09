@@ -25,7 +25,7 @@ import { AvatarImageConfig } from "./Author";
 /**
  * Gets props for the Author page component by fetching author details and transforming work data.
  * Loads author information, work covers, and prepares all data needed for display and filtering.
- * 
+ *
  * @param slug - Author slug identifier for fetching data
  * @returns Promise resolving to complete props object for Author component
  */
@@ -80,7 +80,7 @@ export async function getProps(slug: string): Promise<Props> {
 /**
  * Creates a descriptive deck text for the author based on their reviewed works count.
  * Handles singular/plural grammar for work count display.
- * 
+ *
  * @param author - Author object containing reviewed works
  * @param author.reviewedWorks - Array of the author's reviewed works
  * @returns Formatted deck description string
@@ -104,7 +104,7 @@ function deck({
 /**
  * Filters out the current author from a work's author list to get co-authors.
  * Used to display "with [other authors]" text on work list items.
- * 
+ *
  * @param author - The main author whose page this is
  * @param work - The work to get other authors for
  * @returns Array of other authors excluding the main author

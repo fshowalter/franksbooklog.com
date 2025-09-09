@@ -5,7 +5,7 @@ import { TableOfContents } from "./TableOfContents";
  * Renders the site footer with navigation, author bio, and copyright information.
  * Includes a "back to top" link, site logo, table of contents, author bio section,
  * and copyright notice with Fair Use Law reference.
- * 
+ *
  * @returns A JSX element containing the complete site footer
  */
 export function Footer(): React.JSX.Element {
@@ -149,7 +149,7 @@ export function Footer(): React.JSX.Element {
 /**
  * Internal component for rendering styled links within the footer content.
  * Provides consistent styling for links in the author bio section.
- * 
+ *
  * @param props - The component props
  * @param props.href - The URL the link should navigate to
  * @param props.text - The text content to display for the link

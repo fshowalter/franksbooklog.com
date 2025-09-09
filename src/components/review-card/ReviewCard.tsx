@@ -37,7 +37,7 @@ export type ReviewCardProps = Pick<
  * Review card component for displaying book review preview with cover and excerpt.
  * Features responsive design with hover effects, styled book cover with lighting,
  * and truncated review content. Used on home page and review listings.
- * 
+ *
  * @param props - Component props
  * @param props.value - Review data to display in the card
  * @returns Review card component with cover, title, grade, and excerpt

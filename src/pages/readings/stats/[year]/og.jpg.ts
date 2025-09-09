@@ -16,7 +16,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
  * Astro static path generation function that creates routes for yearly reading statistics OG images.
  * Generates a static path for each year that has reading statistics data, enabling pre-built
  * Open Graph images for individual yearly stats pages at build time.
- * 
+ *
  * @returns {Promise<Array>} Array of path objects with params (year) and props (year) for each statistics year
  */
 export async function getStaticPaths() {
@@ -38,7 +38,7 @@ export async function getStaticPaths() {
  * Astro API endpoint that generates personalized Open Graph images for yearly reading statistics.
  * Creates a JPEG image featuring the specific year and stats backdrop for social media sharing
  * when individual year statistics pages are shared on platforms like Facebook, Twitter, etc.
- * 
+ *
  * @param {Object} context - Astro API context object
  * @param {Props} context.props - Year props containing the year from getStaticPaths
  * @returns {Promise<Response>} HTTP response containing the generated JPEG image with appropriate content-type headers

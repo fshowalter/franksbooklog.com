@@ -4,7 +4,7 @@ import { SelectInput } from "./SelectInput";
 /**
  * Select field component with label for form inputs.
  * Provides a consistent interface for dropdown selections with proper labeling.
- * 
+ *
  * @param props - Component props
  * @param props.children - Option elements to render inside the select
  * @param props.initialValue - Initial selected value

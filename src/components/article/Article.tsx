@@ -23,7 +23,7 @@ export type Props = {
 /**
  * Article page component for displaying static content with backdrop and recent reviews.
  * Designed for informational pages like "About" or "How I Grade" with long-form content.
- * 
+ *
  * @param props - Component props
  * @param props.backdropImageProps - Background image properties for the hero section
  * @param props.content - Main article content (HTML string)

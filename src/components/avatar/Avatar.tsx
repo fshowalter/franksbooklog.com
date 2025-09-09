@@ -21,7 +21,7 @@ type AvatarProps = React.ImgHTMLAttributes<HTMLImageElement> & {
 /**
  * Avatar component that displays either an author image or a default user icon.
  * When no image is provided, shows a styled SVG placeholder icon.
- * 
+ *
  * @param props - Component props extending HTML img attributes
  * @param props.className - Optional CSS classes to apply
  * @param props.fill - Fill color for the default avatar icon

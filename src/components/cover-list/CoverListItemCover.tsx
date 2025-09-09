@@ -5,7 +5,7 @@ import type { CoverImageProps } from "~/api/covers";
  * Creates a realistic book appearance with multiple layers including spine textures,
  * lighting effects, and hover animations. Uses complex CSS layering to achieve
  * the book-like visual effect.
- * 
+ *
  * @param props - The component props
  * @param props.className - Optional additional CSS classes
  * @param props.imageConfig - Configuration for responsive image sizing

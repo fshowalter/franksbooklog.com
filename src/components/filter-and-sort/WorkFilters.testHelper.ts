@@ -7,7 +7,7 @@ import { fillYearField } from "~/components/fields/YearField.testHelper";
 
 /**
  * Test helper function to select a kind filter option.
- * 
+ *
  * @param user - User event instance for interaction simulation
  * @param value - The kind value to select
  */
@@ -17,7 +17,7 @@ export async function clickKindFilterOption(user: UserEvent, value: string) {
 
 /**
  * Test helper function to fill the title filter field.
- * 
+ *
  * @param user - User event instance for interaction simulation
  * @param value - The title text to enter
  */
@@ -27,7 +27,7 @@ export async function fillTitleFilter(user: UserEvent, value: string) {
 
 /**
  * Test helper function to fill the work year filter range.
- * 
+ *
  * @param user - User event instance for interaction simulation
  * @param value1 - The starting year value
  * @param value2 - The ending year value
@@ -42,7 +42,7 @@ export async function fillWorkYearFilter(
 
 /**
  * Test helper function to get the kind filter element.
- * 
+ *
  * @returns The kind filter DOM element
  */
 export function getKindFilter() {
@@ -51,7 +51,7 @@ export function getKindFilter() {
 
 /**
  * Test helper function to get the title filter element.
- * 
+ *
  * @returns The title filter DOM element
  */
 export function getTitleFilter() {

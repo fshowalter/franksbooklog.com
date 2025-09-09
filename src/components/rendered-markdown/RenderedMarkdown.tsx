@@ -2,7 +2,7 @@
  * Renders pre-processed markdown content as HTML.
  * Polymorphic component that can render as different HTML elements while
  * safely injecting processed markdown content. Returns false if no text provided.
- * 
+ *
  * @param props - The component props
  * @param props.as - The HTML element type to render (defaults to "div")
  * @param props.className - Optional additional CSS classes to apply

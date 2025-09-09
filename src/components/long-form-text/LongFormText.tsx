@@ -4,7 +4,7 @@ import { RenderedMarkdown } from "~/components/rendered-markdown/RenderedMarkdow
  * Renders long-form text content with responsive typography styling.
  * Wrapper around RenderedMarkdown that applies consistent typography
  * optimized for longer text content with responsive sizing.
- * 
+ *
  * @param props - The component props
  * @param props.className - Optional additional CSS classes to apply
  * @param props.text - The text content to render (supports markdown)

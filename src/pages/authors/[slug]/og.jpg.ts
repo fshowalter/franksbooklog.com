@@ -16,7 +16,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
  * Astro static path generation function that creates routes for all author OG images.
  * Generates a static path for each author in the system, enabling pre-built Open Graph
  * images for individual author pages at build time.
- * 
+ *
  * @returns {Promise<Array>} Array of path objects with params (slug) and props (name, slug) for each author
  */
 export async function getStaticPaths() {
@@ -39,7 +39,7 @@ export async function getStaticPaths() {
  * Astro API endpoint that generates personalized Open Graph images for individual authors.
  * Creates a JPEG image featuring the author's avatar, name, and custom backdrop for social
  * media sharing when author pages are shared on platforms like Facebook, Twitter, etc.
- * 
+ *
  * @param {Object} context - Astro API context object
  * @param {Props} context.props - Author props containing name and slug from getStaticPaths
  * @returns {Promise<Response>} HTTP response containing the generated JPEG image with appropriate content-type headers

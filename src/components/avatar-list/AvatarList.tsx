@@ -14,7 +14,7 @@ export const AvatarListItemImageConfig = {
 /**
  * List item component for displaying content with an avatar image.
  * Features hover effects and responsive design with avatar scaling.
- * 
+ *
  * @param props - Component props
  * @param props.avatarImageProps - Image properties for the avatar
  * @param props.children - Content to display alongside the avatar
@@ -66,7 +66,7 @@ export function AvatarListItem({
 /**
  * Grouped avatar list component for displaying items organized by categories.
  * Renders groups with headers and contains avatar list items within each group.
- * 
+ *
  * @param props - Component props
  * @param props.children - Render function for individual list items
  * @param props.className - Additional CSS classes for the list
@@ -117,7 +117,7 @@ export function GroupedAvatarList<T>({
  * Internal component for rendering avatar images within list items.
  * Handles the avatar display with proper sizing, rounded styling,
  * and hover effects for use within avatar list items.
- * 
+ *
  * @param props - The component props
  * @param props.imageProps - Image properties for the avatar, or undefined for placeholder
  * @returns A JSX element containing the styled avatar

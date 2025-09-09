@@ -11,7 +11,7 @@ import type { Props } from "./Article";
  * Gets props for the Article component by loading page content and recent reviews.
  * Fetches the page content, backdrop image, and recent reviews with cover images
  * to populate the article page.
- * 
+ *
  * @param params - The parameters for fetching article props
  * @param params.deck - The article subtitle/description
  * @param params.slug - The page slug to load content for

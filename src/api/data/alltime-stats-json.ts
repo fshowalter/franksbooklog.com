@@ -42,10 +42,10 @@ export type AlltimeStatsJson = z.infer<typeof AlltimeStatsJsonSchema>;
  * Loads and validates all-time reading statistics from JSON file.
  * Provides comprehensive lifetime reading metrics including book counts,
  * grade distributions, most read authors, and categorical breakdowns.
- * 
+ *
  * @returns Promise resolving to validated all-time statistics data
  * @throws ZodError if the JSON data doesn't match the expected schema
- * 
+ *
  * @example
  * ```typescript
  * const stats = await alltimeStatsJson();

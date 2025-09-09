@@ -19,7 +19,7 @@ export type HomeProps = {
  * Home page component displaying the latest reviews with backdrop.
  * Features the site logo, tagline, recent review cards, and a call-to-action
  * to view all reviews.
- * 
+ *
  * @param props - Component props
  * @param props.backdropImageProps - Image properties for the backdrop
  * @param props.deck - Subtitle/tagline text to display

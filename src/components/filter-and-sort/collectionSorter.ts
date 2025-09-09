@@ -30,7 +30,7 @@ type SortableCollection = {
 /**
  * Creates a complete sort map for collections.
  * Combines name and review count sort functions into a single mapping object.
- * 
+ *
  * @template TValue - Type extending SortableCollection
  * @returns Object mapping sort keys to comparison functions
  */
@@ -44,7 +44,7 @@ export function createCollectionSortMap<TValue extends SortableCollection>() {
 /**
  * Creates a function to select and group collection values.
  * Higher-order function that applies grouping to collection values.
- * 
+ *
  * @template TValue - The type of values being grouped
  * @template TSort - The type of sort criteria
  * @param groupFn - Function that groups values based on sort criteria
@@ -64,7 +64,7 @@ export function createSelectGroupedValues<TValue, TSort>(
 /**
  * Determines the group key for a collection item based on sort criteria.
  * Returns appropriate grouping value (letter for name sorts, empty for count sorts).
- * 
+ *
  * @template TSort - The specific sort type being used
  * @param value - The collection item to group
  * @param sort - The current sort criteria
@@ -88,7 +88,7 @@ export function groupForSortableReviewedWork<TSort extends CollectionSort>(
 
 /**
  * Creates name-based sort functions.
- * 
+ *
  * @template TValue - Type extending SortableCollection
  * @returns Object with name sort functions
  */
@@ -101,7 +101,7 @@ function sortName<TValue extends SortableCollection>() {
 
 /**
  * Creates review count-based sort functions.
- * 
+ *
  * @template TValue - Type extending SortableCollection
  * @returns Object with review count sort functions
  */

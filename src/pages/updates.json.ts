@@ -28,7 +28,7 @@ const gradeToStars: Record<string, number> = {
  * Astro API endpoint that generates a JSON feed of recent book reviews.
  * Returns structured data including star ratings, cover images, and metadata
  * for integration with external services or widgets.
- * 
+ *
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {

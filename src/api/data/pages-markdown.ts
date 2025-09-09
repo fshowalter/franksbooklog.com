@@ -36,10 +36,10 @@ const ENABLE_CACHE = !import.meta.env.DEV;
 /**
  * Loads and parses all Markdown page files from the content directory.
  * Pages are parsed with gray-matter and cached during builds for performance.
- * 
+ *
  * @returns Promise resolving to array of parsed Markdown pages
  * @throws ZodError if any page's frontmatter doesn't match the expected schema
- * 
+ *
  * @example
  * ```typescript
  * const pages = await allPagesMarkdown();
@@ -66,7 +66,7 @@ export async function allPagesMarkdown(): Promise<MarkdownPage[]> {
 /**
  * Internal function to parse all Markdown page files from the file system.
  * Reads the pages directory and processes each .md file with gray-matter.
- * 
+ *
  * @returns Promise resolving to array of parsed and validated page data
  * @throws ZodError if any page's frontmatter doesn't match the expected schema
  */

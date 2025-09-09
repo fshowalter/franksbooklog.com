@@ -10,7 +10,7 @@ import { TableOfContents } from "./TableOfContents";
  * Renders the site header/masthead with navigation, logo, and search functionality.
  * Supports backdrop styling for overlay scenarios and responsive navigation menu.
  * Includes hamburger menu for mobile devices and search button.
- * 
+ *
  * @param props - The component props
  * @param props.addGradient - Whether to apply a gradient background overlay
  * @param props.hasBackdrop - Whether the mast is overlaying content (affects styling)
@@ -83,7 +83,7 @@ export function Mast({
  * Internal component for the hamburger menu toggle and mobile navigation.
  * Renders animated hamburger button that transforms into an X when active,
  * plus the slide-out navigation panel with backdrop overlay.
- * 
+ *
  * @param props - The component props
  * @param props.hasBackdrop - Whether the parent mast has backdrop styling
  * @returns A JSX element containing the hamburger menu system
@@ -172,7 +172,7 @@ function HamburgerMenu({
  * Internal component for rendering individual navigation list items.
  * Handles styling for both regular and backdrop modes, including
  * hover effects and text shadows when overlaying content.
- * 
+ *
  * @param props - The component props
  * @param props.hasBackdrop - Whether the parent mast has backdrop styling
  * @param props.value - The navigation item data to render
@@ -216,7 +216,7 @@ function NavListItem({
  * Internal component for the search button with search icon.
  * Renders a disabled search button with keyboard shortcut indicator.
  * Includes hover effects and proper accessibility attributes.
- * 
+ *
  * @returns A JSX element containing the search button
  */
 function SearchButton(): React.JSX.Element {

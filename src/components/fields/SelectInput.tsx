@@ -2,7 +2,7 @@
  * Renders a styled select input with consistent form styling.
  * Provides a customizable select dropdown with proper styling that matches
  * the site's design system. Includes focus states and accessibility support.
- * 
+ *
  * @param props - The component props
  * @param props.children - The option elements to render within the select
  * @param props.onChange - Callback function called when selection changes

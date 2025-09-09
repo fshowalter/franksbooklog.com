@@ -71,7 +71,7 @@ const ENABLE_CACHE = !import.meta.env.DEV;
 /**
  * Loads and validates all author JSON files from the content directory.
  * Authors are parsed with Zod schemas and cached during builds.
- * 
+ *
  * @returns Promise resolving to array of validated author data
  */
 export async function allAuthorsJson(): Promise<AuthorJson[]> {
@@ -93,7 +93,7 @@ export async function allAuthorsJson(): Promise<AuthorJson[]> {
 /**
  * Internal function to parse all author JSON files from the file system.
  * Reads the authors directory and validates each JSON file against the schema.
- * 
+ *
  * @returns Promise resolving to array of parsed and validated author data
  * @throws ZodError if any JSON file doesn't match the expected schema
  */

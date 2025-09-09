@@ -58,7 +58,7 @@ const reversedOptions = [...gradeOptions].reverse();
  * Renders a grade range selection field with "From" and "To" dropdowns.
  * Allows users to select a range of grades (F to A+) with automatic
  * value sorting to ensure valid ranges. Uses numeric values internally.
- * 
+ *
  * @param props - The component props
  * @param props.initialValues - Initial [min, max] grade values for the range
  * @param props.label - The label text for the fieldset

@@ -2,7 +2,7 @@
  * Renders sort options for collection views (authors, genres, etc.).
  * Provides sorting options for name alphabetically and by review count,
  * in both ascending and descending order.
- * 
+ *
  * @returns A JSX fragment containing option elements for collection sorting
  */
 export function CollectionSortOptions(): React.JSX.Element {

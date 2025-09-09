@@ -83,10 +83,10 @@ export type ReviewsValue = {
  * Reviews page component displaying a filterable and sortable list of book reviews.
  * Features cover grid display, filtering by kind/year, sorting options, and pagination.
  * Uses reducer pattern for complex state management of filters and display options.
- * 
+ *
  * @param props - Component props
  * @param props.distinctKinds - Available work kinds for filtering
- * @param props.distinctReviewYears - Available review years for filtering  
+ * @param props.distinctReviewYears - Available review years for filtering
  * @param props.distinctWorkYears - Available work years for filtering
  * @param props.initialSort - Initial sort order for the list
  * @param props.values - Array of review data to display

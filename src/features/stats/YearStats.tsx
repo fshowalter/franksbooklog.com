@@ -33,7 +33,7 @@ export type YearStatsProps = {
 /**
  * Year statistics page component displaying reading stats for a specific year.
  * Shows various distributions, callouts, and navigation between years.
- * 
+ *
  * @param props - Component props
  * @param props.backdropImageProps - Backdrop image properties
  * @param props.deck - Subtitle text for the page

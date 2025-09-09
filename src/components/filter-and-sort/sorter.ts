@@ -26,7 +26,7 @@ export function createGroupValues<TValue, TSort>(
  * Creates a function to select and sort filtered values.
  * Higher-order function that takes a sort function and returns a function
  * that applies that sort function to filtered values.
- * 
+ *
  * @template TValue - The type of values being sorted
  * @template TSort - The type of sort criteria
  * @param sortFn - Function that sorts values based on sort criteria

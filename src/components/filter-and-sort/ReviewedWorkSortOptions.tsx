@@ -2,7 +2,7 @@
  * Renders sort options for reviewed works.
  * Provides a complete set of sorting options including title, grade,
  * work year, and review date in both ascending and descending order.
- * 
+ *
  * @returns A JSX fragment containing option elements for reviewed work sorting
  */
 export function ReviewedWorkSortOptions(): React.JSX.Element {

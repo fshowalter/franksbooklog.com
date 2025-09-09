@@ -5,7 +5,7 @@ import type { AuthorsValue } from "./Authors";
 /**
  * List item component for displaying an author in the authors page avatar grid.
  * Shows author avatar, name as a link, and review count with proper singular/plural handling.
- * 
+ *
  * @param props - Component props
  * @param props.value - Author data containing display information
  * @returns Author list item with avatar and details
@@ -35,7 +35,7 @@ export function AuthorsListItem({
 /**
  * Internal component for rendering the author's name as a clickable link.
  * Links to the author's individual page and includes hover effects.
- * 
+ *
  * @param props - Component props
  * @param props.name - Author's display name
  * @param props.slug - Author's URL slug for linking

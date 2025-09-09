@@ -5,7 +5,7 @@ import { screen } from "@testing-library/react";
 /**
  * Test helper function to select an option from a select field.
  * Simulates user interaction with dropdown selection fields.
- * 
+ *
  * @param user - User event instance for interaction simulation
  * @param labelText - Label text to locate the select field by
  * @param optionText - Text of the option to select

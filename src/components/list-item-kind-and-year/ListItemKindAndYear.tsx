@@ -1,7 +1,7 @@
 /**
  * Renders the kind (type) and year information for a list item.
  * Displays both values in a pipe-separated format with subtle styling.
- * 
+ *
  * @param props - The component props
  * @param props.kind - The type/kind of work (e.g., "Novel", "Short Story", etc.)
  * @param props.year - The publication or release year

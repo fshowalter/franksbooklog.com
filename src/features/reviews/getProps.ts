@@ -19,7 +19,7 @@ type Props = ReviewsProps & {
  * Loads and prepares data for the Reviews page component.
  * Fetches all reviews with metadata, sorts by author name, and prepares
  * optimized cover images and backdrop for the reviews listing page.
- * 
+ *
  * @returns Promise resolving to Reviews page props with all review data and filtering metadata
  */
 export async function getProps(): Promise<Props> {

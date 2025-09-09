@@ -32,10 +32,10 @@ export type YearStatsJson = z.infer<typeof YearStatsJsonSchema>;
 /**
  * Loads and validates all yearly statistics from JSON files.
  * Each file contains comprehensive reading metrics for one year.
- * 
+ *
  * @returns Promise resolving to array of validated yearly statistics
  * @throws ZodError if any JSON file doesn't match the expected schema
- * 
+ *
  * @example
  * ```typescript
  * const yearStats = await allYearStatsJson();
@@ -52,7 +52,7 @@ export async function allYearStatsJson(): Promise<YearStatsJson[]> {
 /**
  * Internal function to parse all yearly statistics JSON files.
  * Reads the year-stats directory and validates each JSON file.
- * 
+ *
  * @returns Promise resolving to array of parsed and validated yearly statistics
  * @throws ZodError if any file doesn't match the expected schema
  */
