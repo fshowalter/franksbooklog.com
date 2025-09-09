@@ -2,8 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import { FilterAndSortHeader } from "./FilterAndSortHeader";
 
-const DRAWER_OPEN_ANIMATION_MS = 400;
-
 /**
  * Props for sorting functionality within the filter container
  */
@@ -19,11 +17,11 @@ type Props<T extends string> = {
   filters: React.ReactNode;
   hasActiveFilters: boolean;
   headerLinks?: React.ReactNode;
-  onApplyFilters?: () => void;
-  onClearFilters?: () => void;
-  onFilterDrawerOpen?: () => void;
-  onResetFilters?: () => void;
-  pendingFilteredCount?: number;
+  onApplyFilters: () => void;
+  onClearFilters: () => void;
+  onFilterDrawerOpen: () => void;
+  onResetFilters: () => void;
+  pendingFilteredCount: number;
   sortProps: SortProps<T>;
   topNav?: React.ReactNode;
   totalCount: number;
@@ -53,10 +51,9 @@ export function FilterAndSortContainer<T extends string>({
   totalCount,
 }: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
-  const [isOpening, setIsOpening] = useState(false);
   const filtersRef = useRef<HTMLDivElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
-  const timeoutRefs = useRef<Set<NodeJS.Timeout>>(new Set());
+  const listRef = useRef<HTMLDivElement | null>(null);
   const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
 
   const handleCloseDrawer = useCallback(
@@ -66,7 +63,7 @@ export function FilterAndSortContainer<T extends string>({
       }
       setFilterDrawerVisible(false);
       if (shouldResetFilters) {
-        onResetFilters?.();
+        onResetFilters();
       }
     },
     [onResetFilters],
@@ -79,19 +76,12 @@ export function FilterAndSortContainer<T extends string>({
       if (filterDrawerVisible) {
         handleCloseDrawer();
       } else {
-        setIsOpening(true);
         if (typeof document !== "undefined") {
           document.body.classList.add("overflow-hidden");
         }
         setFilterDrawerVisible(true);
         // Call onFilterDrawerOpen when opening
-        onFilterDrawerOpen?.();
-        // Clear the opening state after animation completes
-        const timeoutId = setTimeout(() => {
-          setIsOpening(false);
-          timeoutRefs.current.delete(timeoutId);
-        }, DRAWER_OPEN_ANIMATION_MS);
-        timeoutRefs.current.add(timeoutId);
+        onFilterDrawerOpen();
         // Focus first focusable element after drawer opens
         requestAnimationFrame(() => {
           const firstFocusable = filtersRef.current?.querySelector<HTMLElement>(
@@ -104,13 +94,6 @@ export function FilterAndSortContainer<T extends string>({
     [filterDrawerVisible, handleCloseDrawer, onFilterDrawerOpen],
   );
 
-  // Cleanup timeouts on unmount
-  useEffect(() => {
-    return (): void => {
-      for (const timeoutId of timeoutRefs.current) clearTimeout(timeoutId);
-      timeoutRefs.current.clear();
-    };
-  }, []);
 
   // Handle escape key
   useEffect(() => {
@@ -130,7 +113,7 @@ export function FilterAndSortContainer<T extends string>({
     if (prevSortValueRef.current !== sortProps.currentSortValue) {
       prevSortValueRef.current = sortProps.currentSortValue;
       if (typeof document !== "undefined") {
-        document.querySelector("#list")?.scrollIntoView({ behavior: "smooth" });
+        listRef.current?.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [sortProps.currentSortValue]);
@@ -175,6 +158,7 @@ export function FilterAndSortContainer<T extends string>({
               tablet:[--filter-and-sort-container-scroll-offset:121px]
             `}
             id="list"
+            ref={listRef}
           >
             {children}
           </div>
@@ -239,10 +223,7 @@ export function FilterAndSortContainer<T extends string>({
               >
                 <svg
                   aria-hidden="true"
-                  className={`
-                    h-4 w-4 transform-gpu
-                    ${isOpening ? "animate-spin-wind-up" : ""}
-                  `}
+                  className="h-4 w-4"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -297,7 +278,7 @@ export function FilterAndSortContainer<T extends string>({
                     disabled={hasActiveFilters ? undefined : false}
                     onClick={() => {
                       if (hasActiveFilters) {
-                        onClearFilters?.();
+                        onClearFilters();
                       }
                     }}
                     type="button"
@@ -314,19 +295,15 @@ export function FilterAndSortContainer<T extends string>({
                     `}
                     onClick={() => {
                       // Apply pending filters
-                      onApplyFilters?.();
+                      onApplyFilters();
                       handleCloseDrawer(false); // Don't reset filters when applying
                       if (typeof document !== "undefined") {
-                        document.querySelector("#list")?.scrollIntoView();
+                        listRef.current?.scrollIntoView();
                       }
                     }}
                     type="button"
                   >
-                    View{" "}
-                    {pendingFilteredCount === undefined
-                      ? totalCount
-                      : pendingFilteredCount}{" "}
-                    Results
+                    View {pendingFilteredCount} Results
                   </button>
                 </div>
               </div>

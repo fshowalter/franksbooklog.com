@@ -5,7 +5,7 @@ import type { AuthorsSort } from "./Authors.sorter";
  * Alphabet navigation component for the authors list page.
  * Shows A-Z letters as jump navigation when sorted by name.
  * Only renders when the current sort is name-based, otherwise returns false.
- * 
+ *
  * @param props - Component props
  * @param props.groupedValues - Map of grouped author values by first letter
  * @param props.sortValue - Current sort value to determine display and order
@@ -28,7 +28,7 @@ export function AlphabetNav({
   }
 
   return (
-    <nav className={`sticky top-0 z-nav-menu bg-[#333]`}>
+    <nav className={`sticky top-0 z-10 bg-[#333]`}>
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
@@ -57,7 +57,7 @@ export function AlphabetNav({
 /**
  * Internal component for individual letter links in the alphabet navigation.
  * Renders as a clickable link if authors exist for that letter, otherwise as plain text.
- * 
+ *
  * @param props - Component props
  * @param props.letter - The letter to display (A-Z)
  * @param props.linkFunc - Optional function to generate anchor link URL
