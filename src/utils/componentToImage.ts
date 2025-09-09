@@ -209,6 +209,7 @@ function serializeJsx(element: React.JSX.Element): string {
   }
 
   // Sort props for deterministic output
+  // eslint-disable-next-line unicorn/no-array-sort
   const sortedPropsStr = JSON.stringify(props, Object.keys(props).sort());
 
   // Serialize children

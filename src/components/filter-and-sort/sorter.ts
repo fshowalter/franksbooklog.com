@@ -51,7 +51,7 @@ export function createSortValues<V, S extends string>(
 ) {
   return (values: V[], sortOrder: S): V[] => {
     const comparer = sortMap[sortOrder];
-    return [...values].sort(comparer);
+    return [...values].toSorted(comparer);
   };
 }
 

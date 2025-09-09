@@ -630,11 +630,7 @@ export class SearchUI {
       this.updateState({ query: target.value });
 
       // Show/hide clear button based on input content
-      if (target.value) {
-        clearButton.classList.remove("hidden");
-      } else {
-        clearButton.classList.add("hidden");
-      }
+      clearButton.classList.toggle("hidden", !target.value);
 
       this.debouncedSearch(target.value);
     });
