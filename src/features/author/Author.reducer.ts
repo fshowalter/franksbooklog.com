@@ -10,7 +10,7 @@ export {
   createSetTitlePendingFilterAction,
   createSetWorkYearPendingFilterAction,
   createShowMoreAction,
-} from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
+} from "~/components/filter-and-sort/ReviewedWorkFilters.reducer";
 
 import {
   createInitialReviewedWorkFiltersState,
@@ -19,7 +19,7 @@ import {
   type ReviewedWorkFiltersActionType,
   type ReviewedWorkFiltersState,
   type ReviewedWorkFiltersValues,
-} from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
+} from "~/components/filter-and-sort/ReviewedWorkFilters.reducer";
 
 export type AuthorActionType = ReviewedWorkFiltersActionType<AuthorSort>;
 

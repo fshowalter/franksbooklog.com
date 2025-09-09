@@ -1,4 +1,4 @@
-import { ReviewedWorkFilters } from "~/components/FilterAndSort/ReviewedWorkFilters";
+import { ReviewedWorkFilters } from "~/components/filter-and-sort/ReviewedWorkFilters";
 
 import type { AuthorActionType, AuthorFiltersValues } from "./Author.reducer";
 

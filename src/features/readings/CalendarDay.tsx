@@ -1,7 +1,7 @@
-import { BarGradient } from "~/components/BarGradient/BarGradient";
-import { CoverListItem } from "~/components/CoverList/CoverListItem";
-import { ListItemAuthors } from "~/components/ListItemAuthors/ListItemAuthors";
-import { ListItemTitle } from "~/components/ListItemTitle/ListItemTitle";
+import { BarGradient } from "~/components/bar-gradient/BarGradient";
+import { CoverListItem } from "~/components/cover-list/CoverListItem";
+import { ListItemAuthors } from "~/components/list-item-authors/ListItemAuthors";
+import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 
 import type { CalendarWeek } from "./Readings.sorter";
 

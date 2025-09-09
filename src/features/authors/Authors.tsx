@@ -2,9 +2,9 @@ import { useReducer, useState } from "react";
 
 import type { AvatarImageProps } from "~/api/avatars";
 
-import { GroupedAvatarList } from "~/components/AvatarList/AvatarList";
-import { CollectionSortOptions } from "~/components/FilterAndSort/CollectionSortOptions";
-import { FilterAndSortContainer } from "~/components/FilterAndSort/FilterAndSortContainer";
+import { GroupedAvatarList } from "~/components/avatar-list/AvatarList";
+import { CollectionSortOptions } from "~/components/filter-and-sort/CollectionSortOptions";
+import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 
 import { AlphabetNav } from "./AlphabetNav";
 import {

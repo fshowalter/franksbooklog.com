@@ -1,4 +1,4 @@
-import type { ReviewedWorkSort } from "~/components/FilterAndSort/reviewedWorkSorter";
+import type { ReviewedWorkSort } from "~/components/filter-and-sort/reviewedWorkSorter";
 
 import {
   createGroupValues,
@@ -7,8 +7,8 @@ import {
   createSelectSortedFilteredValues,
   createSortValues,
   groupForSortableReviewedWork,
-} from "~/components/FilterAndSort/reviewedWorkSorter";
-import { sortNumber } from "~/components/FilterAndSort/sorter";
+} from "~/components/filter-and-sort/reviewedWorkSorter";
+import { sortNumber } from "~/components/filter-and-sort/sorter";
 
 import type { ReviewsValue } from "./Reviews";
 export type ReviewsSort = "author-asc" | "author-desc" | ReviewedWorkSort;

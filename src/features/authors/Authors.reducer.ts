@@ -5,14 +5,14 @@ import {
   createCollectionFiltersReducer,
   createInitialCollectionFiltersState,
   createSortActionCreator,
-} from "~/components/FilterAndSort/CollectionFilters.reducer";
+} from "~/components/filter-and-sort/CollectionFilters.reducer";
 
 export {
   createApplyPendingFiltersAction,
   createClearPendingFiltersAction,
   createResetPendingFiltersAction,
   createSetNamePendingFilterAction,
-} from "~/components/FilterAndSort/CollectionFilters.reducer";
+} from "~/components/filter-and-sort/CollectionFilters.reducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./Authors.sorter";

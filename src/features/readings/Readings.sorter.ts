@@ -1,9 +1,3 @@
-import {
-  createSelectSortedFilteredValues,
-  createSortValues,
-  sortNumber,
-} from "~/components/FilterAndSort/sorter";
-
 export type CalendarWeek = CalendarDay[];
 
 export type ReadingsSort = "reading-date-asc" | "reading-date-desc";
@@ -15,17 +9,6 @@ type CalendarDay = {
   dayOfWeek?: string;
   readings: ReadingsValue[];
 };
-
-const sortValues = createSortValues<ReadingsValue, ReadingsSort>({
-  // Note: Lower timelineSequence = older date (in real data)
-  "reading-date-asc": (a, b) => sortNumber(a.entrySequence, b.entrySequence), // Oldest first
-  "reading-date-desc": (a, b) => sortNumber(b.entrySequence, a.entrySequence), // Newest first
-});
-
-export const selectSortedFilteredValues = createSelectSortedFilteredValues<
-  ReadingsValue,
-  ReadingsSort
->(sortValues);
 
 export function selectWeeksForMonth(
   month: Date,

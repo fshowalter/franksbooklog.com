@@ -1,9 +1,9 @@
-import { CoverListItem } from "~/components/CoverList/CoverListItem";
-import { ListItemDetails } from "~/components/ListItemDetails/ListItemDetails";
-import { ListItemGrade } from "~/components/ListItemGrade/ListItemGrade";
-import { ListItemKindAndYear } from "~/components/ListItemKindAndYear/ListItemKindAndYear";
-import { ListItemReviewDate } from "~/components/ListItemReviewDate/ListItemReviewDate";
-import { ListItemTitle } from "~/components/ListItemTitle/ListItemTitle";
+import { CoverListItem } from "~/components/cover-list/CoverListItem";
+import { ListItemDetails } from "~/components/list-item-details/ListItemDetails";
+import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
+import { ListItemKindAndYear } from "~/components/list-item-kind-and-year/ListItemKindAndYear";
+import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemReviewDate";
+import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { AuthorValue } from "./Author";

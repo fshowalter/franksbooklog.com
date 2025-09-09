@@ -1,8 +1,8 @@
 import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
-import { BackdropImageConfig } from "~/components/Backdrop";
-import { CoverImageConfig } from "~/components/ReviewCard";
+import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
+import { CoverImageConfig } from "~/components/review-card/ReviewCard";
 
 import type { HomeProps } from "./Home";
 

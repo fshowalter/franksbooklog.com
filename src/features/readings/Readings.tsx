@@ -2,8 +2,8 @@ import { useEffect, useReducer, useRef, useState } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
-import { FilterAndSortContainer } from "~/components/FilterAndSort/FilterAndSortContainer";
-import { FilterAndSortHeaderLink } from "~/components/FilterAndSort/FilterAndSortHeaderLink";
+import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
+import { FilterAndSortHeaderLink } from "~/components/filter-and-sort/FilterAndSortHeaderLink";
 
 import { CalendarMonth } from "./CalendarMonth";
 import { Filters } from "./Filters";

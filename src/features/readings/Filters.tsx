@@ -1,7 +1,7 @@
-import { SelectField } from "~/components/Fields/SelectField";
-import { SelectOptions } from "~/components/Fields/SelectOptions";
-import { YearField } from "~/components/Fields/YearField";
-import { WorkFilters } from "~/components/ListWithFilters/WorkFilters";
+import { SelectField } from "~/components/fields/SelectField";
+import { SelectOptions } from "~/components/fields/SelectOptions";
+import { YearField } from "~/components/fields/YearField";
+import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
 
 import type {
   ReadingsActionType,

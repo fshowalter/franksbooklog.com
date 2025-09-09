@@ -1,4 +1,4 @@
-import { AvatarListItem } from "~/components/AvatarList/AvatarList";
+import { AvatarListItem } from "~/components/avatar-list/AvatarList";
 
 import type { AuthorsValue } from "./Authors";
 

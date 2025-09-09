@@ -4,14 +4,14 @@ import { afterEach, beforeEach, describe, it, vi } from "vitest";
 import {
   clickShowMore,
   getGroupedCoverList,
-} from "~/components/CoverList/CoverList.testHelper";
+} from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/FilterAndSort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillGradeFilter,
@@ -20,7 +20,7 @@ import {
   fillWorkYearFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/FilterAndSort/ReviewedWorkFilters.testHelper";
+} from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import { getProps } from "./getProps";

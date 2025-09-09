@@ -3,7 +3,7 @@ import type { BackdropImageProps } from "~/api/backdrops";
 import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReadingEntries } from "~/api/readings";
-import { BackdropImageConfig } from "~/components/Backdrop";
+import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 
 import type { ReadingsValue } from "./Readings";
 import type { ReadingsProps } from "./Readings";

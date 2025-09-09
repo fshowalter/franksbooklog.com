@@ -4,10 +4,10 @@ import fs from "node:fs/promises";
 import satori from "satori";
 import sharp from "sharp";
 
-import type { AuthorOpenGraphImageComponentType } from "~/components/Author/OpenGraphImage";
-import type { HomeOpenGraphImageComponentType } from "~/components/Home/OpenGraphImage";
-import type { OpenGraphImageComponentType } from "~/components/OpenGraphImage";
-import type { ReviewOpenGraphImageComponentType } from "~/components/Review/OpenGraphImage";
+import type { OpenGraphImageComponentType } from "~/components/open-graph-image/OpenGraphImage";
+import type { AuthorOpenGraphImageComponentType } from "~/features/author/OpenGraphImage";
+import type { HomeOpenGraphImageComponentType } from "~/features/home/OpenGraphImage";
+import type { ReviewOpenGraphImageComponentType } from "~/features/review/OpenGraphImage";
 
 import {
   createCacheConfig,

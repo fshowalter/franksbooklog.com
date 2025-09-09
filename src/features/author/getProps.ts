@@ -5,8 +5,8 @@ import {
   getBackdropImageProps,
 } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
-import { BackdropImageConfig } from "~/components/Backdrop";
-import { CoverListItemImageConfig } from "~/components/CoverList";
+import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
+import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";
 
 import type { AuthorProps, AuthorValue } from "./Author";

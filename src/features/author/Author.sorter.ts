@@ -1,4 +1,4 @@
-import type { ReviewedWorkSort } from "~/components/FilterAndSort/reviewedWorkSorter";
+import type { ReviewedWorkSort } from "~/components/filter-and-sort/reviewedWorkSorter";
 
 import {
   createGroupValues,
@@ -7,7 +7,7 @@ import {
   createSelectSortedFilteredValues,
   createSortValues,
   groupForSortableReviewedWork,
-} from "~/components/FilterAndSort/reviewedWorkSorter";
+} from "~/components/filter-and-sort/reviewedWorkSorter";
 
 import type { AuthorValue } from "./Author";
 

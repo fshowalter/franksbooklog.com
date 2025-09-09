@@ -6,7 +6,7 @@ import {
   type WorkFiltersActionType,
   type WorkFiltersState,
   type WorkFiltersValues,
-} from "~/components/FilterAndSort/WorkFilters.reducer";
+} from "~/components/filter-and-sort/WorkFilters.reducer";
 
 export {
   createApplyPendingFiltersAction,
@@ -15,9 +15,9 @@ export {
   createSetKindPendingFilterAction,
   createSetTitlePendingFilterAction,
   createSetWorkYearPendingFilterAction,
-} from "~/components/FilterAndSort/WorkFilters.reducer";
+} from "~/components/filter-and-sort/WorkFilters.reducer";
 
-import { FiltersActions } from "~/components/FilterAndSort/filters.reducer";
+import { FiltersActions } from "~/components/filter-and-sort/filters.reducer";
 
 import type { ReadingsValue } from "./Readings";
 import type { ReadingsSort } from "./Readings.sorter";
@@ -40,8 +40,6 @@ export type ReadingsFiltersValues = WorkFiltersValues & {
   edition?: string;
   readingYear?: string[];
 };
-
-// Using shared action types from ListWithFilters
 
 type NextMonthAction = {
   type: ReadingsActions.Next_Month;

@@ -6,7 +6,7 @@ import {
   createSelectSortedFilteredValues,
   createSortValues,
   groupForSortableReviewedWork,
-} from "~/components/FilterAndSort/collectionSorter";
+} from "~/components/filter-and-sort/collectionSorter";
 
 import type { AuthorsValue } from "./Authors";
 

@@ -1,10 +1,10 @@
 import type { BackdropImageProps } from "~/api/backdrops";
-import type { ReviewCardProps } from "~/components/ReviewCard";
+import type { ReviewCardProps } from "~/components/review-card/ReviewCard";
 
-import { Backdrop } from "~/components/Backdrop";
-import { Layout } from "~/components/Layout/Layout";
-import { ReviewCard } from "~/components/ReviewCard";
-import { SubHeading } from "~/components/SubHeading";
+import { Backdrop } from "~/components/backdrop/Backdrop";
+import { Layout } from "~/components/layout/Layout";
+import { ReviewCard } from "~/components/review-card/ReviewCard";
+import { SubHeading } from "~/components/sub-heading/SubHeading";
 
 export type HomeProps = {
   backdropImageProps: BackdropImageProps;

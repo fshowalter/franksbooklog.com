@@ -5,7 +5,7 @@ import {
   type ReviewedWorkFiltersActionType,
   type ReviewedWorkFiltersState,
   type ReviewedWorkFiltersValues,
-} from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
+} from "~/components/filter-and-sort/ReviewedWorkFilters.reducer";
 
 export {
   createApplyPendingFiltersAction,
@@ -17,7 +17,7 @@ export {
   createSetTitlePendingFilterAction,
   createSetWorkYearPendingFilterAction,
   createShowMoreAction,
-} from "~/components/FilterAndSort/ReviewedWorkFilters.reducer";
+} from "~/components/filter-and-sort/ReviewedWorkFilters.reducer";
 
 import type { ReviewsValue } from "./Reviews";
 import type { ReviewsSort } from "./Reviews.sorter";

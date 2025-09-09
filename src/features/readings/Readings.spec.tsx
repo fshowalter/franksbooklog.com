@@ -7,13 +7,13 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/FilterAndSort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   fillWorkYearFilter,
   getTitleFilter,
-} from "~/components/FilterAndSort/WorkFilters.testHelper";
+} from "~/components/filter-and-sort/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import { getProps } from "./getProps";

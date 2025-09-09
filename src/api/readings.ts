@@ -4,8 +4,6 @@ import type { ReadingEntryJson } from "./data/readingEntriesJson";
 
 import { allReadingEntriesJson } from "./data/readingEntriesJson";
 
-export type ReadingEntry = ReadingEntryJson & {};
-
 type ReadingEntries = {
   abandonedCount: number;
   bookCount: number;
@@ -17,6 +15,8 @@ type ReadingEntries = {
   shortStoryCount: number;
   workCount: number;
 };
+
+type ReadingEntry = ReadingEntryJson & {};
 
 const yearFormatter = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",

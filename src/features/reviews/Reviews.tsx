@@ -2,9 +2,9 @@ import { useReducer, useState } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
-import { GroupedCoverList } from "~/components/CoverList/GroupedCoverList";
-import { FilterAndSortContainer } from "~/components/FilterAndSort/FilterAndSortContainer";
-import { ReviewedWorkSortOptions } from "~/components/FilterAndSort/ReviewedWorkSortOptions";
+import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
+import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
+import { ReviewedWorkSortOptions } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 
 import type { ReviewsSort } from "./Reviews.sorter";
 

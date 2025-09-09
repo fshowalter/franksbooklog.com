@@ -6,7 +6,7 @@ import {
   mostRecentReviews,
   type ReviewWithExcerpt,
 } from "~/api/reviews";
-import { textStarsForGrade } from "~/utils/textStarsForGrade";
+import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
 
 export async function GET() {
   const reviews = await mostRecentReviews(10);

@@ -4,8 +4,8 @@ import {
 } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
-import { BackdropImageConfig } from "~/components/Backdrop";
-import { CoverListItemImageConfig } from "~/components/CoverList";
+import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
+import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";

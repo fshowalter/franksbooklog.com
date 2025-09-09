@@ -4,8 +4,8 @@ import {
   type BackdropImageProps,
   getBackdropImageProps,
 } from "~/api/backdrops";
-import { AvatarListItemImageConfig } from "~/components/AvatarList/AvatarList";
-import { BackdropImageConfig } from "~/components/Backdrop";
+import { AvatarListItemImageConfig } from "~/components/avatar-list/AvatarList";
+import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";
 

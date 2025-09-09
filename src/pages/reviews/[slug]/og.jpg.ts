@@ -10,8 +10,8 @@ import {
 } from "~/api/covers";
 import { getCoverWidth } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
-import { fileForGrade } from "~/components/Grade";
-import { OpenGraphImage } from "~/components/Review/OpenGraphImage";
+import { fileForGrade } from "~/components/grade/fileForGrade";
+import { OpenGraphImage } from "~/features/review/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
