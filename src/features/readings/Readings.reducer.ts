@@ -325,7 +325,7 @@ function getMostRecentMonth(values: ReadingsValue[]): Date {
 
   // Get the most recent reading date
   // Note: Higher timelineSequence = more recent
-  const sortedValues = [...values].sort(
+  const sortedValues = [...values].toSorted(
     (a, b) => b.entrySequence - a.entrySequence,
   );
   const mostRecentDate = new Date(sortedValues[0].readingDate);
@@ -364,7 +364,7 @@ function getOldestMonth(values: ReadingsValue[]): Date {
 
   // Get the oldest reading date
   // Note: Lower timelineSequence = older
-  const sortedValues = [...values].sort(
+  const sortedValues = [...values].toSorted(
     (a, b) => a.entrySequence - b.entrySequence,
   );
   const oldestDate = new Date(sortedValues[0].readingDate);

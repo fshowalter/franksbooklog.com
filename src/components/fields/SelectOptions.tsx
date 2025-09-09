@@ -14,7 +14,7 @@ export function SelectOptions({
 }: {
   options: readonly string[];
 }): React.JSX.Element {
-  const sortedOptions = [...options].sort((a, b) => collator.compare(a, b));
+  const sortedOptions = [...options].toSorted((a, b) => collator.compare(a, b));
 
   return (
     <>

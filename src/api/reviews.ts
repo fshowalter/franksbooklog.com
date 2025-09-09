@@ -177,7 +177,7 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
             reviewedWorksJson,
           ),
         };
-      })
+      }) // eslint-disable-next-line unicorn/no-array-sort
       .sort((a, b) => {
         return +b.date - +a.date;
       });

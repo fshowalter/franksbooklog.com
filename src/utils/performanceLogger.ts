@@ -63,6 +63,7 @@ export class PerformanceLogger {
         name,
         totalTime: stats.totalTime,
       }))
+      // eslint-disable-next-line unicorn/no-array-sort
       .sort((a, b) => b.duration - a.duration);
 
     let report = "\n=== Performance Report ===\n\n";
@@ -81,7 +82,7 @@ export class PerformanceLogger {
     report += "-".repeat(60) + "\n";
 
     const sortedCallCounts = [...this.callCounts.entries()]
-      .sort((a, b) => b[1] - a[1])
+      .toSorted((a, b) => b[1] - a[1])
       .slice(0, 20);
 
     for (const [name, count] of sortedCallCounts) {
