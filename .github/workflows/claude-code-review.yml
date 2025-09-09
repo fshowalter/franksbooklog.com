@@ -37,6 +37,21 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: setup node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+
+      - name: setup npm
+        run: |
+          ./npm_use.sh &&
+          npm --version &&
+          npm list -g --depth 0
+
+      - name: install dependencies
+        run: npm ci
+
       - name: Run Claude Code Review
         id: claude-review
         uses: anthropics/claude-code-action@beta
@@ -76,7 +91,7 @@ jobs:
           #   'Please provide a thorough code review focusing on our coding standards and best practices.' }}
 
           # Optional: Add specific tools for running tests or linting
-          allowed_tools: "Bash(npm run test),Bash(npm run lint),Bash(npm run typecheck)"
+          allowed_tools: "Bash(npm run test),Bash(npm run lint),Bash(npm run check)"
 
           # Optional: Skip review for certain conditions
           # if: |
