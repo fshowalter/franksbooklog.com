@@ -26,6 +26,7 @@ npm run test:coverage # Run tests with coverage report
 # Code Quality
 npm run lint         # Run ESLint
 npm run lint:fix     # Fix ESLint issues
+npm run lint:html    # Run ESLint on HTML templates
 npm run format       # Check Prettier formatting
 npm run format:fix   # Fix formatting issues
 npm run stylelint    # Run Stylelint on CSS
@@ -45,6 +46,8 @@ npm run lint:spelling:fix # Update project dictionary
 
 - `/content/` - All content data (JSON and Markdown), kept separate from code
   - `/data/` - JSON data files with Zod validation schemas
+    - `reading-entries.json` - Complete reading history (formerly timeline-entries.json)
+    - Other data files (authors, works, etc.)
   - `/reviews/` - Markdown review files
   - `/readings/` - Reading history entries
   - `/assets/` - Images (covers, avatars, backdrops)
@@ -60,15 +63,34 @@ Replaces Gatsby's GraphQL with TypeScript functions that:
 
 #### API Data Layer (`/src/api/data/`)
 
-Responsible for validating and loading the data files in `/content/data/` only. The functions in `/src/api/` further enrich and transform this data, while the `getProps` functions in `/src/components/` are responsible for getting component props and ensuring we don't overfetch.
+Responsible for validating and loading the data files in `/content/data/` only. The functions in `/src/api/` further enrich and transform this data, while the `getProps` functions in `/src/features/` are responsible for getting component props and ensuring we don't overfetch.
+
+**Key files follow kebab-case naming:**
+
+- `reading-entries-json.ts` - Loads reading history data
+- `authors-json.ts`, `reviews-markdown.ts` - Other data loaders
+- All follow consistent naming pattern with hyphens
 
 ### Component Structure
 
-- Page components in `/src/components/` with:
-  - `Component.tsx` - Main component
+**Features** (`/src/features/`):
+
+- Major page features organized by domain (e.g., `author/`, `reviews/`, `readings/`, `stats/`)
+- Each feature contains:
+  - `Component.tsx` - Main feature component
   - `Component.spec.tsx` - Tests (Vitest + Testing Library)
   - `getProps.ts` - Data fetching for Astro pages
-  - Reducers for complex state (`Component.reducer.ts`)
+  - `Component.reducer.ts` - State management for complex interactions
+  - Additional feature-specific components (e.g., `Filters.tsx`, `OpenGraphImage.tsx`)
+
+**Shared Components** (`/src/components/`):
+
+- Reusable UI components organized by functionality:
+  - `/fields/` - Form inputs (SelectField, TextField, YearField, etc.)
+  - `/filter-and-sort/` - Filtering and sorting logic with reducers
+  - `/layout/` - Layout components (Header, Footer, Navigation)
+  - `/cover-list/`, `/avatar-list/` - Content display components
+  - Other shared utilities (Grade, Cover, Avatar, etc.)
 
 ### Testing Strategy
 
@@ -85,6 +107,34 @@ Tests run in two environments:
 2. Pagefind creates search index post-build
 3. Compressor optimizes output
 4. Deploy to Netlify via GitHub Actions
+
+## Recent Major Changes (Draft Branch)
+
+This branch includes significant architectural improvements:
+
+### Component Reorganization
+
+- **Features-first architecture**: Major page components moved from `/src/components/` to `/src/features/` organized by domain
+- **Shared component consolidation**: Common components reorganized into logical subdirectories (`/fields/`, `/filter-and-sort/`, `/layout/`, etc.)
+- **Improved separation of concerns**: Features contain page-specific logic, shared components are truly reusable
+
+### Data Structure Updates
+
+- **Reading entries renamed**: `timeline-entries.json` → `reading-entries.json` for clarity
+- **API layer reorganization**: Data loading functions use consistent kebab-case naming
+- **Enhanced type safety**: Improved Zod schemas and TypeScript types
+
+### Styling and Performance Improvements
+
+- **CSS color consolidation**: Leveraging modern `light-dark()` CSS function
+- **Font optimization**: Streamlined font loading and reduced bundle size
+- **Cover asset cleanup**: Removed unused cover images for better performance
+
+### Development Experience
+
+- **Updated dependencies**: Latest Astro, React, and tooling versions
+- **Enhanced ESLint**: Added HTML linting with `lint:html` command
+- **Node.js 22.19.0**: Updated runtime for latest performance improvements
 
 ## Important Implementation Details
 
@@ -106,8 +156,8 @@ Pagefind integration builds search index at build time and serves it in dev mode
 
 1. Content synced from backend via `sync.js`
 2. Validated through Zod schemas in `/src/api/data/`
-3. Processed and linked in API layer
-4. Consumed by components via `getProps` functions
+3. Processed and linked in API layer (`/src/api/`)
+4. Consumed by features via `getProps` functions in `/src/features/`
 5. Rendered server-side by Astro
 
 ### Path Aliases
@@ -116,8 +166,8 @@ Pagefind integration builds search index at build time and serves it in dev mode
 
 ### Node/NPM Versions
 
-- Node: 22.18.0
-- NPM: 11.5.2
+- Node: 22.19.0
+- NPM: 11.6.0
   (Managed via .nvmrc)
 
 ## Testing Principles
@@ -164,8 +214,9 @@ Pagefind integration builds search index at build time and serves it in dev mode
 
 ## Test Runner Notes
 
-- When running test or test:coverage, make sure and run with max-workers=2
+- **IMPORTANT**: When running test or test:coverage, make sure and run with max-workers=2
 
 ## TypeScript Best Practices
 
 - Don't use the `any` type. The linter will error on it.
+- **Use TypeScript types, not JSDoc types**: When functions have TypeScript type annotations, avoid duplicate type information in JSDoc comments. Use `@param name - description` instead of `@param {Type} name - description`. Keep the descriptive text but remove type annotations in curly braces.

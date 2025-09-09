@@ -1,6 +1,11 @@
 import { getUpdateCoverProps } from "~/api/covers";
 import { mostRecentReviews } from "~/api/reviews";
 
+/**
+ * Mapping object that converts letter grades to numeric star ratings.
+ * Used to transform book review grades into a standardized 0.5-5 star scale
+ * for external services and widgets that expect numeric ratings.
+ */
 const gradeToStars: Record<string, number> = {
   A: 5,
   "A+": 5,
@@ -19,6 +24,13 @@ const gradeToStars: Record<string, number> = {
   "F-": 0.5,
 };
 
+/**
+ * Astro API endpoint that generates a JSON feed of recent book reviews.
+ * Returns structured data including star ratings, cover images, and metadata
+ * for integration with external services or widgets.
+ *
+ * @returns JSON response containing the latest 6 book reviews with structured data
+ */
 export async function GET() {
   const reviews = await mostRecentReviews(6);
 

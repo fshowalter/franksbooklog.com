@@ -1,14 +1,14 @@
 ---
-import { Authors } from "~/components/Authors/Authors";
-import { getProps } from "~/components/Authors/getProps";
-import { Backdrop } from "~/components/Backdrop";
-import { Layout as ComponentLayout } from "~/components/Layout/Layout";
+import { Backdrop } from "~/components/backdrop/Backdrop";
+import { Layout as ComponentLayout } from "~/components/layout/Layout";
+import { Authors } from "~/features/authors/Authors";
+import { getProps } from "~/features/authors/getProps";
 import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
 
 // Separate layout props from interactive props
-const { backdropImageProps, deck, ...interactiveProps } = props;
+const { backdropImageProps, deck, ...clientProps } = props;
 ---
 
 <Layout
@@ -28,6 +28,6 @@ const { backdropImageProps, deck, ...interactiveProps } = props;
   </Fragment>
   <ComponentLayout className="bg-subtle">
     <Backdrop deck={deck} imageProps={backdropImageProps} title="Authors" />
-    <Authors client:load {...interactiveProps} />
+    <Authors client:load {...clientProps} />
   </ComponentLayout>
 </Layout>

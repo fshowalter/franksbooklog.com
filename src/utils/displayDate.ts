@@ -1,3 +1,11 @@
+/**
+ * Formats a date for consistent display across the site.
+ * Uses US format with abbreviated month name (e.g., "Jan 01, 2024").
+ * Handles UTC timezone to avoid date shifting issues.
+ *
+ * @param date - Date object, date string, or undefined
+ * @returns Formatted date string or empty string if no date provided
+ */
 export function displayDate(date: Date | string | undefined) {
   if (!date) {
     return "";

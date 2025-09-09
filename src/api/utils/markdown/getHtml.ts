@@ -7,6 +7,15 @@ import smartypants from "remark-smartypants";
 
 import { linkReviewedWorks } from "~/api/utils/linkReviewedWorks";
 
+/**
+ * Converts markdown content to HTML with enhanced processing.
+ * Uses a complete markdown-to-HTML pipeline including GitHub Flavored Markdown,
+ * smart typography, footnote support, and automatic linking of reviewed works.
+ *
+ * @param content - Markdown content to process, may be undefined
+ * @param reviewedWorks - Array of reviewed works for automatic linking
+ * @returns Processed HTML string with enhanced features, or undefined if no content
+ */
 export function getHtml(
   content: string | undefined,
   reviewedWorks: { slug: string }[],

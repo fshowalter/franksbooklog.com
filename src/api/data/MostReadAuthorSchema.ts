@@ -1,5 +1,9 @@
 import { z } from "zod";
 
+/**
+ * Zod schema for individual reading entries within most read author data.
+ * Represents a single book/work read by the author with metadata.
+ */
 const MostReadAuthorReadingSchema = z.object({
   date: z.string(),
   edition: z.string(),
@@ -12,6 +16,10 @@ const MostReadAuthorReadingSchema = z.object({
   workYear: z.string(),
 });
 
+/**
+ * Zod schema for most read author statistics data.
+ * Includes reading count, author details, and associated readings.
+ */
 export const MostReadAuthorSchema = z
   .object({
     count: z.number(),
@@ -25,4 +33,7 @@ export const MostReadAuthorSchema = z
     return { count, name, readings, reviewed, slug };
   });
 
+/**
+ * Type for most read author statistics data
+ */
 export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;

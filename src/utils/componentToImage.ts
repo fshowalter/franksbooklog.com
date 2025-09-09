@@ -4,10 +4,10 @@ import fs from "node:fs/promises";
 import satori from "satori";
 import sharp from "sharp";
 
-import type { AuthorOpenGraphImageComponentType } from "~/components/Author/OpenGraphImage";
-import type { HomeOpenGraphImageComponentType } from "~/components/Home/OpenGraphImage";
-import type { OpenGraphImageComponentType } from "~/components/OpenGraphImage";
-import type { ReviewOpenGraphImageComponentType } from "~/components/Review/OpenGraphImage";
+import type { OpenGraphImageComponentType } from "~/components/open-graph-image/OpenGraphImage";
+import type { AuthorOpenGraphImageComponentType } from "~/features/author/OpenGraphImage";
+import type { HomeOpenGraphImageComponentType } from "~/features/home/OpenGraphImage";
+import type { ReviewOpenGraphImageComponentType } from "~/features/review/OpenGraphImage";
 
 import {
   createCacheConfig,
@@ -37,6 +37,13 @@ type ReactElementWithType = React.ReactElement & {
   type: string;
 };
 
+/**
+ * Converts a React component to a JPEG image buffer for Open Graph images.
+ * Uses caching in production to avoid regenerating identical images.
+ *
+ * @param component - The React component to convert to an image
+ * @returns Promise resolving to JPEG image buffer
+ */
 export async function componentToImage(
   component: ReturnType<OpenGraphImageComponent>,
 ): Promise<Uint8Array<ArrayBuffer>> {
@@ -82,6 +89,13 @@ export async function componentToImage(
   return imageBuffer;
 }
 
+/**
+ * Converts a React component to an SVG string using Satori.
+ * Loads font data and renders the component at Open Graph image dimensions.
+ *
+ * @param component - The React component to convert to SVG
+ * @returns Promise resolving to SVG string
+ */
 async function componentToSvg(component: ReturnType<OpenGraphImageComponent>) {
   const fonts = await getFontData();
 
@@ -92,6 +106,13 @@ async function componentToSvg(component: ReturnType<OpenGraphImageComponent>) {
   });
 }
 
+/**
+ * Loads and caches font data for Open Graph image rendering.
+ * Reads TTF files and creates Font objects for use with Satori.
+ * Uses in-memory caching to avoid repeated file system reads.
+ *
+ * @returns Promise resolving to array of Font objects
+ */
 async function getFontData() {
   if (fontDataCache) {
     return fontDataCache;

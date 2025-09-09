@@ -106,39 +106,31 @@ describe("PerformanceLogger", () => {
     });
   });
 
-  describe("start and end", () => {
-    it("can manually time operations", () => {
-      perfLogger.start("manual-operation");
-      const duration = perfLogger.end("manual-operation");
+  describe("concurrent operations", () => {
+    it("handles multiple concurrent operations with same name", async () => {
+      const results = await Promise.all([
+        perfLogger.measure("concurrent-op", async () => {
+          await new Promise((resolve) => setTimeout(resolve, 5));
+          return "result1";
+        }),
+        perfLogger.measure("concurrent-op", async () => {
+          await new Promise((resolve) => setTimeout(resolve, 10));
+          return "result2";
+        }),
+      ]);
 
-      expect(duration).toBeGreaterThanOrEqual(0);
+      expect(results).toEqual(["result1", "result2"]);
     });
 
-    it("can start with metadata", () => {
+    it("can measure operations with metadata", async () => {
       const metadata = { key: "value" };
-      perfLogger.start("manual-operation", metadata);
-      const duration = perfLogger.end("manual-operation");
-
-      expect(duration).toBeGreaterThanOrEqual(0);
-    });
-
-    it("returns 0 for non-existent timing", () => {
-      const consoleSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
-      const duration = perfLogger.end("non-existent");
-
-      expect(duration).toBe(0);
-      expect(consoleSpy).toHaveBeenCalledWith(
-        "No timing found for: non-existent",
+      const result = await perfLogger.measure(
+        "metadata-op",
+        () => Promise.resolve("test-result"),
+        metadata,
       );
-    });
 
-    it("handles multiple concurrent operations with same name", () => {
-      perfLogger.start("concurrent-op");
-      perfLogger.start("concurrent-op");
-
-      const duration1 = perfLogger.end("concurrent-op");
-
-      expect(duration1).toBeGreaterThanOrEqual(0);
+      expect(result).toBe("test-result");
     });
   });
 
@@ -180,13 +172,15 @@ describe("PerformanceLogger", () => {
     it("sorts operations by max duration", () => {
       vi.useFakeTimers();
 
-      perfLogger.start("fast-op");
-      vi.advanceTimersByTime(5);
-      perfLogger.end("fast-op");
+      perfLogger.measureSync("fast-op", () => {
+        vi.advanceTimersByTime(5);
+        return "fast-result";
+      });
 
-      perfLogger.start("slow-op");
-      vi.advanceTimersByTime(20);
-      perfLogger.end("slow-op");
+      perfLogger.measureSync("slow-op", () => {
+        vi.advanceTimersByTime(20);
+        return "slow-result";
+      });
 
       vi.useRealTimers();
 
@@ -230,7 +224,7 @@ describe("PerformanceLogger", () => {
   describe("reset", () => {
     it("clears all internal state", async () => {
       await perfLogger.measure("op1", () => Promise.resolve("result1"));
-      perfLogger.start("op2");
+      perfLogger.measureSync("op2", () => "result2");
 
       perfLogger.reset();
 
@@ -271,8 +265,7 @@ describe("PerformanceLogger", () => {
       vi.stubEnv("DEBUG_PERF", "true");
       const consoleSpy = vi.spyOn(console, "log").mockImplementation(() => {});
 
-      perfLogger.start("debug-op");
-      perfLogger.end("debug-op");
+      perfLogger.measureSync("debug-op", () => "result");
 
       expect(consoleSpy).toHaveBeenCalledWith(
         expect.stringContaining("[PERF] debug-op:"),
@@ -283,8 +276,7 @@ describe("PerformanceLogger", () => {
     it("does not log when DEBUG_PERF is not set", () => {
       const consoleSpy = vi.spyOn(console, "log").mockImplementation(() => {});
 
-      perfLogger.start("no-debug-op");
-      perfLogger.end("no-debug-op");
+      perfLogger.measureSync("no-debug-op", () => "result");
 
       expect(consoleSpy).not.toHaveBeenCalledWith(
         expect.stringContaining("[PERF]"),

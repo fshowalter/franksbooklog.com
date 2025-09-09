@@ -3,6 +3,11 @@
  * Originally lifted from underscore.js, now used across the codebase
  */
 
+/**
+ * Type definition for onChange handler functions used with debouncing.
+ * Typically used for text input handling where user input needs to be
+ * debounced to prevent excessive API calls or calculations.
+ */
 type OnChangeHandler = (value: string) => void;
 
 /**
