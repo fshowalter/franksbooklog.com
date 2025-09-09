@@ -3,11 +3,24 @@ import type { AvatarImageProps } from "~/api/avatars";
 import { Avatar } from "~/components/avatar/Avatar";
 import { GroupingListItem } from "~/components/grouping-list-item/GroupingListItem";
 
+/**
+ * Configuration for avatar images in list items
+ */
 export const AvatarListItemImageConfig = {
   height: 80,
   width: 80,
 };
 
+/**
+ * List item component for displaying content with an avatar image.
+ * Features hover effects and responsive design with avatar scaling.
+ * 
+ * @param props - Component props
+ * @param props.avatarImageProps - Image properties for the avatar
+ * @param props.children - Content to display alongside the avatar
+ * @param props.className - Additional CSS classes
+ * @returns List item with avatar and content
+ */
 export function AvatarListItem({
   avatarImageProps,
   children,
@@ -50,6 +63,18 @@ export function AvatarListItem({
   );
 }
 
+/**
+ * Grouped avatar list component for displaying items organized by categories.
+ * Renders groups with headers and contains avatar list items within each group.
+ * 
+ * @param props - Component props
+ * @param props.children - Render function for individual list items
+ * @param props.className - Additional CSS classes for the list
+ * @param props.groupedValues - Map of group names to collections of items
+ * @param props.groupItemClassName - CSS classes for group items
+ * @param props.rest - Additional props passed to the list element
+ * @returns Grouped list with avatar items
+ */
 export function GroupedAvatarList<T>({
   children,
   className,
@@ -88,6 +113,15 @@ export function GroupedAvatarList<T>({
   );
 }
 
+/**
+ * Internal component for rendering avatar images within list items.
+ * Handles the avatar display with proper sizing, rounded styling,
+ * and hover effects for use within avatar list items.
+ * 
+ * @param props - The component props
+ * @param props.imageProps - Image properties for the avatar, or undefined for placeholder
+ * @returns A JSX element containing the styled avatar
+ */
 function ListItemAvatar({
   imageProps,
 }: {

@@ -6,6 +6,10 @@ export {
 
 import { getGroupLetter, sortNumber, sortString } from "./sorter";
 
+/**
+ * Available sort options for reviewed works.
+ * Includes sorting by grade, review date, title, and work year in both directions.
+ */
 export type ReviewedWorkSort =
   | "grade-asc"
   | "grade-desc"
@@ -16,16 +20,34 @@ export type ReviewedWorkSort =
   | "work-year-asc"
   | "work-year-desc";
 
+/**
+ * Interface for reviewed work items that can be sorted.
+ * Contains all the fields necessary for sorting and grouping reviewed works.
+ */
 type SortableReviewedWork = {
+  /** Letter grade (e.g., "A+", "B-") */
   grade: string;
+  /** Numeric grade value for sorting */
   gradeValue: number;
+  /** Review sequence number for chronological sorting */
   reviewSequence: number;
+  /** Year the review was written */
   reviewYear: string;
+  /** Normalized title for sorting (typically lowercase) */
   sortTitle: string;
+  /** Year the work was published */
   workYear: string;
+  /** Numeric sequence for work year sorting */
   workYearSequence: number;
 };
 
+/**
+ * Creates a complete sort map for reviewed works.
+ * Combines all individual sort functions into a single mapping object.
+ * 
+ * @template TValue - Type extending SortableReviewedWork
+ * @returns Object mapping sort keys to comparison functions
+ */
 export function createReviewedWorkSortMap<
   TValue extends SortableReviewedWork,
 >() {
@@ -37,6 +59,15 @@ export function createReviewedWorkSortMap<
   };
 }
 
+/**
+ * Creates a function to select and group paginated values.
+ * Higher-order function that applies pagination before grouping.
+ * 
+ * @template TValue - The type of values being grouped
+ * @template TSort - The type of sort criteria
+ * @param groupFn - Function that groups values based on sort criteria
+ * @returns Function that applies pagination then grouping
+ */
 export function createSelectGroupedValues<TValue, TSort>(
   groupFn: (values: TValue[], sort: TSort) => Map<string, TValue[]>,
 ) {
@@ -50,6 +81,15 @@ export function createSelectGroupedValues<TValue, TSort>(
   };
 }
 
+/**
+ * Determines the group key for a reviewed work based on sort criteria.
+ * Returns appropriate grouping value (grade, year, letter, etc.) based on current sort.
+ * 
+ * @template TSort - The specific sort type being used
+ * @param value - The reviewed work item to group
+ * @param sort - The current sort criteria
+ * @returns String key for grouping this item
+ */
 export function groupForSortableReviewedWork<TSort extends ReviewedWorkSort>(
   value: SortableReviewedWork,
   sort: TSort,
@@ -74,6 +114,12 @@ export function groupForSortableReviewedWork<TSort extends ReviewedWorkSort>(
   }
 }
 
+/**
+ * Creates grade-based sort functions.
+ * 
+ * @template TValue - Type extending SortableReviewedWork
+ * @returns Object with grade sort functions
+ */
 function sortGrade<TValue extends SortableReviewedWork>() {
   return {
     "grade-asc": (a: TValue, b: TValue) =>
@@ -83,6 +129,12 @@ function sortGrade<TValue extends SortableReviewedWork>() {
   };
 }
 
+/**
+ * Creates review date-based sort functions.
+ * 
+ * @template TValue - Type extending SortableReviewedWork
+ * @returns Object with review date sort functions
+ */
 function sortReviewDate<TValue extends SortableReviewedWork>() {
   return {
     "review-date-asc": (a: TValue, b: TValue) =>
@@ -92,6 +144,12 @@ function sortReviewDate<TValue extends SortableReviewedWork>() {
   };
 }
 
+/**
+ * Creates title-based sort functions.
+ * 
+ * @template TValue - Type extending SortableReviewedWork
+ * @returns Object with title sort functions
+ */
 function sortTitle<TValue extends SortableReviewedWork>() {
   return {
     "title-asc": (a: TValue, b: TValue) => sortString(a.sortTitle, b.sortTitle),
@@ -100,6 +158,12 @@ function sortTitle<TValue extends SortableReviewedWork>() {
   };
 }
 
+/**
+ * Creates work year-based sort functions.
+ * 
+ * @template TValue - Type extending SortableReviewedWork
+ * @returns Object with work year sort functions
+ */
 function sortWorkYear<TValue extends SortableReviewedWork>() {
   return {
     "work-year-asc": (a: TValue, b: TValue) =>

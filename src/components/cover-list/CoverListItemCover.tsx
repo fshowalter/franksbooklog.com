@@ -1,5 +1,17 @@
 import type { CoverImageProps } from "~/api/covers";
 
+/**
+ * Renders a book cover with decorative spine and lighting effects.
+ * Creates a realistic book appearance with multiple layers including spine textures,
+ * lighting effects, and hover animations. Uses complex CSS layering to achieve
+ * the book-like visual effect.
+ * 
+ * @param props - The component props
+ * @param props.className - Optional additional CSS classes
+ * @param props.imageConfig - Configuration for responsive image sizing
+ * @param props.imageProps - Image properties including src, alt text, etc.
+ * @returns A JSX element containing the styled book cover with effects
+ */
 export function CoverListItemCover({
   className,
   imageConfig,

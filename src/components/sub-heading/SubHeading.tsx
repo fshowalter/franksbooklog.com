@@ -1,3 +1,14 @@
+/**
+ * Renders a styled sub-heading with consistent typography.
+ * Polymorphic component that can render as different heading levels (h2-h5)
+ * while maintaining consistent styling for secondary headings throughout the site.
+ * 
+ * @param props - The component props
+ * @param props.as - The HTML heading element to render (h2, h3, h4, or h5)
+ * @param props.children - The content to display within the heading
+ * @param props.className - Optional additional CSS classes to apply
+ * @returns A JSX element containing the styled sub-heading
+ */
 export function SubHeading({
   as,
   children,

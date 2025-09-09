@@ -5,6 +5,9 @@ import { Grade } from "~/components/grade/Grade";
 import { RenderedMarkdown } from "~/components/rendered-markdown/RenderedMarkdown";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
+/**
+ * Configuration for cover images in review cards
+ */
 export const CoverImageConfig = {
   height: 372,
   sizes:
@@ -12,6 +15,9 @@ export const CoverImageConfig = {
   width: 248,
 };
 
+/**
+ * Props for the ReviewCard component
+ */
 export type ReviewCardProps = Pick<
   ReviewWithExcerpt,
   | "excerpt"
@@ -27,6 +33,15 @@ export type ReviewCardProps = Pick<
   reviewDate?: string;
 };
 
+/**
+ * Review card component for displaying book review preview with cover and excerpt.
+ * Features responsive design with hover effects, styled book cover with lighting,
+ * and truncated review content. Used on home page and review listings.
+ * 
+ * @param props - Component props
+ * @param props.value - Review data to display in the card
+ * @returns Review card component with cover, title, grade, and excerpt
+ */
 export function ReviewCard({
   value,
 }: {

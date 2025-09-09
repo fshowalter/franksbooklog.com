@@ -1,11 +1,27 @@
+/**
+ * Type definition for the Home Open Graph image component function
+ */
 export type HomeOpenGraphImageComponentType = (
   props: HomeOpenGraphImageProps,
 ) => React.JSX.Element;
 
+/**
+ * Props for the Home Open Graph image component
+ */
 type HomeOpenGraphImageProps = {
+  /** Background image URL for the Open Graph image */
   backdrop: string;
 };
 
+/**
+ * Open Graph image component for the home page.
+ * Renders a 1200x630 image with backdrop, site title, and tagline.
+ * Used for social media sharing and SEO meta image tags.
+ * 
+ * @param props - Component props
+ * @param props.backdrop - Background image URL
+ * @returns Open Graph image JSX for the home page
+ */
 export function OpenGraphImage({
   backdrop,
 }: HomeOpenGraphImageProps): React.JSX.Element {

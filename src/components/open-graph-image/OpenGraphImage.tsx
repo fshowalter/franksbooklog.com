@@ -1,13 +1,35 @@
+/**
+ * Type definition for Open Graph image components.
+ * Used for dynamically generating social media preview images.
+ */
 export type OpenGraphImageComponentType = (
   props: OpenGraphImageProps,
 ) => React.JSX.Element;
 
+/**
+ * Props for the Open Graph image component.
+ * Defines the data needed to generate social media preview images.
+ */
 type OpenGraphImageProps = {
+  /** URL of the backdrop image to use as background */
   backdrop: string;
+  /** Optional section heading text (defaults to "Frank's Book Log") */
   sectionHead?: string;
+  /** Main title text to display prominently */
   title: string;
 };
 
+/**
+ * Renders an Open Graph image for social media sharing.
+ * Creates a 1200x630 image with backdrop, gradient overlay, and styled text
+ * optimized for social media platforms like Twitter and Facebook.
+ * 
+ * @param props - The component props
+ * @param props.backdrop - URL of the backdrop image
+ * @param props.sectionHead - Section heading text (defaults to "Frank's Book Log")
+ * @param props.title - Main title to display
+ * @returns A JSX element containing the Open Graph image layout
+ */
 export function OpenGraphImage({
   backdrop,
   sectionHead = "Frank's Book Log",

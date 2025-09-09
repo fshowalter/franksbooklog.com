@@ -5,7 +5,8 @@ let searchUIInstance: SearchUI | undefined;
 let searchUILoading = false;
 
 /**
- * Initialize the search modal controls
+ * Initialize the search modal controls with keyboard shortcuts and accessibility.
+ * Sets up dialog management, lazy-loading of search UI, and keyboard navigation.
  */
 export function initPageFind(): void {
   // Set keyboard shortcuts for Mac users
@@ -123,7 +124,8 @@ export function initPageFind(): void {
 }
 
 /**
- * Initialize search functionality
+ * Initialize search functionality by setting up modal controls.
+ * SearchUI is lazy-loaded when the modal is first opened for performance.
  */
 export function initSearch(): void {
   initPageFind();

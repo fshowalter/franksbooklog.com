@@ -5,6 +5,18 @@ import type { BackdropImageProps } from "~/api/backdrops";
 
 import { Avatar } from "~/components/avatar/Avatar";
 
+/**
+ * Backdrop component specifically designed for author pages with avatar display.
+ * Combines a full-screen backdrop image with a centered avatar, name, and description.
+ * 
+ * @param props - Component props
+ * @param props.avatarImageProps - Avatar image properties, if available
+ * @param props.backdropImageProps - Background image properties
+ * @param props.breadcrumb - Optional breadcrumb navigation elements
+ * @param props.deck - Description or subtitle content
+ * @param props.name - Author name to display as the main title
+ * @returns Avatar backdrop component with hero styling
+ */
 export function AvatarBackdrop({
   avatarImageProps,
   backdropImageProps,
@@ -58,12 +70,30 @@ export function AvatarBackdrop({
   );
 }
 
+/**
+ * Configuration for backdrop images used in hero sections
+ */
 export const BackdropImageConfig = {
   height: 1350,
   sizes: "100vw",
   width: 2400,
 };
 
+/**
+ * General-purpose backdrop component for hero sections with customizable content.
+ * Provides a full-screen background image with overlay text and optional elements.
+ * 
+ * @param props - Component props
+ * @param props.bottomShadow - Whether to add a bottom shadow gradient (defaults to true)
+ * @param props.breadcrumb - Optional breadcrumb navigation elements
+ * @param props.centerText - Whether to center-align the text content (defaults to false)
+ * @param props.deck - Optional subtitle or description content
+ * @param props.imageProps - Background image properties
+ * @param props.size - Size variant of the backdrop (defaults to "default")
+ * @param props.title - Main title text to display
+ * @param props.titleClasses - Custom CSS classes for the title
+ * @returns Backdrop component with hero styling
+ */
 export function Backdrop({
   bottomShadow = true,
   breadcrumb,
@@ -108,6 +138,15 @@ export function Backdrop({
   );
 }
 
+/**
+ * Styled link component for breadcrumb navigation in backdrop headers.
+ * Features hover animations and consistent styling for navigation elements.
+ * 
+ * @param props - Component props
+ * @param props.children - Link text or content to display
+ * @param props.href - URL destination for the link
+ * @returns Styled breadcrumb link component
+ */
 export function BreadcrumbLink({
   children,
   href,

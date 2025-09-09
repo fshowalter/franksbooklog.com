@@ -3,6 +3,10 @@ import { useState } from "react";
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
+/**
+ * Pre-defined grade options with numeric values for sorting.
+ * Maps letter grades to numeric values (F=1, A+=13) for range selection.
+ */
 const gradeOptions = [
   <option key={13} value={13}>
     A+
@@ -45,8 +49,22 @@ const gradeOptions = [
   </option>,
 ];
 
+/**
+ * Reversed grade options for the "From" dropdown to show best grades first.
+ */
 const reversedOptions = [...gradeOptions].reverse();
 
+/**
+ * Renders a grade range selection field with "From" and "To" dropdowns.
+ * Allows users to select a range of grades (F to A+) with automatic
+ * value sorting to ensure valid ranges. Uses numeric values internally.
+ * 
+ * @param props - The component props
+ * @param props.initialValues - Initial [min, max] grade values for the range
+ * @param props.label - The label text for the fieldset
+ * @param props.onGradeChange - Callback function called when the grade range changes
+ * @returns A JSX element containing the grade range selection fieldset
+ */
 export function GradeField({
   initialValues,
   label,

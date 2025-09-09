@@ -23,19 +23,44 @@ import {
 import { AuthorsListItem } from "./AuthorsListItem";
 import { Filters } from "./Filters";
 
+/**
+ * Props interface for the Authors page component.
+ * Contains all data needed to render the authors list with filtering and sorting.
+ */
 export type AuthorsProps = {
+  /** Initial sort order to apply when page loads */
   initialSort: AuthorsSort;
+  /** Array of author data for display and filtering */
   values: AuthorsValue[];
 };
 
+/**
+ * Data structure representing a single author in the authors list.
+ * Contains all information needed to display the author and apply filters/sorting.
+ */
 export type AuthorsValue = {
+  /** Avatar image props for displaying the author's photo */
   avatarImageProps: AvatarImageProps | undefined;
+  /** Author's display name */
   name: string;
+  /** Number of reviews by this author */
   reviewCount: number;
+  /** URL slug for the author's page */
   slug: string;
+  /** Normalized name used for sorting */
   sortName: string;
 };
 
+/**
+ * Authors page component displaying a filterable and sortable list of all authors.
+ * Features avatar grid display, name filtering, sorting options, and alphabet navigation.
+ * Uses reducer pattern for complex state management of filters and display options.
+ * 
+ * @param props - Component props
+ * @param props.initialSort - Initial sort order for the authors list
+ * @param props.values - Array of author data to display
+ * @returns Authors page component with filtering and sorting
+ */
 export function Authors({
   initialSort,
   values,

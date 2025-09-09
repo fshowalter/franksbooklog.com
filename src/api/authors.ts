@@ -2,8 +2,16 @@ import { ENABLE_CACHE } from "~/utils/cache";
 import { perfLogger } from "~/utils/performanceLogger";
 
 import { allAuthorsJson, type AuthorJson } from "./data/authors-json";
+
+/**
+ * Author data type extending the base AuthorJson with API layer enhancements
+ */
 export type Author = AuthorJson & {};
 
+/**
+ * Type representing detailed author information with metadata arrays.
+ * Includes the author data plus distinct values for filtering purposes.
+ */
 type AuthorDetails = {
   author: Author;
   distinctKinds: string[];
@@ -15,6 +23,12 @@ type AuthorDetails = {
 let cachedAllAuthorsJson: AuthorJson[];
 const cachedAuthorDetails: Map<string, AuthorDetails> = new Map();
 
+/**
+ * Retrieves all authors with their associated reviewed works.
+ * Results are cached in production for performance.
+ * 
+ * @returns Promise resolving to an array of all authors
+ */
 export async function allAuthors(): Promise<Author[]> {
   return await perfLogger.measure("allAuthors", async () => {
     if (ENABLE_CACHE && cachedAllAuthorsJson) {
@@ -30,6 +44,14 @@ export async function allAuthors(): Promise<Author[]> {
   });
 }
 
+/**
+ * Retrieves detailed information for a specific author including metadata about their works.
+ * Extracts and sorts distinct kinds, work years, and review years for filtering.
+ * Results are cached in production for performance.
+ * 
+ * @param slug - The unique slug identifier for the author
+ * @returns Promise resolving to author details with distinct metadata arrays
+ */
 export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
   return await perfLogger.measure("getAuthorDetails", async () => {
     // Check cache first

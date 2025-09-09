@@ -1,13 +1,33 @@
+/**
+ * Type definition for the Author Open Graph image component function
+ */
 export type AuthorOpenGraphImageComponentType = (
   props: AuthorOpenGraphImageProps,
 ) => React.JSX.Element;
 
+/**
+ * Props for the Author Open Graph image component
+ */
 type AuthorOpenGraphImageProps = {
+  /** Optional author avatar image URL */
   avatar?: string;
+  /** Background image URL for the Open Graph image */
   backdrop: string;
+  /** Author's display name */
   name: string;
 };
 
+/**
+ * Open Graph image component for author pages.
+ * Renders a 1200x630 image with backdrop, optional author avatar, and author name.
+ * Used for social media sharing and SEO meta image tags.
+ * 
+ * @param props - Component props
+ * @param props.avatar - Optional author avatar image URL
+ * @param props.backdrop - Background image URL
+ * @param props.name - Author's display name
+ * @returns Open Graph image JSX for author pages
+ */
 export function OpenGraphImage({
   avatar,
   backdrop,

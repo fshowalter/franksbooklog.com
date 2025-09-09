@@ -9,11 +9,19 @@ import { nullableString } from "./utils/nullable";
 
 const readingsMarkdownDirectory = getContentPath("readings");
 
+/**
+ * Zod schema for individual timeline entries in reading data.
+ * Represents progress points during the reading of a book.
+ */
 const TimelineEntrySchema = z.object({
   date: z.date(),
   progress: z.string(),
 });
 
+/**
+ * Zod schema for validating frontmatter data in reading Markdown files.
+ * Contains metadata about reading sessions and edition details.
+ */
 const DataSchema = z
   .object({
     edition: z.string(),
@@ -27,6 +35,10 @@ const DataSchema = z
     return { edition, edition_notes, sequence, timeline, work_slug };
   });
 
+/**
+ * Type representing a parsed reading entry from Markdown files.
+ * Contains reading metadata, edition details, and timeline information.
+ */
 export type MarkdownReading = {
   edition: string;
   editionNotesRaw: string | undefined;
@@ -36,6 +48,9 @@ export type MarkdownReading = {
   timeline: TimelineEntry[];
 };
 
+/**
+ * Type for timeline entries representing reading progress points.
+ */
 type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
 
 // Cache at data layer - lazy caching for better build performance
@@ -44,6 +59,20 @@ let cachedReadingsMarkdown: MarkdownReading[];
 // Enable caching during builds but not in dev mode
 const ENABLE_CACHE = !import.meta.env.DEV;
 
+/**
+ * Loads and parses all reading Markdown files from the content directory.
+ * Readings contain timeline data and notes about specific reading sessions.
+ * 
+ * @returns Promise resolving to array of parsed reading entries
+ * @throws ZodError if any reading's frontmatter doesn't match the expected schema
+ * 
+ * @example
+ * ```typescript
+ * const readings = await allReadingsMarkdown();
+ * const bookReading = readings.find(r => r.slug === 'book-slug');
+ * console.log(bookReading.timeline.length); // Number of reading sessions
+ * ```
+ */
 export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
   return await perfLogger.measure("allReadingsMarkdown", async () => {
     if (ENABLE_CACHE && cachedReadingsMarkdown) {
@@ -60,6 +89,13 @@ export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
   });
 }
 
+/**
+ * Internal function to parse all reading Markdown files from the file system.
+ * Processes each .md file with gray-matter and validates the frontmatter.
+ * 
+ * @returns Promise resolving to array of parsed and validated reading data
+ * @throws ZodError if any reading's frontmatter doesn't match the expected schema
+ */
 async function parseAllReadingsMarkdown() {
   return await perfLogger.measure("parseAllReadingsMarkdown", async () => {
     const dirents = await fs.readdir(readingsMarkdownDirectory, {

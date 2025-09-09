@@ -1,3 +1,8 @@
+/**
+ * Initializes the responsive navigation menu with accessibility features.
+ * Handles toggle functionality, focus management, keyboard navigation,
+ * and click-outside behavior for mobile navigation.
+ */
 export function initNavMenu(): void {
   const body = document.body;
   const navToggle =

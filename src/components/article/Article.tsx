@@ -9,6 +9,9 @@ import {
   MoreReviewsHeading,
 } from "~/components/more-reviews/MoreReviews";
 
+/**
+ * Props for the Article page component
+ */
 export type Props = {
   backdropImageProps: BackdropImageProps;
   content: string | undefined;
@@ -17,6 +20,18 @@ export type Props = {
   title: string;
 };
 
+/**
+ * Article page component for displaying static content with backdrop and recent reviews.
+ * Designed for informational pages like "About" or "How I Grade" with long-form content.
+ * 
+ * @param props - Component props
+ * @param props.backdropImageProps - Background image properties for the hero section
+ * @param props.content - Main article content (HTML string)
+ * @param props.deck - Subtitle text for the backdrop
+ * @param props.recentReviews - Recent reviews to display in the footer section
+ * @param props.title - Main title for the article page
+ * @returns Article page component with backdrop, content, and recent reviews
+ */
 export function Article({
   backdropImageProps,
   content,

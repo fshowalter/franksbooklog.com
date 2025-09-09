@@ -22,6 +22,16 @@ export function createGroupValues<TValue, TSort>(
     return grouped;
   };
 }
+/**
+ * Creates a function to select and sort filtered values.
+ * Higher-order function that takes a sort function and returns a function
+ * that applies that sort function to filtered values.
+ * 
+ * @template TValue - The type of values being sorted
+ * @template TSort - The type of sort criteria
+ * @param sortFn - Function that sorts values based on sort criteria
+ * @returns Function that applies sorting to filtered values
+ */
 export function createSelectSortedFilteredValues<TValue, TSort>(
   sortFn: (values: TValue[], sort: TSort) => TValue[],
 ) {

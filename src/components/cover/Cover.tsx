@@ -1,12 +1,27 @@
 import type { CoverImageProps } from "~/api/covers";
 
+/**
+ * Props for the Cover component, extending standard HTML img attributes.
+ */
 type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
+  /** Optional CSS classes to apply to the cover container */
   className?: string;
+  /** Decoding strategy for the image */
   decoding: "async" | "auto" | "sync";
+  /** Image properties if a cover image is available */
   imageProps: CoverImageProps | undefined;
+  /** Loading strategy for the image */
   loading: "eager" | "lazy";
 };
 
+/**
+ * Displays a book cover with realistic styling effects.
+ * Adds spine gradients, spot lighting, and shadow effects to create
+ * a three-dimensional book cover appearance.
+ * 
+ * @param props - Cover component props including image properties
+ * @returns Cover component with styled book appearance
+ */
 export function Cover({
   className,
   imageProps,

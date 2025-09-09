@@ -6,12 +6,26 @@ import { Layout } from "~/components/layout/Layout";
 import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { SubHeading } from "~/components/sub-heading/SubHeading";
 
+/**
+ * Props for the Home page component
+ */
 export type HomeProps = {
   backdropImageProps: BackdropImageProps;
   deck: string;
   values: ReviewCardProps[];
 };
 
+/**
+ * Home page component displaying the latest reviews with backdrop.
+ * Features the site logo, tagline, recent review cards, and a call-to-action
+ * to view all reviews.
+ * 
+ * @param props - Component props
+ * @param props.backdropImageProps - Image properties for the backdrop
+ * @param props.deck - Subtitle/tagline text to display
+ * @param props.values - Array of recent review data for cards
+ * @returns Home page component
+ */
 export function Home({
   backdropImageProps,
   deck,

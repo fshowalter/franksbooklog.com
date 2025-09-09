@@ -8,6 +8,9 @@ import { getContentPath } from "./utils/getContentPath";
 
 const reviewsMarkdownDirectory = getContentPath("reviews");
 
+/**
+ * Markdown review data structure parsed from review files
+ */
 export type MarkdownReview = {
   date: Date;
   grade: string;
@@ -16,6 +19,9 @@ export type MarkdownReview = {
   synopsis: string;
 };
 
+/**
+ * Zod schema for validating review markdown frontmatter
+ */
 const DataSchema = z.object({
   date: z.date(),
   grade: z.string(),
@@ -29,6 +35,13 @@ let cachedReviewsMarkdown: MarkdownReview[];
 // Enable caching during builds but not in dev mode
 const ENABLE_CACHE = !import.meta.env.DEV;
 
+/**
+ * Loads and parses all review markdown files from the reviews directory.
+ * Extracts frontmatter data and content, validates with Zod schema.
+ * Results are cached during builds for performance.
+ * 
+ * @returns Promise resolving to array of parsed review data
+ */
 export async function allReviewsMarkdown(): Promise<MarkdownReview[]> {
   return await perfLogger.measure("allReviewsMarkdown", async () => {
     if (ENABLE_CACHE && cachedReviewsMarkdown) {
@@ -45,6 +58,13 @@ export async function allReviewsMarkdown(): Promise<MarkdownReview[]> {
   });
 }
 
+/**
+ * Internal function to parse all review Markdown files from the file system.
+ * Processes each .md file with gray-matter and validates the frontmatter.
+ * 
+ * @returns Promise resolving to array of parsed and validated review data
+ * @throws ZodError if any review's frontmatter doesn't match the expected schema
+ */
 async function parseAllReviewsMarkdown(): Promise<MarkdownReview[]> {
   return await perfLogger.measure("parseAllReviewsMarkdown", async () => {
     const dirents = await fs.readdir(reviewsMarkdownDirectory, {

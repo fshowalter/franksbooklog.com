@@ -3,6 +3,18 @@ import { useState } from "react";
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
+/**
+ * Renders a year range selection field with "From" and "To" dropdowns.
+ * Provides a way to select a range of years with automatic value sorting
+ * to ensure the range is always valid. Handles state management internally.
+ * 
+ * @param props - The component props
+ * @param props.initialValues - Initial [min, max] year values for the range
+ * @param props.label - The label text for the fieldset
+ * @param props.onYearChange - Callback function called when the year range changes
+ * @param props.years - Array of available year options
+ * @returns A JSX element containing the year range selection fieldset
+ */
 export function YearField({
   initialValues,
   label,

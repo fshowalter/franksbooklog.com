@@ -4,6 +4,9 @@ import { FilterAndSortHeader } from "./FilterAndSortHeader";
 
 const DRAWER_OPEN_ANIMATION_MS = 400;
 
+/**
+ * Props for sorting functionality within the filter container
+ */
 export type SortProps<T extends string> = {
   currentSortValue: T;
   onSortChange: React.ChangeEventHandler<HTMLSelectElement>;
@@ -26,6 +29,14 @@ type Props<T extends string> = {
   totalCount: number;
 };
 
+/**
+ * Container component for filter and sort functionality with drawer UI.
+ * Manages filter drawer state, animations, and provides a consistent
+ * interface for filtering and sorting collections of items.
+ *
+ * @param props - Component props
+ * @returns Filter and sort container with drawer functionality
+ */
 export function FilterAndSortContainer<T extends string>({
   children,
   className,

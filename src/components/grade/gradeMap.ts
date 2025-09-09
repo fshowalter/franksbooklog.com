@@ -1,3 +1,8 @@
+/**
+ * Mapping of letter grades to their corresponding star SVG files and alt text.
+ * Each grade maps to a tuple containing [SVG file path, accessibility description].
+ * Supports letter grades from A+ to F with plus/minus modifiers.
+ */
 export const gradeMap: Record<string, [string, string]> = {
   A: ["/svg/5-stars.svg", "5 stars (out of 5)"],
   "A+": ["/svg/5-stars.svg", "5 stars (out of 5)"],

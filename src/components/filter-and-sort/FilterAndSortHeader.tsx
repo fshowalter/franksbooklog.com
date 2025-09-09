@@ -1,5 +1,20 @@
 import type { SortProps } from "./FilterAndSortContainer";
 
+/**
+ * Renders the header section for filter and sort interfaces.
+ * Displays result count, optional header links, sort dropdown, and filter toggle button
+ * in a responsive grid layout. Generic component that works with different sort value types.
+ * 
+ * @template T - The type of sort values (typically string union types)
+ * @param props - The component props
+ * @param props.filterDrawerVisible - Whether the filter drawer is currently visible
+ * @param props.headerLinks - Optional navigation links to display in the header
+ * @param props.onFilterClick - Callback for when the filter toggle button is clicked
+ * @param props.sortProps - Sort configuration including options and current value
+ * @param props.toggleButtonRef - Ref for the filter toggle button element
+ * @param props.totalCount - Total number of results to display
+ * @returns A JSX element containing the complete filter and sort header
+ */
 export function FilterAndSortHeader<T extends string>({
   filterDrawerVisible,
   headerLinks: listHeaderButtons,

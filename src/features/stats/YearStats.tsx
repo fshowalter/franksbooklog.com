@@ -11,15 +11,38 @@ import { KindDistribution } from "./KindDistribution";
 import { MostReadAuthors } from "./MostReadAuthors";
 import { StatsNavigation } from "./StatsNavigation";
 
+/**
+ * Props interface for the YearStats page component.
+ * Contains all data needed to render yearly reading statistics.
+ */
 export type YearStatsProps = {
+  /** Backdrop image properties */
   backdropImageProps: BackdropImageProps;
+  /** Subtitle text for the page */
   deck: string;
+  /** Available years for navigation */
   distinctStatYears: readonly string[];
+  /** Most read authors data for the year */
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
+  /** Complete statistics data for the year */
   stats: YearStats;
+  /** The specific year being displayed */
   year: string;
 };
 
+/**
+ * Year statistics page component displaying reading stats for a specific year.
+ * Shows various distributions, callouts, and navigation between years.
+ * 
+ * @param props - Component props
+ * @param props.backdropImageProps - Backdrop image properties
+ * @param props.deck - Subtitle text for the page
+ * @param props.distinctStatYears - Available years for navigation
+ * @param props.mostReadAuthors - Most read authors data for the year
+ * @param props.stats - Complete statistics data for the year
+ * @param props.year - The specific year being displayed
+ * @returns Year statistics page component
+ */
 export function YearStats({
   backdropImageProps,
   deck,

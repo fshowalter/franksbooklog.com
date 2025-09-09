@@ -21,6 +21,15 @@ type ReviewsListItemValue = {
   workYear: string;
 };
 
+/**
+ * Individual list item component for displaying a book review in the reviews list.
+ * Renders a cover image alongside review metadata including title, authors,
+ * kind, year, grade, and review date in a consistent layout.
+ * 
+ * @param props - Component props
+ * @param props.value - Review data for display
+ * @returns Review list item component with cover and metadata
+ */
 export function ReviewsListItem({
   value,
 }: {

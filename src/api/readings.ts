@@ -4,6 +4,10 @@ import type { ReadingEntryJson } from "./data/reading-entries-json";
 
 import { allReadingEntriesJson } from "./data/reading-entries-json";
 
+/**
+ * Type representing aggregated reading entries data with metadata and statistics.
+ * Contains the full reading history plus derived counts and distinct values for filtering.
+ */
 type ReadingEntries = {
   abandonedCount: number;
   bookCount: number;
@@ -16,6 +20,10 @@ type ReadingEntries = {
   workCount: number;
 };
 
+/**
+ * Type representing an individual reading entry.
+ * Extends the base ReadingEntryJson with API layer enhancements.
+ */
 type ReadingEntry = ReadingEntryJson & {};
 
 const yearFormatter = new Intl.DateTimeFormat("en-US", {
@@ -23,6 +31,13 @@ const yearFormatter = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
+/**
+ * Retrieves all reading entries with aggregated metadata and statistics.
+ * Processes reading history to extract distinct values for filtering and provides
+ * counts for different types of works (books, short stories, abandoned).
+ * 
+ * @returns Promise resolving to reading entries with metadata and counts
+ */
 export async function allReadingEntries(): Promise<ReadingEntries> {
   return await perfLogger.measure("allTimelineEntries", async () => {
     const readingEntries = await allReadingEntriesJson();

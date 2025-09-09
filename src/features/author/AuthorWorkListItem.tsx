@@ -8,6 +8,14 @@ import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { AuthorValue } from "./Author";
 
+/**
+ * List item component for displaying an author's work in the author page cover grid.
+ * Shows cover image, title, co-authors, work details, grade, and review date.
+ * 
+ * @param props - Component props
+ * @param props.value - Author work data containing all display information
+ * @returns Cover list item with work details
+ */
 export function AuthorWorkListItem({
   value,
 }: {
@@ -26,6 +34,14 @@ export function AuthorWorkListItem({
   );
 }
 
+/**
+ * Internal component to display other authors (co-authors) for a work.
+ * Shows a formatted list of other authors if any exist, otherwise renders nothing.
+ * 
+ * @param props - Component props
+ * @param props.values - Array of other author objects
+ * @returns Co-author list or false if no co-authors
+ */
 function OtherAuthors({
   values,
 }: {

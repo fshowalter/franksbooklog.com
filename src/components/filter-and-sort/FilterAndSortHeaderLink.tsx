@@ -1,4 +1,13 @@
-// This is used by pages directly, keep it exported
+/**
+ * Renders a styled header link for filter and sort sections.
+ * Used in page headers to provide navigation back to main listing pages.
+ * Features hover effects and accent styling to match the design system.
+ * 
+ * @param props - The component props
+ * @param props.href - The URL to navigate to when clicked
+ * @param props.text - The link text to display
+ * @returns A JSX element containing the styled header link
+ */
 export function FilterAndSortHeaderLink({
   href,
   text,

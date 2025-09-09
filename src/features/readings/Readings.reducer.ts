@@ -8,6 +8,10 @@ import {
   type WorkFiltersValues,
 } from "~/components/filter-and-sort/WorkFilters.reducer";
 
+/**
+ * Action creators for managing readings page filters.
+ * Re-exported from the shared WorkFilters reducer.
+ */
 export {
   createApplyPendingFiltersAction,
   createClearPendingFiltersAction,
@@ -22,6 +26,9 @@ import { FiltersActions } from "~/components/filter-and-sort/filters.reducer";
 import type { ReadingsValue } from "./Readings";
 import type { ReadingsSort } from "./Readings.sorter";
 
+/**
+ * Enum defining readings-specific action types for month navigation and filtering
+ */
 enum ReadingsActions {
   Next_Month = "readings/nextMonth",
   Previous_Month = "readings/previousMonth",
@@ -29,6 +36,9 @@ enum ReadingsActions {
   Set_Reading_Year_Pending_Filter = "readings/setReadingYearPendingFilter",
 }
 
+/**
+ * Union type of all possible actions for readings page state management
+ */
 export type ReadingsActionType =
   | NextMonthAction
   | PreviousMonthAction
@@ -36,8 +46,13 @@ export type ReadingsActionType =
   | SetReadingYearPendingFilterAction
   | WorkFiltersActionType<ReadingsSort>;
 
+/**
+ * Filter values type for readings page, extending base work filters with reading-specific options
+ */
 export type ReadingsFiltersValues = WorkFiltersValues & {
+  /** Selected edition filter */
   edition?: string;
+  /** Selected reading years for filtering */
   readingYear?: string[];
 };
 

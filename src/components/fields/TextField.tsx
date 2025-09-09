@@ -4,10 +4,25 @@ import { debounceOnChange } from "~/utils/debounce";
 
 import { LabelText } from "./LabelText";
 
+/**
+ * Debounce delay in milliseconds for text field input changes
+ */
 export const TEXT_FILTER_DEBOUNCE_MS = 150;
 
 type onChangeHandler = (value: string) => void;
 
+/**
+ * Text input field component with debounced change handling.
+ * Provides immediate visual feedback while debouncing the actual callback
+ * to prevent excessive event firing during typing.
+ * 
+ * @param props - Component props
+ * @param props.initialValue - Initial text value
+ * @param props.label - Label text to display above the input
+ * @param props.onInputChange - Debounced callback fired when text changes
+ * @param props.placeholder - Placeholder text for the input
+ * @returns Text field component with label
+ */
 export function TextField({
   initialValue,
   label,

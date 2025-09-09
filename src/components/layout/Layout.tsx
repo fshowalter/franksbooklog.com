@@ -1,6 +1,20 @@
 import { Footer } from "./Footer";
 import { Mast } from "./Mast";
 
+/**
+ * Main layout component providing the overall page structure.
+ * Includes skip-to-content link for accessibility, masthead with navigation,
+ * main content area, and footer. Handles backdrop and gradient styling.
+ * 
+ * @param props - Component props
+ * @param props.addGradient - Whether to add gradient overlay (defaults to hasBackdrop value)
+ * @param props.children - Page content to render in main area
+ * @param props.className - Additional CSS classes for main content
+ * @param props.hasBackdrop - Whether to show backdrop image (defaults to true)
+ * @param props.hideLogo - Whether to hide the site logo (defaults to false)
+ * @param props.rest - Additional props passed to main element
+ * @returns Complete page layout structure
+ */
 export function Layout({
   addGradient,
   children,

@@ -1,5 +1,15 @@
 import { gradeMap } from "./gradeMap";
 
+/**
+ * Displays a grade as star icons with light/dark theme support.
+ * Returns false for abandoned or missing grades to conditionally render.
+ * 
+ * @param props - Component props
+ * @param props.className - Optional CSS classes to apply
+ * @param props.height - Height of the grade image in pixels
+ * @param props.value - Grade value (e.g., "A+", "B-", etc.) 
+ * @returns Grade component or false if no grade to display
+ */
 export function Grade({
   className,
   height,

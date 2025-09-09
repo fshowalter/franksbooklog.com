@@ -9,6 +9,10 @@ import { WorkKindSchema } from "./WorkKindSchema";
 
 const authorsJsonDirectory = getContentPath("data", "authors");
 
+/**
+ * Zod schema for author information within a work's metadata.
+ * Represents an individual author with their basic information.
+ */
 const WorkAuthorSchema = z
   .object({
     name: z.string(),
@@ -21,6 +25,10 @@ const WorkAuthorSchema = z
     return { name, notes, slug, sortName };
   });
 
+/**
+ * Zod schema for work information within an author's reviewed works.
+ * Contains comprehensive metadata about a book/work including review details.
+ */
 const WorkSchema = z.object({
   authors: z.array(WorkAuthorSchema),
   grade: z.string(),
@@ -38,6 +46,10 @@ const WorkSchema = z.object({
   workYearSequence: z.number(),
 });
 
+/**
+ * Zod schema for complete author data from JSON files.
+ * Includes author metadata and all their reviewed works.
+ */
 const AuthorJsonSchema = z.object({
   name: z.string(),
   reviewedWorks: z.array(WorkSchema),
@@ -45,6 +57,9 @@ const AuthorJsonSchema = z.object({
   sortName: z.string(),
 });
 
+/**
+ * Author data structure from JSON files in the content directory
+ */
 export type AuthorJson = z.infer<typeof AuthorJsonSchema>;
 
 // Cache at data layer - lazy caching for better build performance
@@ -53,6 +68,12 @@ let cachedAuthorsJson: AuthorJson[];
 // Enable caching during builds but not in dev mode
 const ENABLE_CACHE = !import.meta.env.DEV;
 
+/**
+ * Loads and validates all author JSON files from the content directory.
+ * Authors are parsed with Zod schemas and cached during builds.
+ * 
+ * @returns Promise resolving to array of validated author data
+ */
 export async function allAuthorsJson(): Promise<AuthorJson[]> {
   return await perfLogger.measure("allAuthorsJson", async () => {
     if (ENABLE_CACHE && cachedAuthorsJson) {
@@ -69,6 +90,13 @@ export async function allAuthorsJson(): Promise<AuthorJson[]> {
   });
 }
 
+/**
+ * Internal function to parse all author JSON files from the file system.
+ * Reads the authors directory and validates each JSON file against the schema.
+ * 
+ * @returns Promise resolving to array of parsed and validated author data
+ * @throws ZodError if any JSON file doesn't match the expected schema
+ */
 async function parseAllAuthorsJson() {
   return await perfLogger.measure("parseAllAuthorsJson", async () => {
     const dirents = await fs.readdir(authorsJsonDirectory, {

@@ -15,6 +15,13 @@ type Props = ReviewsProps & {
   deck: string;
 };
 
+/**
+ * Loads and prepares data for the Reviews page component.
+ * Fetches all reviews with metadata, sorts by author name, and prepares
+ * optimized cover images and backdrop for the reviews listing page.
+ * 
+ * @returns Promise resolving to Reviews page props with all review data and filtering metadata
+ */
 export async function getProps(): Promise<Props> {
   const { distinctKinds, distinctReviewYears, distinctWorkYears, reviews } =
     await allReviews();

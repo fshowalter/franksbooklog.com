@@ -1,3 +1,12 @@
+/**
+ * Renders the site logo with title and author information.
+ * Displays "Frank's Book Log" as the main title with "by Frank Showalter" subtitle.
+ * Includes hover effects and responsive typography.
+ * 
+ * @param props - The component props
+ * @param props.className - Optional additional CSS classes to apply to the logo container
+ * @returns A JSX element containing the site logo and branding
+ */
 export function Logo({ className }: { className?: string }): React.JSX.Element {
   return (
     <div

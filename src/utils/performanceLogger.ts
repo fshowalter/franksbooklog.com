@@ -1,21 +1,44 @@
 import { writeFileSync } from "node:fs";
 import path from "node:path";
 
+/**
+ * Represents a single timing measurement entry with start/end times and metadata.
+ * Used internally by PerformanceLogger to track individual performance measurements.
+ */
 type TimingEntry = {
+  /** The calculated duration in milliseconds (endTime - startTime) */
   duration?: number;
+  /** The end timestamp from performance.now() */
   endTime?: number;
+  /** Unique identifier for this timing entry */
   id: string;
+  /** Optional metadata associated with this measurement */
   metadata?: Record<string, unknown>;
+  /** Human-readable name for the operation being measured */
   name: string;
+  /** The start timestamp from performance.now() */
   startTime: number;
 };
 
+/**
+ * Performance measurement and logging utility for tracking operation timing.
+ * Provides both async and sync timing capabilities with detailed reporting.
+ * Automatically disabled in test environments to avoid timing conflicts.
+ */
 export class PerformanceLogger {
   private callCounts: Map<string, number> = new Map();
   private completedTimings: TimingEntry[] = [];
   private counter = 0;
   private timings: Map<string, TimingEntry> = new Map();
 
+  /**
+   * Ends a timing measurement by name (backward compatibility method).
+   * Finds the first timing entry with matching name and ends it.
+   *
+   * @param name - The name of the timing to end
+   * @returns Duration in milliseconds, or 0 if timing not found
+   * @deprecated Use endWithId() for better precision in concurrent scenarios
+   */
   end(name: string): number {
     // For backward compatibility, try to find by name pattern
     const entry = [...this.timings.entries()].find(
@@ -28,6 +51,13 @@ export class PerformanceLogger {
     return this.endWithId(entry[0]);
   }
 
+  /**
+   * Ends a timing measurement by its unique ID.
+   * Calculates duration, logs if debug mode is enabled, and moves entry to completed list.
+   *
+   * @param id - The unique ID of the timing to end
+   * @returns Duration in milliseconds, or 0 if timing not found
+   */
   endWithId(id: string): number {
     const timing = this.timings.get(id);
     if (!timing) {
@@ -50,6 +80,12 @@ export class PerformanceLogger {
     return timing.duration;
   }
 
+  /**
+   * Generates a comprehensive performance report with operation statistics.
+   * Groups timings by name and provides max duration, call counts, and totals.
+   *
+   * @returns Formatted performance report string
+   */
   getReport(): string {
     // Group timings to get aggregated stats - use exact name matching
     const operationStats = new Map<
@@ -111,6 +147,16 @@ export class PerformanceLogger {
     return report;
   }
 
+  /**
+   * Measures the execution time of an async function.
+   * Automatically starts timing, executes the function, and ends timing.
+   * Disabled in test environments to avoid timing conflicts.
+   *
+   * @param name - Human-readable name for the operation
+   * @param fn - The async function to measure
+   * @param metadata - Optional metadata to associate with this measurement
+   * @returns Promise resolving to the function's return value
+   */
   async measure<T>(
     name: string,
     fn: () => Promise<T>,
@@ -132,6 +178,16 @@ export class PerformanceLogger {
     }
   }
 
+  /**
+   * Measures the execution time of a synchronous function.
+   * Automatically starts timing, executes the function, and ends timing.
+   * Disabled in test environments to avoid timing conflicts.
+   *
+   * @param name - Human-readable name for the operation
+   * @param fn - The synchronous function to measure
+   * @param metadata - Optional metadata to associate with this measurement
+   * @returns The function's return value
+   */
   measureSync<T>(
     name: string,
     fn: () => T,
@@ -153,6 +209,10 @@ export class PerformanceLogger {
     }
   }
 
+  /**
+   * Resets all performance data and counters.
+   * Clears all timing measurements, call counts, and resets the internal counter.
+   */
   reset(): void {
     this.callCounts.clear();
     this.completedTimings = [];
@@ -160,11 +220,26 @@ export class PerformanceLogger {
     this.timings.clear();
   }
 
+  /**
+   * Starts a timing measurement with an auto-generated ID.
+   * For manual timing control when you can't use measure() wrapper.
+   *
+   * @param name - Human-readable name for the operation
+   * @param metadata - Optional metadata to associate with this measurement
+   */
   start(name: string, metadata?: Record<string, unknown>): void {
     const id = `${name}_${++this.counter}_${Date.now()}`;
     this.startWithId(id, name, metadata);
   }
 
+  /**
+   * Starts a timing measurement with a specific ID.
+   * Useful for precise timing control in concurrent scenarios.
+   *
+   * @param id - Unique identifier for this timing measurement
+   * @param name - Human-readable name for the operation
+   * @param metadata - Optional metadata to associate with this measurement
+   */
   startWithId(
     id: string,
     name: string,
@@ -181,6 +256,11 @@ export class PerformanceLogger {
     this.callCounts.set(name, (this.callCounts.get(name) || 0) + 1);
   }
 
+  /**
+   * Writes the performance report to a file in the current working directory.
+   * Only executes when DEBUG_PERF environment variable is set to "true".
+   * File is saved as "performance-report.txt" in the project root.
+   */
   writeReportToFile(): void {
     if (process.env.DEBUG_PERF === "true") {
       const reportPath = path.join(process.cwd(), "performance-report.txt");
@@ -190,6 +270,10 @@ export class PerformanceLogger {
   }
 }
 
+/**
+ * Global performance logger instance for measuring application performance.
+ * Use this singleton to track timing across the entire application.
+ */
 export const perfLogger = new PerformanceLogger();
 
 // Write report on process exit

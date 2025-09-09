@@ -17,14 +17,27 @@ import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
 import { StructuredData } from "./StructuredData";
 
+/**
+ * Configuration for cover images in the review page.
+ * Defines the width for the main review cover image.
+ */
 export const CoverImageConfig = {
+  /** Cover image width in pixels */
   width: 248,
 };
 
+/**
+ * Props interface for the Review page component.
+ * Contains all data needed to render a single review page.
+ */
 export type Props = {
+  /** Cover image props for the main work cover */
   coverImageProps: CoverImageProps;
+  /** Array of related reviews for the "More Reviews" section */
   moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
+  /** Cover image source URL for structured data */
   structuredDataCoverSrc: string;
+  /** Review data including content and metadata */
   value: ReviewWithContent;
 };
 
