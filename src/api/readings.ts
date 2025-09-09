@@ -1,8 +1,8 @@
 import { perfLogger } from "~/utils/performanceLogger";
 
-import type { ReadingEntryJson } from "./data/readingEntriesJson";
+import type { ReadingEntryJson } from "./data/reading-entries-json";
 
-import { allReadingEntriesJson } from "./data/readingEntriesJson";
+import { allReadingEntriesJson } from "./data/reading-entries-json";
 
 type ReadingEntries = {
   abandonedCount: number;

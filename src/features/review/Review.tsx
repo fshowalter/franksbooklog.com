@@ -1,7 +1,7 @@
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
-import { Cover } from "~/components/Cover/Cover";
+import { Cover } from "~/components/cover/Cover";
 import { Grade } from "~/components/grade/Grade";
 import { Layout } from "~/components/layout/Layout";
 import { LongFormText } from "~/components/long-form-text/LongFormText";

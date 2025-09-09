@@ -1,4 +1,4 @@
-import { GroupingListItem } from "~/components/grouping-lis-item/GroupingListItem";
+import { GroupingListItem } from "~/components/grouping-list-item/GroupingListItem";
 
 import { CoverList } from "./CoverList";
 

@@ -6,13 +6,13 @@ import strip from "strip-markdown";
 import { ENABLE_CACHE } from "~/utils/cache";
 import { perfLogger } from "~/utils/performanceLogger";
 
-import type { MarkdownPage as RawMarkdownPage } from "./data/pagesMarkdown";
+import type { MarkdownPage as RawMarkdownPage } from "./data/pages-markdown";
 
-import { allPagesMarkdown } from "./data/pagesMarkdown";
+import { allPagesMarkdown } from "./data/pages-markdown";
 import {
   allReviewedWorksJson,
   type ReviewedWorkJson,
-} from "./data/reviewedWorksJson";
+} from "./data/reviewed-works-json";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 

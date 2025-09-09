@@ -9,16 +9,16 @@ import strip from "strip-markdown";
 import { ENABLE_CACHE } from "~/utils/cache";
 import { perfLogger } from "~/utils/performanceLogger";
 
-import type { MarkdownReading } from "./data/readingsMarkdown";
+import type { MarkdownReading } from "./data/readings-markdown";
 import type {
   ReviewedWorkJson,
   ReviewedWorkJsonReading,
-} from "./data/reviewedWorksJson";
-import type { MarkdownReview } from "./data/reviewsMarkdown";
+} from "./data/reviewed-works-json";
+import type { MarkdownReview } from "./data/reviews-markdown";
 
-import { allReadingsMarkdown } from "./data/readingsMarkdown";
-import { allReviewedWorksJson } from "./data/reviewedWorksJson";
-import { allReviewsMarkdown } from "./data/reviewsMarkdown";
+import { allReadingsMarkdown } from "./data/readings-markdown";
+import { allReviewedWorksJson } from "./data/reviewed-works-json";
+import { allReviewsMarkdown } from "./data/reviews-markdown";
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
