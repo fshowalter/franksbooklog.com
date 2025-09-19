@@ -17,7 +17,7 @@ import {
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import { getProps } from "./getProps";
-import { Readings } from "./Readings";
+import { Readings } from "./ReadingLog";
 import {
   clickEditionFilterOption,
   clickNextMonthButton,

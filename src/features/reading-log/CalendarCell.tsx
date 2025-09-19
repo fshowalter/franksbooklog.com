@@ -3,12 +3,12 @@ import { CoverListItem } from "~/components/cover-list/CoverListItem";
 import { ListItemAuthors } from "~/components/list-item-authors/ListItemAuthors";
 import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 
-import type { CalendarWeek } from "./Readings.sorter";
+import type { CalendarCellData } from "./useCalendar";
 
-export function CalendarDay({
+export function CalendarCell({
   value,
 }: {
-  value: CalendarWeek[number];
+  value: CalendarCellData;
 }): React.JSX.Element {
   if (!value.date) {
     return (
@@ -23,6 +23,7 @@ export function CalendarDay({
   }
 
   const dayOfWeek = value.dayOfWeek!; // Always defined for days with dates
+  const hasEntries = Boolean(value.entries && value.entries.length > 0);
 
   return (
     <td
@@ -31,7 +32,7 @@ export function CalendarDay({
         tablet:border tablet:px-2
         tablet-landscape:mb-0 tablet-landscape:table-cell
         tablet-landscape:w-[14.28%] tablet-landscape:py-2
-        ${value.readings.length === 0 ? `hidden` : `block`}
+        ${hasEntries ? "block" : `hidden`}
       `}
       data-weekday={dayOfWeek}
     >
@@ -40,7 +41,7 @@ export function CalendarDay({
           mb-1 px-container py-2 text-sm font-medium
           tablet:px-6 tablet:text-xl tablet:font-normal
           tablet-landscape:py-0
-          ${value.readings.length > 0 ? "text-default" : "text-muted"}
+          ${hasEntries ? "text-default" : "text-muted"}
         `}
       >
         <span
@@ -53,7 +54,7 @@ export function CalendarDay({
         </span>
         {value.date}
       </div>
-      {value.readings.length > 0 && (
+      {hasEntries && (
         <div className="@container/cover-list">
           <ol
             className={`
@@ -65,7 +66,7 @@ export function CalendarDay({
               @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
             `}
           >
-            {value.readings.map((reading) => (
+            {value.entries!.map((reading) => (
               <CoverListItem
                 className={`items-center`}
                 coverImageProps={reading.coverImageProps}

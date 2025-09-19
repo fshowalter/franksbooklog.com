@@ -7,7 +7,7 @@ import { FilterAndSortHeaderLink } from "~/components/filter-and-sort/FilterAndS
 
 import { CalendarMonth } from "./CalendarMonth";
 import { Filters } from "./Filters";
-import { MonthNavHeader } from "./MonthNavHeader";
+import { MonthNavHeader } from "./MonthNavigationHeader";
 import {
   createApplyPendingFiltersAction,
   createClearPendingFiltersAction,
@@ -15,14 +15,14 @@ import {
   createSortAction,
   initState,
   readingsReducer,
-} from "./Readings.reducer";
-import { type ReadingsSort, selectWeeksForMonth } from "./Readings.sorter";
+} from "./ReadingLog.reducer";
+import { type ReadingsSort, selectWeeksForMonth } from "./sortReadingLog";
 
 /**
  * Data structure representing a single reading entry.
  * Contains all information needed to display readings in the calendar view.
  */
-export type ReadingsValue = {
+export type ReadingLogValue = {
   /** Authors of the work being read */
   authors: { name: string }[];
   /** Cover image props for displaying the work's cover */
@@ -85,7 +85,7 @@ export type ReadingsProps = {
   /** Initial sort order to apply when page loads */
   initialSort: ReadingsSort;
   /** Array of reading data for display and filtering */
-  values: ReadingsValue[];
+  values: ReadingLogValue[];
 };
 
 /**

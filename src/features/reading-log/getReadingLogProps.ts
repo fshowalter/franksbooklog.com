@@ -5,10 +5,10 @@ import { getFluidCoverImageProps } from "~/api/covers";
 import { allReadingEntries } from "~/api/readings";
 import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 
-import type { ReadingsValue } from "./Readings";
-import type { ReadingsProps } from "./Readings";
+import type { ReadingLogValue } from "./ReadingLog";
+import type { ReadingsProps } from "./ReadingLog";
 
-import { ReadingsItemImageConfig } from "./Readings";
+import { ReadingsItemImageConfig } from "./ReadingLog";
 
 export async function getProps(): Promise<
   ReadingsProps & { backdropImageProps: BackdropImageProps; deck: string }
@@ -27,9 +27,9 @@ export async function getProps(): Promise<
   const values = await Promise.all(
     readingEntries.map(async (entry) => {
       const readingDate = new Date(entry.readingEntryDate);
-      const value: ReadingsValue = {
+      const value: ReadingLogValue = {
         authors: entry.authors.map((author) => {
-          const authorValue: ReadingsValue["authors"][0] = {
+          const authorValue: ReadingLogValue["authors"][0] = {
             name: author.name,
           };
 

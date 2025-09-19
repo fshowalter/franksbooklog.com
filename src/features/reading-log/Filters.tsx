@@ -6,7 +6,7 @@ import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
 import type {
   ReadingsActionType,
   ReadingsFiltersValues,
-} from "./Readings.reducer";
+} from "./ReadingLog.reducer";
 
 import {
   createSetEditionPendingFilterAction,
@@ -14,7 +14,7 @@ import {
   createSetReadingYearPendingFilterAction,
   createSetTitlePendingFilterAction,
   createSetWorkYearPendingFilterAction,
-} from "./Readings.reducer";
+} from "./ReadingLog.reducer";
 
 export function Filters({
   dispatch,

@@ -2,7 +2,7 @@ import {
   createNextMonthAction,
   createPreviousMonthAction,
   type ReadingsActionType,
-} from "./Readings.reducer";
+} from "./ReadingLog.reducer";
 
 type MonthNavHeaderProps = {
   currentMonth: Date;
