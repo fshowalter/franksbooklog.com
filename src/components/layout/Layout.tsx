@@ -1,3 +1,6 @@
+import type React from "react";
+
+import { AvatarBackdrop, Backdrop } from "./Backdrop";
 import { Footer } from "./Footer";
 import { Mast } from "./Mast";
 
@@ -17,6 +20,7 @@ import { Mast } from "./Mast";
  */
 export function Layout({
   addGradient,
+  backdrop,
   children,
   className,
   hasBackdrop = true,
@@ -25,6 +29,11 @@ export function Layout({
 }: {
   [x: string]: unknown;
   addGradient?: boolean;
+  backdrop?: Pick<
+    React.ComponentProps<typeof AvatarBackdrop>,
+    "avatarImageProps"
+  > &
+    React.ComponentProps<typeof Backdrop>;
   children: React.ReactNode;
   className?: string;
   hasBackdrop?: boolean;
@@ -61,6 +70,12 @@ export function Layout({
           id="content"
           {...rest}
         >
+          {backdrop &&
+            (backdrop.avatarImageProps ? (
+              <AvatarBackdrop {...backdrop} />
+            ) : (
+              <Backdrop {...backdrop} />
+            ))}
           {children}
         </main>
         <Footer />

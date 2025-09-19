@@ -1,5 +1,20 @@
 import { debounce } from "~/utils/debounce";
 
+/**
+ * Search results returned by Pagefind API.
+ */
+export type PagefindSearchResults = {
+  filters: Record<string, Record<string, number>>;
+  results: PagefindResult[];
+  timings: {
+    preload: number;
+    search: number;
+    total: number;
+  };
+  totalFilters: Record<string, Record<string, number>>;
+  unfilteredResultCount: number;
+};
+
 type PagefindAnchor = {
   element: string;
   id: string;
@@ -51,18 +66,6 @@ type PagefindSearchOptions = {
   verbose?: boolean;
 };
 
-type PagefindSearchResults = {
-  filters: Record<string, Record<string, number>>;
-  results: PagefindResult[];
-  timings: {
-    preload: number;
-    search: number;
-    total: number;
-  };
-  totalFilters: Record<string, Record<string, number>>;
-  unfilteredResultCount: number;
-};
-
 type PagefindSubResult = {
   anchor?: PagefindAnchor;
   excerpt: string;
@@ -74,7 +77,6 @@ type PagefindSubResult = {
 type SearchElements = {
   clearButton: HTMLButtonElement;
   container: HTMLElement;
-  filtersContainer?: HTMLElement;
   input: HTMLInputElement;
   loadMoreButton: HTMLButtonElement;
   loadMoreWrapper: HTMLElement;
@@ -104,7 +106,7 @@ type WeightedLocation = {
 /**
  * Wrapper for the Pagefind search API
  */
-class SearchAPI {
+export class SearchAPI {
   private api: PagefindAPI | undefined = undefined;
   private isInitialized = false;
 
@@ -216,8 +218,8 @@ export class SearchUI {
 
   private state: SearchState;
 
-  constructor() {
-    this.api = new SearchAPI();
+  constructor(api?: SearchAPI) {
+    this.api = api || new SearchAPI();
     this.state = this.getInitialState();
 
     // Create debounced search function once during construction
@@ -459,15 +461,15 @@ export class SearchUI {
     const { image, image_alt, title } = result.meta;
 
     return `
-        <li class="group/list-item transition-colors duration-500 relative gap-x-6 tablet:px-6 laptop:px-8 py-6 px-[8%] has-[a:hover]:bg-subtle border-t border-default last-of-type:border-b grid grid-cols-[min(25%,80px)_1fr] focus-within:bg-subtle focus-within:outline-[rgb(38,132,255)] focus-within:outline-1 focus-within:-outline-offset-2">
+        <li class="gap-x-6 tablet:px-6 laptop:px-8 py-6 px-[8%] hover:bg-subtle border-t border-default last-of-type:border-b grid grid-cols-[min(25%,80px)_1fr] focus-within:bg-subtle focus-within:outline-[rgb(38,132,255)] focus-within:outline-1 focus-within:-outline-offset-2">
           ${
             this.config.showImages && image
               ? `
-            <div class="shrink-0 drop-shadow-md relative after:size-full after:absolute after:transition-opacity after:duration-500 after:top-0 after:left-0 after:opacity-15 after:bg-[#fff] group-has-[a:hover]/list-item:after:opacity-0">
+            <div class="shrink-0 drop-shadow-md">
               <img 
                 src="${image}" 
                 alt="${image_alt || ""}"
-                class="h-auto w-full after:absolute "
+                class="h-auto w-full"
                 loading="lazy"
               >
             </div>
@@ -475,8 +477,8 @@ export class SearchUI {
               : ""
           }
           <div class="min-w-0 flex-1">
-            <h3 class="font-serif text-base transition-colors duration-500 font-medium text-default has-[a:hover]:text-accent">
-              <a href="${result.url}" class="block after:absolute after:top-0 after:left-0 after:size-full">
+            <h3 class="font-sans text-base font-semibold text-accent">
+              <a href="${result.url}" class="block">
                 ${title}
               </a>
             </h3>
@@ -564,53 +566,28 @@ export class SearchUI {
    * Set up DOM elements
    */
   private setupElements(): void {
-    const container = document.querySelector("#pagefind__search");
-    this.elements = container
-      ? {
-          clearButton: container.querySelector(
-            ".pagefind-ui__search-clear",
-          ) as HTMLButtonElement,
-          container: container as HTMLElement,
-          filtersContainer: container.querySelector(
-            ".pagefind-ui__filters",
-          ) as HTMLElement,
-          input: container.querySelector(
-            ".pagefind-ui__search-input",
-          ) as HTMLInputElement,
-          loadMoreButton: container.querySelector(
-            ".pagefind-ui__button",
-          ) as HTMLButtonElement,
-          loadMoreWrapper: container.querySelector(
-            ".pagefind-ui__results-footer",
-          ) as HTMLElement,
-          resultsContainer: container.querySelector(
-            ".pagefind-ui__results",
-          ) as HTMLElement,
-          resultsCounter: container.querySelector(
-            ".pagefind-ui__results-count",
-          ) as HTMLElement,
-        }
-      : {
-          clearButton: document.querySelector(
-            "#pagefind-clear-button",
-          ) as HTMLButtonElement,
-          container: document.body,
-          input: document.querySelector(
-            "#pagefind-search-input",
-          ) as HTMLInputElement,
-          loadMoreButton: document.querySelector(
-            "#pagefind-load-more",
-          ) as HTMLButtonElement,
-          loadMoreWrapper: document.querySelector(
-            "#pagefind-load-more-wrapper",
-          ) as HTMLElement,
-          resultsContainer: document.querySelector(
-            "#pagefind-results",
-          ) as HTMLElement,
-          resultsCounter: document.querySelector(
-            "#pagefind-results-counter",
-          ) as HTMLElement,
-        };
+    // AIDEV-NOTE: Using IDs from AstroPageShell.astro
+    this.elements = {
+      clearButton: document.querySelector(
+        "#pagefind-clear-button",
+      ) as HTMLButtonElement,
+      container: document.body,
+      input: document.querySelector(
+        "#pagefind-search-input",
+      ) as HTMLInputElement,
+      loadMoreButton: document.querySelector(
+        "#pagefind-load-more",
+      ) as HTMLButtonElement,
+      loadMoreWrapper: document.querySelector(
+        "#pagefind-load-more-wrapper",
+      ) as HTMLElement,
+      resultsContainer: document.querySelector(
+        "#pagefind-results",
+      ) as HTMLElement,
+      resultsCounter: document.querySelector(
+        "#pagefind-results-counter",
+      ) as HTMLElement,
+    };
 
     if (!this.elements.input || !this.elements.resultsContainer) {
       throw new Error("Required search elements not found");

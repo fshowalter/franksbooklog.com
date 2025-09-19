@@ -1,30 +1,33 @@
 ---
-import { Backdrop } from "~/components/backdrop/Backdrop";
-import { Layout as ComponentLayout } from "~/components/layout/Layout";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
 import { getReadingLogProps } from "~/features/reading-log/getReadingLogProps";
 import { ReadingLog } from "~/features/reading-log/ReadingLog";
-import Layout from "~/layouts/Layout.astro";
 
-const props = await getReadingLogProps();
-
-// Separate layout props from interactive props
-const { backdropImageProps, deck, ...interactiveProps } = props;
+const readingLogProps = await getReadingLogProps();
+const backdropImageProps = await getLayoutBackdropImageProps("readings");
+const deck = `"You interest me. Rather vaguely."`;
+const metaDescription =
+  "A list of every book or story I've read since 2022. Filter by title, work year, reading year, kind, or edition. Sort by oldest or newest.";
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{
-    description:
-      "A list of every book or story I've read since 2022. Filter by title, work year, reading year, kind, or edition. Sort by oldest or newest.",
+    description: metaDescription,
   }}
   openGraph={{ description: deck, type: "website" }}
   title="Reading Log"
 >
-  <Fragment slot="meta-theme-color">
-    <meta content="rgba(0,0,0,.85)" name="theme-color" />
-  </Fragment>
-  <ComponentLayout className="bg-subtle">
-    <Backdrop deck={deck} imageProps={backdropImageProps} title="Reading Log" />
-    <ReadingLog client:load {...interactiveProps} />
-  </ComponentLayout>
-</Layout>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      deck,
+      title: "Reading Log",
+    }}
+    className="bg-subtle"
+  >
+    <ReadingLog client:load {...readingLogProps} />
+  </Layout>
+</AstroPageShell>
