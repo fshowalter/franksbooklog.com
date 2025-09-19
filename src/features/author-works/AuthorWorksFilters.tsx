@@ -1,6 +1,9 @@
 import { ReviewedWorkFilters } from "~/components/filter-and-sort/ReviewedWorkFilters";
 
-import type { AuthorActionType, AuthorFiltersValues } from "./Author.reducer";
+import type {
+  AuthorActionType,
+  AuthorFiltersValues,
+} from "./AuthorWorks.reducer";
 
 import {
   createSetGradePendingFilterAction,
@@ -8,7 +11,7 @@ import {
   createSetReviewYearPendingFilterAction,
   createSetTitlePendingFilterAction,
   createSetWorkYearPendingFilterAction,
-} from "./Author.reducer";
+} from "./AuthorWorks.reducer";
 
 /**
  * Author page filters component providing filtering controls for the author's works.

@@ -6,7 +6,7 @@ import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemR
 import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
-import type { AuthorValue } from "./Author";
+import type { AuthorValue } from "./AuthorWorks";
 
 /**
  * List item component for displaying an author's work in the author page cover grid.
@@ -16,7 +16,7 @@ import type { AuthorValue } from "./Author";
  * @param props.value - Author work data containing all display information
  * @returns Cover list item with work details
  */
-export function AuthorWorkListItem({
+export function AuthorWorksListItem({
   value,
 }: {
   value: AuthorValue;

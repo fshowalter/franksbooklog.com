@@ -15,14 +15,14 @@ import {
   createShowMoreAction,
   createSortAction,
   initState,
-} from "./Author.reducer";
+} from "./AuthorWorks.reducer";
+import { Filters } from "./AuthorWorksFilters";
+import { AuthorWorksListItem } from "./AuthorWorksListItem";
 import {
   type AuthorSort,
   selectGroupedValues,
   selectSortedFilteredValues,
-} from "./Author.sorter";
-import { AuthorWorkListItem } from "./AuthorWorkListItem";
-import { Filters } from "./Filters";
+} from "./sortAuthorWorks";
 
 /**
  * Configuration for author avatar images.
@@ -170,7 +170,7 @@ export function Author({
         totalCount={state.filteredValues.length}
         visibleCount={state.showCount}
       >
-        {(value) => <AuthorWorkListItem key={value.slug} value={value} />}
+        {(value) => <AuthorWorksListItem key={value.slug} value={value} />}
       </GroupedCoverList>
     </FilterAndSortContainer>
   );

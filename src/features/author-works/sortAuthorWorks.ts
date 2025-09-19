@@ -9,7 +9,7 @@ import {
   groupForSortableReviewedWork,
 } from "~/components/filter-and-sort/reviewedWorkSorter";
 
-import type { AuthorValue } from "./Author";
+import type { AuthorValue } from "./AuthorWorks";
 
 /**
  * Sort options available for author page works.

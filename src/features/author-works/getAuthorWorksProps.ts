@@ -9,7 +9,7 @@ import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";
 
-import type { AuthorProps, AuthorValue } from "./Author";
+import type { AuthorProps, AuthorValue } from "./AuthorWorks";
 
 /**
  * Extended props type for Author page including additional data for layout and display
@@ -20,7 +20,7 @@ type Props = AuthorProps & {
   deck: string;
 };
 
-import { AvatarImageConfig } from "./Author";
+import { AvatarImageConfig } from "./AuthorWorks";
 
 /**
  * Gets props for the Author page component by fetching author details and transforming work data.

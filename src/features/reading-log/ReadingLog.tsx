@@ -8,7 +8,6 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import { CalendarMonth } from "./CalendarMonth";
 import { filterReadingLog } from "./filterReadingLog";
-import { Filters } from "./Filters";
 import { MonthNavigationHeader } from "./MonthNavigationHeader";
 import {
   createApplyFiltersAction,
@@ -19,6 +18,7 @@ import {
   reducer,
   selectHasPendingFilters,
 } from "./ReadingLog.reducer";
+import { Filters } from "./ReadingLogFilters";
 import { type ReadingLogSort, sortReadingLog } from "./sortReadingLog";
 import { useMonthNavigation } from "./useMonthNavigation";
 

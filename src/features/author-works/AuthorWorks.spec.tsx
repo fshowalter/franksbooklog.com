@@ -23,8 +23,8 @@ import {
 } from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-import { Author } from "./Author";
-import { getProps } from "./getProps";
+import { Author } from "./AuthorWorks";
+import { getProps } from "./getAuthorWorksProps";
 
 const props = await getProps("richard-laymon");
 

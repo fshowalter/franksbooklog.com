@@ -1,4 +1,4 @@
-import type { AuthorValue } from "./Author";
+import type { AuthorValue } from "./AuthorWorks";
 
 /**
  * Action creators for managing author page filters.
@@ -30,7 +30,7 @@ import {
  */
 export type AuthorActionType = ReviewedWorkFiltersActionType<AuthorSort>;
 
-import type { AuthorSort } from "./Author.sorter";
+import type { AuthorSort } from "./sortAuthorWorks";
 
 /**
  * Filter values type for author page, aliases the base reviewed work filter values
