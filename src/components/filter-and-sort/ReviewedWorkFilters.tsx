@@ -3,8 +3,6 @@ import type { ComponentProps } from "react";
 import { GradeField } from "~/components/fields/GradeField";
 import { YearField } from "~/components/fields/YearField";
 
-import type { ReviewedWorkFiltersValues } from "./ReviewedWorkFilters.reducer";
-
 import { WorkFilters } from "./WorkFilters";
 
 /**
@@ -14,12 +12,12 @@ import { WorkFilters } from "./WorkFilters";
 type Props = ComponentProps<typeof WorkFilters> & {
   /** Grade range filter configuration */
   grade: {
-    initialValue: ReviewedWorkFiltersValues["gradeValue"];
+    defaultValues?: [number, number];
     onChange: (values: [number, number]) => void;
   };
   /** Review year range filter configuration */
   reviewYear: {
-    initialValue: ReviewedWorkFiltersValues["reviewYear"];
+    defaultValues?: [string, string];
     onChange: (values: [string, string]) => void;
     values: readonly string[];
   };
@@ -48,7 +46,7 @@ export function ReviewedWorkFilters({
       <WorkFilters kind={kind} title={title} workYear={workYear} />
       {reviewYear && (
         <YearField
-          initialValues={reviewYear.initialValue}
+          defaultValues={reviewYear.defaultValues}
           label="Review Year"
           onYearChange={reviewYear.onChange}
           years={reviewYear.values}
@@ -56,7 +54,7 @@ export function ReviewedWorkFilters({
       )}
       {grade && (
         <GradeField
-          initialValues={grade.initialValue}
+          defaultValues={grade.defaultValues}
           label="Grade"
           onGradeChange={grade.onChange}
         />

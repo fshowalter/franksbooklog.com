@@ -2,24 +2,22 @@ import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
 /**
- * Select field component with label for form inputs.
- * Provides a consistent interface for dropdown selections with proper labeling.
- *
+ * Select field component with label.
  * @param props - Component props
- * @param props.children - Option elements to render inside the select
- * @param props.initialValue - Initial selected value
- * @param props.label - Label text to display above the select
- * @param props.onChange - Callback fired when selection changes
- * @returns Select field component with label
+ * @param props.children - Option elements to render inside select
+ * @param props.defaultValue - Initially selected value
+ * @param props.label - Field label text
+ * @param props.onChange - Handler for value changes
+ * @returns Labeled select field
  */
 export function SelectField({
   children,
-  initialValue,
+  defaultValue,
   label,
   onChange,
 }: {
   children: React.ReactNode;
-  initialValue: string | undefined;
+  defaultValue: string | undefined;
   label: string;
   onChange: (value: string) => void;
 }): React.JSX.Element {
@@ -31,7 +29,7 @@ export function SelectField({
   return (
     <label className={`flex flex-col`}>
       <LabelText value={label} />
-      <SelectInput onChange={handleChange} value={initialValue}>
+      <SelectInput defaultValue={defaultValue} onChange={handleChange}>
         {children}
       </SelectInput>
     </label>

@@ -17,14 +17,14 @@ import type { SortProps } from "./FilterAndSortContainer";
  */
 export function FilterAndSortHeader<T extends string>({
   filterDrawerVisible,
-  headerLinks: listHeaderButtons,
+  headerLink,
   onFilterClick,
   sortProps,
   toggleButtonRef,
   totalCount,
 }: {
   filterDrawerVisible: boolean;
-  headerLinks?: React.ReactNode;
+  headerLink?: { href: string; text: string };
   onFilterClick: (event: React.MouseEvent) => void;
   sortProps: SortProps<T>;
   toggleButtonRef: React.RefObject<HTMLButtonElement | null>;
@@ -52,7 +52,7 @@ export function FilterAndSortHeader<T extends string>({
           Results
         </span>
       </span>
-      <div className={``}>{listHeaderButtons && listHeaderButtons}</div>
+      <div>{headerLink && <HeaderLink {...headerLink} />}</div>
       <div
         className={`
           col-span-full
@@ -98,6 +98,36 @@ export function FilterAndSortHeader<T extends string>({
       >
         Filter
       </button>
+    </div>
+  );
+}
+
+function HeaderLink({
+  href,
+  text,
+}: {
+  href: string;
+  text: string;
+}): React.JSX.Element {
+  return (
+    <div
+      className={`
+        flex items-start gap-x-4 bg-default px-4 font-sans text-[13px] font-bold
+        text-nowrap text-accent uppercase
+      `}
+    >
+      <a
+        className={`
+          relative inline-block transform-gpu py-1 transition-transform
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-center after:scale-x-0 after:bg-accent
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        `}
+        href={href}
+      >
+        {text}
+      </a>
     </div>
   );
 }

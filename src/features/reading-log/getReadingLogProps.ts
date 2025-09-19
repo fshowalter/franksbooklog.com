@@ -6,12 +6,12 @@ import { allReadingEntries } from "~/api/readings";
 import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 
 import type { ReadingLogValue } from "./ReadingLog";
-import type { ReadingsProps } from "./ReadingLog";
+import type { ReadingLogProps } from "./ReadingLog";
 
-import { ReadingsItemImageConfig } from "./ReadingLog";
+import { ReadingLogImageConfig } from "./ReadingLog";
 
-export async function getProps(): Promise<
-  ReadingsProps & { backdropImageProps: BackdropImageProps; deck: string }
+export async function getReadingLogProps(): Promise<
+  ReadingLogProps & { backdropImageProps: BackdropImageProps; deck: string }
 > {
   const {
     distinctEditions,
@@ -37,7 +37,7 @@ export async function getProps(): Promise<
         }),
         coverImageProps: await getFluidCoverImageProps(
           entry,
-          ReadingsItemImageConfig,
+          ReadingLogImageConfig,
         ),
         edition: entry.edition,
         entrySequence: entry.readingEntrySequence,

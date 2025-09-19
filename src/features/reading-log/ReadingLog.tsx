@@ -1,22 +1,26 @@
-import { useEffect, useReducer, useRef, useState } from "react";
+import { useEffect, useReducer, useRef } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
-import { FilterAndSortHeaderLink } from "~/components/filter-and-sort/FilterAndSortHeaderLink";
+import { useFilteredValues } from "~/hooks/useFilteredValues";
+import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import { CalendarMonth } from "./CalendarMonth";
+import { filterReadingLog } from "./filterReadingLog";
 import { Filters } from "./Filters";
-import { MonthNavHeader } from "./MonthNavigationHeader";
+import { MonthNavigationHeader } from "./MonthNavigationHeader";
 import {
-  createApplyPendingFiltersAction,
-  createClearPendingFiltersAction,
-  createResetPendingFiltersAction,
+  createApplyFiltersAction,
+  createClearFiltersAction,
+  createInitialState,
+  createResetFiltersAction,
   createSortAction,
-  initState,
-  readingsReducer,
+  reducer,
+  selectHasPendingFilters,
 } from "./ReadingLog.reducer";
-import { type ReadingsSort, selectWeeksForMonth } from "./sortReadingLog";
+import { type ReadingLogSort, sortReadingLog } from "./sortReadingLog";
+import { useMonthNavigation } from "./useMonthNavigation";
 
 /**
  * Data structure representing a single reading entry.
@@ -59,7 +63,7 @@ export type ReadingLogValue = {
  * Configuration for reading item cover images.
  * Defines dimensions and responsive sizes for covers in the calendar view.
  */
-export const ReadingsItemImageConfig = {
+export const ReadingLogImageConfig = {
   /** Cover image height in pixels */
   height: 375,
   /** Responsive sizes string for different viewport widths */
@@ -73,7 +77,7 @@ export const ReadingsItemImageConfig = {
  * Props interface for the Readings page component.
  * Contains all data needed to render the reading calendar with filtering.
  */
-export type ReadingsProps = {
+export type ReadingLogProps = {
   /** Available editions for filter dropdown options */
   distinctEditions: readonly string[];
   /** Available work kinds for filter dropdown options */
@@ -83,7 +87,7 @@ export type ReadingsProps = {
   /** Available work years for filter dropdown options */
   distinctWorkYears: readonly string[];
   /** Initial sort order to apply when page loads */
-  initialSort: ReadingsSort;
+  initialSort: ReadingLogSort;
   /** Array of reading data for display and filtering */
   values: ReadingLogValue[];
 };
@@ -102,41 +106,54 @@ export type ReadingsProps = {
  * @param props.values - Array of reading data to display
  * @returns Readings page component with calendar view
  */
-export function Readings({
+export function ReadingLog({
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
   distinctWorkYears,
   initialSort,
   values,
-}: ReadingsProps): React.JSX.Element {
+}: ReadingLogProps): React.JSX.Element {
   const [state, dispatch] = useReducer(
-    readingsReducer,
+    reducer,
     {
       initialSort,
       values,
     },
-    initState,
+    createInitialState,
   );
-  const [filterKey, setFilterKey] = useState(0);
-  const prevMonthRef = useRef(state.currentMonth);
-
-  const weeksForMonth = selectWeeksForMonth(
-    state.currentMonth,
-    state.filteredValues,
-  );
+  const prevMonthRef = useRef(state.selectedMonthDate);
 
   // Scroll to top of calendar when month changes
   useEffect(() => {
-    if (prevMonthRef.current.getTime() !== state.currentMonth.getTime()) {
-      prevMonthRef.current = state.currentMonth;
+    if (prevMonthRef.current !== state.selectedMonthDate) {
+      prevMonthRef.current = state.selectedMonthDate;
       if (typeof document !== "undefined") {
         document
           .querySelector("#calendar")
           ?.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [state.currentMonth]);
+  }, [state.selectedMonthDate]);
+
+  const filteredValues = useFilteredValues(
+    sortReadingLog,
+    filterReadingLog,
+    state.values,
+    state.sort,
+    state.activeFilterValues,
+  );
+
+  const pendingFilteredCount = usePendingFilterCount(
+    filterReadingLog,
+    state.values,
+    state.pendingFilterValues,
+  );
+
+  const hasPendingFilters = selectHasPendingFilters(state);
+
+  const [previousMonthDate, currentMonthDate, nextMonthDate] =
+    useMonthNavigation(filteredValues, state.sort, state.selectedMonthDate);
 
   return (
     <FilterAndSortContainer
@@ -148,29 +165,23 @@ export function Readings({
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
-          key={filterKey}
         />
       }
-      hasActiveFilters={state.hasActiveFilters}
-      headerLinks={
-        <FilterAndSortHeaderLink href="/readings/stats/" text="stats" />
-      }
-      onApplyFilters={() => dispatch(createApplyPendingFiltersAction())}
+      hasPendingFilters={hasPendingFilters}
+      headerLink={{ href: "/readings/stats/", text: "stats" }}
+      onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
-        dispatch(createClearPendingFiltersAction());
-        setFilterKey((prev) => prev + 1);
+        dispatch(createClearFiltersAction());
       }}
       onFilterDrawerOpen={() => {
-        // Increment key to force remount of filter components
-        setFilterKey((prev) => prev + 1);
-        dispatch(createResetPendingFiltersAction());
+        dispatch(createResetFiltersAction());
       }}
-      onResetFilters={() => dispatch(createResetPendingFiltersAction())}
-      pendingFilteredCount={state.pendingFilteredCount}
+      onResetFilters={() => dispatch(createResetFiltersAction())}
+      pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
         onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as ReadingsSort)),
+          dispatch(createSortAction(e.target.value as ReadingLogSort)),
         sortOptions: (
           <>
             <option value="reading-date-desc">
@@ -182,19 +193,25 @@ export function Readings({
           </>
         ),
       }}
-      totalCount={state.filteredValues.length}
+      totalCount={filteredValues.length}
     >
-      <div className="mx-auto w-full max-w-(--breakpoint-desktop)">
-        <MonthNavHeader
-          currentMonth={state.currentMonth}
-          dispatch={dispatch}
-          hasNextMonth={state.hasNextMonth}
-          hasPrevMonth={state.hasPrevMonth}
-          nextMonth={state.nextMonth}
-          prevMonth={state.prevMonth}
-        />
-        <CalendarMonth weeks={weeksForMonth} />
-      </div>
+      {currentMonthDate ? (
+        <div className={`mx-auto w-full max-w-(--breakpoint-desktop)`}>
+          <MonthNavigationHeader
+            currentMonthDate={currentMonthDate}
+            dispatch={dispatch}
+            nextMonthDate={nextMonthDate}
+            prevMonthDate={previousMonthDate}
+          />
+          <CalendarMonth
+            currentMonthDate={currentMonthDate}
+            filteredValues={filteredValues}
+            sort={state.sort}
+          />
+        </div>
+      ) : (
+        <div className="pt-10">No results.</div>
+      )}
     </FilterAndSortContainer>
   );
 }

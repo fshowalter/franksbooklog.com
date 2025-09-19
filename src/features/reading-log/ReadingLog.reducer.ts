@@ -29,13 +29,12 @@ export {
  * Union type of all actions for viewings state management.
  */
 export type ReadingLogAction =
-  | MediumFilterChangedAction
+  | EditionFilterChangedAction
   | NextMonthClickedAction
   | PreviousMonthClickedAction
+  | ReadingYearFilterChangedAction
   | ReviewedStatusFilterChangedAction
   | SortAction<ReadingLogSort>
-  | VenueFilterChangedAction
-  | ViewingYearFilterChangedAction
   | WorkFiltersAction;
 
 import type { ReadingLogValue } from "./ReadingLog";
@@ -45,24 +44,23 @@ import type { ReadingLogSort } from "./sortReadingLog";
  * Filter values for viewings.
  */
 export type ReadingLogFiltersValues = WorkFiltersValues & {
-  medium?: string;
+  edition?: string;
+  readingYear?: [string, string];
   reviewedStatus?: string;
-  venue?: string;
-  viewingYear?: [string, string];
 };
 
-type MediumFilterChangedAction = {
-  type: "viewings/mediumChanged";
+type EditionFilterChangedAction = {
+  type: "readingLog/editionChanged";
   value: string;
 };
 
 type NextMonthClickedAction = {
-  type: "viewings/nextMonthClicked";
+  type: "readingLog/nextMonthClicked";
   value: string;
 };
 
 type PreviousMonthClickedAction = {
-  type: "viewings/previousMonthClicked";
+  type: "readingLog/previousMonthClicked";
   value: string;
 };
 
@@ -81,19 +79,25 @@ type ReadingLogState = Omit<
   };
 
 type ReadingYearFilterChangedAction = {
-  type: "readings/readingYearChanged";
+  type: "readingLog/readingYearChanged";
   values: [string, string];
 };
 
 type ReviewedStatusFilterChangedAction = {
-  type: "viewings/reviewedStatusChanged";
+  type: "readingLog/reviewedStatusChanged";
   value: string;
 };
 
-type VenueFilterChangedAction = {
-  type: "viewings/venueChanged";
-  value: string;
-};
+/**
+ * Creates an action for changing the medium filter.
+ * @param value - The medium value to filter by
+ * @returns Medium filter changed action
+ */
+export function createEditionFilterChangedAction(
+  value: string,
+): EditionFilterChangedAction {
+  return { type: "readingLog/editionChanged", value };
+}
 
 /**
  * Creates the initial state for viewings.
@@ -121,17 +125,6 @@ export function createInitialState({
 }
 
 /**
- * Creates an action for changing the medium filter.
- * @param value - The medium value to filter by
- * @returns Medium filter changed action
- */
-export function createMediumFilterChangedAction(
-  value: string,
-): MediumFilterChangedAction {
-  return { type: "viewings/mediumChanged", value };
-}
-
-/**
  * Creates an action for navigating to the next month.
  * @param value - The month value
  * @returns Next month clicked action
@@ -139,7 +132,7 @@ export function createMediumFilterChangedAction(
 export function createNextMonthClickedAction(
   value: string,
 ): NextMonthClickedAction {
-  return { type: "viewings/nextMonthClicked", value };
+  return { type: "readingLog/nextMonthClicked", value };
 }
 
 /**
@@ -150,7 +143,18 @@ export function createNextMonthClickedAction(
 export function createPreviousMonthClickedAction(
   value: string,
 ): PreviousMonthClickedAction {
-  return { type: "viewings/previousMonthClicked", value };
+  return { type: "readingLog/previousMonthClicked", value };
+}
+
+/**
+ * Creates an action for changing the viewing year filter.
+ * @param values - The year range values
+ * @returns Viewing year filter changed action
+ */
+export function createReadingYearFilterChangedAction(
+  values: [string, string],
+): ReadingYearFilterChangedAction {
+  return { type: "readingLog/readingYearChanged", values };
 }
 
 /**
@@ -161,29 +165,7 @@ export function createPreviousMonthClickedAction(
 export function createReviewedStatusFilterChangedAction(
   value: string,
 ): ReviewedStatusFilterChangedAction {
-  return { type: "viewings/reviewedStatusChanged", value };
-}
-
-/**
- * Creates an action for changing the venue filter.
- * @param value - The venue value to filter by
- * @returns Venue filter changed action
- */
-export function createVenueFilterChangedAction(
-  value: string,
-): VenueFilterChangedAction {
-  return { type: "viewings/venueChanged", value };
-}
-
-/**
- * Creates an action for changing the viewing year filter.
- * @param values - The year range values
- * @returns Viewing year filter changed action
- */
-export function createViewingYearFilterChangedAction(
-  values: [string, string],
-): ViewingYearFilterChangedAction {
-  return { type: "viewings/viewingYearChanged", values };
+  return { type: "readingLog/reviewedStatusChanged", value };
 }
 
 /**
@@ -202,6 +184,21 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
         selectedMonthDate: undefined,
       };
     }
+    case "readingLog/editionChanged": {
+      return handleEditionFilterChanged(state, action);
+    }
+    case "readingLog/nextMonthClicked": {
+      return handleNextMonthClicked(state, action);
+    }
+    case "readingLog/previousMonthClicked": {
+      return handlePreviousMonthClicked(state, action);
+    }
+    case "readingLog/readingYearChanged": {
+      return handleReadingYearFilterChanged(state, action);
+    }
+    case "readingLog/reviewedStatusChanged": {
+      return handleReviewedStatusFilterChanged(state, action);
+    }
     case "sort/sort": {
       const newState = sortReducer(state, action);
 
@@ -210,47 +207,29 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
         selectedMonthDate: undefined,
       };
     }
-    case "viewings/mediumChanged": {
-      return handleMediumFilterChanged(state, action);
-    }
-    case "viewings/nextMonthClicked": {
-      return handleNextMonthClicked(state, action);
-    }
-    case "viewings/previousMonthClicked": {
-      return handlePreviousMonthClicked(state, action);
-    }
-    case "viewings/reviewedStatusChanged": {
-      return handleReviewedStatusFilterChanged(state, action);
-    }
-    case "viewings/venueChanged": {
-      return handleVenueFilterChanged(state, action);
-    }
-    case "viewings/viewingYearChanged": {
-      return handleViewingYearFilterChanged(state, action);
-    }
     default: {
-      return titleFiltersReducer(state, action);
+      return workFiltersReducer(state, action);
     }
   }
 }
 
-function handleMediumFilterChanged(
-  state: ViewingsState,
-  action: MediumFilterChangedAction,
-): ViewingsState {
+function handleEditionFilterChanged(
+  state: ReadingLogState,
+  action: EditionFilterChangedAction,
+): ReadingLogState {
   return {
     ...state,
     pendingFilterValues: {
       ...state.pendingFilterValues,
-      medium: action.value === "All" ? undefined : action.value,
+      edition: action.value === "All" ? undefined : action.value,
     },
   };
 }
 
 function handleNextMonthClicked(
-  state: ViewingsState,
+  state: ReadingLogState,
   action: NextMonthClickedAction,
-) {
+): ReadingLogState {
   return {
     ...state,
     selectedMonthDate: action.value,
@@ -258,19 +237,32 @@ function handleNextMonthClicked(
 }
 
 function handlePreviousMonthClicked(
-  state: ViewingsState,
+  state: ReadingLogState,
   action: PreviousMonthClickedAction,
-) {
+): ReadingLogState {
   return {
     ...state,
     selectedMonthDate: action.value,
   };
 }
 
+function handleReadingYearFilterChanged(
+  state: ReadingLogState,
+  action: ReadingYearFilterChangedAction,
+): ReadingLogState {
+  return {
+    ...state,
+    pendingFilterValues: {
+      ...state.pendingFilterValues,
+      readingYear: action.values,
+    },
+  };
+}
+
 function handleReviewedStatusFilterChanged(
-  state: ViewingsState,
+  state: ReadingLogState,
   action: ReviewedStatusFilterChangedAction,
-): ViewingsState {
+): ReadingLogState {
   return {
     ...state,
     pendingFilterValues: {
@@ -280,33 +272,7 @@ function handleReviewedStatusFilterChanged(
   };
 }
 
-function handleVenueFilterChanged(
-  state: ViewingsState,
-  action: VenueFilterChangedAction,
-): ViewingsState {
-  return {
-    ...state,
-    pendingFilterValues: {
-      ...state.pendingFilterValues,
-      venue: action.value === "All" ? undefined : action.value,
-    },
-  };
-}
-
-function handleViewingYearFilterChanged(
-  state: ViewingsState,
-  action: ViewingYearFilterChangedAction,
-): ViewingsState {
-  return {
-    ...state,
-    pendingFilterValues: {
-      ...state.pendingFilterValues,
-      viewingYear: action.values,
-    },
-  };
-}
-
 /**
  * Action creator for viewings sort actions.
  */
-export const createSortAction = createSortActionCreator<ViewingsSort>();
+export const createSortAction = createSortActionCreator<ReadingLogSort>();

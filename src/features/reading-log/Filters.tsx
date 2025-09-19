@@ -1,19 +1,21 @@
 import { SelectField } from "~/components/fields/SelectField";
 import { SelectOptions } from "~/components/fields/SelectOptions";
 import { YearField } from "~/components/fields/YearField";
+import { ReviewedStatusFilter } from "~/components/filter-and-sort/ReviewedStatusFilter";
 import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
 
 import type {
-  ReadingsActionType,
-  ReadingsFiltersValues,
+  ReadingLogAction,
+  ReadingLogFiltersValues,
 } from "./ReadingLog.reducer";
 
 import {
-  createSetEditionPendingFilterAction,
-  createSetKindPendingFilterAction,
-  createSetReadingYearPendingFilterAction,
-  createSetTitlePendingFilterAction,
-  createSetWorkYearPendingFilterAction,
+  createEditionFilterChangedAction,
+  createKindFilterChangedAction,
+  createReadingYearFilterChangedAction,
+  createReviewedStatusFilterChangedAction,
+  createTitleFilterChangedAction,
+  createWorkYearFilterChangedAction,
 } from "./ReadingLog.reducer";
 
 export function Filters({
@@ -24,48 +26,50 @@ export function Filters({
   distinctWorkYears,
   filterValues,
 }: {
-  dispatch: React.Dispatch<ReadingsActionType>;
+  dispatch: React.Dispatch<ReadingLogAction>;
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
-  filterValues: ReadingsFiltersValues;
+  filterValues: ReadingLogFiltersValues;
 }): React.JSX.Element {
   return (
     <>
       <WorkFilters
         kind={{
-          initialValue: filterValues.kind,
-          onChange: (value) =>
-            dispatch(createSetKindPendingFilterAction(value)),
+          defaultValue: filterValues.kind,
+          onChange: (value) => dispatch(createKindFilterChangedAction(value)),
           values: distinctKinds,
         }}
         title={{
-          initialValue: filterValues.title,
-          onChange: (value) =>
-            dispatch(createSetTitlePendingFilterAction(value)),
+          defaultValue: filterValues.title,
+          onChange: (value) => dispatch(createTitleFilterChangedAction(value)),
         }}
         workYear={{
-          initialValue: filterValues.workYear,
+          defaultValues: filterValues.workYear,
           onChange: (values) =>
-            dispatch(createSetWorkYearPendingFilterAction(values)),
+            dispatch(createWorkYearFilterChangedAction(values)),
           values: distinctWorkYears,
         }}
       />
+      <ReviewedStatusFilter
+        defaultValue={filterValues.reviewedStatus}
+        onChange={(value) =>
+          dispatch(createReviewedStatusFilterChangedAction(value))
+        }
+      />
       <YearField
-        initialValues={filterValues.readingYear}
+        defaultValues={filterValues.readingYear}
         label="Reading Year"
         onYearChange={(values) =>
-          dispatch(createSetReadingYearPendingFilterAction(values))
+          dispatch(createReadingYearFilterChangedAction(values))
         }
         years={distinctReadingYears}
       />
       <SelectField
-        initialValue={filterValues.edition}
+        defaultValue={filterValues.edition}
         label="Edition"
-        onChange={(value) =>
-          dispatch(createSetEditionPendingFilterAction(value))
-        }
+        onChange={(value) => dispatch(createEditionFilterChangedAction(value))}
       >
         <SelectOptions options={distinctEditions} />
       </SelectField>

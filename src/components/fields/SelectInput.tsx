@@ -1,22 +1,19 @@
 /**
- * Renders a styled select input with consistent form styling.
- * Provides a customizable select dropdown with proper styling that matches
- * the site's design system. Includes focus states and accessibility support.
- *
- * @param props - The component props
- * @param props.children - The option elements to render within the select
- * @param props.onChange - Callback function called when selection changes
- * @param props.value - The currently selected value
- * @returns A JSX element containing the styled select input
+ * Base select input component without label.
+ * @param props - Component props
+ * @param props.children - Option elements to render
+ * @param props.defaultValue - Initially selected value
+ * @param props.onChange - Change event handler
+ * @returns Styled select element
  */
 export function SelectInput({
   children,
+  defaultValue,
   onChange,
-  value,
 }: {
   children: React.ReactNode;
+  defaultValue?: number | string | undefined;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  value?: number | string | undefined;
 }): React.JSX.Element {
   return (
     <select
@@ -24,8 +21,9 @@ export function SelectInput({
         w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base
         leading-6 text-subtle shadow-all outline-accent
       `}
+      defaultValue={defaultValue}
+      key={defaultValue} // work-around for React 19 bug: https://github.com/facebook/react/issues/32362
       onChange={onChange}
-      value={value}
     >
       {children}
     </select>

@@ -3,8 +3,6 @@ import { SelectOptions } from "~/components/fields/SelectOptions";
 import { TextField } from "~/components/fields/TextField";
 import { YearField } from "~/components/fields/YearField";
 
-import type { WorkFiltersValues } from "./WorkFilters.reducer";
-
 /**
  * Renders filter controls for work-based listings.
  * Provides filtering options for title search, work year range, and work kind/type.
@@ -22,16 +20,16 @@ export function WorkFilters({
   workYear,
 }: {
   kind: {
-    initialValue: WorkFiltersValues["kind"];
+    defaultValue?: string;
     onChange: (value: string) => void;
     values: readonly string[];
   };
   title: {
-    initialValue: WorkFiltersValues["title"];
+    defaultValue?: string;
     onChange: (value: string) => void;
   };
   workYear: {
-    initialValue: WorkFiltersValues["workYear"];
+    defaultValues?: [string, string];
     onChange: (values: [string, string]) => void;
     values: readonly string[];
   };
@@ -39,19 +37,19 @@ export function WorkFilters({
   return (
     <>
       <TextField
-        initialValue={title.initialValue}
+        defaultValue={title.defaultValue}
         label="Title"
         onInputChange={title.onChange}
         placeholder="Enter all or part of a title"
       />
       <YearField
-        initialValues={workYear.initialValue}
+        defaultValues={workYear.defaultValues}
         label="Work Year"
         onYearChange={workYear.onChange}
         years={workYear.values}
       />
       <SelectField
-        initialValue={kind.initialValue}
+        defaultValue={kind.defaultValue}
         label="Kind"
         onChange={kind.onChange}
       >

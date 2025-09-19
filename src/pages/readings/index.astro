@@ -1,11 +1,11 @@
 ---
 import { Backdrop } from "~/components/backdrop/Backdrop";
 import { Layout as ComponentLayout } from "~/components/layout/Layout";
-import { getProps } from "~/features/readings/getProps";
-import { Readings } from "~/features/readings/Readings";
+import { getReadingLogProps } from "~/features/reading-log/getReadingLogProps";
+import { ReadingLog } from "~/features/reading-log/ReadingLog";
 import Layout from "~/layouts/Layout.astro";
 
-const props = await getProps();
+const props = await getReadingLogProps();
 
 // Separate layout props from interactive props
 const { backdropImageProps, deck, ...interactiveProps } = props;
@@ -25,6 +25,6 @@ const { backdropImageProps, deck, ...interactiveProps } = props;
   </Fragment>
   <ComponentLayout className="bg-subtle">
     <Backdrop deck={deck} imageProps={backdropImageProps} title="Reading Log" />
-    <Readings client:load {...interactiveProps} />
+    <ReadingLog client:load {...interactiveProps} />
   </ComponentLayout>
 </Layout>

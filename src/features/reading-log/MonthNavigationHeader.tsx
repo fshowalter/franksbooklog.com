@@ -1,42 +1,46 @@
+import type { ReadingLogAction } from "./ReadingLog.reducer";
+
 import {
-  createNextMonthAction,
-  createPreviousMonthAction,
-  type ReadingsActionType,
+  createNextMonthClickedAction,
+  createPreviousMonthClickedAction,
 } from "./ReadingLog.reducer";
 
-type MonthNavHeaderProps = {
-  currentMonth: Date;
-  dispatch: React.Dispatch<ReadingsActionType>;
-  hasNextMonth: boolean;
-  hasPrevMonth: boolean;
-  nextMonth: Date | undefined;
-  prevMonth: Date | undefined;
-};
-
-export function MonthNavHeader({
-  currentMonth,
+/**
+ * Header component for calendar month navigation.
+ * @param props - Component props
+ * @param props.currentMonthDate - Date string for the currently displayed month
+ * @param props.dispatch - Reducer dispatch function for navigation actions
+ * @param props.nextMonthDate - Date string for the next available month
+ * @param props.prevMonthDate - Date string for the previous available month
+ * @returns Navigation header with month display and prev/next buttons
+ */
+export function MonthNavigationHeader({
+  currentMonthDate,
   dispatch,
-  hasNextMonth,
-  hasPrevMonth,
-  nextMonth,
-  prevMonth,
-}: MonthNavHeaderProps): React.JSX.Element {
-  const monthName = currentMonth.toLocaleString("en-US", {
+  nextMonthDate,
+  prevMonthDate,
+}: {
+  currentMonthDate: string;
+  dispatch: React.Dispatch<ReadingLogAction>;
+  nextMonthDate: string | undefined;
+  prevMonthDate: string | undefined;
+}): React.JSX.Element {
+  const monthName = new Date(currentMonthDate).toLocaleString("en-US", {
     month: "long",
     timeZone: "UTC",
     year: "numeric",
   });
 
-  const prevMonthName = prevMonth
-    ? prevMonth.toLocaleString("en-US", {
+  const prevMonthName = prevMonthDate
+    ? new Date(prevMonthDate).toLocaleString("en-US", {
         month: "short",
         timeZone: "UTC",
         year: "numeric",
       })
     : "";
 
-  const nextMonthName = nextMonth
-    ? nextMonth.toLocaleString("en-US", {
+  const nextMonthName = nextMonthDate
+    ? new Date(nextMonthDate).toLocaleString("en-US", {
         month: "short",
         timeZone: "UTC",
         year: "numeric",
@@ -46,7 +50,7 @@ export function MonthNavHeader({
   return (
     <div
       className={`
-        sticky top-(--filter-and-sort-container-scroll-offset) z-sticky flex
+        sticky top-(--list-scroll-offset) z-sticky flex
         max-w-(--breakpoint-desktop) items-center justify-between border-b
         border-default bg-subtle px-container py-4
         tablet:-mx-(--container-padding) tablet:py-6
@@ -55,7 +59,7 @@ export function MonthNavHeader({
       `}
     >
       <div className="w-1/3">
-        {hasPrevMonth && (
+        {prevMonthDate && (
           <button
             aria-disabled={false}
             aria-label={`Navigate to previous month: ${prevMonthName}`}
@@ -63,13 +67,14 @@ export function MonthNavHeader({
               -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-bottom-right after:scale-x-0
-              after:bg-(--color-accent) after:transition-transform
-              after:duration-500
+              after:origin-bottom-right after:scale-x-0 after:bg-accent
+              after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
-            onClick={() => dispatch(createPreviousMonthAction())}
+            onClick={() =>
+              dispatch(createPreviousMonthClickedAction(prevMonthDate))
+            }
             type="button"
           >
             ← {prevMonthName}
@@ -86,7 +91,7 @@ export function MonthNavHeader({
         {monthName}
       </h2>
       <div className="w-1/3 text-right">
-        {hasNextMonth && (
+        {nextMonthDate && (
           <button
             aria-disabled={false}
             aria-label={`Navigate to next month: ${nextMonthName}`}
@@ -94,12 +99,14 @@ export function MonthNavHeader({
               -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-[13px]
               font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
+              after:origin-bottom-left after:scale-x-0 after:bg-accent
               after:transition-transform after:duration-500
               hover:after:scale-x-100
               tablet-landscape:tracking-wide tablet-landscape:uppercase
             `}
-            onClick={() => dispatch(createNextMonthAction())}
+            onClick={() =>
+              dispatch(createNextMonthClickedAction(nextMonthDate))
+            }
             type="button"
           >
             {nextMonthName} →

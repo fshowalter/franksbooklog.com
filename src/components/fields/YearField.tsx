@@ -4,36 +4,27 @@ import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
 /**
- * Renders a year range selection field with "From" and "To" dropdowns.
- * Provides a way to select a range of years with automatic value sorting
- * to ensure the range is always valid. Handles state management internally.
- *
- * @param props - The component props
- * @param props.initialValues - Initial [min, max] year values for the range
- * @param props.label - The label text for the fieldset
- * @param props.onYearChange - Callback function called when the year range changes
- * @param props.years - Array of available year options
- * @returns A JSX element containing the year range selection fieldset
+ * Year range selector with from/to dropdowns.
+ * @param props - Component props
+ * @param props.defaultValues - Default [min, max] year values
+ * @param props.label - Field label text
+ * @param props.onYearChange - Handler for year range changes
+ * @param props.years - Available years to select from
+ * @returns Year range selector with two dropdowns
  */
 export function YearField({
-  initialValues,
+  defaultValues,
   label,
   onYearChange,
   years,
 }: {
-  initialValues: string[] | undefined;
+  defaultValues: [string, string] | undefined;
   label: string;
   onYearChange: (values: [string, string]) => void;
   years: readonly string[];
 }): React.JSX.Element {
-  const [minYear, setMinYear] = useState(
-    initialValues && initialValues.length > 0 ? initialValues[0] : years[0],
-  );
-  const [maxYear, setMaxYear] = useState(
-    initialValues && initialValues.length > 1
-      ? initialValues[1]
-      : (years.at(-1) as string),
-  );
+  const [minYear, setMinYear] = useState(defaultMinValue(years, defaultValues));
+  const [maxYear, setMaxYear] = useState(defaultMaxValue(years, defaultValues));
 
   const handleMinChange = (value: string): void => {
     const newMin = value;
@@ -66,8 +57,8 @@ export function YearField({
             From
           </span>
           <SelectInput
+            defaultValue={defaultMinValue(years, defaultValues)}
             onChange={(e) => handleMinChange(e.target.value)}
-            value={minYear}
           >
             {years.map((year) => {
               return (
@@ -83,8 +74,8 @@ export function YearField({
             to
           </span>
           <SelectInput
+            defaultValue={defaultMaxValue(years, defaultValues)}
             onChange={(e) => handleMaxChange(e.target.value)}
-            value={maxYear}
           >
             {[...years].reverse().map((year) => {
               return (
@@ -98,4 +89,18 @@ export function YearField({
       </div>
     </fieldset>
   );
+}
+
+function defaultMaxValue(
+  allValues: readonly string[],
+  selectedValues?: [string, string],
+): string {
+  return selectedValues ? selectedValues[1] : (allValues.at(-1) as string);
+}
+
+function defaultMinValue(
+  allValues: readonly string[],
+  selectedValues?: [string, string],
+): string {
+  return selectedValues ? selectedValues[0] : allValues[0];
 }
