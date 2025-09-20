@@ -8,6 +8,8 @@ import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSo
 import { useGroupedValues } from "~/hooks/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
+import type { AuthorsSort } from "./sortAuthors";
+
 import { AlphabetNav } from "./AlphabetNav";
 import {
   createApplyFiltersAction,
@@ -22,7 +24,7 @@ import { AuthorsFilters } from "./AuthorsFilters";
 import { AuthorsListItem } from "./AuthorsListItem";
 import { filterAuthors } from "./filterAuthors";
 import { groupAuthors } from "./groupAuthors";
-import { type AuthorsSort, sortAuthors } from "./sortAuthors";
+import { sortAuthors } from "./sortAuthors";
 
 /**
  * Props interface for the Authors page component.

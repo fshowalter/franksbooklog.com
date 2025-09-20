@@ -1,7 +1,6 @@
-import {
-  ReviewCard,
-  type ReviewCardValue,
-} from "~/components/review-card/ReviewCard";
+import type { ReviewCardValue } from "~/components/review-card/ReviewCard";
+
+import { ReviewCard } from "~/components/review-card/ReviewCard";
 
 /**
  * Renders a "More Reviews" section with a grid of review cards.

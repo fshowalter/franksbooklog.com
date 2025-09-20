@@ -6,6 +6,8 @@ import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSo
 import { useFilteredValues } from "~/hooks/useFilteredValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
+import type { ReadingLogSort } from "./sortReadingLog";
+
 import { CalendarMonth } from "./CalendarMonth";
 import { filterReadingLog } from "./filterReadingLog";
 import { MonthNavigationHeader } from "./MonthNavigationHeader";
@@ -19,7 +21,7 @@ import {
   selectHasPendingFilters,
 } from "./ReadingLog.reducer";
 import { Filters } from "./ReadingLogFilters";
-import { type ReadingLogSort, sortReadingLog } from "./sortReadingLog";
+import { sortReadingLog } from "./sortReadingLog";
 import { useMonthNavigation } from "./useMonthNavigation";
 
 /**

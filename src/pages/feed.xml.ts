@@ -1,11 +1,9 @@
 import rss from "@astrojs/rss";
 
+import type { ReviewWithExcerpt } from "~/api/reviews";
+
 import { getFeedCoverProps } from "~/api/covers";
-import {
-  loadExcerptHtml,
-  mostRecentReviews,
-  type ReviewWithExcerpt,
-} from "~/api/reviews";
+import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
 
 /**

@@ -65,6 +65,7 @@ export default defineConfig(
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-imports": "off", // Turned off in favor of our custom rule
+      "local/separate-type-imports": "error", // Enable our custom rule
       "no-restricted-imports": [
         "error",
         {

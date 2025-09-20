@@ -1,7 +1,9 @@
 import { ENABLE_CACHE } from "~/utils/cache";
 import { perfLogger } from "~/utils/performanceLogger";
 
-import { allAuthorsJson, type AuthorJson } from "./data/authors-json";
+import type { AuthorJson } from "./data/authors-json";
+
+import { allAuthorsJson } from "./data/authors-json";
 
 /**
  * Author data type extending the base AuthorJson with API layer enhancements
