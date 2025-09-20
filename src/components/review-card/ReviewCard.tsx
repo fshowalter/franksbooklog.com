@@ -1,5 +1,4 @@
 import type { CoverImageProps } from "~/api/covers";
-import type { ReviewWithExcerpt } from "~/api/reviews";
 
 import { Grade } from "~/components/grade/Grade";
 import { RenderedMarkdown } from "~/components/rendered-markdown/RenderedMarkdown";
@@ -8,29 +7,33 @@ import { toSentenceArray } from "~/utils/toSentenceArray";
 /**
  * Configuration for cover images in review cards
  */
-export const CoverImageConfig = {
+export const ReviewCardCoverImageConfig = {
   height: 372,
   sizes:
     "(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)",
   width: 248,
 };
 
-/**
- * Props for the ReviewCard component
- */
-export type ReviewCardProps = Pick<
-  ReviewWithExcerpt,
-  | "excerpt"
-  | "grade"
-  | "kind"
-  | "reviewSequence"
-  | "slug"
-  | "title"
-  | "workYear"
-> & {
+export type ReviewCardValue = {
+  /** Array of authors for the reviewed work */
   authors: { name: string }[];
+  /** Cover image properties for display */
   coverImageProps: CoverImageProps;
+  /** Review excerpt text */
+  excerpt: string;
+  /** Grade given to the work */
+  grade: string;
+  /** Type of work (e.g., "Novel", "Short Story") */
+  kind: string;
   reviewDate?: string;
+  /** Sequence number of the review */
+  reviewSequence: number;
+  /** URL slug for the review */
+  slug: string;
+  /** Title of the reviewed work */
+  title: string;
+  /** Year the work was published */
+  workYear: string;
 };
 
 /**
@@ -45,7 +48,7 @@ export type ReviewCardProps = Pick<
 export function ReviewCard({
   value,
 }: {
-  value: ReviewCardProps;
+  value: ReviewCardValue;
 }): React.JSX.Element {
   return (
     <li
@@ -119,7 +122,7 @@ export function ReviewCard({
                 <img
                   {...value.coverImageProps}
                   alt=""
-                  {...CoverImageConfig}
+                  {...ReviewCardCoverImageConfig}
                   className={`
                     transform-gpu rounded-[2.5px] bg-default
                     transition-transform duration-500

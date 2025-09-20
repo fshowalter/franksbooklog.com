@@ -1,4 +1,4 @@
-import type { ReviewCardProps } from "~/components/review-card/ReviewCard";
+import type { ReviewCardValue } from "~/components/review-card/ReviewCard";
 
 import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { SubHeading } from "~/components/sub-heading/SubHeading";
@@ -7,7 +7,7 @@ import { SubHeading } from "~/components/sub-heading/SubHeading";
  * Props for the Home page component
  */
 export type HomeProps = {
-  values: ReviewCardProps[];
+  values: ReviewCardValue[];
 };
 
 /**
