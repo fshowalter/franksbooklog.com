@@ -1,12 +1,16 @@
+import type { Review } from "~/api/reviews";
+
 import {
   getFixedCoverImageProps,
   getFluidCoverImageProps,
   getStructuredDataCoverSrc,
 } from "~/api/covers";
-import { loadContent, loadExcerptHtml, type Review } from "~/api/reviews";
+import { loadContent, loadExcerptHtml } from "~/api/reviews";
 import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard";
 
-import { CoverImageConfig, type ReviewProps } from "./Review";
+import type { ReviewProps } from "./Review";
+
+import { CoverImageConfig } from "./Review";
 
 export async function getReviewProps(baseReview: Review): Promise<ReviewProps> {
   const reviewWithContent = await loadContent(baseReview);

@@ -7,12 +7,10 @@ import { ENABLE_CACHE } from "~/utils/cache";
 import { perfLogger } from "~/utils/performanceLogger";
 
 import type { MarkdownPage as RawMarkdownPage } from "./data/pages-markdown";
+import type { ReviewedWorkJson } from "./data/reviewed-works-json";
 
 import { allPagesMarkdown } from "./data/pages-markdown";
-import {
-  allReviewedWorksJson,
-  type ReviewedWorkJson,
-} from "./data/reviewed-works-json";
+import { allReviewedWorksJson } from "./data/reviewed-works-json";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 

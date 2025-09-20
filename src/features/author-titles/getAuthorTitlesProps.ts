@@ -1,4 +1,6 @@
-import { type Author, getAuthorDetails } from "~/api/authors";
+import type { Author } from "~/api/authors";
+
+import { getAuthorDetails } from "~/api/authors";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";

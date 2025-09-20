@@ -8,6 +8,8 @@ import { ReviewedWorkSortOptions } from "~/components/filter-and-sort/ReviewedWo
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
+import type { AuthorTitlesSort } from "./sortAuthorTitles";
+
 import {
   createApplyFiltersAction,
   createClearFiltersAction,
@@ -22,7 +24,7 @@ import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
 import { filterAuthorTitles } from "./filterAuthorTitles";
 import { groupAuthorTitles } from "./groupAuthorTitles";
-import { type AuthorTitlesSort, sortAuthorTitles } from "./sortAuthorTitles";
+import { sortAuthorTitles } from "./sortAuthorTitles";
 
 /**
  * Props interface for the Author page component.
