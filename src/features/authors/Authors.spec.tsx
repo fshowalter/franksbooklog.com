@@ -95,15 +95,23 @@ describe("Authors", () => {
       const list = getGroupedAvatarList();
       expect(within(list).getByText("H.P. Lovecraft")).toBeInTheDocument();
       expect(within(list).getByText("H.G. Wells")).toBeInTheDocument();
-      expect(within(list).queryByText("Edgar Allan Poe")).not.toBeInTheDocument();
+      expect(
+        within(list).queryByText("Edgar Allan Poe"),
+      ).not.toBeInTheDocument();
     });
   });
 
   describe("sorting", () => {
     it("sorts by name A to Z", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" }),
-        createAuthorValue({ name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" }),
+        createAuthorValue({
+          name: "Zelda Fitzgerald",
+          sortName: "fitzgerald, zelda",
+        }),
+        createAuthorValue({
+          name: "Arthur Conan Doyle",
+          sortName: "doyle, arthur conan",
+        }),
         createAuthorValue({ name: "Mary Shelley", sortName: "shelley, mary" }),
       ];
 
@@ -124,8 +132,14 @@ describe("Authors", () => {
 
     it("sorts by name Z to A", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" }),
-        createAuthorValue({ name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" }),
+        createAuthorValue({
+          name: "Arthur Conan Doyle",
+          sortName: "doyle, arthur conan",
+        }),
+        createAuthorValue({
+          name: "Zelda Fitzgerald",
+          sortName: "fitzgerald, zelda",
+        }),
         createAuthorValue({ name: "Mary Shelley", sortName: "shelley, mary" }),
       ];
 

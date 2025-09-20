@@ -37,7 +37,10 @@ function createReviewValue(
   const title = overrides.title || `Test Review ${testIdCounter}`;
   return {
     authors: overrides.authors || [
-      { name: `Test Author ${testIdCounter}`, sortName: `author ${testIdCounter}` },
+      {
+        name: `Test Author ${testIdCounter}`,
+        sortName: `author ${testIdCounter}`,
+      },
     ],
     authorSequence: overrides.authorSequence || testIdCounter,
     coverImageProps: {
@@ -122,7 +125,9 @@ describe("Reviews", () => {
       const list = getGroupedCoverList();
       expect(within(list).getByText("A Novel")).toBeInTheDocument();
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
-      expect(within(list).queryByText("Non-Fiction Book")).not.toBeInTheDocument();
+      expect(
+        within(list).queryByText("Non-Fiction Book"),
+      ).not.toBeInTheDocument();
     });
 
     it("filters by grade range", async ({ expect }) => {
@@ -216,7 +221,9 @@ describe("Reviews", () => {
       expect(within(list).getByText(/Peter Straub/)).toBeInTheDocument();
     });
 
-    it("sorts by first author when multiple authors exist", async ({ expect }) => {
+    it("sorts by first author when multiple authors exist", async ({
+      expect,
+    }) => {
       const reviews = [
         createReviewValue({
           authors: [
@@ -256,19 +263,23 @@ describe("Reviews", () => {
     it("sorts by author A to Z", async ({ expect }) => {
       const reviews = [
         createReviewValue({
-          authors: [{ name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" }],
+          authors: [
+            { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
+          ],
           authorSequence: 3,
-          title: "Zombie Book"
+          title: "Zombie Book",
         }),
         createReviewValue({
-          authors: [{ name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" }],
+          authors: [
+            { name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" },
+          ],
           authorSequence: 1,
-          title: "Detective Book"
+          title: "Detective Book",
         }),
         createReviewValue({
           authors: [{ name: "Mary Shelley", sortName: "shelley, mary" }],
           authorSequence: 2,
-          title: "Monster Book"
+          title: "Monster Book",
         }),
       ];
 
@@ -290,19 +301,23 @@ describe("Reviews", () => {
     it("sorts by author Z to A", async ({ expect }) => {
       const reviews = [
         createReviewValue({
-          authors: [{ name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" }],
+          authors: [
+            { name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" },
+          ],
           authorSequence: 1,
-          title: "Detective Book"
+          title: "Detective Book",
         }),
         createReviewValue({
-          authors: [{ name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" }],
+          authors: [
+            { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
+          ],
           authorSequence: 3,
-          title: "Zombie Book"
+          title: "Zombie Book",
         }),
         createReviewValue({
           authors: [{ name: "Mary Shelley", sortName: "shelley, mary" }],
           authorSequence: 2,
-          title: "Monster Book"
+          title: "Monster Book",
         }),
       ];
 
@@ -367,9 +382,21 @@ describe("Reviews", () => {
 
     it("sorts by work year oldest first", async ({ expect }) => {
       const reviews = [
-        createReviewValue({ title: "Modern Book", workYear: "2000", workYearSequence: 3 }),
-        createReviewValue({ title: "Classic Book", workYear: "1980", workYearSequence: 1 }),
-        createReviewValue({ title: "Mid Book", workYear: "1990", workYearSequence: 2 }),
+        createReviewValue({
+          title: "Modern Book",
+          workYear: "2000",
+          workYearSequence: 3,
+        }),
+        createReviewValue({
+          title: "Classic Book",
+          workYear: "1980",
+          workYearSequence: 1,
+        }),
+        createReviewValue({
+          title: "Mid Book",
+          workYear: "1990",
+          workYearSequence: 2,
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -390,9 +417,21 @@ describe("Reviews", () => {
 
     it("sorts by work year newest first", async ({ expect }) => {
       const reviews = [
-        createReviewValue({ title: "Classic Book", workYear: "1980", workYearSequence: 1 }),
-        createReviewValue({ title: "Modern Book", workYear: "2000", workYearSequence: 3 }),
-        createReviewValue({ title: "Mid Book", workYear: "1990", workYearSequence: 2 }),
+        createReviewValue({
+          title: "Classic Book",
+          workYear: "1980",
+          workYearSequence: 1,
+        }),
+        createReviewValue({
+          title: "Modern Book",
+          workYear: "2000",
+          workYearSequence: 3,
+        }),
+        createReviewValue({
+          title: "Mid Book",
+          workYear: "1990",
+          workYearSequence: 2,
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -504,7 +543,7 @@ describe("Reviews", () => {
     it("shows more items when button is clicked", async ({ expect }) => {
       // Create many test items to trigger pagination (need more than 100)
       const manyReviews = Array.from({ length: 150 }, (_, i) =>
-        createReviewValue({ title: `Book ${i + 1}` })
+        createReviewValue({ title: `Book ${i + 1}` }),
       );
 
       const user = getUserWithFakeTimers();

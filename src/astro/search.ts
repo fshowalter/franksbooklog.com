@@ -132,22 +132,6 @@ export function initSearch(): void {
   // SearchUI is now lazy-loaded when the modal opens
 }
 
-/**
- * Initialize the search UI (PagefindUI replacement)
- * @deprecated Use lazy loading via initPageFind instead
- */
-export function initSearchUI(): void {
-  const onIdle = globalThis.requestIdleCallback || ((cb) => setTimeout(cb, 1));
-
-  onIdle(() => {
-    void (async () => {
-      const { SearchUI } = await import("./search-ui");
-      const searchUI = new SearchUI();
-      await searchUI.init();
-    })();
-  });
-}
-
 // Initialize when DOM is ready (skip in test environment)
 if (typeof process === "undefined" || !process.env?.VITEST) {
   if (document.readyState === "loading") {

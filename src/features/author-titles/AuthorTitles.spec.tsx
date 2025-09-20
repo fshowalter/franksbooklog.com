@@ -100,14 +100,19 @@ describe("AuthorTitles", () => {
       const list = getGroupedCoverList();
       expect(within(list).getByText("The Cellar")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
-      expect(within(list).queryByText("The Woods Are Dark")).not.toBeInTheDocument();
+      expect(
+        within(list).queryByText("The Woods Are Dark"),
+      ).not.toBeInTheDocument();
     });
 
     it("filters by kind", async ({ expect }) => {
       const titles = [
         createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
         createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
-        createAuthorTitleValue({ kind: "Non-Fiction", title: "Non-Fiction Book" }),
+        createAuthorTitleValue({
+          kind: "Non-Fiction",
+          title: "Non-Fiction Book",
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -120,14 +125,28 @@ describe("AuthorTitles", () => {
       const list = getGroupedCoverList();
       expect(within(list).getByText("A Novel")).toBeInTheDocument();
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
-      expect(within(list).queryByText("Non-Fiction Book")).not.toBeInTheDocument();
+      expect(
+        within(list).queryByText("Non-Fiction Book"),
+      ).not.toBeInTheDocument();
     });
 
     it("filters by grade range", async ({ expect }) => {
       const titles = [
-        createAuthorTitleValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
-        createAuthorTitleValue({ grade: "B", gradeValue: 9, title: "Good Book" }),
-        createAuthorTitleValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
+        createAuthorTitleValue({
+          grade: "F",
+          gradeValue: 1,
+          title: "Bad Book",
+        }),
+        createAuthorTitleValue({
+          grade: "B",
+          gradeValue: 9,
+          title: "Good Book",
+        }),
+        createAuthorTitleValue({
+          grade: "A+",
+          gradeValue: 13,
+          title: "Great Book",
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -231,9 +250,21 @@ describe("AuthorTitles", () => {
 
     it("sorts by work year oldest first", async ({ expect }) => {
       const titles = [
-        createAuthorTitleValue({ title: "Modern Book", workYear: "2000", workYearSequence: 3 }),
-        createAuthorTitleValue({ title: "Classic Book", workYear: "1980", workYearSequence: 1 }),
-        createAuthorTitleValue({ title: "Mid Book", workYear: "1990", workYearSequence: 2 }),
+        createAuthorTitleValue({
+          title: "Modern Book",
+          workYear: "2000",
+          workYearSequence: 3,
+        }),
+        createAuthorTitleValue({
+          title: "Classic Book",
+          workYear: "1980",
+          workYearSequence: 1,
+        }),
+        createAuthorTitleValue({
+          title: "Mid Book",
+          workYear: "1990",
+          workYearSequence: 2,
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -255,9 +286,21 @@ describe("AuthorTitles", () => {
 
     it("sorts by work year newest first", async ({ expect }) => {
       const titles = [
-        createAuthorTitleValue({ title: "Classic Book", workYear: "1980", workYearSequence: 1 }),
-        createAuthorTitleValue({ title: "Modern Book", workYear: "2000", workYearSequence: 3 }),
-        createAuthorTitleValue({ title: "Mid Book", workYear: "1990", workYearSequence: 2 }),
+        createAuthorTitleValue({
+          title: "Classic Book",
+          workYear: "1980",
+          workYearSequence: 1,
+        }),
+        createAuthorTitleValue({
+          title: "Modern Book",
+          workYear: "2000",
+          workYearSequence: 3,
+        }),
+        createAuthorTitleValue({
+          title: "Mid Book",
+          workYear: "1990",
+          workYearSequence: 2,
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -279,9 +322,21 @@ describe("AuthorTitles", () => {
 
     it("sorts by grade best first", async ({ expect }) => {
       const titles = [
-        createAuthorTitleValue({ grade: "C", gradeValue: 6, title: "Okay Book" }),
-        createAuthorTitleValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
-        createAuthorTitleValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
+        createAuthorTitleValue({
+          grade: "C",
+          gradeValue: 6,
+          title: "Okay Book",
+        }),
+        createAuthorTitleValue({
+          grade: "A+",
+          gradeValue: 13,
+          title: "Great Book",
+        }),
+        createAuthorTitleValue({
+          grade: "F",
+          gradeValue: 1,
+          title: "Bad Book",
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -301,9 +356,21 @@ describe("AuthorTitles", () => {
 
     it("sorts by grade worst first", async ({ expect }) => {
       const titles = [
-        createAuthorTitleValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
-        createAuthorTitleValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
-        createAuthorTitleValue({ grade: "C", gradeValue: 6, title: "Okay Book" }),
+        createAuthorTitleValue({
+          grade: "A+",
+          gradeValue: 13,
+          title: "Great Book",
+        }),
+        createAuthorTitleValue({
+          grade: "F",
+          gradeValue: 1,
+          title: "Bad Book",
+        }),
+        createAuthorTitleValue({
+          grade: "C",
+          gradeValue: 6,
+          title: "Okay Book",
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -326,17 +393,17 @@ describe("AuthorTitles", () => {
         createAuthorTitleValue({
           reviewDate: new Date("2022-01-01"),
           reviewSequence: 1,
-          title: "Old Review"
+          title: "Old Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2024-01-01"),
           reviewSequence: 3,
-          title: "New Review"
+          title: "New Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2023-01-01"),
           reviewSequence: 2,
-          title: "Mid Review"
+          title: "Mid Review",
         }),
       ];
 
@@ -360,17 +427,17 @@ describe("AuthorTitles", () => {
         createAuthorTitleValue({
           reviewDate: new Date("2024-01-01"),
           reviewSequence: 3,
-          title: "New Review"
+          title: "New Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2022-01-01"),
           reviewSequence: 1,
-          title: "Old Review"
+          title: "Old Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2023-01-01"),
           reviewSequence: 2,
-          title: "Mid Review"
+          title: "Mid Review",
         }),
       ];
 
@@ -394,7 +461,7 @@ describe("AuthorTitles", () => {
     it("shows more items when button is clicked", async ({ expect }) => {
       // Create many test items to trigger pagination (need more than 100)
       const manyTitles = Array.from({ length: 150 }, (_, i) =>
-        createAuthorTitleValue({ title: `Book ${i + 1}` })
+        createAuthorTitleValue({ title: `Book ${i + 1}` }),
       );
 
       const user = getUserWithFakeTimers();
@@ -513,7 +580,7 @@ describe("AuthorTitles", () => {
       const nextWithIndex = soloBookText.indexOf("with", soloBookIndex);
       const nextTitleIndex = Math.min(
         soloBookText.indexOf("The Talisman", soloBookIndex + 1),
-        soloBookText.indexOf("Black House", soloBookIndex + 1)
+        soloBookText.indexOf("Black House", soloBookIndex + 1),
       );
       // If there's a "with" after Solo Book, it should be after another title
       if (nextWithIndex !== -1 && nextTitleIndex > -1) {
@@ -524,10 +591,7 @@ describe("AuthorTitles", () => {
     it("displays multiple co-authors when present", ({ expect }) => {
       const titles = [
         createAuthorTitleValue({
-          otherAuthors: [
-            { name: "Second Author" },
-            { name: "Third Author" },
-          ],
+          otherAuthors: [{ name: "Second Author" }, { name: "Third Author" }],
           title: "Three-Author Book",
         }),
       ];
@@ -541,7 +605,9 @@ describe("AuthorTitles", () => {
       expect(listText).toContain("with Second Author");
       expect(listText).toContain("Third Author");
       // Should use "and" between the last two authors
-      expect(within(list).getByText(/Second Author.*and.*Third Author/)).toBeInTheDocument();
+      expect(
+        within(list).getByText(/Second Author.*and.*Third Author/),
+      ).toBeInTheDocument();
     });
 
     it("filters correctly with co-authored books", async ({ expect }) => {
@@ -572,7 +638,9 @@ describe("AuthorTitles", () => {
       expect(within(list).getByText(/with Peter Straub/)).toBeInTheDocument();
 
       // Should not show solo collection
-      expect(within(list).queryByText("Different Seasons")).not.toBeInTheDocument();
+      expect(
+        within(list).queryByText("Different Seasons"),
+      ).not.toBeInTheDocument();
     });
   });
 });

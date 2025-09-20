@@ -132,16 +132,20 @@ describe("ReadingLog", () => {
       expect(
         within(calendar).getByText("The Count of Monte Cristo"),
       ).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Dracula"),
-      ).not.toBeInTheDocument();
+      expect(within(calendar).queryByText("Dracula")).not.toBeInTheDocument();
       expect(within(calendar).queryByText("The Stand")).not.toBeInTheDocument();
     });
 
     it("filters by edition", async ({ expect }) => {
       const readings = [
-        createReadingValue({ edition: "Paperback", title: "Book in Paperback" }),
-        createReadingValue({ edition: "Hardcover", title: "Book in Hardcover" }),
+        createReadingValue({
+          edition: "Paperback",
+          title: "Book in Paperback",
+        }),
+        createReadingValue({
+          edition: "Hardcover",
+          title: "Book in Hardcover",
+        }),
         createReadingValue({ edition: "Kindle", title: "Book on Kindle" }),
       ];
 
@@ -169,17 +173,17 @@ describe("ReadingLog", () => {
         createReadingValue({
           kind: "Novel",
           readingDate: "2024-01-01",
-          title: "A Novel"
+          title: "A Novel",
         }),
         createReadingValue({
           kind: "Collection",
           readingDate: "2024-01-02",
-          title: "A Collection"
+          title: "A Collection",
         }),
         createReadingValue({
           kind: "Non-Fiction",
           readingDate: "2024-01-03",
-          title: "Non-Fiction Book"
+          title: "Non-Fiction Book",
         }),
       ];
 
@@ -190,7 +194,9 @@ describe("ReadingLog", () => {
       let calendar = getCalendar();
       expect(within(calendar).getByText("A Novel")).toBeInTheDocument();
       expect(within(calendar).getByText("A Collection")).toBeInTheDocument();
-      expect(within(calendar).getByText("Non-Fiction Book")).toBeInTheDocument();
+      expect(
+        within(calendar).getByText("Non-Fiction Book"),
+      ).toBeInTheDocument();
 
       await clickToggleFilters(user);
       await clickKindFilterOption(user, "Novel");
@@ -208,9 +214,21 @@ describe("ReadingLog", () => {
 
     it("filters by reviewed status", async ({ expect }) => {
       const readings = [
-        createReadingValue({ reviewed: true, slug: "reviewed-book", title: "Reviewed Book" }),
-        createReadingValue({ reviewed: false, slug: undefined, title: "Unreviewed Book" }),
-        createReadingValue({ reviewed: true, slug: "another-reviewed", title: "Another Reviewed" }),
+        createReadingValue({
+          reviewed: true,
+          slug: "reviewed-book",
+          title: "Reviewed Book",
+        }),
+        createReadingValue({
+          reviewed: false,
+          slug: undefined,
+          title: "Unreviewed Book",
+        }),
+        createReadingValue({
+          reviewed: true,
+          slug: "another-reviewed",
+          title: "Another Reviewed",
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -222,15 +240,31 @@ describe("ReadingLog", () => {
 
       const calendar = getCalendar();
       expect(within(calendar).getByText("Reviewed Book")).toBeInTheDocument();
-      expect(within(calendar).getByText("Another Reviewed")).toBeInTheDocument();
-      expect(within(calendar).queryByText("Unreviewed Book")).not.toBeInTheDocument();
+      expect(
+        within(calendar).getByText("Another Reviewed"),
+      ).toBeInTheDocument();
+      expect(
+        within(calendar).queryByText("Unreviewed Book"),
+      ).not.toBeInTheDocument();
     });
 
     it("filters by unreviewed status", async ({ expect }) => {
       const readings = [
-        createReadingValue({ reviewed: true, slug: "reviewed-book", title: "Reviewed Book" }),
-        createReadingValue({ reviewed: false, slug: undefined, title: "Unreviewed Book" }),
-        createReadingValue({ reviewed: false, slug: undefined, title: "Another Unreviewed" }),
+        createReadingValue({
+          reviewed: true,
+          slug: "reviewed-book",
+          title: "Reviewed Book",
+        }),
+        createReadingValue({
+          reviewed: false,
+          slug: undefined,
+          title: "Unreviewed Book",
+        }),
+        createReadingValue({
+          reviewed: false,
+          slug: undefined,
+          title: "Another Unreviewed",
+        }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -242,8 +276,12 @@ describe("ReadingLog", () => {
 
       const calendar = getCalendar();
       expect(within(calendar).getByText("Unreviewed Book")).toBeInTheDocument();
-      expect(within(calendar).getByText("Another Unreviewed")).toBeInTheDocument();
-      expect(within(calendar).queryByText("Reviewed Book")).not.toBeInTheDocument();
+      expect(
+        within(calendar).getByText("Another Unreviewed"),
+      ).toBeInTheDocument();
+      expect(
+        within(calendar).queryByText("Reviewed Book"),
+      ).not.toBeInTheDocument();
     });
 
     it("filters by work year range", async ({ expect }) => {
@@ -520,7 +558,9 @@ describe("ReadingLog", () => {
 
       const calendar = getCalendar();
       expect(within(calendar).getByText("The Shining")).toBeInTheDocument();
-      expect(within(calendar).queryByText("Pet Sematary")).not.toBeInTheDocument();
+      expect(
+        within(calendar).queryByText("Pet Sematary"),
+      ).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
       await clickClearFilters(user);
@@ -550,9 +590,7 @@ describe("ReadingLog", () => {
       await clickViewResults(user);
 
       const calendar = getCalendar();
-      expect(
-        within(calendar).getByText("Dracula"),
-      ).toBeInTheDocument();
+      expect(within(calendar).getByText("Dracula")).toBeInTheDocument();
       expect(within(calendar).queryByText("The Stand")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
@@ -560,9 +598,7 @@ describe("ReadingLog", () => {
       await clickCloseFilters(user);
 
       // Should still show originally filtered results
-      expect(
-        within(calendar).getByText("Dracula"),
-      ).toBeInTheDocument();
+      expect(within(calendar).getByText("Dracula")).toBeInTheDocument();
       expect(within(calendar).queryByText("The Stand")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
@@ -605,7 +641,9 @@ describe("ReadingLog", () => {
       expect(within(calendar).getByText("Finished")).toBeInTheDocument();
 
       // Check that in-progress book shows percentage
-      expect(within(calendar).getByText("In Progress Book")).toBeInTheDocument();
+      expect(
+        within(calendar).getByText("In Progress Book"),
+      ).toBeInTheDocument();
       expect(within(calendar).getByText("50%")).toBeInTheDocument();
     });
 
@@ -656,18 +694,12 @@ describe("ReadingLog", () => {
     it("displays all authors for books with multiple authors", ({ expect }) => {
       const readings = [
         createReadingValue({
-          authors: [
-            { name: "Terry Pratchett" },
-            { name: "Neil Gaiman" },
-          ],
+          authors: [{ name: "Terry Pratchett" }, { name: "Neil Gaiman" }],
           readingDate: "2024-01-01",
           title: "Good Omens",
         }),
         createReadingValue({
-          authors: [
-            { name: "Stephen King" },
-            { name: "Peter Straub" },
-          ],
+          authors: [{ name: "Stephen King" }, { name: "Peter Straub" }],
           readingDate: "2024-01-02",
           title: "The Talisman",
         }),
@@ -687,10 +719,7 @@ describe("ReadingLog", () => {
     it("filters books with multiple authors correctly", async ({ expect }) => {
       const readings = [
         createReadingValue({
-          authors: [
-            { name: "Terry Pratchett" },
-            { name: "Neil Gaiman" },
-          ],
+          authors: [{ name: "Terry Pratchett" }, { name: "Neil Gaiman" }],
           kind: "Novel",
           readingDate: "2024-01-01",
           title: "Good Omens",
@@ -724,26 +753,24 @@ describe("ReadingLog", () => {
       expect(within(calendar).getByText(/Neil Gaiman/)).toBeInTheDocument();
 
       // Should not show the solo-authored books
-      expect(within(calendar).queryByText("The Colour of Magic")).not.toBeInTheDocument();
+      expect(
+        within(calendar).queryByText("The Colour of Magic"),
+      ).not.toBeInTheDocument();
       expect(within(calendar).queryByText("Stardust")).not.toBeInTheDocument();
     });
 
-    it("displays reading progress correctly for multi-author books", ({ expect }) => {
+    it("displays reading progress correctly for multi-author books", ({
+      expect,
+    }) => {
       const readings = [
         createReadingValue({
-          authors: [
-            { name: "Author One" },
-            { name: "Author Two" },
-          ],
+          authors: [{ name: "Author One" }, { name: "Author Two" }],
           progress: "30%",
           readingDate: "2024-01-15",
           title: "In Progress Multi-Author",
         }),
         createReadingValue({
-          authors: [
-            { name: "Author Three" },
-            { name: "Author Four" },
-          ],
+          authors: [{ name: "Author Three" }, { name: "Author Four" }],
           progress: "Abandoned",
           readingDate: "2024-01-16",
           title: "Abandoned Multi-Author",
