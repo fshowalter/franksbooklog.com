@@ -28,12 +28,12 @@ type AuthorOpenGraphImageProps = {
  * @param props.name - Author's display name
  * @returns Open Graph image JSX for author pages
  */
-export function OpenGraphImage({
+export function AuthorTitlesOpenGraphImage({
   avatar,
   backdrop,
   name,
 }: AuthorOpenGraphImageProps): React.JSX.Element {
-  // eslint-disable-next-line react-compiler/react-compiler
+  // eslint-disable-next-line react-hooks/no-unused-directives
   "use no memo";
 
   return (

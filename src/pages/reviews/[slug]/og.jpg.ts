@@ -11,7 +11,7 @@ import {
 import { getCoverWidth } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
 import { fileForGrade } from "~/components/grade/fileForGrade";
-import { OpenGraphImage } from "~/features/review/OpenGraphImage";
+import { ReviewOpenGraphImage } from "~/features/review/ReviewOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
 /**
@@ -86,7 +86,7 @@ export const GET: APIRoute = async function get({ props }) {
   }
 
   const jpeg = await componentToImage(
-    OpenGraphImage({
+    ReviewOpenGraphImage({
       authors: work.authors.map((author) => author.name),
       coverBase64DataUri: await getOpenGraphCoverAsBase64String(work),
       coverHeight,
