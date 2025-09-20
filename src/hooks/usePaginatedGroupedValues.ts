@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 /**
  * Hook that filters, sorts, groups, and paginates values with memoization.
  * @param sorter - Function to sort values
@@ -24,31 +22,11 @@ export function usePaginatedGroupedValues<TValue, TSort, TFilterValues>(
   activeFilterValues: TFilterValues,
   showCount: number,
 ): [Map<string, TValue[]>, number] {
-  const [currentSort, setSort] = useState<TSort>();
-  const [currentFilterValues, setFilterValues] = useState<TFilterValues>();
-  const [currentShowCount, setShowCount] = useState<number>();
-  const [groupedValues, setGroupedValues] = useState<Map<string, TValue[]>>(
-    new Map<string, TValue[]>(),
-  );
-  const [totalCount, setTotalCount] = useState<number>(0);
-
-  if (
-    Object.is(currentSort, sort) &&
-    Object.is(currentFilterValues, activeFilterValues) &&
-    Object.is(currentShowCount, showCount)
-  ) {
-    return [groupedValues, totalCount];
-  }
-
-  setSort(sort);
-  setFilterValues(activeFilterValues);
-  setShowCount(showCount);
+  "use memo";
 
   const sortedValues = sorter(values, sort);
   const filteredValues = filterer(sortedValues, activeFilterValues);
-  const newGroupedValues = grouper(filteredValues, sort, showCount);
-  setGroupedValues(newGroupedValues);
-  setTotalCount(filteredValues.length);
+  const groupedValues = grouper(filteredValues, sort, showCount);
 
-  return [newGroupedValues, filteredValues.length];
+  return [groupedValues, filteredValues.length];
 }

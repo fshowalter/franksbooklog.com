@@ -19,7 +19,7 @@ export function useGroupedValues<TValue, TSort, TFilterValues>(
   "use memo";
   const sortedValues = sorter(values, sort);
   const filteredValues = filterer(sortedValues, activeFilterValues);
-  const newGroupedValues = grouper(filteredValues, sort);
+  const groupedValues = grouper(filteredValues, sort);
 
-  return [newGroupedValues, filteredValues.length];
+  return [groupedValues, filteredValues.length];
 }

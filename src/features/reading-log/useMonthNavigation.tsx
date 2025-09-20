@@ -13,6 +13,8 @@ export function useMonthNavigation(
   sort: ReadingLogSort,
   selectedMonthDate?: string,
 ): [string | undefined, string | undefined, string | undefined] {
+  "use memo";
+
   let nextMonthDate;
   let previousMonthDate;
   let currentMonthValue;

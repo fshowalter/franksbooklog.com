@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 /**
  * Hook that calculates the count of items after applying pending filters.
  * @param filterer - Function to filter values
@@ -12,17 +10,8 @@ export function usePendingFilterCount<TValue, TFilterValues>(
   values: TValue[],
   pendingFilterValues: TFilterValues,
 ): number {
-  const [currentFilterValues, setFilterValues] = useState<TFilterValues>();
-  const [pendingFilterCount, setPendingFilterCount] = useState<number>(0);
-
-  if (Object.is(currentFilterValues, pendingFilterValues)) {
-    return pendingFilterCount;
-  }
-
-  setFilterValues(pendingFilterValues);
-
+  "use memo";
   const filteredValues = filterer(values, pendingFilterValues);
-  setPendingFilterCount(filteredValues.length);
 
   return filteredValues.length;
 }
