@@ -19,6 +19,8 @@ export function useCalendar(
   filteredValues: ReadingLogValue[],
   sort: ReadingLogSort,
 ) {
+  "use memo";
+
   const entriesForMonth: Map<number, ReadingLogValue[]> = new Map();
   const currentYearAndMonth = currentMonthDate.slice(0, 7);
 

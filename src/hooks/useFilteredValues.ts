@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 /**
  * Hook that filters and sorts values with memoization.
  * @param sorter - Function to sort values
@@ -16,23 +14,10 @@ export function useFilteredValues<TValue, TSort, TFilterValues>(
   sort: TSort,
   activeFilterValues: TFilterValues,
 ): TValue[] {
-  const [currentSort, setSort] = useState<TSort>();
-  const [currentFilterValues, setFilterValues] = useState<TFilterValues>();
-  const [filteredValues, setFilteredValues] = useState<TValue[]>([]);
-
-  if (
-    Object.is(currentSort, sort) &&
-    Object.is(currentFilterValues, activeFilterValues)
-  ) {
-    return filteredValues;
-  }
-
-  setSort(sort);
-  setFilterValues(activeFilterValues);
+  "use memo";
 
   const sortedValues = sorter(values, sort);
-  const newFilteredValues = filterer(sortedValues, activeFilterValues);
-  setFilteredValues(newFilteredValues);
+  const filteredValues = filterer(sortedValues, activeFilterValues);
 
-  return newFilteredValues;
+  return filteredValues;
 }

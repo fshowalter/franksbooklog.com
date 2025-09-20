@@ -10,7 +10,7 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { ReviewsSort } from "./sortReviews";
 
-import { filterReviews } from "./filteredReviews";
+import { filterReviews } from "./filterReviews";
 import { groupReviews } from "./groupReviews";
 import {
   createApplyFiltersAction,
