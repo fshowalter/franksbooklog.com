@@ -16,8 +16,8 @@ import {
 } from "~/components/filter-and-sort/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-import { getProps } from "./getProps";
-import { Readings } from "./ReadingLog";
+import { getReadingLogProps } from "./getReadingLogProps";
+import { ReadingLog } from "./ReadingLog";
 import {
   clickEditionFilterOption,
   clickNextMonthButton,
@@ -27,11 +27,11 @@ import {
   getEditionFilter,
   queryNextMonthButton,
   queryPreviousMonthButton,
-} from "./Readings.testHelper";
+} from "./ReadingLog.testHelper";
 
-export const props = await getProps();
+export const props = await getReadingLogProps();
 
-describe("Readings", () => {
+describe("ReadingLog", () => {
   beforeEach(() => {
     // AIDEV-NOTE: Using shouldAdvanceTime: true prevents userEvent from hanging
     // when fake timers are active. This allows async userEvent operations to complete
@@ -48,7 +48,7 @@ describe("Readings", () => {
   });
 
   it("renders", ({ expect }) => {
-    const { asFragment } = render(<Readings {...props} />);
+    const { asFragment } = render(<ReadingLog {...props} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -59,7 +59,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     // Open filter drawer
     await clickToggleFilters(user);
@@ -79,7 +79,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -98,7 +98,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -125,7 +125,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -143,7 +143,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -169,7 +169,7 @@ describe("Readings", () => {
 
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickSortOption(user, "Reading Date (Newest First)");
 
@@ -181,7 +181,7 @@ describe("Readings", () => {
 
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickSortOption(user, "Reading Date (Oldest First)");
 
@@ -193,7 +193,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -211,7 +211,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -236,7 +236,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -254,7 +254,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     await clickToggleFilters(user);
 
@@ -279,7 +279,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     // Sort by oldest first to ensure we have a next month button
     await clickSortOption(user, "Reading Date (Newest First)");
@@ -294,7 +294,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     // Sort by oldest first to ensure we have a next month button
     await clickSortOption(user, "Reading Date (Oldest First)");
@@ -309,7 +309,7 @@ describe("Readings", () => {
 
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     // Default sort is newest first, should show previous month button
     const prevMonthButton = queryPreviousMonthButton();
@@ -336,7 +336,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     // Open filter drawer
     await clickToggleFilters(user);
@@ -373,7 +373,7 @@ describe("Readings", () => {
     // Setup userEvent with advanceTimers
     const user = getUserWithFakeTimers();
 
-    render(<Readings {...props} />);
+    render(<ReadingLog {...props} />);
 
     // Open filter drawer
     await clickToggleFilters(user);

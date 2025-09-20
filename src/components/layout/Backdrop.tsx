@@ -6,13 +6,21 @@ import type { BackdropImageProps } from "~/api/backdrops";
 import { Avatar } from "~/components/avatar/Avatar";
 
 /**
+ * Configuration for avatar images used in hero sections
+ */
+export const AvatarImageConfig = {
+  height: 250,
+  width: 250,
+};
+
+/**
  * Backdrop component specifically designed for author pages with avatar display.
  * Combines a full-screen backdrop image with a centered avatar, name, and description.
  *
  * @param props - Component props
  * @param props.avatarImageProps - Avatar image properties, if available
  * @param props.backdropImageProps - Background image properties
- * @param props.breadcrumb - Optional breadcrumb navigation elements
+ * @param props.breadcrumb - Optional breadcrumb navigation element
  * @param props.deck - Description or subtitle content
  * @param props.name - Author name to display as the main title
  * @returns Avatar backdrop component with hero styling
@@ -26,7 +34,10 @@ export function AvatarBackdrop({
 }: {
   avatarImageProps?: AvatarImageProps;
   backdropImageProps: BackdropImageProps;
-  breadcrumb?: React.ReactNode;
+  breadcrumb?: {
+    href: string;
+    text: string;
+  };
   deck: React.ReactNode;
   title: string;
 }): React.JSX.Element {
@@ -106,7 +117,10 @@ export function Backdrop({
 }: {
   backdropImageProps: BackdropImageProps;
   bottomShadow?: boolean;
-  breadcrumb?: React.ReactNode;
+  breadcrumb?: {
+    href: string;
+    text: string;
+  };
   centerText?: boolean;
   deck: React.ReactNode;
   size?: "default" | "large";
@@ -138,49 +152,32 @@ export function Backdrop({
   );
 }
 
-/**
- * Styled link component for breadcrumb navigation in backdrop headers.
- * Features hover animations and consistent styling for navigation elements.
- *
- * @param props - Component props
- * @param props.children - Link text or content to display
- * @param props.href - URL destination for the link
- * @returns Styled breadcrumb link component
- */
-export function BreadcrumbLink({
-  children,
-  href,
-}: {
-  children: React.ReactNode;
-  href: string;
-}): React.JSX.Element {
-  return (
-    <a
-      className={`
-        relative inline-block font-sans text-sm font-bold tracking-wide
-        text-[#fff]/85 uppercase
-        after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
-        after:origin-center after:scale-x-0 after:bg-(--color-inverse)/75
-        after:transition-transform after:duration-500
-        hover:after:scale-x-100
-      `}
-      href={href}
-    >
-      {children}
-    </a>
-  );
-}
-
 function Breadcrumb({
   value,
 }: {
-  value?: React.ReactNode;
+  value?: { href: string; text: string };
 }): false | React.JSX.Element {
   if (!value) {
     return false;
   }
 
-  return <p className="mb-4">{value}</p>;
+  return (
+    <p className="mb-4">
+      <a
+        className={`
+          relative inline-block font-sans text-sm font-bold tracking-wide
+          text-white/85 uppercase
+          after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
+          after:origin-center after:scale-x-0 after:bg-white/75
+          after:transition-transform after:duration-500
+          hover:after:scale-x-100
+        `}
+        href={value.href}
+      >
+        {value.text}
+      </a>
+    </p>
+  );
 }
 
 function Deck({

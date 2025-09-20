@@ -152,10 +152,10 @@ export function FilterAndSortContainer<T extends string>({
           <div
             className={`
               mx-auto max-w-[var(--breakpoint-desktop)] grow
-              scroll-mt-[calc(var(--list-scroll-offset)_+_var(--scroll-offset,0px))]
+              scroll-mt-[calc(var(--filter-and-sort-container-scroll-offset)_+_var(--scroll-offset,0px))]
               pb-10
-              [--list-scroll-offset:181px]
-              tablet:[--list-scroll-offset:121px]
+              [--filter-and-sort-container-scroll-offset:181px]
+              tablet:[--filter-and-sort-container-scroll-offset:121px]
             `}
             id="list"
             ref={listRef}

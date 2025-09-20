@@ -23,7 +23,6 @@ export function Layout({
   backdrop,
   children,
   className,
-  hasBackdrop = true,
   hideLogo = false,
   ...rest
 }: {
@@ -40,7 +39,7 @@ export function Layout({
   hideLogo?: boolean;
 }): React.JSX.Element {
   if (addGradient === undefined) {
-    addGradient = hasBackdrop;
+    addGradient = backdrop ? true : false;
   }
 
   return (
@@ -59,7 +58,7 @@ export function Layout({
       <div className="flex min-h-full w-full flex-col bg-default">
         <Mast
           addGradient={addGradient}
-          hasBackdrop={hasBackdrop}
+          hasBackdrop={backdrop ? true : false}
           hideLogo={hideLogo}
         />
         <main

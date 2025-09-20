@@ -1,8 +1,4 @@
-import type { BackdropImageProps } from "~/api/backdrops";
 import type { AlltimeStats } from "~/api/stats";
-
-import { Backdrop, BreadcrumbLink } from "~/components/backdrop/Backdrop";
-import { Layout } from "~/components/layout/Layout";
 
 import { Callouts } from "./Callouts";
 import { DecadeDistribution } from "./DecadeDistribution";
@@ -13,31 +9,18 @@ import { MostReadAuthors } from "./MostReadAuthors";
 import { StatsNavigation } from "./StatsNavigation";
 
 export type AlltimeStatsProps = {
-  backdropImageProps: BackdropImageProps;
-  deck: string;
   distinctStatYears: string[];
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
   stats: AlltimeStats;
 };
 
 export function AlltimeStats({
-  backdropImageProps,
-  deck,
   distinctStatYears,
   mostReadAuthors,
   stats,
 }: AlltimeStatsProps): React.JSX.Element {
   return (
-    <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
-      <Backdrop
-        breadcrumb={
-          <BreadcrumbLink href="/readings/">Reading Log</BreadcrumbLink>
-        }
-        centerText={true}
-        deck={deck}
-        imageProps={backdropImageProps}
-        title="All-Time Stats"
-      />
+    <div className="flex flex-col items-center bg-subtle">
       <StatsNavigation
         className="z-10 mb-12 w-full"
         currentYear={"all"}
@@ -77,6 +60,6 @@ export function AlltimeStats({
           <GradeDistribution values={stats.gradeDistribution} />
         </div>
       </div>
-    </Layout>
+    </div>
   );
 }

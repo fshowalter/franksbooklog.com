@@ -1,74 +1,89 @@
-import {
-  type CollectionFiltersActionType,
-  type CollectionFiltersState,
-  type CollectionFiltersValues,
-  createCollectionFiltersReducer,
-  createInitialCollectionFiltersState,
-  createSortActionCreator,
-} from "~/components/filter-and-sort/CollectionFilters.reducer";
+import type { SortAction, SortState } from "~/reducers/sortReducer";
 
-/**
- * Action creators for managing authors page filters.
- * Re-exported from the shared CollectionFilters reducer.
- */
+import {
+  createInitialSortState,
+  createSortActionCreator,
+  sortReducer,
+} from "~/reducers/sortReducer";
+
 export {
-  createApplyPendingFiltersAction,
-  createClearPendingFiltersAction,
-  createResetPendingFiltersAction,
-  createSetNamePendingFilterAction,
-} from "~/components/filter-and-sort/CollectionFilters.reducer";
+  createApplyFiltersAction,
+  createClearFiltersAction,
+  createNameFilterChangedAction,
+  createResetFiltersAction,
+  selectHasPendingFilters,
+} from "~/reducers/collectionFiltersReducer";
+
+import type {
+  CollectionFiltersAction,
+  CollectionFiltersState,
+  CollectionFiltersValues,
+} from "~/reducers/collectionFiltersReducer";
+
+import {
+  collectionFiltersReducer,
+  createInitialCollectionFiltersState,
+} from "~/reducers/collectionFiltersReducer";
 
 import type { AuthorsValue } from "./Authors";
-import type { AuthorsSort } from "./Authors.sorter";
+import type { AuthorsSort } from "./sortAuthors";
 
 /**
- * Action type for authors page state management, specialized for AuthorsSort operations
+ * Union type of all collection-specific filter and sort actions
  */
-export type AuthorsActionType = CollectionFiltersActionType<AuthorsSort>;
+export type AuthorsAction = CollectionFiltersAction | SortAction<AuthorsSort>;
 
 /**
- * Filter values type for authors page, aliases the base collection filter values
+ * Type definition for Collections filter values
  */
 export type AuthorsFiltersValues = CollectionFiltersValues;
 
 /**
- * Internal state type for authors page, combining AuthorsValue data with AuthorsSort options
+ * Internal state type for Collections reducer
  */
-type AuthorsState = CollectionFiltersState<AuthorsValue, AuthorsSort>;
+type AuthorsState = Omit<
+  CollectionFiltersState<AuthorsValue>,
+  "activeFilterValues" | "pendingFilterValues"
+> &
+  SortState<AuthorsSort> & {
+    activeFilterValues: AuthorsFiltersValues;
+    pendingFilterValues: AuthorsFiltersValues;
+  };
 
-/**
- * Initialize the authors page state with initial sort and values
- * @param params - Initialization parameters
- * @param params.initialSort - Initial sort order for the authors list
- * @param params.values - Array of author values to manage
- * @returns Initialized authors state for use with authorsReducer
- */
-export function initState({
+export function createInitialState({
   initialSort,
   values,
 }: {
   initialSort: AuthorsSort;
   values: AuthorsValue[];
 }): AuthorsState {
-  return createInitialCollectionFiltersState({
-    initialSort,
+  const sortState = createInitialSortState({ initialSort });
+  const collectionFiltersState = createInitialCollectionFiltersState({
     values,
   });
+
+  return {
+    ...collectionFiltersState,
+    ...sortState,
+  };
 }
 
 /**
- * Creates sort action for updating the authors page sort order
- * @param sortValue - The new sort value to apply
- * @returns Action to update the sort state
+ * Reducer function for managing Collections state.
+ * Handles filtering and sorting actions for the collections list.
  */
-export const createSortAction = createSortActionCreator<AuthorsSort>();
+export function reducer(state: AuthorsState, action: AuthorsAction) {
+  switch (action.type) {
+    case "sort/sort": {
+      return sortReducer(state, action);
+    }
+    default: {
+      return collectionFiltersReducer(state, action);
+    }
+  }
+}
 
 /**
- * Reducer function for managing authors page state including filtering and sorting.
- * Handles actions for updating name filters and changing sort order.
+ * Action creator for sort actions specific to Collections.
  */
-export const authorsReducer = createCollectionFiltersReducer<
-  AuthorsValue,
-  AuthorsSort,
-  AuthorsState
->();
+export const createSortAction = createSortActionCreator<AuthorsSort>();

@@ -1,75 +1,116 @@
+import type {
+  ReviewedTitleFiltersAction,
+  ReviewedTitleFiltersState,
+  ReviewedTitleFiltersValues,
+} from "~/reducers/reviewedTitleFiltersReducer";
+import type { ShowMoreAction, ShowMoreState } from "~/reducers/showMoreReducer";
+import type { SortAction, SortState } from "~/reducers/sortReducer";
+
 import {
-  createInitialReviewedWorkFiltersState,
-  createReviewedWorkFiltersReducer,
+  createInitialReviewedTitleFiltersState,
+  reviewedTitleFiltersReducer,
+} from "~/reducers/reviewedTitleFiltersReducer";
+import {
+  createInitialShowMoreState,
+  showMoreReducer,
+} from "~/reducers/showMoreReducer";
+import {
+  createInitialSortState,
   createSortActionCreator,
-  type ReviewedWorkFiltersActionType,
-  type ReviewedWorkFiltersState,
-  type ReviewedWorkFiltersValues,
-} from "~/components/filter-and-sort/ReviewedWorkFilters.reducer";
+  sortReducer,
+} from "~/reducers/sortReducer";
 
 export {
-  createApplyPendingFiltersAction,
-  createClearPendingFiltersAction,
-  createResetPendingFiltersAction,
-  createSetGradePendingFilterAction,
-  createSetKindPendingFilterAction,
-  createSetReviewYearPendingFilterAction,
-  createSetTitlePendingFilterAction,
-  createSetWorkYearPendingFilterAction,
-  createShowMoreAction,
-} from "~/components/filter-and-sort/ReviewedWorkFilters.reducer";
+  createApplyFiltersAction,
+  createClearFiltersAction,
+  createGradeFilterChangedAction,
+  createKindFilterChangedAction,
+  createResetFiltersAction,
+  createReviewYearFilterChangedAction,
+  createTitleFilterChangedAction,
+  createWorkYearFilterChangedAction,
+  selectHasPendingFilters,
+} from "~/reducers/reviewedTitleFiltersReducer";
 
-import type { ReviewsValue } from "./Reviews";
-import type { ReviewsSort } from "./Reviews.sorter";
+export { createShowMoreAction } from "~/reducers/showMoreReducer";
 
 /**
  * Union type of all reviewed work-specific filter actions for Reviews page
  */
-export type ReviewsActionType = ReviewedWorkFiltersActionType<ReviewsSort>;
+export type ReviewsAction =
+  | ReviewedTitleFiltersAction
+  | ShowMoreAction
+  | SortAction<ReviewsSort>;
+
+import type { ReviewsValue } from "./Reviews";
+import type { ReviewsSort } from "./sortReviews";
 
 /**
  * Type definition for Reviews page filter values
  */
-export type ReviewsFiltersValues = ReviewedWorkFiltersValues;
+export type ReviewsFiltersValues = ReviewedTitleFiltersValues;
 
 /**
  * Internal state type for Reviews page reducer
  */
-type ReviewsState = ReviewedWorkFiltersState<ReviewsValue, ReviewsSort>;
+type ReviewsState = Omit<
+  ReviewedTitleFiltersState<ReviewsValue>,
+  "activeFilterValues" | "pendingFilterValues"
+> &
+  ShowMoreState &
+  SortState<ReviewsSort> & {
+    activeFilterValues: ReviewsFiltersValues;
+    pendingFilterValues: ReviewsFiltersValues;
+  };
 
 /**
- * Initializes the state for the Reviews page reducer.
- * Sets up initial filtering state, sort order, and processes the review values.
- *
- * @param params - Initialization parameters
- * @param params.initialSort - Initial sort order for the reviews
- * @param params.values - Array of review data to initialize with
- * @returns Initial state for the Reviews page reducer
+ * Creates the initial state for reviews.
+ * @param options - Configuration options
+ * @param options.initialSort - Initial sort configuration
+ * @param options.values - Review values
+ * @returns Initial state for reviews reducer
  */
-export function initState({
+export function createInitialState({
   initialSort,
   values,
 }: {
   initialSort: ReviewsSort;
   values: ReviewsValue[];
 }): ReviewsState {
-  return createInitialReviewedWorkFiltersState({
-    initialSort,
+  const showMoreState = createInitialShowMoreState();
+  const sortState = createInitialSortState({ initialSort });
+  const reviewedTitleFilterState = createInitialReviewedTitleFiltersState({
     values,
   });
+
+  return {
+    ...reviewedTitleFilterState,
+    ...showMoreState,
+    ...sortState,
+  };
 }
 
 /**
- * Reducer function for managing Reviews page state.
- * Handles filtering, sorting, and pagination actions for the reviews list.
+ * Reducer function for reviews state management.
+ * @param state - Current state
+ * @param action - Action to process
+ * @returns Updated state
  */
-export const reviewsReducer = createReviewedWorkFiltersReducer<
-  ReviewsValue,
-  ReviewsSort,
-  ReviewsState
->();
+export function reducer(state: ReviewsState, action: ReviewsAction) {
+  switch (action.type) {
+    case "showMore/showMore": {
+      return showMoreReducer(state, action);
+    }
+    case "sort/sort": {
+      return sortReducer(state, action);
+    }
+    default: {
+      return reviewedTitleFiltersReducer(state, action);
+    }
+  }
+}
 
 /**
- * Action creator for sort actions specific to the Reviews page.
+ * Action creator for reviews sort actions.
  */
 export const createSortAction = createSortActionCreator<ReviewsSort>();

@@ -1,8 +1,9 @@
 ---
 import { allReviews, getContentPlainText } from "~/api/reviews";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { Layout } from "~/components/layout/Layout";
 import { getProps } from "~/features/review/getProps";
 import { Review } from "~/features/review/Review";
-import Layout from "~/astro/Layout.astro";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 interface Props {
@@ -50,7 +51,7 @@ const kind = props.value.kind == "Short Story" ? "story" : "book";
 title = `${title} ${kind} review`;
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{ description }}
   openGraph={{ description, type: "article" }}
@@ -68,5 +69,7 @@ title = `${title} ${kind} review`;
       name="theme-color"
     />
   </Fragment>
-  <Review {...props} />
-</Layout>
+  <Layout>
+    <Review {...props} />
+  </Layout>
+</AstroPageShell>

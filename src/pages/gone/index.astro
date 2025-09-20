@@ -1,22 +1,28 @@
 ---
-import { Article } from "~/components/article/Article";
-import { getProps } from "~/components/article/getProps";
-import Layout from "~/astro/Layout.astro";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
 
-const slug = "gone";
-const deck = `"Forget it, Jake. It's Chinatown."`;
-
-const props = await getProps({
-  deck,
-  slug,
-});
+const backdropImageProps = await getLayoutBackdropImageProps("gone");
+const deck = '"This is not an exit."';
 ---
 
-<Layout
+<AstroPageShell
   canonical={false}
   meta={{ description: deck }}
   openGraph={false}
   title="410: Gone"
 >
-  <Article {...props} />
-</Layout>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      centerText: true,
+      deck,
+      size: "large",
+      title: "410 Gone",
+    }}
+    className="bg-subtle"
+  >
+    <span></span>
+  </Layout>
+</AstroPageShell>

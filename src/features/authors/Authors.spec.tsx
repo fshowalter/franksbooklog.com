@@ -16,9 +16,9 @@ import {
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import { Authors } from "./Authors";
-import { getProps } from "./getProps";
+import { getAuthorsProps } from "./getAuthorsProps";
 
-const props = await getProps();
+const props = await getAuthorsProps();
 
 describe("Authors", () => {
   beforeEach(() => {

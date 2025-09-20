@@ -25,6 +25,9 @@ type HomeOpenGraphImageProps = {
 export function OpenGraphImage({
   backdrop,
 }: HomeOpenGraphImageProps): React.JSX.Element {
+  // eslint-disable-next-line react-compiler/react-compiler
+  "use no memo";
+
   return (
     <div
       style={{

@@ -1,27 +1,28 @@
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 
 import type { AvatarImageProps } from "~/api/avatars";
 
 import { GroupedAvatarList } from "~/components/avatar-list/AvatarList";
 import { CollectionSortOptions } from "~/components/filter-and-sort/CollectionSortOptions";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
+import { useGroupedValues } from "~/hooks/useGroupedValues";
+import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import { AlphabetNav } from "./AlphabetNav";
 import {
-  authorsReducer,
-  createApplyPendingFiltersAction,
-  createClearPendingFiltersAction,
-  createResetPendingFiltersAction,
+  createApplyFiltersAction,
+  createClearFiltersAction,
+  createInitialState,
+  createResetFiltersAction,
   createSortAction,
-  initState,
+  reducer,
+  selectHasPendingFilters,
 } from "./Authors.reducer";
-import {
-  type AuthorsSort,
-  selectGroupedValues,
-  selectSortedFilteredValues,
-} from "./Authors.sorter";
+import { AuthorsFilters } from "./AuthorsFilters";
 import { AuthorsListItem } from "./AuthorsListItem";
-import { Filters } from "./Filters";
+import { filterAuthors } from "./filterAuthors";
+import { groupAuthors } from "./groupAuthors";
+import { type AuthorsSort, sortAuthors } from "./sortAuthors";
 
 /**
  * Props interface for the Authors page component.
@@ -66,45 +67,50 @@ export function Authors({
   values,
 }: AuthorsProps): React.JSX.Element {
   const [state, dispatch] = useReducer(
-    authorsReducer,
+    reducer,
     {
       initialSort,
       values,
     },
-    initState,
+    createInitialState,
   );
 
-  const [filterKey, setFilterKey] = useState(0);
-
-  const sortedValues = selectSortedFilteredValues(
-    state.filteredValues,
+  const [groupedValues, totalCount] = useGroupedValues(
+    sortAuthors,
+    filterAuthors,
+    groupAuthors,
+    state.values,
     state.sort,
+    state.activeFilterValues,
   );
 
-  const groupedValues = selectGroupedValues(sortedValues, state.sort);
+  const pendingFilteredCount = usePendingFilterCount(
+    filterAuthors,
+    state.values,
+    state.pendingFilterValues,
+  );
+
+  const hasPendingFilters = selectHasPendingFilters(state);
 
   return (
     <FilterAndSortContainer
       className={state.sort.startsWith("name-") ? `[--scroll-offset:52px]` : ""}
       filters={
-        <Filters
+        <AuthorsFilters
           dispatch={dispatch}
           filterValues={state.pendingFilterValues}
-          key={filterKey}
         />
       }
-      hasActiveFilters={state.hasActiveFilters}
-      onApplyFilters={() => dispatch(createApplyPendingFiltersAction())}
+      hasPendingFilters={hasPendingFilters}
+      onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
-        dispatch(createClearPendingFiltersAction());
-        setFilterKey((k) => k + 1);
+        dispatch(createClearFiltersAction());
       }}
-      onFilterDrawerOpen={() => dispatch(createResetPendingFiltersAction())}
+      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
       onResetFilters={() => {
-        dispatch(createResetPendingFiltersAction());
-        setFilterKey((k) => k + 1);
+        dispatch(createResetFiltersAction());
       }}
-      pendingFilteredCount={state.pendingFilteredCount}
+      pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
         onSortChange: (e) =>
@@ -114,7 +120,7 @@ export function Authors({
       topNav={
         <AlphabetNav groupedValues={groupedValues} sortValue={state.sort} />
       }
-      totalCount={state.filteredValues.length}
+      totalCount={totalCount}
     >
       <GroupedAvatarList
         groupedValues={groupedValues}

@@ -43,6 +43,7 @@
   --color-inverse: light-dark(#fff, rgb(255 255 255 / 85%));
   --color-muted: light-dark(#4a4a4a, rgb(255 255 255 / 65%));
   --color-subtle: light-dark(rgb(0 0 0 / 60%), #b2b0b0);
+  --color-white: #fff;
 
   --tracking-*: initial;
   --tracking-normal: 0;

@@ -1,8 +1,5 @@
-import type { BackdropImageProps } from "~/api/backdrops";
 import type { ReviewCardProps } from "~/components/review-card/ReviewCard";
 
-import { Backdrop } from "~/components/backdrop/Backdrop";
-import { Layout } from "~/components/layout/Layout";
 import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { SubHeading } from "~/components/sub-heading/SubHeading";
 
@@ -10,8 +7,6 @@ import { SubHeading } from "~/components/sub-heading/SubHeading";
  * Props for the Home page component
  */
 export type HomeProps = {
-  backdropImageProps: BackdropImageProps;
-  deck: string;
   values: ReviewCardProps[];
 };
 
@@ -26,24 +21,9 @@ export type HomeProps = {
  * @param props.values - Array of recent review data for cards
  * @returns Home page component
  */
-export function Home({
-  backdropImageProps,
-  deck,
-  values,
-}: HomeProps): React.JSX.Element {
+export function Home({ values }: HomeProps): React.JSX.Element {
   return (
-    <Layout className="bg-subtle pb-8" hasBackdrop={true} hideLogo={true}>
-      <Backdrop
-        deck={deck}
-        imageProps={backdropImageProps}
-        title="Frank's Book Log"
-        titleClasses={`
-          text-[2rem] leading-10 font-extrabold
-          [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
-          tablet:text-4xl
-          laptop:text-7xl
-        `}
-      />
+    <div className="bg-subtle pb-8">
       <nav
         className={`
           @container/home-list mx-auto max-w-(--breakpoint-desktop) px-container
@@ -90,6 +70,6 @@ export function Home({
           </a>
         </div>
       </nav>
-    </Layout>
+    </div>
   );
 }

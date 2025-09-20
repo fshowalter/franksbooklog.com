@@ -21,7 +21,7 @@
     "preview": "astro preview",
     "start": "astro dev",
     "sync": "./sync.js",
-    "test:coverage": "vitest run src --coverage.all true --coverage",
+    "test:coverage": "TEST_COVERAGE=true vitest run src --coverage.all true --coverage",
     "test:update": "vitest -u run src",
     "test:watch": "vitest src",
     "test": "vitest run src"

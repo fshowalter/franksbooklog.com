@@ -38,7 +38,7 @@ describe("/authors/:slug", () => {
         Review as AstroComponentFactory,
         {
           partial: false,
-          props: { slug: author.slug },
+          props: author,
           request: new Request(
             `https://www.franksbooklog.com/authors/${author.slug}/`,
           ),

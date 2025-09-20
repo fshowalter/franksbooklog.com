@@ -23,10 +23,10 @@ import {
 } from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-import { getProps } from "./getProps";
+import { getReviewsProps } from "./getReviewsProps";
 import { Reviews } from "./Reviews";
 
-const props = await getProps();
+const props = await getReviewsProps();
 
 describe("Reviews", () => {
   beforeEach(() => {

@@ -41,12 +41,6 @@ export type ReadingLogValue = {
   progress: string;
   /** Full date string in YYYY-MM-DD format */
   readingDate: string;
-  /** Day portion of the reading date */
-  readingDay: string;
-  /** Month portion of the reading date */
-  readingMonth: string;
-  /** Abbreviated month name */
-  readingMonthShort: string;
   /** Year portion of the reading date */
   readingYear: string;
   /** Whether this work has been reviewed */

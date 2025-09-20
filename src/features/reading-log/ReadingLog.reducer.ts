@@ -1,9 +1,9 @@
 import type { SortAction, SortState } from "~/reducers/sortReducer";
 import type {
-  WorkFiltersAction,
-  WorkFiltersState,
-  WorkFiltersValues,
-} from "~/reducers/workFiltersReducer";
+  TitleFiltersAction,
+  TitleFiltersState,
+  TitleFiltersValues,
+} from "~/reducers/titleFiltersReducer";
 
 import {
   createInitialSortState,
@@ -11,9 +11,9 @@ import {
   sortReducer,
 } from "~/reducers/sortReducer";
 import {
-  createInitialWorkFiltersState,
-  workFiltersReducer,
-} from "~/reducers/workFiltersReducer";
+  createInitialTitleFiltersState,
+  titleFiltersReducer,
+} from "~/reducers/titleFiltersReducer";
 
 export {
   createApplyFiltersAction,
@@ -23,7 +23,7 @@ export {
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
   selectHasPendingFilters,
-} from "~/reducers/workFiltersReducer";
+} from "~/reducers/titleFiltersReducer";
 
 /**
  * Union type of all actions for viewings state management.
@@ -35,7 +35,7 @@ export type ReadingLogAction =
   | ReadingYearFilterChangedAction
   | ReviewedStatusFilterChangedAction
   | SortAction<ReadingLogSort>
-  | WorkFiltersAction;
+  | TitleFiltersAction;
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";
@@ -43,7 +43,7 @@ import type { ReadingLogSort } from "./sortReadingLog";
 /**
  * Filter values for viewings.
  */
-export type ReadingLogFiltersValues = WorkFiltersValues & {
+export type ReadingLogFiltersValues = TitleFiltersValues & {
   edition?: string;
   readingYear?: [string, string];
   reviewedStatus?: string;
@@ -68,7 +68,7 @@ type PreviousMonthClickedAction = {
  * Internal state type for Reviews page reducer
  */
 type ReadingLogState = Omit<
-  WorkFiltersState<ReadingLogValue>,
+  TitleFiltersState<ReadingLogValue>,
   "activeFilterValues" | "pendingFilterValues"
 > &
   SortState<ReadingLogSort> & {
@@ -114,7 +114,7 @@ export function createInitialState({
   values: ReadingLogValue[];
 }): ReadingLogState {
   const sortState = createInitialSortState({ initialSort });
-  const titleFilterState = createInitialWorkFiltersState({
+  const titleFilterState = createInitialTitleFiltersState({
     values,
   });
 
@@ -177,7 +177,7 @@ export function createReviewedStatusFilterChangedAction(
 export function reducer(state: ReadingLogState, action: ReadingLogAction) {
   switch (action.type) {
     case "filters/applied": {
-      const newState = workFiltersReducer(state, action);
+      const newState = titleFiltersReducer(state, action);
 
       return {
         ...newState,
@@ -208,7 +208,7 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
       };
     }
     default: {
-      return workFiltersReducer(state, action);
+      return titleFiltersReducer(state, action);
     }
   }
 }

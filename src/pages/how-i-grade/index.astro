@@ -1,18 +1,21 @@
 ---
-import { getContentPlainText } from "~/api/pages";
+import { getContentPlainText, getPage } from "~/api/pages";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { Article } from "~/components/article/Article";
-import { getProps } from "~/components/article/getProps";
-import Layout from "~/astro/Layout.astro";
+import { getArticleProps } from "~/components/article/getArticleProps";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
 
-const slug = "how-i-grade";
+const { content, rawContent, title } = await getPage("how-i-grade");
+
 const deck = `"I want you to hit me as hard as you can."`;
 
-const props = await getProps({
-  deck,
-  slug,
+const props = await getArticleProps({
+  content,
 });
 
-const contextPlainText = getContentPlainText(props.rawContent);
+const contextPlainText = getContentPlainText(rawContent);
+const backdropImageProps = await getLayoutBackdropImageProps("how-i-grade");
 
 //trim the string to the maximum length
 var description = contextPlainText
@@ -26,13 +29,22 @@ description = description.slice(
 );
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{ description }}
-  openGraph={{ description: props.deck, type: "article" }}
-  title={props.title}
+  openGraph={{ description: deck, type: "article" }}
+  title={title}
 >
-  <div data-pagefind-body>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      centerText: true,
+      deck,
+      size: "large",
+      title,
+    }}
+    data-pagefind-body
+  >
     <Article {...props} />
-  </div>
-</Layout>
+  </Layout>
+</AstroPageShell>
