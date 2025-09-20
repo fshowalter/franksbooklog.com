@@ -20,6 +20,7 @@ export function filterReadingLog(
     createReviewedStatusFilter(filterValues.reviewedStatus),
     createReadingYearFilter(filterValues.readingYear),
     createEditionFilter(filterValues.edition),
+    createKindFilter(filterValues.kind),
     createTitleFilter(filterValues.title),
     createWorkYearFilter(filterValues.workYear),
   ].filter((filterFn) => filterFn !== undefined);
@@ -31,6 +32,13 @@ function createEditionFilter(filterValue?: string) {
   if (!filterValue) return;
   return (value: ReadingLogValue) => {
     return value.edition === filterValue;
+  };
+}
+
+function createKindFilter(filterValue?: string) {
+  if (!filterValue) return;
+  return (value: ReadingLogValue) => {
+    return value.kind === filterValue;
   };
 }
 

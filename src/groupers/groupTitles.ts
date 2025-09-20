@@ -35,13 +35,13 @@ function createGroupForTitle<
 >(grouper: GroupFn<TValue, TSort> = () => "") {
   return function groupForTitleValue(value: TValue, sort: TSort) {
     switch (sort) {
-      case "release-date-asc":
-      case "release-date-desc": {
-        return value.workYear;
-      }
       case "title-asc":
       case "title-desc": {
         return getGroupLetter(value.sortTitle);
+      }
+      case "work-year-asc":
+      case "work-year-desc": {
+        return value.workYear;
       }
       default: {
         return grouper(value, sort);

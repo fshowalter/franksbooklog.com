@@ -103,19 +103,19 @@ function HamburgerMenu({
           [body.nav-open_&]:tablet:z-nav-backdrop
           [body.nav-open_&]:tablet:opacity-100
         `}
-        data-nav-backdrop
+        data-nav-drawer-backdrop
       />
       <button
-        aria-controls="nav-menu"
+        aria-controls="nav-drawer"
         aria-expanded="false"
-        aria-label="Toggle navigation menu"
+        aria-label="Toggle navigation drawer"
         className={`
           relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer
           items-center justify-center transition-transform
           hover:scale-110
           laptop:hidden
         `}
-        data-nav-toggle
+        data-nav-drawer-toggle
         type="button"
       >
         <span
@@ -150,7 +150,7 @@ function HamburgerMenu({
             tablet:max-w-[35vw]
             laptop:max-w-[25vw]
             [body.nav-open_&]:visible [body.nav-open_&]:bottom-0
-            [body.nav-open_&]:z-nav-menu [body.nav-open_&]:h-full
+            [body.nav-open_&]:z-nav-drawer [body.nav-open_&]:h-full
             [body.nav-open_&]:w-full [body.nav-open_&]:transform-[translateX(0)]
             [body.nav-open_&]:overflow-y-auto [body.nav-open_&]:pt-20
             [body.nav-open_&]:pr-[16%] [body.nav-open_&]:pb-5
@@ -158,8 +158,8 @@ function HamburgerMenu({
             [body.nav-open_&]:drop-shadow-2xl [body.nav-open_&]:tablet:px-10
             [body.nav-open_&]:tablet:pt-40 [body.nav-open_&]:laptop:px-20
           `}
-          data-nav-menu
-          id="nav-menu"
+          data-nav-drawer
+          id="nav-drawer"
         >
           <TableOfContents />
         </div>

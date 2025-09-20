@@ -130,7 +130,7 @@ describe("AstroPageShell", () => {
         const toggleButton = document.querySelector("[data-nav-drawer-toggle]");
         expect(toggleButton).toBeTruthy();
         expect(toggleButton?.getAttribute("aria-label")).toBe(
-          "Toggle navigation menu",
+          "Toggle navigation drawer",
         );
         expect(toggleButton?.getAttribute("aria-expanded")).toBe("false");
       });

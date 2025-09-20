@@ -1,21 +1,8 @@
 import { allAuthors } from "~/api/authors";
 import { getAvatarImageProps } from "~/api/avatars";
-import {
-  type BackdropImageProps,
-  getBackdropImageProps,
-} from "~/api/backdrops";
 import { AvatarListItemImageConfig } from "~/components/avatar-list/AvatarList";
-import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";
-
-/**
- * Extended props type for Authors page including additional data for layout and display
- */
-type Props = AuthorsProps & {
-  backdropImageProps: BackdropImageProps;
-  deck: string;
-};
 
 /**
  * Gets props for the Authors page component by fetching all author data and transforming it.
@@ -23,7 +10,7 @@ type Props = AuthorsProps & {
  *
  * @returns Promise resolving to complete props object for Authors component
  */
-export async function getAuthorsProps(): Promise<Props> {
+export async function getAuthorsProps(): Promise<AuthorsProps> {
   const authors = await allAuthors();
 
   authors.sort((a, b) => a.sortName.localeCompare(b.sortName));
@@ -46,11 +33,6 @@ export async function getAuthorsProps(): Promise<Props> {
   );
 
   return {
-    backdropImageProps: await getBackdropImageProps(
-      "authors",
-      BackdropImageConfig,
-    ),
-    deck: '"Maybe I can glue it together. In the morning"',
     initialSort: "name-asc",
     values,
   };

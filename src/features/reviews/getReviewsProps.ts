@@ -1,19 +1,9 @@
-import {
-  type BackdropImageProps,
-  getBackdropImageProps,
-} from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
-import { BackdropImageConfig } from "~/components/backdrop/Backdrop";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
-
-type Props = ReviewsProps & {
-  backdropImageProps: BackdropImageProps;
-  deck: string;
-};
 
 /**
  * Loads and prepares data for the Reviews page component.
@@ -22,7 +12,7 @@ type Props = ReviewsProps & {
  *
  * @returns Promise resolving to Reviews page props with all review data and filtering metadata
  */
-export async function getReviewsProps(): Promise<Props> {
+export async function getReviewsProps(): Promise<ReviewsProps> {
   const { distinctKinds, distinctReviewYears, distinctWorkYears, reviews } =
     await allReviews();
 
@@ -64,11 +54,6 @@ export async function getReviewsProps(): Promise<Props> {
   );
 
   return {
-    backdropImageProps: await getBackdropImageProps(
-      "reviews",
-      BackdropImageConfig,
-    ),
-    deck: `"You were always the best of them, Lloyd."`,
     distinctKinds,
     distinctReviewYears,
     distinctWorkYears,

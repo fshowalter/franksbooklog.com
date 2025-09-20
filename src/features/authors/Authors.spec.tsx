@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import { getGroupedAvatarList } from "~/components/avatar-list/AvatarList.testHelper";
@@ -15,162 +15,238 @@ import {
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-import { Authors } from "./Authors";
-import { getAuthorsProps } from "./getAuthorsProps";
+import type { AuthorsProps, AuthorsValue } from "./Authors";
 
-const props = await getAuthorsProps();
+import { Authors } from "./Authors";
+
+// Test helpers
+let testIdCounter = 0;
+
+function createAuthorValue(
+  overrides: Partial<AuthorsValue> = {},
+): AuthorsValue {
+  testIdCounter += 1;
+  const name = overrides.name || `Test Author ${testIdCounter}`;
+  return {
+    avatarImageProps: undefined,
+    name,
+    reviewCount: 5,
+    slug: `test-author-${testIdCounter}`,
+    sortName: name.toLowerCase(),
+    ...overrides,
+  };
+}
+
+function resetTestIdCounter(): void {
+  testIdCounter = 0;
+}
+
+const baseProps: AuthorsProps = {
+  initialSort: "name-asc",
+  values: [],
+};
 
 describe("Authors", () => {
   beforeEach(() => {
-    // AIDEV-NOTE: Using shouldAdvanceTime: true prevents userEvent from hanging
-    // when fake timers are active. This allows async userEvent operations to complete
-    // while still controlling timer advancement for debounced inputs.
-    // See https://github.com/testing-library/user-event/issues/833
+    resetTestIdCounter();
     vi.useFakeTimers({ shouldAdvanceTime: true });
   });
 
   afterEach(() => {
-    // AIDEV-NOTE: Clear all pending timers before restoring real timers
-    // to ensure test isolation and prevent timer leaks between tests
     vi.clearAllTimers();
     vi.useRealTimers();
   });
 
-  it("can filter by name", async ({ expect }) => {
-    expect.hasAssertions();
+  describe("filtering", () => {
+    it("filters by name", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "Bram Stoker" }),
+        createAuthorValue({ name: "Stephen King" }),
+        createAuthorValue({ name: "Anne Rice" }),
+      ];
 
-    const user = getUserWithFakeTimers();
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
 
-    render(<Authors {...props} />);
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "Stoker");
+      await clickViewResults(user);
 
-    await clickToggleFilters(user);
+      const list = getGroupedAvatarList();
+      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+      expect(within(list).queryByText("Anne Rice")).not.toBeInTheDocument();
+    });
 
-    await fillNameFilter(user, "Bram Stoker");
+    it("filters by partial name match", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "H.P. Lovecraft" }),
+        createAuthorValue({ name: "H.G. Wells" }),
+        createAuthorValue({ name: "Edgar Allan Poe" }),
+      ];
 
-    await clickViewResults(user);
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
 
-    expect(getGroupedAvatarList()).toMatchSnapshot();
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "H.");
+      await clickViewResults(user);
+
+      const list = getGroupedAvatarList();
+      expect(within(list).getByText("H.P. Lovecraft")).toBeInTheDocument();
+      expect(within(list).getByText("H.G. Wells")).toBeInTheDocument();
+      expect(within(list).queryByText("Edgar Allan Poe")).not.toBeInTheDocument();
+    });
   });
 
-  it("can sort by name z->a", async ({ expect }) => {
-    expect.hasAssertions();
+  describe("sorting", () => {
+    it("sorts by name A to Z", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" }),
+        createAuthorValue({ name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" }),
+        createAuthorValue({ name: "Mary Shelley", sortName: "shelley, mary" }),
+      ];
 
-    const user = getUserWithFakeTimers();
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
 
-    render(<Authors {...props} />);
+      await clickSortOption(user, "Name (A → Z)");
 
-    await clickSortOption(user, "Name (Z → A)");
+      const list = getGroupedAvatarList();
+      const allText = list.textContent || "";
+      const arthurIndex = allText.indexOf("Arthur Conan Doyle");
+      const maryIndex = allText.indexOf("Mary Shelley");
+      const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
 
-    expect(getGroupedAvatarList()).toMatchSnapshot();
+      expect(arthurIndex).toBeLessThan(maryIndex);
+      expect(maryIndex).toBeLessThan(zeldaIndex);
+    });
+
+    it("sorts by name Z to A", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" }),
+        createAuthorValue({ name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" }),
+        createAuthorValue({ name: "Mary Shelley", sortName: "shelley, mary" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
+
+      await clickSortOption(user, "Name (Z → A)");
+
+      const list = getGroupedAvatarList();
+      const allText = list.textContent || "";
+      const arthurIndex = allText.indexOf("Arthur Conan Doyle");
+      const maryIndex = allText.indexOf("Mary Shelley");
+      const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
+
+      expect(zeldaIndex).toBeLessThan(maryIndex);
+      expect(maryIndex).toBeLessThan(arthurIndex);
+    });
+
+    it("sorts by review count fewest first", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "Popular Author", reviewCount: 20 }),
+        createAuthorValue({ name: "New Author", reviewCount: 1 }),
+        createAuthorValue({ name: "Mid Author", reviewCount: 10 }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
+
+      await clickSortOption(user, "Review Count (Fewest First)");
+
+      const list = getGroupedAvatarList();
+      const allText = list.textContent || "";
+      const newIndex = allText.indexOf("New Author");
+      const midIndex = allText.indexOf("Mid Author");
+      const popularIndex = allText.indexOf("Popular Author");
+
+      expect(newIndex).toBeLessThan(midIndex);
+      expect(midIndex).toBeLessThan(popularIndex);
+    });
+
+    it("sorts by review count most first", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "New Author", reviewCount: 1 }),
+        createAuthorValue({ name: "Popular Author", reviewCount: 20 }),
+        createAuthorValue({ name: "Mid Author", reviewCount: 10 }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
+
+      await clickSortOption(user, "Review Count (Most First)");
+
+      const list = getGroupedAvatarList();
+      const allText = list.textContent || "";
+      const newIndex = allText.indexOf("New Author");
+      const midIndex = allText.indexOf("Mid Author");
+      const popularIndex = allText.indexOf("Popular Author");
+
+      expect(popularIndex).toBeLessThan(midIndex);
+      expect(midIndex).toBeLessThan(newIndex);
+    });
   });
 
-  it("can sort by name a->z", async ({ expect }) => {
-    expect.hasAssertions();
+  describe("when clearing filters", () => {
+    it("clears all filters with clear button", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "Bram Stoker" }),
+        createAuthorValue({ name: "Stephen King" }),
+      ];
 
-    const user = getUserWithFakeTimers();
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
 
-    render(<Authors {...props} />);
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "Bram Stoker");
+      await clickViewResults(user);
 
-    await clickSortOption(user, "Name (A → Z)");
+      const list = getGroupedAvatarList();
+      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
 
-    expect(getGroupedAvatarList()).toMatchSnapshot();
+      await clickToggleFilters(user);
+      await clickClearFilters(user);
+
+      expect(getNameFilter()).toHaveValue("");
+
+      await clickViewResults(user);
+
+      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
+      expect(within(list).getByText("Stephen King")).toBeInTheDocument();
+    });
   });
 
-  it("can sort by review count asc", async ({ expect }) => {
-    expect.hasAssertions();
+  describe("when closing filter drawer without applying", () => {
+    it("resets pending filter changes", async ({ expect }) => {
+      const authors = [
+        createAuthorValue({ name: "Bram Stoker" }),
+        createAuthorValue({ name: "Stephen King" }),
+      ];
 
-    const user = getUserWithFakeTimers();
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
 
-    render(<Authors {...props} />);
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "Bram Stoker");
+      await clickViewResults(user);
 
-    await clickSortOption(user, "Review Count (Fewest First)");
+      const list = getGroupedAvatarList();
+      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
 
-    expect(getGroupedAvatarList()).toMatchSnapshot();
-  });
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "Different Author");
+      await clickCloseFilters(user);
 
-  it("can sort by review count desc", async ({ expect }) => {
-    expect.hasAssertions();
+      // Should still show originally filtered results
+      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
 
-    const user = getUserWithFakeTimers();
-
-    render(<Authors {...props} />);
-
-    await clickSortOption(user, "Review Count (Most First)");
-
-    expect(getGroupedAvatarList()).toMatchSnapshot();
-  });
-
-  it("can clear all filters", async ({ expect }) => {
-    expect.hasAssertions();
-
-    // Setup userEvent with advanceTimers
-    const user = getUserWithFakeTimers();
-
-    render(<Authors {...props} />);
-
-    // Open filter drawer
-    await clickToggleFilters(user);
-
-    // Apply multiple filters
-    await fillNameFilter(user, "Bram Stoker");
-
-    await clickViewResults(user);
-
-    const listBeforeClear = getGroupedAvatarList().innerHTML;
-
-    // Open filter drawer again
-    await clickToggleFilters(user);
-
-    // Clear all filters
-    await clickClearFilters(user);
-
-    // Check that filters are cleared
-    expect(getNameFilter()).toHaveValue("");
-
-    await clickViewResults(user);
-
-    const listAfterClear = getGroupedAvatarList().innerHTML;
-
-    expect(listBeforeClear).not.toEqual(listAfterClear);
-  });
-
-  it("can reset filters when closing drawer", async ({ expect }) => {
-    expect.hasAssertions();
-
-    // Setup userEvent with advanceTimers
-    const user = getUserWithFakeTimers();
-
-    render(<Authors {...props} />);
-
-    // Open filter drawer
-    await clickToggleFilters(user);
-
-    // Apply initial filter
-    await fillNameFilter(user, "Bram Stoker");
-
-    // Apply the filters
-    await clickViewResults(user);
-
-    // Store the current view
-    const listBeforeReset = getGroupedAvatarList().innerHTML;
-
-    // Open filter drawer again
-    await clickToggleFilters(user);
-
-    // Start typing a new filter but don't apply
-    await fillNameFilter(user, "A different name...");
-
-    // Close the drawer with the X button (should reset pending changes)
-    await clickCloseFilters(user);
-
-    // The view should still show the originally filtered results
-    const listAfterReset = getGroupedAvatarList().innerHTML;
-    expect(listAfterReset).toEqual(listBeforeReset);
-
-    // Open filter drawer again to verify filters were reset to last applied state
-    await clickToggleFilters(user);
-
-    // Should show the originally applied filter, not the pending change
-    expect(getNameFilter()).toHaveValue("Bram Stoker");
+      await clickToggleFilters(user);
+      expect(getNameFilter()).toHaveValue("Bram Stoker");
+    });
   });
 });

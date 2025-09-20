@@ -20,8 +20,8 @@ export type SortableTitle = {
 export type TitleSort =
   | "title-asc"
   | "title-desc"
-  | "work-date-asc"
-  | "work-date-desc";
+  | "work-year-asc"
+  | "work-year-desc";
 
 /**
  * Creates a title sorter function with default and custom sort options.
@@ -34,27 +34,12 @@ export function createTitleSorter<
 >(sortMap?: Record<string, (a: TValue, b: TValue) => number>) {
   const sorter = createSorter<TValue, TSort>({
     ...sortTitle<TValue>(),
-    ...sortReleaseDate<TValue>(),
+    ...sortWorkDate<TValue>(),
     ...sortMap,
   });
 
   return function titleSorter(values: TValue[], sort: TSort) {
     return sorter(values, sort);
-  };
-}
-
-/**
- * Creates release year-based sort functions.
- *
- * @template TValue - Type extending SortableReviewedWork
- * @returns Object with work year sort functions
- */
-function sortReleaseDate<TValue extends SortableTitle>() {
-  return {
-    "work-date-asc": (a: TValue, b: TValue) =>
-      sortNumber(a.workYearSequence, b.workYearSequence),
-    "work-date-desc": (a: TValue, b: TValue) =>
-      sortNumber(a.workYearSequence, b.workYearSequence) * -1,
   };
 }
 
@@ -69,5 +54,20 @@ function sortTitle<TValue extends SortableTitle>() {
     "title-asc": (a: TValue, b: TValue) => sortString(a.sortTitle, b.sortTitle),
     "title-desc": (a: TValue, b: TValue) =>
       sortString(a.sortTitle, b.sortTitle) * -1,
+  };
+}
+
+/**
+ * Creates release year-based sort functions.
+ *
+ * @template TValue - Type extending SortableReviewedWork
+ * @returns Object with work year sort functions
+ */
+function sortWorkDate<TValue extends SortableTitle>() {
+  return {
+    "work-year-asc": (a: TValue, b: TValue) =>
+      sortNumber(a.workYearSequence, b.workYearSequence),
+    "work-year-desc": (a: TValue, b: TValue) =>
+      sortNumber(a.workYearSequence, b.workYearSequence) * -1,
   };
 }

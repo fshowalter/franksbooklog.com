@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 /**
  * Hook that filters, sorts, and groups values with memoization.
  * @param sorter - Function to sort values
@@ -18,28 +16,10 @@ export function useGroupedValues<TValue, TSort, TFilterValues>(
   sort: TSort,
   activeFilterValues: TFilterValues,
 ): [Map<string, TValue[]>, number] {
-  const [currentSort, setSort] = useState<TSort>();
-  const [currentFilterValues, setFilterValues] = useState<TFilterValues>();
-  const [groupedValues, setGroupedValues] = useState<Map<string, TValue[]>>(
-    new Map<string, TValue[]>(),
-  );
-  const [totalCount, setTotalCount] = useState<number>(0);
-
-  if (
-    Object.is(currentSort, sort) &&
-    Object.is(currentFilterValues, activeFilterValues)
-  ) {
-    return [groupedValues, totalCount];
-  }
-
-  setSort(sort);
-  setFilterValues(activeFilterValues);
-
+  "use memo";
   const sortedValues = sorter(values, sort);
   const filteredValues = filterer(sortedValues, activeFilterValues);
   const newGroupedValues = grouper(filteredValues, sort);
-  setGroupedValues(newGroupedValues);
-  setTotalCount(filteredValues.length);
 
   return [newGroupedValues, filteredValues.length];
 }

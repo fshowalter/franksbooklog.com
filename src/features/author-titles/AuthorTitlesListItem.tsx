@@ -6,7 +6,7 @@ import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemR
 import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
-import type { AuthorValue } from "./AuthorTitles";
+import type { AuthorTitlesValue } from "./AuthorTitles";
 
 /**
  * List item component for displaying an author's work in the author page cover grid.
@@ -19,7 +19,7 @@ import type { AuthorValue } from "./AuthorTitles";
 export function AuthorWorksListItem({
   value,
 }: {
-  value: AuthorValue;
+  value: AuthorTitlesValue;
 }): React.JSX.Element {
   return (
     <CoverListItem coverImageProps={value.coverImageProps}>
@@ -45,7 +45,7 @@ export function AuthorWorksListItem({
 function OtherAuthors({
   values,
 }: {
-  values: AuthorValue["otherAuthors"];
+  values: AuthorTitlesValue["otherAuthors"];
 }): false | React.JSX.Element {
   if (values.length === 0) {
     return false;
