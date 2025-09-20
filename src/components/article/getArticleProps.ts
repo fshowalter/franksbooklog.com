@@ -1,6 +1,6 @@
 import { getFluidCoverImageProps } from "~/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
-import { MoreReviewsImageConfig } from "~/components/more-reviews/MoreReviews";
+import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard";
 
 import type { ArticleProps } from "./Article";
 
@@ -35,7 +35,7 @@ export async function getArticleProps({
           ...review,
           coverImageProps: await getFluidCoverImageProps(
             review,
-            MoreReviewsImageConfig,
+            ReviewCardCoverImageConfig,
           ),
         };
       }),

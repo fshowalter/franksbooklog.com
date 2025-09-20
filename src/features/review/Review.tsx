@@ -1,13 +1,12 @@
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
+import type { ReviewCardValue } from "~/components/review-card/ReviewCard";
 
 import { Cover } from "~/components/cover/Cover";
 import { Grade } from "~/components/grade/Grade";
 import { LongFormText } from "~/components/long-form-text/LongFormText";
-import {
-  MoreReviews,
-  MoreReviewsHeading,
-} from "~/components/more-reviews/MoreReviews";
+import { MoreReviews } from "~/components/more-reviews/MoreReviews";
+import { MoreReviewsHeading } from "~/components/more-reviews/MoreReviewsHeading";
 import { SubHeading } from "~/components/sub-heading/SubHeading";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
@@ -29,11 +28,11 @@ export const CoverImageConfig = {
  * Props interface for the Review page component.
  * Contains all data needed to render a single review page.
  */
-export type Props = {
+export type ReviewProps = {
   /** Cover image props for the main work cover */
   coverImageProps: CoverImageProps;
   /** Array of related reviews for the "More Reviews" section */
-  moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
+  moreReviews: ReviewCardValue[];
   /** Cover image source URL for structured data */
   structuredDataCoverSrc: string;
   /** Review data including content and metadata */
@@ -52,7 +51,7 @@ export function Review({
   moreReviews,
   structuredDataCoverSrc,
   value,
-}: Props): React.JSX.Element {
+}: ReviewProps): React.JSX.Element {
   return (
     <div className="flex flex-col" data-pagefind-body>
       <header

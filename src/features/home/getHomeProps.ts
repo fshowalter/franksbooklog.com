@@ -1,6 +1,6 @@
 import { getFluidCoverImageProps } from "~/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
-import { CoverImageConfig } from "~/components/review-card/ReviewCard";
+import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard";
 
 import type { HomeProps } from "./Home";
 
@@ -27,7 +27,7 @@ export async function getHomeProps(): Promise<HomeProps> {
           ...review,
           coverImageProps: await getFluidCoverImageProps(
             review,
-            CoverImageConfig,
+            ReviewCardCoverImageConfig,
           ),
         };
       }),

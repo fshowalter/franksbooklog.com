@@ -1,17 +1,15 @@
-import type { MoreReviewsValue } from "~/components/more-reviews/MoreReviews";
+import type { ReviewCardValue } from "~/components/review-card/ReviewCard";
 
 import { LongFormText } from "~/components/long-form-text/LongFormText";
-import {
-  MoreReviews,
-  MoreReviewsHeading,
-} from "~/components/more-reviews/MoreReviews";
+import { MoreReviews } from "~/components/more-reviews/MoreReviews";
+import { MoreReviewsHeading } from "~/components/more-reviews/MoreReviewsHeading";
 
 /**
  * Props for the Article page component
  */
 export type ArticleProps = {
   content: string | undefined;
-  recentReviews: MoreReviewsValue[];
+  recentReviews: ReviewCardValue[];
 };
 
 /**
