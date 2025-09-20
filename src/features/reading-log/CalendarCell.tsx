@@ -5,6 +5,13 @@ import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 
 import type { CalendarCellData } from "./useCalendar";
 
+/**
+ * Renders a single calendar cell for the reading log.
+ * Displays the date and any reading entries for that day.
+ * @param props - Component props
+ * @param props.value - Calendar cell data including date and reading entries
+ * @returns Calendar cell component
+ */
 export function CalendarCell({
   value,
 }: {

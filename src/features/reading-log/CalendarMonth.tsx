@@ -5,12 +5,12 @@ import { CalendarCell } from "./CalendarCell";
 import { useCalendar } from "./useCalendar";
 
 /**
- * Renders a monthly calendar view of movie viewings.
+ * Renders a monthly calendar view of reading entries.
  * @param props - Component props
  * @param props.currentMonthDate - Date string for the month to display
- * @param props.filteredValues - Array of filtered viewing values
+ * @param props.filteredValues - Array of filtered reading values
  * @param props.sort - Current sort order
- * @returns Calendar table with viewing data
+ * @returns Calendar table with reading data
  */
 export function CalendarMonth({
   currentMonthDate,

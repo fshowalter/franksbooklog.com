@@ -5,12 +5,12 @@ import { createReviewedTitleSorter } from "~/sorters/createReviewedTitleSorter";
 import type { AuthorTitlesValue } from "./AuthorTitles";
 
 /**
- * Sort type for reviews.
+ * Sort type for author titles.
  */
 export type AuthorTitlesSort = ReviewedTitleSort;
 
 /**
- * Sorter function for reviews, supporting title, grade, review date, and release date sorting.
+ * Sorter function for author titles, supporting title, grade, review date, and work year sorting.
  */
 export const sortAuthorTitles = createReviewedTitleSorter<
   AuthorTitlesValue,

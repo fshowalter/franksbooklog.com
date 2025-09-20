@@ -35,7 +35,7 @@ export {
 export { createShowMoreAction } from "~/reducers/showMoreReducer";
 
 /**
- * Union type of all reviewed work-specific filter actions for Reviews page
+ * Union type of all actions for the AuthorTitles reducer
  */
 export type AuthorTitlesAction =
   | ReviewedTitleFiltersAction
@@ -46,12 +46,12 @@ import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
 /**
- * Type definition for Reviews page filter values
+ * Type definition for AuthorTitles filter values
  */
 export type AuthorTitlesFiltersValues = ReviewedTitleFiltersValues;
 
 /**
- * Internal state type for Reviews page reducer
+ * Internal state type for AuthorTitles reducer
  */
 type AuthorTitlesState = Omit<
   ReviewedTitleFiltersState<AuthorTitlesValue>,
@@ -64,11 +64,11 @@ type AuthorTitlesState = Omit<
   };
 
 /**
- * Creates the initial state for reviews.
+ * Creates the initial state for AuthorTitles reducer.
  * @param options - Configuration options
  * @param options.initialSort - Initial sort configuration
- * @param options.values - Review values
- * @returns Initial state for reviews reducer
+ * @param options.values - Author title values
+ * @returns Initial state for AuthorTitles reducer
  */
 export function createInitialState({
   initialSort,
@@ -91,7 +91,7 @@ export function createInitialState({
 }
 
 /**
- * Reducer function for reviews state management.
+ * Reducer function for AuthorTitles state management.
  * @param state - Current state
  * @param action - Action to process
  * @returns Updated state
@@ -111,6 +111,6 @@ export function reducer(state: AuthorTitlesState, action: AuthorTitlesAction) {
 }
 
 /**
- * Action creator for reviews sort actions.
+ * Action creator for AuthorTitles sort actions.
  */
 export const createSortAction = createSortActionCreator<AuthorTitlesSort>();

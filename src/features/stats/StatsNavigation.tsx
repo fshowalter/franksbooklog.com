@@ -1,3 +1,13 @@
+/**
+ * Navigation component for stats pages with year selection.
+ * Displays an "All-Time" link and links for each available year.
+ * @param props - Component props
+ * @param props.className - Optional CSS class name for styling
+ * @param props.currentYear - Currently selected year (or "all" for all-time)
+ * @param props.linkFunc - Function to generate links for each year
+ * @param props.years - Array of available years to display
+ * @returns Stats navigation component
+ */
 export function StatsNavigation({
   className,
   currentYear,

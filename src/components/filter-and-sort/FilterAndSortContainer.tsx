@@ -11,22 +11,38 @@ export type SortProps<T extends string> = {
   sortOptions: React.ReactNode;
 };
 
+/**
+ * Props for the FilterAndSortContainer component.
+ */
 type Props<T extends string> = {
+  /** Content to render inside the container */
   children: React.ReactNode;
+  /** Optional CSS class name for styling */
   className?: string;
+  /** Filter controls to display in the drawer */
   filters: React.ReactNode;
+  /** Whether there are pending filter changes not yet applied */
   hasPendingFilters: boolean;
+  /** Optional header link configuration */
   headerLink?: {
     href: string;
     text: string;
   };
+  /** Callback when filters are applied */
   onApplyFilters: () => void;
+  /** Callback when filters are cleared */
   onClearFilters: () => void;
+  /** Callback when filter drawer is opened */
   onFilterDrawerOpen: () => void;
+  /** Callback when filters are reset */
   onResetFilters: () => void;
+  /** Count of items after pending filters would be applied */
   pendingFilteredCount: number;
+  /** Sort control properties */
   sortProps: SortProps<T>;
+  /** Optional navigation element to display at top */
   topNav?: React.ReactNode;
+  /** Total count of items before filtering */
   totalCount: number;
 };
 
