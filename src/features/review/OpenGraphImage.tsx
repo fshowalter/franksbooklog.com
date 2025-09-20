@@ -21,6 +21,9 @@ export function OpenGraphImage({
   grade,
   title,
 }: ReviewOpenGraphImageProps): React.JSX.Element {
+  // eslint-disable-next-line react-compiler/react-compiler
+  "use no memo";
+
   return (
     <div
       style={{

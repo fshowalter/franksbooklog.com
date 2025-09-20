@@ -173,14 +173,14 @@
             </div>
             <div
               class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
-              data-nav-backdrop="true"
+              data-nav-drawer-backdrop="true"
             ></div>
             <button
-              aria-controls="nav-menu"
+              aria-controls="nav-drawer"
               aria-expanded="false"
-              aria-label="Toggle navigation menu"
+              aria-label="Toggle navigation drawer"
               class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-              data-nav-toggle="true"
+              data-nav-drawer-toggle="true"
               type="button"
             >
               <span
@@ -191,9 +191,9 @@
             </button>
             <nav aria-label="Main navigation">
               <div
-                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
-                data-nav-menu="true"
-                id="nav-menu"
+                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-drawer [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-drawer="true"
+                id="nav-drawer"
               >
                 <ol class="flex flex-col gap-y-6">
                   <li
@@ -257,205 +257,208 @@
             </nav>
           </div>
         </header>
-        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
-          <header
-            class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
-          >
-            <nav class="transform-gpu pb-2 transition-transform">
-              <a
-                class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
-                href="/reviews/"
-                >Reviews</a
-              >
-            </nav>
-            <h1
-              class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
-              data-pagefind-meta="title"
+        <main class="grow" id="content">
+          <div class="flex flex-col" data-pagefind-body="true">
+            <header
+              class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
             >
-              The Intruder
-            </h1>
-            <div class="mt-4 text-center text-md text-muted">
-              by<!-- -->
-              <div
-                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
-              >
-                <a href="/authors/richard-laymon/">Richard Laymon</a>
-              </div>
-            </div>
-            <div class="mt-4">
-              <picture
-                ><source
-                  media="(prefers-color-scheme: dark)"
-                  srcset="/svg/3-stars-dark.svg" />
-                <img
-                  alt="C: 3 stars (out of 5)"
-                  height="32"
-                  src="/svg/3-stars.svg"
-                  width="160"
-              /></picture>
-            </div>
-            <div
-              class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
-            >
-              1983<!-- -->
-              |
-              <!-- -->Short Story
-            </div>
-            <div
-              class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
-              data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif"
-            >
-              <div
-                class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
-                style="
-                  background-color: var(--background-color-default);
-                  background-image:
-                    linear-gradient(
-                      90deg,
-                      rgba(var(--bg-default-rgb), 1) 0%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
-                      rgba(var(--bg-default-rgb), 0) 50%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
-                      rgba(var(--bg-default-rgb), 1) 100%
-                    ),
-                    url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif);
-                "
-              ></div>
-              <div
-                class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
-              >
-                <div
-                  class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+              <nav class="transform-gpu pb-2 transition-transform">
+                <a
+                  class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
+                  href="/reviews/"
+                  >Reviews</a
                 >
-                  <img
-                    height="331.32800000000003"
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif 1x,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=496&amp;h=662&amp;q=80&amp;f=avif 2x
-                    "
-                    width="248"
-                    decoding="auto"
-                    loading="lazy"
-                    alt=""
-                    class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                  />
+              </nav>
+              <h1
+                class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
+                data-pagefind-meta="title"
+              >
+                The Intruder
+              </h1>
+              <div class="mt-4 text-center text-md text-muted">
+                by<!-- -->
+                <div
+                  class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
+                >
+                  <a href="/authors/richard-laymon/">Richard Laymon</a>
                 </div>
               </div>
-            </div>
-            <div
-              class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
-            >
-              Reviewed
-              <!-- -->Jul 23, 2014
-            </div>
-          </header>
-          <div
-            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
-          >
-            <div
-              class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
-            >
-              <p>
-                The sound of breaking glass wakes Goldie. It’s dark. She hears
-                footsteps in the hall. Heavy breathing. Someone’s in the house.
-              </p>
-              <p>
-                <em>The Intruder</em> is another of Laymon’s entries in the
-                FastBack series of books. The books were small—about the size of
-                a passport—and just under 30 pages. With a focus on action and a
-                low vocabulary, the series strove to foster an interest in
-                reading for pleasure in young adults.
-              </p>
-              <p>
-                There’s a plot twist here that Laymon cannibalized for his later
-                novel, <em>No Sanctuary</em>. But it’s a good twist, even if I
-                did see it coming.
-              </p>
-            </div>
-            <div class="w-full max-w-popout">
-              <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              <div class="mt-4">
+                <picture
+                  ><source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg" />
+                  <img
+                    alt="C: 3 stars (out of 5)"
+                    height="32"
+                    src="/svg/3-stars.svg"
+                    width="160"
+                /></picture>
+              </div>
+              <div
+                class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
               >
-                Reading History
-              </h2>
-              <ul>
-                <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
+                1983<!-- -->
+                |
+                <!-- -->Short Story
+              </div>
+              <div
+                class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
+                data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif"
+              >
+                <div
+                  class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
+                  style="
+                    background-color: var(--background-color-default);
+                    background-image:
+                      linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif);
+                  "
+                ></div>
+                <div
+                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
                 >
-                  <div class="flex gap-x-4 py-4 tablet:gap-x-6">
-                    <div class="size-auto self-start">
-                      <div class="bg-subtle py-2 text-center">
-                        <div
-                          class="px-4 pb-2 font-serif text-md font-normal text-subtle"
-                        >
-                          2014
+                  <div
+                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                  >
+                    <img
+                      height="331.32800000000003"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=248&amp;h=331&amp;q=80&amp;f=avif 1x,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=496&amp;h=662&amp;q=80&amp;f=avif 2x
+                      "
+                      width="248"
+                      decoding="auto"
+                      loading="lazy"
+                      alt=""
+                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
+              >
+                Reviewed
+                <!-- -->Jul 23, 2014
+              </div>
+            </header>
+            <div
+              class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+            >
+              <div
+                class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+              >
+                <p>
+                  The sound of breaking glass wakes Goldie. It’s dark. She hears
+                  footsteps in the hall. Heavy breathing. Someone’s in the
+                  house.
+                </p>
+                <p>
+                  <em>The Intruder</em> is another of Laymon’s entries in the
+                  FastBack series of books. The books were small—about the size
+                  of a passport—and just under 30 pages. With a focus on action
+                  and a low vocabulary, the series strove to foster an interest
+                  in reading for pleasure in young adults.
+                </p>
+                <p>
+                  There’s a plot twist here that Laymon cannibalized for his
+                  later novel, <em>No Sanctuary</em>. But it’s a good twist,
+                  even if I did see it coming.
+                </p>
+              </div>
+              <div class="w-full max-w-popout">
+                <h2
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+                >
+                  Reading History
+                </h2>
+                <ul>
+                  <li
+                    class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
+                  >
+                    <div class="flex gap-x-4 py-4 tablet:gap-x-6">
+                      <div class="size-auto self-start">
+                        <div class="bg-subtle py-2 text-center">
+                          <div
+                            class="px-4 pb-2 font-serif text-md font-normal text-subtle"
+                          >
+                            2014
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Jul</div>
+                          <div
+                            class="bg-default font-serif text-md font-normal text-default"
+                          >
+                            23
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Wed</div>
                         </div>
-                        <div class="bg-default py-1 text-subtle">Jul</div>
-                        <div
-                          class="bg-default font-serif text-md font-normal text-default"
+                      </div>
+                      <div class="mt-12 grow">
+                        <span
+                          class="font-serif text-base font-normal text-default"
+                          >Paperback</span
+                        ><span class="font-light tracking-normal text-subtle">
+                          <!-- -->(<span class="rendered-markdown leading-none"
+                            ><span>Globe Fearon Co, 1984</span></span
+                          >)</span
                         >
-                          23
-                        </div>
-                        <div class="bg-default py-1 text-subtle">Wed</div>
                       </div>
                     </div>
-                    <div class="mt-12 grow">
-                      <span
-                        class="font-serif text-base font-normal text-default"
-                        >Paperback</span
-                      ><span class="font-light tracking-normal text-subtle">
-                        <!-- -->(<span class="rendered-markdown leading-none"
-                          ><span>Globe Fearon Co, 1984</span></span
-                        >)</span
-                      >
-                    </div>
-                  </div>
-                  <div></div>
-                </li>
-              </ul>
+                    <div></div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
-            data-pagefind-ignore="true"
-          >
-            <nav
-              class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
-              data-page-find-ignore="true"
+            <div
+              class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
+              data-pagefind-ignore="true"
             >
-              <div>
-                <h2
-                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
-                >
-                  <a
-                    class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
-                    href="/reviews/"
-                    >More<!-- -->
-                    <span class="text-accent">Reviews</span></a
+              <nav
+                class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
+                data-page-find-ignore="true"
+              >
+                <div>
+                  <h2
+                    class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
                   >
-                </h2>
-              </div>
-              <div class="@container/cover-list mx-auto tablet:-mx-6">
-                <ol
-                  class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
-                ></ol>
-              </div>
-            </nav>
+                    <a
+                      class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
+                      href="/reviews/"
+                      >More<!-- -->
+                      <span class="text-accent">Reviews</span></a
+                    >
+                  </h2>
+                </div>
+                <div class="@container/cover-list mx-auto tablet:-mx-6">
+                  <ol
+                    class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
+                  ></ol>
+                </div>
+              </nav>
+            </div>
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Frank Showalter" },
+                "itemReviewed": {
+                  "@type": "Book",
+                  "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
+                  "name": "The Intruder"
+                },
+                "reviewRating": { "@type": "Rating", "ratingValue": 3 }
+              }
+            </script>
           </div>
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Review",
-              "author": { "@type": "Person", "name": "Frank Showalter" },
-              "itemReviewed": {
-                "@type": "Book",
-                "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
-                "name": "The Intruder"
-              },
-              "reviewRating": { "@type": "Rating", "ratingValue": 3 }
-            }
-          </script>
         </main>
         <footer class="bg-canvas">
           <div class="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
@@ -752,7 +755,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
+      src="/src/astro/AstroPageShell.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

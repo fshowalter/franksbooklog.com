@@ -3,10 +3,6 @@ import { useState } from "react";
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
-/**
- * Pre-defined grade options with numeric values for sorting.
- * Maps letter grades to numeric values (F=1, A+=13) for range selection.
- */
 const gradeOptions = [
   <option key={13} value={13}>
     A+
@@ -50,36 +46,24 @@ const gradeOptions = [
 ];
 
 /**
- * Reversed grade options for the "From" dropdown to show best grades first.
- */
-const reversedOptions = [...gradeOptions].reverse();
-
-/**
- * Renders a grade range selection field with "From" and "To" dropdowns.
- * Allows users to select a range of grades (F to A+) with automatic
- * value sorting to ensure valid ranges. Uses numeric values internally.
- *
- * @param props - The component props
- * @param props.initialValues - Initial [min, max] grade values for the range
- * @param props.label - The label text for the fieldset
- * @param props.onGradeChange - Callback function called when the grade range changes
- * @returns A JSX element containing the grade range selection fieldset
+ * Grade range selector with from/to letter grade dropdowns.
+ * @param props - Component props
+ * @param props.defaultValues - Default [min, max] grade values
+ * @param props.label - Field label text
+ * @param props.onGradeChange - Handler for grade range changes
+ * @returns Grade range selector with two dropdowns
  */
 export function GradeField({
-  initialValues,
+  defaultValues,
   label,
   onGradeChange,
 }: {
-  initialValues: number[] | undefined;
+  defaultValues: [number, number] | undefined;
   label: string;
   onGradeChange: (values: [number, number]) => void;
 }): React.JSX.Element {
-  const [minValue, setMinValue] = useState(
-    initialValues && initialValues.length > 0 ? initialValues[0] : 1,
-  );
-  const [maxValue, setMaxValue] = useState(
-    initialValues && initialValues.length > 1 ? initialValues[1] : 13,
-  );
+  const [minValue, setMinValue] = useState(defaultMinValue(defaultValues));
+  const [maxValue, setMaxValue] = useState(defaultMaxValue(defaultValues));
 
   const handleMinChange = (value: string): void => {
     const newMin = Number.parseInt(value, 10);
@@ -112,10 +96,10 @@ export function GradeField({
             From
           </span>
           <SelectInput
+            defaultValue={defaultMinValue(defaultValues)}
             onChange={(e) => handleMinChange(e.target.value)}
-            value={minValue}
           >
-            {reversedOptions}
+            {[...gradeOptions].reverse()}
           </SelectInput>
         </label>
         <label className="flex flex-1 items-center">
@@ -123,13 +107,21 @@ export function GradeField({
             to
           </span>
           <SelectInput
+            defaultValue={defaultMaxValue(defaultValues)}
             onChange={(e) => handleMaxChange(e.target.value)}
-            value={maxValue}
           >
-            {gradeOptions}
+            {[...gradeOptions]}
           </SelectInput>
         </label>
       </div>
     </fieldset>
   );
+}
+
+function defaultMaxValue(selectedValues?: [number, number]): number {
+  return selectedValues ? selectedValues[1] : 13;
+}
+
+function defaultMinValue(selectedValues?: [number, number]): number {
+  return selectedValues ? selectedValues[0] : 1;
 }

@@ -1,8 +1,5 @@
-import type { BackdropImageProps } from "~/api/backdrops";
 import type { MoreReviewsValue } from "~/components/more-reviews/MoreReviews";
 
-import { Backdrop } from "~/components/backdrop/Backdrop";
-import { Layout } from "~/components/layout/Layout";
 import { LongFormText } from "~/components/long-form-text/LongFormText";
 import {
   MoreReviews,
@@ -12,12 +9,9 @@ import {
 /**
  * Props for the Article page component
  */
-export type Props = {
-  backdropImageProps: BackdropImageProps;
+export type ArticleProps = {
   content: string | undefined;
-  deck: string;
   recentReviews: MoreReviewsValue[];
-  title: string;
 };
 
 /**
@@ -33,27 +27,16 @@ export type Props = {
  * @returns Article page component with backdrop, content, and recent reviews
  */
 export function Article({
-  backdropImageProps,
   content,
-  deck,
   recentReviews,
-  title,
-}: Props): React.JSX.Element {
+}: ArticleProps): React.JSX.Element {
   return (
-    <Layout hasBackdrop={true}>
-      <article>
-        <Backdrop
-          centerText={true}
-          deck={deck}
-          imageProps={backdropImageProps}
-          title={title}
-        />
-        <section className="flex flex-col items-center pt-16 pb-32">
-          <div className="px-container">
-            <LongFormText className={`max-w-prose`} text={content} />
-          </div>
-        </section>
-      </article>
+    <>
+      <section className="flex flex-col items-center pt-16 pb-32">
+        <div className="px-container">
+          <LongFormText className={`max-w-prose`} text={content} />
+        </div>
+      </section>
       <div
         className={`
           flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
@@ -70,6 +53,6 @@ export function Article({
           />
         </MoreReviews>
       </div>
-    </Layout>
+    </>
   );
 }

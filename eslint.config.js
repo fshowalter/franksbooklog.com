@@ -14,6 +14,8 @@ import { defineConfig } from "eslint/config";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
 
+import separateTypeImports from "./eslint-rules/separate-type-imports.js";
+
 export default defineConfig(
   {
     ignores: ["dist/", ".astro/", "coverage/", "content/", "public/"],
@@ -48,10 +50,17 @@ export default defineConfig(
         warnOnUnsupportedTypeScriptVersion: false,
       },
     },
+    plugins: {
+      local: {
+        rules: {
+          "separate-type-imports": separateTypeImports,
+        },
+      },
+    },
     rules: {
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-      "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/consistent-type-imports": "off", // Turned off in favor of our custom rule
       "no-restricted-imports": [
         "error",
         {
@@ -76,7 +85,7 @@ export default defineConfig(
     },
     settings: {
       "better-tailwindcss": {
-        entryPoint: "src/layouts/tailwind.css",
+        entryPoint: "src/css/tailwind.css",
       },
     },
   },
@@ -106,7 +115,7 @@ export default defineConfig(
       "better-tailwindcss": {
         attributes: [...getDefaultAttributes(), ".*Classes"],
         callees: [...getDefaultCallees(), "ccn"],
-        entryPoint: "src/layouts/tailwind.css",
+        entryPoint: "src/css/tailwind.css",
       },
       react: {
         version: "detect",

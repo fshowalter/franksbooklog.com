@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { FilterAndSortHeader } from "./FilterAndSortHeader";
 
 /**
- * Props for sorting functionality within the filter container
+ * Props for sort functionality.
  */
 export type SortProps<T extends string> = {
   currentSortValue: T;
@@ -11,36 +11,53 @@ export type SortProps<T extends string> = {
   sortOptions: React.ReactNode;
 };
 
+/**
+ * Props for the FilterAndSortContainer component.
+ */
 type Props<T extends string> = {
+  /** Content to render inside the container */
   children: React.ReactNode;
+  /** Optional CSS class name for styling */
   className?: string;
+  /** Filter controls to display in the drawer */
   filters: React.ReactNode;
-  hasActiveFilters: boolean;
-  headerLinks?: React.ReactNode;
+  /** Whether there are pending filter changes not yet applied */
+  hasPendingFilters: boolean;
+  /** Optional header link configuration */
+  headerLink?: {
+    href: string;
+    text: string;
+  };
+  /** Callback when filters are applied */
   onApplyFilters: () => void;
+  /** Callback when filters are cleared */
   onClearFilters: () => void;
+  /** Callback when filter drawer is opened */
   onFilterDrawerOpen: () => void;
+  /** Callback when filters are reset */
   onResetFilters: () => void;
+  /** Count of items after pending filters would be applied */
   pendingFilteredCount: number;
+  /** Sort control properties */
   sortProps: SortProps<T>;
+  /** Optional navigation element to display at top */
   topNav?: React.ReactNode;
+  /** Total count of items before filtering */
   totalCount: number;
 };
 
 /**
- * Container component for filter and sort functionality with drawer UI.
- * Manages filter drawer state, animations, and provides a consistent
- * interface for filtering and sorting collections of items.
- *
- * @param props - Component props
- * @returns Filter and sort container with drawer functionality
+ * Reusable container component for lists with filtering and sorting capabilities.
+ * Provides a drawer-based filter UI and sort dropdown with responsive behavior.
+ * @param props - Component properties
+ * @returns Filter and sort container with drawer and header controls
  */
 export function FilterAndSortContainer<T extends string>({
   children,
   className,
   filters,
-  hasActiveFilters,
-  headerLinks,
+  hasPendingFilters,
+  headerLink,
   onApplyFilters,
   onClearFilters,
   onFilterDrawerOpen,
@@ -53,8 +70,9 @@ export function FilterAndSortContainer<T extends string>({
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
   const filtersRef = useRef<HTMLDivElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
-  const listRef = useRef<HTMLDivElement | null>(null);
   const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const listRef = useRef<HTMLDivElement | null>(null);
 
   const handleCloseDrawer = useCallback(
     (shouldResetFilters = true) => {
@@ -64,9 +82,10 @@ export function FilterAndSortContainer<T extends string>({
       setFilterDrawerVisible(false);
       if (shouldResetFilters) {
         onResetFilters();
+        formRef?.current?.reset();
       }
     },
-    [onResetFilters],
+    [onResetFilters, formRef],
   );
 
   const onFilterClick = useCallback(
@@ -111,9 +130,7 @@ export function FilterAndSortContainer<T extends string>({
   useEffect(() => {
     if (prevSortValueRef.current !== sortProps.currentSortValue) {
       prevSortValueRef.current = sortProps.currentSortValue;
-      if (typeof document !== "undefined") {
-        listRef.current?.scrollIntoView({ behavior: "smooth" });
-      }
+      listRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [sortProps.currentSortValue]);
 
@@ -127,7 +144,7 @@ export function FilterAndSortContainer<T extends string>({
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
-            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-10
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20
             scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
             border-default bg-default text-xs
             tablet:col-span-full
@@ -135,7 +152,7 @@ export function FilterAndSortContainer<T extends string>({
         >
           <FilterAndSortHeader
             filterDrawerVisible={filterDrawerVisible}
-            headerLinks={headerLinks}
+            headerLink={headerLink}
             onFilterClick={onFilterClick}
             sortProps={sortProps}
             toggleButtonRef={toggleButtonRef}
@@ -183,8 +200,8 @@ export function FilterAndSortContainer<T extends string>({
             aria-label="Filters"
             className={`
               fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px]
-              flex-col items-start gap-y-5 bg-default text-left text-inverse
-              duration-200 ease-in-out
+              flex-col items-start gap-y-5 bg-default text-left duration-200
+              ease-in-out
               ${
                 filterDrawerVisible
                   ? `
@@ -198,12 +215,13 @@ export function FilterAndSortContainer<T extends string>({
             id="filters"
             ref={filtersRef}
           >
-            <div
+            <form
               className={`
                 flex h-full w-full flex-col text-sm
                 tablet:text-base
                 [@media(min-height:815px)]:pt-12
               `}
+              ref={formRef}
             >
               {/* Close button */}
               <button
@@ -222,7 +240,7 @@ export function FilterAndSortContainer<T extends string>({
               >
                 <svg
                   aria-hidden="true"
-                  className="h-4 w-4"
+                  className="h-4 w-4 transform-gpu"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -267,38 +285,46 @@ export function FilterAndSortContainer<T extends string>({
                       flex items-center justify-center gap-x-4 rounded-sm
                       bg-canvas px-4 py-3 font-sans text-xs text-nowrap
                       uppercase transition-transform
-                      enabled:hover:scale-105 enabled:hover:drop-shadow-md
                       ${
-                        hasActiveFilters
-                          ? "cursor-pointer text-default"
+                        hasPendingFilters
+                          ? `
+                            cursor-pointer text-default
+                            enabled:hover:scale-105 enabled:hover:drop-shadow-md
+                          `
                           : "cursor-not-allowed text-muted opacity-50"
                       }
                     `}
-                    disabled={hasActiveFilters ? undefined : false}
+                    disabled={hasPendingFilters ? false : true}
                     onClick={() => {
-                      if (hasActiveFilters) {
-                        onClearFilters();
+                      if (hasPendingFilters) {
+                        onClearFilters?.();
                       }
                     }}
-                    type="button"
+                    type="reset"
                   >
                     Clear
                   </button>
                   <button
                     className={`
-                      flex flex-1 transform-gpu cursor-pointer items-center
-                      justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
-                      font-sans text-xs font-bold tracking-wide text-nowrap
-                      text-inverse uppercase transition-transform
-                      hover:scale-105 hover:drop-shadow-md
+                      flex flex-1 transform-gpu items-center justify-center
+                      gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs
+                      font-bold tracking-wide text-nowrap text-inverse uppercase
+                      transition-transform
+                      ${
+                        pendingFilteredCount === 0
+                          ? "cursor-not-allowed text-muted opacity-50"
+                          : `
+                            cursor-pointer
+                            hover:scale-105 hover:drop-shadow-md
+                          `
+                      }
                     `}
+                    disabled={pendingFilteredCount === 0 ? true : false}
                     onClick={() => {
                       // Apply pending filters
                       onApplyFilters();
                       handleCloseDrawer(false); // Don't reset filters when applying
-                      if (typeof document !== "undefined") {
-                        listRef.current?.scrollIntoView();
-                      }
+                      listRef.current?.scrollIntoView();
                     }}
                     type="button"
                   >
@@ -306,7 +332,7 @@ export function FilterAndSortContainer<T extends string>({
                   </button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

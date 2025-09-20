@@ -1,21 +1,22 @@
 ---
-import { Backdrop } from "~/components/backdrop/Backdrop";
-import { Layout as ComponentLayout } from "~/components/layout/Layout";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
 import { Authors } from "~/features/authors/Authors";
-import { getProps } from "~/features/authors/getProps";
-import Layout from "~/layouts/Layout.astro";
+import { getAuthorsProps } from "~/features/authors/getAuthorsProps";
 
-const props = await getProps();
+const authorsProps = await getAuthorsProps();
+const backdropImageProps = await getLayoutBackdropImageProps("authors");
 
-// Separate layout props from interactive props
-const { backdropImageProps, deck, ...clientProps } = props;
+const deck = '"Maybe I can glue it together. In the morning"';
+const metaDescription =
+  "A sortable index of authors who contributed to the books and stories reviewed on this site. Sort by name or review count.";
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{
-    description:
-      "A sortable index of authors who contributed to the books and stories reviewed on this site. Sort by name or review count.",
+    description: metaDescription,
   }}
   openGraph={{
     description: deck,
@@ -23,11 +24,14 @@ const { backdropImageProps, deck, ...clientProps } = props;
   }}
   title="Authors"
 >
-  <Fragment slot="meta-theme-color">
-    <meta content="rgba(0,0,0,.85)" name="theme-color" />
-  </Fragment>
-  <ComponentLayout className="bg-subtle">
-    <Backdrop deck={deck} imageProps={backdropImageProps} title="Authors" />
-    <Authors client:load {...clientProps} />
-  </ComponentLayout>
-</Layout>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      deck,
+      title: "Authors",
+    }}
+    className="bg-subtle"
+  >
+    <Authors client:load {...authorsProps} />
+  </Layout>
+</AstroPageShell>

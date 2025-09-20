@@ -1,28 +1,30 @@
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
 import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { ReviewedWorkSortOptions } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
+import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
+import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
-import type { ReviewsSort } from "./Reviews.sorter";
+import type { ReviewsSort } from "./sortReviews";
 
-import { Filters } from "./Filters";
+import { filterReviews } from "./filteredReviews";
+import { groupReviews } from "./groupReviews";
 import {
-  createApplyPendingFiltersAction,
-  createClearPendingFiltersAction,
-  createResetPendingFiltersAction,
+  createApplyFiltersAction,
+  createClearFiltersAction,
+  createInitialState,
+  createResetFiltersAction,
   createShowMoreAction,
   createSortAction,
-  initState,
-  reviewsReducer,
+  reducer,
+  selectHasPendingFilters,
 } from "./Reviews.reducer";
-import {
-  selectGroupedValues,
-  selectSortedFilteredValues,
-} from "./Reviews.sorter";
+import { ReviewsFilters } from "./ReviewsFilters";
 import { ReviewsListItem } from "./ReviewsListItem";
+import { sortReviews } from "./sortReviews";
 
 /**
  * Props interface for the Reviews page component.
@@ -100,50 +102,52 @@ export function Reviews({
   values,
 }: ReviewsProps): React.JSX.Element {
   const [state, dispatch] = useReducer(
-    reviewsReducer,
+    reducer,
     {
       initialSort,
       values,
     },
-    initState,
+    createInitialState,
   );
-  const [filterKey, setFilterKey] = useState(0);
-
-  const sortedValues = selectSortedFilteredValues(
-    state.filteredValues,
+  const [groupedValues, totalCount] = usePaginatedGroupedValues(
+    sortReviews,
+    filterReviews,
+    groupReviews,
+    state.values,
     state.sort,
-  );
-
-  const groupedValues = selectGroupedValues(
-    sortedValues,
+    state.activeFilterValues,
     state.showCount,
-    state.sort,
   );
+
+  const pendingFilteredCount = usePendingFilterCount(
+    filterReviews,
+    state.values,
+    state.pendingFilterValues,
+  );
+
+  const hasPendingFilters = selectHasPendingFilters(state);
 
   return (
     <FilterAndSortContainer
       filters={
-        <Filters
+        <ReviewsFilters
           dispatch={dispatch}
           distinctKinds={distinctKinds}
           distinctReviewYears={distinctReviewYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
-          key={filterKey}
         />
       }
-      hasActiveFilters={state.hasActiveFilters}
-      onApplyFilters={() => dispatch(createApplyPendingFiltersAction())}
+      hasPendingFilters={hasPendingFilters}
+      onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
-        dispatch(createClearPendingFiltersAction());
-        setFilterKey((k) => k + 1);
+        dispatch(createClearFiltersAction());
       }}
-      onFilterDrawerOpen={() => dispatch(createResetPendingFiltersAction())}
+      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
       onResetFilters={() => {
-        dispatch(createResetPendingFiltersAction());
-        setFilterKey((k) => k + 1);
+        dispatch(createResetFiltersAction());
       }}
-      pendingFilteredCount={state.pendingFilteredCount}
+      pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
         onSortChange: (e) =>
@@ -156,12 +160,12 @@ export function Reviews({
           </>
         ),
       }}
-      totalCount={state.filteredValues.length}
+      totalCount={totalCount}
     >
       <GroupedCoverList
         groupedValues={groupedValues}
         onShowMore={() => dispatch(createShowMoreAction())}
-        totalCount={state.filteredValues.length}
+        totalCount={totalCount}
         visibleCount={state.showCount}
       >
         {(value) => <ReviewsListItem key={value.slug} value={value} />}

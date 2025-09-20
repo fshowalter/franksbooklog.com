@@ -1,8 +1,4 @@
-import type { BackdropImageProps } from "~/api/backdrops";
 import type { YearStats } from "~/api/stats";
-
-import { Backdrop, BreadcrumbLink } from "~/components/backdrop/Backdrop";
-import { Layout } from "~/components/layout/Layout";
 
 import { Callouts } from "./Callouts";
 import { DecadeDistribution } from "./DecadeDistribution";
@@ -16,10 +12,6 @@ import { StatsNavigation } from "./StatsNavigation";
  * Contains all data needed to render yearly reading statistics.
  */
 export type YearStatsProps = {
-  /** Backdrop image properties */
-  backdropImageProps: BackdropImageProps;
-  /** Subtitle text for the page */
-  deck: string;
   /** Available years for navigation */
   distinctStatYears: readonly string[];
   /** Most read authors data for the year */
@@ -44,24 +36,13 @@ export type YearStatsProps = {
  * @returns Year statistics page component
  */
 export function YearStats({
-  backdropImageProps,
-  deck,
   distinctStatYears,
   mostReadAuthors,
   stats,
   year,
 }: YearStatsProps): React.JSX.Element {
   return (
-    <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
-      <Backdrop
-        breadcrumb={
-          <BreadcrumbLink href="/readings/">Reading Log</BreadcrumbLink>
-        }
-        centerText={true}
-        deck={deck}
-        imageProps={backdropImageProps}
-        title={`${year} Stats`}
-      />
+    <div className="flex flex-col items-center bg-subtle">
       <StatsNavigation
         className="z-10 mb-12 w-full"
         currentYear={year}
@@ -101,6 +82,6 @@ export function YearStats({
           <EditionDistribution values={stats.editionDistribution} />
         </div>
       </div>
-    </Layout>
+    </div>
   );
 }

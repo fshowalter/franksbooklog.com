@@ -1,7 +1,5 @@
 import { TextField } from "~/components/fields/TextField";
 
-import type { CollectionFiltersValues } from "./CollectionFilters.reducer";
-
 /**
  * Renders filter controls for collection listings (authors, genres, etc.).
  * Provides a simple name-based search filter for filtering collection items
@@ -15,14 +13,14 @@ export function CollectionFilters({
   name,
 }: {
   name: {
-    initialValue: CollectionFiltersValues["name"];
+    defaultValue?: string;
     onChange: (value: string) => void;
   };
 }): React.JSX.Element {
   return (
     <>
       <TextField
-        initialValue={name.initialValue}
+        defaultValue={name.defaultValue}
         label="Name"
         onInputChange={name.onChange}
         placeholder="Enter all or part of a name"

@@ -1,5 +1,5 @@
 import type { AuthorsValue } from "./Authors";
-import type { AuthorsSort } from "./Authors.sorter";
+import type { AuthorsSort } from "./sortAuthors";
 
 /**
  * Alphabet navigation component for the authors list page.

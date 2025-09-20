@@ -252,6 +252,13 @@
         }
       })();
     </script>
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
     <div class="group">
       <a
         class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
@@ -367,14 +374,14 @@
             </div>
             <div
               class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
-              data-nav-backdrop="true"
+              data-nav-drawer-backdrop="true"
             ></div>
             <button
-              aria-controls="nav-menu"
+              aria-controls="nav-drawer"
               aria-expanded="false"
-              aria-label="Toggle navigation menu"
+              aria-label="Toggle navigation drawer"
               class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-              data-nav-toggle="true"
+              data-nav-drawer-toggle="true"
               type="button"
             >
               <span
@@ -385,9 +392,9 @@
             </button>
             <nav aria-label="Main navigation">
               <div
-                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
-                data-nav-menu="true"
-                id="nav-menu"
+                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-drawer [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-drawer="true"
+                id="nav-drawer"
               >
                 <ol class="flex flex-col gap-y-6">
                   <li
@@ -452,13 +459,6 @@
           </div>
         </header>
         <main class="grow bg-subtle" id="content">
-          <link
-            rel="preload"
-            as="image"
-            imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Freviews.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
-            imagesizes="100vw"
-            fetchpriority="high"
-          />
           <header
             class="min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-[#2A2B2A] pt-40 pb-8 text-inverse tablet:pt-40 tablet:pb-10 laptop:pt-40 laptop:pb-16"
           >
@@ -495,8 +495,8 @@
             </div>
           </header>
           <astro-island
-            uid="BbFDj"
-            prefix="r3"
+            uid="2cSfsw"
+            prefix="r1"
             component-url="~/features/reviews/Reviews"
             component-export="Reviews"
             renderer-url="@astrojs/react/client.js"
@@ -513,7 +513,7 @@
             >
               <div class="group/list-with-filters mx-auto bg-subtle">
                 <div
-                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-10 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
+                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
                 >
                   <div
                     class="mx-auto grid max-w-[var(--breakpoint-desktop)] grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]"
@@ -526,7 +526,7 @@
                         <!-- -->Results</span
                       ></span
                     >
-                    <div class=""></div>
+                    <div></div>
                     <div
                       class="col-span-full tablet:col-span-1 tablet:col-start-4 desktop:pl-8"
                     >
@@ -2602,10 +2602,10 @@
                   ></div>
                   <div
                     aria-label="Filters"
-                    class="fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left text-inverse duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10"
+                    class="fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10"
                     id="filters"
                   >
-                    <div
+                    <form
                       class="flex h-full w-full flex-col text-sm tablet:text-base [@media(min-height:815px)]:pt-12"
                     >
                       <button
@@ -2615,7 +2615,7 @@
                       >
                         <svg
                           aria-hidden="true"
-                          class="h-4 w-4"
+                          class="h-4 w-4 transform-gpu"
                           fill="none"
                           stroke="currentColor"
                           stroke-width="2"
@@ -2644,7 +2644,6 @@
                             class="border-0 bg-default px-4 py-2 text-base text-default shadow-all outline-accent placeholder:text-default placeholder:opacity-50"
                             placeholder="Enter all or part of a title"
                             type="text"
-                            value=""
                         /></label>
                         <fieldset class="text-subtle">
                           <legend
@@ -2828,12 +2827,13 @@
                         <div class="flex gap-x-4">
                           <button
                             aria-label="Clear all filters"
-                            class="flex items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-3 font-sans text-xs text-nowrap uppercase transition-transform enabled:hover:scale-105 enabled:hover:drop-shadow-md cursor-not-allowed text-muted opacity-50"
-                            type="button"
+                            class="flex items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-3 font-sans text-xs text-nowrap uppercase transition-transform cursor-not-allowed text-muted opacity-50"
+                            disabled=""
+                            type="reset"
                           >
                             Clear</button
                           ><button
-                            class="flex flex-1 transform-gpu cursor-pointer items-center justify-center gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs font-bold tracking-wide text-nowrap text-inverse uppercase transition-transform hover:scale-105 hover:drop-shadow-md"
+                            class="flex flex-1 transform-gpu items-center justify-center gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs font-bold tracking-wide text-nowrap text-inverse uppercase transition-transform cursor-pointer hover:scale-105 hover:drop-shadow-md"
                             type="button"
                           >
                             View
@@ -2842,7 +2842,7 @@
                           </button>
                         </div>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -3145,7 +3145,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
+      src="/src/astro/AstroPageShell.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

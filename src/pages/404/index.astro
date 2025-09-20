@@ -1,22 +1,28 @@
 ---
-import { Article } from "~/components/article/Article";
-import { getProps } from "~/components/article/getProps";
-import Layout from "~/layouts/Layout.astro";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
 
-const slug = "not-found";
-const deck = '"Dick Laurent is dead."';
-
-const props = await getProps({
-  deck,
-  slug,
-});
+const backdropImageProps = await getLayoutBackdropImageProps("not-found");
+const deck = '"I simply am not there."';
 ---
 
-<Layout
+<AstroPageShell
   canonical={false}
   meta={{ description: deck }}
   openGraph={false}
   title="404: Not Found"
 >
-  <Article {...props} />
-</Layout>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      centerText: true,
+      deck,
+      size: "large",
+      title: "404 Not Found",
+    }}
+    className="bg-subtle"
+  >
+    <span></span>
+  </Layout>
+</AstroPageShell>

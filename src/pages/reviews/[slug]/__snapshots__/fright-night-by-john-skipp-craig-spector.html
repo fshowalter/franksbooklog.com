@@ -174,14 +174,14 @@
             </div>
             <div
               class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
-              data-nav-backdrop="true"
+              data-nav-drawer-backdrop="true"
             ></div>
             <button
-              aria-controls="nav-menu"
+              aria-controls="nav-drawer"
               aria-expanded="false"
-              aria-label="Toggle navigation menu"
+              aria-label="Toggle navigation drawer"
               class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-              data-nav-toggle="true"
+              data-nav-drawer-toggle="true"
               type="button"
             >
               <span
@@ -192,9 +192,9 @@
             </button>
             <nav aria-label="Main navigation">
               <div
-                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
-                data-nav-menu="true"
-                id="nav-menu"
+                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-drawer [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-drawer="true"
+                id="nav-drawer"
               >
                 <ol class="flex flex-col gap-y-6">
                   <li
@@ -258,660 +258,665 @@
             </nav>
           </div>
         </header>
-        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
-          <header
-            class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
-          >
-            <nav class="transform-gpu pb-2 transition-transform">
-              <a
-                class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
-                href="/reviews/"
-                >Reviews</a
-              >
-            </nav>
-            <h1
-              class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
-              data-pagefind-meta="title"
+        <main class="grow" id="content">
+          <div class="flex flex-col" data-pagefind-body="true">
+            <header
+              class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
             >
-              Fright Night
-            </h1>
-            <div class="mt-4 text-center text-md text-muted">
-              by<!-- -->
-              <div
-                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
-              >
-                <a href="/authors/john-skipp/">John Skipp</a>
-              </div>
-              and
-              <div
-                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
-              >
-                <a href="/authors/craig-spector/">Craig Spector</a>
-              </div>
-            </div>
-            <div class="mt-4">
-              <picture
-                ><source
-                  media="(prefers-color-scheme: dark)"
-                  srcset="/svg/1-star-dark.svg" />
-                <img
-                  alt="F: 1 star (out of 5)"
-                  height="32"
-                  src="/svg/1-star.svg"
-                  width="160"
-              /></picture>
-            </div>
-            <div
-              class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
-            >
-              1985<!-- -->
-              |
-              <!-- -->Novel
-            </div>
-            <div
-              class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
-              data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-            >
-              <div
-                class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
-                style="
-                  background-color: var(--background-color-default);
-                  background-image:
-                    linear-gradient(
-                      90deg,
-                      rgba(var(--bg-default-rgb), 1) 0%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
-                      rgba(var(--bg-default-rgb), 0) 50%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
-                      rgba(var(--bg-default-rgb), 1) 100%
-                    ),
-                    url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                "
-              ></div>
-              <div
-                class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
-              >
-                <div
-                  class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+              <nav class="transform-gpu pb-2 transition-transform">
+                <a
+                  class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
+                  href="/reviews/"
+                  >Reviews</a
                 >
-                  <img
-                    height="372"
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x
-                    "
-                    width="248"
-                    decoding="auto"
-                    loading="lazy"
-                    alt=""
-                    class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                  />
+              </nav>
+              <h1
+                class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
+                data-pagefind-meta="title"
+              >
+                Fright Night
+              </h1>
+              <div class="mt-4 text-center text-md text-muted">
+                by<!-- -->
+                <div
+                  class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
+                >
+                  <a href="/authors/john-skipp/">John Skipp</a>
+                </div>
+                and
+                <div
+                  class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
+                >
+                  <a href="/authors/craig-spector/">Craig Spector</a>
                 </div>
               </div>
-            </div>
-            <div
-              class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
-            >
-              Reviewed
-              <!-- -->Jan 21, 2023
-            </div>
-          </header>
-          <div
-            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
-          >
-            <div
-              class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
-            >
-              <p>
-                During a late-night make-out session with his girlfriend,
-                high-schooler Charlie Brewster spies two men carrying a coffin
-                into the basement of the house next-door. Charlie soon discovers
-                his suave new neighbor, Jerry Dandrige, has fangs. When the
-                police don’t believe him, Charlie appeals to the local
-                creature-feature host, washed up horror icon Peter Vincent, for
-                help.
-              </p>
-              <!-- end -->
-              <p>
-                Curiosity prompted me to seek out this novelization. I’m a big
-                fan of the 1985 film. Writer/director Tom Holland sold the
-                adaptation rights before making the film, so authors John Skipp
-                and Craig Spector weren’t working from the final shooting
-                script. This proves consequential, as Holland had the cast write
-                biographies for their characters and incorporated some of those
-                elements into the final script. These changes are absent in the
-                novelization.
-              </p>
-              <p>
-                Though Roddy McDowell plays Peter Vincent in the film, Holland
-                wrote the part for Vincent Price, as evident in the novel’s
-                description of young Peter Vincent:
-              </p>
-              <blockquote>
-                <p>
-                  Peter Vincent was tall and foreboding, his gaunt features taut
-                  beneath his stovepipe hat. Everything about him was dire and
-                  sober, from his black suit and cape to the smoldering darkness
-                  of his eyes.
-                </p>
-              </blockquote>
-              <p>
-                An interesting change comes in Charlie’s relationship with his
-                girlfriend, Amy. In the film, Charlie says:
-              </p>
-              <blockquote>
-                <p>
-                  “We’ve been going together for almost a year and all I ever
-                  hear is ‘Charley, stop it!’
-                </p>
-              </blockquote>
-              <p>But the novelization recasts their relationship:</p>
-              <blockquote>
-                <p>“We’ve been going together for almost a year—”</p>
-                <p>“Three months,” she corrected quietly.</p>
-                <p>
-                  “Well, almost half a year, then—” he stormed on, inconsolable
-                  “—and all I ever hear is ‘Charley, stop it’ and ‘I’m sorry!’
-                  It’s making me crazy. It really is.”
-                </p>
-              </blockquote>
-              <p>
-                A less welcome change, the novelization displays an unfortunate
-                tendency to tell us things the film shows, often via awkward
-                expositional asides. For example, we’re told Charlie’s dad left
-                the family, and that Charlie and his friend Ed were once close
-                but have drifted apart since Charlie and Amy got together.
-              </p>
-              <p>
-                It also doles out little bits of harmless trivia. Like the
-                town’s name, Rancho Corvallis. Or Peter Vincent’s real name,
-                Herbert McHoolihee.
-              </p>
-              <p>
-                The novelization also adds a running in-joke involving place
-                names. The kids attend Christopher L. Cushing High where Mr.
-                Lorre gives pop quizzes. They drive or walk down Rathbone
-                Avenue, Cameron Mitchell Drive, King Street, Romero Drive,
-                Wickerman Road, and Badham Boulevard. And they reference the
-                mental ward at Hammer Memorial Hospital. This gag proves
-                harmless, albeit tiresome.
-              </p>
-              <p>
-                Less harmless, however, are the details it adds to Jerry’s
-                backstory.
-              </p>
-              <blockquote>
-                <p>
-                  He’d been the first to publicly claim (to the vampire
-                  community) that chemical additives had actually upped blood’s
-                  nutritional value to the undead: there was something
-                  fundamentally unhealthy about it that vampires positively
-                  thrived on. Ever since, only nostalgia buffs went out of their
-                  way to feed on health-food freaks or members of the Third
-                  World.
-                </p>
-                <p>
-                  Coupled with his seductive artistry (which was highly rated in
-                  that fiercely competitive field), Jerry Dandrige’s acute
-                  sensibilities made him the toast of the town wherever he went.
-                  He was afforded a great deal of independence to go with his
-                  acclaim. While most chose to stay at home, maintaining the low
-                  profile that their society dictated, Jerry was free to roam
-                  and explore in an almost unprecedented fashion; on top of
-                  everything else, he was regarded as something of an
-                  adventurer. His exploits were legend, even within that
-                  legendary species.
-                </p>
-              </blockquote>
-              <p>
-                Yes, there’s a vampire community, and Jerry’s an (un)living
-                legend. We also learn Jerry calls Transylvania home, and that
-                he’s over four-hundred-years-old. Rather than enhance the
-                character, these details only diminish his mystique.
-              </p>
-              <p>
-                It’s impressive how much Chris Sarandon brought to the role of
-                Jerry. In the film, he’s often munching fruit, an affectation
-                missing in the novelization that Sarandon added via his
-                biography that saw Jerry as descended from fruit bats. Also
-                absent is Jerry’s witty black humor. Indeed, the book replaces
-                two of his best lines (“Welcome to Fright Night…
-                <em>for real</em>,” and “See you Charlie… <em>soon</em>”) with
-                wordier alternatives that lack the film version’s zing.
-              </p>
-              <p>
-                Indeed, the Jerry character, while described as attractive,
-                lacks the film version’s charm. Instead, he relies on
-                mind-control. Telling us characters find Jerry charming pales
-                next to Jerry charming us. The result reduces him to a
-                one-dimensional predator.
-              </p>
-              <p>
-                That said, the book proffers one line that feels worthy of
-                inclusion in the finished film. After Jerry receives a call
-                informing him Peter Vincent and Charlie’s friends will come over
-                to prove he’s not a vampire, he hangs up the phone, pauses, then
-                says:
-              </p>
-              <blockquote>
-                <p>
-                  “You know something, Billy?” the vampire said at last.
-                  “Sometimes I think that somebody up there likes me.” He
-                  pointed a long, bony talon toward the heavens.
-                </p>
-              </blockquote>
-              <p>I can imagine Chris Sarandon chewing that scene.</p>
-              <p>
-                And speaking of that scene, it’s also the lone instance where
-                the book’s added detail helped, as it explains why, as a born
-                again Christian, Jerry won’t drink Holy Water. An element
-                presented as matter-of-fact in the film.
-              </p>
-              <p>
-                But, this scene aside, the novelization affords Jerry too much
-                atrocious dialog. Consider his final words:
-              </p>
-              <blockquote>
-                <p>
-                  “I’ve had it with you,” the vampire spat. “You are dead meat,
-                  my friend.” He stood directly over Peter, leaning over to pick
-                  him up …
-                </p>
-              </blockquote>
-              <p>
-                Dead meat? Ugh. Compare the film where Jerry says nothing,
-                instead breaking into a cackling laugh.
-              </p>
-              <p>
-                “Evil” Ed also suffers in the novelization. His description
-                mirrors the film:
-              </p>
-              <blockquote>
-                <p>
-                  Evil Ed was a certified freako. He was short and spidery, with
-                  a Billy Idol hairdo and a rubbery face that could leer and
-                  twist itself in a million lunatic ways. He was gloating now,
-                  and the smirk on his face would have made Jack Nicholson
-                  proud.
-                </p>
-              </blockquote>
-              <p>
-                But his characterization lacks any warmth or vulnerability. He’s
-                painted as borderline sociopathic and displays little emotion
-                for Charlie outside of resentment. His conversion to a vampire
-                feels more like a villainous evolution than the film’s tragedy.
-                The book even mangles his iconic “You’re so
-                <em>cool</em> Brewster!” line, replacing it with:
-              </p>
-              <blockquote>
-                <p>
-                  “Oooooo, Brewster, you’re sooo cool. You’ve got such a touch
-                  with the ladies …”
-                </p>
-              </blockquote>
-              <p>
-                But the most disappointing aspect of the novelization was its
-                failure to address the Billy Cole mystery. Cole, Jerry’s
-                Renfield-like assistant, is something more than human in both
-                the book and movie, but neither offers further explanation,
-                though in the book we learn he’d been with Jerry for 113 years.
-              </p>
-              <p>
-                That said, given the book’s weak attempts at original backstory,
-                perhaps it’s best the author’s didn’t try.
-              </p>
-              <p>
-                Curiosity drove me to this book. To those with a similar urge,
-                contemplating whether the novelization is worth their time, let
-                me recommend caution. If you’re looking for more insight into
-                the film, the
-                <em>You’re So Cool, Brewster! The Story of Fright Night</em>
-                documentary proves more illuminating. If you’re looking to
-                re-experience the fun mix of 80s teen comedy and Hammer-style
-                horror, rewatching the film will prove more satisfying. But if,
-                like me, you’re determined to plumb every corner of the
-                <em>Fright Night</em> mythos, then I can only say I warned you.
-              </p>
-            </div>
-            <div class="w-full max-w-popout">
-              <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              <div class="mt-4">
+                <picture
+                  ><source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/1-star-dark.svg" />
+                  <img
+                    alt="F: 1 star (out of 5)"
+                    height="32"
+                    src="/svg/1-star.svg"
+                    width="160"
+                /></picture>
+              </div>
+              <div
+                class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
               >
-                Reading History
-              </h2>
-              <ul>
-                <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
+                1985<!-- -->
+                |
+                <!-- -->Novel
+              </div>
+              <div
+                class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
+                data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              >
+                <div
+                  class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
+                  style="
+                    background-color: var(--background-color-default);
+                    background-image:
+                      linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                ></div>
+                <div
+                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
                 >
-                  <div class="flex gap-x-4 py-4 tablet:gap-x-6">
-                    <div class="size-auto self-start">
-                      <div class="bg-subtle py-2 text-center">
-                        <div
-                          class="px-4 pb-2 font-serif text-md font-normal text-subtle"
-                        >
-                          2023
+                  <div
+                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                  >
+                    <img
+                      height="372"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x
+                      "
+                      width="248"
+                      decoding="auto"
+                      loading="lazy"
+                      alt=""
+                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
+              >
+                Reviewed
+                <!-- -->Jan 21, 2023
+              </div>
+            </header>
+            <div
+              class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+            >
+              <div
+                class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+              >
+                <p>
+                  During a late-night make-out session with his girlfriend,
+                  high-schooler Charlie Brewster spies two men carrying a coffin
+                  into the basement of the house next-door. Charlie soon
+                  discovers his suave new neighbor, Jerry Dandrige, has fangs.
+                  When the police don’t believe him, Charlie appeals to the
+                  local creature-feature host, washed up horror icon Peter
+                  Vincent, for help.
+                </p>
+                <!-- end -->
+                <p>
+                  Curiosity prompted me to seek out this novelization. I’m a big
+                  fan of the 1985 film. Writer/director Tom Holland sold the
+                  adaptation rights before making the film, so authors John
+                  Skipp and Craig Spector weren’t working from the final
+                  shooting script. This proves consequential, as Holland had the
+                  cast write biographies for their characters and incorporated
+                  some of those elements into the final script. These changes
+                  are absent in the novelization.
+                </p>
+                <p>
+                  Though Roddy McDowell plays Peter Vincent in the film, Holland
+                  wrote the part for Vincent Price, as evident in the novel’s
+                  description of young Peter Vincent:
+                </p>
+                <blockquote>
+                  <p>
+                    Peter Vincent was tall and foreboding, his gaunt features
+                    taut beneath his stovepipe hat. Everything about him was
+                    dire and sober, from his black suit and cape to the
+                    smoldering darkness of his eyes.
+                  </p>
+                </blockquote>
+                <p>
+                  An interesting change comes in Charlie’s relationship with his
+                  girlfriend, Amy. In the film, Charlie says:
+                </p>
+                <blockquote>
+                  <p>
+                    “We’ve been going together for almost a year and all I ever
+                    hear is ‘Charley, stop it!’
+                  </p>
+                </blockquote>
+                <p>But the novelization recasts their relationship:</p>
+                <blockquote>
+                  <p>“We’ve been going together for almost a year—”</p>
+                  <p>“Three months,” she corrected quietly.</p>
+                  <p>
+                    “Well, almost half a year, then—” he stormed on,
+                    inconsolable “—and all I ever hear is ‘Charley, stop it’ and
+                    ‘I’m sorry!’ It’s making me crazy. It really is.”
+                  </p>
+                </blockquote>
+                <p>
+                  A less welcome change, the novelization displays an
+                  unfortunate tendency to tell us things the film shows, often
+                  via awkward expositional asides. For example, we’re told
+                  Charlie’s dad left the family, and that Charlie and his friend
+                  Ed were once close but have drifted apart since Charlie and
+                  Amy got together.
+                </p>
+                <p>
+                  It also doles out little bits of harmless trivia. Like the
+                  town’s name, Rancho Corvallis. Or Peter Vincent’s real name,
+                  Herbert McHoolihee.
+                </p>
+                <p>
+                  The novelization also adds a running in-joke involving place
+                  names. The kids attend Christopher L. Cushing High where Mr.
+                  Lorre gives pop quizzes. They drive or walk down Rathbone
+                  Avenue, Cameron Mitchell Drive, King Street, Romero Drive,
+                  Wickerman Road, and Badham Boulevard. And they reference the
+                  mental ward at Hammer Memorial Hospital. This gag proves
+                  harmless, albeit tiresome.
+                </p>
+                <p>
+                  Less harmless, however, are the details it adds to Jerry’s
+                  backstory.
+                </p>
+                <blockquote>
+                  <p>
+                    He’d been the first to publicly claim (to the vampire
+                    community) that chemical additives had actually upped
+                    blood’s nutritional value to the undead: there was something
+                    fundamentally unhealthy about it that vampires positively
+                    thrived on. Ever since, only nostalgia buffs went out of
+                    their way to feed on health-food freaks or members of the
+                    Third World.
+                  </p>
+                  <p>
+                    Coupled with his seductive artistry (which was highly rated
+                    in that fiercely competitive field), Jerry Dandrige’s acute
+                    sensibilities made him the toast of the town wherever he
+                    went. He was afforded a great deal of independence to go
+                    with his acclaim. While most chose to stay at home,
+                    maintaining the low profile that their society dictated,
+                    Jerry was free to roam and explore in an almost
+                    unprecedented fashion; on top of everything else, he was
+                    regarded as something of an adventurer. His exploits were
+                    legend, even within that legendary species.
+                  </p>
+                </blockquote>
+                <p>
+                  Yes, there’s a vampire community, and Jerry’s an (un)living
+                  legend. We also learn Jerry calls Transylvania home, and that
+                  he’s over four-hundred-years-old. Rather than enhance the
+                  character, these details only diminish his mystique.
+                </p>
+                <p>
+                  It’s impressive how much Chris Sarandon brought to the role of
+                  Jerry. In the film, he’s often munching fruit, an affectation
+                  missing in the novelization that Sarandon added via his
+                  biography that saw Jerry as descended from fruit bats. Also
+                  absent is Jerry’s witty black humor. Indeed, the book replaces
+                  two of his best lines (“Welcome to Fright Night…
+                  <em>for real</em>,” and “See you Charlie… <em>soon</em>”) with
+                  wordier alternatives that lack the film version’s zing.
+                </p>
+                <p>
+                  Indeed, the Jerry character, while described as attractive,
+                  lacks the film version’s charm. Instead, he relies on
+                  mind-control. Telling us characters find Jerry charming pales
+                  next to Jerry charming us. The result reduces him to a
+                  one-dimensional predator.
+                </p>
+                <p>
+                  That said, the book proffers one line that feels worthy of
+                  inclusion in the finished film. After Jerry receives a call
+                  informing him Peter Vincent and Charlie’s friends will come
+                  over to prove he’s not a vampire, he hangs up the phone,
+                  pauses, then says:
+                </p>
+                <blockquote>
+                  <p>
+                    “You know something, Billy?” the vampire said at last.
+                    “Sometimes I think that somebody up there likes me.” He
+                    pointed a long, bony talon toward the heavens.
+                  </p>
+                </blockquote>
+                <p>I can imagine Chris Sarandon chewing that scene.</p>
+                <p>
+                  And speaking of that scene, it’s also the lone instance where
+                  the book’s added detail helped, as it explains why, as a born
+                  again Christian, Jerry won’t drink Holy Water. An element
+                  presented as matter-of-fact in the film.
+                </p>
+                <p>
+                  But, this scene aside, the novelization affords Jerry too much
+                  atrocious dialog. Consider his final words:
+                </p>
+                <blockquote>
+                  <p>
+                    “I’ve had it with you,” the vampire spat. “You are dead
+                    meat, my friend.” He stood directly over Peter, leaning over
+                    to pick him up …
+                  </p>
+                </blockquote>
+                <p>
+                  Dead meat? Ugh. Compare the film where Jerry says nothing,
+                  instead breaking into a cackling laugh.
+                </p>
+                <p>
+                  “Evil” Ed also suffers in the novelization. His description
+                  mirrors the film:
+                </p>
+                <blockquote>
+                  <p>
+                    Evil Ed was a certified freako. He was short and spidery,
+                    with a Billy Idol hairdo and a rubbery face that could leer
+                    and twist itself in a million lunatic ways. He was gloating
+                    now, and the smirk on his face would have made Jack
+                    Nicholson proud.
+                  </p>
+                </blockquote>
+                <p>
+                  But his characterization lacks any warmth or vulnerability.
+                  He’s painted as borderline sociopathic and displays little
+                  emotion for Charlie outside of resentment. His conversion to a
+                  vampire feels more like a villainous evolution than the film’s
+                  tragedy. The book even mangles his iconic “You’re so
+                  <em>cool</em> Brewster!” line, replacing it with:
+                </p>
+                <blockquote>
+                  <p>
+                    “Oooooo, Brewster, you’re sooo cool. You’ve got such a touch
+                    with the ladies …”
+                  </p>
+                </blockquote>
+                <p>
+                  But the most disappointing aspect of the novelization was its
+                  failure to address the Billy Cole mystery. Cole, Jerry’s
+                  Renfield-like assistant, is something more than human in both
+                  the book and movie, but neither offers further explanation,
+                  though in the book we learn he’d been with Jerry for 113
+                  years.
+                </p>
+                <p>
+                  That said, given the book’s weak attempts at original
+                  backstory, perhaps it’s best the author’s didn’t try.
+                </p>
+                <p>
+                  Curiosity drove me to this book. To those with a similar urge,
+                  contemplating whether the novelization is worth their time,
+                  let me recommend caution. If you’re looking for more insight
+                  into the film, the
+                  <em>You’re So Cool, Brewster! The Story of Fright Night</em>
+                  documentary proves more illuminating. If you’re looking to
+                  re-experience the fun mix of 80s teen comedy and Hammer-style
+                  horror, rewatching the film will prove more satisfying. But
+                  if, like me, you’re determined to plumb every corner of the
+                  <em>Fright Night</em> mythos, then I can only say I warned
+                  you.
+                </p>
+              </div>
+              <div class="w-full max-w-popout">
+                <h2
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+                >
+                  Reading History
+                </h2>
+                <ul>
+                  <li
+                    class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
+                  >
+                    <div class="flex gap-x-4 py-4 tablet:gap-x-6">
+                      <div class="size-auto self-start">
+                        <div class="bg-subtle py-2 text-center">
+                          <div
+                            class="px-4 pb-2 font-serif text-md font-normal text-subtle"
+                          >
+                            2023
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Jan</div>
+                          <div
+                            class="bg-default font-serif text-md font-normal text-default"
+                          >
+                            21
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Sat</div>
                         </div>
-                        <div class="bg-default py-1 text-subtle">Jan</div>
-                        <div
-                          class="bg-default font-serif text-md font-normal text-default"
+                      </div>
+                      <div class="mt-12 grow">
+                        <span
+                          class="font-serif text-base font-normal text-default"
+                          >Kindle</span
+                        ><span class="font-light tracking-normal text-subtle">
+                          <!-- -->(<span class="rendered-markdown leading-none"
+                            ><span>Crossroad Press, 2019</span></span
+                          >)</span
                         >
-                          21
-                        </div>
-                        <div class="bg-default py-1 text-subtle">Sat</div>
+                        <details
+                          class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
+                        >
+                          <summary
+                            class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
+                          >
+                            Read over<!-- -->
+                            <!-- -->7<!-- -->
+                            Days
+                          </summary>
+                          <ol
+                            class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
+                          >
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>15 Jan 2023</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>13%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 13%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>16 Jan 2023</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>30%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 30%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>17 Jan 2023</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>48%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 48%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>18 Jan 2023</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>62%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 62%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>20 Jan 2023</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>79%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 79%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>21 Jan 2023</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>Finished</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 100%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                          </ol>
+                        </details>
                       </div>
                     </div>
-                    <div class="mt-12 grow">
-                      <span
-                        class="font-serif text-base font-normal text-default"
-                        >Kindle</span
-                      ><span class="font-light tracking-normal text-subtle">
-                        <!-- -->(<span class="rendered-markdown leading-none"
-                          ><span>Crossroad Press, 2019</span></span
-                        >)</span
-                      >
-                      <details
-                        class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
-                      >
-                        <summary
-                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
-                        >
-                          Read over<!-- -->
-                          <!-- -->7<!-- -->
-                          Days
-                        </summary>
-                        <ol
-                          class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
-                        >
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>15 Jan 2023</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>13%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 13%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>16 Jan 2023</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>30%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 30%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>17 Jan 2023</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>48%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 48%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>18 Jan 2023</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>62%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 62%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>20 Jan 2023</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>79%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 79%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>21 Jan 2023</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>Finished</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 100%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                        </ol>
-                      </details>
-                    </div>
-                  </div>
-                  <div></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
-            data-pagefind-ignore="true"
-          >
-            <nav
-              class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
-              data-page-find-ignore="true"
-            >
-              <div>
-                <h2
-                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
-                >
-                  <a
-                    class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
-                    href="/reviews/"
-                    >More<!-- -->
-                    <span class="text-accent">Reviews</span></a
-                  >
-                </h2>
+                    <div></div>
+                  </li>
+                </ul>
               </div>
-              <div class="@container/cover-list mx-auto tablet:-mx-6">
-                <ol
-                  class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
-                >
-                  <li
-                    class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
+            </div>
+            <div
+              class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
+              data-pagefind-ignore="true"
+            >
+              <nav
+                class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
+                data-page-find-ignore="true"
+              >
+                <div>
+                  <h2
+                    class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
                   >
-                    <div
-                      class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
+                    <a
+                      class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
+                      href="/reviews/"
+                      >More<!-- -->
+                      <span class="text-accent">Reviews</span></a
+                    >
+                  </h2>
+                </div>
+                <div class="@container/cover-list mx-auto tablet:-mx-6">
+                  <ol
+                    class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
+                  >
+                    <li
+                      class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                     >
                       <div
-                        class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
+                        class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
                       >
                         <div
-                          class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
-                          style="
-                            background-color: var(--background-color-default);
-                            background-image:
-                              linear-gradient(
-                                90deg,
-                                rgba(var(--bg-default-rgb), 1) 0%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  30%,
-                                rgba(var(--bg-default-rgb), 0) 50%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  70%,
-                                rgba(var(--bg-default-rgb), 1) 100%
-                              ),
-                              url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                          "
-                        ></div>
-                        <div
-                          class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
+                          class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            style="
+                              background-color: var(--background-color-default);
+                              background-image:
+                                linear-gradient(
+                                  90deg,
+                                  rgba(var(--bg-default-rgb), 1) 0%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    30%,
+                                  rgba(var(--bg-default-rgb), 0) 50%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    70%,
+                                  rgba(var(--bg-default-rgb), 1) 100%
+                                ),
+                                url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                            "
+                          ></div>
+                          <div
+                            class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
                           >
                             <div
-                              class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                             >
-                              <img
-                                height="372"
-                                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                                srcset="
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                                "
-                                width="248"
-                                alt=""
-                                sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                                class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
-                                decoding="async"
-                                loading="lazy"
-                              />
+                              <div
+                                class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              >
+                                <img
+                                  height="372"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                                  srcset="
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                                  "
+                                  width="248"
+                                  alt=""
+                                  sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                                  class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
-                      >
-                        <a
-                          class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
-                          href="/reviews/fight-club-by-chuck-palahniuk/"
-                          >Fight Club</a
-                        >
-                        <div class="-mt-2"><span>Chuck Palahniuk</span></div>
                         <div
-                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                         >
-                          2000<!-- -->
-                          |
-                          <!-- -->Novel
-                        </div>
-                        <div>
-                          <picture
-                            ><source
-                              media="(prefers-color-scheme: dark)"
-                              srcset="/svg/4-half-stars-dark.svg" />
-                            <img
-                              alt="A-: 4.5 stars (out of 5)"
-                              class="py-1"
-                              height="24"
-                              src="/svg/4-half-stars.svg"
-                              width="120"
-                          /></picture>
-                        </div>
-                        <div
-                          class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
-                        >
-                          <p>
-                            The narrator, a young, single man plagued by
-                            insomnia, meets a charismatic nihilist named Tyler.
-                            One night, after returning home to find his
-                            apartment destroyed via a gas explosion, the
-                            narrator reaches out to Tyler for a place to crash.
-                            Tyler agrees under one condition. “I want you to hit
-                            me as hard as you can,” he says.
-                          </p>
+                          <a
+                            class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                            href="/reviews/fight-club-by-chuck-palahniuk/"
+                            >Fight Club</a
+                          >
+                          <div class="-mt-2"><span>Chuck Palahniuk</span></div>
+                          <div
+                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          >
+                            2000<!-- -->
+                            |
+                            <!-- -->Novel
+                          </div>
+                          <div>
+                            <picture
+                              ><source
+                                media="(prefers-color-scheme: dark)"
+                                srcset="/svg/4-half-stars-dark.svg" />
+                              <img
+                                alt="A-: 4.5 stars (out of 5)"
+                                class="py-1"
+                                height="24"
+                                src="/svg/4-half-stars.svg"
+                                width="120"
+                            /></picture>
+                          </div>
+                          <div
+                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                          >
+                            <p>
+                              The narrator, a young, single man plagued by
+                              insomnia, meets a charismatic nihilist named
+                              Tyler. One night, after returning home to find his
+                              apartment destroyed via a gas explosion, the
+                              narrator reaches out to Tyler for a place to
+                              crash. Tyler agrees under one condition. “I want
+                              you to hit me as hard as you can,” he says.
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ol>
-              </div>
-            </nav>
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+            </div>
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Frank Showalter" },
+                "itemReviewed": {
+                  "@type": "Book",
+                  "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
+                  "name": "Fright Night"
+                },
+                "reviewRating": { "@type": "Rating", "ratingValue": 1 }
+              }
+            </script>
           </div>
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Review",
-              "author": { "@type": "Person", "name": "Frank Showalter" },
-              "itemReviewed": {
-                "@type": "Book",
-                "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
-                "name": "Fright Night"
-              },
-              "reviewRating": { "@type": "Rating", "ratingValue": 1 }
-            }
-          </script>
         </main>
         <footer class="bg-canvas">
           <div class="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
@@ -1208,7 +1213,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
+      src="/src/astro/AstroPageShell.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

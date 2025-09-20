@@ -1,22 +1,43 @@
 ---
+import { allStatYears } from "~/api/stats";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
 import { AlltimeStats } from "~/features/stats/AlltimeStats";
-import { getAlltimeStatsProps } from "~/features/stats/getProps";
-import Layout from "~/layouts/Layout.astro";
+import { getAlltimeStatsProps } from "~/features/stats/getStatsProps";
 
-const props = await getAlltimeStatsProps();
+const alltimeStatsProps = await getAlltimeStatsProps();
+const backdropImageProps = await getLayoutBackdropImageProps("stats");
+const distinctStatYears = await allStatYears();
+
+const deck = `${(distinctStatYears.length - 1).toString()} Years in Review`;
+const metaDescription =
+  "My all-time reading stats. Includes my most-read authors, as well as grade, kind, release year, and edition distributions.";
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{
-    description:
-      "My all-time reading stats. Includes my most-read authors, as well as grade, kind, release year, and edition distributions.",
+    description: metaDescription,
   }}
   openGraph={{
-    description: props.deck,
+    description: deck,
     type: "website",
   }}
   title="All-Time Stats"
 >
-  <AlltimeStats {...props} />
-</Layout>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      breadcrumb: {
+        href: "/readings/",
+        text: "Reading Log",
+      },
+      centerText: true,
+      deck,
+      title: "All-Time Stats",
+    }}
+  >
+    <AlltimeStats {...alltimeStatsProps} />
+  </Layout>
+</AstroPageShell>

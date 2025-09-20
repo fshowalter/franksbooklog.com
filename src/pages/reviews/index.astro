@@ -1,30 +1,34 @@
 ---
-import { Backdrop } from "~/components/backdrop/Backdrop";
-import { Layout as ComponentLayout } from "~/components/layout/Layout";
-import { getProps } from "~/features/reviews/getProps";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
+import { getReviewsProps } from "~/features/reviews/getReviewsProps";
 import { Reviews } from "~/features/reviews/Reviews";
-import Layout from "~/layouts/Layout.astro";
 
-const props = await getProps();
+const reviewsProps = await getReviewsProps();
+const backdropImageProps = await getLayoutBackdropImageProps("reviews");
 
-// Separate layout props from interactive props
-const { backdropImageProps, deck, ...clientProps } = props;
+const deck = `"You were always the best of them, Lloyd."`;
+const metaDescription =
+  "All my book and story reviews. Filter by title, kind, review date, work date, or grade. Sort by best or worst, oldest or newest, author, or title.";
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{
-    description:
-      "All my book and story reviews. Filter by title, kind, review date, work date, or grade. Sort by best or worst, oldest or newest, author, or title.",
+    description: metaDescription,
   }}
   openGraph={{ description: deck, type: "website" }}
   title="Reviews"
 >
-  <Fragment slot="meta-theme-color">
-    <meta content="rgba(0,0,0,.85)" name="theme-color" />
-  </Fragment>
-  <ComponentLayout className="bg-subtle">
-    <Backdrop deck={deck} imageProps={backdropImageProps} title="Reviews" />
-    <Reviews client:load {...clientProps} />
-  </ComponentLayout>
-</Layout>
+  <Layout
+    backdrop={{
+      backdropImageProps,
+      deck,
+      title: "Reviews",
+    }}
+    className="bg-subtle"
+  >
+    <Reviews client:load {...reviewsProps} />
+  </Layout>
+</AstroPageShell>

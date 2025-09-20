@@ -35,6 +35,9 @@ export function OpenGraphImage({
   sectionHead = "Frank's Book Log",
   title,
 }: OpenGraphImageProps): React.JSX.Element {
+  // eslint-disable-next-line react-compiler/react-compiler
+  "use no memo";
+
   return (
     <div
       style={{

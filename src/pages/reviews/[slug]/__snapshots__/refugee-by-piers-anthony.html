@@ -168,14 +168,14 @@
             </div>
             <div
               class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
-              data-nav-backdrop="true"
+              data-nav-drawer-backdrop="true"
             ></div>
             <button
-              aria-controls="nav-menu"
+              aria-controls="nav-drawer"
               aria-expanded="false"
-              aria-label="Toggle navigation menu"
+              aria-label="Toggle navigation drawer"
               class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-              data-nav-toggle="true"
+              data-nav-drawer-toggle="true"
               type="button"
             >
               <span
@@ -186,9 +186,9 @@
             </button>
             <nav aria-label="Main navigation">
               <div
-                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
-                data-nav-menu="true"
-                id="nav-menu"
+                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-drawer [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-drawer="true"
+                id="nav-drawer"
               >
                 <ol class="flex flex-col gap-y-6">
                   <li
@@ -252,552 +252,555 @@
             </nav>
           </div>
         </header>
-        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
-          <header
-            class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
-          >
-            <nav class="transform-gpu pb-2 transition-transform">
-              <a
-                class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
-                href="/reviews/"
-                >Reviews</a
-              >
-            </nav>
-            <h1
-              class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
-              data-pagefind-meta="title"
+        <main class="grow" id="content">
+          <div class="flex flex-col" data-pagefind-body="true">
+            <header
+              class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
             >
-              Refugee
-            </h1>
-            <div class="mt-4 text-center text-md text-muted">
-              by<!-- -->
-              <div
-                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
-              >
-                <a href="/authors/piers-anthony/">Piers Anthony</a>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div
-                class="bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide text-[#fff] uppercase"
-              >
-                Abandoned
-              </div>
-            </div>
-            <div
-              class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
-            >
-              1983<!-- -->
-              |
-              <!-- -->Novel
-            </div>
-            <div
-              class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
-              data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif"
-            >
-              <div
-                class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
-                style="
-                  background-color: var(--background-color-default);
-                  background-image:
-                    linear-gradient(
-                      90deg,
-                      rgba(var(--bg-default-rgb), 1) 0%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
-                      rgba(var(--bg-default-rgb), 0) 50%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
-                      rgba(var(--bg-default-rgb), 1) 100%
-                    ),
-                    url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif);
-                "
-              ></div>
-              <div
-                class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
-              >
-                <div
-                  class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+              <nav class="transform-gpu pb-2 transition-transform">
+                <a
+                  class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
+                  href="/reviews/"
+                  >Reviews</a
                 >
-                  <img
-                    height="377.952"
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif 1x,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=496&amp;h=756&amp;q=80&amp;f=avif 2x
-                    "
-                    width="248"
-                    decoding="auto"
-                    loading="lazy"
-                    alt=""
-                    class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                  />
+              </nav>
+              <h1
+                class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
+                data-pagefind-meta="title"
+              >
+                Refugee
+              </h1>
+              <div class="mt-4 text-center text-md text-muted">
+                by<!-- -->
+                <div
+                  class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
+                >
+                  <a href="/authors/piers-anthony/">Piers Anthony</a>
                 </div>
               </div>
-            </div>
-            <div
-              class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
-            >
-              Reviewed
-              <!-- -->Jan 29, 2016
-            </div>
-          </header>
-          <div
-            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
-          >
-            <div
-              class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
-            >
-              <p>
-                My last read left me excited to discover what other surprises
-                awaited me amongst my Dad’s books.
-              </p>
-              <p>I should have tempered my expectations.</p>
-              <p>
-                I picked <em>Refugee (Bio of a Space Tyrant #1)</em>, by Piers
-                Anthony because it was first on the bookshelf.
-              </p>
-              <p>
-                I abandoned it after 53 pages. I couldn’t get past the writing.
-              </p>
-              <p>
-                It opens with an “editorial preface” presenting the series as
-                the private papers of Hope Hubris, the Tyrant of Jupiter.
-                Anthony sets lofty expectations for Hubris’s story.
-              </p>
-              <blockquote>
-                <p>
-                  He was, after all, the most remarkable figure of his
-                  generation, as even his enemies concede, and will no doubt be
-                  ranked with the other prime movers or disturbers of history,
-                  such as Alexander, Caesar, Attila, Genghis Khan, Napoleon,
-                  Hitler and the like.
-                </p>
-              </blockquote>
-              <p>This bit hooked me, but things go downhill fast.</p>
-              <p>
-                The plot is an allegory of Latin American refugees emigrating to
-                America. Searching for a better life, young Hubris and his
-                family abandon their home moon of Callisto and journey to
-                Jupiter.
-              </p>
-              <p>
-                But the execution drags. Fifty-three pages in, they’re just
-                leaving their house.
-              </p>
-              <p>
-                Anthony keeps pausing to world-build. We get lengthy
-                explanations of gravity lenses, space colonization and
-                Callisto’s class system. Though interesting, these digressions
-                kill the story’s momentum.
-              </p>
-              <p>Which brings me back to the writing.</p>
-              <p>
-                Written in the first-person, it reads like the unedited,
-                unrevised draft it purports to be. Consider lines like:
-              </p>
-              <blockquote>
-                <p>
-                  I sat up, my ear seeing red stars. For a moment I was
-                  disorganized, not doing more than hurting and watching.
-                </p>
-              </blockquote>
-              <p>
-                And later, after detailing how the nations of Earth colonized
-                the stars:
-              </p>
-              <blockquote>
-                <p>
-                  Oops—did I write that the Moslems of Earth took Neptune? I
-                  would have flunked that question on an exam! Already my school
-                  learning fades and becomes confused.
-                </p>
-              </blockquote>
-              <p>
-                The “editorial preface” proves Anthony is capable of better
-                prose, so there’s no excuse. I can only assume the fractured
-                narrative, awkward phrasing, and long digressions are an
-                exercise in style. Anthony’s version of method acting.
-              </p>
-              <p>
-                It may not be realistic for Hubris write like a professional,
-                but it’s a necessity if I’m to read his story. Let alone commit
-                to a multi-book series.
-              </p>
-            </div>
-            <div class="w-full max-w-popout">
-              <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+              <div class="mt-4">
+                <div
+                  class="bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide text-[#fff] uppercase"
+                >
+                  Abandoned
+                </div>
+              </div>
+              <div
+                class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
               >
-                Reading History
-              </h2>
-              <ul>
-                <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
+                1983<!-- -->
+                |
+                <!-- -->Novel
+              </div>
+              <div
+                class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
+                data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif"
+              >
+                <div
+                  class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
+                  style="
+                    background-color: var(--background-color-default);
+                    background-image:
+                      linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif);
+                  "
+                ></div>
+                <div
+                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
                 >
-                  <div class="flex gap-x-4 py-4 tablet:gap-x-6">
-                    <div class="size-auto self-start">
-                      <div class="bg-subtle py-2 text-center">
-                        <div
-                          class="px-4 pb-2 font-serif text-md font-normal text-subtle"
-                        >
-                          2016
-                        </div>
-                        <div class="bg-default py-1 text-subtle">Jan</div>
-                        <div
-                          class="bg-default font-serif text-md font-normal text-default"
-                        >
-                          29
-                        </div>
-                        <div class="bg-default py-1 text-subtle">Fri</div>
-                      </div>
-                    </div>
-                    <div class="mt-12 grow">
-                      <span
-                        class="font-serif text-base font-normal text-default"
-                        >Paperback</span
-                      ><span class="font-light tracking-normal text-subtle">
-                        <!-- -->(<span class="rendered-markdown leading-none"
-                          ><span>Avon Books, 1983</span></span
-                        >)</span
-                      >
-                      <details
-                        class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
-                      >
-                        <summary
-                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
-                        >
-                          Abandoned after<!-- -->
-                          <!-- -->11<!-- -->
-                          Days
-                        </summary>
-                        <ol
-                          class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
-                        >
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>19 Jan 2016</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>2%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 2%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>27 Jan 2016</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>8%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 8%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>28 Jan 2016</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>17%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 17%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>29 Jan 2016</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>Abandoned</div>
-                              </div>
-                            </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3"
-                            ></div>
-                          </li>
-                        </ol>
-                      </details>
-                    </div>
+                  <div
+                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                  >
+                    <img
+                      height="377.952"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=248&amp;h=378&amp;q=80&amp;f=avif 1x,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D762%26origFormat%3Dpng&amp;w=496&amp;h=756&amp;q=80&amp;f=avif 2x
+                      "
+                      width="248"
+                      decoding="auto"
+                      loading="lazy"
+                      alt=""
+                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                    />
                   </div>
-                  <div></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
-            data-pagefind-ignore="true"
-          >
-            <nav
-              class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
-              data-page-find-ignore="true"
+                </div>
+              </div>
+              <div
+                class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
+              >
+                Reviewed
+                <!-- -->Jan 29, 2016
+              </div>
+            </header>
+            <div
+              class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
             >
-              <div>
+              <div
+                class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+              >
+                <p>
+                  My last read left me excited to discover what other surprises
+                  awaited me amongst my Dad’s books.
+                </p>
+                <p>I should have tempered my expectations.</p>
+                <p>
+                  I picked <em>Refugee (Bio of a Space Tyrant #1)</em>, by Piers
+                  Anthony because it was first on the bookshelf.
+                </p>
+                <p>
+                  I abandoned it after 53 pages. I couldn’t get past the
+                  writing.
+                </p>
+                <p>
+                  It opens with an “editorial preface” presenting the series as
+                  the private papers of Hope Hubris, the Tyrant of Jupiter.
+                  Anthony sets lofty expectations for Hubris’s story.
+                </p>
+                <blockquote>
+                  <p>
+                    He was, after all, the most remarkable figure of his
+                    generation, as even his enemies concede, and will no doubt
+                    be ranked with the other prime movers or disturbers of
+                    history, such as Alexander, Caesar, Attila, Genghis Khan,
+                    Napoleon, Hitler and the like.
+                  </p>
+                </blockquote>
+                <p>This bit hooked me, but things go downhill fast.</p>
+                <p>
+                  The plot is an allegory of Latin American refugees emigrating
+                  to America. Searching for a better life, young Hubris and his
+                  family abandon their home moon of Callisto and journey to
+                  Jupiter.
+                </p>
+                <p>
+                  But the execution drags. Fifty-three pages in, they’re just
+                  leaving their house.
+                </p>
+                <p>
+                  Anthony keeps pausing to world-build. We get lengthy
+                  explanations of gravity lenses, space colonization and
+                  Callisto’s class system. Though interesting, these digressions
+                  kill the story’s momentum.
+                </p>
+                <p>Which brings me back to the writing.</p>
+                <p>
+                  Written in the first-person, it reads like the unedited,
+                  unrevised draft it purports to be. Consider lines like:
+                </p>
+                <blockquote>
+                  <p>
+                    I sat up, my ear seeing red stars. For a moment I was
+                    disorganized, not doing more than hurting and watching.
+                  </p>
+                </blockquote>
+                <p>
+                  And later, after detailing how the nations of Earth colonized
+                  the stars:
+                </p>
+                <blockquote>
+                  <p>
+                    Oops—did I write that the Moslems of Earth took Neptune? I
+                    would have flunked that question on an exam! Already my
+                    school learning fades and becomes confused.
+                  </p>
+                </blockquote>
+                <p>
+                  The “editorial preface” proves Anthony is capable of better
+                  prose, so there’s no excuse. I can only assume the fractured
+                  narrative, awkward phrasing, and long digressions are an
+                  exercise in style. Anthony’s version of method acting.
+                </p>
+                <p>
+                  It may not be realistic for Hubris write like a professional,
+                  but it’s a necessity if I’m to read his story. Let alone
+                  commit to a multi-book series.
+                </p>
+              </div>
+              <div class="w-full max-w-popout">
                 <h2
-                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
                 >
-                  <a
-                    class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
-                    href="/reviews/"
-                    >More<!-- -->
-                    <span class="text-accent">Reviews</span></a
-                  >
+                  Reading History
                 </h2>
-              </div>
-              <div class="@container/cover-list mx-auto tablet:-mx-6">
-                <ol
-                  class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
-                >
+                <ul>
                   <li
-                    class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
+                    class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
                   >
-                    <div
-                      class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
+                    <div class="flex gap-x-4 py-4 tablet:gap-x-6">
+                      <div class="size-auto self-start">
+                        <div class="bg-subtle py-2 text-center">
+                          <div
+                            class="px-4 pb-2 font-serif text-md font-normal text-subtle"
+                          >
+                            2016
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Jan</div>
+                          <div
+                            class="bg-default font-serif text-md font-normal text-default"
+                          >
+                            29
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Fri</div>
+                        </div>
+                      </div>
+                      <div class="mt-12 grow">
+                        <span
+                          class="font-serif text-base font-normal text-default"
+                          >Paperback</span
+                        ><span class="font-light tracking-normal text-subtle">
+                          <!-- -->(<span class="rendered-markdown leading-none"
+                            ><span>Avon Books, 1983</span></span
+                          >)</span
+                        >
+                        <details
+                          class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
+                        >
+                          <summary
+                            class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
+                          >
+                            Abandoned after<!-- -->
+                            <!-- -->11<!-- -->
+                            Days
+                          </summary>
+                          <ol
+                            class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
+                          >
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>19 Jan 2016</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>2%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 2%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>27 Jan 2016</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>8%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 8%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>28 Jan 2016</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>17%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 17%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>29 Jan 2016</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>Abandoned</div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-span-2 col-start-2 row-start-3"
+                              ></div>
+                            </li>
+                          </ol>
+                        </details>
+                      </div>
+                    </div>
+                    <div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
+              data-pagefind-ignore="true"
+            >
+              <nav
+                class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
+                data-page-find-ignore="true"
+              >
+                <div>
+                  <h2
+                    class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
+                  >
+                    <a
+                      class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
+                      href="/reviews/"
+                      >More<!-- -->
+                      <span class="text-accent">Reviews</span></a
+                    >
+                  </h2>
+                </div>
+                <div class="@container/cover-list mx-auto tablet:-mx-6">
+                  <ol
+                    class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
+                  >
+                    <li
+                      class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                     >
                       <div
-                        class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
+                        class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
                       >
                         <div
-                          class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
-                          style="
-                            background-color: var(--background-color-default);
-                            background-image:
-                              linear-gradient(
-                                90deg,
-                                rgba(var(--bg-default-rgb), 1) 0%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  30%,
-                                rgba(var(--bg-default-rgb), 0) 50%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  70%,
-                                rgba(var(--bg-default-rgb), 1) 100%
-                              ),
-                              url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                          "
-                        ></div>
-                        <div
-                          class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
+                          class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            style="
+                              background-color: var(--background-color-default);
+                              background-image:
+                                linear-gradient(
+                                  90deg,
+                                  rgba(var(--bg-default-rgb), 1) 0%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    30%,
+                                  rgba(var(--bg-default-rgb), 0) 50%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    70%,
+                                  rgba(var(--bg-default-rgb), 1) 100%
+                                ),
+                                url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                            "
+                          ></div>
+                          <div
+                            class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
                           >
                             <div
-                              class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                             >
-                              <img
-                                height="372"
-                                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                                srcset="
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                                "
-                                width="248"
-                                alt=""
-                                sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                                class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
-                                decoding="async"
-                                loading="lazy"
-                              />
+                              <div
+                                class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              >
+                                <img
+                                  height="372"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                                  srcset="
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                                  "
+                                  width="248"
+                                  alt=""
+                                  sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                                  class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
-                      >
-                        <a
-                          class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
-                          href="/reviews/the-rise-of-theodore-roosevelt-by-edmund-morris/"
-                          >The Rise of Theodore Roosevelt</a
-                        >
-                        <div class="-mt-2"><span>Edmund Morris</span></div>
                         <div
-                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                         >
-                          2000<!-- -->
-                          |
-                          <!-- -->Nonfiction
-                        </div>
-                        <div>
-                          <picture
-                            ><source
-                              media="(prefers-color-scheme: dark)"
-                              srcset="/svg/4-half-stars-dark.svg" />
-                            <img
-                              alt="A-: 4.5 stars (out of 5)"
-                              class="py-1"
-                              height="24"
-                              src="/svg/4-half-stars.svg"
-                              width="120"
-                          /></picture>
-                        </div>
-                        <div
-                          class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
-                        >
-                          <p>
-                            An immersive epic that celebrates—but never
-                            sugar-coats—its subject.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
-                  >
-                    <div
-                      class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
-                    >
-                      <div
-                        class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
-                      >
-                        <div
-                          class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
-                          style="
-                            background-color: var(--background-color-default);
-                            background-image:
-                              linear-gradient(
-                                90deg,
-                                rgba(var(--bg-default-rgb), 1) 0%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  30%,
-                                rgba(var(--bg-default-rgb), 0) 50%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  70%,
-                                rgba(var(--bg-default-rgb), 1) 100%
-                              ),
-                              url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                          "
-                        ></div>
-                        <div
-                          class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
-                        >
-                          <div
-                            class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                          <a
+                            class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                            href="/reviews/the-rise-of-theodore-roosevelt-by-edmund-morris/"
+                            >The Rise of Theodore Roosevelt</a
                           >
-                            <div
-                              class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
-                            >
+                          <div class="-mt-2"><span>Edmund Morris</span></div>
+                          <div
+                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          >
+                            2000<!-- -->
+                            |
+                            <!-- -->Nonfiction
+                          </div>
+                          <div>
+                            <picture
+                              ><source
+                                media="(prefers-color-scheme: dark)"
+                                srcset="/svg/4-half-stars-dark.svg" />
                               <img
-                                height="372"
-                                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                                srcset="
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                                "
-                                width="248"
-                                alt=""
-                                sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                                class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
-                                decoding="async"
-                                loading="lazy"
-                              />
-                            </div>
+                                alt="A-: 4.5 stars (out of 5)"
+                                class="py-1"
+                                height="24"
+                                src="/svg/4-half-stars.svg"
+                                width="120"
+                            /></picture>
+                          </div>
+                          <div
+                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                          >
+                            <p>
+                              An immersive epic that celebrates—but never
+                              sugar-coats—its subject.
+                            </p>
                           </div>
                         </div>
                       </div>
+                    </li>
+                    <li
+                      class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
+                    >
                       <div
-                        class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
+                        class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
                       >
-                        <a
-                          class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
-                          href="/reviews/roadside-pickup-by-richard-laymon/"
-                          >Roadside Pickup</a
-                        >
-                        <div class="-mt-2"><span>Richard Laymon</span></div>
                         <div
-                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
-                          2000<!-- -->
-                          |
-                          <!-- -->Short Story
-                        </div>
-                        <div>
-                          <picture
-                            ><source
-                              media="(prefers-color-scheme: dark)"
-                              srcset="/svg/2-half-stars-dark.svg" />
-                            <img
-                              alt="C-: 2.5 stars (out of 5)"
-                              class="py-1"
-                              height="24"
-                              src="/svg/2-half-stars.svg"
-                              width="120"
-                          /></picture>
+                          <div
+                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            style="
+                              background-color: var(--background-color-default);
+                              background-image:
+                                linear-gradient(
+                                  90deg,
+                                  rgba(var(--bg-default-rgb), 1) 0%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    30%,
+                                  rgba(var(--bg-default-rgb), 0) 50%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    70%,
+                                  rgba(var(--bg-default-rgb), 1) 100%
+                                ),
+                                url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                            "
+                          ></div>
+                          <div
+                            class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
+                          >
+                            <div
+                              class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                            >
+                              <div
+                                class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              >
+                                <img
+                                  height="372"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                                  srcset="
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                                  "
+                                  width="248"
+                                  alt=""
+                                  sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                                  class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div
-                          class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                          class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                         >
-                          <p>
-                            Early morning darkness. Colleen sits stranded in her
-                            car. Three hours have produced three cars. None have
-                            stopped. But the fourth does. A young man with
-                            fashionable clothes and booze on his breath. Won’t
-                            she let him give her a ride?
-                          </p>
+                          <a
+                            class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                            href="/reviews/roadside-pickup-by-richard-laymon/"
+                            >Roadside Pickup</a
+                          >
+                          <div class="-mt-2"><span>Richard Laymon</span></div>
+                          <div
+                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          >
+                            2000<!-- -->
+                            |
+                            <!-- -->Short Story
+                          </div>
+                          <div>
+                            <picture
+                              ><source
+                                media="(prefers-color-scheme: dark)"
+                                srcset="/svg/2-half-stars-dark.svg" />
+                              <img
+                                alt="C-: 2.5 stars (out of 5)"
+                                class="py-1"
+                                height="24"
+                                src="/svg/2-half-stars.svg"
+                                width="120"
+                            /></picture>
+                          </div>
+                          <div
+                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                          >
+                            <p>
+                              Early morning darkness. Colleen sits stranded in
+                              her car. Three hours have produced three cars.
+                              None have stopped. But the fourth does. A young
+                              man with fashionable clothes and booze on his
+                              breath. Won’t she let him give her a ride?
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ol>
-              </div>
-            </nav>
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+            </div>
           </div>
         </main>
         <footer class="bg-canvas">
@@ -1095,7 +1098,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
+      src="/src/astro/AstroPageShell.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

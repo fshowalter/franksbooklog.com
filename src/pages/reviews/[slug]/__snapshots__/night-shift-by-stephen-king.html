@@ -173,14 +173,14 @@
             </div>
             <div
               class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
-              data-nav-backdrop="true"
+              data-nav-drawer-backdrop="true"
             ></div>
             <button
-              aria-controls="nav-menu"
+              aria-controls="nav-drawer"
               aria-expanded="false"
-              aria-label="Toggle navigation menu"
+              aria-label="Toggle navigation drawer"
               class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-              data-nav-toggle="true"
+              data-nav-drawer-toggle="true"
               type="button"
             >
               <span
@@ -191,9 +191,9 @@
             </button>
             <nav aria-label="Main navigation">
               <div
-                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
-                data-nav-menu="true"
-                id="nav-menu"
+                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-drawer [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-drawer="true"
+                id="nav-drawer"
               >
                 <ol class="flex flex-col gap-y-6">
                   <li
@@ -257,901 +257,903 @@
             </nav>
           </div>
         </header>
-        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
-          <header
-            class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
-          >
-            <nav class="transform-gpu pb-2 transition-transform">
-              <a
-                class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
-                href="/reviews/"
-                >Reviews</a
-              >
-            </nav>
-            <h1
-              class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
-              data-pagefind-meta="title"
+        <main class="grow" id="content">
+          <div class="flex flex-col" data-pagefind-body="true">
+            <header
+              class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
             >
-              Night Shift
-            </h1>
-            <div class="mt-4 text-center text-md text-muted">
-              by<!-- -->
-              <div
-                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
-              >
-                <a href="/authors/stephen-king/">Stephen King</a>
-              </div>
-            </div>
-            <div class="mt-4">
-              <picture
-                ><source
-                  media="(prefers-color-scheme: dark)"
-                  srcset="/svg/4-stars-dark.svg" />
-                <img
-                  alt="B: 4 stars (out of 5)"
-                  height="32"
-                  src="/svg/4-stars.svg"
-                  width="160"
-              /></picture>
-            </div>
-            <div
-              class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
-            >
-              1978<!-- -->
-              |
-              <!-- -->Collection
-            </div>
-            <div
-              class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
-              data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-            >
-              <div
-                class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
-                style="
-                  background-color: var(--background-color-default);
-                  background-image:
-                    linear-gradient(
-                      90deg,
-                      rgba(var(--bg-default-rgb), 1) 0%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
-                      rgba(var(--bg-default-rgb), 0) 50%,
-                      rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
-                      rgba(var(--bg-default-rgb), 1) 100%
-                    ),
-                    url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                "
-              ></div>
-              <div
-                class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
-              >
-                <div
-                  class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+              <nav class="transform-gpu pb-2 transition-transform">
+                <a
+                  class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
+                  href="/reviews/"
+                  >Reviews</a
                 >
-                  <img
-                    height="372"
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x
-                    "
-                    width="248"
-                    decoding="auto"
-                    loading="lazy"
-                    alt=""
-                    class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                  />
+              </nav>
+              <h1
+                class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
+                data-pagefind-meta="title"
+              >
+                Night Shift
+              </h1>
+              <div class="mt-4 text-center text-md text-muted">
+                by<!-- -->
+                <div
+                  class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--color-accent) after:transition-transform hover:after:scale-x-100"
+                >
+                  <a href="/authors/stephen-king/">Stephen King</a>
                 </div>
               </div>
-            </div>
-            <div
-              class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
-            >
-              Reviewed
-              <!-- -->May 14, 2012
-            </div>
-          </header>
-          <div
-            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
-          >
-            <div
-              class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
-            >
-              <p>
-                Though most of tales are EC Comics style setups for twist
-                endings, they’re well executed, and the others such as the
-                opening “Jerusalem’s Lot”, which borrows from Bram Stoker’s
-                <em>The Lair of the White Worm</em>, and the closing, “The Woman
-                in the Room”, about a man’s struggle to deal with his
-                cancer-ridden mother’s slow death, are outstanding, the latter
-                especially so given that we now know that it’s essentially an
-                autobiographical story.
-              </p>
-            </div>
-            <div class="w-full max-w-popout">
-              <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
-              >
-                Included Works
-              </h2>
+              <div class="mt-4">
+                <picture
+                  ><source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/4-stars-dark.svg" />
+                  <img
+                    alt="B: 4 stars (out of 5)"
+                    height="32"
+                    src="/svg/4-stars.svg"
+                    width="160"
+                /></picture>
+              </div>
               <div
-                class="w-full max-w-popout bg-subtle px-container py-8 tablet:pt-12"
+                class="mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle uppercase tablet:mb-6"
               >
+                1978<!-- -->
+                |
+                <!-- -->Collection
+              </div>
+              <div
+                class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
+                data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              >
+                <div
+                  class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
+                  style="
+                    background-color: var(--background-color-default);
+                    background-image:
+                      linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                ></div>
+                <div
+                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light -top-[2.5%]"
+                >
+                  <div
+                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                  >
+                    <img
+                      height="372"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x
+                      "
+                      width="248"
+                      decoding="auto"
+                      loading="lazy"
+                      alt=""
+                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-subtle tablet:mt-6"
+              >
+                Reviewed
+                <!-- -->May 14, 2012
+              </div>
+            </header>
+            <div
+              class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+            >
+              <div
+                class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+              >
+                <p>
+                  Though most of tales are EC Comics style setups for twist
+                  endings, they’re well executed, and the others such as the
+                  opening “Jerusalem’s Lot”, which borrows from Bram Stoker’s
+                  <em>The Lair of the White Worm</em>, and the closing, “The
+                  Woman in the Room”, about a man’s struggle to deal with his
+                  cancer-ridden mother’s slow death, are outstanding, the latter
+                  especially so given that we now know that it’s essentially an
+                  autobiographical story.
+                </p>
+              </div>
+              <div class="w-full max-w-popout">
+                <h2
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+                >
+                  Included Works
+                </h2>
+                <div
+                  class="w-full max-w-popout bg-subtle px-container py-8 tablet:pt-12"
+                >
+                  <ul>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/battleground-by-stephen-king/"
+                          >Battleground</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1972
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-boogeyman-by-stephen-king/"
+                          >The Boogeyman</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1973
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/children-of-the-corn-by-stephen-king/"
+                          >Children of the Corn</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1977
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/graveyard-shift-by-stephen-king/"
+                          >Graveyard Shift</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1970
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/gray-matter-by-stephen-king/"
+                          >Gray Matter</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1973
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/i-am-the-doorway-by-stephen-king/"
+                          >I Am the Doorway</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1971
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/i-know-what-you-need-by-stephen-king/"
+                          >I Know What You Need</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1976
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/jerusalems-lot-by-stephen-king/"
+                          >Jerusalem&#x27;s Lot</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1978
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-last-rung-on-the-ladder-by-stephen-king/"
+                          >The Last Rung on the Ladder</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1978
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-lawnmower-man-by-stephen-king/"
+                          >The Lawnmower Man</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1975
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-ledge-by-stephen-king/"
+                          >The Ledge</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1976
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-man-who-loved-flowers-by-stephen-king/"
+                          >The Man Who Loved Flowers</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1977
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-mangler-by-stephen-king/"
+                          >The Mangler</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1972
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/night-surf-by-stephen-king/"
+                          >Night Surf</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1969
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/one-for-the-road-by-stephen-king/"
+                          >One for the Road</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1977
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/quitters-inc-by-stephen-king/"
+                          >Quitters, Inc.</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1978
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/sometimes-they-come-back-by-stephen-king/"
+                          >Sometimes They Come Back</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1974
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/strawberry-spring-by-stephen-king/"
+                          >Strawberry Spring</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1968
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/trucks-by-stephen-king/"
+                          >Trucks</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1973
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    >
+                      <div
+                        class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                      >
+                        <a
+                          class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                          href="/reviews/the-woman-in-the-room-by-stephen-king/"
+                          >The Woman in the Room</a
+                        >
+                        <div
+                          class="text-[15px] leading-4 font-normal tracking-prose text-muted"
+                        >
+                          <span>Stephen King</span>
+                        </div>
+                        <div
+                          class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                        >
+                          <span
+                            >Short Story<!-- -->
+                            | </span
+                          >1978
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full max-w-popout">
+                <h2
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
+                >
+                  Reading History
+                </h2>
                 <ul>
                   <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                    class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
                   >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/battleground-by-stephen-king/"
-                        >Battleground</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
+                    <div class="flex gap-x-4 py-4 tablet:gap-x-6">
+                      <div class="size-auto self-start">
+                        <div class="bg-subtle py-2 text-center">
+                          <div
+                            class="px-4 pb-2 font-serif text-md font-normal text-subtle"
+                          >
+                            2012
+                          </div>
+                          <div class="bg-default py-1 text-subtle">May</div>
+                          <div
+                            class="bg-default font-serif text-md font-normal text-default"
+                          >
+                            14
+                          </div>
+                          <div class="bg-default py-1 text-subtle">Mon</div>
+                        </div>
                       </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
+                      <div class="mt-12 grow">
                         <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1972
+                          class="font-serif text-base font-normal text-default"
+                          >Paperback</span
+                        ><span class="font-light tracking-normal text-subtle">
+                          <!-- -->(<span class="rendered-markdown leading-none"
+                            ><span
+                              >New American Library / Signet, 1986</span
+                            ></span
+                          >)</span
+                        >
+                        <details
+                          class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
+                        >
+                          <summary
+                            class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
+                          >
+                            Read over<!-- -->
+                            <!-- -->2<!-- -->
+                            Days
+                          </summary>
+                          <ol
+                            class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
+                          >
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>13 May 2012</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>70%</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 70%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                            >
+                              <div
+                                class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
+                              >
+                                <div>14 May 2012</div>
+                                <div
+                                  class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
+                                >
+                                  <div>Finished</div>
+                                </div>
+                              </div>
+                              <div class="col-span-2 col-start-2 row-start-3">
+                                <div
+                                  class="bg-progress-bar leading-[6px] tablet:mb-0"
+                                  style="--bar-percent: 100%"
+                                >
+                                   
+                                </div>
+                              </div>
+                            </li>
+                          </ol>
+                        </details>
                       </div>
                     </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-boogeyman-by-stephen-king/"
-                        >The Boogeyman</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1973
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/children-of-the-corn-by-stephen-king/"
-                        >Children of the Corn</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1977
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/graveyard-shift-by-stephen-king/"
-                        >Graveyard Shift</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1970
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/gray-matter-by-stephen-king/"
-                        >Gray Matter</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1973
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/i-am-the-doorway-by-stephen-king/"
-                        >I Am the Doorway</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1971
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/i-know-what-you-need-by-stephen-king/"
-                        >I Know What You Need</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1976
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/jerusalems-lot-by-stephen-king/"
-                        >Jerusalem&#x27;s Lot</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1978
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-last-rung-on-the-ladder-by-stephen-king/"
-                        >The Last Rung on the Ladder</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1978
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-lawnmower-man-by-stephen-king/"
-                        >The Lawnmower Man</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1975
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-ledge-by-stephen-king/"
-                        >The Ledge</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1976
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-man-who-loved-flowers-by-stephen-king/"
-                        >The Man Who Loved Flowers</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1977
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-mangler-by-stephen-king/"
-                        >The Mangler</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1972
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/night-surf-by-stephen-king/"
-                        >Night Surf</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1969
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/one-for-the-road-by-stephen-king/"
-                        >One for the Road</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1977
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/quitters-inc-by-stephen-king/"
-                        >Quitters, Inc.</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1978
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/sometimes-they-come-back-by-stephen-king/"
-                        >Sometimes They Come Back</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1974
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/strawberry-spring-by-stephen-king/"
-                        >Strawberry Spring</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1968
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/trucks-by-stephen-king/"
-                        >Trucks</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1973
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="relative mb-1 transform-gpu bg-default px-container py-4 transition-transform last-of-type:mb-0 has-[a:hover]:z-10 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl tablet:gap-x-6 tablet:px-4 desktop:px-6"
-                  >
-                    <div
-                      class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
-                    >
-                      <a
-                        class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
-                        href="/reviews/the-woman-in-the-room-by-stephen-king/"
-                        >The Woman in the Room</a
-                      >
-                      <div
-                        class="text-[15px] leading-4 font-normal tracking-prose text-muted"
-                      >
-                        <span>Stephen King</span>
-                      </div>
-                      <div
-                        class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
-                      >
-                        <span
-                          >Short Story<!-- -->
-                          | </span
-                        >1978
-                      </div>
-                    </div>
+                    <div></div>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="w-full max-w-popout">
-              <h2
-                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
-              >
-                Reading History
-              </h2>
-              <ul>
-                <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
-                >
-                  <div class="flex gap-x-4 py-4 tablet:gap-x-6">
-                    <div class="size-auto self-start">
-                      <div class="bg-subtle py-2 text-center">
-                        <div
-                          class="px-4 pb-2 font-serif text-md font-normal text-subtle"
-                        >
-                          2012
-                        </div>
-                        <div class="bg-default py-1 text-subtle">May</div>
-                        <div
-                          class="bg-default font-serif text-md font-normal text-default"
-                        >
-                          14
-                        </div>
-                        <div class="bg-default py-1 text-subtle">Mon</div>
-                      </div>
-                    </div>
-                    <div class="mt-12 grow">
-                      <span
-                        class="font-serif text-base font-normal text-default"
-                        >Paperback</span
-                      ><span class="font-light tracking-normal text-subtle">
-                        <!-- -->(<span class="rendered-markdown leading-none"
-                          ><span
-                            >New American Library / Signet, 1986</span
-                          ></span
-                        >)</span
-                      >
-                      <details
-                        class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
-                      >
-                        <summary
-                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
-                        >
-                          Read over<!-- -->
-                          <!-- -->2<!-- -->
-                          Days
-                        </summary>
-                        <ol
-                          class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
-                        >
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>13 May 2012</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>70%</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 70%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
-                          >
-                            <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
-                            >
-                              <div>14 May 2012</div>
-                              <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
-                              >
-                                <div>Finished</div>
-                              </div>
-                            </div>
-                            <div class="col-span-2 col-start-2 row-start-3">
-                              <div
-                                class="bg-progress-bar leading-[6px] tablet:mb-0"
-                                style="--bar-percent: 100%"
-                              >
-                                 
-                              </div>
-                            </div>
-                          </li>
-                        </ol>
-                      </details>
-                    </div>
-                  </div>
-                  <div></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
-            data-pagefind-ignore="true"
-          >
-            <nav
-              class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
-              data-page-find-ignore="true"
+            <div
+              class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
+              data-pagefind-ignore="true"
             >
-              <div>
-                <h2
-                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
-                >
-                  <a
-                    class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
-                    href="/reviews/"
-                    >More<!-- -->
-                    <span class="text-accent">Reviews</span></a
+              <nav
+                class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
+                data-page-find-ignore="true"
+              >
+                <div>
+                  <h2
+                    class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
                   >
-                </h2>
-              </div>
-              <div class="@container/cover-list mx-auto tablet:-mx-6">
-                <ol
-                  class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
-                >
-                  <li
-                    class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
+                    <a
+                      class="relative -mb-1 inline-block transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:after:scale-x-100"
+                      href="/reviews/"
+                      >More<!-- -->
+                      <span class="text-accent">Reviews</span></a
+                    >
+                  </h2>
+                </div>
+                <div class="@container/cover-list mx-auto tablet:-mx-6">
+                  <ol
+                    class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
                   >
-                    <div
-                      class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
+                    <li
+                      class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                     >
                       <div
-                        class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
+                        class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
                       >
                         <div
-                          class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
-                          style="
-                            background-color: var(--background-color-default);
-                            background-image:
-                              linear-gradient(
-                                90deg,
-                                rgba(var(--bg-default-rgb), 1) 0%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  30%,
-                                rgba(var(--bg-default-rgb), 0) 50%,
-                                rgba(
-                                    var(--bg-default-rgb),
-                                    var(--bg-default-alpha)
-                                  )
-                                  70%,
-                                rgba(var(--bg-default-rgb), 1) 100%
-                              ),
-                              url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                          "
-                        ></div>
-                        <div
-                          class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
+                          class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            style="
+                              background-color: var(--background-color-default);
+                              background-image:
+                                linear-gradient(
+                                  90deg,
+                                  rgba(var(--bg-default-rgb), 1) 0%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    30%,
+                                  rgba(var(--bg-default-rgb), 0) 50%,
+                                  rgba(
+                                      var(--bg-default-rgb),
+                                      var(--bg-default-alpha)
+                                    )
+                                    70%,
+                                  rgba(var(--bg-default-rgb), 1) 100%
+                                ),
+                                url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                            "
+                          ></div>
+                          <div
+                            class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
                           >
                             <div
-                              class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                             >
-                              <img
-                                height="372"
-                                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                                srcset="
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                                "
-                                width="248"
-                                alt=""
-                                sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
-                                class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
-                                decoding="async"
-                                loading="lazy"
-                              />
+                              <div
+                                class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                              >
+                                <img
+                                  height="372"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                                  srcset="
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                                    /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                                  "
+                                  width="248"
+                                  alt=""
+                                  sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                                  class="transform-gpu rounded-[2.5px] bg-default transition-transform duration-500 group-has-[a:hover]/list-item:scale-110"
+                                  decoding="async"
+                                  loading="lazy"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
-                      >
-                        <a
-                          class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
-                          href="/reviews/out-are-the-lights-by-richard-laymon/"
-                          >Out Are the Lights</a
-                        >
-                        <div class="-mt-2"><span>Richard Laymon</span></div>
                         <div
-                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                         >
-                          2000<!-- -->
-                          |
-                          <!-- -->Novel
-                        </div>
-                        <div>
-                          <picture
-                            ><source
-                              media="(prefers-color-scheme: dark)"
-                              srcset="/svg/2-half-stars-dark.svg" />
-                            <img
-                              alt="C-: 2.5 stars (out of 5)"
-                              class="py-1"
-                              height="24"
-                              src="/svg/2-half-stars.svg"
-                              width="120"
-                          /></picture>
-                        </div>
-                        <div
-                          class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
-                        >
-                          <p>
-                            In a small California town, the Haunted Palace
-                            cinema specializes in horror films. Between showings
-                            of <em>The Hills Have Eyes</em> and
-                            <em>The Texas Chainsaw Massacre</em>, they play
-                            exclusive shorts featuring madman Otto Schreck. But
-                            unbeknownst to the audience, the horrific murders in
-                            these grainy films are real.
-                          </p>
+                          <a
+                            class="block text-2xl font-medium transition-colors duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                            href="/reviews/out-are-the-lights-by-richard-laymon/"
+                            >Out Are the Lights</a
+                          >
+                          <div class="-mt-2"><span>Richard Laymon</span></div>
+                          <div
+                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                          >
+                            2000<!-- -->
+                            |
+                            <!-- -->Novel
+                          </div>
+                          <div>
+                            <picture
+                              ><source
+                                media="(prefers-color-scheme: dark)"
+                                srcset="/svg/2-half-stars-dark.svg" />
+                              <img
+                                alt="C-: 2.5 stars (out of 5)"
+                                class="py-1"
+                                height="24"
+                                src="/svg/2-half-stars.svg"
+                                width="120"
+                            /></picture>
+                          </div>
+                          <div
+                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                          >
+                            <p>
+                              In a small California town, the Haunted Palace
+                              cinema specializes in horror films. Between
+                              showings of <em>The Hills Have Eyes</em> and
+                              <em>The Texas Chainsaw Massacre</em>, they play
+                              exclusive shorts featuring madman Otto Schreck.
+                              But unbeknownst to the audience, the horrific
+                              murders in these grainy films are real.
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ol>
-              </div>
-            </nav>
+                    </li>
+                  </ol>
+                </div>
+              </nav>
+            </div>
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Frank Showalter" },
+                "itemReviewed": {
+                  "@type": "Book",
+                  "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
+                  "name": "Night Shift"
+                },
+                "reviewRating": { "@type": "Rating", "ratingValue": 4 }
+              }
+            </script>
           </div>
-          <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Review",
-              "author": { "@type": "Person", "name": "Frank Showalter" },
-              "itemReviewed": {
-                "@type": "Book",
-                "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
-                "name": "Night Shift"
-              },
-              "reviewRating": { "@type": "Rating", "ratingValue": 4 }
-            }
-          </script>
         </main>
         <footer class="bg-canvas">
           <div class="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
@@ -1448,7 +1450,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
+      src="/src/astro/AstroPageShell.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

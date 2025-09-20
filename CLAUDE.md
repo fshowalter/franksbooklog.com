@@ -108,33 +108,68 @@ Tests run in two environments:
 3. Compressor optimizes output
 4. Deploy to Netlify via GitHub Actions
 
-## Recent Major Changes (Draft Branch)
+## Recent Major Changes (Current Branch)
 
-This branch includes significant architectural improvements:
+This branch completes significant architectural improvements:
 
-### Component Reorganization
+### Component Reorganization Completed
 
-- **Features-first architecture**: Major page components moved from `/src/components/` to `/src/features/` organized by domain
-- **Shared component consolidation**: Common components reorganized into logical subdirectories (`/fields/`, `/filter-and-sort/`, `/layout/`, etc.)
-- **Improved separation of concerns**: Features contain page-specific logic, shared components are truly reusable
+- **Features-first architecture fully implemented**: All major page components successfully moved to `/src/features/`:
+  - `author-titles/` - Individual author pages with their works
+  - `authors/` - Authors listing page
+  - `home/` - Homepage
+  - `reading-log/` - Reading history with calendar view (formerly Readings)
+  - `review/` - Individual review pages
+  - `reviews/` - Reviews listing page
+  - `stats/` - Statistics pages (alltime and yearly)
 
-### Data Structure Updates
+- **Shared components fully reorganized** in `/src/components/`:
+  - `/article/` - Article rendering components
+  - `/avatar/`, `/avatar-list/` - Avatar display components
+  - `/bar-gradient/` - Visual gradient bars
+  - `/cover/`, `/cover-list/` - Book cover display components
+  - `/fields/` - Form inputs (SelectField, TextField, YearField, GradeField)
+  - `/filter-and-sort/` - Reusable filtering and sorting logic
+  - `/grade/` - Grade display components
+  - `/grouping-list-item/` - List grouping utilities
+  - `/layout/` - Layout components (Header, Footer, Navigation, Mast, Backdrop)
+  - `/list-item-*` - Granular list item components for different data types
+  - `/long-form-text/`, `/rendered-markdown/` - Text rendering
+  - `/more-reviews/`, `/review-card/` - Review display components
+  - `/open-graph-image/` - OG image utilities
+  - `/sub-heading/` - Typography components
 
-- **Reading entries renamed**: `timeline-entries.json` → `reading-entries.json` for clarity
-- **API layer reorganization**: Data loading functions use consistent kebab-case naming
-- **Enhanced type safety**: Improved Zod schemas and TypeScript types
+- **Astro layout consolidation**: Layout files moved to `/src/astro/`:
+  - `AstroPageShell.astro` - Main page shell (formerly Layout.astro)
+  - `navDrawer.ts`, `search.ts`, `search-ui.ts` - Supporting utilities
 
-### Styling and Performance Improvements
+### Data Structure Updates Completed
 
-- **CSS color consolidation**: Leveraging modern `light-dark()` CSS function
-- **Font optimization**: Streamlined font loading and reduced bundle size
-- **Cover asset cleanup**: Removed unused cover images for better performance
+- **Reading entries fully renamed**: All references to `timeline-entries.json` updated to `reading-entries.json`
+- **API data layer consistently using kebab-case**:
+  - `alltime-stats-json.ts`, `authors-json.ts`, `pages-markdown.ts`
+  - `reading-entries-json.ts`, `readings-markdown.ts`
+  - `reviewed-works-json.ts`, `reviews-markdown.ts`, `year-stats-json.ts`
 
-### Development Experience
+### Feature-Specific Improvements
 
-- **Updated dependencies**: Latest Astro, React, and tooling versions
-- **Enhanced ESLint**: Added HTML linting with `lint:html` command
-- **Node.js 22.19.0**: Updated runtime for latest performance improvements
+- **Reading Log (formerly Readings)**: New calendar view implementation with month navigation
+- **Authors Page**: Added alphabet navigation for easier browsing
+- **Filter and Sort**: Centralized and reusable filter/sort components with dedicated reducers
+- **List Items**: Modular list item components for consistent display across features
+
+### File Organization Patterns
+
+- **Feature directories** contain complete domain logic:
+  - Main component (`Feature.tsx`)
+  - Props fetching (`getFeatureProps.ts`)
+  - State management (`Feature.reducer.ts`) when needed
+  - Filters (`FeatureFilters.tsx`) when applicable
+  - Tests (`Feature.spec.tsx`)
+  - Feature-specific utilities (sorting, filtering, grouping)
+
+- **Shared components** are truly reusable across features
+- **Clear separation** between feature-specific and shared code
 
 ## Important Implementation Details
 

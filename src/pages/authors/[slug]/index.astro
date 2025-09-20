@@ -1,16 +1,15 @@
 ---
-import React from "react";
+import type { Author } from "~/api/authors";
 
 import { allAuthors } from "~/api/authors";
-import { AvatarBackdrop, BreadcrumbLink } from "~/components/backdrop/Backdrop";
-import { Layout as ComponentLayout } from "~/components/layout/Layout";
-import { Author } from "~/features/author/Author";
-import { getProps } from "~/features/author/getProps";
-import Layout from "~/layouts/Layout.astro";
+import AstroPageShell from "~/astro/AstroPageShell.astro";
+import { getLayoutAvatarImageProps } from "~/components/layout/getLayoutAvatarImageProps";
+import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
+import { Layout } from "~/components/layout/Layout";
+import { AuthorTitles } from "~/features/author-titles/AuthorTitles";
+import { getAuthorTitlesProps } from "~/features/author-titles/getAuthorTitlesProps";
 
-interface Props {
-  slug: string;
-}
+type Props = Author;
 
 export async function getStaticPaths() {
   const authors = await allAuthors();
@@ -20,36 +19,32 @@ export async function getStaticPaths() {
       params: {
         slug: author.slug,
       },
-      props: {
-        slug: author.slug,
-      },
+      props: author,
     };
   });
 }
 
-const { slug } = Astro.props;
-const props = await getProps(slug);
+const { name, reviewedWorks, slug } = Astro.props;
+const authorTitlesProps = await getAuthorTitlesProps(slug);
+const backdropImageProps = await getLayoutBackdropImageProps("author");
+const avatarImageProps = await getLayoutAvatarImageProps(slug);
 
-// Separate layout props from interactive props
-const {
-  avatarImageProps,
-  backdropImageProps,
-  deck,
-  name,
-  ...interactiveProps
-} = props;
+const reviewedWorkCount = reviewedWorks.length;
 
-// Create React elements in front matter
-const breadcrumbElement = React.createElement(BreadcrumbLink, {
-  children: "Authors",
-  href: "/authors/",
-});
+let works = "works";
+
+if (reviewedWorkCount === 1) {
+  works = "work";
+}
+
+const deck = `Author of ${reviewedWorkCount} reviewed ${works}.`;
+const metaDescription = `Reviews of books and stories written by ${name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`;
 ---
 
-<Layout
+<AstroPageShell
   canonical={true}
   meta={{
-    description: `Reviews of books and stories written by ${name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`,
+    description: metaDescription,
   }}
   openGraph={{
     description: deck,
@@ -57,14 +52,19 @@ const breadcrumbElement = React.createElement(BreadcrumbLink, {
   }}
   title={`${name} book & story reviews`}
 >
-  <ComponentLayout className="bg-subtle">
-    <AvatarBackdrop
-      avatarImageProps={avatarImageProps}
-      backdropImageProps={backdropImageProps}
-      breadcrumb={breadcrumbElement}
-      deck={deck}
-      name={name}
-    />
-    <Author client:load {...interactiveProps} name={name} />
-  </ComponentLayout>
-</Layout>
+  <Layout
+    backdrop={{
+      avatarImageProps: avatarImageProps,
+      backdropImageProps: backdropImageProps,
+      breadcrumb: {
+        href: "/authors/",
+        text: "Authors",
+      },
+      deck,
+      title: name,
+    }}
+    className="bg-subtle"
+  >
+    <AuthorTitles client:load {...authorTitlesProps} />
+  </Layout>
+</AstroPageShell>

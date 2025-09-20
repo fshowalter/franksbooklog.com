@@ -3,7 +3,6 @@ import type { Review, ReviewWithContent } from "~/api/reviews";
 
 import { Cover } from "~/components/cover/Cover";
 import { Grade } from "~/components/grade/Grade";
-import { Layout } from "~/components/layout/Layout";
 import { LongFormText } from "~/components/long-form-text/LongFormText";
 import {
   MoreReviews,
@@ -55,7 +54,7 @@ export function Review({
   value,
 }: Props): React.JSX.Element {
   return (
-    <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
+    <div className="flex flex-col" data-pagefind-body>
       <header
         className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
       >
@@ -185,7 +184,7 @@ export function Review({
         grade={value.grade}
         title={value.title}
       />
-    </Layout>
+    </div>
   );
 }
 

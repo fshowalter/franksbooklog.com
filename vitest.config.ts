@@ -64,8 +64,8 @@ export default getViteConfig({
         extends: true,
         test: {
           environment: "node",
-          include: ["src/layouts/**/*.spec.ts"],
-          name: "layouts-node",
+          include: ["src/astro/**/*.spec.ts"],
+          name: "astro-node",
         },
       },
       {

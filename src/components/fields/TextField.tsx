@@ -1,41 +1,34 @@
-import { useState } from "react";
-
 import { debounceOnChange } from "~/utils/debounce";
 
 import { LabelText } from "./LabelText";
 
 /**
- * Debounce delay in milliseconds for text field input changes
+ * Debounce delay for text filter input in milliseconds.
  */
 export const TEXT_FILTER_DEBOUNCE_MS = 150;
 
 type onChangeHandler = (value: string) => void;
 
 /**
- * Text input field component with debounced change handling.
- * Provides immediate visual feedback while debouncing the actual callback
- * to prevent excessive event firing during typing.
- *
+ * Text input field with label and debounced change handler.
  * @param props - Component props
- * @param props.initialValue - Initial text value
- * @param props.label - Label text to display above the input
- * @param props.onInputChange - Debounced callback fired when text changes
- * @param props.placeholder - Placeholder text for the input
- * @returns Text field component with label
+ * @param props.defaultValue - Default input value
+ * @param props.label - Field label text
+ * @param props.onInputChange - Debounced handler for input changes
+ * @param props.placeholder - Placeholder text
+ * @returns Labeled text input field
  */
 export function TextField({
-  initialValue,
+  defaultValue,
   label,
   onInputChange,
   placeholder,
 }: {
-  initialValue: string | undefined;
+  defaultValue: string | undefined;
   label: string;
   onInputChange: onChangeHandler;
   placeholder: string;
 }): React.JSX.Element {
-  // Initialize with the initial value, then manage state internally
-  const [localValue, setLocalValue] = useState(initialValue || "");
   const debouncedHandleChange = debounceOnChange(
     onInputChange,
     TEXT_FILTER_DEBOUNCE_MS,
@@ -43,7 +36,6 @@ export function TextField({
 
   const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
     const newValue = (e.target as HTMLInputElement).value;
-    setLocalValue(newValue); // Update immediately for responsive typing
     debouncedHandleChange(newValue); // Debounce the callback
   };
 
@@ -56,10 +48,10 @@ export function TextField({
           outline-accent
           placeholder:text-default placeholder:opacity-50
         `}
+        defaultValue={defaultValue}
         onChange={handleChange}
         placeholder={placeholder}
         type="text"
-        value={localValue}
       />
     </label>
   );
