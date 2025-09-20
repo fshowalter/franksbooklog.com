@@ -13,7 +13,7 @@ type ReviewOpenGraphImageProps = {
   title: string;
 };
 
-export function OpenGraphImage({
+export function ReviewOpenGraphImage({
   authors,
   coverBase64DataUri,
   coverHeight,
@@ -21,7 +21,7 @@ export function OpenGraphImage({
   grade,
   title,
 }: ReviewOpenGraphImageProps): React.JSX.Element {
-  // eslint-disable-next-line react-compiler/react-compiler
+  // eslint-disable-next-line react-hooks/no-unused-directives
   "use no memo";
 
   return (

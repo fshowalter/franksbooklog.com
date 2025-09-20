@@ -3,7 +3,7 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 import { allAuthors } from "~/api/authors";
 import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
 import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
-import { OpenGraphImage } from "~/features/author-titles/OpenGraphImage";
+import { AuthorTitlesOpenGraphImage } from "~/features/author-titles/AuthorTitlesOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
 /**
@@ -48,7 +48,7 @@ export const GET: APIRoute = async function get({ props }) {
   const { name, slug } = props as Props;
 
   const jpeg = await componentToImage(
-    OpenGraphImage({
+    AuthorTitlesOpenGraphImage({
       avatar: await getOpenGraphAvatarAsBase64String(slug),
       backdrop: await getOpenGraphBackdropAsBase64String("author"),
       name,

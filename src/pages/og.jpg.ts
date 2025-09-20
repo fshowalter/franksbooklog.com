@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 
 import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
-import { OpenGraphImage } from "~/features/home/OpenGraphImage";
+import { HomeOpenGraphImage } from "~/features/home/HomeOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
 /**
@@ -13,7 +13,7 @@ import { componentToImage } from "~/utils/componentToImage";
  */
 export const GET: APIRoute = async function get() {
   const jpeg = await componentToImage(
-    OpenGraphImage({
+    HomeOpenGraphImage({
       backdrop: await getOpenGraphBackdropAsBase64String("home"),
     }),
   );
