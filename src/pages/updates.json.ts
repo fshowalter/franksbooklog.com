@@ -1,5 +1,5 @@
 import { getUpdateCoverProps } from "~/api/covers";
-import { mostRecentReviews } from "~/api/reviews";
+import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 
 /**
  * Mapping object that converts letter grades to numeric star ratings.
@@ -32,19 +32,24 @@ const gradeToStars: Record<string, number> = {
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {
-  const reviews = await mostRecentReviews(6);
+  const reviews = await mostRecentReviews(4);
 
   const updateItems = await Promise.all(
     reviews.map(async (review) => {
       const coverProps = await getUpdateCoverProps(review);
 
+      const reviewWithExcerptHtml = await loadExcerptHtml(review);
+
       return {
         authors: review.authors.map((author) => author.name),
         date: review.date,
+        excerpt: reviewWithExcerptHtml.excerpt,
         image: coverProps.src,
+        kind: review.kind,
         slug: review.slug,
         stars: gradeToStars[review.grade],
         title: review.title,
+        workYear: review.workYear,
       };
     }),
   );
