@@ -23,7 +23,7 @@ describe("PerformanceLogger", () => {
       const result = await perfLogger.measure("test-operation", mockFn);
 
       expect(result).toBe("test-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
 
     it("executes async function with metadata", async () => {
@@ -37,7 +37,7 @@ describe("PerformanceLogger", () => {
       );
 
       expect(result).toBe("test-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
 
     it("still returns result if function throws", async () => {
@@ -46,7 +46,7 @@ describe("PerformanceLogger", () => {
       await expect(
         perfLogger.measure("test-operation", mockFn),
       ).rejects.toThrow("test error");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
 
     it("skips measurement in test mode", async () => {
@@ -56,7 +56,7 @@ describe("PerformanceLogger", () => {
       const result = await perfLogger.measure("test-operation", mockFn);
 
       expect(result).toBe("test-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
   });
 
@@ -67,7 +67,7 @@ describe("PerformanceLogger", () => {
       const result = perfLogger.measureSync("test-sync-operation", mockFn);
 
       expect(result).toBe("sync-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
 
     it("executes sync function with metadata", () => {
@@ -81,7 +81,7 @@ describe("PerformanceLogger", () => {
       );
 
       expect(result).toBe("sync-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
 
     it("still throws if function throws", () => {
@@ -92,7 +92,7 @@ describe("PerformanceLogger", () => {
       expect(() =>
         perfLogger.measureSync("test-sync-operation", mockFn),
       ).toThrow("sync error");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
 
     it("skips measurement in test mode", () => {
@@ -102,7 +102,7 @@ describe("PerformanceLogger", () => {
       const result = perfLogger.measureSync("test-sync-operation", mockFn);
 
       expect(result).toBe("sync-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
   });
 
@@ -254,7 +254,7 @@ describe("PerformanceLogger", () => {
 
       perfLogger.writeReportToFile();
 
-      expect(consoleSpy).toHaveBeenCalledWith(
+      expect(consoleSpy).toHaveBeenCalledExactlyOnceWith(
         expect.stringContaining("Performance report written to:"),
       );
     });
@@ -267,7 +267,7 @@ describe("PerformanceLogger", () => {
 
       perfLogger.measureSync("debug-op", () => "result");
 
-      expect(consoleSpy).toHaveBeenCalledWith(
+      expect(consoleSpy).toHaveBeenCalledExactlyOnceWith(
         expect.stringContaining("[PERF] debug-op:"),
         expect.anything(),
       );
@@ -295,7 +295,7 @@ describe("PerformanceLogger", () => {
       const result = await exportedLogger.measure("singleton-op", mockFn);
 
       expect(result).toBe("singleton-result");
-      expect(mockFn).toHaveBeenCalledOnce();
+      expect(mockFn).toHaveBeenCalledExactlyOnceWith();
     });
   });
 });

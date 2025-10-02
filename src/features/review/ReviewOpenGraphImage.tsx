@@ -21,7 +21,6 @@ export function ReviewOpenGraphImage({
   grade,
   title,
 }: ReviewOpenGraphImageProps): React.JSX.Element {
-  // eslint-disable-next-line react-hooks/no-unused-directives
   "use no memo";
 
   return (
