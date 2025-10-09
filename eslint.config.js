@@ -22,6 +22,7 @@ export default defineConfig(
   },
   eslint.configs.recommended,
   eslintPluginUnicorn.configs.recommended,
+  reactHooks.configs.flat.recommended,
   perfectionist.configs["recommended-natural"],
   ...eslintPluginAstro.configs.recommended,
   {
@@ -41,10 +42,7 @@ export default defineConfig(
     },
   },
   {
-    extends: [
-      ...tsEslint.configs.recommendedTypeChecked,
-      "react-hooks/recommended-latest",
-    ],
+    extends: [...tsEslint.configs.recommendedTypeChecked],
     files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
       parserOptions: {
@@ -59,7 +57,6 @@ export default defineConfig(
           "separate-type-imports": separateTypeImports,
         },
       },
-      "react-hooks": reactHooks,
     },
     rules: {
       "@typescript-eslint/array-type": "error",
