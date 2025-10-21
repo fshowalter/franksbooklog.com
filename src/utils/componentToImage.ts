@@ -138,27 +138,27 @@ async function getFontData() {
 
   fontDataCache = [
     {
-      data: frankRuhlLibreExtraBold.buffer as ArrayBuffer,
+      data: frankRuhlLibreExtraBold.buffer,
       name: "FrankRuhlLibre",
       weight: 800,
     },
     {
-      data: frankRuhlLibreSemiBold.buffer as ArrayBuffer,
+      data: frankRuhlLibreSemiBold.buffer,
       name: "FrankRuhlLibre",
       weight: 600,
     },
     {
-      data: frankRuhlLibreRegular.buffer as ArrayBuffer,
+      data: frankRuhlLibreRegular.buffer,
       name: "FrankRuhlLibre",
       weight: 400,
     },
     {
-      data: assistantBold.buffer as ArrayBuffer,
+      data: assistantBold.buffer,
       name: "Assistant",
       weight: 700,
     },
     {
-      data: assistantSemiBold.buffer as ArrayBuffer,
+      data: assistantSemiBold.buffer,
       name: "Assistant",
       weight: 600,
     },
