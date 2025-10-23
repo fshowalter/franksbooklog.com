@@ -29,10 +29,10 @@
   "dependencies": {
     "@astrojs/check": "0.9.5",
     "@astrojs/react": "4.4.0",
-    "@astrojs/rss": "4.0.12",
+    "@astrojs/rss": "4.0.13",
     "@astrojs/sitemap": "3.6.0",
     "@tailwindcss/vite": "4.1.15",
-    "astro": "5.14.8",
+    "astro": "5.15.0",
     "astro-compressor": "1.2.0",
     "gray-matter": "4.0.3",
     "pagefind": "1.4.0",
