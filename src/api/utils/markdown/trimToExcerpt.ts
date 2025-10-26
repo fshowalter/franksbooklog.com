@@ -8,13 +8,15 @@ import type { Root, RootContent } from "mdast";
  * @returns Remark transformer function that modifies the AST
  */
 export function trimToExcerpt() {
-  return (tree: Root) => {
-    const separatorIndex = tree.children.findIndex((node: RootContent) => {
-      return node.type === "paragraph";
-    });
+  return pluginFunction;
+}
 
-    if (separatorIndex !== -1) {
-      tree.children.splice(separatorIndex + 1);
-    }
-  };
+function pluginFunction(tree: Root) {
+  const separatorIndex = tree.children.findIndex((node: RootContent) => {
+    return node.type === "paragraph";
+  });
+
+  if (separatorIndex !== -1) {
+    tree.children.splice(separatorIndex + 1);
+  }
 }
