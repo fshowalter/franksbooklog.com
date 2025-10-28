@@ -9,8 +9,8 @@
       "reviewed": true,
       "subtitle": null,
       "workYear": "1976",
-      "workYearSequence": 98,
-      "authorSequence": 466,
+      "workYearSequence": 99,
+      "authorSequence": 467,
       "titleSequence": 111,
       "kind": "Novel",
       "slug": "dark-crusade-by-karl-edward-wagner",
@@ -20,6 +20,33 @@
       "gradeSequence": 19,
       "reviewDate": "2012-05-18",
       "reviewYear": "2012",
+      "authors": [
+        {
+          "slug": "karl-edward-wagner",
+          "notes": null,
+          "name": "Karl Edward Wagner",
+          "sortName": "Wagner, Karl Edward"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
+      "reviewSequence": 86,
+      "title": "In the Pines",
+      "reviewed": true,
+      "subtitle": null,
+      "workYear": "1973",
+      "workYearSequence": 75,
+      "authorSequence": 466,
+      "titleSequence": 230,
+      "kind": "Short Story",
+      "slug": "in-the-pines-by-karl-edward-wagner",
+      "sortTitle": "In the Pines",
+      "grade": "C",
+      "gradeValue": 6,
+      "gradeSequence": 31,
+      "reviewDate": "2025-10-26",
+      "reviewYear": "2025",
       "authors": [
         {
           "slug": "karl-edward-wagner",
