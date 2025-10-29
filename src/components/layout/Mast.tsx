@@ -199,12 +199,10 @@ function NavListItem({
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
           after:transition-transform after:duration-500
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
+          ${hasBackdrop ? "mix-blend-hard-light text-shadow-lg" : ""}
         `}
         href={value.target}
-        style={{
-          textShadow: hasBackdrop ? "1px 1px 2px black" : "",
-        }}
       >
         {value.text}
       </a>
