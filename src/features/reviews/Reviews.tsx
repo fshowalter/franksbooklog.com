@@ -53,8 +53,6 @@ export type ReviewsValue = {
     name: string;
     sortName: string;
   }[];
-  /** Sequence number for author-based sorting */
-  authorSequence: number;
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
   /** Formatted display date for the review */
@@ -65,8 +63,8 @@ export type ReviewsValue = {
   gradeValue: number;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
-  /** Sequence number for chronological review ordering */
-  reviewSequence: number;
+  /** Sequence string for chronological review ordering */
+  reviewSequence: string;
   /** Year the review was written */
   reviewYear: string;
   /** URL slug for the review page */
@@ -77,8 +75,6 @@ export type ReviewsValue = {
   title: string;
   /** Year the work was originally published */
   workYear: string;
-  /** Sequence number for work year ordering */
-  workYearSequence: number;
 };
 
 /**

@@ -27,7 +27,7 @@ export type ReviewCardValue = {
   kind: string;
   reviewDate?: string;
   /** Sequence number of the review */
-  reviewSequence: number;
+  reviewSequence: string;
   /** URL slug for the review */
   slug: string;
   /** Title of the reviewed work */

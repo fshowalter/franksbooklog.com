@@ -36,14 +36,13 @@ const WorkSchema = z.object({
   includedInSlugs: z.array(z.string()),
   kind: WorkKindSchema,
   reviewDate: z.string(),
-  reviewSequence: z.number(),
+  reviewSequence: z.string(),
   reviewYear: z.string(),
   slug: z.string(),
   sortTitle: z.string(),
   subtitle: nullableString(),
   title: z.string(),
   workYear: z.string(),
-  workYearSequence: z.number(),
 });
 
 /**

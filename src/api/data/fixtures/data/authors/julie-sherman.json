@@ -4,12 +4,18 @@
   "slug": "julie-sherman",
   "reviewedWorks": [
     {
+      "reviewSequence": "2022-09-05-01",
       "title": "About Face",
+      "reviewed": true,
+      "subtitle": "The Odyssey of an American Warrior",
+      "workYear": "1989",
       "kind": "Nonfiction",
       "slug": "about-face-by-david-h-hackworth-julie-sherman",
       "sortTitle": "About Face: The Odyssey of an American Warrior",
       "grade": "A-",
       "gradeValue": 11,
+      "reviewDate": "2022-09-05",
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "david-h-hackworth",
@@ -24,16 +30,7 @@
           "sortName": "Sherman, Julie"
         }
       ],
-      "includedInSlugs": [],
-      "reviewDate": "2022-09-05",
-      "reviewSequence": 283,
-      "subtitle": "The Odyssey of an American Warrior",
-      "workYear": "2000",
-      "workYearSequence": 127,
-      "authorSequence": 127,
-      "titleSequence": 127,
-      "gradeSequence": 127,
-      "reviewYear": "2022"
+      "includedInSlugs": []
     }
   ]
 }

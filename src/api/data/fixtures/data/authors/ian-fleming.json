@@ -4,12 +4,18 @@
   "slug": "ian-fleming",
   "reviewedWorks": [
     {
+      "reviewSequence": "2022-06-14-02",
       "title": "Casino Royale",
+      "reviewed": true,
+      "subtitle": null,
+      "workYear": "1953",
       "kind": "Novel",
       "slug": "casino-royale-by-ian-fleming",
       "sortTitle": "Casino Royale",
       "grade": "B-",
       "gradeValue": 8,
+      "reviewDate": "2022-06-14",
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "ian-fleming",
@@ -18,24 +24,21 @@
           "sortName": "Fleming, Ian"
         }
       ],
-      "includedInSlugs": [],
-      "reviewDate": "2022-06-14",
-      "reviewSequence": 277,
-      "subtitle": null,
-      "workYear": "2000",
-      "workYearSequence": 121,
-      "authorSequence": 121,
-      "titleSequence": 121,
-      "gradeSequence": 121,
-      "reviewYear": "2022"
+      "includedInSlugs": []
     },
     {
+      "reviewSequence": "2022-06-30-01",
       "title": "Live and Let Die",
+      "reviewed": true,
+      "subtitle": null,
+      "workYear": "1954",
       "kind": "Novel",
       "slug": "live-and-let-die-by-ian-fleming",
       "sortTitle": "Live and Let Die",
       "grade": "D",
       "gradeValue": 3,
+      "reviewDate": "2022-06-30",
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "ian-fleming",
@@ -44,24 +47,21 @@
           "sortName": "Fleming, Ian"
         }
       ],
-      "includedInSlugs": [],
-      "reviewDate": "2022-06-30",
-      "reviewSequence": 278,
-      "subtitle": null,
-      "workYear": "2000",
-      "workYearSequence": 122,
-      "authorSequence": 122,
-      "titleSequence": 122,
-      "gradeSequence": 122,
-      "reviewYear": "2022"
+      "includedInSlugs": []
     },
     {
+      "reviewSequence": "2022-10-16-01",
       "title": "Moonraker",
+      "reviewed": true,
+      "subtitle": null,
+      "workYear": "1955",
       "kind": "Novel",
       "slug": "moonraker-by-ian-fleming",
       "sortTitle": "Moonraker",
       "grade": "B",
       "gradeValue": 9,
+      "reviewDate": "2022-10-16",
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "ian-fleming",
@@ -70,16 +70,7 @@
           "sortName": "Fleming, Ian"
         }
       ],
-      "includedInSlugs": [],
-      "reviewDate": "2022-10-16",
-      "reviewSequence": 279,
-      "subtitle": null,
-      "workYear": "2000",
-      "workYearSequence": 123,
-      "authorSequence": 123,
-      "titleSequence": 123,
-      "gradeSequence": 123,
-      "reviewYear": "2022"
+      "includedInSlugs": []
     }
   ]
 }

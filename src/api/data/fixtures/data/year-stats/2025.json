@@ -1,14 +1,30 @@
 {
   "year": "2025",
-  "workCount": 1,
-  "bookCount": 0,
+  "workCount": 8,
+  "bookCount": 3,
   "kindDistribution": [
     {
-      "name": "Short Story",
+      "name": "Nonfiction",
       "count": 1
+    },
+    {
+      "name": "Novel",
+      "count": 2
+    },
+    {
+      "name": "Novella",
+      "count": 2
+    },
+    {
+      "name": "Short Story",
+      "count": 3
     }
   ],
   "editionDistribution": [
+    {
+      "name": "Ebook",
+      "count": 7
+    },
     {
       "name": "Paperback",
       "count": 1
@@ -16,9 +32,112 @@
   ],
   "decadeDistribution": [
     {
+      "name": "1960s",
+      "count": 1
+    },
+    {
+      "name": "1970s",
+      "count": 1
+    },
+    {
       "name": "1980s",
+      "count": 2
+    },
+    {
+      "name": "1990s",
+      "count": 1
+    },
+    {
+      "name": "2010s",
+      "count": 2
+    },
+    {
+      "name": "2020s",
       "count": 1
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "Richard Laymon",
+      "count": 3,
+      "slug": "richard-laymon",
+      "reviewed": true,
+      "readings": [
+        {
+          "readingSequence": 186,
+          "date": "2025-02-06",
+          "slug": "night-show-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Night Show",
+          "workYear": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 187,
+          "date": "2025-02-09",
+          "slug": "a-writers-tale-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Nonfiction",
+          "title": "A Writer's Tale",
+          "workYear": "1997",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 188,
+          "date": "2025-02-15",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "workYear": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Philip Fracassi",
+      "count": 3,
+      "slug": "philip-fracassi",
+      "reviewed": true,
+      "readings": [
+        {
+          "readingSequence": 190,
+          "date": "2025-07-11",
+          "slug": "commodore-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Novella",
+          "title": "Commodore",
+          "workYear": "2021",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "readingSequence": 191,
+          "date": "2025-07-11",
+          "slug": "shiloh-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Novella",
+          "title": "Shiloh",
+          "workYear": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "readingSequence": 192,
+          "date": "2025-07-12",
+          "slug": "king-mob-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "King Mob",
+          "workYear": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    }
+  ]
 }

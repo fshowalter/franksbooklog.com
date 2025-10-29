@@ -39,10 +39,9 @@ function createReviewValue(
     authors: overrides.authors || [
       {
         name: `Test Author ${testIdCounter}`,
-        sortName: `author ${testIdCounter}`,
+        sortName: `author ${testIdCounter.toLocaleString("en-US", { minimumIntegerDigits: 3 })}`,
       },
     ],
-    authorSequence: overrides.authorSequence || testIdCounter,
     coverImageProps: {
       height: 400,
       src: "/cover.jpg",
@@ -53,13 +52,14 @@ function createReviewValue(
     grade: "B+",
     gradeValue: 10,
     kind: "Novel",
-    reviewSequence: testIdCounter,
+    reviewSequence: testIdCounter.toLocaleString("en-US", {
+      minimumIntegerDigits: 3,
+    }),
     reviewYear: "2024",
     slug: `test-review-${testIdCounter}`,
     sortTitle: title.toLowerCase(),
     title,
     workYear: "1990",
-    workYearSequence: testIdCounter,
     ...overrides,
   };
 }
@@ -230,7 +230,6 @@ describe("Reviews", () => {
             { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
             { name: "Arthur Conan Doyle", sortName: "doyle, arthur" },
           ],
-          authorSequence: 2,
           title: "Book by Zelda and Arthur",
         }),
         createReviewValue({
@@ -238,7 +237,6 @@ describe("Reviews", () => {
             { name: "Arthur Conan Doyle", sortName: "doyle, arthur" },
             { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
           ],
-          authorSequence: 1,
           title: "Book by Arthur and Zelda",
         }),
       ];
@@ -266,19 +264,16 @@ describe("Reviews", () => {
           authors: [
             { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
           ],
-          authorSequence: 3,
           title: "Zombie Book",
         }),
         createReviewValue({
           authors: [
             { name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" },
           ],
-          authorSequence: 1,
           title: "Detective Book",
         }),
         createReviewValue({
           authors: [{ name: "Mary Shelley", sortName: "shelley, mary" }],
-          authorSequence: 2,
           title: "Monster Book",
         }),
       ];
@@ -294,8 +289,8 @@ describe("Reviews", () => {
       const maryIndex = allText.indexOf("Mary Shelley");
       const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
 
-      expect(arthurIndex).toBeLessThan(maryIndex);
-      expect(maryIndex).toBeLessThan(zeldaIndex);
+      expect(arthurIndex).toBeLessThan(zeldaIndex);
+      expect(zeldaIndex).toBeLessThan(maryIndex);
     });
 
     it("sorts by author Z to A", async ({ expect }) => {
@@ -304,19 +299,16 @@ describe("Reviews", () => {
           authors: [
             { name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" },
           ],
-          authorSequence: 1,
           title: "Detective Book",
         }),
         createReviewValue({
           authors: [
             { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
           ],
-          authorSequence: 3,
           title: "Zombie Book",
         }),
         createReviewValue({
           authors: [{ name: "Mary Shelley", sortName: "shelley, mary" }],
-          authorSequence: 2,
           title: "Monster Book",
         }),
       ];
@@ -332,8 +324,8 @@ describe("Reviews", () => {
       const maryIndex = allText.indexOf("Mary Shelley");
       const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
 
-      expect(zeldaIndex).toBeLessThan(maryIndex);
-      expect(maryIndex).toBeLessThan(arthurIndex);
+      expect(maryIndex).toBeLessThan(zeldaIndex);
+      expect(zeldaIndex).toBeLessThan(arthurIndex);
     });
 
     it("sorts by title A to Z", async ({ expect }) => {
@@ -385,17 +377,14 @@ describe("Reviews", () => {
         createReviewValue({
           title: "Modern Book",
           workYear: "2000",
-          workYearSequence: 3,
         }),
         createReviewValue({
           title: "Classic Book",
           workYear: "1980",
-          workYearSequence: 1,
         }),
         createReviewValue({
           title: "Mid Book",
           workYear: "1990",
-          workYearSequence: 2,
         }),
       ];
 
@@ -420,17 +409,14 @@ describe("Reviews", () => {
         createReviewValue({
           title: "Classic Book",
           workYear: "1980",
-          workYearSequence: 1,
         }),
         createReviewValue({
           title: "Modern Book",
           workYear: "2000",
-          workYearSequence: 3,
         }),
         createReviewValue({
           title: "Mid Book",
           workYear: "1990",
-          workYearSequence: 2,
         }),
       ];
 
@@ -496,9 +482,9 @@ describe("Reviews", () => {
 
     it("sorts by review date newest first", async ({ expect }) => {
       const reviews = [
-        createReviewValue({ reviewSequence: 3, title: "New Review" }),
-        createReviewValue({ reviewSequence: 1, title: "Old Review" }),
-        createReviewValue({ reviewSequence: 2, title: "Mid Review" }),
+        createReviewValue({ reviewSequence: "3", title: "New Review" }),
+        createReviewValue({ reviewSequence: "1", title: "Old Review" }),
+        createReviewValue({ reviewSequence: "2", title: "Mid Review" }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -518,9 +504,9 @@ describe("Reviews", () => {
 
     it("sorts by review date oldest first", async ({ expect }) => {
       const reviews = [
-        createReviewValue({ reviewSequence: 3, title: "New Review" }),
-        createReviewValue({ reviewSequence: 1, title: "Old Review" }),
-        createReviewValue({ reviewSequence: 2, title: "Mid Review" }),
+        createReviewValue({ reviewSequence: "3", title: "New Review" }),
+        createReviewValue({ reviewSequence: "1", title: "Old Review" }),
+        createReviewValue({ reviewSequence: "2", title: "Mid Review" }),
       ];
 
       const user = getUserWithFakeTimers();

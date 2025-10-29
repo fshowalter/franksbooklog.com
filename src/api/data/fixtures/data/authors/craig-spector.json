@@ -4,12 +4,18 @@
   "slug": "craig-spector",
   "reviewedWorks": [
     {
+      "reviewSequence": "2023-01-21-02",
       "title": "Fright Night",
+      "reviewed": true,
+      "subtitle": null,
+      "workYear": "1985",
       "kind": "Novel",
       "slug": "fright-night-by-john-skipp-craig-spector",
       "sortTitle": "Fright Night",
       "grade": "F",
       "gradeValue": 1,
+      "reviewDate": "2023-01-21",
+      "reviewYear": "2023",
       "authors": [
         {
           "slug": "john-skipp",
@@ -24,16 +30,7 @@
           "sortName": "Spector, Craig"
         }
       ],
-      "includedInSlugs": [],
-      "reviewDate": "2023-01-21",
-      "reviewSequence": 273,
-      "subtitle": null,
-      "workYear": "2000",
-      "workYearSequence": 117,
-      "authorSequence": 117,
-      "titleSequence": 117,
-      "gradeSequence": 117,
-      "reviewYear": "2023"
+      "includedInSlugs": []
     }
   ]
 }

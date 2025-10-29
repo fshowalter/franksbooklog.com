@@ -1,6 +1,6 @@
 import type { SortableTitle, TitleSort } from "./createTitleSorter";
 
-import { sortNumber } from "./createSorter";
+import { sortNumber, sortString } from "./createSorter";
 import { createTitleSorter } from "./createTitleSorter";
 
 export type ReviewedTitleSort =
@@ -12,7 +12,7 @@ export type ReviewedTitleSort =
 
 type SortableReviewedTitle = SortableTitle & {
   gradeValue: number;
-  reviewSequence: number;
+  reviewSequence: string;
 };
 
 /**
@@ -47,8 +47,8 @@ function sortGrade<TValue extends SortableReviewedTitle>() {
 function sortReviewDate<TValue extends SortableReviewedTitle>() {
   return {
     "review-date-asc": (a: TValue, b: TValue) =>
-      sortNumber(a.reviewSequence, b.reviewSequence),
+      sortString(a.reviewSequence, b.reviewSequence),
     "review-date-desc": (a: TValue, b: TValue) =>
-      sortNumber(a.reviewSequence, b.reviewSequence) * -1,
+      sortString(a.reviewSequence, b.reviewSequence) * -1,
   };
 }

@@ -22,11 +22,11 @@
   ],
   "editionDistribution": [
     {
-      "name": "Audible",
+      "name": "Audiobook",
       "count": 4
     },
     {
-      "name": "Kindle",
+      "name": "Ebook",
       "count": 6
     }
   ],
@@ -57,73 +57,61 @@
       "name": "Stephen Morris",
       "count": 2,
       "slug": "stephen-morris",
+      "reviewed": true,
       "readings": [
         {
+          "readingSequence": 179,
           "date": "2023-11-11",
           "slug": "record-play-pause-by-stephen-morris",
-          "edition": "Audible",
+          "edition": "Audiobook",
           "kind": "Nonfiction",
           "title": "Record Play Pause",
+          "workYear": "2019",
           "includedInSlugs": [],
-          "reviewed": true,
-          "readingSequence": 179,
-          "workYear": "2000",
-          "workYearSequence": 469,
-          "authorSequence": 416,
-          "titleSequence": 370
+          "reviewed": true
         },
         {
+          "readingSequence": 180,
           "date": "2023-12-09",
           "slug": "fast-forward-by-stephen-morris",
-          "edition": "Audible",
+          "edition": "Audiobook",
           "kind": "Nonfiction",
           "title": "Fast Forward",
+          "workYear": "2020",
           "includedInSlugs": [],
-          "reviewed": true,
-          "readingSequence": 180,
-          "workYear": "2000",
-          "workYearSequence": 470,
-          "authorSequence": 417,
-          "titleSequence": 158
+          "reviewed": true
         }
-      ],
-      "reviewed": true
+      ]
     },
     {
       "name": "Philip Fracassi",
       "count": 2,
       "slug": "philip-fracassi",
+      "reviewed": true,
       "readings": [
         {
+          "readingSequence": 175,
           "date": "2023-10-09",
           "slug": "sacculina-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novella",
           "title": "Sacculina",
+          "workYear": "2017",
           "includedInSlugs": [],
-          "reviewed": true,
-          "readingSequence": 175,
-          "workYear": "2000",
-          "workYearSequence": 457,
-          "authorSequence": 82,
-          "titleSequence": 387
+          "reviewed": true
         },
         {
+          "readingSequence": 177,
           "date": "2023-10-29",
           "slug": "dont-let-them-get-you-down-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Don't Let Them Get You Down",
+          "workYear": "2022",
           "includedInSlugs": [],
-          "reviewed": true,
-          "readingSequence": 177,
-          "workYear": "2000",
-          "workYearSequence": 474,
-          "authorSequence": 87,
-          "titleSequence": 139
+          "reviewed": true
         }
-      ],
-      "reviewed": true
+      ]
     }
   ]
 }

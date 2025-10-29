@@ -1,7 +1,7 @@
 import type { ReviewedTitleSort } from "~/sorters/createReviewedTitleSorter";
 
 import { createReviewedTitleSorter } from "~/sorters/createReviewedTitleSorter";
-import { sortNumber } from "~/sorters/createSorter";
+import { sortString } from "~/sorters/createSorter";
 
 import type { ReviewsValue } from "./Reviews";
 
@@ -15,8 +15,9 @@ export type ReviewsSort = "author-asc" | "author-desc" | ReviewedTitleSort;
  */
 export const sortReviews = createReviewedTitleSorter<ReviewsValue, ReviewsSort>(
   {
-    "author-asc": (a, b) => sortNumber(a.authorSequence, b.authorSequence),
+    "author-asc": (a, b) =>
+      sortString(a.authors[0].sortName, b.authors[0].sortName),
     "author-desc": (a, b) =>
-      sortNumber(a.authorSequence, b.authorSequence) * -1,
+      sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
   },
 );

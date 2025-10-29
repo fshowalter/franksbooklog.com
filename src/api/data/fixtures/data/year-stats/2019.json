@@ -1,24 +1,361 @@
 {
   "year": "2019",
-  "workCount": 1,
-  "bookCount": 1,
+  "workCount": 26,
+  "bookCount": 26,
   "kindDistribution": [
     {
-      "name": "Novel",
+      "name": "Collection",
+      "count": 5
+    },
+    {
+      "name": "Nonfiction",
       "count": 1
+    },
+    {
+      "name": "Novel",
+      "count": 20
     }
   ],
   "editionDistribution": [
     {
-      "name": "Kindle",
+      "name": "Ebook",
+      "count": 25
+    },
+    {
+      "name": "Paperback",
       "count": 1
     }
   ],
   "decadeDistribution": [
     {
+      "name": "1940s",
+      "count": 4
+    },
+    {
+      "name": "1960s",
+      "count": 2
+    },
+    {
+      "name": "1970s",
+      "count": 2
+    },
+    {
       "name": "1980s",
-      "count": 1
+      "count": 6
+    },
+    {
+      "name": "1990s",
+      "count": 4
+    },
+    {
+      "name": "2000s",
+      "count": 8
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "Charlie Huston",
+      "count": 6,
+      "slug": "charlie-huston",
+      "reviewed": false,
+      "readings": [
+        {
+          "readingSequence": 98,
+          "date": "2019-01-14",
+          "slug": "already-dead-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Already Dead",
+          "workYear": "2005",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 99,
+          "date": "2019-01-20",
+          "slug": "no-dominion-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "No Dominion",
+          "workYear": "2007",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 100,
+          "date": "2019-01-21",
+          "slug": "half-the-blood-of-brooklyn-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Half the Blood of Brooklyn",
+          "workYear": "2007",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 101,
+          "date": "2019-01-27",
+          "slug": "every-last-drop-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Every Last Drop",
+          "workYear": "2008",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 102,
+          "date": "2019-01-30",
+          "slug": "my-dead-body-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "My Dead Body",
+          "workYear": "2009",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 121,
+          "date": "2019-06-07",
+          "slug": "the-shotgun-rule-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Shotgun Rule",
+          "workYear": "2007",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Stephen King",
+      "count": 6,
+      "slug": "stephen-king",
+      "reviewed": true,
+      "readings": [
+        {
+          "readingSequence": 104,
+          "date": "2019-02-03",
+          "slug": "the-eyes-of-the-dragon-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Eyes of the Dragon",
+          "workYear": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 109,
+          "date": "2019-03-06",
+          "slug": "the-gunslinger-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Gunslinger",
+          "workYear": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 110,
+          "date": "2019-03-13",
+          "slug": "the-drawing-of-the-three-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Drawing of the Three",
+          "workYear": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 114,
+          "date": "2019-04-03",
+          "slug": "misery-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Misery",
+          "workYear": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 118,
+          "date": "2019-05-19",
+          "slug": "the-tommyknockers-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Tommyknockers",
+          "workYear": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 122,
+          "date": "2019-06-20",
+          "slug": "the-dark-half-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Dark Half",
+          "workYear": "1989",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Raymond Chandler",
+      "count": 4,
+      "slug": "raymond-chandler",
+      "reviewed": true,
+      "readings": [
+        {
+          "readingSequence": 106,
+          "date": "2019-02-16",
+          "slug": "farewell-my-lovely-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Farewell, My Lovely",
+          "workYear": "1940",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 112,
+          "date": "2019-03-23",
+          "slug": "the-high-window-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The High Window",
+          "workYear": "1942",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 116,
+          "date": "2019-04-14",
+          "slug": "the-lady-in-the-lake-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Lady in the Lake",
+          "workYear": "1943",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 120,
+          "date": "2019-06-01",
+          "slug": "the-little-sister-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Little Sister",
+          "workYear": "1949",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Robert E. Howard",
+      "count": 4,
+      "slug": "robert-e-howard",
+      "reviewed": false,
+      "readings": [
+        {
+          "readingSequence": 107,
+          "date": "2019-03-02",
+          "slug": "black-canaan-by-robert-e-howard",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Black Canaan",
+          "workYear": "1978",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 108,
+          "date": "2019-03-02",
+          "slug": "the-horror-stories-of-robert-e-howard-by-robert-e-howard",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "The Horror Stories of Robert E. Howard",
+          "workYear": "2008",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 113,
+          "date": "2019-03-27",
+          "slug": "kull-exile-of-atlantis-by-robert-e-howard",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "Kull: Exile of Atlantis",
+          "workYear": "1967",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 117,
+          "date": "2019-04-28",
+          "slug": "the-coming-of-conan-the-cimmerian-by-robert-e-howard",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "The Coming of Conan the Cimmerian",
+          "workYear": "2002",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Richard Laymon",
+      "count": 4,
+      "slug": "richard-laymon",
+      "reviewed": true,
+      "readings": [
+        {
+          "readingSequence": 105,
+          "date": "2019-02-10",
+          "slug": "darkness-tell-us-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Darkness, Tell Us",
+          "workYear": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 111,
+          "date": "2019-03-18",
+          "slug": "alarums-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Alarums",
+          "workYear": "1992",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 115,
+          "date": "2019-04-11",
+          "slug": "blood-games-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Blood Games",
+          "workYear": "1992",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "readingSequence": 119,
+          "date": "2019-05-27",
+          "slug": "endless-night-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Endless Night",
+          "workYear": "1993",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    }
+  ]
 }

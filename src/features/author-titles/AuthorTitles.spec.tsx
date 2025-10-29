@@ -48,13 +48,14 @@ function createAuthorTitleValue(
     kind: "Novel",
     otherAuthors: [],
     reviewDate: new Date("2024-01-01"),
-    reviewSequence: testIdCounter,
+    reviewSequence: testIdCounter.toLocaleString("en-US", {
+      minimumIntegerDigits: 3,
+    }),
     reviewYear: "2024",
     slug: `test-title-${testIdCounter}`,
     sortTitle: title.toLowerCase(),
     title,
     workYear: "1990",
-    workYearSequence: testIdCounter,
     ...overrides,
   };
 }
@@ -253,17 +254,14 @@ describe("AuthorTitles", () => {
         createAuthorTitleValue({
           title: "Modern Book",
           workYear: "2000",
-          workYearSequence: 3,
         }),
         createAuthorTitleValue({
           title: "Classic Book",
           workYear: "1980",
-          workYearSequence: 1,
         }),
         createAuthorTitleValue({
           title: "Mid Book",
           workYear: "1990",
-          workYearSequence: 2,
         }),
       ];
 
@@ -289,17 +287,14 @@ describe("AuthorTitles", () => {
         createAuthorTitleValue({
           title: "Classic Book",
           workYear: "1980",
-          workYearSequence: 1,
         }),
         createAuthorTitleValue({
           title: "Modern Book",
           workYear: "2000",
-          workYearSequence: 3,
         }),
         createAuthorTitleValue({
           title: "Mid Book",
           workYear: "1990",
-          workYearSequence: 2,
         }),
       ];
 
@@ -392,17 +387,17 @@ describe("AuthorTitles", () => {
       const titles = [
         createAuthorTitleValue({
           reviewDate: new Date("2022-01-01"),
-          reviewSequence: 1,
+          reviewSequence: "1",
           title: "Old Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2024-01-01"),
-          reviewSequence: 3,
+          reviewSequence: "3",
           title: "New Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2023-01-01"),
-          reviewSequence: 2,
+          reviewSequence: "2",
           title: "Mid Review",
         }),
       ];
@@ -426,17 +421,17 @@ describe("AuthorTitles", () => {
       const titles = [
         createAuthorTitleValue({
           reviewDate: new Date("2024-01-01"),
-          reviewSequence: 3,
+          reviewSequence: "3",
           title: "New Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2022-01-01"),
-          reviewSequence: 1,
+          reviewSequence: "1",
           title: "Old Review",
         }),
         createAuthorTitleValue({
           reviewDate: new Date("2023-01-01"),
-          reviewSequence: 2,
+          reviewSequence: "2",
           title: "Mid Review",
         }),
       ];

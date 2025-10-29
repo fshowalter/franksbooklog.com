@@ -65,7 +65,7 @@ export type AuthorTitlesValue = {
   /** Date the review was written */
   reviewDate: Date;
   /** Sequence number for review ordering */
-  reviewSequence: number;
+  reviewSequence: string;
   /** Year the review was written */
   reviewYear: string;
   /** URL slug for the work's review page */
@@ -76,8 +76,6 @@ export type AuthorTitlesValue = {
   title: string;
   /** Year the work was originally published */
   workYear: string;
-  /** Sequence number for work year ordering */
-  workYearSequence: number;
 };
 
 /**
