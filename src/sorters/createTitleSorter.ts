@@ -9,8 +9,6 @@ export type SortableTitle = {
   sortTitle: string;
   /** Year the work was published */
   workYear: string;
-  /** Numeric sequence for release year sorting */
-  workYearSequence: number;
 };
 
 /**
@@ -66,8 +64,8 @@ function sortTitle<TValue extends SortableTitle>() {
 function sortWorkDate<TValue extends SortableTitle>() {
   return {
     "work-year-asc": (a: TValue, b: TValue) =>
-      sortNumber(a.workYearSequence, b.workYearSequence),
+      sortString(a.workYear, b.workYear),
     "work-year-desc": (a: TValue, b: TValue) =>
-      sortNumber(a.workYearSequence, b.workYearSequence) * -1,
+      sortString(a.workYear, b.workYear) * -1,
   };
 }

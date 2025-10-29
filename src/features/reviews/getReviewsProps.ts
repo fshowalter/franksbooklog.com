@@ -31,7 +31,6 @@ export async function getReviewsProps(): Promise<ReviewsProps> {
 
           return authorValue;
         }),
-        authorSequence: review.authorSequence,
         coverImageProps: await getFluidCoverImageProps(
           review,
           CoverListItemImageConfig,
@@ -46,7 +45,6 @@ export async function getReviewsProps(): Promise<ReviewsProps> {
         sortTitle: review.sortTitle,
         title: review.title,
         workYear: review.workYear,
-        workYearSequence: review.workYearSequence,
       };
 
       return value;

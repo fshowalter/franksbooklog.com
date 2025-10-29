@@ -20,8 +20,6 @@ export async function getAuthorTitlesProps(
   const { author, distinctKinds, distinctReviewYears, distinctWorkYears } =
     await getAuthorDetails(slug);
 
-  author.reviewedWorks.sort((a, b) => a.workYearSequence - b.workYearSequence);
-
   const works = await Promise.all(
     author.reviewedWorks.map(async (work) => {
       const value: AuthorTitlesValue = {
@@ -41,7 +39,6 @@ export async function getAuthorTitlesProps(
         sortTitle: work.sortTitle,
         title: work.title,
         workYear: work.workYear,
-        workYearSequence: work.workYearSequence,
       };
 
       return value;
