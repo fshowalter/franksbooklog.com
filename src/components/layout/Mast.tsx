@@ -189,7 +189,6 @@ function NavListItem({
     <li
       className={`
         block leading-10 tracking-serif-wide whitespace-nowrap
-        transition-transform
         [body.nav-open_&]:opacity-0
       `}
     >
@@ -199,8 +198,15 @@ function NavListItem({
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
           after:transition-transform after:duration-500
-          hover:text-accent hover:after:scale-x-100
-          ${hasBackdrop ? "mix-blend-hard-light text-shadow-lg" : ""}
+          hover:after:scale-x-100
+          ${
+            hasBackdrop
+              ? `
+                mix-blend-hard-light text-shadow-lg
+                hover:text-shadow-none
+              `
+              : ""
+          }
         `}
         href={value.target}
       >
