@@ -1,4 +1,4 @@
-import { createSorter, sortNumber, sortString } from "./createSorter";
+import { createSorter, sortString } from "./createSorter";
 
 /**
  * Interface for reviewed work items that can be sorted.

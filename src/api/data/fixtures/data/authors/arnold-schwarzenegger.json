@@ -1,0 +1,30 @@
+{
+  "name": "Arnold Schwarzenegger",
+  "sortName": "Schwarzenegger, Arnold",
+  "slug": "arnold-schwarzenegger",
+  "reviewedWorks": [
+    {
+      "reviewSequence": "2022-05-21-01",
+      "title": "Total Recall",
+      "reviewed": true,
+      "subtitle": "My Unbelievably True Life Story",
+      "workYear": "2012",
+      "kind": "Nonfiction",
+      "slug": "total-recall-by-arnold-schwarzenegger",
+      "sortTitle": "Total Recall: My Unbelievably True Life Story",
+      "grade": "C+",
+      "gradeValue": 7,
+      "reviewDate": "2022-05-21",
+      "reviewYear": "2022",
+      "authors": [
+        {
+          "slug": "arnold-schwarzenegger",
+          "notes": null,
+          "name": "Arnold Schwarzenegger",
+          "sortName": "Schwarzenegger, Arnold"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ]
+}

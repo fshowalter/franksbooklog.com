@@ -4,12 +4,18 @@
   "slug": "david-goggins",
   "reviewedWorks": [
     {
+      "reviewSequence": "2022-10-13-01",
       "title": "Can't Hurt Me",
+      "reviewed": true,
+      "subtitle": "Master Your Mind and Defy the Odds",
+      "workYear": "2018",
       "kind": "Nonfiction",
       "slug": "cant-hurt-me-by-david-goggins",
       "sortTitle": "Can't Hurt Me: Master Your Mind and Defy the Odds",
       "grade": "B",
       "gradeValue": 9,
+      "reviewDate": "2022-10-13",
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "david-goggins",
@@ -18,16 +24,7 @@
           "sortName": "Goggins, David"
         }
       ],
-      "includedInSlugs": [],
-      "reviewDate": "2022-10-13",
-      "reviewSequence": 274,
-      "subtitle": "Master Your Mind and Defy the Odds",
-      "workYear": "2000",
-      "workYearSequence": 118,
-      "authorSequence": 118,
-      "titleSequence": 118,
-      "gradeSequence": 118,
-      "reviewYear": "2022"
+      "includedInSlugs": []
     }
   ]
 }

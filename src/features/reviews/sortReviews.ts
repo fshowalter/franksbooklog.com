@@ -1,7 +1,7 @@
 import type { ReviewedTitleSort } from "~/sorters/createReviewedTitleSorter";
 
 import { createReviewedTitleSorter } from "~/sorters/createReviewedTitleSorter";
-import { sortNumber, sortString } from "~/sorters/createSorter";
+import { sortString } from "~/sorters/createSorter";
 
 import type { ReviewsValue } from "./Reviews";
 

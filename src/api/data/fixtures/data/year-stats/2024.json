@@ -1,7 +1,7 @@
 {
   "year": "2024",
-  "workCount": 6,
-  "bookCount": 6,
+  "workCount": 5,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,24 +9,20 @@
     },
     {
       "name": "Novel",
-      "count": 3
+      "count": 2
     }
   ],
   "editionDistribution": [
     {
-      "name": "Audible",
+      "name": "Audiobook",
       "count": 2
     },
     {
-      "name": "Kindle",
-      "count": 4
+      "name": "Ebook",
+      "count": 3
     }
   ],
   "decadeDistribution": [
-    {
-      "name": "1960s",
-      "count": 1
-    },
     {
       "name": "1970s",
       "count": 1

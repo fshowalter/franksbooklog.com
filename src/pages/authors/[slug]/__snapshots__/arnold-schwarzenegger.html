@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="h-full" lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
@@ -12,20 +12,25 @@
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="/site.webmanifest" rel="manifest" />
     <link href="/sitemap-index.xml" rel="sitemap" />
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/Assistant/Assistant.woff2"
+      rel="preload"
+      type="font/woff2"
+    />
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre_latin_300-900_normal.woff2"
+      rel="preload"
+      type="font/woff2"
+    />
     <meta
       content="Reviews of books and stories written by Arnold Schwarzenegger. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title."
       name="description"
     />
-    <meta
-      content="#f2f0e8"
-      media="(prefers-color-scheme: light)"
-      name="theme-color"
-    />
-    <meta
-      content="#484745"
-      media="(prefers-color-scheme: dark)"
-      name="theme-color"
-    />
+    <meta content="rgba(0,0,0,.85)" name="theme-color" />
     <link
       href="https://www.franksbooklog.com/feed.xml"
       rel="alternate"
@@ -51,7 +56,7 @@
     </title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <style>
       astro-island,
@@ -255,414 +260,371 @@
         }
       })();
     </script>
-    <astro-island
-      uid="Z27xu0I"
-      prefix="r1"
-      component-url="~/components/Author/Author"
-      component-export="Author"
-      renderer-url="@astrojs/react/client.js"
-      props='{"avatarImageProps":[0],"backdropImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"]}],"deck":[0,"Author of 1 reviewed work."],"distinctKinds":[1,[[0,"Nonfiction"]]],"distinctPublishedYears":[1,[[0,"2012"]]],"initialSort":[0,"year-published-asc"],"name":[0,"Arnold Schwarzenegger"],"works":[1,[[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Nonfiction"],"otherAuthors":[1,[]],"slug":[0,"total-recall-by-arnold-schwarzenegger"],"sortTitle":[0,"Total Recall: My Unbelievably True Life Story"],"title":[0,"Total Recall"],"yearPublished":[0,"2012"]}]]]}'
-      ssr
-      client="load"
-      before-hydration-url="astro:scripts/before-hydration.js"
-      opts='{"name":"Author","value":true}'
-      await-children
-      ><link
-        rel="preload"
-        as="image"
-        imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
-        imagesizes="100vw"
-        fetchpriority="high"
-      />
-      <div class="group/layout">
-        <a
-          class="absolute top-0.5 left-1/2 z-50 mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
-          href="#content"
-          >Skip to content</a
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+    <div class="group">
+      <a
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        href="#content"
+        >Skip to content</a
+      >
+      <div class="flex min-h-full w-full flex-col bg-default">
+        <header
+          class="group z-30 flex w-full items-center justify-between px-container py-4 tablet:py-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left absolute [--mast-color:#fff] text-(--mast-color)"
+          style="
+            background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0.85),
+              transparent 95%
+            );
+          "
         >
-        <div class="flex min-h-full w-full flex-col bg-default">
-          <header
-            class="group/mast z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left"
-            style="
-              background-image: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0.85),
-                transparent 95%
-              );
-              color: #fff;
-              position: absolute;
-            "
+          <div
+            class="flex transform-gpu flex-col transition-transform has-[a:hover]:scale-105"
           >
             <div
-              class="flex transform-gpu flex-col transition-transform has-[a:hover]:scale-105"
+              class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
             >
-              <div
-                class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
-              >
-                <a href="/">Frank&#x27;s Book Log</a>
-              </div>
-              <p class="w-full pl-px text-sm leading-4 italic opacity-85">
-                by Frank Showalter
-              </p>
+              <a href="/">Frank&#x27;s Book Log</a>
             </div>
-            <div class="flex items-center">
-              <nav class="hidden w-full laptop:block laptop:w-auto">
-                <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
-                  <li
-                    class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+            <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+              by Frank Showalter
+            </p>
+          </div>
+          <div class="flex items-center">
+            <nav class="hidden w-full laptop:block laptop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
+                >
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    href="/"
+                    style="text-shadow: 1px 1px 2px black"
+                    >Home</a
                   >
-                    <a
-                      class="text-inherit"
-                      href="/"
-                      style="text-shadow: 1px 1px 2px black"
-                      >Home</a
-                    >
-                  </li>
-                  <li
-                    class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                </li>
+                <li
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
+                >
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    href="/how-i-grade/"
+                    style="text-shadow: 1px 1px 2px black"
+                    >How I Grade</a
                   >
-                    <a
-                      class="text-inherit"
-                      href="/how-i-grade/"
-                      style="text-shadow: 1px 1px 2px black"
-                      >How I Grade</a
-                    >
-                  </li>
-                  <li
-                    class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                </li>
+                <li
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
+                >
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    href="/reviews/"
+                    style="text-shadow: 1px 1px 2px black"
+                    >Reviews</a
                   >
-                    <a
-                      class="text-inherit"
-                      href="/reviews/"
-                      style="text-shadow: 1px 1px 2px black"
-                      >Reviews</a
-                    >
-                  </li>
-                  <li
-                    class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                </li>
+                <li
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
+                >
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    href="/authors/"
+                    style="text-shadow: 1px 1px 2px black"
+                    >Authors</a
                   >
-                    <a
-                      class="text-inherit"
-                      href="/authors/"
-                      style="text-shadow: 1px 1px 2px black"
-                      >Authors</a
-                    >
-                  </li>
-                  <li
-                    class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                </li>
+                <li
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
+                >
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    href="/readings/"
+                    style="text-shadow: 1px 1px 2px black"
+                    >Reading Log</a
                   >
-                    <a
-                      class="text-inherit"
-                      href="/readings/"
-                      style="text-shadow: 1px 1px 2px black"
-                      >Reading Log</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-              <div
-                class="z-1000 transform-gpu transition-transform group-has-[#nav:checked]/mast:!text-[#fff] hover:scale-105"
+                </li>
+              </ul>
+            </nav>
+            <div
+              class="z-1000 transition-colors [body.nav-open_&amp;]:!text-default"
+            >
+              <button
+                aria-keyshortcuts="Control+K"
+                aria-label="Search"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-transform hover:scale-105 laptop:ml-6"
+                data-open-modal="true"
+                disabled=""
+                title="Search: Control+K"
+                type="button"
               >
-                <button
-                  aria-keyshortcuts="Control+K"
-                  aria-label="Search"
-                  class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default laptop:ml-6"
-                  data-open-modal="true"
-                  disabled=""
-                  title="Search: Control+K"
-                  type="button"
+                <svg
+                  aria-hidden="true"
+                  class="size-7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    class="size-7"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <path
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
+              data-nav-drawer-backdrop="true"
+            ></div>
+            <button
+              aria-controls="nav-drawer"
+              aria-expanded="false"
+              aria-label="Toggle navigation drawer"
+              class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
+              data-nav-drawer-toggle="true"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:!bg-[var(--color-default)] [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)]"
+                style="background-color: #fff"
+              ></span>
+            </button>
+            <nav aria-label="Main navigation">
+              <div
+                class="invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-drawer [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-drawer="true"
+                id="nav-drawer"
+              >
+                <ol class="flex flex-col gap-y-6">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
                   >
-                    <path
-                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <div class="group">
-                <input class="hidden" id="nav" type="checkbox" /><label
-                  class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-                  for="nav"
-                  ><span
-                    class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]/mast:transform-[rotate(45deg)] group-has-[#nav:checked]/mast:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]/mast:before:top-0 group-has-[#nav:checked]/mast:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]/mast:after:bottom-0 group-has-[#nav:checked]/mast:after:transform-[rotate(90deg)]"
-                    style="background-color: #fff"
-                  ></span
-                ></label>
-                <ul
-                  class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]/mast:bottom-0 group-has-[#nav:checked]/mast:z-20 group-has-[#nav:checked]/mast:h-full group-has-[#nav:checked]/mast:w-full group-has-[#nav:checked]/mast:transform-[translateX(0)] group-has-[#nav:checked]/mast:overflow-y-auto group-has-[#nav:checked]/mast:pt-20 group-has-[#nav:checked]/mast:pr-[16%] group-has-[#nav:checked]/mast:pb-5 group-has-[#nav:checked]/mast:pl-[12%] group-has-[#nav:checked]/mast:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]/mast:tablet:px-10 group-has-[#nav:checked]/mast:tablet:py-40 laptop:hidden"
-                >
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a
-                      class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                       href="/"
                       >Home</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                       href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                       href="/reviews/"
                       >Reviews</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                       href="/authors/"
                       >Authors</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                       href="/readings/"
                       >Reading Log</a
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                        class="mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider text-subtle uppercase last:-mb-1"
                       >
                         <a
-                          class="inline-block origin-left transform-gpu transition-all hover:scale-105 hover:text-inverse"
+                          class="relative inline-block origin-left transform-gpu pb-1 transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                           href="/readings/stats/"
                           >Stats</a
                         >
                       </li>
                     </ol>
                   </li>
-                </ul>
+                </ol>
               </div>
+            </nav>
+          </div>
+        </header>
+        <main class="grow bg-subtle" id="content">
+          <header
+            class="min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-[#2A2B2A] pt-40 pb-8 text-inverse tablet:pt-40 tablet:pb-10 laptop:pt-40 laptop:pb-16"
+          >
+            <img
+              class="absolute inset-0 size-full object-cover object-top"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"
+              srcset="
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif    720w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif  1200w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w
+              "
+              height="1350"
+              sizes="100vw"
+              width="2400"
+              alt=""
+              fetchpriority="high"
+              loading="eager"
+            />
+            <div
+              class="z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-30%"
+            >
+              <p class="mb-4">
+                <a
+                  class="relative inline-block font-sans text-sm font-bold tracking-wide text-white/85 uppercase after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-white/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                  href="/authors/"
+                  >Authors</a
+                >
+              </p>
+              <h1
+                class="text-[2rem] leading-10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
+                data-pagefind-weight="10"
+              >
+                Arnold Schwarzenegger
+              </h1>
+              <p
+                class="mt-1 font-sans text-base laptop:my-4 laptop:text-xl [text-shadow:1px_1px_2px_black]"
+              >
+                Author of 1 reviewed work.
+              </p>
             </div>
           </header>
-          <main
-            class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]/layout:opacity-80 bg-subtle"
-            id="content"
-            data-pagefind-body="true"
-          >
-            <header
-              class="min-h-[25vw] text-inverse bg-[#000] relative flex w-full flex-col content-start items-center justify-end gap-6 overflow-hidden pt-20 laptop:pt-24"
+          <astro-island
+            uid="ZPmwq2"
+            prefix="r1"
+            component-url="~/features/author-titles/AuthorTitles"
+            component-export="AuthorTitles"
+            renderer-url="@astrojs/react/client.js"
+            props='{"distinctKinds":[1,[[0,"Nonfiction"]]],"distinctReviewYears":[1,[[0,"2022"]]],"distinctWorkYears":[1,[[0,"2012"]]],"initialSort":[0,"title-asc"],"values":[1,[[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"May 21, 2022"],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Nonfiction"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-05-21T00:00:00.000Z"],"reviewSequence":[0,"2022-05-21-01"],"reviewYear":[0,"2022"],"slug":[0,"total-recall-by-arnold-schwarzenegger"],"sortTitle":[0,"Total Recall: My Unbelievably True Life Story"],"title":[0,"Total Recall"],"workYear":[0,"2012"]}]]]}'
+            ssr
+            client="load"
+            before-hydration-url="astro:scripts/before-hydration.js"
+            opts='{"name":"AuthorTitles","value":true}'
+            await-children
+            ><div
+              class="
+        
+      "
             >
-              <img
-                class="absolute inset-0 size-full object-cover object-top text-inverse blur-xs"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"
-                srcset="
-                  /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif    720w,
-                  /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif  1200w,
-                  /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w,
-                  /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w
-                "
-                height="1350"
-                sizes="100vw"
-                width="2400"
-                alt=""
-                fetchpriority="high"
-                loading="eager"
-              />
-              <div
-                class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) px-container flex-col after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-25% py-8 tablet:pb-10 laptop:pt-10 desktop:pt-20"
-              >
-                <p
-                  class="mb-2 font-sans text-sm tracking-wide text-subtle uppercase"
+              <div class="group/list-with-filters mx-auto bg-subtle">
+                <div
+                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
                 >
-                  <a
-                    class="font-sans text-sm tracking-wide uppercase underline-offset-8 text-inverse decoration-inverse-subtle decoration-2 hover:underline"
-                    href="/authors/"
-                    >Authors</a
+                  <div
+                    class="mx-auto grid max-w-[var(--breakpoint-desktop)] grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]"
                   >
-                </p>
-                <h1
-                  class="font-sans text-center text-3xl font-bold tracking-widest uppercase tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
-                >
-                  Arnold Schwarzenegger
-                </h1>
-                <p
-                  class="mt-1 text-base desktop:my-4 desktop:text-xl text-center"
-                >
-                  Author of 1 reviewed work.
-                </p>
-              </div>
-            </header>
-            <div class="mx-auto flex flex-col items-center bg-default">
-              <div class="mx-auto flex w-full flex-col items-stretch">
-                <div class="flex grow flex-col bg-subtle">
-                  <div class="relative tablet:px-12 tablet-landscape:px-0">
-                    <div
-                      class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
-                    >
-                      <div
-                        class="mx-auto flex w-full max-w-(--breakpoint-desktop) flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase"
+                    <span class="text-nowrap"
+                      ><span class="text-sm font-bold text-default">1</span
+                      ><span
+                        class="text-xs leading-none font-normal tracking-wide"
                       >
-                        <span class="block pr-4"
-                          ><span class="font-semibold text-default">1</span>
-                          <!-- -->Results</span
-                        ><button
-                          class="ml-auto flex justify-center gap-x-4 px-4 py-2 text-nowrap text-muted uppercase shadow-all tablet-landscape:hidden"
-                          style="background-color: var(--bg-canvas)"
+                        <!-- -->Results</span
+                      ></span
+                    >
+                    <div></div>
+                    <div
+                      class="col-span-full tablet:col-span-1 tablet:col-start-4 desktop:pl-8"
+                    >
+                      <label
+                        class="flex items-baseline gap-x-4 text-xs font-bold tracking-wide text-subtle"
+                        >Sort<!-- -->
+                        <select
+                          class="flex w-full appearance-none border-none bg-default py-2 pr-4 pl-4 font-serif text-base font-normal tracking-normal overflow-ellipsis text-default shadow-all outline-accent"
                         >
-                          Filter &amp; Sort
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      class="mx-auto max-w-(--breakpoint-desktop) grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
-                    >
-                      <div
-                        class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none laptop:mr-20"
-                        style="grid-template-rows: 0fr"
+                          <option value="title-asc" selected="">
+                            Title (A → Z)
+                          </option>
+                          <option value="title-desc">Title (Z → A)</option>
+                          <option value="grade-desc">Grade (Best First)</option>
+                          <option value="grade-asc">Grade (Worst First)</option>
+                          <option value="work-year-desc">
+                            Work Year (Newest First)
+                          </option>
+                          <option value="work-year-asc">
+                            Work Year (Oldest First)
+                          </option>
+                          <option value="review-date-desc">
+                            Review Date (Newest First)
+                          </option>
+                          <option value="review-date-asc">
+                            Review Date (Oldest First)
+                          </option>
+                        </select></label
                       >
-                        <div class="overflow-hidden">
+                    </div>
+                    <button
+                      aria-controls="filters"
+                      aria-expanded="false"
+                      aria-label="Toggle filters"
+                      class="col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans text-xs font-bold text-nowrap text-muted uppercase shadow-all transition-transform hover:scale-110 hover:drop-shadow-md tablet:col-start-5 tablet:w-20"
+                      type="button"
+                    >
+                      Filter
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="mx-auto max-w-[var(--breakpoint-desktop)] tablet:px-container"
+                >
+                  <div
+                    class="mx-auto max-w-[var(--breakpoint-desktop)] grow scroll-mt-[calc(var(--filter-and-sort-container-scroll-offset)_+_var(--scroll-offset,0px))] pb-10 [--filter-and-sort-container-scroll-offset:181px] tablet:[--filter-and-sort-container-scroll-offset:121px]"
+                    id="list"
+                  >
+                    <ol data-testid="grouped-cover-list">
+                      <li class="block first-of-type:mt-4" id="T">
+                        <div class="pt-0 text-md">
                           <div
-                            class="w-full bg-subtle text-sm tablet:pt-12 tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 laptop:px-8"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
                           >
-                            <fieldset
-                              class="flex flex-col gap-5 bg-group px-container py-10 tablet:gap-8 tablet:bg-default tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0"
-                            >
-                              <legend
-                                class="hidden w-full py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase tablet-landscape:block tablet-landscape:shadow-bottom"
-                              >
-                                Filter &amp; Sort
-                              </legend>
-                              <label class="flex flex-col text-subtle"
-                                ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
-                                  >Title</span
-                                ><input
-                                  class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
-                                  placeholder="Enter all or part of a title"
-                                  type="text"
-                              /></label>
-                              <fieldset class="text-subtle">
-                                <legend
-                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
-                                >
-                                  Work Year
-                                </legend>
-                                <div class="flex items-baseline">
-                                  <label
-                                    class="flex flex-1 items-center gap-x-[.5ch]"
-                                    ><span
-                                      class="min-w-10 text-left text-sm tracking-serif-wide"
-                                      >From</span
-                                    ><select
-                                      class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
-                                    >
-                                      <option value="2012" selected="">
-                                        2012
-                                      </option>
-                                    </select></label
-                                  ><label class="flex flex-1 items-center"
-                                    ><span
-                                      class="min-w-10 text-center text-sm tracking-serif-wide"
-                                      >to</span
-                                    ><select
-                                      class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
-                                    >
-                                      <option value="2012" selected="">
-                                        2012
-                                      </option>
-                                    </select></label
-                                  >
-                                </div>
-                              </fieldset>
-                              <label class="flex flex-col"
-                                ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
-                                  >Kind</span
-                                ><select
-                                  class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
-                                >
-                                  <option value="All">All</option>
-                                  <option value="Nonfiction">Nonfiction</option>
-                                </select></label
-                              ><label class="flex flex-col"
-                                ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
-                                  >Order By</span
-                                ><select
-                                  class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
-                                >
-                                  <option value="year-published-desc">
-                                    Work Year (Newest First)
-                                  </option>
-                                  <option
-                                    value="year-published-asc"
-                                    selected=""
-                                  >
-                                    Work Year (Oldest First)
-                                  </option>
-                                  <option value="title-asc">
-                                    Title (A → Z)
-                                  </option>
-                                  <option value="title-desc">
-                                    Title (Z → A)
-                                  </option>
-                                  <option value="grade-desc">
-                                    Grade (Best First)
-                                  </option>
-                                  <option value="grade-asc">
-                                    Grade (Worst First)
-                                  </option>
-                                </select></label
-                              >
-                            </fieldset>
+                            T
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 laptop:pl-20"
-                      >
-                        <ol data-testid="list">
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 1">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                        <div class="bg-subtle">
+                          <div class="tablet:-mx-6">
+                            <div class="@container/cover-list">
+                              <ol
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
-                                2012
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
                                 <li
-                                  class="bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl"
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
                                 >
                                   <div
-                                    class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
                                   >
                                     <div
-                                      class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                                     >
                                       <div
-                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
                                       >
                                         <img
-                                          height="120"
-                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                          srcset="
-                                            /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                            /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                            /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                            /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                          "
-                                          width="80"
-                                          sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
                                           alt=""
-                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="transform-gpu rounded-[2.5px] bg-default shadow-sm transition-transform duration-500 group-has-[a:hover]/list-item:scale-110 @min-[160px]:shadow-lg"
                                           decoding="async"
                                           loading="lazy"
                                         />
@@ -670,22 +632,20 @@
                                     </div>
                                   </div>
                                   <div
-                                    class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/total-recall-by-arnold-schwarzenegger/"
                                       >Total Recall</a
                                     >
-                                    <div class="mt-1 tablet:mt-2">
-                                      <div
-                                        class="font-sans text-xs leading-4 font-light text-subtle"
-                                      >
-                                        <span
-                                          >Nonfiction<!-- -->
-                                          | </span
-                                        >2012
-                                      </div>
+                                    <div
+                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Nonfiction<!-- -->
+                                        | </span
+                                      >2012
                                     </div>
                                     <picture
                                       ><source
@@ -693,207 +653,513 @@
                                         srcset="/svg/3-stars-dark.svg" />
                                       <img
                                         alt="C+: 3 stars (out of 5)"
-                                        class="mt-2 tablet:mt-3"
-                                        height="16"
+                                        class="-mb-0.5 pb-[3px]"
+                                        height="15"
                                         src="/svg/3-stars.svg"
-                                        width="80"
+                                        width="75"
                                     /></picture>
+                                    <div
+                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    >
+                                      May 21, 2022
+                                    </div>
                                   </div>
                                 </li>
                               </ol>
                             </div>
-                          </li>
-                        </ol>
-                        <div
-                          class="flex flex-col items-center px-container py-10"
-                        ></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ol>
+                    <div
+                      class="flex flex-col items-center px-container py-10"
+                    ></div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200"
+                  ></div>
+                  <div
+                    aria-label="Filters"
+                    class="fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10"
+                    id="filters"
+                  >
+                    <form
+                      class="flex h-full w-full flex-col text-sm tablet:text-base [@media(min-height:815px)]:pt-12"
+                    >
+                      <button
+                        aria-label="Close filters"
+                        class="absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center rounded-full bg-canvas text-default drop-shadow-sm transition-transform hover:scale-105 hover:drop-shadow-md"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="h-4 w-4 transform-gpu"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 28 28"
+                        >
+                          <path
+                            d="M7 21L21 7M7 7l14 14"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <fieldset
+                        class="mt-0 flex grow flex-col gap-5 px-container py-10 tablet:gap-8 tablet-landscape:grow-0 tablet-landscape:gap-10 tablet-landscape:px-12"
+                      >
+                        <legend
+                          class="block w-full pt-10 pb-8 font-sans text-sm font-bold tracking-wide text-subtle uppercase shadow-bottom"
+                        >
+                          Filter
+                        </legend>
+                        <label class="flex flex-col text-subtle"
+                          ><span
+                            class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
+                            >Title</span
+                          ><input
+                            class="border-0 bg-default px-4 py-2 text-base text-default shadow-all outline-accent placeholder:text-default placeholder:opacity-50"
+                            placeholder="Enter all or part of a title"
+                            type="text"
+                        /></label>
+                        <fieldset class="text-subtle">
+                          <legend
+                            class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
+                          >
+                            Work Year
+                          </legend>
+                          <div class="flex items-baseline">
+                            <label class="flex flex-1 items-center gap-x-[.5ch]"
+                              ><span
+                                class="min-w-10 text-left text-sm tracking-serif-wide"
+                                >From</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="2012" selected="">2012</option>
+                              </select></label
+                            ><label class="flex flex-1 items-center"
+                              ><span
+                                class="min-w-10 text-center text-sm tracking-serif-wide"
+                                >to</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="2012" selected="">2012</option>
+                              </select></label
+                            >
+                          </div>
+                        </fieldset>
+                        <label class="flex flex-col"
+                          ><span
+                            class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
+                            >Kind</span
+                          ><select
+                            class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                          >
+                            <option value="All">All</option>
+                            <option value="Nonfiction">Nonfiction</option>
+                          </select></label
+                        >
+                        <fieldset class="text-subtle">
+                          <legend
+                            class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
+                          >
+                            Review Year
+                          </legend>
+                          <div class="flex items-baseline">
+                            <label class="flex flex-1 items-center gap-x-[.5ch]"
+                              ><span
+                                class="min-w-10 text-left text-sm tracking-serif-wide"
+                                >From</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="2022" selected="">2022</option>
+                              </select></label
+                            ><label class="flex flex-1 items-center"
+                              ><span
+                                class="min-w-10 text-center text-sm tracking-serif-wide"
+                                >to</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="2022" selected="">2022</option>
+                              </select></label
+                            >
+                          </div>
+                        </fieldset>
+                        <fieldset class="text-subtle">
+                          <legend
+                            class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
+                          >
+                            Grade
+                          </legend>
+                          <div class="flex flex-wrap items-baseline">
+                            <label class="flex flex-1 items-center gap-x-[.5ch]"
+                              ><span
+                                class="min-w-10 text-left text-sm tracking-serif-wide"
+                                >From</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="1" selected="">F</option>
+                                <option value="2">D-</option>
+                                <option value="3">D</option>
+                                <option value="4">D+</option>
+                                <option value="5">C-</option>
+                                <option value="6">C</option>
+                                <option value="7">C+</option>
+                                <option value="8">B-</option>
+                                <option value="9">B</option>
+                                <option value="10">B+</option>
+                                <option value="11">A-</option>
+                                <option value="12">A</option>
+                                <option value="13">A+</option>
+                              </select></label
+                            ><label class="flex flex-1 items-center"
+                              ><span
+                                class="min-w-10 text-center text-sm tracking-serif-wide"
+                                >to</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="13" selected="">A+</option>
+                                <option value="12">A</option>
+                                <option value="11">A-</option>
+                                <option value="10">B+</option>
+                                <option value="9">B</option>
+                                <option value="8">B-</option>
+                                <option value="7">C+</option>
+                                <option value="6">C</option>
+                                <option value="5">C-</option>
+                                <option value="4">D+</option>
+                                <option value="3">D</option>
+                                <option value="2">D-</option>
+                                <option value="1">F</option>
+                              </select></label
+                            >
+                          </div>
+                        </fieldset>
+                      </fieldset>
+                      <div
+                        class="sticky bottom-0 z-filter-footer mt-auto w-full border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl tablet-landscape:px-12"
+                      >
+                        <div class="flex gap-x-4">
+                          <button
+                            aria-label="Clear all filters"
+                            class="flex items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-3 font-sans text-xs text-nowrap uppercase transition-transform cursor-not-allowed text-muted opacity-50"
+                            disabled=""
+                            type="reset"
+                          >
+                            Clear</button
+                          ><button
+                            class="flex flex-1 transform-gpu items-center justify-center gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs font-bold tracking-wide text-nowrap text-inverse uppercase transition-transform cursor-pointer hover:scale-105 hover:drop-shadow-md"
+                            type="button"
+                          >
+                            View
+                            <!-- -->1<!-- -->
+                            Results
+                          </button>
+                        </div>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-          </main>
-          <footer class="bg-canvas">
-            <div class="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
-              <div
-                class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+            <!--astro:end--></astro-island
+          >
+        </main>
+        <footer class="bg-canvas">
+          <div class="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
+            <div
+              class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+            >
+              <a
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-subtle py-5 text-center font-sans text-sm font-normal tracking-wide text-default uppercase transition-all hover:scale-105 hover:bg-default hover:text-default hover:drop-shadow-lg tablet:mx-0"
+                href="#top"
+                >To the top</a
               >
-                <a
-                  class="mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
-                  href="#top"
-                  >To the top</a
-                >
+              <div
+                class="flex transform-gpu flex-col transition-transform has-[a:hover]:scale-105"
+              >
                 <div
-                  class="flex transform-gpu flex-col transition-transform has-[a:hover]:scale-105"
+                  class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                 >
-                  <div
-                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+                  <a href="/">Frank&#x27;s Book Log</a>
+                </div>
+                <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+                  by Frank Showalter
+                </p>
+              </div>
+            </div>
+            <div class="justify-between tablet:flex">
+              <div class="flex max-w-[640px] flex-col pb-12 tablet:pr-32">
+                <div class="pt-10 font-sans font-normal text-subtle">
+                  <p
+                    class="mb-6 text-pretty first-letter:float-left first-letter:mt-[6px] first-letter:pr-1 first-letter:font-sans first-letter:text-[40px] first-letter:leading-[.8] first-letter:font-bold first-letter:text-default desktop:first-letter:text-[64px]"
                   >
-                    <a href="/">Frank&#x27;s Book Log</a>
-                  </div>
-                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
-                    by Frank Showalter
+                    Hi there, I&#x27;m Frank, a husband and father old enough to
+                    have read Stephen King&#x27;s <em>The Dark Half</em> during
+                    its first printing.
+                  </p>
+                  <p class="mb-6 text-pretty">
+                    This site began in 2012, when I realized I&#x27;d
+                    accumulated more books than I could ever hope to finish.
+                    Worse still, I had books I thought I&#x27;d read but
+                    couldn&#x27;t remember. Clearly, I needed a system.
+                  </p>
+                  <p class="mb-6 text-pretty">
+                    What started on Goodreads evolved into this little corner of
+                    the internet where I share my thoughts on what I&#x27;ve
+                    read.
+                  </p>
+                  <p class="mb-6 text-pretty">
+                    New visitors might want to start by reading about<!-- -->
+                    <a
+                      class="underline transition-colors hover:text-accent"
+                      href="/how-i-grade/"
+                      >how I grade</a
+                    >. After that, feel free to browse<!-- -->
+                    <a
+                      class="underline transition-colors hover:text-accent"
+                      href="/reviews/"
+                      >my reviews</a
+                    >, which are also indexed
+                    <a
+                      class="underline transition-colors hover:text-accent"
+                      href="/authors/"
+                      >by author</a
+                    >.
+                  </p>
+                  <p class="mb-6 text-pretty">
+                    I also keep a<!-- -->
+                    <a
+                      class="underline transition-colors hover:text-accent"
+                      href="/readings/"
+                      >reading log</a
+                    >
+                    that tracks everything I read, whether it gets a full review
+                    or not, complete with<!-- -->
+                    <a
+                      class="underline transition-colors hover:text-accent"
+                      href="/readings/stats/"
+                      >stats</a
+                    >. In an age of endless content, sometimes the act of
+                    remembering what we&#x27;ve read becomes as important as the
+                    reading itself.
+                  </p>
+                  <p class="text-pretty">
+                    In an era of algorithmic recommendations and corporate
+                    marketing machines, consider this site a human
+                    alternative—one person&#x27;s attempt to catalog his
+                    personal library and maybe help a few fellow travelers along
+                    the way.
                   </p>
                 </div>
               </div>
-              <div class="justify-between tablet:flex">
-                <div class="flex max-w-[640px] flex-col pb-12 tablet:pr-32">
-                  <div class="pt-10 font-sans text-sm font-light text-subtle">
-                    <p
-                      class="mb-6 text-pretty first-letter:float-left first-letter:mt-[6px] first-letter:pr-1 first-letter:font-sans first-letter:text-[40px] first-letter:leading-[.8] first-letter:font-bold first-letter:text-default desktop:first-letter:text-[64px]"
+              <div
+                class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
+              >
+                <ol class="flex flex-col gap-y-6">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
+                    <a
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
+                      href="/"
+                      >Home</a
                     >
-                      Hi there, I&#x27;m Frank, a husband and father old enough
-                      to have read Stephen King&#x27;s
-                      <em>The Dark Half</em> during its first printing.
-                    </p>
-                    <p class="mb-6 text-pretty">
-                      This site began in 2012, when I realized I&#x27;d
-                      accumulated more books than I could ever hope to finish.
-                      Worse still, I had books I thought I&#x27;d read but
-                      couldn&#x27;t remember. Clearly, I needed a system.
-                    </p>
-                    <p class="mb-6 text-pretty">
-                      What started on Goodreads evolved into this little corner
-                      of the internet where I share my thoughts on what
-                      I&#x27;ve read.
-                    </p>
-                    <p class="mb-6 text-pretty">
-                      New visitors might want to start by reading about<!-- -->
-                      <a
-                        class="underline transition-colors hover:text-default"
-                        href="/how-i-grade/"
-                        >how I grade</a
-                      >. After that, feel free to browse<!-- -->
-                      <a
-                        class="underline transition-colors hover:text-default"
-                        href="/reviews/"
-                        >my reviews</a
-                      >, which are also indexed
-                      <a
-                        class="underline transition-colors hover:text-default"
-                        href="/authors/"
-                        >by author</a
-                      >.
-                    </p>
-                    <p class="mb-6 text-pretty">
-                      I also keep a<!-- -->
-                      <a
-                        class="underline transition-colors hover:text-default"
-                        href="/readings/"
-                        >reading log</a
+                  </li>
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
+                    <a
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
+                      href="/how-i-grade/"
+                      >How I Grade</a
+                    >
+                  </li>
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
+                    <a
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
+                      href="/reviews/"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
+                    <a
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
+                      href="/authors/"
+                      >Authors</a
+                    >
+                  </li>
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
+                    <a
+                      class="relative inline-block origin-left transform-gpu transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
+                      href="/readings/"
+                      >Reading Log</a
+                    >
+                    <ol class="mt-4">
+                      <li
+                        class="mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider text-subtle uppercase last:-mb-1"
                       >
-                      that tracks everything I read, whether it gets a full
-                      review or not, complete with<!-- -->
-                      <a
-                        class="underline transition-colors hover:text-default"
-                        href="/readings/stats/"
-                        >stats</a
-                      >. In an age of endless content, sometimes the act of
-                      remembering what we&#x27;ve read becomes as important as
-                      the reading itself.
-                    </p>
-                    <p class="text-pretty">
-                      In an era of algorithmic recommendations and corporate
-                      marketing machines, consider this site a human
-                      alternative—one person&#x27;s attempt to catalog his
-                      personal library and maybe help a few fellow travelers
-                      along the way.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
-                >
-                  <ul class="flex w-full flex-col gap-y-10 desktop:w-auto">
-                    <li class="block w-1/2 text-2xl whitespace-nowrap">
-                      <a
-                        class="block origin-left transform-gpu transition-all hover:scale-105"
-                        href="/"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="block w-1/2 text-2xl whitespace-nowrap">
-                      <a
-                        class="block origin-left transform-gpu transition-all hover:scale-105"
-                        href="/how-i-grade/"
-                        >How I Grade</a
-                      >
-                    </li>
-                    <li class="block w-1/2 text-2xl whitespace-nowrap">
-                      <a
-                        class="block origin-left transform-gpu transition-all hover:scale-105"
-                        href="/reviews/"
-                        >Reviews</a
-                      >
-                    </li>
-                    <li class="block w-1/2 text-2xl whitespace-nowrap">
-                      <a
-                        class="block origin-left transform-gpu transition-all hover:scale-105"
-                        href="/authors/"
-                        >Authors</a
-                      >
-                    </li>
-                    <li class="block w-1/2 text-2xl whitespace-nowrap">
-                      <a
-                        class="block origin-left transform-gpu transition-all hover:scale-105"
-                        href="/readings/"
-                        >Reading Log</a
-                      >
-                      <ol class="mt-4">
-                        <li
-                          class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
+                        <a
+                          class="relative inline-block origin-left transform-gpu pb-1 transition-all duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
+                          href="/readings/stats/"
+                          >Stats</a
                         >
-                          <a
-                            class="block origin-left transform-gpu transition-all hover:scale-105 hover:text-default"
-                            href="/readings/stats/"
-                            >Stats</a
-                          >
-                        </li>
-                      </ol>
-                    </li>
-                  </ul>
-                </div>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
               </div>
             </div>
-            <p
-              class="w-full bg-footer px-container py-10 text-center leading-5 font-normal text-inverse"
-            >
-              All reviews by Frank Showalter. All images used in accordance with
-              the<!-- -->
-              <a
-                class="text-inherit underline"
-                href="http://www.copyright.gov/title17/92chap1.html#107"
-                rel="nofollow"
-                >Fair Use Law</a
-              >.
-            </p>
-          </footer>
-        </div>
+          </div>
+          <p
+            class="w-full bg-footer px-container py-10 text-center leading-5 font-normal text-inverse"
+          >
+            All reviews by Frank Showalter. All images used in accordance with
+            the<!-- -->
+            <a
+              class="relative inline-block pr-4 text-inherit underline underline-offset-3 hover:text-accent"
+              href="http://www.copyright.gov/title17/92chap1.html#107"
+              rel="nofollow"
+              >Fair Use Law<svg
+                class="absolute top-0.5 right-0 size-3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg></a
+            >.
+          </p>
+        </footer>
       </div>
-      <!--astro:end--></astro-island
-    >
+    </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="absolute right-[var(--search-dialog-padding)] z-10 mt-5 h-[calc(24px_*_var(---pagefind-ui-scale))] cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent"
+          class="absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-sans text-sm font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
           data-close-modal
         >
           ESC
         </button>
-        <div class="contents"><div id="pagefind__search"></div></div>
+        <!-- Fixed Search Input Section -->
+        <div class="flex-shrink-0">
+          <!-- Search Form with magnifying glass icon -->
+          <form aria-label="Site search" onsubmit="return false" role="search">
+            <div class="relative">
+              <!-- Magnifying glass icon -->
+              <svg
+                aria-hidden="true"
+                class="pointer-events-none absolute top-[18px] left-4 h-5 w-5 text-default opacity-70"
+                fill="none"
+                height="18"
+                viewBox="0 0 18 18"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.7549 11.255H11.9649L11.6849 10.985C12.6649 9.845 13.2549 8.365 13.2549 6.755C13.2549 3.165 10.3449 0.255005 6.75488 0.255005C3.16488 0.255005 0.254883 3.165 0.254883 6.755C0.254883 10.345 3.16488 13.255 6.75488 13.255C8.36488 13.255 9.84488 12.665 10.9849 11.685L11.2549 11.965V12.755L16.2549 17.745L17.7449 16.255L12.7549 11.255ZM6.75488 11.255C4.26488 11.255 2.25488 9.245 2.25488 6.755C2.25488 4.26501 4.26488 2.255 6.75488 2.255C9.24488 2.255 11.2549 4.26501 11.2549 6.755C11.2549 9.245 9.24488 11.255 6.75488 11.255Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <!-- Search input -->
+              <input
+                aria-describedby="pagefind-results-counter"
+                aria-label="Search query"
+                autocapitalize="off"
+                autocomplete="off"
+                autocorrect="off"
+                autofocus
+                class="h-14 w-full border-0 bg-transparent pr-[70px] pl-[54px] font-serif text-lg font-normal text-default outline-none placeholder:text-muted placeholder:opacity-50 focus:outline-none [&#38;::-ms-clear]:hidden [&#38;::-ms-clear]:appearance-none [&#38;::-webkit-search-cancel-button]:hidden [&#38;::-webkit-search-cancel-button]:appearance-none"
+                enterkeyhint="search"
+                id="pagefind-search-input"
+                placeholder="Search"
+                spellcheck="false"
+                type="search"
+              />
+              <!-- Clear button -->
+              <button
+                aria-label="Clear search"
+                class="absolute top-6 right-24 hidden h-4 w-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
+                id="pagefind-clear-button"
+                type="button"
+              >
+                <svg
+                  class="h-full w-full"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Border line after input -->
+              <div
+                class="absolute right-0 bottom-0 left-0 h-px bg-border"
+              ></div>
+            </div>
+          </form>
+          <!-- Results message/counter -->
+          <div
+            aria-atomic="true"
+            aria-live="polite"
+            class="px-4 py-4 font-sans text-sm font-normal text-subtle empty:hidden"
+            id="pagefind-results-counter"
+            role="status"
+          ></div>
+        </div>
+        <!-- Scrollable Results Area -->
         <div
-          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          aria-label="Search results"
+          class="min-h-0 flex-1 overflow-y-auto overscroll-contain outline-offset-[-2px] focus:outline-accent"
+          id="pagefind-results-wrapper"
+          role="region"
         >
-          <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
+          <div id="pagefind-results"></div>
+          <!-- Load More Button -->
+          <div class="hidden px-4 py-4" id="pagefind-load-more-wrapper">
+            <button
+              aria-controls="pagefind-results"
+              class="mx-auto block w-full max-w-button cursor-pointer bg-canvas py-5 text-center font-sans text-xs font-bold tracking-wide uppercase shadow-all hover:bg-footer hover:text-inverse"
+              id="pagefind-load-more"
+              type="button"
+            >
+              Load more results
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
+        >
+          <kbd class="rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >Tab</kbd
           >
           to navigate
           <kbd
-            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            class="ml-4 rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >ESC</kbd
           >
           to close
@@ -902,7 +1168,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"
+      src="/src/astro/AstroPageShell.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>
