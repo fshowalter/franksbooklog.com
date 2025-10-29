@@ -100,7 +100,7 @@
                   class="block leading-10 tracking-serif-wide whitespace-nowrap [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    class="relative block text-inherit transition-colors duration-500 after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                     href="/"
                     >Home</a
                   >
@@ -109,7 +109,7 @@
                   class="block leading-10 tracking-serif-wide whitespace-nowrap [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    class="relative block text-inherit transition-colors duration-500 after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                     href="/how-i-grade/"
                     >How I Grade</a
                   >
@@ -118,7 +118,7 @@
                   class="block leading-10 tracking-serif-wide whitespace-nowrap [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    class="relative block text-inherit transition-colors duration-500 after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                     href="/reviews/"
                     >Reviews</a
                   >
@@ -127,7 +127,7 @@
                   class="block leading-10 tracking-serif-wide whitespace-nowrap [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    class="relative block text-inherit transition-colors duration-500 after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                     href="/authors/"
                     >Authors</a
                   >
@@ -136,7 +136,7 @@
                   class="block leading-10 tracking-serif-wide whitespace-nowrap [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform after:duration-500 hover:after:scale-x-100"
+                    class="relative block text-inherit transition-colors duration-500 after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-accent after:transition-transform after:duration-500 hover:text-accent hover:after:scale-x-100"
                     href="/readings/"
                     >Reading Log</a
                   >
@@ -149,7 +149,7 @@
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-transform hover:scale-105 laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -180,14 +180,13 @@
               aria-controls="nav-drawer"
               aria-expanded="false"
               aria-label="Toggle navigation drawer"
-              class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
+              class="group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
               data-nav-drawer-toggle="true"
               type="button"
             >
               <span
                 aria-hidden="true"
-                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:!bg-[var(--color-default)] [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)]"
-                style="background-color: var(--color-default)"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-[var(--color-default)] [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-(--color-default)"
               ></span>
             </button>
             <nav aria-label="Main navigation">

@@ -110,9 +110,8 @@ function HamburgerMenu({
         aria-expanded="false"
         aria-label="Toggle navigation drawer"
         className={`
-          relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer
-          items-center justify-center transition-transform
-          hover:scale-110
+          group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu
+          cursor-pointer items-center justify-center transition-all duration-500
           laptop:hidden
         `}
         data-nav-drawer-toggle
@@ -123,6 +122,7 @@ function HamburgerMenu({
           className={`
             relative flex h-0.5 w-6 origin-center transform-gpu transition-all
             duration-200 ease-in-out
+            group-hover/button:bg-accent
             before:absolute before:-top-2 before:block before:h-0.5 before:w-6
             before:bg-inherit before:transition before:duration-200
             before:ease-in-out
@@ -130,15 +130,14 @@ function HamburgerMenu({
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[var(--color-default)]
+            [body.nav-open_&]:bg-[var(--color-default)]
+            [body.nav-open_&]:group-hover/button:bg-accent
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
+            ${hasBackdrop ? "bg-white" : "bg-(--color-default)"}
           `}
-          style={{
-            backgroundColor: hasBackdrop ? "#fff" : "var(--color-default)",
-          }}
         />
       </button>
       <nav aria-label="Main navigation">
@@ -194,11 +193,11 @@ function NavListItem({
     >
       <a
         className={`
-          relative block text-inherit
+          relative block text-inherit transition-colors duration-500
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
-          after:origin-center after:scale-x-0 after:bg-(--mast-color)/75
+          after:origin-center after:scale-x-0 after:bg-accent
           after:transition-transform after:duration-500
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
           ${
             hasBackdrop
               ? `
@@ -236,8 +235,9 @@ function SearchButton(): React.JSX.Element {
         aria-label="Search"
         className={`
           flex size-10 transform-gpu cursor-pointer items-center justify-center
-          overflow-hidden text-sm leading-6 ring-default transition-transform
-          hover:scale-105
+          overflow-hidden text-sm leading-6 ring-default transition-all
+          duration-500
+          hover:text-accent
           laptop:ml-6
         `}
         data-open-modal
