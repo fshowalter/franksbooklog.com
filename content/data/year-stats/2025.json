@@ -1,6 +1,6 @@
 {
   "year": "2025",
-  "workCount": 8,
+  "workCount": 9,
   "bookCount": 3,
   "kindDistribution": [
     {
@@ -17,13 +17,13 @@
     },
     {
       "name": "Short Story",
-      "count": 3
+      "count": 4
     }
   ],
   "editionDistribution": [
     {
       "name": "Ebook",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Paperback",
@@ -41,7 +41,7 @@
     },
     {
       "name": "1980s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "1990s",
@@ -134,6 +134,36 @@
           "kind": "Short Story",
           "title": "King Mob",
           "workYear": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Karl Edward Wagner",
+      "count": 2,
+      "slug": "karl-edward-wagner",
+      "reviewed": true,
+      "readings": [
+        {
+          "readingSequence": 193,
+          "date": "2025-10-26",
+          "slug": "in-the-pines-by-karl-edward-wagner",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "In the Pines",
+          "workYear": "1973",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "readingSequence": 194,
+          "date": "2025-11-09",
+          "slug": "where-the-summer-ends-by-karl-edward-wagner",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "Where the Summer Ends",
+          "workYear": "1980",
           "includedInSlugs": [],
           "reviewed": true
         }

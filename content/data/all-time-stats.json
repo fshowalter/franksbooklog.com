@@ -1,6 +1,6 @@
 {
-  "reviewCount": 86,
-  "workCount": 193,
+  "reviewCount": 87,
+  "workCount": 194,
   "bookCount": 168,
   "gradeDistribution": [
     {
@@ -45,7 +45,7 @@
     },
     {
       "name": "D+",
-      "count": 4,
+      "count": 5,
       "sortValue": 4
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "name": "Short Story",
-      "count": 20
+      "count": 21
     }
   ],
   "editionDistribution": [
@@ -97,7 +97,7 @@
     },
     {
       "name": "Ebook",
-      "count": 107
+      "count": 108
     },
     {
       "name": "Hardcover",
@@ -135,7 +135,7 @@
     },
     {
       "name": "1980s",
-      "count": 55
+      "count": 56
     },
     {
       "name": "1990s",
@@ -1453,41 +1453,41 @@
       ]
     },
     {
-      "name": "Stephen Morris",
+      "name": "Karl Edward Wagner",
       "count": 3,
-      "slug": "stephen-morris",
+      "slug": "karl-edward-wagner",
       "reviewed": true,
       "readings": [
         {
-          "readingSequence": 179,
-          "date": "2023-11-11",
-          "slug": "record-play-pause-by-stephen-morris",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Record Play Pause",
-          "workYear": "2019",
+          "readingSequence": 4,
+          "date": "2012-05-18",
+          "slug": "dark-crusade-by-karl-edward-wagner",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Dark Crusade",
+          "workYear": "1976",
           "includedInSlugs": [],
           "reviewed": true
         },
         {
-          "readingSequence": 180,
-          "date": "2023-12-09",
-          "slug": "fast-forward-by-stephen-morris",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Fast Forward",
-          "workYear": "2020",
+          "readingSequence": 193,
+          "date": "2025-10-26",
+          "slug": "in-the-pines-by-karl-edward-wagner",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "In the Pines",
+          "workYear": "1973",
           "includedInSlugs": [],
           "reviewed": true
         },
         {
-          "readingSequence": 182,
-          "date": "2024-07-01",
-          "slug": "fast-forward-by-stephen-morris",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Fast Forward",
-          "workYear": "2020",
+          "readingSequence": 194,
+          "date": "2025-11-09",
+          "slug": "where-the-summer-ends-by-karl-edward-wagner",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "Where the Summer Ends",
+          "workYear": "1980",
           "includedInSlugs": [],
           "reviewed": true
         }
