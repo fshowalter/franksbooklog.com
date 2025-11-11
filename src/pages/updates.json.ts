@@ -32,7 +32,7 @@ const gradeToStars: Record<string, number> = {
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {
-  const reviews = await mostRecentReviews(4);
+  const reviews = await mostRecentReviews(5);
 
   const updateItems = await Promise.all(
     reviews.map(async (review) => {
