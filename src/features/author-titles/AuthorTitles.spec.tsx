@@ -577,10 +577,8 @@ describe("AuthorTitles", () => {
         soloBookText.indexOf("The Talisman", soloBookIndex + 1),
         soloBookText.indexOf("Black House", soloBookIndex + 1),
       );
-      // If there's a "with" after Solo Book, it should be after another title
-      if (nextWithIndex !== -1 && nextTitleIndex > -1) {
-        expect(nextWithIndex).toBeGreaterThan(nextTitleIndex);
-      }
+
+      expect(nextWithIndex).toBeGreaterThan(nextTitleIndex);
     });
 
     it("displays multiple co-authors when present", ({ expect }) => {
