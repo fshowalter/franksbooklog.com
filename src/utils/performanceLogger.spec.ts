@@ -287,9 +287,8 @@ describe("PerformanceLogger", () => {
 
   describe("exported singleton", () => {
     it("exports a singleton instance that can be used", async () => {
-      const { perfLogger: exportedLogger } = await import(
-        "./performanceLogger"
-      );
+      const { perfLogger: exportedLogger } =
+        await import("./performanceLogger");
 
       const mockFn = vi.fn().mockResolvedValue("singleton-result");
       const result = await exportedLogger.measure("singleton-op", mockFn);
