@@ -66,20 +66,21 @@ export function Footer(): React.JSX.Element {
                   This site began in 2012, when I realized I&apos;d accumulated
                   more books than I could ever hope to finish. Worse still, I
                   had books I thought I&apos;d read but couldn&apos;t remember.
-                  Clearly, I needed a system.
+                  Clearly, I needed a system. Fortunately, I&apos;d already been
+                  keeping a{" "}
+                  <FooterLink
+                    href="https://www.franksmovielog.com/"
+                    text="movie log"
+                  />{" "}
+                  for some time, so I had a solution.
                 </p>
 
                 <p className="mb-6 text-pretty">
-                  What started on Goodreads evolved into this little corner of
-                  the internet where I share my thoughts on what I&apos;ve read.
-                </p>
-
-                <p className="mb-6 text-pretty">
-                  New visitors might want to start by reading about{" "}
-                  <FooterLink href="/how-i-grade/" text="how I grade" />. After
-                  that, feel free to browse{" "}
-                  <FooterLink href="/reviews/" text="my reviews" />, which are
-                  also indexed <FooterLink href="/authors/" text="by author" />.
+                  New visitors should start with{" "}
+                  <FooterLink href="/how-i-grade/" text="how I grade" />. Then
+                  browse <FooterLink href="/reviews/" text="my reviews" />,
+                  which are also indexed{" "}
+                  <FooterLink href="/authors/" text="by author" />.
                 </p>
 
                 <p className="mb-6 text-pretty">
@@ -87,16 +88,15 @@ export function Footer(): React.JSX.Element {
                   <FooterLink href="/readings/" text="reading log" /> that
                   tracks everything I read, whether it gets a full review or
                   not, complete with{" "}
-                  <FooterLink href="/readings/stats/" text="stats" />. In an age
-                  of endless content, sometimes the act of remembering what
-                  we&apos;ve read becomes as important as the reading itself.
+                  <FooterLink href="/readings/stats/" text="stats" />. At my
+                  age, remembering what I&apos;ve read is as important as the
+                  reading itself.
                 </p>
 
                 <p className="text-pretty">
-                  In an era of algorithmic recommendations and corporate
-                  marketing machines, consider this site a human alternative—one
-                  person&apos;s attempt to catalog his personal library and
-                  maybe help a few fellow travelers along the way.
+                  In an era of algorithmic recommendations consider this site a
+                  human alternative—one person cataloging his personal library,
+                  one book at a time.
                 </p>
               </div>
             </div>
