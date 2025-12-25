@@ -403,12 +403,8 @@
     }
 
     sup a {
-      border: solid 1px var(--border-default);
-      border-radius: 3em;
-      margin: 0 0.3em;
-      padding: 0.2em 0.6em;
-      position: relative;
-      top: 0.3em;
+      font-weight: 600;
+      margin-right: 0.5ch;
     }
 
     a:hover {
