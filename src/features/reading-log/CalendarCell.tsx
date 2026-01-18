@@ -65,12 +65,11 @@ export function CalendarCell({
         <div className="@container/cover-list">
           <ol
             className={`
-              flex flex-col
-              [--cover-list-item-width:33.33%]
+              flex flex-col [--cover-list-item-width:33.33%]
               tablet:flex-row tablet:flex-wrap tablet:items-baseline
               tablet-landscape:flex-col
               tablet-landscape:[--cover-list-item-width:100%]
-              @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+              @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%]
             `}
           >
             {value.entries!.map((reading) => (
@@ -92,8 +91,7 @@ export function CalendarCell({
                   <ListItemAuthors values={reading.authors} />
                   <div
                     className={`
-                      font-sans text-xs leading-4 font-normal tracking-prose
-                      text-subtle
+                      font-sans text-xs/4 font-normal tracking-prose text-subtle
                     `}
                   >
                     {reading.edition}

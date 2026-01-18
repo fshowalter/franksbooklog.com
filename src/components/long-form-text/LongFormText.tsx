@@ -20,7 +20,7 @@ export function LongFormText({
   return (
     <RenderedMarkdown
       className={`
-        text-md/7 tracking-[0.3px]
+        text-md/7 tracking-prose
         tablet:text-xl/8
         ${className ?? ""}
       `}

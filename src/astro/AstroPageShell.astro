@@ -82,9 +82,9 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   </head>
   <body
     class={`
-      h-full w-full bg-canvas text-default
-      data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed
-      data-search-modal-open:before:inset-0
+      size-full bg-canvas text-default
+      data-search-modal-open:overflow-hidden
+      data-search-modal-open:before:fixed data-search-modal-open:before:inset-0
       data-search-modal-open:before:z-search-backdrop
       data-search-modal-open:before:backdrop-blur-xs
       [&.nav-open]:overflow-hidden
@@ -116,7 +116,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
           data-close-modal>ESC</button
         >
         <!-- Fixed Search Input Section -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <!-- Search Form with magnifying glass icon -->
           <form aria-label="Site search" onsubmit="return false" role="search">
             <div class="relative">
@@ -124,7 +124,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
               <svg
                 aria-hidden="true"
                 class={`
-                  pointer-events-none absolute top-[18px] left-4 h-5 w-5
+                  pointer-events-none absolute top-[18px] left-4 size-5
                   text-default opacity-70
                 `}
                 fill="none"
@@ -166,7 +166,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
               <button
                 aria-label="Clear search"
                 class={`
-                  absolute top-6 right-24 hidden h-4 w-4 rounded-full bg-subtle
+                  absolute top-6 right-24 hidden size-4 rounded-full bg-subtle
                   text-subtle
                   hover:text-default
                   focus:outline-accent
@@ -175,7 +175,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
                 type="button"
               >
                 <svg
-                  class="h-full w-full"
+                  class="size-full"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +197,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
             aria-atomic="true"
             aria-live="polite"
             class={`
-              px-4 py-4 font-sans text-sm font-normal text-subtle
+              p-4 font-sans text-sm font-normal text-subtle
               empty:hidden
             `}
             id="pagefind-results-counter"
@@ -210,8 +210,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
         <div
           aria-label="Search results"
           class={`
-            min-h-0 flex-1 overflow-y-auto overscroll-contain
-            outline-offset-[-2px]
+            min-h-0 flex-1 overflow-y-auto overscroll-contain -outline-offset-2
             focus:outline-accent
           `}
           id="pagefind-results-wrapper"
@@ -220,7 +219,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
           <div id="pagefind-results"></div>
 
           <!-- Load More Button -->
-          <div class="hidden px-4 py-4" id="pagefind-load-more-wrapper">
+          <div class="hidden p-4" id="pagefind-load-more-wrapper">
             <button
               aria-controls="pagefind-results"
               class={`
@@ -239,7 +238,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 
         <div
           class={`
-            px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle
+            p-4 font-sans text-sm font-light tracking-wide text-subtle
             tablet:px-6
             laptop:block laptop:px-8
           `}

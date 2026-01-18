@@ -36,7 +36,7 @@ export function MoreReviews({
       >
         <ol
           className={`
-            grid flex-wrap gap-x-8 gap-y-8
+            grid flex-wrap gap-8
             tablet-landscape:grid-cols-2
           `}
         >

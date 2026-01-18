@@ -55,7 +55,9 @@ export function Review({
   return (
     <div className="flex flex-col" data-pagefind-body>
       <header
-        className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
+        className={`
+          relative z-base mb-12 flex flex-col items-center px-[8%] pt-10
+        `}
       >
         <nav className={`transform-gpu pb-2 transition-transform`}>
           <a
@@ -65,7 +67,8 @@ export function Review({
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-center after:scale-x-0 after:bg-(--color-accent)
               after:transition-transform
-              hover:text-accent hover:after:scale-x-100
+              hover:text-accent
+              hover:after:scale-x-100
             `}
             href="/reviews/"
           >
@@ -264,7 +267,7 @@ function ReviewGrade({
       <div
         className={`
           bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide
-          text-[#fff] uppercase
+          text-white uppercase
         `}
       >
         Abandoned

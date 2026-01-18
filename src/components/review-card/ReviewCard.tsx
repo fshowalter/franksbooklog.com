@@ -75,7 +75,7 @@ export function ReviewCard({
         >
           <div
             className={`
-              absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden
+              absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden
               bg-default bg-cover bg-center clip-path-cover
               after:absolute after:size-full after:backdrop-blur-sm
               after:clip-path-cover
@@ -145,8 +145,8 @@ export function ReviewCard({
           {value.reviewDate && (
             <div
               className={`
-                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
-                text-subtle uppercase
+                mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle
+                uppercase
                 laptop:tracking-wide
               `}
             >
@@ -158,7 +158,8 @@ export function ReviewCard({
               block text-2xl font-medium transition-colors duration-500
               after:absolute after:top-0 after:left-0 after:z-sticky
               after:size-full
-              hover:text-accent hover:before:opacity-0
+              hover:text-accent
+              hover:before:opacity-0
             `}
             href={`/reviews/${value.slug}/`}
           >
@@ -173,7 +174,7 @@ export function ReviewCard({
           </div>
           <div
             className={`
-              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
+              font-sans text-sm/4 font-normal tracking-prose text-subtle
             `}
           >
             {value.workYear} | {value.kind}
@@ -182,7 +183,7 @@ export function ReviewCard({
             <Grade className="py-1" height={24} value={value.grade} />
           </div>
           <RenderedMarkdown
-            className="mb-6 text-lg leading-normal tracking-prose text-muted"
+            className="mb-6 text-lg/normal tracking-prose text-muted"
             text={value.excerpt}
           />
         </div>

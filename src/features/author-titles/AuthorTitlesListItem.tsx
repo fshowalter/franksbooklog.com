@@ -52,7 +52,7 @@ function OtherAuthors({
   }
 
   return (
-    <div className="font-serif text-[15px] leading-5">
+    <div className="font-serif text-[15px]/5">
       (with {toSentenceArray(values.map((value) => value.name))})
     </div>
   );

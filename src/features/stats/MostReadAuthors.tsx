@@ -155,8 +155,7 @@ function Name({
     return (
       <a
         className={`
-          relative inline-block font-serif text-base leading-6 font-medium
-          text-accent
+          relative inline-block font-serif text-base/6 font-medium text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
           after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent)
           after:transition-all after:duration-500
@@ -171,9 +170,7 @@ function Name({
 
   return (
     <span
-      className={`
-        inline-block font-serif text-base leading-6 font-normal text-muted
-      `}
+      className={`inline-block font-serif text-base/6 font-normal text-muted`}
     >
       {value.name}
     </span>

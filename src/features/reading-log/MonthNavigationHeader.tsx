@@ -55,7 +55,7 @@ export function MonthNavigationHeader({
         border-default bg-subtle px-container py-4
         tablet:-mx-(--container-padding) tablet:py-6
         tablet-landscape:py-8
-        desktop:-mx-0 desktop:px-0
+        desktop:mx-0 desktop:px-0
       `}
     >
       <div className="w-1/3">

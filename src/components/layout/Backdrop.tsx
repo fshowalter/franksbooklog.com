@@ -218,7 +218,7 @@ function Title({
         className ||
         `
           ${center ? "text-center" : ""}
-          text-[2rem] leading-10 font-extrabold
+          text-[2rem]/10 font-extrabold
           [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
           tablet:text-4xl
           laptop:text-7xl
@@ -277,8 +277,8 @@ function Wrapper({
           ${
             bottomShadow
               ? `
-                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
-                after:w-full after:bg-(image:--hero-gradient)
+                after:absolute after:top-0 after:left-0 after:-z-10
+                after:size-full after:bg-(image:--hero-gradient)
               `
               : ""
           }

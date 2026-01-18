@@ -42,7 +42,7 @@
     <title>Frank&#39;s Book Log</title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
+    class="size-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <link
       rel="preload"
@@ -53,7 +53,7 @@
     />
     <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto transform-[translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:transform-[translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -120,12 +120,12 @@
               </ul>
             </nav>
             <div
-              class="z-1000 transition-colors [body.nav-open_&amp;]:!text-default"
+              class="z-search-button transition-colors [body.nav-open_&amp;]:text-default!"
             >
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm/6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -156,13 +156,13 @@
               aria-controls="nav-drawer"
               aria-expanded="false"
               aria-label="Toggle navigation drawer"
-              class="group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
+              class="group/button relative z-nav-toggle ml-2 flex size-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
               data-nav-drawer-toggle="true"
               type="button"
             >
               <span
                 aria-hidden="true"
-                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-[var(--color-default)] [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-white"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-(--color-default) [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-white"
               ></span>
             </button>
             <nav aria-label="Main navigation">
@@ -254,10 +254,10 @@
               loading="eager"
             />
             <div
-              class="z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-(image:--hero-gradient)"
+              class="z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:size-full after:bg-(image:--hero-gradient)"
             >
               <h1
-                class="text-[2rem] leading-10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
+                class="text-[2rem]/10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
                 data-pagefind-weight="10"
               >
                 Frank&#x27;s Book Log
@@ -291,7 +291,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -347,7 +347,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         26 Oct 2025
                       </div>
@@ -358,7 +358,7 @@
                       >
                       <div class="-mt-2"><span>Karl Edward Wagner</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         1973<!-- -->
                         |
@@ -378,7 +378,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           A grief-stricken man sees visions of a flapper-era
@@ -399,7 +399,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -455,7 +455,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         12 Jul 2025
                       </div>
@@ -466,7 +466,7 @@
                       >
                       <div class="-mt-2"><span>Philip Fracassi</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2017<!-- -->
                         |
@@ -486,7 +486,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           In 1780 London, William Blake finds himself swept into
@@ -507,7 +507,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -563,7 +563,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         11 Jul 2025
                       </div>
@@ -574,7 +574,7 @@
                       >
                       <div class="-mt-2"><span>Philip Fracassi</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2017<!-- -->
                         |
@@ -594,7 +594,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           During the brutal Civil War battle, as artillery
@@ -617,7 +617,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -673,7 +673,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         11 Jul 2025
                       </div>
@@ -684,7 +684,7 @@
                       >
                       <div class="-mt-2"><span>Philip Fracassi</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2021<!-- -->
                         |
@@ -704,7 +704,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           Five thirteen-year-old boys go hunting for a
@@ -726,7 +726,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -782,7 +782,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         11 Jul 2025
                       </div>
@@ -795,7 +795,7 @@
                         <span>Leslie H. Whitten Jr.</span>
                       </div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         1965<!-- -->
                         |
@@ -815,7 +815,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           A D.C. detective’s case involving blonde women turning
@@ -836,7 +836,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -892,7 +892,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         15 Feb 2025
                       </div>
@@ -903,7 +903,7 @@
                       >
                       <div class="-mt-2"><span>Richard Laymon</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         1985<!-- -->
                         |
@@ -923,7 +923,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           At the Santa Monica pier, Doreen rides alone on the
@@ -950,7 +950,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -1006,7 +1006,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         01 Dec 2024
                       </div>
@@ -1017,7 +1017,7 @@
                       >
                       <div class="-mt-2"><span>Peter Straub</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         1979<!-- -->
                         |
@@ -1037,7 +1037,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           <em>Ghost Story</em> is an uneven—yet at times
@@ -1059,7 +1059,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -1115,7 +1115,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         08 Nov 2024
                       </div>
@@ -1126,7 +1126,7 @@
                       >
                       <div class="-mt-2"><span>Lol Tolhurst</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2023<!-- -->
                         |
@@ -1146,7 +1146,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           Former Cure drummer and keyboardist Lol Tolhurst
@@ -1167,7 +1167,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -1223,7 +1223,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         25 Aug 2024
                       </div>
@@ -1234,7 +1234,7 @@
                       >
                       <div class="-mt-2"><span>David Mamet</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2022<!-- -->
                         |
@@ -1254,7 +1254,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           Non-politicians like David Mamet, who’ve done a hard
@@ -1276,7 +1276,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -1332,7 +1332,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         01 Jul 2024
                       </div>
@@ -1343,7 +1343,7 @@
                       >
                       <div class="-mt-2"><span>Stephen Morris</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2020<!-- -->
                         |
@@ -1363,7 +1363,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           Every bit as entertaining as his first volume, drummer
@@ -1386,7 +1386,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -1442,7 +1442,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         30 Jun 2024
                       </div>
@@ -1453,7 +1453,7 @@
                       >
                       <div class="-mt-2"><span>Philip Fracassi</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2023<!-- -->
                         |
@@ -1473,7 +1473,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <blockquote>
                           <p>“It’s like Christine… but wood!”</p>
@@ -1499,7 +1499,7 @@
                       class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                     >
                       <div
-                        class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                        class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                         style="
                           background-color: var(--background-color-default);
                           background-image:
@@ -1555,7 +1555,7 @@
                       class="row-start-2 mt-4 flex flex-col gap-y-2 px-[8%] @min-[500px]/card:mt-0 @min-[500px]/card:px-0"
                     >
                       <div
-                        class="mb-1 font-sans text-xs leading-4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
+                        class="mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle uppercase laptop:tracking-wide"
                       >
                         11 Nov 2023
                       </div>
@@ -1566,7 +1566,7 @@
                       >
                       <div class="-mt-2"><span>Stephen Morris</span></div>
                       <div
-                        class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                        class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                       >
                         2019<!-- -->
                         |
@@ -1586,7 +1586,7 @@
                         /></picture>
                       </div>
                       <div
-                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                       >
                         <p>
                           Warm, witty, self-deprecating and self-aware, drummer
@@ -1628,11 +1628,11 @@
                   class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
                 >
                   <div
-                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+                    class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                   >
                     <a href="/">Frank&#x27;s Book Log</a>
                   </div>
-                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+                  <p class="w-full pl-px text-sm/4 italic opacity-85">
                     by Frank Showalter
                   </p>
                 </div>
@@ -1805,14 +1805,14 @@
           ESC
         </button>
         <!-- Fixed Search Input Section -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <!-- Search Form with magnifying glass icon -->
           <form aria-label="Site search" onsubmit="return false;" role="search">
             <div class="relative">
               <!-- Magnifying glass icon -->
               <svg
                 aria-hidden="true"
-                class="pointer-events-none absolute top-[18px] left-4 h-5 w-5 text-default opacity-70"
+                class="pointer-events-none absolute top-[18px] left-4 size-5 text-default opacity-70"
                 fill="none"
                 height="18"
                 viewBox="0 0 18 18"
@@ -1842,12 +1842,12 @@
               <!-- Clear button -->
               <button
                 aria-label="Clear search"
-                class="absolute top-6 right-24 hidden h-4 w-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
+                class="absolute top-6 right-24 hidden size-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
                 id="pagefind-clear-button"
                 type="button"
               >
                 <svg
-                  class="h-full w-full"
+                  class="size-full"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1867,7 +1867,7 @@
           <div
             aria-atomic="true"
             aria-live="polite"
-            class="px-4 py-4 font-sans text-sm font-normal text-subtle empty:hidden"
+            class="p-4 font-sans text-sm font-normal text-subtle empty:hidden"
             id="pagefind-results-counter"
             role="status"
           ></div>
@@ -1875,13 +1875,13 @@
         <!-- Scrollable Results Area -->
         <div
           aria-label="Search results"
-          class="min-h-0 flex-1 overflow-y-auto overscroll-contain outline-offset-[-2px] focus:outline-accent"
+          class="min-h-0 flex-1 overflow-y-auto overscroll-contain -outline-offset-2 focus:outline-accent"
           id="pagefind-results-wrapper"
           role="region"
         >
           <div id="pagefind-results"></div>
           <!-- Load More Button -->
-          <div class="hidden px-4 py-4" id="pagefind-load-more-wrapper">
+          <div class="hidden p-4" id="pagefind-load-more-wrapper">
             <button
               aria-controls="pagefind-results"
               class="mx-auto block w-full max-w-button cursor-pointer bg-canvas py-5 text-center font-sans text-xs font-bold tracking-wide uppercase shadow-all hover:bg-footer hover:text-inverse"
@@ -1893,7 +1893,7 @@
           </div>
         </div>
         <div
-          class="px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
+          class="p-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
         >
           <kbd class="rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >Tab</kbd

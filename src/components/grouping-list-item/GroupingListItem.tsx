@@ -31,8 +31,7 @@ export function GroupingListItem({
       <div className={`pt-0 text-md`}>
         <div
           className={`
-            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
-            leading-8
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8
             tablet:px-1
           `}
         >
