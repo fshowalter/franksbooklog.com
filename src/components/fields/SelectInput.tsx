@@ -18,8 +18,8 @@ export function SelectInput({
   return (
     <select
       className={`
-        w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base
-        leading-6 text-subtle shadow-all outline-accent
+        w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6
+        text-subtle shadow-all outline-accent
       `}
       defaultValue={defaultValue}
       key={defaultValue} // work-around for React 19 bug: https://github.com/facebook/react/issues/32362

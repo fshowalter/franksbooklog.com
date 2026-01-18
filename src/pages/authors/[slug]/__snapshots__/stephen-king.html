@@ -51,7 +51,7 @@
     <title>Stephen King book &amp; story reviews - Frank&#39;s Book Log</title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
+    class="size-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <style>
       astro-island,
@@ -264,7 +264,7 @@
     />
     <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto transform-[translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:transform-[translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -283,11 +283,11 @@
             class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
           >
             <div
-              class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+              class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
             >
               <a href="/">Frank&#x27;s Book Log</a>
             </div>
-            <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+            <p class="w-full pl-px text-sm/4 italic opacity-85">
               by Frank Showalter
             </p>
           </div>
@@ -342,12 +342,12 @@
               </ul>
             </nav>
             <div
-              class="z-1000 transition-colors [body.nav-open_&amp;]:!text-default"
+              class="z-search-button transition-colors [body.nav-open_&amp;]:text-default!"
             >
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm/6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -378,13 +378,13 @@
               aria-controls="nav-drawer"
               aria-expanded="false"
               aria-label="Toggle navigation drawer"
-              class="group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
+              class="group/button relative z-nav-toggle ml-2 flex size-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
               data-nav-drawer-toggle="true"
               type="button"
             >
               <span
                 aria-hidden="true"
-                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-[var(--color-default)] [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-white"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-(--color-default) [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-white"
               ></span>
             </button>
             <nav aria-label="Main navigation">
@@ -476,7 +476,7 @@
               loading="eager"
             />
             <div
-              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-(image:--hero-gradient)"
+              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:size-full after:bg-(image:--hero-gradient)"
             >
               <p class="mb-4">
                 <a
@@ -503,7 +503,7 @@
                 />
               </div>
               <h1
-                class="text-center text-[2rem] leading-10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
+                class="text-center text-[2rem]/10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
                 data-pagefind-weight="10"
               >
                 Stephen King
@@ -516,7 +516,7 @@
             </div>
           </header>
           <astro-island
-            uid="Z2wSCX8"
+            uid="ZLgPkR"
             prefix="r1"
             component-url="~/features/author-titles/AuthorTitles"
             component-export="AuthorTitles"
@@ -534,10 +534,10 @@
             >
               <div class="group/list-with-filters mx-auto bg-subtle">
                 <div
-                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
+                  class="sticky top-[calc(0px+var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px+var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
                 >
                   <div
-                    class="mx-auto grid max-w-[var(--breakpoint-desktop)] grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]"
+                    class="mx-auto grid max-w-(--breakpoint-desktop) grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%-192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%-96px)_auto]"
                   >
                     <span class="text-nowrap"
                       ><span class="text-sm font-bold text-default">10</span
@@ -555,7 +555,7 @@
                         class="flex items-baseline gap-x-4 text-xs font-bold tracking-wide text-subtle"
                         >Sort<!-- -->
                         <select
-                          class="flex w-full appearance-none border-none bg-default py-2 pr-4 pl-4 font-serif text-base font-normal tracking-normal overflow-ellipsis text-default shadow-all outline-accent"
+                          class="flex w-full appearance-none border-none bg-default px-4 py-2 font-serif text-base font-normal tracking-normal text-ellipsis text-default shadow-all outline-accent"
                         >
                           <option value="title-asc" selected="">
                             Title (A → Z)
@@ -590,17 +590,17 @@
                   </div>
                 </div>
                 <div
-                  class="mx-auto max-w-[var(--breakpoint-desktop)] tablet:px-container"
+                  class="mx-auto max-w-(--breakpoint-desktop) tablet:px-container"
                 >
                   <div
-                    class="mx-auto max-w-[var(--breakpoint-desktop)] grow scroll-mt-[calc(var(--filter-and-sort-container-scroll-offset)_+_var(--scroll-offset,0px))] pb-10 [--filter-and-sort-container-scroll-offset:181px] tablet:[--filter-and-sort-container-scroll-offset:121px]"
+                    class="mx-auto max-w-(--breakpoint-desktop) grow scroll-mt-[calc(var(--filter-and-sort-container-scroll-offset)+var(--scroll-offset,0px))] pb-10 [--filter-and-sort-container-scroll-offset:181px] tablet:[--filter-and-sort-container-scroll-offset:121px]"
                     id="list"
                   >
                     <ol data-testid="grouped-cover-list">
                       <li class="block first-of-type:mt-4" id="C">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             C
                           </div>
@@ -609,7 +609,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -641,12 +641,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/carrie-by-stephen-king/"
                                       >Carrie</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -665,7 +665,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Sep 19, 2022
                                     </div>
@@ -701,12 +701,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/cujo-by-stephen-king/"
                                       >Cujo</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -725,7 +725,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Jun 17, 2014
                                     </div>
@@ -739,7 +739,7 @@
                       <li class="block first-of-type:mt-4" id="D">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             D
                           </div>
@@ -748,7 +748,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -780,12 +780,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/doctor-sleep-by-stephen-king/"
                                       >Doctor Sleep</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -804,7 +804,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Jan 14, 2023
                                     </div>
@@ -818,7 +818,7 @@
                       <li class="block first-of-type:mt-4" id="L">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             L
                           </div>
@@ -827,7 +827,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -859,12 +859,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/the-long-walk-by-stephen-king/"
                                       >The Long Walk</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -883,7 +883,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Mar 09, 2014
                                     </div>
@@ -897,7 +897,7 @@
                       <li class="block first-of-type:mt-4" id="N">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             N
                           </div>
@@ -906,7 +906,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -938,12 +938,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/night-shift-by-stephen-king/"
                                       >Night Shift</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Collection<!-- -->
@@ -962,7 +962,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       May 14, 2012
                                     </div>
@@ -976,7 +976,7 @@
                       <li class="block first-of-type:mt-4" id="O">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             O
                           </div>
@@ -985,7 +985,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1017,12 +1017,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/on-writing-by-stephen-king/"
                                       >On Writing</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Nonfiction<!-- -->
@@ -1041,7 +1041,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Mar 21, 2022
                                     </div>
@@ -1055,7 +1055,7 @@
                       <li class="block first-of-type:mt-4" id="R">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             R
                           </div>
@@ -1064,7 +1064,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1096,12 +1096,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/rage-by-stephen-king/"
                                       >Rage</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -1120,7 +1120,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       May 13, 2012
                                     </div>
@@ -1134,7 +1134,7 @@
                       <li class="block first-of-type:mt-4" id="#">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             #
                           </div>
@@ -1143,7 +1143,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1175,12 +1175,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/salems-lot-by-stephen-king/"
                                       >&#x27;Salem&#x27;s Lot</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -1199,7 +1199,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Oct 14, 2022
                                     </div>
@@ -1213,7 +1213,7 @@
                       <li class="block first-of-type:mt-4" id="S">
                         <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl/8 tablet:px-1"
                           >
                             S
                           </div>
@@ -1222,7 +1222,7 @@
                           <div class="tablet:-mx-6">
                             <div class="@container/cover-list">
                               <ol
-                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
                                 <li
                                   class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1254,12 +1254,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/the-shining-by-stephen-king/"
                                       >The Shining</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -1278,7 +1278,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Oct 29, 2022
                                     </div>
@@ -1314,12 +1314,12 @@
                                     class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
                                     <a
-                                      class="text-base leading-5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
+                                      class="text-base/5 font-semibold text-default transition-all duration-500 after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0 hover:text-accent"
                                       href="/reviews/the-stand-by-stephen-king/"
                                       >The Stand</a
                                     >
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       <span
                                         >Novel<!-- -->
@@ -1338,7 +1338,7 @@
                                         width="75"
                                     /></picture>
                                     <div
-                                      class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                      class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                     >
                                       Mar 02, 2014
                                     </div>
@@ -1364,16 +1364,16 @@
                     id="filters"
                   >
                     <form
-                      class="flex h-full w-full flex-col text-sm tablet:text-base [@media(min-height:815px)]:pt-12"
+                      class="flex size-full flex-col text-sm tablet:text-base [@media(min-height:815px)]:pt-12"
                     >
                       <button
                         aria-label="Close filters"
-                        class="absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center rounded-full bg-canvas text-default drop-shadow-sm transition-transform hover:scale-105 hover:drop-shadow-md"
+                        class="absolute top-7 right-4 z-10 flex size-10 transform-gpu cursor-pointer items-center justify-center rounded-full bg-canvas text-default drop-shadow-sm transition-transform hover:scale-105 hover:drop-shadow-md"
                         type="button"
                       >
                         <svg
                           aria-hidden="true"
-                          class="h-4 w-4 transform-gpu"
+                          class="size-4 transform-gpu"
                           fill="none"
                           stroke="currentColor"
                           stroke-width="2"
@@ -1415,7 +1415,7 @@
                                 class="min-w-10 text-left text-sm tracking-serif-wide"
                                 >From</span
                               ><select
-                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="1974" selected="">1974</option>
                                 <option value="1975">1975</option>
@@ -1431,7 +1431,7 @@
                                 class="min-w-10 text-center text-sm tracking-serif-wide"
                                 >to</span
                               ><select
-                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2013" selected="">2013</option>
                                 <option value="2000">2000</option>
@@ -1450,7 +1450,7 @@
                             class="inline-block h-6 text-left font-sans text-xs leading-none font-semibold tracking-wide text-subtle uppercase"
                             >Kind</span
                           ><select
-                            class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                            class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                           >
                             <option value="All">All</option>
                             <option value="Collection">Collection</option>
@@ -1470,7 +1470,7 @@
                                 class="min-w-10 text-left text-sm tracking-serif-wide"
                                 >From</span
                               ><select
-                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2012" selected="">2012</option>
                                 <option value="2014">2014</option>
@@ -1482,7 +1482,7 @@
                                 class="min-w-10 text-center text-sm tracking-serif-wide"
                                 >to</span
                               ><select
-                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="2023" selected="">2023</option>
                                 <option value="2022">2022</option>
@@ -1504,7 +1504,7 @@
                                 class="min-w-10 text-left text-sm tracking-serif-wide"
                                 >From</span
                               ><select
-                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="1" selected="">F</option>
                                 <option value="2">D-</option>
@@ -1525,7 +1525,7 @@
                                 class="min-w-10 text-center text-sm tracking-serif-wide"
                                 >to</span
                               ><select
-                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                                class="w-full appearance-none border-none bg-default py-2 pr-8 pl-4 text-base/6 text-subtle shadow-all outline-accent"
                               >
                                 <option value="13" selected="">A+</option>
                                 <option value="12">A</option>
@@ -1589,11 +1589,11 @@
                   class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
                 >
                   <div
-                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+                    class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                   >
                     <a href="/">Frank&#x27;s Book Log</a>
                   </div>
-                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+                  <p class="w-full pl-px text-sm/4 italic opacity-85">
                     by Frank Showalter
                   </p>
                 </div>
@@ -1766,14 +1766,14 @@
           ESC
         </button>
         <!-- Fixed Search Input Section -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <!-- Search Form with magnifying glass icon -->
           <form aria-label="Site search" onsubmit="return false;" role="search">
             <div class="relative">
               <!-- Magnifying glass icon -->
               <svg
                 aria-hidden="true"
-                class="pointer-events-none absolute top-[18px] left-4 h-5 w-5 text-default opacity-70"
+                class="pointer-events-none absolute top-[18px] left-4 size-5 text-default opacity-70"
                 fill="none"
                 height="18"
                 viewBox="0 0 18 18"
@@ -1803,12 +1803,12 @@
               <!-- Clear button -->
               <button
                 aria-label="Clear search"
-                class="absolute top-6 right-24 hidden h-4 w-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
+                class="absolute top-6 right-24 hidden size-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
                 id="pagefind-clear-button"
                 type="button"
               >
                 <svg
-                  class="h-full w-full"
+                  class="size-full"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1828,7 +1828,7 @@
           <div
             aria-atomic="true"
             aria-live="polite"
-            class="px-4 py-4 font-sans text-sm font-normal text-subtle empty:hidden"
+            class="p-4 font-sans text-sm font-normal text-subtle empty:hidden"
             id="pagefind-results-counter"
             role="status"
           ></div>
@@ -1836,13 +1836,13 @@
         <!-- Scrollable Results Area -->
         <div
           aria-label="Search results"
-          class="min-h-0 flex-1 overflow-y-auto overscroll-contain outline-offset-[-2px] focus:outline-accent"
+          class="min-h-0 flex-1 overflow-y-auto overscroll-contain -outline-offset-2 focus:outline-accent"
           id="pagefind-results-wrapper"
           role="region"
         >
           <div id="pagefind-results"></div>
           <!-- Load More Button -->
-          <div class="hidden px-4 py-4" id="pagefind-load-more-wrapper">
+          <div class="hidden p-4" id="pagefind-load-more-wrapper">
             <button
               aria-controls="pagefind-results"
               class="mx-auto block w-full max-w-button cursor-pointer bg-canvas py-5 text-center font-sans text-xs font-bold tracking-wide uppercase shadow-all hover:bg-footer hover:text-inverse"
@@ -1854,7 +1854,7 @@
           </div>
         </div>
         <div
-          class="px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
+          class="p-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
         >
           <kbd class="rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >Tab</kbd

@@ -69,11 +69,11 @@
     </title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
+    class="size-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto transform-[translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:transform-[translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -85,11 +85,11 @@
             class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
           >
             <div
-              class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+              class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
             >
               <a href="/">Frank&#x27;s Book Log</a>
             </div>
-            <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+            <p class="w-full pl-px text-sm/4 italic opacity-85">
               by Frank Showalter
             </p>
           </div>
@@ -144,12 +144,12 @@
               </ul>
             </nav>
             <div
-              class="z-1000 transition-colors [body.nav-open_&amp;]:!text-default"
+              class="z-search-button transition-colors [body.nav-open_&amp;]:text-default!"
             >
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm/6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -180,13 +180,13 @@
               aria-controls="nav-drawer"
               aria-expanded="false"
               aria-label="Toggle navigation drawer"
-              class="group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
+              class="group/button relative z-nav-toggle ml-2 flex size-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
               data-nav-drawer-toggle="true"
               type="button"
             >
               <span
                 aria-hidden="true"
-                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-[var(--color-default)] [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-(--color-default)"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-(--color-default) [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-(--color-default)"
               ></span>
             </button>
             <nav aria-label="Main navigation">
@@ -260,7 +260,7 @@
         <main class="grow" id="content">
           <div class="flex flex-col" data-pagefind-body="true">
             <header
-              class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
+              class="relative z-base mb-12 flex flex-col items-center px-[8%] pt-10"
             >
               <nav class="transform-gpu pb-2 transition-transform">
                 <a
@@ -355,7 +355,7 @@
               class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
             >
               <div
-                class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+                class="rendered-markdown text-md/7 tracking-prose tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
               >
                 <p>
                   Aside from the characters saying “suspicions” instead of
@@ -516,7 +516,7 @@
                             class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
                           >
                             <li
-                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] p-1 font-normal even:bg-subtle"
                             >
                               <div
                                 class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
@@ -538,7 +538,7 @@
                               </div>
                             </li>
                             <li
-                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] p-1 font-normal even:bg-subtle"
                             >
                               <div
                                 class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
@@ -560,7 +560,7 @@
                               </div>
                             </li>
                             <li
-                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] p-1 font-normal even:bg-subtle"
                             >
                               <div
                                 class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
@@ -582,7 +582,7 @@
                               </div>
                             </li>
                             <li
-                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] p-1 font-normal even:bg-subtle"
                             >
                               <div
                                 class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
@@ -604,7 +604,7 @@
                               </div>
                             </li>
                             <li
-                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
+                              class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] p-1 font-normal even:bg-subtle"
                             >
                               <div
                                 class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
@@ -655,9 +655,7 @@
                   </h2>
                 </div>
                 <div class="@container/cover-list mx-auto tablet:-mx-6">
-                  <ol
-                    class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
-                  >
+                  <ol class="grid flex-wrap gap-8 tablet-landscape:grid-cols-2">
                     <li
                       class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform duration-500 tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                     >
@@ -668,7 +666,7 @@
                           class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                             style="
                               background-color: var(--background-color-default);
                               background-image:
@@ -730,7 +728,7 @@
                           >
                           <div class="-mt-2"><span>Stephen King</span></div>
                           <div
-                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                            class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                           >
                             2000<!-- -->
                             |
@@ -750,7 +748,7 @@
                             /></picture>
                           </div>
                           <div
-                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                            class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                           >
                             <p>
                               When writing my review of
@@ -776,7 +774,7 @@
                           class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                             style="
                               background-color: var(--background-color-default);
                               background-image:
@@ -838,7 +836,7 @@
                           >
                           <div class="-mt-2"><span>Richard Laymon</span></div>
                           <div
-                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                            class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                           >
                             1982<!-- -->
                             |
@@ -858,7 +856,7 @@
                             /></picture>
                           </div>
                           <div
-                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                            class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                           >
                             <p>
                               In a small California town, the Haunted Palace
@@ -883,7 +881,7 @@
                           class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                             style="
                               background-color: var(--background-color-default);
                               background-image:
@@ -945,7 +943,7 @@
                           >
                           <div class="-mt-2"><span>David Miller</span></div>
                           <div
-                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                            class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                           >
                             2013<!-- -->
                             |
@@ -965,7 +963,7 @@
                             /></picture>
                           </div>
                           <div
-                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                            class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                           >
                             <p>
                               <em>Peter Cushing: A Life in Film</em> chronicles
@@ -991,7 +989,7 @@
                           class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                             style="
                               background-color: var(--background-color-default);
                               background-image:
@@ -1055,7 +1053,7 @@
                             <span>Leslie H. Whitten Jr.</span>
                           </div>
                           <div
-                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                            class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                           >
                             1965<!-- -->
                             |
@@ -1075,7 +1073,7 @@
                             /></picture>
                           </div>
                           <div
-                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                            class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                           >
                             <p>
                               A D.C. detective’s case involving blonde women
@@ -1097,7 +1095,7 @@
                           class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                             style="
                               background-color: var(--background-color-default);
                               background-image:
@@ -1159,7 +1157,7 @@
                           >
                           <div class="-mt-2"><span>Stephen King</span></div>
                           <div
-                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                            class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                           >
                             1976<!-- -->
                             |
@@ -1179,7 +1177,7 @@
                             /></picture>
                           </div>
                           <div
-                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                            class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                           >
                             <p>
                               <em>Rage</em> tells the story of Charlie Decker, a
@@ -1205,7 +1203,7 @@
                           class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                         >
                           <div
-                            class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                            class="absolute top-[2.5%] bottom-[2.5%] left-0 w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
                             style="
                               background-color: var(--background-color-default);
                               background-image:
@@ -1267,7 +1265,7 @@
                           >
                           <div class="-mt-2"><span>David Mamet</span></div>
                           <div
-                            class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
+                            class="font-sans text-sm/4 font-normal tracking-prose text-subtle"
                           >
                             2022<!-- -->
                             |
@@ -1287,7 +1285,7 @@
                             /></picture>
                           </div>
                           <div
-                            class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                            class="rendered-markdown mb-6 text-lg/normal tracking-prose text-muted"
                           >
                             <p>
                               Non-politicians like David Mamet, who’ve done a
@@ -1333,11 +1331,11 @@
                   class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
                 >
                   <div
-                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+                    class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                   >
                     <a href="/">Frank&#x27;s Book Log</a>
                   </div>
-                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+                  <p class="w-full pl-px text-sm/4 italic opacity-85">
                     by Frank Showalter
                   </p>
                 </div>
@@ -1510,14 +1508,14 @@
           ESC
         </button>
         <!-- Fixed Search Input Section -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <!-- Search Form with magnifying glass icon -->
           <form aria-label="Site search" onsubmit="return false;" role="search">
             <div class="relative">
               <!-- Magnifying glass icon -->
               <svg
                 aria-hidden="true"
-                class="pointer-events-none absolute top-[18px] left-4 h-5 w-5 text-default opacity-70"
+                class="pointer-events-none absolute top-[18px] left-4 size-5 text-default opacity-70"
                 fill="none"
                 height="18"
                 viewBox="0 0 18 18"
@@ -1547,12 +1545,12 @@
               <!-- Clear button -->
               <button
                 aria-label="Clear search"
-                class="absolute top-6 right-24 hidden h-4 w-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
+                class="absolute top-6 right-24 hidden size-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
                 id="pagefind-clear-button"
                 type="button"
               >
                 <svg
-                  class="h-full w-full"
+                  class="size-full"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1572,7 +1570,7 @@
           <div
             aria-atomic="true"
             aria-live="polite"
-            class="px-4 py-4 font-sans text-sm font-normal text-subtle empty:hidden"
+            class="p-4 font-sans text-sm font-normal text-subtle empty:hidden"
             id="pagefind-results-counter"
             role="status"
           ></div>
@@ -1580,13 +1578,13 @@
         <!-- Scrollable Results Area -->
         <div
           aria-label="Search results"
-          class="min-h-0 flex-1 overflow-y-auto overscroll-contain outline-offset-[-2px] focus:outline-accent"
+          class="min-h-0 flex-1 overflow-y-auto overscroll-contain -outline-offset-2 focus:outline-accent"
           id="pagefind-results-wrapper"
           role="region"
         >
           <div id="pagefind-results"></div>
           <!-- Load More Button -->
-          <div class="hidden px-4 py-4" id="pagefind-load-more-wrapper">
+          <div class="hidden p-4" id="pagefind-load-more-wrapper">
             <button
               aria-controls="pagefind-results"
               class="mx-auto block w-full max-w-button cursor-pointer bg-canvas py-5 text-center font-sans text-xs font-bold tracking-wide uppercase shadow-all hover:bg-footer hover:text-inverse"
@@ -1598,7 +1596,7 @@
           </div>
         </div>
         <div
-          class="px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
+          class="p-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
         >
           <kbd class="rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >Tab</kbd

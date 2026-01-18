@@ -35,14 +35,8 @@ export function Mast({
         laptop:px-16 laptop:py-8 laptop:text-left
         ${
           hasBackdrop
-            ? `
-              absolute
-              [--mast-color:#fff]
-            `
-            : `
-              static
-              [--mast-color:var(--color-default)]
-            `
+            ? `absolute [--mast-color:#fff]`
+            : `static [--mast-color:var(--color-default)]`
         }
         text-(--mast-color)
       `}
@@ -110,7 +104,7 @@ function HamburgerMenu({
         aria-expanded="false"
         aria-label="Toggle navigation drawer"
         className={`
-          group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu
+          group/button relative z-nav-toggle ml-2 flex size-10 transform-gpu
           cursor-pointer items-center justify-center transition-all duration-500
           laptop:hidden
         `}
@@ -130,7 +124,7 @@ function HamburgerMenu({
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:bg-[var(--color-default)]
+            [body.nav-open_&]:bg-(--color-default)
             [body.nav-open_&]:group-hover/button:bg-accent
             [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
@@ -154,8 +148,9 @@ function HamburgerMenu({
             [body.nav-open_&]:overflow-y-auto [body.nav-open_&]:pt-20
             [body.nav-open_&]:pr-[16%] [body.nav-open_&]:pb-5
             [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
-            [body.nav-open_&]:drop-shadow-2xl [body.nav-open_&]:tablet:px-10
-            [body.nav-open_&]:tablet:pt-40 [body.nav-open_&]:laptop:px-20
+            [body.nav-open_&]:drop-shadow-2xl
+            [body.nav-open_&]:tablet:px-10 [body.nav-open_&]:tablet:pt-40
+            [body.nav-open_&]:laptop:px-20
           `}
           data-nav-drawer
           id="nav-drawer"
@@ -197,7 +192,8 @@ function NavListItem({
           after:absolute after:bottom-1 after:left-0 after:h-px after:w-full
           after:origin-center after:scale-x-0 after:bg-accent
           after:transition-transform after:duration-500
-          hover:text-accent hover:after:scale-x-100
+          hover:text-accent
+          hover:after:scale-x-100
           ${
             hasBackdrop
               ? `
@@ -226,8 +222,8 @@ function SearchButton(): React.JSX.Element {
   return (
     <div
       className={`
-        z-1000 transition-colors
-        [body.nav-open_&]:!text-default
+        z-search-button transition-colors
+        [body.nav-open_&]:text-default!
       `}
     >
       <button
@@ -235,8 +231,7 @@ function SearchButton(): React.JSX.Element {
         aria-label="Search"
         className={`
           flex size-10 transform-gpu cursor-pointer items-center justify-center
-          overflow-hidden text-sm leading-6 ring-default transition-all
-          duration-500
+          overflow-hidden text-sm/6 ring-default transition-all duration-500
           hover:text-accent
           laptop:ml-6
         `}

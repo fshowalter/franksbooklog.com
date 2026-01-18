@@ -27,7 +27,7 @@ export function CalendarMonth({
     <div
       className={`
         scroll-mt-(--calendar-scroll-offset)
-        [--calendar-scroll-offset:calc(var(--list-scroll-offset)_+_92px)]
+        [--calendar-scroll-offset:calc(var(--list-scroll-offset)+92px)]
         tablet:mt-8
         tablet-landscape:mt-16
       `}

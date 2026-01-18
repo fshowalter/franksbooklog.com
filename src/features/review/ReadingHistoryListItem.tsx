@@ -138,7 +138,7 @@ function Details({
             <li
               className={`
                 relative col-span-3 grid grid-cols-subgrid
-                grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal
+                grid-rows-[1fr_auto_auto_1fr] p-1 font-normal
                 even:bg-subtle
               `}
               key={entryDate}

@@ -106,7 +106,7 @@ export default defineConfig(
       ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
       "@typescript-eslint/explicit-function-return-type": "error",
       "better-tailwindcss/no-conflicting-classes": "error",
-      "better-tailwindcss/no-unregistered-classes": [
+      "better-tailwindcss/no-unknown-classes": [
         "error",
         { detectComponentClasses: true },
       ],

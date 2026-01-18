@@ -51,7 +51,7 @@
     <title>2019 Stats - Frank&#39;s Book Log</title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
+    class="size-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <link
       rel="preload"
@@ -62,7 +62,7 @@
     />
     <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto transform-[translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:transform-[translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -81,11 +81,11 @@
             class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
           >
             <div
-              class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+              class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
             >
               <a href="/">Frank&#x27;s Book Log</a>
             </div>
-            <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+            <p class="w-full pl-px text-sm/4 italic opacity-85">
               by Frank Showalter
             </p>
           </div>
@@ -140,12 +140,12 @@
               </ul>
             </nav>
             <div
-              class="z-1000 transition-colors [body.nav-open_&amp;]:!text-default"
+              class="z-search-button transition-colors [body.nav-open_&amp;]:text-default!"
             >
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm/6 ring-default transition-all duration-500 hover:text-accent laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -176,13 +176,13 @@
               aria-controls="nav-drawer"
               aria-expanded="false"
               aria-label="Toggle navigation drawer"
-              class="group/button relative z-nav-toggle ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
+              class="group/button relative z-nav-toggle ml-2 flex size-10 transform-gpu cursor-pointer items-center justify-center transition-all duration-500 laptop:hidden"
               data-nav-drawer-toggle="true"
               type="button"
             >
               <span
                 aria-hidden="true"
-                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-[var(--color-default)] [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-white"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out group-hover/button:bg-accent before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:bg-(--color-default) [body.nav-open_&amp;]:group-hover/button:bg-accent [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)] bg-white"
               ></span>
             </button>
             <nav aria-label="Main navigation">
@@ -274,7 +274,7 @@
               loading="eager"
             />
             <div
-              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-(image:--hero-gradient)"
+              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:size-full after:bg-(image:--hero-gradient)"
             >
               <p class="mb-4">
                 <a
@@ -284,7 +284,7 @@
                 >
               </p>
               <h1
-                class="text-[2rem] leading-10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
+                class="text-[2rem]/10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
                 data-pagefind-weight="10"
               >
                 2019 Stats
@@ -442,16 +442,14 @@
               <div
                 class="flex size-36 flex-col justify-center rounded-full bg-default text-center text-default shadow-all"
               >
-                <div class="text-[2rem] leading-8">26</div>
-                <div class="font-sans text-sm leading-6 text-subtle">
-                  Titles
-                </div>
+                <div class="text-[2rem]/8">26</div>
+                <div class="font-sans text-sm/6 text-subtle">Titles</div>
               </div>
               <div
                 class="flex size-36 flex-col justify-center rounded-full bg-default text-center text-default shadow-all"
               >
-                <div class="text-[2rem] leading-8">26</div>
-                <div class="font-sans text-sm leading-6 text-subtle">Books</div>
+                <div class="text-[2rem]/8">26</div>
+                <div class="font-sans text-sm/6 text-subtle">Books</div>
               </div>
             </div>
             <div
@@ -473,7 +471,7 @@
                           class="transform-gpu font-sans text-xs text-muted transition-transform tablet:text-sm"
                         >
                           <span
-                            class="inline-block font-serif text-base leading-6 font-normal text-muted"
+                            class="inline-block font-serif text-base/6 font-normal text-muted"
                             >Charlie Huston</span
                           >
                         </div>
@@ -494,7 +492,7 @@
                           </summary>
                           <div class="@container/cover-list">
                             <ol
-                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
+                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
                             >
                               <li
                                 class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -526,16 +524,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Already Dead</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jan 14, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -571,16 +569,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >No Dominion</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jan 20, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -616,16 +614,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Half the Blood of Brooklyn</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jan 21, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -661,16 +659,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Every Last Drop</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jan 27, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -706,16 +704,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >My Dead Body</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jan 30, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -751,16 +749,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Shotgun Rule</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jun 07, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -779,7 +777,7 @@
                           class="transform-gpu font-sans text-xs text-muted transition-transform tablet:text-sm"
                         >
                           <a
-                            class="relative inline-block font-serif text-base leading-6 font-medium text-accent after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent) after:transition-all after:duration-500 hover:after:scale-x-100"
+                            class="relative inline-block font-serif text-base/6 font-medium text-accent after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent) after:transition-all after:duration-500 hover:after:scale-x-100"
                             href="/authors/stephen-king/"
                             >Stephen King</a
                           >
@@ -801,7 +799,7 @@
                           </summary>
                           <div class="@container/cover-list">
                             <ol
-                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
+                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
                             >
                               <li
                                 class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -833,16 +831,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Eyes of the Dragon</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Feb 03, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -878,16 +876,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Gunslinger</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 06, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -923,16 +921,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Drawing of the Three</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 13, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -968,16 +966,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Misery</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Apr 03, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1013,16 +1011,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Tommyknockers</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     May 19, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1058,16 +1056,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Dark Half</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jun 20, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1086,7 +1084,7 @@
                           class="transform-gpu font-sans text-xs text-muted transition-transform tablet:text-sm"
                         >
                           <a
-                            class="relative inline-block font-serif text-base leading-6 font-medium text-accent after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent) after:transition-all after:duration-500 hover:after:scale-x-100"
+                            class="relative inline-block font-serif text-base/6 font-medium text-accent after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent) after:transition-all after:duration-500 hover:after:scale-x-100"
                             href="/authors/raymond-chandler/"
                             >Raymond Chandler</a
                           >
@@ -1108,7 +1106,7 @@
                           </summary>
                           <div class="@container/cover-list">
                             <ol
-                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
+                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
                             >
                               <li
                                 class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1140,16 +1138,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Farewell, My Lovely</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Feb 16, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1185,16 +1183,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The High Window</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 23, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1230,16 +1228,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Lady in the Lake</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Apr 14, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1275,16 +1273,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Little Sister</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Jun 01, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1303,7 +1301,7 @@
                           class="transform-gpu font-sans text-xs text-muted transition-transform tablet:text-sm"
                         >
                           <span
-                            class="inline-block font-serif text-base leading-6 font-normal text-muted"
+                            class="inline-block font-serif text-base/6 font-normal text-muted"
                             >Robert E. Howard</span
                           >
                         </div>
@@ -1324,7 +1322,7 @@
                           </summary>
                           <div class="@container/cover-list">
                             <ol
-                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
+                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
                             >
                               <li
                                 class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1356,16 +1354,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Black Canaan</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 02, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Paperback
                                   </div>
@@ -1401,17 +1399,17 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Horror Stories of Robert E.
                                     Howard</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 02, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1447,16 +1445,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Kull: Exile of Atlantis</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 27, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1492,16 +1490,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >The Coming of Conan the Cimmerian</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Apr 28, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1520,7 +1518,7 @@
                           class="transform-gpu font-sans text-xs text-muted transition-transform tablet:text-sm"
                         >
                           <a
-                            class="relative inline-block font-serif text-base leading-6 font-medium text-accent after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent) after:transition-all after:duration-500 hover:after:scale-x-100"
+                            class="relative inline-block font-serif text-base/6 font-medium text-accent after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--color-accent) after:transition-all after:duration-500 hover:after:scale-x-100"
                             href="/authors/richard-laymon/"
                             >Richard Laymon</a
                           >
@@ -1542,7 +1540,7 @@
                           </summary>
                           <div class="@container/cover-list">
                             <ol
-                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
+                              class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px*2)+1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px*4)+1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
                             >
                               <li
                                 class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform duration-500 tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
@@ -1574,16 +1572,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Darkness, Tell Us</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Feb 10, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1619,16 +1617,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Alarums</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Mar 18, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1664,16 +1662,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Blood Games</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     Apr 11, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1709,16 +1707,16 @@
                                   class="flex grow flex-col items-start gap-y-1 tablet:mt-2 tablet:w-full tablet:px-1"
                                 >
                                   <span
-                                    class="block text-base leading-5 font-semibold text-subtle"
+                                    class="block text-base/5 font-semibold text-subtle"
                                     >Endless Night</span
                                   >
                                   <div
-                                    class="font-sans text-[13px] leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-[13px]/4 tracking-prose text-subtle"
                                   >
                                     May 27, 2019
                                   </div>
                                   <div
-                                    class="font-sans text-xs leading-4 tracking-prose text-subtle"
+                                    class="font-sans text-xs/4 tracking-prose text-subtle"
                                   >
                                     Ebook
                                   </div>
@@ -1745,12 +1743,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           1940s
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           4
                         </div>
@@ -1767,12 +1765,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           1960s
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           2
                         </div>
@@ -1789,12 +1787,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           1970s
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           2
                         </div>
@@ -1811,12 +1809,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           1980s
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           6
                         </div>
@@ -1833,12 +1831,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           1990s
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           4
                         </div>
@@ -1855,12 +1853,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           2000s
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           8
                         </div>
@@ -1886,12 +1884,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           Collection
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           5
                         </div>
@@ -1908,12 +1906,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           Nonfiction
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           1
                         </div>
@@ -1930,12 +1928,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           Novel
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           20
                         </div>
@@ -1961,12 +1959,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           Ebook
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           25
                         </div>
@@ -1983,12 +1981,12 @@
                     <div class="col-span-3 grid grid-cols-subgrid py-3">
                       <div class="col-span-3 grid grid-cols-subgrid">
                         <div
-                          class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
+                          class="pb-1 font-sans text-sm/3.5 tracking-prose text-muted"
                         >
                           Paperback
                         </div>
                         <div
-                          class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
+                          class="col-start-3 self-center pb-1 text-right font-sans text-sm/3.5 text-nowrap text-subtle"
                         >
                           1
                         </div>
@@ -2023,11 +2021,11 @@
                   class="flex transform-gpu flex-col transition-all duration-500 has-[a:hover]:text-accent"
                 >
                   <div
-                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
+                    class="text-[1.375rem]/8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                   >
                     <a href="/">Frank&#x27;s Book Log</a>
                   </div>
-                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
+                  <p class="w-full pl-px text-sm/4 italic opacity-85">
                     by Frank Showalter
                   </p>
                 </div>
@@ -2200,14 +2198,14 @@
           ESC
         </button>
         <!-- Fixed Search Input Section -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <!-- Search Form with magnifying glass icon -->
           <form aria-label="Site search" onsubmit="return false;" role="search">
             <div class="relative">
               <!-- Magnifying glass icon -->
               <svg
                 aria-hidden="true"
-                class="pointer-events-none absolute top-[18px] left-4 h-5 w-5 text-default opacity-70"
+                class="pointer-events-none absolute top-[18px] left-4 size-5 text-default opacity-70"
                 fill="none"
                 height="18"
                 viewBox="0 0 18 18"
@@ -2237,12 +2235,12 @@
               <!-- Clear button -->
               <button
                 aria-label="Clear search"
-                class="absolute top-6 right-24 hidden h-4 w-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
+                class="absolute top-6 right-24 hidden size-4 rounded-full bg-subtle text-subtle hover:text-default focus:outline-accent"
                 id="pagefind-clear-button"
                 type="button"
               >
                 <svg
-                  class="h-full w-full"
+                  class="size-full"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2262,7 +2260,7 @@
           <div
             aria-atomic="true"
             aria-live="polite"
-            class="px-4 py-4 font-sans text-sm font-normal text-subtle empty:hidden"
+            class="p-4 font-sans text-sm font-normal text-subtle empty:hidden"
             id="pagefind-results-counter"
             role="status"
           ></div>
@@ -2270,13 +2268,13 @@
         <!-- Scrollable Results Area -->
         <div
           aria-label="Search results"
-          class="min-h-0 flex-1 overflow-y-auto overscroll-contain outline-offset-[-2px] focus:outline-accent"
+          class="min-h-0 flex-1 overflow-y-auto overscroll-contain -outline-offset-2 focus:outline-accent"
           id="pagefind-results-wrapper"
           role="region"
         >
           <div id="pagefind-results"></div>
           <!-- Load More Button -->
-          <div class="hidden px-4 py-4" id="pagefind-load-more-wrapper">
+          <div class="hidden p-4" id="pagefind-load-more-wrapper">
             <button
               aria-controls="pagefind-results"
               class="mx-auto block w-full max-w-button cursor-pointer bg-canvas py-5 text-center font-sans text-xs font-bold tracking-wide uppercase shadow-all hover:bg-footer hover:text-inverse"
@@ -2288,7 +2286,7 @@
           </div>
         </div>
         <div
-          class="px-4 py-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
+          class="p-4 font-sans text-sm font-light tracking-wide text-subtle tablet:px-6 laptop:block laptop:px-8"
         >
           <kbd class="rounded-md bg-default p-1 font-sans text-sm text-subtle"
             >Tab</kbd
