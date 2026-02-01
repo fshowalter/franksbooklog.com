@@ -10,7 +10,6 @@
   "project": ["**/*", "!src/**/__mocks__/**"],
   "ignoreDependencies": [
     "@prettier/plugin-xml",
-    "@anthropic-ai/claude-code",
     "@vitest/coverage-v8",
     "babel-plugin-react-compiler"
   ]
