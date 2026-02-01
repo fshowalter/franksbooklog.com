@@ -34,9 +34,9 @@ jobs:
         uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5
         with:
           path: node_modules/.astro
-          key: ${{ runner.os }}-astro-cache-v2-${{ github.run_id }}
+          key: ${{ npm list astro | grep astro@ }}-astro-cache-v2-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-astro-cache-v2-
+            ${{ npm list astro | grep astro@ }}-astro-cache-v2-
 
       - name: install dependencies
         run: npm install
