@@ -32,7 +32,7 @@ jobs:
       - name: Get @astro version
         id: get-astro-version
         run: |
-          astro_version="${cat package.json | jq '.dependencies.astro'}" 
+          astro_version="$(cat package.json | jq '.dependencies.astro')" 
           echo "@astro version: $astro_version"
           echo "astro_version=$astro_version" >> "$GITHUB_OUTPUT"
         shell: bash
