@@ -32,8 +32,9 @@ jobs:
       - name: Get @astro version
         id: get-astro-version
         run: |
-          cat package.json | jq '.dependencies.astro' >> $GITHUB_OUTPUT
-          echo "astro-version=$(cat package.json | jq '.dependencies.astro')" >> $GITHUB_OUTPUT
+          astro_version="${cat package.json | jq '.dependencies.astro'}" 
+          echo "@astro version: $astro_version"
+          echo "astro_version=$astro_version" >> "$GITHUB_OUTPUT"
         shell: bash
 
       - name: get astro cache
@@ -41,9 +42,9 @@ jobs:
         uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5
         with:
           path: node_modules/.astro
-          key: ${{ steps.get-astro-version.outputs.astro-version }}-astro-cache-v2-${{ github.run_id }}
+          key: ${{ steps.get-astro-version.outputs.astro_version }}-astro-cache-v2-${{ github.run_id }}
           restore-keys: |
-            ${{ steps.get-astro-version.outputs.astro-version }}-astro-cache-v2-
+            ${{ steps.get-astro-version.outputs.astro_version }}-astro-cache-v2-
 
       - name: install dependencies
         run: npm install
