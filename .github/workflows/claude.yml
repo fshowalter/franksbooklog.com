@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Claude Code
         id: claude
-        uses: anthropics/claude-code-action@beta
+        uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
 
@@ -41,25 +41,27 @@ jobs:
           additional_permissions: |
             actions: read
 
-          # Optional: Specify model (defaults to Claude Sonnet 4, uncomment for Claude Opus 4)
-          # model: "claude-opus-4-20250514"
-
           # Optional: Customize the trigger phrase (default: @claude)
           # trigger_phrase: "/claude"
 
           # Optional: Trigger when specific user is assigned to an issue
           # assignee_trigger: "claude-bot"
 
-          # Allow Claude to run specific commands based on CLAUDE.md requirements
-          allowed_tools: "Bash(npm run test -- --max-workers=2),Bash(npm run lint),Bash(npm run lint:fix),Bash(npm run check),Bash(npm run format),Bash(npm run format:fix),Bash(npm run knip)"
+          # Claude arguments for model and tool configuration
+          claude_args: |
+            --allowedTools Bash(npm run test -- --max-workers=2),Bash(npm run lint),Bash(npm run lint:fix),Bash(npm run check),Bash(npm run format),Bash(npm run format:fix),Bash(npm run knip)
+            --system-prompt "Follow the instructions in CLAUDE.md for this project. Always use max-workers=2 when running tests to prevent memory issues. Prefer editing existing files over creating new ones. Never create documentation files unless explicitly requested."
 
-          # Add custom instructions for Claude to customize its behavior for your project
-          custom_instructions: |
-            Follow the instructions in CLAUDE.md for this project.
-            Always use max-workers=2 when running tests to prevent memory issues.
-            Prefer editing existing files over creating new ones.
-            Never create documentation files unless explicitly requested.
+          # Optional: Specify model (defaults to Claude Sonnet 4.5, uncomment for Claude Opus 4.5)
+          # claude_args: |
+          #   --model claude-opus-4-5-20251101
+          #   --allowedTools Bash(npm run test -- --max-workers=2),Bash(npm run lint),Bash(npm run lint:fix),Bash(npm run check),Bash(npm run format),Bash(npm run format:fix),Bash(npm run knip)
+          #   --system-prompt "Follow the instructions in CLAUDE.md for this project. Always use max-workers=2 when running tests to prevent memory issues. Prefer editing existing files over creating new ones. Never create documentation files unless explicitly requested."
 
           # Optional: Custom environment variables for Claude
-          # claude_env: |
-          #   NODE_ENV: test
+          # settings: |
+          #   {
+          #     "env": {
+          #       "NODE_ENV": "test"
+          #     }
+          #   }
