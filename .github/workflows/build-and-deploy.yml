@@ -56,16 +56,8 @@ jobs:
           restore-keys: |
             content-cache-v1-
 
-        id: content-cache-build
-        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5
-        with:
-          path: .cache
-          key: content-cache-v1-${{ github.run_id }}
-          restore-keys: |
-            content-cache-v1-
-
       - name: get content cache (main)
-        id: content-cache-build
+        if: github.event_name == 'push'
         uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5
         with:
           path: .cache
