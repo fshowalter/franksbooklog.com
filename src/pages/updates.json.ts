@@ -10,6 +10,7 @@ const gradeToStars: Record<string, number> = {
   A: 5,
   "A+": 5,
   "A-": 4.5,
+  Abandoned: 0,
   B: 4,
   "B+": 4,
   "B-": 3.5,
@@ -21,7 +22,6 @@ const gradeToStars: Record<string, number> = {
   "D-": 1.5,
   F: 1,
   "F+": 1,
-  "F-": 0.5,
 };
 
 /**
