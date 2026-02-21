@@ -193,7 +193,7 @@ function Deck({
     <p
       className={`
         mt-1 font-sans text-base
-        laptop:my-4 laptop:text-xl
+        tablet:mt-1 laptop:text-xl
         ${shadow ? `[text-shadow:1px_1px_2px_black]` : ""}
         ${center ? `text-center` : ""}
       `}
