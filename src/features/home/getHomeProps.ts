@@ -1,5 +1,7 @@
+import type { ReviewData, ReviewedWorkData } from "~/content.config";
+
 import { getFluidCoverImageProps } from "~/api/covers";
-import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard";
 
 import type { HomeProps } from "./Home";
@@ -9,26 +11,27 @@ import type { HomeProps } from "./Home";
  * Fetches the most recent reviews, processes their excerpts, and prepares
  * optimized cover images and backdrop for display.
  *
+ * @param works - All reviewed work data from the reviewedWorks collection
+ * @param reviews - All review data from the reviews collection
  * @returns Promise resolving to Home page props with recent reviews and images
  */
-export async function getHomeProps(): Promise<HomeProps> {
-  const works = await mostRecentReviews(12);
-
-  const reviews = await Promise.all(
-    works.map(async (review) => {
-      return await loadExcerptHtml(review);
-    }),
-  );
+export async function getHomeProps(
+  works: ReviewedWorkData[],
+  reviews: ReviewData[],
+): Promise<HomeProps> {
+  const { reviews: allReviewsList } = allReviews(works, reviews);
+  const recentReviews = mostRecentReviews(allReviewsList, 12);
 
   return {
     values: await Promise.all(
-      reviews.map(async (review) => {
+      recentReviews.map(async (review) => {
         return {
           ...review,
           coverImageProps: await getFluidCoverImageProps(
             review,
             ReviewCardCoverImageConfig,
           ),
+          excerpt: loadExcerptHtml(review),
         };
       }),
     ),

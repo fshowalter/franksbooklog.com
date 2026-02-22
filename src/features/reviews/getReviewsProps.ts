@@ -1,3 +1,5 @@
+import type { ReviewData, ReviewedWorkData } from "~/content.config";
+
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
@@ -10,18 +12,27 @@ import type { ReviewsProps, ReviewsValue } from "./Reviews";
  * Fetches all reviews with metadata, sorts by author name, and prepares
  * optimized cover images and backdrop for the reviews listing page.
  *
+ * @param works - All reviewed work data from the reviewedWorks collection
+ * @param reviews - All review data from the reviews collection
  * @returns Promise resolving to Reviews page props with all review data and filtering metadata
  */
-export async function getReviewsProps(): Promise<ReviewsProps> {
-  const { distinctKinds, distinctReviewYears, distinctWorkYears, reviews } =
-    await allReviews();
+export async function getReviewsProps(
+  works: ReviewedWorkData[],
+  reviews: ReviewData[],
+): Promise<ReviewsProps> {
+  const {
+    distinctKinds,
+    distinctReviewYears,
+    distinctWorkYears,
+    reviews: allReviewsList,
+  } = allReviews(works, reviews);
 
-  reviews.sort((a, b) =>
+  allReviewsList.sort((a, b) =>
     a.authors[0].sortName.localeCompare(b.authors[0].sortName),
   );
 
   const values = await Promise.all(
-    reviews.map(async (review) => {
+    allReviewsList.map(async (review) => {
       const value: ReviewsValue = {
         authors: review.authors.map((author) => {
           const authorValue: ReviewsValue["authors"][number] = {

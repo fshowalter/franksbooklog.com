@@ -236,3 +236,66 @@
 - **Square bracket directories require Python for deletion** — `rm` and bash glob patterns treat `[slug]` as a glob character class; use the Bash agent with full absolute paths or delegate to a Task agent
 
 ---
+
+## 2026-02-22 - Stage 6: Migrate `reviews.ts`
+
+### What was implemented
+- Updated `src/api/reviews.ts` to pure synchronous functions:
+  - `Review = ReviewData & ReviewedWorkData & {}` — merged type; join key is `r.work_slug.id === work.slug`
+  - `allReviews(works, reviews)` — merges two collections, extracts distinct kinds/years; sync
+  - `loadContent(review, readings, reviewedWorks)` — applies `linkReviewedWorks` to pre-computed intermediate HTML and reading notes; matches `ReadingData` by `work_slug.id === review.slug` only (not sequence)
+  - `loadExcerptHtml(review: ReviewData)` — returns `review.excerptHtml` directly (pre-computed in loader)
+  - `mostRecentReviews(reviews, limit)` — sorts by `reviewSequence` descending; sync
+  - `getContentPlainText(rawContent)` — unchanged
+  - Removed `ENABLE_CACHE`, `allReadingsMarkdown`, `allReviewedWorksJson`, `allReviewsMarkdown`, `rehypeRaw`, `rehypeStringify`, `remarkRehype`, `rootAsSpan`, `getHtml`; remark pipeline now only used for `getContentPlainText` and `excerptPlainText`
+- Created `src/api/__fixtures__/reviews.ts` — `ReviewData[]` fixtures with `intermediateHtml` containing `<span data-work-slug="">` elements
+- Created `src/api/__fixtures__/readings.ts` — `ReadingData[]` fixtures with `intermediateReadingNotesHtml` containing `<span data-work-slug="">` elements
+- Extended `src/api/__fixtures__/reviewedWorks.ts` — added `dark-crusade-by-karl-edward-wagner` and `carrie-by-stephen-king` entries
+- Created `src/api/reviews.spec.ts` — 18 pure function tests for `allReviews`, `loadContent`, `loadExcerptHtml`, `mostRecentReviews`, `getContentPlainText`
+- Updated `src/features/reviews/getReviewsProps.ts` — added `works: ReviewedWorkData[]` and `reviews: ReviewData[]` params
+- Updated `src/features/review/getReviewProps.ts` — added `readings: ReadingData[]`, `reviewedWorks`, `reviews` params; resolves `moreReviews` from `{ collection, id }[]` references
+- Updated `src/features/home/getHomeProps.ts` — added `works` and `reviews` params
+- Updated `src/components/article/getArticleProps.ts` — added `works` and `reviews` params (found during check, not in SPEC)
+- Updated `src/pages/reviews/index.astro`, `[slug]/index.astro`, `[slug]/og.jpg.ts`, `index.astro`, `feed.xml.ts`, `updates.json.ts`, `how-i-grade/index.astro` — all add `getCollection` calls and pass data
+- Deleted `src/api/data/reviewed-works-json.ts`, `reviews-markdown.ts`, `readings-markdown.ts`
+- Deleted snapshot tests: `src/pages/reviews/_index.spec.ts`, `_og.spec.ts`, `[slug]/_index.spec.ts`, `[slug]/_og.spec.ts` and their `__snapshots__/`/`__image_snapshots__/` directories
+- Updated 3 snapshots (`_index`, `_feed`, `_updates`) that diverged due to new content in collections
+
+### Files changed
+- `src/api/reviews.ts` (rewritten)
+- `src/api/__fixtures__/reviews.ts` (created)
+- `src/api/__fixtures__/readings.ts` (created)
+- `src/api/__fixtures__/reviewedWorks.ts` (extended)
+- `src/api/reviews.spec.ts` (created)
+- `src/features/reviews/getReviewsProps.ts` (updated)
+- `src/features/review/getReviewProps.ts` (updated)
+- `src/features/home/getHomeProps.ts` (updated)
+- `src/components/article/getArticleProps.ts` (updated)
+- `src/pages/reviews/index.astro` (updated)
+- `src/pages/reviews/[slug]/index.astro` (updated)
+- `src/pages/reviews/[slug]/og.jpg.ts` (updated)
+- `src/pages/index.astro` (updated)
+- `src/pages/feed.xml.ts` (updated)
+- `src/pages/updates.json.ts` (updated)
+- `src/pages/how-i-grade/index.astro` (updated)
+- `src/api/data/reviewed-works-json.ts` (deleted)
+- `src/api/data/reviews-markdown.ts` (deleted)
+- `src/api/data/readings-markdown.ts` (deleted)
+- Reviews snapshot and image snapshot directories deleted
+- 3 page snapshots updated (`_index`, `_feed`, `_updates`)
+- `PLAN.md` (Stage 6 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- None
+
+### Learnings for future iterations:
+- **`moreReviews` is `{ collection, id }[]` not full objects** — after `parseData()`, the reference fields become reference objects; resolve them via `.find()` against the passed-in `reviewedWorks` and `reviews` arrays; do NOT spread the reference objects directly
+- **Reading matching by `work_slug.id` only** — `ReadingData.sequence` (per-work reading number: 1, 2, 3) does NOT equal `ReviewedWorkData.readings[i].readingSequence` (global sequence number); match by slug only to preserve old behavioral parity
+- **`Review = ReviewData & ReviewedWorkData & {}`** — the type assertion `as Review` is needed because TypeScript cannot verify the spread is exhaustive; the `& {}` suffix is required to avoid type narrowing issues
+- **`getArticleProps` also uses `mostRecentReviews`** — not mentioned in SPEC but found during `npm run check`; also needed to update `updates.json.ts` and `how-i-grade/index.astro`
+- **`loadExcerptHtml` return type changed from `Promise<ReviewWithExcerpt>` to `string`** — callers like `feed.xml.ts` and `updates.json.ts` used `reviewWithExcerptHtml.excerpt`; now just use the returned string directly
+- **Snapshot tests may diverge when content collections have newer data** — old snapshots were based on the previous data layer which may have been stale; after migration, snapshot tests reflect actual current content; `test:update` is the correct response
+- **`perfectionist/sort-intersection-types`** sorts case-sensitively: `ReviewData` (capital D) comes before `ReviewedWorkData` (capital W > lowercase d... wait, D < W); and `Review` type uses uppercase letters throughout so case-sensitive alphabetical puts `ReviewData` before `ReviewedWorkData` correctly
+
+---

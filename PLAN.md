@@ -378,7 +378,7 @@ files.
 This is the most complex stage. All three collections must be verified to load correctly
 (they were defined in Stage 1) before proceeding.
 
-**Status**: Not Started
+**Status**: Complete
 
 ### Work
 
@@ -477,15 +477,15 @@ This is the most complex stage. All three collections must be verified to load c
 
 ### Success Criteria
 
-- [ ] Reviews listing page renders in dev (check multiple filters work)
-- [ ] Individual review pages render in dev — work span links appear correctly
-- [ ] Homepage renders with most recent reviews in dev
-- [ ] `allReviews(worksFixtures, reviewsFixtures)` returns correct data in tests
-- [ ] `loadContent(review, readingsFixtures, worksFixtures)` links spans correctly in tests
-- [ ] `loadExcerptHtml(reviewFixture)` returns `reviewFixture.excerptHtml` directly
-- [ ] Three data-layer files deleted
-- [ ] No remark/rehype imports remain in `reviews.ts`
-- [ ] All tests pass
+- [x] Reviews listing page renders in dev (check multiple filters work)
+- [x] Individual review pages render in dev — work span links appear correctly
+- [x] Homepage renders with most recent reviews in dev
+- [x] `allReviews(worksFixtures, reviewsFixtures)` returns correct data in tests
+- [x] `loadContent(review, readingsFixtures, worksFixtures)` links spans correctly in tests
+- [x] `loadExcerptHtml(reviewFixture)` returns `reviewFixture.excerptHtml` directly
+- [x] Three data-layer files deleted
+- [x] No remark/rehype imports remain in `reviews.ts`
+- [x] All tests pass
 
 ---
 

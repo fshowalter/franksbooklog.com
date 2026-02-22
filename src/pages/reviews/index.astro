@@ -1,11 +1,17 @@
 ---
+import { getCollection } from "astro:content";
+
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
 import { Layout } from "~/components/layout/Layout";
 import { getReviewsProps } from "~/features/reviews/getReviewsProps";
 import { Reviews } from "~/features/reviews/Reviews";
 
-const reviewsProps = await getReviewsProps();
+const worksEntries = await getCollection("reviewedWorks");
+const works = worksEntries.map((e) => e.data);
+const reviewsEntries = await getCollection("reviews");
+const reviews = reviewsEntries.map((e) => e.data);
+const reviewsProps = await getReviewsProps(works, reviews);
 const backdropImageProps = await getLayoutBackdropImageProps("reviews");
 
 const deck = `"You were always the best of them, Lloyd."`;
