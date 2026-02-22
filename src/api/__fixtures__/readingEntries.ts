@@ -6,7 +6,11 @@ import type { ReadingEntryData } from "~/content.config";
 export const readingEntryFixtures: ReadingEntryData[] = [
   {
     authors: [
-      { name: "Frank Herbert", slug: "frank-herbert", sortName: "Herbert, Frank" },
+      {
+        name: "Frank Herbert",
+        slug: "frank-herbert",
+        sortName: "Herbert, Frank",
+      },
     ],
     edition: "Mass Market Paperback",
     includedInSlugs: [],
@@ -21,7 +25,11 @@ export const readingEntryFixtures: ReadingEntryData[] = [
   },
   {
     authors: [
-      { name: "Frank Herbert", slug: "frank-herbert", sortName: "Herbert, Frank" },
+      {
+        name: "Frank Herbert",
+        slug: "frank-herbert",
+        sortName: "Herbert, Frank",
+      },
     ],
     edition: "Paperback",
     includedInSlugs: [],
@@ -36,7 +44,11 @@ export const readingEntryFixtures: ReadingEntryData[] = [
   },
   {
     authors: [
-      { name: "Philip K. Dick", slug: "philip-k-dick", sortName: "Dick, Philip K." },
+      {
+        name: "Philip K. Dick",
+        slug: "philip-k-dick",
+        sortName: "Dick, Philip K.",
+      },
     ],
     edition: "Trade Paperback",
     includedInSlugs: [],
