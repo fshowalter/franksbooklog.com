@@ -1,5 +1,9 @@
 import type { Review } from "~/api/reviews";
-import type { ReadingData, ReviewData, ReviewedWorkData } from "~/content.config";
+import type {
+  ReadingData,
+  ReviewData,
+  ReviewedWorkData,
+} from "~/content.config";
 
 import {
   getFixedCoverImageProps,

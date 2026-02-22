@@ -299,3 +299,62 @@
 - **`perfectionist/sort-intersection-types`** sorts case-sensitively: `ReviewData` (capital D) comes before `ReviewedWorkData` (capital W > lowercase d... wait, D < W); and `Review` type uses uppercase letters throughout so case-sensitive alphabetical puts `ReviewData` before `ReviewedWorkData` correctly
 
 ---
+
+## 2026-02-22 - Stage 7: Cleanup
+
+### What was implemented
+- Deleted `src/api/data/` directory entirely (including `utils/`, `fixtures/`, schema files):
+  - `src/api/data/utils/getContentPath.ts` (unused)
+  - `src/api/data/utils/__mocks__/getContentPath.ts` (mock for deleted file)
+  - `src/api/data/utils/nullable.ts` (unused — no external imports)
+  - `src/api/data/MostReadAuthorSchema.ts` (after migrating `MostReadAuthor` type usage)
+  - `src/api/data/WorkKindSchema.ts` (unused — content.config.ts defined its own inline version)
+  - `src/api/data/fixtures/` — orphaned test fixture data (no importers found)
+- Deleted `setupTestCache.ts` (root) — was only referenced in vitest.config.ts setupFiles; all API functions are now pure and need no filesystem mock
+- Deleted `src/api/utils/markdown/getHtml.ts` — orphaned, not imported by anything in the entry graph (content.config.ts defines its own inline remark pipeline)
+- Updated `src/features/stats/getStatsProps.ts`:
+  - Removed `import type { MostReadAuthor } from "~/api/data/MostReadAuthorSchema"`
+  - Added local type alias: `type MostReadAuthor = AlltimeStatData["mostReadAuthors"][number]`
+- Updated `src/api/reviews.ts`: removed unused `ReviewWithExcerpt` exported type
+- Updated `src/utils/cache.ts`: removed `export` from `ENABLE_CACHE` (unused external export)
+- Updated `vitest.config.ts`:
+  - Removed `coverage.exclude` entry for `getContentPath.ts`
+  - Removed `setupTestCache.ts` from `setupFiles` in `api-node`, `pages-node`, `utils-node` projects
+- Updated `astro.config.ts`:
+  - Removed `HmrContext` import from vite
+  - Removed `contentHmr()` function definition
+  - Removed `contentHmr()` from plugins array — Astro content collection loaders register their own file watchers
+- Updated `knip.json`:
+  - Added `"zod"` to `ignoreDependencies` (zod is a transitive dep via `astro:content`, not directly imported)
+- Updated `package.json`: removed `memfs` and `unionfs` devDependencies (only used by deleted `setupTestCache.ts`)
+- Ran `npm install` to update lockfile
+
+### Files changed
+- `src/features/stats/getStatsProps.ts` (updated)
+- `src/api/reviews.ts` (updated)
+- `src/utils/cache.ts` (updated)
+- `src/api/data/` directory (deleted entirely)
+- `setupTestCache.ts` (deleted)
+- `src/api/utils/markdown/getHtml.ts` (deleted)
+- `vitest.config.ts` (updated)
+- `astro.config.ts` (updated)
+- `knip.json` (updated)
+- `package.json` (updated)
+- `package-lock.json` (updated)
+- `PLAN.md` (Stage 7 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- `npm run lint:spelling` — requires user permission (tool approval required); not run. No new words were introduced in this stage so spelling should be unaffected.
+
+### Learnings for future iterations:
+- **`content.config.ts` uses `z` from `"astro:content"` not directly from `"zod"`** — Astro re-exports Zod as part of its content layer API; any direct `zod` package dependency becomes transitive and knip will flag it as unused; add to `ignoreDependencies`
+- **Deleted schema files may leave `zod` as a direct dep** — `MostReadAuthorSchema.ts`, `WorkKindSchema.ts`, `nullable.ts` each imported `z` from `"zod"` directly; deleting them makes `zod` appear unused to knip
+- **`ENABLE_CACHE` export is dead after setupTestCache deletion** — `setupTestCache.ts` was the only external consumer of `ENABLE_CACHE`; removing the export (not the const) satisfies knip
+- **`ReviewWithExcerpt` type became dead after Stage 6** — `loadExcerptHtml` was changed from returning `Promise<ReviewWithExcerpt>` to `string`; the type became unexported dead code
+- **`getHtml.ts` is orphaned** — `content.config.ts` builds its own inline remark pipeline and never imports `getHtml`; even though it's in the same utils/markdown directory as files that ARE imported, it was left behind in Stage 6; always run `knip` to catch these
+- **`MostReadAuthor` type can be derived**: `type MostReadAuthor = AlltimeStatData["mostReadAuthors"][number]` avoids a separate import from the deleted schema file; prefer this pattern over adding new exports to `content.config.ts`
+- **`knip.json` configuration hints vs errors**: "Configuration hints" do NOT cause a non-zero exit code; only "Unused files", "Unused dependencies", "Unused exports" etc. cause failures
+- **fixtures/ in src/api/data/ are orphaned data copies** — `src/api/data/fixtures/` contained ~200 fixture files (copies of production content data) used by old snapshot tests; safe to delete once no grep hits for imports are found
+
+---
