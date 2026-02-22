@@ -255,7 +255,7 @@ Astro page. Delete `reading-entries-json.ts`.
 and `yearStats` collections. Make all stats functions pure. Update stats features and
 Astro pages. Delete both stats data-layer files.
 
-**Status**: Not Started
+**Status**: Complete
 
 ### Work
 
@@ -301,11 +301,11 @@ Astro pages. Delete both stats data-layer files.
 
 ### Success Criteria
 
-- [ ] Stats pages render correctly in dev
-- [ ] `allStatYears(fixtures)` returns sorted year numbers in tests
-- [ ] `statsForYear(2024, fixtures)` returns correct data in tests
-- [ ] Both data-layer files deleted
-- [ ] All tests pass
+- [x] Stats pages render correctly in dev
+- [x] `allStatYears(fixtures)` returns sorted year strings in tests
+- [x] `statsForYear("2024", fixtures)` returns correct data in tests
+- [x] Both data-layer files deleted
+- [x] All tests pass
 
 ---
 

@@ -62,8 +62,7 @@ export function allReadingEntries(entries: ReadingEntryData[]): ReadingEntries {
     distinctReadingYears: [...distinctReadingYears].toSorted(),
     distinctWorkYears: [...distinctWorkYears].toSorted(),
     readingEntries: entries,
-    shortStoryCount: works.filter((work) => work.kind === "Short Story")
-      .length,
+    shortStoryCount: works.filter((work) => work.kind === "Short Story").length,
     workCount: works.length,
   };
 }

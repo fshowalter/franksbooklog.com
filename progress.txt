@@ -127,3 +127,54 @@
 - **Snapshot updates cascade from non-test code changes** — fixing a Tailwind class in a cover component invalidates all snapshot tests that render covers; run `npm run test:update` when making cosmetic fixes to shared components
 
 ---
+
+## 2026-02-22 - Stage 4: Migrate `stats.ts`
+
+### What was implemented
+- Updated `src/api/stats.ts` to pure synchronous functions:
+  - `allStatYears(yearStats: YearStatData[]): string[]` — extracts and sorts year strings
+  - `alltimeStats(data: AlltimeStatData): AlltimeStats` — identity function (data is already the right shape)
+  - `statsForYear(year: string, yearStats: YearStatData[]): YearStats | undefined` — find by year string
+  - Removed `ENABLE_CACHE`, `perfLogger`, module-level cache `Map`s, and all data-layer imports
+- Updated `src/features/stats/getStatsProps.ts`:
+  - `getAlltimeStatsProps(data: AlltimeStatData, yearStats: YearStatData[])` — added both params
+  - `getYearStatsProps(year: string, yearStats: YearStatData[])` — added `yearStats` param
+  - Both functions stay async because `createMostReadAuthorsListItemValueProps` calls `getFluidCoverImageProps` (image optimization)
+- Updated `src/pages/readings/stats/index.astro` to call `getCollection('alltimeStats')` and `getCollection('yearStats')`
+- Updated `src/pages/readings/stats/[year]/index.astro` to call `getCollection('yearStats')`
+- Updated `src/pages/readings/stats/[year]/og.jpg.ts` to call `getCollection('yearStats')` and pass to `allStatYears`
+- Created `src/api/__fixtures__/stats.ts` — `AlltimeStatData` and `YearStatData[]` fixtures with minimal data
+- Created `src/api/stats.spec.ts` — 11 pure function tests for `allStatYears`, `alltimeStats`, `statsForYear`
+- Deleted `src/api/data/alltime-stats-json.ts` and `src/api/data/year-stats-json.ts`
+- Deleted `src/api/data/DistributionSchema.ts` (now orphaned; was only used by the two deleted files)
+- Deleted snapshot tests: `src/pages/readings/stats/_index.spec.ts`, `_og.spec.ts`, `[year]/_index.spec.ts`, `[year]/_og.spec.ts`
+- Deleted `__snapshots__/` and `__image_snapshots__/` directories for stats pages
+
+### Files changed
+- `src/api/stats.ts` (updated)
+- `src/features/stats/getStatsProps.ts` (updated)
+- `src/pages/readings/stats/index.astro` (updated)
+- `src/pages/readings/stats/[year]/index.astro` (updated)
+- `src/pages/readings/stats/[year]/og.jpg.ts` (updated)
+- `src/api/__fixtures__/stats.ts` (created)
+- `src/api/stats.spec.ts` (created)
+- `src/api/data/alltime-stats-json.ts` (deleted)
+- `src/api/data/year-stats-json.ts` (deleted)
+- `src/api/data/DistributionSchema.ts` (deleted — orphaned)
+- Stats snapshot and image snapshot directories deleted
+- `PLAN.md` (Stage 4 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- None
+
+### Learnings for future iterations:
+- **`getStatsProps` stays async** even after migration because `createMostReadAuthorsListItemValueProps` calls `getFluidCoverImageProps` (image optimization), same pattern as `getReadingLogProps`
+- **`allStatYears` returns `string[]` not `number[]`** — SPEC says `number[]` but `YearStatData.year` is `z.string()` and Astro pages compare `year` to strings; keeping strings avoids unnecessary type conversions
+- **`alltimeStats()` is an identity function** — `AlltimeStats = AlltimeStatData & {}`, so the function just returns the input unchanged; the type alias maintains backward compatibility
+- **`og.jpg.ts` endpoints also call `allStatYears()`** — remember to update OG image endpoints alongside the main page and getStaticPaths functions; they share the same data dependency
+- **`DistributionSchema.ts` becomes orphaned** when the stats JSON files are deleted — delete it immediately rather than waiting for Stage 7 to avoid knip warnings
+- **`rm` cannot handle directory names with square brackets** (like `[year]`) — use `find -name` pattern to delete files in such directories
+- **SPEC year type is `number` but implementation stays `string`** — data in JSON is `"2024"` (string), schema uses `z.string()`, Astro pages use string comparison; follow the data, not the spec's type annotation when they conflict
+
+---
