@@ -76,6 +76,83 @@ Eight collections replace the eight data-layer files. All are defined in
 `frankshowalter.com` migration). Loaders must call `ctx.parseData()` before `store.set()`
 so Zod transforms (e.g. `z.coerce.date()`) run at load time.
 
+### Collection References
+
+Several fields use Astro's `reference()` function instead of embedding full objects. This
+reduces the content store cache size by storing only IDs where the full data already lives
+in another collection. The source JSON files embed full objects (e.g. an author file
+embeds complete work objects in its `reviewedWorks` array), so loaders must extract the
+slugs before calling `ctx.parseData()`.
+
+| Field | Reference target | Why |
+|-------|-----------------|-----|
+| `authors.reviewedWorks[]` | `reference('reviewedWorks')` | Each author file embeds full work objects that duplicate the `reviewedWorks` collection |
+| `reviewedWorks.moreReviews[]` | `reference('reviewedWorks')` | Each work embeds full work objects for related reviews |
+| `reviewedWorks.moreByAuthors[].reviewedWorks[]` | `reference('reviewedWorks')` | Full work objects nested inside each "more by author" entry |
+| `reviews.work_slug` | `reference('reviewedWorks')` | Build-time validation that the referenced work exists |
+| `readings.work_slug` | `reference('reviewedWorks')` | Build-time validation that the referenced work exists |
+
+Fields **not** using `reference()`:
+- `reviewedWorks.authors[]` — small objects (4 fields), not worth the API churn
+- `readingEntries.authors[]` — same
+- `reviewedWorks.includedWorks[]` — some entries have `reviewed: false` and won't exist
+  in the `reviewedWorks` collection; a required reference would fail validation
+- Stats `mostReadAuthors[]` — denormalized aggregates, not normalized entries
+
+After `ctx.parseData()`, reference fields become `{ collection: string; id: string }`
+objects. API functions resolve them by looking up the `id` against the typed array passed
+as a parameter — no `getEntry()` calls needed, consistent with the pure function model.
+
+#### Loader transformation pattern for referenced fields
+
+The source data embeds full objects; loaders must reduce them to IDs before `parseData()`:
+
+```typescript
+// authors loader — extract work slugs from embedded work objects
+const data = await ctx.parseData({
+  id: author.slug,
+  data: {
+    ...author,
+    reviewedWorks: author.reviewedWorks.map((w) => w.slug),
+  },
+});
+
+// reviewedWorks loader — extract slugs from embedded MoreReview objects
+const data = await ctx.parseData({
+  id: work.slug,
+  data: {
+    ...work,
+    moreByAuthors: work.moreByAuthors.map((a) => ({
+      ...a,
+      reviewedWorks: a.reviewedWorks.map((w) => w.slug),
+    })),
+    moreReviews: work.moreReviews.map((r) => r.slug),
+  },
+});
+
+// reviews / readings loaders — work_slug is already a string; pass directly
+```
+
+#### API function resolution pattern
+
+API functions resolve references by looking up IDs against the `ReviewedWorkData[]` array
+already passed as a parameter:
+
+```typescript
+// getAuthorDetails — resolve author.reviewedWorks references
+const authorWorks = author.reviewedWorks
+  .map((ref) => works.find((w) => w.slug === ref.id))
+  .filter(Boolean);
+
+// loadContent — resolve work.moreReviews references
+const moreReviews = review.moreReviews
+  .map((ref) => works.find((w) => w.slug === ref.id))
+  .filter(Boolean);
+```
+
+No new parameters are added to API functions beyond what the SPEC already defines —
+`works: ReviewedWorkData[]` is already present in the Stage 5/6 signatures.
+
 ### `authors`
 
 | Property | Value |
@@ -85,8 +162,8 @@ so Zod transforms (e.g. `z.coerce.date()`) run at load time.
 | ID       | Author slug (from JSON `slug` field) |
 | Replaces | `authors-json.ts` → `allAuthorsJson()` |
 
-Schema mirrors the existing `AuthorJson` Zod schema (name, sortName, slug, reviewedWorks
-array with nested work metadata).
+Schema: name, sortName, slug, `reviewedWorks: z.array(reference('reviewedWorks'))`.
+The loader maps the embedded work objects to slug strings before `ctx.parseData()`.
 
 ### `reviewedWorks`
 
@@ -97,8 +174,11 @@ array with nested work metadata).
 | ID       | Work slug |
 | Replaces | `reviewed-works-json.ts` → `allReviewedWorksJson()` |
 
-Schema mirrors `ReviewedWorkJson` (readings array with `z.coerce.date()` on date fields,
-authors, includedWorks, moreByAuthors, moreReviews).
+Schema mirrors `ReviewedWorkJson` with `z.coerce.date()` on reading date fields.
+`moreReviews` uses `z.array(reference('reviewedWorks'))`. `moreByAuthors` is an array of
+`{ name, slug, sortName, reviewedWorks: z.array(reference('reviewedWorks')) }` — the
+outer author metadata is small and embedded directly; only the inner work list uses
+references. `authors` and `includedWorks` remain embedded objects (see table above).
 
 ### `readingEntries`
 
@@ -110,7 +190,8 @@ authors, includedWorks, moreByAuthors, moreReviews).
 | Replaces | `reading-entries-json.ts` → `allReadingEntriesJson()` |
 
 Schema mirrors `ReadingEntryJson` (readingEntrySequence, slug, edition, kind, progress,
-reviewed, workYear, title, authors array).
+reviewed, workYear, title, authors array). No references — fields are either already
+scalar IDs or small embedded objects not worth the join overhead.
 
 ### `reviews`
 
@@ -121,10 +202,10 @@ reviewed, workYear, title, authors array).
 | ID       | Slug derived from filename (strip leading date prefix) |
 | Replaces | `reviews-markdown.ts` → `allReviewsMarkdown()` |
 
-Schema: frontmatter fields (work_slug, grade, date via `z.coerce.date()`, optional
-synopsis), `body` (raw markdown), `intermediateHtml` (remark/rehype output with
+Schema: `work_slug: reference('reviewedWorks')`, grade, `date: z.coerce.date()`, optional
+synopsis, `body` (raw markdown), `intermediateHtml` (remark/rehype output with
 `<span data-work-slug="">` spans still intact — `linkReviewedWorks` not yet applied),
-and `excerptHtml` (fully processed excerpt HTML — synposis or first paragraph, no
+and `excerptHtml` (fully processed excerpt HTML — synopsis or first paragraph, no
 `linkReviewedWorks` needed for excerpts). See _Markdown Processing Strategy_ below.
 
 ### `readings`
@@ -136,8 +217,8 @@ and `excerptHtml` (fully processed excerpt HTML — synposis or first paragraph,
 | ID       | Slug derived from filename |
 | Replaces | `readings-markdown.ts` → `allReadingsMarkdown()` |
 
-Schema: frontmatter fields (work_slug, sequence, edition, nullable edition_notes, timeline
-array of `{date, progress}`), `body` (raw markdown reading notes),
+Schema: `work_slug: reference('reviewedWorks')`, sequence, edition, nullable
+edition_notes, timeline array of `{date, progress}`, `body` (raw markdown reading notes),
 `intermediateReadingNotesHtml` (body processed through remark/rehype, spans intact), and
 `intermediateEditionNotesHtml` (edition_notes processed as inline span HTML, spans intact).
 See _Markdown Processing Strategy_ below.
@@ -152,7 +233,8 @@ See _Markdown Processing Strategy_ below.
 | Replaces | `pages-markdown.ts` → `allPagesMarkdown()` |
 
 Schema: frontmatter fields (slug, title), `body` (raw markdown), and `intermediateHtml`
-(remark/rehype output with `<span data-work-slug="">` spans still intact).
+(remark/rehype output with `<span data-work-slug="">` spans still intact). No references
+— pages don't link to other collections.
 
 ---
 
@@ -524,6 +606,8 @@ export const reviewFixtures: ReviewData[] = [
 | `pages` callers now also need `reviewedWorks` collection | Thread `reviewedWorks` through `getPage` callers; small scope expansion |
 | `contentHmr()` removal breaks dev HMR | Verify Astro's watcher registration in loaders before removing plugin |
 | Loader lint rules (`perfectionist/sort-objects`, `unbound-method`) | Follow lessons learned: call via `ctx.method()`, keep object keys sorted |
+| `reference()` IDs must exist in target collection at build time | Any slug in `moreReviews`, `moreByAuthors[].reviewedWorks`, or `authors.reviewedWorks` that doesn't match a `reviewedWorks` entry causes a build error; verify data integrity before Stage 1 |
+| `includedWorks` entries may have `reviewed: false` | Do NOT use `reference('reviewedWorks')` for `includedWorks` — unreferenced slugs will fail validation |
 
 ---
 
@@ -553,6 +637,30 @@ store.set({ data, digest: ctx.generateDigest(item), id: item.slug });
 body) and use it to **skip re-processing** if unchanged. See the full pattern in the
 _Markdown Processing Strategy_ section above. Digesting raw content means remark pipeline
 changes require a manual `rm .astro/data-store.json` — document this for future maintainers.
+
+### Strip embedded objects to IDs before `parseData()` for reference fields
+
+Source JSON files embed full objects where the schema uses `reference()`. The loader must
+reduce these to slug strings before calling `ctx.parseData()` — otherwise Zod will reject
+the unexpected shape:
+
+```typescript
+// WRONG — passes full embedded object to a reference() field
+await ctx.parseData({ id, data: { ...work } }); // work.moreReviews is [{slug,title,...}]
+
+// CORRECT — reduce to IDs first
+await ctx.parseData({
+  id,
+  data: {
+    ...work,
+    moreByAuthors: work.moreByAuthors.map((a) => ({
+      ...a,
+      reviewedWorks: a.reviewedWorks.map((w) => w.slug),
+    })),
+    moreReviews: work.moreReviews.map((r) => r.slug),
+  },
+});
+```
 
 ### Selective removal over `store.clear()`
 
