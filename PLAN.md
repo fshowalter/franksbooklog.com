@@ -26,7 +26,40 @@ API or feature code.
    - `yearStats` — custom loader: glob `/content/data/year-stats/*.json`
 
 2. For **JSON-only collections** (`authors`, `reviewedWorks`, `readingEntries`,
-   `alltimeStats`, `yearStats`), implement the standard pattern:
+   `alltimeStats`, `yearStats`), implement the standard pattern, with the collection
+   reference transformations applied before `parseData()`:
+
+   **`authors` loader** — extract work slugs from embedded objects:
+   ```typescript
+   const data = await ctx.parseData({
+     id: author.slug,
+     data: {
+       ...author,
+       reviewedWorks: author.reviewedWorks.map((w) => w.slug),
+     },
+   });
+   store.set({ data, digest: ctx.generateDigest(author), id: author.slug });
+   ```
+
+   **`reviewedWorks` loader** — extract slugs from `moreReviews` and
+   `moreByAuthors[].reviewedWorks`:
+   ```typescript
+   const data = await ctx.parseData({
+     id: work.slug,
+     data: {
+       ...work,
+       moreByAuthors: work.moreByAuthors.map((a) => ({
+         ...a,
+         reviewedWorks: a.reviewedWorks.map((w) => w.slug),
+       })),
+       moreReviews: work.moreReviews.map((r) => r.slug),
+     },
+   });
+   store.set({ data, digest: ctx.generateDigest(work), id: work.slug });
+   ```
+
+   **`readingEntries`, `alltimeStats`, `yearStats` loaders** — no reference fields;
+   use the plain pattern:
    ```typescript
    const data = await ctx.parseData({ data: item, id: item.slug });
    store.set({ data, digest: ctx.generateDigest(item), id: item.slug });
@@ -34,7 +67,9 @@ API or feature code.
 
    For **markdown collections** (`reviews`, `readings`, `pages`), use the two-phase
    approach — digest raw content to short-circuit processing, then store pre-computed
-   intermediate HTML (remark/rehype done; `linkReviewedWorks` NOT applied yet):
+   intermediate HTML (remark/rehype done; `linkReviewedWorks` NOT applied yet). The
+   `work_slug` field is already a plain string in frontmatter; `parseData()` handles
+   the `reference('reviewedWorks')` coercion automatically:
    ```typescript
    for (const { id, frontmatter, body } of markdownFiles) {
      const digest = ctx.generateDigest({ body, frontmatter });
@@ -74,8 +109,13 @@ API or feature code.
 - [ ] `npm run dev` starts without errors
 - [ ] `npm run build` completes without errors
 - [ ] `getCollection('authors')` returns all authors with correct types
+- [ ] `getCollection('authors')` entries have `reviewedWorks` as `{ collection, id }[]`
+  objects (not embedded work objects) — confirms reference transformation ran in the loader
 - [ ] `getCollection('reviewedWorks')` returns works with `Date` objects (not strings) on
   date fields — confirms `parseData()` is running
+- [ ] `getCollection('reviewedWorks')` entries have `moreReviews` as `{ collection, id }[]`
+  objects — confirms reference transformation ran in the loader
+- [ ] `getCollection('reviews')` entries have `work_slug` as a `{ collection, id }` object
 - [ ] `getCollection('reviews')` returns entries with `body`, `intermediateHtml`, and
   `excerptHtml` all populated — confirms markdown processing ran in the loader
 - [ ] `getCollection('reviews')` entries have `<span data-work-slug="">` elements in
@@ -544,3 +584,15 @@ on separate worktrees). Stage 6 must follow Stage 1 (collections already defined
 - Object literal keys in `content.config.ts` must be alphabetically sorted
   (`perfectionist/sort-objects` rule)
 - Fixture slugs must have matching cover asset files in `/content/assets/covers/`
+- **Strip embedded objects to ID strings before `ctx.parseData()` for `reference()` fields** —
+  the source JSON embeds full objects (e.g. `author.reviewedWorks` is an array of work
+  objects); the loader must map these to slug strings before passing to `parseData()`,
+  otherwise Zod rejects the unexpected shape
+- **`reference()` validates IDs at build time** — every slug passed to a `reference()` field
+  must exist in the target collection; data integrity issues (orphaned slugs) will cause
+  build errors; do NOT use `reference('reviewedWorks')` for `includedWorks` since some
+  entries are unreviewed
+- **API functions resolve references by ID lookup** — after `parseData()`, reference fields
+  are `{ collection, id }` objects; join against the typed array already passed as a
+  parameter (e.g. `works.find((w) => w.slug === ref.id)`); never call `getEntry()` from
+  API functions
