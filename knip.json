@@ -11,6 +11,7 @@
   "ignoreDependencies": [
     "@prettier/plugin-xml",
     "@vitest/coverage-v8",
-    "babel-plugin-react-compiler"
+    "babel-plugin-react-compiler",
+    "zod"
   ]
 }

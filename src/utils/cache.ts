@@ -21,7 +21,7 @@ type CacheConfig = {
  * - Enabled in test mode (MODE=test) to test cache behavior
  * - Enabled in production builds
  */
-export const ENABLE_CACHE = (() => {
+const ENABLE_CACHE = (() => {
   // Enable caching in test mode to test cache behavior
   if (import.meta.env.MODE === "test") {
     return true;

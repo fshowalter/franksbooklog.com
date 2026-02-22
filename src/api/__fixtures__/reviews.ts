@@ -13,7 +13,10 @@ export const reviewDataFixtures: ReviewData[] = [
     intermediateHtml:
       '<p>Good book. See also <span data-work-slug="linked-work">Linked Work</span>.</p>',
     synopsis: undefined,
-    work_slug: { collection: "reviewedWorks", id: "dark-crusade-by-karl-edward-wagner" },
+    work_slug: {
+      collection: "reviewedWorks",
+      id: "dark-crusade-by-karl-edward-wagner",
+    },
   },
   {
     body: "A gripping horror novel.",

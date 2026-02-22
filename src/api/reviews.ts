@@ -3,7 +3,11 @@ import remarkGfm from "remark-gfm";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
-import type { ReadingData, ReviewData, ReviewedWorkData } from "~/content.config";
+import type {
+  ReadingData,
+  ReviewData,
+  ReviewedWorkData,
+} from "~/content.config";
 
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
@@ -19,10 +23,6 @@ export type ReviewWithContent = Omit<Review, "readings"> & {
   content: string | undefined;
   excerptPlainText: string;
   readings: ReviewReading[];
-};
-
-export type ReviewWithExcerpt = Review & {
-  excerpt: string;
 };
 
 // ReviewReading combines the JSON reading session data (date, abandoned, etc.) with
@@ -100,9 +100,7 @@ export function loadContent(
   // reading sessions share the notes from the first matching ReadingData.
   const reviewReadings = review.readings
     .map((reading) => {
-      const readingData = readings.find(
-        (r) => r.work_slug.id === review.slug,
-      );
+      const readingData = readings.find((r) => r.work_slug.id === review.slug);
 
       if (!readingData) {
         throw new Error(`No reading data found for ${review.slug}`);

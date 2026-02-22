@@ -1,10 +1,11 @@
-import type { MostReadAuthor } from "~/api/data/MostReadAuthorSchema";
 import type { AlltimeStatData, YearStatData } from "~/content.config";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allStatYears, alltimeStats, statsForYear } from "~/api/stats";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";
+
+type MostReadAuthor = AlltimeStatData["mostReadAuthors"][number];
 
 import type { AlltimeStatsProps } from "./AlltimeStats";
 import type { MostReadAuthorsListItemValue } from "./MostReadAuthors";
