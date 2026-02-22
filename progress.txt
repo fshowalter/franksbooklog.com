@@ -178,3 +178,61 @@
 - **SPEC year type is `number` but implementation stays `string`** — data in JSON is `"2024"` (string), schema uses `z.string()`, Astro pages use string comparison; follow the data, not the spec's type annotation when they conflict
 
 ---
+
+## 2026-02-22 - Stage 5: Migrate `authors.ts`
+
+### What was implemented
+- Updated `src/api/authors.ts` to pure synchronous functions:
+  - `Author = AuthorData` — type alias to collection data type; `reviewedWorks` is `{ collection, id }[]` references
+  - `allAuthors(authors: AuthorData[]): Author[]` — identity function, returns input as-is
+  - `getAuthorDetails(slug, authors, works)` — pure, sync; resolves `author.reviewedWorks` references against `ReviewedWorkData[]` to compute distinct kinds/years; returns `AuthorDetails | undefined`
+  - Removed `ENABLE_CACHE`, `perfLogger`, module-level cache `Map`s, and all data-layer imports
+- Updated `src/features/authors/getAuthorsProps.ts`:
+  - Added `authors: AuthorData[]` parameter
+  - Uses `allAuthors(authors).toSorted(...)` (non-mutating sort)
+- Updated `src/features/author-titles/getAuthorTitlesProps.ts`:
+  - Added `authors: AuthorData[]` and `works: ReviewedWorkData[]` parameters
+  - Calls `getAuthorDetails(slug, authors, works)` (now sync)
+  - Resolves `author.reviewedWorks` references to full `ReviewedWorkData` objects for cover images
+  - Updated `filterOtherAuthors` to take `ReviewedWorkData` instead of `Author["reviewedWorks"][number]`
+- Updated `src/pages/authors/index.astro` to call `getCollection('authors')`, pass to `getAuthorsProps`
+- Updated `src/pages/authors/[slug]/index.astro`:
+  - `getStaticPaths` uses `getCollection('authors')` + `allAuthors()`
+  - Page body fetches both `authors` and `reviewedWorks` collections, passes to `getAuthorTitlesProps`
+  - Renamed `let works` (string) to `let worksLabel` to avoid naming conflict with `works` collection data
+- Updated `src/pages/authors/[slug]/og.jpg.ts` to use `getCollection('authors')` in `getStaticPaths`
+- Created `src/api/__fixtures__/authors.ts` — `AuthorData[]` fixtures with reference-shaped `reviewedWorks`
+- Created `src/api/authors.spec.ts` — 12 pure function tests for `allAuthors` and `getAuthorDetails`
+- Deleted `src/api/data/authors-json.ts`
+- Deleted all snapshot tests for authors pages:
+  - `src/pages/authors/_index.spec.ts`, `_og.spec.ts`
+  - `src/pages/authors/[slug]/_index.spec.ts`, `_og.spec.ts`
+  - `__snapshots__/` and `__image_snapshots__/` directories
+
+### Files changed
+- `src/api/authors.ts` (updated)
+- `src/features/authors/getAuthorsProps.ts` (updated)
+- `src/features/author-titles/getAuthorTitlesProps.ts` (updated)
+- `src/pages/authors/index.astro` (updated)
+- `src/pages/authors/[slug]/index.astro` (updated)
+- `src/pages/authors/[slug]/og.jpg.ts` (updated)
+- `src/api/__fixtures__/authors.ts` (created)
+- `src/api/authors.spec.ts` (created)
+- `src/api/data/authors-json.ts` (deleted)
+- Authors snapshot and image snapshot directories deleted
+- `PLAN.md` (Stage 5 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- None
+
+### Learnings for future iterations:
+- **`getAuthorDetails` needs `works: ReviewedWorkData[]`** — the SPEC signature only shows `(slug, authors)` but `AuthorData.reviewedWorks` is `{ collection, id }[]` after content collection parsing; resolving to full work objects requires the `works` array; the SPEC note "works is already present in Stage 5/6 signatures" hints at this
+- **`Author = AuthorData`** — no wrapper type needed; the type alias is an identity since all fields needed by callers (`name`, `slug`, `sortName`, `reviewedWorks.length`) exist directly on `AuthorData`
+- **`getAuthorTitlesProps` needs both `authors` AND `works`** — even though the PLAN only mentions adding `authors`, work resolution in the props function requires the full `ReviewedWorkData[]` array; pass both from the Astro page
+- **Naming conflict when adding `works` variable**: the old `let works = "works"` (string for plural) must be renamed to `let worksLabel` to avoid shadowing the new `const works = ReviewedWorkData[]` collection variable
+- **`[slug]` page can re-fetch `authors` collection** — `getStaticPaths` and the page body both call `getCollection('authors')`; Astro's content store caches this, so the double call is cheap; wrapping `Astro.props` in `[Astro.props]` as an alternative is more fragile
+- **`allAuthors` is an identity function** — `Author = AuthorData`; `allAuthors(data)` returns `data` unchanged; used in `getStaticPaths` for consistency with SPEC but provides no transformation
+- **Square bracket directories require Python for deletion** — `rm` and bash glob patterns treat `[slug]` as a glob character class; use the Bash agent with full absolute paths or delegate to a Task agent
+
+---
