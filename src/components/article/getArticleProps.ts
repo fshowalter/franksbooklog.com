@@ -1,5 +1,7 @@
+import type { ReviewData, ReviewedWorkData } from "~/content.config";
+
 import { getFluidCoverImageProps } from "~/api/covers";
-import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard";
 
 import type { ArticleProps } from "./Article";
@@ -10,33 +12,34 @@ import type { ArticleProps } from "./Article";
  * to populate the article page.
  *
  * @param params - The parameters for fetching article props
- * @param params.deck - The article subtitle/description
- * @param params.slug - The page slug to load content for
+ * @param params.content - The article content HTML string
+ * @param params.works - All reviewed work data from the reviewedWorks collection
+ * @param params.reviews - All review data from the reviews collection
  * @returns Promise resolving to article props including content and recent reviews
  */
 export async function getArticleProps({
   content,
+  reviews,
+  works,
 }: {
   content?: string;
+  reviews: ReviewData[];
+  works: ReviewedWorkData[];
 }): Promise<ArticleProps> {
-  const works = await mostRecentReviews(6);
-
-  const recentReviews = await Promise.all(
-    works.map(async (review) => {
-      return await loadExcerptHtml(review);
-    }),
-  );
+  const { reviews: allReviewsList } = allReviews(works, reviews);
+  const recentWorks = mostRecentReviews(allReviewsList, 6);
 
   return {
     content,
     recentReviews: await Promise.all(
-      recentReviews.map(async (review) => {
+      recentWorks.map(async (review) => {
         return {
           ...review,
           coverImageProps: await getFluidCoverImageProps(
             review,
             ReviewCardCoverImageConfig,
           ),
+          excerpt: loadExcerptHtml(review),
         };
       }),
     ),
