@@ -3,29 +3,15 @@ import remarkGfm from "remark-gfm";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
-import { ENABLE_CACHE } from "~/utils/cache";
-import { perfLogger } from "~/utils/performanceLogger";
+import type { PageData, ReviewedWorkData } from "~/content.config";
 
-import type { MarkdownPage as RawMarkdownPage } from "./data/pages-markdown";
-import type { ReviewedWorkJson } from "./data/reviewed-works-json";
-
-import { allPagesMarkdown } from "./data/pages-markdown";
-import { allReviewedWorksJson } from "./data/reviewed-works-json";
-import { getHtml } from "./utils/markdown/getHtml";
+import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 
-let cachedPagesMarkdown: RawMarkdownPage[];
-let cachedReviewedWorksJson: ReviewedWorkJson[];
-
-/**
- * Type representing a processed Markdown page with rendered content.
- * Contains both the raw markdown and the processed HTML output.
- */
-type MarkdownPage = {
-  content: string | undefined;
-  rawContent: string;
-  title: string;
-};
+// AIDEV-NOTE: getPage is now a pure synchronous function. The remark/rehype pipeline
+// runs in the content loader (see content.config.ts pages collection); linkReviewedWorks
+// runs here at build time with the live reviewedWorks array.
+// getContentPlainText remains a pure utility — signature unchanged.
 
 /**
  * Converts markdown content to plain text by stripping all formatting.
@@ -34,12 +20,6 @@ type MarkdownPage = {
  *
  * @param rawContent - Raw markdown content to convert
  * @returns Plain text version of the content
- *
- * @example
- * ```typescript
- * const plainText = getContentPlainText('**Bold** text with [link](url)');
- * console.log(plainText); // 'Bold text with link'
- * ```
  */
 export function getContentPlainText(rawContent: string): string {
   return getMastProcessor()
@@ -51,51 +31,27 @@ export function getContentPlainText(rawContent: string): string {
 
 /**
  * Retrieves and processes a specific page by slug.
- * Loads the page markdown, processes it to HTML with linked works,
- * and returns both raw and processed content with caching.
+ * Applies linkReviewedWorks to the pre-computed intermediate HTML from the
+ * content store to produce final HTML with reviewed work spans linked.
  *
  * @param slug - The unique slug identifier for the page
- * @returns Promise resolving to processed page data with HTML content
- *
- * @example
- * ```typescript
- * const aboutPage = await getPage('about');
- * console.log(aboutPage.title); // Page title
- * console.log(aboutPage.content); // Processed HTML with linked works
- * console.log(aboutPage.rawContent); // Original markdown
- * ```
+ * @param pages - Pre-fetched pages collection data
+ * @param reviewedWorks - Pre-fetched reviewed works collection data (for linking)
+ * @returns Processed page data with final HTML content, or undefined if not found
  */
-export async function getPage(slug: string): Promise<MarkdownPage> {
-  return await perfLogger.measure("getPage", async () => {
-    const pages = cachedPagesMarkdown || (await allPagesMarkdown());
-    if (ENABLE_CACHE && !cachedPagesMarkdown) {
-      cachedPagesMarkdown = pages;
-    }
-
-    const matchingPage = pages.find((page) => {
-      return page.slug === slug;
-    })!;
-
-    const reviewedWorksJson =
-      cachedReviewedWorksJson || (await allReviewedWorksJson());
-    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
-      cachedReviewedWorksJson = reviewedWorksJson;
-    }
-
-    return {
-      content: getHtml(matchingPage.rawContent, reviewedWorksJson),
-      rawContent: matchingPage?.rawContent || "",
-      title: matchingPage.title,
-    };
-  });
+export function getPage(
+  slug: string,
+  pages: PageData[],
+  reviewedWorks: ReviewedWorkData[],
+): (PageData & { content: string }) | undefined {
+  const page = pages.find((p) => p.slug === slug);
+  if (!page) return undefined;
+  return {
+    ...page,
+    content: linkReviewedWorks(page.intermediateHtml, reviewedWorks),
+  };
 }
 
-/**
- * Internal function to create a configured remark processor.
- * Includes GitHub Flavored Markdown and smart typography processing.
- *
- * @returns Configured remark processor instance
- */
 function getMastProcessor() {
   return remark().use(remarkGfm).use(smartypants);
 }

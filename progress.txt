@@ -40,3 +40,44 @@
 - **Digest-based skip is important for performance**: markdown loaders process 89 reviews and 198 readings through remark/rehype — the digest check prevents re-processing unchanged files on incremental builds
 
 ---
+
+## 2026-02-22 - Stage 2: Migrate `pages.ts`
+
+### What was implemented
+- Updated `src/api/pages.ts` to a pure synchronous function:
+  - `getPage(slug, pages: PageData[], reviewedWorks: ReviewedWorkData[])` — no longer async, no I/O or caching
+  - Applies `linkReviewedWorks(page.intermediateHtml, reviewedWorks)` to produce final HTML
+  - `getContentPlainText` utility remains unchanged
+  - Removed `allPagesMarkdown`, `allReviewedWorksJson`, `ENABLE_CACHE`, `perfLogger`, `getHtml` imports
+- Updated `src/pages/how-i-grade/index.astro` to call `getCollection('pages')` and `getCollection('reviewedWorks')`, pass data to `getPage`; `rawContent` renamed to `body`
+- Created `src/api/__fixtures__/pages.ts` — `PageData[]` fixture with `intermediateHtml` containing linked/unlinked work spans
+- Created `src/api/__fixtures__/reviewedWorks.ts` — minimal `ReviewedWorkData[]` fixture (slug "linked-work")
+- Created `src/api/pages.spec.ts` — 7 pure function tests for `getPage` and `getContentPlainText`
+- Deleted `src/api/data/pages-markdown.ts`
+- Deleted snapshot tests: `src/pages/how-i-grade/_index.spec.ts`, `_og.spec.ts`, `__snapshots__/index.html`, `__image_snapshots__/og.jpg`
+
+### Files changed
+- `src/api/pages.ts` (updated)
+- `src/pages/how-i-grade/index.astro` (updated)
+- `src/api/__fixtures__/pages.ts` (created)
+- `src/api/__fixtures__/reviewedWorks.ts` (created)
+- `src/api/pages.spec.ts` (created)
+- `src/api/data/pages-markdown.ts` (deleted)
+- `src/pages/how-i-grade/_index.spec.ts` (deleted)
+- `src/pages/how-i-grade/_og.spec.ts` (deleted)
+- `src/pages/how-i-grade/__snapshots__/index.html` (deleted)
+- `src/pages/how-i-grade/__image_snapshots__/og.jpg` (deleted)
+- `PLAN.md` (Stage 2 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- None
+
+### Learnings for future iterations:
+- **`unicorn/no-await-expression-member`**: Cannot write `(await getCollection(...)).map(...)` — must store the awaited result in a variable first, then call `.map()` on it
+- **`perfectionist/sort-imports` in spec files**: Fixture imports (`./__fixtures__/`) sort before the module under test (`./pages`) because `_` precedes lowercase letters alphabetically
+- **`ReviewedWorkData` fixture shape**: All fields from the schema transform must be present including `notes: undefined` on author entries and `subtitle: undefined` on works; `moreReviews` and `moreByAuthors[].reviewedWorks` are `Array<{ collection: string; id: string }>` not string arrays (post-parseData reference shape)
+- **Return type of new `getPage`**: `(PageData & { content: string }) | undefined` — callers use `!` assertion when slug is known to exist; `body` field replaces old `rawContent` field name
+- **Prettier pre-existing issues**: `content.config.ts`, `PLAN.md`, `SPEC.md` already had formatting issues from Stage 1 — fixed in this stage
+
+---
