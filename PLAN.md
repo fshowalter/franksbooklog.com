@@ -10,7 +10,7 @@ See `SPEC.md` for the full design rationale, collection definitions, and risk an
 `getCollection()` returns correctly typed, fully validated data. No changes to existing
 API or feature code.
 
-**Status**: Not Started
+**Status**: Complete
 
 ### Work
 
@@ -106,23 +106,23 @@ API or feature code.
 
 ### Success Criteria
 
-- [ ] `npm run dev` starts without errors
-- [ ] `npm run build` completes without errors
-- [ ] `getCollection('authors')` returns all authors with correct types
-- [ ] `getCollection('authors')` entries have `reviewedWorks` as `{ collection, id }[]`
+- [x] `npm run dev` starts without errors
+- [x] `npm run build` completes without errors
+- [x] `getCollection('authors')` returns all authors with correct types
+- [x] `getCollection('authors')` entries have `reviewedWorks` as `{ collection, id }[]`
   objects (not embedded work objects) — confirms reference transformation ran in the loader
-- [ ] `getCollection('reviewedWorks')` returns works with `Date` objects (not strings) on
+- [x] `getCollection('reviewedWorks')` returns works with `Date` objects (not strings) on
   date fields — confirms `parseData()` is running
-- [ ] `getCollection('reviewedWorks')` entries have `moreReviews` as `{ collection, id }[]`
+- [x] `getCollection('reviewedWorks')` entries have `moreReviews` as `{ collection, id }[]`
   objects — confirms reference transformation ran in the loader
-- [ ] `getCollection('reviews')` entries have `work_slug` as a `{ collection, id }` object
-- [ ] `getCollection('reviews')` returns entries with `body`, `intermediateHtml`, and
+- [x] `getCollection('reviews')` entries have `work_slug` as a `{ collection, id }` object
+- [x] `getCollection('reviews')` returns entries with `body`, `intermediateHtml`, and
   `excerptHtml` all populated — confirms markdown processing ran in the loader
-- [ ] `getCollection('reviews')` entries have `<span data-work-slug="">` elements in
+- [x] `getCollection('reviews')` entries have `<span data-work-slug="">` elements in
   `intermediateHtml` (not `<a>` tags) — confirms `linkReviewedWorks` was NOT applied
-- [ ] All other collections return non-empty results
-- [ ] No lint errors: `npm run lint`
-- [ ] No type errors: `npm run check`
+- [x] All other collections return non-empty results
+- [x] No lint errors: `npm run lint`
+- [x] No type errors: `npm run check`
 
 ### Tests
 

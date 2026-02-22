@@ -1,0 +1,42 @@
+## 2026-02-22 - Stage 1: Create content.config.ts with all collections
+
+### What was implemented
+- Created `src/content.config.ts` with all 8 content collections using custom inline loaders:
+  - `authors` — glob `/content/data/authors/*.json`, maps reviewedWorks to slug strings for reference()
+  - `reviewedWorks` — reads `/content/data/reviewed-works.json`, strips embedded moreByAuthors[].reviewedWorks and moreReviews to slugs for reference()
+  - `readingEntries` — reads `/content/data/reading-entries.json`, ID = String(readingEntrySequence)
+  - `reviews` — glob `/content/reviews/*.md`, pre-computes intermediateHtml and excerptHtml via remark/rehype (without linkReviewedWorks)
+  - `readings` — glob `/content/readings/*.md`, pre-computes intermediateReadingNotesHtml and intermediateEditionNotesHtml
+  - `pages` — glob `/content/pages/*.md`, pre-computes intermediateHtml
+  - `alltimeStats` — reads `/content/data/all-time-stats.json` as single entry with id "alltime"
+  - `yearStats` — glob `/content/data/year-stats/*.json`, ID = year string
+
+- Exported all 8 `z.infer<>` types (AlltimeStatData, AuthorData, PageData, ReadingData, ReadingEntryData, ReviewData, ReviewedWorkData, YearStatData)
+- All loaders use the `sync` pattern for HMR watcher callbacks
+- Digest-based caching for skip-if-unchanged optimization in markdown loaders
+- Selective entry removal (not store.clear()) to preserve cache efficiency
+
+### Files changed
+- `src/content.config.ts` (created)
+- `PLAN.md` (Stage 1 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- None
+
+### Learnings for future iterations:
+- **`ctx.load(ctx)` does NOT exist on LoaderContext** — the correct HMR pattern is to define a local `sync()` function inside `load()`, call `await sync()` for initial load, then register `ctx.watcher?.on("change", () => void sync())` for HMR. The `sync` function captures `ctx` in its closure.
+- **Astro LoaderContext API**: `ctx.store.has(id)`, `ctx.store.get(id)?.digest`, `ctx.store.set({ id, data, digest })`, `ctx.store.delete(id)`, `ctx.store.keys()` (returns Array<string>), `ctx.parseData({ id, data })`, `ctx.generateDigest(record)`, `ctx.watcher` (FSWatcher, dev-only)
+- **Auto-fix catches most lint issues**: `npx eslint --fix` fixed 18 of 19 errors automatically (imports reordering, sort-modules, sort-object-types, utf-8→utf8, array types, intersection types, union types). Only `unicorn/no-null` needed manual fix (change `editionNotes ?? null` to `editionNotes`)
+- **`perfectionist/sort-imports`**: `astro:content` is value-external and must come BEFORE `~/api/*` (value-internal) imports
+- **`perfectionist/sort-modules`**: type declarations must come before function declarations in module scope; both groups sorted alphabetically
+- **`unicorn/text-encoding-identifier-case`**: Use `"utf8"` not `"utf-8"` in fs.readFile calls
+- **`unicorn/no-null`**: Don't use null literal values; pass nullable frontmatter fields directly rather than using `?? null`
+- **`@typescript-eslint/array-type`**: Use `T[]` not `Array<T>`
+- **`perfectionist/sort-intersection-types`**: Sort intersection type members alphabetically (Record<...> before { ... } object literals)
+- **Build is production-verified**: `npm run build` completes successfully (161 pages) with all collections loading correctly
+- **All 279 existing tests pass** — no test changes needed for Stage 1
+- **Object keys in object type literals**: `[key: string]` index signature sorts before named properties (ESLint auto-fixed this)
+- **Digest-based skip is important for performance**: markdown loaders process 89 reviews and 198 readings through remark/rehype — the digest check prevents re-processing unchanged files on incremental builds
+
+---
