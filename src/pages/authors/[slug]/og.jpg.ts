@@ -1,26 +1,18 @@
 import type { APIRoute, InferGetStaticPropsType } from "astro";
 
+import { getCollection } from "astro:content";
+
 import { allAuthors } from "~/api/authors";
 import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
 import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
 import { AuthorTitlesOpenGraphImage } from "~/features/author-titles/AuthorTitlesOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
-/**
- * Props type inferred from getStaticPaths function, containing author name and slug
- * for generating individual author Open Graph images.
- */
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-/**
- * Astro static path generation function that creates routes for all author OG images.
- * Generates a static path for each author in the system, enabling pre-built Open Graph
- * images for individual author pages at build time.
- *
- * @returns Array of path objects with params (slug) and props (name, slug) for each author
- */
 export async function getStaticPaths() {
-  const authors = await allAuthors();
+  const authorEntries = await getCollection("authors");
+  const authors = allAuthors(authorEntries.map((e) => e.data));
 
   return authors.map((member) => {
     return {

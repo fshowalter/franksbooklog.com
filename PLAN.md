@@ -315,7 +315,7 @@ Astro pages. Delete both stats data-layer files.
 and `getAuthorDetails()` pure. Update author features and Astro pages. Delete
 `authors-json.ts`.
 
-**Status**: Not Started
+**Status**: Complete
 
 ### Work
 
@@ -357,12 +357,12 @@ and `getAuthorDetails()` pure. Update author features and Astro pages. Delete
 
 ### Success Criteria
 
-- [ ] Authors listing page renders in dev
-- [ ] Individual author pages render in dev (test a few slugs)
-- [ ] `getAuthorDetails('stephen-king', fixtures)` returns correct data in tests
-- [ ] `authors-json.ts` deleted
-- [ ] `getStaticPaths` on the `[slug]` page uses collection data correctly
-- [ ] All tests pass
+- [x] Authors listing page renders in dev
+- [x] Individual author pages render in dev (test a few slugs)
+- [x] `getAuthorDetails('stephen-king', fixtures, worksFixtures)` returns correct data in tests
+- [x] `authors-json.ts` deleted
+- [x] `getStaticPaths` on the `[slug]` page uses collection data correctly
+- [x] All tests pass
 
 ---
 

@@ -1,4 +1,5 @@
 import type { Author } from "~/api/authors";
+import type { AuthorData, ReviewedWorkData } from "~/content.config";
 
 import { getAuthorDetails } from "~/api/authors";
 import { getFluidCoverImageProps } from "~/api/covers";
@@ -7,21 +8,24 @@ import { displayDate } from "~/utils/displayDate";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
-/**
- * Gets props for the Author page component by fetching author details and transforming work data.
- * Loads author information, work covers, and prepares all data needed for display and filtering.
- *
- * @param slug - Author slug identifier for fetching data
- * @returns Promise resolving to complete props object for Author component
- */
 export async function getAuthorTitlesProps(
   slug: string,
+  authors: AuthorData[],
+  works: ReviewedWorkData[],
 ): Promise<AuthorTitlesProps> {
-  const { author, distinctKinds, distinctReviewYears, distinctWorkYears } =
-    await getAuthorDetails(slug);
+  const details = getAuthorDetails(slug, authors, works);
+  if (!details) throw new Error(`Author not found: ${slug}`);
 
-  const works = await Promise.all(
-    author.reviewedWorks.map(async (work) => {
+  const { author, distinctKinds, distinctReviewYears, distinctWorkYears } =
+    details;
+
+  // Resolve reviewedWorks references to full work data for cover images and metadata
+  const authorWorks = author.reviewedWorks
+    .map((ref) => works.find((w) => w.slug === ref.id))
+    .filter((w): w is ReviewedWorkData => w !== undefined);
+
+  const values = await Promise.all(
+    authorWorks.map(async (work) => {
       const value: AuthorTitlesValue = {
         coverImageProps: await getFluidCoverImageProps(
           work,
@@ -50,22 +54,11 @@ export async function getAuthorTitlesProps(
     distinctReviewYears,
     distinctWorkYears,
     initialSort: "title-asc",
-    values: works,
+    values,
   };
 }
 
-/**
- * Filters out the current author from a work's author list to get co-authors.
- * Used to display "with [other authors]" text on work list items.
- *
- * @param author - The main author whose page this is
- * @param work - The work to get other authors for
- * @returns Array of other authors excluding the main author
- */
-function filterOtherAuthors(
-  author: Author,
-  work: Author["reviewedWorks"][number],
-) {
+function filterOtherAuthors(author: Author, work: ReviewedWorkData) {
   return work.authors
     .filter((workAuthor) => {
       return author.name !== workAuthor.name;
