@@ -84,15 +84,16 @@ in another collection. The source JSON files embed full objects (e.g. an author 
 embeds complete work objects in its `reviewedWorks` array), so loaders must extract the
 slugs before calling `ctx.parseData()`.
 
-| Field | Reference target | Why |
-|-------|-----------------|-----|
-| `authors.reviewedWorks[]` | `reference('reviewedWorks')` | Each author file embeds full work objects that duplicate the `reviewedWorks` collection |
-| `reviewedWorks.moreReviews[]` | `reference('reviewedWorks')` | Each work embeds full work objects for related reviews |
-| `reviewedWorks.moreByAuthors[].reviewedWorks[]` | `reference('reviewedWorks')` | Full work objects nested inside each "more by author" entry |
-| `reviews.work_slug` | `reference('reviewedWorks')` | Build-time validation that the referenced work exists |
-| `readings.work_slug` | `reference('reviewedWorks')` | Build-time validation that the referenced work exists |
+| Field                                           | Reference target             | Why                                                                                     |
+| ----------------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------- |
+| `authors.reviewedWorks[]`                       | `reference('reviewedWorks')` | Each author file embeds full work objects that duplicate the `reviewedWorks` collection |
+| `reviewedWorks.moreReviews[]`                   | `reference('reviewedWorks')` | Each work embeds full work objects for related reviews                                  |
+| `reviewedWorks.moreByAuthors[].reviewedWorks[]` | `reference('reviewedWorks')` | Full work objects nested inside each "more by author" entry                             |
+| `reviews.work_slug`                             | `reference('reviewedWorks')` | Build-time validation that the referenced work exists                                   |
+| `readings.work_slug`                            | `reference('reviewedWorks')` | Build-time validation that the referenced work exists                                   |
 
 Fields **not** using `reference()`:
+
 - `reviewedWorks.authors[]` — small objects (4 fields), not worth the API churn
 - `readingEntries.authors[]` — same
 - `reviewedWorks.includedWorks[]` — some entries have `reviewed: false` and won't exist
@@ -155,23 +156,23 @@ No new parameters are added to API functions beyond what the SPEC already define
 
 ### `authors`
 
-| Property | Value |
-|----------|-------|
+| Property | Value                                                |
+| -------- | ---------------------------------------------------- |
 | Source   | `/content/data/authors/*.json` (one file per author) |
-| Loader   | Custom: glob directory, read + parse each file |
-| ID       | Author slug (from JSON `slug` field) |
-| Replaces | `authors-json.ts` → `allAuthorsJson()` |
+| Loader   | Custom: glob directory, read + parse each file       |
+| ID       | Author slug (from JSON `slug` field)                 |
+| Replaces | `authors-json.ts` → `allAuthorsJson()`               |
 
 Schema: name, sortName, slug, `reviewedWorks: z.array(reference('reviewedWorks'))`.
 The loader maps the embedded work objects to slug strings before `ctx.parseData()`.
 
 ### `reviewedWorks`
 
-| Property | Value |
-|----------|-------|
-| Source   | `/content/data/reviewed-works.json` (array) |
-| Loader   | Custom: read file, iterate array items |
-| ID       | Work slug |
+| Property | Value                                               |
+| -------- | --------------------------------------------------- |
+| Source   | `/content/data/reviewed-works.json` (array)         |
+| Loader   | Custom: read file, iterate array items              |
+| ID       | Work slug                                           |
 | Replaces | `reviewed-works-json.ts` → `allReviewedWorksJson()` |
 
 Schema mirrors `ReviewedWorkJson` with `z.coerce.date()` on reading date fields.
@@ -182,11 +183,11 @@ references. `authors` and `includedWorks` remain embedded objects (see table abo
 
 ### `readingEntries`
 
-| Property | Value |
-|----------|-------|
-| Source   | `/content/data/reading-entries.json` (array) |
-| Loader   | Custom: read file, iterate array items |
-| ID       | `String(readingEntrySequence)` |
+| Property | Value                                                 |
+| -------- | ----------------------------------------------------- |
+| Source   | `/content/data/reading-entries.json` (array)          |
+| Loader   | Custom: read file, iterate array items                |
+| ID       | `String(readingEntrySequence)`                        |
 | Replaces | `reading-entries-json.ts` → `allReadingEntriesJson()` |
 
 Schema mirrors `ReadingEntryJson` (readingEntrySequence, slug, edition, kind, progress,
@@ -195,12 +196,12 @@ scalar IDs or small embedded objects not worth the join overhead.
 
 ### `reviews`
 
-| Property | Value |
-|----------|-------|
-| Source   | `/content/reviews/*.md` (gray-matter frontmatter + body) |
+| Property | Value                                                        |
+| -------- | ------------------------------------------------------------ |
+| Source   | `/content/reviews/*.md` (gray-matter frontmatter + body)     |
 | Loader   | Custom: glob directory, parse frontmatter + pre-compute HTML |
-| ID       | Slug derived from filename (strip leading date prefix) |
-| Replaces | `reviews-markdown.ts` → `allReviewsMarkdown()` |
+| ID       | Slug derived from filename (strip leading date prefix)       |
+| Replaces | `reviews-markdown.ts` → `allReviewsMarkdown()`               |
 
 Schema: `work_slug: reference('reviewedWorks')`, grade, `date: z.coerce.date()`, optional
 synopsis, `body` (raw markdown), `intermediateHtml` (remark/rehype output with
@@ -210,27 +211,27 @@ and `excerptHtml` (fully processed excerpt HTML — synopsis or first paragraph,
 
 ### `readings`
 
-| Property | Value |
-|----------|-------|
-| Source   | `/content/readings/*.md` (gray-matter frontmatter + body) |
+| Property | Value                                                        |
+| -------- | ------------------------------------------------------------ |
+| Source   | `/content/readings/*.md` (gray-matter frontmatter + body)    |
 | Loader   | Custom: glob directory, parse frontmatter + pre-compute HTML |
-| ID       | Slug derived from filename |
-| Replaces | `readings-markdown.ts` → `allReadingsMarkdown()` |
+| ID       | Slug derived from filename                                   |
+| Replaces | `readings-markdown.ts` → `allReadingsMarkdown()`             |
 
 Schema: `work_slug: reference('reviewedWorks')`, sequence, edition, nullable
-edition_notes, timeline array of `{date, progress}`, `body` (raw markdown reading notes),
+edition*notes, timeline array of `{date, progress}`, `body` (raw markdown reading notes),
 `intermediateReadingNotesHtml` (body processed through remark/rehype, spans intact), and
 `intermediateEditionNotesHtml` (edition_notes processed as inline span HTML, spans intact).
-See _Markdown Processing Strategy_ below.
+See \_Markdown Processing Strategy* below.
 
 ### `pages`
 
-| Property | Value |
-|----------|-------|
-| Source   | `/content/pages/*.md` (gray-matter frontmatter + body) |
+| Property | Value                                                        |
+| -------- | ------------------------------------------------------------ |
+| Source   | `/content/pages/*.md` (gray-matter frontmatter + body)       |
 | Loader   | Custom: glob directory, parse frontmatter + pre-compute HTML |
-| ID       | Page slug (from frontmatter) |
-| Replaces | `pages-markdown.ts` → `allPagesMarkdown()` |
+| ID       | Page slug (from frontmatter)                                 |
+| Replaces | `pages-markdown.ts` → `allPagesMarkdown()`                   |
 
 Schema: frontmatter fields (slug, title), `body` (raw markdown), and `intermediateHtml`
 (remark/rehype output with `<span data-work-slug="">` spans still intact). No references
@@ -316,24 +317,24 @@ manual step is documented.
 
 ### `alltimeStats`
 
-| Property | Value |
-|----------|-------|
+| Property | Value                                               |
+| -------- | --------------------------------------------------- |
 | Source   | `/content/data/all-time-stats.json` (single object) |
-| Loader   | Custom: read single file, store as one entry |
-| ID       | `"alltime"` (fixed) |
-| Replaces | `alltime-stats-json.ts` → `alltimeStatsJson()` |
+| Loader   | Custom: read single file, store as one entry        |
+| ID       | `"alltime"` (fixed)                                 |
+| Replaces | `alltime-stats-json.ts` → `alltimeStatsJson()`      |
 
 Schema mirrors `AlltimeStatsJson` (bookCount, reviewCount, workCount, grade/kind/decade/
 edition distributions, mostReadAuthors with nested readings).
 
 ### `yearStats`
 
-| Property | Value |
-|----------|-------|
+| Property | Value                                                 |
+| -------- | ----------------------------------------------------- |
 | Source   | `/content/data/year-stats/*.json` (one file per year) |
-| Loader   | Custom: glob directory, read + parse each file |
-| ID       | Year string (e.g. `"2024"`) |
-| Replaces | `year-stats-json.ts` → `allYearStatsJson()` |
+| Loader   | Custom: glob directory, read + parse each file        |
+| ID       | Year string (e.g. `"2024"`)                           |
+| Replaces | `year-stats-json.ts` → `allYearStatsJson()`           |
 
 Schema mirrors `YearStatsJson` (year, bookCount, workCount, distributions,
 mostReadAuthors).
@@ -368,26 +369,31 @@ transform functions. The `ENABLE_CACHE` flag and all module-level cache `Map`s a
 
 ```typescript
 // Before
-export async function allAuthors(): Promise<Author[]>
-export async function getAuthorDetails(slug: string): Promise<AuthorDetails | undefined>
+export async function allAuthors(): Promise<Author[]>;
+export async function getAuthorDetails(
+  slug: string,
+): Promise<AuthorDetails | undefined>;
 
 // After
-export function allAuthors(authors: AuthorData[]): Author[]
-export function getAuthorDetails(slug: string, authors: AuthorData[]): AuthorDetails | undefined
+export function allAuthors(authors: AuthorData[]): Author[];
+export function getAuthorDetails(
+  slug: string,
+  authors: AuthorData[],
+): AuthorDetails | undefined;
 ```
 
 ### `pages.ts`
 
 ```typescript
 // Before
-export async function getPage(slug: string): Promise<Page | undefined>
+export async function getPage(slug: string): Promise<Page | undefined>;
 
 // After — now synchronous; remark/rehype is done in the loader
 export function getPage(
   slug: string,
   pages: PageData[],
   reviewedWorks: ReviewedWorkData[],
-): Page | undefined
+): Page | undefined;
 // Applies linkReviewedWorks(page.intermediateHtml, reviewedWorks) at call time
 ```
 
@@ -401,10 +407,10 @@ requires the live set of reviewed slugs. Astro pages using `getPage` must call b
 
 ```typescript
 // Before
-export async function allReadingEntries(): Promise<ReadingEntries>
+export async function allReadingEntries(): Promise<ReadingEntries>;
 
 // After
-export function allReadingEntries(entries: ReadingEntryData[]): ReadingEntries
+export function allReadingEntries(entries: ReadingEntryData[]): ReadingEntries;
 ```
 
 Internal filtering and aggregation logic is unchanged; only the data source changes.
@@ -413,29 +419,29 @@ Internal filtering and aggregation logic is unchanged; only the data source chan
 
 ```typescript
 // Before
-export async function allReviews(): Promise<ReviewsResult>
-export async function loadContent(review: Review): Promise<ReviewContent>
-export async function loadExcerptHtml(review: Review): Promise<string>
-export async function mostRecentReviews(limit: number): Promise<Review[]>
+export async function allReviews(): Promise<ReviewsResult>;
+export async function loadContent(review: Review): Promise<ReviewContent>;
+export async function loadExcerptHtml(review: Review): Promise<string>;
+export async function mostRecentReviews(limit: number): Promise<Review[]>;
 
 // After — all become synchronous; remark/rehype is done in the loaders
 export function allReviews(
   works: ReviewedWorkData[],
   reviews: ReviewData[],
-): ReviewsResult
+): ReviewsResult;
 // Note: `readings` removed — reading notes aren't loaded by allReviews (only by loadContent)
 
 export function loadContent(
   review: Review,
   readings: ReadingData[],
   reviewedWorks: ReviewedWorkData[],
-): ReviewContent
+): ReviewContent;
 // Applies linkReviewedWorks to review.intermediateHtml and to reading/edition note HTML
 
-export function loadExcerptHtml(review: ReviewData): string
+export function loadExcerptHtml(review: ReviewData): string;
 // Returns review.excerptHtml directly — pre-computed in loader, no processing needed
 
-export function mostRecentReviews(reviews: Review[], limit: number): Review[]
+export function mostRecentReviews(reviews: Review[], limit: number): Review[];
 ```
 
 `loadContent` and `loadExcerptHtml` become synchronous because the expensive remark/rehype
@@ -447,14 +453,19 @@ work is pre-computed in the loaders. `loadContent` still calls `linkReviewedWork
 
 ```typescript
 // Before
-export async function allStatYears(): Promise<number[]>
-export async function alltimeStats(): Promise<AlltimeStats>
-export async function statsForYear(year: number): Promise<YearStats | undefined>
+export async function allStatYears(): Promise<number[]>;
+export async function alltimeStats(): Promise<AlltimeStats>;
+export async function statsForYear(
+  year: number,
+): Promise<YearStats | undefined>;
 
 // After
-export function allStatYears(yearStats: YearStatData[]): number[]
-export function alltimeStats(data: AlltimeStatData): AlltimeStats
-export function statsForYear(year: number, yearStats: YearStatData[]): YearStats | undefined
+export function allStatYears(yearStats: YearStatData[]): number[];
+export function alltimeStats(data: AlltimeStatData): AlltimeStats;
+export function statsForYear(
+  year: number,
+  yearStats: YearStatData[],
+): YearStats | undefined;
 ```
 
 ---
@@ -466,11 +477,11 @@ arrays into `getProps` functions. Example pattern for the reviews listing page:
 
 ```astro
 ---
-import { getCollection } from 'astro:content';
-import { getReviewsProps } from '~/features/reviews/getReviewsProps';
+import { getCollection } from "astro:content";
+import { getReviewsProps } from "~/features/reviews/getReviewsProps";
 
-const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-const reviews = (await getCollection('reviews')).map((e) => e.data);
+const works = (await getCollection("reviewedWorks")).map((e) => e.data);
+const reviews = (await getCollection("reviews")).map((e) => e.data);
 const props = getReviewsProps(works, reviews);
 // Note: readings not needed for the listing — only loadContent (individual review page) needs them
 ---
@@ -480,9 +491,9 @@ For an individual review page (which calls `loadContent`):
 
 ```astro
 ---
-const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-const reviews = (await getCollection('reviews')).map((e) => e.data);
-const readings = (await getCollection('readings')).map((e) => e.data);
+const works = (await getCollection("reviewedWorks")).map((e) => e.data);
+const reviews = (await getCollection("reviews")).map((e) => e.data);
+const readings = (await getCollection("readings")).map((e) => e.data);
 const props = getReviewProps(slug, works, reviews, readings);
 ---
 ```
@@ -491,9 +502,9 @@ For a page that uses `getPage` (e.g. `/how-i-grade`):
 
 ```astro
 ---
-const pages = (await getCollection('pages')).map((e) => e.data);
-const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-const page = getPage('how-i-grade', pages, works);
+const pages = (await getCollection("pages")).map((e) => e.data);
+const works = (await getCollection("reviewedWorks")).map((e) => e.data);
+const page = getPage("how-i-grade", pages, works);
 ---
 ```
 
@@ -504,31 +515,31 @@ threaded through to the API functions. Example:
 
 ```typescript
 // Before
-export async function getReviewsProps(): Promise<ReviewsProps>
+export async function getReviewsProps(): Promise<ReviewsProps>;
 
 // After — sync, since API functions are now sync
 export function getReviewsProps(
   works: ReviewedWorkData[],
   reviews: ReviewData[],
-): ReviewsProps
+): ReviewsProps;
 ```
 
 ---
 
 ## Files Deleted After Migration
 
-| File | Replaced by |
-|------|-------------|
-| `src/api/data/authors-json.ts` | `authors` collection |
-| `src/api/data/reviewed-works-json.ts` | `reviewedWorks` collection |
-| `src/api/data/reading-entries-json.ts` | `readingEntries` collection |
-| `src/api/data/reviews-markdown.ts` | `reviews` collection |
-| `src/api/data/readings-markdown.ts` | `readings` collection |
-| `src/api/data/pages-markdown.ts` | `pages` collection |
-| `src/api/data/alltime-stats-json.ts` | `alltimeStats` collection |
-| `src/api/data/year-stats-json.ts` | `yearStats` collection |
-| `src/api/data/utils/getContentPath.ts` | No longer needed |
-| `src/api/data/utils/ENABLE_CACHE.ts` | Replaced by content store caching |
+| File                                   | Replaced by                       |
+| -------------------------------------- | --------------------------------- |
+| `src/api/data/authors-json.ts`         | `authors` collection              |
+| `src/api/data/reviewed-works-json.ts`  | `reviewedWorks` collection        |
+| `src/api/data/reading-entries-json.ts` | `readingEntries` collection       |
+| `src/api/data/reviews-markdown.ts`     | `reviews` collection              |
+| `src/api/data/readings-markdown.ts`    | `readings` collection             |
+| `src/api/data/pages-markdown.ts`       | `pages` collection                |
+| `src/api/data/alltime-stats-json.ts`   | `alltimeStats` collection         |
+| `src/api/data/year-stats-json.ts`      | `yearStats` collection            |
+| `src/api/data/utils/getContentPath.ts` | No longer needed                  |
+| `src/api/data/utils/ENABLE_CACHE.ts`   | Replaced by content store caching |
 
 The `src/api/data/` directory is removed entirely.
 
@@ -570,18 +581,19 @@ snapshot tests (`pages-node`, `astro-node`) may become empty and should be remov
 
 ```typescript
 // src/features/reviews/__fixtures__/reviews.ts
-import type { ReviewData } from '~/content.config';
+import type { ReviewData } from "~/content.config";
 
 export const reviewFixtures: ReviewData[] = [
   {
-    slug: 'dark-crusade-by-karl-edward-wagner',
-    work_slug: 'dark-crusade-by-karl-edward-wagner',
-    grade: 'A',
-    date: new Date('2012-05-18'),
+    slug: "dark-crusade-by-karl-edward-wagner",
+    work_slug: "dark-crusade-by-karl-edward-wagner",
+    grade: "A",
+    date: new Date("2012-05-18"),
     synopsis: undefined,
-    body: 'A tightly plotted...',
-    excerptHtml: '<p>A tightly plotted...</p>',
-    intermediateHtml: '<p>See also <span data-work-slug="example">Example</span>.</p>',
+    body: "A tightly plotted...",
+    excerptHtml: "<p>A tightly plotted...</p>",
+    intermediateHtml:
+      '<p>See also <span data-work-slug="example">Example</span>.</p>',
   },
 ];
 ```
@@ -596,18 +608,18 @@ export const reviewFixtures: ReviewData[] = [
 
 ## Key Risks
 
-| Risk | Mitigation |
-|------|------------|
-| `reviews.ts` merges multiple data sources; threading through call chain is broad | Migrate reviews last; confirm all collections work first |
-| Many Astro pages and getProps files need signature updates | Mechanical but high-count; TypeScript errors guide the work |
-| `getCollection()` returns empty in Vitest | Make all API functions pure before migrating tests |
-| Intermediate HTML in fixtures is verbose | Use a small subset of real content; the `<span>` elements are explicit and readable |
-| Remark config change doesn't invalidate digest (raw digest strategy) | Document that `.astro/data-store.json` must be deleted after remark pipeline changes |
-| `pages` callers now also need `reviewedWorks` collection | Thread `reviewedWorks` through `getPage` callers; small scope expansion |
-| `contentHmr()` removal breaks dev HMR | Verify Astro's watcher registration in loaders before removing plugin |
-| Loader lint rules (`perfectionist/sort-objects`, `unbound-method`) | Follow lessons learned: call via `ctx.method()`, keep object keys sorted |
-| `reference()` IDs must exist in target collection at build time | Any slug in `moreReviews`, `moreByAuthors[].reviewedWorks`, or `authors.reviewedWorks` that doesn't match a `reviewedWorks` entry causes a build error; verify data integrity before Stage 1 |
-| `includedWorks` entries may have `reviewed: false` | Do NOT use `reference('reviewedWorks')` for `includedWorks` — unreferenced slugs will fail validation |
+| Risk                                                                             | Mitigation                                                                                                                                                                                   |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `reviews.ts` merges multiple data sources; threading through call chain is broad | Migrate reviews last; confirm all collections work first                                                                                                                                     |
+| Many Astro pages and getProps files need signature updates                       | Mechanical but high-count; TypeScript errors guide the work                                                                                                                                  |
+| `getCollection()` returns empty in Vitest                                        | Make all API functions pure before migrating tests                                                                                                                                           |
+| Intermediate HTML in fixtures is verbose                                         | Use a small subset of real content; the `<span>` elements are explicit and readable                                                                                                          |
+| Remark config change doesn't invalidate digest (raw digest strategy)             | Document that `.astro/data-store.json` must be deleted after remark pipeline changes                                                                                                         |
+| `pages` callers now also need `reviewedWorks` collection                         | Thread `reviewedWorks` through `getPage` callers; small scope expansion                                                                                                                      |
+| `contentHmr()` removal breaks dev HMR                                            | Verify Astro's watcher registration in loaders before removing plugin                                                                                                                        |
+| Loader lint rules (`perfectionist/sort-objects`, `unbound-method`)               | Follow lessons learned: call via `ctx.method()`, keep object keys sorted                                                                                                                     |
+| `reference()` IDs must exist in target collection at build time                  | Any slug in `moreReviews`, `moreByAuthors[].reviewedWorks`, or `authors.reviewedWorks` that doesn't match a `reviewedWorks` entry causes a build error; verify data integrity before Stage 1 |
+| `includedWorks` entries may have `reviewed: false`                               | Do NOT use `reference('reviewedWorks')` for `includedWorks` — unreferenced slugs will fail validation                                                                                        |
 
 ---
 
@@ -675,7 +687,7 @@ for (const id of store.keys()) {
 
 ```typescript
 watcher?.add(filePath);
-watcher?.on('change', (changedPath) => {
+watcher?.on("change", (changedPath) => {
   if (changedPath === filePath) void sync();
 });
 ```

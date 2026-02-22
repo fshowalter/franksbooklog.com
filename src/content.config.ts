@@ -501,11 +501,7 @@ const reviewedWorks = defineCollection({
 const readingEntries = defineCollection({
   loader: {
     load: async (ctx) => {
-      const filePath = path.join(
-        CONTENT_ROOT,
-        "data",
-        "reading-entries.json",
-      );
+      const filePath = path.join(CONTENT_ROOT, "data", "reading-entries.json");
 
       const sync = async () => {
         const rawItems = JSON.parse(
@@ -757,9 +753,10 @@ const alltimeStats = defineCollection({
       const id = "alltime";
 
       const sync = async () => {
-        const raw = JSON.parse(
-          await fs.readFile(filePath, "utf8"),
-        ) as Record<string, unknown>;
+        const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+          string,
+          unknown
+        >;
         const digest = ctx.generateDigest(raw);
 
         if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
@@ -798,9 +795,10 @@ const yearStats = defineCollection({
 
         for (const entry of jsonFiles) {
           const filePath = path.join(dirPath, entry.name);
-          const raw = JSON.parse(
-            await fs.readFile(filePath, "utf8"),
-          ) as Record<string, unknown> & { year: string };
+          const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+            string,
+            unknown
+          > & { year: string };
           const id = raw.year;
           newIds.add(id);
 

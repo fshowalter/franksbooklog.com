@@ -30,6 +30,7 @@ API or feature code.
    reference transformations applied before `parseData()`:
 
    **`authors` loader** — extract work slugs from embedded objects:
+
    ```typescript
    const data = await ctx.parseData({
      id: author.slug,
@@ -43,6 +44,7 @@ API or feature code.
 
    **`reviewedWorks` loader** — extract slugs from `moreReviews` and
    `moreByAuthors[].reviewedWorks`:
+
    ```typescript
    const data = await ctx.parseData({
      id: work.slug,
@@ -60,6 +62,7 @@ API or feature code.
 
    **`readingEntries`, `alltimeStats`, `yearStats` loaders** — no reference fields;
    use the plain pattern:
+
    ```typescript
    const data = await ctx.parseData({ data: item, id: item.slug });
    store.set({ data, digest: ctx.generateDigest(item), id: item.slug });
@@ -70,6 +73,7 @@ API or feature code.
    intermediate HTML (remark/rehype done; `linkReviewedWorks` NOT applied yet). The
    `work_slug` field is already a plain string in frontmatter; `parseData()` handles
    the `reference('reviewedWorks')` coercion automatically:
+
    ```typescript
    for (const { id, frontmatter, body } of markdownFiles) {
      const digest = ctx.generateDigest({ body, frontmatter });
@@ -91,6 +95,7 @@ API or feature code.
      store.set({ data, digest, id });
    }
    ```
+
    See SPEC.md "Markdown Processing Strategy" for the full rationale.
 
 3. Register file watchers in each loader for HMR.
@@ -110,16 +115,16 @@ API or feature code.
 - [x] `npm run build` completes without errors
 - [x] `getCollection('authors')` returns all authors with correct types
 - [x] `getCollection('authors')` entries have `reviewedWorks` as `{ collection, id }[]`
-  objects (not embedded work objects) — confirms reference transformation ran in the loader
+      objects (not embedded work objects) — confirms reference transformation ran in the loader
 - [x] `getCollection('reviewedWorks')` returns works with `Date` objects (not strings) on
-  date fields — confirms `parseData()` is running
+      date fields — confirms `parseData()` is running
 - [x] `getCollection('reviewedWorks')` entries have `moreReviews` as `{ collection, id }[]`
-  objects — confirms reference transformation ran in the loader
+      objects — confirms reference transformation ran in the loader
 - [x] `getCollection('reviews')` entries have `work_slug` as a `{ collection, id }` object
 - [x] `getCollection('reviews')` returns entries with `body`, `intermediateHtml`, and
-  `excerptHtml` all populated — confirms markdown processing ran in the loader
+      `excerptHtml` all populated — confirms markdown processing ran in the loader
 - [x] `getCollection('reviews')` entries have `<span data-work-slug="">` elements in
-  `intermediateHtml` (not `<a>` tags) — confirms `linkReviewedWorks` was NOT applied
+      `intermediateHtml` (not `<a>` tags) — confirms `linkReviewedWorks` was NOT applied
 - [x] All other collections return non-empty results
 - [x] No lint errors: `npm run lint`
 - [x] No type errors: `npm run check`
@@ -137,7 +142,7 @@ changes). Snapshot tests will be deleted in their respective domain stages (2–
 accept collection data as a parameter. Update the Astro pages that use it. Delete
 `pages-markdown.ts`.
 
-**Status**: Not Started
+**Status**: Complete
 
 ### Work
 
@@ -148,15 +153,20 @@ accept collection data as a parameter. Update the Astro pages that use it. Delet
      ```typescript
      const page = pages.find((p) => p.slug === slug);
      if (!page) return undefined;
-     return { ...page, content: linkReviewedWorks(page.intermediateHtml, reviewedWorks) };
+     return {
+       ...page,
+       content: linkReviewedWorks(page.intermediateHtml, reviewedWorks),
+     };
      ```
    - Remove imports of `allPagesMarkdown`, `getHtml`, `ENABLE_CACHE`.
    - `getContentPlainText` utility remains unchanged.
 
 2. **Update callers of `getPage`** — find with:
+
    ```
    grep -r "getPage(" src/
    ```
+
    For each `getProps` function that calls `getPage`:
    - Add `pages: PageData[]` and `reviewedWorks: ReviewedWorkData[]` parameters.
    - Pass both through to `getPage(slug, pages, reviewedWorks)`.
@@ -164,8 +174,8 @@ accept collection data as a parameter. Update the Astro pages that use it. Delet
 3. **Update Astro pages** that call the affected `getProps`:
    - Add both collections:
      ```astro
-     const pages = (await getCollection('pages')).map((e) => e.data);
-     const works = (await getCollection('reviewedWorks')).map((e) => e.data);
+     const pages = (await getCollection('pages')).map((e) => e.data); const
+     works = (await getCollection('reviewedWorks')).map((e) => e.data);
      ```
    - Pass both to `getProps`.
 
@@ -184,12 +194,12 @@ accept collection data as a parameter. Update the Astro pages that use it. Delet
 
 ### Success Criteria
 
-- [ ] `getPage('how-i-grade', pageFixtures, worksFixtures)` returns correct HTML in tests
-- [ ] Work spans in `intermediateHtml` are linked when the slug is in `worksFixtures`
-- [ ] `/how-i-grade` and any other pages-based routes render correctly in dev
-- [ ] `pages-markdown.ts` deleted
-- [ ] No references to `allPagesMarkdown` remain (`grep -r "allPagesMarkdown" src/`)
-- [ ] `npm run test`, `npm run lint`, `npm run check` pass
+- [x] `getPage('how-i-grade', pageFixtures, worksFixtures)` returns correct HTML in tests
+- [x] Work spans in `intermediateHtml` are linked when the slug is in `worksFixtures`
+- [x] `/how-i-grade` and any other pages-based routes render correctly in dev
+- [x] `pages-markdown.ts` deleted
+- [x] No references to `allPagesMarkdown` remain (`grep -r "allPagesMarkdown" src/`)
+- [x] `npm run test`, `npm run lint`, `npm run check` pass
 
 ---
 
@@ -267,14 +277,15 @@ Astro pages. Delete both stats data-layer files.
 4. **Update Astro pages**:
    - `src/pages/readings/stats/index.astro`:
      ```astro
-     const alltimeEntry = await getCollection('alltimeStats');
-     const data = alltimeEntry[0].data;
-     const yearStatsEntries = (await getCollection('yearStats')).map((e) => e.data);
-     const props = await getAlltimeStatsProps(data, yearStatsEntries);
+     const alltimeEntry = await getCollection('alltimeStats'); const data =
+     alltimeEntry[0].data; const yearStatsEntries = (await
+     getCollection('yearStats')).map((e) => e.data); const props = await
+     getAlltimeStatsProps(data, yearStatsEntries);
      ```
    - `src/pages/readings/stats/[year]/index.astro`:
      ```astro
-     const yearStatsEntries = (await getCollection('yearStats')).map((e) => e.data);
+     const yearStatsEntries = (await getCollection('yearStats')).map((e) =>
+     e.data);
      ```
      Update `getStaticPaths` to use `allStatYears(yearStatsEntries)`.
 
@@ -378,23 +389,26 @@ This is the most complex stage. All three collections must be verified to load c
    export function allReviews(
      works: ReviewedWorkData[],
      reviews: ReviewData[],
-   ): ReviewsResult
+   ): ReviewsResult;
 
    // Apply linkReviewedWorks to pre-computed intermediate HTML from store
    export function loadContent(
      review: Review,
      readings: ReadingData[],
      reviewedWorks: ReviewedWorkData[],
-   ): ReviewContent
+   ): ReviewContent;
    // Internally: linkReviewedWorks(review.intermediateHtml, reviewedWorks)
    //             linkReviewedWorks(reading.intermediateReadingNotesHtml, reviewedWorks)
    //             linkReviewedWorks(reading.intermediateEditionNotesHtml, reviewedWorks)
 
    // Return pre-computed excerpt from store — no processing needed
-   export function loadExcerptHtml(review: ReviewData): string
+   export function loadExcerptHtml(review: ReviewData): string;
    // return review.excerptHtml
 
-   export function mostRecentReviews(reviews: Review[], limit: number): Review[]
+   export function mostRecentReviews(
+     reviews: Review[],
+     limit: number,
+   ): Review[];
    ```
 
    Remove all `async` keywords, `ENABLE_CACHE`, the excerpt cache `Map`, and all
@@ -419,21 +433,24 @@ This is the most complex stage. All three collections must be verified to load c
 5. **Update all Astro pages** that consume review data:
 
    Reviews listing (`src/pages/reviews/index.astro`):
+
    ```astro
    const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-   const reviews = (await getCollection('reviews')).map((e) => e.data);
-   const props = getReviewsProps(works, reviews);
+   const reviews = (await getCollection('reviews')).map((e) => e.data); const
+   props = getReviewsProps(works, reviews);
    ```
 
    Individual review (`src/pages/reviews/[slug]/index.astro`):
+
    ```astro
    const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-   const reviews = (await getCollection('reviews')).map((e) => e.data);
-   const readings = (await getCollection('readings')).map((e) => e.data);
-   // getStaticPaths: use works array to generate slugs
+   const reviews = (await getCollection('reviews')).map((e) => e.data); const
+   readings = (await getCollection('readings')).map((e) => e.data); //
+   getStaticPaths: use works array to generate slugs
    ```
 
    Homepage (`src/pages/index.astro`):
+
    ```astro
    const works = (await getCollection('reviewedWorks')).map((e) => e.data);
    const reviews = (await getCollection('reviews')).map((e) => e.data);
@@ -486,6 +503,7 @@ remove the `contentHmr()` Vite plugin, and verify a clean production build.
 2. **Delete `src/api/data/utils/ENABLE_CACHE.ts`** (no longer called anywhere).
 
 3. **Remove `src/api/data/` directory** entirely if now empty. Verify with:
+
    ```
    ls src/api/data/
    ```
@@ -508,12 +526,15 @@ remove the `contentHmr()` Vite plugin, and verify a clean production build.
    - Delete the plugin's source file.
 
 7. **Check for any remaining references to deleted data-layer functions**:
+
    ```
    grep -r "allAuthorsJson\|allReviewedWorksJson\|allReadingEntriesJson\|allReviewsMarkdown\|allReadingsMarkdown\|allPagesMarkdown\|alltimeStatsJson\|allYearStatsJson\|getContentPath\|ENABLE_CACHE" src/
    ```
+
    There should be zero results.
 
 8. **Run the full pre-PR checklist**:
+
    ```
    npm run test -- --max-workers=2
    npm run lint
