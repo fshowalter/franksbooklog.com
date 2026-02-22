@@ -1,3 +1,5 @@
+import type { ReadingEntryData } from "~/content.config";
+
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReadingEntries } from "~/api/readings";
 
@@ -6,14 +8,16 @@ import type { ReadingLogProps } from "./ReadingLog";
 
 import { ReadingLogImageConfig } from "./ReadingLog";
 
-export async function getReadingLogProps(): Promise<ReadingLogProps> {
+export async function getReadingLogProps(
+  entries: ReadingEntryData[],
+): Promise<ReadingLogProps> {
   const {
     distinctEditions,
     distinctKinds,
     distinctReadingYears,
     distinctWorkYears,
     readingEntries,
-  } = await allReadingEntries();
+  } = allReadingEntries(entries);
 
   // Don't pre-sort here - let the component handle sorting
   // timelineEntries.sort((a, b) => b.timelineSequence - a.timelineSequence);

@@ -209,7 +209,7 @@ accept collection data as a parameter. Update the Astro pages that use it. Delet
 `allReadingEntries()` a pure synchronous function. Update the reading-log feature and its
 Astro page. Delete `reading-entries-json.ts`.
 
-**Status**: Not Started
+**Status**: Complete
 
 ### Work
 
@@ -241,11 +241,11 @@ Astro page. Delete `reading-entries-json.ts`.
 
 ### Success Criteria
 
-- [ ] `allReadingEntries(fixtures)` returns correct counts and distinct values in tests
-- [ ] `/readings` page renders correctly in dev with real data
-- [ ] `reading-entries-json.ts` deleted
-- [ ] No references to `allReadingEntriesJson` remain
-- [ ] All tests pass
+- [x] `allReadingEntries(fixtures)` returns correct counts and distinct values in tests
+- [x] `/readings` page renders correctly in dev with real data
+- [x] `reading-entries-json.ts` deleted
+- [x] No references to `allReadingEntriesJson` remain
+- [x] All tests pass
 
 ---
 

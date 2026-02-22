@@ -1,11 +1,15 @@
 ---
+import { getCollection } from "astro:content";
+
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
 import { Layout } from "~/components/layout/Layout";
 import { getReadingLogProps } from "~/features/reading-log/getReadingLogProps";
 import { ReadingLog } from "~/features/reading-log/ReadingLog";
 
-const readingLogProps = await getReadingLogProps();
+const readingEntriesResult = await getCollection("readingEntries");
+const entries = readingEntriesResult.map((e) => e.data);
+const readingLogProps = await getReadingLogProps(entries);
 const backdropImageProps = await getLayoutBackdropImageProps("readings");
 const deck = `"You interest me. Rather vaguely."`;
 const metaDescription =

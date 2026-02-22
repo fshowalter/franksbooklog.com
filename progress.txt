@@ -81,3 +81,49 @@
 - **Prettier pre-existing issues**: `content.config.ts`, `PLAN.md`, `SPEC.md` already had formatting issues from Stage 1 — fixed in this stage
 
 ---
+
+## 2026-02-22 - Stage 3: Migrate `readings.ts`
+
+### What was implemented
+- Updated `src/api/readings.ts` to a pure synchronous function:
+  - `allReadingEntries(entries: ReadingEntryData[]): ReadingEntries` — no longer async, no I/O or caching
+  - `ReadingEntry` type aliased to `ReadingEntryData` from content.config.ts
+  - Removed `allReadingEntriesJson`, `perfLogger` imports
+- Updated `src/features/reading-log/getReadingLogProps.ts`:
+  - Added `entries: ReadingEntryData[]` parameter
+  - Passes to `allReadingEntries(entries)` (now sync call, `getReadingLogProps` stays async for image optimization)
+- Updated `src/pages/readings/index.astro`:
+  - Added `getCollection('readingEntries')` call, stored result in variable before `.map()` (unicorn/no-await-expression-member)
+  - Passed `entries` to `getReadingLogProps(entries)`
+- Created `src/api/__fixtures__/readingEntries.ts` — `ReadingEntryData[]` fixtures with Finished/Abandoned/Short Story entries
+- Created `src/api/readings.spec.ts` — 10 pure function tests for `allReadingEntries`: counts, distinct values, edge cases
+- Deleted `src/api/data/reading-entries-json.ts`
+- Deleted snapshot tests: `src/pages/readings/_index.spec.ts`, `_og.spec.ts`, `__snapshots__/index.html`, `__image_snapshots__/og.jpg`
+- Fixed pre-existing lint error in `src/components/cover-list/CoverListItem.tsx` (Tailwind class canonicalization); updated affected snapshots
+
+### Files changed
+- `src/api/readings.ts` (updated)
+- `src/features/reading-log/getReadingLogProps.ts` (updated)
+- `src/pages/readings/index.astro` (updated)
+- `src/api/__fixtures__/readingEntries.ts` (created)
+- `src/api/readings.spec.ts` (created)
+- `src/api/data/reading-entries-json.ts` (deleted)
+- `src/pages/readings/_index.spec.ts` (deleted)
+- `src/pages/readings/_og.spec.ts` (deleted)
+- `src/pages/readings/__snapshots__/index.html` (deleted)
+- `src/pages/readings/__image_snapshots__/og.jpg` (deleted)
+- `src/components/cover-list/CoverListItem.tsx` (pre-existing lint fix)
+- Various `__snapshots__/*.html` files updated due to CoverListItem.tsx change
+- `PLAN.md` (Stage 3 status → Complete, success criteria checked)
+- `progress.txt` (this file)
+
+### Missing permissions
+- None
+
+### Learnings for future iterations:
+- **`getReadingLogProps` stays async** even after the migration because it calls `getFluidCoverImageProps` (image optimization), which is async — only the `allReadingEntries` call becomes sync
+- **`ReadingEntry = ReadingEntryData`** — the old `ReadingEntryJson & {}` type can be directly aliased to `ReadingEntryData` since the schemas are identical; no type coercion needed
+- **Pre-existing lint errors may block stage completion** — `npm run lint` failed on `CoverListItem.tsx` (unrelated to Stage 3 changes); auto-fix via `npx eslint --fix` resolved it, but required snapshot updates for affected pages
+- **Snapshot updates cascade from non-test code changes** — fixing a Tailwind class in a cover component invalidates all snapshot tests that render covers; run `npm run test:update` when making cosmetic fixes to shared components
+
+---
