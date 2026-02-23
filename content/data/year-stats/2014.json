@@ -59,195 +59,23 @@
       "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 9,
-          "date": "2014-02-24",
-          "slug": "the-cellar-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Cellar",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 12,
-          "date": "2014-03-12",
-          "slug": "your-secret-admirer-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Your Secret Admirer",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 13,
-          "date": "2014-03-18",
-          "slug": "the-woods-are-dark-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Woods Are Dark",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 15,
-          "date": "2014-04-05",
-          "slug": "nightmare-lake-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Nightmare Lake",
-          "workYear": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 16,
-          "date": "2014-04-11",
-          "slug": "the-lawmen-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Lawmen",
-          "workYear": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 18,
-          "date": "2014-04-28",
-          "slug": "out-are-the-lights-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Out Are the Lights",
-          "workYear": "1982",
-          "includedInSlugs": [
-            "out-are-the-lights-and-other-tales-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 20,
-          "date": "2014-05-21",
-          "slug": "night-show-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Night Show",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 22,
-          "date": "2014-06-09",
-          "slug": "dawsons-city-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Dawson's City",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 23,
-          "date": "2014-06-09",
-          "slug": "shootout-at-joes-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Shootout at Joe's",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 24,
-          "date": "2014-06-09",
-          "slug": "allhallows-eve-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Allhallow's Eve",
-          "workYear": "1986",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 26,
-          "date": "2014-06-27",
-          "slug": "beware-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Beware!",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 28,
-          "date": "2014-07-13",
-          "slug": "the-last-hand-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Last Hand",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 29,
-          "date": "2014-07-22",
-          "slug": "the-beast-house-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Beast House",
-          "workYear": "1986",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 30,
-          "date": "2014-07-23",
-          "slug": "the-intruder-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Intruder",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 33,
-          "date": "2014-09-21",
-          "slug": "tread-softly-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Tread Softly",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 35,
-          "date": "2014-10-28",
-          "slug": "the-lonely-one-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Lonely One",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 36,
-          "date": "2014-11-02",
-          "slug": "live-bait-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Live Bait",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2014-02-24-01-the-cellar-by-richard-laymon",
+        "2014-03-12-01-your-secret-admirer-by-richard-laymon",
+        "2014-03-18-01-the-woods-are-dark-by-richard-laymon",
+        "2014-04-05-01-nightmare-lake-by-richard-laymon",
+        "2014-04-11-01-the-lawmen-by-richard-laymon",
+        "2014-04-28-01-out-are-the-lights-by-richard-laymon",
+        "2014-05-21-01-night-show-by-richard-laymon",
+        "2014-06-09-01-dawsons-city-by-richard-laymon",
+        "2014-06-09-02-shootout-at-joes-by-richard-laymon",
+        "2014-06-09-03-allhallows-eve-by-richard-laymon",
+        "2014-06-27-01-beware-by-richard-laymon",
+        "2014-07-13-01-the-last-hand-by-richard-laymon",
+        "2014-07-22-01-the-beast-house-by-richard-laymon",
+        "2014-07-23-01-the-intruder-by-richard-laymon",
+        "2014-09-21-01-tread-softly-by-richard-laymon",
+        "2014-10-28-01-the-lonely-one-by-richard-laymon",
+        "2014-11-02-01-live-bait-by-richard-laymon"
       ]
     },
     {
@@ -256,116 +84,16 @@
       "slug": "stephen-king",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 10,
-          "date": "2014-03-02",
-          "slug": "the-stand-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Stand",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 11,
-          "date": "2014-03-09",
-          "slug": "the-long-walk-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Long Walk",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 14,
-          "date": "2014-04-04",
-          "slug": "the-dead-zone-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Dead Zone",
-          "workYear": "1979",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 17,
-          "date": "2014-04-22",
-          "slug": "firestarter-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Firestarter",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 19,
-          "date": "2014-05-11",
-          "slug": "roadwork-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Roadwork",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 21,
-          "date": "2014-06-04",
-          "slug": "danse-macabre-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "Danse Macabre",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 25,
-          "date": "2014-06-17",
-          "slug": "cujo-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Cujo",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 27,
-          "date": "2014-07-10",
-          "slug": "the-running-man-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Running Man",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 31,
-          "date": "2014-08-05",
-          "slug": "the-gunslinger-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Gunslinger",
-          "workYear": "1982",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 34,
-          "date": "2014-10-27",
-          "slug": "different-seasons-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Collection",
-          "title": "Different Seasons",
-          "workYear": "1982",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2014-03-02-01-the-stand-by-stephen-king",
+        "2014-03-09-01-the-long-walk-by-stephen-king",
+        "2014-04-04-01-the-dead-zone-by-stephen-king",
+        "2014-04-22-01-firestarter-by-stephen-king",
+        "2014-05-11-01-roadwork-by-stephen-king",
+        "2014-06-04-01-danse-macabre-by-stephen-king",
+        "2014-06-17-04-cujo-by-stephen-king",
+        "2014-07-10-01-the-running-man-by-stephen-king",
+        "2014-08-05-01-the-gunslinger-by-stephen-king",
+        "2014-10-27-01-different-seasons-by-stephen-king"
       ]
     }
   ]

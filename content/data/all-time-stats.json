@@ -161,410 +161,42 @@
       "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 9,
-          "date": "2014-02-24",
-          "slug": "the-cellar-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Cellar",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 12,
-          "date": "2014-03-12",
-          "slug": "your-secret-admirer-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Your Secret Admirer",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 13,
-          "date": "2014-03-18",
-          "slug": "the-woods-are-dark-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Woods Are Dark",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 15,
-          "date": "2014-04-05",
-          "slug": "nightmare-lake-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Nightmare Lake",
-          "workYear": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 16,
-          "date": "2014-04-11",
-          "slug": "the-lawmen-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Lawmen",
-          "workYear": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 18,
-          "date": "2014-04-28",
-          "slug": "out-are-the-lights-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Out Are the Lights",
-          "workYear": "1982",
-          "includedInSlugs": [
-            "out-are-the-lights-and-other-tales-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 20,
-          "date": "2014-05-21",
-          "slug": "night-show-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Night Show",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 22,
-          "date": "2014-06-09",
-          "slug": "dawsons-city-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Dawson's City",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 23,
-          "date": "2014-06-09",
-          "slug": "shootout-at-joes-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Shootout at Joe's",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 24,
-          "date": "2014-06-09",
-          "slug": "allhallows-eve-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Allhallow's Eve",
-          "workYear": "1986",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 26,
-          "date": "2014-06-27",
-          "slug": "beware-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Beware!",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 28,
-          "date": "2014-07-13",
-          "slug": "the-last-hand-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Last Hand",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 29,
-          "date": "2014-07-22",
-          "slug": "the-beast-house-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Beast House",
-          "workYear": "1986",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 30,
-          "date": "2014-07-23",
-          "slug": "the-intruder-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Intruder",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 33,
-          "date": "2014-09-21",
-          "slug": "tread-softly-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Tread Softly",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 35,
-          "date": "2014-10-28",
-          "slug": "the-lonely-one-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Lonely One",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 36,
-          "date": "2014-11-02",
-          "slug": "live-bait-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Live Bait",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 39,
-          "date": "2015-01-28",
-          "slug": "the-lonely-one-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Lonely One",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 56,
-          "date": "2017-10-14",
-          "slug": "flesh-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Flesh",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 67,
-          "date": "2018-01-11",
-          "slug": "midnights-lair-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Midnight's Lair",
-          "workYear": "1988",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 71,
-          "date": "2018-03-12",
-          "slug": "resurrection-dreams-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Resurrection Dreams",
-          "workYear": "1988",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 73,
-          "date": "2018-05-20",
-          "slug": "funland-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Funland",
-          "workYear": "1989",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 77,
-          "date": "2018-07-06",
-          "slug": "the-stake-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Stake",
-          "workYear": "1990",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 86,
-          "date": "2018-09-03",
-          "slug": "one-rainy-night-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "One Rainy Night",
-          "workYear": "1991",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 105,
-          "date": "2019-02-10",
-          "slug": "darkness-tell-us-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Darkness, Tell Us",
-          "workYear": "1991",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 111,
-          "date": "2019-03-18",
-          "slug": "alarums-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Alarums",
-          "workYear": "1992",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 115,
-          "date": "2019-04-11",
-          "slug": "blood-games-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Blood Games",
-          "workYear": "1992",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 119,
-          "date": "2019-05-27",
-          "slug": "endless-night-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Endless Night",
-          "workYear": "1993",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 124,
-          "date": "2022-03-16",
-          "slug": "the-cellar-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Cellar",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 128,
-          "date": "2022-04-03",
-          "slug": "desert-pickup-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Desert Pickup",
-          "workYear": "1970",
-          "includedInSlugs": [
-            "short-stories-volume-one-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 159,
-          "date": "2022-09-11",
-          "slug": "the-woods-are-dark-by-richard-laymon",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "The Woods Are Dark",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 165,
-          "date": "2022-10-11",
-          "slug": "out-are-the-lights-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Out Are the Lights",
-          "workYear": "1982",
-          "includedInSlugs": [
-            "out-are-the-lights-and-other-tales-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 172,
-          "date": "2023-01-21",
-          "slug": "roadside-pickup-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Roadside Pickup",
-          "workYear": "1974",
-          "includedInSlugs": [
-            "short-stories-volume-one-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 186,
-          "date": "2025-02-06",
-          "slug": "night-show-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Night Show",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 187,
-          "date": "2025-02-09",
-          "slug": "a-writers-tale-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "A Writer's Tale",
-          "workYear": "1997",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 188,
-          "date": "2025-02-15",
-          "slug": "the-lonely-one-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Lonely One",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2014-02-24-01-the-cellar-by-richard-laymon",
+        "2014-03-12-01-your-secret-admirer-by-richard-laymon",
+        "2014-03-18-01-the-woods-are-dark-by-richard-laymon",
+        "2014-04-05-01-nightmare-lake-by-richard-laymon",
+        "2014-04-11-01-the-lawmen-by-richard-laymon",
+        "2014-04-28-01-out-are-the-lights-by-richard-laymon",
+        "2014-05-21-01-night-show-by-richard-laymon",
+        "2014-06-09-01-dawsons-city-by-richard-laymon",
+        "2014-06-09-02-shootout-at-joes-by-richard-laymon",
+        "2014-06-09-03-allhallows-eve-by-richard-laymon",
+        "2014-06-27-01-beware-by-richard-laymon",
+        "2014-07-13-01-the-last-hand-by-richard-laymon",
+        "2014-07-22-01-the-beast-house-by-richard-laymon",
+        "2014-07-23-01-the-intruder-by-richard-laymon",
+        "2014-09-21-01-tread-softly-by-richard-laymon",
+        "2014-10-28-01-the-lonely-one-by-richard-laymon",
+        "2014-11-02-01-live-bait-by-richard-laymon",
+        "2015-01-28-01-the-lonely-one-by-richard-laymon",
+        "2017-10-14-01-flesh-by-richard-laymon",
+        "2018-01-11-01-midnights-lair-by-richard-laymon",
+        "2018-03-12-02-resurrection-dreams-by-richard-laymon",
+        "2018-05-20-02-funland-by-richard-laymon",
+        "2018-07-06-01-the-stake-by-richard-laymon",
+        "2018-09-03-01-one-rainy-night-by-richard-laymon",
+        "2019-02-10-01-darkness-tell-us-by-richard-laymon",
+        "2019-03-18-01-alarums-by-richard-laymon",
+        "2019-04-11-01-blood-games-by-richard-laymon",
+        "2019-05-27-01-endless-night-by-richard-laymon",
+        "2022-03-16-01-the-cellar-by-richard-laymon",
+        "2022-04-03-01-desert-pickup-by-richard-laymon",
+        "2022-09-11-02-the-woods-are-dark-by-richard-laymon",
+        "2022-10-11-01-out-are-the-lights-by-richard-laymon",
+        "2023-01-21-01-roadside-pickup-by-richard-laymon",
+        "2025-02-06-01-night-show-by-richard-laymon",
+        "2025-02-09-01-a-writers-tale-by-richard-laymon",
+        "2025-02-15-01-the-lonely-one-by-richard-laymon"
       ]
     },
     {
@@ -573,347 +205,37 @@
       "slug": "stephen-king",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 1,
-          "date": "2011-11-06",
-          "slug": "the-shining-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Shining",
-          "workYear": "1977",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 2,
-          "date": "2012-05-13",
-          "slug": "rage-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Rage",
-          "workYear": "1976",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 3,
-          "date": "2012-05-14",
-          "slug": "night-shift-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Collection",
-          "title": "Night Shift",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 10,
-          "date": "2014-03-02",
-          "slug": "the-stand-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Stand",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 11,
-          "date": "2014-03-09",
-          "slug": "the-long-walk-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Long Walk",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 14,
-          "date": "2014-04-04",
-          "slug": "the-dead-zone-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Dead Zone",
-          "workYear": "1979",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 17,
-          "date": "2014-04-22",
-          "slug": "firestarter-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Firestarter",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 19,
-          "date": "2014-05-11",
-          "slug": "roadwork-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Roadwork",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 21,
-          "date": "2014-06-04",
-          "slug": "danse-macabre-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "Danse Macabre",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 25,
-          "date": "2014-06-17",
-          "slug": "cujo-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Cujo",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 27,
-          "date": "2014-07-10",
-          "slug": "the-running-man-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Running Man",
-          "workYear": "1981",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 31,
-          "date": "2014-08-05",
-          "slug": "the-gunslinger-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Gunslinger",
-          "workYear": "1982",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 34,
-          "date": "2014-10-27",
-          "slug": "different-seasons-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Collection",
-          "title": "Different Seasons",
-          "workYear": "1982",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 46,
-          "date": "2016-01-14",
-          "slug": "christine-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Christine",
-          "workYear": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 64,
-          "date": "2017-12-18",
-          "slug": "pet-sematary-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Pet Sematary",
-          "workYear": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 76,
-          "date": "2018-06-29",
-          "slug": "the-talisman-by-stephen-king-peter-straub",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Talisman",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 80,
-          "date": "2018-07-18",
-          "slug": "cycle-of-the-werewolf-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Cycle of the Werewolf",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 83,
-          "date": "2018-08-05",
-          "slug": "thinner-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Thinner",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 89,
-          "date": "2018-10-08",
-          "slug": "skeleton-crew-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Collection",
-          "title": "Skeleton Crew",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 93,
-          "date": "2018-12-06",
-          "slug": "it-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "It",
-          "workYear": "1986",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 104,
-          "date": "2019-02-03",
-          "slug": "the-eyes-of-the-dragon-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Eyes of the Dragon",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 109,
-          "date": "2019-03-06",
-          "slug": "the-gunslinger-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Gunslinger",
-          "workYear": "1982",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 110,
-          "date": "2019-03-13",
-          "slug": "the-drawing-of-the-three-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Drawing of the Three",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 114,
-          "date": "2019-04-03",
-          "slug": "misery-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Misery",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 118,
-          "date": "2019-05-19",
-          "slug": "the-tommyknockers-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Tommyknockers",
-          "workYear": "1987",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 122,
-          "date": "2019-06-20",
-          "slug": "the-dark-half-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Dark Half",
-          "workYear": "1989",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 126,
-          "date": "2022-03-21",
-          "slug": "on-writing-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "On Writing",
-          "workYear": "2000",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 161,
-          "date": "2022-09-19",
-          "slug": "carrie-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Carrie",
-          "workYear": "1974",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 167,
-          "date": "2022-10-14",
-          "slug": "salems-lot-by-stephen-king",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "'Salem's Lot",
-          "workYear": "1975",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 170,
-          "date": "2022-10-29",
-          "slug": "the-shining-by-stephen-king",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "The Shining",
-          "workYear": "1977",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 171,
-          "date": "2023-01-14",
-          "slug": "doctor-sleep-by-stephen-king",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Doctor Sleep",
-          "workYear": "2013",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2011-11-06-01-the-shining-by-stephen-king",
+        "2012-05-13-01-rage-by-stephen-king",
+        "2012-05-14-01-night-shift-by-stephen-king",
+        "2014-03-02-01-the-stand-by-stephen-king",
+        "2014-03-09-01-the-long-walk-by-stephen-king",
+        "2014-04-04-01-the-dead-zone-by-stephen-king",
+        "2014-04-22-01-firestarter-by-stephen-king",
+        "2014-05-11-01-roadwork-by-stephen-king",
+        "2014-06-04-01-danse-macabre-by-stephen-king",
+        "2014-06-17-04-cujo-by-stephen-king",
+        "2014-07-10-01-the-running-man-by-stephen-king",
+        "2014-08-05-01-the-gunslinger-by-stephen-king",
+        "2014-10-27-01-different-seasons-by-stephen-king",
+        "2016-01-14-01-christine-by-stephen-king",
+        "2017-12-18-01-pet-sematary-by-stephen-king",
+        "2018-06-29-01-the-talisman-by-stephen-king-peter-straub",
+        "2018-07-18-01-cycle-of-the-werewolf-by-stephen-king",
+        "2018-08-05-01-thinner-by-stephen-king",
+        "2018-10-08-01-skeleton-crew-by-stephen-king",
+        "2018-12-06-01-it-by-stephen-king",
+        "2019-02-03-01-the-eyes-of-the-dragon-by-stephen-king",
+        "2019-03-06-01-the-gunslinger-by-stephen-king",
+        "2019-03-13-01-the-drawing-of-the-three-by-stephen-king",
+        "2019-04-03-01-misery-by-stephen-king",
+        "2019-05-19-01-the-tommyknockers-by-stephen-king",
+        "2019-06-20-01-the-dark-half-by-stephen-king",
+        "2022-03-21-01-on-writing-by-stephen-king",
+        "2022-09-19-01-carrie-by-stephen-king",
+        "2022-10-14-01-salems-lot-by-stephen-king",
+        "2022-10-29-02-the-shining-by-stephen-king",
+        "2023-01-14-01-doctor-sleep-by-stephen-king"
       ]
     },
     {
@@ -922,200 +244,22 @@
       "slug": "philip-fracassi",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 129,
-          "date": "2022-04-17",
-          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Soft Construction of a Sunset",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 131,
-          "date": "2022-04-18",
-          "slug": "altar-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Altar",
-          "workYear": "2016",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 132,
-          "date": "2022-04-19",
-          "slug": "the-horse-thief-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "The Horse Thief",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 133,
-          "date": "2022-04-20",
-          "slug": "coffin-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Coffin",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 134,
-          "date": "2022-04-21",
-          "slug": "the-baby-farmer-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "The Baby Farmer",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 135,
-          "date": "2022-04-22",
-          "slug": "surfer-girl-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Surfer Girl",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 136,
-          "date": "2022-04-23",
-          "slug": "mother-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Mother",
-          "workYear": "2015",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 137,
-          "date": "2022-04-30",
-          "slug": "fail-safe-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Fail-Safe",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 138,
-          "date": "2022-05-07",
-          "slug": "mandala-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Mandala",
-          "workYear": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 139,
-          "date": "2022-05-07",
-          "slug": "behold-the-void-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Collection",
-          "title": "Behold the Void",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 175,
-          "date": "2023-10-09",
-          "slug": "sacculina-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Sacculina",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 177,
-          "date": "2023-10-29",
-          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Don't Let Them Get You Down",
-          "workYear": "2022",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 181,
-          "date": "2024-06-30",
-          "slug": "gothic-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Gothic",
-          "workYear": "2023",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 190,
-          "date": "2025-07-11",
-          "slug": "commodore-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Commodore",
-          "workYear": "2021",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 191,
-          "date": "2025-07-11",
-          "slug": "shiloh-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Shiloh",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 192,
-          "date": "2025-07-12",
-          "slug": "king-mob-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "King Mob",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2022-04-17-01-soft-construction-of-a-sunset-by-philip-fracassi",
+        "2022-04-18-01-altar-by-philip-fracassi",
+        "2022-04-19-01-the-horse-thief-by-philip-fracassi",
+        "2022-04-20-01-coffin-by-philip-fracassi",
+        "2022-04-21-01-the-baby-farmer-by-philip-fracassi",
+        "2022-04-22-01-surfer-girl-by-philip-fracassi",
+        "2022-04-23-01-mother-by-philip-fracassi",
+        "2022-04-30-01-fail-safe-by-philip-fracassi",
+        "2022-05-07-01-mandala-by-philip-fracassi",
+        "2022-05-07-02-behold-the-void-by-philip-fracassi",
+        "2023-10-09-01-sacculina-by-philip-fracassi",
+        "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
+        "2024-06-30-01-gothic-by-philip-fracassi",
+        "2025-07-11-02-commodore-by-philip-fracassi",
+        "2025-07-11-03-shiloh-by-philip-fracassi",
+        "2025-07-12-01-king-mob-by-philip-fracassi"
       ]
     },
     {
@@ -1124,83 +268,13 @@
       "slug": "charlie-huston",
       "reviewed": false,
       "readings": [
-        {
-          "readingSequence": 42,
-          "date": "2015-10-23",
-          "slug": "caught-stealing-by-charlie-huston",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Caught Stealing",
-          "workYear": "2004",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 98,
-          "date": "2019-01-14",
-          "slug": "already-dead-by-charlie-huston",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Already Dead",
-          "workYear": "2005",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 99,
-          "date": "2019-01-20",
-          "slug": "no-dominion-by-charlie-huston",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "No Dominion",
-          "workYear": "2007",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 100,
-          "date": "2019-01-21",
-          "slug": "half-the-blood-of-brooklyn-by-charlie-huston",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Half the Blood of Brooklyn",
-          "workYear": "2007",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 101,
-          "date": "2019-01-27",
-          "slug": "every-last-drop-by-charlie-huston",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Every Last Drop",
-          "workYear": "2008",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 102,
-          "date": "2019-01-30",
-          "slug": "my-dead-body-by-charlie-huston",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "My Dead Body",
-          "workYear": "2009",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 121,
-          "date": "2019-06-07",
-          "slug": "the-shotgun-rule-by-charlie-huston",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Shotgun Rule",
-          "workYear": "2007",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2015-10-23-01-caught-stealing-by-charlie-huston",
+        "2019-01-14-01-already-dead-by-charlie-huston",
+        "2019-01-20-01-no-dominion-by-charlie-huston",
+        "2019-01-21-01-half-the-blood-of-brooklyn-by-charlie-huston",
+        "2019-01-27-01-every-last-drop-by-charlie-huston",
+        "2019-01-30-01-my-dead-body-by-charlie-huston",
+        "2019-06-07-01-the-shotgun-rule-by-charlie-huston"
       ]
     },
     {
@@ -1209,72 +283,12 @@
       "slug": "raymond-chandler",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 49,
-          "date": "2016-02-12",
-          "slug": "the-big-sleep-by-raymond-chandler",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Big Sleep",
-          "workYear": "1939",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 106,
-          "date": "2019-02-16",
-          "slug": "farewell-my-lovely-by-raymond-chandler",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Farewell, My Lovely",
-          "workYear": "1940",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 112,
-          "date": "2019-03-23",
-          "slug": "the-high-window-by-raymond-chandler",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The High Window",
-          "workYear": "1942",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 116,
-          "date": "2019-04-14",
-          "slug": "the-lady-in-the-lake-by-raymond-chandler",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Lady in the Lake",
-          "workYear": "1943",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 120,
-          "date": "2019-06-01",
-          "slug": "the-little-sister-by-raymond-chandler",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Little Sister",
-          "workYear": "1949",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 163,
-          "date": "2022-09-24",
-          "slug": "the-big-sleep-by-raymond-chandler",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "The Big Sleep",
-          "workYear": "1939",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2016-02-12-02-the-big-sleep-by-raymond-chandler",
+        "2019-02-16-01-farewell-my-lovely-by-raymond-chandler",
+        "2019-03-23-01-the-high-window-by-raymond-chandler",
+        "2019-04-14-01-the-lady-in-the-lake-by-raymond-chandler",
+        "2019-06-01-01-the-little-sister-by-raymond-chandler",
+        "2022-09-24-01-the-big-sleep-by-raymond-chandler"
       ]
     },
     {
@@ -1283,50 +297,10 @@
       "slug": "robert-e-howard",
       "reviewed": false,
       "readings": [
-        {
-          "readingSequence": 107,
-          "date": "2019-03-02",
-          "slug": "black-canaan-by-robert-e-howard",
-          "edition": "Paperback",
-          "kind": "Collection",
-          "title": "Black Canaan",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 108,
-          "date": "2019-03-02",
-          "slug": "the-horror-stories-of-robert-e-howard-by-robert-e-howard",
-          "edition": "Ebook",
-          "kind": "Collection",
-          "title": "The Horror Stories of Robert E. Howard",
-          "workYear": "2008",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 113,
-          "date": "2019-03-27",
-          "slug": "kull-exile-of-atlantis-by-robert-e-howard",
-          "edition": "Ebook",
-          "kind": "Collection",
-          "title": "Kull: Exile of Atlantis",
-          "workYear": "1967",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 117,
-          "date": "2019-04-28",
-          "slug": "the-coming-of-conan-the-cimmerian-by-robert-e-howard",
-          "edition": "Ebook",
-          "kind": "Collection",
-          "title": "The Coming of Conan the Cimmerian",
-          "workYear": "2002",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2019-03-02-01-black-canaan-by-robert-e-howard",
+        "2019-03-02-02-the-horror-stories-of-robert-e-howard-by-robert-e-howard",
+        "2019-03-27-01-kull-exile-of-atlantis-by-robert-e-howard",
+        "2019-04-28-01-the-coming-of-conan-the-cimmerian-by-robert-e-howard"
       ]
     },
     {
@@ -1335,39 +309,9 @@
       "slug": "jocko-willink",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 88,
-          "date": "2018-09-30",
-          "slug": "extreme-ownership-by-jocko-willink-leif-babin",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "Extreme Ownership",
-          "workYear": "2015",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 92,
-          "date": "2018-10-20",
-          "slug": "discipline-equals-freedom-by-jocko-willink",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "Discipline Equals Freedom",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 146,
-          "date": "2022-06-26",
-          "slug": "extreme-ownership-by-jocko-willink-leif-babin",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Extreme Ownership",
-          "workYear": "2015",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2018-09-30-01-extreme-ownership-by-jocko-willink-leif-babin",
+        "2018-10-20-01-discipline-equals-freedom-by-jocko-willink",
+        "2022-06-26-01-extreme-ownership-by-jocko-willink-leif-babin"
       ]
     },
     {
@@ -1376,39 +320,9 @@
       "slug": "jeff-gelb",
       "reviewed": false,
       "readings": [
-        {
-          "readingSequence": 66,
-          "date": "2018-01-05",
-          "slug": "hot-blood-by-jeff-gelb-lonn-m-friend",
-          "edition": "Ebook",
-          "kind": "Anthology",
-          "title": "Hot Blood",
-          "workYear": "1989",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 79,
-          "date": "2018-07-17",
-          "slug": "hotter-blood-by-jeff-gelb-michael-garrett",
-          "edition": "Ebook",
-          "kind": "Anthology",
-          "title": "Hotter Blood",
-          "workYear": "1991",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 96,
-          "date": "2018-12-29",
-          "slug": "hottest-blood-by-jeff-gelb-michael-garrett",
-          "edition": "Ebook",
-          "kind": "Anthology",
-          "title": "Hottest Blood",
-          "workYear": "1993",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2018-01-05-01-hot-blood-by-jeff-gelb-lonn-m-friend",
+        "2018-07-17-02-hotter-blood-by-jeff-gelb-michael-garrett",
+        "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett"
       ]
     },
     {
@@ -1417,39 +331,9 @@
       "slug": "james-kaplan",
       "reviewed": false,
       "readings": [
-        {
-          "readingSequence": 38,
-          "date": "2015-01-25",
-          "slug": "frank-by-james-kaplan",
-          "edition": "Paperback",
-          "kind": "Nonfiction",
-          "title": "Frank",
-          "workYear": "2010",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 43,
-          "date": "2015-12-30",
-          "slug": "sinatra-by-james-kaplan",
-          "edition": "Hardcover",
-          "kind": "Nonfiction",
-          "title": "Sinatra",
-          "workYear": "2015",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 44,
-          "date": "2016-01-03",
-          "slug": "life-the-rat-pack-by-james-kaplan",
-          "edition": "Hardcover",
-          "kind": "Nonfiction",
-          "title": "LIFE The Rat Pack",
-          "workYear": "2013",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2015-01-25-01-frank-by-james-kaplan",
+        "2015-12-30-01-sinatra-by-james-kaplan",
+        "2016-01-03-01-life-the-rat-pack-by-james-kaplan"
       ]
     },
     {
@@ -1458,39 +342,9 @@
       "slug": "karl-edward-wagner",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 4,
-          "date": "2012-05-18",
-          "slug": "dark-crusade-by-karl-edward-wagner",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Dark Crusade",
-          "workYear": "1976",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 193,
-          "date": "2025-10-26",
-          "slug": "in-the-pines-by-karl-edward-wagner",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "In the Pines",
-          "workYear": "1973",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 194,
-          "date": "2025-11-09",
-          "slug": "where-the-summer-ends-by-karl-edward-wagner",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Where the Summer Ends",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2012-05-18-01-dark-crusade-by-karl-edward-wagner",
+        "2025-10-26-01-in-the-pines-by-karl-edward-wagner",
+        "2025-11-09-01-where-the-summer-ends-by-karl-edward-wagner"
       ]
     }
   ]

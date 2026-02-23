@@ -43,28 +43,8 @@
       "slug": "stephen-king",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 2,
-          "date": "2012-05-13",
-          "slug": "rage-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Rage",
-          "workYear": "1976",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 3,
-          "date": "2012-05-14",
-          "slug": "night-shift-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Collection",
-          "title": "Night Shift",
-          "workYear": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2012-05-13-01-rage-by-stephen-king",
+        "2012-05-14-01-night-shift-by-stephen-king"
       ]
     }
   ]

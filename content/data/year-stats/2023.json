@@ -59,28 +59,8 @@
       "slug": "stephen-morris",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 179,
-          "date": "2023-11-11",
-          "slug": "record-play-pause-by-stephen-morris",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Record Play Pause",
-          "workYear": "2019",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 180,
-          "date": "2023-12-09",
-          "slug": "fast-forward-by-stephen-morris",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Fast Forward",
-          "workYear": "2020",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2023-11-11-01-record-play-pause-by-stephen-morris",
+        "2023-12-09-01-fast-forward-by-stephen-morris"
       ]
     },
     {
@@ -89,28 +69,8 @@
       "slug": "philip-fracassi",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 175,
-          "date": "2023-10-09",
-          "slug": "sacculina-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Sacculina",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 177,
-          "date": "2023-10-29",
-          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Don't Let Them Get You Down",
-          "workYear": "2022",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2023-10-09-01-sacculina-by-philip-fracassi",
+        "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi"
       ]
     }
   ]
