@@ -63,39 +63,9 @@
       "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 186,
-          "date": "2025-02-06",
-          "slug": "night-show-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Night Show",
-          "workYear": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 187,
-          "date": "2025-02-09",
-          "slug": "a-writers-tale-by-richard-laymon",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "A Writer's Tale",
-          "workYear": "1997",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 188,
-          "date": "2025-02-15",
-          "slug": "the-lonely-one-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "The Lonely One",
-          "workYear": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2025-02-06-01-night-show-by-richard-laymon",
+        "2025-02-09-01-a-writers-tale-by-richard-laymon",
+        "2025-02-15-01-the-lonely-one-by-richard-laymon"
       ]
     },
     {
@@ -104,39 +74,9 @@
       "slug": "philip-fracassi",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 190,
-          "date": "2025-07-11",
-          "slug": "commodore-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Commodore",
-          "workYear": "2021",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 191,
-          "date": "2025-07-11",
-          "slug": "shiloh-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Novella",
-          "title": "Shiloh",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 192,
-          "date": "2025-07-12",
-          "slug": "king-mob-by-philip-fracassi",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "King Mob",
-          "workYear": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2025-07-11-02-commodore-by-philip-fracassi",
+        "2025-07-11-03-shiloh-by-philip-fracassi",
+        "2025-07-12-01-king-mob-by-philip-fracassi"
       ]
     },
     {
@@ -145,28 +85,8 @@
       "slug": "karl-edward-wagner",
       "reviewed": true,
       "readings": [
-        {
-          "readingSequence": 193,
-          "date": "2025-10-26",
-          "slug": "in-the-pines-by-karl-edward-wagner",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "In the Pines",
-          "workYear": "1973",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "readingSequence": 194,
-          "date": "2025-11-09",
-          "slug": "where-the-summer-ends-by-karl-edward-wagner",
-          "edition": "Ebook",
-          "kind": "Short Story",
-          "title": "Where the Summer Ends",
-          "workYear": "1980",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
+        "2025-10-26-01-in-the-pines-by-karl-edward-wagner",
+        "2025-11-09-01-where-the-summer-ends-by-karl-edward-wagner"
       ]
     }
   ]

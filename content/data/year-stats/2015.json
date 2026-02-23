@@ -47,28 +47,8 @@
       "slug": "james-kaplan",
       "reviewed": false,
       "readings": [
-        {
-          "readingSequence": 38,
-          "date": "2015-01-25",
-          "slug": "frank-by-james-kaplan",
-          "edition": "Paperback",
-          "kind": "Nonfiction",
-          "title": "Frank",
-          "workYear": "2010",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "readingSequence": 43,
-          "date": "2015-12-30",
-          "slug": "sinatra-by-james-kaplan",
-          "edition": "Hardcover",
-          "kind": "Nonfiction",
-          "title": "Sinatra",
-          "workYear": "2015",
-          "includedInSlugs": [],
-          "reviewed": false
-        }
+        "2015-01-25-01-frank-by-james-kaplan",
+        "2015-12-30-01-sinatra-by-james-kaplan"
       ]
     }
   ]

@@ -1,619 +1,260 @@
-# Content Collections Migration: Implementation Plan
+# Plan: Content Data Restructuring
 
-See `SPEC.md` for the full design rationale, collection definitions, and risk analysis.
-
----
-
-## Stage 1: Create `content.config.ts` with all collections
-
-**Goal**: Define all eight collections with inline loaders and Zod schemas. Verify that
-`getCollection()` returns correctly typed, fully validated data. No changes to existing
-API or feature code.
-
-**Status**: Complete
-
-### Work
-
-1. Create `src/content.config.ts` with all eight collections:
-   - `authors` — custom loader: glob `/content/data/authors/*.json`
-   - `reviewedWorks` — custom loader: read `/content/data/reviewed-works.json`, iterate
-   - `readingEntries` — custom loader: read `/content/data/reading-entries.json`, iterate
-   - `reviews` — custom loader: glob `/content/reviews/*.md`, parse with gray-matter
-   - `readings` — custom loader: glob `/content/readings/*.md`, parse with gray-matter
-   - `pages` — custom loader: glob `/content/pages/*.md`, parse with gray-matter
-   - `alltimeStats` — custom loader: read `/content/data/all-time-stats.json` as single
-     entry with id `"alltime"`
-   - `yearStats` — custom loader: glob `/content/data/year-stats/*.json`
-
-2. For **JSON-only collections** (`authors`, `reviewedWorks`, `readingEntries`,
-   `alltimeStats`, `yearStats`), implement the standard pattern, with the collection
-   reference transformations applied before `parseData()`:
-
-   **`authors` loader** — extract work slugs from embedded objects:
-
-   ```typescript
-   const data = await ctx.parseData({
-     id: author.slug,
-     data: {
-       ...author,
-       reviewedWorks: author.reviewedWorks.map((w) => w.slug),
-     },
-   });
-   store.set({ data, digest: ctx.generateDigest(author), id: author.slug });
-   ```
-
-   **`reviewedWorks` loader** — extract slugs from `moreReviews` and
-   `moreByAuthors[].reviewedWorks`:
-
-   ```typescript
-   const data = await ctx.parseData({
-     id: work.slug,
-     data: {
-       ...work,
-       moreByAuthors: work.moreByAuthors.map((a) => ({
-         ...a,
-         reviewedWorks: a.reviewedWorks.map((w) => w.slug),
-       })),
-       moreReviews: work.moreReviews.map((r) => r.slug),
-     },
-   });
-   store.set({ data, digest: ctx.generateDigest(work), id: work.slug });
-   ```
-
-   **`readingEntries`, `alltimeStats`, `yearStats` loaders** — no reference fields;
-   use the plain pattern:
-
-   ```typescript
-   const data = await ctx.parseData({ data: item, id: item.slug });
-   store.set({ data, digest: ctx.generateDigest(item), id: item.slug });
-   ```
-
-   For **markdown collections** (`reviews`, `readings`, `pages`), use the two-phase
-   approach — digest raw content to short-circuit processing, then store pre-computed
-   intermediate HTML (remark/rehype done; `linkReviewedWorks` NOT applied yet). The
-   `work_slug` field is already a plain string in frontmatter; `parseData()` handles
-   the `reference('reviewedWorks')` coercion automatically:
-
-   ```typescript
-   for (const { id, frontmatter, body } of markdownFiles) {
-     const digest = ctx.generateDigest({ body, frontmatter });
-
-     // Skip expensive re-processing if content unchanged
-     if (store.has(id) && store.get(id)?.digest === digest) {
-       continue;
-     }
-
-     // Run remark/rehype WITHOUT linkReviewedWorks
-     const intermediateHtml = runCustomPipeline(body);
-     // Excerpt: synopsis or first paragraph, fully processed (no linking needed)
-     const excerptHtml = runExcerptPipeline(frontmatter.synopsis ?? body);
-
-     const data = await ctx.parseData({
-       data: { ...frontmatter, body, excerptHtml, intermediateHtml },
-       id,
-     });
-     store.set({ data, digest, id });
-   }
-   ```
-
-   See SPEC.md "Markdown Processing Strategy" for the full rationale.
-
-3. Register file watchers in each loader for HMR.
-
-4. Export all `z.infer<>` types from `src/content.config.ts`:
-   `AuthorData`, `ReviewedWorkData`, `ReadingEntryData`, `ReviewData`, `ReadingData`,
-   `PageData`, `AlltimeStatData`, `YearStatData`.
-
-5. Run `npm run dev` and verify each collection loads. Check the Astro dev toolbar or
-   add a temporary `getCollection` call in a page to inspect results.
-
-6. Run `npm run build` to confirm the content store populates without errors.
-
-### Success Criteria
-
-- [x] `npm run dev` starts without errors
-- [x] `npm run build` completes without errors
-- [x] `getCollection('authors')` returns all authors with correct types
-- [x] `getCollection('authors')` entries have `reviewedWorks` as `{ collection, id }[]`
-      objects (not embedded work objects) — confirms reference transformation ran in the loader
-- [x] `getCollection('reviewedWorks')` returns works with `Date` objects (not strings) on
-      date fields — confirms `parseData()` is running
-- [x] `getCollection('reviewedWorks')` entries have `moreReviews` as `{ collection, id }[]`
-      objects — confirms reference transformation ran in the loader
-- [x] `getCollection('reviews')` entries have `work_slug` as a `{ collection, id }` object
-- [x] `getCollection('reviews')` returns entries with `body`, `intermediateHtml`, and
-      `excerptHtml` all populated — confirms markdown processing ran in the loader
-- [x] `getCollection('reviews')` entries have `<span data-work-slug="">` elements in
-      `intermediateHtml` (not `<a>` tags) — confirms `linkReviewedWorks` was NOT applied
-- [x] All other collections return non-empty results
-- [x] No lint errors: `npm run lint`
-- [x] No type errors: `npm run check`
-
-### Tests
-
-No new tests in this stage. Existing tests must continue to pass (no existing code
-changes). Snapshot tests will be deleted in their respective domain stages (2–6).
+See `spec.md` for full rationale, field derivation details, and downstream change lists.
 
 ---
 
-## Stage 2: Migrate `pages.ts`
+## Stage 1: Rename fields in `readings` and `reviews`; update stats schemas
 
-**Goal**: Replace `allPagesMarkdown()` with the `pages` collection. Make `getPage()`
-accept collection data as a parameter. Update the Astro pages that use it. Delete
-`pages-markdown.ts`.
+**Goal**: Update schemas, loaders, and all downstream consumers for the frontmatter
+key renames in `readings/*.md` and `reviews/*.md`. Remove `MostReadAuthorReadingSchema`
+and replace with `reference("readings")`. No new collections yet.
 
-**Status**: Complete
+**Status**: Not Started
 
 ### Work
 
-1. **Update `src/api/pages.ts`**:
-   - Change signature to `getPage(slug, pages: PageData[], reviewedWorks: ReviewedWorkData[])`.
-   - Remove `async` — remark/rehype is now done in the loader.
-   - Replace the internal `allPagesMarkdown()` call + remark pipeline with:
-     ```typescript
-     const page = pages.find((p) => p.slug === slug);
-     if (!page) return undefined;
-     return {
-       ...page,
-       content: linkReviewedWorks(page.intermediateHtml, reviewedWorks),
-     };
-     ```
-   - Remove imports of `allPagesMarkdown`, `getHtml`, `ENABLE_CACHE`.
-   - `getContentPlainText` utility remains unchanged.
+1. **`src/content.config.ts` — `ReadingSchema`**:
+   - Rename `work_slug` → `workSlug` as plain `z.string()` (no longer a `reference()`)
+   - Rename `edition_notes` → `editionNotes` (field name and transform block)
+   - Add `slug: z.string()` field (the reading's own unique ID = filename stem)
+   - Add `date: z.coerce.date()` field
+   - Update AIDEV-NOTE comment on the schema
 
-2. **Update callers of `getPage`** — find with:
+2. **`src/content.config.ts` — `readings` loader `buildData`**:
+   - `frontmatter.work_slug` → `frontmatter.workSlug`
+   - `frontmatter.edition_notes` → `frontmatter.editionNotes`
+   - Add `slug: frontmatter.slug as string`
+   - Add `date: frontmatter.date`
 
-   ```
-   grep -r "getPage(" src/
-   ```
+3. **`src/content.config.ts` — `ReviewSchema`**:
+   - Rename `work_slug` → `slug` (the frontmatter key is now `slug:`)
 
-   For each `getProps` function that calls `getPage`:
-   - Add `pages: PageData[]` and `reviewedWorks: ReviewedWorkData[]` parameters.
-   - Pass both through to `getPage(slug, pages, reviewedWorks)`.
+4. **`src/content.config.ts` — `reviews` loader `buildData`**:
+   - `frontmatter.work_slug as string` → `frontmatter.slug as string`
+   - Field key in the returned object: `work_slug:` → `slug:`
 
-3. **Update Astro pages** that call the affected `getProps`:
-   - Add both collections:
-     ```astro
-     const pages = (await getCollection('pages')).map((e) => e.data); const
-     works = (await getCollection('reviewedWorks')).map((e) => e.data);
-     ```
-   - Pass both to `getProps`.
+5. **`src/content.config.ts` — `MostReadAuthorReadingSchema`**:
+   - Remove entirely
+   - Change `MostReadAuthorSchema.readings` from `z.array(MostReadAuthorReadingSchema)`
+     to `z.array(reference("readings"))`
 
-4. **Delete snapshot tests** for the pages domain and **add pure function tests**:
-   - Delete all snapshot tests for pages (Astro-level and component-level).
-   - Create `src/api/__fixtures__/pages.ts` with `PageData[]` fixtures. Each fixture must
-     include `intermediateHtml` with at least one `<span data-work-slug="">` element to
-     verify linking. Use slugs from real `/content/pages/` files.
-   - Create or reuse `ReviewedWorkData[]` fixtures for the `reviewedWorks` parameter.
-   - Write tests that call `getPage(slug, pageFixtures, worksFixtures)` directly and
-     assert that known work spans become `<a>` tags in the output.
+6. **`src/api/reviews.ts`** — update all `work_slug` references:
+   - `reviews.find((r) => r.work_slug.id === work.slug)` → `r.slug.id`
+   - `readings.find((r) => r.work_slug.id === review.slug)` → `r.workSlug.id`
+   - Update AIDEV-NOTEs that reference `work_slug`
 
-5. **Delete** `src/api/data/pages-markdown.ts`.
+7. **`src/features/review/getReviewProps.ts`**:
+   - `reviews.find((r) => r.work_slug.id === ref.id)` → `r.slug.id`
 
-6. Run `npm run check`, `npm run lint`, `npm run test`.
+8. **`src/features/stats/getStatsProps.ts`** — resolve reading references:
+   - Build `readingsMap: Map<string, CollectionEntry<'readings'>>` from
+     `getCollection('readings')`
+   - In `createMostReadAuthorsListItemValueProps`, resolve each `ref.id` via the map
+   - Replace `reading.slug` (was work slug) with `reading.data.workSlug` for cover images
+   - Replace `reading.date` with `reading.data.date`
+
+9. **`src/api/__fixtures__/readings.ts`**:
+   - `work_slug: { ... }` → `workSlug: "..."` (plain string, not a reference)
+   - `edition_notes: undefined` → `editionNotes: undefined`
+   - Add `slug: "..."` (the reading's own unique slug)
+
+10. **`src/api/__fixtures__/reviews.ts`**:
+    - `work_slug: { ... }` → `slug: { ... }`
+
+11. Delete `.astro/data-store.json` to force a full rebuild.
+
+12. Run `npm run check`, `npm run lint`, `npm run test -- --max-workers=2`.
 
 ### Success Criteria
 
-- [x] `getPage('how-i-grade', pageFixtures, worksFixtures)` returns correct HTML in tests
-- [x] Work spans in `intermediateHtml` are linked when the slug is in `worksFixtures`
-- [x] `/how-i-grade` and any other pages-based routes render correctly in dev
-- [x] `pages-markdown.ts` deleted
-- [x] No references to `allPagesMarkdown` remain (`grep -r "allPagesMarkdown" src/`)
-- [x] `npm run test`, `npm run lint`, `npm run check` pass
+- [ ] `npm run check` passes — no type errors on `workSlug` / `editionNotes` / `slug`
+- [ ] `npm run lint` passes
+- [ ] `npm run test -- --max-workers=2` passes (update snapshots if needed with `npm run test:update`)
+- [ ] `npm run build` succeeds — `readings` and `reviews` collections load; stats pages build
+- [ ] Zero `grep` hits for `work_slug` or `edition_notes` in `src/` (excluding comments)
+- [ ] `MostReadAuthorReadingSchema` no longer exists in `content.config.ts`
 
 ---
 
-## Stage 3: Migrate `readings.ts`
+## Stage 2: Add `works` and `moreForReviewedWorks` collections; simplify `authors` loader
 
-**Goal**: Replace `allReadingEntriesJson()` with the `readingEntries` collection. Make
-`allReadingEntries()` a pure synchronous function. Update the reading-log feature and its
-Astro page. Delete `reading-entries-json.ts`.
+**Goal**: Add the new `works` and `moreForReviewedWorks` content collections. Simplify
+the `authors` loader by removing the `reviewedWorks` field and computation entirely.
 
-**Status**: Complete
+**Status**: Not Started
 
 ### Work
 
-1. **Update `src/api/readings.ts`**:
-   - Change signature: `allReadingEntries(entries: ReadingEntryData[]): ReadingEntries`
-   - Remove `async` (no more I/O or caching).
-   - Replace internal `allReadingEntriesJson()` call with the `entries` parameter.
-   - Remove `ENABLE_CACHE` import and cache logic.
-   - Remove import of `allReadingEntriesJson`.
+1. **`src/content.config.ts` — add `works` collection**:
+   - Simple loader from `data/works/*.json`, entry ID = work slug
+   - Schema maps `year` → `workYear`; otherwise fields are direct
+   - `includedWorks` is `z.string().array()` (plain slugs, not references)
+   - `authors` is `z.object({ slug: z.string(), notes: z.string().nullable() }).array()`
 
-2. **Update `src/features/reading-log/getReadingLogProps.ts`** (or equivalent):
-   - Add `entries: ReadingEntryData[]` parameter.
-   - Pass to `allReadingEntries(entries)`.
+2. **`src/content.config.ts` — add `moreForReviewedWorks` collection**:
+   - Simple `loadJsonArrayFile` loader from `data/more-for-reviewed-works.json`
+   - Entry ID = `raw.work as string` (the work slug)
+   - Schema: `z.object({ moreByAuthors: ..., moreReviews: z.array(z.string()), work: z.string() })`
 
-3. **Update `src/pages/readings/index.astro`**:
-   - Add `const entries = (await getCollection('readingEntries')).map((e) => e.data);`
-   - Pass to `getReadingLogProps(entries)`.
+3. **`src/content.config.ts` — `AuthorSchema`**:
+   - Remove `reviewedWorks` field entirely
 
-4. **Delete snapshot tests** for the readings domain and **add pure function tests**:
-   - Delete all snapshot tests for the reading-log page (Astro-level and component-level).
-   - Create `src/api/__fixtures__/readingEntries.ts` with `ReadingEntryData[]` fixtures.
-   - Write tests that call `allReadingEntries(fixtures)` and assert the correct counts,
-     distinct values, and aggregated statistics.
-   - Keep the interactive filter/sort component tests for the reading-log feature.
+4. **`src/content.config.ts` — `authors` loader**:
+   - Remove all computation — simplify to raw JSON passthrough
+   - Digest raw file content only
 
-5. **Delete** `src/api/data/reading-entries-json.ts`.
-
-6. Run `npm run check`, `npm run lint`, `npm run test`.
+5. Delete `.astro/data-store.json` before testing.
 
 ### Success Criteria
 
-- [x] `allReadingEntries(fixtures)` returns correct counts and distinct values in tests
-- [x] `/readings` page renders correctly in dev with real data
-- [x] `reading-entries-json.ts` deleted
-- [x] No references to `allReadingEntriesJson` remain
-- [x] All tests pass
+- [ ] `npm run check` passes
+- [ ] `npm run lint` passes
+- [ ] `npm run build` succeeds — `works` and `moreForReviewedWorks` entries load;
+      `authors` loads without `reviewedWorks`
+- [ ] `getCollection('works')` returns all ~500 works with correct fields
+- [ ] `getCollection('authors')` entries no longer have `reviewedWorks`
 
 ---
 
-## Stage 4: Migrate `stats.ts`
+## Stage 3: Replace `reviewedWorks` collection with direct collection joins
 
-**Goal**: Replace `alltimeStatsJson()` and `allYearStatsJson()` with the `alltimeStats`
-and `yearStats` collections. Make all stats functions pure. Update stats features and
-Astro pages. Delete both stats data-layer files.
+**Goal**: Remove the `reviewedWorks` collection. Rewrite each consumer to join
+`works`, `reviews`, and `authors` collections directly. Each consumer fetches only
+the fields it needs.
 
-**Status**: Complete
+**Status**: Not Started
 
 ### Work
 
-1. **Update `src/api/stats.ts`**:
-   - `allStatYears(yearStats: YearStatData[]): number[]` — pure, sync
-   - `alltimeStats(data: AlltimeStatData): AlltimeStats` — pure, sync
-   - `statsForYear(year: number, yearStats: YearStatData[]): YearStats | undefined` —
-     pure, sync
-   - Remove all `async`, `ENABLE_CACHE`, cache `Map`s, and data-layer imports.
+1. **`src/features/reviews/getReviewsProps.ts`**:
+   - Replace `getCollection('reviewedWorks')` with `getCollection('works')` +
+     `getCollection('reviews')` + `getCollection('authors')`
+   - Build maps for O(1) lookup; join inline
+   - Compute `gradeValue`, `reviewYear`, `reviewSequence` per the spec formulas
 
-2. **Update `src/features/stats/getStatsProps.ts`** (alltime stats):
-   - Add `data: AlltimeStatData` and `yearStats: YearStatData[]` parameters.
-   - Thread through to the API functions.
+2. **`src/features/author-titles/getAuthorTitlesProps.ts`**:
+   - Replace `authors.data.reviewedWorks` reference traversal with:
+     filter `getCollection('reviews')` to slugs whose work has this author;
+     join with `works` and `authors` collections
+   - Same summary shape as `getReviewsProps`
 
-3. **Update `src/features/stats/getYearStatsProps.ts`** (per-year stats):
-   - Add `yearStats: YearStatData[]` parameter.
-   - Thread through to `statsForYear`.
+3. **`src/features/review/getReviewProps.ts`** (full shape):
+   - `getEntry('works', slug)` + `getEntry('reviews', slug)`
+   - Filter `getCollection('readings')` by `workSlug`
+   - `getEntry('moreForReviewedWorks', slug)`
+   - `getCollection('authors')` for name enrichment
+   - `getCollection('works')` for `includedWorks` enrichment and `includedInSlugs`
 
-4. **Update Astro pages**:
-   - `src/pages/readings/stats/index.astro`:
-     ```astro
-     const alltimeEntry = await getCollection('alltimeStats'); const data =
-     alltimeEntry[0].data; const yearStatsEntries = (await
-     getCollection('yearStats')).map((e) => e.data); const props = await
-     getAlltimeStatsProps(data, yearStatsEntries);
-     ```
-   - `src/pages/readings/stats/[year]/index.astro`:
-     ```astro
-     const yearStatsEntries = (await getCollection('yearStats')).map((e) =>
-     e.data);
-     ```
-     Update `getStaticPaths` to use `allStatYears(yearStatsEntries)`.
+4. **`src/features/home/getHomeProps.ts`**, **`src/components/article/getArticleProps.ts`**,
+   **`src/pages/reviews/[slug]/og.jpg.ts`**, **`src/pages/updates.json.ts`**,
+   **`src/pages/feed.xml.ts`** — replace `getCollection('reviewedWorks')` with direct
+   collection joins appropriate to each consumer's field needs.
 
-5. **Delete snapshot tests** for the stats domain and **add pure function tests**:
-   - Delete all snapshot tests for stats pages (Astro-level and component-level).
-   - Create fixtures for `AlltimeStatData` and `YearStatData[]`.
-   - Write tests that call `allStatYears`, `alltimeStats`, and `statsForYear` with
-     fixtures and assert correct return values.
+5. **`src/features/authors/getAuthorsProps.ts`**:
+   - Replace `reviewedWorks.length` with count derived from `getCollection('reviews')`
+     cross-referenced against `works` by author slug
 
-6. **Delete** `src/api/data/alltime-stats-json.ts` and `src/api/data/year-stats-json.ts`.
+6. **`src/api/reviews.ts`**, **`src/api/authors.ts`**, **`src/api/pages.ts`**,
+   **`src/api/utils/linkReviewedWorks.ts`**:
+   - Replace any remaining `ReviewedWorkData` usage with joins from constituent
+     collections
 
-7. Run `npm run check`, `npm run lint`, `npm run test`.
+7. **`src/content.config.ts`** — remove the `reviewedWorks` collection and
+   `ReviewedWorkSchema` entirely. Remove `ReviewedWorkData` export.
+
+8. Delete `.astro/data-store.json` before testing.
 
 ### Success Criteria
 
-- [x] Stats pages render correctly in dev
-- [x] `allStatYears(fixtures)` returns sorted year strings in tests
-- [x] `statsForYear("2024", fixtures)` returns correct data in tests
-- [x] Both data-layer files deleted
-- [x] All tests pass
+- [ ] `npm run build` succeeds
+- [ ] Spot-check in dev: individual review pages render with correct readings, grade,
+      moreByAuthors, moreReviews, includedWorks
+- [ ] Author pages render correctly
+- [ ] Reviews list page renders correctly
+- [ ] Zero references to `getCollection('reviewedWorks')` or `ReviewedWorkData` in `src/`
+- [ ] `npm run check`, `npm run lint`, `npm run test -- --max-workers=2` pass
 
 ---
 
-## Stage 5: Migrate `authors.ts`
+## Stage 4: Replace `readingEntries` collection with `getReadingLogProps` computation
 
-**Goal**: Replace `allAuthorsJson()` with the `authors` collection. Make `allAuthors()`
-and `getAuthorDetails()` pure. Update author features and Astro pages. Delete
-`authors-json.ts`.
+**Goal**: Remove the `readingEntries` collection. Rewrite `getReadingLogProps` to
+expand reading timelines and enrich entries directly from collections.
 
-**Status**: Complete
-
-### Work
-
-1. **Update `src/api/authors.ts`**:
-   - `allAuthors(authors: AuthorData[]): Author[]` — pure, sync
-   - `getAuthorDetails(slug: string, authors: AuthorData[]): AuthorDetails | undefined` —
-     pure, sync
-   - Remove `async`, `ENABLE_CACHE`, cache `Map`s, and data-layer imports.
-
-2. **Update `src/features/authors/getAuthorsProps.ts`**:
-   - Add `authors: AuthorData[]` parameter.
-   - Pass to `allAuthors(authors)`.
-
-3. **Update `src/features/author-titles/getAuthorTitlesProps.ts`**:
-   - Add `authors: AuthorData[]` parameter.
-   - Pass to `getAuthorDetails(slug, authors)`.
-
-4. **Update Astro pages**:
-   - `src/pages/authors/index.astro`:
-     ```astro
-     const authors = (await getCollection('authors')).map((e) => e.data);
-     ```
-   - `src/pages/authors/[slug]/index.astro`:
-     ```astro
-     const authors = (await getCollection('authors')).map((e) => e.data);
-     ```
-     Also update `getStaticPaths` to use `allAuthors(authors)` for slug generation.
-
-5. **Delete snapshot tests** for the authors domain and **add pure function tests**:
-   - Delete all snapshot tests for authors pages (Astro-level and component-level).
-   - Create `src/api/__fixtures__/authors.ts` with real author slugs from
-     `/content/data/authors/` (verify the slugs exist).
-   - Write tests that call `allAuthors(fixtures)` and `getAuthorDetails(slug, fixtures)`.
-   - Keep the interactive filter/sort component tests for the authors feature.
-
-6. **Delete** `src/api/data/authors-json.ts`.
-
-7. Run `npm run check`, `npm run lint`, `npm run test`.
-
-### Success Criteria
-
-- [x] Authors listing page renders in dev
-- [x] Individual author pages render in dev (test a few slugs)
-- [x] `getAuthorDetails('stephen-king', fixtures, worksFixtures)` returns correct data in tests
-- [x] `authors-json.ts` deleted
-- [x] `getStaticPaths` on the `[slug]` page uses collection data correctly
-- [x] All tests pass
-
----
-
-## Stage 6: Migrate `reviews.ts`
-
-**Goal**: Replace the three data sources consumed by `reviews.ts`
-(`allReviewedWorksJson()`, `allReviewsMarkdown()`, `allReadingsMarkdown()`) with the
-`reviewedWorks`, `reviews`, and `readings` collections. All review API functions become
-synchronous (remark/rehype is pre-computed in the loaders; only `linkReviewedWorks`
-runs at call time). Update review features and Astro pages. Delete the three data-layer
-files.
-
-This is the most complex stage. All three collections must be verified to load correctly
-(they were defined in Stage 1) before proceeding.
-
-**Status**: Complete
+**Status**: Not Started
 
 ### Work
 
-1. **Update `src/api/reviews.ts`** — all four functions become synchronous:
+1. **`src/features/reading-log/getReadingLogProps.ts`** (or equivalent):
+   - Replace `getCollection('readingEntries')` with:
+     - `getCollection('readings')` — all reading records
+     - `getCollection('works')` — for title, authors, kind, workYear
+     - `getCollection('reviews')` — to compute the `reviewed` boolean
+   - Expand each reading's `timeline[]` into individual entry objects, tagging each
+     with the reading's `sequence` field
+   - Sort all entries by composite key
+     `${timelineEntry.date}-${String(reading.sequence).padStart(3, '0')}` ascending —
+     deterministic across same-date entries from different readings
+   - Assign `readingEntrySequence = index + 1`
+   - Enrich per the field table in spec.md
 
-   ```typescript
-   // Merge works + reviews collection data; extract distinct filter values
-   export function allReviews(
-     works: ReviewedWorkData[],
-     reviews: ReviewData[],
-   ): ReviewsResult;
+2. **`src/content.config.ts`** — remove the `readingEntries` collection and
+   `ReadingEntrySchema` entirely. Remove `ReadingEntryData` export.
 
-   // Apply linkReviewedWorks to pre-computed intermediate HTML from store
-   export function loadContent(
-     review: Review,
-     readings: ReadingData[],
-     reviewedWorks: ReviewedWorkData[],
-   ): ReviewContent;
-   // Internally: linkReviewedWorks(review.intermediateHtml, reviewedWorks)
-   //             linkReviewedWorks(reading.intermediateReadingNotesHtml, reviewedWorks)
-   //             linkReviewedWorks(reading.intermediateEditionNotesHtml, reviewedWorks)
-
-   // Return pre-computed excerpt from store — no processing needed
-   export function loadExcerptHtml(review: ReviewData): string;
-   // return review.excerptHtml
-
-   export function mostRecentReviews(
-     reviews: Review[],
-     limit: number,
-   ): Review[];
-   ```
-
-   Remove all `async` keywords, `ENABLE_CACHE`, the excerpt cache `Map`, and all
-   data-layer imports. Remove `getHtml`, `getHtmlAsSpan`, `remark`, `rehype*` imports
-   — the remark pipeline no longer runs in `reviews.ts`.
-
-2. **Update `src/features/reviews/getReviewsProps.ts`**:
-   - New signature: `getReviewsProps(works: ReviewedWorkData[], reviews: ReviewData[])`
-   - Note: `readings` is NOT needed for the listing page.
-   - Pass through to `allReviews(works, reviews)`.
-   - Function becomes sync (or stays async if image optimization is async — cover props).
-
-3. **Update `src/features/review/getReviewProps.ts`** (individual review page):
-   - Add `works: ReviewedWorkData[]`, `reviews: ReviewData[]`,
-     `readings: ReadingData[]` parameters.
-   - Pass all three to `loadContent(review, readings, works)`.
-
-4. **Update `src/features/home/getHomeProps.ts`** (uses `mostRecentReviews`):
-   - Add `works: ReviewedWorkData[]` and `reviews: ReviewData[]` parameters.
-   - Pass to `mostRecentReviews` after building `Review[]` from `allReviews`.
-
-5. **Update all Astro pages** that consume review data:
-
-   Reviews listing (`src/pages/reviews/index.astro`):
-
-   ```astro
-   const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-   const reviews = (await getCollection('reviews')).map((e) => e.data); const
-   props = getReviewsProps(works, reviews);
-   ```
-
-   Individual review (`src/pages/reviews/[slug]/index.astro`):
-
-   ```astro
-   const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-   const reviews = (await getCollection('reviews')).map((e) => e.data); const
-   readings = (await getCollection('readings')).map((e) => e.data); //
-   getStaticPaths: use works array to generate slugs
-   ```
-
-   Homepage (`src/pages/index.astro`):
-
-   ```astro
-   const works = (await getCollection('reviewedWorks')).map((e) => e.data);
-   const reviews = (await getCollection('reviews')).map((e) => e.data);
-   ```
-
-6. **Delete snapshot tests** for the reviews domain and **add pure function and interactive tests**:
-   - Delete all snapshot tests for review pages and the homepage (Astro-level and
-     component-level).
-   - Create `ReviewedWorkData[]`, `ReviewData[]`, and `ReadingData[]` fixtures.
-   - `ReviewData` fixtures must include `intermediateHtml` and `excerptHtml`. Use minimal
-     HTML with `<span data-work-slug="">` elements to verify linking behaviour.
-   - `ReadingData` fixtures must include `intermediateReadingNotesHtml` and
-     `intermediateEditionNotesHtml`.
-   - Use slugs that correspond to real cover asset files (lesson 11).
-   - Write tests asserting `loadContent` correctly links spans to `<a>` tags.
-   - Keep the interactive filter/sort component tests for the reviews feature.
-
-7. **Delete**:
-   - `src/api/data/reviewed-works-json.ts`
-   - `src/api/data/reviews-markdown.ts`
-   - `src/api/data/readings-markdown.ts`
-
-8. Run `npm run check`, `npm run lint`, `npm run test`.
+3. Delete `.astro/data-store.json` before testing.
 
 ### Success Criteria
 
-- [x] Reviews listing page renders in dev (check multiple filters work)
-- [x] Individual review pages render in dev — work span links appear correctly
-- [x] Homepage renders with most recent reviews in dev
-- [x] `allReviews(worksFixtures, reviewsFixtures)` returns correct data in tests
-- [x] `loadContent(review, readingsFixtures, worksFixtures)` links spans correctly in tests
-- [x] `loadExcerptHtml(reviewFixture)` returns `reviewFixture.excerptHtml` directly
-- [x] Three data-layer files deleted
-- [x] No remark/rehype imports remain in `reviews.ts`
-- [x] All tests pass
-
----
-
-## Stage 7: Cleanup
-
-**Goal**: Remove all remaining data-layer infrastructure, clean up test configuration,
-remove the `contentHmr()` Vite plugin, and verify a clean production build.
-
-**Status**: Complete
-
-### Work
-
-1. **Delete `src/api/data/utils/getContentPath.ts`** (no longer called anywhere).
-
-2. **Delete `src/api/data/utils/ENABLE_CACHE.ts`** (no longer called anywhere).
-
-3. **Remove `src/api/data/` directory** entirely if now empty. Verify with:
-
-   ```
-   ls src/api/data/
-   ```
-
-4. **Update `vitest.config.ts`**:
-   - Remove `coverage.exclude` entry for `src/api/data/utils/getContentPath.ts`.
-   - Remove `setupFiles` references to `setupTestCache` from any test projects that used
-     it (check `api-node` and `utils-node` projects).
-   - Remove any `setupTests.ts` mocks for `getContentPath` if that file exists.
-   - Remove the `pages-node` and `astro-node` test projects if they are now empty (all
-     their snapshot tests were deleted in stages 2–6). Keeping empty projects misleads
-     coverage reports.
-
-5. **Delete `setupTestCache.ts`** if it exists and is now unused.
-
-6. **Remove `contentHmr()` from `astro.config.ts`**:
-   - First, verify in dev that content changes trigger a reload via the loader's `watcher`
-     registration (from Stage 1).
-   - Then delete the plugin import and usage.
-   - Delete the plugin's source file.
-
-7. **Check for any remaining references to deleted data-layer functions**:
-
-   ```
-   grep -r "allAuthorsJson\|allReviewedWorksJson\|allReadingEntriesJson\|allReviewsMarkdown\|allReadingsMarkdown\|allPagesMarkdown\|alltimeStatsJson\|allYearStatsJson\|getContentPath\|ENABLE_CACHE" src/
-   ```
-
-   There should be zero results.
-
-8. **Run the full pre-PR checklist**:
-
-   ```
-   npm run test -- --max-workers=2
-   npm run lint
-   npm run lint:spelling
-   npm run check
-   npm run knip
-   npm run format
-   npm run build
-   ```
-
-9. **Delete `.astro/data-store.json`** before the production build to ensure the store
-   rebuilds cleanly:
-   ```
-   rm -f .astro/data-store.json && npm run build
-   ```
-
-### Success Criteria
-
-- [x] `src/api/data/` directory does not exist
-- [x] Zero grep hits for any deleted function names
-- [x] `contentHmr()` removed from `astro.config.ts`
-- [ ] Content file changes trigger dev server reload without `contentHmr()`
-- [x] `npm run test` passes (max-workers=2)
-- [x] `npm run lint` passes with no warnings
-- [ ] `npm run lint:spelling` passes (requires user permission — skipped)
-- [x] `npm run check` passes with no type errors
-- [x] `npm run knip` passes (no unused exports or dead dependencies)
-- [x] `npm run format` passes
-- [x] `npm run build` produces a complete site (161 pages)
+- [ ] `npm run build` succeeds — reading log page builds correctly
+- [ ] Entry count matches total `timeline[]` entries across all reading files
+- [ ] Reading log page (`/readings`) renders correctly in dev
+- [ ] Filtering and sorting work correctly in dev
+- [ ] Zero references to `getCollection('readingEntries')` or `ReadingEntryData` in `src/`
+- [ ] `npm run check`, `npm run lint`, `npm run test -- --max-workers=2` pass
+- [ ] Full pre-PR checklist passes:
+  - [ ] `npm run lint:spelling`
+  - [ ] `npm run knip`
+  - [ ] `npm run format`
+  - [ ] `npm run build` (clean run after deleting `.astro/data-store.json`)
 
 ---
 
 ## Dependency Order
 
 ```
-Stage 1 (content.config.ts)
+Stage 1 (field renames — readings/reviews schemas + stats)
     ↓
-Stage 2 (pages)    Stage 3 (readings)    Stage 4 (stats)    Stage 5 (authors)
-         \_______________↓___________________↓___________________↓______________/
-                                        Stage 6 (reviews)
-                                             ↓
-                                        Stage 7 (cleanup)
+Stage 2 (add works + moreForReviewedWorks; simplify authors)
+    ↓
+Stage 3 (reviewedWorks → direct collection joins)
+    ↓
+Stage 4 (readingEntries → getReadingLogProps)
 ```
 
-Stages 2–5 are independent of each other and can be done in any order (or in parallel
-on separate worktrees). Stage 6 must follow Stage 1 (collections already defined). Stage
-7 must follow all prior stages.
+Stages 3 and 4 are independent of each other once Stage 2 is complete.
 
 ---
 
-## AIDEV-NOTE: Key Gotchas to Watch
+## AIDEV-NOTE: Key Gotchas
 
-- Always call `ctx.parseData()` before `store.set()` — missing this means Zod transforms
-  never run and date fields arrive as strings at runtime despite TypeScript saying `Date`
+- Always call `ctx.parseData()` before `store.set()` — Zod transforms (`z.coerce.date()`)
+  only run if `parseData` is called; skipping it means dates arrive as strings at runtime
 - Call `ctx.parseData` and `ctx.generateDigest` via `ctx.` — destructuring triggers
-  `@typescript-eslint/unbound-method` lint error
-- **Markdown loaders digest raw content (not parsed data)** — this enables the
-  skip-if-unchanged optimization; remark config changes require a manual
-  `rm .astro/data-store.json`
-- **`ctx.renderMarkdown` is NOT used** — this codebase has a custom remark pipeline
-  (`remark-smartypants`, custom footnote back-content, custom plugins) that `ctx.renderMarkdown`
-  cannot accommodate; run the custom pipeline directly in the loader
-- **`linkReviewedWorks` is NOT run in loaders** — it must run at build time in the API
-  layer with the live `reviewedWorks` collection data; loaders store intermediate HTML
-  with `<span data-work-slug="">` spans intact
-- `getCollection()` returns `[]` in Vitest — pure API functions are the only testable path
-- Delete `.astro/data-store.json` after any loader bug fix to clear stale cached data
+  `@typescript-eslint/unbound-method`
 - Object literal keys in `content.config.ts` must be alphabetically sorted
   (`perfectionist/sort-objects` rule)
-- Fixture slugs must have matching cover asset files in `/content/assets/covers/`
-- **Strip embedded objects to ID strings before `ctx.parseData()` for `reference()` fields** —
-  the source JSON embeds full objects (e.g. `author.reviewedWorks` is an array of work
-  objects); the loader must map these to slug strings before passing to `parseData()`,
-  otherwise Zod rejects the unexpected shape
-- **`reference()` validates IDs at build time** — every slug passed to a `reference()` field
-  must exist in the target collection; data integrity issues (orphaned slugs) will cause
-  build errors; do NOT use `reference('reviewedWorks')` for `includedWorks` since some
-  entries are unreviewed
-- **API functions resolve references by ID lookup** — after `parseData()`, reference fields
-  are `{ collection, id }` objects; join against the typed array already passed as a
-  parameter (e.g. `works.find((w) => w.slug === ref.id)`); never call `getEntry()` from
-  API functions
+- Delete `.astro/data-store.json` after any loader change to prevent stale cached data
+- `includedWorks` cannot use `reference()` — some included works are unreviewed and
+  would fail build-time reference validation; enrich inline instead
+- `gradeToValue` must handle the `"Abandoned"` case (value 0) in addition to letter grades
+- `readingTime` uses the reading's frontmatter `date` field as the end date (not the
+  last timeline entry date, though they are usually the same)
+- `readingEntrySequence` sort key is
+  `${timelineEntry.date}-${String(reading.sequence).padStart(3, '0')}` — sort by date
+  alone is not deterministic when multiple readings have entries on the same date
+- `reviewSequence` is the full slug of the most recent reading for the work (e.g.
+  `"2022-09-19-01-carrie-by-stephen-king"`), derived by sorting the work's readings by
+  `date` descending and taking the first entry's `slug` field
+- The `reviews` schema field is now `slug` (not `workSlug`) — downstream consumers
+  use `r.data.slug`, while `readings` uses `r.data.workSlug`
