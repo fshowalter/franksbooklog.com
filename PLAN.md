@@ -10,7 +10,7 @@ See `spec.md` for full rationale, field derivation details, and downstream chang
 key renames in `readings/*.md` and `reviews/*.md`. Remove `MostReadAuthorReadingSchema`
 and replace with `reference("readings")`. No new collections yet.
 
-**Status**: Not Started
+**Status**: In Progress (code complete; checks not yet run — requires npm approval)
 
 ### Work
 

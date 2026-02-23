@@ -1,360 +1,66 @@
-## 2026-02-22 - Stage 1: Create content.config.ts with all collections
+## 2026-02-23 - Spec Plan Stage 1: Rename fields in readings/reviews; update stats schemas
 
 ### What was implemented
-- Created `src/content.config.ts` with all 8 content collections using custom inline loaders:
-  - `authors` — glob `/content/data/authors/*.json`, maps reviewedWorks to slug strings for reference()
-  - `reviewedWorks` — reads `/content/data/reviewed-works.json`, strips embedded moreByAuthors[].reviewedWorks and moreReviews to slugs for reference()
-  - `readingEntries` — reads `/content/data/reading-entries.json`, ID = String(readingEntrySequence)
-  - `reviews` — glob `/content/reviews/*.md`, pre-computes intermediateHtml and excerptHtml via remark/rehype (without linkReviewedWorks)
-  - `readings` — glob `/content/readings/*.md`, pre-computes intermediateReadingNotesHtml and intermediateEditionNotesHtml
-  - `pages` — glob `/content/pages/*.md`, pre-computes intermediateHtml
-  - `alltimeStats` — reads `/content/data/all-time-stats.json` as single entry with id "alltime"
-  - `yearStats` — glob `/content/data/year-stats/*.json`, ID = year string
-
-- Exported all 8 `z.infer<>` types (AlltimeStatData, AuthorData, PageData, ReadingData, ReadingEntryData, ReviewData, ReviewedWorkData, YearStatData)
-- All loaders use the `sync` pattern for HMR watcher callbacks
-- Digest-based caching for skip-if-unchanged optimization in markdown loaders
-- Selective entry removal (not store.clear()) to preserve cache efficiency
-
-### Files changed
-- `src/content.config.ts` (created)
-- `PLAN.md` (Stage 1 status → Complete, success criteria checked)
-- `progress.txt` (this file)
-
-### Missing permissions
-- None
-
-### Learnings for future iterations:
-- **`ctx.load(ctx)` does NOT exist on LoaderContext** — the correct HMR pattern is to define a local `sync()` function inside `load()`, call `await sync()` for initial load, then register `ctx.watcher?.on("change", () => void sync())` for HMR. The `sync` function captures `ctx` in its closure.
-- **Astro LoaderContext API**: `ctx.store.has(id)`, `ctx.store.get(id)?.digest`, `ctx.store.set({ id, data, digest })`, `ctx.store.delete(id)`, `ctx.store.keys()` (returns Array<string>), `ctx.parseData({ id, data })`, `ctx.generateDigest(record)`, `ctx.watcher` (FSWatcher, dev-only)
-- **Auto-fix catches most lint issues**: `npx eslint --fix` fixed 18 of 19 errors automatically (imports reordering, sort-modules, sort-object-types, utf-8→utf8, array types, intersection types, union types). Only `unicorn/no-null` needed manual fix (change `editionNotes ?? null` to `editionNotes`)
-- **`perfectionist/sort-imports`**: `astro:content` is value-external and must come BEFORE `~/api/*` (value-internal) imports
-- **`perfectionist/sort-modules`**: type declarations must come before function declarations in module scope; both groups sorted alphabetically
-- **`unicorn/text-encoding-identifier-case`**: Use `"utf8"` not `"utf-8"` in fs.readFile calls
-- **`unicorn/no-null`**: Don't use null literal values; pass nullable frontmatter fields directly rather than using `?? null`
-- **`@typescript-eslint/array-type`**: Use `T[]` not `Array<T>`
-- **`perfectionist/sort-intersection-types`**: Sort intersection type members alphabetically (Record<...> before { ... } object literals)
-- **Build is production-verified**: `npm run build` completes successfully (161 pages) with all collections loading correctly
-- **All 279 existing tests pass** — no test changes needed for Stage 1
-- **Object keys in object type literals**: `[key: string]` index signature sorts before named properties (ESLint auto-fixed this)
-- **Digest-based skip is important for performance**: markdown loaders process 89 reviews and 198 readings through remark/rehype — the digest check prevents re-processing unchanged files on incremental builds
-
----
-
-## 2026-02-22 - Stage 2: Migrate `pages.ts`
-
-### What was implemented
-- Updated `src/api/pages.ts` to a pure synchronous function:
-  - `getPage(slug, pages: PageData[], reviewedWorks: ReviewedWorkData[])` — no longer async, no I/O or caching
-  - Applies `linkReviewedWorks(page.intermediateHtml, reviewedWorks)` to produce final HTML
-  - `getContentPlainText` utility remains unchanged
-  - Removed `allPagesMarkdown`, `allReviewedWorksJson`, `ENABLE_CACHE`, `perfLogger`, `getHtml` imports
-- Updated `src/pages/how-i-grade/index.astro` to call `getCollection('pages')` and `getCollection('reviewedWorks')`, pass data to `getPage`; `rawContent` renamed to `body`
-- Created `src/api/__fixtures__/pages.ts` — `PageData[]` fixture with `intermediateHtml` containing linked/unlinked work spans
-- Created `src/api/__fixtures__/reviewedWorks.ts` — minimal `ReviewedWorkData[]` fixture (slug "linked-work")
-- Created `src/api/pages.spec.ts` — 7 pure function tests for `getPage` and `getContentPlainText`
-- Deleted `src/api/data/pages-markdown.ts`
-- Deleted snapshot tests: `src/pages/how-i-grade/_index.spec.ts`, `_og.spec.ts`, `__snapshots__/index.html`, `__image_snapshots__/og.jpg`
-
-### Files changed
-- `src/api/pages.ts` (updated)
-- `src/pages/how-i-grade/index.astro` (updated)
-- `src/api/__fixtures__/pages.ts` (created)
-- `src/api/__fixtures__/reviewedWorks.ts` (created)
-- `src/api/pages.spec.ts` (created)
-- `src/api/data/pages-markdown.ts` (deleted)
-- `src/pages/how-i-grade/_index.spec.ts` (deleted)
-- `src/pages/how-i-grade/_og.spec.ts` (deleted)
-- `src/pages/how-i-grade/__snapshots__/index.html` (deleted)
-- `src/pages/how-i-grade/__image_snapshots__/og.jpg` (deleted)
-- `PLAN.md` (Stage 2 status → Complete, success criteria checked)
-- `progress.txt` (this file)
-
-### Missing permissions
-- None
-
-### Learnings for future iterations:
-- **`unicorn/no-await-expression-member`**: Cannot write `(await getCollection(...)).map(...)` — must store the awaited result in a variable first, then call `.map()` on it
-- **`perfectionist/sort-imports` in spec files**: Fixture imports (`./__fixtures__/`) sort before the module under test (`./pages`) because `_` precedes lowercase letters alphabetically
-- **`ReviewedWorkData` fixture shape**: All fields from the schema transform must be present including `notes: undefined` on author entries and `subtitle: undefined` on works; `moreReviews` and `moreByAuthors[].reviewedWorks` are `Array<{ collection: string; id: string }>` not string arrays (post-parseData reference shape)
-- **Return type of new `getPage`**: `(PageData & { content: string }) | undefined` — callers use `!` assertion when slug is known to exist; `body` field replaces old `rawContent` field name
-- **Prettier pre-existing issues**: `content.config.ts`, `PLAN.md`, `SPEC.md` already had formatting issues from Stage 1 — fixed in this stage
-
----
-
-## 2026-02-22 - Stage 3: Migrate `readings.ts`
-
-### What was implemented
-- Updated `src/api/readings.ts` to a pure synchronous function:
-  - `allReadingEntries(entries: ReadingEntryData[]): ReadingEntries` — no longer async, no I/O or caching
-  - `ReadingEntry` type aliased to `ReadingEntryData` from content.config.ts
-  - Removed `allReadingEntriesJson`, `perfLogger` imports
-- Updated `src/features/reading-log/getReadingLogProps.ts`:
-  - Added `entries: ReadingEntryData[]` parameter
-  - Passes to `allReadingEntries(entries)` (now sync call, `getReadingLogProps` stays async for image optimization)
-- Updated `src/pages/readings/index.astro`:
-  - Added `getCollection('readingEntries')` call, stored result in variable before `.map()` (unicorn/no-await-expression-member)
-  - Passed `entries` to `getReadingLogProps(entries)`
-- Created `src/api/__fixtures__/readingEntries.ts` — `ReadingEntryData[]` fixtures with Finished/Abandoned/Short Story entries
-- Created `src/api/readings.spec.ts` — 10 pure function tests for `allReadingEntries`: counts, distinct values, edge cases
-- Deleted `src/api/data/reading-entries-json.ts`
-- Deleted snapshot tests: `src/pages/readings/_index.spec.ts`, `_og.spec.ts`, `__snapshots__/index.html`, `__image_snapshots__/og.jpg`
-- Fixed pre-existing lint error in `src/components/cover-list/CoverListItem.tsx` (Tailwind class canonicalization); updated affected snapshots
-
-### Files changed
-- `src/api/readings.ts` (updated)
-- `src/features/reading-log/getReadingLogProps.ts` (updated)
-- `src/pages/readings/index.astro` (updated)
-- `src/api/__fixtures__/readingEntries.ts` (created)
-- `src/api/readings.spec.ts` (created)
-- `src/api/data/reading-entries-json.ts` (deleted)
-- `src/pages/readings/_index.spec.ts` (deleted)
-- `src/pages/readings/_og.spec.ts` (deleted)
-- `src/pages/readings/__snapshots__/index.html` (deleted)
-- `src/pages/readings/__image_snapshots__/og.jpg` (deleted)
-- `src/components/cover-list/CoverListItem.tsx` (pre-existing lint fix)
-- Various `__snapshots__/*.html` files updated due to CoverListItem.tsx change
-- `PLAN.md` (Stage 3 status → Complete, success criteria checked)
-- `progress.txt` (this file)
-
-### Missing permissions
-- None
-
-### Learnings for future iterations:
-- **`getReadingLogProps` stays async** even after the migration because it calls `getFluidCoverImageProps` (image optimization), which is async — only the `allReadingEntries` call becomes sync
-- **`ReadingEntry = ReadingEntryData`** — the old `ReadingEntryJson & {}` type can be directly aliased to `ReadingEntryData` since the schemas are identical; no type coercion needed
-- **Pre-existing lint errors may block stage completion** — `npm run lint` failed on `CoverListItem.tsx` (unrelated to Stage 3 changes); auto-fix via `npx eslint --fix` resolved it, but required snapshot updates for affected pages
-- **Snapshot updates cascade from non-test code changes** — fixing a Tailwind class in a cover component invalidates all snapshot tests that render covers; run `npm run test:update` when making cosmetic fixes to shared components
-
----
-
-## 2026-02-22 - Stage 4: Migrate `stats.ts`
-
-### What was implemented
-- Updated `src/api/stats.ts` to pure synchronous functions:
-  - `allStatYears(yearStats: YearStatData[]): string[]` — extracts and sorts year strings
-  - `alltimeStats(data: AlltimeStatData): AlltimeStats` — identity function (data is already the right shape)
-  - `statsForYear(year: string, yearStats: YearStatData[]): YearStats | undefined` — find by year string
-  - Removed `ENABLE_CACHE`, `perfLogger`, module-level cache `Map`s, and all data-layer imports
+- Updated `src/content.config.ts` — `ReadingSchema`:
+  - Renamed `work_slug: reference("reviewedWorks")` → `workSlug: z.string()` (plain string, no longer a reference)
+  - Renamed `edition_notes` → `editionNotes`
+  - Added `slug: z.string()` field (unique reading ID = filename stem)
+  - Added `date: z.coerce.date()` field
+  - Updated AIDEV-NOTE comment
+- Updated `src/content.config.ts` — `readings` loader `buildData`:
+  - `frontmatter.edition_notes` → `frontmatter.editionNotes`
+  - `frontmatter.work_slug` → `frontmatter.workSlug`
+  - Added `slug: frontmatter.slug as string`
+  - Added `date: frontmatter.date`
+- Updated `src/content.config.ts` — `ReviewSchema`:
+  - Renamed `work_slug: reference("reviewedWorks")` → `slug: reference("reviewedWorks")`
+- Updated `src/content.config.ts` — `reviews` loader `buildData`:
+  - `frontmatter.work_slug as string` → `frontmatter.slug as string`
+  - Field key `work_slug:` → `slug:`
+- Updated `src/content.config.ts` — `MostReadAuthorSchema`:
+  - Removed `MostReadAuthorReadingSchema` entirely
+  - Changed `readings: z.array(MostReadAuthorReadingSchema)` → `readings: z.array(reference("readings"))`
+- Updated `src/api/reviews.ts`:
+  - `reviews.find((r) => r.work_slug.id === work.slug)` → `r.slug.id`
+  - `readings.find((r) => r.work_slug.id === review.slug)` → `r.workSlug === review.slug`
+  - Updated AIDEV-NOTE comments
+- Updated `src/features/review/getReviewProps.ts`:
+  - `reviews.find((r) => r.work_slug.id === ref.id)` → `r.slug.id`
 - Updated `src/features/stats/getStatsProps.ts`:
-  - `getAlltimeStatsProps(data: AlltimeStatData, yearStats: YearStatData[])` — added both params
-  - `getYearStatsProps(year: string, yearStats: YearStatData[])` — added `yearStats` param
-  - Both functions stay async because `createMostReadAuthorsListItemValueProps` calls `getFluidCoverImageProps` (image optimization)
-- Updated `src/pages/readings/stats/index.astro` to call `getCollection('alltimeStats')` and `getCollection('yearStats')`
-- Updated `src/pages/readings/stats/[year]/index.astro` to call `getCollection('yearStats')`
-- Updated `src/pages/readings/stats/[year]/og.jpg.ts` to call `getCollection('yearStats')` and pass to `allStatYears`
-- Created `src/api/__fixtures__/stats.ts` — `AlltimeStatData` and `YearStatData[]` fixtures with minimal data
-- Created `src/api/stats.spec.ts` — 11 pure function tests for `allStatYears`, `alltimeStats`, `statsForYear`
-- Deleted `src/api/data/alltime-stats-json.ts` and `src/api/data/year-stats-json.ts`
-- Deleted `src/api/data/DistributionSchema.ts` (now orphaned; was only used by the two deleted files)
-- Deleted snapshot tests: `src/pages/readings/stats/_index.spec.ts`, `_og.spec.ts`, `[year]/_index.spec.ts`, `[year]/_og.spec.ts`
-- Deleted `__snapshots__/` and `__image_snapshots__/` directories for stats pages
+  - Added `buildStatsMaps()` helper — fetches `readings` and `reviewedWorks` collections, builds lookup maps
+  - `createMostReadAuthorsListItemValueProps` now takes `readingsMap` and `worksMap`
+  - Resolves each reading ref via `readingsMap.get(ref.id)!`, derives title/reviewed from `worksMap`
+  - Cover image uses `{ slug: reading.workSlug }` instead of old embedded `reading.slug`
+  - Date uses `reading.date` (Date object) instead of old embedded `reading.date` (string)
+- Updated `src/features/stats/MostReadAuthors.tsx`:
+  - Removed `readingSequence: number` from `ReadingSubListItemValue` type
+  - Changed React key from `reading.readingSequence` to `reading.slug` (work slug)
+- Updated `src/api/__fixtures__/readings.ts`:
+  - `work_slug: { collection, id }` → `workSlug: "..."` (plain string)
+  - `edition_notes: undefined` → `editionNotes: undefined`
+  - Added `slug: "..."` (unique reading ID)
+  - Added `date: new Date(...)`
+- Updated `src/api/__fixtures__/reviews.ts`:
+  - `work_slug: { collection, id }` → `slug: { collection, id }` (field renamed, still a reference)
+  - Reordered fields alphabetically
 
 ### Files changed
-- `src/api/stats.ts` (updated)
-- `src/features/stats/getStatsProps.ts` (updated)
-- `src/pages/readings/stats/index.astro` (updated)
-- `src/pages/readings/stats/[year]/index.astro` (updated)
-- `src/pages/readings/stats/[year]/og.jpg.ts` (updated)
-- `src/api/__fixtures__/stats.ts` (created)
-- `src/api/stats.spec.ts` (created)
-- `src/api/data/alltime-stats-json.ts` (deleted)
-- `src/api/data/year-stats-json.ts` (deleted)
-- `src/api/data/DistributionSchema.ts` (deleted — orphaned)
-- Stats snapshot and image snapshot directories deleted
-- `PLAN.md` (Stage 4 status → Complete, success criteria checked)
-- `progress.txt` (this file)
-
-### Missing permissions
-- None
-
-### Learnings for future iterations:
-- **`getStatsProps` stays async** even after migration because `createMostReadAuthorsListItemValueProps` calls `getFluidCoverImageProps` (image optimization), same pattern as `getReadingLogProps`
-- **`allStatYears` returns `string[]` not `number[]`** — SPEC says `number[]` but `YearStatData.year` is `z.string()` and Astro pages compare `year` to strings; keeping strings avoids unnecessary type conversions
-- **`alltimeStats()` is an identity function** — `AlltimeStats = AlltimeStatData & {}`, so the function just returns the input unchanged; the type alias maintains backward compatibility
-- **`og.jpg.ts` endpoints also call `allStatYears()`** — remember to update OG image endpoints alongside the main page and getStaticPaths functions; they share the same data dependency
-- **`DistributionSchema.ts` becomes orphaned** when the stats JSON files are deleted — delete it immediately rather than waiting for Stage 7 to avoid knip warnings
-- **`rm` cannot handle directory names with square brackets** (like `[year]`) — use `find -name` pattern to delete files in such directories
-- **SPEC year type is `number` but implementation stays `string`** — data in JSON is `"2024"` (string), schema uses `z.string()`, Astro pages use string comparison; follow the data, not the spec's type annotation when they conflict
-
----
-
-## 2026-02-22 - Stage 5: Migrate `authors.ts`
-
-### What was implemented
-- Updated `src/api/authors.ts` to pure synchronous functions:
-  - `Author = AuthorData` — type alias to collection data type; `reviewedWorks` is `{ collection, id }[]` references
-  - `allAuthors(authors: AuthorData[]): Author[]` — identity function, returns input as-is
-  - `getAuthorDetails(slug, authors, works)` — pure, sync; resolves `author.reviewedWorks` references against `ReviewedWorkData[]` to compute distinct kinds/years; returns `AuthorDetails | undefined`
-  - Removed `ENABLE_CACHE`, `perfLogger`, module-level cache `Map`s, and all data-layer imports
-- Updated `src/features/authors/getAuthorsProps.ts`:
-  - Added `authors: AuthorData[]` parameter
-  - Uses `allAuthors(authors).toSorted(...)` (non-mutating sort)
-- Updated `src/features/author-titles/getAuthorTitlesProps.ts`:
-  - Added `authors: AuthorData[]` and `works: ReviewedWorkData[]` parameters
-  - Calls `getAuthorDetails(slug, authors, works)` (now sync)
-  - Resolves `author.reviewedWorks` references to full `ReviewedWorkData` objects for cover images
-  - Updated `filterOtherAuthors` to take `ReviewedWorkData` instead of `Author["reviewedWorks"][number]`
-- Updated `src/pages/authors/index.astro` to call `getCollection('authors')`, pass to `getAuthorsProps`
-- Updated `src/pages/authors/[slug]/index.astro`:
-  - `getStaticPaths` uses `getCollection('authors')` + `allAuthors()`
-  - Page body fetches both `authors` and `reviewedWorks` collections, passes to `getAuthorTitlesProps`
-  - Renamed `let works` (string) to `let worksLabel` to avoid naming conflict with `works` collection data
-- Updated `src/pages/authors/[slug]/og.jpg.ts` to use `getCollection('authors')` in `getStaticPaths`
-- Created `src/api/__fixtures__/authors.ts` — `AuthorData[]` fixtures with reference-shaped `reviewedWorks`
-- Created `src/api/authors.spec.ts` — 12 pure function tests for `allAuthors` and `getAuthorDetails`
-- Deleted `src/api/data/authors-json.ts`
-- Deleted all snapshot tests for authors pages:
-  - `src/pages/authors/_index.spec.ts`, `_og.spec.ts`
-  - `src/pages/authors/[slug]/_index.spec.ts`, `_og.spec.ts`
-  - `__snapshots__/` and `__image_snapshots__/` directories
-
-### Files changed
-- `src/api/authors.ts` (updated)
-- `src/features/authors/getAuthorsProps.ts` (updated)
-- `src/features/author-titles/getAuthorTitlesProps.ts` (updated)
-- `src/pages/authors/index.astro` (updated)
-- `src/pages/authors/[slug]/index.astro` (updated)
-- `src/pages/authors/[slug]/og.jpg.ts` (updated)
-- `src/api/__fixtures__/authors.ts` (created)
-- `src/api/authors.spec.ts` (created)
-- `src/api/data/authors-json.ts` (deleted)
-- Authors snapshot and image snapshot directories deleted
-- `PLAN.md` (Stage 5 status → Complete, success criteria checked)
-- `progress.txt` (this file)
-
-### Missing permissions
-- None
-
-### Learnings for future iterations:
-- **`getAuthorDetails` needs `works: ReviewedWorkData[]`** — the SPEC signature only shows `(slug, authors)` but `AuthorData.reviewedWorks` is `{ collection, id }[]` after content collection parsing; resolving to full work objects requires the `works` array; the SPEC note "works is already present in Stage 5/6 signatures" hints at this
-- **`Author = AuthorData`** — no wrapper type needed; the type alias is an identity since all fields needed by callers (`name`, `slug`, `sortName`, `reviewedWorks.length`) exist directly on `AuthorData`
-- **`getAuthorTitlesProps` needs both `authors` AND `works`** — even though the PLAN only mentions adding `authors`, work resolution in the props function requires the full `ReviewedWorkData[]` array; pass both from the Astro page
-- **Naming conflict when adding `works` variable**: the old `let works = "works"` (string for plural) must be renamed to `let worksLabel` to avoid shadowing the new `const works = ReviewedWorkData[]` collection variable
-- **`[slug]` page can re-fetch `authors` collection** — `getStaticPaths` and the page body both call `getCollection('authors')`; Astro's content store caches this, so the double call is cheap; wrapping `Astro.props` in `[Astro.props]` as an alternative is more fragile
-- **`allAuthors` is an identity function** — `Author = AuthorData`; `allAuthors(data)` returns `data` unchanged; used in `getStaticPaths` for consistency with SPEC but provides no transformation
-- **Square bracket directories require Python for deletion** — `rm` and bash glob patterns treat `[slug]` as a glob character class; use the Bash agent with full absolute paths or delegate to a Task agent
-
----
-
-## 2026-02-22 - Stage 6: Migrate `reviews.ts`
-
-### What was implemented
-- Updated `src/api/reviews.ts` to pure synchronous functions:
-  - `Review = ReviewData & ReviewedWorkData & {}` — merged type; join key is `r.work_slug.id === work.slug`
-  - `allReviews(works, reviews)` — merges two collections, extracts distinct kinds/years; sync
-  - `loadContent(review, readings, reviewedWorks)` — applies `linkReviewedWorks` to pre-computed intermediate HTML and reading notes; matches `ReadingData` by `work_slug.id === review.slug` only (not sequence)
-  - `loadExcerptHtml(review: ReviewData)` — returns `review.excerptHtml` directly (pre-computed in loader)
-  - `mostRecentReviews(reviews, limit)` — sorts by `reviewSequence` descending; sync
-  - `getContentPlainText(rawContent)` — unchanged
-  - Removed `ENABLE_CACHE`, `allReadingsMarkdown`, `allReviewedWorksJson`, `allReviewsMarkdown`, `rehypeRaw`, `rehypeStringify`, `remarkRehype`, `rootAsSpan`, `getHtml`; remark pipeline now only used for `getContentPlainText` and `excerptPlainText`
-- Created `src/api/__fixtures__/reviews.ts` — `ReviewData[]` fixtures with `intermediateHtml` containing `<span data-work-slug="">` elements
-- Created `src/api/__fixtures__/readings.ts` — `ReadingData[]` fixtures with `intermediateReadingNotesHtml` containing `<span data-work-slug="">` elements
-- Extended `src/api/__fixtures__/reviewedWorks.ts` — added `dark-crusade-by-karl-edward-wagner` and `carrie-by-stephen-king` entries
-- Created `src/api/reviews.spec.ts` — 18 pure function tests for `allReviews`, `loadContent`, `loadExcerptHtml`, `mostRecentReviews`, `getContentPlainText`
-- Updated `src/features/reviews/getReviewsProps.ts` — added `works: ReviewedWorkData[]` and `reviews: ReviewData[]` params
-- Updated `src/features/review/getReviewProps.ts` — added `readings: ReadingData[]`, `reviewedWorks`, `reviews` params; resolves `moreReviews` from `{ collection, id }[]` references
-- Updated `src/features/home/getHomeProps.ts` — added `works` and `reviews` params
-- Updated `src/components/article/getArticleProps.ts` — added `works` and `reviews` params (found during check, not in SPEC)
-- Updated `src/pages/reviews/index.astro`, `[slug]/index.astro`, `[slug]/og.jpg.ts`, `index.astro`, `feed.xml.ts`, `updates.json.ts`, `how-i-grade/index.astro` — all add `getCollection` calls and pass data
-- Deleted `src/api/data/reviewed-works-json.ts`, `reviews-markdown.ts`, `readings-markdown.ts`
-- Deleted snapshot tests: `src/pages/reviews/_index.spec.ts`, `_og.spec.ts`, `[slug]/_index.spec.ts`, `[slug]/_og.spec.ts` and their `__snapshots__/`/`__image_snapshots__/` directories
-- Updated 3 snapshots (`_index`, `_feed`, `_updates`) that diverged due to new content in collections
-
-### Files changed
-- `src/api/reviews.ts` (rewritten)
-- `src/api/__fixtures__/reviews.ts` (created)
-- `src/api/__fixtures__/readings.ts` (created)
-- `src/api/__fixtures__/reviewedWorks.ts` (extended)
-- `src/api/reviews.spec.ts` (created)
-- `src/features/reviews/getReviewsProps.ts` (updated)
-- `src/features/review/getReviewProps.ts` (updated)
-- `src/features/home/getHomeProps.ts` (updated)
-- `src/components/article/getArticleProps.ts` (updated)
-- `src/pages/reviews/index.astro` (updated)
-- `src/pages/reviews/[slug]/index.astro` (updated)
-- `src/pages/reviews/[slug]/og.jpg.ts` (updated)
-- `src/pages/index.astro` (updated)
-- `src/pages/feed.xml.ts` (updated)
-- `src/pages/updates.json.ts` (updated)
-- `src/pages/how-i-grade/index.astro` (updated)
-- `src/api/data/reviewed-works-json.ts` (deleted)
-- `src/api/data/reviews-markdown.ts` (deleted)
-- `src/api/data/readings-markdown.ts` (deleted)
-- Reviews snapshot and image snapshot directories deleted
-- 3 page snapshots updated (`_index`, `_feed`, `_updates`)
-- `PLAN.md` (Stage 6 status → Complete, success criteria checked)
-- `progress.txt` (this file)
-
-### Missing permissions
-- None
-
-### Learnings for future iterations:
-- **`moreReviews` is `{ collection, id }[]` not full objects** — after `parseData()`, the reference fields become reference objects; resolve them via `.find()` against the passed-in `reviewedWorks` and `reviews` arrays; do NOT spread the reference objects directly
-- **Reading matching by `work_slug.id` only** — `ReadingData.sequence` (per-work reading number: 1, 2, 3) does NOT equal `ReviewedWorkData.readings[i].readingSequence` (global sequence number); match by slug only to preserve old behavioral parity
-- **`Review = ReviewData & ReviewedWorkData & {}`** — the type assertion `as Review` is needed because TypeScript cannot verify the spread is exhaustive; the `& {}` suffix is required to avoid type narrowing issues
-- **`getArticleProps` also uses `mostRecentReviews`** — not mentioned in SPEC but found during `npm run check`; also needed to update `updates.json.ts` and `how-i-grade/index.astro`
-- **`loadExcerptHtml` return type changed from `Promise<ReviewWithExcerpt>` to `string`** — callers like `feed.xml.ts` and `updates.json.ts` used `reviewWithExcerptHtml.excerpt`; now just use the returned string directly
-- **Snapshot tests may diverge when content collections have newer data** — old snapshots were based on the previous data layer which may have been stale; after migration, snapshot tests reflect actual current content; `test:update` is the correct response
-- **`perfectionist/sort-intersection-types`** sorts case-sensitively: `ReviewData` (capital D) comes before `ReviewedWorkData` (capital W > lowercase d... wait, D < W); and `Review` type uses uppercase letters throughout so case-sensitive alphabetical puts `ReviewData` before `ReviewedWorkData` correctly
-
----
-
-## 2026-02-22 - Stage 7: Cleanup
-
-### What was implemented
-- Deleted `src/api/data/` directory entirely (including `utils/`, `fixtures/`, schema files):
-  - `src/api/data/utils/getContentPath.ts` (unused)
-  - `src/api/data/utils/__mocks__/getContentPath.ts` (mock for deleted file)
-  - `src/api/data/utils/nullable.ts` (unused — no external imports)
-  - `src/api/data/MostReadAuthorSchema.ts` (after migrating `MostReadAuthor` type usage)
-  - `src/api/data/WorkKindSchema.ts` (unused — content.config.ts defined its own inline version)
-  - `src/api/data/fixtures/` — orphaned test fixture data (no importers found)
-- Deleted `setupTestCache.ts` (root) — was only referenced in vitest.config.ts setupFiles; all API functions are now pure and need no filesystem mock
-- Deleted `src/api/utils/markdown/getHtml.ts` — orphaned, not imported by anything in the entry graph (content.config.ts defines its own inline remark pipeline)
-- Updated `src/features/stats/getStatsProps.ts`:
-  - Removed `import type { MostReadAuthor } from "~/api/data/MostReadAuthorSchema"`
-  - Added local type alias: `type MostReadAuthor = AlltimeStatData["mostReadAuthors"][number]`
-- Updated `src/api/reviews.ts`: removed unused `ReviewWithExcerpt` exported type
-- Updated `src/utils/cache.ts`: removed `export` from `ENABLE_CACHE` (unused external export)
-- Updated `vitest.config.ts`:
-  - Removed `coverage.exclude` entry for `getContentPath.ts`
-  - Removed `setupTestCache.ts` from `setupFiles` in `api-node`, `pages-node`, `utils-node` projects
-- Updated `astro.config.ts`:
-  - Removed `HmrContext` import from vite
-  - Removed `contentHmr()` function definition
-  - Removed `contentHmr()` from plugins array — Astro content collection loaders register their own file watchers
-- Updated `knip.json`:
-  - Added `"zod"` to `ignoreDependencies` (zod is a transitive dep via `astro:content`, not directly imported)
-- Updated `package.json`: removed `memfs` and `unionfs` devDependencies (only used by deleted `setupTestCache.ts`)
-- Ran `npm install` to update lockfile
-
-### Files changed
-- `src/features/stats/getStatsProps.ts` (updated)
+- `src/content.config.ts` (updated)
 - `src/api/reviews.ts` (updated)
-- `src/utils/cache.ts` (updated)
-- `src/api/data/` directory (deleted entirely)
-- `setupTestCache.ts` (deleted)
-- `src/api/utils/markdown/getHtml.ts` (deleted)
-- `vitest.config.ts` (updated)
-- `astro.config.ts` (updated)
-- `knip.json` (updated)
-- `package.json` (updated)
-- `package-lock.json` (updated)
-- `PLAN.md` (Stage 7 status → Complete, success criteria checked)
+- `src/features/review/getReviewProps.ts` (updated)
+- `src/features/stats/getStatsProps.ts` (updated)
+- `src/features/stats/MostReadAuthors.tsx` (updated)
+- `src/api/__fixtures__/readings.ts` (updated)
+- `src/api/__fixtures__/reviews.ts` (updated)
+- `.astro/data-store.json` (deleted to force rebuild)
+- `plan.md` (Stage 1 status → In Progress)
 - `progress.txt` (this file)
 
-### Missing permissions
-- `npm run lint:spelling` — requires user permission (tool approval required); not run. No new words were introduced in this stage so spelling should be unaffected.
-
 ### Learnings for future iterations:
-- **`content.config.ts` uses `z` from `"astro:content"` not directly from `"zod"`** — Astro re-exports Zod as part of its content layer API; any direct `zod` package dependency becomes transitive and knip will flag it as unused; add to `ignoreDependencies`
-- **Deleted schema files may leave `zod` as a direct dep** — `MostReadAuthorSchema.ts`, `WorkKindSchema.ts`, `nullable.ts` each imported `z` from `"zod"` directly; deleting them makes `zod` appear unused to knip
-- **`ENABLE_CACHE` export is dead after setupTestCache deletion** — `setupTestCache.ts` was the only external consumer of `ENABLE_CACHE`; removing the export (not the const) satisfies knip
-- **`ReviewWithExcerpt` type became dead after Stage 6** — `loadExcerptHtml` was changed from returning `Promise<ReviewWithExcerpt>` to `string`; the type became unexported dead code
-- **`getHtml.ts` is orphaned** — `content.config.ts` builds its own inline remark pipeline and never imports `getHtml`; even though it's in the same utils/markdown directory as files that ARE imported, it was left behind in Stage 6; always run `knip` to catch these
-- **`MostReadAuthor` type can be derived**: `type MostReadAuthor = AlltimeStatData["mostReadAuthors"][number]` avoids a separate import from the deleted schema file; prefer this pattern over adding new exports to `content.config.ts`
-- **`knip.json` configuration hints vs errors**: "Configuration hints" do NOT cause a non-zero exit code; only "Unused files", "Unused dependencies", "Unused exports" etc. cause failures
-- **fixtures/ in src/api/data/ are orphaned data copies** — `src/api/data/fixtures/` contained ~200 fixture files (copies of production content data) used by old snapshot tests; safe to delete once no grep hits for imports are found
+- **`MostReadAuthorReadingSchema` removal breaks `MostReadAuthors.tsx`** — removing the embedded reading schema means the component's `ReadingSubListItemValue` type must also change; `readingSequence` is no longer available, use `reading.slug` (work slug) as React key instead
+- **Stats props need `reviewedWorks` too** — after removing embedded readings from stats JSON, `getStatsProps.ts` needs both `readings` (for edition/date) and `reviewedWorks` (for title/reviewed status); the spec diff was simplified
+- **`MostReadAuthorReadingSchema.slug` was the WORK slug** — in the old stats JSON, each embedded reading had `slug` = work slug; in `ReadingData`, `slug` is the unique reading ID and `workSlug` is the work slug; don't confuse them
+- **Reading frontmatter fields are already renamed in content files** — `workSlug:`, `editionNotes:`, `date:`, `slug:` are already in the `.md` files; just need to update the loader to read them
+- **`review` frontmatter already uses `slug:` not `work_slug:`** — the review .md files already have the new frontmatter key
 
 ---
