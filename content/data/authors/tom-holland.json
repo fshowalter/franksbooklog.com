@@ -3,34 +3,6 @@
   "sortName": "Holland, Tom",
   "slug": "tom-holland",
   "reviewedWorks": [
-    {
-      "reviewSequence": "2023-11-06-01",
-      "title": "Fright Night Origins",
-      "reviewed": true,
-      "subtitle": null,
-      "workYear": "2023",
-      "kind": "Novel",
-      "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
-      "sortTitle": "Fright Night Origins",
-      "grade": "C+",
-      "gradeValue": 7,
-      "reviewDate": "2023-11-06",
-      "reviewYear": "2023",
-      "authors": [
-        {
-          "slug": "tom-holland",
-          "notes": null,
-          "name": "Tom Holland",
-          "sortName": "Holland, Tom"
-        },
-        {
-          "slug": "a-jack-ulrich",
-          "notes": null,
-          "name": "A. Jack Ulrich",
-          "sortName": "Ulrich, A. Jack"
-        }
-      ],
-      "includedInSlugs": []
-    }
+    "fright-night-origins-by-tom-holland-a-jack-ulrich"
   ]
 }

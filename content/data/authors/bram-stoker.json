@@ -3,28 +3,6 @@
   "sortName": "Stoker, Bram",
   "slug": "bram-stoker",
   "reviewedWorks": [
-    {
-      "reviewSequence": "2022-07-09-01",
-      "title": "Dracula",
-      "reviewed": true,
-      "subtitle": null,
-      "workYear": "1897",
-      "kind": "Novel",
-      "slug": "dracula-by-bram-stoker",
-      "sortTitle": "Dracula",
-      "grade": "C+",
-      "gradeValue": 7,
-      "reviewDate": "2022-07-09",
-      "reviewYear": "2022",
-      "authors": [
-        {
-          "slug": "bram-stoker",
-          "notes": null,
-          "name": "Bram Stoker",
-          "sortName": "Stoker, Bram"
-        }
-      ],
-      "includedInSlugs": []
-    }
+    "dracula-by-bram-stoker"
   ]
 }
