@@ -1,9 +1,9 @@
 import type { ReviewData } from "~/content.config";
 
 // AIDEV-NOTE: Minimal ReviewData fixtures for use in pure API function tests.
-// work_slug is a { collection, id } reference (post-parseData shape).
-// "dark-crusade-by-karl-edward-wagner" and "carrie-by-stephen-king" are real slugs
-// with matching entries in reviewedWorkFixtures.
+// slug is a { collection, id } reference to works (post-parseData shape,
+// renamed from work_slug in Stage 1, reference target changed to "works" in Stage 2).
+// "dark-crusade-by-karl-edward-wagner" and "carrie-by-stephen-king" are real work slugs.
 export const reviewDataFixtures: ReviewData[] = [
   {
     body: "A dark and moody review body with footnotes.",
@@ -12,11 +12,11 @@ export const reviewDataFixtures: ReviewData[] = [
     grade: "C",
     intermediateHtml:
       '<p>Good book. See also <span data-work-slug="linked-work">Linked Work</span>.</p>',
-    synopsis: undefined,
-    work_slug: {
-      collection: "reviewedWorks",
+    slug: {
+      collection: "works",
       id: "dark-crusade-by-karl-edward-wagner",
     },
+    synopsis: undefined,
   },
   {
     body: "A gripping horror novel.",
@@ -24,7 +24,7 @@ export const reviewDataFixtures: ReviewData[] = [
     excerptHtml: "<p>A gripping horror novel.</p>",
     grade: "A",
     intermediateHtml: "<p>Excellent debut novel.</p>",
+    slug: { collection: "works", id: "carrie-by-stephen-king" },
     synopsis: "A gripping horror novel.",
-    work_slug: { collection: "reviewedWorks", id: "carrie-by-stephen-king" },
   },
 ];

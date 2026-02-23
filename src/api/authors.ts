@@ -1,7 +1,8 @@
-import type { AuthorData, ReviewedWorkData } from "~/content.config";
+import type { AuthorData, ReviewData, WorkData } from "~/content.config";
 
-// AIDEV-NOTE: Author = AuthorData; reviewedWorks are { collection, id }[] references
-// after parseData(). getAuthorDetails resolves them against ReviewedWorkData[] at call time.
+// AIDEV-NOTE: Author = AuthorData (reviewedWorks field removed in Stage 2).
+// getAuthorDetails now accepts works and reviews arrays directly, filtering to works
+// where this author is listed and a review entry exists.
 export type Author = AuthorData;
 
 type AuthorDetails = {
@@ -18,22 +19,27 @@ export function allAuthors(authors: AuthorData[]): Author[] {
 export function getAuthorDetails(
   slug: string,
   authors: AuthorData[],
-  works: ReviewedWorkData[],
+  works: WorkData[],
+  reviews: ReviewData[],
 ): AuthorDetails | undefined {
   const author = authors.find((a) => a.slug === slug);
   if (!author) return undefined;
 
-  const authorWorks = author.reviewedWorks
-    .map((ref) => works.find((w) => w.slug === ref.id))
-    .filter((w): w is ReviewedWorkData => w !== undefined);
+  // r.slug.id = work slug (reference("works") coerced by parseData)
+  const reviewedSlugs = new Set(reviews.map((r) => r.slug.id));
+
+  const authorWorks = works.filter(
+    (w) => reviewedSlugs.has(w.slug) && w.authors.some((a) => a.slug === slug),
+  );
 
   const distinctKinds = new Set<string>();
   const distinctReviewYears = new Set<string>();
   const distinctWorkYears = new Set<string>();
 
   for (const work of authorWorks) {
+    const review = reviews.find((r) => r.slug.id === work.slug)!;
     distinctKinds.add(work.kind);
-    distinctReviewYears.add(work.reviewYear);
+    distinctReviewYears.add(String(review.date.getFullYear()));
     distinctWorkYears.add(work.workYear);
   }
 

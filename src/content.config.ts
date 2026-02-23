@@ -53,9 +53,18 @@ async function loadJsonArrayFile(
   getId: (raw: Record<string, unknown>) => string,
 ): Promise<void> {
   const sync = async () => {
-    const rawItems = JSON.parse(
-      await fs.readFile(filePath, "utf8"),
-    ) as Record<string, unknown>[];
+    let rawItems: Record<string, unknown>[];
+    try {
+      rawItems = JSON.parse(
+        await fs.readFile(filePath, "utf8"),
+      ) as Record<string, unknown>[];
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+        // Source file removed (e.g. during migration); keep the store empty.
+        return;
+      }
+      throw err;
+    }
     const newIds = new Set<string>();
 
     for (const raw of rawItems) {
@@ -266,23 +275,13 @@ const GradeDistributionSchema = DistributionSchema.extend({
   sortValue: z.number(),
 });
 
-const MostReadAuthorReadingSchema = z.object({
-  date: z.string(),
-  edition: z.string(),
-  includedInSlugs: z.array(z.string()),
-  kind: z.string(),
-  readingSequence: z.number(),
-  reviewed: z.boolean(),
-  slug: z.string(),
-  title: z.string(),
-  workYear: z.string(),
-});
-
+// AIDEV-NOTE: readings is z.array(reference("readings")) — source JSON contains plain
+// reading slug strings; parseData() coerces them to { collection, id } objects.
 const MostReadAuthorSchema = z
   .object({
     count: z.number(),
     name: z.string(),
-    readings: z.array(MostReadAuthorReadingSchema),
+    readings: z.array(reference("readings")),
     reviewed: z.boolean(),
     slug: z.string(),
   })
@@ -304,10 +303,63 @@ const WorkKindSchema = z.enum([
 
 const AuthorSchema = z.object({
   name: z.string(),
-  reviewedWorks: z.array(reference("reviewedWorks")),
   slug: z.string(),
   sortName: z.string(),
 });
+
+// AIDEV-NOTE: MoreByAuthorSchema is the inner shape inside moreForReviewedWorks.moreByAuthors[].
+// `reviews` is an array of work slugs (plain strings, not references).
+const MoreByAuthorSchema = z.object({
+  author: z.string(),
+  reviews: z.array(z.string()),
+});
+
+// AIDEV-NOTE: MoreForReviewedWorkSchema — each entry holds the pre-computed moreByAuthors
+// and moreReviews lists for a single reviewed work. Entry ID = work slug (raw.work).
+const MoreForReviewedWorkSchema = z.object({
+  moreByAuthors: z.array(MoreByAuthorSchema),
+  moreReviews: z.array(z.string()),
+  work: z.string(),
+});
+
+// AIDEV-NOTE: WorkRawAuthorSchema is the shape of authors inside works/*.json — just slug
+// and optional notes. Names are looked up from the authors collection at getProps time.
+const WorkRawAuthorSchema = z
+  .object({
+    notes: z
+      .nullable(z.string())
+      .optional()
+      .transform((v) => v ?? undefined),
+    slug: z.string(),
+  })
+  .transform(({ notes, slug }) => {
+    // fix zod making anything with undefined optional
+    return { notes, slug };
+  });
+
+// AIDEV-NOTE: WorkSchema transforms `year` → `workYear` to match the field name used
+// throughout the app. `includedWorks` is plain slug strings (not references) because
+// some included works are unreviewed and would fail reference validation.
+const WorkSchema = z
+  .object({
+    authors: z.array(WorkRawAuthorSchema),
+    includedWorks: z.array(z.string()),
+    kind: WorkKindSchema,
+    slug: z.string(),
+    sortTitle: z.string(),
+    subtitle: z
+      .nullable(z.string())
+      .optional()
+      .transform((v) => v ?? undefined),
+    title: z.string(),
+    year: z.string(),
+  })
+  .transform(
+    ({ authors, includedWorks, kind, slug, sortTitle, subtitle, title, year }) => {
+      // fix zod making anything with undefined optional; rename year → workYear
+      return { authors, includedWorks, kind, slug, sortTitle, subtitle, title, workYear: year };
+    },
+  );
 
 const WorkAuthorSchema = z
   .object({
@@ -454,56 +506,64 @@ const TimelineEntrySchema = z.object({
   progress: z.string(),
 });
 
-// AIDEV-NOTE: work_slug is a plain string in frontmatter; parseData() handles the
-// reference('reviewedWorks') coercion automatically, converting to { collection, id }.
+// AIDEV-NOTE: slug references the 'works' collection — parseData() coerces the plain
+// frontmatter string to { collection: "works", id } automatically.
 const ReviewSchema = z.object({
   body: z.string(),
   date: z.coerce.date(),
   excerptHtml: z.string(),
   grade: z.string(),
   intermediateHtml: z.string(),
+  slug: reference("works"),
   synopsis: z.optional(z.string()),
-  work_slug: reference("reviewedWorks"),
 });
 
-// AIDEV-NOTE: edition_notes accepts null from YAML (edition_notes: ~) or is absent.
+// AIDEV-NOTE: editionNotes accepts null from YAML (editionNotes: ~) or is absent.
 // intermediateReadingNotesHtml and intermediateEditionNotesHtml are optional because
 // reading notes and edition notes may be absent.
+// slug = filename stem (e.g. "2022-09-19-01-carrie-by-stephen-king"); workSlug is a
+// plain string (no longer a reference — workSlug is not guaranteed to be in reviews).
 const ReadingSchema = z
   .object({
     body: z.string(),
+    date: z.coerce.date(),
     edition: z.string(),
-    edition_notes: z
+    editionNotes: z
       .nullable(z.string())
       .optional()
       .transform((v) => v ?? undefined),
     intermediateEditionNotesHtml: z.string().optional(),
     intermediateReadingNotesHtml: z.string().optional(),
     sequence: z.number(),
+    slug: z.string(),
     timeline: z.array(TimelineEntrySchema),
-    work_slug: reference("reviewedWorks"),
+    workSlug: z.string(),
   })
   .transform(
     ({
       body,
+      date,
       edition,
-      edition_notes,
+      editionNotes,
       intermediateEditionNotesHtml,
       intermediateReadingNotesHtml,
       sequence,
+      slug,
       timeline,
-      work_slug,
+      workSlug,
     }) => {
       // fix zod making anything with undefined optional
       return {
         body,
+        date,
         edition,
-        edition_notes,
+        editionNotes,
         intermediateEditionNotesHtml,
         intermediateReadingNotesHtml,
         sequence,
+        slug,
         timeline,
-        work_slug,
+        workSlug,
       };
     },
   );
@@ -551,6 +611,32 @@ const authors = defineCollection({
   schema: AuthorSchema,
 });
 
+const moreForReviewedWorks = defineCollection({
+  loader: {
+    load: (ctx) =>
+      loadJsonArrayFile(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "more-for-reviewed-works.json"),
+        (raw) => raw.work as string,
+      ),
+    name: "more-for-reviewed-works-loader",
+  },
+  schema: MoreForReviewedWorkSchema,
+});
+
+const works = defineCollection({
+  loader: {
+    load: (ctx) =>
+      loadJsonDirectory(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "works"),
+        (raw) => raw.slug as string,
+      ),
+    name: "works-loader",
+  },
+  schema: WorkSchema,
+});
+
 const reviewedWorks = defineCollection({
   loader: {
     load: (ctx) =>
@@ -593,8 +679,8 @@ const reviews = defineCollection({
             excerptHtml: toExcerptHtml(excerptContent),
             grade: frontmatter.grade as string,
             intermediateHtml: toIntermediateHtml(body),
+            slug: frontmatter.slug as string,
             synopsis: frontmatter.synopsis as string | undefined,
-            work_slug: frontmatter.work_slug as string,
           };
         },
       ),
@@ -611,14 +697,15 @@ const readings = defineCollection({
         path.join(CONTENT_ROOT, "readings"),
         ({ name }) => name.replace(/\.md$/, ""),
         ({ body, frontmatter }) => {
-          const editionNotes = frontmatter.edition_notes as
+          const editionNotes = frontmatter.editionNotes as
             | null
             | string
             | undefined;
           return {
             body,
+            date: frontmatter.date,
             edition: frontmatter.edition as string,
-            edition_notes: editionNotes,
+            editionNotes,
             intermediateEditionNotesHtml: editionNotes?.trim()
               ? toInlineSpanHtml(editionNotes)
               : undefined,
@@ -626,8 +713,9 @@ const readings = defineCollection({
               ? toIntermediateHtml(body)
               : undefined,
             sequence: frontmatter.sequence as number,
+            slug: frontmatter.slug as string,
             timeline: frontmatter.timeline as unknown[],
-            work_slug: frontmatter.work_slug as string,
+            workSlug: frontmatter.workSlug as string,
           };
         },
       ),
@@ -687,20 +775,24 @@ const yearStats = defineCollection({
 
 export type AlltimeStatData = z.infer<typeof AlltimeStatSchema>;
 export type AuthorData = z.infer<typeof AuthorSchema>;
+export type MoreForReviewedWorkData = z.infer<typeof MoreForReviewedWorkSchema>;
 export type PageData = z.infer<typeof PageSchema>;
 export type ReadingData = z.infer<typeof ReadingSchema>;
 export type ReadingEntryData = z.infer<typeof ReadingEntrySchema>;
 export type ReviewData = z.infer<typeof ReviewSchema>;
 export type ReviewedWorkData = z.infer<typeof ReviewedWorkSchema>;
+export type WorkData = z.infer<typeof WorkSchema>;
 export type YearStatData = z.infer<typeof YearStatSchema>;
 
 export const collections = {
   alltimeStats,
   authors,
+  moreForReviewedWorks,
   pages,
   readingEntries,
   readings,
   reviewedWorks,
   reviews,
+  works,
   yearStats,
 };

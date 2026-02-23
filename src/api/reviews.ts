@@ -14,7 +14,7 @@ import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
 
 // AIDEV-NOTE: Review type merges ReviewedWorkData (work metadata) and ReviewData (review
-// content). Both are spread together — work_slug.id in ReviewData must match slug in
+// content). Both are spread together — slug.id in ReviewData must match slug in
 // ReviewedWorkData for the join. moreReviews is now { collection, id }[] references;
 // resolve by looking up id against the works array passed to loadContent/getReviewProps.
 export type Review = ReviewData & ReviewedWorkData & {};
@@ -27,7 +27,7 @@ export type ReviewWithContent = Omit<Review, "readings"> & {
 
 // ReviewReading combines the JSON reading session data (date, abandoned, etc.) with
 // enriched data from the ReadingData collection (edition, notes, timeline).
-// Matched by work_slug.id === review.slug (one ReadingData per work matches all sessions).
+// Matched by workSlug === review.slug (one ReadingData per work matches all sessions).
 type ReviewReading = ReviewedWorkData["readings"][0] & {
   edition: string;
   editionNotes: string | undefined;
@@ -55,7 +55,7 @@ export function allReviews(
     distinctReviewYears.add(work.reviewYear);
     distinctWorkYears.add(work.workYear);
 
-    const reviewData = reviews.find((r) => r.work_slug.id === work.slug)!;
+    const reviewData = reviews.find((r) => r.slug.id === work.slug)!;
 
     return { ...work, ...reviewData } as Review;
   });
@@ -95,12 +95,12 @@ export function loadContent(
     .processSync(review.body)
     .toString();
 
-  // AIDEV-NOTE: Match ReadingData by work_slug only (not by sequence) to preserve
+  // AIDEV-NOTE: Match ReadingData by workSlug only (not by sequence) to preserve
   // parity with old behavior. If a work has multiple ReadingData entries, all JSON
   // reading sessions share the notes from the first matching ReadingData.
   const reviewReadings = review.readings
     .map((reading) => {
-      const readingData = readings.find((r) => r.work_slug.id === review.slug);
+      const readingData = readings.find((r) => r.workSlug === review.slug);
 
       if (!readingData) {
         throw new Error(`No reading data found for ${review.slug}`);

@@ -14,11 +14,12 @@ export type MostReadAuthorsListItemValue = {
   slug: string;
 };
 
+// AIDEV-NOTE: readingSequence removed — readings now reference ReadingData entries.
+// slug is the work slug (for the review link); use slug as the React list key.
 type ReadingSubListItemValue = {
   coverImageProps: CoverImageProps;
   displayDate: string;
   edition: string;
-  readingSequence: number;
   reviewed: boolean;
   slug: string;
   title: string;
@@ -101,7 +102,7 @@ export function MostReadAuthors({
                     {value.readings.map((reading) => {
                       return (
                         <MostReadAuthorReadingListItem
-                          key={reading.readingSequence}
+                          key={reading.slug}
                           value={reading}
                         />
                       );

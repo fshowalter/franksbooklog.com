@@ -29,7 +29,7 @@ export async function getReviewProps(
   const resolvedMoreReviews = reviewWithContent.moreReviews
     .map((ref) => {
       const moreWork = reviewedWorks.find((w) => w.slug === ref.id);
-      const moreReviewData = reviews.find((r) => r.work_slug.id === ref.id);
+      const moreReviewData = reviews.find((r) => r.slug.id === ref.id);
       if (!moreWork || !moreReviewData) return;
       return { moreReviewData, moreWork };
     })
