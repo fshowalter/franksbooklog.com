@@ -1,9 +1,9 @@
 1. Important: If you try and use a tool that requires permission, immediately print the request, including the required change to settings.json necessary to enable it, then exit.
-2. Study @SPEC.md
-3. Study @PLAN.md
+2. Study @spec.md
+3. Study @plan.md
 4. Study @progress.txt
 5. Pick the higest value task from @IMPLEMENTATION_PLAN and implement.
-6. Update @PLAN.md
+6. Update @plan.md as needed
 7. Update @progress.txt
 8. Commit changes.
 9. Exit
