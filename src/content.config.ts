@@ -7,13 +7,16 @@
 //   only run if parseData is called
 // - Call ctx.parseData and ctx.generateDigest via ctx. (not destructured) to avoid
 //   @typescript-eslint/unbound-method lint errors
-// - Strip embedded objects to ID strings before parseData() for reference() fields
+// - reference() fields accept plain slug strings from the source JSON — parseData()
+//   coerces them to { collection, id } objects automatically
 // - linkReviewedWorks is NOT applied in loaders — loaders store intermediate HTML
 //   with <span data-work-slug=""> spans intact; linking happens at build time in API layer
 // - Object literal keys must be alphabetically sorted (perfectionist/sort-objects rule)
 // - If loader data seems stale after a remark pipeline change, delete
 //   .astro/data-store.json to force a rebuild (raw-content digests don't capture
 //   pipeline changes)
+
+import type { LoaderContext } from "astro/loaders";
 
 import { defineCollection, reference, z } from "astro:content";
 import matter from "gray-matter";
@@ -34,40 +37,160 @@ import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
 
-// --- Markdown processing helpers ---
-// These run the remark/rehype pipeline WITHOUT linkReviewedWorks.
-// linkReviewedWorks is applied later in the API layer with the live reviewedWorks array.
+// --- Processing and loader helpers ---
+// AIDEV-NOTE: The four load* helpers encapsulate the repeated sync/digest/watch
+// boilerplate. Each accepts a LoaderContext (whole, not destructured — destructuring
+// triggers @typescript-eslint/unbound-method) plus collection-specific callbacks.
 
-type RawAuthor = {
-  name: string;
-  reviewedWorks: RawAuthorWork[];
-  slug: string;
-  sortName: string;
-};
-
-type RawAuthorWork = { slug: string };
-
-type RawMoreByAuthor = {
-  name: string;
-  reviewedWorks: RawMoreReview[];
-  slug: string;
-  sortName: string;
-};
-
-type RawMoreReview = { slug: string };
-
-// --- Minimal raw JSON types for loader transformations ---
-// Only fields that need transformation are typed explicitly; [key: string]: unknown
-// captures all other fields for safe spreading into parseData.
-
-type RawReviewedWork = {
-  [key: string]: unknown;
-  moreByAuthors: RawMoreByAuthor[];
-  moreReviews: RawMoreReview[];
-  slug: string;
-};
 function getBaseProcessor() {
   return remark().use(remarkGfm).use(smartypants);
+}
+
+/** Load a single JSON file that contains an array of items, one entry per item. */
+async function loadJsonArrayFile(
+  ctx: LoaderContext,
+  filePath: string,
+  getId: (raw: Record<string, unknown>) => string,
+): Promise<void> {
+  const sync = async () => {
+    const rawItems = JSON.parse(
+      await fs.readFile(filePath, "utf8"),
+    ) as Record<string, unknown>[];
+    const newIds = new Set<string>();
+
+    for (const raw of rawItems) {
+      const id = getId(raw);
+      newIds.add(id);
+
+      const digest = ctx.generateDigest(raw);
+      if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+        continue;
+      }
+
+      const data = await ctx.parseData({ data: raw, id });
+      ctx.store.set({ data, digest, id });
+    }
+
+    for (const id of ctx.store.keys()) {
+      if (!newIds.has(id)) ctx.store.delete(id);
+    }
+  };
+
+  return watchFile(ctx, filePath, sync);
+}
+
+/** Load a directory of JSON files, one entry per file. */
+async function loadJsonDirectory(
+  ctx: LoaderContext,
+  dirPath: string,
+  getId: (raw: Record<string, unknown>) => string,
+): Promise<void> {
+  const sync = async () => {
+    const entries = await fs.readdir(dirPath, { withFileTypes: true });
+    const jsonFiles = entries.filter(
+      (e) => !e.isDirectory() && e.name.endsWith(".json"),
+    );
+    const newIds = new Set<string>();
+
+    for (const entry of jsonFiles) {
+      const filePath = path.join(dirPath, entry.name);
+      const raw = JSON.parse(
+        await fs.readFile(filePath, "utf8"),
+      ) as Record<string, unknown>;
+      const id = getId(raw);
+      newIds.add(id);
+
+      const digest = ctx.generateDigest(raw);
+      if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+        continue;
+      }
+
+      const data = await ctx.parseData({ data: raw, id });
+      ctx.store.set({ data, digest, id });
+    }
+
+    for (const id of ctx.store.keys()) {
+      if (!newIds.has(id)) ctx.store.delete(id);
+    }
+  };
+
+  return watchDirectory(ctx, dirPath, sync);
+}
+
+/** Load a directory of Markdown files, one entry per file.
+ *  getId derives the entry ID cheaply (no I/O); buildData runs the remark/rehype
+ *  pipeline and is only called when the digest shows the file has changed. */
+async function loadMarkdownDirectory(
+  ctx: LoaderContext,
+  dirPath: string,
+  getId: (opts: {
+    body: string;
+    frontmatter: Record<string, unknown>;
+    name: string;
+  }) => string,
+  buildData: (opts: {
+    body: string;
+    frontmatter: Record<string, unknown>;
+    id: string;
+  }) => Record<string, unknown>,
+): Promise<void> {
+  const sync = async () => {
+    const entries = await fs.readdir(dirPath, { withFileTypes: true });
+    const mdFiles = entries.filter(
+      (e) => !e.isDirectory() && e.name.endsWith(".md"),
+    );
+    const newIds = new Set<string>();
+
+    for (const entry of mdFiles) {
+      const filePath = path.join(dirPath, entry.name);
+      const fileContents = await fs.readFile(filePath, "utf8");
+      const { content: body, data: frontmatter } = matter(fileContents);
+      const id = getId({ body, frontmatter, name: entry.name });
+      newIds.add(id);
+
+      // Digest raw content to skip expensive remark/rehype re-processing
+      const digest = ctx.generateDigest({ body, frontmatter });
+      if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+        continue;
+      }
+
+      // buildData runs remark/rehype WITHOUT linkReviewedWorks (applied in API layer)
+      const data = await ctx.parseData({
+        data: buildData({ body, frontmatter, id }),
+        id,
+      });
+      ctx.store.set({ data, digest, id });
+    }
+
+    for (const id of ctx.store.keys()) {
+      if (!newIds.has(id)) ctx.store.delete(id);
+    }
+  };
+
+  return watchDirectory(ctx, dirPath, sync);
+}
+
+/** Load a single JSON object file as one store entry with a fixed id. */
+async function loadSingleJsonFile(
+  ctx: LoaderContext,
+  filePath: string,
+  id: string,
+): Promise<void> {
+  const sync = async () => {
+    const raw = JSON.parse(
+      await fs.readFile(filePath, "utf8"),
+    ) as Record<string, unknown>;
+    const digest = ctx.generateDigest(raw);
+
+    if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+      return;
+    }
+
+    const data = await ctx.parseData({ data: raw, id });
+    ctx.store.set({ data, digest, id });
+  };
+
+  return watchFile(ctx, filePath, sync);
 }
 
 /** Excerpt HTML pipeline — truncates to first paragraph, no linkReviewedWorks */
@@ -81,6 +204,7 @@ function toExcerptHtml(content: string): string {
     .processSync(content)
     .toString();
 }
+
 /** Inline span HTML pipeline — wraps in <span>, no linkReviewedWorks */
 function toInlineSpanHtml(content: string): string {
   return getBaseProcessor()
@@ -91,6 +215,7 @@ function toInlineSpanHtml(content: string): string {
     .processSync(content)
     .toString();
 }
+
 /** Full block HTML pipeline — spans intact, linkReviewedWorks not applied */
 function toIntermediateHtml(content: string): string {
   return getBaseProcessor()
@@ -102,6 +227,32 @@ function toIntermediateHtml(content: string): string {
     .use(rehypeStringify)
     .processSync(content)
     .toString();
+}
+
+/** Run sync() immediately, then re-run it whenever any file in dirPath changes. */
+async function watchDirectory(
+  ctx: LoaderContext,
+  dirPath: string,
+  sync: () => Promise<void>,
+): Promise<void> {
+  await sync();
+  ctx.watcher?.add(dirPath);
+  ctx.watcher?.on("change", (changedPath) => {
+    if (changedPath.startsWith(dirPath)) void sync();
+  });
+}
+
+/** Run sync() immediately, then re-run it whenever filePath changes. */
+async function watchFile(
+  ctx: LoaderContext,
+  filePath: string,
+  sync: () => Promise<void>,
+): Promise<void> {
+  await sync();
+  ctx.watcher?.add(filePath);
+  ctx.watcher?.on("change", (changedPath) => {
+    if (changedPath === filePath) void sync();
+  });
 }
 
 // --- Shared Zod sub-schemas ---
@@ -191,9 +342,9 @@ const IncludedWorkSchema = z.object({
   workYear: z.string(),
 });
 
-// AIDEV-NOTE: moreByAuthors[].reviewedWorks uses reference() — loader strips embedded
-// objects to slug strings before parseData(). The outer author metadata (name, slug,
-// sortName) is small and embedded directly; only the inner work list uses references.
+// AIDEV-NOTE: moreByAuthors[].reviewedWorks uses reference() — the exporter emits slug
+// strings directly; parseData() coerces them to { collection, id } objects automatically.
+// The outer author metadata (name, slug, sortName) is small and embedded directly.
 const ContentMoreByAuthorSchema = z.object({
   name: z.string(),
   reviewedWorks: z.array(reference("reviewedWorks")),
@@ -209,9 +360,9 @@ const ReviewedWorkReadingSchema = z.object({
   readingTime: z.number(),
 });
 
-// AIDEV-NOTE: moreReviews uses reference('reviewedWorks') — loader strips embedded
-// objects to slug strings before parseData(). includedWorks does NOT use reference()
-// because some entries have reviewed: false and won't exist in reviewedWorks collection.
+// AIDEV-NOTE: moreReviews uses reference('reviewedWorks') — the exporter emits slug
+// strings directly; parseData() coerces them automatically. includedWorks does NOT use
+// reference() because some entries have reviewed: false and won't exist in the collection.
 const ReviewedWorkSchema = z
   .object({
     authors: z.array(WorkAuthorSchema),
@@ -389,55 +540,12 @@ const YearStatSchema = z.object({
 
 const authors = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const dirPath = path.join(CONTENT_ROOT, "data", "authors");
-
-      const sync = async () => {
-        const entries = await fs.readdir(dirPath, { withFileTypes: true });
-        const jsonFiles = entries.filter(
-          (e) => !e.isDirectory() && e.name.endsWith(".json"),
-        );
-
-        const newIds = new Set<string>();
-
-        for (const entry of jsonFiles) {
-          const filePath = path.join(dirPath, entry.name);
-          const raw = JSON.parse(
-            await fs.readFile(filePath, "utf8"),
-          ) as RawAuthor;
-          const id = raw.slug;
-          newIds.add(id);
-
-          const digest = ctx.generateDigest(raw as Record<string, unknown>);
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          // Strip embedded work objects to slug strings for reference() fields
-          const data = await ctx.parseData({
-            data: {
-              ...raw,
-              reviewedWorks: raw.reviewedWorks.map((w) => w.slug),
-            },
-            id,
-          });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch authors directory in dev mode
-      ctx.watcher?.add(dirPath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath.startsWith(dirPath)) void sync();
-      });
-    },
+    load: (ctx) =>
+      loadJsonDirectory(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "authors"),
+        (raw) => raw.slug as string,
+      ),
     name: "authors-loader",
   },
   schema: AuthorSchema,
@@ -445,54 +553,12 @@ const authors = defineCollection({
 
 const reviewedWorks = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const filePath = path.join(CONTENT_ROOT, "data", "reviewed-works.json");
-
-      const sync = async () => {
-        const rawItems = JSON.parse(
-          await fs.readFile(filePath, "utf8"),
-        ) as RawReviewedWork[];
-
-        const newIds = new Set<string>();
-
-        for (const raw of rawItems) {
-          const id = raw.slug;
-          newIds.add(id);
-
-          const digest = ctx.generateDigest(raw);
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          // Strip embedded objects to ID strings for reference() fields before parseData()
-          const data = await ctx.parseData({
-            data: {
-              ...raw,
-              moreByAuthors: raw.moreByAuthors.map((a) => ({
-                ...a,
-                reviewedWorks: a.reviewedWorks.map((w) => w.slug),
-              })),
-              moreReviews: raw.moreReviews.map((r) => r.slug),
-            },
-            id,
-          });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch the single JSON file
-      ctx.watcher?.add(filePath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath === filePath) void sync();
-      });
-    },
+    load: (ctx) =>
+      loadJsonArrayFile(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "reviewed-works.json"),
+        (raw) => raw.slug as string,
+      ),
     name: "reviewed-works-loader",
   },
   schema: ReviewedWorkSchema,
@@ -500,43 +566,12 @@ const reviewedWorks = defineCollection({
 
 const readingEntries = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const filePath = path.join(CONTENT_ROOT, "data", "reading-entries.json");
-
-      const sync = async () => {
-        const rawItems = JSON.parse(
-          await fs.readFile(filePath, "utf8"),
-        ) as (Record<string, unknown> & { readingEntrySequence: number })[];
-
-        const newIds = new Set<string>();
-
-        for (const raw of rawItems) {
-          const id = String(raw.readingEntrySequence);
-          newIds.add(id);
-
-          const digest = ctx.generateDigest(raw);
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          const data = await ctx.parseData({ data: raw, id });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch the single JSON file
-      ctx.watcher?.add(filePath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath === filePath) void sync();
-      });
-    },
+    load: (ctx) =>
+      loadJsonArrayFile(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "reading-entries.json"),
+        (raw) => String(raw.readingEntrySequence as number),
+      ),
     name: "reading-entries-loader",
   },
   schema: ReadingEntrySchema,
@@ -544,68 +579,25 @@ const readingEntries = defineCollection({
 
 const reviews = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const dirPath = path.join(CONTENT_ROOT, "reviews");
-
-      const sync = async () => {
-        const entries = await fs.readdir(dirPath, { withFileTypes: true });
-        const mdFiles = entries.filter(
-          (e) => !e.isDirectory() && e.name.endsWith(".md"),
-        );
-
-        const newIds = new Set<string>();
-
-        for (const entry of mdFiles) {
-          const filePath = path.join(dirPath, entry.name);
-          const id = entry.name.replace(/\.md$/, "");
-          newIds.add(id);
-
-          const fileContents = await fs.readFile(filePath, "utf8");
-          const { content: body, data: frontmatter } = matter(fileContents);
-
-          // Digest raw content to skip expensive remark/rehype re-processing
-          const digest = ctx.generateDigest({ body, frontmatter });
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          // Run remark/rehype WITHOUT linkReviewedWorks (applied later in API layer)
-          const intermediateHtml = toIntermediateHtml(body);
-
-          // Excerpt: synopsis or first paragraph, fully processed (no linking needed)
+    load: (ctx) =>
+      loadMarkdownDirectory(
+        ctx,
+        path.join(CONTENT_ROOT, "reviews"),
+        ({ name }) => name.replace(/\.md$/, ""),
+        ({ body, frontmatter }) => {
           const excerptContent =
             (frontmatter.synopsis as string | undefined)?.trim() || body;
-          const excerptHtml = toExcerptHtml(excerptContent);
-
-          const data = await ctx.parseData({
-            data: {
-              body,
-              date: frontmatter.date as unknown,
-              excerptHtml,
-              grade: frontmatter.grade as string,
-              intermediateHtml,
-              synopsis: frontmatter.synopsis as string | undefined,
-              work_slug: frontmatter.work_slug as string,
-            },
-            id,
-          });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch reviews directory
-      ctx.watcher?.add(dirPath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath.startsWith(dirPath)) void sync();
-      });
-    },
+          return {
+            body,
+            date: frontmatter.date,
+            excerptHtml: toExcerptHtml(excerptContent),
+            grade: frontmatter.grade as string,
+            intermediateHtml: toIntermediateHtml(body),
+            synopsis: frontmatter.synopsis as string | undefined,
+            work_slug: frontmatter.work_slug as string,
+          };
+        },
+      ),
     name: "reviews-loader",
   },
   schema: ReviewSchema,
@@ -613,73 +605,32 @@ const reviews = defineCollection({
 
 const readings = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const dirPath = path.join(CONTENT_ROOT, "readings");
-
-      const sync = async () => {
-        const entries = await fs.readdir(dirPath, { withFileTypes: true });
-        const mdFiles = entries.filter(
-          (e) => !e.isDirectory() && e.name.endsWith(".md"),
-        );
-
-        const newIds = new Set<string>();
-
-        for (const entry of mdFiles) {
-          const filePath = path.join(dirPath, entry.name);
-          const id = entry.name.replace(/\.md$/, "");
-          newIds.add(id);
-
-          const fileContents = await fs.readFile(filePath, "utf8");
-          const { content: body, data: frontmatter } = matter(fileContents);
-
-          // Digest raw content to skip expensive remark/rehype re-processing
-          const digest = ctx.generateDigest({ body, frontmatter });
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          // Run remark/rehype WITHOUT linkReviewedWorks (applied later in API layer)
-          const intermediateReadingNotesHtml = body.trim()
-            ? toIntermediateHtml(body)
-            : undefined;
+    load: (ctx) =>
+      loadMarkdownDirectory(
+        ctx,
+        path.join(CONTENT_ROOT, "readings"),
+        ({ name }) => name.replace(/\.md$/, ""),
+        ({ body, frontmatter }) => {
           const editionNotes = frontmatter.edition_notes as
             | null
             | string
             | undefined;
-          const intermediateEditionNotesHtml = editionNotes?.trim()
-            ? toInlineSpanHtml(editionNotes)
-            : undefined;
-
-          const data = await ctx.parseData({
-            data: {
-              body,
-              edition: frontmatter.edition as string,
-              edition_notes: editionNotes,
-              intermediateEditionNotesHtml,
-              intermediateReadingNotesHtml,
-              sequence: frontmatter.sequence as number,
-              timeline: frontmatter.timeline as unknown[],
-              work_slug: frontmatter.work_slug as string,
-            },
-            id,
-          });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch readings directory
-      ctx.watcher?.add(dirPath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath.startsWith(dirPath)) void sync();
-      });
-    },
+          return {
+            body,
+            edition: frontmatter.edition as string,
+            edition_notes: editionNotes,
+            intermediateEditionNotesHtml: editionNotes?.trim()
+              ? toInlineSpanHtml(editionNotes)
+              : undefined,
+            intermediateReadingNotesHtml: body.trim()
+              ? toIntermediateHtml(body)
+              : undefined,
+            sequence: frontmatter.sequence as number,
+            timeline: frontmatter.timeline as unknown[],
+            work_slug: frontmatter.work_slug as string,
+          };
+        },
+      ),
     name: "readings-loader",
   },
   schema: ReadingSchema,
@@ -687,60 +638,18 @@ const readings = defineCollection({
 
 const pages = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const dirPath = path.join(CONTENT_ROOT, "pages");
-
-      const sync = async () => {
-        const entries = await fs.readdir(dirPath, { withFileTypes: true });
-        const mdFiles = entries.filter(
-          (e) => !e.isDirectory() && e.name.endsWith(".md"),
-        );
-
-        const newIds = new Set<string>();
-
-        for (const entry of mdFiles) {
-          const filePath = path.join(dirPath, entry.name);
-          const fileContents = await fs.readFile(filePath, "utf8");
-          const { content: body, data: frontmatter } = matter(fileContents);
-
-          const id = frontmatter.slug as string;
-          newIds.add(id);
-
-          // Digest raw content to skip expensive remark/rehype re-processing
-          const digest = ctx.generateDigest({ body, frontmatter });
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          // Run remark/rehype WITHOUT linkReviewedWorks (applied later in API layer)
-          const intermediateHtml = toIntermediateHtml(body);
-
-          const data = await ctx.parseData({
-            data: {
-              body,
-              intermediateHtml,
-              slug: frontmatter.slug as string,
-              title: frontmatter.title as string,
-            },
-            id,
-          });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch pages directory
-      ctx.watcher?.add(dirPath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath.startsWith(dirPath)) void sync();
-      });
-    },
+    load: (ctx) =>
+      loadMarkdownDirectory(
+        ctx,
+        path.join(CONTENT_ROOT, "pages"),
+        ({ frontmatter }) => frontmatter.slug as string,
+        ({ body, frontmatter }) => ({
+          body,
+          intermediateHtml: toIntermediateHtml(body),
+          slug: frontmatter.slug as string,
+          title: frontmatter.title as string,
+        }),
+      ),
     name: "pages-loader",
   },
   schema: PageSchema,
@@ -748,33 +657,12 @@ const pages = defineCollection({
 
 const alltimeStats = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const filePath = path.join(CONTENT_ROOT, "data", "all-time-stats.json");
-      const id = "alltime";
-
-      const sync = async () => {
-        const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
-          string,
-          unknown
-        >;
-        const digest = ctx.generateDigest(raw);
-
-        if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-          return;
-        }
-
-        const data = await ctx.parseData({ data: raw, id });
-        ctx.store.set({ data, digest, id });
-      };
-
-      await sync();
-
-      // HMR: watch the single JSON file
-      ctx.watcher?.add(filePath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath === filePath) void sync();
-      });
-    },
+    load: (ctx) =>
+      loadSingleJsonFile(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "all-time-stats.json"),
+        "alltime",
+      ),
     name: "alltime-stats-loader",
   },
   schema: AlltimeStatSchema,
@@ -782,49 +670,12 @@ const alltimeStats = defineCollection({
 
 const yearStats = defineCollection({
   loader: {
-    load: async (ctx) => {
-      const dirPath = path.join(CONTENT_ROOT, "data", "year-stats");
-
-      const sync = async () => {
-        const entries = await fs.readdir(dirPath, { withFileTypes: true });
-        const jsonFiles = entries.filter(
-          (e) => !e.isDirectory() && e.name.endsWith(".json"),
-        );
-
-        const newIds = new Set<string>();
-
-        for (const entry of jsonFiles) {
-          const filePath = path.join(dirPath, entry.name);
-          const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
-            string,
-            unknown
-          > & { year: string };
-          const id = raw.year;
-          newIds.add(id);
-
-          const digest = ctx.generateDigest(raw);
-          if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-            continue;
-          }
-
-          const data = await ctx.parseData({ data: raw, id });
-          ctx.store.set({ data, digest, id });
-        }
-
-        // Remove stale entries
-        for (const id of ctx.store.keys()) {
-          if (!newIds.has(id)) ctx.store.delete(id);
-        }
-      };
-
-      await sync();
-
-      // HMR: watch year-stats directory
-      ctx.watcher?.add(dirPath);
-      ctx.watcher?.on("change", (changedPath) => {
-        if (changedPath.startsWith(dirPath)) void sync();
-      });
-    },
+    load: (ctx) =>
+      loadJsonDirectory(
+        ctx,
+        path.join(CONTENT_ROOT, "data", "year-stats"),
+        (raw) => raw.year as string,
+      ),
     name: "year-stats-loader",
   },
   schema: YearStatSchema,

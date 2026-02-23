@@ -3,51 +3,7 @@
   "sortName": "Ellis, Bret Easton",
   "slug": "bret-easton-ellis",
   "reviewedWorks": [
-    {
-      "reviewSequence": "2022-04-02-01",
-      "title": "Less Than Zero",
-      "reviewed": true,
-      "subtitle": null,
-      "workYear": "1985",
-      "kind": "Novel",
-      "slug": "less-than-zero-by-bret-easton-ellis",
-      "sortTitle": "Less Than Zero",
-      "grade": "B+",
-      "gradeValue": 10,
-      "reviewDate": "2022-04-02",
-      "reviewYear": "2022",
-      "authors": [
-        {
-          "slug": "bret-easton-ellis",
-          "notes": null,
-          "name": "Bret Easton Ellis",
-          "sortName": "Ellis, Bret Easton"
-        }
-      ],
-      "includedInSlugs": []
-    },
-    {
-      "reviewSequence": "2022-07-14-01",
-      "title": "The Rules of Attraction",
-      "reviewed": true,
-      "subtitle": null,
-      "workYear": "1987",
-      "kind": "Novel",
-      "slug": "the-rules-of-attraction-by-bret-easton-ellis",
-      "sortTitle": "Rules of Attraction",
-      "grade": "C+",
-      "gradeValue": 7,
-      "reviewDate": "2022-07-14",
-      "reviewYear": "2022",
-      "authors": [
-        {
-          "slug": "bret-easton-ellis",
-          "notes": null,
-          "name": "Bret Easton Ellis",
-          "sortName": "Ellis, Bret Easton"
-        }
-      ],
-      "includedInSlugs": []
-    }
+    "less-than-zero-by-bret-easton-ellis",
+    "the-rules-of-attraction-by-bret-easton-ellis"
   ]
 }
