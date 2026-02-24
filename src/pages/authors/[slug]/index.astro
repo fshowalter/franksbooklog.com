@@ -1,4 +1,6 @@
 ---
+import { getCollection } from "astro:content";
+
 import type { Author } from "~/api/authors";
 
 import { allAuthors } from "~/api/authors";
@@ -12,9 +14,10 @@ import { getAuthorTitlesProps } from "~/features/author-titles/getAuthorTitlesPr
 type Props = Author;
 
 export async function getStaticPaths() {
-  const authors = await allAuthors();
+  const authorEntries = await getCollection("authors");
+  const authors = authorEntries.map((e) => e.data);
 
-  return authors.map((author) => {
+  return allAuthors(authors).map((author) => {
     return {
       params: {
         slug: author.slug,
@@ -24,20 +27,21 @@ export async function getStaticPaths() {
   });
 }
 
-const { name, reviewedWorks, slug } = Astro.props;
+const { name, slug } = Astro.props;
+
 const authorTitlesProps = await getAuthorTitlesProps(slug);
 const backdropImageProps = await getLayoutBackdropImageProps("author");
 const avatarImageProps = await getLayoutAvatarImageProps(slug);
 
-const reviewedWorkCount = reviewedWorks.length;
+const reviewedWorkCount = authorTitlesProps.values.length;
 
-let works = "works";
+let worksLabel = "works";
 
 if (reviewedWorkCount === 1) {
-  works = "work";
+  worksLabel = "work";
 }
 
-const deck = `Author of ${reviewedWorkCount} reviewed ${works}.`;
+const deck = `Author of ${reviewedWorkCount} reviewed ${worksLabel}.`;
 const metaDescription = `Reviews of books and stories written by ${name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`;
 ---
 

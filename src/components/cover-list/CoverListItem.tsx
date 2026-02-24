@@ -42,7 +42,7 @@ export function CoverListItem({
         transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
         transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
-        tablet:px-6 tablet:py-6
+        tablet:p-6
         ${
           hasReview
             ? `

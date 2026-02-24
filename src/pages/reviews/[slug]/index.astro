@@ -1,4 +1,6 @@
 ---
+import { getCollection } from "astro:content";
+
 import { allReviews, getContentPlainText } from "~/api/reviews";
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { Layout } from "~/components/layout/Layout";
@@ -8,25 +10,39 @@ import { toSentenceArray } from "~/utils/toSentenceArray";
 
 interface Props {
   contentPlainText: string;
-  review: Awaited<ReturnType<typeof allReviews>>["reviews"][number];
+  review: ReturnType<typeof allReviews>["reviews"][number];
 }
 
 export async function getStaticPaths() {
-  const { reviews } = await allReviews();
-
-  return await Promise.all(
-    reviews.map(async (review) => {
-      return {
-        params: {
-          slug: review.slug,
-        },
-        props: {
-          contentPlainText: getContentPlainText(review.rawContent),
-          review,
-        },
-      };
-    }),
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
+  const works = worksEntries.map((e) => e.data);
+  const reviews = reviewsEntries.map((e) => e.data);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviews,
+    authors,
+    readings,
   );
+
+  return allReviewsList.map((review) => {
+    return {
+      params: {
+        slug: review.slug,
+      },
+      props: {
+        contentPlainText: getContentPlainText(review.body),
+        review,
+      },
+    };
+  });
 }
 
 const { contentPlainText, review } = Astro.props;

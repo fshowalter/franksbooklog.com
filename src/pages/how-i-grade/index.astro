@@ -1,4 +1,6 @@
 ---
+import { getCollection } from "astro:content";
+
 import { getContentPlainText, getPage } from "~/api/pages";
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { Article } from "~/components/article/Article";
@@ -6,15 +8,34 @@ import { getArticleProps } from "~/components/article/getArticleProps";
 import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
 import { Layout } from "~/components/layout/Layout";
 
-const { content, rawContent, title } = await getPage("how-i-grade");
+const pagesCollection = await getCollection("pages");
+const pagesData = pagesCollection.map((e) => e.data);
+const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+  await Promise.all([
+    getCollection("works"),
+    getCollection("reviews"),
+    getCollection("authors"),
+    getCollection("readings"),
+  ]);
+const worksData = worksEntries.map((e) => e.data);
+const reviewsData = reviewsEntries.map((e) => e.data);
+const authorsData = authorsEntries.map((e) => e.data);
+const readingsData = readingsEntries.map((e) => e.data);
+
+const page = getPage("how-i-grade", pagesData, reviewsData)!;
+const { body, content, title } = page;
 
 const deck = `"I want you to hit me as hard as you can."`;
 
 const props = await getArticleProps({
+  authors: authorsData,
   content,
+  readings: readingsData,
+  reviews: reviewsData,
+  works: worksData,
 });
 
-const contextPlainText = getContentPlainText(rawContent);
+const contextPlainText = getContentPlainText(body);
 const backdropImageProps = await getLayoutBackdropImageProps("how-i-grade");
 
 //trim the string to the maximum length

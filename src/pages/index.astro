@@ -1,11 +1,24 @@
 ---
+import { getCollection } from "astro:content";
+
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
 import { Layout } from "~/components/layout/Layout";
 import { getHomeProps } from "~/features/home/getHomeProps";
 import { Home } from "~/features/home/Home";
 
-const homeProps = await getHomeProps();
+const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+  await Promise.all([
+    getCollection("works"),
+    getCollection("reviews"),
+    getCollection("authors"),
+    getCollection("readings"),
+  ]);
+const works = worksEntries.map((e) => e.data);
+const reviews = reviewsEntries.map((e) => e.data);
+const authors = authorsEntries.map((e) => e.data);
+const readings = readingsEntries.map((e) => e.data);
+const homeProps = await getHomeProps(works, reviews, authors, readings);
 const backdropImageProps = await getLayoutBackdropImageProps("home");
 
 const deck = "Literature is a relative term.";

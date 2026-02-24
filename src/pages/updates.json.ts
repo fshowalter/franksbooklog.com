@@ -1,5 +1,7 @@
+import { getCollection } from "astro:content";
+
 import { getUpdateCoverProps } from "~/api/covers";
-import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 
 /**
  * Mapping object that converts letter grades to numeric star ratings.
@@ -32,18 +34,34 @@ const gradeToStars: Record<string, number> = {
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {
-  const reviews = await mostRecentReviews(5);
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
+  const works = worksEntries.map((e) => e.data);
+  const reviewsData = reviewsEntries.map((e) => e.data);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviewsData,
+    authors,
+    readings,
+  );
+  const recentReviews = mostRecentReviews(allReviewsList, 5);
 
   const updateItems = await Promise.all(
-    reviews.map(async (review) => {
+    recentReviews.map(async (review) => {
       const coverProps = await getUpdateCoverProps(review);
-
-      const reviewWithExcerptHtml = await loadExcerptHtml(review);
+      const excerpt = loadExcerptHtml(review);
 
       return {
         authors: review.authors.map((author) => author.name),
         date: review.date,
-        excerpt: reviewWithExcerptHtml.excerpt,
+        excerpt,
         image: coverProps.src,
         kind: review.kind,
         slug: review.slug,

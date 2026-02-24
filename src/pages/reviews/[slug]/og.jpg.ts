@@ -1,5 +1,6 @@
 import type { APIRoute, InferGetStaticPropsType } from "astro";
 
+import { getCollection } from "astro:content";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -28,9 +29,25 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
  * @returns Array of path objects with params (slug) and props (work data) for each review
  */
 export async function getStaticPaths() {
-  const { reviews } = await allReviews();
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
+  const works = worksEntries.map((e) => e.data);
+  const reviews = reviewsEntries.map((e) => e.data);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviews,
+    authors,
+    readings,
+  );
 
-  return reviews.map((review) => {
+  return allReviewsList.map((review) => {
     return {
       params: {
         slug: review.slug,

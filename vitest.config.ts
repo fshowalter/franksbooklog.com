@@ -4,7 +4,6 @@ import { getViteConfig } from "astro/config";
 export default getViteConfig({
   test: {
     coverage: {
-      exclude: ["src/api/data/utils/getContentPath.ts"],
       include: ["src/**"],
       provider: "istanbul",
     },
@@ -16,7 +15,7 @@ export default getViteConfig({
           environment: "node",
           include: ["src/api/**/*.spec.ts"],
           name: "api-node",
-          setupFiles: ["setupTests.ts", "setupTestCache.ts"],
+          setupFiles: ["setupTests.ts"],
         },
       },
       {
@@ -25,7 +24,7 @@ export default getViteConfig({
           environment: "node",
           include: ["src/pages/**/*.spec.ts"],
           name: "pages-node",
-          setupFiles: ["setupTests.ts", "setupTestCache.ts"],
+          setupFiles: ["setupTests.ts"],
         },
       },
       {
@@ -74,7 +73,7 @@ export default getViteConfig({
           environment: "node",
           include: ["src/utils/**/*.spec.ts"],
           name: "utils-node",
-          setupFiles: ["setupTests.ts", "setupTestCache.ts"],
+          setupFiles: ["setupTests.ts"],
         },
       },
     ],

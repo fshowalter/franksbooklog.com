@@ -1,4 +1,6 @@
 ---
+import { getCollection } from "astro:content";
+
 import { allStatYears } from "~/api/stats";
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
@@ -11,7 +13,9 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const statYears = await allStatYears();
+  const yearStatsEntries = await getCollection("yearStats");
+  const yearStats = yearStatsEntries.map((e) => e.data);
+  const statYears = allStatYears(yearStats);
 
   return statYears.map((year) => {
     return {
@@ -27,9 +31,12 @@ export async function getStaticPaths() {
 
 const { year } = Astro.props;
 
-const yearStatsProps = await getYearStatsProps(year);
+const yearStatsEntries = await getCollection("yearStats");
+const yearStats = yearStatsEntries.map((e) => e.data);
+
+const yearStatsProps = await getYearStatsProps(year, yearStats);
 const backdropImageProps = await getLayoutBackdropImageProps("stats");
-const distinctStatYears = await allStatYears();
+const distinctStatYears = allStatYears(yearStats);
 
 const deck =
   [...distinctStatYears].reverse()[0] === year

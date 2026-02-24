@@ -1,11 +1,15 @@
 ---
+import { getCollection } from "astro:content";
+
 import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
 import { Layout } from "~/components/layout/Layout";
 import { Authors } from "~/features/authors/Authors";
 import { getAuthorsProps } from "~/features/authors/getAuthorsProps";
 
-const authorsProps = await getAuthorsProps();
+const authorEntries = await getCollection("authors");
+const authors = authorEntries.map((e) => e.data);
+const authorsProps = await getAuthorsProps(authors);
 const backdropImageProps = await getLayoutBackdropImageProps("authors");
 
 const deck = '"Maybe I can glue it together. In the morning"';

@@ -82,7 +82,6 @@
     "globals": "17.3.0",
     "jsdom": "28.1.0",
     "knip": "5.85.0",
-    "memfs": "4.56.10",
     "prettier": "3.8.1",
     "prettier-plugin-astro": "0.14.1",
     "sirv": "3.0.2",
@@ -91,7 +90,6 @@
     "stylelint-order": "7.0.1",
     "typescript": "5.9.3",
     "typescript-eslint": "8.56.0",
-    "unionfs": "4.6.0",
     "vitest": "3.2.4",
     "vitest-fail-on-console": "0.10.1"
   },

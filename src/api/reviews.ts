@@ -1,113 +1,172 @@
-import rehypeRaw from "rehype-raw";
-import rehypeStringify from "rehype-stringify";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
-import { ENABLE_CACHE } from "~/utils/cache";
-import { perfLogger } from "~/utils/performanceLogger";
-
-import type { MarkdownReading } from "./data/readings-markdown";
 import type {
-  ReviewedWorkJson,
-  ReviewedWorkJsonReading,
-} from "./data/reviewed-works-json";
-import type { MarkdownReview } from "./data/reviews-markdown";
+  AuthorData,
+  ReadingData,
+  ReviewData,
+  WorkData,
+} from "~/content.config";
 
-import { allReadingsMarkdown } from "./data/readings-markdown";
-import { allReviewedWorksJson } from "./data/reviewed-works-json";
-import { allReviewsMarkdown } from "./data/reviews-markdown";
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
-import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
-import { rootAsSpan } from "./utils/markdown/rootAsSpan";
 import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
 
-// Cache at API level for derived data
-let cachedReviews: Reviews;
-let cachedMarkdownReviews: MarkdownReview[];
-let cachedMarkdownReadings: MarkdownReading[];
-let cachedReviewedWorksJson: ReviewedWorkJson[];
-const cachedExcerptHtml: Map<string, string> = new Map();
+// AIDEV-NOTE: IncludedWork is the enriched shape for included works on a review page.
+// Computed in getReviewProps by joining works + reviews + authors collections.
+export type IncludedWork = {
+  authors: { name: string; slug: string }[];
+  grade: string | undefined;
+  kind: WorkData["kind"];
+  reviewed: boolean;
+  slug: string;
+  title: string;
+  workYear: string;
+};
 
-/**
- * Review data type combining markdown content with JSON metadata
- */
-export type Review = MarkdownReview & ReviewedWorkJson & {};
+// AIDEV-NOTE: Review type is the computed join of WorkData + ReviewData + derived fields.
+// It no longer embeds ReviewedWorkData — gradeValue, reviewDate, reviewYear, reviewSequence,
+// and enriched authors are computed in allReviews(). moreByAuthors/moreReviews/readings are
+// NOT on Review — they are looked up by getReviewProps from the moreForReviewedWorks and
+// readings collections. includedWorks is plain string[] (slugs); enriched in getReviewProps.
+export type Review = {
+  authors: {
+    name: string;
+    notes: string | undefined;
+    slug: string;
+    sortName: string;
+  }[];
+  body: string;
+  date: Date;
+  excerptHtml: string;
+  grade: string;
+  gradeValue: number;
+  includedWorks: string[];
+  intermediateHtml: string;
+  kind: WorkData["kind"];
+  reviewDate: string;
+  reviewSequence: string;
+  reviewYear: string;
+  slug: string;
+  sortTitle: string;
+  subtitle: string | undefined;
+  synopsis: string | undefined;
+  title: string;
+  workYear: string;
+};
 
-/**
- * Review with processed HTML content and enriched reading data
- */
-export type ReviewWithContent = Omit<Review, "readings"> & {
+export type ReviewWithContent = Omit<Review, "includedWorks"> & {
   content: string | undefined;
   excerptPlainText: string;
+  includedWorks: IncludedWork[];
   readings: ReviewReading[];
 };
 
-/**
- * Review with processed excerpt HTML for display in lists
- */
-export type ReviewWithExcerpt = Review & {
-  excerpt: string;
+// AIDEV-NOTE: ReviewReading is computed in loadContent from ReadingData:
+// - abandoned: last timeline progress === "Abandoned"
+// - isAudiobook: edition === "Audiobook"
+// - readingSequence: ReadingData.sequence (nth reading of this work)
+// - readingTime: (reading.date − timeline[0].date).days + 1
+type ReviewReading = {
+  abandoned: boolean;
+  date: Date;
+  edition: string;
+  editionNotes: string | undefined;
+  isAudiobook: boolean;
+  readingNotes: string | undefined;
+  readingSequence: number;
+  readingTime: number;
+  timeline: ReadingData["timeline"];
 };
 
-/**
- * Type representing a review with HTML excerpt content.
- */
-type ReviewExcerpt = {
-  excerpt: string;
-};
-
-/**
- * Type representing a reading session with processed HTML content.
- * Combines markdown reading data with JSON metadata and processed notes.
- */
-type ReviewReading = MarkdownReading &
-  ReviewedWorkJsonReading & {
-    editionNotes: string | undefined;
-    readingNotes: string | undefined;
-  };
-
-/**
- * Type representing aggregated reviews data with metadata.
- * Contains all reviews plus distinct values for filtering purposes.
- */
-type Reviews = {
+type ReviewsResult = {
   distinctKinds: string[];
   distinctReviewYears: string[];
   distinctWorkYears: string[];
   reviews: Review[];
 };
 
-/**
- * Retrieves all reviews with their metadata and distinct filter values.
- * Combines JSON metadata with markdown content for complete review data.
- * Results are cached in production for performance.
- *
- * @returns Promise resolving to reviews data with filter metadata
- */
-export async function allReviews(): Promise<Reviews> {
-  return await perfLogger.measure("allReviews", async () => {
-    if (ENABLE_CACHE && cachedReviews) {
-      return cachedReviews;
-    }
+// AIDEV-NOTE: allReviews joins WorkData + ReviewData + AuthorData + ReadingData into
+// Review objects. Only works that have a matching ReviewData entry are included.
+// Derived fields (gradeValue, reviewDate, reviewYear, reviewSequence, enriched authors)
+// are computed here. The collections are the shared data layer — no pre-joined
+// reviewedWorks collection is needed.
+export function allReviews(
+  works: WorkData[],
+  reviews: ReviewData[],
+  authors: AuthorData[],
+  readings: ReadingData[],
+): ReviewsResult {
+  const authorsMap = new Map(authors.map((a) => [a.slug, a]));
+  const reviewsMap = new Map(reviews.map((r) => [r.slug.id, r]));
 
-    const reviewedWorksJson =
-      cachedReviewedWorksJson || (await allReviewedWorksJson());
-    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
-      cachedReviewedWorksJson = reviewedWorksJson;
-    }
+  // Group readings by workSlug for reviewSequence computation
+  const readingsByWork = new Map<string, ReadingData[]>();
+  for (const reading of readings) {
+    const list = readingsByWork.get(reading.workSlug) ?? [];
+    list.push(reading);
+    readingsByWork.set(reading.workSlug, list);
+  }
 
-    const reviews = await parseReviewedWorksJson(reviewedWorksJson);
+  const distinctKinds = new Set<string>();
+  const distinctReviewYears = new Set<string>();
+  const distinctWorkYears = new Set<string>();
 
-    if (ENABLE_CACHE) {
-      cachedReviews = reviews;
-    }
+  const result: Review[] = [];
 
-    return reviews;
-  });
+  for (const work of works) {
+    const reviewData = reviewsMap.get(work.slug);
+    if (!reviewData) continue; // skip unreviewed works
+
+    const reviewDate = reviewData.date.toISOString().slice(0, 10);
+    const reviewYear = reviewDate.slice(0, 4);
+
+    distinctKinds.add(work.kind);
+    distinctReviewYears.add(reviewYear);
+    distinctWorkYears.add(work.workYear);
+
+    const reviewSequence = getReviewSequence(work.slug, readingsByWork);
+
+    const enrichedAuthors = work.authors.map((a) => {
+      const author = authorsMap.get(a.slug);
+      return {
+        name: author?.name ?? a.slug,
+        notes: a.notes,
+        slug: a.slug,
+        sortName: author?.sortName ?? a.slug,
+      };
+    });
+
+    result.push({
+      authors: enrichedAuthors,
+      body: reviewData.body,
+      date: reviewData.date,
+      excerptHtml: reviewData.excerptHtml,
+      grade: reviewData.grade,
+      gradeValue: gradeToValue(reviewData.grade),
+      includedWorks: work.includedWorks,
+      intermediateHtml: reviewData.intermediateHtml,
+      kind: work.kind,
+      reviewDate,
+      reviewSequence,
+      reviewYear,
+      slug: work.slug,
+      sortTitle: work.sortTitle,
+      subtitle: work.subtitle,
+      synopsis: reviewData.synopsis,
+      title: work.title,
+      workYear: work.workYear,
+    });
+  }
+
+  return {
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctReviewYears: [...distinctReviewYears].toSorted(),
+    distinctWorkYears: [...distinctWorkYears].toSorted(),
+    reviews: result,
+  };
 }
 
 /**
@@ -125,235 +184,114 @@ export function getContentPlainText(rawContent: string): string {
     .toString();
 }
 
-/**
- * Loads and processes complete review content including HTML and enriched reading data.
- * Converts markdown to HTML, processes reading notes, and sorts readings by date.
- *
- * @param review - The base review to load content for
- * @returns Promise resolving to review with processed content and readings
- */
-export async function loadContent(review: Review): Promise<ReviewWithContent> {
-  return await perfLogger.measure("loadContent", async () => {
-    const readingsMarkdown =
-      cachedMarkdownReadings || (await allReadingsMarkdown());
-    if (ENABLE_CACHE && !cachedMarkdownReadings) {
-      cachedMarkdownReadings = readingsMarkdown;
-    }
-
-    const reviewedWorksJson =
-      cachedReviewedWorksJson || (await allReviewedWorksJson());
-    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
-      cachedReviewedWorksJson = reviewedWorksJson;
-    }
-
-    const excerptPlainText = getMastProcessor()
-      .use(removeFootnotes)
-      .use(trimToExcerpt)
-      .use(strip)
-      .processSync(review.rawContent)
-      .toString();
-
-    const readings = review.readings
-      .map((reading) => {
-        const markdownReading = readingsMarkdown.find((markdownReading) => {
-          return markdownReading.slug === review.slug;
-        })!;
-
-        if (!markdownReading) {
-          throw new Error(
-            `No markdown readings found with slug ${review.slug}`,
-          );
-        }
-
-        return {
-          ...reading,
-          ...markdownReading,
-          editionNotes: getHtmlAsSpan(
-            markdownReading.editionNotesRaw,
-            reviewedWorksJson,
-          ),
-          readingNotes: getHtml(
-            markdownReading.readingNotesRaw,
-            reviewedWorksJson,
-          ),
-        };
-      }) // eslint-disable-next-line unicorn/no-array-sort
-      .sort((a, b) => {
-        return +b.date - +a.date;
-      });
-
-    return {
-      ...review,
-      content: getHtml(review.rawContent, reviewedWorksJson),
-      excerptPlainText,
-      readings,
-    };
-  });
-}
-
-/**
- * Loads and processes HTML excerpt for a review.
- * Uses synopsis if available, otherwise truncates main content.
- * Results are cached in production for performance.
- *
- * @param review - The review object with slug to load excerpt for
- * @returns Promise resolving to review with HTML excerpt
- */
-export async function loadExcerptHtml<T extends { slug: string }>(
-  review: T,
-): Promise<ReviewExcerpt & T> {
-  return await perfLogger.measure("loadExcerptHtml", async () => {
-    // Check cache first
-    if (ENABLE_CACHE && cachedExcerptHtml.has(review.slug)) {
-      return {
-        ...review,
-        excerpt: cachedExcerptHtml.get(review.slug)!,
-      };
-    }
-
-    const reviewsMarkdown =
-      cachedMarkdownReviews || (await allReviewsMarkdown());
-    if (ENABLE_CACHE && !cachedMarkdownReviews) {
-      cachedMarkdownReviews = reviewsMarkdown;
-    }
-
-    const { rawContent, synopsis } = reviewsMarkdown.find((markdown) => {
-      return markdown.slug === review.slug;
-    })!;
-
-    const excerptContent = synopsis || rawContent;
-
-    const excerptHtml = getMastProcessor()
-      .use(removeFootnotes)
-      .use(trimToExcerpt)
-      .use(remarkRehype, { allowDangerousHtml: true })
-      .use(rehypeRaw)
-      .use(rehypeStringify)
-      .processSync(excerptContent)
-      .toString();
-
-    // Cache the result
-    if (ENABLE_CACHE) {
-      cachedExcerptHtml.set(review.slug, excerptHtml);
-    }
-
-    return {
-      ...review,
-      excerpt: excerptHtml,
-    };
-  });
-}
-
-/**
- * Retrieves the most recently published reviews.
- * Sorts by review sequence and limits results to specified count.
- *
- * @param limit - Maximum number of recent reviews to return
- * @returns Promise resolving to array of recent reviews
- */
-export async function mostRecentReviews(limit: number) {
-  return await perfLogger.measure("mostRecentReviews", async () => {
-    const reviewedWorksJson =
-      cachedReviewedWorksJson || (await allReviewedWorksJson());
-    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
-      cachedReviewedWorksJson = reviewedWorksJson;
-    }
-
-    reviewedWorksJson.sort((a, b) =>
-      b.reviewSequence.localeCompare(a.reviewSequence),
-    );
-    const slicedWorks = reviewedWorksJson.slice(0, limit);
-
-    const { reviews } = await parseReviewedWorksJson(slicedWorks);
-
-    return reviews;
-  });
-}
-
-/**
- * Internal function to process markdown content as inline HTML (span).
- * Used for edition notes and other content that should be inline.
- *
- * @param content - Markdown content to process, may be undefined
- * @param reviewedWorks - Array of reviewed works for automatic linking
- * @returns Processed HTML as inline content, or undefined if no content
- */
-function getHtmlAsSpan(
-  content: string | undefined,
-  reviewedWorks: { slug: string }[],
-) {
-  if (!content) {
-    return;
-  }
-
-  const html = getMastProcessor()
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeRaw)
-    .use(rootAsSpan)
-    .use(rehypeStringify)
-    .processSync(content)
+// AIDEV-NOTE: loadContent produces a ReviewWithContent by:
+// 1. Linking work spans in intermediateHtml, editionNotes, and readingNotes
+// 2. Computing reading fields (abandoned, isAudiobook, readingTime, readingSequence)
+//    from ReadingData — sorted by date descending (most recent first)
+// 3. Including pre-enriched includedWorks (computed by getReviewProps before calling here)
+// reviews param provides the set of reviewed slugs for linkReviewedWorks.
+export function loadContent(
+  review: Review,
+  readings: ReadingData[],
+  reviews: ReviewData[],
+  enrichedIncludedWorks: IncludedWork[],
+): ReviewWithContent {
+  const excerptPlainText = getMastProcessor()
+    .use(removeFootnotes)
+    .use(trimToExcerpt)
+    .use(strip)
+    .processSync(review.body)
     .toString();
 
-  return linkReviewedWorks(html, reviewedWorks);
+  const reviewedSlugs = reviews.map((r) => ({ slug: r.slug.id }));
+
+  // Filter readings for this work, sort most-recent first
+  const workReadings = readings
+    .filter((r) => r.workSlug === review.slug)
+    // eslint-disable-next-line unicorn/no-array-sort
+    .sort((a, b) => b.date.getTime() - a.date.getTime());
+
+  const reviewReadings: ReviewReading[] = workReadings.map((reading) => {
+    const lastProgress = reading.timeline.at(-1)?.progress ?? "";
+    return {
+      abandoned: lastProgress === "Abandoned",
+      date: reading.date,
+      edition: reading.edition,
+      editionNotes: reading.intermediateEditionNotesHtml
+        ? linkReviewedWorks(reading.intermediateEditionNotesHtml, reviewedSlugs)
+        : undefined,
+      isAudiobook: reading.edition === "Audiobook",
+      readingNotes: reading.intermediateReadingNotesHtml
+        ? linkReviewedWorks(reading.intermediateReadingNotesHtml, reviewedSlugs)
+        : undefined,
+      readingSequence: reading.sequence,
+      readingTime: computeReadingTime(reading),
+      timeline: reading.timeline,
+    };
+  });
+
+  return {
+    ...review,
+    content: linkReviewedWorks(review.intermediateHtml, reviewedSlugs),
+    excerptPlainText,
+    includedWorks: enrichedIncludedWorks,
+    readings: reviewReadings,
+  };
 }
 
-/**
- * Internal function to create a configured remark processor.
- * Includes GitHub Flavored Markdown and smart typography processing.
- *
- * @returns Configured remark processor instance
- */
+export function loadExcerptHtml(review: { excerptHtml: string }): string {
+  return review.excerptHtml;
+}
+
+export function mostRecentReviews(reviews: Review[], limit: number): Review[] {
+  return reviews
+    .toSorted((a, b) => b.reviewSequence.localeCompare(a.reviewSequence))
+    .slice(0, limit);
+}
+
+function computeReadingTime(reading: ReadingData): number {
+  if (reading.timeline.length === 0) return 1;
+  const start = reading.timeline[0].date;
+  const end = reading.date;
+  return (
+    Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1
+  );
+}
+
 function getMastProcessor() {
   return remark().use(remarkGfm).use(smartypants);
 }
 
-/**
- * Internal function to parse and combine JSON metadata with markdown reviews.
- * Merges reviewed works data with review markdown content and calculates distinct values.
- *
- * @param reviewedWorksJson - Array of reviewed work metadata from JSON
- * @returns Promise resolving to reviews data with combined metadata
- */
-async function parseReviewedWorksJson(
-  reviewedWorksJson: ReviewedWorkJson[],
-): Promise<Reviews> {
-  return await perfLogger.measure("parseReviewedWorksJson", async () => {
-    const distinctReviewYears = new Set<string>();
-    const distinctWorkYears = new Set<string>();
-    const distinctKinds = new Set<string>();
+// AIDEV-NOTE: reviewSequence = slug of the most recent reading for a work, derived by
+// sorting the work's readings by date descending and taking the first entry's slug.
+// Returns "" when no readings exist (unread review).
+function getReviewSequence(
+  workSlug: string,
+  readingsByWork: Map<string, ReadingData[]>,
+): string {
+  const readings = readingsByWork.get(workSlug) ?? [];
+  if (readings.length === 0) return "";
+  return readings.toSorted((a, b) => b.date.getTime() - a.date.getTime())[0]
+    .slug;
+}
 
-    const reviewsMarkdown =
-      cachedMarkdownReviews || (await allReviewsMarkdown());
-    if (ENABLE_CACHE && !cachedMarkdownReviews) {
-      cachedMarkdownReviews = reviewsMarkdown;
-    }
-
-    const reviews = reviewedWorksJson.map((work) => {
-      distinctKinds.add(work.kind);
-      distinctWorkYears.add(work.workYear);
-
-      const { date, grade, rawContent, synopsis } = reviewsMarkdown.find(
-        (reviewsmarkdown) => {
-          return reviewsmarkdown.slug === work.slug;
-        },
-      )!;
-
-      distinctReviewYears.add(work.reviewYear);
-
-      return {
-        ...work,
-        date,
-        grade,
-        rawContent,
-        synopsis,
-      };
-    });
-
-    return {
-      distinctKinds: [...distinctKinds].toSorted(),
-      distinctReviewYears: [...distinctReviewYears].toSorted(),
-      distinctWorkYears: [...distinctWorkYears].toSorted(),
-      reviews,
-    };
-  });
+// AIDEV-NOTE: gradeToValue converts a letter grade to a numeric sort value.
+// "Abandoned" is 0; letter grades range from F=1 to A=12.
+function gradeToValue(grade: string): number {
+  const gradeValues: Record<string, number> = {
+    A: 12,
+    "A-": 11,
+    Abandoned: 0,
+    B: 9,
+    "B+": 10,
+    "B-": 8,
+    C: 6,
+    "C+": 7,
+    "C-": 5,
+    D: 3,
+    "D+": 4,
+    "D-": 2,
+    F: 1,
+  };
+  return gradeValues[grade] ?? 0;
 }

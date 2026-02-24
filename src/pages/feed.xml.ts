@@ -1,9 +1,10 @@
 import rss from "@astrojs/rss";
+import { getCollection } from "astro:content";
 
-import type { ReviewWithExcerpt } from "~/api/reviews";
+import type { Review } from "~/api/reviews";
 
 import { getFeedCoverProps } from "~/api/covers";
-import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
 
 /**
@@ -13,13 +14,24 @@ import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
  * @returns RSS response containing the latest 10 book reviews with metadata
  */
 export async function GET() {
-  const reviews = await mostRecentReviews(10);
-
-  const rssItems = await Promise.all(
-    reviews.map(async (review) => {
-      return await loadExcerptHtml(review);
-    }),
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
+  const works = worksEntries.map((e) => e.data);
+  const reviewsData = reviewsEntries.map((e) => e.data);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviewsData,
+    authors,
+    readings,
   );
+  const recentReviews = mostRecentReviews(allReviewsList, 10);
 
   return rss({
     customData:
@@ -29,16 +41,15 @@ export async function GET() {
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
     items: await Promise.all(
-      rssItems.map(async (item) => {
-        const cover = await getFeedCoverProps(item);
+      recentReviews.map(async (review) => {
+        const cover = await getFeedCoverProps(review);
+        const excerpt = loadExcerptHtml(review);
 
         return {
-          content: `<img src="${
-            cover.src
-          }" alt="">${addMetaToExcerpt(item.excerpt, item)}`,
-          link: `https://www.franksbooklog.com/reviews/${item.slug}/`,
-          pubDate: item.date,
-          title: `${item.title} by ${authorsToString(item.authors)}`,
+          content: `<img src="${cover.src}" alt="">${addMetaToExcerpt(excerpt, review)}`,
+          link: `https://www.franksbooklog.com/reviews/${review.slug}/`,
+          pubDate: review.date,
+          title: `${review.title} by ${authorsToString(review.authors)}`,
         };
       }),
     ),
@@ -58,7 +69,7 @@ export async function GET() {
  * @param review - The review object containing grade and other metadata
  * @returns HTML string with star rating metadata prepended to the excerpt
  */
-function addMetaToExcerpt(excerpt: string, review: ReviewWithExcerpt) {
+function addMetaToExcerpt(excerpt: string, review: Review) {
   const meta = `${textStarsForGrade(review.grade)}`;
   return `<p>${meta}</p>${excerpt}`;
 }
@@ -71,7 +82,7 @@ function addMetaToExcerpt(excerpt: string, review: ReviewWithExcerpt) {
  * @param authors - Array of author objects with name and optional notes
  * @returns Formatted string of author names, e.g., "John Doe, Jane Smith (Editor), and Bob Johnson"
  */
-function authorsToString(authors: ReviewWithExcerpt["authors"]) {
+function authorsToString(authors: Review["authors"]) {
   const authorsArray = authors.map((author) => {
     if (author.notes) {
       return `${author.name} (${author.notes})`;
