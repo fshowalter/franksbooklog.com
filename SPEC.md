@@ -230,10 +230,13 @@ moreByAuthors[], moreReviews[], includedWorks[]:
 - `getCollection('reviews').map(e => e.id)` — no work data needed
 
 **`getReadingLogProps`** — expand all reading timelines:
-- `getCollection('readings')` + `getCollection('works')` + `getCollection('reviews')`
-- Expand each reading's `timeline[]` into individual entries
-- Sort by composite key `${timelineEntry.date}-${String(reading.sequence).padStart(3, '0')}` ascending
-- Assign `readingEntrySequence = index + 1`
+- Page (`readings/index.astro`) fetches: `getCollection('readings')` + `getCollection('works')` + `getCollection('reviews')` + `getCollection('authors')`, passes `.data` arrays to `getReadingLogProps`
+- `getReadingLogProps` passes those arrays to `allReadingEntries` in `src/api/readings.ts`
+- `allReadingEntries` builds lookup maps (`authorsMap`, `worksMap`, `reviewedSlugs`), expands each reading's `timeline[]` into flat entries with a sort key, sorts ascending, assigns `readingEntrySequence = index + 1`
+- `authors` collection is required for name enrichment (`name`, `sortName`) on each entry
+- `ReviewData.slug` is a `{ collection, id }` reference — use `.id` to build the reviewed set
+- **Drop `includedInSlugs`**: was in `ReadingEntrySchema` but is not in `ReadingLogValue` and is unused by any reading log component, filter, or sort
+- Sort key: `${timelineEntry.date.toISOString().slice(0,10)}-${String(reading.sequence).padStart(3, '0')}`
 
 #### Derived fields computed in getProps
 
@@ -315,6 +318,30 @@ Invert `includedWorks` across all works once per getProps call that needs it.
 - work_slug: { collection: "reviewedWorks", id: "..." }
 + slug: { collection: "reviews", id: "..." }
 ```
+
+### `src/api/readings.ts` (Stage 4)
+
+`allReadingEntries` is rewritten from a passthrough function to a full computation:
+
+```diff
+- export function allReadingEntries(entries: ReadingEntryData[]): ReadingEntries
++ export function allReadingEntries(
++   readings: ReadingData[],
++   works: WorkData[],
++   reviews: ReviewData[],
++   authors: AuthorData[],
++ ): ReadingEntries
+```
+
+The `ReadingEntry` type changes from `type ReadingEntry = ReadingEntryData` to a
+locally-defined type. `includedInSlugs` is dropped (unused). Field names that
+`getReadingLogProps` depends on are preserved unchanged:
+`readingEntryDate`, `readingEntrySequence`, `slug` (work slug), `authors`, `edition`,
+`kind`, `progress`, `reviewed`, `title`, `workYear`.
+
+`src/api/__fixtures__/readingEntries.ts` is deleted; `src/api/readings.spec.ts` is
+rewritten using the existing `readingDataFixtures`, `workDataFixtures`,
+`reviewDataFixtures`, and `authorFixtures`.
 
 ### `src/features/stats/getStatsProps.ts`
 
