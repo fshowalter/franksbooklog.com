@@ -1,0 +1,32 @@
+## 2026-02-24 - Stage 1: Foundation — New Shared Components
+
+- What was implemented:
+  - Created `src/components/filter-and-sort/FilterSection.tsx` — direct port from movie log. Collapsible details/summary with smooth height+opacity animations via direct DOM manipulation.
+  - Created `src/components/filter-and-sort/FilterSection.spec.tsx` — direct port. 10 tests covering open/closed defaults, title, disclosure triangle, initial height, snapshots.
+  - Created `src/components/filter-and-sort/AppliedFilters.tsx` — direct port. Renders removable filter chips wrapped in FilterSection. Adapted sample data in comments for book log domain (Kind/Novel vs Genre/Horror).
+  - Created `src/components/filter-and-sort/AppliedFilters.spec.tsx` — adapted port. Same structure as movie log but uses book log categories (Kind, Search). 17 tests.
+  - Created `src/components/fields/CheckboxListField.tsx` — direct port. Multi-select with selected-first sorting, show-more, clear, form reset listener, defaultValues sync via useEffect.
+  - Created `src/components/fields/RangeSliderField.tsx` — direct port. Dual-handle range slider with formatValue, keyboard nav, ARIA attributes, screen-reader live region.
+  - Created `src/components/fields/RangeSliderField.spec.tsx` — direct port. 20 tests.
+  - Created `src/utils/grades.ts` — new file. Exports `gradeToLetter(number → string)` and `gradeToValue(string → number)` using the 2–16 scale (F-=2, A+=16). Consolidates two private copies that existed in api/reviews.ts and getAuthorTitlesProps.ts.
+
+- Files changed:
+  - NEW: src/components/filter-and-sort/FilterSection.tsx
+  - NEW: src/components/filter-and-sort/FilterSection.spec.tsx
+  - NEW: src/components/filter-and-sort/AppliedFilters.tsx
+  - NEW: src/components/filter-and-sort/AppliedFilters.spec.tsx
+  - NEW: src/components/fields/CheckboxListField.tsx
+  - NEW: src/components/fields/RangeSliderField.tsx
+  - NEW: src/components/fields/RangeSliderField.spec.tsx
+  - NEW: src/utils/grades.ts
+
+- Test results: 253 tests passed, 5 snapshots written (0 failures)
+
+- **Learnings for future iterations:**
+  - The movie log's `CheckboxListField` imports `LabelText` from `./LabelText` — the book log already has `src/components/fields/LabelText.tsx`, so no extra file needed.
+  - `AppliedFilters.spec.tsx` was adapted (not pure port) to use book log categories (Kind/Novel, Search/title) instead of movie log categories (Genre/Horror) — keeps tests meaningful for this domain.
+  - `src/utils/grades.ts` already existed in the movie log at the same path; the book log didn't have it yet.
+  - The movie log's `grades.ts` only exported `gradeToLetter`; the spec requires also exporting `gradeToValue` — both are included.
+  - All 8 Stage 1 tasks completed in one pass; no regressions in existing tests.
+
+---
