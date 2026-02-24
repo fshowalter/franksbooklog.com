@@ -1,4 +1,9 @@
-import type { ReadingEntryData } from "~/content.config";
+import type {
+  AuthorData,
+  ReadingData,
+  ReviewData,
+  WorkData,
+} from "~/content.config";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReadingEntries } from "~/api/readings";
@@ -9,7 +14,10 @@ import type { ReadingLogProps } from "./ReadingLog";
 import { ReadingLogImageConfig } from "./ReadingLog";
 
 export async function getReadingLogProps(
-  entries: ReadingEntryData[],
+  readings: ReadingData[],
+  works: WorkData[],
+  reviews: ReviewData[],
+  authors: AuthorData[],
 ): Promise<ReadingLogProps> {
   const {
     distinctEditions,
@@ -17,7 +25,7 @@ export async function getReadingLogProps(
     distinctReadingYears,
     distinctWorkYears,
     readingEntries,
-  } = allReadingEntries(entries);
+  } = allReadingEntries(readings, works, reviews, authors);
 
   // Don't pre-sort here - let the component handle sorting
   // timelineEntries.sort((a, b) => b.timelineSequence - a.timelineSequence);

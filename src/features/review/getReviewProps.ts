@@ -1,5 +1,7 @@
 import { getCollection, getEntry } from "astro:content";
 
+import type { Review } from "~/api/reviews";
+import type { IncludedWork } from "~/api/reviews";
 import type {
   AuthorData,
   ReadingData,
@@ -7,14 +9,11 @@ import type {
   WorkData,
 } from "~/content.config";
 
-import type { Review } from "~/api/reviews";
-
 import {
   getFixedCoverImageProps,
   getFluidCoverImageProps,
   getStructuredDataCoverSrc,
 } from "~/api/covers";
-import type { IncludedWork } from "~/api/reviews";
 import { loadContent, loadExcerptHtml } from "~/api/reviews";
 import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard";
 
@@ -25,9 +24,7 @@ import { CoverImageConfig } from "./Review";
 // AIDEV-NOTE: reviewSequence for moreReview cards — same logic as allReviews():
 // slug of the most recent reading for the work, or "" if no readings exist.
 
-export async function getReviewProps(
-  baseReview: Review,
-): Promise<ReviewProps> {
+export async function getReviewProps(baseReview: Review): Promise<ReviewProps> {
   const [readingsEntries, worksEntries, authorsEntries, reviewsEntries] =
     await Promise.all([
       getCollection("readings"),
@@ -40,9 +37,15 @@ export async function getReviewProps(
   const authors = authorsEntries.map((e) => e.data);
   const reviews = reviewsEntries.map((e) => e.data);
 
-  const worksMap = new Map<string, WorkData>(worksEntries.map((e) => [e.id, e.data]));
-  const authorsMap = new Map<string, AuthorData>(authors.map((a) => [a.slug, a]));
-  const reviewsMap = new Map<string, ReviewData>(reviews.map((r) => [r.slug.id, r]));
+  const worksMap = new Map<string, WorkData>(
+    worksEntries.map((e) => [e.id, e.data]),
+  );
+  const authorsMap = new Map<string, AuthorData>(
+    authors.map((a) => [a.slug, a]),
+  );
+  const reviewsMap = new Map<string, ReviewData>(
+    reviews.map((r) => [r.slug.id, r]),
+  );
 
   // Group readings by workSlug for reviewSequence computation on moreReview cards
   const readingsByWork = new Map<string, ReadingData[]>();
@@ -93,9 +96,7 @@ export async function getReviewProps(
       return { moreReviewData, moreWork };
     })
     .filter(
-      (
-        item,
-      ): item is { moreReviewData: ReviewData; moreWork: WorkData } =>
+      (item): item is { moreReviewData: ReviewData; moreWork: WorkData } =>
         item !== undefined,
     );
 
@@ -120,7 +121,10 @@ export async function getReviewProps(
           grade: moreReviewData.grade,
           kind: moreWork.kind,
           reviewDate: undefined,
-          reviewSequence: getMostRecentReadingSlug(moreWork.slug, readingsByWork),
+          reviewSequence: getMostRecentReadingSlug(
+            moreWork.slug,
+            readingsByWork,
+          ),
           slug: moreWork.slug,
           title: moreWork.title,
           workYear: moreWork.workYear,

@@ -45,7 +45,12 @@ export async function GET() {
   const reviewsData = reviewsEntries.map((e) => e.data);
   const authors = authorsEntries.map((e) => e.data);
   const readings = readingsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(works, reviewsData, authors, readings);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviewsData,
+    authors,
+    readings,
+  );
   const recentReviews = mostRecentReviews(allReviewsList, 5);
 
   const updateItems = await Promise.all(

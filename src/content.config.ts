@@ -55,9 +55,10 @@ async function loadJsonArrayFile(
   const sync = async () => {
     let rawItems: Record<string, unknown>[];
     try {
-      rawItems = JSON.parse(
-        await fs.readFile(filePath, "utf8"),
-      ) as Record<string, unknown>[];
+      rawItems = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+        string,
+        unknown
+      >[];
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code === "ENOENT") {
         // Source file removed (e.g. during migration); keep the store empty.
@@ -103,9 +104,10 @@ async function loadJsonDirectory(
 
     for (const entry of jsonFiles) {
       const filePath = path.join(dirPath, entry.name);
-      const raw = JSON.parse(
-        await fs.readFile(filePath, "utf8"),
-      ) as Record<string, unknown>;
+      const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+        string,
+        unknown
+      >;
       const id = getId(raw);
       newIds.add(id);
 
@@ -186,9 +188,10 @@ async function loadSingleJsonFile(
   id: string,
 ): Promise<void> {
   const sync = async () => {
-    const raw = JSON.parse(
-      await fs.readFile(filePath, "utf8"),
-    ) as Record<string, unknown>;
+    const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+      string,
+      unknown
+    >;
     const digest = ctx.generateDigest(raw);
 
     if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
@@ -355,31 +358,29 @@ const WorkSchema = z
     year: z.string(),
   })
   .transform(
-    ({ authors, includedWorks, kind, slug, sortTitle, subtitle, title, year }) => {
+    ({
+      authors,
+      includedWorks,
+      kind,
+      slug,
+      sortTitle,
+      subtitle,
+      title,
+      year,
+    }) => {
       // fix zod making anything with undefined optional; rename year → workYear
-      return { authors, includedWorks, kind, slug, sortTitle, subtitle, title, workYear: year };
+      return {
+        authors,
+        includedWorks,
+        kind,
+        slug,
+        sortTitle,
+        subtitle,
+        title,
+        workYear: year,
+      };
     },
   );
-
-const ReadingEntryAuthorSchema = z.object({
-  name: z.string(),
-  slug: z.string(),
-  sortName: z.string(),
-});
-
-const ReadingEntrySchema = z.object({
-  authors: z.array(ReadingEntryAuthorSchema),
-  edition: z.string(),
-  includedInSlugs: z.array(z.string()),
-  kind: WorkKindSchema,
-  progress: z.string(),
-  readingEntryDate: z.string(),
-  readingEntrySequence: z.number(),
-  reviewed: z.boolean(),
-  slug: z.string(),
-  title: z.string(),
-  workYear: z.string(),
-});
 
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
@@ -517,19 +518,6 @@ const works = defineCollection({
   schema: WorkSchema,
 });
 
-const readingEntries = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadJsonArrayFile(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "reading-entries.json"),
-        (raw) => String(raw.readingEntrySequence as number),
-      ),
-    name: "reading-entries-loader",
-  },
-  schema: ReadingEntrySchema,
-});
-
 const reviews = defineCollection({
   loader: {
     load: (ctx) =>
@@ -645,7 +633,6 @@ export type AuthorData = z.infer<typeof AuthorSchema>;
 export type MoreForReviewedWorkData = z.infer<typeof MoreForReviewedWorkSchema>;
 export type PageData = z.infer<typeof PageSchema>;
 export type ReadingData = z.infer<typeof ReadingSchema>;
-export type ReadingEntryData = z.infer<typeof ReadingEntrySchema>;
 export type ReviewData = z.infer<typeof ReviewSchema>;
 export type WorkData = z.infer<typeof WorkSchema>;
 export type YearStatData = z.infer<typeof YearStatSchema>;
@@ -655,7 +642,6 @@ export const collections = {
   authors,
   moreForReviewedWorks,
   pages,
-  readingEntries,
   readings,
   reviews,
   works,

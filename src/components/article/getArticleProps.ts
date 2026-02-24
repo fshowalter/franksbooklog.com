@@ -1,4 +1,9 @@
-import type { AuthorData, ReadingData, ReviewData, WorkData } from "~/content.config";
+import type {
+  AuthorData,
+  ReadingData,
+  ReviewData,
+  WorkData,
+} from "~/content.config";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
@@ -31,7 +36,12 @@ export async function getArticleProps({
   reviews: ReviewData[];
   works: WorkData[];
 }): Promise<ArticleProps> {
-  const { reviews: allReviewsList } = allReviews(works, reviews, authors, readings);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviews,
+    authors,
+    readings,
+  );
   const recentWorks = mostRecentReviews(allReviewsList, 6);
 
   return {
