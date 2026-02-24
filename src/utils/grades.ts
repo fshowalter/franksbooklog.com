@@ -1,0 +1,56 @@
+// AIDEV-NOTE: Single source of truth for grade number <-> letter mapping
+// Used by GradeField, filter chip displays, and API layers across the site.
+// Scale: 2 (F-) to 16 (A+). Abandoned entries use gradeValue=0 (below slider range).
+
+/**
+ * Maps a grade number (2-16) to its letter grade (F- to A+).
+ * @param value - Grade as a number (2-16)
+ * @returns Letter grade (e.g., "A+", "B-", "F")
+ */
+export function gradeToLetter(value: number): string {
+  const map: Record<number, string> = {
+    16: "A+",
+    15: "A",
+    14: "A-",
+    13: "B+",
+    12: "B",
+    11: "B-",
+    10: "C+",
+    9: "C",
+    8: "C-",
+    7: "D+",
+    6: "D",
+    5: "D-",
+    4: "F+",
+    3: "F",
+    2: "F-",
+  };
+  return map[value] ?? String(value);
+}
+
+/**
+ * Maps a letter grade to its numeric value (2-16).
+ * Abandoned and unknown grades return 0 (below the slider range).
+ * @param grade - Letter grade (e.g., "A+", "B-", "F", "Abandoned")
+ * @returns Numeric grade value (2-16), or 0 for Abandoned/unknown
+ */
+export function gradeToValue(grade: string): number {
+  const map: Record<string, number> = {
+    "A+": 16,
+    A: 15,
+    "A-": 14,
+    "B+": 13,
+    B: 12,
+    "B-": 11,
+    "C+": 10,
+    C: 9,
+    "C-": 8,
+    "D+": 7,
+    D: 6,
+    "D-": 5,
+    "F+": 4,
+    F: 3,
+    "F-": 2,
+  };
+  return map[grade] ?? 0; // Abandoned and unknown → 0
+}
