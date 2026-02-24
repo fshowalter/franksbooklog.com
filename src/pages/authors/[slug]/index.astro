@@ -27,18 +27,13 @@ export async function getStaticPaths() {
   });
 }
 
-const { name, reviewedWorks, slug } = Astro.props;
+const { name, slug } = Astro.props;
 
-const authorEntries = await getCollection("authors");
-const authors = authorEntries.map((e) => e.data);
-const worksEntries = await getCollection("reviewedWorks");
-const works = worksEntries.map((e) => e.data);
-
-const authorTitlesProps = await getAuthorTitlesProps(slug, authors, works);
+const authorTitlesProps = await getAuthorTitlesProps(slug);
 const backdropImageProps = await getLayoutBackdropImageProps("author");
 const avatarImageProps = await getLayoutAvatarImageProps(slug);
 
-const reviewedWorkCount = reviewedWorks.length;
+const reviewedWorkCount = authorTitlesProps.values.length;
 
 let worksLabel = "works";
 

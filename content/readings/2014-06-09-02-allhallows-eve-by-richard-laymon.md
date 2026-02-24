@@ -1,8 +1,9 @@
 ---
-sequence: 2
-work_slug: allhallows-eve-by-richard-laymon
+date: 2014-06-09
 edition: Paperback
-edition_notes: "_The Richard Laymon Collection, Volume 3: Night Show / Allhallow's Eve_, Headline, 2006"
+editionNotes: "_The Richard Laymon Collection, Volume 3: Night Show / Allhallow's Eve_, Headline, 2006"
+sequence: 2
+slug: 2014-06-09-02-allhallows-eve-by-richard-laymon
 timeline:
   - date: 2014-06-04
     progress: 21%
@@ -14,4 +15,5 @@ timeline:
     progress: 73%
   - date: 2014-06-09
     progress: Finished
+workSlug: allhallows-eve-by-richard-laymon
 ---

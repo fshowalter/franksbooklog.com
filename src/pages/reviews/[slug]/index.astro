@@ -14,11 +14,18 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const worksEntries = await getCollection("reviewedWorks");
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
   const works = worksEntries.map((e) => e.data);
-  const reviewsEntries = await getCollection("reviews");
   const reviews = reviewsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(works, reviews);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(works, reviews, authors, readings);
 
   return allReviewsList.map((review) => {
     return {
@@ -35,14 +42,7 @@ export async function getStaticPaths() {
 
 const { contentPlainText, review } = Astro.props;
 
-const readingsEntries = await getCollection("readings");
-const readings = readingsEntries.map((e) => e.data);
-const worksEntries = await getCollection("reviewedWorks");
-const works = worksEntries.map((e) => e.data);
-const reviewsEntries = await getCollection("reviews");
-const reviewsData = reviewsEntries.map((e) => e.data);
-
-const reviewProps = await getReviewProps(review, readings, works, reviewsData);
+const reviewProps = await getReviewProps(review);
 
 //trim the string to the maximum length
 var description = contentPlainText

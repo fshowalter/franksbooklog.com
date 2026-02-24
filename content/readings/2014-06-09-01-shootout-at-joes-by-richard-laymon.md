@@ -1,9 +1,11 @@
 ---
-sequence: 1
-work_slug: shootout-at-joes-by-richard-laymon
+date: 2014-06-09
 edition: Paperback
-edition_notes: Globe Fearon Co, 1984
+editionNotes: Globe Fearon Co, 1984
+sequence: 1
+slug: 2014-06-09-01-shootout-at-joes-by-richard-laymon
 timeline:
   - date: 2014-06-09
     progress: Finished
+workSlug: shootout-at-joes-by-richard-laymon
 ---

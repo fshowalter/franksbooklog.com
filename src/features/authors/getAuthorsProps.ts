@@ -1,6 +1,6 @@
-import type { AuthorData } from "~/content.config";
-
 import { getCollection } from "astro:content";
+
+import type { AuthorData } from "~/content.config";
 
 import { allAuthors } from "~/api/authors";
 import { getAvatarImageProps } from "~/api/avatars";

@@ -1,8 +1,9 @@
 ---
-sequence: 1
-work_slug: the-happiest-toddler-on-the-block-by-harvey-karp
+date: 2016-04-10
 edition: Paperback
-edition_notes: Bantam, 2008
+editionNotes: Bantam, 2008
+sequence: 1
+slug: 2016-04-10-01-the-happiest-toddler-on-the-block-by-harvey-karp
 timeline:
   - date: 2016-04-02
     progress: 14%
@@ -22,4 +23,5 @@ timeline:
     progress: 85%
   - date: 2016-04-10
     progress: Finished
+workSlug: the-happiest-toddler-on-the-block-by-harvey-karp
 ---

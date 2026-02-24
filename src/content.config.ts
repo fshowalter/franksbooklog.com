@@ -58,12 +58,12 @@ async function loadJsonArrayFile(
       rawItems = JSON.parse(
         await fs.readFile(filePath, "utf8"),
       ) as Record<string, unknown>[];
-    } catch (err) {
-      if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === "ENOENT") {
         // Source file removed (e.g. during migration); keep the store empty.
         return;
       }
-      throw err;
+      throw error;
     }
     const newIds = new Set<string>();
 
@@ -361,126 +361,6 @@ const WorkSchema = z
     },
   );
 
-const WorkAuthorSchema = z
-  .object({
-    name: z.string(),
-    notes: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    slug: z.string(),
-    sortName: z.string(),
-  })
-  .transform(({ name, notes, slug, sortName }) => {
-    // fix zod making anything with undefined optional
-    return { name, notes, slug, sortName };
-  });
-
-const IncludedWorkAuthorSchema = z.object({
-  name: z.string(),
-  slug: z.string(),
-});
-
-const IncludedWorkSchema = z.object({
-  authors: z.array(IncludedWorkAuthorSchema),
-  grade: z
-    .nullable(z.string())
-    .optional()
-    .transform((v) => v ?? undefined),
-  kind: WorkKindSchema,
-  reviewed: z.boolean(),
-  slug: z.string(),
-  title: z.string(),
-  workYear: z.string(),
-});
-
-// AIDEV-NOTE: moreByAuthors[].reviewedWorks uses reference() — the exporter emits slug
-// strings directly; parseData() coerces them to { collection, id } objects automatically.
-// The outer author metadata (name, slug, sortName) is small and embedded directly.
-const ContentMoreByAuthorSchema = z.object({
-  name: z.string(),
-  reviewedWorks: z.array(reference("reviewedWorks")),
-  slug: z.string(),
-  sortName: z.string(),
-});
-
-const ReviewedWorkReadingSchema = z.object({
-  abandoned: z.boolean(),
-  date: z.coerce.date(),
-  isAudiobook: z.boolean(),
-  readingSequence: z.number(),
-  readingTime: z.number(),
-});
-
-// AIDEV-NOTE: moreReviews uses reference('reviewedWorks') — the exporter emits slug
-// strings directly; parseData() coerces them automatically. includedWorks does NOT use
-// reference() because some entries have reviewed: false and won't exist in the collection.
-const ReviewedWorkSchema = z
-  .object({
-    authors: z.array(WorkAuthorSchema),
-    grade: z.string(),
-    gradeValue: z.number(),
-    includedInSlugs: z.array(z.string()),
-    includedWorks: z.array(IncludedWorkSchema).optional(),
-    kind: WorkKindSchema,
-    moreByAuthors: z.array(ContentMoreByAuthorSchema),
-    moreReviews: z.array(reference("reviewedWorks")),
-    readings: z.array(ReviewedWorkReadingSchema),
-    reviewDate: z.string(),
-    reviewSequence: z.string(),
-    reviewYear: z.string(),
-    slug: z.string(),
-    sortTitle: z.string(),
-    subtitle: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    title: z.string(),
-    workYear: z.string(),
-  })
-  .transform(
-    ({
-      authors,
-      grade,
-      gradeValue,
-      includedInSlugs,
-      includedWorks,
-      kind,
-      moreByAuthors,
-      moreReviews,
-      readings,
-      reviewDate,
-      reviewSequence,
-      reviewYear,
-      slug,
-      sortTitle,
-      subtitle,
-      title,
-      workYear,
-    }) => {
-      // fix zod making anything with undefined optional
-      return {
-        authors,
-        grade,
-        gradeValue,
-        includedInSlugs,
-        includedWorks: includedWorks ?? [],
-        kind,
-        moreByAuthors,
-        moreReviews,
-        readings,
-        reviewDate,
-        reviewSequence,
-        reviewYear,
-        slug,
-        sortTitle,
-        subtitle,
-        title,
-        workYear,
-      };
-    },
-  );
-
 const ReadingEntryAuthorSchema = z.object({
   name: z.string(),
   slug: z.string(),
@@ -637,19 +517,6 @@ const works = defineCollection({
   schema: WorkSchema,
 });
 
-const reviewedWorks = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadJsonArrayFile(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "reviewed-works.json"),
-        (raw) => raw.slug as string,
-      ),
-    name: "reviewed-works-loader",
-  },
-  schema: ReviewedWorkSchema,
-});
-
 const readingEntries = defineCollection({
   loader: {
     load: (ctx) =>
@@ -780,7 +647,6 @@ export type PageData = z.infer<typeof PageSchema>;
 export type ReadingData = z.infer<typeof ReadingSchema>;
 export type ReadingEntryData = z.infer<typeof ReadingEntrySchema>;
 export type ReviewData = z.infer<typeof ReviewSchema>;
-export type ReviewedWorkData = z.infer<typeof ReviewedWorkSchema>;
 export type WorkData = z.infer<typeof WorkSchema>;
 export type YearStatData = z.infer<typeof YearStatSchema>;
 
@@ -791,7 +657,6 @@ export const collections = {
   pages,
   readingEntries,
   readings,
-  reviewedWorks,
   reviews,
   works,
   yearStats,

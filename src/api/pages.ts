@@ -3,14 +3,14 @@ import remarkGfm from "remark-gfm";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
-import type { PageData, ReviewedWorkData } from "~/content.config";
+import type { PageData, ReviewData } from "~/content.config";
 
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 
 // AIDEV-NOTE: getPage is now a pure synchronous function. The remark/rehype pipeline
 // runs in the content loader (see content.config.ts pages collection); linkReviewedWorks
-// runs here at build time with the live reviewedWorks array.
+// runs here at build time using the reviews collection to resolve reviewed slugs.
 // getContentPlainText remains a pure utility — signature unchanged.
 
 /**
@@ -36,19 +36,22 @@ export function getContentPlainText(rawContent: string): string {
  *
  * @param slug - The unique slug identifier for the page
  * @param pages - Pre-fetched pages collection data
- * @param reviewedWorks - Pre-fetched reviewed works collection data (for linking)
+ * @param reviews - Pre-fetched reviews collection data (for linking reviewed work spans)
  * @returns Processed page data with final HTML content, or undefined if not found
  */
 export function getPage(
   slug: string,
   pages: PageData[],
-  reviewedWorks: ReviewedWorkData[],
+  reviews: ReviewData[],
 ): (PageData & { content: string }) | undefined {
   const page = pages.find((p) => p.slug === slug);
   if (!page) return undefined;
   return {
     ...page,
-    content: linkReviewedWorks(page.intermediateHtml, reviewedWorks),
+    content: linkReviewedWorks(
+      page.intermediateHtml,
+      reviews.map((r) => ({ slug: r.slug.id })),
+    ),
   };
 }
 

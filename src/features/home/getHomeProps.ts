@@ -1,4 +1,4 @@
-import type { ReviewData, ReviewedWorkData } from "~/content.config";
+import type { AuthorData, ReadingData, ReviewData, WorkData } from "~/content.config";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
@@ -9,17 +9,21 @@ import type { HomeProps } from "./Home";
 /**
  * Loads and prepares data for the Home page component.
  * Fetches the most recent reviews, processes their excerpts, and prepares
- * optimized cover images and backdrop for display.
+ * optimized cover images for display.
  *
- * @param works - All reviewed work data from the reviewedWorks collection
+ * @param works - All work data from the works collection
  * @param reviews - All review data from the reviews collection
+ * @param authors - All author data from the authors collection
+ * @param readings - All reading data from the readings collection
  * @returns Promise resolving to Home page props with recent reviews and images
  */
 export async function getHomeProps(
-  works: ReviewedWorkData[],
+  works: WorkData[],
   reviews: ReviewData[],
+  authors: AuthorData[],
+  readings: ReadingData[],
 ): Promise<HomeProps> {
-  const { reviews: allReviewsList } = allReviews(works, reviews);
+  const { reviews: allReviewsList } = allReviews(works, reviews, authors, readings);
   const recentReviews = mostRecentReviews(allReviewsList, 12);
 
   return {

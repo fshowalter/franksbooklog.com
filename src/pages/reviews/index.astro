@@ -7,11 +7,18 @@ import { Layout } from "~/components/layout/Layout";
 import { getReviewsProps } from "~/features/reviews/getReviewsProps";
 import { Reviews } from "~/features/reviews/Reviews";
 
-const worksEntries = await getCollection("reviewedWorks");
+const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+  await Promise.all([
+    getCollection("works"),
+    getCollection("reviews"),
+    getCollection("authors"),
+    getCollection("readings"),
+  ]);
 const works = worksEntries.map((e) => e.data);
-const reviewsEntries = await getCollection("reviews");
 const reviews = reviewsEntries.map((e) => e.data);
-const reviewsProps = await getReviewsProps(works, reviews);
+const authors = authorsEntries.map((e) => e.data);
+const readings = readingsEntries.map((e) => e.data);
+const reviewsProps = await getReviewsProps(works, reviews, authors, readings);
 const backdropImageProps = await getLayoutBackdropImageProps("reviews");
 
 const deck = `"You were always the best of them, Lloyd."`;

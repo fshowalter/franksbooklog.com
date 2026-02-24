@@ -1,6 +1,6 @@
-import type { ReadingData } from "~/content.config";
-
 import { getCollection } from "astro:content";
+
+import type { ReadingData } from "~/content.config";
 
 import { getAuthorDetails } from "~/api/authors";
 import { getFluidCoverImageProps } from "~/api/covers";
@@ -11,36 +11,6 @@ import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
 // AIDEV-NOTE: gradeToValue converts a letter grade to a numeric sort value.
 // Must handle "Abandoned" (0) in addition to letter grades per the spec.
-function gradeToValue(grade: string): number {
-  const gradeValues: Record<string, number> = {
-    A: 12,
-    "A-": 11,
-    "B+": 10,
-    B: 9,
-    "B-": 8,
-    "C+": 7,
-    C: 6,
-    "C-": 5,
-    "D+": 4,
-    D: 3,
-    "D-": 2,
-    F: 1,
-    Abandoned: 0,
-  };
-  return gradeValues[grade] ?? 0;
-}
-
-// AIDEV-NOTE: reviewSequence = slug of the most recent reading for a work, derived by
-// sorting the work's readings by date descending and taking the first entry's slug.
-function getReviewSequence(
-  workSlug: string,
-  readingsByWork: Map<string, ReadingData[]>,
-): string {
-  const readings = readingsByWork.get(workSlug) ?? [];
-  if (readings.length === 0) return "";
-  return readings.toSorted((a, b) => b.date.getTime() - a.date.getTime())[0]
-    .slug;
-}
 
 export async function getAuthorTitlesProps(
   slug: string,
@@ -119,4 +89,35 @@ export async function getAuthorTitlesProps(
     initialSort: "title-asc",
     values,
   };
+}
+
+// AIDEV-NOTE: reviewSequence = slug of the most recent reading for a work, derived by
+// sorting the work's readings by date descending and taking the first entry's slug.
+function getReviewSequence(
+  workSlug: string,
+  readingsByWork: Map<string, ReadingData[]>,
+): string {
+  const readings = readingsByWork.get(workSlug) ?? [];
+  if (readings.length === 0) return "";
+  return readings.toSorted((a, b) => b.date.getTime() - a.date.getTime())[0]
+    .slug;
+}
+
+function gradeToValue(grade: string): number {
+  const gradeValues: Record<string, number> = {
+    A: 12,
+    "A-": 11,
+    Abandoned: 0,
+    B: 9,
+    "B+": 10,
+    "B-": 8,
+    C: 6,
+    "C+": 7,
+    "C-": 5,
+    D: 3,
+    "D+": 4,
+    "D-": 2,
+    F: 1,
+  };
+  return gradeValues[grade] ?? 0;
 }
