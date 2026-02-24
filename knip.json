@@ -3,14 +3,12 @@
   "entry": [
     "src/pages/**/*.astro",
     "src/astro/search.ts",
-    "eslint.html.config.js",
     "eslint-rules/separate-type-imports.js",
     "src/pages/**/*.spec.ts"
   ],
   "project": ["**/*", "!src/**/__mocks__/**"],
   "ignoreDependencies": [
     "@prettier/plugin-xml",
-    "@vitest/coverage-v8",
     "babel-plugin-react-compiler",
     "zod"
   ]
