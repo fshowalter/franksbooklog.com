@@ -36,14 +36,14 @@ const reviewFixtures: ReviewData[] = [
 describe("allAuthors", () => {
   it("returns all authors from fixtures", () => {
     const result = allAuthors(authorFixtures);
-    expect(result).toHaveLength(2);
+    expect(result).toHaveLength(3);
   });
 
   it("returns authors with correct fields", () => {
     const result = allAuthors(authorFixtures);
-    expect(result[0].slug).toBe("stephen-king");
-    expect(result[0].name).toBe("Stephen King");
-    expect(result[0].sortName).toBe("King, Stephen");
+    expect(result[0].slug).toBe("karl-edward-wagner");
+    expect(result[0].name).toBe("Karl Edward Wagner");
+    expect(result[0].sortName).toBe("Wagner, Karl Edward");
   });
 
   it("returns empty array for empty input", () => {
@@ -54,7 +54,12 @@ describe("allAuthors", () => {
 describe("getAuthorDetails", () => {
   it("returns undefined for unknown slug", () => {
     expect(
-      getAuthorDetails("unknown-slug", authorFixtures, workFixtures, reviewFixtures),
+      getAuthorDetails(
+        "unknown-slug",
+        authorFixtures,
+        workFixtures,
+        reviewFixtures,
+      ),
     ).toBeUndefined();
   });
 

@@ -40,7 +40,12 @@ export async function getStaticPaths() {
   const reviews = reviewsEntries.map((e) => e.data);
   const authors = authorsEntries.map((e) => e.data);
   const readings = readingsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(works, reviews, authors, readings);
+  const { reviews: allReviewsList } = allReviews(
+    works,
+    reviews,
+    authors,
+    readings,
+  );
 
   return allReviewsList.map((review) => {
     return {

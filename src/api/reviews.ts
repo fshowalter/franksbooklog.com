@@ -32,7 +32,12 @@ export type IncludedWork = {
 // NOT on Review — they are looked up by getReviewProps from the moreForReviewedWorks and
 // readings collections. includedWorks is plain string[] (slugs); enriched in getReviewProps.
 export type Review = {
-  authors: { name: string; notes: string | undefined; slug: string; sortName: string }[];
+  authors: {
+    name: string;
+    notes: string | undefined;
+    slug: string;
+    sortName: string;
+  }[];
   body: string;
   date: Date;
   excerptHtml: string;

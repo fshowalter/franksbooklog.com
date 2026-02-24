@@ -1,4 +1,9 @@
-import type { AuthorData, ReadingData, ReviewData, WorkData } from "~/content.config";
+import type {
+  AuthorData,
+  ReadingData,
+  ReviewData,
+  WorkData,
+} from "~/content.config";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
