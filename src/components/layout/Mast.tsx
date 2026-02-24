@@ -143,8 +143,8 @@ function HamburgerMenu({
             tablet:max-w-[35vw]
             laptop:max-w-[25vw]
             [body.nav-open_&]:visible [body.nav-open_&]:bottom-0
-            [body.nav-open_&]:z-nav-drawer [body.nav-open_&]:h-full
-            [body.nav-open_&]:w-full [body.nav-open_&]:transform-[translateX(0)]
+            [body.nav-open_&]:z-nav-drawer [body.nav-open_&]:size-full
+            [body.nav-open_&]:transform-[translateX(0)]
             [body.nav-open_&]:overflow-y-auto [body.nav-open_&]:pt-20
             [body.nav-open_&]:pr-[16%] [body.nav-open_&]:pb-5
             [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
