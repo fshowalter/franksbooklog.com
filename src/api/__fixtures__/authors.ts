@@ -5,6 +5,11 @@ import type { AuthorData } from "~/content.config";
 // derived by joining the works and reviews collections at getProps time.
 export const authorFixtures: AuthorData[] = [
   {
+    name: "Karl Edward Wagner",
+    slug: "karl-edward-wagner",
+    sortName: "Wagner, Karl Edward",
+  },
+  {
     name: "Stephen King",
     slug: "stephen-king",
     sortName: "King, Stephen",

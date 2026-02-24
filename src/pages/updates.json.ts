@@ -34,11 +34,18 @@ const gradeToStars: Record<string, number> = {
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {
-  const worksEntries = await getCollection("reviewedWorks");
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
   const works = worksEntries.map((e) => e.data);
-  const reviewsEntries = await getCollection("reviews");
   const reviewsData = reviewsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(works, reviewsData);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(works, reviewsData, authors, readings);
   const recentReviews = mostRecentReviews(allReviewsList, 5);
 
   const updateItems = await Promise.all(

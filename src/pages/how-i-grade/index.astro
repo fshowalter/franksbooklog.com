@@ -10,18 +10,27 @@ import { Layout } from "~/components/layout/Layout";
 
 const pagesCollection = await getCollection("pages");
 const pagesData = pagesCollection.map((e) => e.data);
-const worksCollection = await getCollection("reviewedWorks");
-const worksData = worksCollection.map((e) => e.data);
-const reviewsCollection = await getCollection("reviews");
-const reviewsData = reviewsCollection.map((e) => e.data);
+const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+  await Promise.all([
+    getCollection("works"),
+    getCollection("reviews"),
+    getCollection("authors"),
+    getCollection("readings"),
+  ]);
+const worksData = worksEntries.map((e) => e.data);
+const reviewsData = reviewsEntries.map((e) => e.data);
+const authorsData = authorsEntries.map((e) => e.data);
+const readingsData = readingsEntries.map((e) => e.data);
 
-const page = getPage("how-i-grade", pagesData, worksData)!;
+const page = getPage("how-i-grade", pagesData, reviewsData)!;
 const { body, content, title } = page;
 
 const deck = `"I want you to hit me as hard as you can."`;
 
 const props = await getArticleProps({
+  authors: authorsData,
   content,
+  readings: readingsData,
   reviews: reviewsData,
   works: worksData,
 });

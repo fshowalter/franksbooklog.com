@@ -14,11 +14,18 @@ import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
  * @returns RSS response containing the latest 10 book reviews with metadata
  */
 export async function GET() {
-  const worksEntries = await getCollection("reviewedWorks");
+  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
+    await Promise.all([
+      getCollection("works"),
+      getCollection("reviews"),
+      getCollection("authors"),
+      getCollection("readings"),
+    ]);
   const works = worksEntries.map((e) => e.data);
-  const reviewsEntries = await getCollection("reviews");
   const reviewsData = reviewsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(works, reviewsData);
+  const authors = authorsEntries.map((e) => e.data);
+  const readings = readingsEntries.map((e) => e.data);
+  const { reviews: allReviewsList } = allReviews(works, reviewsData, authors, readings);
   const recentReviews = mostRecentReviews(allReviewsList, 10);
 
   return rss({

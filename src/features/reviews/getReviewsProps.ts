@@ -1,4 +1,4 @@
-import type { ReviewData, ReviewedWorkData } from "~/content.config";
+import type { AuthorData, ReadingData, ReviewData, WorkData } from "~/content.config";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
@@ -9,23 +9,27 @@ import type { ReviewsProps, ReviewsValue } from "./Reviews";
 
 /**
  * Loads and prepares data for the Reviews page component.
- * Fetches all reviews with metadata, sorts by author name, and prepares
- * optimized cover images and backdrop for the reviews listing page.
+ * Joins works, reviews, authors, and readings collections; sorts by author name;
+ * and prepares optimized cover images for the reviews listing page.
  *
- * @param works - All reviewed work data from the reviewedWorks collection
+ * @param works - All work data from the works collection
  * @param reviews - All review data from the reviews collection
+ * @param authors - All author data from the authors collection
+ * @param readings - All reading data from the readings collection
  * @returns Promise resolving to Reviews page props with all review data and filtering metadata
  */
 export async function getReviewsProps(
-  works: ReviewedWorkData[],
+  works: WorkData[],
   reviews: ReviewData[],
+  authors: AuthorData[],
+  readings: ReadingData[],
 ): Promise<ReviewsProps> {
   const {
     distinctKinds,
     distinctReviewYears,
     distinctWorkYears,
     reviews: allReviewsList,
-  } = allReviews(works, reviews);
+  } = allReviews(works, reviews, authors, readings);
 
   allReviewsList.sort((a, b) =>
     a.authors[0].sortName.localeCompare(b.authors[0].sortName),
