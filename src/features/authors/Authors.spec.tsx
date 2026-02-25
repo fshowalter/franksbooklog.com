@@ -288,7 +288,7 @@ describe("Authors", () => {
       ).toBeInTheDocument();
     });
 
-    it("removing name chip immediately restores all authors", async ({
+    it("removing name chip does not restore items until View Results is clicked", async ({
       expect,
     }) => {
       const authors = [
@@ -313,6 +313,12 @@ describe("Authors", () => {
         }),
       );
 
+      // Results not yet updated — "View Results" hasn't been clicked
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+
+      // Now results update
       expect(within(list).getByText("Stephen King")).toBeInTheDocument();
     });
   });

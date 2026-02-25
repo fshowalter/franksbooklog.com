@@ -132,11 +132,6 @@ export function reviewedTitleFiltersReducer<
   switch (action.type) {
     case "filters/removeAppliedFilter": {
       if (action.id === "gradeValue" || action.id === "reviewYear") {
-        const activeRest = Object.fromEntries(
-          Object.entries(
-            state.activeFilterValues as Record<string, unknown>,
-          ).filter(([k]) => k !== action.id),
-        ) as ReviewedTitleFiltersValues;
         const pendingRest = Object.fromEntries(
           Object.entries(
             state.pendingFilterValues as Record<string, unknown>,
@@ -144,13 +139,12 @@ export function reviewedTitleFiltersReducer<
         ) as ReviewedTitleFiltersValues;
         return {
           ...state,
-          activeFilterValues: activeRest,
           pendingFilterValues: pendingRest,
         };
       }
       if (action.id.startsWith("reviewedStatus-")) {
         const statusToRemove = action.id.slice("reviewedStatus-".length);
-        const current = state.activeFilterValues.reviewedStatus ?? [];
+        const current = state.pendingFilterValues.reviewedStatus ?? [];
         const updated = current.filter(
           (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
         );
@@ -158,10 +152,6 @@ export function reviewedTitleFiltersReducer<
           updated.length === 0 ? undefined : (updated as readonly string[]);
         return {
           ...state,
-          activeFilterValues: {
-            ...state.activeFilterValues,
-            reviewedStatus: newStatus,
-          },
           pendingFilterValues: {
             ...state.pendingFilterValues,
             reviewedStatus: newStatus,

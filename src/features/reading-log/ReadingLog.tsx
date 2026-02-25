@@ -155,7 +155,7 @@ export function ReadingLog({
 
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
-    state.activeFilterValues,
+    state.pendingFilterValues,
     distinctWorkYears,
     distinctReadingYears,
   );

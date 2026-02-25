@@ -134,7 +134,7 @@ export function AuthorTitles({
 
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
-    state.activeFilterValues,
+    state.pendingFilterValues,
     distinctWorkYears,
     distinctReviewYears,
   );

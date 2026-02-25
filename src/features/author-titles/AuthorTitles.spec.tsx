@@ -617,7 +617,7 @@ describe("AuthorTitles", () => {
       ).toBeInTheDocument();
     });
 
-    it("removing kind chip immediately restores filtered-out items", async ({
+    it("removing kind chip does not restore items until View Results is clicked", async ({
       expect,
     }) => {
       const titles = [
@@ -640,6 +640,12 @@ describe("AuthorTitles", () => {
         screen.getByRole("button", { name: "Remove Novel filter" }),
       );
 
+      // Results not yet updated — "View Results" hasn't been clicked
+      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+
+      // Now results update
       expect(within(list).getByText("A Collection")).toBeInTheDocument();
     });
   });
