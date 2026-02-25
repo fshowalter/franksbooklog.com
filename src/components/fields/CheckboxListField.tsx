@@ -159,12 +159,7 @@ export function CheckboxListField({
 
       <div className="flex flex-col gap-2">
         {/* Checkbox list */}
-        <div
-          aria-live="polite"
-          aria-relevant="additions removals"
-          className="flex flex-col"
-          role="group"
-        >
+        <div className="flex flex-col">
           {visibleOptions.map((option) => {
             const isChecked = selectedValues.includes(option.value);
             const checkboxId = `${fieldsetId}-${option.value}`;
@@ -232,13 +227,11 @@ export function CheckboxListField({
           )}
         </div>
 
-        {/* Selection count for screen readers */}
-        {hasSelections && (
-          <div className="sr-only" id={`${fieldsetId}-count`}>
-            {selectedValues.length}{" "}
-            {selectedValues.length === 1 ? "option" : "options"} selected
-          </div>
-        )}
+        {/* Selection count for screen readers — always in DOM so aria-live is registered before first selection */}
+        <div aria-live="polite" className="sr-only" id={`${fieldsetId}-count`}>
+          {hasSelections &&
+            `${selectedValues.length} ${selectedValues.length === 1 ? "option" : "options"} selected`}
+        </div>
       </div>
     </fieldset>
     </FilterSection>
