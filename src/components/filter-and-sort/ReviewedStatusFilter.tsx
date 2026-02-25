@@ -1,7 +1,5 @@
 import { CheckboxListField } from "~/components/fields/CheckboxListField";
 
-import { FilterSection } from "./FilterSection";
-
 /**
  * Filter control for reviewed/not-reviewed/abandoned status.
  * @param props - Component props
@@ -35,14 +33,12 @@ export function ReviewedStatusFilter({
     : allOptions;
 
   return (
-    <FilterSection title="Status">
-      <CheckboxListField
-        defaultValues={defaultValues}
-        label="Status"
-        onChange={onChange}
-        onClear={onClear}
-        options={statusOptions}
-      />
-    </FilterSection>
+    <CheckboxListField
+      defaultValues={defaultValues}
+      label="Status"
+      onChange={onChange}
+      onClear={onClear}
+      options={statusOptions}
+    />
   );
 }

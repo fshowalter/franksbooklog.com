@@ -2,6 +2,8 @@ import type { KeyboardEvent } from "react";
 
 import { useEffect, useRef, useState } from "react";
 
+import { FilterSection } from "~/components/filter-and-sort/FilterSection";
+
 import { LabelText } from "./LabelText";
 
 type CheckboxListFieldOption = {
@@ -144,6 +146,7 @@ export function CheckboxListField({
   const hasSelections = selectedValues.length > 0;
 
   return (
+    <FilterSection title={label}>
     <fieldset
       aria-describedby={hasSelections ? `${fieldsetId}-count` : undefined}
       className="text-left font-sans"
@@ -238,5 +241,6 @@ export function CheckboxListField({
         )}
       </div>
     </fieldset>
+    </FilterSection>
   );
 }
