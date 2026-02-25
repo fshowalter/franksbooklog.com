@@ -5,25 +5,7 @@ import { describe, it, vi } from "vitest";
 import type { FormatValueFunction } from "./RangeSliderField";
 
 import { RangeSliderField } from "./RangeSliderField";
-
-const formatGrade: FormatValueFunction = (value: number): string => {
-  const grades = [
-    "F",
-    "D-",
-    "D",
-    "D+",
-    "C-",
-    "C",
-    "C+",
-    "B-",
-    "B",
-    "B+",
-    "A-",
-    "A",
-    "A+",
-  ];
-  return grades[value - 1] || "?";
-};
+import { gradeToLetter } from "~/utils/grades";
 
 const createDefaultProps = (
   overrides = {},
@@ -73,11 +55,11 @@ describe("RangeSliderField", () => {
 
     it("uses formatValue function when provided", ({ expect }) => {
       const props = createDefaultProps({
-        formatValue: formatGrade,
-        fromValue: 8,
-        max: 13,
-        min: 1,
-        toValue: 11,
+        formatValue: gradeToLetter as FormatValueFunction,
+        fromValue: 11,
+        max: 16,
+        min: 2,
+        toValue: 14,
       });
       render(<RangeSliderField {...props} />);
 
@@ -355,11 +337,11 @@ describe("RangeSliderField", () => {
 
     it("uses formatted values in aria-valuetext", ({ expect }) => {
       const props = createDefaultProps({
-        formatValue: formatGrade,
-        fromValue: 8,
-        max: 13,
-        min: 1,
-        toValue: 11,
+        formatValue: gradeToLetter as FormatValueFunction,
+        fromValue: 11,
+        max: 16,
+        min: 2,
+        toValue: 14,
       });
       render(<RangeSliderField {...props} />);
 
