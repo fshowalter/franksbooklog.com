@@ -24,9 +24,21 @@ export function ReviewedStatusFilter({
   onClear?: () => void;
 }): React.JSX.Element {
   const allOptions = [
-    { count: counts?.get("Reviewed") ?? 0, label: "Reviewed", value: "Reviewed" },
-    { count: counts?.get("Not Reviewed") ?? 0, label: "Not Reviewed", value: "Not Reviewed" },
-    { count: counts?.get("Abandoned") ?? 0, label: "Abandoned", value: "Abandoned" },
+    {
+      count: counts?.get("Reviewed") ?? 0,
+      label: "Reviewed",
+      value: "Reviewed",
+    },
+    {
+      count: counts?.get("Not Reviewed") ?? 0,
+      label: "Not Reviewed",
+      value: "Not Reviewed",
+    },
+    {
+      count: counts?.get("Abandoned") ?? 0,
+      label: "Abandoned",
+      value: "Abandoned",
+    },
   ];
   const statusOptions = excludeNotReviewed
     ? allOptions.filter((o) => o.value !== "Not Reviewed")
