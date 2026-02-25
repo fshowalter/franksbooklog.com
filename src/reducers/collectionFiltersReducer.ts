@@ -58,7 +58,6 @@ export function collectionFiltersReducer<
       if (action.id === "name") {
         return {
           ...state,
-          activeFilterValues: { ...state.activeFilterValues, name: undefined },
           pendingFilterValues: {
             ...state.pendingFilterValues,
             name: undefined,

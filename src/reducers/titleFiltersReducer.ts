@@ -119,7 +119,7 @@ export function titleFiltersReducer<
     case "filters/removeAppliedFilter": {
       if (action.id.startsWith("kind-")) {
         const kindToRemove = action.id.slice("kind-".length);
-        const current = state.activeFilterValues.kind ?? [];
+        const current = state.pendingFilterValues.kind ?? [];
         const updated = current.filter(
           (k) => k.toLowerCase().replaceAll(" ", "-") !== kindToRemove,
         );
@@ -127,7 +127,6 @@ export function titleFiltersReducer<
           updated.length === 0 ? undefined : (updated as readonly string[]);
         return {
           ...state,
-          activeFilterValues: { ...state.activeFilterValues, kind: newKind },
           pendingFilterValues: { ...state.pendingFilterValues, kind: newKind },
         };
       }

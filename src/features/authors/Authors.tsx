@@ -95,7 +95,7 @@ export function Authors({
   );
 
   const hasPendingFilters = selectHasPendingFilters(state);
-  const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
+  const activeFilters = buildAppliedFilterChips(state.pendingFilterValues);
 
   return (
     <FilterAndSortContainer

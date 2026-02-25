@@ -188,7 +188,7 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
     case "filters/removeAppliedFilter": {
       if (action.id.startsWith("edition-")) {
         const editionToRemove = action.id.slice("edition-".length);
-        const current = state.activeFilterValues.edition ?? [];
+        const current = state.pendingFilterValues.edition ?? [];
         const updated = current.filter(
           (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
         );
@@ -196,10 +196,6 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
           updated.length === 0 ? undefined : (updated as readonly string[]);
         return {
           ...state,
-          activeFilterValues: {
-            ...state.activeFilterValues,
-            edition: newEdition,
-          },
           pendingFilterValues: {
             ...state.pendingFilterValues,
             edition: newEdition,
@@ -208,7 +204,7 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
       }
       if (action.id.startsWith("reviewedStatus-")) {
         const statusToRemove = action.id.slice("reviewedStatus-".length);
-        const current = state.activeFilterValues.reviewedStatus ?? [];
+        const current = state.pendingFilterValues.reviewedStatus ?? [];
         const updated = current.filter(
           (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
         );
@@ -216,10 +212,6 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
           updated.length === 0 ? undefined : (updated as readonly string[]);
         return {
           ...state,
-          activeFilterValues: {
-            ...state.activeFilterValues,
-            reviewedStatus: newStatus,
-          },
           pendingFilterValues: {
             ...state.pendingFilterValues,
             reviewedStatus: newStatus,

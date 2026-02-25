@@ -16,10 +16,10 @@ export type FiltersState<TValue> = {
   values: TValue[];
 };
 
-// AIDEV-NOTE: RemoveAppliedFilterAction base handler removes the whole key from both
-// activeFilterValues and pendingFilterValues. Child reducers MUST override this case
-// for any array-valued filter (e.g. kind[], edition[]) to remove a single item from the
-// array rather than deleting the entire filter key.
+// AIDEV-NOTE: RemoveAppliedFilterAction base handler removes the whole key from
+// pendingFilterValues only — active results don't change until "View Results" is clicked.
+// Child reducers MUST override this case for any array-valued filter (e.g. kind[],
+// edition[]) to remove a single item from the array rather than deleting the entire key.
 export type RemoveAppliedFilterAction = {
   id: string;
   type: "filters/removeAppliedFilter";
@@ -159,22 +159,19 @@ function clearFilters<TValue, TState extends FiltersState<TValue>>(
 }
 
 /**
- * Remove a single filter key from both active and pending.
+ * Remove a single filter key from pending only.
+ * Active results don't change until "View Results" is clicked.
  * Child reducers override this for array-valued filters.
  */
 function removeAppliedFilter<TValue, TState extends FiltersState<TValue>>(
   state: TState,
   action: RemoveAppliedFilterAction,
 ): TState {
-  const activeRest = Object.fromEntries(
-    Object.entries(state.activeFilterValues).filter(([k]) => k !== action.id),
-  ) as Record<string, unknown>;
   const pendingRest = Object.fromEntries(
     Object.entries(state.pendingFilterValues).filter(([k]) => k !== action.id),
   ) as Record<string, unknown>;
   return {
     ...state,
-    activeFilterValues: activeRest,
     pendingFilterValues: pendingRest,
   };
 }
