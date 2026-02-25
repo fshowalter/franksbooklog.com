@@ -153,7 +153,7 @@ describe("buildYearRangeChip", () => {
 
 describe("buildGradeChip", () => {
   it("returns empty array for undefined", () => {
-    expect(buildGradeChip(undefined)).toEqual([]);
+    expect(buildGradeChip()).toEqual([]);
   });
 
   it("returns empty array for the full range [2, 16]", () => {

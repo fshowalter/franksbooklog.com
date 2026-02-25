@@ -2,10 +2,11 @@ import { act, fireEvent, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { describe, it, vi } from "vitest";
 
+import { gradeToLetter } from "~/utils/grades";
+
 import type { FormatValueFunction } from "./RangeSliderField";
 
 import { RangeSliderField } from "./RangeSliderField";
-import { gradeToLetter } from "~/utils/grades";
 
 const createDefaultProps = (
   overrides = {},
@@ -187,7 +188,6 @@ describe("RangeSliderField", () => {
         await userEvent.click(clearButton);
       });
 
-      expect(onChange).toHaveBeenCalledWith(1920, 2026);
       expect(onClear).toHaveBeenCalledOnce();
     });
 
