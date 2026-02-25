@@ -4,6 +4,7 @@ import type { CoverImageProps } from "~/api/covers";
 
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
+import { createKindCountMap } from "~/filterers/filterTitles";
 import { useFilteredValues } from "~/hooks/useFilteredValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -152,6 +153,7 @@ export function ReadingLog({
   );
 
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
+  const kindCounts = createKindCountMap(state.values);
 
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
@@ -174,6 +176,7 @@ export function ReadingLog({
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
+          kindCounts={kindCounts}
           reviewedStatusCounts={reviewedStatusCounts}
         />
       }

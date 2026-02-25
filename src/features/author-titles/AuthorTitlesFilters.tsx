@@ -33,6 +33,7 @@ export function AuthorTitlesFilters({
   distinctReviewYears,
   distinctWorkYears,
   filterValues,
+  kindCounts,
   reviewedStatusCounts,
 }: {
   dispatch: React.Dispatch<AuthorTitlesAction>;
@@ -40,6 +41,7 @@ export function AuthorTitlesFilters({
   distinctReviewYears: readonly string[];
   distinctWorkYears: readonly string[];
   filterValues: AuthorTitlesFiltersValues;
+  kindCounts?: Map<string, number>;
   reviewedStatusCounts?: Map<string, number>;
 }): React.JSX.Element {
   return (
@@ -50,6 +52,7 @@ export function AuthorTitlesFilters({
         onClear: () => dispatch(createGradeFilterChangedAction([2, 16])),
       }}
       kind={{
+        counts: kindCounts,
         defaultValues: filterValues.kind,
         onChange: (values) => dispatch(createKindFilterChangedAction(values)),
         onClear: () => dispatch(createKindFilterChangedAction([])),

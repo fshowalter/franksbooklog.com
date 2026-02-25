@@ -6,6 +6,7 @@ import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
+import { createKindCountMap } from "~/filterers/filterTitles";
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -127,6 +128,7 @@ export function Reviews({
   );
 
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
+  const kindCounts = createKindCountMap(state.values);
 
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
@@ -145,6 +147,7 @@ export function Reviews({
           distinctReviewYears={distinctReviewYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
+          kindCounts={kindCounts}
           reviewedStatusCounts={reviewedStatusCounts}
         />
       }
