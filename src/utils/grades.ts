@@ -9,21 +9,21 @@
  */
 export function gradeToLetter(value: number): string {
   const map: Record<number, string> = {
-    16: "A+",
-    15: "A",
-    14: "A-",
-    13: "B+",
-    12: "B",
-    11: "B-",
-    10: "C+",
-    9: "C",
-    8: "C-",
-    7: "D+",
-    6: "D",
-    5: "D-",
-    4: "F+",
-    3: "F",
     2: "F-",
+    3: "F",
+    4: "F+",
+    5: "D-",
+    6: "D",
+    7: "D+",
+    8: "C-",
+    9: "C",
+    10: "C+",
+    11: "B-",
+    12: "B",
+    13: "B+",
+    14: "A-",
+    15: "A",
+    16: "A+",
   };
   return map[value] ?? String(value);
 }
@@ -36,20 +36,20 @@ export function gradeToLetter(value: number): string {
  */
 export function gradeToValue(grade: string): number {
   const map: Record<string, number> = {
-    "A+": 16,
     A: 15,
+    "A+": 16,
     "A-": 14,
-    "B+": 13,
     B: 12,
+    "B+": 13,
     "B-": 11,
-    "C+": 10,
     C: 9,
+    "C+": 10,
     "C-": 8,
-    "D+": 7,
     D: 6,
+    "D+": 7,
     "D-": 5,
-    "F+": 4,
     F: 3,
+    "F+": 4,
     "F-": 2,
   };
   return map[grade] ?? 0; // Abandoned and unknown → 0

@@ -32,6 +32,20 @@ export async function clickSortOption(user: UserEvent, sortText: string) {
 }
 
 /**
+ * Test helper function to click a sort radio option in the mobile drawer.
+ *
+ * @param user - User event instance for interaction simulation
+ * @param value - The sort value to select
+ */
+export async function clickSortRadioOption(user: UserEvent, value: string) {
+  const radios = document.querySelectorAll<HTMLInputElement>(
+    'input[type="radio"][name="sort"]',
+  );
+  const target = [...radios].find((r) => r.value === value);
+  if (target) await user.click(target);
+}
+
+/**
  * Test helper function to click the "Toggle filters" button.
  *
  * @param user - User event instance for interaction simulation

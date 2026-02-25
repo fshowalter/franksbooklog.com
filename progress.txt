@@ -30,3 +30,84 @@
   - All 8 Stage 1 tasks completed in one pass; no regressions in existing tests.
 
 ---
+
+## 2026-02-24 - Stage 2: Field Updates + FilterAndSortContainer/Header
+
+- What was implemented:
+  - Modified `src/components/fields/GradeField.tsx` — extended grade scale 1–13 → 2–16 (F-=2, A+=16). Added `FilterSection` wrapper, `RangeSliderField`, `onClear` prop, `useEffect` state sync. `handleClear` resets to `[2, 16]`.
+  - Modified `src/components/fields/YearField.tsx` — added `FilterSection` wrapper, `RangeSliderField`, `onClear` prop, `useEffect` state sync, `findClosestYear` function for sparse year arrays. Slider syncs bidirectionally with dropdowns via numeric year values.
+  - Modified `src/components/filter-and-sort/FilterAndSortContainer.tsx` — complete rewrite. New `SortOption = { label, value }` type; `SortProps<T>` now uses `sortOptions: readonly SortOption[]` and `onSortChange: (value: T) => void`. Added `sideNav`, `activeFilters`, `onRemoveFilter` props. Added `AppliedFilters` section in drawer, mobile sort radio section (uncontrolled, read via `FormData` on "View Results"), `suppressSortScrollRef` to prevent auto-scroll when sort changes via mobile drawer. Renamed `topNav` → `sideNav` (layout now `flex flex-row-reverse`).
+  - Modified `src/components/filter-and-sort/FilterAndSortHeader.tsx` — sort dropdown hidden on mobile (`hidden tablet:block`). Filter button shows "Filter & Sort" on mobile, "Filter" on desktop. Options rendered via `sortOptions.map()`.
+  - Modified `src/components/filter-and-sort/ReviewedWorkSortOptions.tsx` — converted from JSX component to exported `REVIEWED_WORK_SORT_OPTIONS: readonly SortOption[]` constant.
+  - Modified `src/components/filter-and-sort/CollectionSortOptions.tsx` — same conversion to `COLLECTION_SORT_OPTIONS: readonly SortOption[]`.
+  - Modified `src/components/filter-and-sort/FilterAndSortContainer.spec.tsx` — added "mobile sort section" describe block (7 tests) and "applied filters" describe block (6 tests). Updated `sortOptions` mock from JSX to array.
+  - Modified `src/components/filter-and-sort/FilterAndSortContainer.testHelper.ts` — added `clickSortRadioOption(user, value)`.
+  - Modified `src/features/authors/Authors.tsx` — `topNav` → `sideNav`, `COLLECTION_SORT_OPTIONS`, `onSortChange(value)`.
+  - Modified `src/features/reviews/Reviews.tsx` — `REVIEWED_WORK_SORT_OPTIONS` spread with author options, `onSortChange(value)`.
+  - Modified `src/features/author-titles/AuthorTitles.tsx` — `REVIEWED_WORK_SORT_OPTIONS`, `onSortChange(value)`.
+  - Modified `src/features/reading-log/ReadingLog.tsx` — inline sort options as array, `onSortChange(value)`.
+  - Fixed `src/features/reviews/Reviews.spec.tsx` and `AuthorTitles.spec.tsx` — updated grade filter test data to new scale (F→3, B→12, A+→16).
+
+- Files changed:
+  - MODIFIED: src/components/fields/GradeField.tsx
+  - MODIFIED: src/components/fields/YearField.tsx
+  - MODIFIED: src/components/filter-and-sort/FilterAndSortContainer.tsx
+  - MODIFIED: src/components/filter-and-sort/FilterAndSortHeader.tsx
+  - MODIFIED: src/components/filter-and-sort/ReviewedWorkSortOptions.tsx
+  - MODIFIED: src/components/filter-and-sort/CollectionSortOptions.tsx
+  - MODIFIED: src/components/filter-and-sort/FilterAndSortContainer.spec.tsx
+  - MODIFIED: src/components/filter-and-sort/FilterAndSortContainer.testHelper.ts
+  - MODIFIED: src/features/authors/Authors.tsx
+  - MODIFIED: src/features/reviews/Reviews.tsx
+  - MODIFIED: src/features/author-titles/AuthorTitles.tsx
+  - MODIFIED: src/features/reading-log/ReadingLog.tsx
+  - MODIFIED: src/features/reviews/Reviews.spec.tsx (grade scale fix)
+  - MODIFIED: src/features/author-titles/AuthorTitles.spec.tsx (grade scale fix)
+
+- Test results: 266 tests passed, snapshots updated (0 failures). `npm run check` clean (0 errors).
+
+- **Learnings for future iterations:**
+  - Grade scale migration breaks grade filter tests: test mock data must use new scale values (F=3, B=12, A+=16). The filter compares `gradeValue` numerically against the slider/dropdown range [min, max].
+  - `suppressSortScrollRef` pattern: mobile drawer "View Results" reads sort from `FormData`, calls `onSortChange`, sets `suppressSortScrollRef.current = true` BEFORE `onSortChange` so the sort-change `useEffect` skips the scroll (the drawer closes and scrolls explicitly instead).
+  - `topNav` → `sideNav` is a layout change: sideNav renders inside `flex flex-row-reverse` alongside the list, not above it. Authors' `AlphabetNav` moved from above-list to alongside-list this way.
+  - `SortProps<T>` cascade was large: 2 sort option files + 4 feature components + header + spec all needed updating when changing from `React.ReactNode` to `readonly SortOption[]`.
+  - Stage 2 did NOT include TextField.tsx changes (not required by plan tasks).
+  - **NOT YET COMMITTED** — needs lint/format pass before commit.
+
+- **Next: Stage 3** — Reducer layer changes:
+  - `filtersReducer.ts`: add `RemoveAppliedFilterAction`.
+  - `titleFiltersReducer.ts`: `kind` string → `readonly string[]`.
+  - `reviewedTitleFiltersReducer.ts`: `reviewedStatus` string → `readonly string[]`, add `gradeValue` remove handler.
+  - `collectionFiltersReducer.ts`: add `name` remove handler.
+  - `ReadingLog.reducer.ts`: `edition`/`reviewedStatus` string → `readonly string[]`.
+  - `filterTitles.ts`, `filterReadingLog.ts`, `createReviewedStatusFilter.ts`, `filterReviewedTitles.ts`: type updates.
+  - `api/reviews.ts`, `getAuthorTitlesProps.ts`: replace private `gradeToValue` with `~/utils/grades`.
+
+---
+
+## 2026-02-24 - Stage 2: Lint/Format Pass + Commit
+
+- What was implemented:
+  - Fixed ESLint errors: removed unused `ReviewsSort` import from `Reviews.tsx`.
+  - Added `--background-color-stripe` CSS variable to `src/css/tailwind.css` (used by `CheckboxListField` and `RangeSliderField` for the `bg-stripe` Tailwind utility class).
+  - Added `.range-input` component styles to `src/css/tailwind.css` (used by `RangeSliderField` for styling dual-handle range slider thumbs across webkit and moz).
+  - Fixed `perfectionist/sort-objects` and `better-tailwindcss/enforce-consistent-class-order` lint errors via `npm run lint:fix`.
+  - Ran Prettier on 5 files (`FILTER_REDESIGN_SPEC.md`, 4 feature tsx files).
+  - All 266 tests pass. `npm run lint`, `npm run check`, `npm run format` all clean.
+
+- Files changed:
+  - MODIFIED: src/features/reviews/Reviews.tsx (removed unused import)
+  - MODIFIED: src/css/tailwind.css (added bg-stripe CSS var + range-input component)
+  - MODIFIED: src/components/fields/RangeSliderField.tsx (class order fix by lint:fix)
+  - MODIFIED: src/utils/grades.ts (object key sort fix by lint:fix)
+  - MODIFIED: src/features/author-titles/AuthorTitles.tsx (prettier)
+  - MODIFIED: src/features/authors/Authors.tsx (prettier)
+  - MODIFIED: src/features/reading-log/ReadingLog.tsx (prettier)
+  - MODIFIED: FILTER_REDESIGN_SPEC.md (prettier)
+
+- **Learnings for future iterations:**
+  - Porting `CheckboxListField` and `RangeSliderField` from movie log requires adding their CSS dependencies: `--background-color-stripe` CSS variable and `.range-input` component styles to `tailwind.css`. The book log linter (`better-tailwindcss/no-unknown-classes`) catches missing classes immediately.
+  - `perfectionist/sort-objects` requires numeric object keys to be sorted ascending (e.g., `{2: ..., 3: ..., 4: ...}`) — the grade maps from the spec have them sorted descending for readability; linter fixes them automatically.
+  - When removing a type import, also check that the type wasn't actually needed for any prop/type annotations elsewhere in the file.
+
+---

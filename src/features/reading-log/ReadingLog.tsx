@@ -176,18 +176,11 @@ export function ReadingLog({
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as ReadingLogSort)),
-        sortOptions: (
-          <>
-            <option value="reading-date-desc">
-              Reading Date (Newest First)
-            </option>
-            <option value="reading-date-asc">
-              Reading Date (Oldest First)
-            </option>
-          </>
-        ),
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: [
+          { label: "Reading Date (Newest First)", value: "reading-date-desc" },
+          { label: "Reading Date (Oldest First)", value: "reading-date-asc" },
+        ],
       }}
       totalCount={filteredValues.length}
     >

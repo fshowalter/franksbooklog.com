@@ -132,9 +132,9 @@ describe("Reviews", () => {
 
     it("filters by grade range", async ({ expect }) => {
       const reviews = [
-        createReviewValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
-        createReviewValue({ grade: "B", gradeValue: 9, title: "Good Book" }),
-        createReviewValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
+        createReviewValue({ grade: "F", gradeValue: 3, title: "Bad Book" }),
+        createReviewValue({ grade: "B", gradeValue: 12, title: "Good Book" }),
+        createReviewValue({ grade: "A+", gradeValue: 16, title: "Great Book" }),
       ];
 
       const user = getUserWithFakeTimers();

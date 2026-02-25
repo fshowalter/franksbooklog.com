@@ -88,7 +88,7 @@ mobile sort and applied filters groups. Feature snapshot updates regenerated.
 7. **Run `npm run test:update -- --max-workers=2`** to regenerate snapshots for any feature specs
    that snapshot the FilterAndSortContainer output.
 
-**Status:** Not Started
+**Status:** Complete
 
 ---
 
@@ -286,6 +286,7 @@ a chip removes that filter immediately. Tests pass.
    - Snapshot updates.
 
 5. **Run full suite:**
+
    ```bash
    npm test -- --max-workers=2
    npm run lint
@@ -305,7 +306,7 @@ a chip removes that filter immediately. Tests pass.
 ## Completion Checklist
 
 - [ ] Stage 1: FilterSection, AppliedFilters, CheckboxListField, RangeSliderField, grades utility
-- [ ] Stage 2: GradeField/YearField upgraded; FilterAndSortContainer/Header updated; new tests pass
+- [x] Stage 2: GradeField/YearField upgraded; FilterAndSortContainer/Header updated; new tests pass
 - [ ] Stage 3: Reducers + filterers updated; TypeScript clean; tests pass
 - [ ] Stage 4: WorkFilters uses CheckboxListField; ReviewedStatusFilter converted; all filter components updated
 - [ ] Stage 5: All four features show applied filter chips and support chip removal

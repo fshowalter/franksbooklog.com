@@ -131,7 +131,7 @@ export function RangeSliderField({
           {/* Track background */}
           <div
             className={`
-              absolute top-1/2 right-0 left-0 h-1 -translate-y-1/2 rounded-full
+              absolute inset-x-0 top-1/2 h-1 -translate-y-1/2 rounded-full
               bg-stripe
             `}
           />

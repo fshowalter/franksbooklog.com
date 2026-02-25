@@ -3,7 +3,7 @@ import { useReducer } from "react";
 import type { AvatarImageProps } from "~/api/avatars";
 
 import { GroupedAvatarList } from "~/components/avatar-list/AvatarList";
-import { CollectionSortOptions } from "~/components/filter-and-sort/CollectionSortOptions";
+import { COLLECTION_SORT_OPTIONS } from "~/components/filter-and-sort/CollectionSortOptions";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { useGroupedValues } from "~/hooks/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
@@ -113,15 +113,14 @@ export function Authors({
         dispatch(createResetFiltersAction());
       }}
       pendingFilteredCount={pendingFilteredCount}
-      sortProps={{
-        currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as AuthorsSort)),
-        sortOptions: <CollectionSortOptions />,
-      }}
-      topNav={
+      sideNav={
         <AlphabetNav groupedValues={groupedValues} sortValue={state.sort} />
       }
+      sortProps={{
+        currentSortValue: state.sort,
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: COLLECTION_SORT_OPTIONS,
+      }}
       totalCount={totalCount}
     >
       <GroupedAvatarList

@@ -4,11 +4,9 @@ import type { CoverImageProps } from "~/api/covers";
 
 import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
-import { ReviewedWorkSortOptions } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
+import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
-
-import type { ReviewsSort } from "./sortReviews";
 
 import { filterReviews } from "./filterReviews";
 import { groupReviews } from "./groupReviews";
@@ -146,15 +144,12 @@ export function Reviews({
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as ReviewsSort)),
-        sortOptions: (
-          <>
-            <option value="author-asc">Author (A &rarr; Z)</option>
-            <option value="author-desc">Author (Z &rarr; A)</option>
-            <ReviewedWorkSortOptions />
-          </>
-        ),
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: [
+          { label: "Author (A \u2192 Z)", value: "author-asc" },
+          { label: "Author (Z \u2192 A)", value: "author-desc" },
+          ...REVIEWED_WORK_SORT_OPTIONS,
+        ],
       }}
       totalCount={totalCount}
     >

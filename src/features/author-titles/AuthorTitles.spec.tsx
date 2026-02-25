@@ -135,17 +135,17 @@ describe("AuthorTitles", () => {
       const titles = [
         createAuthorTitleValue({
           grade: "F",
-          gradeValue: 1,
+          gradeValue: 3,
           title: "Bad Book",
         }),
         createAuthorTitleValue({
           grade: "B",
-          gradeValue: 9,
+          gradeValue: 12,
           title: "Good Book",
         }),
         createAuthorTitleValue({
           grade: "A+",
-          gradeValue: 13,
+          gradeValue: 16,
           title: "Great Book",
         }),
       ];
