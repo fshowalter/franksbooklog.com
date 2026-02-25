@@ -33,12 +33,14 @@ export function AuthorTitlesFilters({
   distinctReviewYears,
   distinctWorkYears,
   filterValues,
+  reviewedStatusCounts,
 }: {
   dispatch: React.Dispatch<AuthorTitlesAction>;
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
   distinctWorkYears: readonly string[];
   filterValues: AuthorTitlesFiltersValues;
+  reviewedStatusCounts?: Map<string, number>;
 }): React.JSX.Element {
   return (
     <ReviewedWorkFilters
@@ -54,6 +56,7 @@ export function AuthorTitlesFilters({
         values: distinctKinds,
       }}
       reviewedStatus={{
+        counts: reviewedStatusCounts,
         defaultValues: filterValues.reviewedStatus,
         onChange: (values) =>
           dispatch(createReviewedStatusFilterChangedAction(values)),

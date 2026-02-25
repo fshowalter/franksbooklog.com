@@ -69,6 +69,7 @@ export async function getAuthorTitlesProps(
         kind: work.kind,
         otherAuthors,
         reviewDate: review.date,
+        reviewed: review.grade !== "Abandoned",
         reviewSequence: getReviewSequence(workEntry.id, readingsByWork),
         reviewYear: String(review.date.getFullYear()),
         slug: workEntry.id,

@@ -19,6 +19,7 @@ type Props = ComponentProps<typeof WorkFilters> & {
   };
   /** Reviewed status filter configuration */
   reviewedStatus?: {
+    counts?: Map<string, number>;
     defaultValues?: readonly string[];
     onChange: (values: string[]) => void;
     onClear?: () => void;
@@ -73,6 +74,7 @@ export function ReviewedWorkFilters({
       )}
       {reviewedStatus && (
         <ReviewedStatusFilter
+          counts={reviewedStatus.counts}
           defaultValues={reviewedStatus.defaultValues}
           excludeNotReviewed
           onChange={reviewedStatus.onChange}

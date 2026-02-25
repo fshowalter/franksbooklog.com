@@ -60,6 +60,7 @@ export async function getReviewsProps(
         grade: review.grade,
         gradeValue: review.gradeValue,
         kind: review.kind,
+        reviewed: !review.abandoned,
         reviewSequence: review.reviewSequence,
         reviewYear: review.reviewYear,
         slug: review.slug,
