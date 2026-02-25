@@ -25,6 +25,7 @@ export function Filters({
   distinctReadingYears,
   distinctWorkYears,
   filterValues,
+  kindCounts,
   reviewedStatusCounts,
 }: {
   dispatch: React.Dispatch<ReadingLogAction>;
@@ -33,12 +34,14 @@ export function Filters({
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
   filterValues: ReadingLogFiltersValues;
+  kindCounts?: Map<string, number>;
   reviewedStatusCounts?: Map<string, number>;
 }): React.JSX.Element {
   return (
     <>
       <WorkFilters
         kind={{
+          counts: kindCounts,
           defaultValues: filterValues.kind,
           onChange: (values) => dispatch(createKindFilterChangedAction(values)),
           onClear: () => dispatch(createKindFilterChangedAction([])),
