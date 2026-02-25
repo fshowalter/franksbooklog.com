@@ -1,6 +1,6 @@
 import type { KeyboardEvent } from "react";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { LabelText } from "./LabelText";
 
@@ -43,6 +43,7 @@ export function CheckboxListField({
     defaultValues ? [...defaultValues] : [],
   );
   const [showAll, setShowAll] = useState(false);
+  const fieldsetRef = useRef<HTMLFieldSetElement | null>(null);
 
   // Determine if we need show more functionality
   const shouldShowMore = options.length > showMoreThreshold;
@@ -120,10 +121,11 @@ export function CheckboxListField({
     setSelectedValues(defaultValues ? [...defaultValues] : []);
   }, [defaultValues]);
 
-  // AIDEV-NOTE: Listen for form reset events and clear selections when form is reset
+  // AIDEV-NOTE: Listen for form reset events and clear selections when form is reset.
+  // Uses closest("form") on the fieldset ref to find the containing form rather than
+  // document.querySelector("form"), which would grab the first form in the DOM (e.g. search).
   useEffect(() => {
-    // Find the parent form element
-    const form = document.querySelector("form");
+    const form = fieldsetRef.current?.closest("form");
     if (!form) return;
 
     const handleFormReset = (): void => {
@@ -145,6 +147,7 @@ export function CheckboxListField({
     <fieldset
       aria-describedby={hasSelections ? `${fieldsetId}-count` : undefined}
       className="text-left font-sans"
+      ref={fieldsetRef}
     >
       {/* Visually hidden legend for screen readers */}
       <legend className="sr-only">
