@@ -5,7 +5,7 @@ import type { FilterChip } from "./AppliedFilters";
 // AIDEV-NOTE: This ID must match the `gradeValue` property key in ReviewedTitleFiltersValues.
 // filtersReducer.removeAppliedFilter deletes pendingFilterValues[action.id], so the chip ID
 // and the filter-values key must stay in sync. If you rename either, update the other.
-export const GRADE_CHIP_ID = "gradeValue" as const;
+const GRADE_CHIP_ID = "gradeValue" as const;
 
 /**
  * Builds a grade-range chip for the grade slider filter (scale 2–16).
