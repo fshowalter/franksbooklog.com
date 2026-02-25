@@ -8,12 +8,14 @@ import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/Reviewe
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
+import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterReviews } from "./filterReviews";
 import { groupReviews } from "./groupReviews";
 import {
   createApplyFiltersAction,
   createClearFiltersAction,
   createInitialState,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createShowMoreAction,
   createSortAction,
@@ -122,9 +124,15 @@ export function Reviews({
   );
 
   const hasPendingFilters = selectHasPendingFilters(state);
+  const activeFilters = buildAppliedFilterChips(
+    state.activeFilterValues,
+    distinctWorkYears,
+    distinctReviewYears,
+  );
 
   return (
     <FilterAndSortContainer
+      activeFilters={activeFilters}
       filters={
         <ReviewsFilters
           dispatch={dispatch}
@@ -138,8 +146,10 @@ export function Reviews({
       onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
         dispatch(createClearFiltersAction());
+        dispatch(createApplyFiltersAction());
       }}
       onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
+      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
       onResetFilters={() => {
         dispatch(createResetFiltersAction());
       }}
