@@ -23,6 +23,7 @@ export function buildAppliedFilterChips(
   if (filterValues.title?.trim()) {
     chips.push({
       category: "Search",
+      displayText: `Search: ${filterValues.title}`,
       id: "title",
       label: filterValues.title,
     });
@@ -33,6 +34,7 @@ export function buildAppliedFilterChips(
     for (const kind of filterValues.kind) {
       chips.push({
         category: "Kind",
+        displayText: kind,
         id: `kind-${kind.toLowerCase().replaceAll(" ", "-")}`,
         label: kind,
       });
@@ -45,10 +47,12 @@ export function buildAppliedFilterChips(
     const availableMin = distinctWorkYears[0];
     const availableMax = distinctWorkYears.at(-1)!;
     if (minYear !== availableMin || maxYear !== availableMax) {
+      const label = minYear === maxYear ? minYear : `${minYear} to ${maxYear}`;
       chips.push({
         category: "Work Year",
+        displayText: `Work Year: ${label}`,
         id: "workYear",
-        label: minYear === maxYear ? minYear : `${minYear} to ${maxYear}`,
+        label,
       });
     }
   }
@@ -59,11 +63,13 @@ export function buildAppliedFilterChips(
     if (minGrade !== 2 || maxGrade !== 16) {
       const minLetter = gradeToLetter(minGrade);
       const maxLetter = gradeToLetter(maxGrade);
+      const label =
+        minLetter === maxLetter ? minLetter : `${minLetter} to ${maxLetter}`;
       chips.push({
         category: "Grade",
+        displayText: `Grade: ${label}`,
         id: "gradeValue",
-        label:
-          minLetter === maxLetter ? minLetter : `${minLetter} to ${maxLetter}`,
+        label,
       });
     }
   }
@@ -74,10 +80,12 @@ export function buildAppliedFilterChips(
     const availableMin = distinctReviewYears[0];
     const availableMax = distinctReviewYears.at(-1)!;
     if (minYear !== availableMin || maxYear !== availableMax) {
+      const label = minYear === maxYear ? minYear : `${minYear} to ${maxYear}`;
       chips.push({
         category: "Review Year",
+        displayText: `Review Year: ${label}`,
         id: "reviewYear",
-        label: minYear === maxYear ? minYear : `${minYear} to ${maxYear}`,
+        label,
       });
     }
   }
@@ -87,6 +95,7 @@ export function buildAppliedFilterChips(
     for (const status of filterValues.reviewedStatus) {
       chips.push({
         category: "Status",
+        displayText: status,
         id: `reviewedStatus-${status.toLowerCase().replaceAll(" ", "-")}`,
         label: status,
       });

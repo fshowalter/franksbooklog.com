@@ -16,9 +16,9 @@ describe("AppliedFilters", () => {
   });
 
   const sampleFilters: FilterChip[] = [
-    { category: "Kind", id: "kind-novel", label: "Novel" },
-    { category: "Kind", id: "kind-short-story", label: "Short Story" },
-    { category: "Search", id: "title", label: "dune" },
+    { category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" },
+    { category: "Kind", displayText: "Short Story", id: "kind-short-story", label: "Short Story" },
+    { category: "Search", displayText: "Search: dune", id: "title", label: "dune" },
   ];
 
   describe("Visibility", () => {
@@ -66,7 +66,7 @@ describe("AppliedFilters", () => {
       render(
         <AppliedFilters
           filters={[
-            { category: "Work Year", id: "workYear", label: "1990 to 2000" },
+            { category: "Work Year", displayText: "Work Year: 1990 to 2000", id: "workYear", label: "1990 to 2000" },
           ]}
           onClearAll={mockOnClearAll}
           onRemove={mockOnRemove}
@@ -79,7 +79,7 @@ describe("AppliedFilters", () => {
     it("formats simple filter chips without category (value only)", () => {
       render(
         <AppliedFilters
-          filters={[{ category: "Kind", id: "kind-novel", label: "Novel" }]}
+          filters={[{ category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" }]}
           onClearAll={mockOnClearAll}
           onRemove={mockOnRemove}
         />,
@@ -93,7 +93,7 @@ describe("AppliedFilters", () => {
     it("formats grade filter chips with category and label", () => {
       render(
         <AppliedFilters
-          filters={[{ category: "Grade", id: "gradeValue", label: "A- to B+" }]}
+          filters={[{ category: "Grade", displayText: "Grade: A- to B+", id: "gradeValue", label: "A- to B+" }]}
           onClearAll={mockOnClearAll}
           onRemove={mockOnRemove}
         />,
@@ -339,7 +339,7 @@ describe("AppliedFilters", () => {
     it("matches snapshot with single filter", () => {
       const { container } = render(
         <AppliedFilters
-          filters={[{ category: "Kind", id: "kind-novel", label: "Novel" }]}
+          filters={[{ category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" }]}
           onClearAll={mockOnClearAll}
           onRemove={mockOnRemove}
         />,
@@ -350,7 +350,7 @@ describe("AppliedFilters", () => {
     it("matches snapshot with search filter", () => {
       const { container } = render(
         <AppliedFilters
-          filters={[{ category: "Search", id: "title", label: "dune" }]}
+          filters={[{ category: "Search", displayText: "Search: dune", id: "title", label: "dune" }]}
           onClearAll={mockOnClearAll}
           onRemove={mockOnRemove}
         />,

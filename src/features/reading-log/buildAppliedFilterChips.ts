@@ -21,6 +21,7 @@ export function buildAppliedFilterChips(
   if (filterValues.title?.trim()) {
     chips.push({
       category: "Search",
+      displayText: `Search: ${filterValues.title}`,
       id: "title",
       label: filterValues.title,
     });
@@ -31,6 +32,7 @@ export function buildAppliedFilterChips(
     for (const kind of filterValues.kind) {
       chips.push({
         category: "Kind",
+        displayText: kind,
         id: `kind-${kind.toLowerCase().replaceAll(" ", "-")}`,
         label: kind,
       });
@@ -42,6 +44,7 @@ export function buildAppliedFilterChips(
     for (const edition of filterValues.edition) {
       chips.push({
         category: "Edition",
+        displayText: edition,
         id: `edition-${edition.toLowerCase().replaceAll(" ", "-")}`,
         label: edition,
       });
@@ -54,10 +57,12 @@ export function buildAppliedFilterChips(
     const availableMin = distinctWorkYears[0];
     const availableMax = distinctWorkYears.at(-1)!;
     if (minYear !== availableMin || maxYear !== availableMax) {
+      const label = minYear === maxYear ? minYear : `${minYear} to ${maxYear}`;
       chips.push({
         category: "Work Year",
+        displayText: `Work Year: ${label}`,
         id: "workYear",
-        label: minYear === maxYear ? minYear : `${minYear} to ${maxYear}`,
+        label,
       });
     }
   }
@@ -68,10 +73,12 @@ export function buildAppliedFilterChips(
     const availableMin = distinctReadingYears[0];
     const availableMax = distinctReadingYears.at(-1)!;
     if (minYear !== availableMin || maxYear !== availableMax) {
+      const label = minYear === maxYear ? minYear : `${minYear} to ${maxYear}`;
       chips.push({
         category: "Reading Year",
+        displayText: `Reading Year: ${label}`,
         id: "readingYear",
-        label: minYear === maxYear ? minYear : `${minYear} to ${maxYear}`,
+        label,
       });
     }
   }
@@ -81,6 +88,7 @@ export function buildAppliedFilterChips(
     for (const status of filterValues.reviewedStatus) {
       chips.push({
         category: "Status",
+        displayText: status,
         id: `reviewedStatus-${status.toLowerCase().replaceAll(" ", "-")}`,
         label: status,
       });

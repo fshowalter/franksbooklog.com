@@ -687,7 +687,7 @@ describe("Reviews", () => {
       ).toBeInTheDocument();
     });
 
-    it("removing kind chip does not restore items until View Results is clicked", async ({
+    it("removing kind chip immediately hides chip but defers list update until View Results", async ({
       expect,
     }) => {
       const reviews = [
@@ -710,12 +710,16 @@ describe("Reviews", () => {
         screen.getByRole("button", { name: "Remove Novel filter" }),
       );
 
-      // Results not yet updated — "View Results" hasn't been clicked
+      // Chip is gone immediately from the Applied Filters section
+      expect(
+        screen.queryByRole("button", { name: "Remove Novel filter" }),
+      ).not.toBeInTheDocument();
+      // But the list is not yet updated — "View Results" hasn't been clicked
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
 
       await clickViewResults(user);
 
-      // Now results update
+      // Now the list updates
       expect(within(list).getByText("A Collection")).toBeInTheDocument();
     });
 

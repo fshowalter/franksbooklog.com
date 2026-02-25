@@ -16,6 +16,7 @@ export function buildAppliedFilterChips(
   if (filterValues.name?.trim()) {
     chips.push({
       category: "Search",
+      displayText: `Search: ${filterValues.name}`,
       id: "name",
       label: filterValues.name,
     });
