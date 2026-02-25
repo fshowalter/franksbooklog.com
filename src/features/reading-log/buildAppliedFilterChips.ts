@@ -1,4 +1,5 @@
 import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+
 import {
   buildMultiSelectChips,
   buildSearchChip,

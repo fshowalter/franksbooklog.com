@@ -154,11 +154,11 @@ export function CheckboxListField({
               return (
                 <label
                   className={`
-                  flex cursor-pointer items-center gap-3 rounded-sm pb-2
-                  last-of-type:pb-0
-                  focus-within:bg-stripe
-                  hover:bg-stripe
-                `}
+                    flex cursor-pointer items-center gap-3 rounded-sm pb-2
+                    last-of-type:pb-0
+                    focus-within:bg-stripe
+                    hover:bg-stripe
+                  `}
                   htmlFor={checkboxId}
                   key={option.value}
                 >
