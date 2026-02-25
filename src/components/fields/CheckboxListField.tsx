@@ -1,5 +1,3 @@
-import type { KeyboardEvent } from "react";
-
 import { useEffect, useRef, useState } from "react";
 
 import { FilterSection } from "~/components/filter-and-sort/FilterSection";
@@ -106,17 +104,6 @@ export function CheckboxListField({
     setShowAll(true);
   };
 
-  const handleKeyDown = (
-    e: KeyboardEvent<HTMLInputElement>,
-    value: string,
-  ): void => {
-    if (e.key === " ") {
-      e.preventDefault();
-      const checked = !selectedValues.includes(value);
-      handleCheckboxChange(value, checked);
-    }
-  };
-
   // AIDEV-NOTE: Sync selectedValues when defaultValues changes from parent
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentionally syncing controlled state from props
@@ -182,7 +169,6 @@ export function CheckboxListField({
                     onChange={(e) =>
                       handleCheckboxChange(option.value, e.target.checked)
                     }
-                    onKeyDown={(e) => handleKeyDown(e, option.value)}
                     type="checkbox"
                     value={option.value}
                   />

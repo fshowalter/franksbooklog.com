@@ -69,10 +69,13 @@ export function RangeSliderField({
     }
   };
 
+  // AIDEV-NOTE: When onClear is provided the parent owns the full reset (value + side-effects).
+  // Calling onChange(min, max) here too would produce a duplicate dispatch from the parent's handler.
   const handleClear = (): void => {
-    onChange(min, max);
     if (onClear) {
       onClear();
+    } else {
+      onChange(min, max);
     }
   };
 
