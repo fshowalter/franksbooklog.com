@@ -4,7 +4,7 @@ import type { CoverImageProps } from "~/api/covers";
 
 import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
-import { ReviewedWorkSortOptions } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
+import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -148,9 +148,8 @@ export function AuthorTitles({
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as AuthorTitlesSort)),
-        sortOptions: <ReviewedWorkSortOptions />,
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: REVIEWED_WORK_SORT_OPTIONS,
       }}
       totalCount={totalCount}
     >

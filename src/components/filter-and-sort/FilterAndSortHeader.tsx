@@ -1,19 +1,15 @@
 import type { SortProps } from "./FilterAndSortContainer";
 
 /**
- * Renders the header section for filter and sort interfaces.
- * Displays result count, optional header links, sort dropdown, and filter toggle button
- * in a responsive grid layout. Generic component that works with different sort value types.
- *
- * @template T - The type of sort values (typically string union types)
- * @param props - The component props
- * @param props.filterDrawerVisible - Whether the filter drawer is currently visible
- * @param props.headerLinks - Optional navigation links to display in the header
- * @param props.onFilterClick - Callback for when the filter toggle button is clicked
- * @param props.sortProps - Sort configuration including options and current value
- * @param props.toggleButtonRef - Ref for the filter toggle button element
- * @param props.totalCount - Total number of results to display
- * @returns A JSX element containing the complete filter and sort header
+ * Header component with filter toggle, sort options, and result count.
+ * @param props - Component props
+ * @param props.filterDrawerVisible - Whether filter drawer is visible
+ * @param props.headerLink - Optional navigation link
+ * @param props.onFilterClick - Handler for filter toggle click
+ * @param props.sortProps - Sort configuration and handlers
+ * @param props.toggleButtonRef - Ref to filter toggle button
+ * @param props.totalCount - Total number of results
+ * @returns Header with filter/sort controls and result count
  */
 export function FilterAndSortHeader<T extends string>({
   filterDrawerVisible,
@@ -53,10 +49,12 @@ export function FilterAndSortHeader<T extends string>({
         </span>
       </span>
       <div>{headerLink && <HeaderLink {...headerLink} />}</div>
+      {/* AIDEV-NOTE: Hide sort dropdown on mobile (<640px), show on desktop (≥640px).
+          Mobile sort is handled by radio buttons in the filter drawer. */}
       <div
         className={`
-          col-span-full
-          tablet:col-span-1 tablet:col-start-4
+          col-span-full hidden
+          tablet:col-span-1 tablet:col-start-4 tablet:block
           desktop:pl-8
         `}
       >
@@ -73,13 +71,18 @@ export function FilterAndSortHeader<T extends string>({
               font-serif text-base font-normal tracking-normal text-ellipsis
               text-default shadow-all outline-accent
             `}
-            onChange={onSortChange}
+            onChange={(e) => onSortChange(e.target.value as T)}
             value={currentSortValue}
           >
-            {sortOptions}
+            {sortOptions.map(({ label, value }) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
           </select>
         </label>
       </div>
+      {/* AIDEV-NOTE: "Filter & Sort" on mobile (<640px), "Filter" on desktop (≥640px) */}
       <button
         aria-controls="filters"
         aria-expanded={filterDrawerVisible}
@@ -96,7 +99,15 @@ export function FilterAndSortHeader<T extends string>({
         ref={toggleButtonRef}
         type="button"
       >
-        Filter
+        <span className="tablet:hidden">Filter & Sort</span>
+        <span
+          className="
+            hidden
+            tablet:inline
+          "
+        >
+          Filter
+        </span>
       </button>
     </div>
   );

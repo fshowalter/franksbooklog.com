@@ -28,6 +28,7 @@
   --background-color-hover: light-dark(#f7f5f3, #3c393a);
   --background-color-inverse: light-dark(rgb(0 0 0 / 75%), #322f2f);
   --background-color-progress: light-dark(#14bd41, #379634);
+  --background-color-stripe: light-dark(#fcfcfc, #3c393a);
   --background-color-subtle: light-dark(#f9f7f4, #3e3d3c);
 
   --border-color-*: initial;
@@ -365,6 +366,67 @@
 }
 
 @layer components {
+  .range-input {
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .range-input::-webkit-slider-thumb {
+    appearance: none;
+    background-color: var(--background-color-accent);
+    border: 2px solid var(--background-color-default);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    cursor: grab;
+    height: 1rem;
+    pointer-events: auto;
+    width: 1rem;
+  }
+
+  .range-input::-webkit-slider-thumb:active {
+    cursor: grabbing;
+  }
+
+  .range-input::-webkit-slider-thumb:hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  }
+
+  .range-input::-webkit-slider-thumb:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .range-input::-moz-range-thumb {
+    background-color: var(--background-color-accent);
+    border: 2px solid var(--background-color-default);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    cursor: grab;
+    height: 1rem;
+    pointer-events: auto;
+    width: 1rem;
+  }
+
+  .range-input::-moz-range-thumb:active {
+    cursor: grabbing;
+  }
+
+  .range-input::-moz-range-thumb:hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  }
+
+  .range-input::-moz-range-thumb:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
   .rendered-markdown {
     a {
       text-decoration: underline;

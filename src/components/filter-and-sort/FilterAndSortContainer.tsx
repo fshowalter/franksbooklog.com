@@ -1,48 +1,43 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import type { FilterChip } from "./AppliedFilters";
+
+import { AppliedFilters } from "./AppliedFilters";
 import { FilterAndSortHeader } from "./FilterAndSortHeader";
+import { FilterSection } from "./FilterSection";
+
+/**
+ * Sort option configuration.
+ */
+export type SortOption = {
+  label: string;
+  value: string;
+};
 
 /**
  * Props for sort functionality.
  */
 export type SortProps<T extends string> = {
   currentSortValue: T;
-  onSortChange: React.ChangeEventHandler<HTMLSelectElement>;
-  sortOptions: React.ReactNode;
+  onSortChange: (value: T) => void;
+  sortOptions: readonly SortOption[];
 };
 
-/**
- * Props for the FilterAndSortContainer component.
- */
 type Props<T extends string> = {
-  /** Content to render inside the container */
+  activeFilters?: FilterChip[];
   children: React.ReactNode;
-  /** Optional CSS class name for styling */
   className?: string;
-  /** Filter controls to display in the drawer */
   filters: React.ReactNode;
-  /** Whether there are pending filter changes not yet applied */
   hasPendingFilters: boolean;
-  /** Optional header link configuration */
-  headerLink?: {
-    href: string;
-    text: string;
-  };
-  /** Callback when filters are applied */
+  headerLink?: { href: string; text: string };
   onApplyFilters: () => void;
-  /** Callback when filters are cleared */
   onClearFilters: () => void;
-  /** Callback when filter drawer is opened */
   onFilterDrawerOpen: () => void;
-  /** Callback when filters are reset */
+  onRemoveFilter?: (id: string) => void;
   onResetFilters: () => void;
-  /** Count of items after pending filters would be applied */
   pendingFilteredCount: number;
-  /** Sort control properties */
+  sideNav?: React.ReactNode;
   sortProps: SortProps<T>;
-  /** Optional navigation element to display at top */
-  topNav?: React.ReactNode;
-  /** Total count of items before filtering */
   totalCount: number;
 };
 
@@ -53,6 +48,7 @@ type Props<T extends string> = {
  * @returns Filter and sort container with drawer and header controls
  */
 export function FilterAndSortContainer<T extends string>({
+  activeFilters,
   children,
   className,
   filters,
@@ -61,16 +57,20 @@ export function FilterAndSortContainer<T extends string>({
   onApplyFilters,
   onClearFilters,
   onFilterDrawerOpen,
+  onRemoveFilter,
   onResetFilters,
   pendingFilteredCount,
+  sideNav,
   sortProps,
-  topNav,
   totalCount,
 }: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
   const filtersRef = useRef<HTMLDivElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
   const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
+  // AIDEV-NOTE: Used to suppress the useEffect scroll when sort changes via the mobile drawer,
+  // since the drawer's "View Results" handler scrolls explicitly.
+  const suppressSortScrollRef = useRef(false);
   const formRef = useRef<HTMLFormElement | null>(null);
   const listRef = useRef<HTMLDivElement | null>(null);
 
@@ -126,11 +126,15 @@ export function FilterAndSortContainer<T extends string>({
     return (): void => document.removeEventListener("keydown", handleKeyDown);
   }, [filterDrawerVisible, handleCloseDrawer]);
 
-  // Scroll to top of list when sort changes
+  // Scroll to top of list when sort changes via desktop select
   useEffect(() => {
     if (prevSortValueRef.current !== sortProps.currentSortValue) {
       prevSortValueRef.current = sortProps.currentSortValue;
-      listRef.current?.scrollIntoView({ behavior: "smooth" });
+      if (suppressSortScrollRef.current) {
+        suppressSortScrollRef.current = false;
+      } else {
+        listRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, [sortProps.currentSortValue]);
 
@@ -140,7 +144,6 @@ export function FilterAndSortContainer<T extends string>({
         ${className || ""}
       `}
     >
-      {topNav && topNav}
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
@@ -159,17 +162,15 @@ export function FilterAndSortContainer<T extends string>({
             totalCount={totalCount}
           />
         </div>
-        <div
-          className={`
-            mx-auto max-w-(--breakpoint-desktop)
-            tablet:px-container
-          `}
-        >
+        <div className="flex flex-row-reverse">
+          {sideNav && sideNav}
+
           <div
             className={`
               mx-auto max-w-(--breakpoint-desktop) grow
               scroll-mt-[calc(var(--filter-and-sort-container-scroll-offset)+var(--scroll-offset,0px))]
               pb-10 [--filter-and-sort-container-scroll-offset:181px]
+              tablet:px-container
               tablet:[--filter-and-sort-container-scroll-offset:121px]
             `}
             id="list"
@@ -268,7 +269,48 @@ export function FilterAndSortContainer<T extends string>({
                 >
                   Filter
                 </legend>
-                {filters}
+
+                <div
+                  className="
+                    px-container
+                    tablet-landscape:px-12
+                  "
+                >
+                  {activeFilters && onRemoveFilter && (
+                    <AppliedFilters
+                      filters={activeFilters}
+                      onClearAll={onClearFilters}
+                      onRemove={onRemoveFilter}
+                    />
+                  )}
+                  {/* AIDEV-NOTE: Sort section in mobile drawer only (<640px).
+                      Uncontrolled radios — value read from form on "View Results" click.
+                      Desktop dropdown in header applies sort immediately. */}
+                  <div className="tablet:hidden">
+                    <FilterSection defaultOpen={true} title="Sort by">
+                      <div className="space-y-3">
+                        {sortProps.sortOptions.map(({ label, value }) => (
+                          <label
+                            className="flex cursor-pointer items-center gap-3"
+                            key={value}
+                          >
+                            <input
+                              className="size-4 cursor-pointer accent-accent"
+                              defaultChecked={
+                                sortProps.currentSortValue === value
+                              }
+                              name="sort"
+                              type="radio"
+                              value={value}
+                            />
+                            <span className="text-sm">{label}</span>
+                          </label>
+                        ))}
+                      </div>
+                    </FilterSection>
+                  </div>
+                  {filters}
+                </div>
               </fieldset>
               <div
                 className={`
@@ -320,9 +362,12 @@ export function FilterAndSortContainer<T extends string>({
                     `}
                     disabled={pendingFilteredCount === 0 ? true : false}
                     onClick={() => {
-                      // Apply pending filters
+                      const formData = new FormData(formRef.current!);
+                      const sortValue = formData.get("sort") as T;
+                      suppressSortScrollRef.current = true;
+                      sortProps.onSortChange(sortValue);
                       onApplyFilters();
-                      handleCloseDrawer(false); // Don't reset filters when applying
+                      handleCloseDrawer(false); // Don't reset filters/sort when applying
                       listRef.current?.scrollIntoView();
                     }}
                     type="button"

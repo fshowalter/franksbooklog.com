@@ -1,17 +1,11 @@
+import type { SortOption } from "./FilterAndSortContainer";
+
 /**
- * Renders sort options for collection views (authors, genres, etc.).
- * Provides sorting options for name alphabetically and by review count,
- * in both ascending and descending order.
- *
- * @returns A JSX fragment containing option elements for collection sorting
+ * Sort options for collection views (authors, etc.).
  */
-export function CollectionSortOptions(): React.JSX.Element {
-  return (
-    <>
-      <option value="name-asc">Name (A &rarr; Z)</option>
-      <option value="name-desc">Name (Z &rarr; A)</option>
-      <option value="review-count-desc">Review Count (Most First)</option>
-      <option value="review-count-asc">Review Count (Fewest First)</option>
-    </>
-  );
-}
+export const COLLECTION_SORT_OPTIONS: readonly SortOption[] = [
+  { label: "Name (A \u2192 Z)", value: "name-asc" },
+  { label: "Name (Z \u2192 A)", value: "name-desc" },
+  { label: "Review Count (Most First)", value: "review-count-desc" },
+  { label: "Review Count (Fewest First)", value: "review-count-asc" },
+] as const;
