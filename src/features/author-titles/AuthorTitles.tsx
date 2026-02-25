@@ -14,6 +14,7 @@ import {
   createApplyFiltersAction,
   createClearFiltersAction,
   createInitialState,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createShowMoreAction,
   createSortAction,
@@ -22,6 +23,7 @@ import {
 } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
+import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
 import { groupAuthorTitles } from "./groupAuthorTitles";
 import { sortAuthorTitles } from "./sortAuthorTitles";
@@ -126,9 +128,15 @@ export function AuthorTitles({
   );
 
   const hasPendingFilters = selectHasPendingFilters(state);
+  const activeFilters = buildAppliedFilterChips(
+    state.activeFilterValues,
+    distinctWorkYears,
+    distinctReviewYears,
+  );
 
   return (
     <FilterAndSortContainer
+      activeFilters={activeFilters}
       filters={
         <AuthorTitlesFilters
           dispatch={dispatch}
@@ -142,8 +150,10 @@ export function AuthorTitles({
       onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
         dispatch(createClearFiltersAction());
+        dispatch(createApplyFiltersAction());
       }}
       onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
+      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
       onResetFilters={() => {
         dispatch(createResetFiltersAction());
       }}

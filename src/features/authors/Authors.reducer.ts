@@ -10,6 +10,7 @@ export {
   createApplyFiltersAction,
   createClearFiltersAction,
   createNameFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
 } from "~/reducers/collectionFiltersReducer";
