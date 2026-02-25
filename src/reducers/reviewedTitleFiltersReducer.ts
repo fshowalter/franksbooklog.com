@@ -131,17 +131,6 @@ export function reviewedTitleFiltersReducer<
 >(state: TState, action: ReviewedTitleFiltersAction): TState {
   switch (action.type) {
     case "filters/removeAppliedFilter": {
-      if (action.id === "gradeValue" || action.id === "reviewYear") {
-        const pendingRest = Object.fromEntries(
-          Object.entries(
-            state.pendingFilterValues as Record<string, unknown>,
-          ).filter(([k]) => k !== action.id),
-        ) as ReviewedTitleFiltersValues;
-        return {
-          ...state,
-          pendingFilterValues: pendingRest,
-        };
-      }
       if (action.id.startsWith("reviewedStatus-")) {
         const statusToRemove = action.id.slice("reviewedStatus-".length);
         const current = state.pendingFilterValues.reviewedStatus ?? [];
