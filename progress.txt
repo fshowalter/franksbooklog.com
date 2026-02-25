@@ -224,3 +224,43 @@
   - Stage 6 imports needed: `clickAbandonedFilterOption` from ReviewedStatusFilter.testHelper (add helper first), `clickReviewedStatusFilterOption`.
 
 ---
+
+## 2026-02-25 - Stage 6: Test Coverage + Knip Cleanup
+
+- What was implemented:
+  - Added `clickAbandonedFilterOption` helper to `ReviewedStatusFilter.testHelper.ts` (convenience wrapper for "Abandoned" status checkbox).
+  - `Reviews.spec.tsx`: Added multi-select kind OR logic test, abandoned status filter test, and "applied filters" describe block (3 tests: chip visible after applying kind filter, chip × removal restores items, search chip visible after title filter).
+  - `Authors.spec.tsx`: Added "applied filters" describe block (2 tests: search chip visible after name filter, chip × removal restores all authors).
+  - `AuthorTitles.spec.tsx`: Added multi-select kind OR logic test, abandoned status filter test, and "applied filters" describe block (2 tests).
+  - `ReadingLog.spec.tsx`: Added multi-select edition OR logic test, multi-select kind OR logic test, abandoned status filter test, and "applied filters" describe block (2 tests: edition chip visible, edition chip × removal restores items).
+  - Deleted `SelectField.tsx`, `SelectField.testHelper.ts`, `SelectOptions.tsx` — confirmed unused by knip after CheckboxListField migration.
+  - Removed unused `clickSortRadioOption` export from `FilterAndSortContainer.testHelper.ts`.
+  - Made `CheckboxListFieldOption` type non-exported (not used externally).
+  - Removed duplicate `RemoveAppliedFilterAction` re-export from `titleFiltersReducer.ts`.
+  - Deleted `FILTER_REDESIGN_SPEC.md` and `FILTER_REDESIGN_PLAN.md` (all stages complete).
+  - Regenerated `project-words.txt` to include `fieldsets`.
+
+- Files changed:
+  - MODIFIED: src/components/filter-and-sort/ReviewedStatusFilter.testHelper.ts
+  - MODIFIED: src/features/reviews/Reviews.spec.tsx
+  - MODIFIED: src/features/authors/Authors.spec.tsx
+  - MODIFIED: src/features/author-titles/AuthorTitles.spec.tsx
+  - MODIFIED: src/features/reading-log/ReadingLog.spec.tsx
+  - MODIFIED: src/components/fields/CheckboxListField.tsx (type unexported)
+  - MODIFIED: src/reducers/titleFiltersReducer.ts (removed re-export)
+  - MODIFIED: src/components/filter-and-sort/FilterAndSortContainer.testHelper.ts (removed unused export)
+  - MODIFIED: project-words.txt (regenerated)
+  - DELETED: FILTER_REDESIGN_SPEC.md, FILTER_REDESIGN_PLAN.md
+  - DELETED: src/components/fields/SelectField.tsx, SelectField.testHelper.ts, SelectOptions.tsx
+
+- Test results: 282 tests passed (0 failures). lint, check, format, knip, lint:spelling all clean.
+
+- **Learnings for future iterations:**
+  - `clickAbandonedFilterOption` must use `.value` attribute lookup (not `getByRole` name) because CheckboxListField always renders `({count})` after the label text, even when count=0.
+  - Applied filter chips are inside the filter drawer: must call `clickToggleFilters` to open the drawer before chips are queryable via `screen.getByRole`.
+  - Chip removal (`onRemove`) does NOT close the drawer — list updates immediately while drawer stays open. Test can query both the disappearing chip and the restored list item without reopening.
+  - `perfectionist/sort-modules` requires function exports in alphabetical order; `clickAbandonedFilterOption` must come before `clickReviewedStatusFilterOption`.
+  - CheckboxListFieldOption type: if exported but not imported externally, knip flags it — remove the `export` keyword.
+  - `RemoveAppliedFilterAction` re-exports: only re-export a type from a module if consumers actually import it from that module.
+
+---
