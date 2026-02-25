@@ -5,6 +5,7 @@ import type { CoverImageProps } from "~/api/covers";
 import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
+import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -65,6 +66,8 @@ export type ReviewsValue = {
   gradeValue: number;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
+  /** Always true — every item in the reviews list has been reviewed */
+  reviewed: boolean;
   /** Sequence string for chronological review ordering */
   reviewSequence: string;
   /** Year the review was written */
@@ -123,6 +126,8 @@ export function Reviews({
     state.pendingFilterValues,
   );
 
+  const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
+
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
     state.activeFilterValues,
@@ -140,6 +145,7 @@ export function Reviews({
           distinctReviewYears={distinctReviewYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
+          reviewedStatusCounts={reviewedStatusCounts}
         />
       }
       hasPendingFilters={hasPendingFilters}

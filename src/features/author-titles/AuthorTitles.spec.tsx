@@ -50,6 +50,7 @@ function createAuthorTitleValue(
     kind: "Novel",
     otherAuthors: [],
     reviewDate: new Date("2024-01-01"),
+    reviewed: true,
     reviewSequence: testIdCounter.toLocaleString("en-US", {
       minimumIntegerDigits: 3,
     }),

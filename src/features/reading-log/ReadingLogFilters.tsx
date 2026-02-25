@@ -25,6 +25,7 @@ export function Filters({
   distinctReadingYears,
   distinctWorkYears,
   filterValues,
+  reviewedStatusCounts,
 }: {
   dispatch: React.Dispatch<ReadingLogAction>;
   distinctEditions: readonly string[];
@@ -32,6 +33,7 @@ export function Filters({
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
   filterValues: ReadingLogFiltersValues;
+  reviewedStatusCounts?: Map<string, number>;
 }): React.JSX.Element {
   return (
     <>
@@ -54,6 +56,7 @@ export function Filters({
         }}
       />
       <ReviewedStatusFilter
+        counts={reviewedStatusCounts}
         defaultValues={filterValues.reviewedStatus}
         onChange={(values) =>
           dispatch(createReviewedStatusFilterChangedAction(values))

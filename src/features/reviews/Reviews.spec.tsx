@@ -54,6 +54,7 @@ function createReviewValue(
     grade: "B+",
     gradeValue: 10,
     kind: "Novel",
+    reviewed: true,
     reviewSequence: testIdCounter.toLocaleString("en-US", {
       minimumIntegerDigits: 3,
     }),
