@@ -1,6 +1,5 @@
+import { FilterSection } from "~/components/filter-and-sort/FilterSection";
 import { debounceOnChange } from "~/utils/debounce";
-
-import { LabelText } from "./LabelText";
 
 /**
  * Debounce delay for text filter input in milliseconds.
@@ -34,17 +33,17 @@ export function TextField({
     TEXT_FILTER_DEBOUNCE_MS,
   );
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const newValue = (e.target as HTMLInputElement).value;
     debouncedHandleChange(newValue); // Debounce the callback
   };
 
   return (
-    <label className="flex flex-col text-subtle">
-      <LabelText value={label} />
+    <FilterSection title={label}>
       <input
+        aria-label={label}
         className={`
-          border-0 bg-default px-4 py-2 text-base text-default shadow-all
+          w-full border-0 bg-default px-4 py-2 text-base text-default shadow-all
           outline-accent
           placeholder:text-default placeholder:opacity-50
         `}
@@ -53,6 +52,6 @@ export function TextField({
         placeholder={placeholder}
         type="text"
       />
-    </label>
+    </FilterSection>
   );
 }
