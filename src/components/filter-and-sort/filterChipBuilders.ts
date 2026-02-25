@@ -2,6 +2,11 @@ import type { FilterChip } from "./AppliedFilters";
 
 import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
+// AIDEV-NOTE: This ID must match the `gradeValue` property key in ReviewedTitleFiltersValues.
+// filtersReducer.removeAppliedFilter deletes pendingFilterValues[action.id], so the chip ID
+// and the filter-values key must stay in sync. If you rename either, update the other.
+export const GRADE_CHIP_ID = "gradeValue" as const;
+
 /**
  * Builds a search chip for a text search field.
  * Returns an empty array if the value is blank or undefined.
@@ -84,7 +89,7 @@ export function buildGradeChip(
     {
       category: "Grade",
       displayText: `Grade: ${label}`,
-      id: "gradeValue",
+      id: GRADE_CHIP_ID,
       label,
     },
   ];
