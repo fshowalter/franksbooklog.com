@@ -67,6 +67,12 @@ export function FilterAndSortContainer<T extends string>({
   totalCount,
 }: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
+  // AIDEV-NOTE: displayedChips is snapshotted from activeFilters when the drawer opens.
+  // This prevents newly-selected pending filters from appearing in Applied Filters until
+  // "View Results" is clicked, avoiding layout shift. Chip removal mutates displayedChips
+  // immediately so the chip disappears at once, but activeFilterValues (and thus the list)
+  // only update when "View Results" is clicked.
+  const [displayedChips, setDisplayedChips] = useState<FilterChip[]>([]);
   const filtersRef = useRef<HTMLDivElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
   const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
@@ -101,6 +107,7 @@ export function FilterAndSortContainer<T extends string>({
           document.body.classList.add("overflow-hidden");
         }
         setFilterDrawerVisible(true);
+        setDisplayedChips(activeFilters ?? []);
         // Call onFilterDrawerOpen when opening
         onFilterDrawerOpen();
         // Focus first focusable element after drawer opens
@@ -112,7 +119,7 @@ export function FilterAndSortContainer<T extends string>({
         });
       }
     },
-    [filterDrawerVisible, handleCloseDrawer, onFilterDrawerOpen],
+    [activeFilters, filterDrawerVisible, handleCloseDrawer, onFilterDrawerOpen],
   );
 
   // Handle escape key
@@ -272,11 +279,19 @@ export function FilterAndSortContainer<T extends string>({
                     tablet-landscape:px-12
                   "
                 >
-                  {activeFilters && onRemoveFilter && (
+                  {onRemoveFilter && displayedChips.length > 0 && (
                     <AppliedFilters
-                      filters={activeFilters}
-                      onClearAll={onClearFilters}
-                      onRemove={onRemoveFilter}
+                      filters={displayedChips}
+                      onClearAll={() => {
+                        setDisplayedChips([]);
+                        onClearFilters();
+                      }}
+                      onRemove={(id) => {
+                        setDisplayedChips((prev) =>
+                          prev.filter((c) => c.id !== id),
+                        );
+                        onRemoveFilter(id);
+                      }}
                     />
                   )}
                   {/* AIDEV-NOTE: Sort section in mobile drawer only (<640px).

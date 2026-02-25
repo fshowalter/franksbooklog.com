@@ -159,8 +159,9 @@ function clearFilters<TValue, TState extends FiltersState<TValue>>(
 }
 
 /**
- * Remove a single filter key from pending only.
- * Active results don't change until "View Results" is clicked.
+ * Remove a single filter key from pendingFilterValues only.
+ * activeFilterValues is untouched — the list updates when "View Results" is clicked.
+ * FilterAndSortContainer removes the chip from its local displayedChips state immediately.
  * Child reducers override this for array-valued filters.
  */
 function removeAppliedFilter<TValue, TState extends FiltersState<TValue>>(
@@ -184,7 +185,6 @@ function resetFilters<TValue, TState extends FiltersState<TValue>>(
 ): TState {
   return {
     ...state,
-    activeFilterValues: state.activeFilterValues,
     pendingFilterValues: { ...state.activeFilterValues },
   };
 }

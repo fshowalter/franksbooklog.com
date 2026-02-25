@@ -188,33 +188,37 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
     case "filters/removeAppliedFilter": {
       if (action.id.startsWith("edition-")) {
         const editionToRemove = action.id.slice("edition-".length);
-        const current = state.pendingFilterValues.edition ?? [];
-        const updated = current.filter(
+        const pendingUpdated = (state.pendingFilterValues.edition ?? []).filter(
           (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
         );
-        const newEdition =
-          updated.length === 0 ? undefined : (updated as readonly string[]);
+        const newPendingEdition =
+          pendingUpdated.length === 0
+            ? undefined
+            : (pendingUpdated as readonly string[]);
         return {
           ...state,
           pendingFilterValues: {
             ...state.pendingFilterValues,
-            edition: newEdition,
+            edition: newPendingEdition,
           },
         };
       }
       if (action.id.startsWith("reviewedStatus-")) {
         const statusToRemove = action.id.slice("reviewedStatus-".length);
-        const current = state.pendingFilterValues.reviewedStatus ?? [];
-        const updated = current.filter(
+        const pendingUpdated = (
+          state.pendingFilterValues.reviewedStatus ?? []
+        ).filter(
           (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
         );
-        const newStatus =
-          updated.length === 0 ? undefined : (updated as readonly string[]);
+        const newPendingStatus =
+          pendingUpdated.length === 0
+            ? undefined
+            : (pendingUpdated as readonly string[]);
         return {
           ...state,
           pendingFilterValues: {
             ...state.pendingFilterValues,
-            reviewedStatus: newStatus,
+            reviewedStatus: newPendingStatus,
           },
         };
       }

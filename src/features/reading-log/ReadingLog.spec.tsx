@@ -729,7 +729,7 @@ describe("ReadingLog", () => {
       ).toBeInTheDocument();
     });
 
-    it("removing edition chip does not restore items until View Results is clicked", async ({
+    it("removing edition chip immediately hides chip but defers list update until View Results", async ({
       expect,
     }) => {
       const readings = [
@@ -760,14 +760,18 @@ describe("ReadingLog", () => {
         screen.getByRole("button", { name: "Remove Paperback filter" }),
       );
 
-      // Results not yet updated — "View Results" hasn't been clicked
+      // Chip is gone immediately from the Applied Filters section
+      expect(
+        screen.queryByRole("button", { name: "Remove Paperback filter" }),
+      ).not.toBeInTheDocument();
+      // But the list is not yet updated — "View Results" hasn't been clicked
       expect(
         within(calendar).queryByText("Book in Hardcover"),
       ).not.toBeInTheDocument();
 
       await clickViewResults(user);
 
-      // Now results update
+      // Now the list updates
       expect(
         within(calendar).getByText("Book in Hardcover"),
       ).toBeInTheDocument();

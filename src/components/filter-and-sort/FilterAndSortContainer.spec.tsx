@@ -737,8 +737,8 @@ describe("FilterAndSortContainer", () => {
       const user = userEvent.setup();
       const onRemoveFilter = vi.fn();
       const activeFilters: FilterChip[] = [
-        { category: "Kind", id: "kind-novel", label: "Novel" },
-        { category: "Kind", id: "kind-short-story", label: "Short Story" },
+        { category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" },
+        { category: "Kind", displayText: "Short Story", id: "kind-short-story", label: "Short Story" },
       ];
 
       render(
@@ -765,7 +765,7 @@ describe("FilterAndSortContainer", () => {
       const user = userEvent.setup();
       const onRemoveFilter = vi.fn();
       const activeFilters: FilterChip[] = [
-        { category: "Kind", id: "kind-novel", label: "Novel" },
+        { category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" },
       ];
 
       render(
@@ -795,8 +795,8 @@ describe("FilterAndSortContainer", () => {
       const user = userEvent.setup();
       const onRemoveFilter = vi.fn();
       const activeFilters: FilterChip[] = [
-        { category: "Kind", id: "kind-novel", label: "Novel" },
-        { category: "Kind", id: "kind-short-story", label: "Short Story" },
+        { category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" },
+        { category: "Kind", displayText: "Short Story", id: "kind-short-story", label: "Short Story" },
       ];
 
       render(
@@ -824,7 +824,7 @@ describe("FilterAndSortContainer", () => {
     }) => {
       const user = userEvent.setup();
       const activeFilters: FilterChip[] = [
-        { category: "Kind", id: "kind-novel", label: "Novel" },
+        { category: "Kind", displayText: "Novel", id: "kind-novel", label: "Novel" },
       ];
 
       render(

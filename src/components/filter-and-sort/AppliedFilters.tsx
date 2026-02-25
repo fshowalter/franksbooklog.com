@@ -14,8 +14,9 @@ import { FilterSection } from "./FilterSection";
 
 export type FilterChip = {
   category: string; // Display category (e.g., "Kind", "Search")
+  displayText: string; // Pre-assembled display string (e.g., "Novel", "Grade: A- to B+", "Search: dune")
   id: string; // Unique identifier (e.g., "kind-novel", "title")
-  label: string; // Display value (e.g., "Novel", "dune")
+  label: string; // Raw display value (e.g., "Novel", "dune")
 };
 
 type AppliedFiltersProps = {
@@ -38,18 +39,7 @@ export function AppliedFilters({
     <FilterSection title="Applied Filters">
       <div className="mb-3 flex flex-wrap gap-2">
         {filters.map((filter) => {
-          // AIDEV-NOTE: Per FILTER_REDESIGN_SPEC.md §3:
-          // - Simple filters (Kind, Edition, Status) show value only: "Novel"
-          // - Range filters (Grade, Year) show "Category: Value": "Grade: A- to B+"
-          // - Search filters show "Search: query": "Search: dune"
-          const isRangeOrSearch =
-            filter.category.includes("Grade") ||
-            filter.category.includes("Year") ||
-            filter.category === "Search";
-
-          const displayText = isRangeOrSearch
-            ? `${filter.category}: ${filter.label}`
-            : filter.label;
+          const { displayText } = filter;
 
           return (
             <button

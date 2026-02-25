@@ -288,7 +288,7 @@ describe("Authors", () => {
       ).toBeInTheDocument();
     });
 
-    it("removing name chip does not restore items until View Results is clicked", async ({
+    it("removing name chip immediately hides chip but defers list update until View Results", async ({
       expect,
     }) => {
       const authors = [
@@ -313,12 +313,18 @@ describe("Authors", () => {
         }),
       );
 
-      // Results not yet updated — "View Results" hasn't been clicked
+      // Chip is gone immediately from the Applied Filters section
+      expect(
+        screen.queryByRole("button", {
+          name: "Remove Search: Bram Stoker filter",
+        }),
+      ).not.toBeInTheDocument();
+      // But the list is not yet updated — "View Results" hasn't been clicked
       expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
 
       await clickViewResults(user);
 
-      // Now results update
+      // Now the list updates
       expect(within(list).getByText("Stephen King")).toBeInTheDocument();
     });
   });
