@@ -36,6 +36,7 @@ function createAuthorTitleValue(
   testIdCounter += 1;
   const title = overrides.title || `Test Title ${testIdCounter}`;
   return {
+    abandoned: false,
     coverImageProps: {
       height: 400,
       src: "/cover.jpg",
@@ -501,7 +502,9 @@ describe("AuthorTitles", () => {
       await clickClearFilters(user);
 
       expect(getTitleFilter()).toHaveValue("");
-      expect(getKindFilter()).toHaveValue("All");
+      expect(
+        within(getKindFilter()).queryAllByRole("checkbox", { checked: true }),
+      ).toHaveLength(0);
 
       await clickViewResults(user);
 

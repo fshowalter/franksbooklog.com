@@ -19,6 +19,7 @@ export {
   createApplyFiltersAction,
   createClearFiltersAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
@@ -44,14 +45,14 @@ import type { ReadingLogSort } from "./sortReadingLog";
  * Filter values for viewings.
  */
 export type ReadingLogFiltersValues = TitleFiltersValues & {
-  edition?: string;
+  edition?: readonly string[];
   readingYear?: [string, string];
-  reviewedStatus?: string;
+  reviewedStatus?: readonly string[];
 };
 
 type EditionFilterChangedAction = {
   type: "readingLog/editionChanged";
-  value: string;
+  values: readonly string[];
 };
 
 type NextMonthClickedAction = {
@@ -85,18 +86,18 @@ type ReadingYearFilterChangedAction = {
 
 type ReviewedStatusFilterChangedAction = {
   type: "readingLog/reviewedStatusChanged";
-  value: string;
+  values: readonly string[];
 };
 
 /**
- * Creates an action for changing the medium filter.
- * @param value - The medium value to filter by
- * @returns Medium filter changed action
+ * Creates an action for changing the edition filter.
+ * @param values - Array of edition values (empty = no filter)
+ * @returns Edition filter changed action
  */
 export function createEditionFilterChangedAction(
-  value: string,
+  values: readonly string[],
 ): EditionFilterChangedAction {
-  return { type: "readingLog/editionChanged", value };
+  return { type: "readingLog/editionChanged", values };
 }
 
 /**
@@ -159,13 +160,13 @@ export function createReadingYearFilterChangedAction(
 
 /**
  * Creates an action for changing the reviewed status filter.
- * @param value - The reviewed status value
+ * @param values - Array of status values (empty = no filter)
  * @returns Reviewed status filter changed action
  */
 export function createReviewedStatusFilterChangedAction(
-  value: string,
+  values: readonly string[],
 ): ReviewedStatusFilterChangedAction {
-  return { type: "readingLog/reviewedStatusChanged", value };
+  return { type: "readingLog/reviewedStatusChanged", values };
 }
 
 /**
@@ -183,6 +184,49 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
         ...newState,
         selectedMonthDate: undefined,
       };
+    }
+    case "filters/removeAppliedFilter": {
+      if (action.id.startsWith("edition-")) {
+        const editionToRemove = action.id.slice("edition-".length);
+        const current = state.activeFilterValues.edition ?? [];
+        const updated = current.filter(
+          (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
+        );
+        const newEdition =
+          updated.length === 0 ? undefined : (updated as readonly string[]);
+        return {
+          ...state,
+          activeFilterValues: {
+            ...state.activeFilterValues,
+            edition: newEdition,
+          },
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            edition: newEdition,
+          },
+        };
+      }
+      if (action.id.startsWith("reviewedStatus-")) {
+        const statusToRemove = action.id.slice("reviewedStatus-".length);
+        const current = state.activeFilterValues.reviewedStatus ?? [];
+        const updated = current.filter(
+          (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
+        );
+        const newStatus =
+          updated.length === 0 ? undefined : (updated as readonly string[]);
+        return {
+          ...state,
+          activeFilterValues: {
+            ...state.activeFilterValues,
+            reviewedStatus: newStatus,
+          },
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            reviewedStatus: newStatus,
+          },
+        };
+      }
+      return titleFiltersReducer(state, action);
     }
     case "readingLog/editionChanged": {
       return handleEditionFilterChanged(state, action);
@@ -221,7 +265,7 @@ function handleEditionFilterChanged(
     ...state,
     pendingFilterValues: {
       ...state.pendingFilterValues,
-      edition: action.value === "All" ? undefined : action.value,
+      edition: action.values.length === 0 ? undefined : action.values,
     },
   };
 }
@@ -267,7 +311,7 @@ function handleReviewedStatusFilterChanged(
     ...state,
     pendingFilterValues: {
       ...state.pendingFilterValues,
-      reviewedStatus: action.value === "All" ? undefined : action.value,
+      reviewedStatus: action.values.length === 0 ? undefined : action.values,
     },
   };
 }

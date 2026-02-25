@@ -1,12 +1,28 @@
 import type { UserEvent } from "@testing-library/user-event";
 
-import { screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 
-import { clickSelectFieldOption } from "~/components/fields/SelectField.testHelper";
 import { fillYearField } from "~/components/fields/YearField.testHelper";
 
 export async function clickEditionFilterOption(user: UserEvent, value: string) {
-  await clickSelectFieldOption(user, "Edition", value);
+  const editionFilter = getEditionFilter();
+  // Click "Show more" if present, so all options are visible
+  const showMoreButton = within(editionFilter).queryByRole("button", {
+    name: /show more/i,
+  });
+  if (showMoreButton) {
+    await user.click(showMoreButton);
+  }
+  const checkboxes = within(editionFilter).getAllByRole("checkbox");
+  const checkbox = checkboxes.find(
+    (cb) => (cb as HTMLInputElement).value === value,
+  );
+  if (!checkbox) {
+    throw new Error(
+      `Unable to find edition checkbox with value "${value}". Available: ${checkboxes.map((cb) => (cb as HTMLInputElement).value).join(", ")}`,
+    );
+  }
+  await user.click(checkbox);
 }
 
 export async function clickNextMonthButton(user: UserEvent) {
@@ -38,7 +54,7 @@ export function getCalendar() {
 }
 
 export function getEditionFilter() {
-  return screen.getByLabelText("Edition");
+  return screen.getByRole("group", { name: "Edition" });
 }
 
 export function queryNextMonthButton() {

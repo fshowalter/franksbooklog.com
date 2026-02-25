@@ -28,18 +28,14 @@ export function filterReadingLog(
   return filterSortedValues({ filters, sortedValues });
 }
 
-function createEditionFilter(filterValue?: string) {
-  if (!filterValue) return;
-  return (value: ReadingLogValue) => {
-    return value.edition === filterValue;
-  };
+function createEditionFilter(filterValue?: readonly string[]) {
+  if (!filterValue || filterValue.length === 0) return;
+  return (value: ReadingLogValue) => filterValue.includes(value.edition);
 }
 
-function createKindFilter(filterValue?: string) {
-  if (!filterValue) return;
-  return (value: ReadingLogValue) => {
-    return value.kind === filterValue;
-  };
+function createKindFilter(filterValue?: readonly string[]) {
+  if (!filterValue || filterValue.length === 0) return;
+  return (value: ReadingLogValue) => filterValue.includes(value.kind);
 }
 
 function createReadingYearFilter(filterValue?: [string, string]) {

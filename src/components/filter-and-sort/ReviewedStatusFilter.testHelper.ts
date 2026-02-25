@@ -1,15 +1,25 @@
 import type { UserEvent } from "@testing-library/user-event";
 
-import { clickSelectFieldOption } from "~/components/fields/SelectField.testHelper";
+import { screen } from "@testing-library/react";
 
 /**
- * Test helper to select a reviewed status filter option.
+ * Test helper to click a reviewed status filter checkbox option.
+ * Finds the checkbox by its value attribute to avoid matching issues with count text.
  * @param user - UserEvent instance for interactions
- * @param reviewedStatus - The reviewed status option to select
+ * @param status - The status value to click ("Reviewed", "Not Reviewed", "Abandoned")
  */
 export async function clickReviewedStatusFilterOption(
   user: UserEvent,
-  reviewedStatus: "All" | "Not Reviewed" | "Reviewed",
+  status: string,
 ) {
-  await clickSelectFieldOption(user, "Reviewed Status", reviewedStatus);
+  const checkboxes = screen.getAllByRole("checkbox");
+  const checkbox = checkboxes.find(
+    (cb) => (cb as HTMLInputElement).value === status,
+  );
+  if (!checkbox) {
+    throw new Error(
+      `Unable to find status checkbox with value "${status}". Available: ${checkboxes.map((cb) => (cb as HTMLInputElement).value).join(", ")}`,
+    );
+  }
+  await user.click(checkbox);
 }

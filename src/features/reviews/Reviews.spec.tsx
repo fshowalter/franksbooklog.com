@@ -36,6 +36,7 @@ function createReviewValue(
   testIdCounter += 1;
   const title = overrides.title || `Test Review ${testIdCounter}`;
   return {
+    abandoned: false,
     authors: overrides.authors || [
       {
         name: `Test Author ${testIdCounter}`,
@@ -574,7 +575,9 @@ describe("Reviews", () => {
       await clickClearFilters(user);
 
       expect(getTitleFilter()).toHaveValue("");
-      expect(getKindFilter()).toHaveValue("All");
+      expect(
+        within(getKindFilter()).queryAllByRole("checkbox", { checked: true }),
+      ).toHaveLength(0);
 
       await clickViewResults(user);
 

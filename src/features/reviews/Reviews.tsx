@@ -46,6 +46,8 @@ export type ReviewsProps = {
  * Contains all information needed to display the review and apply filters/sorting.
  */
 export type ReviewsValue = {
+  /** Whether the work was abandoned (grade === "Abandoned") */
+  abandoned: boolean;
   /** Authors of the reviewed work */
   authors: {
     name: string;

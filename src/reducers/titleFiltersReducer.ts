@@ -3,6 +3,7 @@ import type { FiltersAction, FiltersState } from "./filtersReducer";
 export {
   createApplyFiltersAction,
   createClearFiltersAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
 } from "./filtersReducer";
@@ -17,6 +18,8 @@ export type TitleFiltersAction =
   | KindFilterChangedAction
   | TitleFilterChangedAction
   | WorkYearFilterChangedAction;
+
+export { type RemoveAppliedFilterAction } from "./filtersReducer";
 
 /**
  * Specialized state type for title-based lists with typed filter values
@@ -33,14 +36,14 @@ export type TitleFiltersState<TValue> = Omit<
  * Type for title filter values with known keys
  */
 export type TitleFiltersValues = {
-  kind?: string;
+  kind?: readonly string[];
   title?: string;
   workYear?: [string, string];
 };
 
 type KindFilterChangedAction = {
   type: "titleFilters/kindFilterChanged";
-  value: string;
+  values: readonly string[];
 };
 
 type TitleFilterChangedAction = {
@@ -72,14 +75,14 @@ export function createInitialTitleFiltersState<TValue>({
 }
 
 /**
- * Creates an action for changing the genres filter.
- * @param values - Array of genre names to filter by
- * @returns Genres filter changed action
+ * Creates an action for changing the kind filter.
+ * @param values - Array of kind values to filter by (empty array = no filter)
+ * @returns Kind filter changed action
  */
 export function createKindFilterChangedAction(
-  value: string,
+  values: readonly string[],
 ): KindFilterChangedAction {
-  return { type: "titleFilters/kindFilterChanged", value };
+  return { type: "titleFilters/kindFilterChanged", values };
 }
 
 /**
@@ -115,6 +118,24 @@ export function titleFiltersReducer<
   TState extends TitleFiltersState<TValue>,
 >(state: TState, action: TitleFiltersAction): TState {
   switch (action.type) {
+    case "filters/removeAppliedFilter": {
+      if (action.id.startsWith("kind-")) {
+        const kindToRemove = action.id.slice("kind-".length);
+        const current = state.activeFilterValues.kind ?? [];
+        const updated = current.filter(
+          (k) => k.toLowerCase().replaceAll(" ", "-") !== kindToRemove,
+        );
+        const newKind =
+          updated.length === 0 ? undefined : (updated as readonly string[]);
+        return {
+          ...state,
+          activeFilterValues: { ...state.activeFilterValues, kind: newKind },
+          pendingFilterValues: { ...state.pendingFilterValues, kind: newKind },
+        };
+      }
+      return filtersReducer<TValue, TState>(state, action);
+    }
+
     case "titleFilters/kindFilterChanged": {
       return handleKindFilterChanged<TValue, TState>(state, action);
     }
@@ -133,7 +154,7 @@ export function titleFiltersReducer<
 }
 
 /**
- * Handle Genre filter action
+ * Handle Kind filter action
  */
 function handleKindFilterChanged<
   TValue,
@@ -143,7 +164,7 @@ function handleKindFilterChanged<
     ...state,
     pendingFilterValues: {
       ...state.pendingFilterValues,
-      kind: action.value === "All" ? undefined : action.value,
+      kind: action.values.length === 0 ? undefined : action.values,
     },
   };
 }

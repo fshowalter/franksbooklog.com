@@ -40,6 +40,7 @@ function createReadingValue(
   testIdCounter += 1;
   const readingDate = overrides.readingDate || "2024-01-01";
   return {
+    abandoned: false,
     authors: [{ name: "Test Author" }],
     coverImageProps: {
       height: 375,
@@ -566,7 +567,11 @@ describe("ReadingLog", () => {
       await clickClearFilters(user);
 
       expect(getTitleFilter()).toHaveValue("");
-      expect(getEditionFilter()).toHaveValue("All");
+      expect(
+        within(getEditionFilter()).queryAllByRole("checkbox", {
+          checked: true,
+        }),
+      ).toHaveLength(0);
 
       await clickViewResults(user);
 

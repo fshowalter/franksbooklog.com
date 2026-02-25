@@ -1,34 +1,46 @@
-import { SelectField } from "~/components/fields/SelectField";
+import { CheckboxListField } from "~/components/fields/CheckboxListField";
+
+import { FilterSection } from "./FilterSection";
+
+const allOptions = [
+  { count: 0, label: "Reviewed", value: "Reviewed" },
+  { count: 0, label: "Not Reviewed", value: "Not Reviewed" },
+  { count: 0, label: "Abandoned", value: "Abandoned" },
+];
 
 /**
- * Filter control for reviewed/unreviewed status.
+ * Filter control for reviewed/not-reviewed/abandoned status.
  * @param props - Component props
- * @param props.defaultValue - Initial selected value
+ * @param props.defaultValues - Currently selected status values
+ * @param props.excludeNotReviewed - When true, omits "Not Reviewed" option (for reviews/author-titles)
  * @param props.onChange - Handler for filter changes
- * @returns Reviewed status filter select field
+ * @param props.onClear - Handler for clearing the filter
+ * @returns Reviewed status filter with checkboxes
  */
 export function ReviewedStatusFilter({
-  defaultValue,
+  defaultValues,
+  excludeNotReviewed = false,
   onChange,
+  onClear,
 }: {
-  defaultValue: string | undefined;
-  onChange: (value: string) => void;
+  defaultValues?: readonly string[];
+  excludeNotReviewed?: boolean;
+  onChange: (values: string[]) => void;
+  onClear?: () => void;
 }): React.JSX.Element {
+  const statusOptions = excludeNotReviewed
+    ? allOptions.filter((o) => o.value !== "Not Reviewed")
+    : allOptions;
+
   return (
-    <SelectField
-      defaultValue={defaultValue}
-      label="Reviewed Status"
-      onChange={onChange}
-    >
-      <option key={0} value={"All"}>
-        All
-      </option>
-      <option key={1} value={"Reviewed"}>
-        Reviewed
-      </option>
-      <option key={2} value={"Not Reviewed"}>
-        Not Reviewed
-      </option>
-    </SelectField>
+    <FilterSection title="Status">
+      <CheckboxListField
+        defaultValues={defaultValues}
+        label="Status"
+        onChange={onChange}
+        onClear={onClear}
+        options={statusOptions}
+      />
+    </FilterSection>
   );
 }

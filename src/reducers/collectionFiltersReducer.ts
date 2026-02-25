@@ -3,6 +3,7 @@ import type { FiltersAction, FiltersState } from "./filtersReducer";
 export {
   createApplyFiltersAction,
   createClearFiltersAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
 } from "./filtersReducer";
@@ -51,6 +52,20 @@ export function collectionFiltersReducer<
     // Field-specific shared filters
     case "collectionFilters/nameFilterChanged": {
       return handleNameFilterChanged<TValue, TState>(state, action);
+    }
+
+    case "filters/removeAppliedFilter": {
+      if (action.id === "name") {
+        return {
+          ...state,
+          activeFilterValues: { ...state.activeFilterValues, name: undefined },
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            name: undefined,
+          },
+        };
+      }
+      return filtersReducer<TValue, TState>(state, action);
     }
 
     default: {

@@ -4,6 +4,7 @@
 export type FiltersAction =
   | ApplyFiltersAction
   | ClearFiltersAction
+  | RemoveAppliedFilterAction
   | ResetFiltersAction;
 
 /**
@@ -13,6 +14,15 @@ export type FiltersState<TValue> = {
   activeFilterValues: Record<string, unknown>;
   pendingFilterValues: Record<string, unknown>;
   values: TValue[];
+};
+
+// AIDEV-NOTE: RemoveAppliedFilterAction base handler removes the whole key from both
+// activeFilterValues and pendingFilterValues. Child reducers MUST override this case
+// for any array-valued filter (e.g. kind[], edition[]) to remove a single item from the
+// array rather than deleting the entire filter key.
+export type RemoveAppliedFilterAction = {
+  id: string;
+  type: "filters/removeAppliedFilter";
 };
 
 /**
@@ -65,6 +75,17 @@ export function createInitialFiltersState<TValue>({
 }
 
 /**
+ * Creates an action to remove a single applied filter chip by id.
+ * @param id - The chip id to remove
+ * @returns Remove applied filter action
+ */
+export function createRemoveAppliedFilterAction(
+  id: string,
+): RemoveAppliedFilterAction {
+  return { id, type: "filters/removeAppliedFilter" };
+}
+
+/**
  * Creates an action to reset filters to initial state.
  * @returns Reset filters action
  */
@@ -89,6 +110,10 @@ export function filtersReducer<TValue, TState extends FiltersState<TValue>>(
 
     case "filters/cleared": {
       return clearFilters<TValue, TState>(state);
+    }
+
+    case "filters/removeAppliedFilter": {
+      return removeAppliedFilter<TValue, TState>(state, action);
     }
 
     case "filters/reset": {
@@ -130,6 +155,27 @@ function clearFilters<TValue, TState extends FiltersState<TValue>>(
   return {
     ...state,
     pendingFilterValues: {},
+  };
+}
+
+/**
+ * Remove a single filter key from both active and pending.
+ * Child reducers override this for array-valued filters.
+ */
+function removeAppliedFilter<TValue, TState extends FiltersState<TValue>>(
+  state: TState,
+  action: RemoveAppliedFilterAction,
+): TState {
+  const activeRest = Object.fromEntries(
+    Object.entries(state.activeFilterValues).filter(([k]) => k !== action.id),
+  ) as Record<string, unknown>;
+  const pendingRest = Object.fromEntries(
+    Object.entries(state.pendingFilterValues).filter(([k]) => k !== action.id),
+  ) as Record<string, unknown>;
+  return {
+    ...state,
+    activeFilterValues: activeRest,
+    pendingFilterValues: pendingRest,
   };
 }
 

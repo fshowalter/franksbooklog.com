@@ -33,6 +33,7 @@ export async function getReadingLogProps(
   const values = await Promise.all(
     readingEntries.map(async (entry) => {
       const value: ReadingLogValue = {
+        abandoned: entry.progress === "Abandoned",
         authors: entry.authors.map((author) => {
           const authorValue: ReadingLogValue["authors"][0] = {
             name: author.name,

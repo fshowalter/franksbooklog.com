@@ -2,9 +2,11 @@ import type { ReviewedTitleFiltersValues } from "~/reducers/reviewedTitleFilters
 
 import type { FilterableTitle } from "./filterTitles";
 
+import { createReviewedStatusFilter } from "./createReviewedStatusFilter";
 import { filterTitles } from "./filterTitles";
 
 type FilterableReviewedTitle = FilterableTitle & {
+  abandoned: boolean;
   gradeValue: number;
   reviewYear: string;
 };
@@ -24,6 +26,7 @@ export function filterReviewedTitles<TValue extends FilterableReviewedTitle>(
   const filters: ((value: TValue) => boolean)[] = [
     createGradeFilter(filterValues.gradeValue),
     createReviewYearFilter(filterValues.reviewYear),
+    createReviewedStatusFilter(filterValues.reviewedStatus),
     ...extraFilters,
   ].filter((filterFn) => filterFn !== undefined);
 
@@ -33,7 +36,9 @@ export function filterReviewedTitles<TValue extends FilterableReviewedTitle>(
 function createGradeFilter<TValue extends FilterableReviewedTitle>(
   filterValue?: [number, number],
 ) {
-  if (!filterValue) return;
+  // AIDEV-NOTE: [2, 16] is the full grade range and must be treated as no-op, otherwise
+  // Abandoned entries (gradeValue=0) are incorrectly excluded when the slider is cleared.
+  if (!filterValue || (filterValue[0] === 2 && filterValue[1] === 16)) return;
   return (value: TValue): boolean => {
     return (
       value.gradeValue >= filterValue[0] && value.gradeValue <= filterValue[1]

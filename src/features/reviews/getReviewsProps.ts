@@ -43,6 +43,7 @@ export async function getReviewsProps(
   const values = await Promise.all(
     allReviewsList.map(async (review) => {
       const value: ReviewsValue = {
+        abandoned: review.abandoned,
         authors: review.authors.map((author) => {
           const authorValue: ReviewsValue["authors"][number] = {
             name: author.name,
