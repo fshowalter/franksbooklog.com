@@ -48,6 +48,8 @@ export type AuthorTitlesProps = {
  * Contains all information needed to display the work in lists and apply filters/sorting.
  */
 export type AuthorTitlesValue = {
+  /** Whether the work was abandoned (grade === "Abandoned") */
+  abandoned: boolean;
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
   /** Formatted display date for the review */

@@ -8,6 +8,7 @@ import type {
 import {
   createGradeFilterChangedAction,
   createKindFilterChangedAction,
+  createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
@@ -44,16 +45,31 @@ export function AuthorTitlesFilters({
       grade={{
         defaultValues: filterValues.gradeValue,
         onChange: (values) => dispatch(createGradeFilterChangedAction(values)),
+        onClear: () => dispatch(createGradeFilterChangedAction([2, 16])),
       }}
       kind={{
-        defaultValue: filterValues.kind,
-        onChange: (value) => dispatch(createKindFilterChangedAction(value)),
+        defaultValues: filterValues.kind,
+        onChange: (values) => dispatch(createKindFilterChangedAction(values)),
+        onClear: () => dispatch(createKindFilterChangedAction([])),
         values: distinctKinds,
+      }}
+      reviewedStatus={{
+        defaultValues: filterValues.reviewedStatus,
+        onChange: (values) =>
+          dispatch(createReviewedStatusFilterChangedAction(values)),
+        onClear: () => dispatch(createReviewedStatusFilterChangedAction([])),
       }}
       reviewYear={{
         defaultValues: filterValues.reviewYear,
         onChange: (values) =>
           dispatch(createReviewYearFilterChangedAction(values)),
+        onClear: () =>
+          dispatch(
+            createReviewYearFilterChangedAction([
+              distinctReviewYears[0] ?? "",
+              distinctReviewYears.at(-1) ?? "",
+            ]),
+          ),
         values: distinctReviewYears,
       }}
       title={{
@@ -64,7 +80,6 @@ export function AuthorTitlesFilters({
         defaultValues: filterValues.workYear,
         onChange: (values) =>
           dispatch(createWorkYearFilterChangedAction(values)),
-
         values: distinctWorkYears,
       }}
     />

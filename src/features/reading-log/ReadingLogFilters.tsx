@@ -1,6 +1,6 @@
-import { SelectField } from "~/components/fields/SelectField";
-import { SelectOptions } from "~/components/fields/SelectOptions";
+import { CheckboxListField } from "~/components/fields/CheckboxListField";
 import { YearField } from "~/components/fields/YearField";
+import { FilterSection } from "~/components/filter-and-sort/FilterSection";
 import { ReviewedStatusFilter } from "~/components/filter-and-sort/ReviewedStatusFilter";
 import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
 
@@ -37,8 +37,9 @@ export function Filters({
     <>
       <WorkFilters
         kind={{
-          defaultValue: filterValues.kind,
-          onChange: (value) => dispatch(createKindFilterChangedAction(value)),
+          defaultValues: filterValues.kind,
+          onChange: (values) => dispatch(createKindFilterChangedAction(values)),
+          onClear: () => dispatch(createKindFilterChangedAction([])),
           values: distinctKinds,
         }}
         title={{
@@ -53,10 +54,11 @@ export function Filters({
         }}
       />
       <ReviewedStatusFilter
-        defaultValue={filterValues.reviewedStatus}
-        onChange={(value) =>
-          dispatch(createReviewedStatusFilterChangedAction(value))
+        defaultValues={filterValues.reviewedStatus}
+        onChange={(values) =>
+          dispatch(createReviewedStatusFilterChangedAction(values))
         }
+        onClear={() => dispatch(createReviewedStatusFilterChangedAction([]))}
       />
       <YearField
         defaultValues={filterValues.readingYear}
@@ -66,13 +68,23 @@ export function Filters({
         }
         years={distinctReadingYears}
       />
-      <SelectField
-        defaultValue={filterValues.edition}
-        label="Edition"
-        onChange={(value) => dispatch(createEditionFilterChangedAction(value))}
-      >
-        <SelectOptions options={distinctEditions} />
-      </SelectField>
+      <FilterSection title="Edition">
+        <CheckboxListField
+          defaultValues={filterValues.edition}
+          label="Edition"
+          onChange={(values) =>
+            dispatch(createEditionFilterChangedAction(values))
+          }
+          onClear={() => dispatch(createEditionFilterChangedAction([]))}
+          options={distinctEditions
+            .filter((e) => e !== "All")
+            .map((e) => ({
+              count: 0,
+              label: e,
+              value: e,
+            }))}
+        />
+      </FilterSection>
     </>
   );
 }

@@ -33,13 +33,11 @@ export function filterTitles<TValue extends FilterableTitle>(
 }
 
 /**
- * Create a Genre filter function
+ * Create a Kind filter function (multi-select OR logic)
  */
 function createKindFilter<TValue extends FilterableTitle>(
-  filterValue?: string,
+  filterValue?: readonly string[],
 ) {
-  if (!filterValue) return;
-  return (value: TValue) => {
-    return value.kind === filterValue;
-  };
+  if (!filterValue || filterValue.length === 0) return;
+  return (value: TValue) => filterValue.includes(value.kind);
 }

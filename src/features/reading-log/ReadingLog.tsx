@@ -29,6 +29,8 @@ import { useMonthNavigation } from "./useMonthNavigation";
  * Contains all information needed to display readings in the calendar view.
  */
 export type ReadingLogValue = {
+  /** Whether this reading was abandoned (progress === "Abandoned") */
+  abandoned: boolean;
   /** Authors of the work being read */
   authors: { name: string }[];
   /** Cover image props for displaying the work's cover */

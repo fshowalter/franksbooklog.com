@@ -6,11 +6,9 @@ import { getAuthorDetails } from "~/api/authors";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { displayDate } from "~/utils/displayDate";
+import { gradeToValue } from "~/utils/grades";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
-
-// AIDEV-NOTE: gradeToValue converts a letter grade to a numeric sort value.
-// Must handle "Abandoned" (0) in addition to letter grades per the spec.
 
 export async function getAuthorTitlesProps(
   slug: string,
@@ -60,6 +58,7 @@ export async function getAuthorTitlesProps(
         .map((a) => ({ name: authorsMap.get(a.slug)?.name ?? a.slug }));
 
       const value: AuthorTitlesValue = {
+        abandoned: review.grade === "Abandoned",
         coverImageProps: await getFluidCoverImageProps(
           { slug: workEntry.id },
           CoverListItemImageConfig,
@@ -101,23 +100,4 @@ function getReviewSequence(
   if (readings.length === 0) return "";
   return readings.toSorted((a, b) => b.date.getTime() - a.date.getTime())[0]
     .slug;
-}
-
-function gradeToValue(grade: string): number {
-  const gradeValues: Record<string, number> = {
-    A: 12,
-    "A-": 11,
-    Abandoned: 0,
-    B: 9,
-    "B+": 10,
-    "B-": 8,
-    C: 6,
-    "C+": 7,
-    "C-": 5,
-    D: 3,
-    "D+": 4,
-    "D-": 2,
-    F: 1,
-  };
-  return gradeValues[grade] ?? 0;
 }
