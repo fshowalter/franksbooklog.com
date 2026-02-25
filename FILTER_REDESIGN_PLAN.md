@@ -155,7 +155,7 @@ mobile sort and applied filters groups. Feature snapshot updates regenerated.
 
 11. **Run `npm test -- --max-workers=2`** — fix test failures. Focus on reducer and filterer tests.
 
-**Status:** Not Started
+**Status:** Complete
 
 ---
 
@@ -210,7 +210,7 @@ interact as multi-select in feature specs.
 
 10. **Run `npm run test:update -- --max-workers=2`** — regenerate snapshots.
 
-**Status:** Not Started
+**Status:** Complete (pulled forward into Stage 3 as TypeScript cascade; kind.counts left as 0 — optional prop, acceptable for initial implementation)
 
 ---
 
@@ -254,7 +254,7 @@ a chip removes that filter immediately. Tests pass.
 
 9. **Run `npm test -- --max-workers=2`** — fix any remaining failures.
 
-**Status:** Not Started
+**Status:** Complete
 
 ---
 
