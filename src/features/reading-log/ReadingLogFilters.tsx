@@ -1,6 +1,5 @@
 import { CheckboxListField } from "~/components/fields/CheckboxListField";
 import { YearField } from "~/components/fields/YearField";
-import { FilterSection } from "~/components/filter-and-sort/FilterSection";
 import { ReviewedStatusFilter } from "~/components/filter-and-sort/ReviewedStatusFilter";
 import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
 
@@ -74,23 +73,21 @@ export function Filters({
         }
         years={distinctReadingYears}
       />
-      <FilterSection title="Edition">
-        <CheckboxListField
-          defaultValues={filterValues.edition}
-          label="Edition"
-          onChange={(values) =>
-            dispatch(createEditionFilterChangedAction(values))
-          }
-          onClear={() => dispatch(createEditionFilterChangedAction([]))}
-          options={distinctEditions
-            .filter((e) => e !== "All")
-            .map((e) => ({
-              count: 0,
-              label: e,
-              value: e,
-            }))}
-        />
-      </FilterSection>
+      <CheckboxListField
+        defaultValues={filterValues.edition}
+        label="Edition"
+        onChange={(values) =>
+          dispatch(createEditionFilterChangedAction(values))
+        }
+        onClear={() => dispatch(createEditionFilterChangedAction([]))}
+        options={distinctEditions
+          .filter((e) => e !== "All")
+          .map((e) => ({
+            count: 0,
+            label: e,
+            value: e,
+          }))}
+      />
     </>
   );
 }

@@ -2,8 +2,6 @@ import { CheckboxListField } from "~/components/fields/CheckboxListField";
 import { TextField } from "~/components/fields/TextField";
 import { YearField } from "~/components/fields/YearField";
 
-import { FilterSection } from "./FilterSection";
-
 /**
  * Renders filter controls for work-based listings.
  * Provides filtering options for title search, work year range, and work kind/type.
@@ -51,21 +49,19 @@ export function WorkFilters({
         onYearChange={workYear.onChange}
         years={workYear.values}
       />
-      <FilterSection title="Kind">
-        <CheckboxListField
-          defaultValues={kind.defaultValues}
-          label="Kind"
-          onChange={kind.onChange}
-          onClear={kind.onClear}
-          options={kind.values
-            .filter((v) => v !== "All")
-            .map((v) => ({
-              count: kind.counts?.get(v) ?? 0,
-              label: v,
-              value: v,
-            }))}
-        />
-      </FilterSection>
+      <CheckboxListField
+        defaultValues={kind.defaultValues}
+        label="Kind"
+        onChange={kind.onChange}
+        onClear={kind.onClear}
+        options={kind.values
+          .filter((v) => v !== "All")
+          .map((v) => ({
+            count: kind.counts?.get(v) ?? 0,
+            label: v,
+            value: v,
+          }))}
+      />
     </>
   );
 }
