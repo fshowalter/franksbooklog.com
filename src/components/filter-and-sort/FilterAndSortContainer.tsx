@@ -346,7 +346,7 @@ export function FilterAndSortContainer<T extends string>({
                           : "cursor-not-allowed text-muted opacity-50"
                       }
                     `}
-                    disabled={hasPendingFilters ? false : true}
+                    disabled={!hasPendingFilters}
                     onClick={() => {
                       if (hasPendingFilters) {
                         onClearFilters?.();
@@ -371,7 +371,7 @@ export function FilterAndSortContainer<T extends string>({
                           `
                       }
                     `}
-                    disabled={pendingFilteredCount === 0 ? true : false}
+                    disabled={pendingFilteredCount === 0}
                     onClick={() => {
                       const formData = new FormData(formRef.current!);
                       const sortValue = formData.get("sort") as T;
