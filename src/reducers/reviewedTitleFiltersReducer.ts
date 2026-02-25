@@ -86,15 +86,9 @@ export function createInitialReviewedTitleFiltersState<TValue>({
 }: {
   values: TValue[];
 }): ReviewedTitleFiltersState<TValue> {
-  const titleFilterState = createInitialTitleFiltersState({
+  return createInitialTitleFiltersState({
     values,
   });
-
-  return {
-    ...titleFilterState,
-    activeFilterValues: {},
-    pendingFilterValues: {},
-  };
 }
 
 /**
