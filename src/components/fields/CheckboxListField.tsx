@@ -147,93 +147,99 @@ export function CheckboxListField({
 
   return (
     <FilterSection title={label}>
-    <fieldset
-      aria-describedby={hasSelections ? `${fieldsetId}-count` : undefined}
-      className="text-left font-sans"
-      ref={fieldsetRef}
-    >
-      {/* Visually hidden legend for screen readers */}
-      <legend className="sr-only">
-        <LabelText as="span" value={label} />
-      </legend>
+      <fieldset
+        aria-describedby={hasSelections ? `${fieldsetId}-count` : undefined}
+        className="text-left font-sans"
+        ref={fieldsetRef}
+      >
+        {/* Visually hidden legend for screen readers */}
+        <legend className="sr-only">
+          <LabelText as="span" value={label} />
+        </legend>
 
-      <div className="flex flex-col gap-2">
-        {/* Checkbox list */}
-        <div className="flex flex-col">
-          {visibleOptions.map((option) => {
-            const isChecked = selectedValues.includes(option.value);
-            const checkboxId = `${fieldsetId}-${option.value}`;
+        <div className="flex flex-col gap-2">
+          {/* Checkbox list */}
+          <div className="flex flex-col">
+            {visibleOptions.map((option) => {
+              const isChecked = selectedValues.includes(option.value);
+              const checkboxId = `${fieldsetId}-${option.value}`;
 
-            return (
-              <label
-                className={`
+              return (
+                <label
+                  className={`
                   flex cursor-pointer items-center gap-3 rounded-sm pb-2
                   last-of-type:pb-0
                   focus-within:bg-stripe
                   hover:bg-stripe
                 `}
-                htmlFor={checkboxId}
-                key={option.value}
-              >
-                <input
-                  checked={isChecked}
-                  className="size-4 cursor-pointer accent-accent"
-                  id={checkboxId}
-                  onChange={(e) =>
-                    handleCheckboxChange(option.value, e.target.checked)
-                  }
-                  onKeyDown={(e) => handleKeyDown(e, option.value)}
-                  type="checkbox"
-                  value={option.value}
-                />
-                <span className="flex-1 text-base text-default">
-                  {option.label}
-                </span>
-                <span className="text-base text-subtle">({option.count})</span>
-              </label>
-            );
-          })}
-        </div>
+                  htmlFor={checkboxId}
+                  key={option.value}
+                >
+                  <input
+                    checked={isChecked}
+                    className="size-4 cursor-pointer accent-accent"
+                    id={checkboxId}
+                    onChange={(e) =>
+                      handleCheckboxChange(option.value, e.target.checked)
+                    }
+                    onKeyDown={(e) => handleKeyDown(e, option.value)}
+                    type="checkbox"
+                    value={option.value}
+                  />
+                  <span className="flex-1 text-base text-default">
+                    {option.label}
+                  </span>
+                  <span className="text-base text-subtle">
+                    ({option.count})
+                  </span>
+                </label>
+              );
+            })}
+          </div>
 
-        {/* Show more and Clear links */}
-        <div className="flex items-center gap-2">
-          {shouldShowMore && !showAll && hiddenCount > 0 && (
-            <>
+          {/* Show more and Clear links */}
+          <div className="flex items-center gap-2">
+            {shouldShowMore && !showAll && hiddenCount > 0 && (
+              <>
+                <button
+                  aria-expanded={showAll}
+                  className={`mt-2 font-sans text-sm text-accent underline`}
+                  onClick={handleShowMore}
+                  type="button"
+                >
+                  {/* AIDEV-NOTE: Spec compliance - "Show more" text must have no count */}
+                  Show more
+                </button>
+                {hasSelections && (
+                  <span aria-hidden="true" className="mt-2 text-sm text-subtle">
+                    |
+                  </span>
+                )}
+              </>
+            )}
+            {hasSelections && (
               <button
-                aria-expanded={showAll}
+                aria-label={`Clear all ${label} selections`}
                 className={`mt-2 font-sans text-sm text-accent underline`}
-                onClick={handleShowMore}
+                onClick={handleClear}
                 type="button"
               >
-                {/* AIDEV-NOTE: Spec compliance - "Show more" text must have no count */}
-                Show more
+                Clear
               </button>
-              {hasSelections && (
-                <span aria-hidden="true" className="mt-2 text-sm text-subtle">
-                  |
-                </span>
-              )}
-            </>
-          )}
-          {hasSelections && (
-            <button
-              aria-label={`Clear all ${label} selections`}
-              className={`mt-2 font-sans text-sm text-accent underline`}
-              onClick={handleClear}
-              type="button"
-            >
-              Clear
-            </button>
-          )}
-        </div>
+            )}
+          </div>
 
-        {/* Selection count for screen readers — always in DOM so aria-live is registered before first selection */}
-        <div aria-live="polite" className="sr-only" id={`${fieldsetId}-count`}>
-          {hasSelections &&
-            `${selectedValues.length} ${selectedValues.length === 1 ? "option" : "options"} selected`}
+          {/* Selection count for screen readers — always in DOM so aria-live is registered before first selection */}
+          <div
+            aria-live="polite"
+            className="sr-only"
+            id={`${fieldsetId}-count`}
+          >
+            {hasSelections &&
+              `${selectedValues.length} ${selectedValues.length === 1 ? "option" : "options"} selected`}
+          </div>
         </div>
-      </div>
-    </fieldset>
+      </fieldset>
     </FilterSection>
   );
 }
