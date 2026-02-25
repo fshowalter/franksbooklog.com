@@ -1,4 +1,4 @@
-import { render, within } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
@@ -12,6 +12,7 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+import { clickAbandonedFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
 import {
   clickKindFilterOption,
   fillGradeFilter,
@@ -202,6 +203,55 @@ describe("AuthorTitles", () => {
       expect(within(list).getByText("2023 Review")).toBeInTheDocument();
       expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
       expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
+    });
+
+    it("filters by multiple kinds (OR logic)", async ({ expect }) => {
+      const titles = [
+        createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
+        createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
+        createAuthorTitleValue({
+          kind: "Non-Fiction",
+          title: "Non-Fiction Book",
+        }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickKindFilterOption(user, "Collection");
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).getByText("A Novel")).toBeInTheDocument();
+      expect(within(list).getByText("A Collection")).toBeInTheDocument();
+      expect(
+        within(list).queryByText("Non-Fiction Book"),
+      ).not.toBeInTheDocument();
+    });
+
+    it("filters by abandoned status", async ({ expect }) => {
+      const titles = [
+        createAuthorTitleValue({
+          abandoned: true,
+          grade: "Abandoned",
+          gradeValue: 0,
+          title: "Abandoned Book",
+        }),
+        createAuthorTitleValue({ title: "Normal Book" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickAbandonedFilterOption(user);
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).getByText("Abandoned Book")).toBeInTheDocument();
+      expect(within(list).queryByText("Normal Book")).not.toBeInTheDocument();
     });
   });
 
@@ -541,6 +591,55 @@ describe("AuthorTitles", () => {
 
       await clickToggleFilters(user);
       expect(getTitleFilter()).toHaveValue("The Cellar");
+    });
+  });
+
+  describe("applied filters", () => {
+    it("shows kind chip in drawer after applying kind filter", async ({
+      expect,
+    }) => {
+      const titles = [
+        createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
+        createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Novel filter" }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing kind chip immediately restores filtered-out items", async ({
+      expect,
+    }) => {
+      const titles = [
+        createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
+        createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", { name: "Remove Novel filter" }),
+      );
+
+      expect(within(list).getByText("A Collection")).toBeInTheDocument();
     });
   });
 

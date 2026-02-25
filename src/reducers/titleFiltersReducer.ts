@@ -19,8 +19,6 @@ export type TitleFiltersAction =
   | TitleFilterChangedAction
   | WorkYearFilterChangedAction;
 
-export { type RemoveAppliedFilterAction } from "./filtersReducer";
-
 /**
  * Specialized state type for title-based lists with typed filter values
  */

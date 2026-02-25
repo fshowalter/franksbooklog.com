@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { LabelText } from "./LabelText";
 
-export type CheckboxListFieldOption = {
+type CheckboxListFieldOption = {
   count: number;
   label: string;
   value: string;
