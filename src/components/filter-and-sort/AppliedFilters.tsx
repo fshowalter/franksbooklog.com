@@ -29,10 +29,10 @@ export function AppliedFilters({
   filters,
   onClearAll,
   onRemove,
-}: AppliedFiltersProps): React.JSX.Element | undefined {
+}: AppliedFiltersProps): false | React.JSX.Element {
   // Don't render anything if no filters are active
   if (filters.length === 0) {
-    return undefined;
+    return false;
   }
 
   return (

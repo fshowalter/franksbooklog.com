@@ -349,7 +349,7 @@ export function FilterAndSortContainer<T extends string>({
                     disabled={!hasPendingFilters}
                     onClick={() => {
                       if (hasPendingFilters) {
-                        onClearFilters?.();
+                        onClearFilters();
                       }
                     }}
                     type="reset"
