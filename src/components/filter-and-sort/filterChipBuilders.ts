@@ -1,6 +1,6 @@
 import type { FilterChip } from "./AppliedFilters";
 
-import { gradeToLetter } from "~/utils/grades";
+import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
 /**
  * Builds a search chip for a text search field.
@@ -75,7 +75,7 @@ export function buildGradeChip(
 ): FilterChip[] {
   if (!value) return [];
   const [minGrade, maxGrade] = value;
-  if (minGrade === 2 && maxGrade === 16) return [];
+  if (minGrade === GRADE_MIN && maxGrade === GRADE_MAX) return [];
   const minLetter = gradeToLetter(minGrade);
   const maxLetter = gradeToLetter(maxGrade);
   const label =

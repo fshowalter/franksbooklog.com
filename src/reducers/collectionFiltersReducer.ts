@@ -58,7 +58,10 @@ export function collectionFiltersReducer<
       if (action.id === "name") {
         return {
           ...state,
-          pendingFilterValues: { ...state.pendingFilterValues, name: undefined },
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            name: undefined,
+          },
         };
       }
       return filtersReducer<TValue, TState>(state, action);
@@ -98,7 +101,7 @@ export function createNameFilterChangedAction(
 }
 
 /**
- * Handle Genre filter action
+ * Handle name filter action
  */
 function handleNameFilterChanged<
   TValue,
