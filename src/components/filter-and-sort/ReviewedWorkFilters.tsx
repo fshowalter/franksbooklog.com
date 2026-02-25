@@ -55,23 +55,19 @@ export function ReviewedWorkFilters({
   return (
     <>
       <WorkFilters kind={kind} title={title} workYear={workYear} />
-      {reviewYear && (
-        <YearField
-          defaultValues={reviewYear.defaultValues}
-          label="Review Year"
-          onClear={reviewYear.onClear}
-          onYearChange={reviewYear.onChange}
-          years={reviewYear.values}
-        />
-      )}
-      {grade && (
-        <GradeField
-          defaultValues={grade.defaultValues}
-          label="Grade"
-          onClear={grade.onClear}
-          onGradeChange={grade.onChange}
-        />
-      )}
+      <YearField
+        defaultValues={reviewYear.defaultValues}
+        label="Review Year"
+        onClear={reviewYear.onClear}
+        onYearChange={reviewYear.onChange}
+        years={reviewYear.values}
+      />
+      <GradeField
+        defaultValues={grade.defaultValues}
+        label="Grade"
+        onClear={grade.onClear}
+        onGradeChange={grade.onChange}
+      />
       {reviewedStatus && (
         <ReviewedStatusFilter
           counts={reviewedStatus.counts}
