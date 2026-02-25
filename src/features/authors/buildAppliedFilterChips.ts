@@ -1,26 +1,10 @@
 import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import { buildSearchChip } from "~/components/filter-and-sort/filterChipBuilders";
 
 import type { AuthorsFiltersValues } from "./Authors.reducer";
 
-/**
- * Builds an array of FilterChip objects from active filter values for the Authors page.
- *
- * @param filterValues - Active filter values (from state.activeFilterValues)
- * @returns Array of FilterChip objects representing active filters
- */
 export function buildAppliedFilterChips(
   filterValues: AuthorsFiltersValues,
 ): FilterChip[] {
-  const chips: FilterChip[] = [];
-
-  if (filterValues.name?.trim()) {
-    chips.push({
-      category: "Search",
-      displayText: `Search: ${filterValues.name}`,
-      id: "name",
-      label: filterValues.name,
-    });
-  }
-
-  return chips;
+  return [...buildSearchChip(filterValues.name, "name")];
 }
