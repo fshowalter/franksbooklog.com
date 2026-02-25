@@ -2,6 +2,9 @@
 // Used by GradeField, filter chip displays, and API layers across the site.
 // Scale: 2 (F-) to 16 (A+). Abandoned entries use gradeValue=0 (below slider range).
 
+export const GRADE_MIN = 2;
+export const GRADE_MAX = 16;
+
 /**
  * Maps a grade number (2-16) to its letter grade (F- to A+).
  * @param value - Grade as a number (2-16)

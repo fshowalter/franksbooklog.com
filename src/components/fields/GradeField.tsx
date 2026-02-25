@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { FilterSection } from "~/components/filter-and-sort/FilterSection";
-import { gradeToLetter } from "~/utils/grades";
+import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
 import { RangeSliderField } from "./RangeSliderField";
 import { SelectInput } from "./SelectInput";
@@ -60,7 +60,7 @@ const gradeOptions = [
  * @param props - Component props
  * @param props.defaultValues - Default [min, max] grade values
  * @param props.label - Field label text
- * @param props.onClear - Handler for clear action (resets to full range [2, 16])
+ * @param props.onClear - Handler for clear action (resets to full range)
  * @param props.onGradeChange - Handler for grade range changes
  * @returns Grade range selector with dropdowns and slider, wrapped in FilterSection
  */
@@ -117,9 +117,9 @@ export function GradeField({
   // The onClear callback dispatches removeAppliedFilter to immediately update
   // the Applied Filters section (removes the filter from both pending and active)
   const handleClear = (): void => {
-    setMinValue(2);
-    setMaxValue(16);
-    onGradeChange([2, 16]);
+    setMinValue(GRADE_MIN);
+    setMaxValue(GRADE_MAX);
+    onGradeChange([GRADE_MIN, GRADE_MAX]);
     if (onClear) {
       onClear();
     }
@@ -160,8 +160,8 @@ export function GradeField({
           formatValue={gradeToLetter}
           fromValue={minValue}
           label={label}
-          max={16}
-          min={2}
+          max={GRADE_MAX}
+          min={GRADE_MIN}
           onChange={handleSliderChange}
           onClear={handleClear}
           toValue={maxValue}
@@ -172,9 +172,9 @@ export function GradeField({
 }
 
 function defaultMaxValue(selectedValues?: [number, number]): number {
-  return selectedValues ? selectedValues[1] : 16;
+  return selectedValues ? selectedValues[1] : GRADE_MAX;
 }
 
 function defaultMinValue(selectedValues?: [number, number]): number {
-  return selectedValues ? selectedValues[0] : 2;
+  return selectedValues ? selectedValues[0] : GRADE_MIN;
 }
