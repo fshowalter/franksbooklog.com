@@ -36,7 +36,7 @@ export function buildGradeChip(
  * Returns an empty array if values is empty or undefined.
  */
 export function buildMultiSelectChips(
-  values: string[] | undefined,
+  values: readonly string[] | undefined,
   category: string,
   idPrefix: string,
 ): FilterChip[] {
