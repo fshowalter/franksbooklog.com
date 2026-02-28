@@ -11,6 +11,21 @@ export type FilterableTitle = {
 };
 
 /**
+ * Counts items by kind.
+ * @param values - Array of items to count
+ * @returns Map from kind string to item count
+ */
+export function createKindCountMap<TValue extends FilterableTitle>(
+  values: readonly TValue[],
+): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const value of values) {
+    counts.set(value.kind, (counts.get(value.kind) ?? 0) + 1);
+  }
+  return counts;
+}
+
+/**
  * Filters an array of titles based on multiple filter criteria.
  * @param filterValues - Object containing filter values for genres, release year, and title
  * @param sortedValues - Array of titles to filter
@@ -33,13 +48,11 @@ export function filterTitles<TValue extends FilterableTitle>(
 }
 
 /**
- * Create a Genre filter function
+ * Create a Kind filter function (multi-select OR logic)
  */
 function createKindFilter<TValue extends FilterableTitle>(
-  filterValue?: string,
+  filterValue?: readonly string[],
 ) {
-  if (!filterValue) return;
-  return (value: TValue) => {
-    return value.kind === filterValue;
-  };
+  if (!filterValue || filterValue.length === 0) return;
+  return (value: TValue) => filterValue.includes(value.kind);
 }

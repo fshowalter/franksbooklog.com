@@ -3,7 +3,7 @@ import { useReducer } from "react";
 import type { AvatarImageProps } from "~/api/avatars";
 
 import { GroupedAvatarList } from "~/components/avatar-list/AvatarList";
-import { CollectionSortOptions } from "~/components/filter-and-sort/CollectionSortOptions";
+import { COLLECTION_SORT_OPTIONS } from "~/components/filter-and-sort/CollectionSortOptions";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { useGroupedValues } from "~/hooks/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
@@ -15,6 +15,7 @@ import {
   createApplyFiltersAction,
   createClearFiltersAction,
   createInitialState,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createSortAction,
   reducer,
@@ -22,6 +23,7 @@ import {
 } from "./Authors.reducer";
 import { AuthorsFilters } from "./AuthorsFilters";
 import { AuthorsListItem } from "./AuthorsListItem";
+import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthors } from "./filterAuthors";
 import { groupAuthors } from "./groupAuthors";
 import { sortAuthors } from "./sortAuthors";
@@ -93,9 +95,11 @@ export function Authors({
   );
 
   const hasPendingFilters = selectHasPendingFilters(state);
+  const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
     <FilterAndSortContainer
+      activeFilters={activeFilters}
       className={state.sort.startsWith("name-") ? `[--scroll-offset:52px]` : ""}
       filters={
         <AuthorsFilters
@@ -107,21 +111,22 @@ export function Authors({
       onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
         dispatch(createClearFiltersAction());
+        dispatch(createApplyFiltersAction());
       }}
       onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
+      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
       onResetFilters={() => {
         dispatch(createResetFiltersAction());
       }}
       pendingFilteredCount={pendingFilteredCount}
-      sortProps={{
-        currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as AuthorsSort)),
-        sortOptions: <CollectionSortOptions />,
-      }}
-      topNav={
+      sideNav={
         <AlphabetNav groupedValues={groupedValues} sortValue={state.sort} />
       }
+      sortProps={{
+        currentSortValue: state.sort,
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: COLLECTION_SORT_OPTIONS,
+      }}
       totalCount={totalCount}
     >
       <GroupedAvatarList

@@ -1,5 +1,4 @@
-import { SelectField } from "~/components/fields/SelectField";
-import { SelectOptions } from "~/components/fields/SelectOptions";
+import { CheckboxListField } from "~/components/fields/CheckboxListField";
 import { TextField } from "~/components/fields/TextField";
 import { YearField } from "~/components/fields/YearField";
 
@@ -20,8 +19,10 @@ export function WorkFilters({
   workYear,
 }: {
   kind: {
-    defaultValue?: string;
-    onChange: (value: string) => void;
+    counts?: Map<string, number>;
+    defaultValues?: readonly string[];
+    onChange: (values: string[]) => void;
+    onClear?: () => void;
     values: readonly string[];
   };
   title: {
@@ -48,13 +49,19 @@ export function WorkFilters({
         onYearChange={workYear.onChange}
         years={workYear.values}
       />
-      <SelectField
-        defaultValue={kind.defaultValue}
+      <CheckboxListField
+        defaultValues={kind.defaultValues}
         label="Kind"
         onChange={kind.onChange}
-      >
-        <SelectOptions options={kind.values} />
-      </SelectField>
+        onClear={kind.onClear}
+        options={kind.values
+          .filter((v) => v !== "All")
+          .map((v) => ({
+            count: kind.counts?.get(v) ?? 0,
+            label: v,
+            value: v,
+          }))}
+      />
     </>
   );
 }

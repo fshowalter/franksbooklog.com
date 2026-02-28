@@ -8,6 +8,7 @@ export {
   createApplyFiltersAction,
   createClearFiltersAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
@@ -24,6 +25,7 @@ import {
  */
 export type ReviewedTitleFiltersAction =
   | GradeFilterChangedAction
+  | ReviewedStatusFilterChangedAction
   | ReviewYearFilterChangedAction
   | TitleFiltersAction;
 
@@ -43,12 +45,18 @@ export type ReviewedTitleFiltersState<TValue> = Omit<
  */
 export type ReviewedTitleFiltersValues = TitleFiltersValues & {
   gradeValue?: [number, number];
+  reviewedStatus?: readonly string[];
   reviewYear?: [string, string];
 };
 
 type GradeFilterChangedAction = {
   type: "reviewedTitleFilters/gradeFilterChanged";
   values: [number, number];
+};
+
+type ReviewedStatusFilterChangedAction = {
+  type: "reviewedTitleFilters/reviewedStatusFilterChanged";
+  values: readonly string[];
 };
 
 type ReviewYearFilterChangedAction = {
@@ -78,15 +86,20 @@ export function createInitialReviewedTitleFiltersState<TValue>({
 }: {
   values: TValue[];
 }): ReviewedTitleFiltersState<TValue> {
-  const titleFilterState = createInitialTitleFiltersState({
+  return createInitialTitleFiltersState({
     values,
   });
+}
 
-  return {
-    ...titleFilterState,
-    activeFilterValues: {},
-    pendingFilterValues: {},
-  };
+/**
+ * Creates an action for changing the reviewed status filter.
+ * @param values - Array of status values (empty = no filter)
+ * @returns Reviewed status filter changed action
+ */
+export function createReviewedStatusFilterChangedAction(
+  values: readonly string[],
+): ReviewedStatusFilterChangedAction {
+  return { type: "reviewedTitleFilters/reviewedStatusFilterChanged", values };
 }
 
 /**
@@ -111,9 +124,33 @@ export function reviewedTitleFiltersReducer<
   TState extends ReviewedTitleFiltersState<TValue>,
 >(state: TState, action: ReviewedTitleFiltersAction): TState {
   switch (action.type) {
+    case "filters/removeAppliedFilter": {
+      if (action.id.startsWith("reviewedStatus-")) {
+        const statusToRemove = action.id.slice("reviewedStatus-".length);
+        const current = state.pendingFilterValues.reviewedStatus ?? [];
+        const updated = current.filter(
+          (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
+        );
+        const newStatus =
+          updated.length === 0 ? undefined : (updated as readonly string[]);
+        return {
+          ...state,
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            reviewedStatus: newStatus,
+          },
+        };
+      }
+      return titleFiltersReducer<TValue, TState>(state, action);
+    }
+
     // Field-specific shared filters
     case "reviewedTitleFilters/gradeFilterChanged": {
       return handleGradeFilterChanged<TValue, TState>(state, action);
+    }
+
+    case "reviewedTitleFilters/reviewedStatusFilterChanged": {
+      return handleReviewedStatusFilterChanged<TValue, TState>(state, action);
     }
 
     case "reviewedTitleFilters/reviewYearFilterChanged": {
@@ -135,6 +172,19 @@ function handleGradeFilterChanged<
     pendingFilterValues: {
       ...state.pendingFilterValues,
       gradeValue: action.values,
+    },
+  };
+}
+
+function handleReviewedStatusFilterChanged<
+  TValue,
+  TState extends ReviewedTitleFiltersState<TValue>,
+>(state: TState, action: ReviewedStatusFilterChangedAction): TState {
+  return {
+    ...state,
+    pendingFilterValues: {
+      ...state.pendingFilterValues,
+      reviewedStatus: action.values.length === 0 ? undefined : action.values,
     },
   };
 }

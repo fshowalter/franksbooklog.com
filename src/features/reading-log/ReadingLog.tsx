@@ -3,11 +3,14 @@ import { useEffect, useReducer, useRef } from "react";
 import type { CoverImageProps } from "~/api/covers";
 
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
+import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
+import { createKindCountMap } from "~/filterers/filterTitles";
 import { useFilteredValues } from "~/hooks/useFilteredValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { ReadingLogSort } from "./sortReadingLog";
 
+import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { CalendarMonth } from "./CalendarMonth";
 import { filterReadingLog } from "./filterReadingLog";
 import { MonthNavigationHeader } from "./MonthNavigationHeader";
@@ -15,6 +18,7 @@ import {
   createApplyFiltersAction,
   createClearFiltersAction,
   createInitialState,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createSortAction,
   reducer,
@@ -29,6 +33,8 @@ import { useMonthNavigation } from "./useMonthNavigation";
  * Contains all information needed to display readings in the calendar view.
  */
 export type ReadingLogValue = {
+  /** Whether this reading was abandoned (progress === "Abandoned") */
+  abandoned: boolean;
   /** Authors of the work being read */
   authors: { name: string }[];
   /** Cover image props for displaying the work's cover */
@@ -146,13 +152,22 @@ export function ReadingLog({
     state.pendingFilterValues,
   );
 
+  const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
+  const kindCounts = createKindCountMap(state.values);
+
   const hasPendingFilters = selectHasPendingFilters(state);
+  const activeFilters = buildAppliedFilterChips(
+    state.activeFilterValues,
+    distinctWorkYears,
+    distinctReadingYears,
+  );
 
   const [previousMonthDate, currentMonthDate, nextMonthDate] =
     useMonthNavigation(filteredValues, state.sort, state.selectedMonthDate);
 
   return (
     <FilterAndSortContainer
+      activeFilters={activeFilters}
       filters={
         <Filters
           dispatch={dispatch}
@@ -161,6 +176,8 @@ export function ReadingLog({
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
+          kindCounts={kindCounts}
+          reviewedStatusCounts={reviewedStatusCounts}
         />
       }
       hasPendingFilters={hasPendingFilters}
@@ -168,26 +185,21 @@ export function ReadingLog({
       onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
         dispatch(createClearFiltersAction());
+        dispatch(createApplyFiltersAction());
       }}
       onFilterDrawerOpen={() => {
         dispatch(createResetFiltersAction());
       }}
+      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
       onResetFilters={() => dispatch(createResetFiltersAction())}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as ReadingLogSort)),
-        sortOptions: (
-          <>
-            <option value="reading-date-desc">
-              Reading Date (Newest First)
-            </option>
-            <option value="reading-date-asc">
-              Reading Date (Oldest First)
-            </option>
-          </>
-        ),
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: [
+          { label: "Reading Date (Newest First)", value: "reading-date-desc" },
+          { label: "Reading Date (Oldest First)", value: "reading-date-asc" },
+        ],
       }}
       totalCount={filteredValues.length}
     >

@@ -1,4 +1,4 @@
-import { render, within } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import { getGroupedAvatarList } from "~/components/avatar-list/AvatarList.testHelper";
@@ -261,6 +261,71 @@ describe("Authors", () => {
 
       await clickToggleFilters(user);
       expect(getNameFilter()).toHaveValue("Bram Stoker");
+    });
+  });
+
+  describe("applied filters", () => {
+    it("shows search chip in drawer after applying name filter", async ({
+      expect,
+    }) => {
+      const authors = [
+        createAuthorValue({ name: "Bram Stoker" }),
+        createAuthorValue({ name: "Stephen King" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
+
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "Bram Stoker");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", {
+          name: "Remove Search: Bram Stoker filter",
+        }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing name chip immediately hides chip but defers list update until View Results", async ({
+      expect,
+    }) => {
+      const authors = [
+        createAuthorValue({ name: "Bram Stoker" }),
+        createAuthorValue({ name: "Stephen King" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Authors {...baseProps} values={authors} />);
+
+      await clickToggleFilters(user);
+      await fillNameFilter(user, "Bram Stoker");
+      await clickViewResults(user);
+
+      const list = getGroupedAvatarList();
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", {
+          name: "Remove Search: Bram Stoker filter",
+        }),
+      );
+
+      // Chip is gone immediately from the Applied Filters section
+      expect(
+        screen.queryByRole("button", {
+          name: "Remove Search: Bram Stoker filter",
+        }),
+      ).not.toBeInTheDocument();
+      // But the list is not yet updated — "View Results" hasn't been clicked
+      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+
+      // Now the list updates
+      expect(within(list).getByText("Stephen King")).toBeInTheDocument();
     });
   });
 });
