@@ -6,53 +6,16 @@ import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 import { RangeSliderField } from "./RangeSliderField";
 import { SelectInput } from "./SelectInput";
 
-const gradeOptions = [
-  <option key={16} value={16}>
-    A+
-  </option>,
-  <option key={15} value={15}>
-    A
-  </option>,
-  <option key={14} value={14}>
-    A-
-  </option>,
-  <option key={13} value={13}>
-    B+
-  </option>,
-  <option key={12} value={12}>
-    B
-  </option>,
-  <option key={11} value={11}>
-    B-
-  </option>,
-  <option key={10} value={10}>
-    C+
-  </option>,
-  <option key={9} value={9}>
-    C
-  </option>,
-  <option key={8} value={8}>
-    C-
-  </option>,
-  <option key={7} value={7}>
-    D+
-  </option>,
-  <option key={6} value={6}>
-    D
-  </option>,
-  <option key={5} value={5}>
-    D-
-  </option>,
-  <option key={4} value={4}>
-    F+
-  </option>,
-  <option key={3} value={3}>
-    F
-  </option>,
-  <option key={2} value={2}>
-    F-
-  </option>,
-];
+const gradeOptions = Array.from(
+  { length: GRADE_MAX - GRADE_MIN + 1 },
+  (_, i) => GRADE_MIN + i,
+)
+  .reverse()
+  .map((v) => (
+    <option key={v} value={v}>
+      {gradeToLetter(v)}
+    </option>
+  ));
 
 const gradeOptionsReversed = [...gradeOptions].reverse();
 
