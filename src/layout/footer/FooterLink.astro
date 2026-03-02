@@ -1,0 +1,14 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+export type Props = HTMLAttributes<"a">;
+---
+
+<a
+  class={`
+    underline transition-colors
+    hover:text-accent
+  `}
+>
+  <slot />
+</a>

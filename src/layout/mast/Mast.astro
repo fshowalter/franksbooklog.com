@@ -1,0 +1,56 @@
+---
+import Logo from "~/layout/Logo.astro";
+import PagefindSearch from "~/layout/pagefind-search/PagefindSearch.astro";
+
+import { siteNavigation } from "../siteNavigation";
+import HamburgerMenu from "./HamburgerMenu.astro";
+import NavListItem from "./NavListItem.astro";
+
+export type Props = {
+  addGradient: boolean;
+  hasBackdrop: boolean;
+  hideLogo: boolean;
+};
+
+const { addGradient, hasBackdrop, hideLogo } = Astro.props;
+---
+
+<header
+  class={`
+    group z-30 flex w-full items-center justify-between px-container py-4
+    tablet:py-6
+    laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16
+    laptop:py-8 laptop:text-left
+    ${
+      hasBackdrop
+        ? `absolute [--mast-color:#fff]`
+        : `static [--mast-color:var(--color-default)]`
+    }
+    text-(--mast-color)
+  `}
+  style={{
+    backgroundImage: addGradient
+      ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
+      : "",
+  }}
+>
+  {hideLogo ? <div /> : <Logo classNames="" />}
+  <div class="flex items-center">
+    <nav
+      class={`
+        hidden w-full
+        laptop:block laptop:w-auto
+      `}
+    >
+      <ul class={`flex flex-wrap justify-start gap-x-6 text-xl`}>
+        {
+          siteNavigation.map((item) => {
+            return <NavListItem hasBackdrop={hasBackdrop} value={item} />;
+          })
+        }
+      </ul>
+    </nav>
+    <PagefindSearch />
+    <HamburgerMenu hasBackdrop={hasBackdrop} />
+  </div>
+</header>
