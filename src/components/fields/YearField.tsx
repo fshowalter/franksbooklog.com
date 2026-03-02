@@ -84,9 +84,10 @@ export function YearField({
     const fullMax = years.at(-1)!;
     setMinYear(fullMin);
     setMaxYear(fullMax);
-    onYearChange([fullMin, fullMax]);
     if (onClear) {
       onClear();
+    } else {
+      onYearChange([fullMin, fullMax]);
     }
   };
 
