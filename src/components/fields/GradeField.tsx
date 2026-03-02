@@ -115,15 +115,16 @@ export function GradeField({
     onGradeChange([from, to]);
   };
 
-  // AIDEV-NOTE: Clear resets to full range (F- to A+) AND calls onClear callback
-  // The onClear callback dispatches removeAppliedFilter to immediately update
-  // the Applied Filters section (removes the filter from both pending and active)
+  // AIDEV-NOTE: When onClear is provided the parent owns the full reset — calling
+  // onGradeChange([min, max]) here too would produce a duplicate dispatch (same
+  // pattern as RangeSliderField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
     setMinValue(GRADE_MIN);
     setMaxValue(GRADE_MAX);
-    onGradeChange([GRADE_MIN, GRADE_MAX]);
     if (onClear) {
       onClear();
+    } else {
+      onGradeChange([GRADE_MIN, GRADE_MAX]);
     }
   };
 

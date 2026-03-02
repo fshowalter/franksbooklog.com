@@ -92,11 +92,15 @@ export function CheckboxListField({
     onChange(newValues);
   };
 
+  // AIDEV-NOTE: When onClear is provided the parent owns the full reset — calling
+  // onChange([]) here too would produce a duplicate dispatch (same pattern as
+  // RangeSliderField and GradeField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
     setSelectedValues([]);
-    onChange([]);
     if (onClear) {
       onClear();
+    } else {
+      onChange([]);
     }
   };
 

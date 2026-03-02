@@ -115,7 +115,7 @@ export function RangeSliderField({
 
     if (isDraggingFrom || isDraggingTo) {
       document.addEventListener("mouseup", handleMouseUp);
-      document.addEventListener("touchend", handleMouseUp);
+      document.addEventListener("touchend", handleMouseUp, { passive: true });
 
       return (): void => {
         document.removeEventListener("mouseup", handleMouseUp);
