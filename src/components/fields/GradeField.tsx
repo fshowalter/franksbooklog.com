@@ -54,6 +54,8 @@ const gradeOptions = [
   </option>,
 ];
 
+const gradeOptionsReversed = [...gradeOptions].reverse();
+
 /**
  * Grade range selector with from/to letter grade dropdowns and range slider.
  * AIDEV-NOTE: Spec requires BOTH dropdowns and slider - dual control pattern
@@ -138,7 +140,7 @@ export function GradeField({
                 defaultValue={minValue}
                 onChange={(e) => handleMinChange(e.target.value)}
               >
-                {[...gradeOptions].reverse()}
+                {[...gradeOptionsReversed]}
               </SelectInput>
             </label>
             <label className="flex flex-1 items-center">

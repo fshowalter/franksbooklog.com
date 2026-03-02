@@ -202,6 +202,7 @@ export function FilterAndSortContainer<T extends string>({
             `}
             onClick={() => {
               handleCloseDrawer();
+              toggleButtonRef.current?.focus();
             }}
           />
 
