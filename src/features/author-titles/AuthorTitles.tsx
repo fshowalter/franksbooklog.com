@@ -4,7 +4,9 @@ import type { CoverImageProps } from "~/api/covers";
 
 import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
-import { ReviewedWorkSortOptions } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
+import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
+import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
+import { createKindCountMap } from "~/filterers/filterTitles";
 import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -14,6 +16,7 @@ import {
   createApplyFiltersAction,
   createClearFiltersAction,
   createInitialState,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createShowMoreAction,
   createSortAction,
@@ -22,6 +25,7 @@ import {
 } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
+import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
 import { groupAuthorTitles } from "./groupAuthorTitles";
 import { sortAuthorTitles } from "./sortAuthorTitles";
@@ -48,6 +52,8 @@ export type AuthorTitlesProps = {
  * Contains all information needed to display the work in lists and apply filters/sorting.
  */
 export type AuthorTitlesValue = {
+  /** Whether the work was abandoned (grade === "Abandoned") */
+  abandoned: boolean;
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
   /** Formatted display date for the review */
@@ -64,6 +70,8 @@ export type AuthorTitlesValue = {
   }[];
   /** Date the review was written */
   reviewDate: Date;
+  /** Always true — every item in the author-titles list has been reviewed */
+  reviewed: boolean;
   /** Sequence number for review ordering */
   reviewSequence: string;
   /** Year the review was written */
@@ -123,10 +131,19 @@ export function AuthorTitles({
     state.pendingFilterValues,
   );
 
+  const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
+  const kindCounts = createKindCountMap(state.values);
+
   const hasPendingFilters = selectHasPendingFilters(state);
+  const activeFilters = buildAppliedFilterChips(
+    state.activeFilterValues,
+    distinctWorkYears,
+    distinctReviewYears,
+  );
 
   return (
     <FilterAndSortContainer
+      activeFilters={activeFilters}
       filters={
         <AuthorTitlesFilters
           dispatch={dispatch}
@@ -134,23 +151,26 @@ export function AuthorTitles({
           distinctReviewYears={distinctReviewYears}
           distinctWorkYears={distinctWorkYears}
           filterValues={state.pendingFilterValues}
+          kindCounts={kindCounts}
+          reviewedStatusCounts={reviewedStatusCounts}
         />
       }
       hasPendingFilters={hasPendingFilters}
       onApplyFilters={() => dispatch(createApplyFiltersAction())}
       onClearFilters={() => {
         dispatch(createClearFiltersAction());
+        dispatch(createApplyFiltersAction());
       }}
       onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
+      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
       onResetFilters={() => {
         dispatch(createResetFiltersAction());
       }}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (e) =>
-          dispatch(createSortAction(e.target.value as AuthorTitlesSort)),
-        sortOptions: <ReviewedWorkSortOptions />,
+        onSortChange: (value) => dispatch(createSortAction(value)),
+        sortOptions: REVIEWED_WORK_SORT_OPTIONS,
       }}
       totalCount={totalCount}
     >

@@ -10,6 +10,8 @@ import type {
   WorkData,
 } from "~/content.config";
 
+import { gradeToValue } from "~/utils/grades";
+
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
@@ -32,6 +34,9 @@ export type IncludedWork = {
 // NOT on Review — they are looked up by getReviewProps from the moreForReviewedWorks and
 // readings collections. includedWorks is plain string[] (slugs); enriched in getReviewProps.
 export type Review = {
+  // AIDEV-NOTE: abandoned = grade === "Abandoned". Used by ReviewedStatusFilter
+  // to allow filtering to Abandoned-only entries without touching gradeValue.
+  abandoned: boolean;
   authors: {
     name: string;
     notes: string | undefined;
@@ -140,6 +145,7 @@ export function allReviews(
     });
 
     result.push({
+      abandoned: reviewData.grade === "Abandoned",
       authors: enrichedAuthors,
       body: reviewData.body,
       date: reviewData.date,
@@ -273,25 +279,4 @@ function getReviewSequence(
   if (readings.length === 0) return "";
   return readings.toSorted((a, b) => b.date.getTime() - a.date.getTime())[0]
     .slug;
-}
-
-// AIDEV-NOTE: gradeToValue converts a letter grade to a numeric sort value.
-// "Abandoned" is 0; letter grades range from F=1 to A=12.
-function gradeToValue(grade: string): number {
-  const gradeValues: Record<string, number> = {
-    A: 12,
-    "A-": 11,
-    Abandoned: 0,
-    B: 9,
-    "B+": 10,
-    "B-": 8,
-    C: 6,
-    "C+": 7,
-    "C-": 5,
-    D: 3,
-    "D+": 4,
-    "D-": 2,
-    F: 1,
-  };
-  return gradeValues[grade] ?? 0;
 }

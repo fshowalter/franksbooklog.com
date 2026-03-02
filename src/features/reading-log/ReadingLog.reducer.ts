@@ -19,6 +19,7 @@ export {
   createApplyFiltersAction,
   createClearFiltersAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
@@ -26,7 +27,7 @@ export {
 } from "~/reducers/titleFiltersReducer";
 
 /**
- * Union type of all actions for viewings state management.
+ * Union type of all actions for reading log state management.
  */
 export type ReadingLogAction =
   | EditionFilterChangedAction
@@ -41,17 +42,17 @@ import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";
 
 /**
- * Filter values for viewings.
+ * Filter values for readings.
  */
 export type ReadingLogFiltersValues = TitleFiltersValues & {
-  edition?: string;
+  edition?: readonly string[];
   readingYear?: [string, string];
-  reviewedStatus?: string;
+  reviewedStatus?: readonly string[];
 };
 
 type EditionFilterChangedAction = {
   type: "readingLog/editionChanged";
-  value: string;
+  values: readonly string[];
 };
 
 type NextMonthClickedAction = {
@@ -65,7 +66,7 @@ type PreviousMonthClickedAction = {
 };
 
 /**
- * Internal state type for Reviews page reducer
+ * Internal state type for ReadingLog page reducer
  */
 type ReadingLogState = Omit<
   TitleFiltersState<ReadingLogValue>,
@@ -74,7 +75,7 @@ type ReadingLogState = Omit<
   SortState<ReadingLogSort> & {
     activeFilterValues: ReadingLogFiltersValues;
     pendingFilterValues: ReadingLogFiltersValues;
-    /** Value of the first viewing date in the selected month via a next/prev month action */
+    /** Value of the first reading date in the selected month via a next/prev month action */
     selectedMonthDate?: string;
   };
 
@@ -85,26 +86,26 @@ type ReadingYearFilterChangedAction = {
 
 type ReviewedStatusFilterChangedAction = {
   type: "readingLog/reviewedStatusChanged";
-  value: string;
+  values: readonly string[];
 };
 
 /**
- * Creates an action for changing the medium filter.
- * @param value - The medium value to filter by
- * @returns Medium filter changed action
+ * Creates an action for changing the edition filter.
+ * @param values - Array of edition values (empty = no filter)
+ * @returns Edition filter changed action
  */
 export function createEditionFilterChangedAction(
-  value: string,
+  values: readonly string[],
 ): EditionFilterChangedAction {
-  return { type: "readingLog/editionChanged", value };
+  return { type: "readingLog/editionChanged", values };
 }
 
 /**
- * Creates the initial state for viewings.
+ * Creates the initial state for readings.
  * @param options - Configuration options
  * @param options.initialSort - Initial sort configuration
- * @param options.values - Viewing values
- * @returns Initial state for viewings reducer
+ * @param options.values - Reading values
+ * @returns Initial state for readings reducer
  */
 export function createInitialState({
   initialSort,
@@ -147,9 +148,9 @@ export function createPreviousMonthClickedAction(
 }
 
 /**
- * Creates an action for changing the viewing year filter.
+ * Creates an action for changing the reading year filter.
  * @param values - The year range values
- * @returns Viewing year filter changed action
+ * @returns Reading year filter changed action
  */
 export function createReadingYearFilterChangedAction(
   values: [string, string],
@@ -159,17 +160,17 @@ export function createReadingYearFilterChangedAction(
 
 /**
  * Creates an action for changing the reviewed status filter.
- * @param value - The reviewed status value
+ * @param values - Array of status values (empty = no filter)
  * @returns Reviewed status filter changed action
  */
 export function createReviewedStatusFilterChangedAction(
-  value: string,
+  values: readonly string[],
 ): ReviewedStatusFilterChangedAction {
-  return { type: "readingLog/reviewedStatusChanged", value };
+  return { type: "readingLog/reviewedStatusChanged", values };
 }
 
 /**
- * Reducer function for viewings state management.
+ * Reducer function for reading log state management.
  * @param state - Current state
  * @param action - Action to process
  * @returns Updated state
@@ -183,6 +184,45 @@ export function reducer(state: ReadingLogState, action: ReadingLogAction) {
         ...newState,
         selectedMonthDate: undefined,
       };
+    }
+    case "filters/removeAppliedFilter": {
+      if (action.id.startsWith("edition-")) {
+        const editionToRemove = action.id.slice("edition-".length);
+        const pendingUpdated = (state.pendingFilterValues.edition ?? []).filter(
+          (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
+        );
+        const newPendingEdition =
+          pendingUpdated.length === 0
+            ? undefined
+            : (pendingUpdated as readonly string[]);
+        return {
+          ...state,
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            edition: newPendingEdition,
+          },
+        };
+      }
+      if (action.id.startsWith("reviewedStatus-")) {
+        const statusToRemove = action.id.slice("reviewedStatus-".length);
+        const pendingUpdated = (
+          state.pendingFilterValues.reviewedStatus ?? []
+        ).filter(
+          (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
+        );
+        const newPendingStatus =
+          pendingUpdated.length === 0
+            ? undefined
+            : (pendingUpdated as readonly string[]);
+        return {
+          ...state,
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            reviewedStatus: newPendingStatus,
+          },
+        };
+      }
+      return titleFiltersReducer(state, action);
     }
     case "readingLog/editionChanged": {
       return handleEditionFilterChanged(state, action);
@@ -221,7 +261,7 @@ function handleEditionFilterChanged(
     ...state,
     pendingFilterValues: {
       ...state.pendingFilterValues,
-      edition: action.value === "All" ? undefined : action.value,
+      edition: action.values.length === 0 ? undefined : action.values,
     },
   };
 }
@@ -267,12 +307,12 @@ function handleReviewedStatusFilterChanged(
     ...state,
     pendingFilterValues: {
       ...state.pendingFilterValues,
-      reviewedStatus: action.value === "All" ? undefined : action.value,
+      reviewedStatus: action.values.length === 0 ? undefined : action.values,
     },
   };
 }
 
 /**
- * Action creator for viewings sort actions.
+ * Action creator for reading log sort actions.
  */
 export const createSortAction = createSortActionCreator<ReadingLogSort>();

@@ -1,34 +1,56 @@
-import { SelectField } from "~/components/fields/SelectField";
+import { CheckboxListField } from "~/components/fields/CheckboxListField";
 
 /**
- * Filter control for reviewed/unreviewed status.
+ * Filter control for reviewed/not-reviewed/abandoned status.
  * @param props - Component props
- * @param props.defaultValue - Initial selected value
+ * @param props.counts - Map of status to item count for display next to each option
+ * @param props.defaultValues - Currently selected status values
+ * @param props.excludeNotReviewed - When true, omits "Not Reviewed" option (for reviews/author-titles)
  * @param props.onChange - Handler for filter changes
- * @returns Reviewed status filter select field
+ * @param props.onClear - Handler for clearing the filter
+ * @returns Reviewed status filter with checkboxes
  */
 export function ReviewedStatusFilter({
-  defaultValue,
+  counts,
+  defaultValues,
+  excludeNotReviewed = false,
   onChange,
+  onClear,
 }: {
-  defaultValue: string | undefined;
-  onChange: (value: string) => void;
+  counts?: Map<string, number>;
+  defaultValues?: readonly string[];
+  excludeNotReviewed?: boolean;
+  onChange: (values: string[]) => void;
+  onClear?: () => void;
 }): React.JSX.Element {
+  const allOptions = [
+    {
+      count: counts?.get("Reviewed") ?? 0,
+      label: "Reviewed",
+      value: "Reviewed",
+    },
+    {
+      count: counts?.get("Not Reviewed") ?? 0,
+      label: "Not Reviewed",
+      value: "Not Reviewed",
+    },
+    {
+      count: counts?.get("Abandoned") ?? 0,
+      label: "Abandoned",
+      value: "Abandoned",
+    },
+  ];
+  const statusOptions = excludeNotReviewed
+    ? allOptions.filter((o) => o.value !== "Not Reviewed")
+    : allOptions;
+
   return (
-    <SelectField
-      defaultValue={defaultValue}
-      label="Reviewed Status"
+    <CheckboxListField
+      defaultValues={defaultValues}
+      label="Status"
       onChange={onChange}
-    >
-      <option key={0} value={"All"}>
-        All
-      </option>
-      <option key={1} value={"Reviewed"}>
-        Reviewed
-      </option>
-      <option key={2} value={"Not Reviewed"}>
-        Not Reviewed
-      </option>
-    </SelectField>
+      onClear={onClear}
+      options={statusOptions}
+    />
   );
 }

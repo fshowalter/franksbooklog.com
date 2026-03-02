@@ -5,6 +5,7 @@ import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 import {
   createGradeFilterChangedAction,
   createKindFilterChangedAction,
+  createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
@@ -29,28 +30,49 @@ export function ReviewsFilters({
   distinctReviewYears,
   distinctWorkYears,
   filterValues,
+  kindCounts,
+  reviewedStatusCounts,
 }: {
   dispatch: React.Dispatch<ReviewsAction>;
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
   distinctWorkYears: readonly string[];
   filterValues: ReviewsFiltersValues;
+  kindCounts?: Map<string, number>;
+  reviewedStatusCounts?: Map<string, number>;
 }): React.JSX.Element {
   return (
     <ReviewedWorkFilters
       grade={{
         defaultValues: filterValues.gradeValue,
         onChange: (values) => dispatch(createGradeFilterChangedAction(values)),
+        onClear: () => dispatch(createGradeFilterChangedAction([2, 16])),
       }}
       kind={{
-        defaultValue: filterValues.kind,
-        onChange: (value) => dispatch(createKindFilterChangedAction(value)),
+        counts: kindCounts,
+        defaultValues: filterValues.kind,
+        onChange: (values) => dispatch(createKindFilterChangedAction(values)),
+        onClear: () => dispatch(createKindFilterChangedAction([])),
         values: distinctKinds,
+      }}
+      reviewedStatus={{
+        counts: reviewedStatusCounts,
+        defaultValues: filterValues.reviewedStatus,
+        onChange: (values) =>
+          dispatch(createReviewedStatusFilterChangedAction(values)),
+        onClear: () => dispatch(createReviewedStatusFilterChangedAction([])),
       }}
       reviewYear={{
         defaultValues: filterValues.reviewYear,
         onChange: (values) =>
           dispatch(createReviewYearFilterChangedAction(values)),
+        onClear: () =>
+          dispatch(
+            createReviewYearFilterChangedAction([
+              distinctReviewYears[0] ?? "",
+              distinctReviewYears.at(-1) ?? "",
+            ]),
+          ),
         values: distinctReviewYears,
       }}
       title={{

@@ -25,12 +25,15 @@ export {
   createClearFiltersAction,
   createGradeFilterChangedAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
   createWorkYearFilterChangedAction,
   selectHasPendingFilters,
 } from "~/reducers/reviewedTitleFiltersReducer";
+
+export { createReviewedStatusFilterChangedAction } from "~/reducers/reviewedTitleFiltersReducer";
 
 export { createShowMoreAction } from "~/reducers/showMoreReducer";
 

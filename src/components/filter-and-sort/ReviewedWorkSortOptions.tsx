@@ -1,21 +1,15 @@
+import type { SortOption } from "./FilterAndSortContainer";
+
 /**
- * Renders sort options for reviewed works.
- * Provides a complete set of sorting options including title, grade,
- * work year, and review date in both ascending and descending order.
- *
- * @returns A JSX fragment containing option elements for reviewed work sorting
+ * Sort options for reviewed work lists (title, grade, work year, review date).
  */
-export function ReviewedWorkSortOptions(): React.JSX.Element {
-  return (
-    <>
-      <option value="title-asc">Title (A &rarr; Z)</option>
-      <option value="title-desc">Title (Z &rarr; A)</option>
-      <option value="grade-desc">Grade (Best First)</option>
-      <option value="grade-asc">Grade (Worst First)</option>
-      <option value="work-year-desc">Work Year (Newest First)</option>
-      <option value="work-year-asc">Work Year (Oldest First)</option>
-      <option value="review-date-desc">Review Date (Newest First)</option>
-      <option value="review-date-asc">Review Date (Oldest First)</option>
-    </>
-  );
-}
+export const REVIEWED_WORK_SORT_OPTIONS: readonly SortOption[] = [
+  { label: "Title (A \u2192 Z)", value: "title-asc" },
+  { label: "Title (Z \u2192 A)", value: "title-desc" },
+  { label: "Grade (Best First)", value: "grade-desc" },
+  { label: "Grade (Worst First)", value: "grade-asc" },
+  { label: "Work Year (Newest First)", value: "work-year-desc" },
+  { label: "Work Year (Oldest First)", value: "work-year-asc" },
+  { label: "Review Date (Newest First)", value: "review-date-desc" },
+  { label: "Review Date (Oldest First)", value: "review-date-asc" },
+] as const;

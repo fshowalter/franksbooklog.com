@@ -3,6 +3,7 @@ import type { ComponentProps } from "react";
 import { GradeField } from "~/components/fields/GradeField";
 import { YearField } from "~/components/fields/YearField";
 
+import { ReviewedStatusFilter } from "./ReviewedStatusFilter";
 import { WorkFilters } from "./WorkFilters";
 
 /**
@@ -14,11 +15,20 @@ type Props = ComponentProps<typeof WorkFilters> & {
   grade: {
     defaultValues?: [number, number];
     onChange: (values: [number, number]) => void;
+    onClear?: () => void;
+  };
+  /** Reviewed status filter configuration */
+  reviewedStatus?: {
+    counts?: Map<string, number>;
+    defaultValues?: readonly string[];
+    onChange: (values: string[]) => void;
+    onClear?: () => void;
   };
   /** Review year range filter configuration */
   reviewYear: {
     defaultValues?: [string, string];
     onChange: (values: [string, string]) => void;
+    onClear?: () => void;
     values: readonly string[];
   };
 };
@@ -26,17 +36,18 @@ type Props = ComponentProps<typeof WorkFilters> & {
 /**
  * Renders filter controls for reviewed work listings.
  * Extends WorkFilters with additional review-specific filters including
- * grade range and review year range. Composes the base work filters
- * with review-specific filter controls.
+ * grade range, review year range, and reviewed/abandoned status.
  *
  * @param props - The component props extending WorkFilters props
  * @param props.grade - Grade range filter configuration
+ * @param props.reviewedStatus - Reviewed status filter configuration
  * @param props.reviewYear - Review year range filter configuration
  * @returns A JSX fragment containing all reviewed work filter controls
  */
 export function ReviewedWorkFilters({
   grade,
   kind,
+  reviewedStatus,
   reviewYear,
   title,
   workYear,
@@ -44,19 +55,26 @@ export function ReviewedWorkFilters({
   return (
     <>
       <WorkFilters kind={kind} title={title} workYear={workYear} />
-      {reviewYear && (
-        <YearField
-          defaultValues={reviewYear.defaultValues}
-          label="Review Year"
-          onYearChange={reviewYear.onChange}
-          years={reviewYear.values}
-        />
-      )}
-      {grade && (
-        <GradeField
-          defaultValues={grade.defaultValues}
-          label="Grade"
-          onGradeChange={grade.onChange}
+      <YearField
+        defaultValues={reviewYear.defaultValues}
+        label="Review Year"
+        onClear={reviewYear.onClear}
+        onYearChange={reviewYear.onChange}
+        years={reviewYear.values}
+      />
+      <GradeField
+        defaultValues={grade.defaultValues}
+        label="Grade"
+        onClear={grade.onClear}
+        onGradeChange={grade.onChange}
+      />
+      {reviewedStatus && (
+        <ReviewedStatusFilter
+          counts={reviewedStatus.counts}
+          defaultValues={reviewedStatus.defaultValues}
+          excludeNotReviewed
+          onChange={reviewedStatus.onChange}
+          onClear={reviewedStatus.onClear}
         />
       )}
     </>

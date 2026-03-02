@@ -1,4 +1,4 @@
-import { render, within } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
@@ -12,6 +12,7 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+import { clickAbandonedFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
 import {
   clickKindFilterOption,
   fillGradeFilter,
@@ -36,6 +37,7 @@ function createReviewValue(
   testIdCounter += 1;
   const title = overrides.title || `Test Review ${testIdCounter}`;
   return {
+    abandoned: false,
     authors: overrides.authors || [
       {
         name: `Test Author ${testIdCounter}`,
@@ -52,6 +54,7 @@ function createReviewValue(
     grade: "B+",
     gradeValue: 10,
     kind: "Novel",
+    reviewed: true,
     reviewSequence: testIdCounter.toLocaleString("en-US", {
       minimumIntegerDigits: 3,
     }),
@@ -132,9 +135,9 @@ describe("Reviews", () => {
 
     it("filters by grade range", async ({ expect }) => {
       const reviews = [
-        createReviewValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
-        createReviewValue({ grade: "B", gradeValue: 9, title: "Good Book" }),
-        createReviewValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
+        createReviewValue({ grade: "F", gradeValue: 3, title: "Bad Book" }),
+        createReviewValue({ grade: "B", gradeValue: 12, title: "Good Book" }),
+        createReviewValue({ grade: "A+", gradeValue: 16, title: "Great Book" }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -188,6 +191,52 @@ describe("Reviews", () => {
       expect(within(list).getByText("2023 Review")).toBeInTheDocument();
       expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
       expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
+    });
+
+    it("filters by multiple kinds (OR logic)", async ({ expect }) => {
+      const reviews = [
+        createReviewValue({ kind: "Novel", title: "A Novel" }),
+        createReviewValue({ kind: "Collection", title: "A Collection" }),
+        createReviewValue({ kind: "Non-Fiction", title: "Non-Fiction Book" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Reviews {...baseProps} values={reviews} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickKindFilterOption(user, "Collection");
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).getByText("A Novel")).toBeInTheDocument();
+      expect(within(list).getByText("A Collection")).toBeInTheDocument();
+      expect(
+        within(list).queryByText("Non-Fiction Book"),
+      ).not.toBeInTheDocument();
+    });
+
+    it("filters by abandoned status", async ({ expect }) => {
+      const reviews = [
+        createReviewValue({
+          abandoned: true,
+          grade: "Abandoned",
+          gradeValue: 0,
+          title: "Abandoned Book",
+        }),
+        createReviewValue({ title: "Normal Book" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Reviews {...baseProps} values={reviews} />);
+
+      await clickToggleFilters(user);
+      await clickAbandonedFilterOption(user);
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).getByText("Abandoned Book")).toBeInTheDocument();
+      expect(within(list).queryByText("Normal Book")).not.toBeInTheDocument();
     });
   });
 
@@ -574,7 +623,9 @@ describe("Reviews", () => {
       await clickClearFilters(user);
 
       expect(getTitleFilter()).toHaveValue("");
-      expect(getKindFilter()).toHaveValue("All");
+      expect(
+        within(getKindFilter()).queryAllByRole("checkbox", { checked: true }),
+      ).toHaveLength(0);
 
       await clickViewResults(user);
 
@@ -611,6 +662,86 @@ describe("Reviews", () => {
 
       await clickToggleFilters(user);
       expect(getTitleFilter()).toHaveValue("Dracula");
+    });
+  });
+
+  describe("applied filters", () => {
+    it("shows kind chip in drawer after applying kind filter", async ({
+      expect,
+    }) => {
+      const reviews = [
+        createReviewValue({ kind: "Novel", title: "A Novel" }),
+        createReviewValue({ kind: "Collection", title: "A Collection" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Reviews {...baseProps} values={reviews} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Novel filter" }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing kind chip immediately hides chip but defers list update until View Results", async ({
+      expect,
+    }) => {
+      const reviews = [
+        createReviewValue({ kind: "Novel", title: "A Novel" }),
+        createReviewValue({ kind: "Collection", title: "A Collection" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Reviews {...baseProps} values={reviews} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", { name: "Remove Novel filter" }),
+      );
+
+      // Chip is gone immediately from the Applied Filters section
+      expect(
+        screen.queryByRole("button", { name: "Remove Novel filter" }),
+      ).not.toBeInTheDocument();
+      // But the list is not yet updated — "View Results" hasn't been clicked
+      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+
+      // Now the list updates
+      expect(within(list).getByText("A Collection")).toBeInTheDocument();
+    });
+
+    it("shows search chip in drawer after applying title filter", async ({
+      expect,
+    }) => {
+      const reviews = [
+        createReviewValue({ title: "Dracula" }),
+        createReviewValue({ title: "The Shining" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<Reviews {...baseProps} values={reviews} />);
+
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Dracula");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Search: Dracula filter" }),
+      ).toBeInTheDocument();
     });
   });
 });

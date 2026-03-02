@@ -1,4 +1,4 @@
-import { render, within } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
@@ -12,6 +12,7 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+import { clickAbandonedFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
 import {
   clickKindFilterOption,
   fillGradeFilter,
@@ -36,6 +37,7 @@ function createAuthorTitleValue(
   testIdCounter += 1;
   const title = overrides.title || `Test Title ${testIdCounter}`;
   return {
+    abandoned: false,
     coverImageProps: {
       height: 400,
       src: "/cover.jpg",
@@ -48,6 +50,7 @@ function createAuthorTitleValue(
     kind: "Novel",
     otherAuthors: [],
     reviewDate: new Date("2024-01-01"),
+    reviewed: true,
     reviewSequence: testIdCounter.toLocaleString("en-US", {
       minimumIntegerDigits: 3,
     }),
@@ -135,17 +138,17 @@ describe("AuthorTitles", () => {
       const titles = [
         createAuthorTitleValue({
           grade: "F",
-          gradeValue: 1,
+          gradeValue: 3,
           title: "Bad Book",
         }),
         createAuthorTitleValue({
           grade: "B",
-          gradeValue: 9,
+          gradeValue: 12,
           title: "Good Book",
         }),
         createAuthorTitleValue({
           grade: "A+",
-          gradeValue: 13,
+          gradeValue: 16,
           title: "Great Book",
         }),
       ];
@@ -201,6 +204,55 @@ describe("AuthorTitles", () => {
       expect(within(list).getByText("2023 Review")).toBeInTheDocument();
       expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
       expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
+    });
+
+    it("filters by multiple kinds (OR logic)", async ({ expect }) => {
+      const titles = [
+        createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
+        createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
+        createAuthorTitleValue({
+          kind: "Non-Fiction",
+          title: "Non-Fiction Book",
+        }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickKindFilterOption(user, "Collection");
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).getByText("A Novel")).toBeInTheDocument();
+      expect(within(list).getByText("A Collection")).toBeInTheDocument();
+      expect(
+        within(list).queryByText("Non-Fiction Book"),
+      ).not.toBeInTheDocument();
+    });
+
+    it("filters by abandoned status", async ({ expect }) => {
+      const titles = [
+        createAuthorTitleValue({
+          abandoned: true,
+          grade: "Abandoned",
+          gradeValue: 0,
+          title: "Abandoned Book",
+        }),
+        createAuthorTitleValue({ title: "Normal Book" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickAbandonedFilterOption(user);
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).getByText("Abandoned Book")).toBeInTheDocument();
+      expect(within(list).queryByText("Normal Book")).not.toBeInTheDocument();
     });
   });
 
@@ -501,7 +553,9 @@ describe("AuthorTitles", () => {
       await clickClearFilters(user);
 
       expect(getTitleFilter()).toHaveValue("");
-      expect(getKindFilter()).toHaveValue("All");
+      expect(
+        within(getKindFilter()).queryAllByRole("checkbox", { checked: true }),
+      ).toHaveLength(0);
 
       await clickViewResults(user);
 
@@ -538,6 +592,65 @@ describe("AuthorTitles", () => {
 
       await clickToggleFilters(user);
       expect(getTitleFilter()).toHaveValue("The Cellar");
+    });
+  });
+
+  describe("applied filters", () => {
+    it("shows kind chip in drawer after applying kind filter", async ({
+      expect,
+    }) => {
+      const titles = [
+        createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
+        createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Novel filter" }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing kind chip immediately hides chip but defers list update until View Results", async ({
+      expect,
+    }) => {
+      const titles = [
+        createAuthorTitleValue({ kind: "Novel", title: "A Novel" }),
+        createAuthorTitleValue({ kind: "Collection", title: "A Collection" }),
+      ];
+
+      const user = getUserWithFakeTimers();
+      render(<AuthorTitles {...baseProps} values={titles} />);
+
+      await clickToggleFilters(user);
+      await clickKindFilterOption(user, "Novel");
+      await clickViewResults(user);
+
+      const list = getGroupedCoverList();
+      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", { name: "Remove Novel filter" }),
+      );
+
+      // Chip is gone immediately from the Applied Filters section
+      expect(
+        screen.queryByRole("button", { name: "Remove Novel filter" }),
+      ).not.toBeInTheDocument();
+      // But the list is not yet updated — "View Results" hasn't been clicked
+      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+
+      // Now the list updates
+      expect(within(list).getByText("A Collection")).toBeInTheDocument();
     });
   });
 

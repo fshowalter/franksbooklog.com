@@ -3,6 +3,7 @@ import type { FiltersAction, FiltersState } from "./filtersReducer";
 export {
   createApplyFiltersAction,
   createClearFiltersAction,
+  createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
 } from "./filtersReducer";
@@ -53,6 +54,19 @@ export function collectionFiltersReducer<
       return handleNameFilterChanged<TValue, TState>(state, action);
     }
 
+    case "filters/removeAppliedFilter": {
+      if (action.id === "name") {
+        return {
+          ...state,
+          pendingFilterValues: {
+            ...state.pendingFilterValues,
+            name: undefined,
+          },
+        };
+      }
+      return filtersReducer<TValue, TState>(state, action);
+    }
+
     default: {
       return filtersReducer<TValue, TState>(state, action);
     }
@@ -87,7 +101,7 @@ export function createNameFilterChangedAction(
 }
 
 /**
- * Handle Genre filter action
+ * Handle name filter action
  */
 function handleNameFilterChanged<
   TValue,
