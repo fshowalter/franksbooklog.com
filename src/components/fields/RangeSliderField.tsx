@@ -1,7 +1,5 @@
 import type { ChangeEvent, KeyboardEvent } from "react";
 
-import { useRef } from "react";
-
 export type FormatValueFunction = (value: number) => string;
 
 type RangeSliderFieldProps = {
@@ -39,8 +37,6 @@ export function RangeSliderField({
   onClear,
   toValue,
 }: RangeSliderFieldProps): React.JSX.Element {
-  const sliderRef = useRef<HTMLDivElement>(null);
-
   const isFullRange = fromValue === min && toValue === max;
 
   // AIDEV-NOTE: Calculate percentage positions for visual display
@@ -110,7 +106,7 @@ export function RangeSliderField({
     <div className="text-left">
       <div className="flex flex-col gap-4 px-2 py-3">
         {/* Slider container */}
-        <div className="relative h-6" ref={sliderRef}>
+        <div className="relative h-6">
           {/* Track background */}
           <div
             className={`
