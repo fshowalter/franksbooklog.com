@@ -1,6 +1,6 @@
 import type { ChangeEvent, KeyboardEvent } from "react";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 export type FormatValueFunction = (value: number) => string;
 
@@ -39,8 +39,6 @@ export function RangeSliderField({
   onClear,
   toValue,
 }: RangeSliderFieldProps): React.JSX.Element {
-  const [isDraggingFrom, setIsDraggingFrom] = useState(false);
-  const [isDraggingTo, setIsDraggingTo] = useState(false);
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const isFullRange = fromValue === min && toValue === max;
@@ -106,24 +104,6 @@ export function RangeSliderField({
     }
   };
 
-  // AIDEV-NOTE: Update dragging state for visual feedback
-  useEffect(() => {
-    const handleMouseUp = (): void => {
-      setIsDraggingFrom(false);
-      setIsDraggingTo(false);
-    };
-
-    if (isDraggingFrom || isDraggingTo) {
-      document.addEventListener("mouseup", handleMouseUp);
-      document.addEventListener("touchend", handleMouseUp, { passive: true });
-
-      return (): void => {
-        document.removeEventListener("mouseup", handleMouseUp);
-        document.removeEventListener("touchend", handleMouseUp);
-      };
-    }
-  }, [isDraggingFrom, isDraggingTo]);
-
   const fieldsetId = `range-slider-${label.toLowerCase().replaceAll(/\s+/g, "-")}`;
 
   return (
@@ -163,8 +143,6 @@ export function RangeSliderField({
             min={min}
             onChange={handleFromChange}
             onKeyDown={(e) => handleKeyDown(e, "from")}
-            onMouseDown={() => setIsDraggingFrom(true)}
-            onTouchStart={() => setIsDraggingFrom(true)}
             type="range"
             value={fromValue}
           />
@@ -182,8 +160,6 @@ export function RangeSliderField({
             min={min}
             onChange={handleToChange}
             onKeyDown={(e) => handleKeyDown(e, "to")}
-            onMouseDown={() => setIsDraggingTo(true)}
-            onTouchStart={() => setIsDraggingTo(true)}
             type="range"
             value={toValue}
           />
