@@ -154,6 +154,10 @@ export function ReadingLog({
 
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
   const kindCounts = createKindCountMap(state.values);
+  const editionCounts = new Map<string, number>();
+  for (const v of state.values) {
+    editionCounts.set(v.edition, (editionCounts.get(v.edition) ?? 0) + 1);
+  }
 
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
@@ -175,6 +179,7 @@ export function ReadingLog({
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
+          editionCounts={editionCounts}
           filterValues={state.pendingFilterValues}
           kindCounts={kindCounts}
           reviewedStatusCounts={reviewedStatusCounts}

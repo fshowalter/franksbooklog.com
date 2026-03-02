@@ -23,6 +23,7 @@ export function Filters({
   distinctKinds,
   distinctReadingYears,
   distinctWorkYears,
+  editionCounts,
   filterValues,
   kindCounts,
   reviewedStatusCounts,
@@ -32,6 +33,7 @@ export function Filters({
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
+  editionCounts?: Map<string, number>;
   filterValues: ReadingLogFiltersValues;
   kindCounts?: Map<string, number>;
   reviewedStatusCounts?: Map<string, number>;
@@ -83,7 +85,7 @@ export function Filters({
         options={distinctEditions
           .filter((e) => e !== "All")
           .map((e) => ({
-            count: 0,
+            count: editionCounts?.get(e) ?? 0,
             label: e,
             value: e,
           }))}
