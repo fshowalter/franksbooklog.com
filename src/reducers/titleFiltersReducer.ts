@@ -65,11 +65,9 @@ export function createInitialTitleFiltersState<TValue>({
 }: {
   values: TValue[];
 }): TitleFiltersState<TValue> {
-  const filterState = createInitialFiltersState({
+  return createInitialFiltersState({
     values,
   });
-
-  return filterState;
 }
 
 /**

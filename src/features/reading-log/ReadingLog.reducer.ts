@@ -27,7 +27,7 @@ export {
 } from "~/reducers/titleFiltersReducer";
 
 /**
- * Union type of all actions for viewings state management.
+ * Union type of all actions for reading log state management.
  */
 export type ReadingLogAction =
   | EditionFilterChangedAction
@@ -42,7 +42,7 @@ import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";
 
 /**
- * Filter values for viewings.
+ * Filter values for readings.
  */
 export type ReadingLogFiltersValues = TitleFiltersValues & {
   edition?: readonly string[];
@@ -66,7 +66,7 @@ type PreviousMonthClickedAction = {
 };
 
 /**
- * Internal state type for Reviews page reducer
+ * Internal state type for ReadingLog page reducer
  */
 type ReadingLogState = Omit<
   TitleFiltersState<ReadingLogValue>,
@@ -75,7 +75,7 @@ type ReadingLogState = Omit<
   SortState<ReadingLogSort> & {
     activeFilterValues: ReadingLogFiltersValues;
     pendingFilterValues: ReadingLogFiltersValues;
-    /** Value of the first viewing date in the selected month via a next/prev month action */
+    /** Value of the first reading date in the selected month via a next/prev month action */
     selectedMonthDate?: string;
   };
 
@@ -101,11 +101,11 @@ export function createEditionFilterChangedAction(
 }
 
 /**
- * Creates the initial state for viewings.
+ * Creates the initial state for readings.
  * @param options - Configuration options
  * @param options.initialSort - Initial sort configuration
- * @param options.values - Viewing values
- * @returns Initial state for viewings reducer
+ * @param options.values - Reading values
+ * @returns Initial state for readings reducer
  */
 export function createInitialState({
   initialSort,
@@ -148,9 +148,9 @@ export function createPreviousMonthClickedAction(
 }
 
 /**
- * Creates an action for changing the viewing year filter.
+ * Creates an action for changing the reading year filter.
  * @param values - The year range values
- * @returns Viewing year filter changed action
+ * @returns Reading year filter changed action
  */
 export function createReadingYearFilterChangedAction(
   values: [string, string],
@@ -170,7 +170,7 @@ export function createReviewedStatusFilterChangedAction(
 }
 
 /**
- * Reducer function for viewings state management.
+ * Reducer function for reading log state management.
  * @param state - Current state
  * @param action - Action to process
  * @returns Updated state
@@ -313,6 +313,6 @@ function handleReviewedStatusFilterChanged(
 }
 
 /**
- * Action creator for viewings sort actions.
+ * Action creator for reading log sort actions.
  */
 export const createSortAction = createSortActionCreator<ReadingLogSort>();
