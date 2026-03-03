@@ -1,9 +1,9 @@
 ---
-import type { NavItem } from "~/layout/siteNavigation";
+import type { SiteNavigationValue } from "./SiteNavigation.astro";
 
 export type Props = {
   hasBackdrop: boolean;
-  value: NavItem;
+  value: SiteNavigationValue;
 };
 
 const { hasBackdrop, value } = Astro.props;

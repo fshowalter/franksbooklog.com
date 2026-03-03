@@ -1,9 +1,9 @@
 ---
-import type { NavItem } from "~/layout/siteNavigation";
+import type { SiteNavigationValue } from "~/layout/SiteNavigation.astro";
 
-import Submenu from "./Submenu.astro";
+import SiteNavigationSubItem from "./SiteNavigationSubItem.astro";
 
-export type Props = { value: NavItem };
+export type Props = { value: SiteNavigationValue };
 
 const { value } = Astro.props;
 ---
@@ -28,7 +28,7 @@ const { value } = Astro.props;
   >
     {value.text}
   </a>
-  <Submenu values={value.subItems} />
+  <SiteNavigationSubItem values={value.subItems} />
 </li>
 
 ---
