@@ -1,0 +1,81 @@
+---
+import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
+
+import Logo from "./Logo.astro";
+import NavigationDrawer from "./NavigationDrawer.astro";
+import { siteHierarchy } from "./SiteHierarchy.astro";
+
+export type Props = {
+  addGradient: boolean;
+  hasBackdrop: boolean;
+  hideLogo: boolean;
+};
+
+const { addGradient, hasBackdrop, hideLogo } = Astro.props;
+---
+
+<header
+  class={`
+    group z-30 flex w-full items-center justify-between px-container py-4
+    tablet:py-6
+    laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16
+    laptop:py-8 laptop:text-left
+    ${
+      hasBackdrop
+        ? `absolute [--mast-color:#fff]`
+        : `static [--mast-color:var(--color-default)]`
+    }
+    text-(--mast-color)
+  `}
+  style={{
+    backgroundImage: addGradient
+      ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
+      : "",
+  }}
+>
+  {hideLogo ? <div /> : <Logo classNames="" />}
+  <div class="flex items-center">
+    <nav
+      class={`
+        hidden w-full
+        laptop:block laptop:w-auto
+      `}
+    >
+      <ul class={`flex flex-wrap justify-start gap-x-6 text-xl`}>
+        {
+          siteHierarchy.map((page) => {
+            <li
+              class={`
+                block leading-10 tracking-serif-wide whitespace-nowrap
+                [body.nav-open_&]:opacity-0
+              `}
+            >
+              <a
+                class:list={[
+                  `
+                    relative block text-inherit transition-colors duration-500
+                    after:absolute after:bottom-1 after:left-0 after:h-px
+                    after:w-full after:origin-center after:scale-x-0
+                    after:bg-accent after:transition-transform
+                    after:duration-500
+                    hover:text-accent
+                    hover:after:scale-x-100
+                  `,
+                  {
+                    "mix-blend-hard-light text-shadow-lg hover:text-shadow-none":
+                      hasBackdrop,
+                  },
+                ]}
+                href={page.href}
+              >
+                {page.title}
+              </a>
+            </li>;
+          })
+        }
+      </ul>
+    </nav>
+    <PagefindSearch />
+    <NavigationDrawer hasBackdrop={hasBackdrop} />
+  </div>
+</header>

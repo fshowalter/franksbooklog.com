@@ -1,0 +1,119 @@
+---
+import Footer from "./Footer.astro";
+
+export type Props = {
+  canonical: boolean;
+  children: any;
+  mainClassNames?: string;
+  meta: {
+    description: string;
+  };
+  openGraph:
+    | false
+    | {
+        description: string;
+        type: "article" | "website";
+      };
+  title: string;
+};
+
+const { canonical, mainClassNames, meta, openGraph, title, ...rest } =
+  Astro.props;
+
+import "~/css/tailwind.css";
+
+const siteMeta = {
+  author: "Frank Showalter",
+  title: "Frank's Book Log",
+};
+
+let pageTitle;
+
+pageTitle = title.startsWith(siteMeta.title)
+  ? title
+  : `${title} - ${siteMeta.title}`;
+
+const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathname}`;
+---
+
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport" />
+    {canonical && <link href={canonicalUrl} rel="canonical" />}
+    <link href="/favicon.ico" rel="icon" sizes="48x48" />
+    <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/site.webmanifest" rel="manifest" />
+    <link href="/sitemap-index.xml" rel="sitemap" />
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/Assistant/Assistant.woff2"
+      rel="preload"
+      type="font/woff2"
+    />
+    <link
+      as="font"
+      crossorigin="anonymous"
+      href="/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre_latin_300-900_normal.woff2"
+      rel="preload"
+      type="font/woff2"
+    />
+    <meta content={meta.description} name="description" />
+    <slot name="meta-theme-color">
+      <meta content="rgba(0,0,0,.85)" name="theme-color" />
+    </slot>
+    <link
+      href={new URL("feed.xml", import.meta.env.SITE)}
+      rel="alternate"
+      title={siteMeta.title}
+      type="application/rss+xml"
+    />
+    {
+      openGraph && (
+        <>
+          <meta content={`${canonicalUrl}og.jpg`} property="og:image" />
+          <meta content={`${canonicalUrl}`} property="og:url" />
+          <meta content={title} property="og:title" />
+          <meta content={openGraph.description} property="og:description" />
+          <meta content={openGraph.type} property="og:type" />
+        </>
+      )
+    }
+    <title>{pageTitle}</title>
+  </head>
+  <body
+    class={`
+      size-full bg-canvas text-default
+      data-search-modal-open:overflow-hidden
+      data-search-modal-open:before:fixed data-search-modal-open:before:inset-0
+      data-search-modal-open:before:z-search-backdrop
+      data-search-modal-open:before:backdrop-blur-xs
+      [&.nav-open]:overflow-hidden
+    `}
+  >
+    <div class="group">
+      <a
+        class={`
+          absolute top-0.5 left-1/2 z-skip-link mx-auto
+          transform-[translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2
+          text-center text-accent
+          focus:transform-[translate(-50%,0%)]
+        `}
+        href="#content"
+      >
+        Skip to content
+      </a>
+      <div class="flex min-h-full w-full flex-col bg-default">
+        <slot name="mast" />
+        <main class:list={["grow", mainClassNames]} id="content" {...rest}>
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./navDrawer.ts"></script>

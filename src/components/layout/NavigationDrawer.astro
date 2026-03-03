@@ -1,5 +1,5 @@
 ---
-import TableOfContents from "~/layout/table-of-contents/TableOfContents.astro";
+import SiteHierarchy from "./SiteHierarchy.astro";
 
 export type Props = { hasBackdrop: boolean };
 
@@ -69,6 +69,6 @@ const { hasBackdrop } = Astro.props;
     data-nav-drawer
     id="nav-drawer"
   >
-    <TableOfContents />
+    <SiteHierarchy />
   </div>
 </nav>
