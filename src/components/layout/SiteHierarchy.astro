@@ -1,0 +1,115 @@
+---
+/**
+ * Represents a navigation item with optional sub-items.
+ * Used to define the site's navigation structure with support for nested menus.
+ */
+type SitePage = {
+  /** The URL path this navigation item links to */
+  href: string;
+  /** Array of child navigation items for dropdown/nested menus */
+  subPages: SubPage[];
+  /** The display text for the navigation item */
+  title: string;
+};
+
+type SubPage = Omit<SitePage, "subPages">;
+
+/**
+ * Main navigation configuration for the site.
+ * Defines the primary navigation menu structure including main pages
+ * and any sub-navigation items.
+ */
+export const siteHierarchy: SitePage[] = [
+  {
+    href: "/",
+    subPages: [],
+    title: "Home",
+  },
+  {
+    href: "/how-i-grade/",
+    subPages: [],
+    title: "How I Grade",
+  },
+  {
+    href: "/reviews/",
+    subPages: [],
+    title: "Reviews",
+  },
+  {
+    href: "/authors/",
+    subPages: [],
+    title: "Authors",
+  },
+  {
+    href: "/readings/",
+    subPages: [
+      {
+        href: "/readings/stats/",
+        title: "Stats",
+      },
+    ],
+    title: "Reading Log",
+  },
+];
+---
+
+<ol class={`flex flex-col gap-y-6`}>
+  {
+    siteHierarchy.map((page) => {
+      return (
+        <li
+          class={`
+            block w-1/2 text-2xl whitespace-nowrap
+            laptop:w-full
+          `}
+        >
+          <a
+            class={`
+              relative inline-block origin-left transform-gpu transition-all
+              duration-500
+              after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+              after:origin-center after:scale-x-0 after:bg-accent
+              after:transition-transform after:duration-500
+              hover:text-accent
+              hover:after:scale-x-100
+            `}
+            href={page.href}
+          >
+            {page.title}
+          </a>
+          {page.subPages.length > 0 && (
+            <ol class="mt-4">
+              {page.subPages.map((subPage) => {
+                return (
+                  <li
+                    class={`
+                      mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
+                      text-subtle uppercase
+                      last:-mb-1
+                    `}
+                  >
+                    <a
+                      class={`
+                        relative inline-block origin-left transform-gpu pb-1
+                        transition-all duration-500
+                        after:absolute after:bottom-0 after:left-0 after:h-px
+                        after:w-full after:origin-center after:scale-x-0
+                        after:bg-accent after:transition-transform
+                        after:duration-500
+                        hover:text-accent
+                        hover:after:scale-x-100
+                      `}
+                      href={subPage.href}
+                    >
+                      {subPage.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ol>
+          )}
+        </li>
+      );
+    })
+  }
+</ol>

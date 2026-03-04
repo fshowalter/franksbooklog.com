@@ -2,11 +2,9 @@
 import { getCollection } from "astro:content";
 
 import { getContentPlainText, getPage } from "~/api/pages";
-import AstroPageShell from "~/astro/AstroPageShell.astro";
 import { Article } from "~/components/article/Article";
 import { getArticleProps } from "~/components/article/getArticleProps";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 
 const pagesCollection = await getCollection("pages");
 const pagesData = pagesCollection.map((e) => e.data);
@@ -36,10 +34,9 @@ const props = await getArticleProps({
 });
 
 const contextPlainText = getContentPlainText(body);
-const backdropImageProps = await getLayoutBackdropImageProps("how-i-grade");
 
 //trim the string to the maximum length
-var description = contextPlainText
+let description = contextPlainText
   .replaceAll(/\r?\n|\r/g, " ")
   .slice(0, Math.max(0, 160));
 
@@ -50,22 +47,26 @@ description = description.slice(
 );
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{ description }}
-  openGraph={{ description: deck, type: "article" }}
-  title={title}
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description,
+    },
+    openGraph: {
+      description: deck,
+      type: "article",
+    },
+    title,
+  }}
+  data-pagefind-body
+  heroProps={{
+    backdropSlug: "how-i-grade",
+    centerText: true,
+    deck,
+    size: "large",
+    title,
+  }}
 >
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      centerText: true,
-      deck,
-      size: "large",
-      title,
-    }}
-    data-pagefind-body
-  >
-    <Article {...props} />
-  </Layout>
-</AstroPageShell>
+  <Article {...props} />
+</HeroLayout>

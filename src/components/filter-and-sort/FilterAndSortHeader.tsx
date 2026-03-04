@@ -32,9 +32,9 @@ export function FilterAndSortHeader<T extends string>({
     <div
       className={`
         mx-auto grid max-w-(--breakpoint-desktop) grid-cols-[auto_auto_1fr_auto]
-        items-baseline gap-y-7 px-container py-10 font-sans font-medium
+        items-baseline gap-y-5 px-container py-7 font-sans font-medium
         tracking-wide text-subtle uppercase
-        tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4
+        tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet:gap-y-7
         tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%-192px))_auto]
         desktop:grid-cols-[auto_auto_1fr_calc(33%-96px)_auto]
       `}

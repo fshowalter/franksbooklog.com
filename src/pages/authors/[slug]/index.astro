@@ -4,10 +4,7 @@ import { getCollection } from "astro:content";
 import type { Author } from "~/api/authors";
 
 import { allAuthors } from "~/api/authors";
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutAvatarImageProps } from "~/components/layout/getLayoutAvatarImageProps";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { AuthorTitles } from "~/features/author-titles/AuthorTitles";
 import { getAuthorTitlesProps } from "~/features/author-titles/getAuthorTitlesProps";
 
@@ -30,8 +27,6 @@ export async function getStaticPaths() {
 const { name, slug } = Astro.props;
 
 const authorTitlesProps = await getAuthorTitlesProps(slug);
-const backdropImageProps = await getLayoutBackdropImageProps("author");
-const avatarImageProps = await getLayoutAvatarImageProps(slug);
 
 const reviewedWorkCount = authorTitlesProps.values.length;
 
@@ -45,30 +40,29 @@ const deck = `Author of ${reviewedWorkCount} reviewed ${worksLabel}.`;
 const metaDescription = `Reviews of books and stories written by ${name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`;
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{
-    description: metaDescription,
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title: `${name} book & story reviews`,
   }}
-  openGraph={{
-    description: deck,
-    type: "website",
+  heroProps={{
+    avatarSlug: slug,
+    backdropSlug: "author",
+    breadcrumb: {
+      href: "/authors/",
+      text: "Authors",
+    },
+    centerText: true,
+    deck,
+    title: name,
   }}
-  title={`${name} book & story reviews`}
 >
-  <Layout
-    backdrop={{
-      avatarImageProps: avatarImageProps,
-      backdropImageProps: backdropImageProps,
-      breadcrumb: {
-        href: "/authors/",
-        text: "Authors",
-      },
-      deck,
-      title: name,
-    }}
-    className="bg-subtle"
-  >
-    <AuthorTitles client:load {...authorTitlesProps} />
-  </Layout>
-</AstroPageShell>
+  <AuthorTitles client:load {...authorTitlesProps} />
+</HeroLayout>

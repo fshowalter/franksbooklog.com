@@ -1,0 +1,168 @@
+---
+import { getAvatarImageProps } from "~/api/avatars";
+import { getBackdropImageProps } from "~/api/backdrops";
+
+const HeroImageConfig = {
+  height: 1350,
+  sizes: "100vw",
+  width: 2400,
+};
+
+const AvatarImageConfig = {
+  height: 250,
+  width: 250,
+};
+
+type Props = {
+  avatarSlug?: string | undefined;
+  backdropSlug: string;
+  bottomShadow?: boolean;
+  breadcrumb?: {
+    href: string;
+    text: string;
+  };
+  centerText?: boolean;
+  deck: string;
+  size?: "default" | "large";
+  title: string;
+  titleClassNames?: string;
+};
+
+const {
+  avatarSlug,
+  backdropSlug,
+  bottomShadow = true,
+  breadcrumb,
+  centerText = false,
+  deck,
+  size = "default",
+  title,
+  titleClassNames,
+} = Astro.props;
+
+const defaultSizes =
+  "min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)]";
+
+const largeSizes = "min-h-[90vh] max-h-[1350px]";
+
+const sizes = size === "large" ? largeSizes : defaultSizes;
+
+const backdropImageProps = await getBackdropImageProps(
+  backdropSlug,
+  HeroImageConfig,
+);
+
+let avatarImageProps;
+
+if (avatarSlug) {
+  avatarImageProps = await getAvatarImageProps(avatarSlug, AvatarImageConfig);
+}
+---
+
+<header
+  class:list={[
+    sizes,
+    `
+      relative flex w-full flex-col content-start items-center justify-end gap-6
+      bg-[#2A2B2A] pt-40 pb-8 text-inverse
+      tablet:pt-40 tablet:pb-10
+      laptop:pt-40 laptop:pb-16
+    `,
+  ]}
+>
+  <img
+    class={`absolute inset-0 size-full object-cover object-top`}
+    {...backdropImageProps}
+    {...HeroImageConfig}
+    alt=""
+    fetchpriority="high"
+    loading="eager"
+  />
+  <div
+    class={`
+      after:absolute after:top-0 after:left-0 after:size-full
+      after:bg-[#322f2f]/20
+    `}
+  >
+  </div>
+  <div
+    class:list={[
+      { "items-center": centerText },
+      `
+        z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
+        px-container
+      `,
+      {
+        "after:absolute after:top-0 after:left-0 after:-z-10 after:size-full after:bg-(image:--hero-gradient)":
+          bottomShadow,
+      },
+    ]}
+  >
+    {
+      breadcrumb && (
+        <p class="tablet:mb-1">
+          <a
+            class={`
+              relative inline-block font-sans text-sm/relaxed font-bold
+              tracking-wide text-white/85 uppercase transition-all duration-500
+              after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+              after:origin-center after:scale-x-0 after:bg-accent
+              after:transition-transform after:duration-500
+              hover:text-accent
+              hover:after:scale-x-100
+            `}
+            href={breadcrumb.href}
+          >
+            {breadcrumb.text}
+          </a>
+        </p>
+      )
+    }
+    {
+      avatarImageProps && (
+        <div
+          class={`
+            mx-auto my-2 w-4/5 max-w-[250px] transform-gpu overflow-hidden
+            rounded-full shadow-all
+            tablet:mb-4
+          `}
+        >
+          <img
+            data-pagefind-meta="image[src]"
+            {...avatarImageProps}
+            alt=""
+            decoding="async"
+            height={250}
+            loading="eager"
+            width={250}
+          />
+        </div>
+      )
+    }
+    <h1
+      class={titleClassNames ||
+        `
+          ${centerText ? "text-center" : ""}
+          text-[2rem]/10 font-extrabold
+          [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
+          tablet:text-4xl
+          laptop:text-7xl
+        `}
+      data-pagefind-weight="10"
+    >
+      {title}
+    </h1>
+    <p
+      class:list={[
+        `
+          text-base font-normal text-white/90 mix-blend-hard-light
+          [text-shadow:1px_1px_2px_black]
+          tablet:mt-1
+          laptop:text-xl
+        `,
+        { "text-center": centerText },
+      ]}
+      set:html={deck}
+    />
+  </div>
+</header>

@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { getHomeProps } from "~/features/home/getHomeProps";
 import { Home } from "~/features/home/Home";
 
@@ -19,29 +17,27 @@ const reviews = reviewsEntries.map((e) => e.data);
 const authors = authorsEntries.map((e) => e.data);
 const readings = readingsEntries.map((e) => e.data);
 const homeProps = await getHomeProps(works, reviews, authors, readings);
-const backdropImageProps = await getLayoutBackdropImageProps("home");
 
 const deck = "Literature is a relative term.";
 const metaDescription =
   "Quality reviews of current, cult, classic, and forgotten books, short stories, and non-fiction. Literature is a relative term.";
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{
-    description: metaDescription,
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: { description: deck, type: "website" },
+    title: "Frank's Book Log",
   }}
-  openGraph={{ description: deck, type: "website" }}
-  title="Frank's Book Log"
+  heroProps={{
+    backdropSlug: "home",
+    deck,
+    title: "Frank's Book Log",
+  }}
+  hideLogo={true}
 >
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      deck,
-      title: "Frank's Book Log",
-    }}
-    hideLogo={true}
-  >
-    <Home {...homeProps} />
-  </Layout>
-</AstroPageShell>
+  <Home {...homeProps} />
+</HeroLayout>

@@ -2,15 +2,9 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "entry": [
     "src/pages/**/*.astro",
-    "src/astro/search.ts",
-    "eslint-rules/separate-type-imports.js",
-    "src/pages/**/*.spec.ts"
+    "src/components/pagefind-search/pagefind-search.ts",
+    "src/components/layout/navDrawer.ts"
   ],
-  "project": ["**/*", "!src/**/__mocks__/**"],
-  "ignoreDependencies": [
-    "@prettier/plugin-xml",
-    "@vitest/coverage-v8",
-    "babel-plugin-react-compiler",
-    "zod"
-  ]
+  "project": ["**/*"],
+  "ignoreDependencies": ["babel-plugin-react-compiler"]
 }

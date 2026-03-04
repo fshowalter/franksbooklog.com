@@ -5,12 +5,11 @@ import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
+import eslintPluginSeparateTypeImports from "eslint-plugin-separate-type-imports";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
-
-import separateTypeImports from "./eslint-rules/separate-type-imports.js";
 
 export default defineConfig(
   {
@@ -18,6 +17,7 @@ export default defineConfig(
   },
   eslint.configs.recommended,
   eslintPluginUnicorn.configs.recommended,
+  eslintPluginSeparateTypeImports.configs.recommended,
   reactHooks.configs.flat.recommended,
   perfectionist.configs["recommended-natural"],
   ...eslintPluginAstro.configs.recommended,
@@ -30,7 +30,7 @@ export default defineConfig(
     },
   },
   {
-    files: ["*.js"],
+    files: ["scripts/*.js"],
     languageOptions: {
       globals: {
         ...globals.node,
@@ -47,18 +47,10 @@ export default defineConfig(
         warnOnUnsupportedTypeScriptVersion: false,
       },
     },
-    plugins: {
-      local: {
-        rules: {
-          "separate-type-imports": separateTypeImports,
-        },
-      },
-    },
     rules: {
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-imports": "off", // Turned off in favor of our custom rule
-      "local/separate-type-imports": "error", // Enable our custom rule
       "no-restricted-imports": [
         "error",
         {

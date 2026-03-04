@@ -9,6 +9,7 @@
   --z-index-side-drawer-backdrop: 15;
   --z-index-nav-drawer: 20;
   --z-index-hover: 30;
+  --z-index-nav-menu: 20;
   --z-index-nav-toggle: 40;
   --z-index-filter-footer: 40;
   --z-index-skip-link: 50;
@@ -28,6 +29,7 @@
   --background-color-hover: light-dark(#f7f5f3, #3c393a);
   --background-color-inverse: light-dark(rgb(0 0 0 / 75%), #322f2f);
   --background-color-progress: light-dark(#14bd41, #379634);
+  --background-color-sidenav: light-dark(#e3e2e2, #312f2f);
   --background-color-stripe: light-dark(#fcfcfc, #3c393a);
   --background-color-subtle: light-dark(#f9f7f4, #3e3d3c);
 
@@ -39,6 +41,7 @@
   --color-accent: light-dark(#bf8a00, #bf8a00);
   --color-border: light-dark(#e9e7e0, #484745);
   --color-default: light-dark(#252525, rgb(255 255 255 / 75%));
+  --color-emphasis: light-dark(#000, #fff);
   --color-grey: #b0b0b0;
   --color-inherit: inherit;
   --color-inverse: light-dark(#fff, rgb(255 255 255 / 85%));

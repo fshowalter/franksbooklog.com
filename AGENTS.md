@@ -18,15 +18,12 @@ npm run build        # Build for production
 npm run preview      # Preview production build
 
 # Testing
-npm test             # Run all tests
-npm run test:watch   # Run tests in watch mode
-npm run test:update  # Update test snapshots
-npm run test:coverage # Run tests with coverage report
+npm run test -- --max-workers=2  # Run all tests
+npm run test:coverage -- --max-workers=2 # Run tests with coverage report
 
 # Code Quality
 npm run lint         # Run ESLint
 npm run lint:fix     # Fix ESLint issues
-npm run lint:html    # Run ESLint on HTML templates
 npm run format       # Check Prettier formatting
 npm run format:fix   # Fix formatting issues
 npm run stylelint    # Run Stylelint on CSS
@@ -36,8 +33,6 @@ npm run knip         # Check for unused dependencies/exports
 
 # Content Management
 npm run sync         # Sync content from backend system
-npm run lint:spelling # Check spelling
-npm run lint:spelling:fix # Update project dictionary
 ```
 
 ## Architecture & Key Patterns
@@ -97,7 +92,6 @@ Responsible for validating and loading the data files in `/content/data/` only. 
 Tests run in two environments:
 
 - Components: jsdom environment for React components
-- Pages: node environment for Astro pages
 
 **Important:** Run only one Vitest instance at a time. Each instance consumes ~2GB RAM, so avoid spawning multiple test processes simultaneously.
 
@@ -237,7 +231,6 @@ Pagefind integration builds search index at build time and serves it in dev mode
 5. **IMPORTANT**: Before creating any PR, run:
    - `npm run test` - Must pass with no errors
    - `npm run lint` - Must pass with no errors
-   - `npm run lint:spelling` - Must pass with no errors
    - `npm run check` - Must pass with no errors
    - `npm run knip` - Must pass with no errors
    - `npm run format` - Must pass with no errors

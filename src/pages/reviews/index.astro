@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { getReviewsProps } from "~/features/reviews/getReviewsProps";
 import { Reviews } from "~/features/reviews/Reviews";
 
@@ -19,29 +17,30 @@ const reviews = reviewsEntries.map((e) => e.data);
 const authors = authorsEntries.map((e) => e.data);
 const readings = readingsEntries.map((e) => e.data);
 const reviewsProps = await getReviewsProps(works, reviews, authors, readings);
-const backdropImageProps = await getLayoutBackdropImageProps("reviews");
 
+const title = "Reviews";
 const deck = `"You were always the best of them, Lloyd."`;
 const metaDescription =
   "All my book and story reviews. Filter by title, kind, review date, work date, or grade. Sort by best or worst, oldest or newest, author, or title.";
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{
-    description: metaDescription,
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
   }}
-  openGraph={{ description: deck, type: "website" }}
-  title="Reviews"
+  heroProps={{
+    backdropSlug: "reviews",
+    deck,
+    title,
+  }}
 >
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      deck,
-      title: "Reviews",
-    }}
-    className="bg-subtle"
-  >
-    <Reviews client:load {...reviewsProps} />
-  </Layout>
-</AstroPageShell>
+  <Reviews client:load {...reviewsProps} />
+</HeroLayout>

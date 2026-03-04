@@ -8,7 +8,7 @@ import { normalizeSources } from "./utils/normalizeSources";
  * Type representing optimized backdrop image properties for display.
  * Contains source URL and responsive srcSet for different screen widths.
  */
-export type BackdropImageProps = {
+type BackdropImageProps = {
   src: string;
   srcSet: string;
 };

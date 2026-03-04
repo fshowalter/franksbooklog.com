@@ -2,9 +2,7 @@
 import { getCollection } from "astro:content";
 
 import { allStatYears } from "~/api/stats";
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { AlltimeStats } from "~/features/stats/AlltimeStats";
 import { getAlltimeStatsProps } from "~/features/stats/getStatsProps";
 
@@ -14,37 +12,36 @@ const yearStatsEntries = await getCollection("yearStats");
 const yearStats = yearStatsEntries.map((e) => e.data);
 
 const alltimeStatsProps = await getAlltimeStatsProps(data, yearStats);
-const backdropImageProps = await getLayoutBackdropImageProps("stats");
 const distinctStatYears = allStatYears(yearStats);
 
+const title = "All-Time Stats";
 const deck = `${(distinctStatYears.length - 1).toString()} Years in Review`;
 const metaDescription =
   "My all-time reading stats. Includes my most-read authors, as well as grade, kind, release year, and edition distributions.";
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{
-    description: metaDescription,
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
   }}
-  openGraph={{
-    description: deck,
-    type: "website",
+  heroProps={{
+    backdropSlug: "stats",
+    breadcrumb: {
+      href: "/readings/",
+      text: "Reading Log",
+    },
+    centerText: true,
+    deck,
+    title: "All-Time Stats",
   }}
-  title="All-Time Stats"
 >
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      breadcrumb: {
-        href: "/readings/",
-        text: "Reading Log",
-      },
-      centerText: true,
-      deck,
-      title: "All-Time Stats",
-    }}
-  >
-    <AlltimeStats {...alltimeStatsProps} />
-  </Layout>
-</AstroPageShell>
+  <AlltimeStats {...alltimeStatsProps} />
+</HeroLayout>
