@@ -1,8 +1,8 @@
 ---
-export type Props = Record<string, never>;
+
 ---
 
-<pagefind-search class={`w-full max-w-107.5`}>
+<pagefind-search>
   <div
     class={`
       z-search-button transition-colors
@@ -18,7 +18,7 @@ export type Props = Record<string, never>;
         hover:text-accent
         laptop:ml-6
       `}
-      data-open-modal
+      data-open-search
       disabled
       title="Search: Control+K"
       type="button"

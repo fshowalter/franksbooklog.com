@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { getReadingLogProps } from "~/features/reading-log/getReadingLogProps";
 import { ReadingLog } from "~/features/reading-log/ReadingLog";
 
@@ -20,28 +18,30 @@ const readingLogProps = await getReadingLogProps(
   reviewsEntries.map((e) => e.data),
   authorsEntries.map((e) => e.data),
 );
-const backdropImageProps = await getLayoutBackdropImageProps("readings");
+
+const title = "Reading Log";
 const deck = `"You interest me. Rather vaguely."`;
 const metaDescription =
   "A list of every book or story I've read since 2022. Filter by title, work year, reading year, kind, or edition. Sort by oldest or newest.";
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{
-    description: metaDescription,
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
   }}
-  openGraph={{ description: deck, type: "website" }}
-  title="Reading Log"
+  heroProps={{
+    backdropSlug: "readings",
+    deck,
+    title: "Reading Log",
+  }}
 >
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      deck,
-      title: "Reading Log",
-    }}
-    className="bg-subtle"
-  >
-    <ReadingLog client:load {...readingLogProps} />
-  </Layout>
-</AstroPageShell>
+  <ReadingLog client:load {...readingLogProps} />
+</HeroLayout>

@@ -184,13 +184,6 @@ class PagefindSearch extends HTMLElement {
             /* @vite-ignore */ `${this.config.bundlePath}pagefind.js`
           )) as Pagefind;
 
-          pagefindModule.mergeIndex("/pagefind-movielog", {
-            baseUrl: "https://www.franksmovielog.com/",
-          });
-          pagefindModule.mergeIndex("/pagefind-booklog", {
-            baseUrl: "https://www.franksbooklog.com/",
-          });
-
           this.pagefind = pagefindModule;
           await this.pagefind.init();
           this.pagefindInitialized = true;

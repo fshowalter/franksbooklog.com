@@ -1,9 +1,9 @@
 ---
 import Footer from "./Footer.astro";
+import "~/css/tailwind.css";
 
-export type Props = {
+type Props = {
   canonical: boolean;
-  children: any;
   mainClassNames?: string;
   meta: {
     description: string;
@@ -17,17 +17,15 @@ export type Props = {
   title: string;
 };
 
-const { canonical, mainClassNames, meta, openGraph, title, ...rest } =
-  Astro.props;
-
-import "~/css/tailwind.css";
-
 const siteMeta = {
   author: "Frank Showalter",
   title: "Frank's Book Log",
 };
 
 let pageTitle;
+
+const { canonical, mainClassNames, meta, openGraph, title, ...rest } =
+  Astro.props;
 
 pageTitle = title.startsWith(siteMeta.title)
   ? title

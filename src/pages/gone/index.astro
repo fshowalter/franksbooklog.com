@@ -1,28 +1,24 @@
 ---
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 
-const backdropImageProps = await getLayoutBackdropImageProps("gone");
 const deck = '"This is not an exit."';
+const title = "410 Gone";
 ---
 
-<AstroPageShell
-  canonical={false}
-  meta={{ description: deck }}
-  openGraph={false}
-  title="410: Gone"
->
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      centerText: true,
-      deck,
-      size: "large",
-      title: "410 Gone",
-    }}
-    className="bg-subtle"
-  >
-    <span></span>
-  </Layout>
-</AstroPageShell>
+<HeroLayout
+  baseLayoutProps={{
+    canonical: false,
+    meta: {
+      description: deck,
+    },
+    openGraph: false,
+    title,
+  }}
+  heroProps={{
+    backdropSlug: "gone",
+    centerText: true,
+    deck,
+    size: "large",
+    title,
+  }}
+/>

@@ -1,0 +1,29 @@
+---
+import type { ComponentProps } from "astro/types";
+
+import BaseLayout from "./BaseLayout.astro";
+import Mast from "./Mast.astro";
+
+type Props = {
+  baseLayoutProps: Omit<ComponentProps<typeof BaseLayout>, "children">;
+};
+
+const { baseLayoutProps, ...rest } = Astro.props;
+---
+
+<BaseLayout {...baseLayoutProps} {...rest}>
+  <Fragment slot="meta-theme-color">
+    <meta
+      content="#fff"
+      media="(prefers-color-scheme: light)"
+      name="theme-color"
+    />
+    <meta
+      content="#322f2f"
+      media="(prefers-color-scheme: dark)"
+      name="theme-color"
+    />
+  </Fragment>
+  <Mast addGradient={false} hasBackdrop={false} hideLogo={false} slot="mast" />
+  <slot />
+</BaseLayout>

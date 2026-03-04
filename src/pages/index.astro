@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
 import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { getHomeProps } from "~/features/home/getHomeProps";
 import { Home } from "~/features/home/Home";
@@ -18,7 +17,6 @@ const reviews = reviewsEntries.map((e) => e.data);
 const authors = authorsEntries.map((e) => e.data);
 const readings = readingsEntries.map((e) => e.data);
 const homeProps = await getHomeProps(works, reviews, authors, readings);
-const backdropImageProps = await getLayoutBackdropImageProps("home");
 
 const deck = "Literature is a relative term.";
 const metaDescription =
@@ -35,7 +33,7 @@ const metaDescription =
     title: "Frank's Book Log",
   }}
   heroProps={{
-    backdropImageProps,
+    backdropSlug: "home",
     deck,
     title: "Frank's Book Log",
   }}

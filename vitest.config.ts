@@ -22,15 +22,6 @@ export default getViteConfig({
         extends: true,
         test: {
           environment: "node",
-          include: ["src/pages/**/*.spec.ts"],
-          name: "pages-node",
-          setupFiles: ["setupTests.ts"],
-        },
-      },
-      {
-        extends: true,
-        test: {
-          environment: "node",
           include: ["src/components/**/*.spec.ts"],
           name: "components-node",
         },
@@ -57,14 +48,6 @@ export default getViteConfig({
           environment: "jsdom",
           include: ["src/features/**/*.spec.tsx"],
           name: "features-jsdom",
-        },
-      },
-      {
-        extends: true,
-        test: {
-          environment: "node",
-          include: ["src/astro/**/*.spec.ts"],
-          name: "astro-node",
         },
       },
       {

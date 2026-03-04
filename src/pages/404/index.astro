@@ -1,28 +1,24 @@
 ---
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 
-const backdropImageProps = await getLayoutBackdropImageProps("not-found");
 const deck = '"I simply am not there."';
+const title = "404 Not Found";
 ---
 
-<AstroPageShell
-  canonical={false}
-  meta={{ description: deck }}
-  openGraph={false}
-  title="404: Not Found"
->
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      centerText: true,
-      deck,
-      size: "large",
-      title: "404 Not Found",
-    }}
-    className="bg-subtle"
-  >
-    <span></span>
-  </Layout>
-</AstroPageShell>
+<HeroLayout
+  baseLayoutProps={{
+    canonical: false,
+    meta: {
+      description: deck,
+    },
+    openGraph: false,
+    title,
+  }}
+  heroProps={{
+    backdropSlug: "not-found",
+    centerText: true,
+    deck,
+    size: "large",
+    title,
+  }}
+/>

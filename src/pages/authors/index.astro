@@ -1,41 +1,35 @@
 ---
 import { getCollection } from "astro:content";
 
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { getLayoutBackdropImageProps } from "~/components/layout/getLayoutBackdropImageProps";
-import { Layout } from "~/components/layout/Layout";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { Authors } from "~/features/authors/Authors";
 import { getAuthorsProps } from "~/features/authors/getAuthorsProps";
 
 const authorEntries = await getCollection("authors");
 const authors = authorEntries.map((e) => e.data);
 const authorsProps = await getAuthorsProps(authors);
-const backdropImageProps = await getLayoutBackdropImageProps("authors");
 
+const title = "Authors";
 const deck = '"Maybe I can glue it together. In the morning"';
 const metaDescription =
   "A sortable index of authors who contributed to the books and stories reviewed on this site. Sort by name or review count.";
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{
-    description: metaDescription,
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: { description: metaDescription },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
   }}
-  openGraph={{
-    description: deck,
-    type: "website",
+  heroProps={{
+    backdropSlug: "authors",
+    deck,
+    title,
   }}
-  title="Authors"
 >
-  <Layout
-    backdrop={{
-      backdropImageProps,
-      deck,
-      title: "Authors",
-    }}
-    className="bg-subtle"
-  >
-    <Authors client:load {...authorsProps} />
-  </Layout>
-</AstroPageShell>
+  <Authors client:load {...authorsProps} />
+</HeroLayout>

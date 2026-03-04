@@ -2,8 +2,7 @@
 import { getCollection } from "astro:content";
 
 import { allReviews, getContentPlainText } from "~/api/reviews";
-import AstroPageShell from "~/astro/AstroPageShell.astro";
-import { Layout } from "~/components/layout/Layout";
+import ReviewLayout from "~/components/layout/ReviewLayout.astro";
 import { getReviewProps } from "~/features/review/getReviewProps";
 import { Review } from "~/features/review/Review";
 import { toSentenceArray } from "~/utils/toSentenceArray";
@@ -67,25 +66,16 @@ const kind = review.kind == "Short Story" ? "story" : "book";
 title = `${title} ${kind} review`;
 ---
 
-<AstroPageShell
-  canonical={true}
-  meta={{ description }}
-  openGraph={{ description, type: "article" }}
-  title={title}
+<ReviewLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: { description },
+    openGraph: {
+      description,
+      type: "article",
+    },
+    title,
+  }}
 >
-  <Fragment slot="meta-theme-color">
-    <meta
-      content="#fff"
-      media="(prefers-color-scheme: light)"
-      name="theme-color"
-    />
-    <meta
-      content="#322f2f"
-      media="(prefers-color-scheme: dark)"
-      name="theme-color"
-    />
-  </Fragment>
-  <Layout>
-    <Review {...reviewProps} />
-  </Layout>
-</AstroPageShell>
+  <Review {...reviewProps} />
+</ReviewLayout>

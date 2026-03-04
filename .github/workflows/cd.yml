@@ -2,6 +2,7 @@ name: build & deploy
 
 permissions:
   contents: read
+  deployments: write
   pull-requests: write
 
 on:
@@ -71,7 +72,8 @@ jobs:
       - name: build
         run: npm run build
 
-      - name: add indexNow key
+      - name: add indexNow key (main)
+        if: github.event_name == 'push'
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: echo $INDEXNOW_KEY > dist/$INDEXNOW_KEY.txt

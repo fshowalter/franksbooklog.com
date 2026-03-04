@@ -10,7 +10,7 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorsSort } from "./sortAuthors";
 
-import { AlphabetNav } from "./AlphabetNav";
+import { AlphabetSideNav } from "./AlphabetSideNav";
 import {
   createApplyFiltersAction,
   createClearFiltersAction,
@@ -120,7 +120,7 @@ export function Authors({
       }}
       pendingFilteredCount={pendingFilteredCount}
       sideNav={
-        <AlphabetNav groupedValues={groupedValues} sortValue={state.sort} />
+        <AlphabetSideNav groupedValues={groupedValues} sortValue={state.sort} />
       }
       sortProps={{
         currentSortValue: state.sort,

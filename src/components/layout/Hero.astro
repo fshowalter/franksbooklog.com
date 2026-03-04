@@ -1,14 +1,21 @@
 ---
-import type { BackdropImageProps } from "~/api/backdrops";
+import { getAvatarImageProps } from "~/api/avatars";
+import { getBackdropImageProps } from "~/api/backdrops";
 
-export const HeroImageConfig = {
+const HeroImageConfig = {
   height: 1350,
   sizes: "100vw",
   width: 2400,
 };
 
-export type Props = {
-  backdropImageProps: BackdropImageProps;
+const AvatarImageConfig = {
+  height: 250,
+  width: 250,
+};
+
+type Props = {
+  avatarSlug?: string | undefined;
+  backdropSlug: string;
   bottomShadow?: boolean;
   breadcrumb?: {
     href: string;
@@ -22,7 +29,8 @@ export type Props = {
 };
 
 const {
-  backdropImageProps,
+  avatarSlug,
+  backdropSlug,
   bottomShadow = true,
   breadcrumb,
   centerText = false,
@@ -38,6 +46,17 @@ const defaultSizes =
 const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
 const sizes = size === "large" ? largeSizes : defaultSizes;
+
+const backdropImageProps = await getBackdropImageProps(
+  backdropSlug,
+  HeroImageConfig,
+);
+
+let avatarImageProps;
+
+if (avatarSlug) {
+  avatarImageProps = await getAvatarImageProps(avatarSlug, AvatarImageConfig);
+}
 ---
 
 <header
@@ -60,6 +79,13 @@ const sizes = size === "large" ? largeSizes : defaultSizes;
     loading="eager"
   />
   <div
+    class={`
+      after:absolute after:top-0 after:left-0 after:size-full
+      after:bg-[#322f2f]/20
+    `}
+  >
+  </div>
+  <div
     class:list={[
       { "items-center": centerText },
       `
@@ -74,14 +100,15 @@ const sizes = size === "large" ? largeSizes : defaultSizes;
   >
     {
       breadcrumb && (
-        <p class="mb-4">
+        <p class="tablet:mb-1">
           <a
             class={`
-              relative inline-block font-sans text-sm font-bold tracking-wide
-              text-white/85 uppercase
-              after:absolute after:bottom-0 after:left-0 after:h-0.5
-              after:w-full after:origin-center after:scale-x-0 after:bg-white/75
+              relative inline-block font-sans text-sm/relaxed font-bold
+              tracking-wide text-white/85 uppercase transition-all duration-500
+              after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+              after:origin-center after:scale-x-0 after:bg-accent
               after:transition-transform after:duration-500
+              hover:text-accent
               hover:after:scale-x-100
             `}
             href={breadcrumb.href}
@@ -89,6 +116,27 @@ const sizes = size === "large" ? largeSizes : defaultSizes;
             {breadcrumb.text}
           </a>
         </p>
+      )
+    }
+    {
+      avatarImageProps && (
+        <div
+          class={`
+            mx-auto my-2 w-4/5 max-w-[250px] transform-gpu overflow-hidden
+            rounded-full shadow-all
+            tablet:mb-4
+          `}
+        >
+          <img
+            data-pagefind-meta="image[src]"
+            {...avatarImageProps}
+            alt=""
+            decoding="async"
+            height={250}
+            loading="eager"
+            width={250}
+          />
+        </div>
       )
     }
     <slot />
@@ -108,11 +156,11 @@ const sizes = size === "large" ? largeSizes : defaultSizes;
     <p
       class:list={[
         `
-          mt-1 font-sans text-base
+          text-base font-normal text-white/90 mix-blend-hard-light
+          [text-shadow:1px_1px_2px_black]
           tablet:mt-1
           laptop:text-xl
         `,
-        { "[text-shadow:1px_1px_2px_black]": bottomShadow },
         { "text-center": centerText },
       ]}
       set:html={deck}

@@ -3,11 +3,10 @@ import type { ComponentProps } from "astro/types";
 
 import BaseLayout from "./BaseLayout.astro";
 import Hero from "./Hero.astro";
-import { Mast } from "./Mast";
+import Mast from "./Mast.astro";
 
-export type Props = {
+type Props = {
   baseLayoutProps: Omit<ComponentProps<typeof BaseLayout>, "children">;
-  children: any;
   heroProps: ComponentProps<typeof Hero>;
   hideLogo?: boolean;
 };
