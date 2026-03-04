@@ -274,7 +274,7 @@ class PagefindSearch extends HTMLElement {
       const { image, image_alt } = doc.meta;
       if (image) {
         const resultUrl = new URL(doc.url);
-        const imageUrl = `${resultUrl.protocol}//${resultUrl.hostname}/${image}`;
+        const imageUrl = `${resultUrl.protocol}//${resultUrl.host}/${image}`;
         const img = clone.querySelector<HTMLImageElement>(
           "[data-field='image']",
         )!;
@@ -289,6 +289,8 @@ class PagefindSearch extends HTMLElement {
   }
 
   private async handleSearch(query: string): Promise<void> {
+    if (!this.pagefindInitialized) return;
+
     const trimmedQuery = query.trim();
 
     if (!trimmedQuery) {
