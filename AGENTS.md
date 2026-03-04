@@ -231,7 +231,6 @@ Pagefind integration builds search index at build time and serves it in dev mode
 5. **IMPORTANT**: Before creating any PR, run:
    - `npm run test` - Must pass with no errors
    - `npm run lint` - Must pass with no errors
-   - `npm run lint:spelling` - Must pass with no errors
    - `npm run check` - Must pass with no errors
    - `npm run knip` - Must pass with no errors
    - `npm run format` - Must pass with no errors

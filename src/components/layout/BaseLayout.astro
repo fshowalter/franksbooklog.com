@@ -22,12 +22,10 @@ const siteMeta = {
   title: "Frank's Book Log",
 };
 
-let pageTitle;
-
 const { canonical, mainClassNames, meta, openGraph, title, ...rest } =
   Astro.props;
 
-pageTitle = title.startsWith(siteMeta.title)
+const pageTitle = title.startsWith(siteMeta.title)
   ? title
   : `${title} - ${siteMeta.title}`;
 
@@ -85,10 +83,6 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   <body
     class={`
       size-full bg-canvas text-default
-      data-search-modal-open:overflow-hidden
-      data-search-modal-open:before:fixed data-search-modal-open:before:inset-0
-      data-search-modal-open:before:z-search-backdrop
-      data-search-modal-open:before:backdrop-blur-xs
       [&.nav-open]:overflow-hidden
     `}
   >

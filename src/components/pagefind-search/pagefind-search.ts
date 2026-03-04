@@ -69,9 +69,7 @@ class PagefindSearch extends HTMLElement {
   connectedCallback(): void {
     const { win } = this;
 
-    // AIDEV-NOTE: The open button is in Backdrop.tsx, outside <pagefind-search>,
-    // so it must be found with win.document.querySelector().
-    const openBtn = win.document.querySelector<HTMLButtonElement>(
+    const openBtn = this.querySelector<HTMLButtonElement>(
       "button[data-open-search]",
     );
     if (!openBtn) return;

@@ -55,7 +55,7 @@ export const siteHierarchy: SitePage[] = [
 
 <ol class={`flex flex-col gap-y-6`}>
   {
-    siteHierarchy.map((value) => {
+    siteHierarchy.map((page) => {
       return (
         <li
           class={`
@@ -73,13 +73,13 @@ export const siteHierarchy: SitePage[] = [
               hover:text-accent
               hover:after:scale-x-100
             `}
-            href={value.href}
+            href={page.href}
           >
-            {value.title}
+            {page.title}
           </a>
-          {value.subPages.length > 0 && (
+          {page.subPages.length > 0 && (
             <ol class="mt-4">
-              {value.subPages.map((value) => {
+              {page.subPages.map((subPage) => {
                 return (
                   <li
                     class={`
@@ -99,9 +99,9 @@ export const siteHierarchy: SitePage[] = [
                         hover:text-accent
                         hover:after:scale-x-100
                       `}
-                      href={value.href}
+                      href={subPage.href}
                     >
-                      {value.title}
+                      {subPage.title}
                     </a>
                   </li>
                 );
