@@ -6,9 +6,9 @@ import HeroLayout from "~/components/layout/HeroLayout.astro";
 import { getYearStatsProps } from "~/features/stats/getStatsProps";
 import { YearStats } from "~/features/stats/YearStats";
 
-interface Props {
+type Props = {
   year: string;
-}
+};
 
 export async function getStaticPaths() {
   const yearStatsEntries = await getCollection("yearStats");
