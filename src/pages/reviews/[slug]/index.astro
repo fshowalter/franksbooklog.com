@@ -1,5 +1,10 @@
 ---
+import type { CollectionEntry } from "astro:content";
+
+import { getEntry } from "astro:content";
 import { getCollection } from "astro:content";
+
+import type { ReviewData } from "~/content.config";
 
 import { allReviews, getContentPlainText } from "~/api/reviews";
 import ReviewLayout from "~/components/layout/ReviewLayout.astro";
@@ -8,45 +13,28 @@ import { Review } from "~/features/review/Review";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 type Props = {
-  contentPlainText: string;
-  review: ReturnType<typeof allReviews>["reviews"][number];
+  review: CollectionEntry<"reviews">;
 };
 
 export async function getStaticPaths() {
-  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
-    await Promise.all([
-      getCollection("works"),
-      getCollection("reviews"),
-      getCollection("authors"),
-      getCollection("readings"),
-    ]);
-  const works = worksEntries.map((e) => e.data);
-  const reviews = reviewsEntries.map((e) => e.data);
-  const authors = authorsEntries.map((e) => e.data);
-  const readings = readingsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(
-    works,
-    reviews,
-    authors,
-    readings,
-  );
+  const reviewsCollection = await getCollection("reviews");
 
-  return allReviewsList.map((review) => {
+  return reviewsCollection.map((review) => {
     return {
       params: {
-        slug: review.slug,
+        slug: review.id,
       },
       props: {
-        contentPlainText: getContentPlainText(review.body),
         review,
       },
     };
   });
 }
 
-const { contentPlainText, review } = Astro.props;
+const { review } = Astro.props;
+const work = await getEntry(review.data.work);
 
-const reviewProps = await getReviewProps(review);
+const contentPlainText = getContentPlainText(review.data.body);
 
 //trim the string to the maximum length
 let description = contentPlainText
@@ -59,9 +47,16 @@ description = description.slice(
   Math.max(0, Math.min(description.length, description.lastIndexOf(" "))),
 );
 
-let title = `${review.title} by ${toSentenceArray(review.authors.map((author) => author.name)).join("")}`;
+const workAuthorNames = await Promise.all(
+  work.data.authors.map(async (workAuthor) => {
+    const author = await getEntry(workAuthor.slug);
+    return author.data.name;
+  }),
+);
 
-const kind = review.kind == "Short Story" ? "story" : "book";
+let title = `${work.data.title} by ${toSentenceArray(workAuthorNames).join("")}`;
+
+const kind = work.data.kind == "Short Story" ? "story" : "book";
 
 title = `${title} ${kind} review`;
 ---
@@ -77,5 +72,143 @@ title = `${title} ${kind} review`;
     title,
   }}
 >
-  <Review {...reviewProps} />
+  <div class="flex flex-col" data-pagefind-body>
+    <header
+      class={`relative z-base mb-12 flex flex-col items-center px-[8%] pt-10`}
+    >
+      <nav class={`transform-gpu pb-2 transition-transform`}>
+        <a
+          class={`
+            relative inline-block pb-1 font-sans text-xs tracking-wider
+            text-subtle uppercase transition-all
+            after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+            after:origin-center after:scale-x-0 after:bg-(--color-accent)
+            after:transition-transform
+            hover:text-accent
+            hover:after:scale-x-100
+          `}
+          href="/reviews/"
+        >
+          Reviews
+        </a>
+      </nav>
+      <h1
+        class={`
+          text-center text-4xl
+          laptop:text-5xl
+          desktop:text-6xl
+        `}
+        data-pagefind-meta="title"
+      >
+        {work.data.title}
+      </h1>
+      {
+        work.data.subtitle && (
+          <p
+            class={`
+              max-w-prose pt-2 text-center text-base font-light tracking-wider
+              text-muted
+            `}
+          >
+            {work.data.subtitle}
+          </p>
+        )
+      }
+      <!-- <Authors
+        className={`mt-4 text-center text-md text-muted`}
+        values={value.authors}
+      />
+      <div class="mt-4">
+        <ReviewGrade value={value.grade} />
+      </div>
+      <YearAndKind
+        className={`
+          mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle
+          uppercase
+          tablet:mb-6
+        `}
+        kind={value.kind}
+        workYear={value.workYear}
+      />
+      <ReviewCover coverImageProps={coverImageProps} />
+      <div
+        className={`
+          relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
+          text-subtle uppercase
+          after:absolute after:top-1/2 after:left-[-11%] after:-z-10
+          after:w-[122%] after:border-t after:border-subtle
+          tablet:mt-6
+        `}
+      >
+        Reviewed {dateFormat.format(value.date)}
+      </div>
+    </header>
+    <div
+      className={`
+        flex flex-col items-center gap-16 px-container pb-20
+        desktop:gap-20 desktop:pb-32
+      `}
+    >
+      <LongFormText
+        className={`
+          max-w-prose
+          first-letter:leading-[.8] first-letter:text-default
+          tablet:first-letter:pr-3
+          desktop:first-letter:text-[64px]
+          [&>p:first-child]:first-letter:float-left
+          [&>p:first-child]:first-letter:mt-[6px]
+          [&>p:first-child]:first-letter:pr-2
+          [&>p:first-child]:first-letter:font-sans
+          [&>p:first-child]:first-letter:text-[56px]
+          [&>p:first-child]:first-letter:font-bold
+        `}
+        text={value.content}
+      />
+      {
+        value.includedWorks.length > 0 && (
+          <div className="w-full max-w-popout">
+            <IncludedWorks values={value.includedWorks} />
+          </div>
+        )
+      }
+      <div className="w-full max-w-popout">
+        <SubHeading as="h2" className="text-center shadow-bottom">
+          Reading History
+        </SubHeading>
+        <ul>
+          {
+            value.readings.map((value) => (
+              <ReadingHistoryListItem
+                key={`${value.date.toISOString()}-${value.readingSequence}`}
+                value={value}
+              />
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div
+      className={`
+        flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
+        tablet:pt-8
+        laptop:gap-y-24
+      `}
+      data-pagefind-ignore
+    >
+      <MoreReviews values={moreReviews}>
+        <MoreReviewsHeading
+          accentText="Reviews"
+          href={`/reviews/`}
+          text="More"
+        />
+      </MoreReviews>
+    </div>
+    <StructuredData
+      coverImgSrc={structuredDataCoverSrc}
+      grade={value.grade}
+      title={value.title}
+    /> -->
+    </header>
+  </div>
 </ReviewLayout>

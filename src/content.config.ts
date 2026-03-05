@@ -333,7 +333,7 @@ const WorkRawAuthorSchema = z
       .nullable(z.string())
       .optional()
       .transform((v) => v ?? undefined),
-    slug: z.string(),
+    slug: reference("authors"),
   })
   .transform(({ notes, slug }) => {
     // fix zod making anything with undefined optional
@@ -393,10 +393,12 @@ const ReviewSchema = z.object({
   body: z.string(),
   date: z.coerce.date(),
   excerptHtml: z.string(),
+  excerptPlainText: z.string(),
   grade: z.string(),
   intermediateHtml: z.string(),
-  slug: reference("works"),
+  slug: z.string(),
   synopsis: z.optional(z.string()),
+  work: reference("works"),
 });
 
 // AIDEV-NOTE: editionNotes accepts null from YAML (editionNotes: ~) or is absent.
@@ -532,10 +534,12 @@ const reviews = defineCollection({
             body,
             date: frontmatter.date,
             excerptHtml: toExcerptHtml(excerptContent),
+            excerptPlainText: excerptContent,
             grade: frontmatter.grade as string,
             intermediateHtml: toIntermediateHtml(body),
             slug: frontmatter.slug as string,
             synopsis: frontmatter.synopsis as string | undefined,
+            work: frontmatter.slug as string,
           };
         },
       ),

@@ -34,6 +34,7 @@ export async function getHomeProps(
     authors,
     readings,
   );
+
   const recentReviews = mostRecentReviews(allReviewsList, 12);
 
   return {

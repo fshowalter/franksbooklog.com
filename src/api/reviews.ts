@@ -105,7 +105,7 @@ export function allReviews(
   readings: ReadingData[],
 ): ReviewsResult {
   const authorsMap = new Map(authors.map((a) => [a.slug, a]));
-  const reviewsMap = new Map(reviews.map((r) => [r.slug.id, r]));
+  const reviewsMap = new Map(reviews.map((r) => [r.slug, r]));
 
   // Group readings by workSlug for reviewSequence computation
   const readingsByWork = new Map<string, ReadingData[]>();
@@ -135,7 +135,7 @@ export function allReviews(
     const reviewSequence = getReviewSequence(work.slug, readingsByWork);
 
     const enrichedAuthors = work.authors.map((a) => {
-      const author = authorsMap.get(a.slug);
+      const author = authorsMap.get(a.slug.id);
       return {
         name: author?.name ?? a.slug,
         notes: a.notes,
