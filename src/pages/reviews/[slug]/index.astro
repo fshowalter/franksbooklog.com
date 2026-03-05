@@ -4,12 +4,13 @@ import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
-import type { ReviewData } from "~/content.config";
-
-import { allReviews, getContentPlainText } from "~/api/reviews";
+import { getFixedCoverImageProps } from "~/api/covers";
+import { getContentPlainText } from "~/api/reviews";
+import BarGradient from "~/components/bar-gradient/BarGradient.astro";
+import Cover from "~/components/cover/Cover.astro";
+import Grade from "~/components/grade/Grade.astro";
 import ReviewLayout from "~/components/layout/ReviewLayout.astro";
-import { getReviewProps } from "~/features/review/getReviewProps";
-import { Review } from "~/features/review/Review";
+import SubHeading from "~/components/sub-heading/SubHeading.astro";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 type Props = {
@@ -31,6 +32,15 @@ export async function getStaticPaths() {
   });
 }
 
+/**
+ * Configuration for cover images in the review page.
+ * Defines the width for the main review cover image.
+ */
+export const CoverImageConfig = {
+  /** Cover image width in pixels */
+  width: 248,
+};
+
 const { review } = Astro.props;
 const work = await getEntry(review.data.work);
 
@@ -49,7 +59,7 @@ description = description.slice(
 
 const workAuthorNames = await Promise.all(
   work.data.authors.map(async (workAuthor) => {
-    const author = await getEntry(workAuthor.slug);
+    const author = await getEntry(workAuthor.author);
     return author.data.name;
   }),
 );
@@ -59,6 +69,50 @@ let title = `${work.data.title} by ${toSentenceArray(workAuthorNames).join("")}`
 const kind = work.data.kind == "Short Story" ? "story" : "book";
 
 title = `${title} ${kind} review`;
+
+const coverImageProps = await getFixedCoverImageProps(
+  work.data,
+  CoverImageConfig,
+);
+
+const dateFormat = new Intl.DateTimeFormat("en-US", {
+  day: "numeric",
+  month: "short",
+  timeZone: "UTC",
+  year: "numeric",
+});
+
+const readings = await getCollection(
+  "readings",
+  (entry) => entry.data.work.id === work.id,
+);
+
+const readingMonthFormat = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  timeZone: "UTC",
+});
+
+const readingYearFormat = new Intl.DateTimeFormat("en-US", {
+  timeZone: "UTC",
+  year: "numeric",
+});
+
+const readingDayFormat = new Intl.DateTimeFormat("en-US", {
+  day: "numeric",
+  timeZone: "UTC",
+});
+
+const readingWeekdayFormat = new Intl.DateTimeFormat("en-US", {
+  timeZone: "UTC",
+  weekday: "short",
+});
+
+const readingProgressDateFormat = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "short",
+  timeZone: "UTC",
+  year: "numeric",
+});
 ---
 
 <ReviewLayout
@@ -114,25 +168,93 @@ title = `${title} ${kind} review`;
           </p>
         )
       }
-      <!-- <Authors
-        className={`mt-4 text-center text-md text-muted`}
-        values={value.authors}
-      />
-      <div class="mt-4">
-        <ReviewGrade value={value.grade} />
+      <div class={`mt-4 text-center text-md text-muted`}>
+        by{" "}
+        {
+          toSentenceArray(
+            await Promise.all(
+              work.data.authors.map(async (workAuthor) => {
+                const author = await getEntry(workAuthor.author);
+
+                return (
+                  <div
+                    class={`
+                      relative inline-block transform-gpu text-accent
+                      transition-transform
+                      after:absolute after:bottom-0 after:left-0 after:h-px
+                      after:w-full after:origin-center after:scale-x-0
+                      after:bg-(--color-accent) after:transition-transform
+                      hover:after:scale-x-100
+                    `}
+                  >
+                    <a href={`/authors/${author.data.slug}/`}>
+                      {author.data.name}
+                      {workAuthor.notes && (
+                        <span class="text-subtle"> ({workAuthor.notes})</span>
+                      )}
+                    </a>
+                  </div>
+                );
+              }),
+            ),
+          )
+        }
       </div>
-      <YearAndKind
-        className={`
+      <div class="mt-4">
+        {
+          review.data.grade == "Abandoned" ? (
+            <div
+              class={`
+                bg-abandoned px-2 py-1 font-sans text-sm font-medium
+                tracking-wide text-white uppercase
+              `}
+            >
+              Abandoned
+            </div>
+          ) : (
+            <Grade height={32} value={review.data.grade} />
+          )
+        }
+      </div>
+      <div
+        class={`
           mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle
           uppercase
           tablet:mb-6
         `}
-        kind={value.kind}
-        workYear={value.workYear}
-      />
-      <ReviewCover coverImageProps={coverImageProps} />
+      >
+        {work.data.workYear} | {work.data.kind}
+      </div>
       <div
-        className={`
+        class={`
+          @container relative my-12 flex w-full max-w-popout flex-col
+          items-center
+        `}
+        data-pagefind-meta={`image:${coverImageProps.src}`}
+      >
+        <div
+          class={`
+            absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden
+            bg-default bg-cover bg-center clip-path-cover
+            after:absolute after:size-full after:backdrop-blur-sm
+            after:clip-path-cover
+            tablet:-left-[2.5%] tablet:w-[105%]
+          `}
+          style={{
+            "background-color": "var(--background-color-default)",
+            "background-image": `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
+          }}
+        >
+        </div>
+        <Cover
+          class={`-top-[2.5%]`}
+          decoding="auto"
+          imageProps={coverImageProps}
+          loading="eager"
+        />
+      </div>
+      <div
+        class={`
           relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
           text-subtle uppercase
           after:absolute after:top-1/2 after:left-[-11%] after:-z-10
@@ -140,19 +262,20 @@ title = `${title} ${kind} review`;
           tablet:mt-6
         `}
       >
-        Reviewed {dateFormat.format(value.date)}
+        Reviewed {dateFormat.format(review.data.date)}
       </div>
     </header>
     <div
-      className={`
+      class={`
         flex flex-col items-center gap-16 px-container pb-20
         desktop:gap-20 desktop:pb-32
       `}
     >
-      <LongFormText
-        className={`
-          max-w-prose
+      <div
+        class={`
+          rendered-markdown max-w-prose text-md/7 tracking-prose
           first-letter:leading-[.8] first-letter:text-default
+          tablet:text-xl/8
           tablet:first-letter:pr-3
           desktop:first-letter:text-[64px]
           [&>p:first-child]:first-letter:float-left
@@ -162,33 +285,191 @@ title = `${title} ${kind} review`;
           [&>p:first-child]:first-letter:text-[56px]
           [&>p:first-child]:first-letter:font-bold
         `}
-        text={value.content}
+        set:html={review.data.intermediateHtml}
       />
-      {
+
+      <!-- {
         value.includedWorks.length > 0 && (
           <div className="w-full max-w-popout">
             <IncludedWorks values={value.includedWorks} />
           </div>
         )
-      }
-      <div className="w-full max-w-popout">
-        <SubHeading as="h2" className="text-center shadow-bottom">
+      }-->
+      <div class="w-full max-w-popout">
+        <SubHeading classNames="text-center shadow-bottom" element="h2">
           Reading History
         </SubHeading>
         <ul>
           {
-            value.readings.map((value) => (
-              <ReadingHistoryListItem
-                key={`${value.date.toISOString()}-${value.readingSequence}`}
-                value={value}
-              />
-            ))
+            readings.map((reading) => {
+              const summaryText = reading.data.isAbandoned
+                ? "Abandoned after"
+                : reading.data.edition === "Audiobook"
+                  ? "Listened to over"
+                  : "Read over";
+              return (
+                <li
+                  class={`
+                    mb-1 flex flex-col bg-subtle px-container font-sans
+                    tablet:px-6
+                  `}
+                >
+                  <div
+                    class={`
+                      flex gap-x-4 py-4
+                      tablet:gap-x-6
+                    `}
+                  >
+                    <div class="size-auto self-start">
+                      <div class="bg-subtle py-2 text-center">
+                        <div
+                          class="
+                            px-4 pb-2 font-serif text-md font-normal text-subtle
+                          "
+                        >
+                          {readingYearFormat.format(reading.data.date)}
+                        </div>
+                        <div class="bg-default py-1 text-subtle">
+                          {readingMonthFormat.format(reading.data.date)}
+                        </div>
+                        <div
+                          class="
+                            bg-default font-serif text-md font-normal
+                            text-default
+                          "
+                        >
+                          {readingDayFormat.format(reading.data.date)}
+                        </div>
+                        <div class="bg-default py-1 text-subtle">
+                          {readingWeekdayFormat.format(reading.data.date)}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-12 grow">
+                      <span
+                        class={`font-serif text-base font-normal text-default`}
+                      >
+                        {reading.data.edition}
+                      </span>
+                      {reading.data.editionNotes && (
+                        <span class="font-light tracking-normal text-subtle">
+                          {" "}
+                          (
+                          <span
+                            class="rendered-markdown leading-none"
+                            set:html={reading.data.intermediateEditionNotesHtml}
+                          />
+                          )
+                        </span>
+                      )}
+                      <details
+                        class={`
+                          rounded-md bg-canvas px-2 text-subtle
+                          open:pb-2
+                        `}
+                      >
+                        <summary
+                          class={`
+                            cursor-pointer rounded-sm py-1 font-sans text-sm
+                            tracking-prose text-subtle
+                          `}
+                        >
+                          {summaryText} {reading.data.readingTime} Days
+                        </summary>
+                        <ol
+                          class={`
+                            grid w-full grid-cols-[auto_1fr_auto] rounded-md
+                            bg-default px-2 py-3
+                          `}
+                        >
+                          {reading.data.timeline.map((entry) => {
+                            let progressValue;
+                            const progressNumber = entry.progress.split(
+                              "%",
+                              1,
+                            )[0];
+
+                            if (progressNumber === "Finished") {
+                              progressValue = 100;
+                            }
+
+                            if (!Number.isNaN(Number(progressNumber))) {
+                              progressValue = Number.parseInt(progressNumber);
+                            }
+
+                            const entryDate = readingProgressDateFormat.format(
+                              entry.date,
+                            );
+
+                            return (
+                              <li
+                                class={`
+                                  relative col-span-3 grid grid-cols-subgrid
+                                  grid-rows-[1fr_auto_auto_1fr] p-1 font-normal
+                                  even:bg-subtle
+                                `}
+                              >
+                                <div
+                                  class={`
+                                    col-span-2 col-start-2 row-start-2 grid
+                                    grid-cols-subgrid font-sans text-sm
+                                    tracking-prose
+                                  `}
+                                >
+                                  <div>{entryDate}</div>
+                                  <div
+                                    class={`
+                                      col-start-3 self-center pb-1 text-right
+                                      font-sans text-sm text-nowrap
+                                    `}
+                                  >
+                                    <div>{entry.progress}</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class={`col-span-2 col-start-2 row-start-3`}
+                                >
+                                  {progressValue && (
+                                    <BarGradient
+                                      maxValue={100}
+                                      value={progressValue}
+                                    />
+                                  )}
+                                </div>
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      </details>
+                    </div>
+                  </div>
+                  <div>
+                    {reading.data.intermediateReadingNotesHtml && (
+                      <div
+                        class={`
+                          px-2 pb-6 text-sm font-light
+                          tablet:mx-24 tablet:px-0
+                        `}
+                      >
+                        <div
+                          class="
+                            rendered-markdown leading-normal tracking-prose
+                            text-muted
+                          "
+                          set:html={reading.data.intermediateReadingNotesHtml}
+                        />
+                      </div>
+                    )}
+                  </div>
+                </li>
+              );
+            })
           }
         </ul>
       </div>
     </div>
 
-    <div
+    <!-- <div
       className={`
         flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
         tablet:pt-8
@@ -209,6 +490,5 @@ title = `${title} ${kind} review`;
       grade={value.grade}
       title={value.title}
     /> -->
-    </header>
   </div>
 </ReviewLayout>
