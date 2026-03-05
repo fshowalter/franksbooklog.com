@@ -329,15 +329,15 @@ const MoreForReviewedWorkSchema = z.object({
 // and optional notes. Names are looked up from the authors collection at getProps time.
 const WorkRawAuthorSchema = z
   .object({
+    author: reference("authors"),
     notes: z
       .nullable(z.string())
       .optional()
       .transform((v) => v ?? undefined),
-    slug: reference("authors"),
   })
-  .transform(({ notes, slug }) => {
+  .transform(({ author, notes }) => {
     // fix zod making anything with undefined optional
-    return { notes, slug };
+    return { author, notes };
   });
 
 // AIDEV-NOTE: WorkSchema transforms `year` → `workYear` to match the field name used
@@ -401,11 +401,6 @@ const ReviewSchema = z.object({
   work: reference("works"),
 });
 
-// AIDEV-NOTE: editionNotes accepts null from YAML (editionNotes: ~) or is absent.
-// intermediateReadingNotesHtml and intermediateEditionNotesHtml are optional because
-// reading notes and edition notes may be absent.
-// slug = filename stem (e.g. "2022-09-19-01-carrie-by-stephen-king"); workSlug is a
-// plain string (no longer a reference — workSlug is not guaranteed to be in reviews).
 const ReadingSchema = z
   .object({
     body: z.string(),
@@ -417,10 +412,12 @@ const ReadingSchema = z
       .transform((v) => v ?? undefined),
     intermediateEditionNotesHtml: z.string().optional(),
     intermediateReadingNotesHtml: z.string().optional(),
+    isAbandoned: z.boolean(),
+    readingTime: z.number(),
     sequence: z.number(),
     slug: z.string(),
     timeline: z.array(TimelineEntrySchema),
-    workSlug: z.string(),
+    work: reference("works"),
   })
   .transform(
     ({
@@ -430,10 +427,12 @@ const ReadingSchema = z
       editionNotes,
       intermediateEditionNotesHtml,
       intermediateReadingNotesHtml,
+      isAbandoned,
+      readingTime,
       sequence,
       slug,
       timeline,
-      workSlug,
+      work,
     }) => {
       // fix zod making anything with undefined optional
       return {
@@ -443,10 +442,12 @@ const ReadingSchema = z
         editionNotes,
         intermediateEditionNotesHtml,
         intermediateReadingNotesHtml,
+        isAbandoned,
+        readingTime,
         sequence,
         slug,
         timeline,
-        workSlug,
+        work,
       };
     },
   );
@@ -548,6 +549,35 @@ const reviews = defineCollection({
   schema: ReviewSchema,
 });
 
+const RawReadingFrontmatterSchema = z.object({
+  date: z.coerce.date(),
+  edition: z.string(),
+  editionNotes: z
+    .nullable(z.string())
+    .optional()
+    .transform((v) => v ?? undefined),
+  sequence: z.number(),
+  slug: z.string(),
+  timeline: z.array(TimelineEntrySchema),
+  workSlug: z.string(),
+});
+
+type RawReadingFrontmatter = z.infer<typeof RawReadingFrontmatterSchema>;
+
+function computeReadingTime(readingFrontmatter: RawReadingFrontmatter): number {
+  if (readingFrontmatter.timeline.length === 0) return 1;
+
+  const timeline = readingFrontmatter.timeline.toSorted(
+    (a, b) => a.date.getTime() - b.date.getTime(),
+  );
+
+  const start = timeline[0].date;
+  const end = readingFrontmatter.date;
+  return (
+    Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1
+  );
+}
+
 const readings = defineCollection({
   loader: {
     load: (ctx) =>
@@ -556,25 +586,29 @@ const readings = defineCollection({
         path.join(CONTENT_ROOT, "readings"),
         ({ name }) => name.replace(/\.md$/, ""),
         ({ body, frontmatter }) => {
-          const editionNotes = frontmatter.editionNotes as
-            | null
-            | string
-            | undefined;
+          const parsedFrontmatter =
+            RawReadingFrontmatterSchema.parse(frontmatter);
+
+          const isAbandoned =
+            parsedFrontmatter.timeline.at(-1)?.progress === "Abandoned";
+
           return {
             body,
-            date: frontmatter.date,
-            edition: frontmatter.edition as string,
-            editionNotes,
-            intermediateEditionNotesHtml: editionNotes?.trim()
-              ? toInlineSpanHtml(editionNotes)
+            date: parsedFrontmatter.date,
+            edition: parsedFrontmatter.edition,
+            editionNotes: parsedFrontmatter.editionNotes,
+            intermediateEditionNotesHtml: parsedFrontmatter.editionNotes?.trim()
+              ? toInlineSpanHtml(parsedFrontmatter.editionNotes)
               : undefined,
             intermediateReadingNotesHtml: body.trim()
               ? toIntermediateHtml(body)
               : undefined,
-            sequence: frontmatter.sequence as number,
-            slug: frontmatter.slug as string,
-            timeline: frontmatter.timeline as unknown[],
-            workSlug: frontmatter.workSlug as string,
+            isAbandoned: isAbandoned,
+            readingTime: computeReadingTime(parsedFrontmatter),
+            sequence: parsedFrontmatter.sequence,
+            slug: parsedFrontmatter.slug,
+            timeline: parsedFrontmatter.timeline,
+            work: parsedFrontmatter.workSlug,
           };
         },
       ),

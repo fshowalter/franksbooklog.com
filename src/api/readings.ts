@@ -59,16 +59,16 @@ export function allReadingEntries(
   const authorsMap = new Map(authors.map((a) => [a.slug, a]));
   const worksMap = new Map(works.map((w) => [w.slug, w]));
   // ReviewData.slug is a { collection, id } reference — extract .id for the set
-  const reviewedSlugs = new Set(reviews.map((r) => r.slug.id));
+  const reviewedSlugs = new Set(reviews.map((r) => r.slug));
 
   // Expand all timeline entries with a composite sort key
   const rawEntries: { entry: ReadingEntry; sortKey: string }[] = [];
   for (const reading of readings) {
-    const work = worksMap.get(reading.workSlug)!;
+    const work = worksMap.get(reading.work.id)!;
     const enrichedAuthors = work.authors.map((a) => ({
-      name: authorsMap.get(a.slug)?.name ?? a.slug,
-      slug: a.slug,
-      sortName: authorsMap.get(a.slug)?.sortName ?? a.slug,
+      name: authorsMap.get(a.author.id)?.name ?? a.author.id,
+      slug: a.author.id,
+      sortName: authorsMap.get(a.author.id)?.sortName ?? a.author.id,
     }));
     for (const timelineEntry of reading.timeline) {
       const dateStr = timelineEntry.date.toISOString().slice(0, 10);
@@ -80,8 +80,8 @@ export function allReadingEntries(
           progress: timelineEntry.progress,
           readingEntryDate: dateStr,
           readingEntrySequence: 0, // assigned after sort
-          reviewed: reviewedSlugs.has(reading.workSlug),
-          slug: reading.workSlug,
+          reviewed: reviewedSlugs.has(reading.work.id),
+          slug: reading.work.id,
           title: work.title,
           workYear: work.workYear,
         },

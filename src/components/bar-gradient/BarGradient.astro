@@ -1,0 +1,20 @@
+---
+type Props = {
+  maxValue: number;
+  value: number;
+};
+
+const { maxValue, value } = Astro.props;
+---
+
+<div
+  class={`
+    bg-progress-bar leading-[6px]
+    tablet:mb-0
+  `}
+  style={{
+    "--bar-percent": `${(value / maxValue) * 100}%`,
+  }}
+>
+  &nbsp;
+</div>

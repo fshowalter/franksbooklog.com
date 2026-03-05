@@ -1,0 +1,38 @@
+---
+import { gradeMap } from "./gradeMap";
+
+type Props = {
+  classNames?: string;
+  height: 15 | 16 | 18 | 24 | 32;
+  value?: string;
+};
+
+const { classNames, height, value } = Astro.props;
+
+let src;
+let alt;
+
+if (value) {
+  [src, alt] = gradeMap[value];
+}
+
+const width = height * 5;
+---
+
+{
+  src && (
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset={src.replace(".svg", "-dark.svg")}
+      />
+      <img
+        alt={`${value}: ${alt}`}
+        class={classNames}
+        height={height}
+        src={src}
+        width={width}
+      />
+    </picture>
+  )
+}
