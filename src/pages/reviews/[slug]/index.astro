@@ -7,10 +7,10 @@ import { getReviewProps } from "~/features/review/getReviewProps";
 import { Review } from "~/features/review/Review";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
-interface Props {
+type Props = {
   contentPlainText: string;
   review: ReturnType<typeof allReviews>["reviews"][number];
-}
+};
 
 export async function getStaticPaths() {
   const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =

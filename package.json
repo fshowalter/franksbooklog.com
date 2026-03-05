@@ -17,7 +17,7 @@
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
     "preview": "astro preview",
     "start": "astro dev",
-    "sync": "./scripts/sync.js",
+    "sync": "./scripts/sync.ts",
     "test:coverage": "TEST_COVERAGE=true vitest run src --coverage.all true --coverage",
     "test:update": "vitest -u run src",
     "test:watch": "vitest src",

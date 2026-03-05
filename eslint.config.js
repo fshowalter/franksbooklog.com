@@ -8,7 +8,6 @@ import reactHooks from "eslint-plugin-react-hooks";
 import eslintPluginSeparateTypeImports from "eslint-plugin-separate-type-imports";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import { defineConfig } from "eslint/config";
-import globals from "globals";
 import tsEslint from "typescript-eslint";
 
 export default defineConfig(
@@ -20,33 +19,9 @@ export default defineConfig(
   eslintPluginSeparateTypeImports.configs.recommended,
   reactHooks.configs.flat.recommended,
   perfectionist.configs["recommended-natural"],
-  ...eslintPluginAstro.configs.recommended,
+  tsEslint.configs.recommendedTypeChecked,
+  eslintPluginAstro.configs.recommended,
   {
-    rules: {
-      "unicorn/filename-case": "off",
-      "unicorn/no-array-reverse": "off",
-      "unicorn/no-nested-ternary": "off",
-      "unicorn/prevent-abbreviations": "off",
-    },
-  },
-  {
-    files: ["scripts/*.js"],
-    languageOptions: {
-      globals: {
-        ...globals.node,
-      },
-    },
-  },
-  {
-    extends: [...tsEslint.configs.recommendedTypeChecked],
-    files: ["**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      parserOptions: {
-        project: true,
-        tsconfigRootDir: import.meta.dirname,
-        warnOnUnsupportedTypeScriptVersion: false,
-      },
-    },
     rules: {
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
@@ -62,37 +37,28 @@ export default defineConfig(
           ],
         },
       ],
+      "unicorn/filename-case": "off",
+      "unicorn/no-array-reverse": "off",
+      "unicorn/no-nested-ternary": "off",
+      "unicorn/prevent-abbreviations": "off",
     },
   },
   {
-    files: ["**/*.astro"],
-    plugins: {
-      "better-tailwindcss": eslintPluginBetterTailwindcss,
-    },
-    rules: {
-      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
-      "better-tailwindcss/no-conflicting-classes": "error",
-    },
-    settings: {
-      "better-tailwindcss": {
-        entryPoint: "src/css/tailwind.css",
+    languageOptions: {
+      parserOptions: {
+        project: true,
+        tsconfigRootDir: import.meta.dirname,
+        warnOnUnsupportedTypeScriptVersion: false,
       },
     },
   },
-
   {
-    files: ["**/*.tsx"],
+    files: ["**/*.{astro,tsx}"],
     plugins: {
       "better-tailwindcss": eslintPluginBetterTailwindcss,
-      react,
     },
     rules: {
-      ...react.configs.recommended.rules,
-      "react/boolean-prop-naming": "error",
-      "react/button-has-type": "error",
-      "react/react-in-jsx-scope": "off",
       ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
-      "@typescript-eslint/explicit-function-return-type": "error",
       "better-tailwindcss/no-conflicting-classes": "error",
       "better-tailwindcss/no-unknown-classes": [
         "error",
@@ -103,10 +69,30 @@ export default defineConfig(
       "better-tailwindcss": {
         entryPoint: "src/css/tailwind.css",
       },
+    },
+  },
+  {
+    files: ["**/*.tsx"],
+    plugins: {
+      react,
+    },
+    rules: {
+      ...react.configs.recommended.rules,
+      "@typescript-eslint/explicit-function-return-type": "error",
+      "react/boolean-prop-naming": "error",
+      "react/button-has-type": "error",
+      "react/react-in-jsx-scope": "off",
+    },
+    settings: {
       react: {
         version: "detect",
       },
     },
+  },
+  {
+    extends: [tsEslint.configs.disableTypeChecked],
+    ...tsEslint.configs.eslintRecommended,
+    files: ["**/*.astro"],
   },
   {
     files: ["src/**/?(*.)+(spec|test).[jt]s?(x)"],
