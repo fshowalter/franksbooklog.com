@@ -33,6 +33,8 @@ import { removeFootnotes } from "~/api/utils/markdown/removeFootnotes";
 import { rootAsSpan } from "~/api/utils/markdown/rootAsSpan";
 import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
 
+import { getContentPlainText } from "./api/reviews";
+
 // --- Path helper ---
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
@@ -314,14 +316,14 @@ const AuthorSchema = z.object({
 // `reviews` is an array of work slugs (plain strings, not references).
 const MoreByAuthorSchema = z.object({
   author: z.string(),
-  reviews: z.array(z.string()),
+  reviews: z.array(reference("reviews")),
 });
 
 // AIDEV-NOTE: MoreForReviewedWorkSchema — each entry holds the pre-computed moreByAuthors
 // and moreReviews lists for a single reviewed work. Entry ID = work slug (raw.work).
 const MoreForReviewedWorkSchema = z.object({
   moreByAuthors: z.array(MoreByAuthorSchema),
-  moreReviews: z.array(z.string()),
+  moreReviews: z.array(reference("reviews")),
   work: z.string(),
 });
 
@@ -329,15 +331,15 @@ const MoreForReviewedWorkSchema = z.object({
 // and optional notes. Names are looked up from the authors collection at getProps time.
 const WorkRawAuthorSchema = z
   .object({
+    author: reference("authors"),
     notes: z
       .nullable(z.string())
       .optional()
       .transform((v) => v ?? undefined),
-    slug: z.string(),
   })
-  .transform(({ notes, slug }) => {
+  .transform(({ author, notes }) => {
     // fix zod making anything with undefined optional
-    return { notes, slug };
+    return { author, notes };
   });
 
 // AIDEV-NOTE: WorkSchema transforms `year` → `workYear` to match the field name used
@@ -346,7 +348,7 @@ const WorkRawAuthorSchema = z
 const WorkSchema = z
   .object({
     authors: z.array(WorkRawAuthorSchema),
-    includedWorks: z.array(z.string()),
+    includedWorks: z.array(reference("works")),
     kind: WorkKindSchema,
     slug: z.string(),
     sortTitle: z.string(),
@@ -392,18 +394,17 @@ const TimelineEntrySchema = z.object({
 const ReviewSchema = z.object({
   body: z.string(),
   date: z.coerce.date(),
+  description: z.string(),
   excerptHtml: z.string(),
+  excerptPlainText: z.string(),
   grade: z.string(),
   intermediateHtml: z.string(),
-  slug: reference("works"),
+  more: reference("moreForReviewedWorks"),
+  slug: z.string(),
   synopsis: z.optional(z.string()),
+  work: reference("works"),
 });
 
-// AIDEV-NOTE: editionNotes accepts null from YAML (editionNotes: ~) or is absent.
-// intermediateReadingNotesHtml and intermediateEditionNotesHtml are optional because
-// reading notes and edition notes may be absent.
-// slug = filename stem (e.g. "2022-09-19-01-carrie-by-stephen-king"); workSlug is a
-// plain string (no longer a reference — workSlug is not guaranteed to be in reviews).
 const ReadingSchema = z
   .object({
     body: z.string(),
@@ -415,10 +416,12 @@ const ReadingSchema = z
       .transform((v) => v ?? undefined),
     intermediateEditionNotesHtml: z.string().optional(),
     intermediateReadingNotesHtml: z.string().optional(),
+    isAbandoned: z.boolean(),
+    readingTime: z.number(),
     sequence: z.number(),
     slug: z.string(),
     timeline: z.array(TimelineEntrySchema),
-    workSlug: z.string(),
+    work: reference("works"),
   })
   .transform(
     ({
@@ -428,10 +431,12 @@ const ReadingSchema = z
       editionNotes,
       intermediateEditionNotesHtml,
       intermediateReadingNotesHtml,
+      isAbandoned,
+      readingTime,
       sequence,
       slug,
       timeline,
-      workSlug,
+      work,
     }) => {
       // fix zod making anything with undefined optional
       return {
@@ -441,16 +446,19 @@ const ReadingSchema = z
         editionNotes,
         intermediateEditionNotesHtml,
         intermediateReadingNotesHtml,
+        isAbandoned,
+        readingTime,
         sequence,
         slug,
         timeline,
-        workSlug,
+        work,
       };
     },
   );
 
 const PageSchema = z.object({
   body: z.string(),
+  description: z.string(),
   intermediateHtml: z.string(),
   slug: z.string(),
   title: z.string(),
@@ -528,14 +536,34 @@ const reviews = defineCollection({
         ({ body, frontmatter }) => {
           const excerptContent =
             (frontmatter.synopsis as string | undefined)?.trim() || body;
+
+          const contentPlainText = getContentPlainText(body);
+
+          //trim the string to the maximum length
+          let description = contentPlainText
+            .replaceAll(/\r?\n|\r/g, " ")
+            .slice(0, Math.max(0, 160));
+
+          //re-trim if we are in the middle of a word
+          description = description.slice(
+            0,
+            Math.max(
+              0,
+              Math.min(description.length, description.lastIndexOf(" ")),
+            ),
+          );
           return {
             body,
             date: frontmatter.date,
+            description,
             excerptHtml: toExcerptHtml(excerptContent),
+            excerptPlainText: excerptContent,
             grade: frontmatter.grade as string,
             intermediateHtml: toIntermediateHtml(body),
+            more: frontmatter.slug,
             slug: frontmatter.slug as string,
             synopsis: frontmatter.synopsis as string | undefined,
+            work: frontmatter.slug as string,
           };
         },
       ),
@@ -543,6 +571,37 @@ const reviews = defineCollection({
   },
   schema: ReviewSchema,
 });
+
+const RawReadingFrontmatterSchema = z.object({
+  date: z.coerce.date(),
+  edition: z.string(),
+  editionNotes: z
+    .nullable(z.string())
+    .optional()
+    .transform((v) => v ?? undefined),
+  sequence: z.number(),
+  slug: z.string(),
+  timeline: z.array(TimelineEntrySchema),
+  workSlug: z.string(),
+});
+
+export type WorkAuthor = z.infer<typeof WorkRawAuthorSchema>;
+
+type RawReadingFrontmatter = z.infer<typeof RawReadingFrontmatterSchema>;
+
+function computeReadingTime(readingFrontmatter: RawReadingFrontmatter): number {
+  if (readingFrontmatter.timeline.length === 0) return 1;
+
+  const timeline = readingFrontmatter.timeline.toSorted(
+    (a, b) => a.date.getTime() - b.date.getTime(),
+  );
+
+  const start = timeline[0].date;
+  const end = readingFrontmatter.date;
+  return (
+    Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1
+  );
+}
 
 const readings = defineCollection({
   loader: {
@@ -552,25 +611,29 @@ const readings = defineCollection({
         path.join(CONTENT_ROOT, "readings"),
         ({ name }) => name.replace(/\.md$/, ""),
         ({ body, frontmatter }) => {
-          const editionNotes = frontmatter.editionNotes as
-            | null
-            | string
-            | undefined;
+          const parsedFrontmatter =
+            RawReadingFrontmatterSchema.parse(frontmatter);
+
+          const isAbandoned =
+            parsedFrontmatter.timeline.at(-1)?.progress === "Abandoned";
+
           return {
             body,
-            date: frontmatter.date,
-            edition: frontmatter.edition as string,
-            editionNotes,
-            intermediateEditionNotesHtml: editionNotes?.trim()
-              ? toInlineSpanHtml(editionNotes)
+            date: parsedFrontmatter.date,
+            edition: parsedFrontmatter.edition,
+            editionNotes: parsedFrontmatter.editionNotes,
+            intermediateEditionNotesHtml: parsedFrontmatter.editionNotes?.trim()
+              ? toInlineSpanHtml(parsedFrontmatter.editionNotes)
               : undefined,
             intermediateReadingNotesHtml: body.trim()
               ? toIntermediateHtml(body)
               : undefined,
-            sequence: frontmatter.sequence as number,
-            slug: frontmatter.slug as string,
-            timeline: frontmatter.timeline as unknown[],
-            workSlug: frontmatter.workSlug as string,
+            isAbandoned: isAbandoned,
+            readingTime: computeReadingTime(parsedFrontmatter),
+            sequence: parsedFrontmatter.sequence,
+            slug: parsedFrontmatter.slug,
+            timeline: parsedFrontmatter.timeline,
+            work: parsedFrontmatter.workSlug,
           };
         },
       ),
@@ -586,12 +649,31 @@ const pages = defineCollection({
         ctx,
         path.join(CONTENT_ROOT, "pages"),
         ({ frontmatter }) => frontmatter.slug as string,
-        ({ body, frontmatter }) => ({
-          body,
-          intermediateHtml: toIntermediateHtml(body),
-          slug: frontmatter.slug as string,
-          title: frontmatter.title as string,
-        }),
+        ({ body, frontmatter }) => {
+          const contentPlainText = getContentPlainText(body);
+
+          //trim the string to the maximum length
+          let description = contentPlainText
+            .replaceAll(/\r?\n|\r/g, " ")
+            .slice(0, Math.max(0, 160));
+
+          //re-trim if we are in the middle of a word
+          description = description.slice(
+            0,
+            Math.max(
+              0,
+              Math.min(description.length, description.lastIndexOf(" ")),
+            ),
+          );
+
+          return {
+            body,
+            description,
+            intermediateHtml: toIntermediateHtml(body),
+            slug: frontmatter.slug as string,
+            title: frontmatter.title as string,
+          };
+        },
       ),
     name: "pages-loader",
   },

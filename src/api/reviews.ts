@@ -16,18 +16,6 @@ import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
 
-// AIDEV-NOTE: IncludedWork is the enriched shape for included works on a review page.
-// Computed in getReviewProps by joining works + reviews + authors collections.
-export type IncludedWork = {
-  authors: { name: string; slug: string }[];
-  grade: string | undefined;
-  kind: WorkData["kind"];
-  reviewed: boolean;
-  slug: string;
-  title: string;
-  workYear: string;
-};
-
 // AIDEV-NOTE: Review type is the computed join of WorkData + ReviewData + derived fields.
 // It no longer embeds ReviewedWorkData — gradeValue, reviewDate, reviewYear, reviewSequence,
 // and enriched authors are computed in allReviews(). moreByAuthors/moreReviews/readings are
@@ -62,11 +50,16 @@ export type Review = {
   workYear: string;
 };
 
-export type ReviewWithContent = Omit<Review, "includedWorks"> & {
-  content: string | undefined;
-  excerptPlainText: string;
-  includedWorks: IncludedWork[];
-  readings: ReviewReading[];
+// AIDEV-NOTE: IncludedWork is the enriched shape for included works on a review page.
+// Computed in getReviewProps by joining works + reviews + authors collections.
+type IncludedWork = {
+  authors: { name: string; slug: string }[];
+  grade: string | undefined;
+  kind: WorkData["kind"];
+  reviewed: boolean;
+  slug: string;
+  title: string;
+  workYear: string;
 };
 
 // AIDEV-NOTE: ReviewReading is computed in loadContent from ReadingData:
@@ -93,6 +86,13 @@ type ReviewsResult = {
   reviews: Review[];
 };
 
+type ReviewWithContent = Omit<Review, "includedWorks"> & {
+  content: string | undefined;
+  excerptPlainText: string;
+  includedWorks: IncludedWork[];
+  readings: ReviewReading[];
+};
+
 // AIDEV-NOTE: allReviews joins WorkData + ReviewData + AuthorData + ReadingData into
 // Review objects. Only works that have a matching ReviewData entry are included.
 // Derived fields (gradeValue, reviewDate, reviewYear, reviewSequence, enriched authors)
@@ -105,7 +105,7 @@ export function allReviews(
   readings: ReadingData[],
 ): ReviewsResult {
   const authorsMap = new Map(authors.map((a) => [a.slug, a]));
-  const reviewsMap = new Map(reviews.map((r) => [r.slug.id, r]));
+  const reviewsMap = new Map(reviews.map((r) => [r.slug, r]));
 
   // Group readings by workSlug for reviewSequence computation
   const readingsByWork = new Map<string, ReadingData[]>();
@@ -135,7 +135,7 @@ export function allReviews(
     const reviewSequence = getReviewSequence(work.slug, readingsByWork);
 
     const enrichedAuthors = work.authors.map((a) => {
-      const author = authorsMap.get(a.slug);
+      const author = authorsMap.get(a.slug.id);
       return {
         name: author?.name ?? a.slug,
         notes: a.notes,
@@ -209,11 +209,11 @@ export function loadContent(
     .processSync(review.body)
     .toString();
 
-  const reviewedSlugs = reviews.map((r) => ({ slug: r.slug.id }));
+  const reviewedSlugs = reviews.map((r) => ({ slug: r.slug }));
 
   // Filter readings for this work, sort most-recent first
   const workReadings = readings
-    .filter((r) => r.workSlug === review.slug)
+    .filter((r) => r.work.id === review.slug)
     // eslint-disable-next-line unicorn/no-array-sort
     .sort((a, b) => b.date.getTime() - a.date.getTime());
 

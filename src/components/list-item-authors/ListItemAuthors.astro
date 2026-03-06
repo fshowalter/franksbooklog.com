@@ -1,0 +1,15 @@
+---
+import type { WorkAuthor } from "~/content.config";
+
+import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+
+type Props = {
+  values: WorkAuthor[];
+};
+
+const { values } = Astro.props;
+---
+
+<div class={`text-[15px]/4 font-normal tracking-prose text-muted`}>
+  {formatWorkAuthors(values)}
+</div>
