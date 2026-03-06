@@ -482,17 +482,14 @@ const includedWorks = await getEntries(work.data.includedWorks);
         tablet:pt-8
         laptop:gap-y-24
       `}
-      data-pagefind-ignore
     >
       <MoreReviews
-        values={await Promise.all(
-          moreReviews.map(async (value) => {
-            return {
-              ...value.data,
-              date: undefined,
-            };
-          }),
-        )}
+        values={moreReviews.map((value) => {
+          return {
+            ...value.data,
+            date: undefined,
+          };
+        })}
       >
         <MoreReviewsHeading
           accentText="Reviews"
@@ -501,15 +498,19 @@ const includedWorks = await getEntries(work.data.includedWorks);
         />
       </MoreReviews>
     </div>
-    <script
-      set:html={JSON.stringify(
-        reviewStructuredData(
-          review.data.slug,
-          work.data.title,
-          review.data.grade,
-        ),
-      )}
-      type="application/ld+json"
-    />
+    {
+      review.data.grade != "Abandoned" && (
+        <script
+          set:html={JSON.stringify(
+            await reviewStructuredData(
+              review.data.slug,
+              work.data.title,
+              review.data.grade,
+            ),
+          )}
+          type="application/ld+json"
+        />
+      )
+    }
   </div>
 </ReviewLayout>

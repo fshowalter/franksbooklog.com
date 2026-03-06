@@ -8,18 +8,18 @@ const longFormatter = new Intl.ListFormat("en", {
 });
 
 const shortFormatter = new Intl.ListFormat("en", {
-  style: "long",
+  style: "short",
   type: "conjunction",
 });
 
 const formatterMap: Record<string, Intl.ListFormat> = {
   long: longFormatter,
-  sort: shortFormatter,
+  short: shortFormatter,
 };
 
 export async function formatWorkAuthors(
   workAuthors: WorkAuthor[],
-  style: "long" | "short" = "long",
+  style: keyof typeof formatterMap = "long",
 ) {
   const formatter = formatterMap[style];
 
