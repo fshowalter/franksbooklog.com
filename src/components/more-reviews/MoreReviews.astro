@@ -1,14 +1,16 @@
 ---
-import type { ReviewCardValue } from "~/components/review-card/ReviewCard.astro";
+import type { ComponentProps } from "astro/types";
 
 import ReviewCard from "~/components/review-card/ReviewCard.astro";
 
+import MoreReviewsHeading from "./MoreReviewsHeading.astro";
+
 type Props = {
-  children: unknown;
-  values: ReviewCardValue[];
+  cardProps: ComponentProps<typeof ReviewCard>[];
+  headingProps: ComponentProps<typeof MoreReviewsHeading>;
 };
 
-const { values } = Astro.props;
+const { cardProps, headingProps } = Astro.props;
 ---
 
 <nav
@@ -18,7 +20,7 @@ const { values } = Astro.props;
   `}
   data-page-find-ignore
 >
-  <slot />
+  <MoreReviewsHeading {...headingProps} />
   <div
     class={`
       @container/card-list mx-auto
@@ -32,8 +34,8 @@ const { values } = Astro.props;
       `}
     >
       {
-        values.map((value) => {
-          return <ReviewCard value={value} />;
+        cardProps.map((props) => {
+          return <ReviewCard {...props} />;
         })
       }
     </ol>

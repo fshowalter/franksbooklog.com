@@ -3,15 +3,17 @@ import SubHeading from "~/components/sub-heading/SubHeading.astro";
 
 type Props = {
   accentText: string;
-  element?: "h2" | "h3" | "h4" | "h5";
   href: string;
+  level?: "h2" | "h3" | "h4" | "h5";
   text: string;
 };
 
-const { accentText, element = "h2", href, text } = Astro.props;
+const { accentText, href, level = "h2", text } = Astro.props;
+
+console.log(level);
 ---
 
-<SubHeading element={element}>
+<SubHeading level={level}>
   <a
     class={`
       relative -mb-1 inline-block transform-gpu pb-1 transition-all

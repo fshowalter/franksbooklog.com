@@ -1,15 +1,10 @@
 ---
-import { getCollection } from "astro:content";
-
 import HeroLayout from "~/components/layout/HeroLayout.astro";
 import ReviewCard from "~/components/review-card/ReviewCard.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
+import { mostRecentReviews } from "~/content/reviews";
 
-const reviews = await getCollection("reviews");
-
-reviews.sort((a, b) => {
-  return b.data.date.getTime() - a.data.date.getTime();
-});
+const reviews = await mostRecentReviews(12);
 
 const deck = "Literature is a relative term.";
 const metaDescription =
@@ -38,7 +33,7 @@ const metaDescription =
         @container/card-list mx-auto max-w-(--breakpoint-desktop) px-container
       `}
     >
-      <SubHeading element="h2">Latest Reviews</SubHeading>
+      <SubHeading level="h2">Latest Reviews</SubHeading>
       <ol
         class={`
           -mx-4 grid grid-rows-[auto_1fr] gap-x-[3%] gap-y-8
@@ -46,8 +41,8 @@ const metaDescription =
         `}
       >
         {
-          reviews.slice(0, 12).map((review) => {
-            return <ReviewCard value={review.data} />;
+          reviews.map((review) => {
+            return <ReviewCard hasDate={true} value={review.data} />;
           })
         }
       </ol>

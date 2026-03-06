@@ -1,7 +1,7 @@
 ---
-import { getEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
-import type { ReviewData } from "~/content.config";
+import { getEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import Grade from "~/components/grade/Grade.astro";
@@ -18,15 +18,11 @@ const CoverImageConfig = {
 };
 
 type Props = {
-  value: ReviewCardValue;
+  hasDate: boolean;
+  value: CollectionEntry<"reviews">["data"];
 };
 
-type ReviewCardValue = Omit<ReviewData, "date"> & {
-  /** Cover image properties for display */
-  date?: Date;
-};
-
-const { value } = Astro.props;
+const { hasDate, value } = Astro.props;
 const work = await getEntry(value.work);
 const coverImageProps = await getFluidCoverImageProps(value, CoverImageConfig);
 ---
@@ -122,7 +118,7 @@ const coverImageProps = await getFluidCoverImageProps(value, CoverImageConfig);
       `}
     >
       {
-        value.date && (
+        hasDate && (
           <div
             class={`
               mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle

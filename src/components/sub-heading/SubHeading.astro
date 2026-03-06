@@ -1,20 +1,18 @@
 ---
 type Props = {
   children: unknown;
-  classNames?: string;
-  element: "h2" | "h3" | "h4" | "h5";
+  class?: string;
+  level: "h2" | "h3" | "h4" | "h5";
 };
 
-const { classNames, element } = Astro.props;
-
-const Element = element;
+const { class: classNames, level: HeadingTag } = Astro.props;
 ---
 
-<Element
+<HeadingTag
   class:list={[
     `py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase`,
     classNames,
   ]}
 >
   <slot />
-</Element>
+</HeadingTag>

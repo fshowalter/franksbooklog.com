@@ -1,0 +1,21 @@
+---
+import RenderedMarkdown from "~/components/rendered-markdown/RenderedMarkdown.astro";
+
+type Props = {
+  class?: string;
+  text: string | undefined;
+};
+
+const { class: classNames, text } = Astro.props;
+---
+
+<RenderedMarkdown
+  class:list={[
+    `
+      text-md/7 tracking-prose
+      tablet:text-xl/8
+    `,
+    classNames,
+  ]}
+  text={text}
+/>

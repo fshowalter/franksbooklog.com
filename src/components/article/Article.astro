@@ -1,0 +1,40 @@
+---
+import LongFormText from "~/components/long-form-text/LongFormText.astro";
+import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
+import { mostRecentReviews } from "~/content/reviews";
+
+type Props = {
+  content: string | undefined;
+};
+
+const { content } = Astro.props;
+const recentReviews = await mostRecentReviews(6);
+---
+
+<section class="flex flex-col items-center pt-16 pb-32">
+  <div class="px-container">
+    <LongFormText class={`max-w-prose`} text={content} />
+  </div>
+</section>
+<div
+  class={`
+    flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
+    tablet:pt-8
+    desktop:gap-y-24
+  `}
+  data-pagefind-ignore
+>
+  <MoreReviews
+    cardProps={recentReviews.map((review) => {
+      return {
+        hasDate: true,
+        value: review.data,
+      };
+    })}
+    headingProps={{
+      accentText: "Reviews",
+      href: `/reviews/`,
+      text: "Recent",
+    }}
+  />
+</div>
