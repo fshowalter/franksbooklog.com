@@ -213,7 +213,7 @@ export function loadContent(
 
   // Filter readings for this work, sort most-recent first
   const workReadings = readings
-    .filter((r) => r.workSlug === review.slug)
+    .filter((r) => r.work.id === review.slug)
     // eslint-disable-next-line unicorn/no-array-sort
     .sort((a, b) => b.date.getTime() - a.date.getTime());
 

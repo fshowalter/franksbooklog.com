@@ -1,0 +1,41 @@
+---
+import type { ReviewCardValue } from "~/components/review-card/ReviewCard.astro";
+
+import ReviewCard from "~/components/review-card/ReviewCard.astro";
+
+type Props = {
+  children: unknown;
+  values: ReviewCardValue[];
+};
+
+const { values } = Astro.props;
+---
+
+<nav
+  class={`
+    mx-auto w-full max-w-[894px] bg-subtle px-container
+    min-[1080px]:max-w-(--breakpoint-desktop)
+  `}
+  data-page-find-ignore
+>
+  <slot />
+  <div
+    class={`
+      @container/card-list mx-auto
+      tablet:-mx-6
+    `}
+  >
+    <ol
+      class={`
+        grid flex-wrap gap-8
+        tablet-landscape:grid-cols-2
+      `}
+    >
+      {
+        values.map((value) => {
+          return <ReviewCard value={value} />;
+        })
+      }
+    </ol>
+  </div>
+</nav>

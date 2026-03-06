@@ -2,16 +2,29 @@
 import type { CollectionEntry } from "astro:content";
 
 import { getEntry } from "astro:content";
+import { getEntries } from "astro:content";
 import { getCollection } from "astro:content";
 
-import { getFixedCoverImageProps } from "~/api/covers";
-import { getContentPlainText } from "~/api/reviews";
+import {
+  getFixedCoverImageProps,
+  getFluidCoverImageProps,
+  getStructuredDataCoverSrc,
+} from "~/api/covers";
 import BarGradient from "~/components/bar-gradient/BarGradient.astro";
 import Cover from "~/components/cover/Cover.astro";
 import Grade from "~/components/grade/Grade.astro";
 import ReviewLayout from "~/components/layout/ReviewLayout.astro";
+import ListItemAuthors from "~/components/list-item-authors/ListItemAuthors.astro";
+import ListItemDetails from "~/components/list-item-details/ListItemDetails.astro";
+import ListItemGrade from "~/components/list-item-grade/ListItemGrade.astro";
+import ListItemKindAndYear from "~/components/list-item-kind-and-year/ListItemKindAndYear.astro";
+import ListItemTitle from "~/components/list-item-title/ListItemTitle.astro";
+import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
+import MoreReviewsHeading from "~/components/more-reviews/MoreReviewsHeading.astro";
+import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
 import { toSentenceArray } from "~/utils/toSentenceArray";
+import { workAuthorNames } from "~/utils/workAuthorNames";
 
 type Props = {
   review: CollectionEntry<"reviews">;
@@ -44,27 +57,14 @@ export const CoverImageConfig = {
 const { review } = Astro.props;
 const work = await getEntry(review.data.work);
 
-const contentPlainText = getContentPlainText(review.data.body);
-
-//trim the string to the maximum length
-let description = contentPlainText
-  .replaceAll(/\r?\n|\r/g, " ")
-  .slice(0, Math.max(0, 160));
-
-//re-trim if we are in the middle of a word
-description = description.slice(
-  0,
-  Math.max(0, Math.min(description.length, description.lastIndexOf(" "))),
-);
-
-const workAuthorNames = await Promise.all(
+const titleAuthorNames = await Promise.all(
   work.data.authors.map(async (workAuthor) => {
     const author = await getEntry(workAuthor.author);
     return author.data.name;
   }),
 );
 
-let title = `${work.data.title} by ${toSentenceArray(workAuthorNames).join("")}`;
+let title = `${work.data.title} by ${toSentenceArray(titleAuthorNames).join("")}`;
 
 const kind = work.data.kind == "Short Story" ? "story" : "book";
 
@@ -113,14 +113,45 @@ const readingProgressDateFormat = new Intl.DateTimeFormat("en-GB", {
   timeZone: "UTC",
   year: "numeric",
 });
+
+const structuredDataGradeMap: Record<string, number> = {
+  A: 5,
+  B: 4,
+  C: 3,
+  D: 2,
+  F: 1,
+};
+
+const more = await getEntry(review.data.more);
+const moreReviews = await getEntries(more.data.moreReviews);
+
+const structuredData = {
+  "@context": "http://schema.org",
+  "@type": "Review",
+  author: {
+    "@type": "Person",
+    name: "Frank Showalter",
+  },
+  itemReviewed: {
+    "@type": "Book",
+    image: await getStructuredDataCoverSrc(work.data),
+    name: title,
+  },
+  reviewRating: {
+    "@type": "Rating",
+    ratingValue: structuredDataGradeMap[review.data.grade[0]],
+  },
+};
+
+const includedWorks = await getEntries(work.data.includedWorks);
 ---
 
 <ReviewLayout
   baseLayoutProps={{
     canonical: true,
-    meta: { description },
+    meta: { description: review.data.description },
     openGraph: {
-      description,
+      description: review.data.description,
       type: "article",
     },
     title,
@@ -288,13 +319,60 @@ const readingProgressDateFormat = new Intl.DateTimeFormat("en-GB", {
         set:html={review.data.intermediateHtml}
       />
 
-      <!-- {
-        value.includedWorks.length > 0 && (
-          <div className="w-full max-w-popout">
-            <IncludedWorks values={value.includedWorks} />
+      {
+        includedWorks.length > 0 && (
+          <div class="w-full max-w-popout">
+            <SubHeading classNames="text-center shadow-bottom" element="h2">
+              Included Works
+            </SubHeading>
+            <div
+              class={`
+                w-full max-w-popout bg-subtle px-container py-8
+                tablet:pt-12
+              `}
+            >
+              <ul>
+                {includedWorks.map(async (work) => {
+                  const includedWorkReview = await getEntry("reviews", work.id);
+
+                  return (
+                    <li
+                      class={`
+                        relative mb-1 transform-gpu bg-default px-container py-4
+                        transition-transform
+                        last-of-type:mb-0
+                        has-[a:hover]:z-10 has-[a:hover]:scale-105
+                        has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl
+                        tablet:gap-x-6 tablet:px-4
+                        desktop:px-6
+                      `}
+                    >
+                      <ListItemDetails>
+                        <ListItemTitle
+                          slug={includedWorkReview?.data.slug}
+                          title={work.data.title}
+                        />
+                        <ListItemAuthors
+                          values={await workAuthorNames(work.data.authors)}
+                        />
+                        <ListItemKindAndYear
+                          kind={work.data.kind}
+                          year={work.data.workYear}
+                        />
+                        {includedWorkReview?.data?.grade && (
+                          <ListItemGrade
+                            grade={includedWorkReview?.data.grade}
+                          />
+                        )}
+                      </ListItemDetails>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         )
-      }-->
+      }
       <div class="w-full max-w-popout">
         <SubHeading classNames="text-center shadow-bottom" element="h2">
           Reading History
@@ -469,15 +547,28 @@ const readingProgressDateFormat = new Intl.DateTimeFormat("en-GB", {
       </div>
     </div>
 
-    <!-- <div
-      className={`
+    <div
+      class={`
         flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
         tablet:pt-8
         laptop:gap-y-24
       `}
       data-pagefind-ignore
     >
-      <MoreReviews values={moreReviews}>
+      <MoreReviews
+        values={await Promise.all(
+          moreReviews.map(async (value) => {
+            return {
+              ...value.data,
+              coverImageProps: await getFluidCoverImageProps(
+                { slug: value.id },
+                ReviewCardCoverImageConfig,
+              ),
+              date: undefined,
+            };
+          }),
+        )}
+      >
         <MoreReviewsHeading
           accentText="Reviews"
           href={`/reviews/`}
@@ -485,10 +576,9 @@ const readingProgressDateFormat = new Intl.DateTimeFormat("en-GB", {
         />
       </MoreReviews>
     </div>
-    <StructuredData
-      coverImgSrc={structuredDataCoverSrc}
-      grade={value.grade}
-      title={value.title}
-    /> -->
+    <script
+      set:html={JSON.stringify(structuredData)}
+      type="application/ld+json"
+    />
   </div>
 </ReviewLayout>
