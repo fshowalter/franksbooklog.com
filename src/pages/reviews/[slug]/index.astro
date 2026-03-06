@@ -5,7 +5,7 @@ import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
 import { getCollection } from "astro:content";
 
-import { getFixedCoverImageProps, getFluidCoverImageProps } from "~/api/covers";
+import { getFixedCoverImageProps } from "~/api/covers";
 import BarGradient from "~/components/bar-gradient/BarGradient.astro";
 import Cover from "~/components/cover/Cover.astro";
 import Grade from "~/components/grade/Grade.astro";
@@ -17,7 +17,6 @@ import ListItemKindAndYear from "~/components/list-item-kind-and-year/ListItemKi
 import ListItemTitle from "~/components/list-item-title/ListItemTitle.astro";
 import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
 import MoreReviewsHeading from "~/components/more-reviews/MoreReviewsHeading.astro";
-import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
 import {
   readingDayFormat,
@@ -30,7 +29,6 @@ import { reviewDateFormat } from "~/utils/reviewDateFormat";
 import { reviewPageTitle } from "~/utils/reviewPageTitle";
 import { reviewStructuredData } from "~/utils/reviewStructuredData";
 import { toSentenceArray } from "~/utils/toSentenceArray";
-import { workAuthorNames } from "~/utils/workAuthorNames";
 
 type Props = {
   review: CollectionEntry<"reviews">;
@@ -285,9 +283,7 @@ const includedWorks = await getEntries(work.data.includedWorks);
                           slug={includedWorkReview?.data.slug}
                           title={work.data.title}
                         />
-                        <ListItemAuthors
-                          values={await workAuthorNames(work.data.authors)}
-                        />
+                        <ListItemAuthors values={work.data.authors} />
                         <ListItemKindAndYear
                           kind={work.data.kind}
                           year={work.data.workYear}
@@ -493,10 +489,6 @@ const includedWorks = await getEntries(work.data.includedWorks);
           moreReviews.map(async (value) => {
             return {
               ...value.data,
-              coverImageProps: await getFluidCoverImageProps(
-                { slug: value.id },
-                ReviewCardCoverImageConfig,
-              ),
               date: undefined,
             };
           }),

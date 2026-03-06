@@ -1,47 +1,34 @@
 ---
 import { getEntry } from "astro:content";
 
-import type { CoverImageProps } from "~/api/covers";
 import type { ReviewData } from "~/content.config";
 
+import { getFluidCoverImageProps } from "~/api/covers";
 import Grade from "~/components/grade/Grade.astro";
+import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 /**
  * Configuration for cover images in review cards
  */
-export const ReviewCardCoverImageConfig = {
+const CoverImageConfig = {
   height: 372,
   sizes:
     "(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)",
   width: 248,
 };
 
-export type ReviewCardValue = Omit<ReviewData, "date"> & {
-  /** Cover image properties for display */
-  coverImageProps: CoverImageProps;
-  date?: Date;
-};
-
 type Props = {
   value: ReviewCardValue;
 };
 
+type ReviewCardValue = Omit<ReviewData, "date"> & {
+  /** Cover image properties for display */
+  date?: Date;
+};
+
 const { value } = Astro.props;
 const work = await getEntry(value.work);
-
-const authorListFormatter = new Intl.ListFormat("en", {
-  style: "long",
-  type: "conjunction",
-});
-
-function formatDate(reviewDate: Date): string {
-  return reviewDate.toLocaleString("en-GB", {
-    day: "2-digit",
-    month: "short",
-    timeZone: "UTC",
-    year: "numeric",
-  });
-}
+const coverImageProps = await getFluidCoverImageProps(value, CoverImageConfig);
 ---
 
 <li
@@ -75,7 +62,7 @@ function formatDate(reviewDate: Date): string {
         `}
         style={{
           "background-color": "var(--background-color-default)",
-          "background-image": `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${value.coverImageProps.src})`,
+          "background-image": `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
         }}
       >
       </div>
@@ -112,9 +99,9 @@ function formatDate(reviewDate: Date): string {
             `}
           >
             <img
-              {...value.coverImageProps}
+              {...coverImageProps}
               alt=""
-              {...ReviewCardCoverImageConfig}
+              {...CoverImageConfig}
               class={`
                 transform-gpu rounded-[2.5px] bg-default transition-transform
                 duration-500
@@ -143,7 +130,12 @@ function formatDate(reviewDate: Date): string {
               laptop:tracking-wide
             `}
           >
-            {formatDate(value.date)}
+            {value.date.toLocaleString("en-GB", {
+              day: "2-digit",
+              month: "short",
+              timeZone: "UTC",
+              year: "numeric",
+            })}
           </div>
         )
       }
@@ -159,16 +151,7 @@ function formatDate(reviewDate: Date): string {
         {work.data.title}
       </a>
       <div class="-mt-2">
-        {
-          authorListFormatter.format(
-            await Promise.all(
-              work.data.authors.map(async (workAuthor) => {
-                const author = await getEntry(workAuthor.author);
-                return author.data.name;
-              }),
-            ),
-          )
-        }
+        {formatWorkAuthors(work.data.authors)}
       </div>
       <div class={`font-sans text-sm/4 font-normal tracking-prose text-subtle`}>
         {work.data.workYear} | {work.data.kind}
