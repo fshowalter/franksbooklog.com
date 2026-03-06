@@ -25,7 +25,7 @@ export function MoreReviews({
         mx-auto w-full max-w-[894px] bg-subtle px-container
         min-[1080px]:max-w-(--breakpoint-desktop)
       `}
-      data-page-find-ignore
+      data-pagefind-ignore
     >
       <div>{children}</div>
       <div
