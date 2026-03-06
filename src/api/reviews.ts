@@ -16,18 +16,6 @@ import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
 
-// AIDEV-NOTE: IncludedWork is the enriched shape for included works on a review page.
-// Computed in getReviewProps by joining works + reviews + authors collections.
-export type IncludedWork = {
-  authors: { name: string; slug: string }[];
-  grade: string | undefined;
-  kind: WorkData["kind"];
-  reviewed: boolean;
-  slug: string;
-  title: string;
-  workYear: string;
-};
-
 // AIDEV-NOTE: Review type is the computed join of WorkData + ReviewData + derived fields.
 // It no longer embeds ReviewedWorkData — gradeValue, reviewDate, reviewYear, reviewSequence,
 // and enriched authors are computed in allReviews(). moreByAuthors/moreReviews/readings are
@@ -62,11 +50,16 @@ export type Review = {
   workYear: string;
 };
 
-export type ReviewWithContent = Omit<Review, "includedWorks"> & {
-  content: string | undefined;
-  excerptPlainText: string;
-  includedWorks: IncludedWork[];
-  readings: ReviewReading[];
+// AIDEV-NOTE: IncludedWork is the enriched shape for included works on a review page.
+// Computed in getReviewProps by joining works + reviews + authors collections.
+type IncludedWork = {
+  authors: { name: string; slug: string }[];
+  grade: string | undefined;
+  kind: WorkData["kind"];
+  reviewed: boolean;
+  slug: string;
+  title: string;
+  workYear: string;
 };
 
 // AIDEV-NOTE: ReviewReading is computed in loadContent from ReadingData:
@@ -91,6 +84,13 @@ type ReviewsResult = {
   distinctReviewYears: string[];
   distinctWorkYears: string[];
   reviews: Review[];
+};
+
+type ReviewWithContent = Omit<Review, "includedWorks"> & {
+  content: string | undefined;
+  excerptPlainText: string;
+  includedWorks: IncludedWork[];
+  readings: ReviewReading[];
 };
 
 // AIDEV-NOTE: allReviews joins WorkData + ReviewData + AuthorData + ReadingData into
@@ -209,7 +209,7 @@ export function loadContent(
     .processSync(review.body)
     .toString();
 
-  const reviewedSlugs = reviews.map((r) => ({ slug: r.slug.id }));
+  const reviewedSlugs = reviews.map((r) => ({ slug: r.slug }));
 
   // Filter readings for this work, sort most-recent first
   const workReadings = readings

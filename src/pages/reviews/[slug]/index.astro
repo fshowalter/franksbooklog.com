@@ -5,11 +5,7 @@ import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
 import { getCollection } from "astro:content";
 
-import {
-  getFixedCoverImageProps,
-  getFluidCoverImageProps,
-  getStructuredDataCoverSrc,
-} from "~/api/covers";
+import { getFixedCoverImageProps, getFluidCoverImageProps } from "~/api/covers";
 import BarGradient from "~/components/bar-gradient/BarGradient.astro";
 import Cover from "~/components/cover/Cover.astro";
 import Grade from "~/components/grade/Grade.astro";
@@ -23,6 +19,16 @@ import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
 import MoreReviewsHeading from "~/components/more-reviews/MoreReviewsHeading.astro";
 import { ReviewCardCoverImageConfig } from "~/components/review-card/ReviewCard.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
+import {
+  readingDayFormat,
+  readingMonthFormat,
+  readingProgressDateFormat,
+  readingWeekdayFormat,
+  readingYearFormat,
+} from "~/utils/readingHistoryDateFormats";
+import { reviewDateFormat } from "~/utils/reviewDateFormat";
+import { reviewPageTitle } from "~/utils/reviewPageTitle";
+import { reviewStructuredData } from "~/utils/reviewStructuredData";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 import { workAuthorNames } from "~/utils/workAuthorNames";
 
@@ -49,7 +55,7 @@ export async function getStaticPaths() {
  * Configuration for cover images in the review page.
  * Defines the width for the main review cover image.
  */
-export const CoverImageConfig = {
+const CoverImageConfig = {
   /** Cover image width in pixels */
   width: 248,
 };
@@ -57,91 +63,18 @@ export const CoverImageConfig = {
 const { review } = Astro.props;
 const work = await getEntry(review.data.work);
 
-const titleAuthorNames = await Promise.all(
-  work.data.authors.map(async (workAuthor) => {
-    const author = await getEntry(workAuthor.author);
-    return author.data.name;
-  }),
-);
-
-let title = `${work.data.title} by ${toSentenceArray(titleAuthorNames).join("")}`;
-
-const kind = work.data.kind == "Short Story" ? "story" : "book";
-
-title = `${title} ${kind} review`;
-
 const coverImageProps = await getFixedCoverImageProps(
   work.data,
   CoverImageConfig,
 );
-
-const dateFormat = new Intl.DateTimeFormat("en-US", {
-  day: "numeric",
-  month: "short",
-  timeZone: "UTC",
-  year: "numeric",
-});
 
 const readings = await getCollection(
   "readings",
   (entry) => entry.data.work.id === work.id,
 );
 
-const readingMonthFormat = new Intl.DateTimeFormat("en-US", {
-  month: "short",
-  timeZone: "UTC",
-});
-
-const readingYearFormat = new Intl.DateTimeFormat("en-US", {
-  timeZone: "UTC",
-  year: "numeric",
-});
-
-const readingDayFormat = new Intl.DateTimeFormat("en-US", {
-  day: "numeric",
-  timeZone: "UTC",
-});
-
-const readingWeekdayFormat = new Intl.DateTimeFormat("en-US", {
-  timeZone: "UTC",
-  weekday: "short",
-});
-
-const readingProgressDateFormat = new Intl.DateTimeFormat("en-GB", {
-  day: "numeric",
-  month: "short",
-  timeZone: "UTC",
-  year: "numeric",
-});
-
-const structuredDataGradeMap: Record<string, number> = {
-  A: 5,
-  B: 4,
-  C: 3,
-  D: 2,
-  F: 1,
-};
-
 const more = await getEntry(review.data.more);
 const moreReviews = await getEntries(more.data.moreReviews);
-
-const structuredData = {
-  "@context": "http://schema.org",
-  "@type": "Review",
-  author: {
-    "@type": "Person",
-    name: "Frank Showalter",
-  },
-  itemReviewed: {
-    "@type": "Book",
-    image: await getStructuredDataCoverSrc(work.data),
-    name: title,
-  },
-  reviewRating: {
-    "@type": "Rating",
-    ratingValue: structuredDataGradeMap[review.data.grade[0]],
-  },
-};
 
 const includedWorks = await getEntries(work.data.includedWorks);
 ---
@@ -154,7 +87,7 @@ const includedWorks = await getEntries(work.data.includedWorks);
       description: review.data.description,
       type: "article",
     },
-    title,
+    title: await reviewPageTitle(work),
   }}
 >
   <div class="flex flex-col" data-pagefind-body>
@@ -293,7 +226,7 @@ const includedWorks = await getEntries(work.data.includedWorks);
           tablet:mt-6
         `}
       >
-        Reviewed {dateFormat.format(review.data.date)}
+        Reviewed {reviewDateFormat.format(review.data.date)}
       </div>
     </header>
     <div
@@ -577,7 +510,13 @@ const includedWorks = await getEntries(work.data.includedWorks);
       </MoreReviews>
     </div>
     <script
-      set:html={JSON.stringify(structuredData)}
+      set:html={JSON.stringify(
+        reviewStructuredData(
+          review.data.slug,
+          work.data.title,
+          review.data.grade,
+        ),
+      )}
       type="application/ld+json"
     />
   </div>
