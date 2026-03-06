@@ -16,7 +16,6 @@ import ListItemGrade from "~/components/list-item-grade/ListItemGrade.astro";
 import ListItemKindAndYear from "~/components/list-item-kind-and-year/ListItemKindAndYear.astro";
 import ListItemTitle from "~/components/list-item-title/ListItemTitle.astro";
 import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
-import MoreReviewsHeading from "~/components/more-reviews/MoreReviewsHeading.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
 import {
   readingDayFormat,
@@ -253,7 +252,7 @@ const includedWorks = await getEntries(work.data.includedWorks);
       {
         includedWorks.length > 0 && (
           <div class="w-full max-w-popout">
-            <SubHeading classNames="text-center shadow-bottom" element="h2">
+            <SubHeading class="text-center shadow-bottom" level="h2">
               Included Works
             </SubHeading>
             <div
@@ -303,7 +302,7 @@ const includedWorks = await getEntries(work.data.includedWorks);
         )
       }
       <div class="w-full max-w-popout">
-        <SubHeading classNames="text-center shadow-bottom" element="h2">
+        <SubHeading class="text-center shadow-bottom" level="h2">
           Reading History
         </SubHeading>
         <ul>
@@ -484,33 +483,32 @@ const includedWorks = await getEntries(work.data.includedWorks);
       `}
     >
       <MoreReviews
-        values={moreReviews.map((value) => {
+        cardProps={moreReviews.map((value) => {
           return {
-            ...value.data,
-            date: undefined,
+            hasDate: false,
+            value: value.data,
           };
         })}
-      >
-        <MoreReviewsHeading
-          accentText="Reviews"
-          href={`/reviews/`}
-          text="More"
-        />
-      </MoreReviews>
+        headingProps={{
+          accentText: "Reviews",
+          href: `/reviews/`,
+          text: "More",
+        }}
+      />
     </div>
-    {
-      review.data.grade != "Abandoned" && (
-        <script
-          set:html={JSON.stringify(
-            await reviewStructuredData(
-              review.data.slug,
-              work.data.title,
-              review.data.grade,
-            ),
-          )}
-          type="application/ld+json"
-        />
-      )
-    }
   </div>
+  {
+    review.data.grade != "Abandoned" && (
+      <script
+        set:html={JSON.stringify(
+          await reviewStructuredData(
+            review.data.slug,
+            work.data.title,
+            review.data.grade,
+          ),
+        )}
+        type="application/ld+json"
+      />
+    )
+  }
 </ReviewLayout>

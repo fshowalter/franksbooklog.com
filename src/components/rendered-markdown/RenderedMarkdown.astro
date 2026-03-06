@@ -1,0 +1,13 @@
+---
+import type { HTMLTag, Polymorphic } from "astro/types";
+
+type Props<Tag extends HTMLTag = "div"> = Polymorphic<{
+  as: Tag;
+  class?: string;
+  text: string | undefined;
+}>;
+
+const { as: Tag = "div", class: classNames, text } = Astro.props;
+---
+
+{text && <Tag class:list={[`rendered-markdown`, classNames]} set:html={text} />}

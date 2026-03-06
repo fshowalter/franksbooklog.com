@@ -458,6 +458,7 @@ const ReadingSchema = z
 
 const PageSchema = z.object({
   body: z.string(),
+  description: z.string(),
   intermediateHtml: z.string(),
   slug: z.string(),
   title: z.string(),
@@ -648,12 +649,31 @@ const pages = defineCollection({
         ctx,
         path.join(CONTENT_ROOT, "pages"),
         ({ frontmatter }) => frontmatter.slug as string,
-        ({ body, frontmatter }) => ({
-          body,
-          intermediateHtml: toIntermediateHtml(body),
-          slug: frontmatter.slug as string,
-          title: frontmatter.title as string,
-        }),
+        ({ body, frontmatter }) => {
+          const contentPlainText = getContentPlainText(body);
+
+          //trim the string to the maximum length
+          let description = contentPlainText
+            .replaceAll(/\r?\n|\r/g, " ")
+            .slice(0, Math.max(0, 160));
+
+          //re-trim if we are in the middle of a word
+          description = description.slice(
+            0,
+            Math.max(
+              0,
+              Math.min(description.length, description.lastIndexOf(" ")),
+            ),
+          );
+
+          return {
+            body,
+            description,
+            intermediateHtml: toIntermediateHtml(body),
+            slug: frontmatter.slug as string,
+            title: frontmatter.title as string,
+          };
+        },
       ),
     name: "pages-loader",
   },
