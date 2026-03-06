@@ -1,0 +1,28 @@
+---
+import SubHeading from "~/components/sub-heading/SubHeading.astro";
+
+type Props = {
+  accentText: string;
+  element?: "h2" | "h3" | "h4" | "h5";
+  href: string;
+  text: string;
+};
+
+const { accentText, element = "h2", href, text } = Astro.props;
+---
+
+<SubHeading element={element}>
+  <a
+    class={`
+      relative -mb-1 inline-block transform-gpu pb-1 transition-all
+      after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+      after:origin-bottom-right after:scale-x-0 after:bg-accent
+      after:transition-transform after:duration-500
+      hover:after:scale-x-100
+    `}
+    href={href}
+  >
+    {text}
+    <span class={`text-accent`}>{accentText}</span>
+  </a>
+</SubHeading>

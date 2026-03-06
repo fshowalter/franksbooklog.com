@@ -33,6 +33,8 @@ import { removeFootnotes } from "~/api/utils/markdown/removeFootnotes";
 import { rootAsSpan } from "~/api/utils/markdown/rootAsSpan";
 import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
 
+import { getContentPlainText } from "./api/reviews";
+
 // --- Path helper ---
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
@@ -314,14 +316,14 @@ const AuthorSchema = z.object({
 // `reviews` is an array of work slugs (plain strings, not references).
 const MoreByAuthorSchema = z.object({
   author: z.string(),
-  reviews: z.array(z.string()),
+  reviews: z.array(reference("reviews")),
 });
 
 // AIDEV-NOTE: MoreForReviewedWorkSchema — each entry holds the pre-computed moreByAuthors
 // and moreReviews lists for a single reviewed work. Entry ID = work slug (raw.work).
 const MoreForReviewedWorkSchema = z.object({
   moreByAuthors: z.array(MoreByAuthorSchema),
-  moreReviews: z.array(z.string()),
+  moreReviews: z.array(reference("reviews")),
   work: z.string(),
 });
 
@@ -346,7 +348,7 @@ const WorkRawAuthorSchema = z
 const WorkSchema = z
   .object({
     authors: z.array(WorkRawAuthorSchema),
-    includedWorks: z.array(z.string()),
+    includedWorks: z.array(reference("works")),
     kind: WorkKindSchema,
     slug: z.string(),
     sortTitle: z.string(),
@@ -392,10 +394,12 @@ const TimelineEntrySchema = z.object({
 const ReviewSchema = z.object({
   body: z.string(),
   date: z.coerce.date(),
+  description: z.string(),
   excerptHtml: z.string(),
   excerptPlainText: z.string(),
   grade: z.string(),
   intermediateHtml: z.string(),
+  more: reference("moreForReviewedWorks"),
   slug: z.string(),
   synopsis: z.optional(z.string()),
   work: reference("works"),
@@ -531,13 +535,31 @@ const reviews = defineCollection({
         ({ body, frontmatter }) => {
           const excerptContent =
             (frontmatter.synopsis as string | undefined)?.trim() || body;
+
+          const contentPlainText = getContentPlainText(body);
+
+          //trim the string to the maximum length
+          let description = contentPlainText
+            .replaceAll(/\r?\n|\r/g, " ")
+            .slice(0, Math.max(0, 160));
+
+          //re-trim if we are in the middle of a word
+          description = description.slice(
+            0,
+            Math.max(
+              0,
+              Math.min(description.length, description.lastIndexOf(" ")),
+            ),
+          );
           return {
             body,
             date: frontmatter.date,
+            description,
             excerptHtml: toExcerptHtml(excerptContent),
             excerptPlainText: excerptContent,
             grade: frontmatter.grade as string,
             intermediateHtml: toIntermediateHtml(body),
+            more: frontmatter.slug,
             slug: frontmatter.slug as string,
             synopsis: frontmatter.synopsis as string | undefined,
             work: frontmatter.slug as string,
@@ -561,6 +583,8 @@ const RawReadingFrontmatterSchema = z.object({
   timeline: z.array(TimelineEntrySchema),
   workSlug: z.string(),
 });
+
+export type WorkAuthor = z.infer<typeof WorkRawAuthorSchema>;
 
 type RawReadingFrontmatter = z.infer<typeof RawReadingFrontmatterSchema>;
 
