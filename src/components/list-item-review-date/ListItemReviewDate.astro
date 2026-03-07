@@ -1,0 +1,11 @@
+---
+type Props = {
+  displayDate: string;
+};
+
+const { displayDate } = Astro.props;
+---
+
+<div class={`font-sans text-[13px]/4 tracking-prose text-subtle`}>
+  {displayDate}
+</div>

@@ -1,0 +1,31 @@
+---
+type Props = {
+  stats: {
+    label: string;
+    value: number;
+  }[];
+};
+
+const { stats } = Astro.props;
+---
+
+<div
+  class={`
+    flex flex-wrap justify-center gap-6
+    desktop:flex-nowrap
+  `}
+>
+  {
+    stats.map((stat) => (
+      <div
+        class={`
+          flex size-36 flex-col justify-center rounded-full bg-default
+          text-center text-default shadow-all
+        `}
+      >
+        <div class="text-[2rem]/8">{stat.value.toLocaleString()}</div>{" "}
+        <div class="font-sans text-sm/6 text-subtle">{stat.label}</div>
+      </div>
+    ))
+  }
+</div>

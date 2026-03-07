@@ -54,9 +54,8 @@
   ],
   "mostReadAuthors": [
     {
-      "name": "Richard Laymon",
       "count": 17,
-      "slug": "richard-laymon",
+      "author": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2014-02-24-01-the-cellar-by-richard-laymon",
@@ -79,9 +78,8 @@
       ]
     },
     {
-      "name": "Stephen King",
       "count": 10,
-      "slug": "stephen-king",
+      "author": "stephen-king",
       "reviewed": true,
       "readings": [
         "2014-03-02-01-the-stand-by-stephen-king",

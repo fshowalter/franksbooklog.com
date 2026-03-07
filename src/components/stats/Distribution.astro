@@ -1,0 +1,57 @@
+---
+import BarGradient from "~/components/bar-gradient/BarGradient.astro";
+
+type Props = {
+  title: string;
+  values: readonly {
+    count: number;
+    name: string;
+  }[];
+};
+
+const { title, values } = Astro.props;
+
+const maxBar = values.reduce((total, value) => total + value.count, 0);
+---
+
+<section
+  class={`
+    w-full bg-default px-container pb-8
+    laptop:px-12
+  `}
+>
+  <h2 class="py-4 text-xl font-medium">{title}</h2>
+  <div
+    class={`
+      grid w-full grid-cols-[1fr_24px_auto]
+      tablet:whitespace-nowrap
+    `}
+  >
+    {
+      values.map((value) => {
+        return (
+          <div class="col-span-3 grid grid-cols-subgrid py-3">
+            <div class="col-span-3 grid grid-cols-subgrid">
+              <div
+                class={`pb-1 font-sans text-sm/3.5 tracking-prose text-muted`}
+              >
+                {value.name}
+              </div>
+              <div
+                class={`
+                  col-start-3 self-center pb-1 text-right font-sans text-sm/3.5
+                  text-nowrap text-subtle
+                `}
+              >
+                {value.count}
+              </div>
+            </div>
+            <div class="col-span-3 row-start-2 bg-subtle">
+              <BarGradient maxValue={maxBar} value={value.count} />
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
