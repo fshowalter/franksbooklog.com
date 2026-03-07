@@ -1,18 +1,15 @@
 ---
-import { getCollection } from "astro:content";
-
-import { allStatYears } from "~/api/stats";
 import HeroLayout from "~/components/layout/HeroLayout.astro";
-import { AlltimeStats } from "~/features/stats/AlltimeStats";
-import { getAlltimeStatsProps } from "~/features/stats/getStatsProps";
+import Callouts from "~/components/stats/Callouts.astro";
+import DecadeDistribution from "~/components/stats/DecadeDistribution.astro";
+import EditionDistribution from "~/components/stats/EditionDistribution.astro";
+import GradeDistribution from "~/components/stats/GradeDistribution.astro";
+import KindDistribution from "~/components/stats/KindDistribution.astro";
+import MostReadAuthors from "~/components/stats/MostReadAuthors.astro";
+import StatsNavigation from "~/components/stats/StatsNavigation.astro";
+import { getAlltimeStats } from "~/content/stats";
 
-const alltimeEntries = await getCollection("alltimeStats");
-const data = alltimeEntries[0].data;
-const yearStatsEntries = await getCollection("yearStats");
-const yearStats = yearStatsEntries.map((e) => e.data);
-
-const alltimeStatsProps = await getAlltimeStatsProps(data, yearStats);
-const distinctStatYears = allStatYears(yearStats);
+const [stats, distinctStatYears] = await getAlltimeStats();
 
 const title = "All-Time Stats";
 const deck = `${(distinctStatYears.length - 1).toString()} Years in Review`;
@@ -43,5 +40,45 @@ const metaDescription =
     title: "All-Time Stats",
   }}
 >
-  <AlltimeStats {...alltimeStatsProps} />
+  <div class="flex flex-col items-center bg-subtle">
+    <StatsNavigation
+      class="z-10 mb-12 w-full"
+      currentYear={"all"}
+      linkFunc={(year: string) => {
+        return `/readings/stats/${year}/`;
+      }}
+      years={distinctStatYears}
+    />
+    <Callouts
+      stats={[
+        { label: "Titles", value: stats.workCount },
+        { label: "Books", value: stats.bookCount },
+        { label: "Reviews", value: stats.reviewCount },
+      ]}
+    />
+    <div
+      class={`
+        mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col items-stretch
+        gap-y-8 py-10
+        tablet:px-container
+      `}
+    >
+      <div class={`mx-auto flex w-full max-w-popout flex-col gap-y-8`}>
+        <MostReadAuthors values={stats.mostReadAuthors} />
+      </div>
+      <div
+        class={`
+          mx-auto flex w-full max-w-popout flex-col items-start gap-y-8
+          laptop:max-w-unset laptop:flex-row laptop:gap-x-8
+        `}
+      >
+        <DecadeDistribution values={stats.decadeDistribution} />
+        <KindDistribution values={stats.kindDistribution} />
+        <EditionDistribution values={stats.editionDistribution} />
+      </div>
+      <div class="mx-auto w-full max-w-popout">
+        <GradeDistribution values={stats.gradeDistribution} />
+      </div>
+    </div>
+  </div>
 </HeroLayout>

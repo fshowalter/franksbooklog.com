@@ -54,9 +54,8 @@
   ],
   "mostReadAuthors": [
     {
-      "name": "Charlie Huston",
       "count": 6,
-      "slug": "charlie-huston",
+      "author": "charlie-huston",
       "reviewed": false,
       "readings": [
         "2019-01-14-01-already-dead-by-charlie-huston",
@@ -68,9 +67,8 @@
       ]
     },
     {
-      "name": "Stephen King",
       "count": 6,
-      "slug": "stephen-king",
+      "author": "stephen-king",
       "reviewed": true,
       "readings": [
         "2019-02-03-01-the-eyes-of-the-dragon-by-stephen-king",
@@ -82,9 +80,8 @@
       ]
     },
     {
-      "name": "Raymond Chandler",
       "count": 4,
-      "slug": "raymond-chandler",
+      "author": "raymond-chandler",
       "reviewed": true,
       "readings": [
         "2019-02-16-01-farewell-my-lovely-by-raymond-chandler",
@@ -94,9 +91,8 @@
       ]
     },
     {
-      "name": "Robert E. Howard",
       "count": 4,
-      "slug": "robert-e-howard",
+      "author": "robert-e-howard",
       "reviewed": false,
       "readings": [
         "2019-03-02-01-black-canaan-by-robert-e-howard",
@@ -106,9 +102,8 @@
       ]
     },
     {
-      "name": "Richard Laymon",
       "count": 4,
-      "slug": "richard-laymon",
+      "author": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2019-02-10-01-darkness-tell-us-by-richard-laymon",

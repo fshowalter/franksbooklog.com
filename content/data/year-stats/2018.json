@@ -66,9 +66,8 @@
   ],
   "mostReadAuthors": [
     {
-      "name": "Richard Laymon",
       "count": 5,
-      "slug": "richard-laymon",
+      "author": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2018-01-11-01-midnights-lair-by-richard-laymon",
@@ -79,9 +78,8 @@
       ]
     },
     {
-      "name": "Stephen King",
       "count": 5,
-      "slug": "stephen-king",
+      "author": "stephen-king",
       "reviewed": true,
       "readings": [
         "2018-06-29-01-the-talisman-by-stephen-king-peter-straub",
@@ -92,9 +90,8 @@
       ]
     },
     {
-      "name": "Jeff Gelb",
       "count": 3,
-      "slug": "jeff-gelb",
+      "author": "jeff-gelb",
       "reviewed": false,
       "readings": [
         "2018-01-05-01-hot-blood-by-jeff-gelb-lonn-m-friend",
@@ -103,9 +100,8 @@
       ]
     },
     {
-      "name": "Jocko Willink",
       "count": 2,
-      "slug": "jocko-willink",
+      "author": "jocko-willink",
       "reviewed": true,
       "readings": [
         "2018-09-30-01-extreme-ownership-by-jocko-willink-leif-babin",
@@ -113,9 +109,8 @@
       ]
     },
     {
-      "name": "Michael Garrett",
       "count": 2,
-      "slug": "michael-garrett",
+      "author": "michael-garrett",
       "reviewed": false,
       "readings": [
         "2018-07-17-02-hotter-blood-by-jeff-gelb-michael-garrett",

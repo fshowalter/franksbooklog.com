@@ -284,16 +284,17 @@ const GradeDistributionSchema = DistributionSchema.extend({
 // reading slug strings; parseData() coerces them to { collection, id } objects.
 const MostReadAuthorSchema = z
   .object({
+    author: reference("authors"),
     count: z.number(),
-    name: z.string(),
     readings: z.array(reference("readings")),
     reviewed: z.boolean(),
-    slug: z.string(),
   })
-  .transform(({ count, name, readings, reviewed, slug }) => {
+  .transform(({ author, count, readings, reviewed }) => {
     // fix zod making anything with undefined optional
-    return { count, name, readings, reviewed, slug };
+    return { author, count, readings, reviewed };
   });
+
+export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
 
 const WorkKindSchema = z.enum([
   "Anthology",
