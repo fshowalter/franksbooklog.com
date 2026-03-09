@@ -1,5 +1,3 @@
-import type { WorkAuthor } from "~/content/schemas";
-
 const longFormatter = new Intl.ListFormat("en", {
   style: "long",
   type: "conjunction",
@@ -16,7 +14,10 @@ const formatterMap: Record<string, Intl.ListFormat> = {
 };
 
 export function formatWorkAuthors(
-  workAuthors: WorkAuthor[],
+  workAuthors: {
+    name: string;
+    notes: string | undefined;
+  }[],
   style: keyof typeof formatterMap = "long",
 ) {
   const formatter = formatterMap[style];
