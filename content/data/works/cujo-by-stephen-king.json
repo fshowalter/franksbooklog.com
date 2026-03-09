@@ -1,15 +1,17 @@
 {
+  "id": "cujo-by-stephen-king",
   "title": "Cujo",
   "subtitle": null,
   "sortTitle": "Cujo",
   "year": "1981",
   "kind": "Novel",
   "slug": "cujo-by-stephen-king",
+  "reviewed": true,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

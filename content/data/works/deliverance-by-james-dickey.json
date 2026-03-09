@@ -1,15 +1,17 @@
 {
+  "id": "deliverance-by-james-dickey",
   "title": "Deliverance",
   "subtitle": null,
   "sortTitle": "Deliverance",
   "year": "1970",
   "kind": "Novel",
-  "slug": "deliverance-by-james-dickey",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "james-dickey",
+      "name": "James Dickey",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

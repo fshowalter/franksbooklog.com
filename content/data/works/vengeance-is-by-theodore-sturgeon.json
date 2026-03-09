@@ -1,15 +1,24 @@
 {
+  "id": "vengeance-is-by-theodore-sturgeon",
   "title": "Vengeance Is",
-  "subtitle": null,
   "sortTitle": "Vengeance Is",
-  "year": "1980",
+  "subtitle": null,
+  "workYear": "1980",
   "kind": "Short Story",
-  "slug": "vengeance-is-by-theodore-sturgeon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "theodore-sturgeon",
+      "name": "Theodore Sturgeon",
+      "slug": "theodore-sturgeon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

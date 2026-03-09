@@ -1,15 +1,24 @@
 {
+  "id": "madman-stan-by-richard-laymon",
   "title": "Madman Stan",
-  "subtitle": null,
   "sortTitle": "Madman Stan",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "madman-stan-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

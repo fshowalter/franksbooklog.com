@@ -1,15 +1,17 @@
 {
+  "id": "gothic-by-philip-fracassi",
   "title": "Gothic",
   "subtitle": null,
   "sortTitle": "Gothic",
   "year": "2023",
   "kind": "Novel",
   "slug": "gothic-by-philip-fracassi",
+  "reviewed": true,
   "authors": [
     {
-      "author": "philip-fracassi",
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

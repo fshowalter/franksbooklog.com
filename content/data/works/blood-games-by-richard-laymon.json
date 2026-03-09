@@ -1,15 +1,17 @@
 {
+  "id": "blood-games-by-richard-laymon",
   "title": "Blood Games",
   "subtitle": null,
   "sortTitle": "Blood Games",
   "year": "1992",
   "kind": "Novel",
-  "slug": "blood-games-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

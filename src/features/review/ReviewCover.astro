@@ -1,0 +1,52 @@
+---
+import { getFixedCoverImageProps } from "~/api/covers";
+import Cover from "~/components/cover/Cover.astro";
+
+type Props = {
+  coverSlug: string;
+};
+
+/**
+ * Configuration for cover images in the review page.
+ * Defines the width for the main review cover image.
+ */
+const CoverImageConfig = {
+  /** Cover image width in pixels */
+  width: 248,
+};
+
+const { coverSlug } = Astro.props;
+
+const coverImageProps = await getFixedCoverImageProps(
+  { slug: coverSlug },
+  CoverImageConfig,
+);
+---
+
+<div
+  class={`
+    @container relative my-12 flex w-full max-w-popout flex-col items-center
+  `}
+  data-pagefind-meta={`image:${coverImageProps.src}`}
+>
+  <div
+    class={`
+      absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default
+      bg-cover bg-center clip-path-cover
+      after:absolute after:size-full after:backdrop-blur-sm
+      after:clip-path-cover
+      tablet:-left-[2.5%] tablet:w-[105%]
+    `}
+    style={{
+      "background-color": "var(--background-color-default)",
+      "background-image": `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
+    }}
+  >
+  </div>
+  <Cover
+    class={`-top-[2.5%]`}
+    decoding="auto"
+    imageProps={coverImageProps}
+    loading="eager"
+  />
+</div>

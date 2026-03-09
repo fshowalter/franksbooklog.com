@@ -1,15 +1,24 @@
 {
+  "id": "one-for-the-road-by-stephen-king",
   "title": "One for the Road",
-  "subtitle": null,
   "sortTitle": "One for the Road",
-  "year": "1977",
+  "subtitle": null,
+  "workYear": "1977",
   "kind": "Short Story",
-  "slug": "one-for-the-road-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

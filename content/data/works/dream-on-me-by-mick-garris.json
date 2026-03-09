@@ -1,15 +1,24 @@
 {
+  "id": "dream-on-me-by-mick-garris",
   "title": "Dream on Me",
-  "subtitle": null,
   "sortTitle": "Dream on Me",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "dream-on-me-by-mick-garris",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "mick-garris",
+      "name": "Mick Garris",
+      "slug": "mick-garris",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

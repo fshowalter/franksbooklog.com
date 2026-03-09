@@ -1,15 +1,24 @@
 {
+  "id": "i-hear-the-mermaids-singing-by-nancy-holder",
   "title": "I Hear the Mermaids Singing",
-  "subtitle": null,
   "sortTitle": "I Hear the Mermaids Singing",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "i-hear-the-mermaids-singing-by-nancy-holder",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "nancy-holder",
+      "name": "Nancy Holder",
+      "slug": "nancy-holder",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

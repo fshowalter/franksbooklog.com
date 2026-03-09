@@ -1,15 +1,17 @@
 {
+  "id": "ghost-story-by-peter-straub",
   "title": "Ghost Story",
   "subtitle": null,
   "sortTitle": "Ghost Story",
   "year": "1979",
   "kind": "Novel",
   "slug": "ghost-story-by-peter-straub",
+  "reviewed": true,
   "authors": [
     {
-      "author": "peter-straub",
+      "name": "Peter Straub",
+      "slug": "peter-straub",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

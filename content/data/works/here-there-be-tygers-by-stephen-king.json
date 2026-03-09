@@ -1,15 +1,24 @@
 {
+  "id": "here-there-be-tygers-by-stephen-king",
   "title": "Here There Be Tygers",
-  "subtitle": null,
   "sortTitle": "Here There Be Tygers",
-  "year": "1968",
+  "subtitle": null,
+  "workYear": "1968",
   "kind": "Short Story",
-  "slug": "here-there-be-tygers-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

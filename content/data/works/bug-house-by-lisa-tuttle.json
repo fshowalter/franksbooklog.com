@@ -1,15 +1,24 @@
 {
+  "id": "bug-house-by-lisa-tuttle",
   "title": "Bug House",
-  "subtitle": null,
   "sortTitle": "Bug House",
-  "year": "1983",
+  "subtitle": null,
+  "workYear": "1983",
   "kind": "Short Story",
-  "slug": "bug-house-by-lisa-tuttle",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "lisa-tuttle",
+      "name": "Lisa Tuttle",
+      "slug": "lisa-tuttle",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

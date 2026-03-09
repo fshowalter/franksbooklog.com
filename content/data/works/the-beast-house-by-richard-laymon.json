@@ -1,15 +1,17 @@
 {
+  "id": "the-beast-house-by-richard-laymon",
   "title": "The Beast House",
   "subtitle": null,
   "sortTitle": "Beast House",
   "year": "1986",
   "kind": "Novel",
-  "slug": "the-beast-house-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

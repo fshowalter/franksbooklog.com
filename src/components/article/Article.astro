@@ -1,14 +1,14 @@
 ---
 import LongFormText from "~/components/long-form-text/LongFormText.astro";
 import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
-import { mostRecentReviews } from "~/content/reviews";
+import { mostRecentReviewedWorks } from "~/content/reviewedWorks";
 
 type Props = {
   content: string | undefined;
 };
 
 const { content } = Astro.props;
-const recentReviews = await mostRecentReviews(6);
+const reviewedWorks = await mostRecentReviewedWorks(6);
 ---
 
 <section class="flex flex-col items-center pt-16 pb-32">
@@ -25,9 +25,9 @@ const recentReviews = await mostRecentReviews(6);
   data-pagefind-ignore
 >
   <MoreReviews
-    cardProps={recentReviews.map((review) => {
+    cardProps={reviewedWorks.map((review) => {
       return {
-        hasDate: true,
+        hasDate: false,
         value: review.data,
       };
     })}

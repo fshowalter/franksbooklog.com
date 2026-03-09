@@ -1,5 +1,20 @@
 {
   "year": "2014",
+  "allStatsYears": [
+    "2016",
+    "2014",
+    "2023",
+    "2025",
+    "2019",
+    "2022",
+    "2017",
+    "2018",
+    "2015",
+    "2012",
+    "2024",
+    "2013",
+    "2011"
+  ],
   "workCount": 29,
   "bookCount": 23,
   "kindDistribution": [
@@ -55,7 +70,8 @@
   "mostReadAuthors": [
     {
       "count": 17,
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2014-02-24-01-the-cellar-by-richard-laymon",
@@ -79,7 +95,8 @@
     },
     {
       "count": 10,
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "reviewed": true,
       "readings": [
         "2014-03-02-01-the-stand-by-stephen-king",

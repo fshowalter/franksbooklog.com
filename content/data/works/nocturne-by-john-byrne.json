@@ -1,15 +1,24 @@
 {
+  "id": "nocturne-by-john-byrne",
   "title": "Nocturne",
-  "subtitle": null,
   "sortTitle": "Nocturne",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "nocturne-by-john-byrne",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "john-byrne",
+      "name": "John Byrne",
+      "slug": "john-byrne",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

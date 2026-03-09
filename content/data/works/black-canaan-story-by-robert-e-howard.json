@@ -1,15 +1,24 @@
 {
+  "id": "black-canaan-story-by-robert-e-howard",
   "title": "Black Canaan",
-  "subtitle": null,
   "sortTitle": "Black Canaan",
-  "year": "1936",
+  "subtitle": null,
+  "workYear": "1936",
   "kind": "Short Story",
-  "slug": "black-canaan-story-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

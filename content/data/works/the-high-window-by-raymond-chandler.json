@@ -1,15 +1,17 @@
 {
+  "id": "the-high-window-by-raymond-chandler",
   "title": "The High Window",
   "subtitle": null,
   "sortTitle": "High Window",
   "year": "1942",
   "kind": "Novel",
-  "slug": "the-high-window-by-raymond-chandler",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "raymond-chandler",
+      "name": "Raymond Chandler",
+      "slug": "raymond-chandler",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

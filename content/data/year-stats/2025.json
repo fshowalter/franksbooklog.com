@@ -1,5 +1,20 @@
 {
   "year": "2025",
+  "allStatsYears": [
+    "2016",
+    "2014",
+    "2023",
+    "2025",
+    "2019",
+    "2022",
+    "2017",
+    "2018",
+    "2015",
+    "2012",
+    "2024",
+    "2013",
+    "2011"
+  ],
   "workCount": 10,
   "bookCount": 4,
   "kindDistribution": [
@@ -59,7 +74,8 @@
   "mostReadAuthors": [
     {
       "count": 3,
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2025-02-06-01-night-show-by-richard-laymon",
@@ -69,7 +85,8 @@
     },
     {
       "count": 3,
-      "author": "philip-fracassi",
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
       "reviewed": true,
       "readings": [
         "2025-07-11-02-commodore-by-philip-fracassi",
@@ -79,7 +96,8 @@
     },
     {
       "count": 2,
-      "author": "karl-edward-wagner",
+      "name": "Karl Edward Wagner",
+      "slug": "karl-edward-wagner",
       "reviewed": true,
       "readings": [
         "2025-10-26-01-in-the-pines-by-karl-edward-wagner",

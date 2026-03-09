@@ -1,5 +1,20 @@
 {
   "year": "2019",
+  "allStatsYears": [
+    "2016",
+    "2014",
+    "2023",
+    "2025",
+    "2019",
+    "2022",
+    "2017",
+    "2018",
+    "2015",
+    "2012",
+    "2024",
+    "2013",
+    "2011"
+  ],
   "workCount": 26,
   "bookCount": 26,
   "kindDistribution": [
@@ -55,7 +70,8 @@
   "mostReadAuthors": [
     {
       "count": 6,
-      "author": "charlie-huston",
+      "name": "Charlie Huston",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2019-01-14-01-already-dead-by-charlie-huston",
@@ -68,7 +84,8 @@
     },
     {
       "count": 6,
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "reviewed": true,
       "readings": [
         "2019-02-03-01-the-eyes-of-the-dragon-by-stephen-king",
@@ -81,7 +98,8 @@
     },
     {
       "count": 4,
-      "author": "raymond-chandler",
+      "name": "Raymond Chandler",
+      "slug": "raymond-chandler",
       "reviewed": true,
       "readings": [
         "2019-02-16-01-farewell-my-lovely-by-raymond-chandler",
@@ -92,7 +110,8 @@
     },
     {
       "count": 4,
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2019-03-02-01-black-canaan-by-robert-e-howard",
@@ -103,7 +122,8 @@
     },
     {
       "count": 4,
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2019-02-10-01-darkness-tell-us-by-richard-laymon",

@@ -1,15 +1,24 @@
 {
+  "id": "pretty-is-by-michael-newton",
   "title": "Pretty Is...",
-  "subtitle": null,
   "sortTitle": "Pretty Is...",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "pretty-is-by-michael-newton",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "michael-newton",
+      "name": "Michael Newton",
+      "slug": "michael-newton",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

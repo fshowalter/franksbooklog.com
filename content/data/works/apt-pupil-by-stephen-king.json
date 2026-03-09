@@ -1,15 +1,24 @@
 {
+  "id": "apt-pupil-by-stephen-king",
   "title": "Apt Pupil",
-  "subtitle": null,
   "sortTitle": "Apt Pupil",
-  "year": "1982",
+  "subtitle": null,
+  "workYear": "1982",
   "kind": "Novella",
-  "slug": "apt-pupil-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

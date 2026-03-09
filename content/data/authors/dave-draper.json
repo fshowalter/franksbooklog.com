@@ -1,5 +1,28 @@
 {
   "name": "Dave Draper",
   "sortName": "Draper, Dave",
-  "slug": "dave-draper"
+  "slug": "dave-draper",
+  "reviewCount": 1,
+  "reviewedWorks": [
+    {
+      "id": "brother-iron-sister-steel-by-dave-draper",
+      "sequence": "2022-03-06-01-brother-iron-sister-steel-by-dave-draper",
+      "slug": "brother-iron-sister-steel-by-dave-draper",
+      "title": "Brother Iron, Sister Steel",
+      "sortTitle": "Brother Iron, Sister Steel",
+      "workYear": "2001",
+      "grade": "C",
+      "gradeValue": 6,
+      "kind": "Nonfiction",
+      "reviewDate": "2022-03-06",
+      "authors": [
+        {
+          "slug": "dave-draper",
+          "notes": null,
+          "name": "Dave Draper"
+        }
+      ],
+      "reviewYear": "2022"
+    }
+  ]
 }

@@ -1,15 +1,17 @@
 {
+  "id": "the-big-sleep-by-raymond-chandler",
   "title": "The Big Sleep",
   "subtitle": null,
   "sortTitle": "Big Sleep",
   "year": "1939",
   "kind": "Novel",
   "slug": "the-big-sleep-by-raymond-chandler",
+  "reviewed": true,
   "authors": [
     {
-      "author": "raymond-chandler",
+      "name": "Raymond Chandler",
+      "slug": "raymond-chandler",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

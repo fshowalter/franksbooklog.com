@@ -1,15 +1,24 @@
 {
+  "id": "stranger-than-fiction-by-chuck-palahniuk",
   "title": "Stranger than Fiction",
-  "subtitle": "True Stories",
   "sortTitle": "Stranger than Fiction: True Stories",
-  "year": "2004",
+  "subtitle": "True Stories",
+  "workYear": "2004",
   "kind": "Nonfiction",
-  "slug": "stranger-than-fiction-by-chuck-palahniuk",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chuck-palahniuk",
+      "name": "Chuck Palahniuk",
+      "slug": "chuck-palahniuk",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

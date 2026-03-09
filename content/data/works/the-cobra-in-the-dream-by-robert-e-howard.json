@@ -1,15 +1,24 @@
 {
+  "id": "the-cobra-in-the-dream-by-robert-e-howard",
   "title": "The Cobra in the Dream",
-  "subtitle": null,
   "sortTitle": "Cobra in the Dream",
-  "year": "1967",
+  "subtitle": null,
+  "workYear": "1967",
   "kind": "Short Story",
-  "slug": "the-cobra-in-the-dream-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

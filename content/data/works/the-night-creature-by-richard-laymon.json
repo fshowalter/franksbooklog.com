@@ -1,15 +1,24 @@
 {
+  "id": "the-night-creature-by-richard-laymon",
   "title": "The Night Creature",
-  "subtitle": null,
   "sortTitle": "Night Creature",
-  "year": "1986",
+  "subtitle": null,
+  "workYear": "1986",
   "kind": "Short Story",
-  "slug": "the-night-creature-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

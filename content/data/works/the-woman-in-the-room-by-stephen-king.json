@@ -1,15 +1,24 @@
 {
+  "id": "the-woman-in-the-room-by-stephen-king",
   "title": "The Woman in the Room",
-  "subtitle": null,
   "sortTitle": "Woman in the Room",
-  "year": "1978",
+  "subtitle": null,
+  "workYear": "1978",
   "kind": "Short Story",
-  "slug": "the-woman-in-the-room-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

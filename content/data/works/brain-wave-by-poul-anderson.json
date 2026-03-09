@@ -1,15 +1,17 @@
 {
+  "id": "brain-wave-by-poul-anderson",
   "title": "Brain Wave",
   "subtitle": null,
   "sortTitle": "Brain Wave",
   "year": "1954",
   "kind": "Novel",
   "slug": "brain-wave-by-poul-anderson",
+  "reviewed": true,
   "authors": [
     {
-      "author": "poul-anderson",
+      "name": "Poul Anderson",
+      "slug": "poul-anderson",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

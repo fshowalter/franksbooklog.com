@@ -1,15 +1,24 @@
 {
+  "id": "forever-in-my-thoughts-by-don-dammassa",
   "title": "Forever in My Thoughts",
-  "subtitle": null,
   "sortTitle": "Forever in My Thoughts",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "forever-in-my-thoughts-by-don-dammassa",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "don-dammassa",
+      "name": "Don D'Ammassa",
+      "slug": "don-dammassa",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,17 @@
 {
+  "id": "the-black-train-by-edward-lee",
   "title": "The Black Train",
   "subtitle": null,
   "sortTitle": "Black Train",
   "year": "2009",
   "kind": "Novel",
   "slug": "the-black-train-by-edward-lee",
+  "reviewed": true,
   "authors": [
     {
-      "author": "edward-lee",
+      "name": "Edward Lee",
+      "slug": "edward-lee",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

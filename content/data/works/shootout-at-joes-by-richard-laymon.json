@@ -1,15 +1,17 @@
 {
+  "id": "shootout-at-joes-by-richard-laymon",
   "title": "Shootout at Joe's",
   "subtitle": null,
   "sortTitle": "Shootout at Joe's",
   "year": "1984",
   "kind": "Short Story",
-  "slug": "shootout-at-joes-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

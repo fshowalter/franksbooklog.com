@@ -1,5 +1,208 @@
 {
   "name": "Stephen King",
   "sortName": "King, Stephen",
-  "slug": "stephen-king"
+  "slug": "stephen-king",
+  "reviewCount": 10,
+  "reviewedWorks": [
+    {
+      "id": "salems-lot-by-stephen-king",
+      "sequence": "2022-10-14-01-salems-lot-by-stephen-king",
+      "slug": "salems-lot-by-stephen-king",
+      "title": "'Salem's Lot",
+      "sortTitle": "'Salem's Lot",
+      "workYear": "1975",
+      "grade": "B",
+      "gradeValue": 9,
+      "kind": "Novel",
+      "reviewDate": "2022-10-14",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2022"
+    },
+    {
+      "id": "carrie-by-stephen-king",
+      "sequence": "2022-09-19-01-carrie-by-stephen-king",
+      "slug": "carrie-by-stephen-king",
+      "title": "Carrie",
+      "sortTitle": "Carrie",
+      "workYear": "1974",
+      "grade": "B-",
+      "gradeValue": 8,
+      "kind": "Novel",
+      "reviewDate": "2022-09-19",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2022"
+    },
+    {
+      "id": "cujo-by-stephen-king",
+      "sequence": "2014-06-17-04-cujo-by-stephen-king",
+      "slug": "cujo-by-stephen-king",
+      "title": "Cujo",
+      "sortTitle": "Cujo",
+      "workYear": "1981",
+      "grade": "B",
+      "gradeValue": 9,
+      "kind": "Novel",
+      "reviewDate": "2014-06-17",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2014"
+    },
+    {
+      "id": "doctor-sleep-by-stephen-king",
+      "sequence": "2023-01-14-01-doctor-sleep-by-stephen-king",
+      "slug": "doctor-sleep-by-stephen-king",
+      "title": "Doctor Sleep",
+      "sortTitle": "Doctor Sleep",
+      "workYear": "2013",
+      "grade": "C+",
+      "gradeValue": 7,
+      "kind": "Novel",
+      "reviewDate": "2023-01-14",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2023"
+    },
+    {
+      "id": "the-long-walk-by-stephen-king",
+      "sequence": "2014-03-09-01-the-long-walk-by-stephen-king",
+      "slug": "the-long-walk-by-stephen-king",
+      "title": "The Long Walk",
+      "sortTitle": "Long Walk",
+      "workYear": "1978",
+      "grade": "D",
+      "gradeValue": 3,
+      "kind": "Novel",
+      "reviewDate": "2014-03-09",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2014"
+    },
+    {
+      "id": "night-shift-by-stephen-king",
+      "sequence": "2012-05-14-01-night-shift-by-stephen-king",
+      "slug": "night-shift-by-stephen-king",
+      "title": "Night Shift",
+      "sortTitle": "Night Shift",
+      "workYear": "1978",
+      "grade": "B",
+      "gradeValue": 9,
+      "kind": "Collection",
+      "reviewDate": "2012-05-14",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2012"
+    },
+    {
+      "id": "on-writing-by-stephen-king",
+      "sequence": "2022-03-21-01-on-writing-by-stephen-king",
+      "slug": "on-writing-by-stephen-king",
+      "title": "On Writing",
+      "sortTitle": "On Writing",
+      "workYear": "2000",
+      "grade": "A-",
+      "gradeValue": 11,
+      "kind": "Nonfiction",
+      "reviewDate": "2022-03-21",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2022"
+    },
+    {
+      "id": "rage-by-stephen-king",
+      "sequence": "2012-05-13-01-rage-by-stephen-king",
+      "slug": "rage-by-stephen-king",
+      "title": "Rage",
+      "sortTitle": "Rage",
+      "workYear": "1976",
+      "grade": "C",
+      "gradeValue": 6,
+      "kind": "Novel",
+      "reviewDate": "2012-05-13",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": "as Richard Bachman",
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2012"
+    },
+    {
+      "id": "the-shining-by-stephen-king",
+      "sequence": "2022-10-29-02-the-shining-by-stephen-king",
+      "slug": "the-shining-by-stephen-king",
+      "title": "The Shining",
+      "sortTitle": "Shining",
+      "workYear": "1977",
+      "grade": "B",
+      "gradeValue": 9,
+      "kind": "Novel",
+      "reviewDate": "2022-10-29",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2022"
+    },
+    {
+      "id": "the-stand-by-stephen-king",
+      "sequence": "2014-03-02-01-the-stand-by-stephen-king",
+      "slug": "the-stand-by-stephen-king",
+      "title": "The Stand",
+      "sortTitle": "Stand",
+      "workYear": "1978",
+      "grade": "D",
+      "gradeValue": 3,
+      "kind": "Novel",
+      "reviewDate": "2014-03-02",
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King"
+        }
+      ],
+      "reviewYear": "2014"
+    }
+  ]
 }

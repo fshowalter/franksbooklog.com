@@ -1,15 +1,24 @@
 {
+  "id": "mr-right-by-chris-lacher",
   "title": "Mr. Right",
-  "subtitle": null,
   "sortTitle": "Mr. Right",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "mr-right-by-chris-lacher",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chris-lacher",
+      "name": "Chris Lacher",
+      "slug": "chris-lacher",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

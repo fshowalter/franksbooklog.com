@@ -1,15 +1,24 @@
 {
+  "id": "theyre-coming-for-you-by-les-daniels",
   "title": "They're Coming for You",
-  "subtitle": null,
   "sortTitle": "They're Coming for You",
-  "year": "1986",
+  "subtitle": null,
+  "workYear": "1986",
   "kind": "Short Story",
-  "slug": "theyre-coming-for-you-by-les-daniels",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "les-daniels",
+      "name": "Les Daniels",
+      "slug": "les-daniels",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

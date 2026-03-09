@@ -1,5 +1,28 @@
 {
   "name": "Raymond Chandler",
   "sortName": "Chandler, Raymond",
-  "slug": "raymond-chandler"
+  "slug": "raymond-chandler",
+  "reviewCount": 1,
+  "reviewedWorks": [
+    {
+      "id": "the-big-sleep-by-raymond-chandler",
+      "sequence": "2022-09-24-01-the-big-sleep-by-raymond-chandler",
+      "slug": "the-big-sleep-by-raymond-chandler",
+      "title": "The Big Sleep",
+      "sortTitle": "Big Sleep",
+      "workYear": "1939",
+      "grade": "C+",
+      "gradeValue": 7,
+      "kind": "Novel",
+      "reviewDate": "2022-09-24",
+      "authors": [
+        {
+          "slug": "raymond-chandler",
+          "notes": null,
+          "name": "Raymond Chandler"
+        }
+      ],
+      "reviewYear": "2022"
+    }
+  ]
 }

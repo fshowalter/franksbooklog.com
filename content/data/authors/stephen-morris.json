@@ -1,5 +1,48 @@
 {
   "name": "Stephen Morris",
   "sortName": "Morris, Stephen",
-  "slug": "stephen-morris"
+  "slug": "stephen-morris",
+  "reviewCount": 2,
+  "reviewedWorks": [
+    {
+      "id": "fast-forward-by-stephen-morris",
+      "sequence": "2024-07-01-01-fast-forward-by-stephen-morris",
+      "slug": "fast-forward-by-stephen-morris",
+      "title": "Fast Forward",
+      "sortTitle": "Fast Forward: Confessions of a Post-Punk Percussionist: Volume II",
+      "workYear": "2020",
+      "grade": "A-",
+      "gradeValue": 11,
+      "kind": "Nonfiction",
+      "reviewDate": "2024-07-01",
+      "authors": [
+        {
+          "slug": "stephen-morris",
+          "notes": null,
+          "name": "Stephen Morris"
+        }
+      ],
+      "reviewYear": "2024"
+    },
+    {
+      "id": "record-play-pause-by-stephen-morris",
+      "sequence": "2023-11-11-01-record-play-pause-by-stephen-morris",
+      "slug": "record-play-pause-by-stephen-morris",
+      "title": "Record Play Pause",
+      "sortTitle": "Record Play Pause",
+      "workYear": "2019",
+      "grade": "A",
+      "gradeValue": 12,
+      "kind": "Nonfiction",
+      "reviewDate": "2023-11-11",
+      "authors": [
+        {
+          "slug": "stephen-morris",
+          "notes": null,
+          "name": "Stephen Morris"
+        }
+      ],
+      "reviewYear": "2023"
+    }
+  ]
 }

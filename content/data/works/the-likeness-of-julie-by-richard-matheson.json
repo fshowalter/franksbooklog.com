@@ -1,15 +1,24 @@
 {
+  "id": "the-likeness-of-julie-by-richard-matheson",
   "title": "The Likeness of Julie",
-  "subtitle": null,
   "sortTitle": "Likeness of Julie",
-  "year": "1962",
+  "subtitle": null,
+  "workYear": "1962",
   "kind": "Short Story",
-  "slug": "the-likeness-of-julie-by-richard-matheson",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-matheson",
+      "name": "Richard Matheson",
+      "slug": "richard-matheson",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

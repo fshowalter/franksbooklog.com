@@ -1,15 +1,17 @@
 {
+  "id": "sinatra-by-james-kaplan",
   "title": "Sinatra",
   "subtitle": "The Chairman",
   "sortTitle": "Sinatra: The Chairman",
   "year": "2015",
   "kind": "Nonfiction",
-  "slug": "sinatra-by-james-kaplan",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "james-kaplan",
+      "name": "James Kaplan",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "cain-rose-up-by-stephen-king",
   "title": "Cain Rose Up",
-  "subtitle": null,
   "sortTitle": "Cain Rose Up",
-  "year": "1968",
+  "subtitle": null,
+  "workYear": "1968",
   "kind": "Short Story",
-  "slug": "cain-rose-up-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

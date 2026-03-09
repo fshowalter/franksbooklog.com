@@ -1,15 +1,24 @@
 {
+  "id": "cardiac-arrest-by-richard-laymon",
   "title": "Cardiac Arrest",
-  "subtitle": null,
   "sortTitle": "Cardiac Arrest",
-  "year": "1984",
+  "subtitle": null,
+  "workYear": "1984",
   "kind": "Short Story",
-  "slug": "cardiac-arrest-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

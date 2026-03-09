@@ -1,15 +1,24 @@
 {
+  "id": "in-the-dark-by-richard-laymon",
   "title": "In the Dark",
-  "subtitle": null,
   "sortTitle": "In the Dark",
-  "year": "1994",
+  "subtitle": null,
+  "workYear": "1994",
   "kind": "Novel",
-  "slug": "in-the-dark-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

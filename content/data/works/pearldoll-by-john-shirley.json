@@ -1,15 +1,24 @@
 {
+  "id": "pearldoll-by-john-shirley",
   "title": "Pearldoll",
-  "subtitle": null,
   "sortTitle": "Pearldoll",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "pearldoll-by-john-shirley",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "john-shirley",
+      "name": "John Shirley",
+      "slug": "john-shirley",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

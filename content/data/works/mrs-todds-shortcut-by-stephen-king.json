@@ -1,15 +1,24 @@
 {
+  "id": "mrs-todds-shortcut-by-stephen-king",
   "title": "Mrs. Todd's Shortcut",
-  "subtitle": null,
   "sortTitle": "Mrs. Todd's Shortcut",
-  "year": "1984",
+  "subtitle": null,
+  "workYear": "1984",
   "kind": "Short Story",
-  "slug": "mrs-todds-shortcut-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

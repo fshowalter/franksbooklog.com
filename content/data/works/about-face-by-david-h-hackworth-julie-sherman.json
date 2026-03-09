@@ -1,19 +1,22 @@
 {
+  "id": "about-face-by-david-h-hackworth-julie-sherman",
   "title": "About Face",
   "subtitle": "The Odyssey of an American Warrior",
   "sortTitle": "About Face: The Odyssey of an American Warrior",
   "year": "1989",
   "kind": "Nonfiction",
   "slug": "about-face-by-david-h-hackworth-julie-sherman",
+  "reviewed": true,
   "authors": [
     {
-      "author": "david-h-hackworth",
+      "name": "David H. Hackworth",
+      "slug": "david-h-hackworth",
       "notes": null
     },
     {
-      "author": "julie-sherman",
+      "name": "Julie Sherman",
+      "slug": "julie-sherman",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

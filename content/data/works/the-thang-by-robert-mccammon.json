@@ -1,15 +1,24 @@
 {
+  "id": "the-thang-by-robert-mccammon",
   "title": "The Thang",
-  "subtitle": null,
   "sortTitle": "Thang",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "the-thang-by-robert-mccammon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-mccammon",
+      "name": "Robert McCammon",
+      "slug": "robert-mccammon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

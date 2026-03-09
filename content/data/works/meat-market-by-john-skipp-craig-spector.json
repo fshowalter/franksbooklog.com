@@ -1,19 +1,29 @@
 {
+  "id": "meat-market-by-john-skipp-craig-spector",
   "title": "Meat Market",
-  "subtitle": null,
   "sortTitle": "Meat Market",
-  "year": "1987",
+  "subtitle": null,
+  "workYear": "1987",
   "kind": "Short Story",
-  "slug": "meat-market-by-john-skipp-craig-spector",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "john-skipp",
+      "name": "John Skipp",
+      "slug": "john-skipp",
       "notes": null
     },
     {
-      "author": "craig-spector",
+      "name": "Craig Spector",
+      "slug": "craig-spector",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

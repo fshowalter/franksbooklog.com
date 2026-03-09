@@ -1,15 +1,24 @@
 {
+  "id": "genderella-by-ron-dee",
   "title": "Genderella",
-  "subtitle": null,
   "sortTitle": "Genderella",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "genderella-by-ron-dee",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ron-dee",
+      "name": "Ron Dee",
+      "slug": "ron-dee",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,17 @@
 {
+  "id": "christine-by-stephen-king",
   "title": "Christine",
   "subtitle": null,
   "sortTitle": "Christine",
   "year": "1983",
   "kind": "Novel",
-  "slug": "christine-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

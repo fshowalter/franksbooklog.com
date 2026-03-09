@@ -1,15 +1,24 @@
 {
+  "id": "atrocities-by-lucy-taylor",
   "title": "Atrocities",
-  "subtitle": null,
   "sortTitle": "Atrocities",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "atrocities-by-lucy-taylor",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "lucy-taylor",
+      "name": "Lucy Taylor",
+      "slug": "lucy-taylor",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

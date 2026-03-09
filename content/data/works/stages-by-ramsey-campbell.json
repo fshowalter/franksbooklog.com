@@ -1,15 +1,24 @@
 {
+  "id": "stages-by-ramsey-campbell",
   "title": "Stages",
-  "subtitle": null,
   "sortTitle": "Stages",
-  "year": "1987",
+  "subtitle": null,
+  "workYear": "1987",
   "kind": "Short Story",
-  "slug": "stages-by-ramsey-campbell",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ramsey-campbell",
+      "name": "Ramsey Campbell",
+      "slug": "ramsey-campbell",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

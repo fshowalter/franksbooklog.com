@@ -1,15 +1,24 @@
 {
+  "id": "iron-shadows-in-the-moon-by-robert-e-howard",
   "title": "Iron Shadows in the Moon",
-  "subtitle": null,
   "sortTitle": "Iron Shadows in the Moon",
-  "year": "1934",
+  "subtitle": null,
+  "workYear": "1934",
   "kind": "Short Story",
-  "slug": "iron-shadows-in-the-moon-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

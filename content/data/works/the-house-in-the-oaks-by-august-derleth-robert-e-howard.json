@@ -1,19 +1,29 @@
 {
+  "id": "the-house-in-the-oaks-by-august-derleth-robert-e-howard",
   "title": "The House in the Oaks",
-  "subtitle": null,
   "sortTitle": "House in the Oaks",
-  "year": "1971",
+  "subtitle": null,
+  "workYear": "1971",
   "kind": "Short Story",
-  "slug": "the-house-in-the-oaks-by-august-derleth-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "august-derleth",
+      "name": "August Derleth",
+      "slug": "august-derleth",
       "notes": null
     },
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

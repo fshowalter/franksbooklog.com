@@ -1,15 +1,24 @@
 {
+  "id": "demonlover-by-nancy-a-collins",
   "title": "Demonlover",
-  "subtitle": null,
   "sortTitle": "Demonlover",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "demonlover-by-nancy-a-collins",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "nancy-a-collins",
+      "name": "Nancy A. Collins",
+      "slug": "nancy-a-collins",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "punishments-by-ray-garton",
   "title": "Punishments",
-  "subtitle": null,
   "sortTitle": "Punishments",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "punishments-by-ray-garton",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ray-garton",
+      "name": "Ray Garton",
+      "slug": "ray-garton",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import { getEntry } from "astro:content";
+
+import ReviewLayout from "~/components/layout/ReviewLayout.astro";
+
+import Review from "./Review.astro";
+import { reviewPageTitle } from "./reviewPageTitle";
+
+type Props = {
+  reviewedWork: CollectionEntry<"reviewedWorks">["data"];
+};
+
+const { reviewedWork } = Astro.props;
+const { data: review } = await getEntry(reviewedWork.review);
+---
+
+<ReviewLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: { description: review.description },
+    openGraph: {
+      description: review.description,
+      type: "article",
+    },
+    title: reviewPageTitle(reviewedWork),
+  }}
+>
+  <Review review={review} reviewedWork={reviewedWork} />
+</ReviewLayout>

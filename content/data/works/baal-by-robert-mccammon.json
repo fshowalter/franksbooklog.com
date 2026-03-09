@@ -1,15 +1,17 @@
 {
+  "id": "baal-by-robert-mccammon",
   "title": "Baal",
   "subtitle": null,
   "sortTitle": "Baal",
   "year": "1978",
   "kind": "Novel",
-  "slug": "baal-by-robert-mccammon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "robert-mccammon",
+      "name": "Robert McCammon",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

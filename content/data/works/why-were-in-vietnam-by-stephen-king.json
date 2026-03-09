@@ -1,15 +1,24 @@
 {
+  "id": "why-were-in-vietnam-by-stephen-king",
   "title": "Why We're in Vietnam",
-  "subtitle": null,
   "sortTitle": "Why We're in Vietnam",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novella",
-  "slug": "why-were-in-vietnam-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

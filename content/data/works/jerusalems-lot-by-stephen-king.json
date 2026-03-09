@@ -1,15 +1,24 @@
 {
+  "id": "jerusalems-lot-by-stephen-king",
   "title": "Jerusalem's Lot",
-  "subtitle": null,
   "sortTitle": "Jerusalem's Lot",
-  "year": "1978",
+  "subtitle": null,
+  "workYear": "1978",
   "kind": "Short Story",
-  "slug": "jerusalems-lot-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "cuts-by-richard-laymon",
   "title": "Cuts",
-  "subtitle": null,
   "sortTitle": "Cuts",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novel",
-  "slug": "cuts-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

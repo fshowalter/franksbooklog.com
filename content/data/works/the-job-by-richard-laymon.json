@@ -1,15 +1,24 @@
 {
+  "id": "the-job-by-richard-laymon",
   "title": "The Job",
-  "subtitle": null,
   "sortTitle": "Job",
-  "year": "1998",
+  "subtitle": null,
+  "workYear": "1998",
   "kind": "Short Story",
-  "slug": "the-job-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,17 @@
 {
+  "id": "dracula-by-bram-stoker",
   "title": "Dracula",
   "subtitle": null,
   "sortTitle": "Dracula",
   "year": "1897",
   "kind": "Novel",
   "slug": "dracula-by-bram-stoker",
+  "reviewed": true,
   "authors": [
     {
-      "author": "bram-stoker",
+      "name": "Bram Stoker",
+      "slug": "bram-stoker",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

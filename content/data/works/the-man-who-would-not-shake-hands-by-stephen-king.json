@@ -1,15 +1,24 @@
 {
+  "id": "the-man-who-would-not-shake-hands-by-stephen-king",
   "title": "The Man Who Would Not Shake Hands",
-  "subtitle": null,
   "sortTitle": "Man Who Would Not Shake Hands",
-  "year": "1982",
+  "subtitle": null,
+  "workYear": "1982",
   "kind": "Short Story",
-  "slug": "the-man-who-would-not-shake-hands-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

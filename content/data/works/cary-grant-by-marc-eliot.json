@@ -1,15 +1,17 @@
 {
+  "id": "cary-grant-by-marc-eliot",
   "title": "Cary Grant",
   "subtitle": "A Biography",
   "sortTitle": "Cary Grant: A Biography",
   "year": "2004",
   "kind": "Nonfiction",
   "slug": "cary-grant-by-marc-eliot",
+  "reviewed": true,
   "authors": [
     {
-      "author": "marc-eliot",
+      "name": "Marc Eliot",
+      "slug": "marc-eliot",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-direct-approach-by-richard-laymon",
   "title": "The Direct Approach",
-  "subtitle": null,
   "sortTitle": "Direct Approach",
-  "year": "1977",
+  "subtitle": null,
+  "workYear": "1977",
   "kind": "Short Story",
-  "slug": "the-direct-approach-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

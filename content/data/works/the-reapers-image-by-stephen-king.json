@@ -1,15 +1,24 @@
 {
+  "id": "the-reapers-image-by-stephen-king",
   "title": "The Reaper's Image",
-  "subtitle": null,
   "sortTitle": "Reaper's Image",
-  "year": "1969",
+  "subtitle": null,
+  "workYear": "1969",
   "kind": "Short Story",
-  "slug": "the-reapers-image-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

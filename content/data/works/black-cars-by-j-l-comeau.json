@@ -1,15 +1,24 @@
 {
+  "id": "black-cars-by-j-l-comeau",
   "title": "Black Cars",
-  "subtitle": null,
   "sortTitle": "Black Cars",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "black-cars-by-j-l-comeau",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "j-l-comeau",
+      "name": "J.L. Comeau",
+      "slug": "j-l-comeau",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

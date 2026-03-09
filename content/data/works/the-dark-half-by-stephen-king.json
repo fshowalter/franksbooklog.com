@@ -1,15 +1,17 @@
 {
+  "id": "the-dark-half-by-stephen-king",
   "title": "The Dark Half",
   "subtitle": null,
   "sortTitle": "Dark Half",
   "year": "1989",
   "kind": "Novel",
-  "slug": "the-dark-half-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "mr-right-by-richard-christian-matheson",
   "title": "Mr. Right",
-  "subtitle": null,
   "sortTitle": "Mr. Right",
-  "year": "1988",
+  "subtitle": null,
+  "workYear": "1988",
   "kind": "Short Story",
-  "slug": "mr-right-by-richard-christian-matheson",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-christian-matheson",
+      "name": "Richard Christian Matheson",
+      "slug": "richard-christian-matheson",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

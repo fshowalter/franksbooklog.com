@@ -1,15 +1,17 @@
 {
+  "id": "danse-macabre-by-stephen-king",
   "title": "Danse Macabre",
   "subtitle": null,
   "sortTitle": "Danse Macabre",
   "year": "1981",
   "kind": "Nonfiction",
-  "slug": "danse-macabre-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

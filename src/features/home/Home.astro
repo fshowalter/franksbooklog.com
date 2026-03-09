@@ -1,0 +1,58 @@
+---
+import ReviewCard from "~/components/review-card/ReviewCard.astro";
+import SubHeading from "~/components/sub-heading/SubHeading.astro";
+import { mostRecentReviewedWorks } from "~/content/reviewedWorks";
+
+const reviewedWorks = await mostRecentReviewedWorks(12);
+---
+
+<div class="bg-subtle pb-8">
+  <nav
+    class={`
+      @container/card-list mx-auto max-w-(--breakpoint-desktop) px-container
+    `}
+  >
+    <SubHeading level="h2">Latest Reviews</SubHeading>
+    <ol
+      class={`
+        -mx-4 grid grid-rows-[auto_1fr] gap-x-[3%] gap-y-8
+        @min-[700px]/card-list:grid-cols-2
+      `}
+    >
+      {
+        reviewedWorks.map((review) => {
+          return <ReviewCard hasDate={true} value={review.data} />;
+        })
+      }
+    </ol>
+    <div
+      class={`
+        flex px-container py-10
+        has-[a:hover]:drop-shadow-lg
+      `}
+    >
+      <a
+        class={`
+          group/all-reviews mx-auto w-full max-w-button transform-gpu rounded-md
+          bg-default pt-5 pb-4 text-center font-sans text-sm font-bold
+          tracking-wide text-accent uppercase transition-all
+          hover:scale-105 hover:bg-accent hover:text-inverse
+        `}
+        href="/reviews/"
+      >
+        <span
+          class={`
+            relative inline-block pb-1
+            after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
+            after:origin-center after:scale-x-0 after:transform-gpu
+            after:bg-(--color-inverse) after:transition-transform
+            after:duration-500
+            group-hover/all-reviews:after:scale-x-100
+          `}
+        >
+          All Reviews
+        </span>
+      </a>
+    </div>
+  </nav>
+</div>

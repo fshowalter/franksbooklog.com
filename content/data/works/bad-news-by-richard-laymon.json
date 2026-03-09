@@ -1,15 +1,24 @@
 {
+  "id": "bad-news-by-richard-laymon",
   "title": "Bad News",
-  "subtitle": null,
   "sortTitle": "Bad News",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "bad-news-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

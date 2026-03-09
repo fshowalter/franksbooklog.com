@@ -1,15 +1,24 @@
 {
+  "id": "the-book-of-blood-by-clive-barker",
   "title": "The Book of Blood",
-  "subtitle": null,
   "sortTitle": "Book of Blood",
-  "year": "1984",
+  "subtitle": null,
+  "workYear": "1984",
   "kind": "Short Story",
-  "slug": "the-book-of-blood-by-clive-barker",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "clive-barker",
+      "name": "Clive Barker",
+      "slug": "clive-barker",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

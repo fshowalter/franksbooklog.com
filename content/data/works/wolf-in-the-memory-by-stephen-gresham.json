@@ -1,15 +1,24 @@
 {
+  "id": "wolf-in-the-memory-by-stephen-gresham",
   "title": "Wolf in the Memory",
-  "subtitle": null,
   "sortTitle": "Wolf in the Memory",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "wolf-in-the-memory-by-stephen-gresham",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-gresham",
+      "name": "Stephen Gresham",
+      "slug": "stephen-gresham",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

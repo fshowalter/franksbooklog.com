@@ -1,15 +1,24 @@
 {
+  "id": "the-fur-coat-by-richard-laymon",
   "title": "The Fur Coat",
-  "subtitle": null,
   "sortTitle": "Fur Coat",
-  "year": "1994",
+  "subtitle": null,
+  "workYear": "1994",
   "kind": "Short Story",
-  "slug": "the-fur-coat-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

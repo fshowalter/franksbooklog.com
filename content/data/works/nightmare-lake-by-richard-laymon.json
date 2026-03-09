@@ -1,15 +1,17 @@
 {
+  "id": "nightmare-lake-by-richard-laymon",
   "title": "Nightmare Lake",
   "subtitle": null,
   "sortTitle": "Nightmare Lake",
   "year": "1983",
   "kind": "Novel",
-  "slug": "nightmare-lake-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": "as Carl Laymon"
     }
-  ],
-  "includedWorks": []
+  ]
 }

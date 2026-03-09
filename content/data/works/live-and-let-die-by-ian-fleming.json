@@ -1,15 +1,17 @@
 {
+  "id": "live-and-let-die-by-ian-fleming",
   "title": "Live and Let Die",
   "subtitle": null,
   "sortTitle": "Live and Let Die",
   "year": "1954",
   "kind": "Novel",
   "slug": "live-and-let-die-by-ian-fleming",
+  "reviewed": true,
   "authors": [
     {
-      "author": "ian-fleming",
+      "name": "Ian Fleming",
+      "slug": "ian-fleming",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

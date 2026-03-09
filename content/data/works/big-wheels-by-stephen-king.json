@@ -1,15 +1,24 @@
 {
+  "id": "big-wheels-by-stephen-king",
   "title": "Big Wheels: A Tale of the Laundry Game (Milkman #2)",
-  "subtitle": null,
   "sortTitle": "Big Wheels: A Tale of the Laundry Game (Milkman #2)",
-  "year": "1980",
+  "subtitle": null,
+  "workYear": "1980",
   "kind": "Short Story",
-  "slug": "big-wheels-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,17 @@
 {
+  "id": "the-moviegoer-by-walker-percy",
   "title": "The Moviegoer",
   "subtitle": null,
   "sortTitle": "Moviegoer",
   "year": "1961",
   "kind": "Novel",
-  "slug": "the-moviegoer-by-walker-percy",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "walker-percy",
+      "name": "Walker Percy",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

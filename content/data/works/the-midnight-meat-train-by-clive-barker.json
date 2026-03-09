@@ -1,15 +1,24 @@
 {
+  "id": "the-midnight-meat-train-by-clive-barker",
   "title": "The Midnight Meat Train",
-  "subtitle": null,
   "sortTitle": "Midnight Meat Train",
-  "year": "1984",
+  "subtitle": null,
+  "workYear": "1984",
   "kind": "Short Story",
-  "slug": "the-midnight-meat-train-by-clive-barker",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "clive-barker",
+      "name": "Clive Barker",
+      "slug": "clive-barker",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

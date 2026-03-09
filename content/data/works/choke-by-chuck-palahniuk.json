@@ -1,15 +1,24 @@
 {
+  "id": "choke-by-chuck-palahniuk",
   "title": "Choke",
-  "subtitle": null,
   "sortTitle": "Choke",
-  "year": "2001",
+  "subtitle": null,
+  "workYear": "2001",
   "kind": "Novel",
-  "slug": "choke-by-chuck-palahniuk",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chuck-palahniuk",
+      "name": "Chuck Palahniuk",
+      "slug": "chuck-palahniuk",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

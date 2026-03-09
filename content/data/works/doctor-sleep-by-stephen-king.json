@@ -1,15 +1,17 @@
 {
+  "id": "doctor-sleep-by-stephen-king",
   "title": "Doctor Sleep",
   "subtitle": null,
   "sortTitle": "Doctor Sleep",
   "year": "2013",
   "kind": "Novel",
   "slug": "doctor-sleep-by-stephen-king",
+  "reviewed": true,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

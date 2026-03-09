@@ -1,15 +1,24 @@
 {
+  "id": "the-picture-of-health-by-ray-garton",
   "title": "The Picture of Health",
-  "subtitle": null,
   "sortTitle": "Picture of Health",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "the-picture-of-health-by-ray-garton",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ray-garton",
+      "name": "Ray Garton",
+      "slug": "ray-garton",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

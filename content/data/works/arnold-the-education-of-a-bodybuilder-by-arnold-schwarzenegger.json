@@ -1,15 +1,17 @@
 {
+  "id": "arnold-the-education-of-a-bodybuilder-by-arnold-schwarzenegger",
   "title": "Arnold",
   "subtitle": "The Education of a Bodybuilder",
   "sortTitle": "Arnold",
   "year": "1977",
   "kind": "Nonfiction",
-  "slug": "arnold-the-education-of-a-bodybuilder-by-arnold-schwarzenegger",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "arnold-schwarzenegger",
+      "name": "Arnold Schwarzenegger",
+      "slug": "arnold-schwarzenegger",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

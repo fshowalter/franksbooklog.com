@@ -1,15 +1,17 @@
 {
+  "id": "night-show-by-richard-laymon",
   "title": "Night Show",
   "subtitle": null,
   "sortTitle": "Night Show",
   "year": "1984",
   "kind": "Novel",
-  "slug": "night-show-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

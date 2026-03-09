@@ -1,15 +1,17 @@
 {
+  "id": "the-little-sister-by-raymond-chandler",
   "title": "The Little Sister",
   "subtitle": null,
   "sortTitle": "Little Sister",
   "year": "1949",
   "kind": "Novel",
-  "slug": "the-little-sister-by-raymond-chandler",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "raymond-chandler",
+      "name": "Raymond Chandler",
+      "slug": "raymond-chandler",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

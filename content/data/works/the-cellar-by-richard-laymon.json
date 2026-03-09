@@ -1,15 +1,17 @@
 {
+  "id": "the-cellar-by-richard-laymon",
   "title": "The Cellar",
   "subtitle": null,
   "sortTitle": "Cellar, The",
   "year": "1980",
   "kind": "Novel",
   "slug": "the-cellar-by-richard-laymon",
+  "reviewed": true,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

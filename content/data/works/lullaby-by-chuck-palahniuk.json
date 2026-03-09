@@ -1,15 +1,24 @@
 {
+  "id": "lullaby-by-chuck-palahniuk",
   "title": "Lullaby",
-  "subtitle": null,
   "sortTitle": "Lullaby",
-  "year": "2002",
+  "subtitle": null,
+  "workYear": "2002",
   "kind": "Novel",
-  "slug": "lullaby-by-chuck-palahniuk",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chuck-palahniuk",
+      "name": "Chuck Palahniuk",
+      "slug": "chuck-palahniuk",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-frost-giants-daughter-by-robert-e-howard",
   "title": "The Frost-Giant's Daughter",
-  "subtitle": null,
   "sortTitle": "Frost-Giant's Daughter",
-  "year": "1953",
+  "subtitle": null,
+  "workYear": "1953",
   "kind": "Short Story",
-  "slug": "the-frost-giants-daughter-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

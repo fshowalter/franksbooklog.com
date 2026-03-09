@@ -1,15 +1,24 @@
 {
+  "id": "the-body-in-the-window-by-ramsey-campbell",
   "title": "The Body in the Window",
-  "subtitle": null,
   "sortTitle": "Body in the Window",
-  "year": "1995",
+  "subtitle": null,
+  "workYear": "1995",
   "kind": "Short Story",
-  "slug": "the-body-in-the-window-by-ramsey-campbell",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ramsey-campbell",
+      "name": "Ramsey Campbell",
+      "slug": "ramsey-campbell",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

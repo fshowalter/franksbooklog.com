@@ -1,15 +1,24 @@
 {
+  "id": "pig-blood-blues-by-clive-barker",
   "title": "Pig Blood Blues",
-  "subtitle": null,
   "sortTitle": "Pig Blood Blues",
-  "year": "1984",
+  "subtitle": null,
+  "workYear": "1984",
   "kind": "Short Story",
-  "slug": "pig-blood-blues-by-clive-barker",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "clive-barker",
+      "name": "Clive Barker",
+      "slug": "clive-barker",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

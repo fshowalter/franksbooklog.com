@@ -1,15 +1,17 @@
 {
+  "id": "the-postman-always-rings-twice-by-james-m-cain",
   "title": "The Postman Always Rings Twice",
   "subtitle": null,
   "sortTitle": "Postman Always Rings Twice",
   "year": "1934",
   "kind": "Novel",
   "slug": "the-postman-always-rings-twice-by-james-m-cain",
+  "reviewed": true,
   "authors": [
     {
-      "author": "james-m-cain",
+      "name": "James M. Cain",
+      "slug": "james-m-cain",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

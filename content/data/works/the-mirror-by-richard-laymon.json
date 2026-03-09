@@ -1,15 +1,24 @@
 {
+  "id": "the-mirror-by-richard-laymon",
   "title": "The Mirror",
-  "subtitle": null,
   "sortTitle": "Mirror",
-  "year": "2011",
+  "subtitle": null,
+  "workYear": "2011",
   "kind": "Short Story",
-  "slug": "the-mirror-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-wilds-by-richard-laymon",
   "title": "The Wilds",
-  "subtitle": null,
   "sortTitle": "Wilds",
-  "year": "1998",
+  "subtitle": null,
+  "workYear": "1998",
   "kind": "Novella",
-  "slug": "the-wilds-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

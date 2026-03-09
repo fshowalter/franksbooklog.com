@@ -1,15 +1,24 @@
 {
+  "id": "hard-evidence-by-john-edward-ames",
   "title": "Hard Evidence",
-  "subtitle": null,
   "sortTitle": "Hard Evidence",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "hard-evidence-by-john-edward-ames",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "john-edward-ames",
+      "name": "John Edward Ames",
+      "slug": "john-edward-ames",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

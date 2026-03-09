@@ -1,15 +1,24 @@
 {
+  "id": "black-colossus-by-robert-e-howard",
   "title": "Black Colossus",
-  "subtitle": null,
   "sortTitle": "Black Colossus",
-  "year": "1933",
+  "subtitle": null,
+  "workYear": "1933",
   "kind": "Short Story",
-  "slug": "black-colossus-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

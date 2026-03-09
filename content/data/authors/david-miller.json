@@ -1,5 +1,28 @@
 {
   "name": "David Miller",
   "sortName": "Miller, David",
-  "slug": "david-miller"
+  "slug": "david-miller",
+  "reviewCount": 1,
+  "reviewedWorks": [
+    {
+      "id": "peter-cushing-by-david-miller",
+      "sequence": "2014-08-25-01-peter-cushing-by-david-miller",
+      "slug": "peter-cushing-by-david-miller",
+      "title": "Peter Cushing",
+      "sortTitle": "Peter Cushing: A Life in Film",
+      "workYear": "2013",
+      "grade": "C",
+      "gradeValue": 6,
+      "kind": "Nonfiction",
+      "reviewDate": "2014-08-25",
+      "authors": [
+        {
+          "slug": "david-miller",
+          "notes": null,
+          "name": "David Miller"
+        }
+      ],
+      "reviewYear": "2014"
+    }
+  ]
 }

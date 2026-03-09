@@ -1,15 +1,17 @@
 {
+  "id": "rage-by-stephen-king",
   "title": "Rage",
   "subtitle": null,
   "sortTitle": "Rage",
   "year": "1976",
   "kind": "Novel",
   "slug": "rage-by-stephen-king",
+  "reviewed": true,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": "as Richard Bachman"
     }
-  ],
-  "includedWorks": []
+  ]
 }

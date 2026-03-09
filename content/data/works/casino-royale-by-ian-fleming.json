@@ -1,15 +1,17 @@
 {
+  "id": "casino-royale-by-ian-fleming",
   "title": "Casino Royale",
   "subtitle": null,
   "sortTitle": "Casino Royale",
   "year": "1953",
   "kind": "Novel",
   "slug": "casino-royale-by-ian-fleming",
+  "reviewed": true,
   "authors": [
     {
-      "author": "ian-fleming",
+      "name": "Ian Fleming",
+      "slug": "ian-fleming",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "hearts-in-atlantis-by-stephen-king",
   "title": "Hearts in Atlantis",
-  "subtitle": null,
   "sortTitle": "Hearts in Atlantis",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novella",
-  "slug": "hearts-in-atlantis-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

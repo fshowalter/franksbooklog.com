@@ -1,0 +1,92 @@
+---
+import { getEntry } from "astro:content";
+
+import HeroLayout from "~/components/layout/HeroLayout.astro";
+
+import Callouts from "./Callouts.astro";
+import DecadeDistribution from "./DecadeDistribution.astro";
+import EditionDistribution from "./EditionDistribution.astro";
+import GradeDistribution from "./GradeDistribution.astro";
+import KindDistribution from "./KindDistribution.astro";
+import MostReadAuthors from "./MostReadAuthors.astro";
+import StatsNavigation from "./StatsNavigation.astro";
+
+const alltimeStats = await getEntry("alltimeStats", "alltimeStats");
+
+if (!alltimeStats) {
+  throw new Error("Failed to load All-time stats.");
+}
+
+const stats = alltimeStats.data;
+
+const title = "All-Time Stats";
+const deck = `${(stats.allStatsYears.length - 1).toString()} Years in Review`;
+const metaDescription =
+  "My all-time reading stats. Includes my most-read authors, as well as grade, kind, release year, and edition distributions.";
+---
+
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
+  }}
+  heroProps={{
+    backdropSlug: "stats",
+    breadcrumb: {
+      href: "/readings/",
+      text: "Reading Log",
+    },
+    centerText: true,
+    deck,
+    title: "All-Time Stats",
+  }}
+>
+  <div class="flex flex-col items-center bg-subtle">
+    <StatsNavigation
+      class="z-10 mb-12 w-full"
+      currentYear={"all"}
+      linkFunc={(year: string) => {
+        return `/readings/stats/${year}/`;
+      }}
+      years={stats.allStatsYears}
+    />
+    <Callouts
+      stats={[
+        { label: "Titles", value: stats.workCount },
+        { label: "Books", value: stats.bookCount },
+        { label: "Reviews", value: stats.reviewCount },
+      ]}
+    />
+    <div
+      class={`
+        mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col items-stretch
+        gap-y-8 py-10
+        tablet:px-container
+      `}
+    >
+      <div class={`mx-auto flex w-full max-w-popout flex-col gap-y-8`}>
+        <MostReadAuthors values={stats.mostReadAuthors} />
+      </div>
+      <div
+        class={`
+          mx-auto flex w-full max-w-popout flex-col items-start gap-y-8
+          laptop:max-w-unset laptop:flex-row laptop:gap-x-8
+        `}
+      >
+        <DecadeDistribution values={stats.decadeDistribution} />
+        <KindDistribution values={stats.kindDistribution} />
+        <EditionDistribution values={stats.editionDistribution} />
+      </div>
+      <div class="mx-auto w-full max-w-popout">
+        <GradeDistribution values={stats.gradeDistribution} />
+      </div>
+    </div>
+  </div>
+</HeroLayout>

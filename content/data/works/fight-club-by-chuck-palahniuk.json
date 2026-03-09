@@ -1,15 +1,17 @@
 {
+  "id": "fight-club-by-chuck-palahniuk",
   "title": "Fight Club",
   "subtitle": null,
   "sortTitle": "Fight Club",
   "year": "1996",
   "kind": "Novel",
   "slug": "fight-club-by-chuck-palahniuk",
+  "reviewed": true,
   "authors": [
     {
-      "author": "chuck-palahniuk",
+      "name": "Chuck Palahniuk",
+      "slug": "chuck-palahniuk",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

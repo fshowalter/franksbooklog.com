@@ -1,15 +1,24 @@
 {
+  "id": "night-ride-by-richard-laymon",
   "title": "Night Ride",
-  "subtitle": null,
   "sortTitle": "Night Ride",
-  "year": "1985",
+  "subtitle": null,
+  "workYear": "1985",
   "kind": "Short Story",
-  "slug": "night-ride-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "reunion-by-michael-garrett",
   "title": "Reunion",
-  "subtitle": null,
   "sortTitle": "Reunion",
-  "year": "1987",
+  "subtitle": null,
+  "workYear": "1987",
   "kind": "Short Story",
-  "slug": "reunion-by-michael-garrett",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "michael-garrett",
+      "name": "Michael Garrett",
+      "slug": "michael-garrett",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

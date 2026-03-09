@@ -1,15 +1,24 @@
 {
+  "id": "the-scarlet-citadel-by-robert-e-howard",
   "title": "The Scarlet Citadel",
-  "subtitle": null,
   "sortTitle": "Scarlet Citadel",
-  "year": "1933",
+  "subtitle": null,
+  "workYear": "1933",
   "kind": "Short Story",
-  "slug": "the-scarlet-citadel-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

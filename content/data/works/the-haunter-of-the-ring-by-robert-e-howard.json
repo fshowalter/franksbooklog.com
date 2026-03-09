@@ -1,15 +1,24 @@
 {
+  "id": "the-haunter-of-the-ring-by-robert-e-howard",
   "title": "The Haunter of the Ring",
-  "subtitle": null,
   "sortTitle": "Haunter of the Ring",
-  "year": "1934",
+  "subtitle": null,
+  "workYear": "1934",
   "kind": "Short Story",
-  "slug": "the-haunter-of-the-ring-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

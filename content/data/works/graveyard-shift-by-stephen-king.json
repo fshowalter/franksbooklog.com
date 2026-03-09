@@ -1,15 +1,24 @@
 {
+  "id": "graveyard-shift-by-stephen-king",
   "title": "Graveyard Shift",
-  "subtitle": null,
   "sortTitle": "Graveyard Shift",
-  "year": "1970",
+  "subtitle": null,
+  "workYear": "1970",
   "kind": "Short Story",
-  "slug": "graveyard-shift-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

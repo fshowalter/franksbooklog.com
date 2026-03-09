@@ -1,15 +1,24 @@
 {
+  "id": "night-surf-by-stephen-king",
   "title": "Night Surf",
-  "subtitle": null,
   "sortTitle": "Night Surf",
-  "year": "1969",
+  "subtitle": null,
+  "workYear": "1969",
   "kind": "Short Story",
-  "slug": "night-surf-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

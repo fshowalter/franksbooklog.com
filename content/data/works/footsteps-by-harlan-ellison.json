@@ -1,15 +1,24 @@
 {
+  "id": "footsteps-by-harlan-ellison",
   "title": "Footsteps",
-  "subtitle": null,
   "sortTitle": "Footsteps",
-  "year": "1980",
+  "subtitle": null,
+  "workYear": "1980",
   "kind": "Short Story",
-  "slug": "footsteps-by-harlan-ellison",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "harlan-ellison",
+      "name": "Harlan Ellison",
+      "slug": "harlan-ellison",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

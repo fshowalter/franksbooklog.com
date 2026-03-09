@@ -1,15 +1,17 @@
 {
+  "id": "the-woods-are-dark-by-richard-laymon",
   "title": "The Woods Are Dark",
   "subtitle": null,
   "sortTitle": "Woods Are Dark",
   "year": "1981",
   "kind": "Novel",
   "slug": "the-woods-are-dark-by-richard-laymon",
+  "reviewed": true,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

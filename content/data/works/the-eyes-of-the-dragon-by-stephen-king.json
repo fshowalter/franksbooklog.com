@@ -1,15 +1,17 @@
 {
+  "id": "the-eyes-of-the-dragon-by-stephen-king",
   "title": "The Eyes of the Dragon",
   "subtitle": null,
   "sortTitle": "Eyes of the Dragon",
   "year": "1987",
   "kind": "Novel",
-  "slug": "the-eyes-of-the-dragon-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

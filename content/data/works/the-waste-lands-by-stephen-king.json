@@ -1,15 +1,24 @@
 {
+  "id": "the-waste-lands-by-stephen-king",
   "title": "The Waste Lands",
-  "subtitle": null,
   "sortTitle": "Waste Lands",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Novel",
-  "slug": "the-waste-lands-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

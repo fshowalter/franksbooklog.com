@@ -1,15 +1,17 @@
 {
+  "id": "cured-by-lol-tolhurst",
   "title": "Cured",
   "subtitle": "The Tale of Two Imaginary Boys",
   "sortTitle": "Cured: The Tale of Two Imaginary Boys",
   "year": "2016",
   "kind": "Nonfiction",
   "slug": "cured-by-lol-tolhurst",
+  "reviewed": true,
   "authors": [
     {
-      "author": "lol-tolhurst",
+      "name": "Lol Tolhurst",
+      "slug": "lol-tolhurst",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

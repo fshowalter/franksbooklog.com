@@ -1,15 +1,24 @@
 {
+  "id": "trucks-by-stephen-king",
   "title": "Trucks",
-  "subtitle": null,
   "sortTitle": "Trucks",
-  "year": "1973",
+  "subtitle": null,
+  "workYear": "1973",
   "kind": "Short Story",
-  "slug": "trucks-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

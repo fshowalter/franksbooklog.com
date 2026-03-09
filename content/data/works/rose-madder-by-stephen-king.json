@@ -1,15 +1,24 @@
 {
+  "id": "rose-madder-by-stephen-king",
   "title": "Rose Madder",
-  "subtitle": null,
   "sortTitle": "Rose Madder",
-  "year": "1995",
+  "subtitle": null,
+  "workYear": "1995",
   "kind": "Novel",
-  "slug": "rose-madder-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

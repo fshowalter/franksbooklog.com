@@ -1,15 +1,24 @@
 {
+  "id": "word-processor-of-the-gods-by-stephen-king",
   "title": "Word Processor of the Gods",
-  "subtitle": null,
   "sortTitle": "Word Processor of the Gods",
-  "year": "1983",
+  "subtitle": null,
+  "workYear": "1983",
   "kind": "Short Story",
-  "slug": "word-processor-of-the-gods-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

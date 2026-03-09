@@ -1,15 +1,24 @@
 {
+  "id": "survivor-by-chuck-palahniuk",
   "title": "Survivor",
-  "subtitle": null,
   "sortTitle": "Survivor",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novel",
-  "slug": "survivor-by-chuck-palahniuk",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chuck-palahniuk",
+      "name": "Chuck Palahniuk",
+      "slug": "chuck-palahniuk",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

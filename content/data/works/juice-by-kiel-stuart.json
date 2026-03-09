@@ -1,15 +1,24 @@
 {
+  "id": "juice-by-kiel-stuart",
   "title": "Juice",
-  "subtitle": null,
   "sortTitle": "Juice",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "juice-by-kiel-stuart",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "kiel-stuart",
+      "name": "Kiel Stuart",
+      "slug": "kiel-stuart",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

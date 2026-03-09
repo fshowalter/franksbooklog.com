@@ -1,15 +1,24 @@
 {
+  "id": "changeling-by-graham-masterton",
   "title": "Changeling",
-  "subtitle": null,
   "sortTitle": "Changeling",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "changeling-by-graham-masterton",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "graham-masterton",
+      "name": "Graham Masterton",
+      "slug": "graham-masterton",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

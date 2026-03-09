@@ -1,15 +1,24 @@
 {
+  "id": "merry-may-by-ramsey-campbell",
   "title": "Merry May",
-  "subtitle": null,
   "sortTitle": "Merry May",
-  "year": "1987",
+  "subtitle": null,
+  "workYear": "1987",
   "kind": "Short Story",
-  "slug": "merry-may-by-ramsey-campbell",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ramsey-campbell",
+      "name": "Ramsey Campbell",
+      "slug": "ramsey-campbell",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

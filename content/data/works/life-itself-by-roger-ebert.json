@@ -1,15 +1,17 @@
 {
+  "id": "life-itself-by-roger-ebert",
   "title": "Life Itself",
   "subtitle": null,
   "sortTitle": "Life Itself",
   "year": "2011",
   "kind": "Nonfiction",
-  "slug": "life-itself-by-roger-ebert",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "roger-ebert",
+      "name": "Roger Ebert",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

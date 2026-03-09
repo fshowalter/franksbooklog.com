@@ -1,15 +1,24 @@
 {
+  "id": "bite-by-richard-laymon",
   "title": "Bite",
-  "subtitle": null,
   "sortTitle": "Bite",
-  "year": "1996",
+  "subtitle": null,
+  "workYear": "1996",
   "kind": "Novel",
-  "slug": "bite-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

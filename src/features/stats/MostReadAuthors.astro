@@ -1,0 +1,149 @@
+---
+import { getEntry } from "astro:content";
+import { getEntries } from "astro:content";
+
+import type { MostReadAuthor } from "~/content/schemas";
+
+import CoverList from "~/components/cover-list/CoverList.astro";
+import CoverListItem from "~/components/cover-list/CoverListItem.astro";
+import ListItemEdition from "~/components/list-item-edition/ListItemEdition.astro";
+import ListItemReviewDate from "~/components/list-item-review-date/ListItemReviewDate.astro";
+import ListItemTitle from "~/components/list-item-title/ListItemTitle.astro";
+import { displayDate } from "~/utils/displayDate";
+
+type Props = {
+  values: MostReadAuthor[];
+};
+
+const { values } = Astro.props;
+---
+
+<section
+  class={`
+    w-full bg-default pb-8
+    tablet:px-container
+    laptop:px-12
+  `}
+>
+  <h2
+    class={`
+      px-container py-4 text-xl font-medium
+      tablet:px-0
+    `}
+  >
+    Most Read Authors
+  </h2>
+  <div class={`w-full`}>
+    {
+      values.map(async (value) => {
+        const readings = await getEntries(value.readings);
+        return (
+          <div class="py-3">
+            <div
+              class={`
+                flex justify-between px-container
+                tablet:px-0
+              `}
+            >
+              <div
+                class={`
+                  transform-gpu font-sans text-xs text-muted
+                  transition-transform
+                  tablet:text-sm
+                `}
+              >
+                {value.reviewed ? (
+                  <a
+                    class={`
+                      relative inline-block font-serif text-base/6 font-medium
+                      text-accent
+                      after:absolute after:bottom-0 after:left-0 after:h-px
+                      after:w-full after:origin-bottom-left after:scale-x-0
+                      after:bg-(--color-accent) after:transition-all
+                      after:duration-500
+                      hover:after:scale-x-100
+                    `}
+                    href={`/authors/${value.slug}/`}
+                  >
+                    {value.name}
+                  </a>
+                ) : (
+                  <span
+                    class={`
+                      inline-block font-serif text-base/6 font-normal text-muted
+                    `}
+                  >
+                    {value.name}
+                  </span>
+                )}
+              </div>
+              <div
+                class={`
+                  col-start-2 self-center pr-1 pb-1 text-right font-sans text-sm
+                  text-nowrap text-subtle
+                `}
+              >
+                {value.count}
+              </div>
+            </div>
+            <div
+              class={`
+                col-span-2 row-start-2 px-container
+                tablet:px-0
+              `}
+            >
+              <details
+                class={`
+                  rounded-md bg-canvas px-2
+                  open:pb-2
+                `}
+              >
+                <summary
+                  class={`
+                    cursor-pointer rounded-sm py-1 font-sans text-sm
+                    tracking-prose text-subtle
+                  `}
+                >
+                  Details
+                </summary>
+                <CoverList class="rounded-md bg-subtle">
+                  {readings.map(async (reading) => {
+                    const work = await getEntry(reading.data.work);
+                    const review = await getEntry(
+                      "reviews",
+                      reading.data.work.id,
+                    );
+                    return (
+                      <CoverListItem
+                        class={`
+                          ${review ? "bg-default" : "bg-transparent"}
+                        `}
+                        coverSlug={reading.data.work.id}
+                      >
+                        <div
+                          class={`
+                            flex grow flex-col items-start gap-y-1
+                            tablet:mt-2 tablet:w-full tablet:px-1
+                          `}
+                        >
+                          <ListItemTitle
+                            slug={review ? review.data.slug : undefined}
+                            title={work.data.title}
+                          />
+                          <ListItemReviewDate
+                            displayDate={displayDate(reading.data.date)}
+                          />
+                          <ListItemEdition value={reading.data.edition} />
+                        </div>
+                      </CoverListItem>
+                    );
+                  })}
+                </CoverList>
+              </details>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>

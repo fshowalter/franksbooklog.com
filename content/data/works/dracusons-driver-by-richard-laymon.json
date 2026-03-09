@@ -1,15 +1,24 @@
 {
+  "id": "dracusons-driver-by-richard-laymon",
   "title": "Dracuson's Driver",
-  "subtitle": null,
   "sortTitle": "Dracuson's Driver",
-  "year": "1992",
+  "subtitle": null,
+  "workYear": "1992",
   "kind": "Short Story",
-  "slug": "dracusons-driver-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

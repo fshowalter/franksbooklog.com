@@ -1,15 +1,24 @@
 {
+  "id": "sometimes-they-come-back-by-stephen-king",
   "title": "Sometimes They Come Back",
-  "subtitle": null,
   "sortTitle": "Sometimes They Come Back",
-  "year": "1974",
+  "subtitle": null,
+  "workYear": "1974",
   "kind": "Short Story",
-  "slug": "sometimes-they-come-back-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

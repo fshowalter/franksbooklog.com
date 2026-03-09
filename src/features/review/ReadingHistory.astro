@@ -1,0 +1,187 @@
+---
+import { getCollection } from "astro:content";
+
+import BarGradient from "~/components/bar-gradient/BarGradient.astro";
+import SubHeading from "~/components/sub-heading/SubHeading.astro";
+import {
+  readingDayFormat,
+  readingMonthFormat,
+  readingProgressDateFormat,
+  readingWeekdayFormat,
+  readingYearFormat,
+} from "~/utils/readingHistoryDateFormats";
+
+type Props = {
+  reviewedWorkId: string;
+};
+
+const { reviewedWorkId } = Astro.props;
+
+const readings = await getCollection(
+  "readings",
+  (entry) => entry.data.work.id === reviewedWorkId,
+);
+---
+
+<div class="w-full max-w-popout">
+  <SubHeading class="text-center shadow-bottom" level="h2">
+    Reading History
+  </SubHeading>
+  <ul>
+    {
+      readings.map(({ data: reading }) => {
+        const summaryText = reading.isAbandoned
+          ? "Abandoned after"
+          : reading.edition === "Audiobook"
+            ? "Listened to over"
+            : "Read over";
+        return (
+          <li
+            class={`
+              mb-1 flex flex-col bg-subtle px-container font-sans
+              tablet:px-6
+            `}
+          >
+            <div
+              class={`
+                flex gap-x-4 py-4
+                tablet:gap-x-6
+              `}
+            >
+              <div class="size-auto self-start">
+                <div class="bg-subtle py-2 text-center">
+                  <div
+                    class={`
+                      px-4 pb-2 font-serif text-md font-normal text-subtle
+                    `}
+                  >
+                    {readingYearFormat.format(reading.date)}
+                  </div>
+                  <div class="bg-default py-1 text-subtle">
+                    {readingMonthFormat.format(reading.date)}
+                  </div>
+                  <div
+                    class="
+                      bg-default font-serif text-md font-normal text-default
+                    "
+                  >
+                    {readingDayFormat.format(reading.date)}
+                  </div>
+                  <div class="bg-default py-1 text-subtle">
+                    {readingWeekdayFormat.format(reading.date)}
+                  </div>
+                </div>
+              </div>
+              <div class="mt-12 grow">
+                <span class={`font-serif text-base font-normal text-default`}>
+                  {reading.edition}
+                </span>
+                {reading.editionNotes && (
+                  <span class="font-light tracking-normal text-subtle">
+                    {" "}
+                    (
+                    <span
+                      class="rendered-markdown leading-none"
+                      set:html={reading.intermediateEditionNotesHtml}
+                    />
+                    )
+                  </span>
+                )}
+                <details
+                  class={`
+                    rounded-md bg-canvas px-2 text-subtle
+                    open:pb-2
+                  `}
+                >
+                  <summary
+                    class={`
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
+                      tracking-prose text-subtle
+                    `}
+                  >
+                    {summaryText} {reading.readingTime} Days
+                  </summary>
+                  <ol
+                    class={`
+                      grid w-full grid-cols-[auto_1fr_auto] rounded-md
+                      bg-default px-2 py-3
+                    `}
+                  >
+                    {reading.timeline.map((entry) => {
+                      let progressValue;
+                      const progressNumber = entry.progress.split("%", 1)[0];
+
+                      if (progressNumber === "Finished") {
+                        progressValue = 100;
+                      }
+
+                      if (!Number.isNaN(Number(progressNumber))) {
+                        progressValue = Number.parseInt(progressNumber);
+                      }
+
+                      const entryDate = readingProgressDateFormat.format(
+                        entry.date,
+                      );
+
+                      return (
+                        <li
+                          class={`
+                            relative col-span-3 grid grid-cols-subgrid
+                            grid-rows-[1fr_auto_auto_1fr] p-1 font-normal
+                            even:bg-subtle
+                          `}
+                        >
+                          <div
+                            class={`
+                              col-span-2 col-start-2 row-start-2 grid
+                              grid-cols-subgrid font-sans text-sm tracking-prose
+                            `}
+                          >
+                            <div>{entryDate}</div>
+                            <div
+                              class={`
+                                col-start-3 self-center pb-1 text-right
+                                font-sans text-sm text-nowrap
+                              `}
+                            >
+                              <div>{entry.progress}</div>
+                            </div>
+                          </div>
+                          <div class={`col-span-2 col-start-2 row-start-3`}>
+                            {progressValue && (
+                              <BarGradient
+                                maxValue={100}
+                                value={progressValue}
+                              />
+                            )}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </details>
+              </div>
+            </div>
+            <div>
+              {reading.intermediateReadingNotesHtml && (
+                <div
+                  class={`
+                    px-2 pb-6 text-sm font-light
+                    tablet:mx-24 tablet:px-0
+                  `}
+                >
+                  <div
+                    class="
+                      rendered-markdown leading-normal tracking-prose text-muted
+                    "
+                    set:html={reading.intermediateReadingNotesHtml}
+                  />
+                </div>
+              )}
+            </div>
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>

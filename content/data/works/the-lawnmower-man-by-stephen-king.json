@@ -1,15 +1,24 @@
 {
+  "id": "the-lawnmower-man-by-stephen-king",
   "title": "The Lawnmower Man",
-  "subtitle": null,
   "sortTitle": "Lawnmower Man",
-  "year": "1975",
+  "subtitle": null,
+  "workYear": "1975",
   "kind": "Short Story",
-  "slug": "the-lawnmower-man-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-living-dead-by-richard-laymon",
   "title": "The Living Dead",
-  "subtitle": null,
   "sortTitle": "Living Dead",
-  "year": "2006",
+  "subtitle": null,
+  "workYear": "2006",
   "kind": "Short Story",
-  "slug": "the-living-dead-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

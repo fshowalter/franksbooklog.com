@@ -1,15 +1,24 @@
 {
+  "id": "suzie-sucks-by-jeff-gelb",
   "title": "Suzie Sucks",
-  "subtitle": null,
   "sortTitle": "Suzie Sucks",
-  "year": "1987",
+  "subtitle": null,
+  "workYear": "1987",
   "kind": "Short Story",
-  "slug": "suzie-sucks-by-jeff-gelb",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "jeff-gelb",
+      "name": "Jeff Gelb",
+      "slug": "jeff-gelb",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

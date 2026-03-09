@@ -1,15 +1,24 @@
 {
+  "id": "battleground-by-stephen-king",
   "title": "Battleground",
-  "subtitle": null,
   "sortTitle": "Battleground",
-  "year": "1972",
+  "subtitle": null,
+  "workYear": "1972",
   "kind": "Short Story",
-  "slug": "battleground-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

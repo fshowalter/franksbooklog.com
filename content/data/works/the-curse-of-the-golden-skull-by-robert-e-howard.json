@@ -1,15 +1,24 @@
 {
+  "id": "the-curse-of-the-golden-skull-by-robert-e-howard",
   "title": "The Curse of the Golden Skull",
-  "subtitle": null,
   "sortTitle": "Curse of the Golden Skull",
-  "year": "1976",
+  "subtitle": null,
+  "workYear": "1976",
   "kind": "Short Story",
-  "slug": "the-curse-of-the-golden-skull-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,5 +1,28 @@
 {
   "name": "Ross Macdonald",
   "sortName": "Macdonald, Ross",
-  "slug": "ross-macdonald"
+  "slug": "ross-macdonald",
+  "reviewCount": 1,
+  "reviewedWorks": [
+    {
+      "id": "the-dark-tunnel-by-ross-macdonald",
+      "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
+      "slug": "the-dark-tunnel-by-ross-macdonald",
+      "title": "The Dark Tunnel",
+      "sortTitle": "Dark Tunnel",
+      "workYear": "1944",
+      "grade": "D+",
+      "gradeValue": 4,
+      "kind": "Novel",
+      "reviewDate": "2022-04-17",
+      "authors": [
+        {
+          "slug": "ross-macdonald",
+          "notes": "as Kenneth Millar",
+          "name": "Ross Macdonald"
+        }
+      ],
+      "reviewYear": "2022"
+    }
+  ]
 }

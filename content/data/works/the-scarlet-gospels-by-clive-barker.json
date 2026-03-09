@@ -1,15 +1,17 @@
 {
+  "id": "the-scarlet-gospels-by-clive-barker",
   "title": "The Scarlet Gospels",
   "subtitle": null,
   "sortTitle": "Scarlet Gospels",
   "year": "2015",
   "kind": "Novel",
-  "slug": "the-scarlet-gospels-by-clive-barker",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "clive-barker",
+      "name": "Clive Barker",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

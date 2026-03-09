@@ -1,15 +1,24 @@
 {
+  "id": "world-of-the-myth-by-harlan-ellison",
   "title": "World of the Myth",
-  "subtitle": null,
   "sortTitle": "World of the Myth",
-  "year": "1964",
+  "subtitle": null,
+  "workYear": "1964",
   "kind": "Short Story",
-  "slug": "world-of-the-myth-by-harlan-ellison",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "harlan-ellison",
+      "name": "Harlan Ellison",
+      "slug": "harlan-ellison",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

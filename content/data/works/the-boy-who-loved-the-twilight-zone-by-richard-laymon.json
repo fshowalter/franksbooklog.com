@@ -1,15 +1,24 @@
 {
+  "id": "the-boy-who-loved-the-twilight-zone-by-richard-laymon",
   "title": "The Boy Who Loved \"The Twilight Zone\"",
-  "subtitle": null,
   "sortTitle": "Boy Who Loved \"The Twilight Zone\"",
-  "year": "2000",
+  "subtitle": null,
+  "workYear": "2000",
   "kind": "Short Story",
-  "slug": "the-boy-who-loved-the-twilight-zone-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

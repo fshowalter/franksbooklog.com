@@ -1,15 +1,17 @@
 {
+  "id": "misery-by-stephen-king",
   "title": "Misery",
   "subtitle": null,
   "sortTitle": "Misery",
   "year": "1987",
   "kind": "Novel",
-  "slug": "misery-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,20 +1,17 @@
 {
+  "id": "different-seasons-by-stephen-king",
   "title": "Different Seasons",
   "subtitle": null,
   "sortTitle": "Different Seasons",
   "year": "1982",
   "kind": "Collection",
-  "slug": "different-seasons-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": [
-    "apt-pupil-by-stephen-king",
-    "the-body-by-stephen-king",
-    "the-breathing-method-by-stephen-king",
-    "rita-hayworth-and-shawshank-redemption-by-stephen-king"
   ]
 }

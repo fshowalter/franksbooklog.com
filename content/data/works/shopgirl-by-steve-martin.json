@@ -1,15 +1,17 @@
 {
+  "id": "shopgirl-by-steve-martin",
   "title": "Shopgirl",
   "subtitle": null,
   "sortTitle": "Shopgirl",
   "year": "2000",
   "kind": "Novella",
-  "slug": "shopgirl-by-steve-martin",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "steve-martin",
+      "name": "Steve Martin",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

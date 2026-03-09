@@ -1,15 +1,24 @@
 {
+  "id": "the-grab-by-richard-laymon",
   "title": "The Grab",
-  "subtitle": null,
   "sortTitle": "Grab",
-  "year": "1982",
+  "subtitle": null,
+  "workYear": "1982",
   "kind": "Short Story",
-  "slug": "the-grab-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

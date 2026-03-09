@@ -1,15 +1,24 @@
 {
+  "id": "the-lake-by-richard-laymon",
   "title": "The Lake",
-  "subtitle": null,
   "sortTitle": "Lake",
-  "year": "2004",
+  "subtitle": null,
+  "workYear": "2004",
   "kind": "Novel",
-  "slug": "the-lake-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

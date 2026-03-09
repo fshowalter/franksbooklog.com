@@ -1,15 +1,17 @@
 {
+  "id": "the-pack-by-jason-starr",
   "title": "The Pack",
   "subtitle": null,
   "sortTitle": "Pack",
   "year": "2005",
   "kind": "Novel",
-  "slug": "the-pack-by-jason-starr",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "jason-starr",
+      "name": "Jason Starr",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

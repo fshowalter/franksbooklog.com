@@ -1,0 +1,92 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import HeroLayout from "~/components/layout/HeroLayout.astro";
+
+import Callouts from "./Callouts.astro";
+import DecadeDistribution from "./DecadeDistribution.astro";
+import EditionDistribution from "./EditionDistribution.astro";
+import KindDistribution from "./KindDistribution.astro";
+import MostReadAuthors from "./MostReadAuthors.astro";
+import StatsNavigation from "./StatsNavigation.astro";
+
+type Props = {
+  stats: CollectionEntry<"yearStats">["data"];
+};
+
+const { stats } = Astro.props;
+
+const title = `${stats.year} Stats`;
+const deck =
+  stats.allStatsYears.toSorted().reverse()[0] === stats.year
+    ? "A year in progress..."
+    : "A Year in Review";
+
+const metaDescription = `My ${stats.year} reading stats. Includes my most-read authors; as well as kind, year published, and edition distributions.`;
+---
+
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
+  }}
+  heroProps={{
+    backdropSlug: "stats",
+    breadcrumb: {
+      href: "/readings/",
+      text: "Reading Log",
+    },
+    centerText: true,
+    deck,
+    title: `${stats.year} Stats`,
+  }}
+>
+  <div class="flex flex-col items-center bg-subtle">
+    <StatsNavigation
+      class="z-10 mb-12 w-full"
+      currentYear={stats.year}
+      linkFunc={(year: string) => {
+        if (year === "all") {
+          return "/readings/stats/";
+        }
+
+        return `/readings/stats/${year}/`;
+      }}
+      years={stats.allStatsYears}
+    />
+    <Callouts
+      stats={[
+        { label: "Titles", value: stats.workCount },
+        { label: "Books", value: stats.bookCount },
+      ]}
+    />
+    <div
+      class={`
+        mx-auto flex w-full max-w-(--breakpoint-laptop) flex-col items-stretch
+        gap-y-8 py-10
+        tablet:px-container
+      `}
+    >
+      <div class={`mx-auto flex w-full max-w-popout flex-col gap-y-8`}>
+        <MostReadAuthors values={stats.mostReadAuthors} />
+      </div>
+      <div
+        class={`
+          mx-auto flex w-full max-w-popout flex-col items-start gap-y-8
+          laptop:max-w-unset laptop:flex-row laptop:gap-x-8
+        `}
+      >
+        <DecadeDistribution values={stats.decadeDistribution} />
+        <KindDistribution values={stats.kindDistribution} />
+        <EditionDistribution values={stats.editionDistribution} />
+      </div>
+    </div>
+  </div>
+</HeroLayout>

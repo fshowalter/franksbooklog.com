@@ -1,15 +1,24 @@
 {
+  "id": "the-trap-by-richard-laymon",
   "title": "The Trap",
-  "subtitle": null,
   "sortTitle": "Trap",
-  "year": "1985",
+  "subtitle": null,
+  "workYear": "1985",
   "kind": "Short Story",
-  "slug": "the-trap-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

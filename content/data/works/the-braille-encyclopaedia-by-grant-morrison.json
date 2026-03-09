@@ -1,15 +1,24 @@
 {
+  "id": "the-braille-encyclopaedia-by-grant-morrison",
   "title": "The Braille Encyclopaedia",
-  "subtitle": null,
   "sortTitle": "Braille Encyclopaedia",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "the-braille-encyclopaedia-by-grant-morrison",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "grant-morrison",
+      "name": "Grant Morrison",
+      "slug": "grant-morrison",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

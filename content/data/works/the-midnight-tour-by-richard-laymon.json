@@ -1,15 +1,24 @@
 {
+  "id": "the-midnight-tour-by-richard-laymon",
   "title": "The Midnight Tour",
-  "subtitle": null,
   "sortTitle": "Midnight Tour",
-  "year": "1998",
+  "subtitle": null,
+  "workYear": "1998",
   "kind": "Novel",
-  "slug": "the-midnight-tour-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

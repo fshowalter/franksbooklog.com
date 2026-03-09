@@ -1,15 +1,24 @@
 {
+  "id": "children-of-the-corn-by-stephen-king",
   "title": "Children of the Corn",
-  "subtitle": null,
   "sortTitle": "Children of the Corn",
-  "year": "1977",
+  "subtitle": null,
+  "workYear": "1977",
   "kind": "Short Story",
-  "slug": "children-of-the-corn-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

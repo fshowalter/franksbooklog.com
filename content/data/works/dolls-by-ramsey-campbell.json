@@ -1,15 +1,24 @@
 {
+  "id": "dolls-by-ramsey-campbell",
   "title": "Dolls",
-  "subtitle": null,
   "sortTitle": "Dolls",
-  "year": "1976",
+  "subtitle": null,
+  "workYear": "1976",
   "kind": "Short Story",
-  "slug": "dolls-by-ramsey-campbell",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ramsey-campbell",
+      "name": "Ramsey Campbell",
+      "slug": "ramsey-campbell",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

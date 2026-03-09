@@ -1,15 +1,24 @@
 {
+  "id": "daughter-of-the-golden-west-by-dennis-etchison",
   "title": "Daughter of the Golden West",
-  "subtitle": null,
   "sortTitle": "Daughter of the Golden West",
-  "year": "1973",
+  "subtitle": null,
+  "workYear": "1973",
   "kind": "Short Story",
-  "slug": "daughter-of-the-golden-west-by-dennis-etchison",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "dennis-etchison",
+      "name": "Dennis Etchison",
+      "slug": "dennis-etchison",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

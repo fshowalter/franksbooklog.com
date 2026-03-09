@@ -1,15 +1,17 @@
 {
+  "id": "set-the-boy-free-by-johnny-marr",
   "title": "Set the Boy Free",
   "subtitle": "The Autobiography",
   "sortTitle": "Set the Boy Free: The Autobiography",
   "year": "2016",
   "kind": "Nonfiction",
   "slug": "set-the-boy-free-by-johnny-marr",
+  "reviewed": true,
   "authors": [
     {
-      "author": "johnny-marr",
+      "name": "Johnny Marr",
+      "slug": "johnny-marr",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

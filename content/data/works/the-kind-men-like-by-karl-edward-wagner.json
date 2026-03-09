@@ -1,15 +1,24 @@
 {
+  "id": "the-kind-men-like-by-karl-edward-wagner",
   "title": "The Kind Men Like",
-  "subtitle": null,
   "sortTitle": "Kind Men Like",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "the-kind-men-like-by-karl-edward-wagner",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "karl-edward-wagner",
+      "name": "Karl Edward Wagner",
+      "slug": "karl-edward-wagner",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,17 @@
 {
+  "id": "frank-by-james-kaplan",
   "title": "Frank",
   "subtitle": "The Voice",
   "sortTitle": "Frank: The Voice",
   "year": "2010",
   "kind": "Nonfiction",
-  "slug": "frank-by-james-kaplan",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "james-kaplan",
+      "name": "James Kaplan",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

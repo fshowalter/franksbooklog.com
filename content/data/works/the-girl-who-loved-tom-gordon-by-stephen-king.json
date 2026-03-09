@@ -1,15 +1,24 @@
 {
+  "id": "the-girl-who-loved-tom-gordon-by-stephen-king",
   "title": "The Girl Who Loved Tom Gordon",
-  "subtitle": null,
   "sortTitle": "Girl Who Loved Tom Gordon",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novel",
-  "slug": "the-girl-who-loved-tom-gordon-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

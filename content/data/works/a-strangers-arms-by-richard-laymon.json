@@ -1,15 +1,24 @@
 {
+  "id": "a-strangers-arms-by-richard-laymon",
   "title": "A Stranger's Arms",
-  "subtitle": null,
   "sortTitle": "Stranger's Arms",
-  "year": "1984",
+  "subtitle": null,
+  "workYear": "1984",
   "kind": "Novel",
-  "slug": "a-strangers-arms-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": "as Carla Laymon"
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

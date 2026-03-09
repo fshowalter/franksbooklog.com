@@ -1,15 +1,24 @@
 {
+  "id": "the-reach-by-stephen-king",
   "title": "The Reach",
-  "subtitle": null,
   "sortTitle": "Reach",
-  "year": "1981",
+  "subtitle": null,
+  "workYear": "1981",
   "kind": "Short Story",
-  "slug": "the-reach-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

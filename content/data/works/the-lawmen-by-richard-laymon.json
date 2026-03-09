@@ -1,15 +1,17 @@
 {
+  "id": "the-lawmen-by-richard-laymon",
   "title": "The Lawmen",
   "subtitle": null,
   "sortTitle": "Lawmen",
   "year": "1983",
   "kind": "Novel",
-  "slug": "the-lawmen-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": "as Lee Davis Willoughby"
     }
-  ],
-  "includedWorks": []
+  ]
 }

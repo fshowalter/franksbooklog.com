@@ -1,15 +1,24 @@
 {
+  "id": "the-model-by-robert-bloch",
   "title": "The Model",
-  "subtitle": null,
   "sortTitle": "Model",
-  "year": "1975",
+  "subtitle": null,
+  "workYear": "1975",
   "kind": "Short Story",
-  "slug": "the-model-by-robert-bloch",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-bloch",
+      "name": "Robert Bloch",
+      "slug": "robert-bloch",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

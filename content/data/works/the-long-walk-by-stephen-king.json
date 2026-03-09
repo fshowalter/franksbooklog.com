@@ -1,15 +1,17 @@
 {
+  "id": "the-long-walk-by-stephen-king",
   "title": "The Long Walk",
   "subtitle": null,
   "sortTitle": "Long Walk",
   "year": "1978",
   "kind": "Novel",
   "slug": "the-long-walk-by-stephen-king",
+  "reviewed": true,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": "as Richard Bachman"
     }
-  ],
-  "includedWorks": []
+  ]
 }

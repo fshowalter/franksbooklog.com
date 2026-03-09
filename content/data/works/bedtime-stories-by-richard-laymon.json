@@ -1,15 +1,24 @@
 {
+  "id": "bedtime-stories-by-richard-laymon",
   "title": "Bedtime Stories",
-  "subtitle": null,
   "sortTitle": "Bedtime Stories",
-  "year": "2004",
+  "subtitle": null,
+  "workYear": "2004",
   "kind": "Short Story",
-  "slug": "bedtime-stories-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

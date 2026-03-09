@@ -1,15 +1,24 @@
 {
+  "id": "damaged-goods-by-elizabeth-massie",
   "title": "Damaged Goods",
-  "subtitle": null,
   "sortTitle": "Damaged Goods",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "damaged-goods-by-elizabeth-massie",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "elizabeth-massie",
+      "name": "Elizabeth Massie",
+      "slug": "elizabeth-massie",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

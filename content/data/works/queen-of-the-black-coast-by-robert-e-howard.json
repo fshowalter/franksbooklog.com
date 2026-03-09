@@ -1,15 +1,24 @@
 {
+  "id": "queen-of-the-black-coast-by-robert-e-howard",
   "title": "Queen of the Black Coast",
-  "subtitle": null,
   "sortTitle": "Queen of the Black Coast",
-  "year": "1934",
+  "subtitle": null,
+  "workYear": "1934",
   "kind": "Short Story",
-  "slug": "queen-of-the-black-coast-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

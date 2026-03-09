@@ -1,15 +1,24 @@
 {
+  "id": "eats-by-richard-laymon",
   "title": "Eats",
-  "subtitle": null,
   "sortTitle": "Eats",
-  "year": "1985",
+  "subtitle": null,
+  "workYear": "1985",
   "kind": "Short Story",
-  "slug": "eats-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

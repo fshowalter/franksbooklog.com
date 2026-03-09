@@ -19,12 +19,12 @@ const CoverImageConfig = {
 
 type Props = {
   hasDate: boolean;
-  value: CollectionEntry<"reviews">["data"];
+  value: CollectionEntry<"reviewedWorks">["data"];
 };
 
 const { hasDate, value } = Astro.props;
-const work = await getEntry(value.work);
-const coverImageProps = await getFluidCoverImageProps(value, CoverImageConfig);
+const { data: review } = await getEntry(value.review);
+const coverImageProps = await getFluidCoverImageProps(review, CoverImageConfig);
 ---
 
 <li
@@ -126,7 +126,7 @@ const coverImageProps = await getFluidCoverImageProps(value, CoverImageConfig);
               laptop:tracking-wide
             `}
           >
-            {value.date.toLocaleString("en-GB", {
+            {review.date.toLocaleString("en-GB", {
               day: "2-digit",
               month: "short",
               timeZone: "UTC",
@@ -142,22 +142,22 @@ const coverImageProps = await getFluidCoverImageProps(value, CoverImageConfig);
           hover:text-accent
           hover:before:opacity-0
         `}
-        href={`/reviews/${value.slug}/`}
+        href={`/reviews/${review.slug}/`}
       >
-        {work.data.title}
+        {value.title}
       </a>
       <div class="-mt-2">
-        {formatWorkAuthors(work.data.authors)}
+        {formatWorkAuthors(value.authors)}
       </div>
       <div class={`font-sans text-sm/4 font-normal tracking-prose text-subtle`}>
-        {work.data.workYear} | {work.data.kind}
+        {value.workYear} | {value.kind}
       </div>
       <div>
-        <Grade classNames="py-1" height={24} value={value.grade} />
+        <Grade classNames="py-1" height={24} value={review.grade} />
       </div>
       <div
         class={`rendered-markdown mb-6 text-lg/normal tracking-prose text-muted`}
-        set:html={value.excerptHtml}
+        set:html={review.excerptHtml}
       />
     </div>
   </div>

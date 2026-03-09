@@ -1,15 +1,17 @@
 {
+  "id": "moonraker-by-ian-fleming",
   "title": "Moonraker",
   "subtitle": null,
   "sortTitle": "Moonraker",
   "year": "1955",
   "kind": "Novel",
   "slug": "moonraker-by-ian-fleming",
+  "reviewed": true,
   "authors": [
     {
-      "author": "ian-fleming",
+      "name": "Ian Fleming",
+      "slug": "ian-fleming",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

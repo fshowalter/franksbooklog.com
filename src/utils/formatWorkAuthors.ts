@@ -1,6 +1,4 @@
-import { getEntry } from "astro:content";
-
-import type { WorkAuthor } from "~/content.config";
+import type { WorkAuthor } from "~/content/schemas";
 
 const longFormatter = new Intl.ListFormat("en", {
   style: "long",
@@ -17,20 +15,17 @@ const formatterMap: Record<string, Intl.ListFormat> = {
   short: shortFormatter,
 };
 
-export async function formatWorkAuthors(
+export function formatWorkAuthors(
   workAuthors: WorkAuthor[],
   style: keyof typeof formatterMap = "long",
 ) {
   const formatter = formatterMap[style];
 
   return formatter.format(
-    await Promise.all(
-      workAuthors.map(async (workAuthor) => {
-        const author = await getEntry(workAuthor.author);
-        const notes = workAuthor.notes ? ` (${workAuthor.notes})` : "";
+    workAuthors.map((workAuthor) => {
+      const notes = workAuthor.notes ? ` (${workAuthor.notes})` : "";
 
-        return `${author.data.name}${notes}`;
-      }),
-    ),
+      return `${workAuthor.name}${notes}`;
+    }),
   );
 }

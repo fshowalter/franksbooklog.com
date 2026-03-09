@@ -1,15 +1,17 @@
 {
+  "id": "midnights-lair-by-richard-laymon",
   "title": "Midnight's Lair",
   "subtitle": null,
   "sortTitle": "Midnight's Lair",
   "year": "1988",
   "kind": "Novel",
-  "slug": "midnights-lair-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": "as Richard Kelly"
     }
-  ],
-  "includedWorks": []
+  ]
 }

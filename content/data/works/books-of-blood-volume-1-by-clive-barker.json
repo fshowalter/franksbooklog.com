@@ -1,22 +1,17 @@
 {
+  "id": "books-of-blood-volume-1-by-clive-barker",
   "title": "Books of Blood, Volume 1",
   "subtitle": null,
   "sortTitle": "Books of Blood, Volume 1",
   "year": "1984",
   "kind": "Collection",
-  "slug": "books-of-blood-volume-1-by-clive-barker",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "clive-barker",
+      "name": "Clive Barker",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": [
-    "the-book-of-blood-by-clive-barker",
-    "in-the-hills-the-cities-by-clive-barker",
-    "the-midnight-meat-train-by-clive-barker",
-    "pig-blood-blues-by-clive-barker",
-    "sex-death-and-starshine-by-clive-barker",
-    "the-yattering-and-jack-by-clive-barker"
   ]
 }

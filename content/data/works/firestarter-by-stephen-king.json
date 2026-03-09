@@ -1,15 +1,17 @@
 {
+  "id": "firestarter-by-stephen-king",
   "title": "Firestarter",
   "subtitle": null,
   "sortTitle": "Firestarter",
   "year": "1980",
   "kind": "Novel",
-  "slug": "firestarter-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

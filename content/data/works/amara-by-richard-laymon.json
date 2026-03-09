@@ -1,15 +1,24 @@
 {
+  "id": "amara-by-richard-laymon",
   "title": "Amara",
-  "subtitle": null,
   "sortTitle": "Amara",
-  "year": "2003",
+  "subtitle": null,
+  "workYear": "2003",
   "kind": "Novel",
-  "slug": "amara-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-splicer-by-don-d-ammassa",
   "title": "The Splicer",
-  "subtitle": null,
   "sortTitle": "Splicer",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "the-splicer-by-don-d-ammassa",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "don-d-ammassa",
+      "name": "Don D'Ammassa",
+      "slug": "don-d-ammassa",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "moon-of-zambebwei-by-robert-e-howard",
   "title": "Moon of Zambebwei",
-  "subtitle": null,
   "sortTitle": "Moon of Zambebwei",
-  "year": "1935",
+  "subtitle": null,
+  "workYear": "1935",
   "kind": "Short Story",
-  "slug": "moon-of-zambebwei-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

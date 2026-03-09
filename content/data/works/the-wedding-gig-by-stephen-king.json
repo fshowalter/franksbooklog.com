@@ -1,15 +1,24 @@
 {
+  "id": "the-wedding-gig-by-stephen-king",
   "title": "The Wedding Gig",
-  "subtitle": null,
   "sortTitle": "Wedding Gig",
-  "year": "1980",
+  "subtitle": null,
+  "workYear": "1980",
   "kind": "Short Story",
-  "slug": "the-wedding-gig-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

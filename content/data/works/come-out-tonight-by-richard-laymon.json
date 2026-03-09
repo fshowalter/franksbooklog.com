@@ -1,15 +1,24 @@
 {
+  "id": "come-out-tonight-by-richard-laymon",
   "title": "Come Out Tonight",
-  "subtitle": null,
   "sortTitle": "Come Out Tonight",
-  "year": "1998",
+  "subtitle": null,
+  "workYear": "1998",
   "kind": "Novel",
-  "slug": "come-out-tonight-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

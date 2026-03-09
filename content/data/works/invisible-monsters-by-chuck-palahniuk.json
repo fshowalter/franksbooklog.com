@@ -1,15 +1,24 @@
 {
+  "id": "invisible-monsters-by-chuck-palahniuk",
   "title": "Invisible Monsters",
-  "subtitle": null,
   "sortTitle": "Invisible Monsters",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novel",
-  "slug": "invisible-monsters-by-chuck-palahniuk",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chuck-palahniuk",
+      "name": "Chuck Palahniuk",
+      "slug": "chuck-palahniuk",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

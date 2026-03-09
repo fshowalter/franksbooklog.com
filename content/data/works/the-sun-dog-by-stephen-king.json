@@ -1,15 +1,24 @@
 {
+  "id": "the-sun-dog-by-stephen-king",
   "title": "The Sun Dog",
-  "subtitle": null,
   "sortTitle": "Sun Dog",
-  "year": "1990",
+  "subtitle": null,
+  "workYear": "1990",
   "kind": "Novella",
-  "slug": "the-sun-dog-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

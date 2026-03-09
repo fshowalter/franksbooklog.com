@@ -1,15 +1,17 @@
 {
+  "id": "the-gunslinger-by-stephen-king",
   "title": "The Gunslinger",
   "subtitle": null,
   "sortTitle": "Gunslinger",
   "year": "1982",
   "kind": "Novel",
-  "slug": "the-gunslinger-by-stephen-king",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

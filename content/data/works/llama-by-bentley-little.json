@@ -1,15 +1,24 @@
 {
+  "id": "llama-by-bentley-little",
   "title": "Llama",
-  "subtitle": null,
   "sortTitle": "Llama",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "llama-by-bentley-little",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "bentley-little",
+      "name": "Bentley Little",
+      "slug": "bentley-little",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

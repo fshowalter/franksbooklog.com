@@ -1,15 +1,24 @@
 {
+  "id": "the-unkindest-cut-by-j-n-williamson",
   "title": "The Unkindest Cut",
-  "subtitle": null,
   "sortTitle": "Unkindest Cut",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "the-unkindest-cut-by-j-n-williamson",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "j-n-williamson",
+      "name": "J.N. Williamson",
+      "slug": "j-n-williamson",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

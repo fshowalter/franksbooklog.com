@@ -1,15 +1,24 @@
 {
+  "id": "the-last-crossing-by-thomas-tessier",
   "title": "The Last Crossing",
-  "subtitle": null,
   "sortTitle": "Last Crossing",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "the-last-crossing-by-thomas-tessier",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "thomas-tessier",
+      "name": "Thomas Tessier",
+      "slug": "thomas-tessier",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

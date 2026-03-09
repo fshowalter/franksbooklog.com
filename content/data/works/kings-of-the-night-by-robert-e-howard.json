@@ -1,15 +1,24 @@
 {
+  "id": "kings-of-the-night-by-robert-e-howard",
   "title": "Kings of the Night",
-  "subtitle": null,
   "sortTitle": "Kings of the Night",
-  "year": "1930",
+  "subtitle": null,
+  "workYear": "1930",
   "kind": "Short Story",
-  "slug": "kings-of-the-night-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

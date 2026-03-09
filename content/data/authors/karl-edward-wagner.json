@@ -1,5 +1,68 @@
 {
   "name": "Karl Edward Wagner",
   "sortName": "Wagner, Karl Edward",
-  "slug": "karl-edward-wagner"
+  "slug": "karl-edward-wagner",
+  "reviewCount": 3,
+  "reviewedWorks": [
+    {
+      "id": "dark-crusade-by-karl-edward-wagner",
+      "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner",
+      "slug": "dark-crusade-by-karl-edward-wagner",
+      "title": "Dark Crusade",
+      "sortTitle": "Dark Crusade",
+      "workYear": "1976",
+      "grade": "C",
+      "gradeValue": 6,
+      "kind": "Novel",
+      "reviewDate": "2012-05-18",
+      "authors": [
+        {
+          "slug": "karl-edward-wagner",
+          "notes": null,
+          "name": "Karl Edward Wagner"
+        }
+      ],
+      "reviewYear": "2012"
+    },
+    {
+      "id": "in-the-pines-by-karl-edward-wagner",
+      "sequence": "2025-10-26-01-in-the-pines-by-karl-edward-wagner",
+      "slug": "in-the-pines-by-karl-edward-wagner",
+      "title": "In the Pines",
+      "sortTitle": "In the Pines",
+      "workYear": "1973",
+      "grade": "C",
+      "gradeValue": 6,
+      "kind": "Short Story",
+      "reviewDate": "2025-10-26",
+      "authors": [
+        {
+          "slug": "karl-edward-wagner",
+          "notes": null,
+          "name": "Karl Edward Wagner"
+        }
+      ],
+      "reviewYear": "2025"
+    },
+    {
+      "id": "where-the-summer-ends-by-karl-edward-wagner",
+      "sequence": "2025-11-09-01-where-the-summer-ends-by-karl-edward-wagner",
+      "slug": "where-the-summer-ends-by-karl-edward-wagner",
+      "title": "Where the Summer Ends",
+      "sortTitle": "Where the Summer Ends",
+      "workYear": "1980",
+      "grade": "D+",
+      "gradeValue": 4,
+      "kind": "Short Story",
+      "reviewDate": "2025-11-09",
+      "authors": [
+        {
+          "slug": "karl-edward-wagner",
+          "notes": null,
+          "name": "Karl Edward Wagner"
+        }
+      ],
+      "reviewYear": "2025"
+    }
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "diamonds-are-forever-by-ian-fleming",
   "title": "Diamonds are Forever",
-  "subtitle": null,
   "sortTitle": "Diamonds are Forever",
-  "year": "1956",
+  "subtitle": null,
+  "workYear": "1956",
   "kind": "Novel",
-  "slug": "diamonds-are-forever-by-ian-fleming",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ian-fleming",
+      "name": "Ian Fleming",
+      "slug": "ian-fleming",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

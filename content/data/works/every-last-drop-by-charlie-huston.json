@@ -1,15 +1,17 @@
 {
+  "id": "every-last-drop-by-charlie-huston",
   "title": "Every Last Drop",
   "subtitle": null,
   "sortTitle": "Every Last Drop",
   "year": "2008",
   "kind": "Novel",
-  "slug": "every-last-drop-by-charlie-huston",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "charlie-huston",
+      "name": "Charlie Huston",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

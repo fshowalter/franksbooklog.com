@@ -1,15 +1,24 @@
 {
+  "id": "the-best-by-paul-dale-anderson",
   "title": "The Best",
-  "subtitle": null,
   "sortTitle": "Best",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "the-best-by-paul-dale-anderson",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "paul-dale-anderson",
+      "name": "Paul Dale Anderson",
+      "slug": "paul-dale-anderson",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

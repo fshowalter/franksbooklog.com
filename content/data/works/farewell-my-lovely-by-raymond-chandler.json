@@ -1,15 +1,17 @@
 {
+  "id": "farewell-my-lovely-by-raymond-chandler",
   "title": "Farewell, My Lovely",
   "subtitle": null,
   "sortTitle": "Farewell, My Lovely",
   "year": "1940",
   "kind": "Novel",
-  "slug": "farewell-my-lovely-by-raymond-chandler",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "raymond-chandler",
+      "name": "Raymond Chandler",
+      "slug": "raymond-chandler",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-seductress-by-ramsey-campbell",
   "title": "The Seductress",
-  "subtitle": null,
   "sortTitle": "Seductress",
-  "year": "1977",
+  "subtitle": null,
+  "workYear": "1977",
   "kind": "Short Story",
-  "slug": "the-seductress-by-ramsey-campbell",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "ramsey-campbell",
+      "name": "Ramsey Campbell",
+      "slug": "ramsey-campbell",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "geralds-game-by-stephen-king",
   "title": "Gerald's Game",
-  "subtitle": null,
   "sortTitle": "Gerald's Game",
-  "year": "1992",
+  "subtitle": null,
+  "workYear": "1992",
   "kind": "Novel",
-  "slug": "geralds-game-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

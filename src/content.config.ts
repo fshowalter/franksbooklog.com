@@ -34,6 +34,11 @@ import { rootAsSpan } from "~/api/utils/markdown/rootAsSpan";
 import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
 
 import { getContentPlainText } from "./api/reviews";
+import {
+  AlltimeStatsSchema,
+  WorkSchema,
+  YearStatsSchema,
+} from "./content/schemas";
 
 // --- Path helper ---
 
@@ -49,46 +54,43 @@ function getBaseProcessor() {
 }
 
 /** Load a single JSON file that contains an array of items, one entry per item. */
-async function loadJsonArrayFile(
-  ctx: LoaderContext,
-  filePath: string,
-  getId: (raw: Record<string, unknown>) => string,
-): Promise<void> {
+async function loadJsonArrayFile({
+  filePath,
+  loaderContext,
+}: {
+  filePath: string;
+  loaderContext: LoaderContext;
+}): Promise<void> {
   const sync = async () => {
-    let rawItems: Record<string, unknown>[];
-    try {
-      rawItems = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
-        string,
-        unknown
-      >[];
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code === "ENOENT") {
-        // Source file removed (e.g. during migration); keep the store empty.
-        return;
-      }
-      throw error;
-    }
+    const rawItems = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+      string,
+      unknown
+    >[];
+
     const newIds = new Set<string>();
 
     for (const raw of rawItems) {
-      const id = getId(raw);
+      const id = raw.id as string;
       newIds.add(id);
 
-      const digest = ctx.generateDigest(raw);
-      if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+      const digest = loaderContext.generateDigest(raw);
+      if (
+        loaderContext.store.has(id) &&
+        loaderContext.store.get(id)?.digest === digest
+      ) {
         continue;
       }
 
-      const data = await ctx.parseData({ data: raw, id });
-      ctx.store.set({ data, digest, id });
+      const data = await loaderContext.parseData({ data: raw, id });
+      loaderContext.store.set({ data, digest, id });
     }
 
-    for (const id of ctx.store.keys()) {
-      if (!newIds.has(id)) ctx.store.delete(id);
+    for (const id of loaderContext.store.keys()) {
+      if (!newIds.has(id)) loaderContext.store.delete(id);
     }
   };
 
-  return watchFile(ctx, filePath, sync);
+  return watchFile(loaderContext, filePath, sync);
 }
 
 /** Load a directory of JSON files, one entry per file. */
@@ -184,27 +186,34 @@ async function loadMarkdownDirectory(
 }
 
 /** Load a single JSON object file as one store entry with a fixed id. */
-async function loadSingleJsonFile(
-  ctx: LoaderContext,
-  filePath: string,
-  id: string,
-): Promise<void> {
+async function loadSingleJsonFile({
+  filePath,
+  id,
+  loaderContext,
+}: {
+  filePath: string;
+  id: string;
+  loaderContext: LoaderContext;
+}): Promise<void> {
   const sync = async () => {
     const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
       string,
       unknown
     >;
-    const digest = ctx.generateDigest(raw);
+    const digest = loaderContext.generateDigest(raw);
 
-    if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+    if (
+      loaderContext.store.has(id) &&
+      loaderContext.store.get(id)?.digest === digest
+    ) {
       return;
     }
 
-    const data = await ctx.parseData({ data: raw, id });
-    ctx.store.set({ data, digest, id });
+    const data = await loaderContext.parseData({ data: raw, id });
+    loaderContext.store.set({ data, digest, id });
   };
 
-  return watchFile(ctx, filePath, sync);
+  return watchFile(loaderContext, filePath, sync);
 }
 
 /** Excerpt HTML pipeline — truncates to first paragraph, no linkReviewedWorks */
@@ -276,10 +285,6 @@ const DistributionSchema = z.object({
   name: z.string(),
 });
 
-const GradeDistributionSchema = DistributionSchema.extend({
-  sortValue: z.number(),
-});
-
 // AIDEV-NOTE: readings is z.array(reference("readings")) — source JSON contains plain
 // reading slug strings; parseData() coerces them to { collection, id } objects.
 const MostReadAuthorSchema = z
@@ -313,77 +318,62 @@ const AuthorSchema = z.object({
   sortName: z.string(),
 });
 
-// AIDEV-NOTE: MoreByAuthorSchema is the inner shape inside moreForReviewedWorks.moreByAuthors[].
-// `reviews` is an array of work slugs (plain strings, not references).
-const MoreByAuthorSchema = z.object({
-  author: z.string(),
-  reviews: z.array(reference("reviews")),
-});
-
-// AIDEV-NOTE: MoreForReviewedWorkSchema — each entry holds the pre-computed moreByAuthors
-// and moreReviews lists for a single reviewed work. Entry ID = work slug (raw.work).
-const MoreForReviewedWorkSchema = z.object({
-  moreByAuthors: z.array(MoreByAuthorSchema),
-  moreReviews: z.array(reference("reviews")),
-  work: z.string(),
-});
-
 // AIDEV-NOTE: WorkRawAuthorSchema is the shape of authors inside works/*.json — just slug
 // and optional notes. Names are looked up from the authors collection at getProps time.
-const WorkRawAuthorSchema = z
-  .object({
-    author: reference("authors"),
-    notes: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-  })
-  .transform(({ author, notes }) => {
-    // fix zod making anything with undefined optional
-    return { author, notes };
-  });
+// const WorkRawAuthorSchema = z
+//   .object({
+//     author: reference("authors"),
+//     notes: z
+//       .nullable(z.string())
+//       .optional()
+//       .transform((v) => v ?? undefined),
+//   })
+//   .transform(({ author, notes }) => {
+//     // fix zod making anything with undefined optional
+//     return { author, notes };
+//   });
 
 // AIDEV-NOTE: WorkSchema transforms `year` → `workYear` to match the field name used
 // throughout the app. `includedWorks` is plain slug strings (not references) because
 // some included works are unreviewed and would fail reference validation.
-const WorkSchema = z
-  .object({
-    authors: z.array(WorkRawAuthorSchema),
-    includedWorks: z.array(reference("works")),
-    kind: WorkKindSchema,
-    slug: z.string(),
-    sortTitle: z.string(),
-    subtitle: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    title: z.string(),
-    year: z.string(),
-  })
-  .transform(
-    ({
-      authors,
-      includedWorks,
-      kind,
-      slug,
-      sortTitle,
-      subtitle,
-      title,
-      year,
-    }) => {
-      // fix zod making anything with undefined optional; rename year → workYear
-      return {
-        authors,
-        includedWorks,
-        kind,
-        slug,
-        sortTitle,
-        subtitle,
-        title,
-        workYear: year,
-      };
-    },
-  );
+// const WorkSchema = z
+//   .object({
+//     authors: z.array(WorkRawAuthorSchema),
+//     includedWorks: z.array(reference("works")),
+//     kind: WorkKindSchema,
+//     slug: z.string(),
+//     sortTitle: z.string(),
+//     subtitle: z
+//       .nullable(z.string())
+//       .optional()
+//       .transform((v) => v ?? undefined),
+//     title: z.string(),
+//     year: z.string(),
+//   })
+//   .transform(
+//     ({
+//       authors,
+//       includedWorks,
+//       kind,
+//       slug,
+//       sortTitle,
+//       subtitle,
+//       title,
+//       year,
+//     }) => {
+//       // fix zod making anything with undefined optional; rename year → workYear
+//       return {
+//         authors,
+//         includedWorks,
+//         kind,
+//         slug,
+//         sortTitle,
+//         subtitle,
+//         title,
+//         workYear: year,
+//       };
+//     },
+//   );
 
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
@@ -465,17 +455,6 @@ const PageSchema = z.object({
   title: z.string(),
 });
 
-const AlltimeStatSchema = z.object({
-  bookCount: z.number(),
-  decadeDistribution: z.array(DistributionSchema),
-  editionDistribution: z.array(DistributionSchema),
-  gradeDistribution: z.array(GradeDistributionSchema),
-  kindDistribution: z.array(DistributionSchema),
-  mostReadAuthors: z.array(MostReadAuthorSchema),
-  reviewCount: z.number(),
-  workCount: z.number(),
-});
-
 const YearStatSchema = z.object({
   bookCount: z.number(),
   decadeDistribution: z.array(DistributionSchema),
@@ -501,31 +480,30 @@ const authors = defineCollection({
   schema: AuthorSchema,
 });
 
-const moreForReviewedWorks = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadJsonArrayFile(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "more-for-reviewed-works.json"),
-        (raw) => raw.work as string,
-      ),
-    name: "more-for-reviewed-works-loader",
-  },
-  schema: MoreForReviewedWorkSchema,
-});
-
 const works = defineCollection({
   loader: {
     load: (ctx) =>
       loadJsonDirectory(
         ctx,
         path.join(CONTENT_ROOT, "data", "works"),
-        (raw) => raw.slug as string,
+        (raw) => raw.id as string,
       ),
     name: "works-loader",
   },
   schema: WorkSchema,
 });
+
+// const reviewedWorks = defineCollection({
+//   loader: {
+//     load: (ctx) =>
+//       loadJsonArrayFile({
+//         filePath: path.join(CONTENT_ROOT, "data", "reviewed-works.json"),
+//         loaderContext: ctx,
+//       }),
+//     name: "reviewed-works-loader",
+//   },
+//   schema: ReviewedWorkSchema,
+// });
 
 const reviews = defineCollection({
   loader: {
@@ -586,7 +564,7 @@ const RawReadingFrontmatterSchema = z.object({
   workSlug: z.string(),
 });
 
-export type WorkAuthor = z.infer<typeof WorkRawAuthorSchema>;
+// export type WorkAuthor = z.infer<typeof WorkRawAuthorSchema>;
 
 type RawReadingFrontmatter = z.infer<typeof RawReadingFrontmatterSchema>;
 
@@ -683,15 +661,15 @@ const pages = defineCollection({
 
 const alltimeStats = defineCollection({
   loader: {
-    load: (ctx) =>
-      loadSingleJsonFile(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "all-time-stats.json"),
-        "alltime",
-      ),
+    load: (loaderContext) =>
+      loadSingleJsonFile({
+        filePath: path.join(CONTENT_ROOT, "data", "all-time-stats.json"),
+        id: "alltimeStats",
+        loaderContext,
+      }),
     name: "alltime-stats-loader",
   },
-  schema: AlltimeStatSchema,
+  schema: AlltimeStatsSchema,
 });
 
 const yearStats = defineCollection({
@@ -704,28 +682,25 @@ const yearStats = defineCollection({
       ),
     name: "year-stats-loader",
   },
-  schema: YearStatSchema,
+  schema: YearStatsSchema,
 });
 
 // --- Exported types ---
 // These are the single source of truth for typed data in tests and API functions.
 // Import from this file when writing fixtures or type-annotating collection data.
 
-export type AlltimeStatData = z.infer<typeof AlltimeStatSchema>;
 export type AuthorData = z.infer<typeof AuthorSchema>;
-export type MoreForReviewedWorkData = z.infer<typeof MoreForReviewedWorkSchema>;
 export type PageData = z.infer<typeof PageSchema>;
 export type ReadingData = z.infer<typeof ReadingSchema>;
 export type ReviewData = z.infer<typeof ReviewSchema>;
-export type WorkData = z.infer<typeof WorkSchema>;
 export type YearStatData = z.infer<typeof YearStatSchema>;
 
 export const collections = {
   alltimeStats,
   authors,
-  moreForReviewedWorks,
   pages,
   readings,
+  // reviewedWorks,
   reviews,
   works,
   yearStats,

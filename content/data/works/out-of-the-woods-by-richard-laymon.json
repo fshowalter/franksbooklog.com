@@ -1,15 +1,24 @@
 {
+  "id": "out-of-the-woods-by-richard-laymon",
   "title": "Out of the Woods",
-  "subtitle": null,
   "sortTitle": "Out of the Woods",
-  "year": "1975",
+  "subtitle": null,
+  "workYear": "1975",
   "kind": "Short Story",
-  "slug": "out-of-the-woods-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

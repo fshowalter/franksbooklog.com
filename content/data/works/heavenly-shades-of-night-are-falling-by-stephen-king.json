@@ -1,15 +1,24 @@
 {
+  "id": "heavenly-shades-of-night-are-falling-by-stephen-king",
   "title": "Heavenly Shades of Night Are Falling",
-  "subtitle": null,
   "sortTitle": "Heavenly Shades of Night Are Falling",
-  "year": "1999",
+  "subtitle": null,
+  "workYear": "1999",
   "kind": "Novella",
-  "slug": "heavenly-shades-of-night-are-falling-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

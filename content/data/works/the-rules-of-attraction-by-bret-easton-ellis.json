@@ -1,15 +1,17 @@
 {
+  "id": "the-rules-of-attraction-by-bret-easton-ellis",
   "title": "The Rules of Attraction",
   "subtitle": null,
   "sortTitle": "Rules of Attraction",
   "year": "1987",
   "kind": "Novel",
   "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+  "reviewed": true,
   "authors": [
     {
-      "author": "bret-easton-ellis",
+      "name": "Bret Easton Ellis",
+      "slug": "bret-easton-ellis",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

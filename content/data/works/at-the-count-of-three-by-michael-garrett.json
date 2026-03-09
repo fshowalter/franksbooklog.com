@@ -1,15 +1,24 @@
 {
+  "id": "at-the-count-of-three-by-michael-garrett",
   "title": "At the Count of Three",
-  "subtitle": null,
   "sortTitle": "At the Count of Three",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "at-the-count-of-three-by-michael-garrett",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "michael-garrett",
+      "name": "Michael Garrett",
+      "slug": "michael-garrett",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

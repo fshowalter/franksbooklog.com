@@ -1,15 +1,17 @@
 {
+  "id": "the-dark-tunnel-by-ross-macdonald",
   "title": "The Dark Tunnel",
   "subtitle": null,
   "sortTitle": "Dark Tunnel",
   "year": "1944",
   "kind": "Novel",
   "slug": "the-dark-tunnel-by-ross-macdonald",
+  "reviewed": true,
   "authors": [
     {
-      "author": "ross-macdonald",
+      "name": "Ross Macdonald",
+      "slug": "ross-macdonald",
       "notes": "as Kenneth Millar"
     }
-  ],
-  "includedWorks": []
+  ]
 }

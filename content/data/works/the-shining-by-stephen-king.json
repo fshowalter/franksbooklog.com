@@ -1,15 +1,17 @@
 {
+  "id": "the-shining-by-stephen-king",
   "title": "The Shining",
   "subtitle": null,
   "sortTitle": "Shining",
   "year": "1977",
   "kind": "Novel",
   "slug": "the-shining-by-stephen-king",
+  "reviewed": true,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

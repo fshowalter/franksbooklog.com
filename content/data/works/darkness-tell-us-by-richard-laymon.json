@@ -1,15 +1,17 @@
 {
+  "id": "darkness-tell-us-by-richard-laymon",
   "title": "Darkness, Tell Us",
   "subtitle": null,
   "sortTitle": "Darkness, Tell Us",
   "year": "1991",
   "kind": "Novel",
-  "slug": "darkness-tell-us-by-richard-laymon",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

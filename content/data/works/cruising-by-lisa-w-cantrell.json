@@ -1,15 +1,24 @@
 {
+  "id": "cruising-by-lisa-w-cantrell",
   "title": "Cruising",
-  "subtitle": null,
   "sortTitle": "Cruising",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "cruising-by-lisa-w-cantrell",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "lisa-w-cantrell",
+      "name": "Lisa W. Cantrell",
+      "slug": "lisa-w-cantrell",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

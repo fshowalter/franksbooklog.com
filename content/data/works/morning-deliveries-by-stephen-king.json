@@ -1,15 +1,24 @@
 {
+  "id": "morning-deliveries-by-stephen-king",
   "title": "Morning Deliveries (Milkman #1)",
-  "subtitle": null,
   "sortTitle": "Morning Deliveries (Milkman #1)",
-  "year": "1985",
+  "subtitle": null,
+  "workYear": "1985",
   "kind": "Short Story",
-  "slug": "morning-deliveries-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

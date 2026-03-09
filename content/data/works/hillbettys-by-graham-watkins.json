@@ -1,15 +1,24 @@
 {
+  "id": "hillbettys-by-graham-watkins",
   "title": "Hillbettys",
-  "subtitle": null,
   "sortTitle": "Hillbettys",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "hillbettys-by-graham-watkins",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "graham-watkins",
+      "name": "Graham Watkins",
+      "slug": "graham-watkins",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

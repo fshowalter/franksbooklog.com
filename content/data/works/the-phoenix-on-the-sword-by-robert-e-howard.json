@@ -1,15 +1,24 @@
 {
+  "id": "the-phoenix-on-the-sword-by-robert-e-howard",
   "title": "The Phoenix on the Sword",
-  "subtitle": null,
   "sortTitle": "Phoenix on the Sword",
-  "year": "1932",
+  "subtitle": null,
+  "workYear": "1932",
   "kind": "Short Story",
-  "slug": "the-phoenix-on-the-sword-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

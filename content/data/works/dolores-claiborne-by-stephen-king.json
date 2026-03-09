@@ -1,15 +1,24 @@
 {
+  "id": "dolores-claiborne-by-stephen-king",
   "title": "Dolores Claiborne",
-  "subtitle": null,
   "sortTitle": "Dolores Claiborne",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Novel",
-  "slug": "dolores-claiborne-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

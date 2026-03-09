@@ -1,0 +1,199 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import { getEntries } from "astro:content";
+
+import Grade from "~/components/grade/Grade.astro";
+import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
+import { reviewStructuredData } from "~/features/review/reviewStructuredData";
+import { reviewDateFormat } from "~/utils/reviewDateFormat";
+import { toSentenceArray } from "~/utils/toSentenceArray";
+
+import IncludedWorks from "./IncludedWorks.astro";
+import ReadingHistory from "./ReadingHistory.astro";
+import ReviewCover from "./ReviewCover.astro";
+
+type Props = {
+  review: CollectionEntry<"reviews">["data"];
+  reviewedWork: CollectionEntry<"reviewedWorks">["data"];
+};
+
+const { review, reviewedWork } = Astro.props;
+
+const moreReviews = await getEntries(reviewedWork.moreReviews);
+---
+
+<div class="flex flex-col" data-pagefind-body>
+  <header
+    class={`relative z-base mb-12 flex flex-col items-center px-[8%] pt-10`}
+  >
+    <nav class={`transform-gpu pb-2 transition-transform`}>
+      <a
+        class={`
+          relative inline-block pb-1 font-sans text-xs tracking-wider
+          text-subtle uppercase transition-all
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-center after:scale-x-0 after:bg-(--color-accent)
+          after:transition-transform
+          hover:text-accent
+          hover:after:scale-x-100
+        `}
+        href="/reviews/"
+      >
+        Reviews
+      </a>
+    </nav>
+    <h1
+      class={`
+        text-center text-4xl
+        laptop:text-5xl
+        desktop:text-6xl
+      `}
+      data-pagefind-meta="title"
+    >
+      {reviewedWork.title}
+    </h1>
+    {
+      reviewedWork.subtitle && (
+        <p
+          class={`
+            max-w-prose pt-2 text-center text-base font-light tracking-wider
+            text-muted
+          `}
+        >
+          {reviewedWork.subtitle}
+        </p>
+      )
+    }
+    <div class={`mt-4 text-center text-md text-muted`}>
+      by{" "}
+      {
+        toSentenceArray(
+          await Promise.all(
+            reviewedWork.authors.map((workAuthor) => {
+              return (
+                <div
+                  class={`
+                    relative inline-block transform-gpu text-accent
+                    transition-transform
+                    after:absolute after:bottom-0 after:left-0 after:h-px
+                    after:w-full after:origin-center after:scale-x-0
+                    after:bg-(--color-accent) after:transition-transform
+                    hover:after:scale-x-100
+                  `}
+                >
+                  <a href={`/authors/${workAuthor.slug}/`}>
+                    {workAuthor.name}
+                    {workAuthor.notes && (
+                      <span class="text-subtle"> ({workAuthor.notes})</span>
+                    )}
+                  </a>
+                </div>
+              );
+            }),
+          ),
+        )
+      }
+    </div>
+    <div class="mt-4">
+      {
+        review.grade == "Abandoned" ? (
+          <div
+            class={`
+              bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide
+              text-white uppercase
+            `}
+          >
+            Abandoned
+          </div>
+        ) : (
+          <Grade height={32} value={review.grade} />
+        )
+      }
+    </div>
+    <div
+      class={`
+        mt-5 mb-4 text-center font-sans text-sm tracking-wide text-subtle
+        uppercase
+        tablet:mb-6
+      `}
+    >
+      {reviewedWork.workYear} | {reviewedWork.kind}
+    </div>
+    <ReviewCover coverSlug={review.slug} />
+    <div
+      class={`
+        relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
+        text-subtle uppercase
+        after:absolute after:top-1/2 after:left-[-11%] after:-z-10
+        after:w-[122%] after:border-t after:border-subtle
+        tablet:mt-6
+      `}
+    >
+      Reviewed {reviewDateFormat.format(review.date)}
+    </div>
+  </header>
+  <div
+    class={`
+      flex flex-col items-center gap-16 px-container pb-20
+      desktop:gap-20 desktop:pb-32
+    `}
+  >
+    <div
+      class={`
+        rendered-markdown max-w-prose text-md/7 tracking-prose
+        first-letter:leading-[.8] first-letter:text-default
+        tablet:text-xl/8
+        tablet:first-letter:pr-3
+        desktop:first-letter:text-[64px]
+        [&>p:first-child]:first-letter:float-left
+        [&>p:first-child]:first-letter:mt-[6px]
+        [&>p:first-child]:first-letter:pr-2
+        [&>p:first-child]:first-letter:font-sans
+        [&>p:first-child]:first-letter:text-[56px]
+        [&>p:first-child]:first-letter:font-bold
+      `}
+      set:html={review.intermediateHtml}
+    />
+    <IncludedWorks
+      includedWorks={await getEntries(reviewedWork.includedWorks)}
+    />
+    <ReadingHistory reviewedWorkId={reviewedWork.id} />
+  </div>
+
+  <div
+    class={`
+      flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
+      tablet:pt-8
+      laptop:gap-y-24
+    `}
+  >
+    <MoreReviews
+      cardProps={moreReviews.map((value) => {
+        return {
+          hasDate: false,
+          value: value.data,
+        };
+      })}
+      headingProps={{
+        accentText: "Reviews",
+        href: `/reviews/`,
+        text: "More",
+      }}
+    />
+  </div>
+</div>
+{
+  review.grade != "Abandoned" && (
+    <script
+      set:html={JSON.stringify(
+        await reviewStructuredData(
+          review.slug,
+          reviewedWork.title,
+          review.grade,
+        ),
+      )}
+      type="application/ld+json"
+    />
+  )
+}

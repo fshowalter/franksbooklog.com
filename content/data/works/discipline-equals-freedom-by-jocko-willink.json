@@ -1,15 +1,17 @@
 {
+  "id": "discipline-equals-freedom-by-jocko-willink",
   "title": "Discipline Equals Freedom",
   "subtitle": "Field Manual",
   "sortTitle": "Discipline Equals Freedom: Field Manual",
   "year": "2017",
   "kind": "Nonfiction",
-  "slug": "discipline-equals-freedom-by-jocko-willink",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "jocko-willink",
+      "name": "Jocko Willink",
+      "slug": "jocko-willink",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

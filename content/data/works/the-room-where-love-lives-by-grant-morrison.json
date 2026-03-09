@@ -1,15 +1,24 @@
 {
+  "id": "the-room-where-love-lives-by-grant-morrison",
   "title": "The Room Where Love Lives",
-  "subtitle": null,
   "sortTitle": "Room Where Love Lives",
-  "year": "1993",
+  "subtitle": null,
+  "workYear": "1993",
   "kind": "Short Story",
-  "slug": "the-room-where-love-lives-by-grant-morrison",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "grant-morrison",
+      "name": "Grant Morrison",
+      "slug": "grant-morrison",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

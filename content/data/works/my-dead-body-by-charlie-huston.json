@@ -1,15 +1,17 @@
 {
+  "id": "my-dead-body-by-charlie-huston",
   "title": "My Dead Body",
   "subtitle": null,
   "sortTitle": "My Dead Body",
   "year": "2009",
   "kind": "Novel",
-  "slug": "my-dead-body-by-charlie-huston",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "charlie-huston",
+      "name": "Charlie Huston",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

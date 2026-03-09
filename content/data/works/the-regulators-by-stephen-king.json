@@ -1,15 +1,24 @@
 {
+  "id": "the-regulators-by-stephen-king",
   "title": "The Regulators",
-  "subtitle": null,
   "sortTitle": "Regulators",
-  "year": "1995",
+  "subtitle": null,
+  "workYear": "1995",
   "kind": "Novel",
-  "slug": "the-regulators-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": "as Richard Bachman"
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

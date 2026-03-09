@@ -1,15 +1,24 @@
 {
+  "id": "the-striking-of-the-gong-by-robert-e-howard",
   "title": "The Striking of the Gong",
-  "subtitle": null,
   "sortTitle": "Striking of the Gong",
-  "year": "1978",
+  "subtitle": null,
+  "workYear": "1978",
   "kind": "Short Story",
-  "slug": "the-striking-of-the-gong-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

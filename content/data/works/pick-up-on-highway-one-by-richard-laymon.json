@@ -1,15 +1,24 @@
 {
+  "id": "pick-up-on-highway-one-by-richard-laymon",
   "title": "Pick-Up on Highway One",
-  "subtitle": null,
   "sortTitle": "Pick-Up on Highway One",
-  "year": "2001",
+  "subtitle": null,
+  "workYear": "2001",
   "kind": "Short Story",
-  "slug": "pick-up-on-highway-one-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,17 @@
 {
+  "id": "already-dead-by-charlie-huston",
   "title": "Already Dead",
   "subtitle": null,
   "sortTitle": "Already Dead",
   "year": "2005",
   "kind": "Novel",
-  "slug": "already-dead-by-charlie-huston",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "charlie-huston",
+      "name": "Charlie Huston",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

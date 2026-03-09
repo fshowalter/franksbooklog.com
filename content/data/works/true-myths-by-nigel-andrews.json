@@ -1,15 +1,17 @@
 {
+  "id": "true-myths-by-nigel-andrews",
   "title": "True Myths",
   "subtitle": "The Life and Times of Arnold Schwarzenegger",
   "sortTitle": "True Myths: The Life and Times of Arnold Schwarzenegger",
   "year": "1996",
   "kind": "Nonfiction",
   "slug": "true-myths-by-nigel-andrews",
+  "reviewed": true,
   "authors": [
     {
-      "author": "nigel-andrews",
+      "name": "Nigel Andrews",
+      "slug": "nigel-andrews",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

@@ -1,15 +1,24 @@
 {
+  "id": "barneys-bigfoot-museum-by-richard-laymon",
   "title": "Barney's Bigfoot Museum",
-  "subtitle": null,
   "sortTitle": "Barney's Bigfoot Museum",
-  "year": "1981",
+  "subtitle": null,
+  "workYear": "1981",
   "kind": "Short Story",
-  "slug": "barneys-bigfoot-museum-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "the-screaming-skull-of-silence-by-robert-e-howard",
   "title": "The Screaming Skull of Silence",
-  "subtitle": null,
   "sortTitle": "Screaming Skull of Silence",
-  "year": "1967",
+  "subtitle": null,
+  "workYear": "1967",
   "kind": "Short Story",
-  "slug": "the-screaming-skull-of-silence-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

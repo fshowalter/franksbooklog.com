@@ -1,15 +1,24 @@
 {
+  "id": "the-cabin-in-the-woods-by-richard-laymon",
   "title": "The Cabin in the Woods",
-  "subtitle": null,
   "sortTitle": "Cabin in the Woods",
-  "year": "2002",
+  "subtitle": null,
+  "workYear": "2002",
   "kind": "Short Story",
-  "slug": "the-cabin-in-the-woods-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

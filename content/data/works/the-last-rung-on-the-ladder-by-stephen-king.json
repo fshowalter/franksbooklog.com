@@ -1,15 +1,24 @@
 {
+  "id": "the-last-rung-on-the-ladder-by-stephen-king",
   "title": "The Last Rung on the Ladder",
-  "subtitle": null,
   "sortTitle": "Last Rung on the Ladder",
-  "year": "1978",
+  "subtitle": null,
+  "workYear": "1978",
   "kind": "Short Story",
-  "slug": "the-last-rung-on-the-ladder-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

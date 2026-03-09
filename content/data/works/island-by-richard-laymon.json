@@ -1,15 +1,24 @@
 {
+  "id": "island-by-richard-laymon",
   "title": "Island",
-  "subtitle": null,
   "sortTitle": "Island",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Novel",
-  "slug": "island-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

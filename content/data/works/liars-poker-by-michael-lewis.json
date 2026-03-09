@@ -1,15 +1,17 @@
 {
+  "id": "liars-poker-by-michael-lewis",
   "title": "Liar's Poker",
   "subtitle": null,
   "sortTitle": "Liar's Poker",
   "year": "1989",
   "kind": "Nonfiction",
-  "slug": "liars-poker-by-michael-lewis",
+  "slug": null,
+  "reviewed": false,
   "authors": [
     {
-      "author": "michael-lewis",
+      "name": "Michael Lewis",
+      "slug": null,
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

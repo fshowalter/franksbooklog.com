@@ -1,15 +1,17 @@
 {
+  "id": "dark-crusade-by-karl-edward-wagner",
   "title": "Dark Crusade",
   "subtitle": null,
   "sortTitle": "Dark Crusade",
   "year": "1976",
   "kind": "Novel",
   "slug": "dark-crusade-by-karl-edward-wagner",
+  "reviewed": true,
   "authors": [
     {
-      "author": "karl-edward-wagner",
+      "name": "Karl Edward Wagner",
+      "slug": "karl-edward-wagner",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

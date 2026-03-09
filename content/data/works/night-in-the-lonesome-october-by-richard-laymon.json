@@ -1,15 +1,24 @@
 {
+  "id": "night-in-the-lonesome-october-by-richard-laymon",
   "title": "Night in the Lonesome October",
-  "subtitle": null,
   "sortTitle": "Night in the Lonesome October",
-  "year": "2001",
+  "subtitle": null,
+  "workYear": "2001",
   "kind": "Novel",
-  "slug": "night-in-the-lonesome-october-by-richard-laymon",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

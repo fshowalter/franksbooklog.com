@@ -1,15 +1,24 @@
 {
+  "id": "blind-willie-by-stephen-king",
   "title": "Blind Willie",
-  "subtitle": null,
   "sortTitle": "Blind Willie",
-  "year": "1994",
+  "subtitle": null,
+  "workYear": "1994",
   "kind": "Novella",
-  "slug": "blind-willie-by-stephen-king",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

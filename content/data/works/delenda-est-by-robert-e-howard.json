@@ -1,15 +1,24 @@
 {
+  "id": "delenda-est-by-robert-e-howard",
   "title": "Delenda Est",
-  "subtitle": null,
   "sortTitle": "Delenda Est",
-  "year": "1967",
+  "subtitle": null,
+  "workYear": "1967",
   "kind": "Short Story",
-  "slug": "delenda-est-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

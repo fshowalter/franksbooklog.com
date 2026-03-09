@@ -1,15 +1,24 @@
 {
+  "id": "the-pool-of-the-black-one-by-robert-e-howard",
   "title": "The Pool of the Black One",
-  "subtitle": null,
   "sortTitle": "Pool of the Black One",
-  "year": "1933",
+  "subtitle": null,
+  "workYear": "1933",
   "kind": "Short Story",
-  "slug": "the-pool-of-the-black-one-by-robert-e-howard",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": "robert-e-howard",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

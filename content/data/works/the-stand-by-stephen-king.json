@@ -1,15 +1,17 @@
 {
+  "id": "the-stand-by-stephen-king",
   "title": "The Stand",
   "subtitle": null,
   "sortTitle": "Stand",
   "year": "1978",
   "kind": "Novel",
   "slug": "the-stand-by-stephen-king",
+  "reviewed": true,
   "authors": [
     {
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "notes": null
     }
-  ],
-  "includedWorks": []
+  ]
 }

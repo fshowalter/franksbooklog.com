@@ -1,19 +1,29 @@
 {
+  "id": "something-extra-by-j-n-williamson-james-kisner",
   "title": "Something Extra",
-  "subtitle": null,
   "sortTitle": "Something Extra",
-  "year": "1991",
+  "subtitle": null,
+  "workYear": "1991",
   "kind": "Short Story",
-  "slug": "something-extra-by-j-n-williamson-james-kisner",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "j-n-williamson",
+      "name": "J.N. Williamson",
+      "slug": "j-n-williamson",
       "notes": null
     },
     {
-      "author": "james-kisner",
+      "name": "James Kisner",
+      "slug": "james-kisner",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

@@ -1,15 +1,24 @@
 {
+  "id": "blood-night-by-chet-williamson",
   "title": "Blood Night",
-  "subtitle": null,
   "sortTitle": "Blood Night",
-  "year": "1989",
+  "subtitle": null,
+  "workYear": "1989",
   "kind": "Short Story",
-  "slug": "blood-night-by-chet-williamson",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "chet-williamson",
+      "name": "Chet Williamson",
+      "slug": "chet-williamson",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }

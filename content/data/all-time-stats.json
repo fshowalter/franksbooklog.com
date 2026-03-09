@@ -1,4 +1,19 @@
 {
+  "allStatsYears": [
+    "2016",
+    "2014",
+    "2023",
+    "2025",
+    "2019",
+    "2022",
+    "2017",
+    "2018",
+    "2015",
+    "2012",
+    "2024",
+    "2013",
+    "2011"
+  ],
   "reviewCount": 88,
   "workCount": 195,
   "bookCount": 169,
@@ -157,7 +172,8 @@
   "mostReadAuthors": [
     {
       "count": 36,
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2014-02-24-01-the-cellar-by-richard-laymon",
@@ -200,7 +216,8 @@
     },
     {
       "count": 31,
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "reviewed": true,
       "readings": [
         "2011-11-06-01-the-shining-by-stephen-king",
@@ -238,7 +255,8 @@
     },
     {
       "count": 16,
-      "author": "philip-fracassi",
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
       "reviewed": true,
       "readings": [
         "2022-04-17-01-soft-construction-of-a-sunset-by-philip-fracassi",
@@ -261,7 +279,8 @@
     },
     {
       "count": 7,
-      "author": "charlie-huston",
+      "name": "Charlie Huston",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2015-10-23-01-caught-stealing-by-charlie-huston",
@@ -275,7 +294,8 @@
     },
     {
       "count": 6,
-      "author": "raymond-chandler",
+      "name": "Raymond Chandler",
+      "slug": "raymond-chandler",
       "reviewed": true,
       "readings": [
         "2016-02-12-02-the-big-sleep-by-raymond-chandler",
@@ -288,7 +308,8 @@
     },
     {
       "count": 4,
-      "author": "robert-e-howard",
+      "name": "Robert E. Howard",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2019-03-02-01-black-canaan-by-robert-e-howard",
@@ -299,7 +320,8 @@
     },
     {
       "count": 3,
-      "author": "jocko-willink",
+      "name": "Jocko Willink",
+      "slug": "jocko-willink",
       "reviewed": true,
       "readings": [
         "2018-09-30-01-extreme-ownership-by-jocko-willink-leif-babin",
@@ -309,7 +331,8 @@
     },
     {
       "count": 3,
-      "author": "jeff-gelb",
+      "name": "Jeff Gelb",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2018-01-05-01-hot-blood-by-jeff-gelb-lonn-m-friend",
@@ -319,7 +342,8 @@
     },
     {
       "count": 3,
-      "author": "james-kaplan",
+      "name": "James Kaplan",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2015-01-25-01-frank-by-james-kaplan",
@@ -329,7 +353,8 @@
     },
     {
       "count": 3,
-      "author": "karl-edward-wagner",
+      "name": "Karl Edward Wagner",
+      "slug": "karl-edward-wagner",
       "reviewed": true,
       "readings": [
         "2012-05-18-01-dark-crusade-by-karl-edward-wagner",

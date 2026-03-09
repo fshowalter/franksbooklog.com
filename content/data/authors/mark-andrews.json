@@ -1,5 +1,28 @@
 {
   "name": "Mark Andrews",
   "sortName": "Andrews, Mark",
-  "slug": "mark-andrews"
+  "slug": "mark-andrews",
+  "reviewCount": 1,
+  "reviewedWorks": [
+    {
+      "id": "paint-my-name-in-black-and-gold-by-mark-andrews",
+      "sequence": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews",
+      "slug": "paint-my-name-in-black-and-gold-by-mark-andrews",
+      "title": "Paint My Name in Black and Gold",
+      "sortTitle": "Paint My Name in Black and Gold: The Rise of the Sisters of Mercy",
+      "workYear": "2021",
+      "grade": "C+",
+      "gradeValue": 7,
+      "kind": "Nonfiction",
+      "reviewDate": "2025-12-20",
+      "authors": [
+        {
+          "slug": "mark-andrews",
+          "notes": null,
+          "name": "Mark Andrews"
+        }
+      ],
+      "reviewYear": "2025"
+    }
+  ]
 }

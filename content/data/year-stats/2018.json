@@ -1,5 +1,20 @@
 {
   "year": "2018",
+  "allStatsYears": [
+    "2016",
+    "2014",
+    "2023",
+    "2025",
+    "2019",
+    "2022",
+    "2017",
+    "2018",
+    "2015",
+    "2012",
+    "2024",
+    "2013",
+    "2011"
+  ],
   "workCount": 31,
   "bookCount": 31,
   "kindDistribution": [
@@ -67,7 +82,8 @@
   "mostReadAuthors": [
     {
       "count": 5,
-      "author": "richard-laymon",
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
       "reviewed": true,
       "readings": [
         "2018-01-11-01-midnights-lair-by-richard-laymon",
@@ -79,7 +95,8 @@
     },
     {
       "count": 5,
-      "author": "stephen-king",
+      "name": "Stephen King",
+      "slug": "stephen-king",
       "reviewed": true,
       "readings": [
         "2018-06-29-01-the-talisman-by-stephen-king-peter-straub",
@@ -91,7 +108,8 @@
     },
     {
       "count": 3,
-      "author": "jeff-gelb",
+      "name": "Jeff Gelb",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2018-01-05-01-hot-blood-by-jeff-gelb-lonn-m-friend",
@@ -101,7 +119,8 @@
     },
     {
       "count": 2,
-      "author": "jocko-willink",
+      "name": "Jocko Willink",
+      "slug": "jocko-willink",
       "reviewed": true,
       "readings": [
         "2018-09-30-01-extreme-ownership-by-jocko-willink-leif-babin",
@@ -110,7 +129,8 @@
     },
     {
       "count": 2,
-      "author": "michael-garrett",
+      "name": "Michael Garrett",
+      "slug": null,
       "reviewed": false,
       "readings": [
         "2018-07-17-02-hotter-blood-by-jeff-gelb-michael-garrett",

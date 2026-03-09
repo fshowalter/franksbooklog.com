@@ -1,15 +1,24 @@
 {
+  "id": "draculas-guest-by-bram-stoker",
   "title": "Dracula's Guest",
-  "subtitle": null,
   "sortTitle": "Dracula's Guest",
-  "year": "1914",
+  "subtitle": null,
+  "workYear": "1914",
   "kind": "Short Story",
-  "slug": "draculas-guest-by-bram-stoker",
+  "reviewed": false,
+  "review": null,
+  "reviewDate": null,
+  "grade": null,
+  "reviewSequence": null,
   "authors": [
     {
-      "author": "bram-stoker",
+      "name": "Bram Stoker",
+      "slug": "bram-stoker",
       "notes": null
     }
   ],
-  "includedWorks": []
+  "includedWorks": null,
+  "includedInWorks": null,
+  "moreByAuthors": null,
+  "moreReviews": null
 }
