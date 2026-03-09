@@ -36,6 +36,7 @@ import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
 import { getContentPlainText } from "./api/reviews";
 import {
   AlltimeStatsSchema,
+  ReviewedWorkSchema,
   WorkSchema,
   YearStatsSchema,
 } from "./content/schemas";
@@ -280,35 +281,35 @@ async function watchFile(
 
 // --- Shared Zod sub-schemas ---
 
-const DistributionSchema = z.object({
-  count: z.number(),
-  name: z.string(),
-});
+// const DistributionSchema = z.object({
+//   count: z.number(),
+//   name: z.string(),
+// });
 
 // AIDEV-NOTE: readings is z.array(reference("readings")) — source JSON contains plain
 // reading slug strings; parseData() coerces them to { collection, id } objects.
-const MostReadAuthorSchema = z
-  .object({
-    author: reference("authors"),
-    count: z.number(),
-    readings: z.array(reference("readings")),
-    reviewed: z.boolean(),
-  })
-  .transform(({ author, count, readings, reviewed }) => {
-    // fix zod making anything with undefined optional
-    return { author, count, readings, reviewed };
-  });
+// const MostReadAuthorSchema = z
+//   .object({
+//     author: reference("authors"),
+//     count: z.number(),
+//     readings: z.array(reference("readings")),
+//     reviewed: z.boolean(),
+//   })
+//   .transform(({ author, count, readings, reviewed }) => {
+//     // fix zod making anything with undefined optional
+//     return { author, count, readings, reviewed };
+//   });
 
-export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
+// export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
 
-const WorkKindSchema = z.enum([
-  "Anthology",
-  "Collection",
-  "Nonfiction",
-  "Novel",
-  "Novella",
-  "Short Story",
-]);
+// const WorkKindSchema = z.enum([
+//   "Anthology",
+//   "Collection",
+//   "Nonfiction",
+//   "Novel",
+//   "Novella",
+//   "Short Story",
+// ]);
 
 // --- Collection schemas ---
 
@@ -455,15 +456,15 @@ const PageSchema = z.object({
   title: z.string(),
 });
 
-const YearStatSchema = z.object({
-  bookCount: z.number(),
-  decadeDistribution: z.array(DistributionSchema),
-  editionDistribution: z.array(DistributionSchema),
-  kindDistribution: z.array(DistributionSchema),
-  mostReadAuthors: z.array(MostReadAuthorSchema),
-  workCount: z.number(),
-  year: z.string(),
-});
+// const YearStatSchema = z.object({
+//   bookCount: z.number(),
+//   decadeDistribution: z.array(DistributionSchema),
+//   editionDistribution: z.array(DistributionSchema),
+//   kindDistribution: z.array(DistributionSchema),
+//   mostReadAuthors: z.array(MostReadAuthorSchema),
+//   workCount: z.number(),
+//   year: z.string(),
+// });
 
 // --- Collection definitions ---
 
@@ -493,17 +494,17 @@ const works = defineCollection({
   schema: WorkSchema,
 });
 
-// const reviewedWorks = defineCollection({
-//   loader: {
-//     load: (ctx) =>
-//       loadJsonArrayFile({
-//         filePath: path.join(CONTENT_ROOT, "data", "reviewed-works.json"),
-//         loaderContext: ctx,
-//       }),
-//     name: "reviewed-works-loader",
-//   },
-//   schema: ReviewedWorkSchema,
-// });
+const reviewedWorks = defineCollection({
+  loader: {
+    load: (ctx) =>
+      loadJsonArrayFile({
+        filePath: path.join(CONTENT_ROOT, "data", "reviewed-works.json"),
+        loaderContext: ctx,
+      }),
+    name: "reviewed-works-loader",
+  },
+  schema: ReviewedWorkSchema,
+});
 
 const reviews = defineCollection({
   loader: {
@@ -693,14 +694,13 @@ export type AuthorData = z.infer<typeof AuthorSchema>;
 export type PageData = z.infer<typeof PageSchema>;
 export type ReadingData = z.infer<typeof ReadingSchema>;
 export type ReviewData = z.infer<typeof ReviewSchema>;
-export type YearStatData = z.infer<typeof YearStatSchema>;
 
 export const collections = {
   alltimeStats,
   authors,
   pages,
   readings,
-  // reviewedWorks,
+  reviewedWorks,
   reviews,
   works,
   yearStats,
