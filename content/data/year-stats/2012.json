@@ -57,9 +57,19 @@
       "name": "Stephen King",
       "slug": "stephen-king",
       "reviewed": true,
-      "readings": [
-        "2012-05-13-01-rage-by-stephen-king",
-        "2012-05-14-01-night-shift-by-stephen-king"
+      "readWorks": [
+        {
+          "title": "Rage",
+          "edition": "Paperback",
+          "readingDate": "2012-05-13",
+          "reviewSlug": "rage-by-stephen-king"
+        },
+        {
+          "title": "Night Shift",
+          "edition": "Paperback",
+          "readingDate": "2012-05-14",
+          "reviewSlug": "night-shift-by-stephen-king"
+        }
       ]
     }
   ]

@@ -85,12 +85,37 @@
       "name": "Richard Laymon",
       "slug": "richard-laymon",
       "reviewed": true,
-      "readings": [
-        "2018-01-11-01-midnights-lair-by-richard-laymon",
-        "2018-03-12-02-resurrection-dreams-by-richard-laymon",
-        "2018-05-20-02-funland-by-richard-laymon",
-        "2018-07-06-01-the-stake-by-richard-laymon",
-        "2018-09-03-01-one-rainy-night-by-richard-laymon"
+      "readWorks": [
+        {
+          "title": "Midnight's Lair",
+          "edition": "Ebook",
+          "readingDate": "2018-01-11",
+          "reviewSlug": null
+        },
+        {
+          "title": "Resurrection Dreams",
+          "edition": "Ebook",
+          "readingDate": "2018-03-12",
+          "reviewSlug": null
+        },
+        {
+          "title": "Funland",
+          "edition": "Ebook",
+          "readingDate": "2018-05-20",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Stake",
+          "edition": "Ebook",
+          "readingDate": "2018-07-06",
+          "reviewSlug": null
+        },
+        {
+          "title": "One Rainy Night",
+          "edition": "Ebook",
+          "readingDate": "2018-09-03",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -98,12 +123,37 @@
       "name": "Stephen King",
       "slug": "stephen-king",
       "reviewed": true,
-      "readings": [
-        "2018-06-29-01-the-talisman-by-stephen-king-peter-straub",
-        "2018-07-18-01-cycle-of-the-werewolf-by-stephen-king",
-        "2018-08-05-01-thinner-by-stephen-king",
-        "2018-10-08-01-skeleton-crew-by-stephen-king",
-        "2018-12-06-01-it-by-stephen-king"
+      "readWorks": [
+        {
+          "title": "The Talisman",
+          "edition": "Ebook",
+          "readingDate": "2018-06-29",
+          "reviewSlug": null
+        },
+        {
+          "title": "Cycle of the Werewolf",
+          "edition": "Ebook",
+          "readingDate": "2018-07-18",
+          "reviewSlug": null
+        },
+        {
+          "title": "Thinner",
+          "edition": "Ebook",
+          "readingDate": "2018-08-05",
+          "reviewSlug": null
+        },
+        {
+          "title": "Skeleton Crew",
+          "edition": "Ebook",
+          "readingDate": "2018-10-08",
+          "reviewSlug": null
+        },
+        {
+          "title": "It",
+          "edition": "Ebook",
+          "readingDate": "2018-12-06",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -111,10 +161,25 @@
       "name": "Jeff Gelb",
       "slug": null,
       "reviewed": false,
-      "readings": [
-        "2018-01-05-01-hot-blood-by-jeff-gelb-lonn-m-friend",
-        "2018-07-17-02-hotter-blood-by-jeff-gelb-michael-garrett",
-        "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett"
+      "readWorks": [
+        {
+          "title": "Hot Blood",
+          "edition": "Ebook",
+          "readingDate": "2018-01-05",
+          "reviewSlug": null
+        },
+        {
+          "title": "Hotter Blood",
+          "edition": "Ebook",
+          "readingDate": "2018-07-17",
+          "reviewSlug": null
+        },
+        {
+          "title": "Hottest Blood",
+          "edition": "Ebook",
+          "readingDate": "2018-12-29",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -122,9 +187,19 @@
       "name": "Jocko Willink",
       "slug": "jocko-willink",
       "reviewed": true,
-      "readings": [
-        "2018-09-30-01-extreme-ownership-by-jocko-willink-leif-babin",
-        "2018-10-20-01-discipline-equals-freedom-by-jocko-willink"
+      "readWorks": [
+        {
+          "title": "Extreme Ownership",
+          "edition": "Ebook",
+          "readingDate": "2018-09-30",
+          "reviewSlug": "extreme-ownership-by-jocko-willink-leif-babin"
+        },
+        {
+          "title": "Discipline Equals Freedom",
+          "edition": "Ebook",
+          "readingDate": "2018-10-20",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -132,9 +207,19 @@
       "name": "Michael Garrett",
       "slug": null,
       "reviewed": false,
-      "readings": [
-        "2018-07-17-02-hotter-blood-by-jeff-gelb-michael-garrett",
-        "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett"
+      "readWorks": [
+        {
+          "title": "Hotter Blood",
+          "edition": "Ebook",
+          "readingDate": "2018-07-17",
+          "reviewSlug": null
+        },
+        {
+          "title": "Hottest Blood",
+          "edition": "Ebook",
+          "readingDate": "2018-12-29",
+          "reviewSlug": null
+        }
       ]
     }
   ]

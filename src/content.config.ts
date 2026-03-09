@@ -37,7 +37,7 @@ import { getContentPlainText } from "./api/reviews";
 import {
   AlltimeStatsSchema,
   ReviewedWorkSchema,
-  WorkSchema,
+  // WorkSchema,
   YearStatsSchema,
 } from "./content/schemas";
 
@@ -481,18 +481,18 @@ const authors = defineCollection({
   schema: AuthorSchema,
 });
 
-const works = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadJsonDirectory(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "works"),
-        (raw) => raw.id as string,
-      ),
-    name: "works-loader",
-  },
-  schema: WorkSchema,
-});
+// const works = defineCollection({
+//   loader: {
+//     load: (ctx) =>
+//       loadJsonDirectory(
+//         ctx,
+//         path.join(CONTENT_ROOT, "data", "works"),
+//         (raw) => raw.id as string,
+//       ),
+//     name: "works-loader",
+//   },
+//   schema: WorkSchema,
+// });
 
 const reviewedWorks = defineCollection({
   loader: {
@@ -702,6 +702,6 @@ export const collections = {
   readings,
   reviewedWorks,
   reviews,
-  works,
+  // works,
   yearStats,
 };

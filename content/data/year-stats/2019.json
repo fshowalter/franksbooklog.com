@@ -73,13 +73,43 @@
       "name": "Charlie Huston",
       "slug": null,
       "reviewed": false,
-      "readings": [
-        "2019-01-14-01-already-dead-by-charlie-huston",
-        "2019-01-20-01-no-dominion-by-charlie-huston",
-        "2019-01-21-01-half-the-blood-of-brooklyn-by-charlie-huston",
-        "2019-01-27-01-every-last-drop-by-charlie-huston",
-        "2019-01-30-01-my-dead-body-by-charlie-huston",
-        "2019-06-07-01-the-shotgun-rule-by-charlie-huston"
+      "readWorks": [
+        {
+          "title": "Already Dead",
+          "edition": "Ebook",
+          "readingDate": "2019-01-14",
+          "reviewSlug": null
+        },
+        {
+          "title": "No Dominion",
+          "edition": "Ebook",
+          "readingDate": "2019-01-20",
+          "reviewSlug": null
+        },
+        {
+          "title": "Half the Blood of Brooklyn",
+          "edition": "Ebook",
+          "readingDate": "2019-01-21",
+          "reviewSlug": null
+        },
+        {
+          "title": "Every Last Drop",
+          "edition": "Ebook",
+          "readingDate": "2019-01-27",
+          "reviewSlug": null
+        },
+        {
+          "title": "My Dead Body",
+          "edition": "Ebook",
+          "readingDate": "2019-01-30",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Shotgun Rule",
+          "edition": "Ebook",
+          "readingDate": "2019-06-07",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -87,13 +117,43 @@
       "name": "Stephen King",
       "slug": "stephen-king",
       "reviewed": true,
-      "readings": [
-        "2019-02-03-01-the-eyes-of-the-dragon-by-stephen-king",
-        "2019-03-06-01-the-gunslinger-by-stephen-king",
-        "2019-03-13-01-the-drawing-of-the-three-by-stephen-king",
-        "2019-04-03-01-misery-by-stephen-king",
-        "2019-05-19-01-the-tommyknockers-by-stephen-king",
-        "2019-06-20-01-the-dark-half-by-stephen-king"
+      "readWorks": [
+        {
+          "title": "The Eyes of the Dragon",
+          "edition": "Ebook",
+          "readingDate": "2019-02-03",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Gunslinger",
+          "edition": "Ebook",
+          "readingDate": "2019-03-06",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Drawing of the Three",
+          "edition": "Ebook",
+          "readingDate": "2019-03-13",
+          "reviewSlug": null
+        },
+        {
+          "title": "Misery",
+          "edition": "Ebook",
+          "readingDate": "2019-04-03",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Tommyknockers",
+          "edition": "Ebook",
+          "readingDate": "2019-05-19",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Dark Half",
+          "edition": "Ebook",
+          "readingDate": "2019-06-20",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -101,11 +161,31 @@
       "name": "Raymond Chandler",
       "slug": "raymond-chandler",
       "reviewed": true,
-      "readings": [
-        "2019-02-16-01-farewell-my-lovely-by-raymond-chandler",
-        "2019-03-23-01-the-high-window-by-raymond-chandler",
-        "2019-04-14-01-the-lady-in-the-lake-by-raymond-chandler",
-        "2019-06-01-01-the-little-sister-by-raymond-chandler"
+      "readWorks": [
+        {
+          "title": "Farewell, My Lovely",
+          "edition": "Ebook",
+          "readingDate": "2019-02-16",
+          "reviewSlug": null
+        },
+        {
+          "title": "The High Window",
+          "edition": "Ebook",
+          "readingDate": "2019-03-23",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Lady in the Lake",
+          "edition": "Ebook",
+          "readingDate": "2019-04-14",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Little Sister",
+          "edition": "Ebook",
+          "readingDate": "2019-06-01",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -113,11 +193,31 @@
       "name": "Robert E. Howard",
       "slug": null,
       "reviewed": false,
-      "readings": [
-        "2019-03-02-01-black-canaan-by-robert-e-howard",
-        "2019-03-02-02-the-horror-stories-of-robert-e-howard-by-robert-e-howard",
-        "2019-03-27-01-kull-exile-of-atlantis-by-robert-e-howard",
-        "2019-04-28-01-the-coming-of-conan-the-cimmerian-by-robert-e-howard"
+      "readWorks": [
+        {
+          "title": "Black Canaan",
+          "edition": "Paperback",
+          "readingDate": "2019-03-02",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Horror Stories of Robert E. Howard",
+          "edition": "Ebook",
+          "readingDate": "2019-03-02",
+          "reviewSlug": null
+        },
+        {
+          "title": "Kull: Exile of Atlantis",
+          "edition": "Ebook",
+          "readingDate": "2019-03-27",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Coming of Conan the Cimmerian",
+          "edition": "Ebook",
+          "readingDate": "2019-04-28",
+          "reviewSlug": null
+        }
       ]
     },
     {
@@ -125,11 +225,31 @@
       "name": "Richard Laymon",
       "slug": "richard-laymon",
       "reviewed": true,
-      "readings": [
-        "2019-02-10-01-darkness-tell-us-by-richard-laymon",
-        "2019-03-18-01-alarums-by-richard-laymon",
-        "2019-04-11-01-blood-games-by-richard-laymon",
-        "2019-05-27-01-endless-night-by-richard-laymon"
+      "readWorks": [
+        {
+          "title": "Darkness, Tell Us",
+          "edition": "Ebook",
+          "readingDate": "2019-02-10",
+          "reviewSlug": null
+        },
+        {
+          "title": "Alarums",
+          "edition": "Ebook",
+          "readingDate": "2019-03-18",
+          "reviewSlug": null
+        },
+        {
+          "title": "Blood Games",
+          "edition": "Ebook",
+          "readingDate": "2019-04-11",
+          "reviewSlug": null
+        },
+        {
+          "title": "Endless Night",
+          "edition": "Ebook",
+          "readingDate": "2019-05-27",
+          "reviewSlug": null
+        }
       ]
     }
   ]

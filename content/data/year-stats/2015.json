@@ -61,9 +61,19 @@
       "name": "James Kaplan",
       "slug": null,
       "reviewed": false,
-      "readings": [
-        "2015-01-25-01-frank-by-james-kaplan",
-        "2015-12-30-01-sinatra-by-james-kaplan"
+      "readWorks": [
+        {
+          "title": "Frank",
+          "edition": "Paperback",
+          "readingDate": "2015-01-25",
+          "reviewSlug": null
+        },
+        {
+          "title": "Sinatra",
+          "edition": "Hardcover",
+          "readingDate": "2015-12-30",
+          "reviewSlug": null
+        }
       ]
     }
   ]

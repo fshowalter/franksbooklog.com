@@ -9,20 +9,35 @@ const GradeDistributionSchema = DistributionSchema.extend({
   sortValue: z.number(),
 });
 
+const MostReadAuthorWorkSchema = z
+  .object({
+    edition: z.string(),
+    readingDate: z.coerce.date(),
+    reviewSlug: z
+      .nullable(z.string())
+      .optional()
+      .transform((v) => v ?? undefined),
+    title: z.string(),
+  })
+  .transform(({ edition, readingDate, reviewSlug, title }) => {
+    // fix zod making anything with undefined optional
+    return { edition, readingDate, reviewSlug, title };
+  });
+
 const MostReadAuthorSchema = z
   .object({
     count: z.number(),
     name: z.string(),
-    readings: z.array(reference("readings")),
+    readWorks: z.array(MostReadAuthorWorkSchema),
     reviewed: z.boolean(),
     slug: z
       .nullable(z.string())
       .optional()
       .transform((v) => v ?? undefined),
   })
-  .transform(({ count, name, readings, reviewed, slug }) => {
+  .transform(({ count, name, readWorks, reviewed, slug }) => {
     // fix zod making anything with undefined optional
-    return { count, name, readings, reviewed, slug };
+    return { count, name, readWorks, reviewed, slug };
   });
 
 export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
@@ -58,28 +73,29 @@ const ReviewedWorkAuthorSchema = z
       .optional()
       .transform((v) => v ?? undefined),
     slug: z.string(),
+    sortName: z.string(),
   })
-  .transform(({ name, notes, slug }) => {
+  .transform(({ name, notes, slug, sortName }) => {
     // fix zod making anything with undefined optional
-    return { name, notes, slug };
+    return { name, notes, slug, sortName };
   });
 
-const WorkAuthorSchema = z
-  .object({
-    name: z.string(),
-    notes: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    slug: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-  })
-  .transform(({ name, notes, slug }) => {
-    // fix zod making anything with undefined optional
-    return { name, notes, slug };
-  });
+// const WorkAuthorSchema = z
+//   .object({
+//     name: z.string(),
+//     notes: z
+//       .nullable(z.string())
+//       .optional()
+//       .transform((v) => v ?? undefined),
+//     slug: z
+//       .nullable(z.string())
+//       .optional()
+//       .transform((v) => v ?? undefined),
+//   })
+//   .transform(({ name, notes, slug }) => {
+//     // fix zod making anything with undefined optional
+//     return { name, notes, slug };
+//   });
 
 const MoreByAuthorSchema = z.object({
   author: z.string(),
@@ -146,33 +162,34 @@ export const ReviewedWorkSchema = z
     },
   );
 
-export const WorkSchema = z
-  .object({
-    authors: z.array(WorkAuthorSchema),
-    id: z.string(),
-    kind: z.string(),
-    review: z.nullable(reference("reviews")),
-    sortTitle: z.string(),
-    subtitle: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    title: z.string(),
-    year: z.string(),
-  })
-  .transform(
-    ({ authors, id, kind, review, sortTitle, subtitle, title, year }) => {
-      // fix zod making anything with undefined optional
-      return {
-        authors,
-        id,
-        kind,
-        review,
-        sortTitle,
-        subtitle,
-        title,
-        year,
-      };
-    },
-  );
-export type WorkAuthor = z.infer<typeof WorkAuthorSchema>;
+// export const WorkSchema = z
+//   .object({
+//     authors: z.array(WorkAuthorSchema),
+//     id: z.string(),
+//     kind: z.string(),
+//     review: z.nullable(reference("reviews")),
+//     sortTitle: z.string(),
+//     subtitle: z
+//       .nullable(z.string())
+//       .optional()
+//       .transform((v) => v ?? undefined),
+//     title: z.string(),
+//     year: z.string(),
+//   })
+//   .transform(
+//     ({ authors, id, kind, review, sortTitle, subtitle, title, year }) => {
+//       // fix zod making anything with undefined optional
+//       return {
+//         authors,
+//         id,
+//         kind,
+//         review,
+//         sortTitle,
+//         subtitle,
+//         title,
+//         year,
+//       };
+//     },
+//   );
+
+// export type WorkAuthor = z.infer<typeof WorkAuthorSchema>;

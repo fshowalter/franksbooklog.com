@@ -1,7 +1,4 @@
 ---
-import { getEntry } from "astro:content";
-import { getEntries } from "astro:content";
-
 import type { MostReadAuthor } from "~/content/schemas";
 
 import CoverList from "~/components/cover-list/CoverList.astro";
@@ -36,7 +33,6 @@ const { values } = Astro.props;
   <div class={`w-full`}>
     {
       values.map(async (value) => {
-        const readings = await getEntries(value.readings);
         return (
           <div class="py-3">
             <div
@@ -107,18 +103,17 @@ const { values } = Astro.props;
                   Details
                 </summary>
                 <CoverList class="rounded-md bg-subtle">
-                  {readings.map(async (reading) => {
-                    const work = await getEntry(reading.data.work);
-                    const review = await getEntry(
-                      "reviews",
-                      reading.data.work.id,
-                    );
+                  {value.readWorks.map(async (readWork) => {
                     return (
                       <CoverListItem
                         class={`
-                          ${review ? "bg-default" : "bg-transparent"}
+                          ${
+                            readWork.reviewSlug
+                              ? "bg-default"
+                              : `bg-transparent`
+                          }
                         `}
-                        coverSlug={reading.data.work.id}
+                        coverSlug={readWork.reviewSlug || "default"}
                       >
                         <div
                           class={`
@@ -127,13 +122,13 @@ const { values } = Astro.props;
                           `}
                         >
                           <ListItemTitle
-                            slug={review ? review.data.slug : undefined}
-                            title={work.data.title}
+                            slug={readWork.reviewSlug}
+                            title={readWork.title}
                           />
                           <ListItemReviewDate
-                            displayDate={displayDate(reading.data.date)}
+                            displayDate={displayDate(readWork.readingDate)}
                           />
-                          <ListItemEdition value={reading.data.edition} />
+                          <ListItemEdition value={readWork.edition} />
                         </div>
                       </CoverListItem>
                     );

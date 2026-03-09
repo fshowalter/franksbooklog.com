@@ -67,12 +67,10 @@ export type ReviewsValue = {
   gradeValue: number;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
-  /** Always true — every item in the reviews list has been reviewed */
-  reviewed: boolean;
   /** Sequence string for chronological review ordering */
   reviewSequence: string;
   /** Year the review was written */
-  reviewYear: string;
+  reviewYear: number;
   /** URL slug for the review page */
   slug: string;
   /** Title used for sorting (normalized) */

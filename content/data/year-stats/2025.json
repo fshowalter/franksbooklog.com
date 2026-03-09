@@ -77,10 +77,25 @@
       "name": "Richard Laymon",
       "slug": "richard-laymon",
       "reviewed": true,
-      "readings": [
-        "2025-02-06-01-night-show-by-richard-laymon",
-        "2025-02-09-01-a-writers-tale-by-richard-laymon",
-        "2025-02-15-01-the-lonely-one-by-richard-laymon"
+      "readWorks": [
+        {
+          "title": "Night Show",
+          "edition": "Ebook",
+          "readingDate": "2025-02-06",
+          "reviewSlug": null
+        },
+        {
+          "title": "A Writer's Tale",
+          "edition": "Ebook",
+          "readingDate": "2025-02-09",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Lonely One",
+          "edition": "Paperback",
+          "readingDate": "2025-02-15",
+          "reviewSlug": "the-lonely-one-by-richard-laymon"
+        }
       ]
     },
     {
@@ -88,10 +103,25 @@
       "name": "Philip Fracassi",
       "slug": "philip-fracassi",
       "reviewed": true,
-      "readings": [
-        "2025-07-11-02-commodore-by-philip-fracassi",
-        "2025-07-11-03-shiloh-by-philip-fracassi",
-        "2025-07-12-01-king-mob-by-philip-fracassi"
+      "readWorks": [
+        {
+          "title": "Commodore",
+          "edition": "Ebook",
+          "readingDate": "2025-07-11",
+          "reviewSlug": "commodore-by-philip-fracassi"
+        },
+        {
+          "title": "Shiloh",
+          "edition": "Ebook",
+          "readingDate": "2025-07-11",
+          "reviewSlug": "shiloh-by-philip-fracassi"
+        },
+        {
+          "title": "King Mob",
+          "edition": "Ebook",
+          "readingDate": "2025-07-12",
+          "reviewSlug": "king-mob-by-philip-fracassi"
+        }
       ]
     },
     {
@@ -99,9 +129,19 @@
       "name": "Karl Edward Wagner",
       "slug": "karl-edward-wagner",
       "reviewed": true,
-      "readings": [
-        "2025-10-26-01-in-the-pines-by-karl-edward-wagner",
-        "2025-11-09-01-where-the-summer-ends-by-karl-edward-wagner"
+      "readWorks": [
+        {
+          "title": "In the Pines",
+          "edition": "Ebook",
+          "readingDate": "2025-10-26",
+          "reviewSlug": "in-the-pines-by-karl-edward-wagner"
+        },
+        {
+          "title": "Where the Summer Ends",
+          "edition": "Ebook",
+          "readingDate": "2025-11-09",
+          "reviewSlug": "where-the-summer-ends-by-karl-edward-wagner"
+        }
       ]
     }
   ]
