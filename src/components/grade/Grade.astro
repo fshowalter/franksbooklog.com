@@ -12,7 +12,7 @@ const { classNames, height, value } = Astro.props;
 let src;
 let alt;
 
-if (value) {
+if (value && value !== "Abandoned") {
   [src, alt] = gradeMap[value];
 }
 

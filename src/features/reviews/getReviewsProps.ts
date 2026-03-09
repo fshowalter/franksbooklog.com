@@ -43,7 +43,7 @@ export async function getReviewsProps(
         gradeValue: gradeToValue(reviewedWork.grade),
         kind: reviewedWork.kind,
         reviewSequence: reviewedWork.reviewSequence,
-        reviewYear: reviewedWork.reviewDate.getFullYear(),
+        reviewYear: reviewedWork.reviewDate.getFullYear().toString(),
         slug: reviewedWork.review.id,
         sortTitle: reviewedWork.sortTitle,
         title: reviewedWork.title,

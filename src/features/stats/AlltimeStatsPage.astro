@@ -20,7 +20,7 @@ if (!alltimeStats) {
 const stats = alltimeStats.data;
 
 const title = "All-Time Stats";
-const deck = `${(stats.allStatsYears.length - 1).toString()} Years in Review`;
+const deck = `${(stats.statsYears.length - 1).toString()} Years in Review`;
 const metaDescription =
   "My all-time reading stats. Includes my most-read authors, as well as grade, kind, release year, and edition distributions.";
 ---
@@ -55,7 +55,7 @@ const metaDescription =
       linkFunc={(year: string) => {
         return `/readings/stats/${year}/`;
       }}
-      years={stats.allStatsYears}
+      years={stats.statsYears}
     />
     <Callouts
       stats={[

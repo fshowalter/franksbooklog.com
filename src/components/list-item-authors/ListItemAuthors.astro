@@ -1,10 +1,8 @@
 ---
-import type { WorkAuthor } from "~/content/schemas";
-
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 type Props = {
-  values: WorkAuthor[];
+  values: Parameters<typeof formatWorkAuthors>[0];
 };
 
 const { values } = Astro.props;

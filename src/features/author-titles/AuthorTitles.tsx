@@ -2,12 +2,12 @@ import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
-import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
+import { GroupedCoverList } from "~/components/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
 import { createKindCountMap } from "~/filterers/filterTitles";
-import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
+import { usePaginatedGroupedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorTitlesSort } from "./sortAuthorTitles";

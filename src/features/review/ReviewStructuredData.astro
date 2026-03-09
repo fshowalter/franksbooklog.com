@@ -21,6 +21,7 @@ const { grade, slug, title } = Astro.props;
 {
   grade != "Abandoned" && (
     <script
+      is:inline
       set:html={JSON.stringify({
         "@context": "http://schema.org",
         "@type": "Review",

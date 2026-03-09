@@ -20,8 +20,10 @@ const { reviewedWorkId } = Astro.props;
 
 const readings = await getCollection(
   "readings",
-  (entry) => entry.data.work.id === reviewedWorkId,
+  (entry) => entry.data.workId === reviewedWorkId,
 );
+
+readings.sort((a, b) => b.id.localeCompare(a.id));
 ---
 
 <div class="w-full max-w-popout">

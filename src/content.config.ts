@@ -95,20 +95,24 @@ async function loadJsonArrayFile({
 }
 
 /** Load a directory of JSON files, one entry per file. */
-async function loadJsonDirectory(
-  ctx: LoaderContext,
-  dirPath: string,
-  getId: (raw: Record<string, unknown>) => string,
-): Promise<void> {
+async function loadJsonDirectory({
+  directoryPath,
+  getId = (raw) => raw.id as string,
+  loaderContext,
+}: {
+  directoryPath: string;
+  getId?: (raw: Record<string, unknown>) => string;
+  loaderContext: LoaderContext;
+}): Promise<void> {
   const sync = async () => {
-    const entries = await fs.readdir(dirPath, { withFileTypes: true });
+    const entries = await fs.readdir(directoryPath, { withFileTypes: true });
     const jsonFiles = entries.filter(
       (e) => !e.isDirectory() && e.name.endsWith(".json"),
     );
     const newIds = new Set<string>();
 
     for (const entry of jsonFiles) {
-      const filePath = path.join(dirPath, entry.name);
+      const filePath = path.join(directoryPath, entry.name);
       const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
         string,
         unknown
@@ -116,21 +120,24 @@ async function loadJsonDirectory(
       const id = getId(raw);
       newIds.add(id);
 
-      const digest = ctx.generateDigest(raw);
-      if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
+      const digest = loaderContext.generateDigest(raw);
+      if (
+        loaderContext.store.has(id) &&
+        loaderContext.store.get(id)?.digest === digest
+      ) {
         continue;
       }
 
-      const data = await ctx.parseData({ data: raw, id });
-      ctx.store.set({ data, digest, id });
+      const data = await loaderContext.parseData({ data: raw, id });
+      loaderContext.store.set({ data, digest, id });
     }
 
-    for (const id of ctx.store.keys()) {
-      if (!newIds.has(id)) ctx.store.delete(id);
+    for (const id of loaderContext.store.keys()) {
+      if (!newIds.has(id)) loaderContext.store.delete(id);
     }
   };
 
-  return watchDirectory(ctx, dirPath, sync);
+  return watchDirectory(loaderContext, directoryPath, sync);
 }
 
 /** Load a directory of Markdown files, one entry per file.
@@ -413,7 +420,7 @@ const ReadingSchema = z
     sequence: z.number(),
     slug: z.string(),
     timeline: z.array(TimelineEntrySchema),
-    work: reference("works"),
+    workId: z.string(),
   })
   .transform(
     ({
@@ -428,7 +435,7 @@ const ReadingSchema = z
       sequence,
       slug,
       timeline,
-      work,
+      workId,
     }) => {
       // fix zod making anything with undefined optional
       return {
@@ -443,7 +450,7 @@ const ReadingSchema = z
         sequence,
         slug,
         timeline,
-        work,
+        workId,
       };
     },
   );
@@ -471,11 +478,11 @@ const PageSchema = z.object({
 const authors = defineCollection({
   loader: {
     load: (ctx) =>
-      loadJsonDirectory(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "authors"),
-        (raw) => raw.slug as string,
-      ),
+      loadJsonDirectory({
+        directoryPath: path.join(CONTENT_ROOT, "data", "authors"),
+        getId: (raw) => raw.slug as string,
+        loaderContext: ctx,
+      }),
     name: "authors-loader",
   },
   schema: AuthorSchema,
@@ -497,8 +504,8 @@ const authors = defineCollection({
 const reviewedWorks = defineCollection({
   loader: {
     load: (ctx) =>
-      loadJsonArrayFile({
-        filePath: path.join(CONTENT_ROOT, "data", "reviewed-works.json"),
+      loadJsonDirectory({
+        directoryPath: path.join(CONTENT_ROOT, "data", "reviewed-works"),
         loaderContext: ctx,
       }),
     name: "reviewed-works-loader",
@@ -613,7 +620,7 @@ const readings = defineCollection({
             sequence: parsedFrontmatter.sequence,
             slug: parsedFrontmatter.slug,
             timeline: parsedFrontmatter.timeline,
-            work: parsedFrontmatter.workSlug,
+            workId: parsedFrontmatter.workSlug,
           };
         },
       ),
@@ -676,11 +683,11 @@ const alltimeStats = defineCollection({
 const yearStats = defineCollection({
   loader: {
     load: (ctx) =>
-      loadJsonDirectory(
-        ctx,
-        path.join(CONTENT_ROOT, "data", "year-stats"),
-        (raw) => raw.year as string,
-      ),
+      loadJsonDirectory({
+        directoryPath: path.join(CONTENT_ROOT, "data", "year-stats"),
+        getId: (raw) => raw.year as string,
+        loaderContext: ctx,
+      }),
     name: "year-stats-loader",
   },
   schema: YearStatsSchema,

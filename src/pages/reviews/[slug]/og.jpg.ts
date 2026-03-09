@@ -10,7 +10,6 @@ import {
   getWorkCoverPath,
 } from "~/api/covers";
 import { getCoverWidth } from "~/api/covers";
-import { allReviews } from "~/api/reviews";
 import { fileForGrade } from "~/components/grade/fileForGrade";
 import { ReviewOpenGraphImage } from "~/features/review/ReviewOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
@@ -21,39 +20,16 @@ import { componentToImage } from "~/utils/componentToImage";
  */
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
-/**
- * Astro static path generation function that creates routes for all individual review OG images.
- * Generates a static path for each review in the system, enabling pre-built Open Graph images
- * with book covers, titles, authors, and grade information at build time.
- *
- * @returns Array of path objects with params (slug) and props (work data) for each review
- */
 export async function getStaticPaths() {
-  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
-    await Promise.all([
-      getCollection("works"),
-      getCollection("reviews"),
-      getCollection("authors"),
-      getCollection("readings"),
-    ]);
-  const works = worksEntries.map((e) => e.data);
-  const reviews = reviewsEntries.map((e) => e.data);
-  const authors = authorsEntries.map((e) => e.data);
-  const readings = readingsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(
-    works,
-    reviews,
-    authors,
-    readings,
-  );
+  const reviewedWorks = await getCollection("reviewedWorks");
 
-  return allReviewsList.map((review) => {
+  return reviewedWorks.map(({ data: reviewedWork }) => {
     return {
       params: {
-        slug: review.slug,
+        slug: reviewedWork.review.id,
       },
       props: {
-        work: review,
+        reviewedWork: reviewedWork,
       },
     };
   });
@@ -76,15 +52,15 @@ export async function getStaticPaths() {
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get({ props }) {
-  const { work } = props as Props;
+  const { reviewedWork } = props as Props;
 
   let gradeString;
 
-  const gradeFile = fileForGrade(work.grade);
+  const gradeFile = fileForGrade(reviewedWork.grade);
 
   if (gradeFile) {
     const gradeBuffer = await sharp(
-      path.resolve(`./public${fileForGrade(work.grade)}`),
+      path.resolve(`./public${fileForGrade(reviewedWork.grade)}`),
     )
       .resize(240)
       .toFormat("png")
@@ -94,22 +70,27 @@ export const GET: APIRoute = async function get({ props }) {
   }
 
   let coverHeight = 630;
-  let coverWidth = await getCoverWidth(work, coverHeight);
+  let coverWidth = await getCoverWidth(
+    { slug: reviewedWork.review.id },
+    coverHeight,
+  );
 
   if (coverWidth > 500) {
-    const workCoverPath = getWorkCoverPath(work);
+    const workCoverPath = getWorkCoverPath({ slug: reviewedWork.review.id });
     coverHeight = await getCoverHeight(workCoverPath, 500);
     coverWidth = 500;
   }
 
   const jpeg = await componentToImage(
     ReviewOpenGraphImage({
-      authors: work.authors.map((author) => author.name),
-      coverBase64DataUri: await getOpenGraphCoverAsBase64String(work),
+      authors: reviewedWork.authors,
+      coverBase64DataUri: await getOpenGraphCoverAsBase64String({
+        slug: reviewedWork.review.id,
+      }),
       coverHeight,
       coverWidth,
       grade: gradeString,
-      title: work.title,
+      title: reviewedWork.title,
     }),
   );
 

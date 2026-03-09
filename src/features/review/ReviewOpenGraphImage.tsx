@@ -1,11 +1,14 @@
-import { toSentenceArray } from "~/utils/toSentenceArray";
+import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 export type ReviewOpenGraphImageComponentType = (
   props: ReviewOpenGraphImageProps,
 ) => React.JSX.Element;
 
 type ReviewOpenGraphImageProps = {
-  authors: string[];
+  authors: {
+    name: string;
+    notes: string | undefined;
+  }[];
   coverBase64DataUri: string;
   coverHeight: number;
   coverWidth: number;
@@ -96,7 +99,7 @@ export function ReviewOpenGraphImage({
             textWrap: "balance",
           }}
         >
-          by {toSentenceArray(authors)}
+          by {formatWorkAuthors(authors)}
         </div>
         {grade ? (
           <img

@@ -1,7 +1,7 @@
-import { getCollection } from "astro:content";
+import { getEntry } from "astro:content";
 
 import { getUpdateCoverProps } from "~/api/covers";
-import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { mostRecentReviewedWorks } from "~/content/reviewedWorks";
 
 /**
  * Mapping object that converts letter grades to numeric star ratings.
@@ -34,40 +34,25 @@ const gradeToStars: Record<string, number> = {
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {
-  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
-    await Promise.all([
-      getCollection("works"),
-      getCollection("reviews"),
-      getCollection("authors"),
-      getCollection("readings"),
-    ]);
-  const works = worksEntries.map((e) => e.data);
-  const reviewsData = reviewsEntries.map((e) => e.data);
-  const authors = authorsEntries.map((e) => e.data);
-  const readings = readingsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(
-    works,
-    reviewsData,
-    authors,
-    readings,
-  );
-  const recentReviews = mostRecentReviews(allReviewsList, 5);
+  const recentReviewedWorks = await mostRecentReviewedWorks(5);
 
   const updateItems = await Promise.all(
-    recentReviews.map(async (review) => {
-      const coverProps = await getUpdateCoverProps(review);
-      const excerpt = loadExcerptHtml(review);
+    recentReviewedWorks.map(async ({ data: reviewedWork }) => {
+      const { data: review } = await getEntry(reviewedWork.review);
+      const coverProps = await getUpdateCoverProps({
+        slug: review.slug,
+      });
 
       return {
-        authors: review.authors.map((author) => author.name),
+        authors: reviewedWork.authors.map((author) => author.name),
         date: review.date,
-        excerpt,
+        excerpt: review.excerptHtml,
         image: coverProps.src,
-        kind: review.kind,
+        kind: reviewedWork.kind,
         slug: review.slug,
         stars: gradeToStars[review.grade],
-        title: review.title,
-        workYear: review.workYear,
+        title: reviewedWork.title,
+        workYear: reviewedWork.workYear,
       };
     }),
   );

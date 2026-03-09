@@ -1,6 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
+import { getEntry } from "astro:content";
+
 import HeroLayout from "~/components/layout/HeroLayout.astro";
 
 import Callouts from "./Callouts.astro";
@@ -15,10 +17,17 @@ type Props = {
 };
 
 const { stats } = Astro.props;
+const alltimeStats = await getEntry("alltimeStats", "alltimeStats");
+
+if (!alltimeStats) {
+  throw new Error("Error getting All-time stats.");
+}
+
+const allStatsYears = alltimeStats.data.statsYears.toSorted().reverse();
 
 const title = `${stats.year} Stats`;
 const deck =
-  stats.allStatsYears.toSorted().reverse()[0] === stats.year
+  allStatsYears[0] === stats.year
     ? "A year in progress..."
     : "A Year in Review";
 
@@ -59,7 +68,7 @@ const metaDescription = `My ${stats.year} reading stats. Includes my most-read a
 
         return `/readings/stats/${year}/`;
       }}
-      years={stats.allStatsYears}
+      years={allStatsYears}
     />
     <Callouts
       stats={[

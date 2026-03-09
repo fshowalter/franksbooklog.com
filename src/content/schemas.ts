@@ -43,7 +43,6 @@ const MostReadAuthorSchema = z
 export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
 
 export const YearStatsSchema = z.object({
-  allStatsYears: z.array(z.string()),
   bookCount: z.number(),
   decadeDistribution: z.array(DistributionSchema),
   editionDistribution: z.array(DistributionSchema),
@@ -54,7 +53,6 @@ export const YearStatsSchema = z.object({
 });
 
 export const AlltimeStatsSchema = z.object({
-  allStatsYears: z.array(z.string()),
   bookCount: z.number(),
   decadeDistribution: z.array(DistributionSchema),
   editionDistribution: z.array(DistributionSchema),
@@ -62,6 +60,7 @@ export const AlltimeStatsSchema = z.object({
   kindDistribution: z.array(DistributionSchema),
   mostReadAuthors: z.array(MostReadAuthorSchema),
   reviewCount: z.number(),
+  statsYears: z.array(z.string()),
   workCount: z.number(),
 });
 
