@@ -4,7 +4,6 @@ import type { InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
 
 import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
-import { allStatYears } from "~/api/stats";
 import { OpenGraphImage } from "~/components/open-graph-image/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
@@ -22,17 +21,15 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
  * @returns Array of path objects with params (year) and props (year) for each statistics year
  */
 export async function getStaticPaths() {
-  const yearStatsEntries = await getCollection("yearStats");
-  const yearStats = yearStatsEntries.map((e) => e.data);
-  const statYears = allStatYears(yearStats);
+  const yearStats = await getCollection("yearStats");
 
-  return statYears.map((year) => {
+  return yearStats.map(({ data: stats }) => {
     return {
       params: {
-        year: year,
+        year: stats.year,
       },
       props: {
-        year: year,
+        year: stats.year,
       },
     };
   });

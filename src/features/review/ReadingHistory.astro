@@ -3,13 +3,14 @@ import { getCollection } from "astro:content";
 
 import BarGradient from "~/components/bar-gradient/BarGradient.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
+
 import {
   readingDayFormat,
   readingMonthFormat,
   readingProgressDateFormat,
   readingWeekdayFormat,
   readingYearFormat,
-} from "~/utils/readingHistoryDateFormats";
+} from "./readingHistoryDateFormats";
 
 type Props = {
   reviewedWorkId: string;
