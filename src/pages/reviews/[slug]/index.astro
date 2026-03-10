@@ -12,13 +12,13 @@ type Props = {
 export async function getStaticPaths() {
   const reviewedWorks = await getCollection("reviewedWorks");
 
-  return reviewedWorks.map((reviewedWork) => {
+  return reviewedWorks.map(({ data: reviewedWork }) => {
     return {
       params: {
-        slug: reviewedWork.data.review.id,
+        slug: reviewedWork.review.id,
       },
       props: {
-        reviewedWork: reviewedWork.data,
+        reviewedWork: reviewedWork,
       },
     };
   });
