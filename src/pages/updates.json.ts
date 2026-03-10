@@ -1,7 +1,7 @@
 import { getEntry } from "astro:content";
 
 import { getUpdateCoverProps } from "~/api/covers";
-import { mostRecentReviewedWorks } from "~/content/reviewedWorks";
+import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 
 /**
  * Mapping object that converts letter grades to numeric star ratings.

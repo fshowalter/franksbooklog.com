@@ -3,7 +3,7 @@ import remarkGfm from "remark-gfm";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
-import { removeFootnotes } from "./utils/markdown/removeFootnotes";
+import { removeFootnotes } from "../utils/markdown/removeFootnotes";
 
 /**
  * Converts raw markdown content to plain text by removing footnotes and markdown formatting.

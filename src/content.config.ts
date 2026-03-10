@@ -1,6 +1,3 @@
-// AIDEV-NOTE: All eight content collections are defined here using custom inline loaders.
-// These replace /src/api/data/*.ts file readers. Collection schemas are the single source
-// of truth for typed data throughout the app.
 //
 // Key gotchas:
 // - Always call ctx.parseData() before store.set() — Zod transforms (z.coerce.date())
@@ -29,9 +26,9 @@ import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
 
-import { removeFootnotes } from "~/api/utils/markdown/removeFootnotes";
-import { rootAsSpan } from "~/api/utils/markdown/rootAsSpan";
-import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
+import { removeFootnotes } from "~/utils/markdown/removeFootnotes";
+import { rootAsSpan } from "~/utils/markdown/rootAsSpan";
+import { trimToExcerpt } from "~/utils/markdown/trimToExcerpt";
 
 import { getContentPlainText } from "./api/reviews";
 import {
@@ -39,62 +36,16 @@ import {
   ReadingLogSchema,
   ReviewedAuthorSchema,
   ReviewedWorkSchema,
-  // WorkSchema,
   YearStatsSchema,
-} from "./content/schemas";
+} from "./schemas";
 
 // --- Path helper ---
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
 
-// --- Processing and loader helpers ---
-// AIDEV-NOTE: The four load* helpers encapsulate the repeated sync/digest/watch
-// boilerplate. Each accepts a LoaderContext (whole, not destructured — destructuring
-// triggers @typescript-eslint/unbound-method) plus collection-specific callbacks.
-
 function getBaseProcessor() {
   return remark().use(remarkGfm).use(smartypants);
 }
-
-/** Load a single JSON file that contains an array of items, one entry per item. */
-// async function loadJsonArrayFile({
-//   filePath,
-//   loaderContext,
-// }: {
-//   filePath: string;
-//   loaderContext: LoaderContext;
-// }): Promise<void> {
-//   const sync = async () => {
-//     const rawItems = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
-//       string,
-//       unknown
-//     >[];
-
-//     const newIds = new Set<string>();
-
-//     for (const raw of rawItems) {
-//       const id = raw.id as string;
-//       newIds.add(id);
-
-//       const digest = loaderContext.generateDigest(raw);
-//       if (
-//         loaderContext.store.has(id) &&
-//         loaderContext.store.get(id)?.digest === digest
-//       ) {
-//         continue;
-//       }
-
-//       const data = await loaderContext.parseData({ data: raw, id });
-//       loaderContext.store.set({ data, digest, id });
-//     }
-
-//     for (const id of loaderContext.store.keys()) {
-//       if (!newIds.has(id)) loaderContext.store.delete(id);
-//     }
-//   };
-
-//   return watchFile(loaderContext, filePath, sync);
-// }
 
 /** Load a directory of JSON files, one entry per file. */
 async function loadJsonDirectory({
@@ -333,103 +284,6 @@ async function watchFile(
   });
 }
 
-// --- Shared Zod sub-schemas ---
-
-// const DistributionSchema = z.object({
-//   count: z.number(),
-//   name: z.string(),
-// });
-
-// AIDEV-NOTE: readings is z.array(reference("readings")) — source JSON contains plain
-// reading slug strings; parseData() coerces them to { collection, id } objects.
-// const MostReadAuthorSchema = z
-//   .object({
-//     author: reference("authors"),
-//     count: z.number(),
-//     readings: z.array(reference("readings")),
-//     reviewed: z.boolean(),
-//   })
-//   .transform(({ author, count, readings, reviewed }) => {
-//     // fix zod making anything with undefined optional
-//     return { author, count, readings, reviewed };
-//   });
-
-// export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
-
-// const WorkKindSchema = z.enum([
-//   "Anthology",
-//   "Collection",
-//   "Nonfiction",
-//   "Novel",
-//   "Novella",
-//   "Short Story",
-// ]);
-
-// --- Collection schemas ---
-
-// const AuthorSchema = z.object({
-//   name: z.string(),
-//   slug: z.string(),
-//   sortName: z.string(),
-// });
-
-// AIDEV-NOTE: WorkRawAuthorSchema is the shape of authors inside works/*.json — just slug
-// and optional notes. Names are looked up from the authors collection at getProps time.
-// const WorkRawAuthorSchema = z
-//   .object({
-//     author: reference("authors"),
-//     notes: z
-//       .nullable(z.string())
-//       .optional()
-//       .transform((v) => v ?? undefined),
-//   })
-//   .transform(({ author, notes }) => {
-//     // fix zod making anything with undefined optional
-//     return { author, notes };
-//   });
-
-// AIDEV-NOTE: WorkSchema transforms `year` → `workYear` to match the field name used
-// throughout the app. `includedWorks` is plain slug strings (not references) because
-// some included works are unreviewed and would fail reference validation.
-// const WorkSchema = z
-//   .object({
-//     authors: z.array(WorkRawAuthorSchema),
-//     includedWorks: z.array(reference("works")),
-//     kind: WorkKindSchema,
-//     slug: z.string(),
-//     sortTitle: z.string(),
-//     subtitle: z
-//       .nullable(z.string())
-//       .optional()
-//       .transform((v) => v ?? undefined),
-//     title: z.string(),
-//     year: z.string(),
-//   })
-//   .transform(
-//     ({
-//       authors,
-//       includedWorks,
-//       kind,
-//       slug,
-//       sortTitle,
-//       subtitle,
-//       title,
-//       year,
-//     }) => {
-//       // fix zod making anything with undefined optional; rename year → workYear
-//       return {
-//         authors,
-//         includedWorks,
-//         kind,
-//         slug,
-//         sortTitle,
-//         subtitle,
-//         title,
-//         workYear: year,
-//       };
-//     },
-//   );
-
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
   progress: z.string(),
@@ -510,18 +364,6 @@ const PageSchema = z.object({
   title: z.string(),
 });
 
-// const YearStatSchema = z.object({
-//   bookCount: z.number(),
-//   decadeDistribution: z.array(DistributionSchema),
-//   editionDistribution: z.array(DistributionSchema),
-//   kindDistribution: z.array(DistributionSchema),
-//   mostReadAuthors: z.array(MostReadAuthorSchema),
-//   workCount: z.number(),
-//   year: z.string(),
-// });
-
-// --- Collection definitions ---
-
 const reviewedAuthors = defineCollection({
   loader: {
     load: (ctx) =>
@@ -534,19 +376,6 @@ const reviewedAuthors = defineCollection({
   },
   schema: ReviewedAuthorSchema,
 });
-
-// const works = defineCollection({
-//   loader: {
-//     load: (ctx) =>
-//       loadJsonDirectory(
-//         ctx,
-//         path.join(CONTENT_ROOT, "data", "works"),
-//         (raw) => raw.id as string,
-//       ),
-//     name: "works-loader",
-//   },
-//   schema: WorkSchema,
-// });
 
 const reviewedWorks = defineCollection({
   loader: {

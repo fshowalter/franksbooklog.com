@@ -3,7 +3,7 @@ import { getEntry } from "astro:content";
 
 import { getFeedCoverProps } from "~/api/covers";
 import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
-import { mostRecentReviewedWorks } from "~/content/reviewedWorks";
+import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 /**
