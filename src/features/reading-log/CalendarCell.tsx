@@ -84,10 +84,7 @@ export function CalendarCell({
                     tablet:mt-2 tablet:w-full tablet:gap-y-1 tablet:px-1
                   `}
                 >
-                  <ListItemTitle
-                    slug={reading.reviewed ? reading.slug : undefined}
-                    title={reading.title}
-                  />
+                  <ListItemTitle slug={reading.slug} title={reading.title} />
                   <ListItemAuthors values={reading.authors} />
                   <div
                     className={`

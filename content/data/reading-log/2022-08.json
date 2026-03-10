@@ -1,58 +1,7 @@
 [
   {
-    "id": "2022-09-04-01-hawk-mountain-by-conner-habib-10",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-10",
-    "reviewSlug": "hawk-mountain-by-conner-habib",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-08-23",
-    "progress": "52%",
-    "workYear": "2022",
-    "title": "Hawk Mountain",
-    "authors": [
-      {
-        "name": "Conner Habib",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-09-04-01-hawk-mountain-by-conner-habib-11",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-11",
-    "reviewSlug": "hawk-mountain-by-conner-habib",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-08-27",
-    "progress": "63%",
-    "workYear": "2022",
-    "title": "Hawk Mountain",
-    "authors": [
-      {
-        "name": "Conner Habib",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-09-04-01-hawk-mountain-by-conner-habib-12",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-12",
-    "reviewSlug": "hawk-mountain-by-conner-habib",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-08-28",
-    "progress": "65%",
-    "workYear": "2022",
-    "title": "Hawk Mountain",
-    "authors": [
-      {
-        "name": "Conner Habib",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-3",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-3",
+    "sequence": "2022-08-06-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -69,7 +18,7 @@
   },
   {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-4",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-4",
+    "sequence": "2022-08-07-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -86,7 +35,7 @@
   },
   {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-5",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-5",
+    "sequence": "2022-08-08-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -103,7 +52,7 @@
   },
   {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-6",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-6",
+    "sequence": "2022-08-09-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -120,7 +69,7 @@
   },
   {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-7",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-7",
+    "sequence": "2022-08-15-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -137,7 +86,7 @@
   },
   {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-8",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-8",
+    "sequence": "2022-08-16-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -154,7 +103,7 @@
   },
   {
     "id": "2022-09-04-01-hawk-mountain-by-conner-habib-9",
-    "sequence": "2022-09-04-01-hawk-mountain-by-conner-habib-9",
+    "sequence": "2022-08-22-2022-09-04-01-hawk-mountain-by-conner-habib",
     "reviewSlug": "hawk-mountain-by-conner-habib",
     "edition": "Ebook",
     "kind": "Novel",
@@ -170,8 +119,59 @@
     ]
   },
   {
+    "id": "2022-09-04-01-hawk-mountain-by-conner-habib-10",
+    "sequence": "2022-08-23-2022-09-04-01-hawk-mountain-by-conner-habib",
+    "reviewSlug": "hawk-mountain-by-conner-habib",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-08-23",
+    "progress": "52%",
+    "workYear": "2022",
+    "title": "Hawk Mountain",
+    "authors": [
+      {
+        "name": "Conner Habib",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-09-04-01-hawk-mountain-by-conner-habib-11",
+    "sequence": "2022-08-27-2022-09-04-01-hawk-mountain-by-conner-habib",
+    "reviewSlug": "hawk-mountain-by-conner-habib",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-08-27",
+    "progress": "63%",
+    "workYear": "2022",
+    "title": "Hawk Mountain",
+    "authors": [
+      {
+        "name": "Conner Habib",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-09-04-01-hawk-mountain-by-conner-habib-12",
+    "sequence": "2022-08-28-2022-09-04-01-hawk-mountain-by-conner-habib",
+    "reviewSlug": "hawk-mountain-by-conner-habib",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-08-28",
+    "progress": "65%",
+    "workYear": "2022",
+    "title": "Hawk Mountain",
+    "authors": [
+      {
+        "name": "Conner Habib",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-09-05-01-about-face-by-david-h-hackworth-julie-sherman-0",
-    "sequence": "2022-09-05-01-about-face-by-david-h-hackworth-julie-sherman-0",
+    "sequence": "2022-08-29-2022-09-05-01-about-face-by-david-h-hackworth-julie-sherman",
     "reviewSlug": "about-face-by-david-h-hackworth-julie-sherman",
     "edition": "Audiobook",
     "kind": "Nonfiction",

@@ -6,7 +6,7 @@
  * @param date - Date object, date string, or undefined
  * @returns Formatted date string or empty string if no date provided
  */
-export function displayDate(date: Date | string | undefined) {
+export function toDisplayDate(date: Date | string | undefined) {
   if (!date) {
     return "";
   }

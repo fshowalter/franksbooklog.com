@@ -1,41 +1,7 @@
 [
   {
-    "id": "2022-10-04-01-what-doesnt-kill-us-by-scott-carney-1",
-    "sequence": "2022-10-04-01-what-doesnt-kill-us-by-scott-carney-1",
-    "reviewSlug": "what-doesnt-kill-us-by-scott-carney",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-02",
-    "progress": "87%",
-    "workYear": "2017",
-    "title": "What Doesn't Kill Us",
-    "authors": [
-      {
-        "name": "Scott Carney",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-04-01-what-doesnt-kill-us-by-scott-carney-2",
-    "sequence": "2022-10-04-01-what-doesnt-kill-us-by-scott-carney-2",
-    "reviewSlug": "what-doesnt-kill-us-by-scott-carney",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-04",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "What Doesn't Kill Us",
-    "authors": [
-      {
-        "name": "Scott Carney",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-2",
-    "sequence": "2022-10-11-01-out-are-the-lights-by-richard-laymon-2",
+    "sequence": "2022-10-01-2022-10-11-01-out-are-the-lights-by-richard-laymon",
     "reviewSlug": "out-are-the-lights-by-richard-laymon",
     "edition": "Ebook",
     "kind": "Novel",
@@ -51,8 +17,25 @@
     ]
   },
   {
+    "id": "2022-10-04-01-what-doesnt-kill-us-by-scott-carney-1",
+    "sequence": "2022-10-02-2022-10-04-01-what-doesnt-kill-us-by-scott-carney",
+    "reviewSlug": "what-doesnt-kill-us-by-scott-carney",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-02",
+    "progress": "87%",
+    "workYear": "2017",
+    "title": "What Doesn't Kill Us",
+    "authors": [
+      {
+        "name": "Scott Carney",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-3",
-    "sequence": "2022-10-11-01-out-are-the-lights-by-richard-laymon-3",
+    "sequence": "2022-10-02-2022-10-11-01-out-are-the-lights-by-richard-laymon",
     "reviewSlug": "out-are-the-lights-by-richard-laymon",
     "edition": "Ebook",
     "kind": "Novel",
@@ -68,76 +51,25 @@
     ]
   },
   {
-    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-4",
-    "sequence": "2022-10-11-01-out-are-the-lights-by-richard-laymon-4",
-    "reviewSlug": "out-are-the-lights-by-richard-laymon",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-10-07",
-    "progress": "43%",
-    "workYear": "1982",
-    "title": "Out Are the Lights",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-5",
-    "sequence": "2022-10-11-01-out-are-the-lights-by-richard-laymon-5",
-    "reviewSlug": "out-are-the-lights-by-richard-laymon",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-10-08",
-    "progress": "72%",
-    "workYear": "1982",
-    "title": "Out Are the Lights",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-6",
-    "sequence": "2022-10-11-01-out-are-the-lights-by-richard-laymon-6",
-    "reviewSlug": "out-are-the-lights-by-richard-laymon",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-10-09",
-    "progress": "87%",
-    "workYear": "1982",
-    "title": "Out Are the Lights",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-7",
-    "sequence": "2022-10-11-01-out-are-the-lights-by-richard-laymon-7",
-    "reviewSlug": "out-are-the-lights-by-richard-laymon",
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2022-10-11",
+    "id": "2022-10-04-01-what-doesnt-kill-us-by-scott-carney-2",
+    "sequence": "2022-10-04-2022-10-04-01-what-doesnt-kill-us-by-scott-carney",
+    "reviewSlug": "what-doesnt-kill-us-by-scott-carney",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-04",
     "progress": "Finished",
-    "workYear": "1982",
-    "title": "Out Are the Lights",
+    "workYear": "2017",
+    "title": "What Doesn't Kill Us",
     "authors": [
       {
-        "name": "Richard Laymon",
+        "name": "Scott Carney",
         "notes": null
       }
     ]
   },
   {
     "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-0",
-    "sequence": "2022-10-13-01-cant-hurt-me-by-david-goggins-0",
+    "sequence": "2022-10-04-2022-10-13-01-cant-hurt-me-by-david-goggins",
     "reviewSlug": "cant-hurt-me-by-david-goggins",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -153,76 +85,25 @@
     ]
   },
   {
-    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-1",
-    "sequence": "2022-10-13-01-cant-hurt-me-by-david-goggins-1",
-    "reviewSlug": "cant-hurt-me-by-david-goggins",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-08",
-    "progress": "24%",
-    "workYear": "2018",
-    "title": "Can't Hurt Me",
+    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-4",
+    "sequence": "2022-10-07-2022-10-11-01-out-are-the-lights-by-richard-laymon",
+    "reviewSlug": "out-are-the-lights-by-richard-laymon",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-10-07",
+    "progress": "43%",
+    "workYear": "1982",
+    "title": "Out Are the Lights",
     "authors": [
       {
-        "name": "David Goggins",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-2",
-    "sequence": "2022-10-13-01-cant-hurt-me-by-david-goggins-2",
-    "reviewSlug": "cant-hurt-me-by-david-goggins",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-09",
-    "progress": "39%",
-    "workYear": "2018",
-    "title": "Can't Hurt Me",
-    "authors": [
-      {
-        "name": "David Goggins",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-3",
-    "sequence": "2022-10-13-01-cant-hurt-me-by-david-goggins-3",
-    "reviewSlug": "cant-hurt-me-by-david-goggins",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-10",
-    "progress": "90%",
-    "workYear": "2018",
-    "title": "Can't Hurt Me",
-    "authors": [
-      {
-        "name": "David Goggins",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-4",
-    "sequence": "2022-10-13-01-cant-hurt-me-by-david-goggins-4",
-    "reviewSlug": "cant-hurt-me-by-david-goggins",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-13",
-    "progress": "Finished",
-    "workYear": "2018",
-    "title": "Can't Hurt Me",
-    "authors": [
-      {
-        "name": "David Goggins",
+        "name": "Richard Laymon",
         "notes": null
       }
     ]
   },
   {
     "id": "2022-10-14-01-salems-lot-by-stephen-king-0",
-    "sequence": "2022-10-14-01-salems-lot-by-stephen-king-0",
+    "sequence": "2022-10-07-2022-10-14-01-salems-lot-by-stephen-king",
     "reviewSlug": "salems-lot-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -238,8 +119,42 @@
     ]
   },
   {
+    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-5",
+    "sequence": "2022-10-08-2022-10-11-01-out-are-the-lights-by-richard-laymon",
+    "reviewSlug": "out-are-the-lights-by-richard-laymon",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-10-08",
+    "progress": "72%",
+    "workYear": "1982",
+    "title": "Out Are the Lights",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-1",
+    "sequence": "2022-10-08-2022-10-13-01-cant-hurt-me-by-david-goggins",
+    "reviewSlug": "cant-hurt-me-by-david-goggins",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-08",
+    "progress": "24%",
+    "workYear": "2018",
+    "title": "Can't Hurt Me",
+    "authors": [
+      {
+        "name": "David Goggins",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-14-01-salems-lot-by-stephen-king-1",
-    "sequence": "2022-10-14-01-salems-lot-by-stephen-king-1",
+    "sequence": "2022-10-08-2022-10-14-01-salems-lot-by-stephen-king",
     "reviewSlug": "salems-lot-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -255,8 +170,42 @@
     ]
   },
   {
+    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-6",
+    "sequence": "2022-10-09-2022-10-11-01-out-are-the-lights-by-richard-laymon",
+    "reviewSlug": "out-are-the-lights-by-richard-laymon",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-10-09",
+    "progress": "87%",
+    "workYear": "1982",
+    "title": "Out Are the Lights",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-2",
+    "sequence": "2022-10-09-2022-10-13-01-cant-hurt-me-by-david-goggins",
+    "reviewSlug": "cant-hurt-me-by-david-goggins",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-09",
+    "progress": "39%",
+    "workYear": "2018",
+    "title": "Can't Hurt Me",
+    "authors": [
+      {
+        "name": "David Goggins",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-14-01-salems-lot-by-stephen-king-2",
-    "sequence": "2022-10-14-01-salems-lot-by-stephen-king-2",
+    "sequence": "2022-10-09-2022-10-14-01-salems-lot-by-stephen-king",
     "reviewSlug": "salems-lot-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -272,8 +221,25 @@
     ]
   },
   {
+    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-3",
+    "sequence": "2022-10-10-2022-10-13-01-cant-hurt-me-by-david-goggins",
+    "reviewSlug": "cant-hurt-me-by-david-goggins",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-10",
+    "progress": "90%",
+    "workYear": "2018",
+    "title": "Can't Hurt Me",
+    "authors": [
+      {
+        "name": "David Goggins",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-14-01-salems-lot-by-stephen-king-3",
-    "sequence": "2022-10-14-01-salems-lot-by-stephen-king-3",
+    "sequence": "2022-10-10-2022-10-14-01-salems-lot-by-stephen-king",
     "reviewSlug": "salems-lot-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -289,8 +255,42 @@
     ]
   },
   {
+    "id": "2022-10-11-01-out-are-the-lights-by-richard-laymon-7",
+    "sequence": "2022-10-11-2022-10-11-01-out-are-the-lights-by-richard-laymon",
+    "reviewSlug": "out-are-the-lights-by-richard-laymon",
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2022-10-11",
+    "progress": "Finished",
+    "workYear": "1982",
+    "title": "Out Are the Lights",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-10-13-01-cant-hurt-me-by-david-goggins-4",
+    "sequence": "2022-10-13-2022-10-13-01-cant-hurt-me-by-david-goggins",
+    "reviewSlug": "cant-hurt-me-by-david-goggins",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-13",
+    "progress": "Finished",
+    "workYear": "2018",
+    "title": "Can't Hurt Me",
+    "authors": [
+      {
+        "name": "David Goggins",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-14-01-salems-lot-by-stephen-king-4",
-    "sequence": "2022-10-14-01-salems-lot-by-stephen-king-4",
+    "sequence": "2022-10-13-2022-10-14-01-salems-lot-by-stephen-king",
     "reviewSlug": "salems-lot-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -307,7 +307,7 @@
   },
   {
     "id": "2022-10-14-01-salems-lot-by-stephen-king-5",
-    "sequence": "2022-10-14-01-salems-lot-by-stephen-king-5",
+    "sequence": "2022-10-14-2022-10-14-01-salems-lot-by-stephen-king",
     "reviewSlug": "salems-lot-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -324,7 +324,7 @@
   },
   {
     "id": "2022-10-16-01-moonraker-by-ian-fleming-0",
-    "sequence": "2022-10-16-01-moonraker-by-ian-fleming-0",
+    "sequence": "2022-10-15-2022-10-16-01-moonraker-by-ian-fleming",
     "reviewSlug": "moonraker-by-ian-fleming",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -341,7 +341,7 @@
   },
   {
     "id": "2022-10-16-01-moonraker-by-ian-fleming-1",
-    "sequence": "2022-10-16-01-moonraker-by-ian-fleming-1",
+    "sequence": "2022-10-16-2022-10-16-01-moonraker-by-ian-fleming",
     "reviewSlug": "moonraker-by-ian-fleming",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -357,76 +357,8 @@
     ]
   },
   {
-    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-0",
-    "sequence": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-0",
-    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-22",
-    "progress": "38%",
-    "workYear": "2018",
-    "title": "The Skeptics' Guide to the Universe",
-    "authors": [
-      {
-        "name": "Steven Novella",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-1",
-    "sequence": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-1",
-    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-23",
-    "progress": "64%",
-    "workYear": "2018",
-    "title": "The Skeptics' Guide to the Universe",
-    "authors": [
-      {
-        "name": "Steven Novella",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-2",
-    "sequence": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-2",
-    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-28",
-    "progress": "77%",
-    "workYear": "2018",
-    "title": "The Skeptics' Guide to the Universe",
-    "authors": [
-      {
-        "name": "Steven Novella",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-3",
-    "sequence": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-3",
-    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-10-29",
-    "progress": "Finished",
-    "workYear": "2018",
-    "title": "The Skeptics' Guide to the Universe",
-    "authors": [
-      {
-        "name": "Steven Novella",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-10-29-02-the-shining-by-stephen-king-0",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-0",
+    "sequence": "2022-10-16-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -443,7 +375,7 @@
   },
   {
     "id": "2022-10-29-02-the-shining-by-stephen-king-1",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-1",
+    "sequence": "2022-10-17-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -460,7 +392,7 @@
   },
   {
     "id": "2022-10-29-02-the-shining-by-stephen-king-2",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-2",
+    "sequence": "2022-10-18-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -477,7 +409,7 @@
   },
   {
     "id": "2022-10-29-02-the-shining-by-stephen-king-3",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-3",
+    "sequence": "2022-10-19-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -494,7 +426,7 @@
   },
   {
     "id": "2022-10-29-02-the-shining-by-stephen-king-4",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-4",
+    "sequence": "2022-10-20-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -511,7 +443,7 @@
   },
   {
     "id": "2022-10-29-02-the-shining-by-stephen-king-5",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-5",
+    "sequence": "2022-10-21-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -527,8 +459,25 @@
     ]
   },
   {
+    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-0",
+    "sequence": "2022-10-22-2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella",
+    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-22",
+    "progress": "38%",
+    "workYear": "2018",
+    "title": "The Skeptics' Guide to the Universe",
+    "authors": [
+      {
+        "name": "Steven Novella",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-29-02-the-shining-by-stephen-king-6",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-6",
+    "sequence": "2022-10-22-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -544,8 +493,42 @@
     ]
   },
   {
+    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-1",
+    "sequence": "2022-10-23-2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella",
+    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-23",
+    "progress": "64%",
+    "workYear": "2018",
+    "title": "The Skeptics' Guide to the Universe",
+    "authors": [
+      {
+        "name": "Steven Novella",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-2",
+    "sequence": "2022-10-28-2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella",
+    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-28",
+    "progress": "77%",
+    "workYear": "2018",
+    "title": "The Skeptics' Guide to the Universe",
+    "authors": [
+      {
+        "name": "Steven Novella",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-29-02-the-shining-by-stephen-king-7",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-7",
+    "sequence": "2022-10-28-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -561,8 +544,25 @@
     ]
   },
   {
+    "id": "2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella-3",
+    "sequence": "2022-10-29-2022-10-29-01-the-skeptics-guide-to-the-universe-by-steven-novella",
+    "reviewSlug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-10-29",
+    "progress": "Finished",
+    "workYear": "2018",
+    "title": "The Skeptics' Guide to the Universe",
+    "authors": [
+      {
+        "name": "Steven Novella",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-10-29-02-the-shining-by-stephen-king-8",
-    "sequence": "2022-10-29-02-the-shining-by-stephen-king-8",
+    "sequence": "2022-10-29-2022-10-29-02-the-shining-by-stephen-king",
     "reviewSlug": "the-shining-by-stephen-king",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -579,7 +579,7 @@
   },
   {
     "id": "2023-01-14-01-doctor-sleep-by-stephen-king-0",
-    "sequence": "2023-01-14-01-doctor-sleep-by-stephen-king-0",
+    "sequence": "2022-10-30-2023-01-14-01-doctor-sleep-by-stephen-king",
     "reviewSlug": "doctor-sleep-by-stephen-king",
     "edition": "Ebook",
     "kind": "Novel",

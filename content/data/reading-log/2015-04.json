@@ -1,143 +1,7 @@
 [
   {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-0",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-0",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-14",
-    "progress": "13%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-1",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-1",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-15",
-    "progress": "24%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-2",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-2",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-16",
-    "progress": "31%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-3",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-3",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-17",
-    "progress": "37%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-4",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-4",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-20",
-    "progress": "44%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-5",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-5",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-26",
-    "progress": "60%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-6",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-6",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-27",
-    "progress": "74%",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-7",
-    "sequence": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-7",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2015-04-28",
-    "progress": "Finished",
-    "workYear": "2006",
-    "title": "Arnold and Me",
-    "authors": [
-      {
-        "name": "Barbara Outland Baker",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2016-01-14-01-christine-by-stephen-king-12",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-12",
+    "sequence": "2015-04-01-2016-01-14-01-christine-by-stephen-king",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -154,7 +18,7 @@
   },
   {
     "id": "2016-01-14-01-christine-by-stephen-king-13",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-13",
+    "sequence": "2015-04-02-2016-01-14-01-christine-by-stephen-king",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -170,8 +34,144 @@
     ]
   },
   {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-0",
+    "sequence": "2015-04-14-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-14",
+    "progress": "13%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-1",
+    "sequence": "2015-04-15-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-15",
+    "progress": "24%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-2",
+    "sequence": "2015-04-16-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-16",
+    "progress": "31%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-3",
+    "sequence": "2015-04-17-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-17",
+    "progress": "37%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-4",
+    "sequence": "2015-04-20-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-20",
+    "progress": "44%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-5",
+    "sequence": "2015-04-26-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-26",
+    "progress": "60%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-6",
+    "sequence": "2015-04-27-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-27",
+    "progress": "74%",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2015-04-28-01-arnold-and-me-by-barbara-outland-baker-7",
+    "sequence": "2015-04-28-2015-04-28-01-arnold-and-me-by-barbara-outland-baker",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2015-04-28",
+    "progress": "Finished",
+    "workYear": "2006",
+    "title": "Arnold and Me",
+    "authors": [
+      {
+        "name": "Barbara Outland Baker",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2016-01-14-01-christine-by-stephen-king-14",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-14",
+    "sequence": "2015-04-29-2016-01-14-01-christine-by-stephen-king",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",

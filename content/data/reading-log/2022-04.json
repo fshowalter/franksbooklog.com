@@ -1,7 +1,7 @@
 [
   {
     "id": "2022-04-02-01-less-than-zero-by-bret-easton-ellis-4",
-    "sequence": "2022-04-02-01-less-than-zero-by-bret-easton-ellis-4",
+    "sequence": "2022-04-02-2022-04-02-01-less-than-zero-by-bret-easton-ellis",
     "reviewSlug": "less-than-zero-by-bret-easton-ellis",
     "edition": "Ebook",
     "kind": "Novel",
@@ -18,7 +18,7 @@
   },
   {
     "id": "2022-04-03-01-desert-pickup-by-richard-laymon-0",
-    "sequence": "2022-04-03-01-desert-pickup-by-richard-laymon-0",
+    "sequence": "2022-04-03-2022-04-03-01-desert-pickup-by-richard-laymon",
     "reviewSlug": "desert-pickup-by-richard-laymon",
     "edition": "Ebook",
     "kind": "Short Story",
@@ -34,25 +34,8 @@
     ]
   },
   {
-    "id": "2022-04-17-01-soft-construction-of-a-sunset-by-philip-fracassi-0",
-    "sequence": "2022-04-17-01-soft-construction-of-a-sunset-by-philip-fracassi-0",
-    "reviewSlug": "soft-construction-of-a-sunset-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-17",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "Soft Construction of a Sunset",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-0",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-0",
+    "sequence": "2022-04-03-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -68,8 +51,25 @@
     ]
   },
   {
+    "id": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-5",
+    "sequence": "2022-04-03-2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris",
+    "reviewSlug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2022-04-03",
+    "progress": "33%",
+    "workYear": "1979",
+    "title": "The Rise of Theodore Roosevelt",
+    "authors": [
+      {
+        "name": "Edmund Morris",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-1",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-1",
+    "sequence": "2022-04-07-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -86,7 +86,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-2",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-2",
+    "sequence": "2022-04-09-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -103,7 +103,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-3",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-3",
+    "sequence": "2022-04-11-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -120,7 +120,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-4",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-4",
+    "sequence": "2022-04-12-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -137,7 +137,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-5",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-5",
+    "sequence": "2022-04-13-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -154,7 +154,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-6",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-6",
+    "sequence": "2022-04-14-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -171,7 +171,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-7",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-7",
+    "sequence": "2022-04-15-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -188,7 +188,7 @@
   },
   {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-8",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-8",
+    "sequence": "2022-04-16-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -204,8 +204,25 @@
     ]
   },
   {
+    "id": "2022-04-17-01-soft-construction-of-a-sunset-by-philip-fracassi-0",
+    "sequence": "2022-04-17-2022-04-17-01-soft-construction-of-a-sunset-by-philip-fracassi",
+    "reviewSlug": "soft-construction-of-a-sunset-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-17",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "Soft Construction of a Sunset",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-9",
-    "sequence": "2022-04-17-02-the-dark-tunnel-by-ross-macdonald-9",
+    "sequence": "2022-04-17-2022-04-17-02-the-dark-tunnel-by-ross-macdonald",
     "reviewSlug": "the-dark-tunnel-by-ross-macdonald",
     "edition": "Ebook",
     "kind": "Novel",
@@ -221,127 +238,8 @@
     ]
   },
   {
-    "id": "2022-04-18-01-altar-by-philip-fracassi-0",
-    "sequence": "2022-04-18-01-altar-by-philip-fracassi-0",
-    "reviewSlug": "altar-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-18",
-    "progress": "Finished",
-    "workYear": "2016",
-    "title": "Altar",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-04-19-01-the-horse-thief-by-philip-fracassi-0",
-    "sequence": "2022-04-19-01-the-horse-thief-by-philip-fracassi-0",
-    "reviewSlug": "the-horse-thief-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-19",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "The Horse Thief",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-04-20-01-coffin-by-philip-fracassi-0",
-    "sequence": "2022-04-20-01-coffin-by-philip-fracassi-0",
-    "reviewSlug": "coffin-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-20",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "Coffin",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-04-21-01-the-baby-farmer-by-philip-fracassi-0",
-    "sequence": "2022-04-21-01-the-baby-farmer-by-philip-fracassi-0",
-    "reviewSlug": "the-baby-farmer-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-21",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "The Baby Farmer",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-04-22-01-surfer-girl-by-philip-fracassi-0",
-    "sequence": "2022-04-22-01-surfer-girl-by-philip-fracassi-0",
-    "reviewSlug": "surfer-girl-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-22",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "Surfer Girl",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-04-23-01-mother-by-philip-fracassi-0",
-    "sequence": "2022-04-23-01-mother-by-philip-fracassi-0",
-    "reviewSlug": "mother-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-23",
-    "progress": "Finished",
-    "workYear": "2015",
-    "title": "Mother",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-04-30-01-fail-safe-by-philip-fracassi-0",
-    "sequence": "2022-04-30-01-fail-safe-by-philip-fracassi-0",
-    "reviewSlug": "fail-safe-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2022-04-30",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "Fail-Safe",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-0",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-0",
+    "sequence": "2022-04-17-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -357,8 +255,25 @@
     ]
   },
   {
+    "id": "2022-04-18-01-altar-by-philip-fracassi-0",
+    "sequence": "2022-04-18-2022-04-18-01-altar-by-philip-fracassi",
+    "reviewSlug": "altar-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-18",
+    "progress": "Finished",
+    "workYear": "2016",
+    "title": "Altar",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-1",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-1",
+    "sequence": "2022-04-18-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -374,8 +289,25 @@
     ]
   },
   {
+    "id": "2022-04-19-01-the-horse-thief-by-philip-fracassi-0",
+    "sequence": "2022-04-19-2022-04-19-01-the-horse-thief-by-philip-fracassi",
+    "reviewSlug": "the-horse-thief-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-19",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "The Horse Thief",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-2",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-2",
+    "sequence": "2022-04-19-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -391,8 +323,25 @@
     ]
   },
   {
+    "id": "2022-04-20-01-coffin-by-philip-fracassi-0",
+    "sequence": "2022-04-20-2022-04-20-01-coffin-by-philip-fracassi",
+    "reviewSlug": "coffin-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-20",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "Coffin",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-3",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-3",
+    "sequence": "2022-04-20-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -408,8 +357,25 @@
     ]
   },
   {
+    "id": "2022-04-21-01-the-baby-farmer-by-philip-fracassi-0",
+    "sequence": "2022-04-21-2022-04-21-01-the-baby-farmer-by-philip-fracassi",
+    "reviewSlug": "the-baby-farmer-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-21",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "The Baby Farmer",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-4",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-4",
+    "sequence": "2022-04-21-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -425,8 +391,25 @@
     ]
   },
   {
+    "id": "2022-04-22-01-surfer-girl-by-philip-fracassi-0",
+    "sequence": "2022-04-22-2022-04-22-01-surfer-girl-by-philip-fracassi",
+    "reviewSlug": "surfer-girl-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-22",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "Surfer Girl",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-5",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-5",
+    "sequence": "2022-04-22-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -442,8 +425,25 @@
     ]
   },
   {
+    "id": "2022-04-23-01-mother-by-philip-fracassi-0",
+    "sequence": "2022-04-23-2022-04-23-01-mother-by-philip-fracassi",
+    "reviewSlug": "mother-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-23",
+    "progress": "Finished",
+    "workYear": "2015",
+    "title": "Mother",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-6",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-6",
+    "sequence": "2022-04-23-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -459,8 +459,25 @@
     ]
   },
   {
+    "id": "2022-04-30-01-fail-safe-by-philip-fracassi-0",
+    "sequence": "2022-04-30-2022-04-30-01-fail-safe-by-philip-fracassi",
+    "reviewSlug": "fail-safe-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2022-04-30",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "Fail-Safe",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-7",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-7",
+    "sequence": "2022-04-30-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -476,25 +493,8 @@
     ]
   },
   {
-    "id": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-5",
-    "sequence": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-5",
-    "reviewSlug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2022-04-03",
-    "progress": "33%",
-    "workYear": "1979",
-    "title": "The Rise of Theodore Roosevelt",
-    "authors": [
-      {
-        "name": "Edmund Morris",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-6",
-    "sequence": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-6",
+    "sequence": "2022-04-30-2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris",
     "reviewSlug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
     "edition": "Audiobook",
     "kind": "Nonfiction",

@@ -1,41 +1,7 @@
 [
   {
-    "id": "2025-02-06-01-night-show-by-richard-laymon-10",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-10",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2025-02-05",
-    "progress": "76%",
-    "workYear": "1984",
-    "title": "Night Show",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2025-02-06-01-night-show-by-richard-laymon-11",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-11",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2025-02-06",
-    "progress": "Finished",
-    "workYear": "1984",
-    "title": "Night Show",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2025-02-06-01-night-show-by-richard-laymon-8",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-8",
+    "sequence": "2025-02-03-2025-02-06-01-night-show-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -52,7 +18,7 @@
   },
   {
     "id": "2025-02-06-01-night-show-by-richard-laymon-9",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-9",
+    "sequence": "2025-02-04-2025-02-06-01-night-show-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -68,8 +34,42 @@
     ]
   },
   {
+    "id": "2025-02-06-01-night-show-by-richard-laymon-10",
+    "sequence": "2025-02-05-2025-02-06-01-night-show-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2025-02-05",
+    "progress": "76%",
+    "workYear": "1984",
+    "title": "Night Show",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2025-02-06-01-night-show-by-richard-laymon-11",
+    "sequence": "2025-02-06-2025-02-06-01-night-show-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2025-02-06",
+    "progress": "Finished",
+    "workYear": "1984",
+    "title": "Night Show",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2025-02-09-01-a-writers-tale-by-richard-laymon-0",
-    "sequence": "2025-02-09-01-a-writers-tale-by-richard-laymon-0",
+    "sequence": "2025-02-07-2025-02-09-01-a-writers-tale-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -86,7 +86,7 @@
   },
   {
     "id": "2025-02-09-01-a-writers-tale-by-richard-laymon-1",
-    "sequence": "2025-02-09-01-a-writers-tale-by-richard-laymon-1",
+    "sequence": "2025-02-08-2025-02-09-01-a-writers-tale-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -103,7 +103,7 @@
   },
   {
     "id": "2025-02-09-01-a-writers-tale-by-richard-laymon-2",
-    "sequence": "2025-02-09-01-a-writers-tale-by-richard-laymon-2",
+    "sequence": "2025-02-09-2025-02-09-01-a-writers-tale-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -120,7 +120,7 @@
   },
   {
     "id": "2025-02-15-01-the-lonely-one-by-richard-laymon-0",
-    "sequence": "2025-02-15-01-the-lonely-one-by-richard-laymon-0",
+    "sequence": "2025-02-15-2025-02-15-01-the-lonely-one-by-richard-laymon",
     "reviewSlug": "the-lonely-one-by-richard-laymon",
     "edition": "Paperback",
     "kind": "Short Story",

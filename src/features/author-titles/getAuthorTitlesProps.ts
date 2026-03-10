@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/api/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
-import { displayDate } from "~/utils/displayDate";
+import { toDisplayDate } from "~/utils/toDisplayDate";
 import { gradeToValue } from "~/utils/grades";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
@@ -26,7 +26,7 @@ export async function getAuthorTitlesProps(
           { slug: reviewedWork.reviewSlug },
           CoverListItemImageConfig,
         ),
-        displayDate: displayDate(reviewedWork.reviewDate),
+        displayDate: toDisplayDate(reviewedWork.reviewDate),
         grade: reviewedWork.grade,
         gradeValue: gradeToValue(reviewedWork.grade),
         kind: reviewedWork.kind,

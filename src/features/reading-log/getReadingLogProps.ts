@@ -1,6 +1,8 @@
 import type { CollectionEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/api/covers";
+import { toSortDate } from "~/utils/toSortDate";
+import { yearFormatter } from "~/utils/yearFormatter";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogProps } from "./ReadingLog";
@@ -21,7 +23,7 @@ export async function getReadingLogProps(
     readingLogEntrys.map(async (entry, index) => {
       distinctEditions.add(entry.edition);
       distinctKinds.add(entry.kind);
-      distinctReadingYears.add(entry.date.toISOString().slice(0, 4));
+      distinctReadingYears.add(yearFormatter.format(entry.date));
       distinctWorkYears.add(entry.workYear);
 
       const value: ReadingLogValue = {
@@ -34,8 +36,8 @@ export async function getReadingLogProps(
         edition: entry.edition,
         kind: entry.kind,
         progress: entry.progress,
-        readingDate: entry.date.toISOString(), // Keep original date string for calendar
-        readingYear: entry.date.toISOString().slice(0, 4),
+        readingDate: toSortDate(entry.date), // Keep original date string for calendar
+        readingYear: yearFormatter.format(entry.date),
         reviewed: Boolean(entry.reviewSlug),
         sequence: index,
         slug: entry.reviewSlug,

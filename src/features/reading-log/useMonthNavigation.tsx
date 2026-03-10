@@ -19,6 +19,8 @@ export function useMonthNavigation(
   let previousMonthDate;
   let currentMonthValue;
 
+  console.log(filteredValues);
+
   if (filteredValues.length === 0) {
     return [undefined, undefined, undefined];
   }

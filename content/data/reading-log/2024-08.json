@@ -1,7 +1,7 @@
 [
   {
     "id": "2024-08-25-01-recessional-by-david-mamet-0",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-0",
+    "sequence": "2024-08-02-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -18,7 +18,7 @@
   },
   {
     "id": "2024-08-25-01-recessional-by-david-mamet-1",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-1",
+    "sequence": "2024-08-03-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -34,8 +34,25 @@
     ]
   },
   {
+    "id": "2025-02-06-01-night-show-by-richard-laymon-0",
+    "sequence": "2024-08-03-2025-02-06-01-night-show-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2024-08-03",
+    "progress": "11%",
+    "workYear": "1984",
+    "title": "Night Show",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2024-08-25-01-recessional-by-david-mamet-2",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-2",
+    "sequence": "2024-08-04-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -51,8 +68,25 @@
     ]
   },
   {
+    "id": "2025-02-06-01-night-show-by-richard-laymon-1",
+    "sequence": "2024-08-04-2025-02-06-01-night-show-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2024-08-04",
+    "progress": "16%",
+    "workYear": "1984",
+    "title": "Night Show",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2024-08-25-01-recessional-by-david-mamet-3",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-3",
+    "sequence": "2024-08-05-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -68,8 +102,25 @@
     ]
   },
   {
+    "id": "2025-02-06-01-night-show-by-richard-laymon-2",
+    "sequence": "2024-08-05-2025-02-06-01-night-show-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2024-08-05",
+    "progress": "23%",
+    "workYear": "1984",
+    "title": "Night Show",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2024-08-25-01-recessional-by-david-mamet-4",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-4",
+    "sequence": "2024-08-06-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -86,7 +137,7 @@
   },
   {
     "id": "2024-08-25-01-recessional-by-david-mamet-5",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-5",
+    "sequence": "2024-08-07-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -103,7 +154,7 @@
   },
   {
     "id": "2024-08-25-01-recessional-by-david-mamet-6",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-6",
+    "sequence": "2024-08-09-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -120,7 +171,7 @@
   },
   {
     "id": "2024-08-25-01-recessional-by-david-mamet-7",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-7",
+    "sequence": "2024-08-18-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -137,7 +188,7 @@
   },
   {
     "id": "2024-08-25-01-recessional-by-david-mamet-8",
-    "sequence": "2024-08-25-01-recessional-by-david-mamet-8",
+    "sequence": "2024-08-25-2024-08-25-01-recessional-by-david-mamet",
     "reviewSlug": "recessional-by-david-mamet",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -153,59 +204,8 @@
     ]
   },
   {
-    "id": "2025-02-06-01-night-show-by-richard-laymon-0",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-0",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2024-08-03",
-    "progress": "11%",
-    "workYear": "1984",
-    "title": "Night Show",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2025-02-06-01-night-show-by-richard-laymon-1",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-1",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2024-08-04",
-    "progress": "16%",
-    "workYear": "1984",
-    "title": "Night Show",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2025-02-06-01-night-show-by-richard-laymon-2",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-2",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2024-08-05",
-    "progress": "23%",
-    "workYear": "1984",
-    "title": "Night Show",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2025-02-06-01-night-show-by-richard-laymon-3",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-3",
+    "sequence": "2024-08-25-2025-02-06-01-night-show-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -222,7 +222,7 @@
   },
   {
     "id": "2025-02-06-01-night-show-by-richard-laymon-4",
-    "sequence": "2025-02-06-01-night-show-by-richard-laymon-4",
+    "sequence": "2024-08-30-2025-02-06-01-night-show-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",

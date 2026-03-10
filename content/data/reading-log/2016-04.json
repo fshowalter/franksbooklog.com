@@ -1,41 +1,7 @@
 [
   {
-    "id": "2016-04-10-01-on-writing-well-by-william-zinsser-10",
-    "sequence": "2016-04-10-01-on-writing-well-by-william-zinsser-10",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2016-04-06",
-    "progress": "81%",
-    "workYear": "1976",
-    "title": "On Writing Well",
-    "authors": [
-      {
-        "name": "William Zinsser",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2016-04-10-01-on-writing-well-by-william-zinsser-11",
-    "sequence": "2016-04-10-01-on-writing-well-by-william-zinsser-11",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Nonfiction",
-    "date": "2016-04-10",
-    "progress": "Finished",
-    "workYear": "1976",
-    "title": "On Writing Well",
-    "authors": [
-      {
-        "name": "William Zinsser",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-0",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-0",
+    "sequence": "2016-04-02-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -52,7 +18,7 @@
   },
   {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-1",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-1",
+    "sequence": "2016-04-03-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -69,7 +35,7 @@
   },
   {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-2",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-2",
+    "sequence": "2016-04-04-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -86,7 +52,7 @@
   },
   {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-3",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-3",
+    "sequence": "2016-04-05-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -102,8 +68,25 @@
     ]
   },
   {
+    "id": "2016-04-10-01-on-writing-well-by-william-zinsser-10",
+    "sequence": "2016-04-06-2016-04-10-01-on-writing-well-by-william-zinsser",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2016-04-06",
+    "progress": "81%",
+    "workYear": "1976",
+    "title": "On Writing Well",
+    "authors": [
+      {
+        "name": "William Zinsser",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-4",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-4",
+    "sequence": "2016-04-06-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -120,7 +103,7 @@
   },
   {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-5",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-5",
+    "sequence": "2016-04-07-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -137,7 +120,7 @@
   },
   {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-6",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-6",
+    "sequence": "2016-04-08-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -154,7 +137,7 @@
   },
   {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-7",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-7",
+    "sequence": "2016-04-09-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",
@@ -170,8 +153,25 @@
     ]
   },
   {
+    "id": "2016-04-10-01-on-writing-well-by-william-zinsser-11",
+    "sequence": "2016-04-10-2016-04-10-01-on-writing-well-by-william-zinsser",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Nonfiction",
+    "date": "2016-04-10",
+    "progress": "Finished",
+    "workYear": "1976",
+    "title": "On Writing Well",
+    "authors": [
+      {
+        "name": "William Zinsser",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-8",
-    "sequence": "2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp-8",
+    "sequence": "2016-04-10-2016-04-10-02-the-happiest-toddler-on-the-block-by-harvey-karp",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Nonfiction",

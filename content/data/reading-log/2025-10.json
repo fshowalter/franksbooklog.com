@@ -1,41 +1,7 @@
 [
   {
-    "id": "2025-10-26-01-in-the-pines-by-karl-edward-wagner-0",
-    "sequence": "2025-10-26-01-in-the-pines-by-karl-edward-wagner-0",
-    "reviewSlug": "in-the-pines-by-karl-edward-wagner",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2025-10-13",
-    "progress": "43%",
-    "workYear": "1973",
-    "title": "In the Pines",
-    "authors": [
-      {
-        "name": "Karl Edward Wagner",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2025-10-26-01-in-the-pines-by-karl-edward-wagner-1",
-    "sequence": "2025-10-26-01-in-the-pines-by-karl-edward-wagner-1",
-    "reviewSlug": "in-the-pines-by-karl-edward-wagner",
-    "edition": "Ebook",
-    "kind": "Short Story",
-    "date": "2025-10-26",
-    "progress": "Finished",
-    "workYear": "1973",
-    "title": "In the Pines",
-    "authors": [
-      {
-        "name": "Karl Edward Wagner",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews-0",
-    "sequence": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews-0",
+    "sequence": "2025-10-04-2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews",
     "reviewSlug": "paint-my-name-in-black-and-gold-by-mark-andrews",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -52,7 +18,7 @@
   },
   {
     "id": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews-1",
-    "sequence": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews-1",
+    "sequence": "2025-10-05-2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews",
     "reviewSlug": "paint-my-name-in-black-and-gold-by-mark-andrews",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -68,8 +34,25 @@
     ]
   },
   {
+    "id": "2025-10-26-01-in-the-pines-by-karl-edward-wagner-0",
+    "sequence": "2025-10-13-2025-10-26-01-in-the-pines-by-karl-edward-wagner",
+    "reviewSlug": "in-the-pines-by-karl-edward-wagner",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2025-10-13",
+    "progress": "43%",
+    "workYear": "1973",
+    "title": "In the Pines",
+    "authors": [
+      {
+        "name": "Karl Edward Wagner",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews-2",
-    "sequence": "2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews-2",
+    "sequence": "2025-10-13-2025-12-20-01-paint-my-name-in-black-and-gold-by-mark-andrews",
     "reviewSlug": "paint-my-name-in-black-and-gold-by-mark-andrews",
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -80,6 +63,23 @@
     "authors": [
       {
         "name": "Mark Andrews",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2025-10-26-01-in-the-pines-by-karl-edward-wagner-1",
+    "sequence": "2025-10-26-2025-10-26-01-in-the-pines-by-karl-edward-wagner",
+    "reviewSlug": "in-the-pines-by-karl-edward-wagner",
+    "edition": "Ebook",
+    "kind": "Short Story",
+    "date": "2025-10-26",
+    "progress": "Finished",
+    "workYear": "1973",
+    "title": "In the Pines",
+    "authors": [
+      {
+        "name": "Karl Edward Wagner",
         "notes": null
       }
     ]

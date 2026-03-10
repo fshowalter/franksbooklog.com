@@ -1,7 +1,7 @@
 [
   {
     "id": "2023-10-09-01-sacculina-by-philip-fracassi-0",
-    "sequence": "2023-10-09-01-sacculina-by-philip-fracassi-0",
+    "sequence": "2023-10-07-2023-10-09-01-sacculina-by-philip-fracassi",
     "reviewSlug": "sacculina-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novella",
@@ -18,7 +18,7 @@
   },
   {
     "id": "2023-10-09-01-sacculina-by-philip-fracassi-1",
-    "sequence": "2023-10-09-01-sacculina-by-philip-fracassi-1",
+    "sequence": "2023-10-09-2023-10-09-01-sacculina-by-philip-fracassi",
     "reviewSlug": "sacculina-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novella",
@@ -34,25 +34,8 @@
     ]
   },
   {
-    "id": "2023-10-22-01-the-creative-act-by-rick-rubin-0",
-    "sequence": "2023-10-22-01-the-creative-act-by-rick-rubin-0",
-    "reviewSlug": "the-creative-act-by-rick-rubin",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2023-10-22",
-    "progress": "Finished",
-    "workYear": "2023",
-    "title": "The Creative Act",
-    "authors": [
-      {
-        "name": "Rick Rubin",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-0",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-0",
+    "sequence": "2023-10-11-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -69,7 +52,7 @@
   },
   {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-1",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-1",
+    "sequence": "2023-10-15-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -86,7 +69,7 @@
   },
   {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-2",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-2",
+    "sequence": "2023-10-16-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -103,7 +86,7 @@
   },
   {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-3",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-3",
+    "sequence": "2023-10-17-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -119,8 +102,25 @@
     ]
   },
   {
+    "id": "2023-10-22-01-the-creative-act-by-rick-rubin-0",
+    "sequence": "2023-10-22-2023-10-22-01-the-creative-act-by-rick-rubin",
+    "reviewSlug": "the-creative-act-by-rick-rubin",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2023-10-22",
+    "progress": "Finished",
+    "workYear": "2023",
+    "title": "The Creative Act",
+    "authors": [
+      {
+        "name": "Rick Rubin",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-4",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-4",
+    "sequence": "2023-10-22-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -137,7 +137,7 @@
   },
   {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-5",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-5",
+    "sequence": "2023-10-23-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -154,7 +154,7 @@
   },
   {
     "id": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-6",
-    "sequence": "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi-6",
+    "sequence": "2023-10-29-2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi",
     "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novel",
@@ -171,7 +171,7 @@
   },
   {
     "id": "2023-11-06-01-fright-night-origins-by-tom-holland-a-jack-ulrich-0",
-    "sequence": "2023-11-06-01-fright-night-origins-by-tom-holland-a-jack-ulrich-0",
+    "sequence": "2023-10-29-2023-11-06-01-fright-night-origins-by-tom-holland-a-jack-ulrich",
     "reviewSlug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
     "edition": "Audiobook",
     "kind": "Novel",
@@ -192,7 +192,7 @@
   },
   {
     "id": "2023-11-06-01-fright-night-origins-by-tom-holland-a-jack-ulrich-1",
-    "sequence": "2023-11-06-01-fright-night-origins-by-tom-holland-a-jack-ulrich-1",
+    "sequence": "2023-10-31-2023-11-06-01-fright-night-origins-by-tom-holland-a-jack-ulrich",
     "reviewSlug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
     "edition": "Audiobook",
     "kind": "Novel",

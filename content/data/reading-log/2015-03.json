@@ -1,41 +1,7 @@
 [
   {
-    "id": "2016-01-14-01-christine-by-stephen-king-10",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-10",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2015-03-27",
-    "progress": "40%",
-    "workYear": "1983",
-    "title": "Christine",
-    "authors": [
-      {
-        "name": "Stephen King",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2016-01-14-01-christine-by-stephen-king-11",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-11",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2015-03-29",
-    "progress": "44%",
-    "workYear": "1983",
-    "title": "Christine",
-    "authors": [
-      {
-        "name": "Stephen King",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2016-01-14-01-christine-by-stephen-king-7",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-7",
+    "sequence": "2015-03-08-2016-01-14-01-christine-by-stephen-king",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -52,7 +18,7 @@
   },
   {
     "id": "2016-01-14-01-christine-by-stephen-king-8",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-8",
+    "sequence": "2015-03-17-2016-01-14-01-christine-by-stephen-king",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -69,12 +35,46 @@
   },
   {
     "id": "2016-01-14-01-christine-by-stephen-king-9",
-    "sequence": "2016-01-14-01-christine-by-stephen-king-9",
+    "sequence": "2015-03-18-2016-01-14-01-christine-by-stephen-king",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
     "date": "2015-03-18",
     "progress": "38%",
+    "workYear": "1983",
+    "title": "Christine",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2016-01-14-01-christine-by-stephen-king-10",
+    "sequence": "2015-03-27-2016-01-14-01-christine-by-stephen-king",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2015-03-27",
+    "progress": "40%",
+    "workYear": "1983",
+    "title": "Christine",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2016-01-14-01-christine-by-stephen-king-11",
+    "sequence": "2015-03-29-2016-01-14-01-christine-by-stephen-king",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2015-03-29",
+    "progress": "44%",
     "workYear": "1983",
     "title": "Christine",
     "authors": [

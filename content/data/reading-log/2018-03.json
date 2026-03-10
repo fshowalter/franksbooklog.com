@@ -1,58 +1,7 @@
 [
   {
-    "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-10",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-10",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2018-03-10",
-    "progress": "77%",
-    "workYear": "1988",
-    "title": "Resurrection Dreams",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-11",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-11",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2018-03-11",
-    "progress": "86%",
-    "workYear": "1988",
-    "title": "Resurrection Dreams",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-12",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-12",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2018-03-12",
-    "progress": "Finished",
-    "workYear": "1988",
-    "title": "Resurrection Dreams",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-4",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-4",
+    "sequence": "2018-03-02-2018-03-12-02-resurrection-dreams-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -69,7 +18,7 @@
   },
   {
     "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-5",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-5",
+    "sequence": "2018-03-03-2018-03-12-02-resurrection-dreams-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -86,7 +35,7 @@
   },
   {
     "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-6",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-6",
+    "sequence": "2018-03-04-2018-03-12-02-resurrection-dreams-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -103,7 +52,7 @@
   },
   {
     "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-7",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-7",
+    "sequence": "2018-03-06-2018-03-12-02-resurrection-dreams-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -120,7 +69,7 @@
   },
   {
     "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-8",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-8",
+    "sequence": "2018-03-07-2018-03-12-02-resurrection-dreams-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -137,7 +86,7 @@
   },
   {
     "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-9",
-    "sequence": "2018-03-12-02-resurrection-dreams-by-richard-laymon-9",
+    "sequence": "2018-03-09-2018-03-12-02-resurrection-dreams-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -153,8 +102,59 @@
     ]
   },
   {
+    "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-10",
+    "sequence": "2018-03-10-2018-03-12-02-resurrection-dreams-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2018-03-10",
+    "progress": "77%",
+    "workYear": "1988",
+    "title": "Resurrection Dreams",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-11",
+    "sequence": "2018-03-11-2018-03-12-02-resurrection-dreams-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2018-03-11",
+    "progress": "86%",
+    "workYear": "1988",
+    "title": "Resurrection Dreams",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2018-03-12-02-resurrection-dreams-by-richard-laymon-12",
+    "sequence": "2018-03-12-2018-03-12-02-resurrection-dreams-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2018-03-12",
+    "progress": "Finished",
+    "workYear": "1988",
+    "title": "Resurrection Dreams",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2018-07-23-02-books-of-blood-volume-1-by-clive-barker-3",
-    "sequence": "2018-07-23-02-books-of-blood-volume-1-by-clive-barker-3",
+    "sequence": "2018-03-26-2018-07-23-02-books-of-blood-volume-1-by-clive-barker",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",

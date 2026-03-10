@@ -1,7 +1,7 @@
 [
   {
     "id": "2012-05-13-01-rage-by-stephen-king-6",
-    "sequence": "2012-05-13-01-rage-by-stephen-king-6",
+    "sequence": "2012-05-13-2012-05-13-01-rage-by-stephen-king",
     "reviewSlug": "rage-by-stephen-king",
     "edition": "Paperback",
     "kind": "Novel",
@@ -18,7 +18,7 @@
   },
   {
     "id": "2012-05-14-01-night-shift-by-stephen-king-0",
-    "sequence": "2012-05-14-01-night-shift-by-stephen-king-0",
+    "sequence": "2012-05-13-2012-05-14-01-night-shift-by-stephen-king",
     "reviewSlug": "night-shift-by-stephen-king",
     "edition": "Paperback",
     "kind": "Collection",
@@ -34,25 +34,8 @@
     ]
   },
   {
-    "id": "2012-05-14-01-night-shift-by-stephen-king-1",
-    "sequence": "2012-05-14-01-night-shift-by-stephen-king-1",
-    "reviewSlug": "night-shift-by-stephen-king",
-    "edition": "Paperback",
-    "kind": "Collection",
-    "date": "2012-05-14",
-    "progress": "Finished",
-    "workYear": "1978",
-    "title": "Night Shift",
-    "authors": [
-      {
-        "name": "Stephen King",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-0",
-    "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-0",
+    "sequence": "2012-05-13-2012-05-18-01-dark-crusade-by-karl-edward-wagner",
     "reviewSlug": "dark-crusade-by-karl-edward-wagner",
     "edition": "Paperback",
     "kind": "Novel",
@@ -68,8 +51,25 @@
     ]
   },
   {
+    "id": "2012-05-14-01-night-shift-by-stephen-king-1",
+    "sequence": "2012-05-14-2012-05-14-01-night-shift-by-stephen-king",
+    "reviewSlug": "night-shift-by-stephen-king",
+    "edition": "Paperback",
+    "kind": "Collection",
+    "date": "2012-05-14",
+    "progress": "Finished",
+    "workYear": "1978",
+    "title": "Night Shift",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-1",
-    "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-1",
+    "sequence": "2012-05-14-2012-05-18-01-dark-crusade-by-karl-edward-wagner",
     "reviewSlug": "dark-crusade-by-karl-edward-wagner",
     "edition": "Paperback",
     "kind": "Novel",
@@ -86,7 +86,7 @@
   },
   {
     "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-2",
-    "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-2",
+    "sequence": "2012-05-15-2012-05-18-01-dark-crusade-by-karl-edward-wagner",
     "reviewSlug": "dark-crusade-by-karl-edward-wagner",
     "edition": "Paperback",
     "kind": "Novel",
@@ -102,59 +102,8 @@
     ]
   },
   {
-    "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-3",
-    "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-3",
-    "reviewSlug": "dark-crusade-by-karl-edward-wagner",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-16",
-    "progress": "72%",
-    "workYear": "1976",
-    "title": "Dark Crusade",
-    "authors": [
-      {
-        "name": "Karl Edward Wagner",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-4",
-    "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-4",
-    "reviewSlug": "dark-crusade-by-karl-edward-wagner",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-17",
-    "progress": "92%",
-    "workYear": "1976",
-    "title": "Dark Crusade",
-    "authors": [
-      {
-        "name": "Karl Edward Wagner",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-5",
-    "sequence": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-5",
-    "reviewSlug": "dark-crusade-by-karl-edward-wagner",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-18",
-    "progress": "Finished",
-    "workYear": "1976",
-    "title": "Dark Crusade",
-    "authors": [
-      {
-        "name": "Karl Edward Wagner",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-0",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-0",
+    "sequence": "2012-05-15-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -170,8 +119,42 @@
     ]
   },
   {
+    "id": "2014-03-02-01-the-stand-by-stephen-king-0",
+    "sequence": "2012-05-15-2014-03-02-01-the-stand-by-stephen-king",
+    "reviewSlug": "the-stand-by-stephen-king",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-15",
+    "progress": "3%",
+    "workYear": "1978",
+    "title": "The Stand",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-3",
+    "sequence": "2012-05-16-2012-05-18-01-dark-crusade-by-karl-edward-wagner",
+    "reviewSlug": "dark-crusade-by-karl-edward-wagner",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-16",
+    "progress": "72%",
+    "workYear": "1976",
+    "title": "Dark Crusade",
+    "authors": [
+      {
+        "name": "Karl Edward Wagner",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-1",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-1",
+    "sequence": "2012-05-16-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -187,8 +170,42 @@
     ]
   },
   {
+    "id": "2014-03-02-01-the-stand-by-stephen-king-1",
+    "sequence": "2012-05-16-2014-03-02-01-the-stand-by-stephen-king",
+    "reviewSlug": "the-stand-by-stephen-king",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-16",
+    "progress": "10%",
+    "workYear": "1978",
+    "title": "The Stand",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-4",
+    "sequence": "2012-05-17-2012-05-18-01-dark-crusade-by-karl-edward-wagner",
+    "reviewSlug": "dark-crusade-by-karl-edward-wagner",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-17",
+    "progress": "92%",
+    "workYear": "1976",
+    "title": "Dark Crusade",
+    "authors": [
+      {
+        "name": "Karl Edward Wagner",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-2",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-2",
+    "sequence": "2012-05-17-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -204,8 +221,42 @@
     ]
   },
   {
+    "id": "2014-03-02-01-the-stand-by-stephen-king-2",
+    "sequence": "2012-05-17-2014-03-02-01-the-stand-by-stephen-king",
+    "reviewSlug": "the-stand-by-stephen-king",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-17",
+    "progress": "18%",
+    "workYear": "1978",
+    "title": "The Stand",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2012-05-18-01-dark-crusade-by-karl-edward-wagner-5",
+    "sequence": "2012-05-18-2012-05-18-01-dark-crusade-by-karl-edward-wagner",
+    "reviewSlug": "dark-crusade-by-karl-edward-wagner",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-18",
+    "progress": "Finished",
+    "workYear": "1976",
+    "title": "Dark Crusade",
+    "authors": [
+      {
+        "name": "Karl Edward Wagner",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-3",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-3",
+    "sequence": "2012-05-18-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -221,8 +272,25 @@
     ]
   },
   {
+    "id": "2014-03-02-01-the-stand-by-stephen-king-3",
+    "sequence": "2012-05-18-2014-03-02-01-the-stand-by-stephen-king",
+    "reviewSlug": "the-stand-by-stephen-king",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2012-05-18",
+    "progress": "22%",
+    "workYear": "1978",
+    "title": "The Stand",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-4",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-4",
+    "sequence": "2012-05-20-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -239,7 +307,7 @@
   },
   {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-5",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-5",
+    "sequence": "2012-05-27-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -256,7 +324,7 @@
   },
   {
     "id": "2012-05-31-01-cary-grant-by-marc-eliot-6",
-    "sequence": "2012-05-31-01-cary-grant-by-marc-eliot-6",
+    "sequence": "2012-05-31-2012-05-31-01-cary-grant-by-marc-eliot",
     "reviewSlug": "cary-grant-by-marc-eliot",
     "edition": "Hardcover",
     "kind": "Nonfiction",
@@ -267,74 +335,6 @@
     "authors": [
       {
         "name": "Marc Eliot",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2014-03-02-01-the-stand-by-stephen-king-0",
-    "sequence": "2014-03-02-01-the-stand-by-stephen-king-0",
-    "reviewSlug": "the-stand-by-stephen-king",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-15",
-    "progress": "3%",
-    "workYear": "1978",
-    "title": "The Stand",
-    "authors": [
-      {
-        "name": "Stephen King",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2014-03-02-01-the-stand-by-stephen-king-1",
-    "sequence": "2014-03-02-01-the-stand-by-stephen-king-1",
-    "reviewSlug": "the-stand-by-stephen-king",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-16",
-    "progress": "10%",
-    "workYear": "1978",
-    "title": "The Stand",
-    "authors": [
-      {
-        "name": "Stephen King",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2014-03-02-01-the-stand-by-stephen-king-2",
-    "sequence": "2014-03-02-01-the-stand-by-stephen-king-2",
-    "reviewSlug": "the-stand-by-stephen-king",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-17",
-    "progress": "18%",
-    "workYear": "1978",
-    "title": "The Stand",
-    "authors": [
-      {
-        "name": "Stephen King",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2014-03-02-01-the-stand-by-stephen-king-3",
-    "sequence": "2014-03-02-01-the-stand-by-stephen-king-3",
-    "reviewSlug": "the-stand-by-stephen-king",
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2012-05-18",
-    "progress": "22%",
-    "workYear": "1978",
-    "title": "The Stand",
-    "authors": [
-      {
-        "name": "Stephen King",
         "notes": null
       }
     ]

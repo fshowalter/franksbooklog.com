@@ -1,7 +1,7 @@
 [
   {
     "id": "2018-12-06-01-it-by-stephen-king-32",
-    "sequence": "2018-12-06-01-it-by-stephen-king-32",
+    "sequence": "2018-12-01-2018-12-06-01-it-by-stephen-king",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -18,7 +18,7 @@
   },
   {
     "id": "2018-12-06-01-it-by-stephen-king-33",
-    "sequence": "2018-12-06-01-it-by-stephen-king-33",
+    "sequence": "2018-12-06-2018-12-06-01-it-by-stephen-king",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -35,7 +35,7 @@
   },
   {
     "id": "2018-12-09-01-the-way-it-was-by-eliot-weisman-0",
-    "sequence": "2018-12-09-01-the-way-it-was-by-eliot-weisman-0",
+    "sequence": "2018-12-06-2018-12-09-01-the-way-it-was-by-eliot-weisman",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -52,7 +52,7 @@
   },
   {
     "id": "2018-12-09-01-the-way-it-was-by-eliot-weisman-1",
-    "sequence": "2018-12-09-01-the-way-it-was-by-eliot-weisman-1",
+    "sequence": "2018-12-07-2018-12-09-01-the-way-it-was-by-eliot-weisman",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -69,7 +69,7 @@
   },
   {
     "id": "2018-12-09-01-the-way-it-was-by-eliot-weisman-2",
-    "sequence": "2018-12-09-01-the-way-it-was-by-eliot-weisman-2",
+    "sequence": "2018-12-08-2018-12-09-01-the-way-it-was-by-eliot-weisman",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -86,7 +86,7 @@
   },
   {
     "id": "2018-12-09-01-the-way-it-was-by-eliot-weisman-3",
-    "sequence": "2018-12-09-01-the-way-it-was-by-eliot-weisman-3",
+    "sequence": "2018-12-09-2018-12-09-01-the-way-it-was-by-eliot-weisman",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",
@@ -103,7 +103,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-0",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-0",
+    "sequence": "2018-12-09-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -120,7 +120,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-1",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-1",
+    "sequence": "2018-12-10-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -136,42 +136,8 @@
     ]
   },
   {
-    "id": "2018-12-21-01-minion-by-l-a-banks-10",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-10",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2018-12-20",
-    "progress": "87%",
-    "workYear": "2003",
-    "title": "Minion",
-    "authors": [
-      {
-        "name": "L.A. Banks",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2018-12-21-01-minion-by-l-a-banks-11",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-11",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2018-12-21",
-    "progress": "Finished",
-    "workYear": "2003",
-    "title": "Minion",
-    "authors": [
-      {
-        "name": "L.A. Banks",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2018-12-21-01-minion-by-l-a-banks-2",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-2",
+    "sequence": "2018-12-12-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -188,7 +154,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-3",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-3",
+    "sequence": "2018-12-13-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -205,7 +171,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-4",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-4",
+    "sequence": "2018-12-14-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -222,7 +188,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-5",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-5",
+    "sequence": "2018-12-15-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -239,7 +205,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-6",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-6",
+    "sequence": "2018-12-16-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -256,7 +222,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-7",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-7",
+    "sequence": "2018-12-17-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -273,7 +239,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-8",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-8",
+    "sequence": "2018-12-18-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -290,7 +256,7 @@
   },
   {
     "id": "2018-12-21-01-minion-by-l-a-banks-9",
-    "sequence": "2018-12-21-01-minion-by-l-a-banks-9",
+    "sequence": "2018-12-19-2018-12-21-01-minion-by-l-a-banks",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -306,8 +272,42 @@
     ]
   },
   {
+    "id": "2018-12-21-01-minion-by-l-a-banks-10",
+    "sequence": "2018-12-20-2018-12-21-01-minion-by-l-a-banks",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2018-12-20",
+    "progress": "87%",
+    "workYear": "2003",
+    "title": "Minion",
+    "authors": [
+      {
+        "name": "L.A. Banks",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2018-12-21-01-minion-by-l-a-banks-11",
+    "sequence": "2018-12-21-2018-12-21-01-minion-by-l-a-banks",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2018-12-21",
+    "progress": "Finished",
+    "workYear": "2003",
+    "title": "Minion",
+    "authors": [
+      {
+        "name": "L.A. Banks",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-0",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-0",
+    "sequence": "2018-12-21-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -328,7 +328,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-1",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-1",
+    "sequence": "2018-12-22-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -349,7 +349,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-2",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-2",
+    "sequence": "2018-12-23-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -370,7 +370,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-3",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-3",
+    "sequence": "2018-12-25-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -391,7 +391,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-4",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-4",
+    "sequence": "2018-12-26-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -412,7 +412,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-5",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-5",
+    "sequence": "2018-12-27-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -433,7 +433,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-6",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-6",
+    "sequence": "2018-12-28-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -454,7 +454,7 @@
   },
   {
     "id": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-7",
-    "sequence": "2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett-7",
+    "sequence": "2018-12-29-2018-12-29-01-hottest-blood-by-jeff-gelb-michael-garrett",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Anthology",
@@ -475,7 +475,7 @@
   },
   {
     "id": "2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison-0",
-    "sequence": "2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison-0",
+    "sequence": "2018-12-29-2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -492,7 +492,7 @@
   },
   {
     "id": "2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison-1",
-    "sequence": "2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison-1",
+    "sequence": "2018-12-30-2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -509,7 +509,7 @@
   },
   {
     "id": "2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison-2",
-    "sequence": "2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison-2",
+    "sequence": "2018-12-31-2019-01-06-01-i-have-no-mouth-and-i-must-scream-by-harlan-ellison",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",

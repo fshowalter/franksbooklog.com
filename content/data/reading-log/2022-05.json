@@ -1,7 +1,7 @@
 [
   {
     "id": "2022-05-07-01-mandala-by-philip-fracassi-0",
-    "sequence": "2022-05-07-01-mandala-by-philip-fracassi-0",
+    "sequence": "2022-05-01-2022-05-07-01-mandala-by-philip-fracassi",
     "reviewSlug": "mandala-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Novella",
@@ -17,25 +17,8 @@
     ]
   },
   {
-    "id": "2022-05-07-01-mandala-by-philip-fracassi-1",
-    "sequence": "2022-05-07-01-mandala-by-philip-fracassi-1",
-    "reviewSlug": "mandala-by-philip-fracassi",
-    "edition": "Ebook",
-    "kind": "Novella",
-    "date": "2022-05-07",
-    "progress": "Finished",
-    "workYear": "2017",
-    "title": "Mandala",
-    "authors": [
-      {
-        "name": "Philip Fracassi",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-8",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-8",
+    "sequence": "2022-05-01-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -51,8 +34,25 @@
     ]
   },
   {
+    "id": "2022-05-07-01-mandala-by-philip-fracassi-1",
+    "sequence": "2022-05-07-2022-05-07-01-mandala-by-philip-fracassi",
+    "reviewSlug": "mandala-by-philip-fracassi",
+    "edition": "Ebook",
+    "kind": "Novella",
+    "date": "2022-05-07",
+    "progress": "Finished",
+    "workYear": "2017",
+    "title": "Mandala",
+    "authors": [
+      {
+        "name": "Philip Fracassi",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-05-07-02-behold-the-void-by-philip-fracassi-9",
-    "sequence": "2022-05-07-02-behold-the-void-by-philip-fracassi-9",
+    "sequence": "2022-05-07-2022-05-07-02-behold-the-void-by-philip-fracassi",
     "reviewSlug": "behold-the-void-by-philip-fracassi",
     "edition": "Ebook",
     "kind": "Collection",
@@ -69,7 +69,7 @@
   },
   {
     "id": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-7",
-    "sequence": "2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris-7",
+    "sequence": "2022-05-07-2022-05-07-03-the-rise-of-theodore-roosevelt-by-edmund-morris",
     "reviewSlug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -86,7 +86,7 @@
   },
   {
     "id": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-0",
-    "sequence": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-0",
+    "sequence": "2022-05-07-2022-05-21-01-total-recall-by-arnold-schwarzenegger",
     "reviewSlug": "total-recall-by-arnold-schwarzenegger",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -103,7 +103,7 @@
   },
   {
     "id": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-1",
-    "sequence": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-1",
+    "sequence": "2022-05-09-2022-05-21-01-total-recall-by-arnold-schwarzenegger",
     "reviewSlug": "total-recall-by-arnold-schwarzenegger",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -120,7 +120,7 @@
   },
   {
     "id": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-2",
-    "sequence": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-2",
+    "sequence": "2022-05-15-2022-05-21-01-total-recall-by-arnold-schwarzenegger",
     "reviewSlug": "total-recall-by-arnold-schwarzenegger",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -137,7 +137,7 @@
   },
   {
     "id": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-3",
-    "sequence": "2022-05-21-01-total-recall-by-arnold-schwarzenegger-3",
+    "sequence": "2022-05-21-2022-05-21-01-total-recall-by-arnold-schwarzenegger",
     "reviewSlug": "total-recall-by-arnold-schwarzenegger",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -153,42 +153,8 @@
     ]
   },
   {
-    "id": "2022-06-01-01-living-with-a-seal-by-jesse-itzler-0",
-    "sequence": "2022-06-01-01-living-with-a-seal-by-jesse-itzler-0",
-    "reviewSlug": "living-with-a-seal-by-jesse-itzler",
-    "edition": "Ebook",
-    "kind": "Nonfiction",
-    "date": "2022-05-24",
-    "progress": "30%",
-    "workYear": "2015",
-    "title": "Living with a SEAL",
-    "authors": [
-      {
-        "name": "Jesse Itzler",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2022-06-01-01-living-with-a-seal-by-jesse-itzler-1",
-    "sequence": "2022-06-01-01-living-with-a-seal-by-jesse-itzler-1",
-    "reviewSlug": "living-with-a-seal-by-jesse-itzler",
-    "edition": "Ebook",
-    "kind": "Nonfiction",
-    "date": "2022-05-31",
-    "progress": "67%",
-    "workYear": "2015",
-    "title": "Living with a SEAL",
-    "authors": [
-      {
-        "name": "Jesse Itzler",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2022-06-14-01-churchill-by-andrew-roberts-0",
-    "sequence": "2022-06-14-01-churchill-by-andrew-roberts-0",
+    "sequence": "2022-05-21-2022-06-14-01-churchill-by-andrew-roberts",
     "reviewSlug": "churchill-by-andrew-roberts",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -205,7 +171,7 @@
   },
   {
     "id": "2022-06-14-01-churchill-by-andrew-roberts-1",
-    "sequence": "2022-06-14-01-churchill-by-andrew-roberts-1",
+    "sequence": "2022-05-22-2022-06-14-01-churchill-by-andrew-roberts",
     "reviewSlug": "churchill-by-andrew-roberts",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -221,8 +187,25 @@
     ]
   },
   {
+    "id": "2022-06-01-01-living-with-a-seal-by-jesse-itzler-0",
+    "sequence": "2022-05-24-2022-06-01-01-living-with-a-seal-by-jesse-itzler",
+    "reviewSlug": "living-with-a-seal-by-jesse-itzler",
+    "edition": "Ebook",
+    "kind": "Nonfiction",
+    "date": "2022-05-24",
+    "progress": "30%",
+    "workYear": "2015",
+    "title": "Living with a SEAL",
+    "authors": [
+      {
+        "name": "Jesse Itzler",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2022-06-14-01-churchill-by-andrew-roberts-2",
-    "sequence": "2022-06-14-01-churchill-by-andrew-roberts-2",
+    "sequence": "2022-05-25-2022-06-14-01-churchill-by-andrew-roberts",
     "reviewSlug": "churchill-by-andrew-roberts",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -239,7 +222,7 @@
   },
   {
     "id": "2022-06-14-01-churchill-by-andrew-roberts-3",
-    "sequence": "2022-06-14-01-churchill-by-andrew-roberts-3",
+    "sequence": "2022-05-27-2022-06-14-01-churchill-by-andrew-roberts",
     "reviewSlug": "churchill-by-andrew-roberts",
     "edition": "Audiobook",
     "kind": "Nonfiction",
@@ -250,6 +233,23 @@
     "authors": [
       {
         "name": "Andrew Roberts",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2022-06-01-01-living-with-a-seal-by-jesse-itzler-1",
+    "sequence": "2022-05-31-2022-06-01-01-living-with-a-seal-by-jesse-itzler",
+    "reviewSlug": "living-with-a-seal-by-jesse-itzler",
+    "edition": "Ebook",
+    "kind": "Nonfiction",
+    "date": "2022-05-31",
+    "progress": "67%",
+    "workYear": "2015",
+    "title": "Living with a SEAL",
+    "authors": [
+      {
+        "name": "Jesse Itzler",
         "notes": null
       }
     ]

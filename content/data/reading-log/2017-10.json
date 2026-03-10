@@ -1,41 +1,7 @@
 [
   {
-    "id": "2017-10-14-01-flesh-by-richard-laymon-10",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-10",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-13",
-    "progress": "82%",
-    "workYear": "1987",
-    "title": "Flesh",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-10-14-01-flesh-by-richard-laymon-11",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-11",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-14",
-    "progress": "Finished",
-    "workYear": "1987",
-    "title": "Flesh",
-    "authors": [
-      {
-        "name": "Richard Laymon",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2017-10-14-01-flesh-by-richard-laymon-4",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-4",
+    "sequence": "2017-10-01-2017-10-14-01-flesh-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -52,7 +18,7 @@
   },
   {
     "id": "2017-10-14-01-flesh-by-richard-laymon-5",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-5",
+    "sequence": "2017-10-07-2017-10-14-01-flesh-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -69,7 +35,7 @@
   },
   {
     "id": "2017-10-14-01-flesh-by-richard-laymon-6",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-6",
+    "sequence": "2017-10-08-2017-10-14-01-flesh-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -86,7 +52,7 @@
   },
   {
     "id": "2017-10-14-01-flesh-by-richard-laymon-7",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-7",
+    "sequence": "2017-10-09-2017-10-14-01-flesh-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -103,7 +69,7 @@
   },
   {
     "id": "2017-10-14-01-flesh-by-richard-laymon-8",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-8",
+    "sequence": "2017-10-10-2017-10-14-01-flesh-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -120,7 +86,7 @@
   },
   {
     "id": "2017-10-14-01-flesh-by-richard-laymon-9",
-    "sequence": "2017-10-14-01-flesh-by-richard-laymon-9",
+    "sequence": "2017-10-12-2017-10-14-01-flesh-by-richard-laymon",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -136,8 +102,42 @@
     ]
   },
   {
+    "id": "2017-10-14-01-flesh-by-richard-laymon-10",
+    "sequence": "2017-10-13-2017-10-14-01-flesh-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-13",
+    "progress": "82%",
+    "workYear": "1987",
+    "title": "Flesh",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-10-14-01-flesh-by-richard-laymon-11",
+    "sequence": "2017-10-14-2017-10-14-01-flesh-by-richard-laymon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-14",
+    "progress": "Finished",
+    "workYear": "1987",
+    "title": "Flesh",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-10-22-01-speculation-by-edmund-jorgensen-0",
-    "sequence": "2017-10-22-01-speculation-by-edmund-jorgensen-0",
+    "sequence": "2017-10-15-2017-10-22-01-speculation-by-edmund-jorgensen",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -154,7 +154,7 @@
   },
   {
     "id": "2017-10-22-01-speculation-by-edmund-jorgensen-1",
-    "sequence": "2017-10-22-01-speculation-by-edmund-jorgensen-1",
+    "sequence": "2017-10-20-2017-10-22-01-speculation-by-edmund-jorgensen",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -171,7 +171,7 @@
   },
   {
     "id": "2017-10-22-01-speculation-by-edmund-jorgensen-2",
-    "sequence": "2017-10-22-01-speculation-by-edmund-jorgensen-2",
+    "sequence": "2017-10-21-2017-10-22-01-speculation-by-edmund-jorgensen",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -188,7 +188,7 @@
   },
   {
     "id": "2017-10-22-01-speculation-by-edmund-jorgensen-3",
-    "sequence": "2017-10-22-01-speculation-by-edmund-jorgensen-3",
+    "sequence": "2017-10-22-2017-10-22-01-speculation-by-edmund-jorgensen",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Novel",
@@ -205,7 +205,7 @@
   },
   {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-0",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-0",
+    "sequence": "2017-10-22-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -221,8 +221,25 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-0",
+    "sequence": "2017-10-22-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-22",
+    "progress": "15%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-1",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-1",
+    "sequence": "2017-10-23-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -238,8 +255,25 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-1",
+    "sequence": "2017-10-23-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-23",
+    "progress": "25%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-2",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-2",
+    "sequence": "2017-10-24-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -255,8 +289,25 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-2",
+    "sequence": "2017-10-24-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-24",
+    "progress": "35%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-3",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-3",
+    "sequence": "2017-10-25-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -272,8 +323,25 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-3",
+    "sequence": "2017-10-25-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-25",
+    "progress": "36%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-4",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-4",
+    "sequence": "2017-10-26-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -289,8 +357,42 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-4",
+    "sequence": "2017-10-26-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-26",
+    "progress": "42%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-11-08-01-life-itself-by-roger-ebert-0",
+    "sequence": "2017-10-26-2017-11-08-01-life-itself-by-roger-ebert",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Nonfiction",
+    "date": "2017-10-26",
+    "progress": "2%",
+    "workYear": "2011",
+    "title": "Life Itself",
+    "authors": [
+      {
+        "name": "Roger Ebert",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-5",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-5",
+    "sequence": "2017-10-27-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -306,8 +408,76 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-5",
+    "sequence": "2017-10-27-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-27",
+    "progress": "47%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-11-08-01-life-itself-by-roger-ebert-1",
+    "sequence": "2017-10-27-2017-11-08-01-life-itself-by-roger-ebert",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Nonfiction",
+    "date": "2017-10-27",
+    "progress": "5%",
+    "workYear": "2011",
+    "title": "Life Itself",
+    "authors": [
+      {
+        "name": "Roger Ebert",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-6",
+    "sequence": "2017-10-28-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-28",
+    "progress": "48%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-11-08-01-life-itself-by-roger-ebert-2",
+    "sequence": "2017-10-28-2017-11-08-01-life-itself-by-roger-ebert",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Nonfiction",
+    "date": "2017-10-28",
+    "progress": "14%",
+    "workYear": "2011",
+    "title": "Life Itself",
+    "authors": [
+      {
+        "name": "Roger Ebert",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-6",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-6",
+    "sequence": "2017-10-29-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -323,8 +493,42 @@
     ]
   },
   {
+    "id": "2017-11-03-02-baal-by-robert-mccammon-7",
+    "sequence": "2017-10-29-2017-11-03-02-baal-by-robert-mccammon",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Novel",
+    "date": "2017-10-29",
+    "progress": "61%",
+    "workYear": "1978",
+    "title": "Baal",
+    "authors": [
+      {
+        "name": "Robert McCammon",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-11-08-01-life-itself-by-roger-ebert-3",
+    "sequence": "2017-10-29-2017-11-08-01-life-itself-by-roger-ebert",
+    "reviewSlug": null,
+    "edition": "Ebook",
+    "kind": "Nonfiction",
+    "date": "2017-10-29",
+    "progress": "21%",
+    "workYear": "2011",
+    "title": "Life Itself",
+    "authors": [
+      {
+        "name": "Roger Ebert",
+        "notes": null
+      }
+    ]
+  },
+  {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-7",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-7",
+    "sequence": "2017-10-30-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -341,7 +545,7 @@
   },
   {
     "id": "2017-11-01-02-scared-stiff-by-ramsey-campbell-8",
-    "sequence": "2017-11-01-02-scared-stiff-by-ramsey-campbell-8",
+    "sequence": "2017-10-31-2017-11-01-02-scared-stiff-by-ramsey-campbell",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Collection",
@@ -357,212 +561,8 @@
     ]
   },
   {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-0",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-0",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-22",
-    "progress": "15%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-1",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-1",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-23",
-    "progress": "25%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-2",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-2",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-24",
-    "progress": "35%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-3",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-3",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-25",
-    "progress": "36%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-4",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-4",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-26",
-    "progress": "42%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-5",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-5",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-27",
-    "progress": "47%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-6",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-6",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-28",
-    "progress": "48%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-03-02-baal-by-robert-mccammon-7",
-    "sequence": "2017-11-03-02-baal-by-robert-mccammon-7",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Novel",
-    "date": "2017-10-29",
-    "progress": "61%",
-    "workYear": "1978",
-    "title": "Baal",
-    "authors": [
-      {
-        "name": "Robert McCammon",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-08-01-life-itself-by-roger-ebert-0",
-    "sequence": "2017-11-08-01-life-itself-by-roger-ebert-0",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Nonfiction",
-    "date": "2017-10-26",
-    "progress": "2%",
-    "workYear": "2011",
-    "title": "Life Itself",
-    "authors": [
-      {
-        "name": "Roger Ebert",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-08-01-life-itself-by-roger-ebert-1",
-    "sequence": "2017-11-08-01-life-itself-by-roger-ebert-1",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Nonfiction",
-    "date": "2017-10-27",
-    "progress": "5%",
-    "workYear": "2011",
-    "title": "Life Itself",
-    "authors": [
-      {
-        "name": "Roger Ebert",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-08-01-life-itself-by-roger-ebert-2",
-    "sequence": "2017-11-08-01-life-itself-by-roger-ebert-2",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Nonfiction",
-    "date": "2017-10-28",
-    "progress": "14%",
-    "workYear": "2011",
-    "title": "Life Itself",
-    "authors": [
-      {
-        "name": "Roger Ebert",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-11-08-01-life-itself-by-roger-ebert-3",
-    "sequence": "2017-11-08-01-life-itself-by-roger-ebert-3",
-    "reviewSlug": null,
-    "edition": "Ebook",
-    "kind": "Nonfiction",
-    "date": "2017-10-29",
-    "progress": "21%",
-    "workYear": "2011",
-    "title": "Life Itself",
-    "authors": [
-      {
-        "name": "Roger Ebert",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2017-11-08-01-life-itself-by-roger-ebert-4",
-    "sequence": "2017-11-08-01-life-itself-by-roger-ebert-4",
+    "sequence": "2017-10-31-2017-11-08-01-life-itself-by-roger-ebert",
     "reviewSlug": null,
     "edition": "Ebook",
     "kind": "Nonfiction",

@@ -1,41 +1,7 @@
 [
   {
-    "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-10",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-10",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2017-03-15",
-    "progress": "82%",
-    "workYear": "1930",
-    "title": "The Maltese Falcon",
-    "authors": [
-      {
-        "name": "Dashiell Hammett",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-11",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-11",
-    "reviewSlug": null,
-    "edition": "Paperback",
-    "kind": "Novel",
-    "date": "2017-03-17",
-    "progress": "Finished",
-    "workYear": "1930",
-    "title": "The Maltese Falcon",
-    "authors": [
-      {
-        "name": "Dashiell Hammett",
-        "notes": null
-      }
-    ]
-  },
-  {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-2",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-2",
+    "sequence": "2017-03-02-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -52,7 +18,7 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-3",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-3",
+    "sequence": "2017-03-03-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -69,7 +35,7 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-4",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-4",
+    "sequence": "2017-03-04-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -86,7 +52,7 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-5",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-5",
+    "sequence": "2017-03-05-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -103,7 +69,7 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-6",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-6",
+    "sequence": "2017-03-08-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -120,7 +86,7 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-7",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-7",
+    "sequence": "2017-03-10-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -137,7 +103,7 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-8",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-8",
+    "sequence": "2017-03-13-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
@@ -154,12 +120,46 @@
   },
   {
     "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-9",
-    "sequence": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-9",
+    "sequence": "2017-03-14-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
     "reviewSlug": null,
     "edition": "Paperback",
     "kind": "Novel",
     "date": "2017-03-14",
     "progress": "79%",
+    "workYear": "1930",
+    "title": "The Maltese Falcon",
+    "authors": [
+      {
+        "name": "Dashiell Hammett",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-10",
+    "sequence": "2017-03-15-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2017-03-15",
+    "progress": "82%",
+    "workYear": "1930",
+    "title": "The Maltese Falcon",
+    "authors": [
+      {
+        "name": "Dashiell Hammett",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2017-03-17-01-the-maltese-falcon-by-dashiell-hammett-11",
+    "sequence": "2017-03-17-2017-03-17-01-the-maltese-falcon-by-dashiell-hammett",
+    "reviewSlug": null,
+    "edition": "Paperback",
+    "kind": "Novel",
+    "date": "2017-03-17",
+    "progress": "Finished",
     "workYear": "1930",
     "title": "The Maltese Falcon",
     "authors": [

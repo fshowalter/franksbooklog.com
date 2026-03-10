@@ -6,7 +6,7 @@ import CoverListItem from "~/components/cover-list/CoverListItem.astro";
 import ListItemEdition from "~/components/list-item-edition/ListItemEdition.astro";
 import ListItemReviewDate from "~/components/list-item-review-date/ListItemReviewDate.astro";
 import ListItemTitle from "~/components/list-item-title/ListItemTitle.astro";
-import { displayDate } from "~/utils/displayDate";
+import { toDisplayDate } from "~/utils/toDisplayDate";
 
 type Props = {
   values: MostReadAuthor[];
@@ -126,7 +126,7 @@ const { values } = Astro.props;
                             title={readWork.title}
                           />
                           <ListItemReviewDate
-                            displayDate={displayDate(readWork.readingDate)}
+                            displayDate={toDisplayDate(readWork.readingDate)}
                           />
                           <ListItemEdition value={readWork.edition} />
                         </div>
