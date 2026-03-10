@@ -49,12 +49,12 @@ function createReadingValue(
       width: 250,
     },
     edition: "Paperback",
-    entrySequence: testIdCounter,
     kind: "Novel",
     progress: "Finished",
     readingDate,
     readingYear: "2024",
     reviewed: false,
+    sequence: testIdCounter,
     slug: `test-book-${testIdCounter}`,
     title: `Test Book ${testIdCounter}`,
     workYear: "1970",
@@ -442,18 +442,18 @@ describe("ReadingLog", () => {
     it("sorts by reading date newest first", ({ expect }) => {
       const readings = [
         createReadingValue({
-          entrySequence: 1,
           readingDate: "2024-01-01",
+          sequence: 1,
           title: "Old Reading",
         }),
         createReadingValue({
-          entrySequence: 3,
           readingDate: "2024-01-03",
+          sequence: 3,
           title: "New Reading",
         }),
         createReadingValue({
-          entrySequence: 2,
           readingDate: "2024-01-02",
+          sequence: 2,
           title: "Mid Reading",
         }),
       ];
@@ -515,13 +515,13 @@ describe("ReadingLog", () => {
     it("navigates to previous month", async ({ expect }) => {
       const readings = [
         createReadingValue({
-          entrySequence: 2,
           readingDate: "2024-02-15",
+          sequence: 2,
           title: "February Book",
         }),
         createReadingValue({
-          entrySequence: 1,
           readingDate: "2024-01-15",
+          sequence: 1,
           title: "January Book",
         }),
       ];

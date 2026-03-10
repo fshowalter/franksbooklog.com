@@ -39,6 +39,19 @@ const MostReadAuthorWorkSchema = z
     return { edition, readingDate, reviewSlug, title };
   });
 
+const ReadingLogWorkAuthorSchema = z
+  .object({
+    name: z.string(),
+    notes: z
+      .nullable(z.string())
+      .optional()
+      .transform((v) => v ?? undefined),
+  })
+  .transform(({ name, notes }) => {
+    // fix zod making anything with undefined optional
+    return { name, notes };
+  });
+
 const ReviewedAuthorWorkSchema = z.object({
   authors: z.array(ReviewedWorkAuthorSchema),
   grade: z.string(),
@@ -51,6 +64,51 @@ const ReviewedAuthorWorkSchema = z.object({
   title: z.string(),
   workYear: z.string(),
 });
+
+export const ReadingLogSchema = z
+  .object({
+    authors: z.array(ReadingLogWorkAuthorSchema),
+    date: z.coerce.date(),
+    edition: z.string(),
+    id: z.string(),
+    kind: z.string(),
+    progress: z.string(),
+    reviewSlug: z
+      .nullable(z.string())
+      .optional()
+      .transform((v) => v ?? undefined),
+    sequence: z.string(),
+    title: z.string(),
+    workYear: z.string(),
+  })
+  .transform(
+    ({
+      authors,
+      date,
+      edition,
+      id,
+      kind,
+      progress,
+      reviewSlug,
+      sequence,
+      title,
+      workYear,
+    }) => {
+      // fix zod making anything with undefined optional
+      return {
+        authors,
+        date,
+        edition,
+        id,
+        kind,
+        progress,
+        reviewSlug,
+        sequence,
+        title,
+        workYear,
+      };
+    },
+  );
 
 export const ReviewedAuthorSchema = z.object({
   name: z.string(),

@@ -76,7 +76,7 @@ export function CalendarCell({
               <CoverListItem
                 className={`items-center`}
                 coverImageProps={reading.coverImageProps}
-                key={reading.entrySequence}
+                key={reading.sequence}
               >
                 <div
                   className={`

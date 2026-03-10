@@ -1,12 +1,6 @@
-import type {
-  AuthorData,
-  ReadingData,
-  ReviewData,
-  WorkData,
-} from "~/content.config";
+import type { CollectionEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/api/covers";
-import { allReadingEntries } from "~/api/readings";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogProps } from "./ReadingLog";
@@ -14,45 +8,37 @@ import type { ReadingLogProps } from "./ReadingLog";
 import { ReadingLogImageConfig } from "./ReadingLog";
 
 export async function getReadingLogProps(
-  readings: ReadingData[],
-  works: WorkData[],
-  reviews: ReviewData[],
-  authors: AuthorData[],
+  readingLogEntrys: CollectionEntry<"readingLog">["data"][],
 ): Promise<ReadingLogProps> {
-  const {
-    distinctEditions,
-    distinctKinds,
-    distinctReadingYears,
-    distinctWorkYears,
-    readingEntries,
-  } = allReadingEntries(readings, works, reviews, authors);
+  const distinctEditions = new Set<string>();
+  const distinctKinds = new Set<string>();
+  const distinctReadingYears = new Set<string>();
+  const distinctWorkYears = new Set<string>();
 
-  // Don't pre-sort here - let the component handle sorting
-  // timelineEntries.sort((a, b) => b.timelineSequence - a.timelineSequence);
+  readingLogEntrys.sort((a, b) => a.sequence.localeCompare(b.sequence));
 
   const values = await Promise.all(
-    readingEntries.map(async (entry) => {
+    readingLogEntrys.map(async (entry, index) => {
+      distinctEditions.add(entry.edition);
+      distinctKinds.add(entry.kind);
+      distinctReadingYears.add(entry.date.toISOString().slice(0, 4));
+      distinctWorkYears.add(entry.workYear);
+
       const value: ReadingLogValue = {
         abandoned: entry.progress === "Abandoned",
-        authors: entry.authors.map((author) => {
-          const authorValue: ReadingLogValue["authors"][0] = {
-            name: author.name,
-          };
-
-          return authorValue;
-        }),
+        authors: entry.authors,
         coverImageProps: await getFluidCoverImageProps(
-          entry,
+          { slug: entry.reviewSlug || "default" },
           ReadingLogImageConfig,
         ),
         edition: entry.edition,
-        entrySequence: entry.readingEntrySequence,
         kind: entry.kind,
         progress: entry.progress,
-        readingDate: entry.readingEntryDate, // Keep original date string for calendar
-        readingYear: entry.readingEntryDate.slice(0, 4),
-        reviewed: entry.reviewed,
-        slug: entry.slug,
+        readingDate: entry.date.toISOString(), // Keep original date string for calendar
+        readingYear: entry.date.toISOString().slice(0, 4),
+        reviewed: Boolean(entry.reviewSlug),
+        sequence: index,
+        slug: entry.reviewSlug,
         title: entry.title,
         workYear: entry.workYear,
       };
@@ -62,10 +48,10 @@ export async function getReadingLogProps(
   );
 
   return {
-    distinctEditions,
-    distinctKinds,
-    distinctReadingYears,
-    distinctWorkYears,
+    distinctEditions: [...distinctEditions].toSorted(),
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctReadingYears: [...distinctReadingYears].toSorted(),
+    distinctWorkYears: [...distinctWorkYears].toSorted(),
     initialSort: "reading-date-desc",
     values,
   };
