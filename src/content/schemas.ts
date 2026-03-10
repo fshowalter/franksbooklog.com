@@ -1,5 +1,20 @@
 import { reference, z } from "astro:content";
 
+const ReviewedWorkAuthorSchema = z
+  .object({
+    name: z.string(),
+    notes: z
+      .nullable(z.string())
+      .optional()
+      .transform((v) => v ?? undefined),
+    slug: z.string(),
+    sortName: z.string(),
+  })
+  .transform(({ name, notes, slug, sortName }) => {
+    // fix zod making anything with undefined optional
+    return { name, notes, slug, sortName };
+  });
+
 const DistributionSchema = z.object({
   count: z.number(),
   name: z.string(),
@@ -23,6 +38,26 @@ const MostReadAuthorWorkSchema = z
     // fix zod making anything with undefined optional
     return { edition, readingDate, reviewSlug, title };
   });
+
+const ReviewedAuthorWorkSchema = z.object({
+  authors: z.array(ReviewedWorkAuthorSchema),
+  grade: z.string(),
+  id: z.string(),
+  kind: z.string(),
+  reviewDate: z.coerce.date(),
+  reviewSequence: z.string(),
+  reviewSlug: z.string(),
+  sortTitle: z.string(),
+  title: z.string(),
+  workYear: z.string(),
+});
+
+export const ReviewedAuthorSchema = z.object({
+  name: z.string(),
+  reviewedWorks: z.array(ReviewedAuthorWorkSchema),
+  slug: z.string(),
+  sortName: z.string(),
+});
 
 const MostReadAuthorSchema = z
   .object({
@@ -63,21 +98,6 @@ export const AlltimeStatsSchema = z.object({
   statsYears: z.array(z.string()),
   workCount: z.number(),
 });
-
-const ReviewedWorkAuthorSchema = z
-  .object({
-    name: z.string(),
-    notes: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    slug: z.string(),
-    sortName: z.string(),
-  })
-  .transform(({ name, notes, slug, sortName }) => {
-    // fix zod making anything with undefined optional
-    return { name, notes, slug, sortName };
-  });
 
 // const WorkAuthorSchema = z
 //   .object({

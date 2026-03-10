@@ -36,6 +36,7 @@ import { trimToExcerpt } from "~/api/utils/markdown/trimToExcerpt";
 import { getContentPlainText } from "./api/reviews";
 import {
   AlltimeStatsSchema,
+  ReviewedAuthorSchema,
   ReviewedWorkSchema,
   // WorkSchema,
   YearStatsSchema,
@@ -55,44 +56,44 @@ function getBaseProcessor() {
 }
 
 /** Load a single JSON file that contains an array of items, one entry per item. */
-async function loadJsonArrayFile({
-  filePath,
-  loaderContext,
-}: {
-  filePath: string;
-  loaderContext: LoaderContext;
-}): Promise<void> {
-  const sync = async () => {
-    const rawItems = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
-      string,
-      unknown
-    >[];
+// async function loadJsonArrayFile({
+//   filePath,
+//   loaderContext,
+// }: {
+//   filePath: string;
+//   loaderContext: LoaderContext;
+// }): Promise<void> {
+//   const sync = async () => {
+//     const rawItems = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
+//       string,
+//       unknown
+//     >[];
 
-    const newIds = new Set<string>();
+//     const newIds = new Set<string>();
 
-    for (const raw of rawItems) {
-      const id = raw.id as string;
-      newIds.add(id);
+//     for (const raw of rawItems) {
+//       const id = raw.id as string;
+//       newIds.add(id);
 
-      const digest = loaderContext.generateDigest(raw);
-      if (
-        loaderContext.store.has(id) &&
-        loaderContext.store.get(id)?.digest === digest
-      ) {
-        continue;
-      }
+//       const digest = loaderContext.generateDigest(raw);
+//       if (
+//         loaderContext.store.has(id) &&
+//         loaderContext.store.get(id)?.digest === digest
+//       ) {
+//         continue;
+//       }
 
-      const data = await loaderContext.parseData({ data: raw, id });
-      loaderContext.store.set({ data, digest, id });
-    }
+//       const data = await loaderContext.parseData({ data: raw, id });
+//       loaderContext.store.set({ data, digest, id });
+//     }
 
-    for (const id of loaderContext.store.keys()) {
-      if (!newIds.has(id)) loaderContext.store.delete(id);
-    }
-  };
+//     for (const id of loaderContext.store.keys()) {
+//       if (!newIds.has(id)) loaderContext.store.delete(id);
+//     }
+//   };
 
-  return watchFile(loaderContext, filePath, sync);
-}
+//   return watchFile(loaderContext, filePath, sync);
+// }
 
 /** Load a directory of JSON files, one entry per file. */
 async function loadJsonDirectory({
@@ -320,11 +321,11 @@ async function watchFile(
 
 // --- Collection schemas ---
 
-const AuthorSchema = z.object({
-  name: z.string(),
-  slug: z.string(),
-  sortName: z.string(),
-});
+// const AuthorSchema = z.object({
+//   name: z.string(),
+//   slug: z.string(),
+//   sortName: z.string(),
+// });
 
 // AIDEV-NOTE: WorkRawAuthorSchema is the shape of authors inside works/*.json — just slug
 // and optional notes. Names are looked up from the authors collection at getProps time.
@@ -475,17 +476,17 @@ const PageSchema = z.object({
 
 // --- Collection definitions ---
 
-const authors = defineCollection({
+const reviewedAuthors = defineCollection({
   loader: {
     load: (ctx) =>
       loadJsonDirectory({
-        directoryPath: path.join(CONTENT_ROOT, "data", "authors"),
+        directoryPath: path.join(CONTENT_ROOT, "data", "reviewed-authors"),
         getId: (raw) => raw.slug as string,
         loaderContext: ctx,
       }),
-    name: "authors-loader",
+    name: "reviewed-authors-loader",
   },
-  schema: AuthorSchema,
+  schema: ReviewedAuthorSchema,
 });
 
 // const works = defineCollection({
@@ -697,16 +698,15 @@ const yearStats = defineCollection({
 // These are the single source of truth for typed data in tests and API functions.
 // Import from this file when writing fixtures or type-annotating collection data.
 
-export type AuthorData = z.infer<typeof AuthorSchema>;
 export type PageData = z.infer<typeof PageSchema>;
 export type ReadingData = z.infer<typeof ReadingSchema>;
 export type ReviewData = z.infer<typeof ReviewSchema>;
 
 export const collections = {
   alltimeStats,
-  authors,
   pages,
   readings,
+  reviewedAuthors,
   reviewedWorks,
   reviews,
   // works,

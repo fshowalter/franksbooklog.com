@@ -56,7 +56,7 @@ export async function getReviewsProps(
 
   return {
     distinctKinds: [...distinctKinds].toSorted(),
-    distinctReviewYears: [...distinctKinds]
+    distinctReviewYears: [...distinctReviewYears]
       .map((year) => year.toString())
       .toSorted(),
     distinctWorkYears: [...distinctWorkYears].toSorted(),

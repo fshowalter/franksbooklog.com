@@ -2,12 +2,12 @@ import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
-import { GroupedCoverList } from "~/components/cover-list/PaginatedCoverList";
+import { PaginatedCoverList } from "~/components/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
 import { createKindCountMap } from "~/filterers/filterTitles";
-import { usePaginatedGroupedValues } from "~/hooks/usePaginatedValues";
+import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
@@ -27,7 +27,6 @@ import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
-import { groupAuthorTitles } from "./groupAuthorTitles";
 import { sortAuthorTitles } from "./sortAuthorTitles";
 
 /**
@@ -115,10 +114,9 @@ export function AuthorTitles({
     createInitialState,
   );
 
-  const [groupedValues, totalCount] = usePaginatedGroupedValues(
+  const [paginatedValues, totalCount] = usePaginatedValues(
     sortAuthorTitles,
     filterAuthorTitles,
-    groupAuthorTitles,
     state.values,
     state.sort,
     state.activeFilterValues,
@@ -174,14 +172,14 @@ export function AuthorTitles({
       }}
       totalCount={totalCount}
     >
-      <GroupedCoverList
-        groupedValues={groupedValues}
+      <PaginatedCoverList
         onShowMore={() => dispatch(createShowMoreAction())}
         totalCount={totalCount}
+        values={paginatedValues}
         visibleCount={state.showCount}
       >
         {(value) => <AuthorWorksListItem key={value.slug} value={value} />}
-      </GroupedCoverList>
+      </PaginatedCoverList>
     </FilterAndSortContainer>
   );
 }

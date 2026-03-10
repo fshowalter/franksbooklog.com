@@ -12,9 +12,10 @@ export function SideNav({
   return (
     <nav
       className={`
-        sticky top-[148px] z-nav-menu scrollbar-hidden h-[calc(100vh-148px)]
+        sticky top-[89px] z-nav-menu scrollbar-hidden h-[calc(100vh-148px)]
         overflow-y-auto bg-sidenav
         tablet:top-24 tablet:h-[calc(100vh-96px)] tablet:px-4
+        laptop:top-[97px]
       `}
     >
       <div className={`flex flex-col text-md font-semibold tracking-wide`}>

@@ -40,7 +40,7 @@ export function CoverListItemCover({
         className={`
           relative
           after:absolute after:top-0 after:left-0 after:z-sticky after:block
-          after:size-full after:rounded-[2.5px]
+          after:size-full after:rounded-sm
           after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
           after:mix-blend-multiply
         `}
@@ -49,10 +49,10 @@ export function CoverListItemCover({
           className={`
             relative z-10
             before:absolute before:top-0 before:left-0 before:z-10 before:block
-            before:size-full before:rounded-[2.5px]
+            before:size-full before:rounded-sm
             before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
             after:absolute after:top-0 after:left-0 after:block after:size-full
-            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:rounded-sm after:bg-[url(/assets/spot.png)]
             after:bg-size-[100%_100%] after:mix-blend-soft-light
           `}
         >
@@ -61,8 +61,8 @@ export function CoverListItemCover({
             alt=""
             {...imageConfig}
             className={`
-              transform-gpu rounded-[2.5px] bg-default shadow-sm
-              transition-transform duration-500
+              transform-gpu rounded-sm bg-default shadow-sm transition-transform
+              duration-500
               group-has-[a:hover]/list-item:scale-110
               @min-[160px]:shadow-lg
             `}
