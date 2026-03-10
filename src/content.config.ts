@@ -15,8 +15,7 @@
 
 import type { LoaderContext } from "astro/loaders";
 
-import { defineCollection, reference, z } from "astro:content";
-import matter from "gray-matter";
+import { defineCollection, z } from "astro:content";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import rehypeRaw from "rehype-raw";
@@ -26,17 +25,16 @@ import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
 
-import { removeFootnotes } from "~/utils/markdown/removeFootnotes";
 import { rootAsSpan } from "~/utils/markdown/rootAsSpan";
-import { trimToExcerpt } from "~/utils/markdown/trimToExcerpt";
 
-import { getContentPlainText } from "./api/reviews";
+import { pages } from "./collections/pages";
+import { reviews } from "./collections/reviews";
+import { alltimeStats, yearStats } from "./collections/stats";
+import { loadMarkdownDirectory } from "./collections/utils/loadMarkdownDirectory";
 import {
-  AlltimeStatsSchema,
   ReadingLogSchema,
   ReviewedAuthorSchema,
   ReviewedWorkSchema,
-  YearStatsSchema,
 } from "./schemas";
 
 // --- Path helper ---
@@ -138,101 +136,6 @@ async function loadJsonSplitFile({
 
   return watchDirectory(loaderContext, directoryPath, sync);
 }
-/** Load a directory of Markdown files, one entry per file.
- *  getId derives the entry ID cheaply (no I/O); buildData runs the remark/rehype
- *  pipeline and is only called when the digest shows the file has changed. */
-async function loadMarkdownDirectory(
-  ctx: LoaderContext,
-  dirPath: string,
-  getId: (opts: {
-    body: string;
-    frontmatter: Record<string, unknown>;
-    name: string;
-  }) => string,
-  buildData: (opts: {
-    body: string;
-    frontmatter: Record<string, unknown>;
-    id: string;
-  }) => Record<string, unknown>,
-): Promise<void> {
-  const sync = async () => {
-    const entries = await fs.readdir(dirPath, { withFileTypes: true });
-    const mdFiles = entries.filter(
-      (e) => !e.isDirectory() && e.name.endsWith(".md"),
-    );
-    const newIds = new Set<string>();
-
-    for (const entry of mdFiles) {
-      const filePath = path.join(dirPath, entry.name);
-      const fileContents = await fs.readFile(filePath, "utf8");
-      const { content: body, data: frontmatter } = matter(fileContents);
-      const id = getId({ body, frontmatter, name: entry.name });
-      newIds.add(id);
-
-      // Digest raw content to skip expensive remark/rehype re-processing
-      const digest = ctx.generateDigest({ body, frontmatter });
-      if (ctx.store.has(id) && ctx.store.get(id)?.digest === digest) {
-        continue;
-      }
-
-      // buildData runs remark/rehype WITHOUT linkReviewedWorks (applied in API layer)
-      const data = await ctx.parseData({
-        data: buildData({ body, frontmatter, id }),
-        id,
-      });
-      ctx.store.set({ data, digest, id });
-    }
-
-    for (const id of ctx.store.keys()) {
-      if (!newIds.has(id)) ctx.store.delete(id);
-    }
-  };
-
-  return watchDirectory(ctx, dirPath, sync);
-}
-
-/** Load a single JSON object file as one store entry with a fixed id. */
-async function loadSingleJsonFile({
-  filePath,
-  id,
-  loaderContext,
-}: {
-  filePath: string;
-  id: string;
-  loaderContext: LoaderContext;
-}): Promise<void> {
-  const sync = async () => {
-    const raw = JSON.parse(await fs.readFile(filePath, "utf8")) as Record<
-      string,
-      unknown
-    >;
-    const digest = loaderContext.generateDigest(raw);
-
-    if (
-      loaderContext.store.has(id) &&
-      loaderContext.store.get(id)?.digest === digest
-    ) {
-      return;
-    }
-
-    const data = await loaderContext.parseData({ data: raw, id });
-    loaderContext.store.set({ data, digest, id });
-  };
-
-  return watchFile(loaderContext, filePath, sync);
-}
-
-/** Excerpt HTML pipeline — truncates to first paragraph, no linkReviewedWorks */
-function toExcerptHtml(content: string): string {
-  return getBaseProcessor()
-    .use(removeFootnotes)
-    .use(trimToExcerpt)
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeRaw)
-    .use(rehypeStringify)
-    .processSync(content)
-    .toString();
-}
 
 /** Inline span HTML pipeline — wraps in <span>, no linkReviewedWorks */
 function toInlineSpanHtml(content: string): string {
@@ -271,38 +174,9 @@ async function watchDirectory(
   });
 }
 
-/** Run sync() immediately, then re-run it whenever filePath changes. */
-async function watchFile(
-  ctx: LoaderContext,
-  filePath: string,
-  sync: () => Promise<void>,
-): Promise<void> {
-  await sync();
-  ctx.watcher?.add(filePath);
-  ctx.watcher?.on("change", (changedPath) => {
-    if (changedPath === filePath) void sync();
-  });
-}
-
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
   progress: z.string(),
-});
-
-// AIDEV-NOTE: slug references the 'works' collection — parseData() coerces the plain
-// frontmatter string to { collection: "works", id } automatically.
-const ReviewSchema = z.object({
-  body: z.string(),
-  date: z.coerce.date(),
-  description: z.string(),
-  excerptHtml: z.string(),
-  excerptPlainText: z.string(),
-  grade: z.string(),
-  intermediateHtml: z.string(),
-  more: reference("moreForReviewedWorks"),
-  slug: z.string(),
-  synopsis: z.optional(z.string()),
-  work: reference("works"),
 });
 
 const ReadingSchema = z
@@ -356,14 +230,6 @@ const ReadingSchema = z
     },
   );
 
-const PageSchema = z.object({
-  body: z.string(),
-  description: z.string(),
-  intermediateHtml: z.string(),
-  slug: z.string(),
-  title: z.string(),
-});
-
 const reviewedAuthors = defineCollection({
   loader: {
     load: (ctx) =>
@@ -401,52 +267,6 @@ const readingLog = defineCollection({
   schema: ReadingLogSchema,
 });
 
-const reviews = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadMarkdownDirectory(
-        ctx,
-        path.join(CONTENT_ROOT, "reviews"),
-        ({ name }) => name.replace(/\.md$/, ""),
-        ({ body, frontmatter }) => {
-          const excerptContent =
-            (frontmatter.synopsis as string | undefined)?.trim() || body;
-
-          const contentPlainText = getContentPlainText(body);
-
-          //trim the string to the maximum length
-          let description = contentPlainText
-            .replaceAll(/\r?\n|\r/g, " ")
-            .slice(0, Math.max(0, 160));
-
-          //re-trim if we are in the middle of a word
-          description = description.slice(
-            0,
-            Math.max(
-              0,
-              Math.min(description.length, description.lastIndexOf(" ")),
-            ),
-          );
-          return {
-            body,
-            date: frontmatter.date,
-            description,
-            excerptHtml: toExcerptHtml(excerptContent),
-            excerptPlainText: excerptContent,
-            grade: frontmatter.grade as string,
-            intermediateHtml: toIntermediateHtml(body),
-            more: frontmatter.slug,
-            slug: frontmatter.slug as string,
-            synopsis: frontmatter.synopsis as string | undefined,
-            work: frontmatter.slug as string,
-          };
-        },
-      ),
-    name: "reviews-loader",
-  },
-  schema: ReviewSchema,
-});
-
 const RawReadingFrontmatterSchema = z.object({
   date: z.coerce.date(),
   edition: z.string(),
@@ -480,12 +300,9 @@ function computeReadingTime(readingFrontmatter: RawReadingFrontmatter): number {
 
 const readings = defineCollection({
   loader: {
-    load: (ctx) =>
-      loadMarkdownDirectory(
-        ctx,
-        path.join(CONTENT_ROOT, "readings"),
-        ({ name }) => name.replace(/\.md$/, ""),
-        ({ body, frontmatter }) => {
+    load: (loaderContext) =>
+      loadMarkdownDirectory({
+        buildData: ({ body, frontmatter }) => {
           const parsedFrontmatter =
             RawReadingFrontmatterSchema.parse(frontmatter);
 
@@ -511,83 +328,13 @@ const readings = defineCollection({
             workId: parsedFrontmatter.workSlug,
           };
         },
-      ),
+        directoryPath: path.join(CONTENT_ROOT, "readings"),
+        loaderContext,
+      }),
     name: "readings-loader",
   },
   schema: ReadingSchema,
 });
-
-const pages = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadMarkdownDirectory(
-        ctx,
-        path.join(CONTENT_ROOT, "pages"),
-        ({ frontmatter }) => frontmatter.slug as string,
-        ({ body, frontmatter }) => {
-          const contentPlainText = getContentPlainText(body);
-
-          //trim the string to the maximum length
-          let description = contentPlainText
-            .replaceAll(/\r?\n|\r/g, " ")
-            .slice(0, Math.max(0, 160));
-
-          //re-trim if we are in the middle of a word
-          description = description.slice(
-            0,
-            Math.max(
-              0,
-              Math.min(description.length, description.lastIndexOf(" ")),
-            ),
-          );
-
-          return {
-            body,
-            description,
-            intermediateHtml: toIntermediateHtml(body),
-            slug: frontmatter.slug as string,
-            title: frontmatter.title as string,
-          };
-        },
-      ),
-    name: "pages-loader",
-  },
-  schema: PageSchema,
-});
-
-const alltimeStats = defineCollection({
-  loader: {
-    load: (loaderContext) =>
-      loadSingleJsonFile({
-        filePath: path.join(CONTENT_ROOT, "data", "all-time-stats.json"),
-        id: "alltimeStats",
-        loaderContext,
-      }),
-    name: "alltime-stats-loader",
-  },
-  schema: AlltimeStatsSchema,
-});
-
-const yearStats = defineCollection({
-  loader: {
-    load: (ctx) =>
-      loadJsonDirectory({
-        directoryPath: path.join(CONTENT_ROOT, "data", "year-stats"),
-        getId: (raw) => raw.year as string,
-        loaderContext: ctx,
-      }),
-    name: "year-stats-loader",
-  },
-  schema: YearStatsSchema,
-});
-
-// --- Exported types ---
-// These are the single source of truth for typed data in tests and API functions.
-// Import from this file when writing fixtures or type-annotating collection data.
-
-export type PageData = z.infer<typeof PageSchema>;
-export type ReadingData = z.infer<typeof ReadingSchema>;
-export type ReviewData = z.infer<typeof ReviewSchema>;
 
 export const collections = {
   alltimeStats,
