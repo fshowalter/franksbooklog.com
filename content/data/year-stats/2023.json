@@ -54,23 +54,43 @@
   ],
   "mostReadAuthors": [
     {
-      "name": "Stephen Morris",
       "count": 2,
+      "name": "Stephen Morris",
       "slug": "stephen-morris",
       "reviewed": true,
-      "readings": [
-        "2023-11-11-01-record-play-pause-by-stephen-morris",
-        "2023-12-09-01-fast-forward-by-stephen-morris"
+      "readWorks": [
+        {
+          "title": "Record Play Pause",
+          "edition": "Audiobook",
+          "readingDate": "2023-11-11",
+          "reviewSlug": "record-play-pause-by-stephen-morris"
+        },
+        {
+          "title": "Fast Forward",
+          "edition": "Audiobook",
+          "readingDate": "2023-12-09",
+          "reviewSlug": "fast-forward-by-stephen-morris"
+        }
       ]
     },
     {
-      "name": "Philip Fracassi",
       "count": 2,
+      "name": "Philip Fracassi",
       "slug": "philip-fracassi",
       "reviewed": true,
-      "readings": [
-        "2023-10-09-01-sacculina-by-philip-fracassi",
-        "2023-10-29-01-dont-let-them-get-you-down-by-philip-fracassi"
+      "readWorks": [
+        {
+          "title": "Sacculina",
+          "edition": "Ebook",
+          "readingDate": "2023-10-09",
+          "reviewSlug": "sacculina-by-philip-fracassi"
+        },
+        {
+          "title": "Don't Let Them Get You Down",
+          "edition": "Ebook",
+          "readingDate": "2023-10-29",
+          "reviewSlug": "dont-let-them-get-you-down-by-philip-fracassi"
+        }
       ]
     }
   ]

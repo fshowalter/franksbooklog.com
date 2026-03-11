@@ -1,4 +1,4 @@
-import type { CoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/assets/covers";
 
 import { CoverListItemCover } from "./CoverListItemCover";
 

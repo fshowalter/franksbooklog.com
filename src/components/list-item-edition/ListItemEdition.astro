@@ -1,0 +1,11 @@
+---
+type Props = {
+  value: string;
+};
+
+const { value } = Astro.props;
+---
+
+<div class={`font-sans text-xs/4 tracking-prose text-subtle`}>
+  {value}
+</div>

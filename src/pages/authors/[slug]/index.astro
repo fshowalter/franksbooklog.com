@@ -1,68 +1,28 @@
 ---
+import type { CollectionEntry } from "astro:content";
+
 import { getCollection } from "astro:content";
 
-import type { Author } from "~/api/authors";
+import AuthorTitlesPage from "~/features/author-titles/AuthorTitlesPage.astro";
 
-import { allAuthors } from "~/api/authors";
-import HeroLayout from "~/components/layout/HeroLayout.astro";
-import { AuthorTitles } from "~/features/author-titles/AuthorTitles";
-import { getAuthorTitlesProps } from "~/features/author-titles/getAuthorTitlesProps";
-
-type Props = Author;
+type Props = {
+  reviewedAuthor: CollectionEntry<"reviewedAuthors">["data"];
+};
 
 export async function getStaticPaths() {
-  const authorEntries = await getCollection("authors");
-  const authors = authorEntries.map((e) => e.data);
+  const reviewedAuthors = await getCollection("reviewedAuthors");
 
-  return allAuthors(authors).map((author) => {
+  return reviewedAuthors.map(({ data: reviewedAuthor }) => {
     return {
       params: {
-        slug: author.slug,
+        slug: reviewedAuthor.slug,
       },
-      props: author,
+      props: { reviewedAuthor },
     };
   });
 }
 
-const { name, slug } = Astro.props;
-
-const authorTitlesProps = await getAuthorTitlesProps(slug);
-
-const reviewedWorkCount = authorTitlesProps.values.length;
-
-let worksLabel = "works";
-
-if (reviewedWorkCount === 1) {
-  worksLabel = "work";
-}
-
-const deck = `Author of ${reviewedWorkCount} reviewed ${worksLabel}.`;
-const metaDescription = `Reviews of books and stories written by ${name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`;
+const { reviewedAuthor } = Astro.props;
 ---
 
-<HeroLayout
-  baseLayoutProps={{
-    canonical: true,
-    meta: {
-      description: metaDescription,
-    },
-    openGraph: {
-      description: deck,
-      type: "website",
-    },
-    title: `${name} book & story reviews`,
-  }}
-  heroProps={{
-    avatarSlug: slug,
-    backdropSlug: "author",
-    breadcrumb: {
-      href: "/authors/",
-      text: "Authors",
-    },
-    centerText: true,
-    deck,
-    title: name,
-  }}
->
-  <AuthorTitles client:load {...authorTitlesProps} />
-</HeroLayout>
+<AuthorTitlesPage reviewedAuthor={reviewedAuthor} />

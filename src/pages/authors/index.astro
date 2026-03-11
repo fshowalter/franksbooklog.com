@@ -1,35 +1,5 @@
 ---
-import { getCollection } from "astro:content";
-
-import HeroLayout from "~/components/layout/HeroLayout.astro";
-import { Authors } from "~/features/authors/Authors";
-import { getAuthorsProps } from "~/features/authors/getAuthorsProps";
-
-const authorEntries = await getCollection("authors");
-const authors = authorEntries.map((e) => e.data);
-const authorsProps = await getAuthorsProps(authors);
-
-const title = "Authors";
-const deck = '"Maybe I can glue it together. In the morning"';
-const metaDescription =
-  "A sortable index of authors who contributed to the books and stories reviewed on this site. Sort by name or review count.";
+import AuthorsPage from "~/features/authors/AuthorsPage.astro";
 ---
 
-<HeroLayout
-  baseLayoutProps={{
-    canonical: true,
-    meta: { description: metaDescription },
-    openGraph: {
-      description: deck,
-      type: "website",
-    },
-    title,
-  }}
-  heroProps={{
-    backdropSlug: "authors",
-    deck,
-    title,
-  }}
->
-  <Authors client:load {...authorsProps} />
-</HeroLayout>
+<AuthorsPage />

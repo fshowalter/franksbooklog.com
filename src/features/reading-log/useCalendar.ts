@@ -50,7 +50,7 @@ export function useCalendar(
   }
 
   for (const values of entriesForMonth.values()) {
-    values.sort((a, b) => a.entrySequence - b.entrySequence);
+    values.sort((a, b) => a.sequence - b.sequence);
   }
 
   const cells = getCalendarCells(currentMonthDate, entriesForMonth);

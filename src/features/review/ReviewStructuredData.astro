@@ -1,0 +1,45 @@
+---
+import { getStructuredDataCoverSrc } from "~/assets/covers";
+
+const structuredDataGradeMap: Record<string, number> = {
+  A: 5,
+  B: 4,
+  C: 3,
+  D: 2,
+  F: 1,
+};
+
+type Props = {
+  grade: string;
+  slug: string;
+  title: string;
+};
+
+const { grade, slug, title } = Astro.props;
+---
+
+{
+  grade != "Abandoned" && (
+    <script
+      is:inline
+      set:html={JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Frank Showalter",
+        },
+        itemReviewed: {
+          "@type": "Book",
+          image: await getStructuredDataCoverSrc({ slug }),
+          name: title,
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: structuredDataGradeMap[grade[0]],
+        },
+      })}
+      type="application/ld+json"
+    />
+  )
+}

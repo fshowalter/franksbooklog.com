@@ -1,0 +1,58 @@
+---
+import { getFluidCoverImageProps } from "~/assets/covers";
+
+import CoverListItemCover from "./CoverListItemCover.astro";
+
+/**
+ * Image configuration for cover list items.
+ * Defines responsive sizing with detailed breakpoints to ensure optimal
+ * image loading across different screen sizes and grid layouts.
+ */
+const CoverListItemImageConfig = {
+  height: 375,
+  sizes:
+    "(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)",
+  width: 250,
+};
+
+type Props = {
+  children: unknown;
+  class?: string;
+  coverSlug: string;
+  hasReview?: boolean;
+};
+
+const { class: className, coverSlug, hasReview } = Astro.props;
+
+const coverImageProps = await getFluidCoverImageProps(
+  { slug: coverSlug },
+  CoverListItemImageConfig,
+);
+---
+
+<li
+  class:list={[
+    `
+      group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+      transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+      transition-transform duration-500
+      tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+      tablet:p-6
+      ${
+        hasReview
+          ? `
+            tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default
+            tablet:has-[a:hover]:drop-shadow-2xl
+          `
+          : `bg-transparent`
+      }
+    `,
+    className,
+  ]}
+>
+  <CoverListItemCover
+    imageConfig={CoverListItemImageConfig}
+    imageProps={coverImageProps}
+  />
+  <slot />
+</li>

@@ -1,81 +1,46 @@
-import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
-import type { ReadingData } from "~/content.config";
-
-import { getAuthorDetails } from "~/api/authors";
-import { getFluidCoverImageProps } from "~/api/covers";
+import { getFluidCoverImageProps } from "~/assets/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
-import { displayDate } from "~/utils/displayDate";
 import { gradeToValue } from "~/utils/grades";
+import { toDisplayDate } from "~/utils/toDisplayDate";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
 export async function getAuthorTitlesProps(
-  slug: string,
+  reviewedAuthor: CollectionEntry<"reviewedAuthors">["data"],
 ): Promise<AuthorTitlesProps> {
-  const [worksEntries, reviewsEntries, readingsEntries, authorsEntries] =
-    await Promise.all([
-      getCollection("works"),
-      getCollection("reviews"),
-      getCollection("readings"),
-      getCollection("authors"),
-    ]);
-
-  const works = worksEntries.map((e) => e.data);
-  const reviews = reviewsEntries.map((e) => e.data);
-  const authors = authorsEntries.map((e) => e.data);
-
-  const details = getAuthorDetails(slug, authors, works, reviews);
-  if (!details) throw new Error(`Author not found: ${slug}`);
-
-  const { distinctKinds, distinctReviewYears, distinctWorkYears } = details;
-
-  const reviewsMap = new Map(reviews.map((r) => [r.slug.id, r]));
-  const authorsMap = new Map(authors.map((a) => [a.slug, a]));
-
-  // Group readings by workSlug for reviewSequence computation
-  const readingsByWork = new Map<string, ReadingData[]>();
-  for (const entry of readingsEntries) {
-    const list = readingsByWork.get(entry.data.workSlug) ?? [];
-    list.push(entry.data);
-    readingsByWork.set(entry.data.workSlug, list);
-  }
-
-  // Works this author contributed to that are reviewed
-  const reviewedSlugs = new Set(reviews.map((r) => r.slug.id));
-  const authorWorks = worksEntries.filter(
-    (e) =>
-      reviewedSlugs.has(e.id) && e.data.authors.some((a) => a.slug === slug),
-  );
+  const distinctKinds = new Set<string>();
+  const distinctReviewYears = new Set<string>();
+  const distinctWorkYears = new Set<string>();
 
   const values = await Promise.all(
-    authorWorks.map(async (workEntry) => {
-      const work = workEntry.data;
-      const review = reviewsMap.get(workEntry.id)!;
-
-      const otherAuthors = work.authors
-        .filter((a) => a.slug !== slug)
-        .map((a) => ({ name: authorsMap.get(a.slug)?.name ?? a.slug }));
+    reviewedAuthor.reviewedWorks.map(async (reviewedWork) => {
+      distinctKinds.add(reviewedWork.kind);
+      distinctReviewYears.add(reviewedWork.reviewDate.getFullYear().toString());
+      distinctWorkYears.add(reviewedWork.workYear);
 
       const value: AuthorTitlesValue = {
-        abandoned: review.grade === "Abandoned",
+        abandoned: reviewedWork.grade === "Abandoned",
         coverImageProps: await getFluidCoverImageProps(
-          { slug: workEntry.id },
+          { slug: reviewedWork.reviewSlug },
           CoverListItemImageConfig,
         ),
-        displayDate: displayDate(review.date),
-        grade: review.grade,
-        gradeValue: gradeToValue(review.grade),
-        kind: work.kind,
-        otherAuthors,
-        reviewDate: review.date,
-        reviewed: review.grade !== "Abandoned",
-        reviewSequence: getReviewSequence(workEntry.id, readingsByWork),
-        reviewYear: String(review.date.getFullYear()),
-        slug: workEntry.id,
-        sortTitle: work.sortTitle,
-        title: work.title,
-        workYear: work.workYear,
+        displayDate: toDisplayDate(reviewedWork.reviewDate),
+        grade: reviewedWork.grade,
+        gradeValue: gradeToValue(reviewedWork.grade),
+        kind: reviewedWork.kind,
+        otherAuthors: reviewedWork.authors.filter(
+          (a) => a.slug !== reviewedAuthor.slug,
+        ),
+        reviewDate: reviewedWork.reviewDate,
+        reviewed: reviewedWork.grade !== "Abandoned",
+        reviewSequence: reviewedWork.reviewSequence,
+        reviewYear: reviewedWork.reviewDate.getFullYear().toString(),
+        slug: reviewedWork.reviewSlug,
+        sortTitle: reviewedWork.sortTitle,
+        title: reviewedWork.title,
+        workYear: reviewedWork.workYear,
       };
 
       return value;
@@ -83,22 +48,10 @@ export async function getAuthorTitlesProps(
   );
 
   return {
-    distinctKinds,
-    distinctReviewYears,
-    distinctWorkYears,
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctReviewYears: [...distinctReviewYears].toSorted(),
+    distinctWorkYears: [...distinctWorkYears].toSorted(),
     initialSort: "title-asc",
     values,
   };
-}
-
-// AIDEV-NOTE: reviewSequence = slug of the most recent reading for a work, derived by
-// sorting the work's readings by date descending and taking the first entry's slug.
-function getReviewSequence(
-  workSlug: string,
-  readingsByWork: Map<string, ReadingData[]>,
-): string {
-  const readings = readingsByWork.get(workSlug) ?? [];
-  if (readings.length === 0) return "";
-  return readings.toSorted((a, b) => b.date.getTime() - a.date.getTime())[0]
-    .slug;
 }

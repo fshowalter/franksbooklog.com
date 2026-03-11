@@ -54,46 +54,181 @@
   ],
   "mostReadAuthors": [
     {
-      "name": "Richard Laymon",
       "count": 17,
+      "name": "Richard Laymon",
       "slug": "richard-laymon",
       "reviewed": true,
-      "readings": [
-        "2014-02-24-01-the-cellar-by-richard-laymon",
-        "2014-03-12-01-your-secret-admirer-by-richard-laymon",
-        "2014-03-18-01-the-woods-are-dark-by-richard-laymon",
-        "2014-04-05-01-nightmare-lake-by-richard-laymon",
-        "2014-04-11-01-the-lawmen-by-richard-laymon",
-        "2014-04-28-01-out-are-the-lights-by-richard-laymon",
-        "2014-05-21-01-night-show-by-richard-laymon",
-        "2014-06-09-01-dawsons-city-by-richard-laymon",
-        "2014-06-09-02-shootout-at-joes-by-richard-laymon",
-        "2014-06-09-03-allhallows-eve-by-richard-laymon",
-        "2014-06-27-01-beware-by-richard-laymon",
-        "2014-07-13-01-the-last-hand-by-richard-laymon",
-        "2014-07-22-01-the-beast-house-by-richard-laymon",
-        "2014-07-23-01-the-intruder-by-richard-laymon",
-        "2014-09-21-01-tread-softly-by-richard-laymon",
-        "2014-10-28-01-the-lonely-one-by-richard-laymon",
-        "2014-11-02-01-live-bait-by-richard-laymon"
+      "readWorks": [
+        {
+          "title": "The Cellar",
+          "edition": "Paperback",
+          "readingDate": "2014-02-24",
+          "reviewSlug": "the-cellar-by-richard-laymon"
+        },
+        {
+          "title": "Your Secret Admirer",
+          "edition": "Paperback",
+          "readingDate": "2014-03-12",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Woods Are Dark",
+          "edition": "Paperback",
+          "readingDate": "2014-03-18",
+          "reviewSlug": "the-woods-are-dark-by-richard-laymon"
+        },
+        {
+          "title": "Nightmare Lake",
+          "edition": "Paperback",
+          "readingDate": "2014-04-05",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Lawmen",
+          "edition": "Paperback",
+          "readingDate": "2014-04-11",
+          "reviewSlug": null
+        },
+        {
+          "title": "Out Are the Lights",
+          "edition": "Paperback",
+          "readingDate": "2014-04-28",
+          "reviewSlug": "out-are-the-lights-by-richard-laymon"
+        },
+        {
+          "title": "Night Show",
+          "edition": "Paperback",
+          "readingDate": "2014-05-21",
+          "reviewSlug": null
+        },
+        {
+          "title": "Dawson's City",
+          "edition": "Paperback",
+          "readingDate": "2014-06-09",
+          "reviewSlug": null
+        },
+        {
+          "title": "Shootout at Joe's",
+          "edition": "Paperback",
+          "readingDate": "2014-06-09",
+          "reviewSlug": null
+        },
+        {
+          "title": "Allhallow's Eve",
+          "edition": "Paperback",
+          "readingDate": "2014-06-09",
+          "reviewSlug": null
+        },
+        {
+          "title": "Beware!",
+          "edition": "Paperback",
+          "readingDate": "2014-06-27",
+          "reviewSlug": "beware-by-richard-laymon"
+        },
+        {
+          "title": "The Last Hand",
+          "edition": "Paperback",
+          "readingDate": "2014-07-13",
+          "reviewSlug": "the-last-hand-by-richard-laymon"
+        },
+        {
+          "title": "The Beast House",
+          "edition": "Paperback",
+          "readingDate": "2014-07-22",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Intruder",
+          "edition": "Paperback",
+          "readingDate": "2014-07-23",
+          "reviewSlug": "the-intruder-by-richard-laymon"
+        },
+        {
+          "title": "Tread Softly",
+          "edition": "Paperback",
+          "readingDate": "2014-09-21",
+          "reviewSlug": "tread-softly-by-richard-laymon"
+        },
+        {
+          "title": "The Lonely One",
+          "edition": "Paperback",
+          "readingDate": "2014-10-28",
+          "reviewSlug": "the-lonely-one-by-richard-laymon"
+        },
+        {
+          "title": "Live Bait",
+          "edition": "Paperback",
+          "readingDate": "2014-11-02",
+          "reviewSlug": null
+        }
       ]
     },
     {
-      "name": "Stephen King",
       "count": 10,
+      "name": "Stephen King",
       "slug": "stephen-king",
       "reviewed": true,
-      "readings": [
-        "2014-03-02-01-the-stand-by-stephen-king",
-        "2014-03-09-01-the-long-walk-by-stephen-king",
-        "2014-04-04-01-the-dead-zone-by-stephen-king",
-        "2014-04-22-01-firestarter-by-stephen-king",
-        "2014-05-11-01-roadwork-by-stephen-king",
-        "2014-06-04-01-danse-macabre-by-stephen-king",
-        "2014-06-17-04-cujo-by-stephen-king",
-        "2014-07-10-01-the-running-man-by-stephen-king",
-        "2014-08-05-01-the-gunslinger-by-stephen-king",
-        "2014-10-27-01-different-seasons-by-stephen-king"
+      "readWorks": [
+        {
+          "title": "The Stand",
+          "edition": "Paperback",
+          "readingDate": "2014-03-02",
+          "reviewSlug": "the-stand-by-stephen-king"
+        },
+        {
+          "title": "The Long Walk",
+          "edition": "Paperback",
+          "readingDate": "2014-03-09",
+          "reviewSlug": "the-long-walk-by-stephen-king"
+        },
+        {
+          "title": "The Dead Zone",
+          "edition": "Paperback",
+          "readingDate": "2014-04-04",
+          "reviewSlug": null
+        },
+        {
+          "title": "Firestarter",
+          "edition": "Ebook",
+          "readingDate": "2014-04-22",
+          "reviewSlug": null
+        },
+        {
+          "title": "Roadwork",
+          "edition": "Paperback",
+          "readingDate": "2014-05-11",
+          "reviewSlug": null
+        },
+        {
+          "title": "Danse Macabre",
+          "edition": "Ebook",
+          "readingDate": "2014-06-04",
+          "reviewSlug": null
+        },
+        {
+          "title": "Cujo",
+          "edition": "Ebook",
+          "readingDate": "2014-06-17",
+          "reviewSlug": "cujo-by-stephen-king"
+        },
+        {
+          "title": "The Running Man",
+          "edition": "Paperback",
+          "readingDate": "2014-07-10",
+          "reviewSlug": null
+        },
+        {
+          "title": "The Gunslinger",
+          "edition": "Paperback",
+          "readingDate": "2014-08-05",
+          "reviewSlug": null
+        },
+        {
+          "title": "Different Seasons",
+          "edition": "Paperback",
+          "readingDate": "2014-10-27",
+          "reviewSlug": null
+        }
       ]
     }
   ]

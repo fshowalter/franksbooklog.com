@@ -3,7 +3,7 @@ import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
   clickShowMore,
-  getGroupedCoverList,
+  getCoverList,
 } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
@@ -54,7 +54,6 @@ function createReviewValue(
     grade: "B+",
     gradeValue: 10,
     kind: "Novel",
-    reviewed: true,
     reviewSequence: testIdCounter.toLocaleString("en-US", {
       minimumIntegerDigits: 3,
     }),
@@ -105,7 +104,7 @@ describe("Reviews", () => {
       await fillTitleFilter(user, "Dracula");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Dracula")).toBeInTheDocument();
       expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
       expect(within(list).queryByText("Pet Sematary")).not.toBeInTheDocument();
@@ -125,7 +124,7 @@ describe("Reviews", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("A Novel")).toBeInTheDocument();
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
       expect(
@@ -147,7 +146,7 @@ describe("Reviews", () => {
       await fillGradeFilter(user, "B-", "A+");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Good Book")).toBeInTheDocument();
       expect(within(list).getByText("Great Book")).toBeInTheDocument();
       expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
@@ -167,7 +166,7 @@ describe("Reviews", () => {
       await fillWorkYearFilter(user, "1985", "1995");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Mid Book")).toBeInTheDocument();
       expect(within(list).queryByText("Old Book")).not.toBeInTheDocument();
       expect(within(list).queryByText("New Book")).not.toBeInTheDocument();
@@ -187,7 +186,7 @@ describe("Reviews", () => {
       await fillReviewYearFilter(user, "2023", "2023");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("2023 Review")).toBeInTheDocument();
       expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
       expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
@@ -208,7 +207,7 @@ describe("Reviews", () => {
       await clickKindFilterOption(user, "Collection");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("A Novel")).toBeInTheDocument();
       expect(within(list).getByText("A Collection")).toBeInTheDocument();
       expect(
@@ -234,7 +233,7 @@ describe("Reviews", () => {
       await clickAbandonedFilterOption(user);
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Abandoned Book")).toBeInTheDocument();
       expect(within(list).queryByText("Normal Book")).not.toBeInTheDocument();
     });
@@ -261,7 +260,7 @@ describe("Reviews", () => {
 
       render(<Reviews {...baseProps} values={reviews} />);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
 
       // Check that all authors are displayed with proper formatting
       expect(within(list).getByText(/Terry Pratchett/)).toBeInTheDocument();
@@ -295,7 +294,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Author (A → Z)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
 
       // The book with Arthur as first author should appear first
@@ -332,7 +331,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Author (A → Z)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const arthurIndex = allText.indexOf("Arthur Conan Doyle");
       const maryIndex = allText.indexOf("Mary Shelley");
@@ -367,7 +366,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Author (Z → A)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const arthurIndex = allText.indexOf("Arthur Conan Doyle");
       const maryIndex = allText.indexOf("Mary Shelley");
@@ -389,7 +388,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Title (A → Z)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const alphaIndex = allText.indexOf("Alpha Book");
       const middleIndex = allText.indexOf("Middle Book");
@@ -411,7 +410,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Title (Z → A)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const alphaIndex = allText.indexOf("Alpha Book");
       const middleIndex = allText.indexOf("Middle Book");
@@ -442,7 +441,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Work Year (Oldest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
 
       const classicIndex = allText.indexOf("Classic Book");
@@ -474,7 +473,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Work Year (Newest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
 
       const classicIndex = allText.indexOf("Classic Book");
@@ -497,7 +496,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Grade (Best First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const greatIndex = allText.indexOf("Great Book");
       const okayIndex = allText.indexOf("Okay Book");
@@ -519,7 +518,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Grade (Worst First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const greatIndex = allText.indexOf("Great Book");
       const okayIndex = allText.indexOf("Okay Book");
@@ -541,7 +540,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Review Date (Newest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const newIndex = allText.indexOf("New Review");
       const midIndex = allText.indexOf("Mid Review");
@@ -563,7 +562,7 @@ describe("Reviews", () => {
 
       await clickSortOption(user, "Review Date (Oldest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const newIndex = allText.indexOf("New Review");
       const midIndex = allText.indexOf("Mid Review");
@@ -584,7 +583,7 @@ describe("Reviews", () => {
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={manyReviews} />);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
 
       // Initially should show first 100 items
       expect(within(list).getByText("Book 1")).toBeInTheDocument();
@@ -615,7 +614,7 @@ describe("Reviews", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Dracula")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
 
@@ -648,7 +647,7 @@ describe("Reviews", () => {
       await fillTitleFilter(user, "Dracula");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Dracula")).toBeInTheDocument();
       expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
 
@@ -702,7 +701,7 @@ describe("Reviews", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);

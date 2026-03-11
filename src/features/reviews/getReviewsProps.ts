@@ -1,50 +1,32 @@
-import type {
-  AuthorData,
-  ReadingData,
-  ReviewData,
-  WorkData,
-} from "~/content.config";
+import type { CollectionEntry } from "astro:content";
 
-import { getFluidCoverImageProps } from "~/api/covers";
-import { allReviews } from "~/api/reviews";
+import { getFluidCoverImageProps } from "~/assets/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
-import { displayDate } from "~/utils/displayDate";
+import { gradeToValue } from "~/utils/grades";
+import { toDisplayDate } from "~/utils/toDisplayDate";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
 
-/**
- * Loads and prepares data for the Reviews page component.
- * Joins works, reviews, authors, and readings collections; sorts by author name;
- * and prepares optimized cover images for the reviews listing page.
- *
- * @param works - All work data from the works collection
- * @param reviews - All review data from the reviews collection
- * @param authors - All author data from the authors collection
- * @param readings - All reading data from the readings collection
- * @returns Promise resolving to Reviews page props with all review data and filtering metadata
- */
 export async function getReviewsProps(
-  works: WorkData[],
-  reviews: ReviewData[],
-  authors: AuthorData[],
-  readings: ReadingData[],
+  reviewedWorks: CollectionEntry<"reviewedWorks">["data"][],
 ): Promise<ReviewsProps> {
-  const {
-    distinctKinds,
-    distinctReviewYears,
-    distinctWorkYears,
-    reviews: allReviewsList,
-  } = allReviews(works, reviews, authors, readings);
-
-  allReviewsList.sort((a, b) =>
+  reviewedWorks.sort((a, b) =>
     a.authors[0].sortName.localeCompare(b.authors[0].sortName),
   );
 
+  const distinctKinds = new Set<string>();
+  const distinctReviewYears = new Set<number>();
+  const distinctWorkYears = new Set<string>();
+
   const values = await Promise.all(
-    allReviewsList.map(async (review) => {
+    reviewedWorks.map(async (reviewedWork) => {
+      distinctKinds.add(reviewedWork.kind);
+      distinctReviewYears.add(reviewedWork.reviewDate.getFullYear());
+      distinctWorkYears.add(reviewedWork.workYear);
+
       const value: ReviewsValue = {
-        abandoned: review.abandoned,
-        authors: review.authors.map((author) => {
+        abandoned: reviewedWork.grade === "Abandoned",
+        authors: reviewedWork.authors.map((author) => {
           const authorValue: ReviewsValue["authors"][number] = {
             name: author.name,
             sortName: author.sortName,
@@ -53,20 +35,19 @@ export async function getReviewsProps(
           return authorValue;
         }),
         coverImageProps: await getFluidCoverImageProps(
-          review,
+          { slug: reviewedWork.id },
           CoverListItemImageConfig,
         ),
-        displayDate: displayDate(review.date),
-        grade: review.grade,
-        gradeValue: review.gradeValue,
-        kind: review.kind,
-        reviewed: !review.abandoned,
-        reviewSequence: review.reviewSequence,
-        reviewYear: review.reviewYear,
-        slug: review.slug,
-        sortTitle: review.sortTitle,
-        title: review.title,
-        workYear: review.workYear,
+        displayDate: toDisplayDate(reviewedWork.reviewDate),
+        grade: reviewedWork.grade,
+        gradeValue: gradeToValue(reviewedWork.grade),
+        kind: reviewedWork.kind,
+        reviewSequence: reviewedWork.reviewSequence,
+        reviewYear: reviewedWork.reviewDate.getFullYear().toString(),
+        slug: reviewedWork.review.id,
+        sortTitle: reviewedWork.sortTitle,
+        title: reviewedWork.title,
+        workYear: reviewedWork.workYear,
       };
 
       return value;
@@ -74,9 +55,11 @@ export async function getReviewsProps(
   );
 
   return {
-    distinctKinds,
-    distinctReviewYears,
-    distinctWorkYears,
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctReviewYears: [...distinctReviewYears]
+      .map((year) => year.toString())
+      .toSorted(),
+    distinctWorkYears: [...distinctWorkYears].toSorted(),
     initialSort: "author-asc",
     values,
   };

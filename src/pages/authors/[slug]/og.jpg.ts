@@ -2,26 +2,23 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 
 import { getCollection } from "astro:content";
 
-import { allAuthors } from "~/api/authors";
-import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
-import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
+import { getOpenGraphAvatarAsBase64String } from "~/assets/avatars";
+import { getOpenGraphBackdropAsBase64String } from "~/assets/backdrops";
 import { AuthorTitlesOpenGraphImage } from "~/features/author-titles/AuthorTitlesOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export async function getStaticPaths() {
-  const authorEntries = await getCollection("authors");
-  const authors = allAuthors(authorEntries.map((e) => e.data));
+  const reviewedAuthors = await getCollection("reviewedAuthors");
 
-  return authors.map((member) => {
+  return reviewedAuthors.map(({ data: reviewedAuthor }) => {
     return {
       params: {
-        slug: member.slug,
+        slug: reviewedAuthor.slug,
       },
       props: {
-        name: member.name,
-        slug: member.slug,
+        reviewedAuthor,
       },
     };
   });
@@ -37,13 +34,13 @@ export async function getStaticPaths() {
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get({ props }) {
-  const { name, slug } = props as Props;
+  const { reviewedAuthor } = props as Props;
 
   const jpeg = await componentToImage(
     AuthorTitlesOpenGraphImage({
-      avatar: await getOpenGraphAvatarAsBase64String(slug),
+      avatar: await getOpenGraphAvatarAsBase64String(reviewedAuthor.slug),
       backdrop: await getOpenGraphBackdropAsBase64String("author"),
-      name,
+      name: reviewedAuthor.name,
     }),
   );
 

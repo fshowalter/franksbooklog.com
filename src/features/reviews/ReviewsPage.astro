@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+
+import HeroLayout from "~/components/layout/HeroLayout.astro";
+import { getReviewsProps } from "~/features/reviews/getReviewsProps";
+import { Reviews } from "~/features/reviews/Reviews";
+
+const reviewedWorks = await getCollection("reviewedWorks");
+const reviewsProps = await getReviewsProps(
+  reviewedWorks.map((entry) => entry.data),
+);
+
+const title = "Reviews";
+const deck = `"You were always the best of them, Lloyd."`;
+const metaDescription =
+  "All my book and story reviews. Filter by title, kind, review date, work date, or grade. Sort by best or worst, oldest or newest, author, or title.";
+---
+
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title,
+  }}
+  heroProps={{
+    backdropSlug: "reviews",
+    deck,
+    title,
+  }}
+>
+  <Reviews client:load {...reviewsProps} />
+</HeroLayout>

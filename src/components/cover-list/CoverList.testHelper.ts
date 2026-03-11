@@ -18,6 +18,6 @@ export async function clickShowMore(user: UserEvent) {
  *
  * @returns The grouped cover list DOM element
  */
-export function getGroupedCoverList() {
-  return screen.getByTestId("grouped-cover-list");
+export function getCoverList() {
+  return screen.getByTestId("cover-list");
 }

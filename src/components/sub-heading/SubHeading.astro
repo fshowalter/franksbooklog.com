@@ -1,0 +1,18 @@
+---
+type Props = {
+  children: unknown;
+  class?: string;
+  level: "h2" | "h3" | "h4" | "h5";
+};
+
+const { class: classNames, level: HeadingTag } = Astro.props;
+---
+
+<HeadingTag
+  class:list={[
+    `py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase`,
+    classNames,
+  ]}
+>
+  <slot />
+</HeadingTag>

@@ -1,11 +1,10 @@
 import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
+import { getEntry } from "astro:content";
 
-import type { Review } from "~/api/reviews";
-
-import { getFeedCoverProps } from "~/api/covers";
-import { allReviews, loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { getFeedCoverProps } from "~/assets/covers";
 import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
+import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 
 /**
  * Astro API endpoint that generates an RSS feed for the most recent book reviews.
@@ -14,24 +13,7 @@ import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
  * @returns RSS response containing the latest 10 book reviews with metadata
  */
 export async function GET() {
-  const [worksEntries, reviewsEntries, authorsEntries, readingsEntries] =
-    await Promise.all([
-      getCollection("works"),
-      getCollection("reviews"),
-      getCollection("authors"),
-      getCollection("readings"),
-    ]);
-  const works = worksEntries.map((e) => e.data);
-  const reviewsData = reviewsEntries.map((e) => e.data);
-  const authors = authorsEntries.map((e) => e.data);
-  const readings = readingsEntries.map((e) => e.data);
-  const { reviews: allReviewsList } = allReviews(
-    works,
-    reviewsData,
-    authors,
-    readings,
-  );
-  const recentReviews = mostRecentReviews(allReviewsList, 10);
+  const recentReviewedWorks = await mostRecentReviewedWorks(10);
 
   return rss({
     customData:
@@ -41,15 +23,15 @@ export async function GET() {
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
     items: await Promise.all(
-      recentReviews.map(async (review) => {
-        const cover = await getFeedCoverProps(review);
-        const excerpt = loadExcerptHtml(review);
+      recentReviewedWorks.map(async ({ data: reviewedWork }) => {
+        const { data: review } = await getEntry(reviewedWork.review);
+        const cover = await getFeedCoverProps({ slug: review.slug });
 
         return {
-          content: `<img src="${cover.src}" alt="">${addMetaToExcerpt(excerpt, review)}`,
+          content: `<img src="${cover.src}" alt="">${addGradeToExcerpt(review.excerptHtml, review.grade)}`,
           link: `https://www.franksbooklog.com/reviews/${review.slug}/`,
           pubDate: review.date,
-          title: `${review.title} by ${authorsToString(review.authors)}`,
+          title: `${reviewedWork.title} by ${formatWorkAuthors(reviewedWork.authors)}`,
         };
       }),
     ),
@@ -69,27 +51,7 @@ export async function GET() {
  * @param review - The review object containing grade and other metadata
  * @returns HTML string with star rating metadata prepended to the excerpt
  */
-function addMetaToExcerpt(excerpt: string, review: Review) {
-  const meta = `${textStarsForGrade(review.grade)}`;
+function addGradeToExcerpt(excerpt: string, grade: string) {
+  const meta = `${textStarsForGrade(grade)}`;
   return `<p>${meta}</p>${excerpt}`;
-}
-
-/**
- * Converts an array of author objects to a human-readable string format.
- * Handles author names with optional notes and formats them using the browser's
- * Intl.ListFormat for proper comma separation and conjunction.
- *
- * @param authors - Array of author objects with name and optional notes
- * @returns Formatted string of author names, e.g., "John Doe, Jane Smith (Editor), and Bob Johnson"
- */
-function authorsToString(authors: Review["authors"]) {
-  const authorsArray = authors.map((author) => {
-    if (author.notes) {
-      return `${author.name} (${author.notes})`;
-    }
-
-    return author.name;
-  });
-
-  return new Intl.ListFormat().format(authorsArray);
 }

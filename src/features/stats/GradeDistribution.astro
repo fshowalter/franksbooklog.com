@@ -1,0 +1,13 @@
+---
+import type { ComponentProps } from "astro/types";
+
+import Distribution from "./Distribution.astro";
+
+type Props = {
+  values: ComponentProps<typeof Distribution>["values"];
+};
+
+const { values } = Astro.props;
+---
+
+<Distribution title="Grade Distribution" values={values} />

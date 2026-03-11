@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef } from "react";
 
-import type { CoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/assets/covers";
 
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
@@ -36,13 +36,11 @@ export type ReadingLogValue = {
   /** Whether this reading was abandoned (progress === "Abandoned") */
   abandoned: boolean;
   /** Authors of the work being read */
-  authors: { name: string }[];
+  authors: { name: string; notes?: string }[];
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
   /** Edition information (e.g., "First Edition", "Paperback") */
   edition: string;
-  /** Sequence number for this reading entry */
-  entrySequence: number;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
   /** Reading progress (e.g., "Finished", "In Progress") */
@@ -53,8 +51,10 @@ export type ReadingLogValue = {
   readingYear: string;
   /** Whether this work has been reviewed */
   reviewed: boolean;
+  /** Sequence number for this reading entry */
+  sequence: number;
   /** URL slug for the work's page */
-  slug: string;
+  slug?: string;
   /** Title of the work */
   title: string;
   /** Year the work was originally published */

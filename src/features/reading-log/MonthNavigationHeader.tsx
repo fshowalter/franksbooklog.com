@@ -50,7 +50,7 @@ export function MonthNavigationHeader({
   return (
     <div
       className={`
-        sticky top-(--list-scroll-offset) z-sticky flex
+        sticky top-(--filter-and-sort-container-scroll-offset) z-sticky flex
         max-w-(--breakpoint-desktop) items-center justify-between border-b
         border-default bg-subtle px-container py-4
         tablet:-mx-(--container-padding) tablet:py-6

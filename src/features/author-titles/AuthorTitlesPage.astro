@@ -1,0 +1,53 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+import HeroLayout from "~/components/layout/HeroLayout.astro";
+import { AuthorTitles } from "~/features/author-titles/AuthorTitles";
+import { getAuthorTitlesProps } from "~/features/author-titles/getAuthorTitlesProps";
+
+type Props = {
+  reviewedAuthor: CollectionEntry<"reviewedAuthors">["data"];
+};
+
+const { reviewedAuthor } = Astro.props;
+
+const authorTitlesProps = await getAuthorTitlesProps(reviewedAuthor);
+
+const reviewedWorkCount = authorTitlesProps.values.length;
+
+let worksLabel = "works";
+
+if (reviewedWorkCount === 1) {
+  worksLabel = "work";
+}
+
+const deck = `Author of ${reviewedWorkCount} reviewed ${worksLabel}.`;
+const metaDescription = `Reviews of books and stories written by ${reviewedAuthor.name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`;
+---
+
+<HeroLayout
+  baseLayoutProps={{
+    canonical: true,
+    meta: {
+      description: metaDescription,
+    },
+    openGraph: {
+      description: deck,
+      type: "website",
+    },
+    title: `${reviewedAuthor.name} book & story reviews`,
+  }}
+  heroProps={{
+    avatarSlug: reviewedAuthor.slug,
+    backdropSlug: "author",
+    breadcrumb: {
+      href: "/authors/",
+      text: "Authors",
+    },
+    centerText: true,
+    deck,
+    title: reviewedAuthor.name,
+  }}
+>
+  <AuthorTitles client:load {...authorTitlesProps} />
+</HeroLayout>

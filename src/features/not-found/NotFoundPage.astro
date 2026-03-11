@@ -1,0 +1,24 @@
+---
+import HeroLayout from "~/components/layout/HeroLayout.astro";
+
+const deck = '"I simply am not there."';
+const title = "404 Not Found";
+---
+
+<HeroLayout
+  baseLayoutProps={{
+    canonical: false,
+    meta: {
+      description: deck,
+    },
+    openGraph: false,
+    title,
+  }}
+  heroProps={{
+    backdropSlug: "not-found",
+    centerText: true,
+    deck,
+    size: "large",
+    title,
+  }}
+/>

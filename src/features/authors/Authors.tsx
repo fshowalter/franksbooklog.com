@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 
-import type { AvatarImageProps } from "~/api/avatars";
+import type { AvatarImageProps } from "~/assets/avatars";
 
 import { GroupedAvatarList } from "~/components/avatar-list/AvatarList";
 import { COLLECTION_SORT_OPTIONS } from "~/components/filter-and-sort/CollectionSortOptions";

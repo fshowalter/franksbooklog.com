@@ -3,7 +3,7 @@ import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
   clickShowMore,
-  getGroupedCoverList,
+  getCoverList,
 } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
@@ -101,7 +101,7 @@ describe("AuthorTitles", () => {
       await fillTitleFilter(user, "Cellar");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("The Cellar")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
       expect(
@@ -126,7 +126,7 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("A Novel")).toBeInTheDocument();
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
       expect(
@@ -160,7 +160,7 @@ describe("AuthorTitles", () => {
       await fillGradeFilter(user, "B-", "A+");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Good Book")).toBeInTheDocument();
       expect(within(list).getByText("Great Book")).toBeInTheDocument();
       expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
@@ -180,7 +180,7 @@ describe("AuthorTitles", () => {
       await fillWorkYearFilter(user, "1985", "1995");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Mid Book")).toBeInTheDocument();
       expect(within(list).queryByText("Old Book")).not.toBeInTheDocument();
       expect(within(list).queryByText("New Book")).not.toBeInTheDocument();
@@ -200,7 +200,7 @@ describe("AuthorTitles", () => {
       await fillReviewYearFilter(user, "2023", "2023");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("2023 Review")).toBeInTheDocument();
       expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
       expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
@@ -224,7 +224,7 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Collection");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("A Novel")).toBeInTheDocument();
       expect(within(list).getByText("A Collection")).toBeInTheDocument();
       expect(
@@ -250,7 +250,7 @@ describe("AuthorTitles", () => {
       await clickAbandonedFilterOption(user);
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("Abandoned Book")).toBeInTheDocument();
       expect(within(list).queryByText("Normal Book")).not.toBeInTheDocument();
     });
@@ -269,7 +269,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Title (A → Z)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const alphaIndex = allText.indexOf("Alpha Book");
       const middleIndex = allText.indexOf("Middle Book");
@@ -291,7 +291,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Title (Z → A)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const alphaIndex = allText.indexOf("Alpha Book");
       const middleIndex = allText.indexOf("Middle Book");
@@ -322,7 +322,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Work Year (Oldest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
 
       // When sorted by work year, items are sorted by workYearSequence
@@ -355,7 +355,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Work Year (Newest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
 
       // When sorted by work year, items are sorted by workYearSequence in reverse
@@ -391,7 +391,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Grade (Best First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const greatIndex = allText.indexOf("Great Book");
       const okayIndex = allText.indexOf("Okay Book");
@@ -425,7 +425,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Grade (Worst First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const greatIndex = allText.indexOf("Great Book");
       const okayIndex = allText.indexOf("Okay Book");
@@ -459,7 +459,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Review Date (Newest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const oldIndex = allText.indexOf("Old Review");
       const midIndex = allText.indexOf("Mid Review");
@@ -493,7 +493,7 @@ describe("AuthorTitles", () => {
 
       await clickSortOption(user, "Review Date (Oldest First)");
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       const allText = list.textContent || "";
       const oldIndex = allText.indexOf("Old Review");
       const midIndex = allText.indexOf("Mid Review");
@@ -514,7 +514,7 @@ describe("AuthorTitles", () => {
       const user = getUserWithFakeTimers();
       render(<AuthorTitles {...baseProps} values={manyTitles} />);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
 
       // Initially should show first 100 items
       expect(within(list).getByText("Book 1")).toBeInTheDocument();
@@ -545,7 +545,7 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("The Cellar")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
 
@@ -578,7 +578,7 @@ describe("AuthorTitles", () => {
       await fillTitleFilter(user, "The Cellar");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).getByText("The Cellar")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
 
@@ -632,7 +632,7 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
       expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
@@ -673,7 +673,7 @@ describe("AuthorTitles", () => {
 
       render(<AuthorTitles {...baseProps} values={titles} />);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
 
       // Check that co-author is displayed with proper formatting (appears twice for two books)
       const coAuthorElements = within(list).getAllByText(/with Peter Straub/);
@@ -704,7 +704,7 @@ describe("AuthorTitles", () => {
 
       render(<AuthorTitles {...baseProps} values={titles} />);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
 
       // Check that both co-authors are displayed with proper conjunction
       const listText = list.textContent || "";
@@ -737,7 +737,7 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getGroupedCoverList();
+      const list = getCoverList();
 
       // Should show co-authored novel
       expect(within(list).getByText("The Talisman")).toBeInTheDocument();

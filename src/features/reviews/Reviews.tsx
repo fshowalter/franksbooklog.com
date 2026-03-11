@@ -1,18 +1,17 @@
 import { useReducer } from "react";
 
-import type { CoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/assets/covers";
 
-import { GroupedCoverList } from "~/components/cover-list/GroupedCoverList";
+import { PaginatedCoverList } from "~/components/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
 import { createKindCountMap } from "~/filterers/filterTitles";
-import { usePaginatedGroupedValues } from "~/hooks/usePaginatedGroupedValues";
+import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterReviews } from "./filterReviews";
-import { groupReviews } from "./groupReviews";
 import {
   createApplyFiltersAction,
   createClearFiltersAction,
@@ -67,8 +66,6 @@ export type ReviewsValue = {
   gradeValue: number;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
-  /** Always true — every item in the reviews list has been reviewed */
-  reviewed: boolean;
   /** Sequence string for chronological review ordering */
   reviewSequence: string;
   /** Year the review was written */
@@ -111,10 +108,9 @@ export function Reviews({
     },
     createInitialState,
   );
-  const [groupedValues, totalCount] = usePaginatedGroupedValues(
+  const [paginatedValues, totalCount] = usePaginatedValues(
     sortReviews,
     filterReviews,
-    groupReviews,
     state.values,
     state.sort,
     state.activeFilterValues,
@@ -174,14 +170,14 @@ export function Reviews({
       }}
       totalCount={totalCount}
     >
-      <GroupedCoverList
-        groupedValues={groupedValues}
+      <PaginatedCoverList
         onShowMore={() => dispatch(createShowMoreAction())}
         totalCount={totalCount}
+        values={paginatedValues}
         visibleCount={state.showCount}
       >
         {(value) => <ReviewsListItem key={value.slug} value={value} />}
-      </GroupedCoverList>
+      </PaginatedCoverList>
     </FilterAndSortContainer>
   );
 }

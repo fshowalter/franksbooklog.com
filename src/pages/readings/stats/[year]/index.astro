@@ -1,71 +1,24 @@
 ---
 import { getCollection } from "astro:content";
 
-import { allStatYears } from "~/api/stats";
-import HeroLayout from "~/components/layout/HeroLayout.astro";
-import { getYearStatsProps } from "~/features/stats/getStatsProps";
-import { YearStats } from "~/features/stats/YearStats";
-
-type Props = {
-  year: string;
-};
+import YearStatsPage from "~/features/stats/YearStatsPage.astro";
 
 export async function getStaticPaths() {
   const yearStatsEntries = await getCollection("yearStats");
-  const yearStats = yearStatsEntries.map((e) => e.data);
-  const statYears = allStatYears(yearStats);
 
-  return statYears.map((year) => {
+  return yearStatsEntries.map(({ data: stats }) => {
     return {
       params: {
-        year: year,
+        year: stats.year,
       },
       props: {
-        year: year,
+        stats,
       },
     };
   });
 }
 
-const { year } = Astro.props;
-
-const yearStatsEntries = await getCollection("yearStats");
-const yearStats = yearStatsEntries.map((e) => e.data);
-
-const yearStatsProps = await getYearStatsProps(year, yearStats);
-const distinctStatYears = allStatYears(yearStats);
-
-const title = `${year} Stats`;
-const deck =
-  [...distinctStatYears].reverse()[0] === year
-    ? "A year in progress..."
-    : "A Year in Review";
-
-const metaDescription = `My ${year} reading stats. Includes my most-read authors; as well as kind, year published, and edition distributions.`;
+const { stats } = Astro.props;
 ---
 
-<HeroLayout
-  baseLayoutProps={{
-    canonical: true,
-    meta: {
-      description: metaDescription,
-    },
-    openGraph: {
-      description: deck,
-      type: "website",
-    },
-    title,
-  }}
-  heroProps={{
-    backdropSlug: "stats",
-    breadcrumb: {
-      href: "/readings/",
-      text: "Reading Log",
-    },
-    centerText: true,
-    deck,
-    title: `${year} Stats`,
-  }}
->
-  <YearStats {...yearStatsProps} />
-</HeroLayout>
+<YearStatsPage stats={stats} />
