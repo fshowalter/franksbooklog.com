@@ -1,3 +1,5 @@
+import type { ComponentProps } from "react";
+
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
@@ -6,9 +8,11 @@ import type { FilterChip } from "./AppliedFilters";
 
 import { AppliedFilters } from "./AppliedFilters";
 
+type AppliedFiltersProps = ComponentProps<typeof AppliedFilters>;
+
 describe("AppliedFilters", () => {
-  let mockOnRemove: ReturnType<typeof vi.fn>;
-  let mockOnClearAll: ReturnType<typeof vi.fn>;
+  let mockOnRemove: AppliedFiltersProps["onRemove"];
+  let mockOnClearAll: AppliedFiltersProps["onClearAll"];
 
   beforeEach(() => {
     mockOnRemove = vi.fn();
