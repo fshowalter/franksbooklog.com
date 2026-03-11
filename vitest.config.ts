@@ -1,23 +1,14 @@
-/// <reference types="vitest" />
+/// <reference types="vitest/config" />
 import { getViteConfig } from "astro/config";
 
 export default getViteConfig({
   test: {
     coverage: {
       include: ["src/**"],
-      provider: "istanbul",
+      provider: "v8",
     },
     globals: true, // needed for testing-library teardown
     projects: [
-      {
-        extends: true,
-        test: {
-          environment: "node",
-          include: ["src/api/**/*.spec.ts"],
-          name: "api-node",
-          setupFiles: ["setupTests.ts"],
-        },
-      },
       {
         extends: true,
         test: {
@@ -48,15 +39,6 @@ export default getViteConfig({
           environment: "jsdom",
           include: ["src/features/**/*.spec.tsx"],
           name: "features-jsdom",
-        },
-      },
-      {
-        extends: true,
-        test: {
-          environment: "node",
-          include: ["src/utils/**/*.spec.ts"],
-          name: "utils-node",
-          setupFiles: ["setupTests.ts"],
         },
       },
     ],

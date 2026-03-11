@@ -1,9 +1,10 @@
+import type { ComponentProps } from "react";
+
 import { act, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import type { FilterChip } from "./AppliedFilters";
-import type { SortOption } from "./FilterAndSortContainer";
 
 import { FilterAndSortContainer } from "./FilterAndSortContainer";
 import {
@@ -17,26 +18,14 @@ if (!Element.prototype.scrollIntoView) {
   Element.prototype.scrollIntoView = vi.fn();
 }
 
-// Test helpers
-type MockProps = {
-  activeFilters?: FilterChip[];
-  filters: React.ReactElement;
-  hasPendingFilters: boolean;
-  onApplyFilters: ReturnType<typeof vi.fn>;
-  onClearFilters: ReturnType<typeof vi.fn>;
-  onFilterDrawerOpen: ReturnType<typeof vi.fn>;
-  onRemoveFilter?: ReturnType<typeof vi.fn>;
-  onResetFilters: ReturnType<typeof vi.fn>;
-  pendingFilteredCount: number;
-  sortProps: {
-    currentSortValue: string;
-    onSortChange: ReturnType<typeof vi.fn>;
-    sortOptions: readonly SortOption[];
-  };
-  totalCount: number;
-};
+type FilterAndSortContainerProps = Omit<
+  ComponentProps<typeof FilterAndSortContainer>,
+  "children"
+>;
 
-const createMockProps = (overrides: Partial<MockProps> = {}): MockProps => ({
+const createMockProps = (
+  overrides: Partial<FilterAndSortContainerProps> = {},
+): FilterAndSortContainerProps => ({
   filters: (
     <div data-testid="filters-content">
       <input placeholder="Filter input" type="text" />
@@ -62,7 +51,7 @@ const createMockProps = (overrides: Partial<MockProps> = {}): MockProps => ({
 });
 
 describe("FilterAndSortContainer", () => {
-  let mockProps: MockProps;
+  let mockProps: FilterAndSortContainerProps;
 
   beforeEach(() => {
     mockProps = createMockProps();
