@@ -34,6 +34,7 @@ export function CoverList({
           @min-[calc((250px*5)+1px)]/cover-list:[--cover-list-item-width:16.66%]
           ${className}
         `}
+        data-testid="cover-list"
       >
         {children}
       </ol>

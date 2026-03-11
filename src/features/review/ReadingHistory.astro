@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 
 import BarGradient from "~/components/bar-gradient/BarGradient.astro";
 import SubHeading from "~/components/sub-heading/SubHeading.astro";
+import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
 
 import {
   readingDayFormat,
@@ -22,6 +23,10 @@ const readings = await getCollection(
   "readings",
   (entry) => entry.data.workId === reviewedWorkId,
 );
+
+const reviewedWorks = await getCollection("reviewedWorks");
+
+const reviewedWorkSlugs = reviewedWorks.map((e) => e.id);
 
 readings.sort((a, b) => b.id.localeCompare(a.id));
 ---
@@ -85,7 +90,10 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                     (
                     <span
                       class="rendered-markdown leading-none"
-                      set:html={reading.intermediateEditionNotesHtml}
+                      set:html={linkReviewedWorks(
+                        reading.editionNotesHtml,
+                        reviewedWorkSlugs,
+                      )}
                     />
                     )
                   </span>
@@ -166,7 +174,7 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
               </div>
             </div>
             <div>
-              {reading.intermediateReadingNotesHtml && (
+              {reading.readingNotesHtml && (
                 <div
                   class={`
                     px-2 pb-6 text-sm font-light
@@ -177,7 +185,10 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                     class="
                       rendered-markdown leading-normal tracking-prose text-muted
                     "
-                    set:html={reading.intermediateReadingNotesHtml}
+                    set:html={linkReviewedWorks(
+                      reading.readingNotesHtml,
+                      reviewedWorkSlugs,
+                    )}
                   />
                 </div>
               )}

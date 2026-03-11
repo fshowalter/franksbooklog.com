@@ -33,17 +33,17 @@ export function loadMarkdownDirectory({
       const filePath = path.join(directoryPath, entry.name);
       const fileContents = await fs.readFile(filePath, "utf8");
       const id = path.parse(filePath).name;
+      newIds.add(id);
 
       // Digest raw content to skip expensive remark/rehype re-processing
       const digest = loaderContext.generateDigest(fileContents);
+
       if (
         loaderContext.store.has(id) &&
         loaderContext.store.get(id)?.digest === digest
       ) {
         continue;
       }
-
-      newIds.add(id);
 
       const { content: body, data: frontmatter } = matter(fileContents);
 
@@ -56,7 +56,9 @@ export function loadMarkdownDirectory({
     }
 
     for (const id of loaderContext.store.keys()) {
-      if (!newIds.has(id)) loaderContext.store.delete(id);
+      if (!newIds.has(id)) {
+        loaderContext.store.delete(id);
+      }
     }
   };
 
