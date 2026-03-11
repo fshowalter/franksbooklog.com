@@ -1,4 +1,4 @@
-import type { AvatarImageProps } from "~/api/avatars";
+import type { AvatarImageProps } from "~/assets/avatars";
 
 /**
  * Props for the Avatar component, extending standard HTML img attributes.

@@ -6,12 +6,11 @@ import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import remarkRehype from "remark-rehype";
 
-import { removeFootnotes } from "~/utils/markdown/removeFootnotes";
-import { trimToExcerpt } from "~/utils/markdown/trimToExcerpt";
-
 import { CONTENT_ROOT } from "./contentRoot";
 import { getBaseMarkdownProcessor } from "./utils/getBaseMarkdownProcessor";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
+import { removeFootnotes } from "./utils/markdown-plugins/removeFootnotes";
+import { trimToExcerpt } from "./utils/markdown-plugins/trimToExcerpt";
 import { markdownToDescription } from "./utils/markdownToDescription";
 import { markdownToHtml } from "./utils/markdownToHtml";
 

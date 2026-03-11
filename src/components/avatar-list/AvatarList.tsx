@@ -1,4 +1,4 @@
-import type { AvatarImageProps } from "~/api/avatars";
+import type { AvatarImageProps } from "~/assets/avatars";
 
 import { Avatar } from "~/components/avatar/Avatar";
 import { GroupingListItem } from "~/components/grouping-list-item/GroupingListItem";

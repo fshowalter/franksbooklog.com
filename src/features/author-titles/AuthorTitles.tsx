@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 
-import type { CoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/assets/covers";
 
 import { PaginatedCoverList } from "~/components/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";

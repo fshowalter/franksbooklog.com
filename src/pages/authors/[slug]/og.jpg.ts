@@ -2,8 +2,8 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 
 import { getCollection } from "astro:content";
 
-import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
-import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
+import { getOpenGraphAvatarAsBase64String } from "~/assets/avatars";
+import { getOpenGraphBackdropAsBase64String } from "~/assets/backdrops";
 import { AuthorTitlesOpenGraphImage } from "~/features/author-titles/AuthorTitlesOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 

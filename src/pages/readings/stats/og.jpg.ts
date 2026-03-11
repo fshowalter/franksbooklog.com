@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { getOpenGraphBackdropAsBase64String } from "~/api/backdrops";
+import { getOpenGraphBackdropAsBase64String } from "~/assets/backdrops";
 import { OpenGraphImage } from "~/components/open-graph-image/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 

@@ -9,7 +9,7 @@ import { markdownToHtml } from "./utils/markdownToHtml";
 const PageSchema = z.object({
   body: z.string(),
   description: z.string(),
-  intermediateHtml: z.string(),
+  html: z.string(),
   slug: z.string(),
   title: z.string(),
 });

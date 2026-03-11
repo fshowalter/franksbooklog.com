@@ -1,6 +1,6 @@
 import { getEntry } from "astro:content";
 
-import { getUpdateCoverProps } from "~/api/covers";
+import { getUpdateCoverProps } from "~/assets/covers";
 import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 
 /**

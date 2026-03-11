@@ -1,9 +1,9 @@
 import type { CollectionEntry } from "astro:content";
 
-import { getFluidCoverImageProps } from "~/api/covers";
+import { getFluidCoverImageProps } from "~/assets/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
-import { toDisplayDate } from "~/utils/toDisplayDate";
 import { gradeToValue } from "~/utils/grades";
+import { toDisplayDate } from "~/utils/toDisplayDate";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 

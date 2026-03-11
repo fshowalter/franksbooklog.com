@@ -1,4 +1,10 @@
-import { reference, z } from "astro:content";
+import type { LoaderContext } from "astro/loaders";
+
+import { defineCollection, reference, z } from "astro:content";
+import path from "node:path";
+
+import { CONTENT_ROOT } from "./contentRoot";
+import { loadJsonDirectory } from "./utils/loadJsonDirectory";
 
 const ReviewedWorkAuthorSchema = z
   .object({
@@ -15,90 +21,12 @@ const ReviewedWorkAuthorSchema = z
     return { name, notes, slug, sortName };
   });
 
-const ReadingLogWorkAuthorSchema = z
-  .object({
-    name: z.string(),
-    notes: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-  })
-  .transform(({ name, notes }) => {
-    // fix zod making anything with undefined optional
-    return { name, notes };
-  });
-
-const ReviewedAuthorWorkSchema = z.object({
-  authors: z.array(ReviewedWorkAuthorSchema),
-  grade: z.string(),
-  id: z.string(),
-  kind: z.string(),
-  reviewDate: z.coerce.date(),
-  reviewSequence: z.string(),
-  reviewSlug: z.string(),
-  sortTitle: z.string(),
-  title: z.string(),
-  workYear: z.string(),
-});
-
-export const ReadingLogSchema = z
-  .object({
-    authors: z.array(ReadingLogWorkAuthorSchema),
-    date: z.coerce.date(),
-    edition: z.string(),
-    id: z.string(),
-    kind: z.string(),
-    progress: z.string(),
-    reviewSlug: z
-      .nullable(z.string())
-      .optional()
-      .transform((v) => v ?? undefined),
-    sequence: z.string(),
-    title: z.string(),
-    workYear: z.string(),
-  })
-  .transform(
-    ({
-      authors,
-      date,
-      edition,
-      id,
-      kind,
-      progress,
-      reviewSlug,
-      sequence,
-      title,
-      workYear,
-    }) => {
-      // fix zod making anything with undefined optional
-      return {
-        authors,
-        date,
-        edition,
-        id,
-        kind,
-        progress,
-        reviewSlug,
-        sequence,
-        title,
-        workYear,
-      };
-    },
-  );
-
-export const ReviewedAuthorSchema = z.object({
-  name: z.string(),
-  reviewedWorks: z.array(ReviewedAuthorWorkSchema),
-  slug: z.string(),
-  sortName: z.string(),
-});
-
 const MoreByAuthorSchema = z.object({
   author: z.string(),
   reviews: z.array(reference("reviewedWorks")),
 });
 
-export const ReviewedWorkSchema = z
+const ReviewedWorkSchema = z
   .object({
     authors: z.array(ReviewedWorkAuthorSchema),
     grade: z.string(),
@@ -157,3 +85,15 @@ export const ReviewedWorkSchema = z
       };
     },
   );
+
+export const reviewedWorks = defineCollection({
+  loader: {
+    load: (loaderContext: LoaderContext) =>
+      loadJsonDirectory({
+        directoryPath: path.join(CONTENT_ROOT, "data", "reviewed-works"),
+        loaderContext,
+      }),
+    name: "reviewed-works-loader",
+  },
+  schema: ReviewedWorkSchema,
+});

@@ -1,6 +1,6 @@
 import type { CollectionEntry } from "astro:content";
 
-import { getFluidCoverImageProps } from "~/api/covers";
+import { getFluidCoverImageProps } from "~/assets/covers";
 import { toSortDate } from "~/utils/toSortDate";
 import { yearFormatter } from "~/utils/yearFormatter";
 

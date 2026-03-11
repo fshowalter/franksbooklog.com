@@ -3,8 +3,6 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
-import { normalizeSources } from "./utils/normalizeSources";
-
 /**
  * Type representing optimized avatar image properties for display.
  * Contains source URL and responsive srcSet for different screen densities.
@@ -58,8 +56,8 @@ export async function getAvatarImageProps(
   });
 
   return {
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: optimizedImage.src,
+    srcSet: optimizedImage.srcSet.attribute,
   };
 }
 

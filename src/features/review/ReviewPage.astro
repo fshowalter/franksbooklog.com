@@ -3,10 +3,12 @@ import type { CollectionEntry } from "astro:content";
 
 import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
+import { getCollection } from "astro:content";
 
 import Grade from "~/components/grade/Grade.astro";
 import ReviewLayout from "~/components/layout/ReviewLayout.astro";
 import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
+import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
 import { reviewDateFormat } from "~/utils/reviewDateFormat";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
@@ -23,6 +25,7 @@ type Props = {
 const { reviewedWork } = Astro.props;
 const { data: review } = await getEntry(reviewedWork.review);
 const moreReviews = await getEntries(reviewedWork.moreReviews);
+const reviewedWorks = await getCollection("reviewedWorks");
 ---
 
 <ReviewLayout
@@ -166,7 +169,10 @@ const moreReviews = await getEntries(reviewedWork.moreReviews);
           [&>p:first-child]:first-letter:text-[56px]
           [&>p:first-child]:first-letter:font-bold
         `}
-        set:html={review.intermediateHtml}
+        set:html={linkReviewedWorks(
+          review.html,
+          reviewedWorks.map((e) => e.id),
+        )}
       />
       <IncludedWorks
         includedWorks={await getEntries(reviewedWork.includedWorks)}

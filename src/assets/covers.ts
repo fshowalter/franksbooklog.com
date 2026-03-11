@@ -11,8 +11,6 @@ import {
   saveCachedItem,
 } from "~/utils/cache";
 
-import { normalizeSources } from "./utils/normalizeSources";
-
 /**
  * Type representing optimized cover image properties for display.
  * Contains dimensions and responsive image sources.
@@ -115,8 +113,8 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
 
   return {
     height: 750,
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: optimizedImage.src,
+    srcSet: optimizedImage.srcSet.attribute,
     width: 500,
   };
 }
@@ -157,8 +155,8 @@ export async function getFixedCoverImageProps(
 
   return {
     height,
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: optimizedImage.src,
+    srcSet: optimizedImage.srcSet.attribute,
     width: width,
   };
 }
@@ -197,8 +195,8 @@ export async function getFluidCoverImageProps(
 
   return {
     height,
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: optimizedImage.src,
+    srcSet: optimizedImage.srcSet.attribute,
     width,
   };
 }
@@ -279,7 +277,7 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
     width: 500,
   });
 
-  return normalizeSources(optimizedImage.src);
+  return optimizedImage.src;
 }
 
 /**
@@ -313,8 +311,8 @@ export async function getUpdateCoverProps(
 
   return {
     height,
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: optimizedImage.src,
+    srcSet: optimizedImage.srcSet.attribute,
     width: 500,
   };
 }

@@ -1,10 +1,10 @@
 import rss from "@astrojs/rss";
 import { getEntry } from "astro:content";
 
-import { getFeedCoverProps } from "~/api/covers";
+import { getFeedCoverProps } from "~/assets/covers";
 import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
-import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 
 /**
  * Astro API endpoint that generates an RSS feed for the most recent book reviews.

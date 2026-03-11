@@ -2,8 +2,6 @@ import { getImage } from "astro:assets";
 import path from "node:path";
 import sharp from "sharp";
 
-import { normalizeSources } from "./utils/normalizeSources";
-
 /**
  * Type representing optimized backdrop image properties for display.
  * Contains source URL and responsive srcSet for different screen widths.
@@ -57,8 +55,8 @@ export async function getBackdropImageProps(
   });
 
   return {
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: optimizedImage.src,
+    srcSet: optimizedImage.srcSet.attribute,
   };
 }
 

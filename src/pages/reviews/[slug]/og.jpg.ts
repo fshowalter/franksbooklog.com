@@ -8,8 +8,8 @@ import {
   getCoverHeight,
   getOpenGraphCoverAsBase64String,
   getWorkCoverPath,
-} from "~/api/covers";
-import { getCoverWidth } from "~/api/covers";
+} from "~/assets/covers";
+import { getCoverWidth } from "~/assets/covers";
 import { fileForGrade } from "~/components/grade/fileForGrade";
 import { ReviewOpenGraphImage } from "~/features/review/ReviewOpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";

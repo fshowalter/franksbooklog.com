@@ -1,6 +1,9 @@
 ---
+import { getCollection } from "astro:content";
+
 import LongFormText from "~/components/long-form-text/LongFormText.astro";
 import MoreReviews from "~/components/more-reviews/MoreReviews.astro";
+import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
 import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
 
 type Props = {
@@ -8,12 +11,19 @@ type Props = {
 };
 
 const { content } = Astro.props;
-const reviewedWorks = await mostRecentReviewedWorks(6);
+const recentReviewedWorks = await mostRecentReviewedWorks(6);
+const reviewedWorks = await getCollection("reviewedWorks");
 ---
 
 <section class="flex flex-col items-center pt-16 pb-32">
   <div class="px-container">
-    <LongFormText class={`max-w-prose`} text={content} />
+    <LongFormText
+      class={`max-w-prose`}
+      text={linkReviewedWorks(
+        content,
+        reviewedWorks.map((e) => e.id),
+      )}
+    />
   </div>
 </section>
 <div
@@ -25,7 +35,7 @@ const reviewedWorks = await mostRecentReviewedWorks(6);
   data-pagefind-ignore
 >
   <MoreReviews
-    cardProps={reviewedWorks.map((review) => {
+    cardProps={recentReviewedWorks.map((review) => {
       return {
         hasDate: false,
         value: review.data,

@@ -1,6 +1,6 @@
 import type { CollectionEntry } from "astro:content";
 
-import { getAvatarImageProps } from "~/api/avatars";
+import { getAvatarImageProps } from "~/assets/avatars";
 import { AvatarListItemImageConfig } from "~/components/avatar-list/AvatarList";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";

@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef } from "react";
 
-import type { CoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/assets/covers";
 
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
