@@ -46,10 +46,7 @@ const { addGradient, hasBackdrop, hideLogo } = Astro.props;
           siteHierarchy.map((page) => {
             return (
               <li
-                class={`
-                  block leading-10 tracking-serif-wide whitespace-nowrap
-                  [body.nav-open_&]:opacity-0
-                `}
+                class={`block leading-10 tracking-serif-wide whitespace-nowrap`}
               >
                 <a
                   class:list={[
@@ -78,7 +75,7 @@ const { addGradient, hasBackdrop, hideLogo } = Astro.props;
       </ul>
     </nav>
     <PagefindSearch class="z-search-button" />
-    <NavDrawer hasBackdrop={hasBackdrop}>
+    <NavDrawer>
       <SiteHierarchy />
     </NavDrawer>
   </div>
