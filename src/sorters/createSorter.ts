@@ -1,4 +1,8 @@
-import { collator } from "~/utils/collator";
+const collator = new Intl.Collator("en", {
+  ignorePunctuation: true,
+  numeric: true,
+  sensitivity: "base",
+});
 
 /**
  * Build sort values helper - creates a sort function from a sort map
