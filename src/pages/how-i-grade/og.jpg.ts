@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { howIGradeOpenGraphImage } from "~/features/how-i-grade/howIGradeOpenGraphImage";
+import { howIGradeOpenGraphImageResponse } from "~/features/how-i-grade/howIGradeOpenGraphImageResponse";
 
 /**
  * Astro API endpoint that generates the Open Graph image for the "How I Grade" page.
@@ -10,5 +10,5 @@ import { howIGradeOpenGraphImage } from "~/features/how-i-grade/howIGradeOpenGra
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  return await howIGradeOpenGraphImage();
+  return await howIGradeOpenGraphImageResponse();
 };

@@ -2,7 +2,7 @@ import { getOpenGraphBackdrop } from "~/assets/backdrops";
 import { OpenGraphImage } from "~/components/open-graph-image/OpenGraphImage";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 
-export async function howIGradeOpenGraphImage(): Promise<Response> {
+export async function howIGradeOpenGraphImageResponse(): Promise<Response> {
   const backdrop = await getOpenGraphBackdrop("how-i-grade");
 
   return await componentToImageResponse(
