@@ -3,43 +3,7 @@
   "sortName": "Tolhurst, Lol",
   "slug": "lol-tolhurst",
   "reviewedWorks": [
-    {
-      "id": "cured-by-lol-tolhurst",
-      "reviewSequence": "2022-07-18-01",
-      "reviewSlug": "cured-by-lol-tolhurst",
-      "title": "Cured",
-      "sortTitle": "Cured: The Tale of Two Imaginary Boys",
-      "workYear": "2016",
-      "grade": "A-",
-      "kind": "Nonfiction",
-      "reviewDate": "2022-07-18",
-      "authors": [
-        {
-          "name": "Lol Tolhurst",
-          "sortName": "Tolhurst, Lol",
-          "slug": "lol-tolhurst",
-          "notes": null
-        }
-      ]
-    },
-    {
-      "id": "goth-by-lol-tolhurst",
-      "reviewSequence": "2024-11-08-01",
-      "reviewSlug": "goth-by-lol-tolhurst",
-      "title": "Goth",
-      "sortTitle": "Goth: A History",
-      "workYear": "2023",
-      "grade": "C",
-      "kind": "Nonfiction",
-      "reviewDate": "2024-11-08",
-      "authors": [
-        {
-          "name": "Lol Tolhurst",
-          "sortName": "Tolhurst, Lol",
-          "slug": "lol-tolhurst",
-          "notes": null
-        }
-      ]
-    }
+    "cured-by-lol-tolhurst",
+    "goth-by-lol-tolhurst"
   ]
 }

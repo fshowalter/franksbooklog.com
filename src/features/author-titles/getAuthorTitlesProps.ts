@@ -9,13 +9,14 @@ import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
 export async function getAuthorTitlesProps(
   reviewedAuthor: CollectionEntry<"reviewedAuthors">["data"],
+  reviewedWorks: CollectionEntry<"reviewedWorks">["data"][],
 ): Promise<AuthorTitlesProps> {
   const distinctKinds = new Set<string>();
   const distinctReviewYears = new Set<string>();
   const distinctWorkYears = new Set<string>();
 
   const values = await Promise.all(
-    reviewedAuthor.reviewedWorks.map(async (reviewedWork) => {
+    reviewedWorks.map(async (reviewedWork) => {
       distinctKinds.add(reviewedWork.kind);
       distinctReviewYears.add(reviewedWork.reviewDate.getFullYear().toString());
       distinctWorkYears.add(reviewedWork.workYear);
@@ -23,7 +24,7 @@ export async function getAuthorTitlesProps(
       const value: AuthorTitlesValue = {
         abandoned: reviewedWork.grade === "Abandoned",
         coverImageProps: await getFluidCoverImageProps(
-          { slug: reviewedWork.reviewSlug },
+          { slug: reviewedWork.id },
           CoverListItemImageConfig,
         ),
         displayDate: toDisplayDate(reviewedWork.reviewDate),
@@ -37,7 +38,7 @@ export async function getAuthorTitlesProps(
         reviewed: reviewedWork.grade !== "Abandoned",
         reviewSequence: reviewedWork.reviewSequence,
         reviewYear: reviewedWork.reviewDate.getFullYear().toString(),
-        slug: reviewedWork.reviewSlug,
+        slug: reviewedWork.id,
         sortTitle: reviewedWork.sortTitle,
         title: reviewedWork.title,
         workYear: reviewedWork.workYear,
