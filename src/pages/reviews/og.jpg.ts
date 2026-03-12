@@ -1,8 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { getOpenGraphBackdropAsBase64String } from "~/assets/backdrops";
-import { OpenGraphImage } from "~/components/open-graph-image/OpenGraphImage";
-import { componentToImage } from "~/utils/componentToImage";
+import { reviewsOpenGraphImageResponse } from "~/features/reviews/reviewsOpenGraphImageResponse";
 
 /**
  * Astro API endpoint that generates the Open Graph image for the reviews index page.
@@ -12,16 +10,5 @@ import { componentToImage } from "~/utils/componentToImage";
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  const jpeg = await componentToImage(
-    OpenGraphImage({
-      backdrop: await getOpenGraphBackdropAsBase64String("reviews"),
-      title: "Reviews",
-    }),
-  );
-
-  return new Response(jpeg, {
-    headers: {
-      "Content-Type": "image/jpg",
-    },
-  });
+  return await reviewsOpenGraphImageResponse();
 };

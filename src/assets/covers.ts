@@ -3,14 +3,6 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
-import {
-  createCacheConfig,
-  createCacheKey,
-  ensureCacheDir,
-  getCachedItem,
-  saveCachedItem,
-} from "~/utils/cache";
-
 /**
  * Type representing optimized cover image properties for display.
  * Contains dimensions and responsive image sources.
@@ -33,8 +25,6 @@ type Work = {
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
-
-const cacheConfig = createCacheConfig("cover-base64");
 
 /**
  * Calculates the proportional height for a cover image given a target width.
@@ -214,60 +204,14 @@ export async function getFluidCoverImageProps(
  * // Use in meta tag: <meta property="og:image" content={ogCover} />
  * ```
  */
-export async function getOpenGraphCoverAsBase64String(work: Work) {
-  const width = 420;
-  const format = "png";
-  let cacheKey = "";
+export async function getOpenGraphCover(slug: string) {
+  const buffer = await sharp(getWorkCoverPath({ slug })).resize(420).toBuffer();
 
-  if (cacheConfig.enableCache) {
-    await ensureCacheDir(cacheConfig.cacheDir);
-
-    const cacheKeyData = `${work.slug}-${width}-${format}`;
-    cacheKey = createCacheKey(cacheKeyData);
-
-    const cachedCover = await getCachedItem<string>(
-      cacheConfig.cacheDir,
-      cacheKey,
-      "txt",
-      false,
-      cacheConfig.debugCache,
-      `Cover base64: ${work.slug}`,
-    );
-
-    if (cachedCover) {
-      return cachedCover;
-    }
-  }
-
-  const imageBuffer = await sharp(getWorkCoverPath(work))
-    .resize(width)
-    .toFormat(format)
-    .toBuffer();
-
-  const base64String = `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
-
-  if (cacheConfig.enableCache) {
-    await saveCachedItem(cacheConfig.cacheDir, cacheKey, "txt", base64String);
-  }
-
-  return base64String;
+  return new Uint8Array(buffer).buffer;
 }
 
-/**
- * Generates optimized cover image URL for structured data (JSON-LD).
- * Creates a fixed-size JPEG image (500x750) suitable for search engine markup.
- *
- * @param work - Work object containing slug for cover identification
- * @returns Promise resolving to optimized image URL
- *
- * @example
- * ```typescript
- * const structuredDataSrc = await getStructuredDataCoverSrc({ slug: 'book-slug' });
- * // Use in JSON-LD structured data
- * ```
- */
-export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
-  const workCoverFile = await getWorkCoverFile(work);
+export async function getStructuredDataCoverSrc(slug: string): Promise<string> {
+  const workCoverFile = await getWorkCoverFile({ slug });
 
   const optimizedImage = await getImage({
     format: "jpeg",
@@ -281,9 +225,10 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
 }
 
 /**
- * Generates high-quality cover image properties for update notifications.
- * Creates a PNG image with maximum quality (100%) for newsletter/update contexts.
+ * Generates optimized cover image URL for structured data (JSON-LD).
+ * Creates a fixed-size JPEG image (500x750) suitable for search engine markup.
  *
+ * @param work - Work object containing slug for cover identification
  * @param work - Work object containing slug for cover identification
  * @returns Promise resolving to high-quality cover image properties
  *

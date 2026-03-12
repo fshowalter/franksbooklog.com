@@ -60,29 +60,14 @@ export async function getBackdropImageProps(
   };
 }
 
-/**
- * Generates a base64-encoded backdrop image for Open Graph meta tags.
- * Processes the backdrop with Sharp to create a 1200px wide PNG suitable for
- * social media previews and Open Graph sharing.
- *
- * @param slug - The work's unique slug identifier
- * @returns Promise resolving to base64 data URL string
- *
- * @example
- * ```typescript
- * const base64Backdrop = await getOpenGraphBackdropAsBase64String('work-slug');
- * // Use in OpenGraph meta tag: <meta property="og:image" content={base64Backdrop} />
- * ```
- */
-export async function getOpenGraphBackdropAsBase64String(slug: string) {
-  const imageBuffer = await sharp(
+export async function getOpenGraphBackdrop(slug: string) {
+  const buffer = await sharp(
     path.resolve(`./content/assets/backdrops/${slug}.png`),
   )
     .resize(1200)
-    .toFormat("png")
     .toBuffer();
 
-  return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
+  return new Uint8Array(buffer).buffer;
 }
 
 /**
