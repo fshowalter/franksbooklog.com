@@ -1,5 +1,5 @@
 ---
-
+import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
 ---
 
 <nav-drawer>
@@ -71,8 +71,9 @@
           group-open/dialog:after:transform-[rotate(90deg)]
         `}></span>
     </button>
-    <nav>
+    <nav class="flex flex-col gap-y-6">
       <slot />
+      <PagefindSearch variant="text" />
     </nav>
   </dialog>
 </nav-drawer>

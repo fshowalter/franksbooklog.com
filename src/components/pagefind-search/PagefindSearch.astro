@@ -1,9 +1,10 @@
 ---
 type Props = {
-  class: string;
+  class?: string;
+  variant?: "button" | "text";
 };
 
-const { class: className } = Astro.props;
+const { class: className, variant = "button" } = Astro.props;
 ---
 
 <pagefind-search class={className}>
@@ -12,7 +13,7 @@ const { class: className } = Astro.props;
       aria-keyshortcuts="Control+K"
       aria-label="Search"
       class={`
-        flex size-10 transform-gpu cursor-pointer items-center justify-center
+        flex transform-gpu cursor-pointer items-center justify-center
         overflow-hidden text-sm/6 ring-default transition-all duration-500
         hover:text-accent
         laptop:ml-6
@@ -22,20 +23,27 @@ const { class: className } = Astro.props;
       title="Search: Control+K"
       type="button"
     >
-      <svg
-        aria-hidden="true"
-        class="size-7"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.5"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      {variant === "text" && <span class="pr-3 text-2xl">Search</span>}
+      <div
+        class:list={[
+          variant === "button" && `flex size-10 items-center justify-center`,
+        ]}
       >
-        <path
-          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-          stroke-linecap="round"
-          stroke-linejoin="round"></path>
-      </svg>
+        <svg
+          aria-hidden="true"
+          class="size-7"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
     </button>
   </div>
   <dialog
