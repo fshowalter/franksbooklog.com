@@ -31,7 +31,7 @@ const { grade, slug, title } = Astro.props;
         },
         itemReviewed: {
           "@type": "Book",
-          image: await getStructuredDataCoverSrc({ slug }),
+          image: await getStructuredDataCoverSrc(slug),
           name: title,
         },
         reviewRating: {

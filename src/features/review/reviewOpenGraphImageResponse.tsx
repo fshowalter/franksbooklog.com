@@ -1,36 +1,102 @@
+import path from "node:path";
+import sharp from "sharp";
+
+import {
+  getCoverHeight,
+  getCoverWidth,
+  getOpenGraphCover,
+  getWorkCoverPath,
+} from "~/assets/covers";
+import { fileForGrade } from "~/components/grade/fileForGrade";
+import { componentToImageResponse } from "~/utils/componentToImageResponse";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
-export type ReviewOpenGraphImageComponentType = (
-  props: ReviewOpenGraphImageProps,
-) => React.JSX.Element;
-
-type ReviewOpenGraphImageProps = {
+type Props = {
   authors: {
     name: string;
     notes: string | undefined;
   }[];
-  coverBase64DataUri: string;
-  coverHeight: number;
-  coverWidth: number;
-  grade: string | undefined;
+  coverSlug: string;
+  grade: string;
   title: string;
 };
 
-export function ReviewOpenGraphImage({
+export async function reviewOpenGraphImageResponse({
   authors,
-  coverBase64DataUri,
+  coverSlug,
+  grade,
+  title,
+}: Props): Promise<Response> {
+  const cover = await getOpenGraphCover(coverSlug);
+
+  let gradeBuffer;
+
+  const gradeFile = fileForGrade(grade);
+
+  if (gradeFile) {
+    gradeBuffer = await sharp(path.resolve(`./public${fileForGrade(grade)}`))
+      .resize(240)
+      .toBuffer();
+  }
+
+  let coverHeight = 630;
+  let coverWidth = await getCoverWidth({ slug: coverSlug }, coverHeight);
+
+  if (coverWidth > 500) {
+    const workCoverPath = getWorkCoverPath({ slug: coverSlug });
+    coverHeight = await getCoverHeight(workCoverPath, 500);
+    coverWidth = 500;
+  }
+
+  const fetchedResources = [
+    {
+      data: cover,
+      src: "cover",
+    },
+  ];
+
+  if (gradeBuffer) {
+    fetchedResources.push({
+      data: new Uint8Array(gradeBuffer).buffer,
+      src: "grade",
+    });
+  }
+
+  return await componentToImageResponse(
+    <ReviewOpenGraphImage
+      authors={authors}
+      coverHeight={coverHeight}
+      coverWidth={coverWidth}
+      grade={Boolean(gradeFile)}
+      title={title}
+    />,
+    fetchedResources,
+  );
+}
+
+function ReviewOpenGraphImage({
+  authors,
   coverHeight,
   coverWidth,
   grade,
   title,
-}: ReviewOpenGraphImageProps): React.JSX.Element {
+}: {
+  authors: {
+    name: string;
+    notes: string | undefined;
+  }[];
+  coverHeight: number;
+  coverWidth: number;
+  grade: boolean;
+  title: string;
+}): React.JSX.Element {
   "use no memo";
 
   return (
     <div
       style={{
         alignItems: "center",
-        backgroundColor: "#252525",
+        backgroundColor: "#272727",
         display: "flex",
         height: "630px",
         position: "relative",
@@ -39,7 +105,7 @@ export function ReviewOpenGraphImage({
     >
       <img
         height={coverHeight}
-        src={coverBase64DataUri}
+        src="cover"
         style={{
           objectFit: "cover",
         }}
@@ -48,7 +114,7 @@ export function ReviewOpenGraphImage({
       <div
         style={{
           alignItems: "flex-start",
-          backgroundColor: "#252525",
+          backgroundColor: "#272727",
           display: "flex",
           flexDirection: "column",
           height: "630px",
@@ -66,7 +132,8 @@ export function ReviewOpenGraphImage({
             fontFamily: "Assistant",
             fontSize: "18px",
             fontWeight: 700,
-            marginBottom: "16px",
+            marginBottom: "12px",
+            textShadow: "1px 1px 2px black",
             textTransform: "uppercase",
           }}
         >
@@ -75,7 +142,7 @@ export function ReviewOpenGraphImage({
         <div
           style={{
             color: "#fff",
-            display: "flex",
+            display: "block",
             flexWrap: "wrap",
             fontFamily: "FrankRuhlLibre",
             fontSize: "54px",
@@ -104,7 +171,7 @@ export function ReviewOpenGraphImage({
         {grade ? (
           <img
             height={48}
-            src={grade}
+            src="grade"
             style={{ marginTop: "36px" }}
             width={240}
           />

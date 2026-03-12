@@ -2,10 +2,7 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 
 import { getCollection } from "astro:content";
 
-import { getOpenGraphAvatarAsBase64String } from "~/assets/avatars";
-import { getOpenGraphBackdropAsBase64String } from "~/assets/backdrops";
-import { AuthorTitlesOpenGraphImage } from "~/features/author-titles/AuthorTitlesOpenGraphImage";
-import { componentToImage } from "~/utils/componentToImage";
+import { authorTitlesOpenGraphImageResponse } from "~/features/author-titles/authorTitlesOpenGraphImageResponse";
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
@@ -36,17 +33,7 @@ export async function getStaticPaths() {
 export const GET: APIRoute = async function get({ props }) {
   const { reviewedAuthor } = props as Props;
 
-  const jpeg = await componentToImage(
-    AuthorTitlesOpenGraphImage({
-      avatar: await getOpenGraphAvatarAsBase64String(reviewedAuthor.slug),
-      backdrop: await getOpenGraphBackdropAsBase64String("author"),
-      name: reviewedAuthor.name,
-    }),
-  );
-
-  return new Response(jpeg, {
-    headers: {
-      "Content-Type": "image/jpg",
-    },
+  return await authorTitlesOpenGraphImageResponse({
+    name: reviewedAuthor.name,
   });
 };

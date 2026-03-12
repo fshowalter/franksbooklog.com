@@ -3,9 +3,7 @@ import type { InferGetStaticPropsType } from "astro";
 
 import { getCollection } from "astro:content";
 
-import { getOpenGraphBackdropAsBase64String } from "~/assets/backdrops";
-import { OpenGraphImage } from "~/components/open-graph-image/OpenGraphImage";
-import { componentToImage } from "~/utils/componentToImage";
+import { yearStatsOpenGraphImageResponse } from "~/features/stats/yearStatsOpenGraphImageResponse";
 
 /**
  * Props type inferred from getStaticPaths function, containing the year
@@ -47,16 +45,5 @@ export async function getStaticPaths() {
 export const GET: APIRoute = async function get({ props }) {
   const { year } = props as Props;
 
-  const jpeg = await componentToImage(
-    OpenGraphImage({
-      backdrop: await getOpenGraphBackdropAsBase64String("stats"),
-      title: `${year} Stats`,
-    }),
-  );
-
-  return new Response(jpeg, {
-    headers: {
-      "Content-Type": "image/jpg",
-    },
-  });
+  return await yearStatsOpenGraphImageResponse(year);
 };

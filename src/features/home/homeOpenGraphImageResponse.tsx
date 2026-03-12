@@ -1,30 +1,18 @@
-/**
- * Type definition for the Home Open Graph image component function
- */
-export type HomeOpenGraphImageComponentType = (
-  props: HomeOpenGraphImageProps,
-) => React.JSX.Element;
+import { getOpenGraphBackdrop } from "~/assets/backdrops";
+import { componentToImageResponse } from "~/utils/componentToImageResponse";
 
-/**
- * Props for the Home Open Graph image component
- */
-type HomeOpenGraphImageProps = {
-  /** Background image URL for the Open Graph image */
-  backdrop: string;
-};
+export async function homeOpenGraphImageResponse(): Promise<Response> {
+  const backdrop = await getOpenGraphBackdrop("home");
 
-/**
- * Open Graph image component for the home page.
- * Renders a 1200x630 image with backdrop, site title, and tagline.
- * Used for social media sharing and SEO meta image tags.
- *
- * @param props - Component props
- * @param props.backdrop - Background image URL
- * @returns Open Graph image JSX for the home page
- */
-export function HomeOpenGraphImage({
-  backdrop,
-}: HomeOpenGraphImageProps): React.JSX.Element {
+  return await componentToImageResponse(<HomeOpenGraphImage />, [
+    {
+      data: backdrop,
+      src: "backdrop",
+    },
+  ]);
+}
+
+function HomeOpenGraphImage(): React.JSX.Element {
   "use no memo";
 
   return (
@@ -38,7 +26,7 @@ export function HomeOpenGraphImage({
     >
       <img
         height={630}
-        src={backdrop}
+        src="backdrop"
         style={{
           objectFit: "cover",
         }}

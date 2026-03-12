@@ -1,21 +1,29 @@
-/**
- * Type definition for the Author Open Graph image component function
- */
-export type AuthorOpenGraphImageComponentType = (
-  props: AuthorOpenGraphImageProps,
-) => React.JSX.Element;
+import { getOpenGraphBackdrop } from "~/assets/backdrops";
+import { componentToImageResponse } from "~/utils/componentToImageResponse";
 
 /**
  * Props for the Author Open Graph image component
  */
-type AuthorOpenGraphImageProps = {
-  /** Optional author avatar image URL */
-  avatar?: string;
-  /** Background image URL for the Open Graph image */
-  backdrop: string;
+type Props = {
   /** Author's display name */
   name: string;
 };
+
+export async function authorTitlesOpenGraphImageResponse({
+  name,
+}: Props): Promise<Response> {
+  const backdrop = await getOpenGraphBackdrop("author");
+
+  return await componentToImageResponse(
+    <AuthorTitlesOpenGraphImage name={name} />,
+    [
+      {
+        data: backdrop,
+        src: "backdrop",
+      },
+    ],
+  );
+}
 
 /**
  * Open Graph image component for author pages.
@@ -23,22 +31,20 @@ type AuthorOpenGraphImageProps = {
  * Used for social media sharing and SEO meta image tags.
  *
  * @param props - Component props
- * @param props.avatar - Optional author avatar image URL
- * @param props.backdrop - Background image URL
  * @param props.name - Author's display name
  * @returns Open Graph image JSX for author pages
  */
-export function AuthorTitlesOpenGraphImage({
-  avatar,
-  backdrop,
+function AuthorTitlesOpenGraphImage({
   name,
-}: AuthorOpenGraphImageProps): React.JSX.Element {
+}: {
+  name: string;
+}): React.JSX.Element {
   "use no memo";
 
   return (
     <div
       style={{
-        backgroundColor: "#f2f0e8",
+        backgroundColor: "#272727",
         display: "flex",
         height: "630px",
         overflow: "hidden",
@@ -48,49 +54,33 @@ export function AuthorTitlesOpenGraphImage({
     >
       <img
         height={630}
-        src={backdrop}
+        src="backdrop"
         style={{
           objectFit: "cover",
+          opacity: 0.5,
         }}
         width={1200}
       />
       <div
         style={{
           alignItems: "center",
-          backgroundImage:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0,0,0,.2) 250px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0)",
+          // backgroundImage:
+          // "linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0,0,0,.2) 250px, rgba(0, 0, 0, 0) 350px, rgba(0, 0, 0, 0)",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
+          height: "630px",
+          justifyContent: "center",
           left: 0,
           paddingBottom: "64px",
           paddingLeft: "80px",
           paddingRight: "80px",
           paddingTop: "32px",
           position: "absolute",
+          top: 0,
           width: "1200px",
         }}
       >
-        {avatar && (
-          <div
-            style={{
-              borderRadius: "50%",
-              boxShadow: "0px 0px 0px 1px #484745",
-              display: "flex",
-              marginBottom: "32px",
-            }}
-          >
-            <img
-              height={250}
-              src={avatar}
-              style={{
-                borderRadius: "50%",
-                objectFit: "cover",
-              }}
-              width={250}
-            />
-          </div>
-        )}
         <div
           style={{
             alignItems: "center",
@@ -106,7 +96,7 @@ export function AuthorTitlesOpenGraphImage({
               color: "#c29d52",
               fontFamily: "Assistant",
               fontSize: "20px",
-              fontWeight: 800,
+              fontWeight: 700,
               marginBottom: "8px",
               textShadow: "1px 1px 2px black",
               textTransform: "uppercase",
@@ -117,14 +107,16 @@ export function AuthorTitlesOpenGraphImage({
           <div
             style={{
               color: "#fff",
-              display: "flex",
+              display: "block",
               flexWrap: "wrap",
               fontFamily: "FrankRuhlLibre",
-              fontSize: "88px",
+              fontSize: "112px",
               fontWeight: 800,
               lineHeight: 1,
+              textAlign: "center",
               textShadow: "1px 1px 2px rgba(0,0,0,.25)",
               textWrap: "balance",
+              width: "1100px",
             }}
           >
             {name}

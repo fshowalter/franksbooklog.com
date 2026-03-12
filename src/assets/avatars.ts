@@ -1,7 +1,4 @@
 import { getImage } from "astro:assets";
-import fs from "node:fs";
-import path from "node:path";
-import sharp from "sharp";
 
 /**
  * Type representing optimized avatar image properties for display.
@@ -59,53 +56,6 @@ export async function getAvatarImageProps(
     src: optimizedImage.src,
     srcSet: optimizedImage.srcSet.attribute,
   };
-}
-
-/**
- * Generates a base64-encoded avatar image for Open Graph meta tags.
- * Processes the avatar with Sharp to create a 250px PNG suitable for
- * social media previews and embedding in meta tags.
- *
- * @param slug - The author's unique slug identifier
- * @returns Promise resolving to base64 data URL string, or undefined if no avatar exists
- *
- * @example
- * ```typescript
- * const base64Avatar = await getOpenGraphAvatarAsBase64String('author-slug');
- * if (base64Avatar) {
- *   // Use in OpenGraph meta tag: <meta property="og:image" content={base64Avatar} />
- * }
- * ```
- */
-export async function getOpenGraphAvatarAsBase64String(slug: string) {
-  const avatar = avatarPath(slug);
-
-  if (avatar) {
-    const imageBuffer = await sharp(avatar)
-      .resize(250)
-      .toFormat("png")
-      .toBuffer();
-
-    return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
-  }
-
-  return;
-}
-
-/**
- * Internal function to resolve the file system path for an avatar image.
- * Checks if the avatar file exists in the content/assets/avatars directory.
- *
- * @param slug - The author's unique slug identifier
- * @returns Absolute file path if avatar exists, undefined otherwise
- */
-function avatarPath(slug: string) {
-  const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
-  if (fs.existsSync(avatarPath)) {
-    return avatarPath;
-  }
-
-  return;
 }
 
 /**
