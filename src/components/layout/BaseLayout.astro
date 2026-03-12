@@ -80,12 +80,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     }
     <title>{pageTitle}</title>
   </head>
-  <body
-    class={`
-      size-full bg-canvas text-default
-      [&.nav-open]:overflow-hidden
-    `}
-  >
+  <body class={`size-full bg-canvas text-default`}>
     <div class="group">
       <a
         class={`

@@ -1,20 +1,8 @@
 ---
-type Props = { hasBackdrop: boolean };
 
-const { hasBackdrop } = Astro.props;
 ---
 
 <nav-drawer>
-  <div
-    class={`
-      invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity
-      duration-200
-      [body.nav-open_&]:tablet:visible [body.nav-open_&]:tablet:z-nav-backdrop
-      [body.nav-open_&]:tablet:opacity-100
-    `}
-    data-nav-drawer-backdrop
-  >
-  </div>
   <button
     aria-controls="nav-drawer"
     aria-expanded="false"
@@ -30,48 +18,92 @@ const { hasBackdrop } = Astro.props;
     <span
       aria-hidden="true"
       class={`
-        relative flex h-0.5 w-6 origin-center transform-gpu transition-all
-        duration-200 ease-in-out
+        relative flex h-0.5 w-6 origin-center transform-gpu bg-current
+        transition-all duration-200 ease-in-out
         group-hover/button:bg-accent
         before:absolute before:-top-2 before:block before:h-0.5 before:w-6
         before:bg-inherit before:transition before:duration-200
         before:ease-in-out
         after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
         after:bg-inherit after:transition after:duration-200 after:ease-in-out
-        [body.nav-open_&]:transform-[rotate(45deg)]
-        [body.nav-open_&]:bg-(--color-default)
-        [body.nav-open_&]:group-hover/button:bg-accent
-        [body.nav-open_&]:before:top-0
-        [body.nav-open_&]:before:transform-[rotate(90deg)]
-        [body.nav-open_&]:after:bottom-0
-        [body.nav-open_&]:after:transform-[rotate(90deg)]
-        ${hasBackdrop ? "bg-white" : "bg-(--color-default)"}
       `}></span>
   </button>
-  <nav aria-label="Main navigation">
-    <div
+  <dialog
+    aria-label="Main navigation"
+    class={`
+      group/dialog fixed top-0 right-0 left-auto m-0 size-full max-h-full
+      overflow-y-auto border-0 bg-canvas p-0 pt-20 pr-[16%] pb-5 pl-[12%]
+      text-left text-default drop-shadow-2xl
+      backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
+      backdrop:transition-discrete backdrop:duration-200
+      open:backdrop:opacity-40
+      tablet:max-w-[35vw] tablet:px-10 tablet:pt-40
+      starting:open:backdrop:opacity-0
+    `}
+    data-nav-drawer
+    id="nav-drawer"
+  >
+    <button
+      aria-label="Close navigation"
       class={`
-        invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)]
-        overflow-hidden bg-canvas text-left text-default opacity-0 duration-200
-        ease-in-out
-        tablet:max-w-[35vw]
-        laptop:max-w-[25vw]
-        [body.nav-open_&]:visible [body.nav-open_&]:bottom-0
-        [body.nav-open_&]:z-nav-drawer [body.nav-open_&]:size-full
-        [body.nav-open_&]:transform-[translateX(0)]
-        [body.nav-open_&]:overflow-y-auto [body.nav-open_&]:pt-20
-        [body.nav-open_&]:pr-[16%] [body.nav-open_&]:pb-5
-        [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
-        [body.nav-open_&]:drop-shadow-2xl
-        [body.nav-open_&]:tablet:px-10 [body.nav-open_&]:tablet:pt-40
-        [body.nav-open_&]:laptop:px-20
+        group/close absolute top-4 right-(--container-padding) flex size-10
+        cursor-pointer items-center justify-center
+        tablet:top-6
       `}
-      data-nav-drawer
-      id="nav-drawer"
+      data-nav-close-trigger
+      type="button"
     >
+      <span
+        aria-hidden="true"
+        class={`
+          relative flex h-0.5 w-6 origin-center transform-gpu
+          bg-(--color-default) transition-all duration-200 ease-in-out
+          group-open/dialog:transform-[rotate(45deg)]
+          group-hover/button:bg-accent
+          before:absolute before:-top-2 before:block before:h-0.5 before:w-6
+          before:bg-inherit before:transition before:duration-200
+          before:ease-in-out
+          group-open/dialog:before:top-0
+          group-open/dialog:before:transform-[rotate(90deg)]
+          after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
+          after:bg-inherit after:transition after:duration-200 after:ease-in-out
+          group-open/dialog:after:bottom-0
+          group-open/dialog:after:transform-[rotate(90deg)]
+        `}></span>
+    </button>
+    <nav>
       <slot />
-    </div>
-  </nav>
+    </nav>
+  </dialog>
 </nav-drawer>
+
+<style is:global>
+  dialog[data-nav-drawer] {
+    translate: 100% 0;
+    opacity: 0;
+    transition:
+      translate 200ms ease-in-out,
+      opacity 200ms ease-in-out,
+      overlay 200ms allow-discrete,
+      display 200ms allow-discrete;
+  }
+
+  dialog[data-nav-drawer][open] {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  @starting-style {
+    dialog[data-nav-drawer][open] {
+      translate: 100% 0;
+      opacity: 0;
+    }
+  }
+
+  /* Lock body scroll while drawer is open */
+  body:has(dialog[data-nav-drawer][open]) {
+    overflow: hidden;
+  }
+</style>
 
 <script src="./navDrawer.ts"></script>

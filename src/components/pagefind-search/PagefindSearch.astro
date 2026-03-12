@@ -7,12 +7,7 @@ const { class: className } = Astro.props;
 ---
 
 <pagefind-search class={className}>
-  <div
-    class={`
-      transition-colors
-      [body.nav-open_&]:text-default!
-    `}
-  >
+  <div class="transition-colors">
     <button
       aria-keyshortcuts="Control+K"
       aria-label="Search"
