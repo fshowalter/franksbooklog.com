@@ -105,12 +105,10 @@ Tests run in two environments:
 
 ## Testing Principles
 
-### Testing Principles
-
 - The purpose of tests is to tell me two things:
   1. Will this dependency update break the site?
   2. Will this change cause other, unintended changes?
-- Testing focuses on the interactive React componens:
+- Testing focuses on the interactive React components:
   - Exercise interactive elements like a user
   - Goal: By exercising all options and rendering all permutations, any uncovered code must be dead code safe to remove
 
