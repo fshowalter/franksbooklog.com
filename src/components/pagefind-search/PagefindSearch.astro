@@ -1,11 +1,15 @@
 ---
+type Props = {
+  class: string;
+};
 
+const { class: className } = Astro.props;
 ---
 
-<pagefind-search>
+<pagefind-search class={className}>
   <div
     class={`
-      z-search-button transition-colors
+      transition-colors
       [body.nav-open_&]:text-default!
     `}
   >

@@ -3,7 +3,7 @@
   "entry": [
     "src/pages/**/*.astro",
     "src/components/pagefind-search/pagefind-search.ts",
-    "src/components/layout/navDrawer.ts"
+    "src/components/nav-drawer/navDrawer.ts"
   ],
   "project": ["**/*"],
   "ignoreDependencies": ["babel-plugin-react-compiler"]
