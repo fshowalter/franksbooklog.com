@@ -16,7 +16,6 @@ class NavDrawer extends HTMLElement {
     const { signal } = this.controller;
 
     const open = () => {
-      this.dataset.open = "";
       navToggle.setAttribute("aria-expanded", "true");
       dialog.showModal();
       requestAnimationFrame(() => {
@@ -25,7 +24,6 @@ class NavDrawer extends HTMLElement {
     };
 
     const close = (returnFocus = false) => {
-      delete this.dataset.open;
       navToggle.setAttribute("aria-expanded", "false");
       dialog.close();
       if (returnFocus) navToggle.focus();
