@@ -4,6 +4,7 @@ import { getFluidCoverImageProps } from "~/assets/covers";
 import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
 import { gradeToValue } from "~/utils/grades";
 import { toDisplayDate } from "~/utils/toDisplayDate";
+import { toSortYear } from "~/utils/toSortYear";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
 
@@ -15,13 +16,13 @@ export async function getReviewsProps(
   );
 
   const distinctKinds = new Set<string>();
-  const distinctReviewYears = new Set<number>();
+  const distinctReviewYears = new Set<string>();
   const distinctWorkYears = new Set<string>();
 
   const values = await Promise.all(
     reviewedWorks.map(async (reviewedWork) => {
       distinctKinds.add(reviewedWork.kind);
-      distinctReviewYears.add(reviewedWork.reviewDate.getFullYear());
+      distinctReviewYears.add(toSortYear(reviewedWork.reviewDate));
       distinctWorkYears.add(reviewedWork.workYear);
 
       const value: ReviewsValue = {
@@ -43,7 +44,7 @@ export async function getReviewsProps(
         gradeValue: gradeToValue(reviewedWork.grade),
         kind: reviewedWork.kind,
         reviewSequence: reviewedWork.reviewSequence,
-        reviewYear: reviewedWork.reviewDate.getFullYear().toString(),
+        reviewYear: toSortYear(reviewedWork.reviewDate),
         slug: reviewedWork.review.id,
         sortTitle: reviewedWork.sortTitle,
         title: reviewedWork.title,
@@ -56,9 +57,7 @@ export async function getReviewsProps(
 
   return {
     distinctKinds: [...distinctKinds].toSorted(),
-    distinctReviewYears: [...distinctReviewYears]
-      .map((year) => year.toString())
-      .toSorted(),
+    distinctReviewYears: [...distinctReviewYears].toSorted(),
     distinctWorkYears: [...distinctWorkYears].toSorted(),
     initialSort: "author-asc",
     values,
