@@ -4,6 +4,22 @@ import { getViteConfig } from "astro/config";
 export default getViteConfig({
   test: {
     coverage: {
+      exclude: [
+        "src/**/*.astro",
+        "src/assets/**",
+        "src/collections/*.ts",
+        "src/components/nav-drawer/**",
+        "src/components/open-graph-image/**",
+        "src/components/pagefind-search/**",
+        "src/css",
+        "src/features/**/*OpenGraphImageResponse.tsx",
+        "src/features/feed/**",
+        "src/features/home/**",
+        "src/features/how-i-grade/**",
+        "src/features/review/**",
+        "src/features/stats/**",
+        "src/pages/**",
+      ],
       include: ["src/**"],
       provider: "v8",
     },
