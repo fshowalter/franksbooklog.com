@@ -1,6 +1,7 @@
 import type { LoaderContext } from "astro/loaders";
 
-import { defineCollection, reference, z } from "astro:content";
+import { z } from "astro/zod";
+import { defineCollection, reference } from "astro:content";
 import path from "node:path";
 
 import { CONTENT_ROOT } from "./contentRoot";

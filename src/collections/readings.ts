@@ -1,4 +1,5 @@
-import { defineCollection, z } from "astro:content";
+import { z } from "astro/zod";
+import { defineCollection } from "astro:content";
 import path from "node:path";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
