@@ -19,26 +19,20 @@ import type { AuthorsProps, AuthorsValue } from "./Authors";
 
 import { Authors } from "./Authors";
 
-// Test helpers
-let testIdCounter = 0;
-
 function createAuthorValue(
+  sortName: string,
   overrides: Partial<AuthorsValue> = {},
 ): AuthorsValue {
-  testIdCounter += 1;
-  const name = overrides.name || `Test Author ${testIdCounter}`;
+  const names = sortName.split(",");
+
   return {
     avatarImageProps: undefined,
-    name,
+    name: `${names[1]} ${names[0]}`,
     reviewCount: 5,
-    slug: `test-author-${testIdCounter}`,
-    sortName: name.toLowerCase(),
+    slug: sortName,
+    sortName,
     ...overrides,
   };
-}
-
-function resetTestIdCounter(): void {
-  testIdCounter = 0;
 }
 
 const baseProps: AuthorsProps = {
@@ -48,7 +42,6 @@ const baseProps: AuthorsProps = {
 
 describe("Authors", () => {
   beforeEach(() => {
-    resetTestIdCounter();
     vi.useFakeTimers({ shouldAdvanceTime: true });
   });
 
@@ -60,9 +53,9 @@ describe("Authors", () => {
   describe("filtering", () => {
     it("filters by name", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "Bram Stoker" }),
-        createAuthorValue({ name: "Stephen King" }),
-        createAuthorValue({ name: "Anne Rice" }),
+        createAuthorValue("Stoker, Bram"),
+        createAuthorValue("King, Stephen"),
+        createAuthorValue("Rice, Anne"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -73,16 +66,16 @@ describe("Authors", () => {
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
-      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
-      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
-      expect(within(list).queryByText("Anne Rice")).not.toBeInTheDocument();
+      expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();
+      expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
+      expect(within(list).queryByText("Rice, Anne")).not.toBeInTheDocument();
     });
 
     it("filters by partial name match", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "H.P. Lovecraft" }),
-        createAuthorValue({ name: "H.G. Wells" }),
-        createAuthorValue({ name: "Edgar Allan Poe" }),
+        createAuthorValue("Lovecraft, H.P."),
+        createAuthorValue("Wells, H.G."),
+        createAuthorValue("Poe, Edgar Allan"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -93,26 +86,20 @@ describe("Authors", () => {
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
-      expect(within(list).getByText("H.P. Lovecraft")).toBeInTheDocument();
-      expect(within(list).getByText("H.G. Wells")).toBeInTheDocument();
+      expect(within(list).getByText("Lovecraft, H.P.")).toBeInTheDocument();
+      expect(within(list).getByText("Wells, H.G.")).toBeInTheDocument();
       expect(
-        within(list).queryByText("Edgar Allan Poe"),
+        within(list).queryByText("Poe, Edgar Allan"),
       ).not.toBeInTheDocument();
     });
   });
 
   describe("sorting", () => {
-    it("sorts by name A to Z", async ({ expect }) => {
+    it("sorts by sort name A to Z", async ({ expect }) => {
       const authors = [
-        createAuthorValue({
-          name: "Zelda Fitzgerald",
-          sortName: "fitzgerald, zelda",
-        }),
-        createAuthorValue({
-          name: "Arthur Conan Doyle",
-          sortName: "doyle, arthur conan",
-        }),
-        createAuthorValue({ name: "Mary Shelley", sortName: "shelley, mary" }),
+        createAuthorValue("Fitzgerald, Zelda"),
+        createAuthorValue("Doyle, Arthur Conan"),
+        createAuthorValue("Shelley, Mary"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -122,25 +109,19 @@ describe("Authors", () => {
 
       const list = getGroupedAvatarList();
       const allText = list.textContent || "";
-      const arthurIndex = allText.indexOf("Arthur Conan Doyle");
-      const maryIndex = allText.indexOf("Mary Shelley");
-      const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
+      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
+      const shellyIndex = allText.indexOf("Shelley, Mar");
+      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
 
-      expect(arthurIndex).toBeLessThan(maryIndex);
-      expect(maryIndex).toBeLessThan(zeldaIndex);
+      expect(doyleIndex).toBeLessThan(fitzgeraldIndex);
+      expect(fitzgeraldIndex).toBeLessThan(shellyIndex);
     });
 
-    it("sorts by name Z to A", async ({ expect }) => {
+    it("sorts by sort name Z to A", async ({ expect }) => {
       const authors = [
-        createAuthorValue({
-          name: "Arthur Conan Doyle",
-          sortName: "doyle, arthur conan",
-        }),
-        createAuthorValue({
-          name: "Zelda Fitzgerald",
-          sortName: "fitzgerald, zelda",
-        }),
-        createAuthorValue({ name: "Mary Shelley", sortName: "shelley, mary" }),
+        createAuthorValue("Doyle, Arthur Conan"),
+        createAuthorValue("Fitzgerald, Zelda"),
+        createAuthorValue("Shelley, Mary"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -150,19 +131,19 @@ describe("Authors", () => {
 
       const list = getGroupedAvatarList();
       const allText = list.textContent || "";
-      const arthurIndex = allText.indexOf("Arthur Conan Doyle");
-      const maryIndex = allText.indexOf("Mary Shelley");
-      const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
+      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
+      const shellyIndex = allText.indexOf("Shelley, Mar");
+      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
 
-      expect(zeldaIndex).toBeLessThan(maryIndex);
-      expect(maryIndex).toBeLessThan(arthurIndex);
+      expect(shellyIndex).toBeLessThan(fitzgeraldIndex);
+      expect(fitzgeraldIndex).toBeLessThan(doyleIndex);
     });
 
     it("sorts by review count fewest first", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "Popular Author", reviewCount: 20 }),
-        createAuthorValue({ name: "New Author", reviewCount: 1 }),
-        createAuthorValue({ name: "Mid Author", reviewCount: 10 }),
+        createAuthorValue("Popular Author", { reviewCount: 20 }),
+        createAuthorValue("New Author", { reviewCount: 1 }),
+        createAuthorValue("Mid Author", { reviewCount: 10 }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -182,9 +163,9 @@ describe("Authors", () => {
 
     it("sorts by review count most first", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "New Author", reviewCount: 1 }),
-        createAuthorValue({ name: "Popular Author", reviewCount: 20 }),
-        createAuthorValue({ name: "Mid Author", reviewCount: 10 }),
+        createAuthorValue("New Author", { reviewCount: 1 }),
+        createAuthorValue("Popular Author", { reviewCount: 20 }),
+        createAuthorValue("Mid Author", { reviewCount: 10 }),
       ];
 
       const user = getUserWithFakeTimers();
@@ -206,8 +187,8 @@ describe("Authors", () => {
   describe("when clearing filters", () => {
     it("clears all filters with clear button", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "Bram Stoker" }),
-        createAuthorValue({ name: "Stephen King" }),
+        createAuthorValue("Stoker, Bram"),
+        createAuthorValue("King, Stephen"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -218,8 +199,8 @@ describe("Authors", () => {
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
-      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
-      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+      expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();
+      expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
       await clickClearFilters(user);
@@ -228,16 +209,16 @@ describe("Authors", () => {
 
       await clickViewResults(user);
 
-      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
-      expect(within(list).getByText("Stephen King")).toBeInTheDocument();
+      expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();
+      expect(within(list).getByText("King, Stephen")).toBeInTheDocument();
     });
   });
 
   describe("when closing filter drawer without applying", () => {
     it("resets pending filter changes", async ({ expect }) => {
       const authors = [
-        createAuthorValue({ name: "Bram Stoker" }),
-        createAuthorValue({ name: "Stephen King" }),
+        createAuthorValue("Stoker, Bram"),
+        createAuthorValue("King, Stephen"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -248,16 +229,16 @@ describe("Authors", () => {
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
-      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
-      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+      expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();
+      expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
       await fillNameFilter(user, "Different Author");
       await clickCloseFilters(user);
 
       // Should still show originally filtered results
-      expect(within(list).getByText("Bram Stoker")).toBeInTheDocument();
-      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+      expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();
+      expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
       expect(getNameFilter()).toHaveValue("Bram Stoker");
@@ -269,8 +250,8 @@ describe("Authors", () => {
       expect,
     }) => {
       const authors = [
-        createAuthorValue({ name: "Bram Stoker" }),
-        createAuthorValue({ name: "Stephen King" }),
+        createAuthorValue("Stoker, Bram"),
+        createAuthorValue("King, Stephen"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -292,8 +273,8 @@ describe("Authors", () => {
       expect,
     }) => {
       const authors = [
-        createAuthorValue({ name: "Bram Stoker" }),
-        createAuthorValue({ name: "Stephen King" }),
+        createAuthorValue("Stoker, Bram"),
+        createAuthorValue("King, Stephen"),
       ];
 
       const user = getUserWithFakeTimers();
@@ -320,12 +301,12 @@ describe("Authors", () => {
         }),
       ).not.toBeInTheDocument();
       // But the list is not yet updated — "View Results" hasn't been clicked
-      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+      expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickViewResults(user);
 
       // Now the list updates
-      expect(within(list).getByText("Stephen King")).toBeInTheDocument();
+      expect(within(list).getByText("King, Stephen")).toBeInTheDocument();
     });
   });
 });

@@ -658,11 +658,11 @@ describe("AuthorTitles", () => {
     it("displays co-authors when present", ({ expect }) => {
       const titles = [
         createAuthorTitleValue({
-          otherAuthors: [{ name: "Peter Straub" }],
+          otherAuthors: [{ name: "Peter Straub", notes: undefined }],
           title: "The Talisman",
         }),
         createAuthorTitleValue({
-          otherAuthors: [{ name: "Peter Straub" }],
+          otherAuthors: [{ name: "Peter Straub", notes: undefined }],
           title: "Black House",
         }),
         createAuthorTitleValue({
@@ -697,7 +697,10 @@ describe("AuthorTitles", () => {
     it("displays multiple co-authors when present", ({ expect }) => {
       const titles = [
         createAuthorTitleValue({
-          otherAuthors: [{ name: "Second Author" }, { name: "Third Author" }],
+          otherAuthors: [
+            { name: "Second Author", notes: "Editor" },
+            { name: "Third Author", notes: undefined },
+          ],
           title: "Three-Author Book",
         }),
       ];
@@ -720,7 +723,7 @@ describe("AuthorTitles", () => {
       const titles = [
         createAuthorTitleValue({
           kind: "Novel",
-          otherAuthors: [{ name: "Peter Straub" }],
+          otherAuthors: [{ name: "Peter Straub", notes: undefined }],
           title: "The Talisman",
         }),
         createAuthorTitleValue({

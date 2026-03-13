@@ -18,7 +18,7 @@ export function AuthorsListItem({
   return (
     <AvatarListItem avatarImageProps={value.avatarImageProps}>
       <div className="flex flex-col justify-center">
-        <AuthorName name={value.name} slug={value.slug} />
+        <AuthorName name={value.sortName} slug={value.slug} />
         <div
           className={`
             mt-[6px] font-sans text-[13px] font-normal tracking-prose

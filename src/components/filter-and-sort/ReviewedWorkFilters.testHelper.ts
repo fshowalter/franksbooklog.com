@@ -12,6 +12,13 @@ export {
   getTitleFilter,
 } from "./WorkFilters.testHelper";
 
+export async function clearGradeFilter(user: UserEvent) {
+  const fieldset = screen.getByRole("group", { name: "Grade" });
+  const clearButton = within(fieldset).getByLabelText("Clear");
+
+  await user.click(clearButton);
+}
+
 /**
  * Test helper function to fill the grade filter range.
  *

@@ -7,8 +7,8 @@ export type CollectionSort =
   | "review-count-desc";
 
 type SortableCollection = {
-  name: string;
   reviewCount: number;
+  sortName: string;
 };
 
 /**
@@ -33,8 +33,9 @@ export function createCollectionSorter<
 
 function sortName<TValue extends SortableCollection>() {
   return {
-    "name-asc": (a: TValue, b: TValue) => sortString(a.name, b.name),
-    "name-desc": (a: TValue, b: TValue) => sortString(a.name, b.name) * -1,
+    "name-asc": (a: TValue, b: TValue) => sortString(a.sortName, b.sortName),
+    "name-desc": (a: TValue, b: TValue) =>
+      sortString(a.sortName, b.sortName) * -1,
   };
 }
 
