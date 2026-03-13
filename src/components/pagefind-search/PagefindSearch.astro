@@ -25,7 +25,11 @@ const { class: className, variant = "button" } = Astro.props;
       {variant === "text" && <span class="pr-3 text-2xl">Search</span>}
       <div
         class:list={[
-          variant === "button" && `flex size-10 items-center justify-center`,
+          variant === "button" &&
+            `
+              flex size-10 items-center justify-center
+              laptop:ml-6
+            `,
         ]}
       >
         <svg
