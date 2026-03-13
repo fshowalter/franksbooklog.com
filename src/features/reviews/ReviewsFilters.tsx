@@ -1,4 +1,5 @@
 import { ReviewedWorkFilters } from "~/components/filter-and-sort/ReviewedWorkFilters";
+import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 
@@ -46,7 +47,8 @@ export function ReviewsFilters({
       grade={{
         defaultValues: filterValues.gradeValue,
         onChange: (values) => dispatch(createGradeFilterChangedAction(values)),
-        onClear: () => dispatch(createGradeFilterChangedAction([2, 16])),
+        onClear: () =>
+          dispatch(createGradeFilterChangedAction([GRADE_MIN, GRADE_MAX])),
       }}
       kind={{
         counts: kindCounts,
