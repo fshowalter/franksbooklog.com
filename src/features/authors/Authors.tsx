@@ -100,7 +100,6 @@ export function Authors({
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
-      className={state.sort.startsWith("name-") ? `[--scroll-offset:52px]` : ""}
       filters={
         <AuthorsFilters
           dispatch={dispatch}

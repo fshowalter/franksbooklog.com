@@ -3,8 +3,8 @@ import type { GroupFn } from "~/groupers/groupValues";
 import { getGroupLetter, groupValues } from "~/groupers/groupValues";
 
 type GroupableCollection = {
-  name: string;
   reviewCount: number;
+  sortName: string;
 };
 
 /**
@@ -37,7 +37,7 @@ function createGroupForCollection<
     switch (sort) {
       case "name-asc":
       case "name-desc": {
-        return getGroupLetter(value.name);
+        return getGroupLetter(value.sortName);
       }
       case "review-count-asc":
       case "review-count-desc": {

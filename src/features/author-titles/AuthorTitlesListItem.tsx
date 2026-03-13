@@ -4,7 +4,7 @@ import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/list-item-kind-and-year/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemReviewDate";
 import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
-import { toSentenceArray } from "~/utils/toSentenceArray";
+import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 
@@ -53,7 +53,7 @@ function OtherAuthors({
 
   return (
     <div className="font-serif text-[15px]/5">
-      (with {toSentenceArray(values.map((value) => value.name))})
+      (with {formatWorkAuthors(values)})
     </div>
   );
 }

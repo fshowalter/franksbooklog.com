@@ -13,6 +13,7 @@ export default getViteConfig({
         "src/components/pagefind-search/**",
         "src/css",
         "src/features/**/*OpenGraphImageResponse.tsx",
+        "src/features/**/get*Props.ts",
         "src/features/feed/**",
         "src/features/home/**",
         "src/features/how-i-grade/**",

@@ -66,6 +66,7 @@ export type AuthorTitlesValue = {
   /** Other authors who collaborated on this work */
   otherAuthors: {
     name: string;
+    notes: string | undefined;
   }[];
   /** Date the review was written */
   reviewDate: Date;
