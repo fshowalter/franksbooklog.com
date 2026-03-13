@@ -1,12 +1,16 @@
+import type { ComponentProps } from "react";
+
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { describe, it, vi } from "vitest";
 
 import { gradeToLetter } from "~/utils/grades";
 
-import type { FormatValueFunction } from "./RangeSliderField";
-
 import { RangeSliderField } from "./RangeSliderField";
+
+type FormatValueFunction = ComponentProps<
+  typeof RangeSliderField
+>["formatValue"];
 
 const createDefaultProps = (
   overrides = {},

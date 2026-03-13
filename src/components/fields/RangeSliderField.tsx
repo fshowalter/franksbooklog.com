@@ -1,6 +1,6 @@
 import type { ChangeEvent, KeyboardEvent } from "react";
 
-export type FormatValueFunction = (value: number) => string;
+type FormatValueFunction = (value: number) => string;
 
 type RangeSliderFieldProps = {
   formatValue?: FormatValueFunction;
