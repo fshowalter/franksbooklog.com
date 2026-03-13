@@ -285,7 +285,7 @@ describe("Authors", () => {
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
-      expect(within(list).queryByText("Stephen King")).not.toBeInTheDocument();
+      expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
       await user.click(

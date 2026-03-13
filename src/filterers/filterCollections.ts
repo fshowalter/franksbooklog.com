@@ -4,6 +4,7 @@ import { filterSortedValues } from "./filterSortedValues";
 
 type FilterableCollection = {
   name: string;
+  sortName: string;
 };
 
 /**
@@ -31,5 +32,6 @@ function createNameFilter<TValue extends FilterableCollection>(
 ) {
   if (!filterValue) return;
   const regex = new RegExp(filterValue, "i");
-  return (value: TValue): boolean => regex.test(value.name);
+  return (value: TValue): boolean =>
+    regex.test(value.name) || regex.test(value.sortName);
 }
