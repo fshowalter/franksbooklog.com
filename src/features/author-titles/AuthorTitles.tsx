@@ -179,7 +179,13 @@ export function AuthorTitles({
         values={paginatedValues}
         visibleCount={state.showCount}
       >
-        {(value) => <AuthorWorksListItem key={value.slug} value={value} />}
+        {(value) => (
+          <AuthorWorksListItem
+            key={value.slug}
+            sortValue={state.sort}
+            value={value}
+          />
+        )}
       </PaginatedCoverList>
     </FilterAndSortContainer>
   );

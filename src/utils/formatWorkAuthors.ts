@@ -17,16 +17,22 @@ export function formatWorkAuthors(
   workAuthors: {
     name: string;
     notes: string | undefined;
+    sortName?: string | undefined;
   }[],
-  style: keyof typeof formatterMap = "long",
+  args: {
+    style?: keyof typeof formatterMap;
+    useSortName?: boolean;
+  } = {},
 ) {
+  const { style = "long", useSortName = false } = args;
+
   const formatter = formatterMap[style];
 
   return formatter.format(
     workAuthors.map((workAuthor) => {
       const notes = workAuthor.notes ? ` (${workAuthor.notes})` : "";
 
-      return `${workAuthor.name}${notes}`;
+      return `${useSortName ? workAuthor.sortName : workAuthor.name}${notes}`;
     }),
   );
 }
