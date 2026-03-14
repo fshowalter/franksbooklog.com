@@ -117,18 +117,6 @@ export function FilterAndSortContainer<T extends string>({
     };
   }, [onResetFilters]);
 
-  // Bridge for jsdom: native browsers fire cancel automatically; jsdom does not.
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent): void => {
-      if (e.key === "Escape" && filterDrawerVisible) {
-        dialogRef.current?.dispatchEvent(new Event("cancel"));
-        dialogRef.current?.close();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
-    return (): void => document.removeEventListener("keydown", handleKeyDown);
-  }, [filterDrawerVisible]);
-
   // Scroll to top of list when sort changes via desktop select
   useEffect(() => {
     if (prevSortValueRef.current !== sortProps.currentSortValue) {
