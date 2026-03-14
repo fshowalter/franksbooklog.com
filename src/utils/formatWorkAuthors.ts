@@ -32,7 +32,7 @@ export function formatWorkAuthors(
     workAuthors.map((workAuthor) => {
       const notes = workAuthor.notes ? ` (${workAuthor.notes})` : "";
 
-      return `${useSortName ? workAuthor.sortName : workAuthor.name}${notes}`;
+      return `${useSortName ? (workAuthor.sortName ?? workAuthor.name) : workAuthor.name}${notes}`;
     }),
   );
 }

@@ -5,7 +5,9 @@ import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 export function reviewPageTitle(
   reviewedWork: CollectionEntry<"reviewedWorks">["data"],
 ) {
-  const titleAuthorNames = formatWorkAuthors(reviewedWork.authors, "short");
+  const titleAuthorNames = formatWorkAuthors(reviewedWork.authors, {
+    style: "short",
+  });
 
   const title = `${reviewedWork.title} by ${titleAuthorNames}`;
 

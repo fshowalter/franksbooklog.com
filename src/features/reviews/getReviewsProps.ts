@@ -30,6 +30,7 @@ export async function getReviewsProps(
         authors: reviewedWork.authors.map((author) => {
           const authorValue: ReviewsValue["authors"][number] = {
             name: author.name,
+            notes: author.notes,
             sortName: author.sortName,
           };
 

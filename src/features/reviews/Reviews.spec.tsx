@@ -38,9 +38,9 @@ function createReviewsValues(
       abandoned: false,
       authors: override.authors || [
         {
-          name: `Test Author ${0}`,
+          name: `Test Author ${index}`,
           notes: undefined,
-          sortName: `Author ${0}, Test`,
+          sortName: `Author ${index}, Test`,
         },
       ],
       coverImageProps: {
