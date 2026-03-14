@@ -32,12 +32,16 @@ import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
     aria-label="Main navigation"
     class={`
       group/dialog fixed top-0 right-0 left-auto m-0 size-full max-h-full
-      overflow-y-auto border-0 bg-canvas p-0 pt-20 pr-[16%] pb-5 pl-[12%]
-      text-left text-default drop-shadow-2xl
+      translate-x-full overflow-y-auto border-0 bg-canvas p-0 pt-20 pr-[16%]
+      pb-5 pl-[12%] text-left text-default opacity-0 drop-shadow-2xl
+      transition-[translate,opacity,overlay,display] transition-discrete
+      duration-200 ease-in-out
       backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
       backdrop:transition-discrete backdrop:duration-200
+      open:translate-x-0 open:opacity-100
       open:backdrop:opacity-40
       tablet:max-w-[35vw] tablet:px-10 tablet:pt-40
+      starting:open:translate-x-full starting:open:opacity-0
       starting:open:backdrop:opacity-0
     `}
     data-nav-drawer
@@ -77,34 +81,5 @@ import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
     </nav>
   </dialog>
 </nav-drawer>
-
-<style is:global>
-  dialog[data-nav-drawer] {
-    translate: 100% 0;
-    opacity: 0;
-    transition:
-      translate 200ms ease-in-out,
-      opacity 200ms ease-in-out,
-      overlay 200ms allow-discrete,
-      display 200ms allow-discrete;
-  }
-
-  dialog[data-nav-drawer][open] {
-    translate: 0 0;
-    opacity: 1;
-  }
-
-  @starting-style {
-    dialog[data-nav-drawer][open] {
-      translate: 100% 0;
-      opacity: 0;
-    }
-  }
-
-  /* Lock body scroll while drawer is open */
-  body:has(dialog[data-nav-drawer][open]) {
-    overflow: hidden;
-  }
-</style>
 
 <script src="./navDrawer.ts"></script>

@@ -2,7 +2,7 @@ import type { ComponentProps } from "react";
 
 import { act, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
-import { afterEach, beforeEach, describe, it, vi } from "vitest";
+import { beforeEach, describe, it, vi } from "vitest";
 
 import type { FilterChip } from "./AppliedFilters";
 
@@ -89,10 +89,6 @@ describe("FilterAndSortContainer", () => {
   });
 
   describe("filter drawer interactions", () => {
-    afterEach(() => {
-      document.body.classList.remove("overflow-hidden");
-    });
-
     it("opens filter drawer when toggle button is clicked", async ({
       expect,
     }) => {
@@ -108,12 +104,10 @@ describe("FilterAndSortContainer", () => {
       });
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
 
       await clickToggleFilters(user);
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("true");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(true);
       expect(mockProps.onFilterDrawerOpen).toHaveBeenCalled();
     });
 
@@ -139,7 +133,6 @@ describe("FilterAndSortContainer", () => {
       await clickToggleFilters(user);
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
     });
 
     it("closes filter drawer when escape key is pressed", async ({
@@ -162,7 +155,6 @@ describe("FilterAndSortContainer", () => {
       await user.keyboard("{Escape}");
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
     });
 
     it("closes filter drawer when clicking outside on backdrop", async ({
@@ -182,24 +174,20 @@ describe("FilterAndSortContainer", () => {
       await clickToggleFilters(user);
       expect(filterButton.getAttribute("aria-expanded")).toBe("true");
 
-      // Find and click the backdrop
-      const backdrop = container.querySelector(
-        '[aria-hidden="true"].fixed.inset-0',
-      );
-      expect(backdrop).toBeTruthy();
+      // Click directly on the dialog to simulate a backdrop click
+      // (in real browsers, clicking ::backdrop fires click with event.target === dialog)
+      const dialog = container.querySelector("dialog[data-filter-drawer]");
+      expect(dialog).toBeTruthy();
 
-      if (backdrop) {
+      if (dialog) {
         act(() => {
-          const clickEvent = new MouseEvent("click", {
-            bubbles: true,
-            cancelable: true,
-          });
-          backdrop.dispatchEvent(clickEvent);
+          dialog.dispatchEvent(
+            new MouseEvent("click", { bubbles: true, cancelable: true }),
+          );
         });
       }
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
     });
 
     it("closes filter drawer when View Results button is clicked", async ({
@@ -222,7 +210,6 @@ describe("FilterAndSortContainer", () => {
       await clickViewResults(user);
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
       expect(mockProps.onApplyFilters).toHaveBeenCalled();
     });
 
@@ -246,7 +233,6 @@ describe("FilterAndSortContainer", () => {
       await clickCloseFilters(user);
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
       expect(mockProps.onResetFilters).toHaveBeenCalled();
     });
 
@@ -404,52 +390,6 @@ describe("FilterAndSortContainer", () => {
       await user.selectOptions(sortSelect, "title-desc");
 
       expect(onSortChange).toHaveBeenCalledTimes(1);
-    });
-  });
-
-  describe("body overflow management", () => {
-    afterEach(() => {
-      // Clean up body classes from previous tests
-      document.body.classList.remove("overflow-hidden");
-    });
-
-    it("adds overflow-hidden class to body when drawer opens", async ({
-      expect,
-    }) => {
-      const user = userEvent.setup();
-
-      // Ensure clean state
-      document.body.classList.remove("overflow-hidden");
-
-      render(
-        <FilterAndSortContainer {...mockProps}>
-          <div>Test Content</div>
-        </FilterAndSortContainer>,
-      );
-
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
-
-      await clickToggleFilters(user);
-
-      expect(document.body.classList.contains("overflow-hidden")).toBe(true);
-    });
-
-    it("removes overflow-hidden class from body when drawer closes", async ({
-      expect,
-    }) => {
-      const user = userEvent.setup();
-      render(
-        <FilterAndSortContainer {...mockProps}>
-          <div>Test Content</div>
-        </FilterAndSortContainer>,
-      );
-
-      await clickToggleFilters(user);
-      expect(document.body.classList.contains("overflow-hidden")).toBe(true);
-
-      await clickToggleFilters(user);
-
-      expect(document.body.classList.contains("overflow-hidden")).toBe(false);
     });
   });
 

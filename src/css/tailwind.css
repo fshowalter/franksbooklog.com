@@ -6,7 +6,6 @@
   --z-index-base: 1;
   --z-index-sticky: 10;
   --z-index-nav-backdrop: 15;
-  --z-index-side-drawer-backdrop: 15;
   --z-index-nav-drawer: 20;
   --z-index-hover: 30;
   --z-index-nav-menu: 20;
@@ -428,6 +427,11 @@
   .range-input::-moz-range-thumb:focus {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
+  }
+
+  /* Lock body scroll while any modal dialog is open */
+  body:has(:modal) {
+    overflow: hidden;
   }
 
   .rendered-markdown {
