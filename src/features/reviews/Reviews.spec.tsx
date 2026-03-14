@@ -28,46 +28,40 @@ import type { ReviewsProps, ReviewsValue } from "./Reviews";
 
 import { Reviews } from "./Reviews";
 
-// Test helpers
-let testIdCounter = 0;
+function createReviewsValues(
+  overrides: Partial<ReviewsValue>[] = [],
+): ReviewsValue[] {
+  return overrides.map((override, index) => {
+    const title = override.title || `Test Review ${index}`;
 
-function createReviewValue(
-  overrides: Partial<ReviewsValue> = {},
-): ReviewsValue {
-  testIdCounter += 1;
-  const title = overrides.title || `Test Review ${testIdCounter}`;
-  return {
-    abandoned: false,
-    authors: overrides.authors || [
-      {
-        name: `Test Author ${testIdCounter}`,
-        sortName: `author ${testIdCounter.toLocaleString("en-US", { minimumIntegerDigits: 3 })}`,
+    return {
+      abandoned: false,
+      authors: override.authors || [
+        {
+          name: `Test Author ${index}`,
+          notes: undefined,
+          sortName: `Author ${index}, Test`,
+        },
+      ],
+      coverImageProps: {
+        height: 400,
+        src: "/cover.jpg",
+        srcSet: "/cover.jpg 1x",
+        width: 250,
       },
-    ],
-    coverImageProps: {
-      height: 400,
-      src: "/cover.jpg",
-      srcSet: "/cover.jpg 1x",
-      width: 250,
-    },
-    displayDate: "Jan 1, 2024",
-    grade: "B+",
-    gradeValue: 10,
-    kind: "Novel",
-    reviewSequence: testIdCounter.toLocaleString("en-US", {
-      minimumIntegerDigits: 3,
-    }),
-    reviewYear: "2024",
-    slug: `test-review-${testIdCounter}`,
-    sortTitle: title.toLowerCase(),
-    title,
-    workYear: "1990",
-    ...overrides,
-  };
-}
-
-function resetTestIdCounter(): void {
-  testIdCounter = 0;
+      displayDate: "Jan 1, 2024",
+      grade: "B+",
+      gradeValue: 10,
+      kind: "Novel",
+      reviewSequence: `2024-01-01-${index}`,
+      reviewYear: "2024",
+      slug: `test-review-${index}`,
+      sortTitle: title.toLowerCase(),
+      title,
+      workYear: "1990",
+      ...override,
+    };
+  });
 }
 
 const baseProps: ReviewsProps = {
@@ -80,7 +74,6 @@ const baseProps: ReviewsProps = {
 
 describe("Reviews", () => {
   beforeEach(() => {
-    resetTestIdCounter();
     vi.useFakeTimers({ shouldAdvanceTime: true });
   });
 
@@ -91,11 +84,11 @@ describe("Reviews", () => {
 
   describe("filtering", () => {
     it("filters by title", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ title: "Dracula" }),
-        createReviewValue({ title: "The Shining" }),
-        createReviewValue({ title: "Pet Sematary" }),
-      ];
+      const reviews = createReviewsValues([
+        { title: "Dracula" },
+        { title: "The Shining" },
+        { title: "Pet Sematary" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -111,11 +104,11 @@ describe("Reviews", () => {
     });
 
     it("filters by kind", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ kind: "Novel", title: "A Novel" }),
-        createReviewValue({ kind: "Collection", title: "A Collection" }),
-        createReviewValue({ kind: "Non-Fiction", title: "Non-Fiction Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { kind: "Novel", title: "A Novel" },
+        { kind: "Collection", title: "A Collection" },
+        { kind: "Non-Fiction", title: "Non-Fiction Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -133,11 +126,11 @@ describe("Reviews", () => {
     });
 
     it("filters by grade range", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ grade: "F", gradeValue: 3, title: "Bad Book" }),
-        createReviewValue({ grade: "B", gradeValue: 12, title: "Good Book" }),
-        createReviewValue({ grade: "A+", gradeValue: 16, title: "Great Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { grade: "F", gradeValue: 3, title: "Bad Book" },
+        { grade: "B", gradeValue: 12, title: "Good Book" },
+        { grade: "A+", gradeValue: 16, title: "Great Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -153,11 +146,11 @@ describe("Reviews", () => {
     });
 
     it("filters by work year range", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ title: "Old Book", workYear: "1980" }),
-        createReviewValue({ title: "Mid Book", workYear: "1990" }),
-        createReviewValue({ title: "New Book", workYear: "2000" }),
-      ];
+      const reviews = createReviewsValues([
+        { title: "Old Book", workYear: "1980" },
+        { title: "Mid Book", workYear: "1990" },
+        { title: "New Book", workYear: "2000" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -173,11 +166,11 @@ describe("Reviews", () => {
     });
 
     it("filters by review year", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ reviewYear: "2022", title: "2022 Review" }),
-        createReviewValue({ reviewYear: "2023", title: "2023 Review" }),
-        createReviewValue({ reviewYear: "2024", title: "2024 Review" }),
-      ];
+      const reviews = createReviewsValues([
+        { reviewYear: "2022", title: "2022 Review" },
+        { reviewYear: "2023", title: "2023 Review" },
+        { reviewYear: "2024", title: "2024 Review" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -193,11 +186,11 @@ describe("Reviews", () => {
     });
 
     it("filters by multiple kinds (OR logic)", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ kind: "Novel", title: "A Novel" }),
-        createReviewValue({ kind: "Collection", title: "A Collection" }),
-        createReviewValue({ kind: "Non-Fiction", title: "Non-Fiction Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { kind: "Novel", title: "A Novel" },
+        { kind: "Collection", title: "A Collection" },
+        { kind: "Non-Fiction", title: "Non-Fiction Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -216,15 +209,15 @@ describe("Reviews", () => {
     });
 
     it("filters by abandoned status", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           abandoned: true,
           grade: "Abandoned",
           gradeValue: 0,
           title: "Abandoned Book",
-        }),
-        createReviewValue({ title: "Normal Book" }),
-      ];
+        },
+        { title: "Normal Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -241,53 +234,81 @@ describe("Reviews", () => {
 
   describe("multiple authors", () => {
     it("displays all authors for works with multiple authors", ({ expect }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           authors: [
-            { name: "Terry Pratchett", sortName: "pratchett, terry" },
-            { name: "Neil Gaiman", sortName: "gaiman, neil" },
+            {
+              name: "Terry Pratchett",
+              notes: undefined,
+              sortName: "Pratchett, Terry",
+            },
+            { name: "Neil Gaiman", notes: undefined, sortName: "Gaiman, Neil" },
           ],
           title: "Good Omens",
-        }),
-        createReviewValue({
+        },
+        {
           authors: [
-            { name: "Stephen King", sortName: "king, stephen" },
-            { name: "Peter Straub", sortName: "straub, peter" },
+            {
+              name: "Stephen King",
+              notes: undefined,
+              sortName: "King, Stephen",
+            },
+            {
+              name: "Peter Straub",
+              notes: undefined,
+              sortName: "Straub, Peter",
+            },
           ],
           title: "The Talisman",
-        }),
-      ];
+        },
+      ]);
 
       render(<Reviews {...baseProps} values={reviews} />);
 
       const list = getCoverList();
 
       // Check that all authors are displayed with proper formatting
-      expect(within(list).getByText(/Terry Pratchett/)).toBeInTheDocument();
-      expect(within(list).getByText(/Neil Gaiman/)).toBeInTheDocument();
-      expect(within(list).getByText(/Stephen King/)).toBeInTheDocument();
-      expect(within(list).getByText(/Peter Straub/)).toBeInTheDocument();
+      expect(within(list).getByText(/Pratchett, Terry /)).toBeInTheDocument();
+      expect(within(list).getByText(/Gaiman, Neil/)).toBeInTheDocument();
+      expect(within(list).getByText(/King, Stephen/)).toBeInTheDocument();
+      expect(within(list).getByText(/Straub, Peter/)).toBeInTheDocument();
     });
 
     it("sorts by first author when multiple authors exist", async ({
       expect,
     }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           authors: [
-            { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
-            { name: "Arthur Conan Doyle", sortName: "doyle, arthur" },
+            {
+              name: "Zelda Fitzgerald",
+              notes: undefined,
+              sortName: "Fitzgerald, Aelda",
+            },
+            {
+              name: "Arthur Conan Doyle",
+              notes: undefined,
+              sortName: "Doyle, Arthur",
+            },
           ],
           title: "Book by Zelda and Arthur",
-        }),
-        createReviewValue({
+        },
+        {
           authors: [
-            { name: "Arthur Conan Doyle", sortName: "doyle, arthur" },
-            { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
+            {
+              name: "Arthur Conan Doyle",
+              notes: undefined,
+              sortName: "Doyle, Arthur",
+            },
+            {
+              name: "Zelda Fitzgerald",
+              notes: undefined,
+              sortName: "Fitzgerald, Zelda",
+            },
           ],
           title: "Book by Arthur and Zelda",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -307,24 +328,38 @@ describe("Reviews", () => {
 
   describe("sorting", () => {
     it("sorts by author A to Z", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           authors: [
-            { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
+            {
+              name: "Zelda Fitzgerald",
+              notes: undefined,
+              sortName: "Fitzgerald, Zelda",
+            },
           ],
           title: "Zombie Book",
-        }),
-        createReviewValue({
+        },
+        {
           authors: [
-            { name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" },
+            {
+              name: "Arthur Conan Doyle",
+              notes: undefined,
+              sortName: "Doyle, Arthur Conan",
+            },
           ],
           title: "Detective Book",
-        }),
-        createReviewValue({
-          authors: [{ name: "Mary Shelley", sortName: "shelley, mary" }],
+        },
+        {
+          authors: [
+            {
+              name: "Mary Shelley",
+              notes: undefined,
+              sortName: "Shelley, Mary",
+            },
+          ],
           title: "Monster Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -333,33 +368,47 @@ describe("Reviews", () => {
 
       const list = getCoverList();
       const allText = list.textContent || "";
-      const arthurIndex = allText.indexOf("Arthur Conan Doyle");
-      const maryIndex = allText.indexOf("Mary Shelley");
-      const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
+      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
+      const shelleyIndex = allText.indexOf("Shelley, Mary");
+      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
 
-      expect(arthurIndex).toBeLessThan(zeldaIndex);
-      expect(zeldaIndex).toBeLessThan(maryIndex);
+      expect(doyleIndex).toBeLessThan(fitzgeraldIndex);
+      expect(fitzgeraldIndex).toBeLessThan(shelleyIndex);
     });
 
     it("sorts by author Z to A", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           authors: [
-            { name: "Arthur Conan Doyle", sortName: "doyle, arthur conan" },
+            {
+              name: "Arthur Conan Doyle",
+              notes: undefined,
+              sortName: "Doyle, Arthur Conan",
+            },
           ],
           title: "Detective Book",
-        }),
-        createReviewValue({
+        },
+        {
           authors: [
-            { name: "Zelda Fitzgerald", sortName: "fitzgerald, zelda" },
+            {
+              name: "Zelda Fitzgerald",
+              notes: undefined,
+              sortName: "Fitzgerald, Zelda",
+            },
           ],
           title: "Zombie Book",
-        }),
-        createReviewValue({
-          authors: [{ name: "Mary Shelley", sortName: "shelley, mary" }],
+        },
+        {
+          authors: [
+            {
+              name: "Mary Shelley",
+              notes: undefined,
+              sortName: "Shelley, Mary",
+            },
+          ],
           title: "Monster Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -368,20 +417,20 @@ describe("Reviews", () => {
 
       const list = getCoverList();
       const allText = list.textContent || "";
-      const arthurIndex = allText.indexOf("Arthur Conan Doyle");
-      const maryIndex = allText.indexOf("Mary Shelley");
-      const zeldaIndex = allText.indexOf("Zelda Fitzgerald");
+      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
+      const shelleyIndex = allText.indexOf("Shelley, Mary");
+      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
 
-      expect(maryIndex).toBeLessThan(zeldaIndex);
-      expect(zeldaIndex).toBeLessThan(arthurIndex);
+      expect(shelleyIndex).toBeLessThan(fitzgeraldIndex);
+      expect(fitzgeraldIndex).toBeLessThan(doyleIndex);
     });
 
     it("sorts by title A to Z", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ sortTitle: "zebra", title: "Zebra Book" }),
-        createReviewValue({ sortTitle: "alpha", title: "Alpha Book" }),
-        createReviewValue({ sortTitle: "middle", title: "Middle Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { sortTitle: "zebra", title: "Zebra Book" },
+        { sortTitle: "alpha", title: "Alpha Book" },
+        { sortTitle: "middle", title: "Middle Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -399,11 +448,11 @@ describe("Reviews", () => {
     });
 
     it("sorts by title Z to A", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ sortTitle: "alpha", title: "Alpha Book" }),
-        createReviewValue({ sortTitle: "zebra", title: "Zebra Book" }),
-        createReviewValue({ sortTitle: "middle", title: "Middle Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { sortTitle: "alpha", title: "Alpha Book" },
+        { sortTitle: "zebra", title: "Zebra Book" },
+        { sortTitle: "middle", title: "Middle Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -421,20 +470,20 @@ describe("Reviews", () => {
     });
 
     it("sorts by work year oldest first", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           title: "Modern Book",
           workYear: "2000",
-        }),
-        createReviewValue({
+        },
+        {
           title: "Classic Book",
           workYear: "1980",
-        }),
-        createReviewValue({
+        },
+        {
           title: "Mid Book",
           workYear: "1990",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -453,20 +502,20 @@ describe("Reviews", () => {
     });
 
     it("sorts by work year newest first", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({
+      const reviews = createReviewsValues([
+        {
           title: "Classic Book",
           workYear: "1980",
-        }),
-        createReviewValue({
+        },
+        {
           title: "Modern Book",
           workYear: "2000",
-        }),
-        createReviewValue({
+        },
+        {
           title: "Mid Book",
           workYear: "1990",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -485,11 +534,11 @@ describe("Reviews", () => {
     });
 
     it("sorts by grade best first", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ grade: "C", gradeValue: 6, title: "Okay Book" }),
-        createReviewValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
-        createReviewValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { grade: "C", gradeValue: 6, title: "Okay Book" },
+        { grade: "A+", gradeValue: 13, title: "Great Book" },
+        { grade: "F", gradeValue: 1, title: "Bad Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -507,11 +556,11 @@ describe("Reviews", () => {
     });
 
     it("sorts by grade worst first", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ grade: "A+", gradeValue: 13, title: "Great Book" }),
-        createReviewValue({ grade: "F", gradeValue: 1, title: "Bad Book" }),
-        createReviewValue({ grade: "C", gradeValue: 6, title: "Okay Book" }),
-      ];
+      const reviews = createReviewsValues([
+        { grade: "A+", gradeValue: 13, title: "Great Book" },
+        { grade: "F", gradeValue: 1, title: "Bad Book" },
+        { grade: "C", gradeValue: 6, title: "Okay Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -529,11 +578,11 @@ describe("Reviews", () => {
     });
 
     it("sorts by review date newest first", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ reviewSequence: "3", title: "New Review" }),
-        createReviewValue({ reviewSequence: "1", title: "Old Review" }),
-        createReviewValue({ reviewSequence: "2", title: "Mid Review" }),
-      ];
+      const reviews = createReviewsValues([
+        { reviewSequence: "3", title: "New Review" },
+        { reviewSequence: "1", title: "Old Review" },
+        { reviewSequence: "2", title: "Mid Review" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -551,11 +600,11 @@ describe("Reviews", () => {
     });
 
     it("sorts by review date oldest first", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ reviewSequence: "3", title: "New Review" }),
-        createReviewValue({ reviewSequence: "1", title: "Old Review" }),
-        createReviewValue({ reviewSequence: "2", title: "Mid Review" }),
-      ];
+      const reviews = createReviewsValues([
+        { reviewSequence: "3", title: "New Review" },
+        { reviewSequence: "1", title: "Old Review" },
+        { reviewSequence: "2", title: "Mid Review" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -576,8 +625,10 @@ describe("Reviews", () => {
   describe("pagination", () => {
     it("shows more items when button is clicked", async ({ expect }) => {
       // Create many test items to trigger pagination (need more than 100)
-      const manyReviews = Array.from({ length: 150 }, (_, i) =>
-        createReviewValue({ title: `Book ${i + 1}` }),
+      const manyReviews = createReviewsValues(
+        Array.from({ length: 150 }, (_, i) => {
+          return { title: `Book ${i + 1}` };
+        }),
       );
 
       const user = getUserWithFakeTimers();
@@ -601,10 +652,10 @@ describe("Reviews", () => {
 
   describe("when clearing filters", () => {
     it("clears all filters with clear button", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ kind: "Novel", title: "Dracula" }),
-        createReviewValue({ kind: "Collection", title: "Night Show" }),
-      ];
+      const reviews = createReviewsValues([
+        { kind: "Novel", title: "Dracula" },
+        { kind: "Collection", title: "Night Show" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -635,10 +686,10 @@ describe("Reviews", () => {
 
   describe("when closing filter drawer without applying", () => {
     it("resets pending filter changes", async ({ expect }) => {
-      const reviews = [
-        createReviewValue({ title: "Dracula" }),
-        createReviewValue({ title: "The Shining" }),
-      ];
+      const reviews = createReviewsValues([
+        { title: "Dracula" },
+        { title: "The Shining" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -668,10 +719,10 @@ describe("Reviews", () => {
     it("shows kind chip in drawer after applying kind filter", async ({
       expect,
     }) => {
-      const reviews = [
-        createReviewValue({ kind: "Novel", title: "A Novel" }),
-        createReviewValue({ kind: "Collection", title: "A Collection" }),
-      ];
+      const reviews = createReviewsValues([
+        { kind: "Novel", title: "A Novel" },
+        { kind: "Collection", title: "A Collection" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -689,10 +740,10 @@ describe("Reviews", () => {
     it("removing kind chip immediately hides chip but defers list update until View Results", async ({
       expect,
     }) => {
-      const reviews = [
-        createReviewValue({ kind: "Novel", title: "A Novel" }),
-        createReviewValue({ kind: "Collection", title: "A Collection" }),
-      ];
+      const reviews = createReviewsValues([
+        { kind: "Novel", title: "A Novel" },
+        { kind: "Collection", title: "A Collection" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);
@@ -725,10 +776,10 @@ describe("Reviews", () => {
     it("shows search chip in drawer after applying title filter", async ({
       expect,
     }) => {
-      const reviews = [
-        createReviewValue({ title: "Dracula" }),
-        createReviewValue({ title: "The Shining" }),
-      ];
+      const reviews = createReviewsValues([
+        { title: "Dracula" },
+        { title: "The Shining" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<Reviews {...baseProps} values={reviews} />);

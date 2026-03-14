@@ -1,4 +1,4 @@
-import { toSentenceArray } from "~/utils/toSentenceArray";
+import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 /**
  * Represents an author for display in list items.
@@ -6,6 +6,8 @@ import { toSentenceArray } from "~/utils/toSentenceArray";
 type ListItemAuthor = {
   /** The author's display name */
   name: string;
+  notes: string | undefined;
+  sortName?: string;
 };
 
 /**
@@ -18,15 +20,15 @@ type ListItemAuthor = {
  * @returns A JSX element containing the formatted author list
  */
 export function ListItemAuthors({
+  useSortName = false,
   values,
 }: {
+  useSortName?: boolean;
   values: ListItemAuthor[];
 }): React.JSX.Element {
   return (
     <div className={`text-[15px]/4 font-normal tracking-prose text-muted`}>
-      {toSentenceArray(
-        values.map((value) => <span key={value.name}>{value.name}</span>),
-      )}
+      {formatWorkAuthors(values, { useSortName })}
     </div>
   );
 }

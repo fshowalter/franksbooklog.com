@@ -7,6 +7,7 @@ import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
+import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
 /**
  * List item component for displaying an author's work in the author page cover grid.
@@ -17,6 +18,24 @@ import type { AuthorTitlesValue } from "./AuthorTitles";
  * @returns Cover list item with work details
  */
 export function AuthorWorksListItem({
+  sortValue,
+  value,
+}: {
+  sortValue: AuthorTitlesSort;
+  value: AuthorTitlesValue;
+}): React.JSX.Element {
+  if (sortValue.startsWith("grade-")) {
+    return <GradeSortListItem value={value} />;
+  }
+
+  if (sortValue.startsWith("review-date-")) {
+    return <ReviewDateListItem value={value} />;
+  }
+
+  return <TitleSortListItem value={value} />;
+}
+
+function GradeSortListItem({
   value,
 }: {
   value: AuthorTitlesValue;
@@ -24,10 +43,10 @@ export function AuthorWorksListItem({
   return (
     <CoverListItem coverImageProps={value.coverImageProps}>
       <ListItemDetails>
+        <ListItemGrade grade={value.grade} />
         <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
         <ListItemKindAndYear kind={value.kind} year={value.workYear} />
-        <ListItemGrade grade={value.grade} />
         <ListItemReviewDate displayDate={value.displayDate} />
       </ListItemDetails>
     </CoverListItem>
@@ -55,5 +74,41 @@ function OtherAuthors({
     <div className="font-serif text-[15px]/5">
       (with {formatWorkAuthors(values)})
     </div>
+  );
+}
+
+function ReviewDateListItem({
+  value,
+}: {
+  value: AuthorTitlesValue;
+}): React.JSX.Element {
+  return (
+    <CoverListItem coverImageProps={value.coverImageProps}>
+      <ListItemDetails>
+        <ListItemReviewDate displayDate={value.displayDate} />
+        <ListItemTitle slug={value.slug} title={value.title} />
+        <OtherAuthors values={value.otherAuthors} />
+        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemGrade grade={value.grade} />
+      </ListItemDetails>
+    </CoverListItem>
+  );
+}
+
+function TitleSortListItem({
+  value,
+}: {
+  value: AuthorTitlesValue;
+}): React.JSX.Element {
+  return (
+    <CoverListItem coverImageProps={value.coverImageProps}>
+      <ListItemDetails>
+        <ListItemTitle slug={value.slug} title={value.title} />
+        <OtherAuthors values={value.otherAuthors} />
+        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemGrade grade={value.grade} />
+        <ListItemReviewDate displayDate={value.displayDate} />
+      </ListItemDetails>
+    </CoverListItem>
   );
 }

@@ -36,7 +36,7 @@ export type ReadingLogValue = {
   /** Whether this reading was abandoned (progress === "Abandoned") */
   abandoned: boolean;
   /** Authors of the work being read */
-  authors: { name: string; notes?: string }[];
+  authors: { name: string; notes: string | undefined }[];
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
   /** Edition information (e.g., "First Edition", "Paperback") */

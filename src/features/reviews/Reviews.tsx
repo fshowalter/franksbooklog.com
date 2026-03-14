@@ -54,6 +54,7 @@ export type ReviewsValue = {
   /** Authors of the reviewed work */
   authors: {
     name: string;
+    notes: string | undefined;
     sortName: string;
   }[];
   /** Cover image props for displaying the work's cover */
@@ -176,7 +177,13 @@ export function Reviews({
         values={paginatedValues}
         visibleCount={state.showCount}
       >
-        {(value) => <ReviewsListItem key={value.slug} value={value} />}
+        {(value) => (
+          <ReviewsListItem
+            key={value.slug}
+            sortValue={state.sort}
+            value={value}
+          />
+        )}
       </PaginatedCoverList>
     </FilterAndSortContainer>
   );
