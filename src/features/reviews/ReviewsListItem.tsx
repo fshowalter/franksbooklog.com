@@ -14,7 +14,7 @@ type ReviewsListItemValue = {
   authors: {
     name: string;
     notes: string | undefined;
-    sortName?: string;
+    sortName: string;
   }[];
   coverImageProps: CoverImageProps;
   displayDate: string;
