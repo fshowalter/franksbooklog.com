@@ -2,7 +2,7 @@ import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
 import type { FilterChip } from "./AppliedFilters";
 
-// AIDEV-NOTE: This ID must match the `gradeValue` property key in ReviewedTitleFiltersValues.
+// This ID must match the `gradeValue` property key in ReviewedTitleFiltersValues.
 // filtersReducer.removeAppliedFilter deletes pendingFilterValues[action.id], so the chip ID
 // and the filter-values key must stay in sync. If you rename either, update the other.
 const GRADE_CHIP_ID = "gradeValue" as const;

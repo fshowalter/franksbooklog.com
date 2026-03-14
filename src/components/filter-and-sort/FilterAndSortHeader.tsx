@@ -49,7 +49,7 @@ export function FilterAndSortHeader<T extends string>({
         </span>
       </span>
       <div>{headerLink && <HeaderLink {...headerLink} />}</div>
-      {/* AIDEV-NOTE: Hide sort dropdown on mobile (<640px), show on desktop (≥640px).
+      {/* Hide sort dropdown on mobile (<640px), show on desktop (≥640px).
           Mobile sort is handled by radio buttons in the filter drawer. */}
       <div
         className={`
@@ -82,7 +82,7 @@ export function FilterAndSortHeader<T extends string>({
           </select>
         </label>
       </div>
-      {/* AIDEV-NOTE: "Filter & Sort" on mobile (<640px), "Filter" on desktop (≥640px) */}
+      {/* "Filter & Sort" on mobile (<640px), "Filter" on desktop (≥640px) */}
       <button
         aria-controls="filters"
         aria-expanded={filterDrawerVisible}

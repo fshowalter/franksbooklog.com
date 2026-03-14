@@ -30,7 +30,7 @@ export function FilterSection({
   const contentRef = useRef<HTMLDivElement>(null);
   const transitionsEnabledRef = useRef<boolean | null>(null);
 
-  // AIDEV-NOTE: Smooth height/opacity transitions
+  // Smooth height/opacity transitions
   // - Duration: 300ms with cubic-bezier(0.2,0.6,0.4,1)
   // - Height: JavaScript-measured scrollHeight (CSS can't transition height:auto)
   // - Opacity: CSS-based on [open] attribute and .is-closing class
@@ -95,7 +95,7 @@ export function FilterSection({
       content.style.height = `${content.scrollHeight}px`;
 
       // Add is-closing class for styling during transition
-      // AIDEV-NOTE: Using direct classList manipulation instead of React state
+      // Using direct classList manipulation instead of React state
       // to avoid re-render conflicts with manual open attribute control
       details.classList.add("is-closing");
 
@@ -150,7 +150,7 @@ export function FilterSection({
         {/* Section title on left */}
         <span className="flex items-center gap-2">{title}</span>
         {/* Disclosure triangle on far right - points up when closed, rotates 180° to point down when open */}
-        {/* AIDEV-NOTE: SVG points UP by default, then rotates 180° when details[open] to point DOWN */}
+        {/* SVG points UP by default, then rotates 180° when details[open] to point DOWN */}
         <svg
           aria-hidden="true"
           className="
@@ -172,7 +172,7 @@ export function FilterSection({
           transition: "height 300ms cubic-bezier(0.2, 0.6, 0.4, 1)",
         }}
       >
-        {/* AIDEV-NOTE: Opacity transitions:
+        {/* Opacity transitions:
             - When open (not closing): opacity 1 with 0.1s delay (fade in after height starts)
             - When closing: opacity 0 with no delay (fade out immediately)
         */}

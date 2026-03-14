@@ -18,7 +18,7 @@ export function CoverList({
 }): React.JSX.Element {
   return (
     <div className="@container/cover-list">
-      {/* AIDEV-NOTE: The 250px values below cannot be extracted to a constant/variable
+      {/* The 250px values below cannot be extracted to a constant/variable
           because Tailwind's utility class system requires literal values at build time.
           Tailwind scans the codebase for class names and generates CSS only for the 
           classes it finds. Using dynamic values or variables would break this process

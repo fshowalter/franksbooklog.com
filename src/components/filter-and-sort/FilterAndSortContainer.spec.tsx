@@ -148,7 +148,9 @@ describe("FilterAndSortContainer", () => {
       expect(filterButton.getAttribute("aria-expanded")).toBe("true");
 
       // Simulate browser native Escape behavior: fires cancel then closes the dialog
-      const dialog = container.querySelector("dialog[data-filter-drawer]");
+      const dialog = container.querySelector<HTMLDialogElement>(
+        "dialog[data-filter-drawer]",
+      );
       act(() => {
         dialog?.dispatchEvent(new Event("cancel"));
         dialog?.close();
@@ -394,7 +396,7 @@ describe("FilterAndSortContainer", () => {
   });
 
   describe("mobile sort section", () => {
-    // AIDEV-NOTE: jsdom doesn't support CSS media queries, so tablet:hidden class
+    // jsdom doesn't support CSS media queries, so tablet:hidden class
     // won't actually hide elements. These tests verify the radio buttons are rendered
     // in the DOM structure, which will be hidden on desktop via Tailwind classes.
 

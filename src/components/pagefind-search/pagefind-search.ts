@@ -1,6 +1,6 @@
 import { debounce } from "~/utils/debounce";
 
-// AIDEV-NOTE: Minimal browser-side Pagefind types — only fields the production code reads.
+// Minimal browser-side Pagefind types — only fields the production code reads.
 // The `pagefind` npm package only ships types for its Node.js build/indexing API;
 // browser search API types are not in the published package, so we define our own.
 type Pagefind = {
@@ -20,7 +20,7 @@ type PagefindResult = {
   data(): Promise<PagefindDocument>;
 };
 
-// AIDEV-NOTE: Discriminated union makes invalid states unrepresentable.
+// Discriminated union makes invalid states unrepresentable.
 // render() dispatches to one focused method per variant — no cross-branch conditionals.
 type SearchState =
   | {
@@ -58,7 +58,7 @@ class PagefindSearch extends HTMLElement {
   private resultsContainer!: HTMLElement;
   private resultsCounter!: HTMLElement;
   private resultTemplate!: HTMLTemplateElement;
-  // AIDEV-NOTE: Generation counter replaces AbortController. Each search increments the
+  // Generation counter replaces AbortController. Each search increments the
   // counter; stale results (from an older search that resolved late) are discarded by
   // comparing gen against the current counter after every await point.
   private searchGeneration = 0;
@@ -106,7 +106,7 @@ class PagefindSearch extends HTMLElement {
       "#search-box-load-more",
     )!;
 
-    // AIDEV-NOTE: Template refs hold dynamic content HTML. Tailwind 4.x scans
+    // Template refs hold dynamic content HTML. Tailwind 4.x scans
     // <template> tags in .astro source files — classes are included in CSS output.
     this.resultTemplate = this.querySelector<HTMLTemplateElement>(
       "template[data-result-item]",
@@ -255,7 +255,7 @@ class PagefindSearch extends HTMLElement {
     this.render();
   }
 
-  // AIDEV-NOTE: Clones the result-item template and fills data-field slots.
+  // Clones the result-item template and fills data-field slots.
   // Removes the image-wrapper if no image is present in the result metadata.
   private cloneResult(doc: PagefindDocument): DocumentFragment {
     const clone = this.resultTemplate.content.cloneNode(

@@ -39,7 +39,7 @@ export function RangeSliderField({
 }: RangeSliderFieldProps): React.JSX.Element {
   const isFullRange = fromValue === min && toValue === max;
 
-  // AIDEV-NOTE: Calculate percentage positions for visual display
+  // Calculate percentage positions for visual display
   const fromPercent = ((fromValue - min) / (max - min)) * 100;
   const toPercent = ((toValue - min) / (max - min)) * 100;
 
@@ -63,7 +63,7 @@ export function RangeSliderField({
     }
   };
 
-  // AIDEV-NOTE: When onClear is provided the parent owns the full reset (value + side-effects).
+  // When onClear is provided the parent owns the full reset (value + side-effects).
   // Calling onChange(min, max) here too would produce a duplicate dispatch from the parent's handler.
   const handleClear = (): void => {
     if (onClear) {
@@ -73,7 +73,7 @@ export function RangeSliderField({
     }
   };
 
-  // AIDEV-NOTE: Keyboard navigation for range inputs
+  // Keyboard navigation for range inputs
   const handleKeyDown = (
     e: KeyboardEvent<HTMLInputElement>,
     type: "from" | "to",

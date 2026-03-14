@@ -1,4 +1,4 @@
-// AIDEV-NOTE: abandoned: boolean is a computed field added at the props layer.
+// abandoned: boolean is a computed field added at the props layer.
 // For reviews/author-titles: abandoned = grade === "Abandoned".
 // For reading-log: abandoned = progress === "Abandoned".
 // The filter does not depend on the raw progress string or grade string.

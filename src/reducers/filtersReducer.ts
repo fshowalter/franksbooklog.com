@@ -16,7 +16,7 @@ export type FiltersState<TValue> = {
   values: TValue[];
 };
 
-// AIDEV-NOTE: RemoveAppliedFilterAction base handler removes the whole key from
+// RemoveAppliedFilterAction base handler removes the whole key from
 // pendingFilterValues only — active results don't change until "View Results" is clicked.
 // Child reducers MUST override this case for any array-valued filter (e.g. kind[],
 // edition[]) to remove a single item from the array rather than deleting the entire key.

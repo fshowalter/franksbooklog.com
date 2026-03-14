@@ -7,7 +7,7 @@ import { SelectInput } from "./SelectInput";
 
 /**
  * Year range selector with from/to dropdowns and range slider.
- * AIDEV-NOTE: Spec requires BOTH dropdowns and slider - dual control pattern
+ * Spec requires BOTH dropdowns and slider - dual control pattern
  * @param props - Component props
  * @param props.defaultValues - Default [min, max] year values
  * @param props.label - Field label text
@@ -32,13 +32,13 @@ export function YearField({
   const [minYear, setMinYear] = useState(defaultMinValue(years, defaultValues));
   const [maxYear, setMaxYear] = useState(defaultMaxValue(years, defaultValues));
 
-  // AIDEV-NOTE: Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
+  // Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
   useEffect(() => {
     setMinYear(defaultMinValue(years, defaultValues));
     setMaxYear(defaultMaxValue(years, defaultValues));
   }, [defaultValues, years]);
 
-  // AIDEV-NOTE: Convert year strings to numbers for slider
+  // Convert year strings to numbers for slider
   const minYearNum = Number.parseInt(years[0], 10);
   const maxYearNum = Number.parseInt(years.at(-1)!, 10);
   const currentMinNum = Number.parseInt(minYear, 10);
@@ -66,7 +66,7 @@ export function YearField({
     }
   };
 
-  // AIDEV-NOTE: Handle slider changes - snap to nearest valid year in array
+  // Handle slider changes - snap to nearest valid year in array
   const handleSliderChange = (from: number, to: number): void => {
     // Find closest valid year in the years array
     const fromStr = findClosestYear(years, from);
@@ -76,7 +76,7 @@ export function YearField({
     onYearChange([fromStr, toStr]);
   };
 
-  // AIDEV-NOTE: Clear resets to full range AND calls onClear callback
+  // Clear resets to full range AND calls onClear callback
   // The onClear callback dispatches removeAppliedFilter to immediately update
   // the Applied Filters section (removes the filter from both pending and active)
   const handleClear = (): void => {
@@ -133,7 +133,7 @@ export function YearField({
           </div>
         </fieldset>
 
-        {/* AIDEV-NOTE: Range slider beneath dropdowns - syncs bidirectionally */}
+        {/* Range slider beneath dropdowns - syncs bidirectionally */}
         <RangeSliderField
           fromValue={currentMinNum}
           label={label}
