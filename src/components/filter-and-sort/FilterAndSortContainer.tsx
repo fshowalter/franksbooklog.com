@@ -73,7 +73,7 @@ export function FilterAndSortContainer<T extends string>({
   // immediately so the chip disappears at once, but activeFilterValues (and thus the list)
   // only update when "View Results" is clicked.
   const [displayedChips, setDisplayedChips] = useState<FilterChip[]>([]);
-  const filtersRef = useRef<HTMLDivElement | null>(null);
+  const dialogRef = useRef<HTMLDialogElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
   const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
   // AIDEV-NOTE: Used to suppress the useEffect scroll when sort changes via the mobile drawer,
@@ -82,58 +82,52 @@ export function FilterAndSortContainer<T extends string>({
   const formRef = useRef<HTMLFormElement | null>(null);
   const listRef = useRef<HTMLDivElement | null>(null);
 
-  const handleCloseDrawer = useCallback(
-    (shouldResetFilters = true) => {
-      if (typeof document !== "undefined") {
-        document.body.classList.remove("overflow-hidden");
-      }
+  // Drive open/close imperatively from state
+  useEffect(() => {
+    if (filterDrawerVisible) {
+      dialogRef.current?.showModal();
+    } else {
+      dialogRef.current?.close();
+    }
+  }, [filterDrawerVisible]);
+
+  // Handle cancel (Escape) and close events on the dialog
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const handleCancel = (): void => {
+      // Escape pressed: reset pending filter/sort changes before dialog closes
+      onResetFilters();
+      formRef.current?.reset();
+      toggleButtonRef.current?.focus();
+      // Do NOT preventDefault — let the browser close the dialog naturally
+    };
+
+    const handleClose = (): void => {
+      // Sync React state for all close paths (Escape, X button, backdrop, View Results)
       setFilterDrawerVisible(false);
-      if (shouldResetFilters) {
-        onResetFilters();
-        formRef?.current?.reset();
-      }
-    },
-    [onResetFilters, formRef],
-  );
+    };
 
-  const onFilterClick = useCallback(
-    (event: React.MouseEvent) => {
-      event.preventDefault();
+    dialog.addEventListener("cancel", handleCancel);
+    dialog.addEventListener("close", handleClose);
+    return (): void => {
+      dialog.removeEventListener("cancel", handleCancel);
+      dialog.removeEventListener("close", handleClose);
+    };
+  }, [onResetFilters]);
 
-      if (filterDrawerVisible) {
-        handleCloseDrawer();
-      } else {
-        if (typeof document !== "undefined") {
-          document.body.classList.add("overflow-hidden");
-        }
-        setFilterDrawerVisible(true);
-        setDisplayedChips(activeFilters ?? []);
-        // Call onFilterDrawerOpen when opening
-        onFilterDrawerOpen();
-        // Focus first focusable element after drawer opens
-        requestAnimationFrame(() => {
-          const firstFocusable = filtersRef.current?.querySelector<HTMLElement>(
-            'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
-          );
-          firstFocusable?.focus();
-        });
-      }
-    },
-    [activeFilters, filterDrawerVisible, handleCloseDrawer, onFilterDrawerOpen],
-  );
-
-  // Handle escape key
+  // Bridge for jsdom: native browsers fire cancel automatically; jsdom does not.
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent): void => {
       if (e.key === "Escape" && filterDrawerVisible) {
-        handleCloseDrawer();
-        toggleButtonRef.current?.focus();
+        dialogRef.current?.dispatchEvent(new Event("cancel"));
+        dialogRef.current?.close();
       }
     };
-
     document.addEventListener("keydown", handleKeyDown);
     return (): void => document.removeEventListener("keydown", handleKeyDown);
-  }, [filterDrawerVisible, handleCloseDrawer]);
+  }, [filterDrawerVisible]);
 
   // Scroll to top of list when sort changes via desktop select
   useEffect(() => {
@@ -147,6 +141,25 @@ export function FilterAndSortContainer<T extends string>({
     }
   }, [sortProps.currentSortValue]);
 
+  const onFilterClick = useCallback(
+    (event: React.MouseEvent) => {
+      event.preventDefault();
+
+      if (filterDrawerVisible) {
+        onResetFilters();
+        formRef.current?.reset();
+        dialogRef.current?.close();
+        toggleButtonRef.current?.focus();
+      } else {
+        setFilterDrawerVisible(true);
+        setDisplayedChips(activeFilters ?? []);
+        onFilterDrawerOpen();
+        // Focus is handled natively by showModal()
+      }
+    },
+    [activeFilters, filterDrawerVisible, onFilterDrawerOpen, onResetFilters],
+  );
+
   return (
     <div
       className={`
@@ -157,8 +170,8 @@ export function FilterAndSortContainer<T extends string>({
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
-            sticky top-0 z-15 scroll-mt-0 border-b border-default bg-default
-            text-xs
+            sticky top-0 z-nav-backdrop scroll-mt-0 border-b border-default
+            bg-default text-xs
             tablet:col-span-full
           `}
         >
@@ -188,42 +201,35 @@ export function FilterAndSortContainer<T extends string>({
             {children}
           </div>
 
-          {/* Backdrop for filters */}
-          <div
-            aria-hidden="true"
-            className={`
-              invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0
-              transition-opacity duration-200
-              ${
-                filterDrawerVisible
-                  ? `visible z-side-drawer-backdrop opacity-100`
-                  : ""
-              }
-            `}
-            onClick={() => {
-              handleCloseDrawer();
-              toggleButtonRef.current?.focus();
-            }}
-          />
-
-          <div
+          <dialog
             aria-label="Filters"
             className={`
-              fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px]
-              flex-col items-start gap-y-5 bg-default text-left duration-200
-              ease-in-out
-              ${
-                filterDrawerVisible
-                  ? `
-                    bottom-0 w-full transform-[translateX(0)] overflow-y-auto
-                    drop-shadow-2xl
-                  `
-                  : `w-0 transform-[translateX(100%)] overflow-y-hidden`
-              }
+              fixed top-0 right-0 left-auto m-0 size-full max-h-full
+              max-w-[380px] translate-x-full flex-col items-start gap-y-5
+              overflow-y-auto border-0 bg-default p-0 text-left drop-shadow-2xl
+              transition-[translate,overlay,display] transition-discrete
+              duration-200 ease-in-out
+              backdrop:bg-[#000]/40 backdrop:opacity-0
+              backdrop:transition-opacity backdrop:transition-discrete
+              backdrop:duration-200
+              open:flex open:translate-x-0
+              open:backdrop:opacity-100
               tablet:gap-y-10
+              starting:open:translate-x-full
+              starting:open:backdrop:opacity-0
             `}
+            data-filter-drawer=""
             id="filters"
-            ref={filtersRef}
+            onClick={(e) => {
+              // Backdrop click: event.target is the dialog itself, not any child
+              if (e.target === dialogRef.current) {
+                onResetFilters();
+                formRef.current?.reset();
+                dialogRef.current?.close();
+                toggleButtonRef.current?.focus();
+              }
+            }}
+            ref={dialogRef}
           >
             <form
               className={`
@@ -243,7 +249,9 @@ export function FilterAndSortContainer<T extends string>({
                   tablet:right-[34px]
                 `}
                 onClick={() => {
-                  handleCloseDrawer();
+                  onResetFilters();
+                  formRef.current?.reset();
+                  dialogRef.current?.close();
                   toggleButtonRef.current?.focus();
                 }}
                 type="button"
@@ -379,7 +387,7 @@ export function FilterAndSortContainer<T extends string>({
                       suppressSortScrollRef.current = true;
                       sortProps.onSortChange(sortValue);
                       onApplyFilters();
-                      handleCloseDrawer(false); // Don't reset filters/sort when applying
+                      dialogRef.current?.close();
                       listRef.current?.scrollIntoView();
                     }}
                     type="button"
@@ -389,7 +397,7 @@ export function FilterAndSortContainer<T extends string>({
                 </div>
               </div>
             </form>
-          </div>
+          </dialog>
         </div>
       </div>
     </div>
