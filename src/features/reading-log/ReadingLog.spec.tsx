@@ -31,39 +31,33 @@ import {
   queryPreviousMonthButton,
 } from "./ReadingLog.testHelper";
 
-// Test helpers
-let testIdCounter = 0;
-
-function createReadingValue(
-  overrides: Partial<ReadingLogValue> = {},
-): ReadingLogValue {
-  testIdCounter += 1;
-  const readingDate = overrides.readingDate || "2024-01-01";
-  return {
-    abandoned: false,
-    authors: [{ name: "Test Author" }],
-    coverImageProps: {
-      height: 375,
-      src: "/cover.jpg",
-      srcSet: "/cover.jpg 1x",
-      width: 250,
-    },
-    edition: "Paperback",
-    kind: "Novel",
-    progress: "Finished",
-    readingDate,
-    readingYear: "2024",
-    reviewed: false,
-    sequence: testIdCounter,
-    slug: `test-book-${testIdCounter}`,
-    title: `Test Book ${testIdCounter}`,
-    workYear: "1970",
-    ...overrides,
-  };
-}
-
-function resetTestIdCounter(): void {
-  testIdCounter = 0;
+function createReadingValues(
+  overrides: Partial<ReadingLogValue>[] = [],
+): ReadingLogValue[] {
+  return overrides.map((override, index) => {
+    const readingDate = override.readingDate || "2024-01-01";
+    return {
+      abandoned: false,
+      authors: [{ name: `Test Author ${index}`, notes: undefined }],
+      coverImageProps: {
+        height: 375,
+        src: "/cover.jpg",
+        srcSet: "/cover.jpg 1x",
+        width: 250,
+      },
+      edition: "Paperback",
+      kind: "Novel",
+      progress: "Finished",
+      readingDate,
+      readingYear: "2024",
+      reviewed: true,
+      sequence: index,
+      slug: `test-book-${index}`,
+      title: `Test Book ${index}`,
+      workYear: "1970",
+      ...override,
+    };
+  });
 }
 
 const baseProps: ReadingLogProps = {
@@ -96,7 +90,6 @@ const baseProps: ReadingLogProps = {
 
 describe("ReadingLog", () => {
   beforeEach(() => {
-    resetTestIdCounter();
     vi.useFakeTimers({ shouldAdvanceTime: true });
   });
 
@@ -107,20 +100,20 @@ describe("ReadingLog", () => {
 
   describe("filtering", () => {
     it("filters by title", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2024-01-15",
           title: "Dracula",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-16",
           title: "The Count of Monte Cristo",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-17",
           title: "The Stand",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -138,17 +131,17 @@ describe("ReadingLog", () => {
     });
 
     it("filters by edition", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           edition: "Paperback",
           title: "Book in Paperback",
-        }),
-        createReadingValue({
+        },
+        {
           edition: "Hardcover",
           title: "Book in Hardcover",
-        }),
-        createReadingValue({ edition: "Kindle", title: "Book on Kindle" }),
-      ];
+        },
+        { edition: "Kindle", title: "Book on Kindle" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -170,23 +163,23 @@ describe("ReadingLog", () => {
     });
 
     it("filters by kind", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           kind: "Novel",
           readingDate: "2024-01-01",
           title: "A Novel",
-        }),
-        createReadingValue({
+        },
+        {
           kind: "Collection",
           readingDate: "2024-01-02",
           title: "A Collection",
-        }),
-        createReadingValue({
+        },
+        {
           kind: "Non-Fiction",
           readingDate: "2024-01-03",
           title: "Non-Fiction Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -214,23 +207,23 @@ describe("ReadingLog", () => {
     });
 
     it("filters by reviewed status", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           reviewed: true,
           slug: "reviewed-book",
           title: "Reviewed Book",
-        }),
-        createReadingValue({
+        },
+        {
           reviewed: false,
           slug: undefined,
           title: "Unreviewed Book",
-        }),
-        createReadingValue({
+        },
+        {
           reviewed: true,
           slug: "another-reviewed",
           title: "Another Reviewed",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -250,23 +243,23 @@ describe("ReadingLog", () => {
     });
 
     it("filters by unreviewed status", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           reviewed: true,
           slug: "reviewed-book",
           title: "Reviewed Book",
-        }),
-        createReadingValue({
+        },
+        {
           reviewed: false,
           slug: undefined,
           title: "Unreviewed Book",
-        }),
-        createReadingValue({
+        },
+        {
           reviewed: false,
           slug: undefined,
           title: "Another Unreviewed",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -286,17 +279,17 @@ describe("ReadingLog", () => {
     });
 
     it("filters by multiple editions (OR logic)", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           edition: "Paperback",
           title: "Book in Paperback",
-        }),
-        createReadingValue({
+        },
+        {
           edition: "Hardcover",
           title: "Book in Hardcover",
-        }),
-        createReadingValue({ edition: "Kindle", title: "Book on Kindle" }),
-      ];
+        },
+        { edition: "Kindle", title: "Book on Kindle" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -317,23 +310,23 @@ describe("ReadingLog", () => {
     });
 
     it("filters by multiple kinds (OR logic)", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           kind: "Novel",
           readingDate: "2024-01-01",
           title: "A Novel",
-        }),
-        createReadingValue({
+        },
+        {
           kind: "Collection",
           readingDate: "2024-01-02",
           title: "A Collection",
-        }),
-        createReadingValue({
+        },
+        {
           kind: "Non-Fiction",
           readingDate: "2024-01-03",
           title: "Non-Fiction Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -352,14 +345,14 @@ describe("ReadingLog", () => {
     });
 
     it("filters by abandoned status", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           abandoned: true,
           progress: "Abandoned",
           title: "Abandoned Book",
-        }),
-        createReadingValue({ title: "Normal Book" }),
-      ];
+        },
+        { title: "Normal Book" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -376,11 +369,11 @@ describe("ReadingLog", () => {
     });
 
     it("filters by work year range", async ({ expect }) => {
-      const readings = [
-        createReadingValue({ title: "Old Book", workYear: "1950" }),
-        createReadingValue({ title: "Mid Book", workYear: "1970" }),
-        createReadingValue({ title: "New Book", workYear: "2020" }),
-      ];
+      const readings = createReadingValues([
+        { title: "Old Book", workYear: "1950" },
+        { title: "Mid Book", workYear: "1970" },
+        { title: "New Book", workYear: "2020" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -396,23 +389,23 @@ describe("ReadingLog", () => {
     });
 
     it("filters by reading year range", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2012-06-15",
           readingYear: "2012",
           title: "Book 2012",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2013-06-15",
           readingYear: "2013",
           title: "Book 2013",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2014-06-15",
           readingYear: "2014",
           title: "Book 2014",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(
@@ -440,23 +433,23 @@ describe("ReadingLog", () => {
 
   describe("sorting", () => {
     it("sorts by reading date newest first", ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2024-01-01",
           sequence: 1,
           title: "Old Reading",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-03",
           sequence: 3,
           title: "New Reading",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-02",
           sequence: 2,
           title: "Mid Reading",
-        }),
-      ];
+        },
+      ]);
 
       render(<ReadingLog {...baseProps} values={readings} />);
 
@@ -480,20 +473,20 @@ describe("ReadingLog", () => {
     });
 
     it("sorts by reading date oldest first", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2024-01-03",
           title: "New Reading",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-01",
           title: "Old Reading",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-02",
           title: "Mid Reading",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -513,18 +506,18 @@ describe("ReadingLog", () => {
 
   describe("month navigation", () => {
     it("navigates to previous month", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2024-02-15",
           sequence: 2,
           title: "February Book",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-01-15",
           sequence: 1,
           title: "January Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -556,16 +549,16 @@ describe("ReadingLog", () => {
     });
 
     it("navigates to next month", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2024-01-15",
           title: "January Book",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-02-15",
           title: "February Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(
@@ -593,21 +586,21 @@ describe("ReadingLog", () => {
     });
 
     it("shows correct navigation buttons", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           readingDate: "2024-01-15",
           title: "January Book",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2023-12-15",
           readingYear: "2023",
           title: "December Book",
-        }),
-        createReadingValue({
+        },
+        {
           readingDate: "2024-02-15",
           title: "February Book",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -634,10 +627,10 @@ describe("ReadingLog", () => {
 
   describe("when clearing filters", () => {
     it("clears all filters with clear button", async ({ expect }) => {
-      const readings = [
-        createReadingValue({ edition: "Paperback", title: "The Shining" }),
-        createReadingValue({ edition: "Hardcover", title: "Pet Sematary" }),
-      ];
+      const readings = createReadingValues([
+        { edition: "Paperback", title: "The Shining" },
+        { edition: "Hardcover", title: "Pet Sematary" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -672,10 +665,10 @@ describe("ReadingLog", () => {
 
   describe("when closing filter drawer without applying", () => {
     it("resets pending filter changes", async ({ expect }) => {
-      const readings = [
-        createReadingValue({ title: "Dracula" }),
-        createReadingValue({ title: "The Stand" }),
-      ];
+      const readings = createReadingValues([
+        { title: "Dracula" },
+        { title: "The Stand" },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -705,16 +698,16 @@ describe("ReadingLog", () => {
     it("shows edition chip in drawer after applying edition filter", async ({
       expect,
     }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           edition: "Paperback",
           title: "Book in Paperback",
-        }),
-        createReadingValue({
+        },
+        {
           edition: "Hardcover",
           title: "Book in Hardcover",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -732,16 +725,16 @@ describe("ReadingLog", () => {
     it("removing edition chip immediately hides chip but defers list update until View Results", async ({
       expect,
     }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           edition: "Paperback",
           title: "Book in Paperback",
-        }),
-        createReadingValue({
+        },
+        {
           edition: "Hardcover",
           title: "Book in Hardcover",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -780,23 +773,23 @@ describe("ReadingLog", () => {
 
   describe("reading progress display", () => {
     it("displays abandoned readings with special badge", ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           progress: "Abandoned",
           readingDate: "2024-01-01",
           title: "Abandoned Book",
-        }),
-        createReadingValue({
+        },
+        {
           progress: "Finished",
           readingDate: "2024-01-02",
           title: "Finished Book",
-        }),
-        createReadingValue({
+        },
+        {
           progress: "50%",
           readingDate: "2024-01-03",
           title: "In Progress Book",
-        }),
-      ];
+        },
+      ]);
 
       render(<ReadingLog {...baseProps} values={readings} />);
 
@@ -820,28 +813,28 @@ describe("ReadingLog", () => {
     });
 
     it("displays various progress states correctly", ({ expect }) => {
-      const readings = [
-        createReadingValue({
+      const readings = createReadingValues([
+        {
           progress: "25%",
           readingDate: "2024-01-01",
           title: "Quarter Done",
-        }),
-        createReadingValue({
+        },
+        {
           progress: "75%",
           readingDate: "2024-01-02",
           title: "Three Quarters",
-        }),
-        createReadingValue({
+        },
+        {
           progress: "Abandoned",
           readingDate: "2024-01-03",
           title: "Gave Up",
-        }),
-        createReadingValue({
+        },
+        {
           progress: "Finished",
           readingDate: "2024-01-04",
           title: "Completed",
-        }),
-      ];
+        },
+      ]);
 
       render(<ReadingLog {...baseProps} values={readings} />);
 
@@ -864,18 +857,24 @@ describe("ReadingLog", () => {
 
   describe("multiple authors", () => {
     it("displays all authors for books with multiple authors", ({ expect }) => {
-      const readings = [
-        createReadingValue({
-          authors: [{ name: "Terry Pratchett" }, { name: "Neil Gaiman" }],
+      const readings = createReadingValues([
+        {
+          authors: [
+            { name: "Terry Pratchett", notes: undefined },
+            { name: "Neil Gaiman", notes: undefined },
+          ],
           readingDate: "2024-01-01",
           title: "Good Omens",
-        }),
-        createReadingValue({
-          authors: [{ name: "Stephen King" }, { name: "Peter Straub" }],
+        },
+        {
+          authors: [
+            { name: "Stephen King", notes: undefined },
+            { name: "Peter Straub", notes: undefined },
+          ],
           readingDate: "2024-01-02",
           title: "The Talisman",
-        }),
-      ];
+        },
+      ]);
 
       render(<ReadingLog {...baseProps} values={readings} />);
 
@@ -889,26 +888,29 @@ describe("ReadingLog", () => {
     });
 
     it("filters books with multiple authors correctly", async ({ expect }) => {
-      const readings = [
-        createReadingValue({
-          authors: [{ name: "Terry Pratchett" }, { name: "Neil Gaiman" }],
+      const readings = createReadingValues([
+        {
+          authors: [
+            { name: "Terry Pratchett", notes: undefined },
+            { name: "Neil Gaiman", notes: undefined },
+          ],
           kind: "Novel",
           readingDate: "2024-01-01",
           title: "Good Omens",
-        }),
-        createReadingValue({
-          authors: [{ name: "Terry Pratchett" }],
+        },
+        {
+          authors: [{ name: "Terry Pratchett", notes: undefined }],
           kind: "Novel",
           readingDate: "2024-01-02",
           title: "The Colour of Magic",
-        }),
-        createReadingValue({
-          authors: [{ name: "Neil Gaiman" }],
+        },
+        {
+          authors: [{ name: "Neil Gaiman", notes: undefined }],
           kind: "Novel",
           readingDate: "2024-01-03",
           title: "Stardust",
-        }),
-      ];
+        },
+      ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
@@ -934,20 +936,26 @@ describe("ReadingLog", () => {
     it("displays reading progress correctly for multi-author books", ({
       expect,
     }) => {
-      const readings = [
-        createReadingValue({
-          authors: [{ name: "Author One" }, { name: "Author Two" }],
+      const readings = createReadingValues([
+        {
+          authors: [
+            { name: "Author One", notes: undefined },
+            { name: "Author Two", notes: undefined },
+          ],
           progress: "30%",
           readingDate: "2024-01-15",
           title: "In Progress Multi-Author",
-        }),
-        createReadingValue({
-          authors: [{ name: "Author Three" }, { name: "Author Four" }],
+        },
+        {
+          authors: [
+            { name: "Author Three", notes: undefined },
+            { name: "Author Four", notes: undefined },
+          ],
           progress: "Abandoned",
           readingDate: "2024-01-16",
           title: "Abandoned Multi-Author",
-        }),
-      ];
+        },
+      ]);
 
       render(<ReadingLog {...baseProps} values={readings} />);
 
