@@ -48,7 +48,7 @@ export function CheckboxListField({
   // Determine if we need show more functionality
   const shouldShowMore = options.length > showMoreThreshold;
 
-  // AIDEV-NOTE: Sort options - selected items first only if show more is needed AND hasn't been clicked
+  // Sort options - selected items first only if show more is needed AND hasn't been clicked
   // Once "show more" is clicked, maintain alphabetical order to prevent re-sorting on selection changes
   const sortedOptions = [...options].toSorted((a, b) => {
     const shouldSortSelectedFirst = shouldShowMore && !showAll;
@@ -72,7 +72,7 @@ export function CheckboxListField({
   });
 
   // Determine which options to display
-  // AIDEV-NOTE: Always show all selected items + up to showMoreThreshold unselected items
+  // Always show all selected items + up to showMoreThreshold unselected items
   const selectedCount = selectedValues.length;
   const visibleCount = showAll
     ? sortedOptions.length
@@ -92,7 +92,7 @@ export function CheckboxListField({
     onChange(newValues);
   };
 
-  // AIDEV-NOTE: When onClear is provided the parent owns the full reset — calling
+  // When onClear is provided the parent owns the full reset — calling
   // onChange([]) here too would produce a duplicate dispatch (same pattern as
   // RangeSliderField and GradeField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
@@ -108,13 +108,13 @@ export function CheckboxListField({
     setShowAll(true);
   };
 
-  // AIDEV-NOTE: Sync selectedValues when defaultValues changes from parent
+  // Sync selectedValues when defaultValues changes from parent
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentionally syncing controlled state from props
     setSelectedValues(defaultValues ? [...defaultValues] : []);
   }, [defaultValues]);
 
-  // AIDEV-NOTE: Listen for form reset events and clear selections when form is reset.
+  // Listen for form reset events and clear selections when form is reset.
   // Uses closest("form") on the fieldset ref to find the containing form rather than
   // document.querySelector("form"), which would grab the first form in the DOM (e.g. search).
   useEffect(() => {
@@ -197,7 +197,7 @@ export function CheckboxListField({
                   onClick={handleShowMore}
                   type="button"
                 >
-                  {/* AIDEV-NOTE: Spec compliance - "Show more" text must have no count */}
+                  {/* Spec compliance - "Show more" text must have no count */}
                   Show more
                 </button>
                 {hasSelections && (

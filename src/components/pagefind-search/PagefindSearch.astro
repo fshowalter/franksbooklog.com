@@ -73,12 +73,12 @@ const { class: className, variant = "button" } = Astro.props;
         `}
         data-close-search>ESC</button
       >
-      <!-- Fixed Search Input Section -->
+      {/* Fixed Search Input Section */}
       <div class="shrink-0">
-        <!-- Search Form with magnifying glass icon -->
+        {/* Search Form with magnifying glass icon */}
         <form aria-label="Site search" onsubmit="return false" role="search">
           <div class="relative">
-            <!-- Magnifying glass icon -->
+            {/* Magnifying glass icon */}
             <svg
               aria-hidden="true"
               class={`
@@ -96,7 +96,7 @@ const { class: className, variant = "button" } = Astro.props;
                 fill="currentColor"></path>
             </svg>
 
-            <!-- Search input -->
+            {/* Search input */}
             <input
               aria-describedby="search-box-counter"
               aria-label="Search query"
@@ -120,7 +120,7 @@ const { class: className, variant = "button" } = Astro.props;
               type="search"
             />
 
-            <!-- Clear button -->
+            {/* Clear button */}
             <button
               aria-label="Clear search"
               class={`
@@ -144,12 +144,12 @@ const { class: className, variant = "button" } = Astro.props;
               </svg>
             </button>
 
-            <!-- Border line after input -->
+            {/* Border line after input */}
             <div class={`absolute inset-x-0 bottom-0 h-px bg-border`}></div>
           </div>
         </form>
 
-        <!-- Results message/counter -->
+        {/* Results message/counter */}
         <div
           aria-atomic="true"
           aria-live="polite"
@@ -164,7 +164,7 @@ const { class: className, variant = "button" } = Astro.props;
         </div>
       </div>
 
-      <!-- Scrollable Results Area -->
+      {/* Scrollable Results Area */}
       <div
         aria-label="Search results"
         class={`
@@ -178,7 +178,7 @@ const { class: className, variant = "button" } = Astro.props;
       >
         <div id="search-box-results"></div>
 
-        <!-- Load More Button -->
+        {/* Load More Button */}
         <div class="hidden p-4" id="search-box-load-more-wrapper">
           <button
             aria-controls="search-box-results"
@@ -214,11 +214,15 @@ const { class: className, variant = "button" } = Astro.props;
     </div>
   </dialog>
 
-  <!-- AIDEV-NOTE: <template> content is inert until cloned by search-box.ts.
+  {
+    /* <template> content is inert until cloned by search-box.ts.
          Tailwind 4.x scans .astro source files — classes inside <template> tags
-         are found and included in the CSS output. -->
+         are found and included in the CSS output. */
+  }
 
-  <!-- Single search result item; data-field attributes filled by cloneResult() -->
+  {
+    /* Single search result item; data-field attributes filled by cloneResult() */
+  }
   <template data-result-item>
     <li
       class={`
@@ -258,7 +262,7 @@ const { class: className, variant = "button" } = Astro.props;
     </li>
   </template>
 
-  <!-- Loading skeleton — 3 copies cloned while search is in-flight -->
+  {/* Loading skeleton — 3 copies cloned while search is in-flight */}
   <template data-skeleton>
     <div class="animate-pulse p-4">
       <div
@@ -278,14 +282,14 @@ const { class: className, variant = "button" } = Astro.props;
     </div>
   </template>
 
-  <!-- Empty state — shown when search returns no results -->
+  {/* Empty state — shown when search returns no results */}
   <template data-empty>
     <div class="px-4 py-8 text-center font-sans text-sm text-subtle">
       No results found. Try adjusting your search terms.
     </div>
   </template>
 
-  <!-- Error state — data-field="message" textContent filled by renderError() -->
+  {/* Error state — data-field="message" textContent filled by renderError() */}
   <template data-error>
     <div
       class="px-4 py-8 text-center font-sans text-sm text-subtle"

@@ -67,7 +67,7 @@ export function FilterAndSortContainer<T extends string>({
   totalCount,
 }: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
-  // AIDEV-NOTE: displayedChips is snapshotted from activeFilters when the drawer opens.
+  // displayedChips is snapshotted from activeFilters when the drawer opens.
   // This prevents newly-selected pending filters from appearing in Applied Filters until
   // "View Results" is clicked, avoiding layout shift. Chip removal mutates displayedChips
   // immediately so the chip disappears at once, but activeFilterValues (and thus the list)
@@ -76,7 +76,7 @@ export function FilterAndSortContainer<T extends string>({
   const dialogRef = useRef<HTMLDialogElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
   const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
-  // AIDEV-NOTE: Used to suppress the useEffect scroll when sort changes via the mobile drawer,
+  // Used to suppress the useEffect scroll when sort changes via the mobile drawer,
   // since the drawer's "View Results" handler scrolls explicitly.
   const suppressSortScrollRef = useRef(false);
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -116,18 +116,6 @@ export function FilterAndSortContainer<T extends string>({
       dialog.removeEventListener("close", handleClose);
     };
   }, [onResetFilters]);
-
-  // Bridge for jsdom: native browsers fire cancel automatically; jsdom does not.
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent): void => {
-      if (e.key === "Escape" && filterDrawerVisible) {
-        dialogRef.current?.dispatchEvent(new Event("cancel"));
-        dialogRef.current?.close();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
-    return (): void => document.removeEventListener("keydown", handleKeyDown);
-  }, [filterDrawerVisible]);
 
   // Scroll to top of list when sort changes via desktop select
   useEffect(() => {
@@ -303,7 +291,7 @@ export function FilterAndSortContainer<T extends string>({
                       }}
                     />
                   )}
-                  {/* AIDEV-NOTE: Sort section in mobile drawer only (<640px).
+                  {/* Sort section in mobile drawer only (<640px).
                       Uncontrolled radios — value read from form on "View Results" click.
                       Desktop dropdown in header applies sort immediately. */}
                   <div className="tablet:hidden">

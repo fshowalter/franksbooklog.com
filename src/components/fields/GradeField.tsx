@@ -21,7 +21,7 @@ const gradeOptionsReversed = [...gradeOptions].reverse();
 
 /**
  * Grade range selector with from/to letter grade dropdowns and range slider.
- * AIDEV-NOTE: Spec requires BOTH dropdowns and slider - dual control pattern
+ * Spec requires BOTH dropdowns and slider - dual control pattern
  * @param props - Component props
  * @param props.defaultValues - Default [min, max] grade values
  * @param props.label - Field label text
@@ -43,7 +43,7 @@ export function GradeField({
   const [minValue, setMinValue] = useState(defaultMinValue(defaultValues));
   const [maxValue, setMaxValue] = useState(defaultMaxValue(defaultValues));
 
-  // AIDEV-NOTE: Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
+  // Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
   useEffect(() => {
     setMinValue(defaultMinValue(defaultValues));
     setMaxValue(defaultMaxValue(defaultValues));
@@ -71,14 +71,14 @@ export function GradeField({
     }
   };
 
-  // AIDEV-NOTE: Handle slider changes - updates dropdowns bidirectionally
+  // Handle slider changes - updates dropdowns bidirectionally
   const handleSliderChange = (from: number, to: number): void => {
     setMinValue(from);
     setMaxValue(to);
     onGradeChange([from, to]);
   };
 
-  // AIDEV-NOTE: When onClear is provided the parent owns the full reset — calling
+  // When onClear is provided the parent owns the full reset — calling
   // onGradeChange([min, max]) here too would produce a duplicate dispatch (same
   // pattern as RangeSliderField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
@@ -121,7 +121,7 @@ export function GradeField({
           </div>
         </fieldset>
 
-        {/* AIDEV-NOTE: Range slider beneath dropdowns - syncs bidirectionally */}
+        {/* Range slider beneath dropdowns - syncs bidirectionally */}
         <RangeSliderField
           formatValue={gradeToLetter}
           fromValue={minValue}

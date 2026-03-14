@@ -30,8 +30,6 @@ function parseExcerpt(frontmatter: Record<string, unknown>, body: string) {
     .toString();
 }
 
-// AIDEV-NOTE: slug references the 'works' collection — parseData() coerces the plain
-// frontmatter string to { collection: "works", id } automatically.
 const ReviewSchema = z.object({
   body: z.string(),
   date: z.coerce.date(),

@@ -38,7 +38,7 @@ export function filterReviewedTitles<TValue extends FilterableReviewedTitle>(
 function createGradeFilter<TValue extends FilterableReviewedTitle>(
   filterValue?: [number, number],
 ) {
-  // AIDEV-NOTE: [2, 16] is the full grade range and must be treated as no-op, otherwise
+  // [2, 16] is the full grade range and must be treated as no-op, otherwise
   // Abandoned entries (gradeValue=0) are incorrectly excluded when the slider is cleared.
   if (
     !filterValue ||

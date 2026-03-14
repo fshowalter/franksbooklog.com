@@ -1,4 +1,4 @@
-// AIDEV-NOTE: Single source of truth for grade number <-> letter mapping
+// Single source of truth for grade number <-> letter mapping
 // Used by GradeField, filter chip displays, and API layers across the site.
 // Scale: 2 (F-) to 16 (A+). Abandoned entries use gradeValue=0 (below slider range).
 

@@ -120,7 +120,7 @@ describe("FilterSection", () => {
     expect(panel?.style.height).toBe("0px");
   });
 
-  // AIDEV-NOTE: Animation behavior (toggle transitions, height changes) cannot be tested
+  // Animation behavior (toggle transitions, height changes) cannot be tested
   // in jsdom as it doesn't support CSS transitions or the TransitionEvent API.
   // These animations must be verified through manual browser testing.
 

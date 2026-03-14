@@ -13,11 +13,6 @@ import {
   clickViewResults,
 } from "./FilterAndSortContainer.testHelper";
 
-// Mock scrollIntoView for all tests
-if (!Element.prototype.scrollIntoView) {
-  Element.prototype.scrollIntoView = vi.fn();
-}
-
 type FilterAndSortContainerProps = Omit<
   ComponentProps<typeof FilterAndSortContainer>,
   "children"
@@ -139,7 +134,7 @@ describe("FilterAndSortContainer", () => {
       expect,
     }) => {
       const user = userEvent.setup();
-      render(
+      const { container } = render(
         <FilterAndSortContainer {...mockProps}>
           <div>Test Content</div>
         </FilterAndSortContainer>,
@@ -152,7 +147,14 @@ describe("FilterAndSortContainer", () => {
       await clickToggleFilters(user);
       expect(filterButton.getAttribute("aria-expanded")).toBe("true");
 
-      await user.keyboard("{Escape}");
+      // Simulate browser native Escape behavior: fires cancel then closes the dialog
+      const dialog = container.querySelector<HTMLDialogElement>(
+        "dialog[data-filter-drawer]",
+      );
+      act(() => {
+        dialog?.dispatchEvent(new Event("cancel"));
+        dialog?.close();
+      });
 
       expect(filterButton.getAttribute("aria-expanded")).toBe("false");
     });
@@ -394,7 +396,7 @@ describe("FilterAndSortContainer", () => {
   });
 
   describe("mobile sort section", () => {
-    // AIDEV-NOTE: jsdom doesn't support CSS media queries, so tablet:hidden class
+    // jsdom doesn't support CSS media queries, so tablet:hidden class
     // won't actually hide elements. These tests verify the radio buttons are rendered
     // in the DOM structure, which will be hidden on desktop via Tailwind classes.
 
