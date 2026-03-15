@@ -1,19 +1,12 @@
 ---
-type Props = {
-  classNames?: string;
-};
 
-const { classNames } = Astro.props;
 ---
 
 <div
-  class:list={[
-    `
+  class=`
       flex transform-gpu flex-col transition-all duration-500
       has-[a:hover]:text-accent
-    `,
-    classNames,
-  ]}
+    `
 >
   <div
     class={`

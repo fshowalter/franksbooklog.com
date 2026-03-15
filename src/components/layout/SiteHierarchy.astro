@@ -1,4 +1,6 @@
 ---
+import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
+
 /**
  * Represents a navigation item with optional sub-items.
  * Used to define the site's navigation structure with support for nested menus.
@@ -85,7 +87,6 @@ export const siteHierarchy: SitePage[] = [
                     class={`
                       mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
                       text-subtle uppercase
-                      last:-mb-1
                     `}
                   >
                     <a
@@ -112,4 +113,8 @@ export const siteHierarchy: SitePage[] = [
       );
     })
   }
+  <li class=`block w-1/2 text-2xl whitespace-nowrap
+    laptop:w-full`>
+    <PagefindSearch variant="text" />
+  </li>
 </ol>
