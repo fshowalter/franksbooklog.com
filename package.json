@@ -26,7 +26,7 @@
     "@astrojs/react": "5.0.1",
     "@astrojs/rss": "4.0.17",
     "@astrojs/sitemap": "3.7.1",
-    "@tailwindcss/vite": "4.2.1",
+    "@tailwindcss/vite": "4.2.2",
     "@takumi-rs/core": "0.73.1",
     "@takumi-rs/helpers": "0.73.1",
     "astro": "6.0.6",
@@ -43,7 +43,7 @@
     "remark-smartypants": "3.0.2",
     "sharp": "0.34.5",
     "strip-markdown": "6.0.0",
-    "tailwindcss": "4.2.1",
+    "tailwindcss": "4.2.2",
     "unist-util-visit": "5.1.0"
   },
   "devDependencies": {
