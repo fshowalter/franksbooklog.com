@@ -7,7 +7,7 @@ type Props<Tag extends HTMLTag = "div"> = Polymorphic<{
   text: string | undefined;
 }>;
 
-const { as: Tag = "div", class: classNames, text } = Astro.props;
+const { as: Tag = "div", class: className, text } = Astro.props;
 ---
 
-{text && <Tag class:list={[`rendered-markdown`, classNames]} set:html={text} />}
+{text && <Tag class:list={[`rendered-markdown`, className]} set:html={text} />}

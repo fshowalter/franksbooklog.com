@@ -10,17 +10,17 @@ import type { ReadingLogProps } from "./ReadingLog";
 import { ReadingLogImageConfig } from "./ReadingLog";
 
 export async function getReadingLogProps(
-  readingLogEntrys: CollectionEntry<"readingLog">["data"][],
+  readingLogEntries: CollectionEntry<"readingLog">["data"][],
 ): Promise<ReadingLogProps> {
   const distinctEditions = new Set<string>();
   const distinctKinds = new Set<string>();
   const distinctReadingYears = new Set<string>();
   const distinctWorkYears = new Set<string>();
 
-  readingLogEntrys.sort((a, b) => a.sequence.localeCompare(b.sequence));
+  readingLogEntries.sort((a, b) => a.sequence.localeCompare(b.sequence));
 
   const values = await Promise.all(
-    readingLogEntrys.map(async (entry, index) => {
+    readingLogEntries.map(async (entry, index) => {
       distinctEditions.add(entry.edition);
       distinctKinds.add(entry.kind);
       distinctReadingYears.add(toSortYear(entry.date));

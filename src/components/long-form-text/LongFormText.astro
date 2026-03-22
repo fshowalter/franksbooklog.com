@@ -6,7 +6,7 @@ type Props = {
   text: string | undefined;
 };
 
-const { class: classNames, text } = Astro.props;
+const { class: className, text } = Astro.props;
 ---
 
 <RenderedMarkdown
@@ -15,7 +15,7 @@ const { class: classNames, text } = Astro.props;
       text-md/7 tracking-prose
       tablet:text-xl/8
     `,
-    classNames,
+    className,
   ]}
   text={text}
 />

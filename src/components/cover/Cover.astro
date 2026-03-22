@@ -7,14 +7,14 @@ import type { CoverImageProps } from "~/assets/covers";
  * Props for the Cover component, extending standard HTML img attributes.
  */
 type Props = HTMLAttributes<"img"> & {
-  classNames?: string;
+  clientAddressSymbol?: string;
   decoding: "async" | "auto" | "sync";
   imageProps: CoverImageProps;
   loading: "eager" | "lazy";
 };
 
 const {
-  classNames,
+  class: classNames,
   decoding = "auto",
   imageProps,
   loading = "lazy",
