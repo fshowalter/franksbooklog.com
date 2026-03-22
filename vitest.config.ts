@@ -59,6 +59,7 @@ export default getViteConfig({
         },
       },
     ],
+    reporters: process.env.GITHUB_ACTIONS ? ["dot", "github-actions"] : ["dot"],
     // Vitest configuration options
     setupFiles: ["setupTests.ts"],
   },

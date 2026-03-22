@@ -35,7 +35,6 @@ const ReviewSchema = z.object({
   date: z.coerce.date(),
   description: z.string(),
   excerptHtml: z.string(),
-  excerptPlainText: z.string(),
   grade: z.string(),
   html: z.string(),
   slug: z.string(),
@@ -48,18 +47,15 @@ export const reviews = defineCollection({
     load: (loaderContext: LoaderContext) =>
       loadMarkdownDirectory({
         buildData: ({ body, frontmatter }) => {
-          const excerptContent =
-            (frontmatter.synopsis as string | undefined)?.trim() || body;
+          const excerptHtml = parseExcerpt(frontmatter, body);
 
           return {
             body,
             date: frontmatter.date,
             description: markdownToDescription(body),
-            excerptHtml: parseExcerpt(frontmatter, body),
-            excerptPlainText: excerptContent,
+            excerptHtml,
             grade: frontmatter.grade as string,
             html: markdownToHtml(body),
-            more: frontmatter.slug,
             slug: frontmatter.slug as string,
             synopsis: frontmatter.synopsis as string | undefined,
             work: frontmatter.slug as string,

@@ -5,13 +5,13 @@ type Props = {
   level: "h2" | "h3" | "h4" | "h5";
 };
 
-const { class: classNames, level: HeadingTag } = Astro.props;
+const { class: className, level: HeadingTag } = Astro.props;
 ---
 
 <HeadingTag
   class:list={[
     `py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase`,
-    classNames,
+    className,
   ]}
 >
   <slot />

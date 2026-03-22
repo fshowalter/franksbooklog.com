@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) or similar agents when working with code in this repository.
 
 ## Project Overview
 
@@ -78,26 +78,11 @@ npm run sync         # Sync content from backend system
 
 ### Testing Strategy
 
-Tests run in two environments:
-
-- Components: jsdom environment for React components
+Tests run in jsdom environment for React components.
 
 **Important:** Run only one Vitest instance at a time. Each instance consumes ~2GB RAM, so avoid spawning multiple test processes simultaneously.
 
-### Build Pipeline
-
-1. Astro builds static pages with React components
-2. Pagefind creates search index post-build
-3. Compressor optimizes output
-4. Deploy to Netlify via GitHub Actions
-
 ## Important Implementation Details
-
-### Image Optimization
-
-- Covers/avatars served as static assets
-- Backdrops optimized through Astro's image pipeline
-- Open Graph images generated dynamically
 
 ### Path Aliases
 
