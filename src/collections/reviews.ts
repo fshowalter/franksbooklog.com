@@ -35,7 +35,6 @@ const ReviewSchema = z.object({
   date: z.coerce.date(),
   description: z.string(),
   excerptHtml: z.string(),
-  excerptPlainText: z.string(),
   grade: z.string(),
   html: z.string(),
   slug: z.string(),
