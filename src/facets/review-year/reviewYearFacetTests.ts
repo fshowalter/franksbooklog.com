@@ -27,15 +27,15 @@ type ReviewYearItem = {
 };
 
 /**
- * Shared test suite for the review year filter and sort facet.
+ * Filter-only sub-suite for review year. Covers filter range and chip.
  *
  * @example
- * reviewYearFacetTests({
+ * reviewYearFilterFacetTests({
  *   distinctReviewYears: ["2020", "2021", "2022", "2023", "2024"],
  *   renderItems: (items) => render(<Reviews {...baseProps} values={items.map(createValue)} />),
  * });
  */
-export function reviewYearFacetTests({
+export function reviewYearFilterFacetTests({
   distinctReviewYears,
   renderItems,
 }: ReviewYearFacetAdapter) {
@@ -117,7 +117,17 @@ export function reviewYearFacetTests({
       expect(within(list).getByText("Early Review")).toBeInTheDocument();
     });
   });
+}
 
+/**
+ * Sort-only sub-suite for review year. Covers review date sort options.
+ *
+ * @example
+ * reviewYearSortFacetTests((items) => render(<Reviews {...baseProps} values={items.map(createValue)} />));
+ */
+export function reviewYearSortFacetTests(
+  renderItems: (items: ReviewYearItem[]) => void,
+) {
   describe("review date sort", () => {
     it("sorts newest first", async ({ expect }) => {
       renderItems([

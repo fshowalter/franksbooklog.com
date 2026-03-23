@@ -55,7 +55,13 @@ export function Filters({
         workYear={{
           defaultValues: filterValues.workYear,
           onChange: (values) =>
-            dispatch(createWorkYearFilterChangedAction(values)),
+            dispatch(
+              createWorkYearFilterChangedAction(
+                values,
+                distinctWorkYears[0] ?? "",
+                distinctWorkYears.at(-1) ?? "",
+              ),
+            ),
           values: distinctWorkYears,
         }}
       />
@@ -71,7 +77,13 @@ export function Filters({
         defaultValues={filterValues.readingYear}
         label="Reading Year"
         onYearChange={(values) =>
-          dispatch(createReadingYearFilterChangedAction(values))
+          dispatch(
+            createReadingYearFilterChangedAction(
+              values,
+              distinctReadingYears[0] ?? "",
+              distinctReadingYears.at(-1) ?? "",
+            ),
+          )
         }
         years={distinctReadingYears}
       />

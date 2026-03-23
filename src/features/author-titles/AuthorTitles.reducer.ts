@@ -1,14 +1,18 @@
+import type { FiltersAction } from "~/facets/filtersReducer";
 import type { GradeFilterChangedAction } from "~/facets/grade/gradeReducer";
 import type { KindFilterChangedAction } from "~/facets/kind/kindReducer";
 import type { ShowMoreAction } from "~/facets/pagination/paginationReducer";
 import type { ReviewYearFilterChangedAction } from "~/facets/review-year/reviewYearReducer";
 import type { ReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
+import type { SortAction } from "~/facets/sortReducer";
 import type { TitleFilterChangedAction } from "~/facets/title/titleReducer";
 import type { WorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
-import type { FiltersAction } from "~/reducers/filtersReducer";
-import type { SortAction } from "~/reducers/sortReducer";
 
 import { composeReducers } from "~/facets/composeReducers";
+import {
+  createInitialFiltersState,
+  filtersLifecycleReducer,
+} from "~/facets/filtersReducer";
 import { gradeFacetReducer } from "~/facets/grade/gradeReducer";
 import { kindFacetReducer } from "~/facets/kind/kindReducer";
 import {
@@ -17,18 +21,19 @@ import {
 } from "~/facets/pagination/paginationReducer";
 import { reviewYearFacetReducer } from "~/facets/review-year/reviewYearReducer";
 import { reviewedStatusFacetReducer } from "~/facets/reviewed-status/reviewedStatusReducer";
-import { titleFacetReducer } from "~/facets/title/titleReducer";
-import { workYearFacetReducer } from "~/facets/work-year/workYearReducer";
-import {
-  createInitialFiltersState,
-  filtersLifecycleReducer,
-} from "~/reducers/filtersReducer";
 import {
   createInitialSortState,
   createSortActionCreator,
   sortReducer,
-} from "~/reducers/sortReducer";
+} from "~/facets/sortReducer";
+import { titleFacetReducer } from "~/facets/title/titleReducer";
+import { workYearFacetReducer } from "~/facets/work-year/workYearReducer";
 
+export { createApplyFiltersAction } from "~/facets/filtersReducer";
+export { createClearFiltersAction } from "~/facets/filtersReducer";
+export { createRemoveAppliedFilterAction } from "~/facets/filtersReducer";
+export { createResetFiltersAction } from "~/facets/filtersReducer";
+export { selectHasPendingFilters } from "~/facets/filtersReducer";
 export { createGradeFilterChangedAction } from "~/facets/grade/gradeReducer";
 export { createKindFilterChangedAction } from "~/facets/kind/kindReducer";
 export { createShowMoreAction } from "~/facets/pagination/paginationReducer";
@@ -36,11 +41,6 @@ export { createReviewYearFilterChangedAction } from "~/facets/review-year/review
 export { createReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
 export { createTitleFilterChangedAction } from "~/facets/title/titleReducer";
 export { createWorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
-export { createApplyFiltersAction } from "~/reducers/filtersReducer";
-export { createClearFiltersAction } from "~/reducers/filtersReducer";
-export { createRemoveAppliedFilterAction } from "~/reducers/filtersReducer";
-export { createResetFiltersAction } from "~/reducers/filtersReducer";
-export { selectHasPendingFilters } from "~/reducers/filtersReducer";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
@@ -82,7 +82,7 @@ type AuthorTitlesState = {
 const authorTitlesReducer = composeReducers<AuthorTitlesState>(
   kindFacetReducer,
   reviewedStatusFacetReducer,
-  filtersLifecycleReducer,
+  filtersLifecycleReducer, // order doesn't matter — see composeReducers AIDEV-NOTE
   titleFacetReducer,
   gradeFacetReducer,
   workYearFacetReducer,

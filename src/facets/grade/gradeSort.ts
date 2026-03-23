@@ -1,4 +1,4 @@
-import { sortNumber } from "~/sorters/createSorter";
+import { sortNumber } from "~/facets/createSorter";
 
 type GradeSortKeys = "grade-asc" | "grade-desc";
 

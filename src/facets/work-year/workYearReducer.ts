@@ -1,6 +1,8 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
 export type WorkYearFilterChangedAction = {
+  availableMax: string;
+  availableMin: string;
   type: "workYear/changed";
   values: [string, string];
 };
@@ -12,8 +14,10 @@ type WorkYearRemoveAppliedFilterAction = {
 
 export function createWorkYearFilterChangedAction(
   values: [string, string],
+  availableMin: string,
+  availableMax: string,
 ): WorkYearFilterChangedAction {
-  return { type: "workYear/changed", values };
+  return { availableMax, availableMin, type: "workYear/changed", values };
 }
 
 /**
@@ -37,7 +41,17 @@ export function workYearFacetReducer<
       };
     }
     case "workYear/changed": {
-      const { values } = action as WorkYearFilterChangedAction;
+      const { availableMax, availableMin, values } =
+        action as WorkYearFilterChangedAction;
+      if (values[0] === availableMin && values[1] === availableMax) {
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "workYear",
+          ),
+        };
+      }
       return {
         ...state,
         pendingFilterValues: { ...state.pendingFilterValues, workYear: values },

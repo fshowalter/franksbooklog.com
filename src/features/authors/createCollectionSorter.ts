@@ -1,4 +1,5 @@
-import { createSorter, sortNumber, sortString } from "./createSorter";
+import { createSorter, sortNumber } from "~/facets/createSorter";
+import { nameSortComparators } from "~/facets/name/nameSort";
 
 export type CollectionSort =
   | "name-asc"
@@ -21,21 +22,13 @@ export function createCollectionSorter<
   TSort extends string,
 >(sortMap?: Record<string, (a: TValue, b: TValue) => number>) {
   const sorter = createSorter<TValue, TSort>({
-    ...sortName<TValue>(),
+    ...nameSortComparators,
     ...sortReviewCount<TValue>(),
     ...sortMap,
   });
 
   return function collectionSorter(values: TValue[], sort: TSort) {
     return sorter(values, sort);
-  };
-}
-
-function sortName<TValue extends SortableCollection>() {
-  return {
-    "name-asc": (a: TValue, b: TValue) => sortString(a.sortName, b.sortName),
-    "name-desc": (a: TValue, b: TValue) =>
-      sortString(a.sortName, b.sortName) * -1,
   };
 }
 

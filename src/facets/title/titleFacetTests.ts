@@ -20,30 +20,6 @@ type TitleItem = {
 };
 
 /**
- * Shared test suite for the title filter and sort facet.
- * Call this inside a feature's describe block, passing a render adapter
- * that creates the minimum required values and renders the feature component.
- *
- * @param renderItems - Renders the feature component with the given items
- * @param getList - Returns the container element to check for rendered items;
- *   defaults to `getCoverList()` for cover-list features, pass `getCalendar`
- *   for ReadingLog or other calendar-based features
- *
- * @example
- * titleFacetTests((items) => {
- *   const values = items.map(({ title, sortTitle }) => createValue({ title, sortTitle }));
- *   render(<Reviews {...baseProps} values={values} />);
- * });
- */
-export function titleFacetTests(
-  renderItems: (items: TitleItem[]) => void,
-  getList: () => HTMLElement = getCoverList,
-) {
-  titleFilterFacetTests(renderItems, getList);
-  titleSortFacetTests(renderItems, getList);
-}
-
-/**
  * Filter-only sub-suite for title. Use this for features that have a title
  * filter but no title sort (e.g. ReadingLog).
  */
@@ -148,9 +124,9 @@ export function titleFilterFacetTests(
 
 /**
  * Sort-only sub-suite for title. Use this for features that have title sort
- * (Reviews, AuthorTitles). Already included in `titleFacetTests`.
+ * (Reviews, AuthorTitles).
  */
-function titleSortFacetTests(
+export function titleSortFacetTests(
   renderItems: (items: TitleItem[]) => void,
   getList: () => HTMLElement = getCoverList,
 ) {

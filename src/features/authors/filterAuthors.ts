@@ -1,5 +1,5 @@
+import { filterSortedValues } from "~/facets/filterSortedValues";
 import { createNameFilter } from "~/facets/name/nameFilter";
-import { filterSortedValues } from "~/filterers/filterSortedValues";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsFiltersValues } from "./Authors.reducer";

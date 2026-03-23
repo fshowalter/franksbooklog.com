@@ -1,6 +1,8 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
 export type ReviewYearFilterChangedAction = {
+  availableMax: string;
+  availableMin: string;
   type: "reviewYear/changed";
   values: [string, string];
 };
@@ -12,8 +14,10 @@ type ReviewYearRemoveAppliedFilterAction = {
 
 export function createReviewYearFilterChangedAction(
   values: [string, string],
+  availableMin: string,
+  availableMax: string,
 ): ReviewYearFilterChangedAction {
-  return { type: "reviewYear/changed", values };
+  return { availableMax, availableMin, type: "reviewYear/changed", values };
 }
 
 /**
@@ -37,7 +41,17 @@ export function reviewYearFacetReducer<
       };
     }
     case "reviewYear/changed": {
-      const { values } = action as ReviewYearFilterChangedAction;
+      const { availableMax, availableMin, values } =
+        action as ReviewYearFilterChangedAction;
+      if (values[0] === availableMin && values[1] === availableMax) {
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "reviewYear",
+          ),
+        };
+      }
       return {
         ...state,
         pendingFilterValues: {

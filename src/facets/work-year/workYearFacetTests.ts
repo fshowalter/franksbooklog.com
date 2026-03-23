@@ -29,20 +29,6 @@ type WorkYearSortAdapter = {
 };
 
 /**
- * Shared test suite for the work year filter and sort facet.
- *
- * @example
- * workYearFacetTests({
- *   distinctWorkYears: ["1980", "1985", "1990", "1995", "2000"],
- *   renderItems: (items) => render(<Reviews {...baseProps} values={items.map(createValue)} />),
- * });
- */
-export function workYearFacetTests(adapter: WorkYearFacetAdapter) {
-  workYearFilterFacetTests(adapter);
-  workYearSortFacetTests(adapter);
-}
-
-/**
  * Filter-only sub-suite for work year. Use this for features that have a work
  * year filter but no work year sort (e.g. ReadingLog).
  *
@@ -146,9 +132,9 @@ export function workYearFilterFacetTests({
 
 /**
  * Sort-only sub-suite for work year. Use this for features that have work year
- * sort (Reviews, AuthorTitles). Already included in `workYearFacetTests`.
+ * sort (Reviews, AuthorTitles).
  */
-function workYearSortFacetTests({
+export function workYearSortFacetTests({
   getList = getCoverList,
   renderItems,
 }: WorkYearSortAdapter) {

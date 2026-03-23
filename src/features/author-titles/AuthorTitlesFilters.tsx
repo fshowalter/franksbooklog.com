@@ -71,7 +71,13 @@ export function AuthorTitlesFilters({
       reviewYear={{
         defaultValues: filterValues.reviewYear,
         onChange: (values) =>
-          dispatch(createReviewYearFilterChangedAction(values)),
+          dispatch(
+            createReviewYearFilterChangedAction(
+              values,
+              distinctReviewYears[0] ?? "",
+              distinctReviewYears.at(-1) ?? "",
+            ),
+          ),
         onClear: () => dispatch(createRemoveAppliedFilterAction("reviewYear")),
         values: distinctReviewYears,
       }}
@@ -82,7 +88,13 @@ export function AuthorTitlesFilters({
       workYear={{
         defaultValues: filterValues.workYear,
         onChange: (values) =>
-          dispatch(createWorkYearFilterChangedAction(values)),
+          dispatch(
+            createWorkYearFilterChangedAction(
+              values,
+              distinctWorkYears[0] ?? "",
+              distinctWorkYears.at(-1) ?? "",
+            ),
+          ),
         values: distinctWorkYears,
       }}
     />

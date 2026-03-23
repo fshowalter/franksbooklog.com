@@ -1,9 +1,9 @@
 import { authorSortComparators } from "~/facets/author/authorSort";
+import { createSorter } from "~/facets/createSorter";
 import { gradeSortComparators } from "~/facets/grade/gradeSort";
 import { reviewYearSortComparators } from "~/facets/review-year/reviewYearSort";
 import { titleSortComparators } from "~/facets/title/titleSort";
 import { workYearSortComparators } from "~/facets/work-year/workYearSort";
-import { createSorter } from "~/sorters/createSorter";
 
 import type { ReviewsValue } from "./Reviews";
 

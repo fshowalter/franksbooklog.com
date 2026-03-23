@@ -1,4 +1,4 @@
-import { sortString } from "~/sorters/createSorter";
+import { sortString } from "~/facets/createSorter";
 
 type SortableByTitle = {
   sortTitle: string;

@@ -14,13 +14,25 @@ import {
   getKindFilter,
   getTitleFilter,
 } from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
-import { gradeFacetTests } from "~/facets/grade/gradeFacetTests";
+import {
+  gradeFilterFacetTests,
+  gradeSortFacetTests,
+} from "~/facets/grade/gradeFacetTests";
 import { kindFacetTests } from "~/facets/kind/kindFacetTests";
 import { paginationFacetTests } from "~/facets/pagination/paginationFacetTests";
-import { reviewYearFacetTests } from "~/facets/review-year/reviewYearFacetTests";
+import {
+  reviewYearFilterFacetTests,
+  reviewYearSortFacetTests,
+} from "~/facets/review-year/reviewYearFacetTests";
 import { reviewedStatusFacetTests } from "~/facets/reviewed-status/reviewedStatusFacetTests";
-import { titleFacetTests } from "~/facets/title/titleFacetTests";
-import { workYearFacetTests } from "~/facets/work-year/workYearFacetTests";
+import {
+  titleFilterFacetTests,
+  titleSortFacetTests,
+} from "~/facets/title/titleFacetTests";
+import {
+  workYearFilterFacetTests,
+  workYearSortFacetTests,
+} from "~/facets/work-year/workYearFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
@@ -85,7 +97,14 @@ describe("AuthorTitles", () => {
     vi.useRealTimers();
   });
 
-  titleFacetTests((items) => {
+  titleFilterFacetTests((items) => {
+    const titles = items.map(({ sortTitle, title }) =>
+      createAuthorTitleValue({ sortTitle, title }),
+    );
+    render(<AuthorTitles {...baseProps} values={titles} />);
+  });
+
+  titleSortFacetTests((items) => {
     const titles = items.map(({ sortTitle, title }) =>
       createAuthorTitleValue({ sortTitle, title }),
     );
@@ -99,14 +118,21 @@ describe("AuthorTitles", () => {
     render(<AuthorTitles {...baseProps} values={titles} />);
   });
 
-  gradeFacetTests((items) => {
+  gradeFilterFacetTests((items) => {
     const titles = items.map(({ grade, gradeValue, title }) =>
       createAuthorTitleValue({ grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
   });
 
-  workYearFacetTests({
+  gradeSortFacetTests((items) => {
+    const titles = items.map(({ grade, gradeValue, title }) =>
+      createAuthorTitleValue({ grade, gradeValue, title }),
+    );
+    render(<AuthorTitles {...baseProps} values={titles} />);
+  });
+
+  workYearFilterFacetTests({
     distinctWorkYears: baseProps.distinctWorkYears,
     renderItems: (items) => {
       const titles = items.map(({ title, workYear }) =>
@@ -116,7 +142,16 @@ describe("AuthorTitles", () => {
     },
   });
 
-  reviewYearFacetTests({
+  workYearSortFacetTests({
+    renderItems: (items) => {
+      const titles = items.map(({ title, workYear }) =>
+        createAuthorTitleValue({ title, workYear }),
+      );
+      render(<AuthorTitles {...baseProps} values={titles} />);
+    },
+  });
+
+  reviewYearFilterFacetTests({
     distinctReviewYears: baseProps.distinctReviewYears,
     renderItems: (items) => {
       const titles = items.map(({ reviewSequence, reviewYear, title }) =>
@@ -124,6 +159,13 @@ describe("AuthorTitles", () => {
       );
       render(<AuthorTitles {...baseProps} values={titles} />);
     },
+  });
+
+  reviewYearSortFacetTests((items) => {
+    const titles = items.map(({ reviewSequence, reviewYear, title }) =>
+      createAuthorTitleValue({ reviewSequence, reviewYear, title }),
+    );
+    render(<AuthorTitles {...baseProps} values={titles} />);
   });
 
   reviewedStatusFacetTests((items) => {

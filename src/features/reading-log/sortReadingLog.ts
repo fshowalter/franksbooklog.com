@@ -1,5 +1,5 @@
+import { createSorter } from "~/facets/createSorter";
 import { readingDateSortComparators } from "~/facets/reading-year/readingYearSort";
-import { createSorter } from "~/sorters/createSorter";
 
 import type { ReadingLogValue } from "./ReadingLog";
 

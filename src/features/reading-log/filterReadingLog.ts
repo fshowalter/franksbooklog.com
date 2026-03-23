@@ -1,10 +1,10 @@
 import { createEditionFilter } from "~/facets/edition/editionFilter";
+import { filterSortedValues } from "~/facets/filterSortedValues";
 import { createKindFilter } from "~/facets/kind/kindFilter";
 import { createReadingYearFilter } from "~/facets/reading-year/readingYearFilter";
 import { createReviewedStatusFilter } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { createTitleFilter } from "~/facets/title/titleFilter";
 import { createWorkYearFilter } from "~/facets/work-year/workYearFilter";
-import { filterSortedValues } from "~/filterers/filterSortedValues";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";

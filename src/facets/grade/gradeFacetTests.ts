@@ -17,14 +17,16 @@ type GradeItem = {
 };
 
 /**
- * Shared test suite for the grade filter and sort facet.
+ * Filter-only sub-suite for grade. Covers grade range filter and chip.
  *
  * @example
- * gradeFacetTests((items) => {
+ * gradeFilterFacetTests((items) => {
  *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
  * });
  */
-export function gradeFacetTests(renderItems: (items: GradeItem[]) => void) {
+export function gradeFilterFacetTests(
+  renderItems: (items: GradeItem[]) => void,
+) {
   describe("grade filter", () => {
     it("filters to items within grade range", async ({ expect }) => {
       renderItems([
@@ -92,7 +94,17 @@ export function gradeFacetTests(renderItems: (items: GradeItem[]) => void) {
       expect(within(list).getByText("Bad Book")).toBeInTheDocument();
     });
   });
+}
 
+/**
+ * Sort-only sub-suite for grade. Covers grade sort options.
+ *
+ * @example
+ * gradeSortFacetTests((items) => {
+ *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
+ * });
+ */
+export function gradeSortFacetTests(renderItems: (items: GradeItem[]) => void) {
   describe("grade sort", () => {
     it("sorts best first", async ({ expect }) => {
       renderItems([

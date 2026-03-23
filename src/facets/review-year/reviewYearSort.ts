@@ -1,4 +1,4 @@
-import { sortString } from "~/sorters/createSorter";
+import { sortString } from "~/facets/createSorter";
 
 type ReviewYearSortKeys = "review-date-asc" | "review-date-desc";
 

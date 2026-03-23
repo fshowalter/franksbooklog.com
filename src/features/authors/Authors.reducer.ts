@@ -1,27 +1,27 @@
+import type { FiltersAction } from "~/facets/filtersReducer";
 import type { NameFilterChangedAction } from "~/facets/name/nameReducer";
-import type { FiltersAction } from "~/reducers/filtersReducer";
-import type { SortAction } from "~/reducers/sortReducer";
+import type { SortAction } from "~/facets/sortReducer";
 
 import { composeReducers } from "~/facets/composeReducers";
-import { nameFacetReducer } from "~/facets/name/nameReducer";
 import {
   createInitialFiltersState,
   filtersLifecycleReducer,
-} from "~/reducers/filtersReducer";
+} from "~/facets/filtersReducer";
+import { nameFacetReducer } from "~/facets/name/nameReducer";
 import {
   createInitialSortState,
   createSortActionCreator,
   sortReducer,
-} from "~/reducers/sortReducer";
+} from "~/facets/sortReducer";
 
-export { createNameFilterChangedAction } from "~/facets/name/nameReducer";
 export {
   createApplyFiltersAction,
   createClearFiltersAction,
   createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
-} from "~/reducers/filtersReducer";
+} from "~/facets/filtersReducer";
+export { createNameFilterChangedAction } from "~/facets/name/nameReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";
