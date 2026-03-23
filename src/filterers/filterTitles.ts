@@ -1,5 +1,3 @@
-import type { TitleFiltersValues } from "~/reducers/titleFiltersReducer";
-
 import { createTitleFilter } from "./createTitleFilter";
 import { createWorkYearFilter } from "./createWorkYearFilter";
 import { filterSortedValues } from "./filterSortedValues";
@@ -8,6 +6,12 @@ export type FilterableTitle = {
   kind: string;
   title: string;
   workYear: string;
+};
+
+type TitleFiltersValues = {
+  kind?: readonly string[];
+  title?: string;
+  workYear?: [string, string];
 };
 
 /**

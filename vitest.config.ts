@@ -21,7 +21,7 @@ export default getViteConfig({
         "src/features/stats/**",
         "src/pages/**",
       ],
-      include: ["src/**"],
+      include: ["src/**/*.{ts,js,tsx}"],
       provider: "v8",
     },
     globals: true, // needed for testing-library teardown

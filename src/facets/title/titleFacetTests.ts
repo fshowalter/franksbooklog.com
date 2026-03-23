@@ -1,0 +1,167 @@
+import { screen, within } from "@testing-library/react";
+import { describe, it } from "vitest";
+
+import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
+import {
+  clickCloseFilters,
+  clickSortOption,
+  clickToggleFilters,
+  clickViewResults,
+} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+import {
+  fillTitleFilter,
+  getTitleFilter,
+} from "~/components/filter-and-sort/WorkFilters.testHelper";
+import { getUserWithFakeTimers } from "~/utils/testUtils";
+
+type TitleItem = {
+  sortTitle: string;
+  title: string;
+};
+
+/**
+ * Shared test suite for the title filter and sort facet.
+ * Call this inside a feature's describe block, passing a render adapter
+ * that creates the minimum required values and renders the feature component.
+ *
+ * @param renderItems - Renders the feature component with the given items
+ * @param getList - Returns the container element to check for rendered items;
+ *   defaults to `getCoverList()` for cover-list features, pass `getCalendar`
+ *   for ReadingLog or other calendar-based features
+ *
+ * @example
+ * titleFacetTests((items) => {
+ *   const values = items.map(({ title, sortTitle }) => createValue({ title, sortTitle }));
+ *   render(<Reviews {...baseProps} values={values} />);
+ * });
+ */
+export function titleFacetTests(
+  renderItems: (items: TitleItem[]) => void,
+  getList: () => HTMLElement = getCoverList,
+) {
+  titleFilterFacetTests(renderItems, getList);
+  titleSortFacetTests(renderItems, getList);
+}
+
+/**
+ * Filter-only sub-suite for title. Use this for features that have a title
+ * filter but no title sort (e.g. ReadingLog).
+ */
+export function titleFilterFacetTests(
+  renderItems: (items: TitleItem[]) => void,
+  getList: () => HTMLElement = getCoverList,
+) {
+  describe("title filter", () => {
+    it("filters to matching titles", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "dracula", title: "Dracula" },
+        { sortTitle: "the shining", title: "The Shining" },
+        { sortTitle: "pet sematary", title: "Pet Sematary" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Dracula");
+      await clickViewResults(user);
+
+      const list = getList();
+      expect(within(list).getByText("Dracula")).toBeInTheDocument();
+      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
+      expect(within(list).queryByText("Pet Sematary")).not.toBeInTheDocument();
+    });
+
+    it("shows search chip after applying", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "dracula", title: "Dracula" },
+        { sortTitle: "the shining", title: "The Shining" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Dracula");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Search: Dracula filter" }),
+      ).toBeInTheDocument();
+    });
+
+    it("resets when closing drawer without applying", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "dracula", title: "Dracula" },
+        { sortTitle: "the shining", title: "The Shining" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Dracula");
+      await clickViewResults(user);
+
+      const list = getList();
+      expect(within(list).getByText("Dracula")).toBeInTheDocument();
+      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Different Title");
+      await clickCloseFilters(user);
+
+      expect(within(list).getByText("Dracula")).toBeInTheDocument();
+      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      expect(getTitleFilter()).toHaveValue("Dracula");
+    });
+  });
+}
+
+/**
+ * Sort-only sub-suite for title. Use this for features that have title sort
+ * (Reviews, AuthorTitles). Already included in `titleFacetTests`.
+ */
+export function titleSortFacetTests(
+  renderItems: (items: TitleItem[]) => void,
+  getList: () => HTMLElement = getCoverList,
+) {
+  describe("title sort", () => {
+    it("sorts A → Z", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "zebra", title: "Zebra Book" },
+        { sortTitle: "alpha", title: "Alpha Book" },
+        { sortTitle: "middle", title: "Middle Book" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickSortOption(user, "Title (A → Z)");
+
+      const list = getList();
+      const text = list.textContent ?? "";
+      expect(text.indexOf("Alpha Book")).toBeLessThan(
+        text.indexOf("Middle Book"),
+      );
+      expect(text.indexOf("Middle Book")).toBeLessThan(
+        text.indexOf("Zebra Book"),
+      );
+    });
+
+    it("sorts Z → A", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "alpha", title: "Alpha Book" },
+        { sortTitle: "zebra", title: "Zebra Book" },
+        { sortTitle: "middle", title: "Middle Book" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickSortOption(user, "Title (Z → A)");
+
+      const list = getList();
+      const text = list.textContent ?? "";
+      expect(text.indexOf("Zebra Book")).toBeLessThan(
+        text.indexOf("Middle Book"),
+      );
+      expect(text.indexOf("Middle Book")).toBeLessThan(
+        text.indexOf("Alpha Book"),
+      );
+    });
+  });
+}

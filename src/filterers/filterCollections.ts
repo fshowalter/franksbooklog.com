@@ -1,4 +1,4 @@
-import type { CollectionFiltersValues } from "~/reducers/collectionFiltersReducer";
+import type { NameFacetValues } from "~/facets/name/nameReducer";
 
 import { filterSortedValues } from "./filterSortedValues";
 
@@ -15,7 +15,7 @@ type FilterableCollection = {
  * @returns Filtered array of collections matching all filter criteria
  */
 export function filterCollections<TValue extends FilterableCollection>(
-  filterValues: CollectionFiltersValues,
+  filterValues: NameFacetValues,
   sortedValues: TValue[],
   extraFilters: ((value: TValue) => boolean)[],
 ) {

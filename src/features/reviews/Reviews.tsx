@@ -171,20 +171,22 @@ export function Reviews({
       }}
       totalCount={totalCount}
     >
-      <PaginatedCoverList
-        onShowMore={() => dispatch(createShowMoreAction())}
-        totalCount={totalCount}
-        values={paginatedValues}
-        visibleCount={state.showCount}
-      >
-        {(value) => (
-          <ReviewsListItem
-            key={value.slug}
-            sortValue={state.sort}
-            value={value}
-          />
-        )}
-      </PaginatedCoverList>
+      <div className="tablet:-mx-6 tablet:pt-5">
+        <PaginatedCoverList
+          onShowMore={() => dispatch(createShowMoreAction())}
+          totalCount={totalCount}
+          values={paginatedValues}
+          visibleCount={state.showCount}
+        >
+          {(value) => (
+            <ReviewsListItem
+              key={value.slug}
+              sortValue={state.sort}
+              value={value}
+            />
+          )}
+        </PaginatedCoverList>
+      </div>
     </FilterAndSortContainer>
   );
 }

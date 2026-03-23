@@ -9,7 +9,7 @@ export type SortAction<TSort> = {
 /**
  * State shape for sort functionality.
  */
-export type SortState<TSort> = {
+type SortState<TSort> = {
   sort: TSort;
 };
 
@@ -50,9 +50,10 @@ export function createSortActionCreator<TSort>() {
  */
 export function sortReducer<TSort, TState extends SortState<TSort>>(
   state: TState,
-  action: SortAction<TSort>,
+  action: { type: string },
 ): TState {
-  return updateSort<TSort, TState>(state, action);
+  if (action.type !== "sort/sort") return state;
+  return updateSort<TSort, TState>(state, action as SortAction<TSort>);
 }
 
 function updateSort<TSort, TState extends SortState<TSort>>(

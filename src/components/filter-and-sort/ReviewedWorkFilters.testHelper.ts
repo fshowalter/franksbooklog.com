@@ -7,7 +7,6 @@ import { fillYearField } from "~/components/fields/YearField.testHelper";
 export {
   clickKindFilterOption,
   fillTitleFilter,
-  fillWorkYearFilter,
   getKindFilter,
   getTitleFilter,
 } from "./WorkFilters.testHelper";

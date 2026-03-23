@@ -1,5 +1,3 @@
-import type { ReviewedTitleFiltersValues } from "~/reducers/reviewedTitleFiltersReducer";
-
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import type { FilterableTitle } from "./filterTitles";
@@ -11,6 +9,15 @@ type FilterableReviewedTitle = FilterableTitle & {
   abandoned: boolean;
   gradeValue: number;
   reviewYear: string;
+};
+
+type ReviewedTitleFiltersValues = {
+  gradeValue?: [number, number];
+  kind?: readonly string[];
+  reviewedStatus?: readonly string[];
+  reviewYear?: [string, string];
+  title?: string;
+  workYear?: [string, string];
 };
 
 /**

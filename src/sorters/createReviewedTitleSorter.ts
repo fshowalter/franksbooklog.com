@@ -1,6 +1,8 @@
+import { gradeSortComparators } from "~/facets/grade/gradeSort";
+import { reviewYearSortComparators } from "~/facets/review-year/reviewYearSort";
+
 import type { SortableTitle, TitleSort } from "./createTitleSorter";
 
-import { sortNumber, sortString } from "./createSorter";
 import { createTitleSorter } from "./createTitleSorter";
 
 export type ReviewedTitleSort =
@@ -25,30 +27,12 @@ export function createReviewedTitleSorter<
   TSort extends string,
 >(sortMap?: Record<string, (a: TValue, b: TValue) => number>) {
   const sorter = createTitleSorter<TValue, TSort>({
-    ...sortGrade<TValue>(),
-    ...sortReviewDate<TValue>(),
+    ...gradeSortComparators,
+    ...reviewYearSortComparators,
     ...sortMap,
   });
 
   return function reviewedTitleSorter(values: TValue[], sort: TSort) {
     return sorter(values, sort);
-  };
-}
-
-function sortGrade<TValue extends SortableReviewedTitle>() {
-  return {
-    "grade-asc": (a: TValue, b: TValue) =>
-      sortNumber(a.gradeValue, b.gradeValue),
-    "grade-desc": (a: TValue, b: TValue) =>
-      sortNumber(a.gradeValue, b.gradeValue) * -1,
-  };
-}
-
-function sortReviewDate<TValue extends SortableReviewedTitle>() {
-  return {
-    "review-date-asc": (a: TValue, b: TValue) =>
-      sortString(a.reviewSequence, b.reviewSequence),
-    "review-date-desc": (a: TValue, b: TValue) =>
-      sortString(a.reviewSequence, b.reviewSequence) * -1,
   };
 }

@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
@@ -10,11 +10,15 @@ import {
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
 import { clickReviewedStatusFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
 import {
-  clickKindFilterOption,
   fillTitleFilter,
-  fillWorkYearFilter,
   getTitleFilter,
 } from "~/components/filter-and-sort/WorkFilters.testHelper";
+import { editionFacetTests } from "~/facets/edition/editionFacetTests";
+import { kindFacetTests } from "~/facets/kind/kindFacetTests";
+import { readingDateFacetTests } from "~/facets/reading-year/readingYearFacetTests";
+import { reviewedStatusFacetTests } from "~/facets/reviewed-status/reviewedStatusFacetTests";
+import { titleFilterFacetTests } from "~/facets/title/titleFacetTests";
+import { workYearFilterFacetTests } from "~/facets/work-year/workYearFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";
@@ -98,114 +102,99 @@ describe("ReadingLog", () => {
     vi.useRealTimers();
   });
 
+  // Shared facet test suites
+  kindFacetTests(
+    (items) =>
+      render(
+        <ReadingLog
+          {...baseProps}
+          values={createReadingValues(
+            items.map(({ kind, title }) => ({
+              kind,
+              readingDate: "2024-01-01",
+              title,
+            })),
+          )}
+        />,
+      ),
+    getCalendar,
+  );
+
+  reviewedStatusFacetTests(
+    (items) =>
+      render(
+        <ReadingLog
+          {...baseProps}
+          values={createReadingValues(
+            items.map(({ abandoned, title }) => ({
+              abandoned,
+              progress: abandoned ? "Abandoned" : "Finished",
+              readingDate: "2024-01-01",
+              title,
+            })),
+          )}
+        />,
+      ),
+    getCalendar,
+  );
+
+  editionFacetTests({
+    getList: getCalendar,
+    renderItems: (items) =>
+      render(
+        <ReadingLog
+          {...baseProps}
+          values={createReadingValues(
+            items.map(({ edition, title }) => ({
+              edition,
+              readingDate: "2024-01-01",
+              title,
+            })),
+          )}
+        />,
+      ),
+  });
+
+  readingDateFacetTests({
+    getList: getCalendar,
+    renderItems: (items) =>
+      render(
+        <ReadingLog
+          {...baseProps}
+          initialSort="reading-date-desc"
+          values={createReadingValues(items)}
+        />,
+      ),
+  });
+
+  titleFilterFacetTests(
+    (items) =>
+      render(
+        <ReadingLog
+          {...baseProps}
+          values={createReadingValues(
+            items.map(({ sortTitle, title }) => ({ sortTitle, title })),
+          )}
+        />,
+      ),
+    getCalendar,
+  );
+
+  workYearFilterFacetTests({
+    distinctWorkYears: baseProps.distinctWorkYears,
+    getList: getCalendar,
+    renderItems: (items) =>
+      render(
+        <ReadingLog
+          {...baseProps}
+          values={createReadingValues(
+            items.map(({ title, workYear }) => ({ title, workYear })),
+          )}
+        />,
+      ),
+  });
+
   describe("filtering", () => {
-    it("filters by title", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          readingDate: "2024-01-15",
-          title: "Dracula",
-        },
-        {
-          readingDate: "2024-01-16",
-          title: "The Count of Monte Cristo",
-        },
-        {
-          readingDate: "2024-01-17",
-          title: "The Stand",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Count");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(
-        within(calendar).getByText("The Count of Monte Cristo"),
-      ).toBeInTheDocument();
-      expect(within(calendar).queryByText("Dracula")).not.toBeInTheDocument();
-      expect(within(calendar).queryByText("The Stand")).not.toBeInTheDocument();
-    });
-
-    it("filters by edition", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          edition: "Paperback",
-          title: "Book in Paperback",
-        },
-        {
-          edition: "Hardcover",
-          title: "Book in Hardcover",
-        },
-        { edition: "Kindle", title: "Book on Kindle" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickEditionFilterOption(user, "Paperback");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(
-        within(calendar).getByText("Book in Paperback"),
-      ).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Book in Hardcover"),
-      ).not.toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Book on Kindle"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by kind", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          kind: "Novel",
-          readingDate: "2024-01-01",
-          title: "A Novel",
-        },
-        {
-          kind: "Collection",
-          readingDate: "2024-01-02",
-          title: "A Collection",
-        },
-        {
-          kind: "Non-Fiction",
-          readingDate: "2024-01-03",
-          title: "Non-Fiction Book",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      // Initially all books should be visible
-      let calendar = getCalendar();
-      expect(within(calendar).getByText("A Novel")).toBeInTheDocument();
-      expect(within(calendar).getByText("A Collection")).toBeInTheDocument();
-      expect(
-        within(calendar).getByText("Non-Fiction Book"),
-      ).toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await clickKindFilterOption(user, "Novel");
-      await clickViewResults(user);
-
-      calendar = getCalendar();
-      expect(within(calendar).getByText("A Novel")).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("A Collection"),
-      ).not.toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Non-Fiction Book"),
-      ).not.toBeInTheDocument();
-    });
-
     it("filters by reviewed status", async ({ expect }) => {
       const readings = createReadingValues([
         {
@@ -278,116 +267,6 @@ describe("ReadingLog", () => {
       ).not.toBeInTheDocument();
     });
 
-    it("filters by multiple editions (OR logic)", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          edition: "Paperback",
-          title: "Book in Paperback",
-        },
-        {
-          edition: "Hardcover",
-          title: "Book in Hardcover",
-        },
-        { edition: "Kindle", title: "Book on Kindle" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickEditionFilterOption(user, "Paperback");
-      await clickEditionFilterOption(user, "Kindle");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(
-        within(calendar).getByText("Book in Paperback"),
-      ).toBeInTheDocument();
-      expect(within(calendar).getByText("Book on Kindle")).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Book in Hardcover"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by multiple kinds (OR logic)", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          kind: "Novel",
-          readingDate: "2024-01-01",
-          title: "A Novel",
-        },
-        {
-          kind: "Collection",
-          readingDate: "2024-01-02",
-          title: "A Collection",
-        },
-        {
-          kind: "Non-Fiction",
-          readingDate: "2024-01-03",
-          title: "Non-Fiction Book",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickKindFilterOption(user, "Novel");
-      await clickKindFilterOption(user, "Collection");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("A Novel")).toBeInTheDocument();
-      expect(within(calendar).getByText("A Collection")).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Non-Fiction Book"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by abandoned status", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          abandoned: true,
-          progress: "Abandoned",
-          title: "Abandoned Book",
-        },
-        { title: "Normal Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickReviewedStatusFilterOption(user, "Abandoned");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("Abandoned Book")).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Normal Book"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by work year range", async ({ expect }) => {
-      const readings = createReadingValues([
-        { title: "Old Book", workYear: "1950" },
-        { title: "Mid Book", workYear: "1970" },
-        { title: "New Book", workYear: "2020" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await fillWorkYearFilter(user, "1960", "1980");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("Mid Book")).toBeInTheDocument();
-      expect(within(calendar).queryByText("Old Book")).not.toBeInTheDocument();
-      expect(within(calendar).queryByText("New Book")).not.toBeInTheDocument();
-    });
-
     it("filters by reading year range", async ({ expect }) => {
       const readings = createReadingValues([
         {
@@ -432,75 +311,45 @@ describe("ReadingLog", () => {
   });
 
   describe("sorting", () => {
-    it("sorts by reading date newest first", ({ expect }) => {
+    it("shows correct navigation buttons when changing sort", async ({
+      expect,
+    }) => {
       const readings = createReadingValues([
         {
-          readingDate: "2024-01-01",
-          sequence: 1,
-          title: "Old Reading",
+          readingDate: "2024-01-15",
+          title: "January Book",
         },
         {
-          readingDate: "2024-01-03",
-          sequence: 3,
-          title: "New Reading",
+          readingDate: "2023-12-15",
+          readingYear: "2023",
+          title: "December Book",
         },
         {
-          readingDate: "2024-01-02",
-          sequence: 2,
-          title: "Mid Reading",
-        },
-      ]);
-
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      const calendar = getCalendar();
-
-      const books = ["New Reading", "Mid Reading", "Old Reading"];
-      const foundBooks = books.filter((book) =>
-        calendar.textContent?.includes(book),
-      );
-
-      expect(foundBooks).toHaveLength(3);
-
-      // Verify they're in the right order by checking their position in the calendar
-      const allText = calendar.textContent || "";
-      const newIndex = allText.indexOf("3New Reading"); // Day 3
-      const midIndex = allText.indexOf("2Mid Reading"); // Day 2
-      const oldIndex = allText.indexOf("1Old Reading"); // Day 1
-
-      expect(oldIndex).toBeLessThan(midIndex);
-      expect(midIndex).toBeLessThan(newIndex);
-    });
-
-    it("sorts by reading date oldest first", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          readingDate: "2024-01-03",
-          title: "New Reading",
-        },
-        {
-          readingDate: "2024-01-01",
-          title: "Old Reading",
-        },
-        {
-          readingDate: "2024-01-02",
-          title: "Mid Reading",
+          readingDate: "2024-02-15",
+          title: "February Book",
         },
       ]);
 
       const user = getUserWithFakeTimers();
       render(<ReadingLog {...baseProps} values={readings} />);
 
+      // Default sort is newest first, showing February 2024
+      let prevMonthButton = queryPreviousMonthButton();
+      let nextMonthButton = queryNextMonthButton();
+
+      // At newest month, should only have previous month button
+      expect(prevMonthButton).toBeInTheDocument();
+      expect(nextMonthButton).not.toBeInTheDocument();
+
+      // Sort by oldest first
       await clickSortOption(user, "Reading Date (Oldest First)");
 
-      const calendar = getCalendar();
-      const allText = calendar.textContent || "";
-      const oldIndex = allText.indexOf("Old Reading");
-      const midIndex = allText.indexOf("Mid Reading");
-      const newIndex = allText.indexOf("New Reading");
+      // At oldest month, should only have next month button
+      prevMonthButton = queryPreviousMonthButton();
+      nextMonthButton = queryNextMonthButton();
 
-      expect(oldIndex).toBeLessThan(midIndex);
-      expect(midIndex).toBeLessThan(newIndex);
+      expect(prevMonthButton).not.toBeInTheDocument();
+      expect(nextMonthButton).toBeInTheDocument();
     });
   });
 
@@ -584,45 +433,6 @@ describe("ReadingLog", () => {
         within(calendar).queryByText("January Book"),
       ).not.toBeInTheDocument();
     });
-
-    it("shows correct navigation buttons", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          readingDate: "2024-01-15",
-          title: "January Book",
-        },
-        {
-          readingDate: "2023-12-15",
-          readingYear: "2023",
-          title: "December Book",
-        },
-        {
-          readingDate: "2024-02-15",
-          title: "February Book",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      // Default sort is newest first, showing February 2024
-      let prevMonthButton = queryPreviousMonthButton();
-      let nextMonthButton = queryNextMonthButton();
-
-      // At newest month, should only have previous month button
-      expect(prevMonthButton).toBeInTheDocument();
-      expect(nextMonthButton).not.toBeInTheDocument();
-
-      // Sort by oldest first
-      await clickSortOption(user, "Reading Date (Oldest First)");
-
-      // At oldest month, should only have next month button
-      prevMonthButton = queryPreviousMonthButton();
-      nextMonthButton = queryNextMonthButton();
-
-      expect(prevMonthButton).not.toBeInTheDocument();
-      expect(nextMonthButton).toBeInTheDocument();
-    });
   });
 
   describe("when clearing filters", () => {
@@ -691,83 +501,6 @@ describe("ReadingLog", () => {
 
       await clickToggleFilters(user);
       expect(getTitleFilter()).toHaveValue("Dracula");
-    });
-  });
-
-  describe("applied filters", () => {
-    it("shows edition chip in drawer after applying edition filter", async ({
-      expect,
-    }) => {
-      const readings = createReadingValues([
-        {
-          edition: "Paperback",
-          title: "Book in Paperback",
-        },
-        {
-          edition: "Hardcover",
-          title: "Book in Hardcover",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickEditionFilterOption(user, "Paperback");
-      await clickViewResults(user);
-
-      await clickToggleFilters(user);
-      expect(
-        screen.getByRole("button", { name: "Remove Paperback filter" }),
-      ).toBeInTheDocument();
-    });
-
-    it("removing edition chip immediately hides chip but defers list update until View Results", async ({
-      expect,
-    }) => {
-      const readings = createReadingValues([
-        {
-          edition: "Paperback",
-          title: "Book in Paperback",
-        },
-        {
-          edition: "Hardcover",
-          title: "Book in Hardcover",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickEditionFilterOption(user, "Paperback");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(
-        within(calendar).queryByText("Book in Hardcover"),
-      ).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await user.click(
-        screen.getByRole("button", { name: "Remove Paperback filter" }),
-      );
-
-      // Chip is gone immediately from the Applied Filters section
-      expect(
-        screen.queryByRole("button", { name: "Remove Paperback filter" }),
-      ).not.toBeInTheDocument();
-      // But the list is not yet updated — "View Results" hasn't been clicked
-      expect(
-        within(calendar).queryByText("Book in Hardcover"),
-      ).not.toBeInTheDocument();
-
-      await clickViewResults(user);
-
-      // Now the list updates
-      expect(
-        within(calendar).getByText("Book in Hardcover"),
-      ).toBeInTheDocument();
     });
   });
 

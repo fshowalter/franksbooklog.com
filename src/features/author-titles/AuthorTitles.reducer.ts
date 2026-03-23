@@ -1,77 +1,97 @@
-import type {
-  ReviewedTitleFiltersAction,
-  ReviewedTitleFiltersState,
-  ReviewedTitleFiltersValues,
-} from "~/reducers/reviewedTitleFiltersReducer";
-import type { ShowMoreAction, ShowMoreState } from "~/reducers/showMoreReducer";
-import type { SortAction, SortState } from "~/reducers/sortReducer";
+import type { GradeFilterChangedAction } from "~/facets/grade/gradeReducer";
+import type { KindFilterChangedAction } from "~/facets/kind/kindReducer";
+import type { ShowMoreAction } from "~/facets/pagination/paginationReducer";
+import type { ReviewYearFilterChangedAction } from "~/facets/review-year/reviewYearReducer";
+import type { ReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
+import type { TitleFilterChangedAction } from "~/facets/title/titleReducer";
+import type { WorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
+import type { FiltersAction } from "~/reducers/filtersReducer";
+import type { SortAction } from "~/reducers/sortReducer";
 
-import {
-  createInitialReviewedTitleFiltersState,
-  reviewedTitleFiltersReducer,
-} from "~/reducers/reviewedTitleFiltersReducer";
+import { composeReducers } from "~/facets/composeReducers";
+import { gradeFacetReducer } from "~/facets/grade/gradeReducer";
+import { kindFacetReducer } from "~/facets/kind/kindReducer";
 import {
   createInitialShowMoreState,
   showMoreReducer,
-} from "~/reducers/showMoreReducer";
+} from "~/facets/pagination/paginationReducer";
+import { reviewYearFacetReducer } from "~/facets/review-year/reviewYearReducer";
+import { reviewedStatusFacetReducer } from "~/facets/reviewed-status/reviewedStatusReducer";
+import { titleFacetReducer } from "~/facets/title/titleReducer";
+import { workYearFacetReducer } from "~/facets/work-year/workYearReducer";
+import {
+  createInitialFiltersState,
+  filtersLifecycleReducer,
+} from "~/reducers/filtersReducer";
 import {
   createInitialSortState,
   createSortActionCreator,
   sortReducer,
 } from "~/reducers/sortReducer";
 
-export {
-  createApplyFiltersAction,
-  createClearFiltersAction,
-  createGradeFilterChangedAction,
-  createKindFilterChangedAction,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  createReviewYearFilterChangedAction,
-  createTitleFilterChangedAction,
-  createWorkYearFilterChangedAction,
-  selectHasPendingFilters,
-} from "~/reducers/reviewedTitleFiltersReducer";
-
-export { createReviewedStatusFilterChangedAction } from "~/reducers/reviewedTitleFiltersReducer";
-
-export { createShowMoreAction } from "~/reducers/showMoreReducer";
-
-/**
- * Union type of all actions for the AuthorTitles reducer
- */
-export type AuthorTitlesAction =
-  | ReviewedTitleFiltersAction
-  | ShowMoreAction
-  | SortAction<AuthorTitlesSort>;
+export { createGradeFilterChangedAction } from "~/facets/grade/gradeReducer";
+export { createKindFilterChangedAction } from "~/facets/kind/kindReducer";
+export { createShowMoreAction } from "~/facets/pagination/paginationReducer";
+export { createReviewYearFilterChangedAction } from "~/facets/review-year/reviewYearReducer";
+export { createReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
+export { createTitleFilterChangedAction } from "~/facets/title/titleReducer";
+export { createWorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
+export { createApplyFiltersAction } from "~/reducers/filtersReducer";
+export { createClearFiltersAction } from "~/reducers/filtersReducer";
+export { createRemoveAppliedFilterAction } from "~/reducers/filtersReducer";
+export { createResetFiltersAction } from "~/reducers/filtersReducer";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
 /**
- * Type definition for AuthorTitles filter values
+ * Union of all actions the AuthorTitles reducer handles.
  */
-export type AuthorTitlesFiltersValues = ReviewedTitleFiltersValues;
+export type AuthorTitlesAction =
+  | FiltersAction
+  | GradeFilterChangedAction
+  | KindFilterChangedAction
+  | ReviewedStatusFilterChangedAction
+  | ReviewYearFilterChangedAction
+  | ShowMoreAction
+  | SortAction<AuthorTitlesSort>
+  | TitleFilterChangedAction
+  | WorkYearFilterChangedAction;
 
 /**
- * Internal state type for AuthorTitles reducer
+ * All filter values for the AuthorTitles page.
  */
-type AuthorTitlesState = Omit<
-  ReviewedTitleFiltersState<AuthorTitlesValue>,
-  "activeFilterValues" | "pendingFilterValues"
-> &
-  ShowMoreState &
-  SortState<AuthorTitlesSort> & {
-    activeFilterValues: AuthorTitlesFiltersValues;
-    pendingFilterValues: AuthorTitlesFiltersValues;
-  };
+export type AuthorTitlesFiltersValues = {
+  gradeValue?: [number, number];
+  kind?: readonly string[];
+  reviewedStatus?: readonly string[];
+  reviewYear?: [string, string];
+  title?: string;
+  workYear?: [string, string];
+};
+
+type AuthorTitlesState = {
+  activeFilterValues: AuthorTitlesFiltersValues;
+  pendingFilterValues: AuthorTitlesFiltersValues;
+  showCount: number;
+  sort: AuthorTitlesSort;
+  values: AuthorTitlesValue[];
+};
+
+const authorTitlesReducer = composeReducers<AuthorTitlesState>(
+  kindFacetReducer,
+  reviewedStatusFacetReducer,
+  filtersLifecycleReducer,
+  titleFacetReducer,
+  gradeFacetReducer,
+  workYearFacetReducer,
+  reviewYearFacetReducer,
+  showMoreReducer,
+  sortReducer,
+);
 
 /**
- * Creates the initial state for AuthorTitles reducer.
- * @param options - Configuration options
- * @param options.initialSort - Initial sort configuration
- * @param options.values - Author title values
- * @returns Initial state for AuthorTitles reducer
+ * Creates the initial state for the AuthorTitles reducer.
  */
 export function createInitialState({
   initialSort,
@@ -80,37 +100,28 @@ export function createInitialState({
   initialSort: AuthorTitlesSort;
   values: AuthorTitlesValue[];
 }): AuthorTitlesState {
-  const showMoreState = createInitialShowMoreState();
-  const sortState = createInitialSortState({ initialSort });
-  const reviewedTitleFilterState = createInitialReviewedTitleFiltersState({
-    values,
-  });
-
   return {
-    ...reviewedTitleFilterState,
-    ...showMoreState,
-    ...sortState,
+    ...createInitialFiltersState({ values }),
+    ...createInitialShowMoreState(),
+    ...createInitialSortState({ initialSort }),
   };
 }
 
 /**
  * Reducer function for AuthorTitles state management.
- * @param state - Current state
- * @param action - Action to process
- * @returns Updated state
  */
-export function reducer(state: AuthorTitlesState, action: AuthorTitlesAction) {
-  switch (action.type) {
-    case "showMore/showMore": {
-      return showMoreReducer(state, action);
-    }
-    case "sort/sort": {
-      return sortReducer(state, action);
-    }
-    default: {
-      return reviewedTitleFiltersReducer(state, action);
-    }
-  }
+export function reducer(
+  state: AuthorTitlesState,
+  action: AuthorTitlesAction,
+): AuthorTitlesState {
+  return authorTitlesReducer(state, action);
+}
+
+/**
+ * Returns true when there are pending (unapplied) filter changes.
+ */
+export function selectHasPendingFilters(state: AuthorTitlesState): boolean {
+  return Object.keys(state.pendingFilterValues).length > 0;
 }
 
 /**

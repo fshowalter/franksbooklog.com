@@ -13,7 +13,7 @@ export type ShowMoreAction = {
 /**
  * State shape for show more pagination.
  */
-export type ShowMoreState = {
+type ShowMoreState = {
   showCount: number;
 };
 
@@ -43,11 +43,14 @@ export function createShowMoreAction(): ShowMoreAction {
  */
 export function showMoreReducer<TState extends ShowMoreState>(
   state: TState,
-  action: ShowMoreAction,
+  action: { type: string },
 ): TState {
   switch (action.type) {
     case "showMore/showMore": {
       return handleShowMoreAction<TState>(state);
+    }
+    default: {
+      return state;
     }
   }
 }

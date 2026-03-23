@@ -7,15 +7,6 @@ export type FiltersAction =
   | RemoveAppliedFilterAction
   | ResetFiltersAction;
 
-/**
- * State shape for filter functionality.
- */
-export type FiltersState<TValue> = {
-  activeFilterValues: Record<string, unknown>;
-  pendingFilterValues: Record<string, unknown>;
-  values: TValue[];
-};
-
 // RemoveAppliedFilterAction base handler removes the whole key from
 // pendingFilterValues only — active results don't change until "View Results" is clicked.
 // Child reducers MUST override this case for any array-valued filter (e.g. kind[],
@@ -66,10 +57,10 @@ export function createInitialFiltersState<TValue>({
   values,
 }: {
   values: TValue[];
-}): FiltersState<TValue> {
+}) {
   return {
-    activeFilterValues: {},
-    pendingFilterValues: {},
+    activeFilterValues: {} as Record<string, unknown>,
+    pendingFilterValues: {} as Record<string, unknown>,
     values,
   };
 }
@@ -93,31 +84,35 @@ export function createResetFiltersAction(): ResetFiltersAction {
   return { type: "filters/reset" };
 }
 
-/**
- * Reducer function for handling filter state updates.
- * @param state - Current filter state
- * @param action - Filter action to process
- * @returns Updated state with filter changes applied
- */
-export function filtersReducer<TValue, TState extends FiltersState<TValue>>(
-  state: TState,
-  action: FiltersAction,
-): TState {
+// AIDEV-NOTE: filtersLifecycleReducer is the composable variant of filtersReducer
+// for use with composeReducers. It owns apply/clear/reset/removeAppliedFilter.
+// Array-keyed facets (kind, reviewedStatus) must precede it in the composition
+// chain so their prefix-based removal runs before this scalar key-equals-id fallback.
+export function filtersLifecycleReducer<
+  TState extends {
+    activeFilterValues: Record<string, unknown>;
+    pendingFilterValues: Record<string, unknown>;
+  },
+>(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case "filters/applied": {
-      return applyFilters<TValue, TState>(state);
+      return { ...state, activeFilterValues: { ...state.pendingFilterValues } };
     }
-
     case "filters/cleared": {
-      return clearFilters<TValue, TState>(state);
+      return { ...state, pendingFilterValues: {} };
     }
-
     case "filters/removeAppliedFilter": {
-      return removeAppliedFilter<TValue, TState>(state, action);
+      const { id } = action as { id: string; type: string };
+      const pending = Object.fromEntries(
+        Object.entries(state.pendingFilterValues).filter(([k]) => k !== id),
+      );
+      return { ...state, pendingFilterValues: pending };
     }
-
     case "filters/reset": {
-      return resetFilters<TValue, TState>(state);
+      return { ...state, pendingFilterValues: { ...state.activeFilterValues } };
+    }
+    default: {
+      return state;
     }
   }
 }
@@ -127,64 +122,8 @@ export function filtersReducer<TValue, TState extends FiltersState<TValue>>(
  * @param state - Current filter state
  * @returns True if there are pending filters, false otherwise
  */
-export function selectHasPendingFilters<
-  TValue,
-  TState extends FiltersState<TValue>,
->(state: TState): boolean {
+export function selectHasPendingFilters(state: {
+  pendingFilterValues: Record<string, unknown>;
+}): boolean {
   return Object.keys(state.pendingFilterValues).length > 0;
-}
-
-/**
- * Apply pending filters to become active filters
- */
-function applyFilters<TValue, TState extends FiltersState<TValue>>(
-  state: TState,
-): TState {
-  return {
-    ...state,
-    activeFilterValues: { ...state.pendingFilterValues },
-  };
-}
-
-/**
- * Clear all pending filters
- */
-function clearFilters<TValue, TState extends FiltersState<TValue>>(
-  state: TState,
-): TState {
-  return {
-    ...state,
-    pendingFilterValues: {},
-  };
-}
-
-/**
- * Remove a single filter key from pendingFilterValues only.
- * activeFilterValues is untouched — the list updates when "View Results" is clicked.
- * FilterAndSortContainer removes the chip from its local displayedChips state immediately.
- * Child reducers override this for array-valued filters.
- */
-function removeAppliedFilter<TValue, TState extends FiltersState<TValue>>(
-  state: TState,
-  action: RemoveAppliedFilterAction,
-): TState {
-  const pendingRest = Object.fromEntries(
-    Object.entries(state.pendingFilterValues).filter(([k]) => k !== action.id),
-  ) as Record<string, unknown>;
-  return {
-    ...state,
-    pendingFilterValues: pendingRest,
-  };
-}
-
-/**
- * Reset pending filters to current active filters
- */
-function resetFilters<TValue, TState extends FiltersState<TValue>>(
-  state: TState,
-): TState {
-  return {
-    ...state,
-    pendingFilterValues: { ...state.activeFilterValues },
-  };
 }

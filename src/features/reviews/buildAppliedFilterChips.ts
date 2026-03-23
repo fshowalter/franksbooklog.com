@@ -1,11 +1,11 @@
 import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
 
-import {
-  buildGradeChip,
-  buildMultiSelectChips,
-  buildSearchChip,
-  buildYearRangeChip,
-} from "~/components/filter-and-sort/filterChipBuilders";
+import { buildGradeFilterChip } from "~/facets/grade/gradeFilterChip";
+import { buildKindFilterChip } from "~/facets/kind/kindFilterChip";
+import { buildReviewYearFilterChip } from "~/facets/review-year/reviewYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/facets/reviewed-status/reviewedStatusFilterChip";
+import { buildTitleFilterChip } from "~/facets/title/titleFilterChip";
+import { buildWorkYearFilterChip } from "~/facets/work-year/workYearFilterChip";
 
 import type { ReviewsFiltersValues } from "./Reviews.reducer";
 
@@ -15,25 +15,11 @@ export function buildAppliedFilterChips(
   distinctReviewYears: readonly string[],
 ): FilterChip[] {
   return [
-    ...buildSearchChip(filterValues.title, "title"),
-    ...buildMultiSelectChips(filterValues.kind, "Kind", "kind"),
-    ...buildYearRangeChip(
-      filterValues.workYear,
-      distinctWorkYears,
-      "Work Year",
-      "workYear",
-    ),
-    ...buildGradeChip(filterValues.gradeValue),
-    ...buildYearRangeChip(
-      filterValues.reviewYear,
-      distinctReviewYears,
-      "Review Year",
-      "reviewYear",
-    ),
-    ...buildMultiSelectChips(
-      filterValues.reviewedStatus,
-      "Status",
-      "reviewedStatus",
-    ),
+    ...buildTitleFilterChip(filterValues.title),
+    ...buildKindFilterChip(filterValues.kind),
+    ...buildWorkYearFilterChip(filterValues.workYear, distinctWorkYears),
+    ...buildGradeFilterChip(filterValues.gradeValue),
+    ...buildReviewYearFilterChip(filterValues.reviewYear, distinctReviewYears),
+    ...buildReviewedStatusFilterChip(filterValues.reviewedStatus),
   ];
 }
