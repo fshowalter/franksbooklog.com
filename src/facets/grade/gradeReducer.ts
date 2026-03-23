@@ -1,3 +1,4 @@
+import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
 import { omitPendingKey } from "~/facets/omitPendingKey";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
@@ -6,11 +7,6 @@ import { GRADE_CHIP_ID } from "./gradeFilterChip";
 export type GradeFilterChangedAction = {
   type: "grade/changed";
   values: [number, number];
-};
-
-type GradeRemoveAppliedFilterAction = {
-  id: string;
-  type: "filters/removeAppliedFilter";
 };
 
 export function createGradeFilterChangedAction(
@@ -29,7 +25,7 @@ export function gradeFacetReducer<
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case "filters/removeAppliedFilter": {
-      const { id } = action as GradeRemoveAppliedFilterAction;
+      const { id } = action as RemoveAppliedFilterAction;
       if (id !== GRADE_CHIP_ID) return state;
       return {
         ...state,

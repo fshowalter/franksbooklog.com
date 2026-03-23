@@ -1,3 +1,4 @@
+import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
 import { REVIEW_YEAR_CHIP_ID } from "./reviewYearFilterChip";
@@ -7,11 +8,6 @@ export type ReviewYearFilterChangedAction = {
   availableMin: string;
   type: "reviewYear/changed";
   values: [string, string];
-};
-
-type ReviewYearRemoveAppliedFilterAction = {
-  id: string;
-  type: "filters/removeAppliedFilter";
 };
 
 export function createReviewYearFilterChangedAction(
@@ -32,13 +28,13 @@ export function reviewYearFacetReducer<
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case "filters/removeAppliedFilter": {
-      const { id } = action as ReviewYearRemoveAppliedFilterAction;
+      const { id } = action as RemoveAppliedFilterAction;
       if (id !== REVIEW_YEAR_CHIP_ID) return state;
       return {
         ...state,
         pendingFilterValues: omitPendingKey(
           state.pendingFilterValues,
-          "reviewYear",
+          REVIEW_YEAR_CHIP_ID,
         ),
       };
     }
@@ -50,7 +46,7 @@ export function reviewYearFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            "reviewYear",
+            REVIEW_YEAR_CHIP_ID,
           ),
         };
       }

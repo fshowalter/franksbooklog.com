@@ -1,3 +1,4 @@
+import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
 import { TITLE_CHIP_ID } from "./titleFilterChip";
@@ -5,11 +6,6 @@ import { TITLE_CHIP_ID } from "./titleFilterChip";
 export type TitleFilterChangedAction = {
   type: "title/changed";
   value: string;
-};
-
-type TitleRemoveAppliedFilterAction = {
-  id: string;
-  type: "filters/removeAppliedFilter";
 };
 
 export function createTitleFilterChangedAction(
@@ -28,7 +24,7 @@ export function titleFacetReducer<
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case "filters/removeAppliedFilter": {
-      const { id } = action as TitleRemoveAppliedFilterAction;
+      const { id } = action as RemoveAppliedFilterAction;
       if (id !== TITLE_CHIP_ID) return state;
       return {
         ...state,

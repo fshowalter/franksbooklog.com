@@ -1,15 +1,12 @@
+import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
 import { omitPendingKey } from "~/facets/omitPendingKey";
+import { toChipSlug } from "~/facets/toChipSlug";
 
 import { EDITION_CHIP_ID_PREFIX } from "./editionFilterChip";
 
 export type EditionFilterChangedAction = {
   type: "edition/changed";
   values: readonly string[];
-};
-
-type EditionRemoveAppliedFilterAction = {
-  id: string;
-  type: "filters/removeAppliedFilter";
 };
 
 export function createEditionFilterChangedAction(
@@ -47,12 +44,12 @@ export function editionFacetReducer<
       };
     }
     case "filters/removeAppliedFilter": {
-      const { id } = action as EditionRemoveAppliedFilterAction;
+      const { id } = action as RemoveAppliedFilterAction;
       if (!id.startsWith(`${EDITION_CHIP_ID_PREFIX}-`)) return state;
       const editionToRemove = id.slice(`${EDITION_CHIP_ID_PREFIX}-`.length);
       const current = state.pendingFilterValues.edition ?? [];
       const updated = current.filter(
-        (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
+        (e) => toChipSlug(e) !== editionToRemove,
       );
       if (updated.length === 0) {
         return {

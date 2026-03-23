@@ -1,3 +1,4 @@
+import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
 import { WORK_YEAR_CHIP_ID } from "./workYearFilterChip";
@@ -7,11 +8,6 @@ export type WorkYearFilterChangedAction = {
   availableMin: string;
   type: "workYear/changed";
   values: [string, string];
-};
-
-type WorkYearRemoveAppliedFilterAction = {
-  id: string;
-  type: "filters/removeAppliedFilter";
 };
 
 export function createWorkYearFilterChangedAction(
@@ -32,13 +28,13 @@ export function workYearFacetReducer<
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case "filters/removeAppliedFilter": {
-      const { id } = action as WorkYearRemoveAppliedFilterAction;
+      const { id } = action as RemoveAppliedFilterAction;
       if (id !== WORK_YEAR_CHIP_ID) return state;
       return {
         ...state,
         pendingFilterValues: omitPendingKey(
           state.pendingFilterValues,
-          "workYear",
+          WORK_YEAR_CHIP_ID,
         ),
       };
     }
@@ -50,7 +46,7 @@ export function workYearFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            "workYear",
+            WORK_YEAR_CHIP_ID,
           ),
         };
       }
