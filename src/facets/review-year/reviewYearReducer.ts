@@ -1,5 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
+import { REVIEW_YEAR_CHIP_ID } from "./reviewYearFilterChip";
+
 export type ReviewYearFilterChangedAction = {
   availableMax: string;
   availableMin: string;
@@ -31,7 +33,7 @@ export function reviewYearFacetReducer<
   switch (action.type) {
     case "filters/removeAppliedFilter": {
       const { id } = action as ReviewYearRemoveAppliedFilterAction;
-      if (id !== "reviewYear") return state;
+      if (id !== REVIEW_YEAR_CHIP_ID) return state;
       return {
         ...state,
         pendingFilterValues: omitPendingKey(

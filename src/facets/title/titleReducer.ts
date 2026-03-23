@@ -1,5 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
+import { TITLE_CHIP_ID } from "./titleFilterChip";
+
 export type TitleFilterChangedAction = {
   type: "title/changed";
   value: string;
@@ -27,7 +29,7 @@ export function titleFacetReducer<
   switch (action.type) {
     case "filters/removeAppliedFilter": {
       const { id } = action as TitleRemoveAppliedFilterAction;
-      if (id !== "title") return state;
+      if (id !== TITLE_CHIP_ID) return state;
       return {
         ...state,
         pendingFilterValues: omitPendingKey(state.pendingFilterValues, "title"),

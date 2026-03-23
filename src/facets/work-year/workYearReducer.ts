@@ -1,5 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
+import { WORK_YEAR_CHIP_ID } from "./workYearFilterChip";
+
 export type WorkYearFilterChangedAction = {
   availableMax: string;
   availableMin: string;
@@ -31,7 +33,7 @@ export function workYearFacetReducer<
   switch (action.type) {
     case "filters/removeAppliedFilter": {
       const { id } = action as WorkYearRemoveAppliedFilterAction;
-      if (id !== "workYear") return state;
+      if (id !== WORK_YEAR_CHIP_ID) return state;
       return {
         ...state,
         pendingFilterValues: omitPendingKey(

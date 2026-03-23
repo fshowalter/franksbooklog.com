@@ -24,6 +24,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";
 
 import { ReadingLog } from "./ReadingLog";
+import { selectedMonthDateReducer } from "./ReadingLog.reducer";
 import {
   clickEditionFilterOption,
   clickNextMonthButton,
@@ -704,5 +705,43 @@ describe("ReadingLog", () => {
       expect(within(calendar).getByText(/Author Three/)).toBeInTheDocument();
       expect(within(calendar).getByText(/Author Four/)).toBeInTheDocument();
     });
+  });
+});
+
+describe("selectedMonthDateReducer", () => {
+  const withDate = { selectedMonthDate: "2024-01" };
+  const withoutDate = { selectedMonthDate: undefined };
+
+  it("clears selectedMonthDate on filters/applied", ({ expect }) => {
+    const result = selectedMonthDateReducer(withDate, {
+      type: "filters/applied",
+    });
+    expect(result.selectedMonthDate).toBeUndefined();
+  });
+
+  it("clears selectedMonthDate on sort/sort", ({ expect }) => {
+    const result = selectedMonthDateReducer(withDate, { type: "sort/sort" });
+    expect(result.selectedMonthDate).toBeUndefined();
+  });
+
+  it("sets selectedMonthDate on readingLog/nextMonthClicked", ({ expect }) => {
+    const action = { type: "readingLog/nextMonthClicked", value: "2024-02" };
+    const result = selectedMonthDateReducer(withoutDate, action);
+    expect(result.selectedMonthDate).toBe("2024-02");
+  });
+
+  it("sets selectedMonthDate on readingLog/previousMonthClicked", ({
+    expect,
+  }) => {
+    const action = { type: "readingLog/previousMonthClicked", value: "2023-12" };
+    const result = selectedMonthDateReducer(withDate, action);
+    expect(result.selectedMonthDate).toBe("2023-12");
+  });
+
+  it("returns state unchanged for unrecognised actions", ({ expect }) => {
+    const result = selectedMonthDateReducer(withDate, {
+      type: "some/other",
+    });
+    expect(result).toBe(withDate);
   });
 });

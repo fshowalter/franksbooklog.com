@@ -110,6 +110,36 @@ export function createPreviousMonthClickedAction(
   return { type: "readingLog/previousMonthClicked", value };
 }
 
+/**
+ * Manages selectedMonthDate in response to filter, sort, and month navigation actions.
+ * Order-independent — does not read state.sort.
+ */
+export function selectedMonthDateReducer<
+  TState extends { selectedMonthDate?: string },
+>(state: TState, action: { type: string }): TState {
+  switch (action.type) {
+    case "filters/applied":
+    case "sort/sort": {
+      return { ...state, selectedMonthDate: undefined };
+    }
+    case "readingLog/nextMonthClicked": {
+      return {
+        ...state,
+        selectedMonthDate: (action as NextMonthClickedAction).value,
+      };
+    }
+    case "readingLog/previousMonthClicked": {
+      return {
+        ...state,
+        selectedMonthDate: (action as PreviousMonthClickedAction).value,
+      };
+    }
+    default: {
+      return state;
+    }
+  }
+}
+
 const readingLogReducer = composeReducers<ReadingLogState>(
   kindFacetReducer,
   reviewedStatusFacetReducer,
@@ -119,32 +149,7 @@ const readingLogReducer = composeReducers<ReadingLogState>(
   workYearFacetReducer,
   readingYearFacetReducer,
   sortReducer,
-  // AIDEV-NOTE: this inline reducer must remain after sortReducer in the composition.
-  // It clears selectedMonthDate on filters/applied and sort/sort. Currently it does
-  // not read state.sort, but if it ever does, it must see the post-sort value.
-  (state, action) => {
-    switch (action.type) {
-      case "filters/applied":
-      case "sort/sort": {
-        return { ...state, selectedMonthDate: undefined };
-      }
-      case "readingLog/nextMonthClicked": {
-        return {
-          ...state,
-          selectedMonthDate: (action as NextMonthClickedAction).value,
-        };
-      }
-      case "readingLog/previousMonthClicked": {
-        return {
-          ...state,
-          selectedMonthDate: (action as PreviousMonthClickedAction).value,
-        };
-      }
-      default: {
-        return state;
-      }
-    }
-  },
+  selectedMonthDateReducer,
 );
 
 /**

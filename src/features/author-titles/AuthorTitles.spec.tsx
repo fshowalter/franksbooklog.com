@@ -5,6 +5,7 @@ import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
+  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
@@ -175,10 +176,13 @@ describe("AuthorTitles", () => {
     render(<AuthorTitles {...baseProps} values={titles} />);
   });
 
-  paginationFacetTests((titles) => {
-    const values = titles.map((title) => createAuthorTitleValue({ title }));
-    render(<AuthorTitles {...baseProps} values={values} />);
-  });
+  paginationFacetTests(
+    (titles) => {
+      const values = titles.map((title) => createAuthorTitleValue({ title }));
+      render(<AuthorTitles {...baseProps} values={values} />);
+    },
+    async (user) => clickSortOption(user, "Title (A → Z)"),
+  );
 
   describe("when clearing filters", () => {
     it("clears all filters with clear button", async ({ expect }) => {

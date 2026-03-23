@@ -1,3 +1,5 @@
+import { toChipSlug } from "~/facets/toChipSlug";
+
 import type { FilterChip } from "./AppliedFilters";
 
 /**
@@ -13,7 +15,7 @@ export function buildMultiSelectChips(
   return values.map((value) => ({
     category,
     displayText: value,
-    id: `${idPrefix}-${value.toLowerCase().replaceAll(" ", "-")}`,
+    id: `${idPrefix}-${toChipSlug(value)}`,
     label: value,
   }));
 }

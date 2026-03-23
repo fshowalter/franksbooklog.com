@@ -39,6 +39,11 @@ export function reviewYearFilterFacetTests({
   distinctReviewYears,
   renderItems,
 }: ReviewYearFacetAdapter) {
+  if (distinctReviewYears.length < 3) {
+    throw new Error(
+      `reviewYearFilterFacetTests: distinctReviewYears must have at least 3 elements (got ${distinctReviewYears.length.toString()})`,
+    );
+  }
   describe("review year filter", () => {
     it("filters to items within review year range", async ({ expect }) => {
       renderItems([

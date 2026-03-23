@@ -5,6 +5,7 @@ import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
+  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
@@ -207,10 +208,13 @@ describe("Reviews", () => {
     render(<Reviews {...baseProps} values={reviews} />);
   });
 
-  paginationFacetTests((titles) => {
-    const reviews = createReviewsValues(titles.map((title) => ({ title })));
-    render(<Reviews {...baseProps} values={reviews} />);
-  });
+  paginationFacetTests(
+    (titles) => {
+      const reviews = createReviewsValues(titles.map((title) => ({ title })));
+      render(<Reviews {...baseProps} values={reviews} />);
+    },
+    async (user) => clickSortOption(user, "Title (A → Z)"),
+  );
 
   describe("multiple authors display", () => {
     it("displays all authors for works with multiple authors", ({ expect }) => {

@@ -1,5 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
+import { READING_YEAR_CHIP_ID } from "./readingYearFilterChip";
+
 export type ReadingYearFilterChangedAction = {
   availableMax: string;
   availableMin: string;
@@ -31,7 +33,7 @@ export function readingYearFacetReducer<
   switch (action.type) {
     case "filters/removeAppliedFilter": {
       const { id } = action as ReadingYearRemoveAppliedFilterAction;
-      if (id !== "readingYear") return state;
+      if (id !== READING_YEAR_CHIP_ID) return state;
       return {
         ...state,
         pendingFilterValues: omitPendingKey(

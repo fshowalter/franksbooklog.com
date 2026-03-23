@@ -1,5 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
+import { EDITION_CHIP_ID_PREFIX } from "./editionFilterChip";
+
 export type EditionFilterChangedAction = {
   type: "edition/changed";
   values: readonly string[];
@@ -46,8 +48,8 @@ export function editionFacetReducer<
     }
     case "filters/removeAppliedFilter": {
       const { id } = action as EditionRemoveAppliedFilterAction;
-      if (!id.startsWith("edition-")) return state;
-      const editionToRemove = id.slice("edition-".length);
+      if (!id.startsWith(`${EDITION_CHIP_ID_PREFIX}-`)) return state;
+      const editionToRemove = id.slice(`${EDITION_CHIP_ID_PREFIX}-`.length);
       const current = state.pendingFilterValues.edition ?? [];
       const updated = current.filter(
         (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,

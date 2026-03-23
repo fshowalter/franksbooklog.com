@@ -1,4 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
+import { toChipSlug } from "~/facets/toChipSlug";
+
+import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusFilterChip";
 
 export type ReviewedStatusFilterChangedAction = {
   type: "reviewedStatus/changed";
@@ -29,11 +32,11 @@ export function reviewedStatusFacetReducer<
   switch (action.type) {
     case "filters/removeAppliedFilter": {
       const { id } = action as ReviewedStatusRemoveAppliedFilterAction;
-      if (!id.startsWith("reviewedStatus-")) return state;
-      const statusToRemove = id.slice("reviewedStatus-".length);
+      if (!id.startsWith(`${REVIEWED_STATUS_CHIP_ID_PREFIX}-`)) return state;
+      const statusToRemove = id.slice(`${REVIEWED_STATUS_CHIP_ID_PREFIX}-`.length);
       const current = state.pendingFilterValues.reviewedStatus ?? [];
       const updated = current.filter(
-        (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
+        (s) => toChipSlug(s) !== statusToRemove,
       );
       if (updated.length === 0) {
         return {

@@ -1,7 +1,7 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
-export const GRADE_CHIP_ID = "gradeValue" as const;
+import { GRADE_CHIP_ID } from "./gradeFilterChip";
 
 export type GradeFilterChangedAction = {
   type: "grade/changed";
