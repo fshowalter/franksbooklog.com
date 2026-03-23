@@ -11,6 +11,11 @@ import { fillReviewYearFilter } from "~/components/filter-and-sort/ReviewedWorkF
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewYearFacetAdapter = {
+  /**
+   * Distinct review years available in the filter, in ascending order.
+   * Must contain at least 3 elements so that index [2] is a valid mid-range
+   * year distinct from both the minimum ([0]) and the maximum (last element).
+   */
   distinctReviewYears: readonly string[];
   renderItems: (items: ReviewYearItem[]) => void;
 };

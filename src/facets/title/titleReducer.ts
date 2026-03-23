@@ -28,10 +28,22 @@ export function titleFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as TitleRemoveAppliedFilterAction;
       if (id !== "title") return state;
-      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "title") };
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(state.pendingFilterValues, "title"),
+      };
     }
     case "title/changed": {
       const { value } = action as TitleFilterChangedAction;
+      if (value === "") {
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "title",
+          ),
+        };
+      }
       return {
         ...state,
         pendingFilterValues: { ...state.pendingFilterValues, title: value },

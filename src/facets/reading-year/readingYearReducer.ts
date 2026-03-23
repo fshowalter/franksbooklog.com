@@ -28,7 +28,13 @@ export function readingYearFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as ReadingYearRemoveAppliedFilterAction;
       if (id !== "readingYear") return state;
-      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "readingYear") };
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          "readingYear",
+        ),
+      };
     }
     case "readingYear/changed": {
       const { values } = action as ReadingYearFilterChangedAction;

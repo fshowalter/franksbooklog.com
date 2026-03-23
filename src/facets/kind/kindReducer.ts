@@ -34,7 +34,13 @@ export function kindFacetReducer<
         (k) => k.toLowerCase().replaceAll(" ", "-") !== kindToRemove,
       );
       if (updated.length === 0) {
-        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "kind") };
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "kind",
+          ),
+        };
       }
       return {
         ...state,
@@ -47,7 +53,13 @@ export function kindFacetReducer<
     case "kind/changed": {
       const { values } = action as KindFilterChangedAction;
       if (values.length === 0) {
-        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "kind") };
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "kind",
+          ),
+        };
       }
       return {
         ...state,

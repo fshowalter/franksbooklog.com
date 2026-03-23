@@ -1,4 +1,5 @@
 import { ReviewedWorkFilters } from "~/components/filter-and-sort/ReviewedWorkFilters";
+import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import type {
   AuthorTitlesAction,
@@ -8,6 +9,7 @@ import type {
 import {
   createGradeFilterChangedAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
@@ -49,7 +51,8 @@ export function AuthorTitlesFilters({
       grade={{
         defaultValues: filterValues.gradeValue,
         onChange: (values) => dispatch(createGradeFilterChangedAction(values)),
-        onClear: () => dispatch(createGradeFilterChangedAction([2, 16])),
+        onClear: () =>
+          dispatch(createGradeFilterChangedAction([GRADE_MIN, GRADE_MAX])),
       }}
       kind={{
         counts: kindCounts,
@@ -69,13 +72,7 @@ export function AuthorTitlesFilters({
         defaultValues: filterValues.reviewYear,
         onChange: (values) =>
           dispatch(createReviewYearFilterChangedAction(values)),
-        onClear: () =>
-          dispatch(
-            createReviewYearFilterChangedAction([
-              distinctReviewYears[0] ?? "",
-              distinctReviewYears.at(-1) ?? "",
-            ]),
-          ),
+        onClear: () => dispatch(createRemoveAppliedFilterAction("reviewYear")),
         values: distinctReviewYears,
       }}
       title={{

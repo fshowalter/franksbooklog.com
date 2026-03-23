@@ -36,7 +36,13 @@ export function reviewedStatusFacetReducer<
         (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
       );
       if (updated.length === 0) {
-        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "reviewedStatus") };
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "reviewedStatus",
+          ),
+        };
       }
       return {
         ...state,
@@ -49,7 +55,13 @@ export function reviewedStatusFacetReducer<
     case "reviewedStatus/changed": {
       const { values } = action as ReviewedStatusFilterChangedAction;
       if (values.length === 0) {
-        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "reviewedStatus") };
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "reviewedStatus",
+          ),
+        };
       }
       return {
         ...state,

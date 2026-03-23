@@ -28,7 +28,13 @@ export function reviewYearFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as ReviewYearRemoveAppliedFilterAction;
       if (id !== "reviewYear") return state;
-      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "reviewYear") };
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          "reviewYear",
+        ),
+      };
     }
     case "reviewYear/changed": {
       const { values } = action as ReviewYearFilterChangedAction;

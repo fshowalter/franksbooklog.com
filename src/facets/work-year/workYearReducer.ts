@@ -28,7 +28,13 @@ export function workYearFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as WorkYearRemoveAppliedFilterAction;
       if (id !== "workYear") return state;
-      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "workYear") };
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          "workYear",
+        ),
+      };
     }
     case "workYear/changed": {
       const { values } = action as WorkYearFilterChangedAction;

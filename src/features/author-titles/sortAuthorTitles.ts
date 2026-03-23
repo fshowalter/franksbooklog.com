@@ -23,11 +23,12 @@ export type AuthorTitlesSort =
  * Sorter function for author titles, supporting grade, review date, title,
  * and work year sorting.
  */
-export const sortAuthorTitles = createSorter<AuthorTitlesValue, AuthorTitlesSort>(
-  {
-    ...gradeSortComparators,
-    ...reviewYearSortComparators,
-    ...titleSortComparators,
-    ...workYearSortComparators,
-  },
-);
+export const sortAuthorTitles = createSorter<
+  AuthorTitlesValue,
+  AuthorTitlesSort
+>({
+  ...gradeSortComparators,
+  ...reviewYearSortComparators,
+  ...titleSortComparators,
+  ...workYearSortComparators,
+});

@@ -28,10 +28,22 @@ export function nameFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as NameRemoveAppliedFilterAction;
       if (id !== "name") return state;
-      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "name") };
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(state.pendingFilterValues, "name"),
+      };
     }
     case "name/changed": {
       const { value } = action as NameFilterChangedAction;
+      if (value === "") {
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "name",
+          ),
+        };
+      }
       return {
         ...state,
         pendingFilterValues: { ...state.pendingFilterValues, name: value },

@@ -1,4 +1,5 @@
 import { omitPendingKey } from "~/facets/omitPendingKey";
+import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 export const GRADE_CHIP_ID = "gradeValue" as const;
 
@@ -30,10 +31,25 @@ export function gradeFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as GradeRemoveAppliedFilterAction;
       if (id !== GRADE_CHIP_ID) return state;
-      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, GRADE_CHIP_ID) };
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          GRADE_CHIP_ID,
+        ),
+      };
     }
     case "grade/changed": {
       const { values } = action as GradeFilterChangedAction;
+      if (values[0] === GRADE_MIN && values[1] === GRADE_MAX) {
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            GRADE_CHIP_ID,
+          ),
+        };
+      }
       return {
         ...state,
         pendingFilterValues: {

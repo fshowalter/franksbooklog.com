@@ -163,5 +163,4 @@ export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
       );
     });
   });
-
 }

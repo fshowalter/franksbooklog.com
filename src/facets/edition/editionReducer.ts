@@ -25,10 +25,19 @@ export function editionFacetReducer<
   TState extends { pendingFilterValues: { edition?: readonly string[] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
+    // AIDEV-NOTE: `edition/changed` sorts before `filters/removeAppliedFilter` alphabetically
+    // (perfectionist/sort-switch-case enforces alphabetical order). This is linter-enforced,
+    // not a design choice; it does not affect correctness.
     case "edition/changed": {
       const { values } = action as EditionFilterChangedAction;
       if (values.length === 0) {
-        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "edition") };
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "edition",
+          ),
+        };
       }
       return {
         ...state,
@@ -44,7 +53,13 @@ export function editionFacetReducer<
         (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
       );
       if (updated.length === 0) {
-        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "edition") };
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            "edition",
+          ),
+        };
       }
       return {
         ...state,

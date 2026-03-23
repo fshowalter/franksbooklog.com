@@ -6,6 +6,7 @@ import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 import {
   createGradeFilterChangedAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
@@ -68,13 +69,7 @@ export function ReviewsFilters({
         defaultValues: filterValues.reviewYear,
         onChange: (values) =>
           dispatch(createReviewYearFilterChangedAction(values)),
-        onClear: () =>
-          dispatch(
-            createReviewYearFilterChangedAction([
-              distinctReviewYears[0] ?? "",
-              distinctReviewYears.at(-1) ?? "",
-            ]),
-          ),
+        onClear: () => dispatch(createRemoveAppliedFilterAction("reviewYear")),
         values: distinctReviewYears,
       }}
       title={{
