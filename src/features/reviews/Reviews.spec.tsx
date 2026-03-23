@@ -162,6 +162,29 @@ describe("Reviews", () => {
     render(<Reviews {...baseProps} values={reviews} />);
   });
 
+  describe("multiple authors display", () => {
+    it("displays all authors for works with multiple authors", ({ expect }) => {
+      const reviews = createReviewsValues([
+        {
+          authors: [
+            {
+              name: "Terry Pratchett",
+              notes: undefined,
+              sortName: "Pratchett, Terry",
+            },
+            { name: "Neil Gaiman", notes: undefined, sortName: "Gaiman, Neil" },
+          ],
+          title: "Good Omens",
+        },
+      ]);
+      render(<Reviews {...baseProps} values={reviews} />);
+
+      const list = getCoverList();
+      expect(within(list).getByText(/Pratchett, Terry/)).toBeInTheDocument();
+      expect(within(list).getByText(/Gaiman, Neil/)).toBeInTheDocument();
+    });
+  });
+
   describe("when clearing filters", () => {
     it("clears all filters with clear button", async ({ expect }) => {
       const reviews = createReviewsValues([

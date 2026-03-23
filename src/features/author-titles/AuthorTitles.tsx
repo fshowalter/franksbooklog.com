@@ -5,8 +5,8 @@ import type { CoverImageProps } from "~/assets/covers";
 import { PaginatedCoverList } from "~/components/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
-import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
-import { createKindCountMap } from "~/filterers/filterTitles";
+import { createKindCountMap } from "~/facets/kind/kindFilter";
+import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 

@@ -1,3 +1,5 @@
+import { omitPendingKey } from "~/facets/omitPendingKey";
+
 export type TitleFilterChangedAction = {
   type: "title/changed";
   value: string;
@@ -26,10 +28,7 @@ export function titleFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as TitleRemoveAppliedFilterAction;
       if (id !== "title") return state;
-      const pending = Object.fromEntries(
-        Object.entries(state.pendingFilterValues).filter(([k]) => k !== "title"),
-      ) as typeof state.pendingFilterValues;
-      return { ...state, pendingFilterValues: pending };
+      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "title") };
     }
     case "title/changed": {
       const { value } = action as TitleFilterChangedAction;

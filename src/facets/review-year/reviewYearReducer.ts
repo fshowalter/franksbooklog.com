@@ -1,3 +1,5 @@
+import { omitPendingKey } from "~/facets/omitPendingKey";
+
 export type ReviewYearFilterChangedAction = {
   type: "reviewYear/changed";
   values: [string, string];
@@ -26,10 +28,7 @@ export function reviewYearFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as ReviewYearRemoveAppliedFilterAction;
       if (id !== "reviewYear") return state;
-      const pending = Object.fromEntries(
-        Object.entries(state.pendingFilterValues).filter(([k]) => k !== "reviewYear"),
-      ) as typeof state.pendingFilterValues;
-      return { ...state, pendingFilterValues: pending };
+      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "reviewYear") };
     }
     case "reviewYear/changed": {
       const { values } = action as ReviewYearFilterChangedAction;

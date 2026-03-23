@@ -1,3 +1,5 @@
+import { omitPendingKey } from "~/facets/omitPendingKey";
+
 export type EditionFilterChangedAction = {
   type: "edition/changed";
   values: readonly string[];
@@ -25,12 +27,12 @@ export function editionFacetReducer<
   switch (action.type) {
     case "edition/changed": {
       const { values } = action as EditionFilterChangedAction;
+      if (values.length === 0) {
+        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "edition") };
+      }
       return {
         ...state,
-        pendingFilterValues: {
-          ...state.pendingFilterValues,
-          edition: values.length === 0 ? undefined : values,
-        },
+        pendingFilterValues: { ...state.pendingFilterValues, edition: values },
       };
     }
     case "filters/removeAppliedFilter": {
@@ -41,12 +43,14 @@ export function editionFacetReducer<
       const updated = current.filter(
         (e) => e.toLowerCase().replaceAll(" ", "-") !== editionToRemove,
       );
+      if (updated.length === 0) {
+        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "edition") };
+      }
       return {
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          edition:
-            updated.length === 0 ? undefined : (updated as readonly string[]),
+          edition: updated as readonly string[],
         },
       };
     }

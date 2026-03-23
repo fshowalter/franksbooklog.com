@@ -1,3 +1,5 @@
+import { omitPendingKey } from "~/facets/omitPendingKey";
+
 export type KindFilterChangedAction = {
   type: "kind/changed";
   values: readonly string[];
@@ -31,23 +33,25 @@ export function kindFacetReducer<
       const updated = current.filter(
         (k) => k.toLowerCase().replaceAll(" ", "-") !== kindToRemove,
       );
+      if (updated.length === 0) {
+        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "kind") };
+      }
       return {
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          kind:
-            updated.length === 0 ? undefined : (updated as readonly string[]),
+          kind: updated as readonly string[],
         },
       };
     }
     case "kind/changed": {
       const { values } = action as KindFilterChangedAction;
+      if (values.length === 0) {
+        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "kind") };
+      }
       return {
         ...state,
-        pendingFilterValues: {
-          ...state.pendingFilterValues,
-          kind: values.length === 0 ? undefined : values,
-        },
+        pendingFilterValues: { ...state.pendingFilterValues, kind: values },
       };
     }
     default: {

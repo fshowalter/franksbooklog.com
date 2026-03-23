@@ -1,3 +1,5 @@
+import { omitPendingKey } from "~/facets/omitPendingKey";
+
 export type ReviewedStatusFilterChangedAction = {
   type: "reviewedStatus/changed";
   values: readonly string[];
@@ -33,22 +35,27 @@ export function reviewedStatusFacetReducer<
       const updated = current.filter(
         (s) => s.toLowerCase().replaceAll(" ", "-") !== statusToRemove,
       );
+      if (updated.length === 0) {
+        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "reviewedStatus") };
+      }
       return {
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          reviewedStatus:
-            updated.length === 0 ? undefined : (updated as readonly string[]),
+          reviewedStatus: updated as readonly string[],
         },
       };
     }
     case "reviewedStatus/changed": {
       const { values } = action as ReviewedStatusFilterChangedAction;
+      if (values.length === 0) {
+        return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "reviewedStatus") };
+      }
       return {
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          reviewedStatus: values.length === 0 ? undefined : values,
+          reviewedStatus: values,
         },
       };
     }

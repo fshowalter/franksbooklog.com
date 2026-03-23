@@ -1,6 +1,4 @@
-export type NameFacetValues = {
-  name?: string;
-};
+import { omitPendingKey } from "~/facets/omitPendingKey";
 
 export type NameFilterChangedAction = {
   type: "name/changed";
@@ -30,10 +28,7 @@ export function nameFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as NameRemoveAppliedFilterAction;
       if (id !== "name") return state;
-      const pending = Object.fromEntries(
-        Object.entries(state.pendingFilterValues).filter(([k]) => k !== "name"),
-      ) as typeof state.pendingFilterValues;
-      return { ...state, pendingFilterValues: pending };
+      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, "name") };
     }
     case "name/changed": {
       const { value } = action as NameFilterChangedAction;

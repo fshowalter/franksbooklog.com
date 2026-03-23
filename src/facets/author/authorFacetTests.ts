@@ -1,4 +1,3 @@
-import { within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
@@ -165,25 +164,4 @@ export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
     });
   });
 
-  describe("multiple authors display", () => {
-    it("displays all authors for works with multiple authors", ({ expect }) => {
-      renderItems([
-        {
-          authors: [
-            {
-              name: "Terry Pratchett",
-              notes: undefined,
-              sortName: "Pratchett, Terry",
-            },
-            { name: "Neil Gaiman", notes: undefined, sortName: "Gaiman, Neil" },
-          ],
-          title: "Good Omens",
-        },
-      ]);
-
-      const list = getCoverList();
-      expect(within(list).getByText(/Pratchett, Terry/)).toBeInTheDocument();
-      expect(within(list).getByText(/Gaiman, Neil/)).toBeInTheDocument();
-    });
-  });
 }

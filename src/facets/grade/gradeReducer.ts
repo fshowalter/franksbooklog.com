@@ -1,3 +1,5 @@
+import { omitPendingKey } from "~/facets/omitPendingKey";
+
 export const GRADE_CHIP_ID = "gradeValue" as const;
 
 export type GradeFilterChangedAction = {
@@ -28,10 +30,7 @@ export function gradeFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as GradeRemoveAppliedFilterAction;
       if (id !== GRADE_CHIP_ID) return state;
-      const pending = Object.fromEntries(
-        Object.entries(state.pendingFilterValues).filter(([k]) => k !== GRADE_CHIP_ID),
-      ) as typeof state.pendingFilterValues;
-      return { ...state, pendingFilterValues: pending };
+      return { ...state, pendingFilterValues: omitPendingKey(state.pendingFilterValues, GRADE_CHIP_ID) };
     }
     case "grade/changed": {
       const { values } = action as GradeFilterChangedAction;
