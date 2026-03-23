@@ -74,7 +74,10 @@ export function createInitialState({
  * Reducer function for managing Authors state.
  * Handles filtering and sorting actions for the authors list.
  */
-export function reducer(state: AuthorsState, action: AuthorsAction) {
+export function reducer(
+  state: AuthorsState,
+  action: AuthorsAction,
+): AuthorsState {
   return authorsReducer(state, action);
 }
 

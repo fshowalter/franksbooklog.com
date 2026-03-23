@@ -124,6 +124,9 @@ export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
             {
               name: "Zelda Fitzgerald",
               notes: undefined,
+              // "Aelda" (not "Zelda") is intentional: it places this book between
+              // "Doyle, Arthur" and "Fitzgerald, Zelda" alphabetically, verifying
+              // that sort uses the first author's sortName, not their visible name.
               sortName: "Fitzgerald, Aelda",
             },
             {

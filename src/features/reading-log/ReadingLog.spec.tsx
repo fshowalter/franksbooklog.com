@@ -15,7 +15,7 @@ import {
 } from "~/components/filter-and-sort/WorkFilters.testHelper";
 import { editionFacetTests } from "~/facets/edition/editionFacetTests";
 import { kindFacetTests } from "~/facets/kind/kindFacetTests";
-import { readingDateFacetTests } from "~/facets/reading-year/readingYearFacetTests";
+import { readingYearSortFacetTests } from "~/facets/reading-year/readingYearFacetTests";
 import { reviewedStatusFacetTests } from "~/facets/reviewed-status/reviewedStatusFacetTests";
 import { titleFilterFacetTests } from "~/facets/title/titleFacetTests";
 import { workYearFilterFacetTests } from "~/facets/work-year/workYearFacetTests";
@@ -155,7 +155,7 @@ describe("ReadingLog", () => {
       ),
   });
 
-  readingDateFacetTests({
+  readingYearSortFacetTests({
     getList: getCalendar,
     renderItems: (items) =>
       render(

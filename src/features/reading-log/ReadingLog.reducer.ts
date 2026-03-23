@@ -34,6 +34,7 @@ export { createApplyFiltersAction } from "~/reducers/filtersReducer";
 export { createClearFiltersAction } from "~/reducers/filtersReducer";
 export { createRemoveAppliedFilterAction } from "~/reducers/filtersReducer";
 export { createResetFiltersAction } from "~/reducers/filtersReducer";
+export { selectHasPendingFilters } from "~/reducers/filtersReducer";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";
@@ -109,9 +110,6 @@ export function createPreviousMonthClickedAction(
   return { type: "readingLog/previousMonthClicked", value };
 }
 
-// AIDEV-NOTE: Array-keyed facets (kind, reviewedStatus, edition) must precede
-// filtersLifecycleReducer so their prefix-based removal runs before the scalar
-// key-equals-id fallback.
 const readingLogReducer = composeReducers<ReadingLogState>(
   kindFacetReducer,
   reviewedStatusFacetReducer,
@@ -172,15 +170,11 @@ export function createInitialState({
  * @param action - Action to process
  * @returns Updated state
  */
-export function reducer(state: ReadingLogState, action: ReadingLogAction) {
+export function reducer(
+  state: ReadingLogState,
+  action: ReadingLogAction,
+): ReadingLogState {
   return readingLogReducer(state, action);
-}
-
-/**
- * Returns true when there are pending (unapplied) filter changes.
- */
-export function selectHasPendingFilters(state: ReadingLogState): boolean {
-  return Object.keys(state.pendingFilterValues).length > 0;
 }
 
 /**

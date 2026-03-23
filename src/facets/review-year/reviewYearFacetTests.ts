@@ -1,4 +1,4 @@
-import { within } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
@@ -54,6 +54,65 @@ export function reviewYearFacetTests({
     });
   });
 
+  describe("review year filter chip", () => {
+    // Filter to a single mid-range year so the chip appears (not the full range)
+    // and items outside it are hidden, proving filter and chip work together.
+    const earlyYear = distinctReviewYears[0];
+    const midYear = distinctReviewYears[2];
+
+    it("shows review year chip after applying filter", async ({ expect }) => {
+      renderItems([
+        { reviewSequence: "1", reviewYear: earlyYear, title: "Early Review" },
+        { reviewSequence: "2", reviewYear: midYear, title: "Mid Review" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillReviewYearFilter(user, midYear, midYear);
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", {
+          name: `Remove Review Year: ${midYear} filter`,
+        }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing review year chip defers list update", async ({ expect }) => {
+      renderItems([
+        { reviewSequence: "1", reviewYear: earlyYear, title: "Early Review" },
+        { reviewSequence: "2", reviewYear: midYear, title: "Mid Review" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillReviewYearFilter(user, midYear, midYear);
+      await clickViewResults(user);
+
+      const list = getCoverList();
+      expect(within(list).queryByText("Early Review")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", {
+          name: `Remove Review Year: ${midYear} filter`,
+        }),
+      );
+
+      expect(
+        screen.queryByRole("button", {
+          name: `Remove Review Year: ${midYear} filter`,
+        }),
+      ).not.toBeInTheDocument();
+      // List still filtered (activeFilter not yet cleared)
+      expect(within(list).queryByText("Early Review")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+      expect(within(list).getByText("Early Review")).toBeInTheDocument();
+    });
+  });
+
   describe("review date sort", () => {
     it("sorts newest first", async ({ expect }) => {
       renderItems([
@@ -95,8 +154,4 @@ export function reviewYearFacetTests({
       );
     });
   });
-
-  // Suppress unused variable warning — distinctReviewYears is part of the
-  // adapter interface for chip tests added in Stage 2.
-  void distinctReviewYears;
 }

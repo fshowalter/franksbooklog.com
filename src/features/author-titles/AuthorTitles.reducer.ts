@@ -40,6 +40,7 @@ export { createApplyFiltersAction } from "~/reducers/filtersReducer";
 export { createClearFiltersAction } from "~/reducers/filtersReducer";
 export { createRemoveAppliedFilterAction } from "~/reducers/filtersReducer";
 export { createResetFiltersAction } from "~/reducers/filtersReducer";
+export { selectHasPendingFilters } from "~/reducers/filtersReducer";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
@@ -115,13 +116,6 @@ export function reducer(
   action: AuthorTitlesAction,
 ): AuthorTitlesState {
   return authorTitlesReducer(state, action);
-}
-
-/**
- * Returns true when there are pending (unapplied) filter changes.
- */
-export function selectHasPendingFilters(state: AuthorTitlesState): boolean {
-  return Object.keys(state.pendingFilterValues).length > 0;
 }
 
 /**

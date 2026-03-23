@@ -60,9 +60,8 @@ export function showMoreReducer<TState extends ShowMoreState>(
  */
 function handleShowMoreAction<TState extends ShowMoreState>(
   state: TState,
-  increment: number = SHOW_COUNT_INCREMENT,
 ): TState {
-  const showCount = state.showCount + increment;
+  const showCount = state.showCount + SHOW_COUNT_INCREMENT;
 
   return {
     ...state,

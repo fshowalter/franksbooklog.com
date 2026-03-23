@@ -1,15 +1,16 @@
+import { within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { clickSortOption } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type ReadingDateFacetAdapter = {
+type ReadingYearSortFacetAdapter = {
   /** Pass `getCalendar` from ReadingLog.testHelper or equivalent container getter */
   getList: () => HTMLElement;
-  renderItems: (items: ReadingDateItem[]) => void;
+  renderItems: (items: ReadingYearSortItem[]) => void;
 };
 
-type ReadingDateItem = {
+type ReadingYearSortItem = {
   readingDate: string;
   readingYear: string;
   sequence: number;
@@ -24,84 +25,64 @@ type ReadingDateItem = {
  * they require calendar month navigation helpers that are feature-specific.
  *
  * @example
- * readingDateFacetTests({
+ * readingYearSortFacetTests({
  *   getList: getCalendar,
  *   renderItems: (items) => render(<ReadingLog {...baseProps} values={items.map(createValue)} />),
  * });
  */
-export function readingDateFacetTests({
+export function readingYearSortFacetTests({
   getList,
   renderItems,
-}: ReadingDateFacetAdapter) {
+}: ReadingYearSortFacetAdapter) {
+  // Items in two different months so that sort direction changes which month
+  // the calendar displays first. The calendar shows one month at a time;
+  // filteredValues[0] after sorting determines the initial month.
+  const items: ReadingYearSortItem[] = [
+    {
+      readingDate: "2024-01-15",
+      readingYear: "2024",
+      sequence: 2,
+      title: "Recent Reading",
+    },
+    {
+      readingDate: "2023-12-10",
+      readingYear: "2023",
+      sequence: 1,
+      title: "Earlier Reading",
+    },
+  ];
+
   describe("reading date sort", () => {
-    it("sorts newest first — entries appear in calendar day order", ({
+    it("sorts newest first — calendar opens on most recent month", async ({
       expect,
     }) => {
-      renderItems([
-        {
-          readingDate: "2024-01-01",
-          readingYear: "2024",
-          sequence: 1,
-          title: "Old Reading",
-        },
-        {
-          readingDate: "2024-01-03",
-          readingYear: "2024",
-          sequence: 3,
-          title: "New Reading",
-        },
-        {
-          readingDate: "2024-01-02",
-          readingYear: "2024",
-          sequence: 2,
-          title: "Mid Reading",
-        },
-      ]);
+      renderItems(items);
+
+      const user = getUserWithFakeTimers();
+      await clickSortOption(user, "Reading Date (Newest First)");
 
       const list = getList();
-      const text = list.textContent ?? "";
-      // Calendar shows books on their specific days (day 1 < day 2 < day 3)
-      expect(text.indexOf("Old Reading")).toBeLessThan(
-        text.indexOf("Mid Reading"),
-      );
-      expect(text.indexOf("Mid Reading")).toBeLessThan(
-        text.indexOf("New Reading"),
-      );
+      // January 2024 is the current month; December 2023 requires navigation
+      expect(within(list).getByText("Recent Reading")).toBeInTheDocument();
+      expect(
+        within(list).queryByText("Earlier Reading"),
+      ).not.toBeInTheDocument();
     });
 
-    it("sorts oldest first after clicking sort option", async ({ expect }) => {
-      renderItems([
-        {
-          readingDate: "2024-01-03",
-          readingYear: "2024",
-          sequence: 3,
-          title: "New Reading",
-        },
-        {
-          readingDate: "2024-01-01",
-          readingYear: "2024",
-          sequence: 1,
-          title: "Old Reading",
-        },
-        {
-          readingDate: "2024-01-02",
-          readingYear: "2024",
-          sequence: 2,
-          title: "Mid Reading",
-        },
-      ]);
+    it("sorts oldest first — calendar opens on earliest month", async ({
+      expect,
+    }) => {
+      renderItems(items);
 
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Reading Date (Oldest First)");
 
       const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Old Reading")).toBeLessThan(
-        text.indexOf("Mid Reading"),
-      );
-      expect(text.indexOf("Mid Reading")).toBeLessThan(
-        text.indexOf("New Reading"),
-      );
+      // December 2023 is the current month; January 2024 requires navigation
+      expect(within(list).getByText("Earlier Reading")).toBeInTheDocument();
+      expect(
+        within(list).queryByText("Recent Reading"),
+      ).not.toBeInTheDocument();
     });
   });
 }

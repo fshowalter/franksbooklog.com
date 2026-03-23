@@ -1,4 +1,4 @@
-import { within } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
@@ -42,6 +42,54 @@ export function gradeFacetTests(renderItems: (items: GradeItem[]) => void) {
       expect(within(list).getByText("Good Book")).toBeInTheDocument();
       expect(within(list).getByText("Great Book")).toBeInTheDocument();
       expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
+    });
+  });
+
+  describe("grade filter chip", () => {
+    it("shows grade chip after applying filter", async ({ expect }) => {
+      renderItems([
+        { grade: "F", gradeValue: 3, title: "Bad Book" },
+        { grade: "B", gradeValue: 12, title: "Good Book" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillGradeFilter(user, "B-", "A+");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Grade: B- to A+ filter" }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing grade chip defers list update", async ({ expect }) => {
+      renderItems([
+        { grade: "F", gradeValue: 3, title: "Bad Book" },
+        { grade: "B", gradeValue: 12, title: "Good Book" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillGradeFilter(user, "B-", "A+");
+      await clickViewResults(user);
+
+      const list = getCoverList();
+      expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", { name: "Remove Grade: B- to A+ filter" }),
+      );
+
+      expect(
+        screen.queryByRole("button", { name: "Remove Grade: B- to A+ filter" }),
+      ).not.toBeInTheDocument();
+      // List still filtered (activeFilterValues not yet cleared)
+      expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+      expect(within(list).getByText("Bad Book")).toBeInTheDocument();
     });
   });
 

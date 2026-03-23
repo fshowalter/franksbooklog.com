@@ -40,6 +40,7 @@ export { createApplyFiltersAction } from "~/reducers/filtersReducer";
 export { createClearFiltersAction } from "~/reducers/filtersReducer";
 export { createRemoveAppliedFilterAction } from "~/reducers/filtersReducer";
 export { createResetFiltersAction } from "~/reducers/filtersReducer";
+export { selectHasPendingFilters } from "~/reducers/filtersReducer";
 
 import type { ReviewsValue } from "./Reviews";
 import type { ReviewsSort } from "./sortReviews";
@@ -115,13 +116,6 @@ export function reducer(
   action: ReviewsAction,
 ): ReviewsState {
   return reviewsReducer(state, action);
-}
-
-/**
- * Returns true when there are pending (unapplied) filter changes.
- */
-export function selectHasPendingFilters(state: ReviewsState): boolean {
-  return Object.keys(state.pendingFilterValues).length > 0;
 }
 
 /**

@@ -1,4 +1,4 @@
-import { within } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
@@ -83,13 +83,72 @@ export function workYearFilterFacetTests({
       expect(within(list).queryByText("New Book")).not.toBeInTheDocument();
     });
   });
+
+  describe("work year filter chip", () => {
+    // Filter to a single mid-range year so the chip appears (not the full range)
+    // and items outside it are hidden, proving filter and chip work together.
+    const earlyYear = distinctWorkYears[0];
+    const midYear = distinctWorkYears[2];
+
+    it("shows work year chip after applying filter", async ({ expect }) => {
+      renderItems([
+        { title: "Old Book", workYear: earlyYear },
+        { title: "Mid Book", workYear: midYear },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillWorkYearFilter(user, midYear, midYear);
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", {
+          name: `Remove Work Year: ${midYear} filter`,
+        }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing work year chip defers list update", async ({ expect }) => {
+      renderItems([
+        { title: "Old Book", workYear: earlyYear },
+        { title: "Mid Book", workYear: midYear },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillWorkYearFilter(user, midYear, midYear);
+      await clickViewResults(user);
+
+      const list = getList();
+      expect(within(list).queryByText("Old Book")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", {
+          name: `Remove Work Year: ${midYear} filter`,
+        }),
+      );
+
+      expect(
+        screen.queryByRole("button", {
+          name: `Remove Work Year: ${midYear} filter`,
+        }),
+      ).not.toBeInTheDocument();
+      // List still filtered (activeFilterValues not yet cleared)
+      expect(within(list).queryByText("Old Book")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+      expect(within(list).getByText("Old Book")).toBeInTheDocument();
+    });
+  });
 }
 
 /**
  * Sort-only sub-suite for work year. Use this for features that have work year
  * sort (Reviews, AuthorTitles). Already included in `workYearFacetTests`.
  */
-export function workYearSortFacetTests({
+function workYearSortFacetTests({
   getList = getCoverList,
   renderItems,
 }: WorkYearSortAdapter) {

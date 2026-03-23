@@ -70,23 +70,6 @@ export function titleFilterFacetTests(
       expect(within(list).queryByText("Pet Sematary")).not.toBeInTheDocument();
     });
 
-    it("shows search chip after applying", async ({ expect }) => {
-      renderItems([
-        { sortTitle: "dracula", title: "Dracula" },
-        { sortTitle: "the shining", title: "The Shining" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Dracula");
-      await clickViewResults(user);
-
-      await clickToggleFilters(user);
-      expect(
-        screen.getByRole("button", { name: "Remove Search: Dracula filter" }),
-      ).toBeInTheDocument();
-    });
-
     it("resets when closing drawer without applying", async ({ expect }) => {
       renderItems([
         { sortTitle: "dracula", title: "Dracula" },
@@ -113,13 +96,61 @@ export function titleFilterFacetTests(
       expect(getTitleFilter()).toHaveValue("Dracula");
     });
   });
+
+  describe("title filter chip", () => {
+    it("shows search chip after applying filter", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "dracula", title: "Dracula" },
+        { sortTitle: "the shining", title: "The Shining" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Dracula");
+      await clickViewResults(user);
+
+      await clickToggleFilters(user);
+      expect(
+        screen.getByRole("button", { name: "Remove Search: Dracula filter" }),
+      ).toBeInTheDocument();
+    });
+
+    it("removing title chip defers list update", async ({ expect }) => {
+      renderItems([
+        { sortTitle: "dracula", title: "Dracula" },
+        { sortTitle: "the shining", title: "The Shining" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillTitleFilter(user, "Dracula");
+      await clickViewResults(user);
+
+      const list = getList();
+      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
+
+      await clickToggleFilters(user);
+      await user.click(
+        screen.getByRole("button", { name: "Remove Search: Dracula filter" }),
+      );
+
+      expect(
+        screen.queryByRole("button", { name: "Remove Search: Dracula filter" }),
+      ).not.toBeInTheDocument();
+      // List still filtered (activeFilterValues not yet cleared)
+      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
+
+      await clickViewResults(user);
+      expect(within(list).getByText("The Shining")).toBeInTheDocument();
+    });
+  });
 }
 
 /**
  * Sort-only sub-suite for title. Use this for features that have title sort
  * (Reviews, AuthorTitles). Already included in `titleFacetTests`.
  */
-export function titleSortFacetTests(
+function titleSortFacetTests(
   renderItems: (items: TitleItem[]) => void,
   getList: () => HTMLElement = getCoverList,
 ) {

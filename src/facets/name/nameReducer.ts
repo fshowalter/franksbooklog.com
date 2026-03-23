@@ -7,6 +7,11 @@ export type NameFilterChangedAction = {
   value: string;
 };
 
+type NameRemoveAppliedFilterAction = {
+  id: string;
+  type: "filters/removeAppliedFilter";
+};
+
 export function createNameFilterChangedAction(
   value: string,
 ): NameFilterChangedAction {
@@ -14,13 +19,22 @@ export function createNameFilterChangedAction(
 }
 
 /**
- * Facet reducer for the name filter. Handles only its own action and passes
- * everything else through unchanged, so it composes safely with other facets.
+ * Facet reducer for the name filter. Handles its own action and removes the
+ * filter on filters/removeAppliedFilter when id is "name". Passes everything
+ * else through unchanged.
  */
 export function nameFacetReducer<
   TState extends { pendingFilterValues: { name?: string } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
+    case "filters/removeAppliedFilter": {
+      const { id } = action as NameRemoveAppliedFilterAction;
+      if (id !== "name") return state;
+      const pending = Object.fromEntries(
+        Object.entries(state.pendingFilterValues).filter(([k]) => k !== "name"),
+      ) as typeof state.pendingFilterValues;
+      return { ...state, pendingFilterValues: pending };
+    }
     case "name/changed": {
       const { value } = action as NameFilterChangedAction;
       return {

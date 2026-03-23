@@ -7,10 +7,6 @@ export type FiltersAction =
   | RemoveAppliedFilterAction
   | ResetFiltersAction;
 
-// RemoveAppliedFilterAction base handler removes the whole key from
-// pendingFilterValues only — active results don't change until "View Results" is clicked.
-// Child reducers MUST override this case for any array-valued filter (e.g. kind[],
-// edition[]) to remove a single item from the array rather than deleting the entire key.
 export type RemoveAppliedFilterAction = {
   id: string;
   type: "filters/removeAppliedFilter";
@@ -85,9 +81,9 @@ export function createResetFiltersAction(): ResetFiltersAction {
 }
 
 // AIDEV-NOTE: filtersLifecycleReducer is the composable variant of filtersReducer
-// for use with composeReducers. It owns apply/clear/reset/removeAppliedFilter.
-// Array-keyed facets (kind, reviewedStatus) must precede it in the composition
-// chain so their prefix-based removal runs before this scalar key-equals-id fallback.
+// for use with composeReducers. It owns apply/clear/reset. Each facet reducer in
+// the composition chain handles filters/removeAppliedFilter for its own filter
+// key(s), so this reducer does not need a removeAppliedFilter case.
 export function filtersLifecycleReducer<
   TState extends {
     activeFilterValues: Record<string, unknown>;
@@ -100,13 +96,6 @@ export function filtersLifecycleReducer<
     }
     case "filters/cleared": {
       return { ...state, pendingFilterValues: {} };
-    }
-    case "filters/removeAppliedFilter": {
-      const { id } = action as { id: string; type: string };
-      const pending = Object.fromEntries(
-        Object.entries(state.pendingFilterValues).filter(([k]) => k !== id),
-      );
-      return { ...state, pendingFilterValues: pending };
     }
     case "filters/reset": {
       return { ...state, pendingFilterValues: { ...state.activeFilterValues } };
