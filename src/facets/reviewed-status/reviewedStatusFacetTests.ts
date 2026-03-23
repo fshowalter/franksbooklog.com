@@ -1,12 +1,11 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { clickReviewedStatusFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { clickReviewedStatusFilterOption } from "~/components/reviewed-status-filter/ReviewedStatusFilter.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewedStatusItem = {
@@ -29,7 +28,7 @@ type ReviewedStatusItem = {
  */
 export function reviewedStatusFacetTests(
   renderItems: (items: ReviewedStatusItem[]) => void,
-  getList: () => HTMLElement = getCoverList,
+  getList: () => HTMLElement,
 ) {
   describe("reviewed status filter", () => {
     it("filters to abandoned items", async ({ expect }) => {

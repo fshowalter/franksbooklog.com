@@ -2,12 +2,12 @@ import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { getGroupedAvatarList } from "~/components/avatar-list/AvatarList.testHelper";
-import { fillNameFilter } from "~/components/filter-and-sort/CollectionFilters.testHelper";
+import { fillNameFilter } from "~/components/collection-filters/CollectionFilters.testHelper";
 import {
   clickCloseFilters,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type NameItem = {

@@ -1,6 +1,6 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { buildSearchChip } from "~/components/filter-and-sort/filterChipBuilders";
+import { buildSearchChip } from "~/components/filter-and-sort-container/filterChipBuilders";
 
 export const NAME_CHIP_ID = "name" as const;
 

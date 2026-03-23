@@ -8,13 +8,13 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
+} from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
@@ -103,38 +103,39 @@ describe("AuthorTitles", () => {
       createAuthorTitleValue({ sortTitle, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   titleSortFacetTests((items) => {
     const titles = items.map(({ sortTitle, title }) =>
       createAuthorTitleValue({ sortTitle, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   kindFacetTests((items) => {
     const titles = items.map(({ kind, title }) =>
       createAuthorTitleValue({ kind, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   gradeFilterFacetTests((items) => {
     const titles = items.map(({ grade, gradeValue, title }) =>
       createAuthorTitleValue({ grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   gradeSortFacetTests((items) => {
     const titles = items.map(({ grade, gradeValue, title }) =>
       createAuthorTitleValue({ grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   workYearFilterFacetTests({
     distinctWorkYears: baseProps.distinctWorkYears,
+    getList: getCoverList,
     renderItems: (items) => {
       const titles = items.map(({ title, workYear }) =>
         createAuthorTitleValue({ title, workYear }),
@@ -144,6 +145,7 @@ describe("AuthorTitles", () => {
   });
 
   workYearSortFacetTests({
+    getList: getCoverList,
     renderItems: (items) => {
       const titles = items.map(({ title, workYear }) =>
         createAuthorTitleValue({ title, workYear }),
@@ -154,6 +156,7 @@ describe("AuthorTitles", () => {
 
   reviewYearFilterFacetTests({
     distinctReviewYears: baseProps.distinctReviewYears,
+    getList: getCoverList,
     renderItems: (items) => {
       const titles = items.map(({ reviewSequence, reviewYear, title }) =>
         createAuthorTitleValue({ reviewSequence, reviewYear, title }),
@@ -167,14 +170,14 @@ describe("AuthorTitles", () => {
       createAuthorTitleValue({ reviewSequence, reviewYear, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   reviewedStatusFacetTests((items) => {
     const titles = items.map(({ abandoned, grade, gradeValue, title }) =>
       createAuthorTitleValue({ abandoned, grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  });
+  }, getCoverList);
 
   paginationFacetTests(
     (titles) => {
@@ -182,6 +185,7 @@ describe("AuthorTitles", () => {
       render(<AuthorTitles {...baseProps} values={values} />);
     },
     async (user) => clickSortOption(user, "Title (A → Z)"),
+    getCoverList,
   );
 
   describe("when clearing filters", () => {

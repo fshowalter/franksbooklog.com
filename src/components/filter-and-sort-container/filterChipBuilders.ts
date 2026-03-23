@@ -1,6 +1,6 @@
-import { toChipSlug } from "~/facets/toChipSlug";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import type { FilterChip } from "./AppliedFilters";
+import { toChipSlug } from "~/facets/toChipSlug";
 
 /**
  * Builds one chip per selected value for a multi-select filter.

@@ -1,4 +1,4 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { buildGradeFilterChip } from "~/facets/grade/gradeFilterChip";
 import { buildKindFilterChip } from "~/facets/kind/kindFilterChip";

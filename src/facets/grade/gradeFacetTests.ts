@@ -1,13 +1,12 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { fillGradeFilter } from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { fillGradeFilter } from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type GradeItem = {
@@ -26,6 +25,7 @@ type GradeItem = {
  */
 export function gradeFilterFacetTests(
   renderItems: (items: GradeItem[]) => void,
+  getList: () => HTMLElement,
 ) {
   describe("grade filter", () => {
     it("filters to items within grade range", async ({ expect }) => {
@@ -40,7 +40,7 @@ export function gradeFilterFacetTests(
       await fillGradeFilter(user, "B-", "A+");
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getList();
       expect(within(list).getByText("Good Book")).toBeInTheDocument();
       expect(within(list).getByText("Great Book")).toBeInTheDocument();
       expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
@@ -76,7 +76,7 @@ export function gradeFilterFacetTests(
       await fillGradeFilter(user, "B-", "A+");
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getList();
       expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
@@ -104,7 +104,10 @@ export function gradeFilterFacetTests(
  *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
  * });
  */
-export function gradeSortFacetTests(renderItems: (items: GradeItem[]) => void) {
+export function gradeSortFacetTests(
+  renderItems: (items: GradeItem[]) => void,
+  getList: () => HTMLElement,
+) {
   describe("grade sort", () => {
     it("sorts best first", async ({ expect }) => {
       renderItems([
@@ -116,7 +119,7 @@ export function gradeSortFacetTests(renderItems: (items: GradeItem[]) => void) {
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Grade (Best First)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("Great Book")).toBeLessThan(
         text.indexOf("Okay Book"),
@@ -134,7 +137,7 @@ export function gradeSortFacetTests(renderItems: (items: GradeItem[]) => void) {
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Grade (Worst First)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("Bad Book")).toBeLessThan(text.indexOf("Okay Book"));
       expect(text.indexOf("Okay Book")).toBeLessThan(

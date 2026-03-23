@@ -1,4 +1,4 @@
-import { ReviewedWorkFilters } from "~/components/filter-and-sort/ReviewedWorkFilters";
+import { ReviewedWorkFilters } from "~/components/reviewed-work-filters/ReviewedWorkFilters";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";

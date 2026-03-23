@@ -1,7 +1,6 @@
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
-import { clickSortOption } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+import { clickSortOption } from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type AuthorItem = {
@@ -18,7 +17,10 @@ type AuthorItem = {
  *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
  * });
  */
-export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
+export function authorFacetTests(
+  renderItems: (items: AuthorItem[]) => void,
+  getList: () => HTMLElement,
+) {
   describe("author sort", () => {
     it("sorts A → Z by first author", async ({ expect }) => {
       renderItems([
@@ -57,7 +59,7 @@ export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Author (A → Z)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("Doyle, Arthur Conan")).toBeLessThan(
         text.indexOf("Fitzgerald, Zelda"),
@@ -104,7 +106,7 @@ export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Author (Z → A)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("Shelley, Mary")).toBeLessThan(
         text.indexOf("Fitzgerald, Zelda"),
@@ -156,7 +158,7 @@ export function authorFacetTests(renderItems: (items: AuthorItem[]) => void) {
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Author (A → Z)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("Book by Arthur and Zelda")).toBeLessThan(
         text.indexOf("Book by Zelda and Arthur"),

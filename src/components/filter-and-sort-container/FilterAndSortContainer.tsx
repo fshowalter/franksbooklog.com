@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-import type { FilterChip } from "./AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { AppliedFilters } from "./AppliedFilters";
+import { AppliedFilters } from "~/components/applied-filters/AppliedFilters";
+
 import { FilterAndSortHeader } from "./FilterAndSortHeader";
 import { FilterSection } from "./FilterSection";
 

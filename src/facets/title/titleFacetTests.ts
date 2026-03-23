@@ -1,17 +1,16 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import {
   fillTitleFilter,
   getTitleFilter,
-} from "~/components/filter-and-sort/WorkFilters.testHelper";
+} from "~/components/work-filters/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type TitleItem = {
@@ -25,7 +24,7 @@ type TitleItem = {
  */
 export function titleFilterFacetTests(
   renderItems: (items: TitleItem[]) => void,
-  getList: () => HTMLElement = getCoverList,
+  getList: () => HTMLElement,
 ) {
   describe("title filter", () => {
     it("filters to matching titles", async ({ expect }) => {
@@ -128,7 +127,7 @@ export function titleFilterFacetTests(
  */
 export function titleSortFacetTests(
   renderItems: (items: TitleItem[]) => void,
-  getList: () => HTMLElement = getCoverList,
+  getList: () => HTMLElement,
 ) {
   describe("title sort", () => {
     it("sorts A → Z", async ({ expect }) => {

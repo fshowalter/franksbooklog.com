@@ -2,9 +2,8 @@ import type { ComponentProps } from "react";
 
 import { GradeField } from "~/components/fields/GradeField";
 import { YearField } from "~/components/fields/YearField";
-
-import { ReviewedStatusFilter } from "./ReviewedStatusFilter";
-import { WorkFilters } from "./WorkFilters";
+import { ReviewedStatusFilter } from "~/components/reviewed-status-filter/ReviewedStatusFilter";
+import { WorkFilters } from "~/components/work-filters/WorkFilters";
 
 /**
  * Props for ReviewedWorkFilters component, extending WorkFilters props

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { FilterSection } from "~/components/filter-and-sort/FilterSection";
+import { FilterSection } from "~/components/filter-and-sort-container/FilterSection";
 import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
 import { RangeSliderField } from "./RangeSliderField";

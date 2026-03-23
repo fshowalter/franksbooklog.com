@@ -1,6 +1,6 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { buildMultiSelectChips } from "~/components/filter-and-sort/filterChipBuilders";
+import { buildMultiSelectChips } from "~/components/filter-and-sort-container/filterChipBuilders";
 
 export const REVIEWED_STATUS_CHIP_ID_PREFIX = "reviewedStatus" as const;
 

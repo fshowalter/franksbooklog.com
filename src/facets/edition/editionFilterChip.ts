@@ -1,6 +1,6 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { buildMultiSelectChips } from "~/components/filter-and-sort/filterChipBuilders";
+import { buildMultiSelectChips } from "~/components/filter-and-sort-container/filterChipBuilders";
 
 export const EDITION_CHIP_ID_PREFIX = "edition" as const;
 

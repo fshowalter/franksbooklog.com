@@ -9,7 +9,7 @@ export {
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "./WorkFilters.testHelper";
+} from "~/components/work-filters/WorkFilters.testHelper";
 
 /**
  * Test helper function to fill the grade filter range.

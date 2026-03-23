@@ -7,12 +7,12 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { clickReviewedStatusFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { clickReviewedStatusFilterOption } from "~/components/reviewed-status-filter/ReviewedStatusFilter.testHelper";
 import {
   fillTitleFilter,
   getTitleFilter,
-} from "~/components/filter-and-sort/WorkFilters.testHelper";
+} from "~/components/work-filters/WorkFilters.testHelper";
 import { editionFacetTests } from "~/facets/edition/editionFacetTests";
 import { kindFacetTests } from "~/facets/kind/kindFacetTests";
 import { readingYearSortFacetTests } from "~/facets/reading-year/readingYearFacetTests";

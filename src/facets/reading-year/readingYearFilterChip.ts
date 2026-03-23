@@ -1,6 +1,6 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { buildYearRangeChip } from "~/components/filter-and-sort/filterChipBuilders";
+import { buildYearRangeChip } from "~/components/filter-and-sort-container/filterChipBuilders";
 
 export const READING_YEAR_CHIP_ID = "readingYear" as const;
 

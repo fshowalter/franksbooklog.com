@@ -1,12 +1,11 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { clickKindFilterOption } from "~/components/filter-and-sort/WorkFilters.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { clickKindFilterOption } from "~/components/work-filters/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type KindItem = {
@@ -27,7 +26,7 @@ type KindItem = {
  */
 export function kindFacetTests(
   renderItems: (items: KindItem[]) => void,
-  getList: () => HTMLElement = getCoverList,
+  getList: () => HTMLElement,
 ) {
   describe("kind filter", () => {
     it("filters to a single kind", async ({ expect }) => {

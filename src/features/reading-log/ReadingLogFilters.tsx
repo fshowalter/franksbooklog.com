@@ -1,7 +1,7 @@
 import { CheckboxListField } from "~/components/fields/CheckboxListField";
 import { YearField } from "~/components/fields/YearField";
-import { ReviewedStatusFilter } from "~/components/filter-and-sort/ReviewedStatusFilter";
-import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
+import { ReviewedStatusFilter } from "~/components/reviewed-status-filter/ReviewedStatusFilter";
+import { WorkFilters } from "~/components/work-filters/WorkFilters";
 
 import type {
   ReadingLogAction,

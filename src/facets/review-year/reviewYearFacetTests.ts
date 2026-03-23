@@ -1,13 +1,12 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { fillReviewYearFilter } from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { fillReviewYearFilter } from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewYearFacetAdapter = {
@@ -17,6 +16,7 @@ type ReviewYearFacetAdapter = {
    * year distinct from both the minimum ([0]) and the maximum (last element).
    */
   distinctReviewYears: readonly string[];
+  getList: () => HTMLElement;
   renderItems: (items: ReviewYearItem[]) => void;
 };
 
@@ -32,11 +32,13 @@ type ReviewYearItem = {
  * @example
  * reviewYearFilterFacetTests({
  *   distinctReviewYears: ["2020", "2021", "2022", "2023", "2024"],
+ *   getList: getCoverList,
  *   renderItems: (items) => render(<Reviews {...baseProps} values={items.map(createValue)} />),
  * });
  */
 export function reviewYearFilterFacetTests({
   distinctReviewYears,
+  getList,
   renderItems,
 }: ReviewYearFacetAdapter) {
   if (distinctReviewYears.length < 3) {
@@ -57,7 +59,7 @@ export function reviewYearFilterFacetTests({
       await fillReviewYearFilter(user, "2023", "2023");
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getList();
       expect(within(list).getByText("2023 Review")).toBeInTheDocument();
       expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
       expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
@@ -100,7 +102,7 @@ export function reviewYearFilterFacetTests({
       await fillReviewYearFilter(user, midYear, midYear);
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getList();
       expect(within(list).queryByText("Early Review")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
@@ -128,10 +130,14 @@ export function reviewYearFilterFacetTests({
  * Sort-only sub-suite for review year. Covers review date sort options.
  *
  * @example
- * reviewYearSortFacetTests((items) => render(<Reviews {...baseProps} values={items.map(createValue)} />));
+ * reviewYearSortFacetTests(
+ *   (items) => render(<Reviews {...baseProps} values={items.map(createValue)} />),
+ *   getCoverList,
+ * );
  */
 export function reviewYearSortFacetTests(
   renderItems: (items: ReviewYearItem[]) => void,
+  getList: () => HTMLElement,
 ) {
   describe("review date sort", () => {
     it("sorts newest first", async ({ expect }) => {
@@ -144,7 +150,7 @@ export function reviewYearSortFacetTests(
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Review Date (Newest First)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("New Review")).toBeLessThan(
         text.indexOf("Mid Review"),
@@ -164,7 +170,7 @@ export function reviewYearSortFacetTests(
       const user = getUserWithFakeTimers();
       await clickSortOption(user, "Review Date (Oldest First)");
 
-      const list = getCoverList();
+      const list = getList();
       const text = list.textContent ?? "";
       expect(text.indexOf("Old Review")).toBeLessThan(
         text.indexOf("Mid Review"),

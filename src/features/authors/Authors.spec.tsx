@@ -5,13 +5,13 @@ import { getGroupedAvatarList } from "~/components/avatar-list/AvatarList.testHe
 import {
   fillNameFilter,
   getNameFilter,
-} from "~/components/filter-and-sort/CollectionFilters.testHelper";
+} from "~/components/collection-filters/CollectionFilters.testHelper";
 import {
   clickClearFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import { nameFacetTests } from "~/facets/name/nameFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 

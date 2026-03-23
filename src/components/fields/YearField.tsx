@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { FilterSection } from "~/components/filter-and-sort/FilterSection";
+import { FilterSection } from "~/components/filter-and-sort-container/FilterSection";
 
 import { RangeSliderField } from "./RangeSliderField";
 import { SelectInput } from "./SelectInput";

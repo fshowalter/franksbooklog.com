@@ -1,7 +1,7 @@
 import { within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { clickSortOption } from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+import { clickSortOption } from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReadingYearSortFacetAdapter = {

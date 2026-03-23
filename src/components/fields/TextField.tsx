@@ -1,4 +1,4 @@
-import { FilterSection } from "~/components/filter-and-sort/FilterSection";
+import { FilterSection } from "~/components/filter-and-sort-container/FilterSection";
 import { debounceOnChange } from "~/utils/debounce";
 
 /**

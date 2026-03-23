@@ -8,13 +8,13 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
+} from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import { authorFacetTests } from "~/facets/author/authorFacetTests";
 import {
   gradeFilterFacetTests,
@@ -100,21 +100,21 @@ describe("Reviews", () => {
       items.map(({ sortTitle, title }) => ({ sortTitle, title })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   titleSortFacetTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ sortTitle, title }) => ({ sortTitle, title })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   kindFacetTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ kind, title }) => ({ kind, title })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   gradeFilterFacetTests((items) => {
     const reviews = createReviewsValues(
@@ -125,7 +125,7 @@ describe("Reviews", () => {
       })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   gradeSortFacetTests((items) => {
     const reviews = createReviewsValues(
@@ -136,10 +136,11 @@ describe("Reviews", () => {
       })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   workYearFilterFacetTests({
     distinctWorkYears: baseProps.distinctWorkYears,
+    getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
         items.map(({ title, workYear }) => ({ title, workYear })),
@@ -149,6 +150,7 @@ describe("Reviews", () => {
   });
 
   workYearSortFacetTests({
+    getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
         items.map(({ title, workYear }) => ({ title, workYear })),
@@ -159,6 +161,7 @@ describe("Reviews", () => {
 
   reviewYearFilterFacetTests({
     distinctReviewYears: baseProps.distinctReviewYears,
+    getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
         items.map(({ reviewSequence, reviewYear, title }) => ({
@@ -180,7 +183,7 @@ describe("Reviews", () => {
       })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   reviewedStatusFacetTests((items) => {
     const reviews = createReviewsValues(
@@ -192,7 +195,7 @@ describe("Reviews", () => {
       })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   authorFacetTests((items) => {
     const reviews = createReviewsValues(
@@ -206,7 +209,7 @@ describe("Reviews", () => {
       })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
-  });
+  }, getCoverList);
 
   paginationFacetTests(
     (titles) => {
@@ -214,6 +217,7 @@ describe("Reviews", () => {
       render(<Reviews {...baseProps} values={reviews} />);
     },
     async (user) => clickSortOption(user, "Title (A → Z)"),
+    getCoverList,
   );
 
   describe("multiple authors display", () => {

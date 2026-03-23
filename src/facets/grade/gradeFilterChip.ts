@@ -1,4 +1,4 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 

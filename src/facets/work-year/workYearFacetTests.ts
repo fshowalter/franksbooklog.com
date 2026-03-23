@@ -1,19 +1,17 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { fillWorkYearFilter } from "~/components/filter-and-sort/WorkFilters.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { fillWorkYearFilter } from "~/components/work-filters/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type WorkYearFacetAdapter = {
   distinctWorkYears: readonly string[];
-  /** Defaults to `getCoverList`; pass `getCalendar` for ReadingLog */
-  getList?: () => HTMLElement;
+  getList: () => HTMLElement;
   renderItems: (items: WorkYearItem[]) => void;
 };
 
@@ -23,8 +21,7 @@ type WorkYearItem = {
 };
 
 type WorkYearSortAdapter = {
-  /** Defaults to `getCoverList` */
-  getList?: () => HTMLElement;
+  getList: () => HTMLElement;
   renderItems: (items: WorkYearItem[]) => void;
 };
 
@@ -38,7 +35,7 @@ type WorkYearSortAdapter = {
  */
 export function workYearFilterFacetTests({
   distinctWorkYears,
-  getList = getCoverList,
+  getList,
   renderItems,
 }: WorkYearFacetAdapter) {
   // Derive three non-adjacent years for items and a middle filter range so the
@@ -135,7 +132,7 @@ export function workYearFilterFacetTests({
  * sort (Reviews, AuthorTitles).
  */
 export function workYearSortFacetTests({
-  getList = getCoverList,
+  getList,
   renderItems,
 }: WorkYearSortAdapter) {
   describe("work year sort", () => {

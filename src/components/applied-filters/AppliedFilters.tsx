@@ -1,4 +1,4 @@
-import { FilterSection } from "./FilterSection";
+import { FilterSection } from "~/components/filter-and-sort-container/FilterSection";
 
 /**
  * AppliedFilters component displays active filters as removable chips

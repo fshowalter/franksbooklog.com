@@ -4,7 +4,7 @@ import { act, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { beforeEach, describe, it, vi } from "vitest";
 
-import type { FilterChip } from "./AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { FilterAndSortContainer } from "./FilterAndSortContainer";
 import {
