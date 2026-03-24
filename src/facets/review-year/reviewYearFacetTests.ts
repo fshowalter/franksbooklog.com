@@ -5,8 +5,8 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
-import { fillReviewYearFilter } from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { fillReviewYearFilter } from "~/components/react/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewYearFacetAdapter = {

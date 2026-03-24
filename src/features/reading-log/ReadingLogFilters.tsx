@@ -1,7 +1,7 @@
-import { CheckboxListField } from "~/components/fields/CheckboxListField";
-import { YearField } from "~/components/fields/YearField";
-import { ReviewedStatusFilter } from "~/components/reviewed-status-filter/ReviewedStatusFilter";
-import { WorkFilters } from "~/components/work-filters/WorkFilters";
+import { CheckboxListField } from "~/components/react/fields/CheckboxListField";
+import { YearField } from "~/components/react/fields/YearField";
+import { ReviewedStatusFilter } from "~/components/react/reviewed-status-filter/ReviewedStatusFilter";
+import { WorkFilters } from "~/components/react/work-filters/WorkFilters";
 
 import type {
   ReadingLogAction,

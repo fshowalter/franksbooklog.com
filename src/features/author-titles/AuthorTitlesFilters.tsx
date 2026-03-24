@@ -1,4 +1,4 @@
-import { ReviewedWorkFilters } from "~/components/reviewed-work-filters/ReviewedWorkFilters";
+import { ReviewedWorkFilters } from "~/components/react/reviewed-work-filters/ReviewedWorkFilters";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import type {

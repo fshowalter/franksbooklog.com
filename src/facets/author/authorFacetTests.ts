@@ -1,6 +1,6 @@
 import { describe, it } from "vitest";
 
-import { clickSortOption } from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { clickSortOption } from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type AuthorItem = {

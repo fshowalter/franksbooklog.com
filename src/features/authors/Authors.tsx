@@ -2,9 +2,9 @@ import { useReducer } from "react";
 
 import type { AvatarImageProps } from "~/assets/avatars";
 
-import { GroupedAvatarList } from "~/components/avatar-list/AvatarList";
-import { COLLECTION_SORT_OPTIONS } from "~/components/collection-filters/CollectionSortOptions";
-import { FilterAndSortContainer } from "~/components/filter-and-sort-container/FilterAndSortContainer";
+import { GroupedAvatarList } from "~/components/react/avatar-list/AvatarList";
+import { COLLECTION_SORT_OPTIONS } from "~/components/react/collection-filters/CollectionSortOptions";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
 import { useGroupedValues } from "~/hooks/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 

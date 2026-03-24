@@ -1,9 +1,9 @@
-import { CoverListItem } from "~/components/cover-list/CoverListItem";
-import { ListItemDetails } from "~/components/list-item-details/ListItemDetails";
-import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
-import { ListItemKindAndYear } from "~/components/list-item-kind-and-year/ListItemKindAndYear";
-import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemReviewDate";
-import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
+import { CoverListItem } from "~/components/react/cover-list/CoverListItem";
+import { ListItemDetails } from "~/components/react/list-item-details/ListItemDetails";
+import { ListItemGrade } from "~/components/react/list-item-grade/ListItemGrade";
+import { ListItemKindAndYear } from "~/components/react/list-item-kind-and-year/ListItemKindAndYear";
+import { ListItemReviewDate } from "~/components/react/list-item-review-date/ListItemReviewDate";
+import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";

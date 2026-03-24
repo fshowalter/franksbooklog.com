@@ -3,7 +3,7 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { clickShowMore } from "~/components/cover-list/CoverList.testHelper";
+import { clickShowMore } from "~/components/react/cover-list/CoverList.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 /**

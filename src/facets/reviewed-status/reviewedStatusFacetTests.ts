@@ -4,8 +4,8 @@ import { describe, it } from "vitest";
 import {
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
-import { clickReviewedStatusFilterOption } from "~/components/reviewed-status-filter/ReviewedStatusFilter.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { clickReviewedStatusFilterOption } from "~/components/react/reviewed-status-filter/ReviewedStatusFilter.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewedStatusItem = {

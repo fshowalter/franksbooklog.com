@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+
+import LongFormText from "~/components/astro/long-form-text/LongFormText.astro";
+import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
+import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
+import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
+
+type Props = {
+  content: string | undefined;
+};
+
+const { content } = Astro.props;
+const recentReviewedWorks = await mostRecentReviewedWorks(6);
+const reviewedWorks = await getCollection("reviewedWorks");
+---
+
+<section class="flex flex-col items-center pt-16 pb-32">
+  <div class="px-container">
+    <LongFormText
+      class={`max-w-prose`}
+      text={linkReviewedWorks(
+        content,
+        reviewedWorks.map((e) => e.id),
+      )}
+    />
+  </div>
+</section>
+<div
+  class={`
+    flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
+    tablet:pt-8
+    desktop:gap-y-24
+  `}
+  data-pagefind-ignore
+>
+  <MoreReviews
+    cardProps={recentReviewedWorks.map((review) => {
+      return {
+        hasDate: false,
+        value: review.data,
+      };
+    })}
+    headingProps={{
+      accentText: "Reviews",
+      href: `/reviews/`,
+      text: "Recent",
+    }}
+  />
+</div>

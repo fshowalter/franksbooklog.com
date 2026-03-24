@@ -2,7 +2,7 @@ import { useEffect, useReducer, useRef } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { FilterAndSortContainer } from "~/components/filter-and-sort-container/FilterAndSortContainer";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
 import { createKindCountMap } from "~/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { useFilteredValues } from "~/hooks/useFilteredValues";

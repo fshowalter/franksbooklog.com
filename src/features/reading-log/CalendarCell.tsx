@@ -1,7 +1,7 @@
-import { BarGradient } from "~/components/bar-gradient/BarGradient";
-import { CoverListItem } from "~/components/cover-list/CoverListItem";
-import { ListItemAuthors } from "~/components/list-item-authors/ListItemAuthors";
-import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
+import { BarGradient } from "~/components/react/bar-gradient/BarGradient";
+import { CoverListItem } from "~/components/react/cover-list/CoverListItem";
+import { ListItemAuthors } from "~/components/react/list-item-authors/ListItemAuthors";
+import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
 
 import type { CalendarCellData } from "./useCalendar";
 
