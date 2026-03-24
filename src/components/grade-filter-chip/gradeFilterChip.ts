@@ -1,8 +1,7 @@
 import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
+import { GRADE_CHIP_ID } from "~/facets/grade/gradeChipId";
 import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
-
-import { GRADE_CHIP_ID } from "./gradeChipId";
 
 /**
  * Builds a grade-range chip for the grade slider filter (scale 2–16).

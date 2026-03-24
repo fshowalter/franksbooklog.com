@@ -1,8 +1,7 @@
 import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { buildMultiSelectChips } from "~/components/filter-and-sort-container/filterChipBuilders";
-
-import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusChipId";
+import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "~/facets/reviewed-status/reviewedStatusChipId";
 
 export function buildReviewedStatusFilterChip(
   reviewedStatus: readonly string[] | undefined,

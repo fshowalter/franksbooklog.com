@@ -5,6 +5,8 @@ import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import { GRADE_CHIP_ID } from "./gradeChipId";
 
+const GRADE_STATE_KEY = "gradeValue" as const;
+
 export type GradeFilterChangedAction = {
   type: "grade/changed";
   values: [number, number];
@@ -32,7 +34,7 @@ export function gradeFacetReducer<
         ...state,
         pendingFilterValues: omitPendingKey(
           state.pendingFilterValues,
-          GRADE_CHIP_ID,
+          GRADE_STATE_KEY,
         ),
       };
     }
@@ -43,7 +45,7 @@ export function gradeFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            GRADE_CHIP_ID,
+            GRADE_STATE_KEY,
           ),
         };
       }

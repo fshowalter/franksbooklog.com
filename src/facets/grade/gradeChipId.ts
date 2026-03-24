@@ -1,1 +1,1 @@
-export const GRADE_CHIP_ID = "gradeValue" as const;
+export const GRADE_CHIP_ID = "grade" as const;

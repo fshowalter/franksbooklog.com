@@ -1,11 +1,11 @@
 import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { buildGradeFilterChip } from "~/facets/grade/gradeFilterChip";
-import { buildKindFilterChip } from "~/facets/kind/kindFilterChip";
-import { buildReviewYearFilterChip } from "~/facets/review-year/reviewYearFilterChip";
-import { buildReviewedStatusFilterChip } from "~/facets/reviewed-status/reviewedStatusFilterChip";
-import { buildTitleFilterChip } from "~/facets/title/titleFilterChip";
-import { buildWorkYearFilterChip } from "~/facets/work-year/workYearFilterChip";
+import { buildGradeFilterChip } from "~/components/grade-filter-chip/gradeFilterChip";
+import { buildKindFilterChip } from "~/components/kind-filter-chip/kindFilterChip";
+import { buildReviewYearFilterChip } from "~/components/review-year-filter-chip/reviewYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/components/reviewed-status-filter-chip/reviewedStatusFilterChip";
+import { buildTitleFilterChip } from "~/components/title-filter-chip/titleFilterChip";
+import { buildWorkYearFilterChip } from "~/components/work-year-filter-chip/workYearFilterChip";
 
 import type { ReviewsFiltersValues } from "./Reviews.reducer";
 

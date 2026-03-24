@@ -128,7 +128,7 @@ describe("AppliedFilters", () => {
             {
               category: "Grade",
               displayText: "Grade: A- to B+",
-              id: "gradeValue",
+              id: "grade",
               label: "A- to B+",
             },
           ]}

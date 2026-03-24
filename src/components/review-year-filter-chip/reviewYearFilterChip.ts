@@ -1,17 +1,16 @@
 import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { buildYearRangeChip } from "~/components/filter-and-sort-container/filterChipBuilders";
+import { REVIEW_YEAR_CHIP_ID } from "~/facets/review-year/reviewYearChipId";
 
-import { WORK_YEAR_CHIP_ID } from "./workYearChipId";
-
-export function buildWorkYearFilterChip(
+export function buildReviewYearFilterChip(
   value: readonly [string, string] | undefined,
-  distinctWorkYears: readonly string[],
+  distinctReviewYears: readonly string[],
 ): FilterChip[] {
   return buildYearRangeChip(
     value,
-    distinctWorkYears,
-    "Work Year",
-    WORK_YEAR_CHIP_ID,
+    distinctReviewYears,
+    "Review Year",
+    REVIEW_YEAR_CHIP_ID,
   );
 }
