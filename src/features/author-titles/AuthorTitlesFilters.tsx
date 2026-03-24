@@ -13,7 +13,7 @@ import {
   createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
-  createWorkYearFilterChangedAction,
+  createTitleYearFilterChangedAction,
 } from "./AuthorTitles.reducer";
 
 /**
@@ -25,7 +25,7 @@ import {
  * @param props.dispatch - Reducer dispatch function for filter actions
  * @param props.distinctKinds - Available work kinds for filtering dropdown
  * @param props.distinctReviewYears - Available review years for filtering
- * @param props.distinctWorkYears - Available work years for filtering
+ * @param props.distinctTitleYears - Available work years for filtering
  * @param props.filterValues - Current filter values from component state
  * @returns Filter controls for the author page
  */
@@ -33,7 +33,7 @@ export function AuthorTitlesFilters({
   dispatch,
   distinctKinds,
   distinctReviewYears,
-  distinctWorkYears,
+  distinctTitleYears,
   filterValues,
   kindCounts,
   reviewedStatusCounts,
@@ -41,7 +41,7 @@ export function AuthorTitlesFilters({
   dispatch: React.Dispatch<AuthorTitlesAction>;
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   filterValues: AuthorTitlesFiltersValues;
   kindCounts?: Map<string, number>;
   reviewedStatusCounts?: Map<string, number>;
@@ -89,13 +89,13 @@ export function AuthorTitlesFilters({
         defaultValues: filterValues.workYear,
         onChange: (values) =>
           dispatch(
-            createWorkYearFilterChangedAction(
+            createTitleYearFilterChangedAction(
               values,
-              distinctWorkYears[0] ?? "",
-              distinctWorkYears.at(-1) ?? "",
+              distinctTitleYears[0] ?? "",
+              distinctTitleYears.at(-1) ?? "",
             ),
           ),
-        values: distinctWorkYears,
+        values: distinctTitleYears,
       }}
     />
   );

@@ -1,40 +1,40 @@
-import type { EditionFilterChangedAction } from "~/facets/edition/editionReducer";
-import type { FiltersAction } from "~/facets/filtersReducer";
-import type { KindFilterChangedAction } from "~/facets/kind/kindReducer";
-import type { ReadingYearFilterChangedAction } from "~/facets/reading-year/readingYearReducer";
-import type { ReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
-import type { SortAction } from "~/facets/sortReducer";
-import type { TitleFilterChangedAction } from "~/facets/title/titleReducer";
-import type { WorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
+import type { EditionFilterChangedAction } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
+import type { FiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+import type { KindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
+import type { ReadingYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
+import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
+import type { SortAction } from "~/components/react/filter-and-sort/facets/sortReducer";
+import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
+import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 
-import { composeReducers } from "~/facets/composeReducers";
-import { editionFacetReducer } from "~/facets/edition/editionReducer";
+import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
+import { editionFacetReducer } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
 import {
   createInitialFiltersState,
   filtersLifecycleReducer,
-} from "~/facets/filtersReducer";
-import { kindFacetReducer } from "~/facets/kind/kindReducer";
-import { readingYearFacetReducer } from "~/facets/reading-year/readingYearReducer";
-import { reviewedStatusFacetReducer } from "~/facets/reviewed-status/reviewedStatusReducer";
+} from "~/components/react/filter-and-sort/facets/filtersReducer";
+import { kindFacetReducer } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
+import { readingYearFacetReducer } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
+import { reviewedStatusFacetReducer } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
 import {
   createInitialSortState,
   createSortActionCreator,
   sortReducer,
-} from "~/facets/sortReducer";
-import { titleFacetReducer } from "~/facets/title/titleReducer";
-import { workYearFacetReducer } from "~/facets/work-year/workYearReducer";
+} from "~/components/react/filter-and-sort/facets/sortReducer";
+import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/title/titleReducer";
+import { workYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 
-export { createEditionFilterChangedAction } from "~/facets/edition/editionReducer";
-export { createApplyFiltersAction } from "~/facets/filtersReducer";
-export { createClearFiltersAction } from "~/facets/filtersReducer";
-export { createRemoveAppliedFilterAction } from "~/facets/filtersReducer";
-export { createResetFiltersAction } from "~/facets/filtersReducer";
-export { selectHasPendingFilters } from "~/facets/filtersReducer";
-export { createKindFilterChangedAction } from "~/facets/kind/kindReducer";
-export { createReadingYearFilterChangedAction } from "~/facets/reading-year/readingYearReducer";
-export { createReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
-export { createTitleFilterChangedAction } from "~/facets/title/titleReducer";
-export { createWorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
+export { createEditionFilterChangedAction } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
+export { createApplyFiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+export { createClearFiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+export { createRemoveAppliedFilterAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+export { createResetFiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+export { selectHasPendingFilters } from "~/components/react/filter-and-sort/facets/filtersReducer";
+export { createKindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
+export { createReadingYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
+export { createReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
+export { createTitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
+export { createTitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";
@@ -52,7 +52,7 @@ export type ReadingLogAction =
   | ReviewedStatusFilterChangedAction
   | SortAction<ReadingLogSort>
   | TitleFilterChangedAction
-  | WorkYearFilterChangedAction;
+  | TitleYearFilterChangedAction;
 
 /**
  * Filter values for readings.

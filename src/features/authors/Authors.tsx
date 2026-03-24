@@ -3,8 +3,7 @@ import { useReducer } from "react";
 import type { AvatarImageProps } from "~/assets/avatars";
 
 import { GroupedAvatarList } from "~/components/react/avatar-list/AvatarList";
-import { COLLECTION_SORT_OPTIONS } from "~/components/react/collection-filters/CollectionSortOptions";
-import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { useGroupedValues } from "~/hooks/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -124,7 +123,12 @@ export function Authors({
       sortProps={{
         currentSortValue: state.sort,
         onSortChange: (value) => dispatch(createSortAction(value)),
-        sortOptions: COLLECTION_SORT_OPTIONS,
+        sortOptions: [
+          { label: "Name (A \u2192 Z)", value: "name-asc" },
+          { label: "Name (Z \u2192 A)", value: "name-desc" },
+          { label: "Review Count (Most First)", value: "review-count-desc" },
+          { label: "Review Count (Fewest First)", value: "review-count-asc" },
+        ],
       }}
       totalCount={totalCount}
     >

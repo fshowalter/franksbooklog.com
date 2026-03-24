@@ -15,7 +15,7 @@ export async function getReadingLogProps(
   const distinctEditions = new Set<string>();
   const distinctKinds = new Set<string>();
   const distinctReadingYears = new Set<string>();
-  const distinctWorkYears = new Set<string>();
+  const distinctTitleYears = new Set<string>();
 
   readingLogEntries.sort((a, b) => a.sequence.localeCompare(b.sequence));
 
@@ -24,7 +24,7 @@ export async function getReadingLogProps(
       distinctEditions.add(entry.edition);
       distinctKinds.add(entry.kind);
       distinctReadingYears.add(toSortYear(entry.date));
-      distinctWorkYears.add(entry.workYear);
+      distinctTitleYears.add(entry.workYear);
 
       const value: ReadingLogValue = {
         abandoned: entry.progress === "Abandoned",
@@ -53,7 +53,7 @@ export async function getReadingLogProps(
     distinctEditions: [...distinctEditions].toSorted(),
     distinctKinds: [...distinctKinds].toSorted(),
     distinctReadingYears: [...distinctReadingYears].toSorted(),
-    distinctWorkYears: [...distinctWorkYears].toSorted(),
+    distinctTitleYears: [...distinctTitleYears].toSorted(),
     initialSort: "reading-date-desc",
     values,
   };

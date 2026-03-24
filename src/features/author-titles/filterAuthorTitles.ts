@@ -1,10 +1,10 @@
-import { filterSortedValues } from "~/facets/filterSortedValues";
-import { createGradeFilter } from "~/facets/grade/gradeFilter";
-import { createKindFilter } from "~/facets/kind/kindFilter";
-import { createReviewYearFilter } from "~/facets/review-year/reviewYearFilter";
-import { createReviewedStatusFilter } from "~/facets/reviewed-status/reviewedStatusFilter";
-import { createTitleFilter } from "~/facets/title/titleFilter";
-import { createWorkYearFilter } from "~/facets/work-year/workYearFilter";
+import { filterSortedValues } from "~/components/react/filter-and-sort/facets/filterSortedValues";
+import { createGradeFilter } from "~/components/react/filter-and-sort/facets/grade/gradeFilter";
+import { createKindFilter } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
+import { createReviewYearFilter } from "~/components/react/filter-and-sort/facets/review-year/reviewYearFilter";
+import { createReviewedStatusFilter } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
+import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
+import { createTitleYearFilter } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilter";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
@@ -26,7 +26,7 @@ export function filterAuthorTitles(
     createReviewYearFilter(filterValues.reviewYear),
     createReviewedStatusFilter(filterValues.reviewedStatus),
     createTitleFilter(filterValues.title),
-    createWorkYearFilter(filterValues.workYear),
+    createTitleYearFilter(filterValues.workYear),
   ].filter((f) => f !== undefined);
   return filterSortedValues({ filters, sortedValues });
 }

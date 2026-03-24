@@ -1,5 +1,8 @@
-import { createSorter, sortNumber } from "~/facets/createSorter";
-import { nameSortComparators } from "~/facets/name/nameSort";
+import {
+  createSorter,
+  sortNumber,
+} from "~/components/react/filter-and-sort/facets/createSorter";
+import { nameSortComparators } from "~/components/react/filter-and-sort/facets/name/nameSort";
 
 export type CollectionSort =
   | "name-asc"

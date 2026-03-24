@@ -17,13 +17,13 @@ export async function getReviewsProps(
 
   const distinctKinds = new Set<string>();
   const distinctReviewYears = new Set<string>();
-  const distinctWorkYears = new Set<string>();
+  const distinctTitleYears = new Set<string>();
 
   const values = await Promise.all(
     reviewedWorks.map(async (reviewedWork) => {
       distinctKinds.add(reviewedWork.kind);
       distinctReviewYears.add(toSortYear(reviewedWork.reviewDate));
-      distinctWorkYears.add(reviewedWork.workYear);
+      distinctTitleYears.add(reviewedWork.workYear);
 
       const value: ReviewsValue = {
         abandoned: reviewedWork.grade === "Abandoned",
@@ -59,7 +59,7 @@ export async function getReviewsProps(
   return {
     distinctKinds: [...distinctKinds].toSorted(),
     distinctReviewYears: [...distinctReviewYears].toSorted(),
-    distinctWorkYears: [...distinctWorkYears].toSorted(),
+    distinctTitleYears: [...distinctTitleYears].toSorted(),
     initialSort: "author-asc",
     values,
   };

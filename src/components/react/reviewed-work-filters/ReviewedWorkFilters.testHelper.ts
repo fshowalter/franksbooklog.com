@@ -2,14 +2,14 @@ import type { UserEvent } from "@testing-library/user-event";
 
 import { screen, within } from "@testing-library/react";
 
-import { fillYearField } from "~/components/react/fields/YearField.testHelper";
+import { fillYearField } from "~/components/react/filter-and-sort/fields/YearField.testHelper";
 
 export {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/react/work-filters/WorkFilters.testHelper";
+} from "~/components/react/filter-and-sort/facet-groups/TitleFacets.testHelper";
 
 /**
  * Test helper function to fill the grade filter range.

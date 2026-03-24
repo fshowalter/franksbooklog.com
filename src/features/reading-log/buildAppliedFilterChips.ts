@@ -1,24 +1,24 @@
-import type { FilterChip } from "~/components/react/applied-filters/AppliedFilters";
+import type { FilterChip } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 
-import { buildEditionFilterChip } from "~/components/react/edition-filter-chip/editionFilterChip";
-import { buildKindFilterChip } from "~/components/react/kind-filter-chip/kindFilterChip";
-import { buildReadingYearFilterChip } from "~/components/react/reading-year-filter-chip/readingYearFilterChip";
-import { buildReviewedStatusFilterChip } from "~/components/react/reviewed-status-filter-chip/reviewedStatusFilterChip";
-import { buildTitleFilterChip } from "~/components/react/title-filter-chip/titleFilterChip";
-import { buildWorkYearFilterChip } from "~/components/react/work-year-filter-chip/workYearFilterChip";
+import { buildEditionFilterChip } from "~/components/react/filter-and-sort/facets/edition/editionFilterChip";
+import { buildKindFilterChip } from "~/components/react/filter-and-sort/facets/kind/kindFilterChip";
+import { buildReadingYearFilterChip } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilterChip";
+import { buildTitleFilterChip } from "~/components/react/filter-and-sort/facets/title/titleFilterChip";
+import { buildTitleYearFilterChip } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilterChip";
 
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
 
 export function buildAppliedFilterChips(
   filterValues: ReadingLogFiltersValues,
-  distinctWorkYears: readonly string[],
+  distinctTitleYears: readonly string[],
   distinctReadingYears: readonly string[],
 ): FilterChip[] {
   return [
     ...buildTitleFilterChip(filterValues.title),
     ...buildKindFilterChip(filterValues.kind),
     ...buildEditionFilterChip(filterValues.edition),
-    ...buildWorkYearFilterChip(filterValues.workYear, distinctWorkYears),
+    ...buildTitleYearFilterChip(filterValues.workYear, distinctTitleYears),
     ...buildReadingYearFilterChip(
       filterValues.readingYear,
       distinctReadingYears,

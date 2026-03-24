@@ -7,18 +7,18 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
-import { clickReviewedStatusFilterOption } from "~/components/react/reviewed-status-filter/ReviewedStatusFilter.testHelper";
+} from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
   fillTitleFilter,
   getTitleFilter,
-} from "~/components/react/work-filters/WorkFilters.testHelper";
-import { editionFacetTests } from "~/facets/edition/editionFacetTests";
-import { kindFacetTests } from "~/facets/kind/kindFacetTests";
-import { readingYearSortFacetTests } from "~/facets/reading-year/readingYearFacetTests";
-import { reviewedStatusFacetTests } from "~/facets/reviewed-status/reviewedStatusFacetTests";
-import { titleFilterFacetTests } from "~/facets/title/titleFacetTests";
-import { workYearFilterFacetTests } from "~/facets/work-year/workYearFacetTests";
+} from "~/components/react/filter-and-sort/facet-groups/TitleFacets.testHelper";
+import { editionFacetTests } from "~/components/react/filter-and-sort/facets/edition/editionFacetTests";
+import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/kindFacetTests";
+import { readingYearSortFacetTests } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFacetTests";
+import { clickReviewedStatusFilterOption } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet.testHelper";
+import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
+import { titleFilterFacetTests } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
+import { titleYearFilterFacetTests } from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";
@@ -79,7 +79,7 @@ const baseProps: ReadingLogProps = {
     "2023",
     "2024",
   ],
-  distinctWorkYears: [
+  distinctTitleYears: [
     "1950",
     "1960",
     "1970",
@@ -181,8 +181,8 @@ describe("ReadingLog", () => {
     getCalendar,
   );
 
-  workYearFilterFacetTests({
-    distinctWorkYears: baseProps.distinctWorkYears,
+  titleYearFilterFacetTests({
+    distinctTitleYears: baseProps.distinctTitleYears,
     getList: getCalendar,
     renderItems: (items) =>
       render(

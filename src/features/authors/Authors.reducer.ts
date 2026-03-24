@@ -1,18 +1,18 @@
-import type { FiltersAction } from "~/facets/filtersReducer";
-import type { NameFilterChangedAction } from "~/facets/name/nameReducer";
-import type { SortAction } from "~/facets/sortReducer";
+import type { FiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+import type { NameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
+import type { SortAction } from "~/components/react/filter-and-sort/facets/sortReducer";
 
-import { composeReducers } from "~/facets/composeReducers";
+import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import {
   createInitialFiltersState,
   filtersLifecycleReducer,
-} from "~/facets/filtersReducer";
-import { nameFacetReducer } from "~/facets/name/nameReducer";
+} from "~/components/react/filter-and-sort/facets/filtersReducer";
+import { nameFacetReducer } from "~/components/react/filter-and-sort/facets/name/nameReducer";
 import {
   createInitialSortState,
   createSortActionCreator,
   sortReducer,
-} from "~/facets/sortReducer";
+} from "~/components/react/filter-and-sort/facets/sortReducer";
 
 export {
   createApplyFiltersAction,
@@ -20,8 +20,8 @@ export {
   createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
-} from "~/facets/filtersReducer";
-export { createNameFilterChangedAction } from "~/facets/name/nameReducer";
+} from "~/components/react/filter-and-sort/facets/filtersReducer";
+export { createNameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";

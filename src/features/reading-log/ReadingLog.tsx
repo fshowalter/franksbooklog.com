@@ -2,9 +2,9 @@ import { useEffect, useReducer, useRef } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
-import { createKindCountMap } from "~/facets/kind/kindFilter";
-import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
+import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
+import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
 import { useFilteredValues } from "~/hooks/useFilteredValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -87,7 +87,7 @@ export type ReadingLogProps = {
   /** Available reading years for filter dropdown options */
   distinctReadingYears: readonly string[];
   /** Available work years for filter dropdown options */
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   /** Initial sort order to apply when page loads */
   initialSort: ReadingLogSort;
   /** Array of reading data for display and filtering */
@@ -103,7 +103,7 @@ export type ReadingLogProps = {
  * @param props.distinctEditions - Available editions for filtering
  * @param props.distinctKinds - Available work kinds for filtering
  * @param props.distinctReadingYears - Available reading years for filtering
- * @param props.distinctWorkYears - Available work years for filtering
+ * @param props.distinctTitleYears - Available work years for filtering
  * @param props.initialSort - Initial sort order for the readings
  * @param props.values - Array of reading data to display
  * @returns Readings page component with calendar view
@@ -112,7 +112,7 @@ export function ReadingLog({
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
-  distinctWorkYears,
+  distinctTitleYears,
   initialSort,
   values,
 }: ReadingLogProps): React.JSX.Element {
@@ -162,7 +162,7 @@ export function ReadingLog({
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
     state.activeFilterValues,
-    distinctWorkYears,
+    distinctTitleYears,
     distinctReadingYears,
   );
 
@@ -178,7 +178,7 @@ export function ReadingLog({
           distinctEditions={distinctEditions}
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
-          distinctWorkYears={distinctWorkYears}
+          distinctTitleYears={distinctTitleYears}
           editionCounts={editionCounts}
           filterValues={state.pendingFilterValues}
           kindCounts={kindCounts}

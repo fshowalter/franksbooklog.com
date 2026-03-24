@@ -1,7 +1,8 @@
-import { CheckboxListField } from "~/components/react/fields/CheckboxListField";
-import { YearField } from "~/components/react/fields/YearField";
-import { ReviewedStatusFilter } from "~/components/react/reviewed-status-filter/ReviewedStatusFilter";
-import { WorkFilters } from "~/components/react/work-filters/WorkFilters";
+import { WorkFilters } from "~/components/react/filter-and-sort/facet-groups/TitleFacets";
+import { EditionFacet } from "~/components/react/filter-and-sort/facets/edition/EditionFacet";
+import { ReviewedStatusFacet } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
+import { TitleFacet } from "~/components/react/filter-and-sort/facets/title/TitleFacet";
+import { YearField } from "~/components/react/filter-and-sort/fields/YearField";
 
 import type {
   ReadingLogAction,
@@ -9,12 +10,10 @@ import type {
 } from "./ReadingLog.reducer";
 
 import {
-  createEditionFilterChangedAction,
   createKindFilterChangedAction,
   createReadingYearFilterChangedAction,
   createReviewedStatusFilterChangedAction,
-  createTitleFilterChangedAction,
-  createWorkYearFilterChangedAction,
+  createTitleYearFilterChangedAction,
 } from "./ReadingLog.reducer";
 
 export function Filters({
@@ -22,7 +21,7 @@ export function Filters({
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
-  distinctWorkYears,
+  distinctTitleYears,
   editionCounts,
   filterValues,
   kindCounts,
@@ -32,7 +31,7 @@ export function Filters({
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   editionCounts?: Map<string, number>;
   filterValues: ReadingLogFiltersValues;
   kindCounts?: Map<string, number>;
@@ -40,6 +39,8 @@ export function Filters({
 }): React.JSX.Element {
   return (
     <>
+      <TitleFacet defaultValue={filterValues.title} dispatch={dispatch} />
+
       <WorkFilters
         kind={{
           counts: kindCounts,
@@ -48,24 +49,20 @@ export function Filters({
           onClear: () => dispatch(createKindFilterChangedAction([])),
           values: distinctKinds,
         }}
-        title={{
-          defaultValue: filterValues.title,
-          onChange: (value) => dispatch(createTitleFilterChangedAction(value)),
-        }}
         workYear={{
           defaultValues: filterValues.workYear,
           onChange: (values) =>
             dispatch(
-              createWorkYearFilterChangedAction(
+              createTitleYearFilterChangedAction(
                 values,
-                distinctWorkYears[0] ?? "",
-                distinctWorkYears.at(-1) ?? "",
+                distinctTitleYears[0] ?? "",
+                distinctTitleYears.at(-1) ?? "",
               ),
             ),
-          values: distinctWorkYears,
+          values: distinctTitleYears,
         }}
       />
-      <ReviewedStatusFilter
+      <ReviewedStatusFacet
         counts={reviewedStatusCounts}
         defaultValues={filterValues.reviewedStatus}
         onChange={(values) =>
@@ -87,20 +84,11 @@ export function Filters({
         }
         years={distinctReadingYears}
       />
-      <CheckboxListField
+      <EditionFacet
         defaultValues={filterValues.edition}
-        label="Edition"
-        onChange={(values) =>
-          dispatch(createEditionFilterChangedAction(values))
-        }
-        onClear={() => dispatch(createEditionFilterChangedAction([]))}
-        options={distinctEditions
-          .filter((e) => e !== "All")
-          .map((e) => ({
-            count: editionCounts?.get(e) ?? 0,
-            label: e,
-            value: e,
-          }))}
+        dispatch={dispatch}
+        distinctEditions={distinctEditions}
+        editionCounts={editionCounts}
       />
     </>
   );

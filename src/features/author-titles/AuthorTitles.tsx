@@ -3,10 +3,10 @@ import { useReducer } from "react";
 import type { CoverImageProps } from "~/assets/covers";
 
 import { PaginatedCoverList } from "~/components/react/cover-list/PaginatedCoverList";
-import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
+import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
+import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
 import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/react/reviewed-work-filters/ReviewedWorkSortOptions";
-import { createKindCountMap } from "~/facets/kind/kindFilter";
-import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -39,7 +39,7 @@ export type AuthorTitlesProps = {
   /** Available review years for filter dropdown options */
   distinctReviewYears: readonly string[];
   /** Available work years for filter dropdown options */
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   /** Initial sort order to apply when page loads */
   initialSort: AuthorTitlesSort;
   /** Array of author's work data for display and filtering */
@@ -94,7 +94,7 @@ export type AuthorTitlesValue = {
  * @param props - Component props
  * @param props.distinctKinds - Available work kinds for filtering
  * @param props.distinctReviewYears - Available review years for filtering
- * @param props.distinctWorkYears - Available work years for filtering
+ * @param props.distinctTitleYears - Available work years for filtering
  * @param props.initialSort - Initial sort order for the list
  * @param props.values - Array of author's work data to display
  * @returns Author page component with filtering and sorting
@@ -102,7 +102,7 @@ export type AuthorTitlesValue = {
 export function AuthorTitles({
   distinctKinds,
   distinctReviewYears,
-  distinctWorkYears,
+  distinctTitleYears,
   initialSort,
   values,
 }: AuthorTitlesProps): React.JSX.Element {
@@ -136,7 +136,7 @@ export function AuthorTitles({
   const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
     state.activeFilterValues,
-    distinctWorkYears,
+    distinctTitleYears,
     distinctReviewYears,
   );
 
@@ -148,7 +148,7 @@ export function AuthorTitles({
           dispatch={dispatch}
           distinctKinds={distinctKinds}
           distinctReviewYears={distinctReviewYears}
-          distinctWorkYears={distinctWorkYears}
+          distinctTitleYears={distinctTitleYears}
           filterValues={state.pendingFilterValues}
           kindCounts={kindCounts}
           reviewedStatusCounts={reviewedStatusCounts}

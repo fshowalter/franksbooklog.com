@@ -10,7 +10,7 @@ import {
   createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
-  createWorkYearFilterChangedAction,
+  createTitleYearFilterChangedAction,
 } from "./Reviews.reducer";
 
 /**
@@ -22,7 +22,7 @@ import {
  * @param props.dispatch - Reducer dispatch function for filter actions
  * @param props.distinctKinds - Available book kinds for filtering
  * @param props.distinctReviewYears - Available review years for filtering
- * @param props.distinctWorkYears - Available work years for filtering
+ * @param props.distinctTitleYears - Available work years for filtering
  * @param props.filterValues - Current filter values
  * @returns Filter controls component
  */
@@ -30,7 +30,7 @@ export function ReviewsFilters({
   dispatch,
   distinctKinds,
   distinctReviewYears,
-  distinctWorkYears,
+  distinctTitleYears,
   filterValues,
   kindCounts,
   reviewedStatusCounts,
@@ -38,7 +38,7 @@ export function ReviewsFilters({
   dispatch: React.Dispatch<ReviewsAction>;
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   filterValues: ReviewsFiltersValues;
   kindCounts?: Map<string, number>;
   reviewedStatusCounts?: Map<string, number>;
@@ -86,13 +86,13 @@ export function ReviewsFilters({
         defaultValues: filterValues.workYear,
         onChange: (values) =>
           dispatch(
-            createWorkYearFilterChangedAction(
+            createTitleYearFilterChangedAction(
               values,
-              distinctWorkYears[0] ?? "",
-              distinctWorkYears.at(-1) ?? "",
+              distinctTitleYears[0] ?? "",
+              distinctTitleYears.at(-1) ?? "",
             ),
           ),
-        values: distinctWorkYears,
+        values: distinctTitleYears,
       }}
     />
   );

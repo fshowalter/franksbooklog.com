@@ -1,10 +1,10 @@
-import { createEditionFilter } from "~/facets/edition/editionFilter";
-import { filterSortedValues } from "~/facets/filterSortedValues";
-import { createKindFilter } from "~/facets/kind/kindFilter";
-import { createReadingYearFilter } from "~/facets/reading-year/readingYearFilter";
-import { createReviewedStatusFilter } from "~/facets/reviewed-status/reviewedStatusFilter";
-import { createTitleFilter } from "~/facets/title/titleFilter";
-import { createWorkYearFilter } from "~/facets/work-year/workYearFilter";
+import { createEditionFilter } from "~/components/react/filter-and-sort/facets/edition/editionFilter";
+import { filterSortedValues } from "~/components/react/filter-and-sort/facets/filterSortedValues";
+import { createKindFilter } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
+import { createReadingYearFilter } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFilter";
+import { createReviewedStatusFilter } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
+import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
+import { createTitleYearFilter } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilter";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
@@ -26,7 +26,7 @@ export function filterReadingLog(
     createReadingYearFilter(filterValues.readingYear),
     createReviewedStatusFilter(filterValues.reviewedStatus),
     createTitleFilter(filterValues.title),
-    createWorkYearFilter(filterValues.workYear),
+    createTitleYearFilter(filterValues.workYear),
   ].filter((filterFn) => filterFn !== undefined);
 
   return filterSortedValues({ filters, sortedValues });

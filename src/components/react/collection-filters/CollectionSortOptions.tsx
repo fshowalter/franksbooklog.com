@@ -1,4 +1,4 @@
-import type { SortOption } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
+import type { SortOption } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 
 /**
  * Sort options for collection views (authors, etc.).

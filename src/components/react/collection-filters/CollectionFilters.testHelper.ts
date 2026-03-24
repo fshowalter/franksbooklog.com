@@ -2,7 +2,7 @@ import type { UserEvent } from "@testing-library/user-event";
 
 import { screen } from "@testing-library/react";
 
-import { fillTextField } from "~/components/react/fields/TextField.testHelper";
+import { fillTextField } from "~/components/react/filter-and-sort/fields/TextField.testHelper";
 
 /**
  * Test helper function to fill the name filter field.

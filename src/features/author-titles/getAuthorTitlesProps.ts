@@ -13,13 +13,13 @@ export async function getAuthorTitlesProps(
 ): Promise<AuthorTitlesProps> {
   const distinctKinds = new Set<string>();
   const distinctReviewYears = new Set<string>();
-  const distinctWorkYears = new Set<string>();
+  const distinctTitleYears = new Set<string>();
 
   const values = await Promise.all(
     reviewedWorks.map(async (reviewedWork) => {
       distinctKinds.add(reviewedWork.kind);
       distinctReviewYears.add(reviewedWork.reviewDate.getFullYear().toString());
-      distinctWorkYears.add(reviewedWork.workYear);
+      distinctTitleYears.add(reviewedWork.workYear);
 
       const value: AuthorTitlesValue = {
         abandoned: reviewedWork.grade === "Abandoned",
@@ -51,7 +51,7 @@ export async function getAuthorTitlesProps(
   return {
     distinctKinds: [...distinctKinds].toSorted(),
     distinctReviewYears: [...distinctReviewYears].toSorted(),
-    distinctWorkYears: [...distinctWorkYears].toSorted(),
+    distinctTitleYears: [...distinctTitleYears].toSorted(),
     initialSort: "title-asc",
     values,
   };

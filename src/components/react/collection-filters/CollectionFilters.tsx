@@ -1,4 +1,4 @@
-import { TextField } from "~/components/react/fields/TextField";
+import { TextField } from "~/components/react/filter-and-sort/fields/TextField";
 
 /**
  * Renders filter controls for collection listings (authors, genres, etc.).
