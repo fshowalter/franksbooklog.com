@@ -46,8 +46,7 @@ export function showMoreReducer<TState extends ShowMoreState>(
   action: { type: string },
 ): TState {
   switch (action.type) {
-    case "filters/applied":
-    case "filters/removeAppliedFilter": {
+    case "filters/applied": {
       return { ...state, showCount: SHOW_COUNT_INCREMENT };
     }
     case "showMore/showMore": {
