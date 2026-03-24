@@ -733,7 +733,10 @@ describe("selectedMonthDateReducer", () => {
   it("sets selectedMonthDate on readingLog/previousMonthClicked", ({
     expect,
   }) => {
-    const action = { type: "readingLog/previousMonthClicked", value: "2023-12" };
+    const action = {
+      type: "readingLog/previousMonthClicked",
+      value: "2023-12",
+    };
     const result = selectedMonthDateReducer(withDate, action);
     expect(result.selectedMonthDate).toBe("2023-12");
   });
