@@ -1,6 +1,6 @@
-import type { CollectionSort } from "~/sorters/createCollectionSorter";
+import type { CollectionSort } from "~/features/authors/createCollectionSorter";
 
-import { createCollectionSorter } from "~/sorters/createCollectionSorter";
+import { createCollectionSorter } from "~/features/authors/createCollectionSorter";
 
 import type { AuthorsValue } from "./Authors";
 

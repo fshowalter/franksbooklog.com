@@ -1,4 +1,4 @@
-import { ReviewedWorkFilters } from "~/components/filter-and-sort/ReviewedWorkFilters";
+import { ReviewedWorkFilters } from "~/components/reviewed-work-filters/ReviewedWorkFilters";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
 import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
@@ -6,6 +6,7 @@ import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 import {
   createGradeFilterChangedAction,
   createKindFilterChangedAction,
+  createRemoveAppliedFilterAction,
   createReviewedStatusFilterChangedAction,
   createReviewYearFilterChangedAction,
   createTitleFilterChangedAction,
@@ -67,14 +68,14 @@ export function ReviewsFilters({
       reviewYear={{
         defaultValues: filterValues.reviewYear,
         onChange: (values) =>
-          dispatch(createReviewYearFilterChangedAction(values)),
-        onClear: () =>
           dispatch(
-            createReviewYearFilterChangedAction([
+            createReviewYearFilterChangedAction(
+              values,
               distinctReviewYears[0] ?? "",
               distinctReviewYears.at(-1) ?? "",
-            ]),
+            ),
           ),
+        onClear: () => dispatch(createRemoveAppliedFilterAction("reviewYear")),
         values: distinctReviewYears,
       }}
       title={{
@@ -84,7 +85,13 @@ export function ReviewsFilters({
       workYear={{
         defaultValues: filterValues.workYear,
         onChange: (values) =>
-          dispatch(createWorkYearFilterChangedAction(values)),
+          dispatch(
+            createWorkYearFilterChangedAction(
+              values,
+              distinctWorkYears[0] ?? "",
+              distinctWorkYears.at(-1) ?? "",
+            ),
+          ),
         values: distinctWorkYears,
       }}
     />

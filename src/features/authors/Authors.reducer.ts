@@ -1,30 +1,27 @@
-import type { SortAction, SortState } from "~/reducers/sortReducer";
+import type { FiltersAction } from "~/facets/filtersReducer";
+import type { NameFilterChangedAction } from "~/facets/name/nameReducer";
+import type { SortAction } from "~/facets/sortReducer";
 
+import { composeReducers } from "~/facets/composeReducers";
+import {
+  createInitialFiltersState,
+  filtersLifecycleReducer,
+} from "~/facets/filtersReducer";
+import { nameFacetReducer } from "~/facets/name/nameReducer";
 import {
   createInitialSortState,
   createSortActionCreator,
   sortReducer,
-} from "~/reducers/sortReducer";
+} from "~/facets/sortReducer";
 
 export {
   createApplyFiltersAction,
   createClearFiltersAction,
-  createNameFilterChangedAction,
   createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
-} from "~/reducers/collectionFiltersReducer";
-
-import type {
-  CollectionFiltersAction,
-  CollectionFiltersState,
-  CollectionFiltersValues,
-} from "~/reducers/collectionFiltersReducer";
-
-import {
-  collectionFiltersReducer,
-  createInitialCollectionFiltersState,
-} from "~/reducers/collectionFiltersReducer";
+} from "~/facets/filtersReducer";
+export { createNameFilterChangedAction } from "~/facets/name/nameReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";
@@ -32,24 +29,33 @@ import type { AuthorsSort } from "./sortAuthors";
 /**
  * Union type of all collection-specific filter and sort actions
  */
-export type AuthorsAction = CollectionFiltersAction | SortAction<AuthorsSort>;
+export type AuthorsAction =
+  | FiltersAction
+  | NameFilterChangedAction
+  | SortAction<AuthorsSort>;
 
 /**
- * Type definition for Collections filter values
+ * Filter values for the Authors page.
  */
-export type AuthorsFiltersValues = CollectionFiltersValues;
+export type AuthorsFiltersValues = {
+  name?: string;
+};
 
 /**
- * Internal state type for Collections reducer
+ * Internal state type for Authors reducer
  */
-type AuthorsState = Omit<
-  CollectionFiltersState<AuthorsValue>,
-  "activeFilterValues" | "pendingFilterValues"
-> &
-  SortState<AuthorsSort> & {
-    activeFilterValues: AuthorsFiltersValues;
-    pendingFilterValues: AuthorsFiltersValues;
-  };
+type AuthorsState = {
+  activeFilterValues: AuthorsFiltersValues;
+  pendingFilterValues: AuthorsFiltersValues;
+  sort: AuthorsSort;
+  values: AuthorsValue[];
+};
+
+const authorsReducer = composeReducers<AuthorsState>(
+  filtersLifecycleReducer,
+  nameFacetReducer,
+  sortReducer,
+);
 
 export function createInitialState({
   initialSort,
@@ -58,33 +64,24 @@ export function createInitialState({
   initialSort: AuthorsSort;
   values: AuthorsValue[];
 }): AuthorsState {
-  const sortState = createInitialSortState({ initialSort });
-  const collectionFiltersState = createInitialCollectionFiltersState({
-    values,
-  });
-
   return {
-    ...collectionFiltersState,
-    ...sortState,
+    ...createInitialFiltersState({ values }),
+    ...createInitialSortState({ initialSort }),
   };
 }
 
 /**
- * Reducer function for managing Collections state.
- * Handles filtering and sorting actions for the collections list.
+ * Reducer function for managing Authors state.
+ * Handles filtering and sorting actions for the authors list.
  */
-export function reducer(state: AuthorsState, action: AuthorsAction) {
-  switch (action.type) {
-    case "sort/sort": {
-      return sortReducer(state, action);
-    }
-    default: {
-      return collectionFiltersReducer(state, action);
-    }
-  }
+export function reducer(
+  state: AuthorsState,
+  action: AuthorsAction,
+): AuthorsState {
+  return authorsReducer(state, action);
 }
 
 /**
- * Action creator for sort actions specific to Collections.
+ * Action creator for sort actions specific to Authors.
  */
 export const createSortAction = createSortActionCreator<AuthorsSort>();

@@ -1,10 +1,11 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import {
-  buildMultiSelectChips,
-  buildSearchChip,
-  buildYearRangeChip,
-} from "~/components/filter-and-sort/filterChipBuilders";
+import { buildEditionFilterChip } from "~/components/edition-filter-chip/editionFilterChip";
+import { buildKindFilterChip } from "~/components/kind-filter-chip/kindFilterChip";
+import { buildReadingYearFilterChip } from "~/components/reading-year-filter-chip/readingYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/components/reviewed-status-filter-chip/reviewedStatusFilterChip";
+import { buildTitleFilterChip } from "~/components/title-filter-chip/titleFilterChip";
+import { buildWorkYearFilterChip } from "~/components/work-year-filter-chip/workYearFilterChip";
 
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
 
@@ -14,25 +15,14 @@ export function buildAppliedFilterChips(
   distinctReadingYears: readonly string[],
 ): FilterChip[] {
   return [
-    ...buildSearchChip(filterValues.title, "title"),
-    ...buildMultiSelectChips(filterValues.kind, "Kind", "kind"),
-    ...buildMultiSelectChips(filterValues.edition, "Edition", "edition"),
-    ...buildYearRangeChip(
-      filterValues.workYear,
-      distinctWorkYears,
-      "Work Year",
-      "workYear",
-    ),
-    ...buildYearRangeChip(
+    ...buildTitleFilterChip(filterValues.title),
+    ...buildKindFilterChip(filterValues.kind),
+    ...buildEditionFilterChip(filterValues.edition),
+    ...buildWorkYearFilterChip(filterValues.workYear, distinctWorkYears),
+    ...buildReadingYearFilterChip(
       filterValues.readingYear,
       distinctReadingYears,
-      "Reading Year",
-      "readingYear",
     ),
-    ...buildMultiSelectChips(
-      filterValues.reviewedStatus,
-      "Status",
-      "reviewedStatus",
-    ),
+    ...buildReviewedStatusFilterChip(filterValues.reviewedStatus),
   ];
 }

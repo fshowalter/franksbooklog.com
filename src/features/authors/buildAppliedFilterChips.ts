@@ -1,11 +1,11 @@
-import type { FilterChip } from "~/components/filter-and-sort/AppliedFilters";
+import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
-import { buildSearchChip } from "~/components/filter-and-sort/filterChipBuilders";
+import { buildNameFilterChip } from "~/components/name-filter-chip/nameFilterChip";
 
 import type { AuthorsFiltersValues } from "./Authors.reducer";
 
 export function buildAppliedFilterChips(
   filterValues: AuthorsFiltersValues,
 ): FilterChip[] {
-  return [...buildSearchChip(filterValues.name, "name")];
+  return [...buildNameFilterChip(filterValues.name)];
 }

@@ -1,7 +1,7 @@
 import { CheckboxListField } from "~/components/fields/CheckboxListField";
 import { YearField } from "~/components/fields/YearField";
-import { ReviewedStatusFilter } from "~/components/filter-and-sort/ReviewedStatusFilter";
-import { WorkFilters } from "~/components/filter-and-sort/WorkFilters";
+import { ReviewedStatusFilter } from "~/components/reviewed-status-filter/ReviewedStatusFilter";
+import { WorkFilters } from "~/components/work-filters/WorkFilters";
 
 import type {
   ReadingLogAction,
@@ -55,7 +55,13 @@ export function Filters({
         workYear={{
           defaultValues: filterValues.workYear,
           onChange: (values) =>
-            dispatch(createWorkYearFilterChangedAction(values)),
+            dispatch(
+              createWorkYearFilterChangedAction(
+                values,
+                distinctWorkYears[0] ?? "",
+                distinctWorkYears.at(-1) ?? "",
+              ),
+            ),
           values: distinctWorkYears,
         }}
       />
@@ -71,7 +77,13 @@ export function Filters({
         defaultValues={filterValues.readingYear}
         label="Reading Year"
         onYearChange={(values) =>
-          dispatch(createReadingYearFilterChangedAction(values))
+          dispatch(
+            createReadingYearFilterChangedAction(
+              values,
+              distinctReadingYears[0] ?? "",
+              distinctReadingYears.at(-1) ?? "",
+            ),
+          )
         }
         years={distinctReadingYears}
       />

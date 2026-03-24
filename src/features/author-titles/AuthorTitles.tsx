@@ -3,10 +3,10 @@ import { useReducer } from "react";
 import type { CoverImageProps } from "~/assets/covers";
 
 import { PaginatedCoverList } from "~/components/cover-list/PaginatedCoverList";
-import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
-import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/filter-and-sort/ReviewedWorkSortOptions";
-import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
-import { createKindCountMap } from "~/filterers/filterTitles";
+import { FilterAndSortContainer } from "~/components/filter-and-sort-container/FilterAndSortContainer";
+import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/reviewed-work-filters/ReviewedWorkSortOptions";
+import { createKindCountMap } from "~/facets/kind/kindFilter";
+import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -173,20 +173,22 @@ export function AuthorTitles({
       }}
       totalCount={totalCount}
     >
-      <PaginatedCoverList
-        onShowMore={() => dispatch(createShowMoreAction())}
-        totalCount={totalCount}
-        values={paginatedValues}
-        visibleCount={state.showCount}
-      >
-        {(value) => (
-          <AuthorWorksListItem
-            key={value.slug}
-            sortValue={state.sort}
-            value={value}
-          />
-        )}
-      </PaginatedCoverList>
+      <div className="tablet:-mx-6 tablet:pt-5">
+        <PaginatedCoverList
+          onShowMore={() => dispatch(createShowMoreAction())}
+          totalCount={totalCount}
+          values={paginatedValues}
+          visibleCount={state.showCount}
+        >
+          {(value) => (
+            <AuthorWorksListItem
+              key={value.slug}
+              sortValue={state.sort}
+              value={value}
+            />
+          )}
+        </PaginatedCoverList>
+      </div>
     </FilterAndSortContainer>
   );
 }

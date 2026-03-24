@@ -1,27 +1,40 @@
-import { render, screen, within } from "@testing-library/react";
+import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import {
-  clickShowMore,
-  getCoverList,
-} from "~/components/cover-list/CoverList.testHelper";
+import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort/FilterAndSortContainer.testHelper";
-import { clickAbandonedFilterOption } from "~/components/filter-and-sort/ReviewedStatusFilter.testHelper";
+} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
-  fillGradeFilter,
-  fillReviewYearFilter,
   fillTitleFilter,
-  fillWorkYearFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/filter-and-sort/ReviewedWorkFilters.testHelper";
+} from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
+import { authorFacetTests } from "~/facets/author/authorFacetTests";
+import {
+  gradeFilterFacetTests,
+  gradeSortFacetTests,
+} from "~/facets/grade/gradeFacetTests";
+import { kindFacetTests } from "~/facets/kind/kindFacetTests";
+import { paginationFacetTests } from "~/facets/pagination/paginationFacetTests";
+import {
+  reviewYearFilterFacetTests,
+  reviewYearSortFacetTests,
+} from "~/facets/review-year/reviewYearFacetTests";
+import { reviewedStatusFacetTests } from "~/facets/reviewed-status/reviewedStatusFacetTests";
+import {
+  titleFilterFacetTests,
+  titleSortFacetTests,
+} from "~/facets/title/titleFacetTests";
+import {
+  workYearFilterFacetTests,
+  workYearSortFacetTests,
+} from "~/facets/work-year/workYearFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
@@ -82,157 +95,132 @@ describe("Reviews", () => {
     vi.useRealTimers();
   });
 
-  describe("filtering", () => {
-    it("filters by title", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { title: "Dracula" },
-        { title: "The Shining" },
-        { title: "Pet Sematary" },
-      ]);
+  titleFilterFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ sortTitle, title }) => ({ sortTitle, title })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
 
-      const user = getUserWithFakeTimers();
+  titleSortFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ sortTitle, title }) => ({ sortTitle, title })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  kindFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ kind, title }) => ({ kind, title })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  gradeFilterFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ grade, gradeValue, title }) => ({
+        grade,
+        gradeValue,
+        title,
+      })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  gradeSortFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ grade, gradeValue, title }) => ({
+        grade,
+        gradeValue,
+        title,
+      })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  workYearFilterFacetTests({
+    distinctWorkYears: baseProps.distinctWorkYears,
+    getList: getCoverList,
+    renderItems: (items) => {
+      const reviews = createReviewsValues(
+        items.map(({ title, workYear }) => ({ title, workYear })),
+      );
       render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Dracula");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("Dracula")).toBeInTheDocument();
-      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
-      expect(within(list).queryByText("Pet Sematary")).not.toBeInTheDocument();
-    });
-
-    it("filters by kind", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { kind: "Novel", title: "A Novel" },
-        { kind: "Collection", title: "A Collection" },
-        { kind: "Non-Fiction", title: "Non-Fiction Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await clickKindFilterOption(user, "Novel");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("A Novel")).toBeInTheDocument();
-      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
-      expect(
-        within(list).queryByText("Non-Fiction Book"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by grade range", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { grade: "F", gradeValue: 3, title: "Bad Book" },
-        { grade: "B", gradeValue: 12, title: "Good Book" },
-        { grade: "A+", gradeValue: 16, title: "Great Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillGradeFilter(user, "B-", "A+");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("Good Book")).toBeInTheDocument();
-      expect(within(list).getByText("Great Book")).toBeInTheDocument();
-      expect(within(list).queryByText("Bad Book")).not.toBeInTheDocument();
-    });
-
-    it("filters by work year range", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { title: "Old Book", workYear: "1980" },
-        { title: "Mid Book", workYear: "1990" },
-        { title: "New Book", workYear: "2000" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillWorkYearFilter(user, "1985", "1995");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("Mid Book")).toBeInTheDocument();
-      expect(within(list).queryByText("Old Book")).not.toBeInTheDocument();
-      expect(within(list).queryByText("New Book")).not.toBeInTheDocument();
-    });
-
-    it("filters by review year", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { reviewYear: "2022", title: "2022 Review" },
-        { reviewYear: "2023", title: "2023 Review" },
-        { reviewYear: "2024", title: "2024 Review" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillReviewYearFilter(user, "2023", "2023");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("2023 Review")).toBeInTheDocument();
-      expect(within(list).queryByText("2022 Review")).not.toBeInTheDocument();
-      expect(within(list).queryByText("2024 Review")).not.toBeInTheDocument();
-    });
-
-    it("filters by multiple kinds (OR logic)", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { kind: "Novel", title: "A Novel" },
-        { kind: "Collection", title: "A Collection" },
-        { kind: "Non-Fiction", title: "Non-Fiction Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await clickKindFilterOption(user, "Novel");
-      await clickKindFilterOption(user, "Collection");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("A Novel")).toBeInTheDocument();
-      expect(within(list).getByText("A Collection")).toBeInTheDocument();
-      expect(
-        within(list).queryByText("Non-Fiction Book"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by abandoned status", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        {
-          abandoned: true,
-          grade: "Abandoned",
-          gradeValue: 0,
-          title: "Abandoned Book",
-        },
-        { title: "Normal Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await clickAbandonedFilterOption(user);
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("Abandoned Book")).toBeInTheDocument();
-      expect(within(list).queryByText("Normal Book")).not.toBeInTheDocument();
-    });
+    },
   });
 
-  describe("multiple authors", () => {
+  workYearSortFacetTests({
+    getList: getCoverList,
+    renderItems: (items) => {
+      const reviews = createReviewsValues(
+        items.map(({ title, workYear }) => ({ title, workYear })),
+      );
+      render(<Reviews {...baseProps} values={reviews} />);
+    },
+  });
+
+  reviewYearFilterFacetTests({
+    distinctReviewYears: baseProps.distinctReviewYears,
+    getList: getCoverList,
+    renderItems: (items) => {
+      const reviews = createReviewsValues(
+        items.map(({ reviewSequence, reviewYear, title }) => ({
+          reviewSequence,
+          reviewYear,
+          title,
+        })),
+      );
+      render(<Reviews {...baseProps} values={reviews} />);
+    },
+  });
+
+  reviewYearSortFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ reviewSequence, reviewYear, title }) => ({
+        reviewSequence,
+        reviewYear,
+        title,
+      })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  reviewedStatusFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ abandoned, grade, gradeValue, title }) => ({
+        abandoned,
+        grade,
+        gradeValue,
+        title,
+      })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  authorFacetTests((items) => {
+    const reviews = createReviewsValues(
+      items.map(({ authors, title }) => ({
+        authors: authors.map((a) => ({
+          name: a.name,
+          notes: a.notes,
+          sortName: a.sortName,
+        })),
+        title,
+      })),
+    );
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  paginationFacetTests(
+    (titles) => {
+      const reviews = createReviewsValues(titles.map((title) => ({ title })));
+      render(<Reviews {...baseProps} values={reviews} />);
+    },
+    async (user) => clickSortOption(user, "Title (A → Z)"),
+    getCoverList,
+  );
+
+  describe("multiple authors display", () => {
     it("displays all authors for works with multiple authors", ({ expect }) => {
       const reviews = createReviewsValues([
         {
@@ -246,407 +234,12 @@ describe("Reviews", () => {
           ],
           title: "Good Omens",
         },
-        {
-          authors: [
-            {
-              name: "Stephen King",
-              notes: undefined,
-              sortName: "King, Stephen",
-            },
-            {
-              name: "Peter Straub",
-              notes: undefined,
-              sortName: "Straub, Peter",
-            },
-          ],
-          title: "The Talisman",
-        },
       ]);
-
       render(<Reviews {...baseProps} values={reviews} />);
 
       const list = getCoverList();
-
-      // Check that all authors are displayed with proper formatting
-      expect(within(list).getByText(/Pratchett, Terry /)).toBeInTheDocument();
+      expect(within(list).getByText(/Pratchett, Terry/)).toBeInTheDocument();
       expect(within(list).getByText(/Gaiman, Neil/)).toBeInTheDocument();
-      expect(within(list).getByText(/King, Stephen/)).toBeInTheDocument();
-      expect(within(list).getByText(/Straub, Peter/)).toBeInTheDocument();
-    });
-
-    it("sorts by first author when multiple authors exist", async ({
-      expect,
-    }) => {
-      const reviews = createReviewsValues([
-        {
-          authors: [
-            {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
-              sortName: "Fitzgerald, Aelda",
-            },
-            {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
-              sortName: "Doyle, Arthur",
-            },
-          ],
-          title: "Book by Zelda and Arthur",
-        },
-        {
-          authors: [
-            {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
-              sortName: "Doyle, Arthur",
-            },
-            {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
-              sortName: "Fitzgerald, Zelda",
-            },
-          ],
-          title: "Book by Arthur and Zelda",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Author (A → Z)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-
-      // The book with Arthur as first author should appear first
-      const arthurFirstIndex = allText.indexOf("Book by Arthur and Zelda");
-      const zeldaFirstIndex = allText.indexOf("Book by Zelda and Arthur");
-
-      expect(arthurFirstIndex).toBeLessThan(zeldaFirstIndex);
-    });
-  });
-
-  describe("sorting", () => {
-    it("sorts by author A to Z", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        {
-          authors: [
-            {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
-              sortName: "Fitzgerald, Zelda",
-            },
-          ],
-          title: "Zombie Book",
-        },
-        {
-          authors: [
-            {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
-              sortName: "Doyle, Arthur Conan",
-            },
-          ],
-          title: "Detective Book",
-        },
-        {
-          authors: [
-            {
-              name: "Mary Shelley",
-              notes: undefined,
-              sortName: "Shelley, Mary",
-            },
-          ],
-          title: "Monster Book",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Author (A → Z)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
-      const shelleyIndex = allText.indexOf("Shelley, Mary");
-      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
-
-      expect(doyleIndex).toBeLessThan(fitzgeraldIndex);
-      expect(fitzgeraldIndex).toBeLessThan(shelleyIndex);
-    });
-
-    it("sorts by author Z to A", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        {
-          authors: [
-            {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
-              sortName: "Doyle, Arthur Conan",
-            },
-          ],
-          title: "Detective Book",
-        },
-        {
-          authors: [
-            {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
-              sortName: "Fitzgerald, Zelda",
-            },
-          ],
-          title: "Zombie Book",
-        },
-        {
-          authors: [
-            {
-              name: "Mary Shelley",
-              notes: undefined,
-              sortName: "Shelley, Mary",
-            },
-          ],
-          title: "Monster Book",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Author (Z → A)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
-      const shelleyIndex = allText.indexOf("Shelley, Mary");
-      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
-
-      expect(shelleyIndex).toBeLessThan(fitzgeraldIndex);
-      expect(fitzgeraldIndex).toBeLessThan(doyleIndex);
-    });
-
-    it("sorts by title A to Z", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { sortTitle: "zebra", title: "Zebra Book" },
-        { sortTitle: "alpha", title: "Alpha Book" },
-        { sortTitle: "middle", title: "Middle Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Title (A → Z)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const alphaIndex = allText.indexOf("Alpha Book");
-      const middleIndex = allText.indexOf("Middle Book");
-      const zebraIndex = allText.indexOf("Zebra Book");
-
-      expect(alphaIndex).toBeLessThan(middleIndex);
-      expect(middleIndex).toBeLessThan(zebraIndex);
-    });
-
-    it("sorts by title Z to A", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { sortTitle: "alpha", title: "Alpha Book" },
-        { sortTitle: "zebra", title: "Zebra Book" },
-        { sortTitle: "middle", title: "Middle Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Title (Z → A)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const alphaIndex = allText.indexOf("Alpha Book");
-      const middleIndex = allText.indexOf("Middle Book");
-      const zebraIndex = allText.indexOf("Zebra Book");
-
-      expect(zebraIndex).toBeLessThan(middleIndex);
-      expect(middleIndex).toBeLessThan(alphaIndex);
-    });
-
-    it("sorts by work year oldest first", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        {
-          title: "Modern Book",
-          workYear: "2000",
-        },
-        {
-          title: "Classic Book",
-          workYear: "1980",
-        },
-        {
-          title: "Mid Book",
-          workYear: "1990",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Work Year (Oldest First)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-
-      const classicIndex = allText.indexOf("Classic Book");
-      const midIndex = allText.indexOf("Mid Book");
-      const modernIndex = allText.indexOf("Modern Book");
-
-      expect(classicIndex).toBeLessThan(midIndex);
-      expect(midIndex).toBeLessThan(modernIndex);
-    });
-
-    it("sorts by work year newest first", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        {
-          title: "Classic Book",
-          workYear: "1980",
-        },
-        {
-          title: "Modern Book",
-          workYear: "2000",
-        },
-        {
-          title: "Mid Book",
-          workYear: "1990",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Work Year (Newest First)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-
-      const classicIndex = allText.indexOf("Classic Book");
-      const midIndex = allText.indexOf("Mid Book");
-      const modernIndex = allText.indexOf("Modern Book");
-
-      expect(modernIndex).toBeLessThan(midIndex);
-      expect(midIndex).toBeLessThan(classicIndex);
-    });
-
-    it("sorts by grade best first", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { grade: "C", gradeValue: 6, title: "Okay Book" },
-        { grade: "A+", gradeValue: 13, title: "Great Book" },
-        { grade: "F", gradeValue: 1, title: "Bad Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Grade (Best First)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const greatIndex = allText.indexOf("Great Book");
-      const okayIndex = allText.indexOf("Okay Book");
-      const badIndex = allText.indexOf("Bad Book");
-
-      expect(greatIndex).toBeLessThan(okayIndex);
-      expect(okayIndex).toBeLessThan(badIndex);
-    });
-
-    it("sorts by grade worst first", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { grade: "A+", gradeValue: 13, title: "Great Book" },
-        { grade: "F", gradeValue: 1, title: "Bad Book" },
-        { grade: "C", gradeValue: 6, title: "Okay Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Grade (Worst First)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const greatIndex = allText.indexOf("Great Book");
-      const okayIndex = allText.indexOf("Okay Book");
-      const badIndex = allText.indexOf("Bad Book");
-
-      expect(badIndex).toBeLessThan(okayIndex);
-      expect(okayIndex).toBeLessThan(greatIndex);
-    });
-
-    it("sorts by review date newest first", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { reviewSequence: "3", title: "New Review" },
-        { reviewSequence: "1", title: "Old Review" },
-        { reviewSequence: "2", title: "Mid Review" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Review Date (Newest First)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const newIndex = allText.indexOf("New Review");
-      const midIndex = allText.indexOf("Mid Review");
-      const oldIndex = allText.indexOf("Old Review");
-
-      expect(newIndex).toBeLessThan(midIndex);
-      expect(midIndex).toBeLessThan(oldIndex);
-    });
-
-    it("sorts by review date oldest first", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { reviewSequence: "3", title: "New Review" },
-        { reviewSequence: "1", title: "Old Review" },
-        { reviewSequence: "2", title: "Mid Review" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickSortOption(user, "Review Date (Oldest First)");
-
-      const list = getCoverList();
-      const allText = list.textContent || "";
-      const newIndex = allText.indexOf("New Review");
-      const midIndex = allText.indexOf("Mid Review");
-      const oldIndex = allText.indexOf("Old Review");
-
-      expect(oldIndex).toBeLessThan(midIndex);
-      expect(midIndex).toBeLessThan(newIndex);
-    });
-  });
-
-  describe("pagination", () => {
-    it("shows more items when button is clicked", async ({ expect }) => {
-      // Create many test items to trigger pagination (need more than 100)
-      const manyReviews = createReviewsValues(
-        Array.from({ length: 150 }, (_, i) => {
-          return { title: `Book ${i + 1}` };
-        }),
-      );
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={manyReviews} />);
-
-      const list = getCoverList();
-
-      // Initially should show first 100 items
-      expect(within(list).getByText("Book 1")).toBeInTheDocument();
-      expect(within(list).getByText("Book 100")).toBeInTheDocument();
-      expect(within(list).queryByText("Book 101")).not.toBeInTheDocument();
-
-      // Click Show More to load more items
-      await clickShowMore(user);
-
-      // Now should show more items
-      expect(within(list).getByText("Book 101")).toBeInTheDocument();
-      expect(within(list).getByText("Book 150")).toBeInTheDocument();
     });
   });
 
@@ -712,86 +305,6 @@ describe("Reviews", () => {
 
       await clickToggleFilters(user);
       expect(getTitleFilter()).toHaveValue("Dracula");
-    });
-  });
-
-  describe("applied filters", () => {
-    it("shows kind chip in drawer after applying kind filter", async ({
-      expect,
-    }) => {
-      const reviews = createReviewsValues([
-        { kind: "Novel", title: "A Novel" },
-        { kind: "Collection", title: "A Collection" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await clickKindFilterOption(user, "Novel");
-      await clickViewResults(user);
-
-      await clickToggleFilters(user);
-      expect(
-        screen.getByRole("button", { name: "Remove Novel filter" }),
-      ).toBeInTheDocument();
-    });
-
-    it("removing kind chip immediately hides chip but defers list update until View Results", async ({
-      expect,
-    }) => {
-      const reviews = createReviewsValues([
-        { kind: "Novel", title: "A Novel" },
-        { kind: "Collection", title: "A Collection" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await clickKindFilterOption(user, "Novel");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await user.click(
-        screen.getByRole("button", { name: "Remove Novel filter" }),
-      );
-
-      // Chip is gone immediately from the Applied Filters section
-      expect(
-        screen.queryByRole("button", { name: "Remove Novel filter" }),
-      ).not.toBeInTheDocument();
-      // But the list is not yet updated — "View Results" hasn't been clicked
-      expect(within(list).queryByText("A Collection")).not.toBeInTheDocument();
-
-      await clickViewResults(user);
-
-      // Now the list updates
-      expect(within(list).getByText("A Collection")).toBeInTheDocument();
-    });
-
-    it("shows search chip in drawer after applying title filter", async ({
-      expect,
-    }) => {
-      const reviews = createReviewsValues([
-        { title: "Dracula" },
-        { title: "The Shining" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Dracula");
-      await clickViewResults(user);
-
-      await clickToggleFilters(user);
-      expect(
-        screen.getByRole("button", { name: "Remove Search: Dracula filter" }),
-      ).toBeInTheDocument();
     });
   });
 });

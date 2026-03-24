@@ -71,7 +71,12 @@ npm run sync         # Sync content from backend system
 
 - Reusable UI components organized by functionality:
   - `/fields/` - Form inputs (SelectField, TextField, YearField, etc.)
-  - `/filter-and-sort/` - Filtering and sorting logic with reducers
+  - `/applied-filters/` - `AppliedFilters` component (exports `FilterChip` type too)
+  - `/collection-filters/` - `CollectionFilters` component + `CollectionSortOptions` constant + test helper
+  - `/filter-and-sort-container/` - `FilterAndSortContainer` component + header/section privates + test helper
+  - `/reviewed-status-filter/` - `ReviewedStatusFilter` component + test helper
+  - `/reviewed-work-filters/` - `ReviewedWorkFilters` component + `ReviewedWorkSortOptions` constant + test helper
+  - `/work-filters/` - `WorkFilters` component + test helper
   - `/layout/` - Layout components (Header, Footer, Navigation)
   - `/cover-list/`, `/avatar-list/` - Content display components
   - Other shared utilities (Grade, Cover, Avatar, etc.)

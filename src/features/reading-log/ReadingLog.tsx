@@ -2,9 +2,9 @@ import { useEffect, useReducer, useRef } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { FilterAndSortContainer } from "~/components/filter-and-sort/FilterAndSortContainer";
-import { createReviewedStatusCountMap } from "~/filterers/createReviewedStatusFilter";
-import { createKindCountMap } from "~/filterers/filterTitles";
+import { FilterAndSortContainer } from "~/components/filter-and-sort-container/FilterAndSortContainer";
+import { createKindCountMap } from "~/facets/kind/kindFilter";
+import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { useFilteredValues } from "~/hooks/useFilteredValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 

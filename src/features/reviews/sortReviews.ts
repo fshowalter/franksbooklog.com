@@ -1,23 +1,35 @@
-import type { ReviewedTitleSort } from "~/sorters/createReviewedTitleSorter";
-
-import { createReviewedTitleSorter } from "~/sorters/createReviewedTitleSorter";
-import { sortString } from "~/sorters/createSorter";
+import { authorSortComparators } from "~/facets/author/authorSort";
+import { createSorter } from "~/facets/createSorter";
+import { gradeSortComparators } from "~/facets/grade/gradeSort";
+import { reviewYearSortComparators } from "~/facets/review-year/reviewYearSort";
+import { titleSortComparators } from "~/facets/title/titleSort";
+import { workYearSortComparators } from "~/facets/work-year/workYearSort";
 
 import type { ReviewsValue } from "./Reviews";
 
 /**
  * Sort type for reviews.
  */
-export type ReviewsSort = "author-asc" | "author-desc" | ReviewedTitleSort;
+export type ReviewsSort =
+  | "author-asc"
+  | "author-desc"
+  | "grade-asc"
+  | "grade-desc"
+  | "review-date-asc"
+  | "review-date-desc"
+  | "title-asc"
+  | "title-desc"
+  | "work-year-asc"
+  | "work-year-desc";
 
 /**
- * Sorter function for reviews, supporting title, grade, review date, and release date sorting.
+ * Sorter function for reviews, supporting author, grade, review date, title,
+ * and work year sorting.
  */
-export const sortReviews = createReviewedTitleSorter<ReviewsValue, ReviewsSort>(
-  {
-    "author-asc": (a, b) =>
-      sortString(a.authors[0].sortName, b.authors[0].sortName),
-    "author-desc": (a, b) =>
-      sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
-  },
-);
+export const sortReviews = createSorter<ReviewsValue, ReviewsSort>({
+  ...authorSortComparators,
+  ...gradeSortComparators,
+  ...reviewYearSortComparators,
+  ...titleSortComparators,
+  ...workYearSortComparators,
+});

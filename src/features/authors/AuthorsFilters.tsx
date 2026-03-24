@@ -1,4 +1,4 @@
-import { CollectionFilters } from "~/components/filter-and-sort/CollectionFilters";
+import { CollectionFilters } from "~/components/collection-filters/CollectionFilters";
 
 import type { AuthorsAction, AuthorsFiltersValues } from "./Authors.reducer";
 

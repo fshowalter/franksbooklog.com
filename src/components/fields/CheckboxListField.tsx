@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import { FilterSection } from "~/components/filter-and-sort/FilterSection";
+import { FilterSection } from "~/components/filter-and-sort-container/FilterSection";
 
 import { LabelText } from "./LabelText";
 

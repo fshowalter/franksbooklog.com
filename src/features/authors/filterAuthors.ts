@@ -1,17 +1,21 @@
-import { filterCollections } from "~/filterers/filterCollections";
+import { filterSortedValues } from "~/facets/filterSortedValues";
+import { createNameFilter } from "~/facets/name/nameFilter";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsFiltersValues } from "./Authors.reducer";
 
 /**
- * Filters cast and crew members based on credited role and name.
- * @param sortedValues - Array of cast/crew members to filter
- * @param filterValues - Object containing filter values including creditedAs and name
- * @returns Filtered array of cast/crew members
+ * Filters authors based on name.
+ * @param sortedValues - Array of authors to filter
+ * @param filterValues - Object containing filter values including name
+ * @returns Filtered array of authors
  */
 export function filterAuthors(
   sortedValues: AuthorsValue[],
   filterValues: AuthorsFiltersValues,
 ) {
-  return filterCollections(filterValues, sortedValues, []);
+  const filters = [createNameFilter(filterValues.name)].filter(
+    (f) => f !== undefined,
+  );
+  return filterSortedValues({ filters, sortedValues });
 }
