@@ -1,7 +1,8 @@
-import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
-import { READING_YEAR_CHIP_ID } from "./readingYearFilterChip";
+import { READING_YEAR_CHIP_ID } from "./readingYearChipId";
 
 export type ReadingYearFilterChangedAction = {
   availableMax: string;

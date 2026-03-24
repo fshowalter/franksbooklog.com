@@ -2,7 +2,7 @@ import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { buildMultiSelectChips } from "~/components/filter-and-sort-container/filterChipBuilders";
 
-export const REVIEWED_STATUS_CHIP_ID_PREFIX = "reviewedStatus" as const;
+import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusChipId";
 
 export function buildReviewedStatusFilterChip(
   reviewedStatus: readonly string[] | undefined,

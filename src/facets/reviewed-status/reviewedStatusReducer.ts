@@ -1,8 +1,9 @@
-import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+
 import { omitPendingKey } from "~/facets/omitPendingKey";
 import { toChipSlug } from "~/facets/toChipSlug";
 
-import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusFilterChip";
+import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusChipId";
 
 export type ReviewedStatusFilterChangedAction = {
   type: "reviewedStatus/changed";
@@ -29,11 +30,11 @@ export function reviewedStatusFacetReducer<
     case "filters/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (!id.startsWith(`${REVIEWED_STATUS_CHIP_ID_PREFIX}-`)) return state;
-      const statusToRemove = id.slice(`${REVIEWED_STATUS_CHIP_ID_PREFIX}-`.length);
-      const current = state.pendingFilterValues.reviewedStatus ?? [];
-      const updated = current.filter(
-        (s) => toChipSlug(s) !== statusToRemove,
+      const statusToRemove = id.slice(
+        `${REVIEWED_STATUS_CHIP_ID_PREFIX}-`.length,
       );
+      const current = state.pendingFilterValues.reviewedStatus ?? [];
+      const updated = current.filter((s) => toChipSlug(s) !== statusToRemove);
       if (updated.length === 0) {
         return {
           ...state,

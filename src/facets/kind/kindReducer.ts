@@ -1,8 +1,9 @@
-import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+
 import { omitPendingKey } from "~/facets/omitPendingKey";
 import { toChipSlug } from "~/facets/toChipSlug";
 
-import { KIND_CHIP_ID_PREFIX } from "./kindFilterChip";
+import { KIND_CHIP_ID_PREFIX } from "./kindChipId";
 
 export type KindFilterChangedAction = {
   type: "kind/changed";
@@ -29,9 +30,7 @@ export function kindFacetReducer<
       if (!id.startsWith(`${KIND_CHIP_ID_PREFIX}-`)) return state;
       const kindToRemove = id.slice(`${KIND_CHIP_ID_PREFIX}-`.length);
       const current = state.pendingFilterValues.kind ?? [];
-      const updated = current.filter(
-        (k) => toChipSlug(k) !== kindToRemove,
-      );
+      const updated = current.filter((k) => toChipSlug(k) !== kindToRemove);
       if (updated.length === 0) {
         return {
           ...state,

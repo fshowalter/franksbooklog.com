@@ -1,8 +1,9 @@
-import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+
 import { omitPendingKey } from "~/facets/omitPendingKey";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
-import { GRADE_CHIP_ID } from "./gradeFilterChip";
+import { GRADE_CHIP_ID } from "./gradeChipId";
 
 export type GradeFilterChangedAction = {
   type: "grade/changed";

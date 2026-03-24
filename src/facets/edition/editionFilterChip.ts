@@ -2,7 +2,7 @@ import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { buildMultiSelectChips } from "~/components/filter-and-sort-container/filterChipBuilders";
 
-export const EDITION_CHIP_ID_PREFIX = "edition" as const;
+import { EDITION_CHIP_ID_PREFIX } from "./editionChipId";
 
 export function buildEditionFilterChip(
   edition: readonly string[] | undefined,

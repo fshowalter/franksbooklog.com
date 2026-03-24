@@ -2,7 +2,7 @@ import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
-export const GRADE_CHIP_ID = "gradeValue" as const;
+import { GRADE_CHIP_ID } from "./gradeChipId";
 
 /**
  * Builds a grade-range chip for the grade slider filter (scale 2–16).

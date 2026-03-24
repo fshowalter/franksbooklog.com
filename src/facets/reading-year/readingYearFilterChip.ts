@@ -2,7 +2,7 @@ import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
 
 import { buildYearRangeChip } from "~/components/filter-and-sort-container/filterChipBuilders";
 
-export const READING_YEAR_CHIP_ID = "readingYear" as const;
+import { READING_YEAR_CHIP_ID } from "./readingYearChipId";
 
 export function buildReadingYearFilterChip(
   value: readonly [string, string] | undefined,

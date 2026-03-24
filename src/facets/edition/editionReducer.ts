@@ -1,8 +1,9 @@
-import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+
 import { omitPendingKey } from "~/facets/omitPendingKey";
 import { toChipSlug } from "~/facets/toChipSlug";
 
-import { EDITION_CHIP_ID_PREFIX } from "./editionFilterChip";
+import { EDITION_CHIP_ID_PREFIX } from "./editionChipId";
 
 export type EditionFilterChangedAction = {
   type: "edition/changed";
@@ -48,9 +49,7 @@ export function editionFacetReducer<
       if (!id.startsWith(`${EDITION_CHIP_ID_PREFIX}-`)) return state;
       const editionToRemove = id.slice(`${EDITION_CHIP_ID_PREFIX}-`.length);
       const current = state.pendingFilterValues.edition ?? [];
-      const updated = current.filter(
-        (e) => toChipSlug(e) !== editionToRemove,
-      );
+      const updated = current.filter((e) => toChipSlug(e) !== editionToRemove);
       if (updated.length === 0) {
         return {
           ...state,

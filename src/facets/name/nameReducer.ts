@@ -1,7 +1,8 @@
-import { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/facets/filtersReducer";
+
 import { omitPendingKey } from "~/facets/omitPendingKey";
 
-import { NAME_CHIP_ID } from "./nameFilterChip";
+import { NAME_CHIP_ID } from "./nameChipId";
 
 export type NameFilterChangedAction = {
   type: "name/changed";
@@ -28,7 +29,10 @@ export function nameFacetReducer<
       if (id !== NAME_CHIP_ID) return state;
       return {
         ...state,
-        pendingFilterValues: omitPendingKey(state.pendingFilterValues, "name"),
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          NAME_CHIP_ID,
+        ),
       };
     }
     case "name/changed": {
@@ -38,7 +42,7 @@ export function nameFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            "name",
+            NAME_CHIP_ID,
           ),
         };
       }
