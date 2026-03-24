@@ -2,9 +2,9 @@ import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { PaginatedCoverList } from "~/components/cover-list/PaginatedCoverList";
-import { FilterAndSortContainer } from "~/components/filter-and-sort-container/FilterAndSortContainer";
-import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/reviewed-work-filters/ReviewedWorkSortOptions";
+import { PaginatedCoverList } from "~/components/react/cover-list/PaginatedCoverList";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
+import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/react/reviewed-work-filters/ReviewedWorkSortOptions";
 import { createKindCountMap } from "~/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";

@@ -1,0 +1,43 @@
+---
+import type { ComponentProps } from "astro/types";
+
+import ReviewCard from "~/components/astro/review-card/ReviewCard.astro";
+
+import MoreReviewsHeading from "./MoreReviewsHeading.astro";
+
+type Props = {
+  cardProps: ComponentProps<typeof ReviewCard>[];
+  headingProps: ComponentProps<typeof MoreReviewsHeading>;
+};
+
+const { cardProps, headingProps } = Astro.props;
+---
+
+<nav
+  class={`
+    mx-auto w-full max-w-[894px] bg-subtle px-container
+    min-[1080px]:max-w-(--breakpoint-desktop)
+  `}
+  data-page-find-ignore
+>
+  <MoreReviewsHeading {...headingProps} />
+  <div
+    class={`
+      @container/card-list mx-auto
+      tablet:-mx-6
+    `}
+  >
+    <ol
+      class={`
+        grid flex-wrap gap-8
+        tablet-landscape:grid-cols-2
+      `}
+    >
+      {
+        cardProps.map((props) => {
+          return <ReviewCard {...props} />;
+        })
+      }
+    </ol>
+  </div>
+</nav>

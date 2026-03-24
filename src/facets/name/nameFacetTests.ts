@@ -1,13 +1,13 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import { getGroupedAvatarList } from "~/components/avatar-list/AvatarList.testHelper";
-import { fillNameFilter } from "~/components/collection-filters/CollectionFilters.testHelper";
+import { getGroupedAvatarList } from "~/components/react/avatar-list/AvatarList.testHelper";
+import { fillNameFilter } from "~/components/react/collection-filters/CollectionFilters.testHelper";
 import {
   clickCloseFilters,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type NameItem = {

@@ -6,11 +6,11 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import {
   fillTitleFilter,
   getTitleFilter,
-} from "~/components/work-filters/WorkFilters.testHelper";
+} from "~/components/react/work-filters/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type TitleItem = {

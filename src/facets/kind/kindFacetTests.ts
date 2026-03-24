@@ -4,8 +4,8 @@ import { describe, it } from "vitest";
 import {
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
-import { clickKindFilterOption } from "~/components/work-filters/WorkFilters.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { clickKindFilterOption } from "~/components/react/work-filters/WorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type KindItem = {

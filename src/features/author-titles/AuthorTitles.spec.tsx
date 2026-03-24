@@ -1,20 +1,20 @@
 import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
+import { getCoverList } from "~/components/react/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
+} from "~/components/react/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,

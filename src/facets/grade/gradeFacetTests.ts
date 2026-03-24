@@ -5,8 +5,8 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/filter-and-sort-container/FilterAndSortContainer.testHelper";
-import { fillGradeFilter } from "~/components/reviewed-work-filters/ReviewedWorkFilters.testHelper";
+} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
+import { fillGradeFilter } from "~/components/react/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type GradeItem = {

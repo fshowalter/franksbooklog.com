@@ -1,7 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/assets/covers";
-import { CoverListItemImageConfig } from "~/components/cover-list/CoverListItem";
+import { CoverListItemImageConfig } from "~/components/react/cover-list/CoverListItem";
 import { gradeToValue } from "~/utils/grades";
 import { toDisplayDate } from "~/utils/toDisplayDate";
 

@@ -1,11 +1,11 @@
-import type { FilterChip } from "~/components/applied-filters/AppliedFilters";
+import type { FilterChip } from "~/components/react/applied-filters/AppliedFilters";
 
-import { buildGradeFilterChip } from "~/components/grade-filter-chip/gradeFilterChip";
-import { buildKindFilterChip } from "~/components/kind-filter-chip/kindFilterChip";
-import { buildReviewYearFilterChip } from "~/components/review-year-filter-chip/reviewYearFilterChip";
-import { buildReviewedStatusFilterChip } from "~/components/reviewed-status-filter-chip/reviewedStatusFilterChip";
-import { buildTitleFilterChip } from "~/components/title-filter-chip/titleFilterChip";
-import { buildWorkYearFilterChip } from "~/components/work-year-filter-chip/workYearFilterChip";
+import { buildGradeFilterChip } from "~/components/react/grade-filter-chip/gradeFilterChip";
+import { buildKindFilterChip } from "~/components/react/kind-filter-chip/kindFilterChip";
+import { buildReviewYearFilterChip } from "~/components/react/review-year-filter-chip/reviewYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/components/react/reviewed-status-filter-chip/reviewedStatusFilterChip";
+import { buildTitleFilterChip } from "~/components/react/title-filter-chip/titleFilterChip";
+import { buildWorkYearFilterChip } from "~/components/react/work-year-filter-chip/workYearFilterChip";
 
 import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
 

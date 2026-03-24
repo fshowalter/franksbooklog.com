@@ -2,8 +2,8 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "entry": [
     "src/pages/**/*.astro",
-    "src/components/pagefind-search/pagefind-search.ts",
-    "src/components/nav-drawer/navDrawer.ts"
+    "src/components/astro/pagefind-search/pagefind-search.ts",
+    "src/components/astro/nav-drawer/navDrawer.ts"
   ],
   "project": ["**/*"],
   "ignoreDependencies": ["babel-plugin-react-compiler"]

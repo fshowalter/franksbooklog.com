@@ -7,7 +7,7 @@ import {
   getOpenGraphCover,
   getWorkCoverPath,
 } from "~/assets/covers";
-import { fileForGrade } from "~/components/grade/fileForGrade";
+import { fileForGrade } from "~/components/utils/gradeMap";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 

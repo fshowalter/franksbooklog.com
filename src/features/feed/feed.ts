@@ -2,9 +2,10 @@ import rss from "@astrojs/rss";
 import { getEntry } from "astro:content";
 
 import { getFeedCoverProps } from "~/assets/covers";
-import { textStarsForGrade } from "~/components/grade/textStarsForGrade";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
+
+import { textStarsForGrade } from "./textStarsForGrade";
 
 export async function feed() {
   const recentReviewedWorks = await mostRecentReviewedWorks(10);
