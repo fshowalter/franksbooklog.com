@@ -26,7 +26,7 @@ export function createNameFilterChangedAction(
  * else through unchanged.
  */
 export function nameFacetReducer<
-  TState extends { pendingFilterValues: { name?: string } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: string } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.CHANGED: {
@@ -42,7 +42,10 @@ export function nameFacetReducer<
       }
       return {
         ...state,
-        pendingFilterValues: { ...state.pendingFilterValues, STATE_KEY: value },
+        pendingFilterValues: {
+          ...state.pendingFilterValues,
+          [STATE_KEY]: value,
+        },
       };
     }
     case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {

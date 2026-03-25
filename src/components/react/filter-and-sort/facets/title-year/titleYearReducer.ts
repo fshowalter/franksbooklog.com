@@ -44,7 +44,7 @@ export function titleYearFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          STATE_KEY: values,
+          [STATE_KEY]: values,
         },
       };
     }

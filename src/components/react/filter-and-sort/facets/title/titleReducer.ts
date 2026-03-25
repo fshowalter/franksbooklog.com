@@ -1,18 +1,23 @@
 import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
+import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
-import { TITLE_CHIP_ID } from "./titleChipId";
+export const STATE_KEY = "title";
+
+const ActionTypes = {
+  CHANGED: "title/changed",
+};
 
 export type TitleFilterChangedAction = {
-  type: "title/changed";
+  type: typeof ActionTypes.CHANGED;
   value: string;
 };
 
 export function createTitleFilterChangedAction(
   value: string,
 ): TitleFilterChangedAction {
-  return { type: "title/changed", value };
+  return { type: ActionTypes.CHANGED, value };
 }
 
 /**
@@ -21,34 +26,37 @@ export function createTitleFilterChangedAction(
  * else through unchanged.
  */
 export function titleFacetReducer<
-  TState extends { pendingFilterValues: { title?: string } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: string } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filterAndSortContainer/removeAppliedFilter": {
-      const { id } = action as RemoveAppliedFilterAction;
-      if (id !== TITLE_CHIP_ID) return state;
-      return {
-        ...state,
-        pendingFilterValues: omitPendingKey(
-          state.pendingFilterValues,
-          TITLE_CHIP_ID,
-        ),
-      };
-    }
-    case "title/changed": {
+    case ActionTypes.CHANGED: {
       const { value } = action as TitleFilterChangedAction;
       if (value === "") {
         return {
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            TITLE_CHIP_ID,
+            STATE_KEY,
           ),
         };
       }
       return {
         ...state,
-        pendingFilterValues: { ...state.pendingFilterValues, title: value },
+        pendingFilterValues: {
+          ...state.pendingFilterValues,
+          [STATE_KEY]: value,
+        },
+      };
+    }
+    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
+      const { key } = action as RemoveAppliedFilterAction;
+      if (key !== STATE_KEY) return state;
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          STATE_KEY,
+        ),
       };
     }
     default: {

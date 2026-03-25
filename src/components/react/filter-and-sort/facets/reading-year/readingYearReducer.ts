@@ -1,13 +1,18 @@
 import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
+import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
-import { READING_YEAR_CHIP_ID } from "./readingYearChipId";
+export const STATE_KEY = "readingYear";
+
+export const ActionTypes = {
+  CHANGED: "readingYear/changed",
+};
 
 export type ReadingYearFilterChangedAction = {
   availableMax: string;
   availableMin: string;
-  type: "readingYear/changed";
+  type: typeof ActionTypes.CHANGED;
   values: [string, string];
 };
 
@@ -16,7 +21,7 @@ export function createReadingYearFilterChangedAction(
   availableMin: string,
   availableMax: string,
 ): ReadingYearFilterChangedAction {
-  return { availableMax, availableMin, type: "readingYear/changed", values };
+  return { availableMax, availableMin, type: ActionTypes.CHANGED, values };
 }
 
 /**
@@ -25,21 +30,10 @@ export function createReadingYearFilterChangedAction(
  * Passes everything else through unchanged.
  */
 export function readingYearFacetReducer<
-  TState extends { pendingFilterValues: { readingYear?: [string, string] } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: [string, string] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filterAndSortContainer/removeAppliedFilter": {
-      const { id } = action as RemoveAppliedFilterAction;
-      if (id !== READING_YEAR_CHIP_ID) return state;
-      return {
-        ...state,
-        pendingFilterValues: omitPendingKey(
-          state.pendingFilterValues,
-          READING_YEAR_CHIP_ID,
-        ),
-      };
-    }
-    case "readingYear/changed": {
+    case ActionTypes.CHANGED: {
       const { availableMax, availableMin, values } =
         action as ReadingYearFilterChangedAction;
       if (values[0] === availableMin && values[1] === availableMax) {
@@ -47,7 +41,7 @@ export function readingYearFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            READING_YEAR_CHIP_ID,
+            STATE_KEY,
           ),
         };
       }
@@ -55,8 +49,19 @@ export function readingYearFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          readingYear: values,
+          [STATE_KEY]: values,
         },
+      };
+    }
+    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
+      const { key } = action as RemoveAppliedFilterAction;
+      if (key !== STATE_KEY) return state;
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          STATE_KEY,
+        ),
       };
     }
     default: {

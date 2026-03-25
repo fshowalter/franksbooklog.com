@@ -2,16 +2,14 @@ import type { FilterChip } from "~/components/react/filter-and-sort/container/Fi
 
 import { buildYearRangeChip } from "~/components/react/filter-and-sort/facets/filterChipBuilders";
 
-import { READING_YEAR_CHIP_ID } from "./readingYearChipId";
+import { STATE_KEY } from "./readingYearReducer";
 
 export function buildReadingYearFilterChip(
   value: readonly [string, string] | undefined,
-  distinctReadingYears: readonly string[],
 ): FilterChip[] {
-  return buildYearRangeChip(
+  return buildYearRangeChip({
+    key: STATE_KEY,
+    label: "Reading Year",
     value,
-    distinctReadingYears,
-    "Reading Year",
-    READING_YEAR_CHIP_ID,
-  );
+  });
 }

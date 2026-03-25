@@ -40,7 +40,7 @@ export function gradeFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          STATE_KEY: values,
+          [STATE_KEY]: values,
         },
       };
     }
