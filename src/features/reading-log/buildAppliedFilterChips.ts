@@ -4,8 +4,8 @@ import { buildEditionFilterChip } from "~/components/react/filter-and-sort/facet
 import { buildKindFilterChip } from "~/components/react/filter-and-sort/facets/kind/kindFilterChip";
 import { buildReadingYearFilterChip } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFilterChip";
 import { buildReviewedStatusFilterChip } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilterChip";
-import { buildTitleFilterChip } from "~/components/react/filter-and-sort/facets/title/titleFilterChip";
 import { buildTitleYearFilterChip } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilterChip";
+import { buildTitleFilterChip } from "~/components/react/filter-and-sort/facets/title/titleFilterChip";
 
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
 
@@ -18,7 +18,7 @@ export function buildAppliedFilterChips(
     ...buildTitleFilterChip(filterValues.title),
     ...buildKindFilterChip(filterValues.kind),
     ...buildEditionFilterChip(filterValues.edition),
-    ...buildTitleYearFilterChip(filterValues.workYear, distinctTitleYears),
+    ...buildTitleYearFilterChip(filterValues.titleYear, distinctTitleYears),
     ...buildReadingYearFilterChip(
       filterValues.readingYear,
       distinctReadingYears,

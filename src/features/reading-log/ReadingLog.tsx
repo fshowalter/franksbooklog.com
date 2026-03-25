@@ -15,12 +15,7 @@ import { CalendarMonth } from "./CalendarMonth";
 import { filterReadingLog } from "./filterReadingLog";
 import { MonthNavigationHeader } from "./MonthNavigationHeader";
 import {
-  createApplyFiltersAction,
-  createClearFiltersAction,
   createInitialState,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  createSortAction,
   reducer,
   selectHasPendingFilters,
 } from "./ReadingLog.reducer";
@@ -172,6 +167,7 @@ export function ReadingLog({
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
+      dispatch={dispatch}
       filters={
         <Filters
           dispatch={dispatch}
@@ -187,20 +183,9 @@ export function ReadingLog({
       }
       hasPendingFilters={hasPendingFilters}
       headerLink={{ href: "/readings/stats/", text: "stats" }}
-      onApplyFilters={() => dispatch(createApplyFiltersAction())}
-      onClearFilters={() => {
-        dispatch(createClearFiltersAction());
-        dispatch(createApplyFiltersAction());
-      }}
-      onFilterDrawerOpen={() => {
-        dispatch(createResetFiltersAction());
-      }}
-      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
-      onResetFilters={() => dispatch(createResetFiltersAction())}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (value) => dispatch(createSortAction(value)),
         sortOptions: [
           { label: "Reading Date (Newest First)", value: "reading-date-desc" },
           { label: "Reading Date (Oldest First)", value: "reading-date-asc" },

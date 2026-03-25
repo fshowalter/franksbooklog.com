@@ -1,41 +1,34 @@
+import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure";
 import { CheckboxListField } from "~/components/react/filter-and-sort/fields/CheckboxListField";
 
-/**
- * Filter control for reviewed/not-reviewed/abandoned status.
- * @param props - Component props
- * @param props.counts - Map of status to item count for display next to each option
- * @param props.defaultValues - Currently selected status values
- * @param props.excludeNotReviewed - When true, omits "Not Reviewed" option (for reviews/author-titles)
- * @param props.onChange - Handler for filter changes
- * @param props.onClear - Handler for clearing the filter
- * @returns Reviewed status filter with checkboxes
- */
+import type { ReviewedStatusFilterChangedAction } from "./reviewedStatusReducer";
+
+import { createReviewedStatusFilterChangedAction } from "./reviewedStatusReducer";
+
 export function ReviewedStatusFacet({
-  counts,
   defaultValues,
+  dispatch,
   excludeNotReviewed = false,
-  onChange,
-  onClear,
+  statusCounts,
 }: {
-  counts?: Map<string, number>;
   defaultValues?: readonly string[];
+  dispatch: React.Dispatch<ReviewedStatusFilterChangedAction>;
   excludeNotReviewed?: boolean;
-  onChange: (values: string[]) => void;
-  onClear?: () => void;
+  statusCounts?: Map<string, number>;
 }): React.JSX.Element {
   const allOptions = [
     {
-      count: counts?.get("Reviewed") ?? 0,
+      count: statusCounts?.get("Reviewed") ?? 0,
       label: "Reviewed",
       value: "Reviewed",
     },
     {
-      count: counts?.get("Not Reviewed") ?? 0,
+      count: statusCounts?.get("Not Reviewed") ?? 0,
       label: "Not Reviewed",
       value: "Not Reviewed",
     },
     {
-      count: counts?.get("Abandoned") ?? 0,
+      count: statusCounts?.get("Abandoned") ?? 0,
       label: "Abandoned",
       value: "Abandoned",
     },
@@ -45,12 +38,16 @@ export function ReviewedStatusFacet({
     : allOptions;
 
   return (
-    <CheckboxListField
-      defaultValues={defaultValues}
-      label="Status"
-      onChange={onChange}
-      onClear={onClear}
-      options={statusOptions}
-    />
+    <AnimatedDetailsDisclosure title="Status">
+      <CheckboxListField
+        defaultValues={defaultValues}
+        label="Status"
+        onChange={(values) =>
+          dispatch(createReviewedStatusFilterChangedAction(values))
+        }
+        onClear={() => dispatch(createReviewedStatusFilterChangedAction([]))}
+        options={statusOptions}
+      />
+    </AnimatedDetailsDisclosure>
   );
 }

@@ -2,12 +2,12 @@ import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import { getGroupedAvatarList } from "~/components/react/avatar-list/AvatarList.testHelper";
-import { fillNameFilter } from "~/components/react/collection-filters/CollectionFilters.testHelper";
 import {
   clickCloseFilters,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
+import { fillTextField } from "~/components/react/filter-and-sort/fields/TextField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type NameItem = {
@@ -37,7 +37,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillNameFilter(user, "Stoker");
+      await fillTextField(user, "Name", "Stoker");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -55,7 +55,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillNameFilter(user, "H.");
+      await fillTextField(user, "Name", "H.");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -74,7 +74,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillNameFilter(user, "Bram Stoker");
+      await fillTextField(user, "Name", "Bram Stoker");
       await clickViewResults(user);
 
       await clickToggleFilters(user);
@@ -95,7 +95,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillNameFilter(user, "Bram Stoker");
+      await fillTextField(user, "Name", "Bram Stoker");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -127,7 +127,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillNameFilter(user, "Bram Stoker");
+      await fillTextField(user, "Name", "Bram Stoker");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -135,7 +135,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
       expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
-      await fillNameFilter(user, "Different Author");
+      await fillTextField(user, "Name", "Different Author");
       await clickCloseFilters(user);
 
       expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();

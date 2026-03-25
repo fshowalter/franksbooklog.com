@@ -1,30 +1,39 @@
 /**
  * Union type for all filter-related actions.
  */
-export type FiltersAction =
+export type FilterAndSortContainerAction =
   | ApplyFiltersAction
   | ClearFiltersAction
   | RemoveAppliedFilterAction
-  | ResetFiltersAction;
+  | ResetFiltersAction
+  | SortAction;
 
 export type RemoveAppliedFilterAction = {
   id: string;
-  type: "filters/removeAppliedFilter";
+  type: "filerAndSortContainer/removeAppliedFilter";
 };
 
 /**
  * Base Action Type Definitions
  */
 type ApplyFiltersAction = {
-  type: "filters/applied";
+  type: "filerAndSortContainer/applied";
 };
 
 type ClearFiltersAction = {
-  type: "filters/cleared";
+  type: "filerAndSortContainer/cleared";
 };
 
 type ResetFiltersAction = {
-  type: "filters/reset";
+  type: "filerAndSortContainer/reset";
+};
+
+/**
+ * Action for updating sort state.
+ */
+type SortAction = {
+  type: "filerAndSortContainer/sort";
+  value: string;
 };
 
 /**
@@ -32,7 +41,7 @@ type ResetFiltersAction = {
  * @returns Apply filters action
  */
 export function createApplyFiltersAction(): ApplyFiltersAction {
-  return { type: "filters/applied" };
+  return { type: "filerAndSortContainer/applied" };
 }
 
 /**
@@ -40,23 +49,17 @@ export function createApplyFiltersAction(): ApplyFiltersAction {
  * @returns Clear filters action
  */
 export function createClearFiltersAction(): ClearFiltersAction {
-  return { type: "filters/cleared" };
+  return { type: "filerAndSortContainer/cleared" };
 }
 
-/**
- * Creates the initial state for filter functionality.
- * @param options - Configuration object
- * @param options.values - Array of values to be filtered
- * @returns Initial filters state with empty filter values
- */
-export function createInitialFiltersState<TValue>({
-  values,
-}: {
-  values: TValue[];
-}) {
+export function createInitialFilterAndSortContainerState<
+  TValue,
+  TSort extends string,
+>({ initialSort, values }: { initialSort: TSort; values: TValue[] }) {
   return {
     activeFilterValues: {} as Record<string, unknown>,
     pendingFilterValues: {} as Record<string, unknown>,
+    sort: initialSort,
     values,
   };
 }
@@ -69,7 +72,7 @@ export function createInitialFiltersState<TValue>({
 export function createRemoveAppliedFilterAction(
   id: string,
 ): RemoveAppliedFilterAction {
-  return { id, type: "filters/removeAppliedFilter" };
+  return { id, type: "filerAndSortContainer/removeAppliedFilter" };
 }
 
 /**
@@ -77,28 +80,41 @@ export function createRemoveAppliedFilterAction(
  * @returns Reset filters action
  */
 export function createResetFiltersAction(): ResetFiltersAction {
-  return { type: "filters/reset" };
+  return { type: "filerAndSortContainer/reset" };
 }
 
-// AIDEV-NOTE: filtersLifecycleReducer is the composable variant of filtersReducer
-// for use with composeReducers. It owns apply/clear/reset. Each facet reducer in
-// the composition chain handles filters/removeAppliedFilter for its own filter
-// key(s), so this reducer does not need a removeAppliedFilter case.
-export function filtersLifecycleReducer<
+export function createSortAction<TSort extends string>(
+  value: TSort,
+): SortAction {
+  return {
+    type: "filerAndSortContainer/sort",
+    value,
+  };
+}
+
+export function filterAndSortContainerReducer<
   TState extends {
     activeFilterValues: Record<string, unknown>;
     pendingFilterValues: Record<string, unknown>;
+    sort: string;
   },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/applied": {
+    case "filerAndSortContainer/applied": {
       return { ...state, activeFilterValues: { ...state.pendingFilterValues } };
     }
-    case "filters/cleared": {
+    case "filerAndSortContainer/cleared": {
       return { ...state, pendingFilterValues: {} };
     }
-    case "filters/reset": {
+    case "filerAndSortContainer/reset": {
       return { ...state, pendingFilterValues: { ...state.activeFilterValues } };
+    }
+    case "filerAndSortContainer/sort": {
+      const { value } = action as SortAction;
+      return {
+        ...state,
+        sort: value,
+      };
     }
     default: {
       return state;

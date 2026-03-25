@@ -1,19 +1,13 @@
-import { WorkFilters } from "~/components/react/filter-and-sort/facet-groups/TitleFacets";
 import { EditionFacet } from "~/components/react/filter-and-sort/facets/edition/EditionFacet";
+import { KindFacet } from "~/components/react/filter-and-sort/facets/kind/KindFacet";
+import { ReadingYearFacet } from "~/components/react/filter-and-sort/facets/reading-year/ReadingYearFacet";
 import { ReviewedStatusFacet } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
+import { TitleYearFacet } from "~/components/react/filter-and-sort/facets/title-year/TitleYearFacet";
 import { TitleFacet } from "~/components/react/filter-and-sort/facets/title/TitleFacet";
-import { YearField } from "~/components/react/filter-and-sort/fields/YearField";
 
 import type {
   ReadingLogAction,
   ReadingLogFiltersValues,
-} from "./ReadingLog.reducer";
-
-import {
-  createKindFilterChangedAction,
-  createReadingYearFilterChangedAction,
-  createReviewedStatusFilterChangedAction,
-  createTitleYearFilterChangedAction,
 } from "./ReadingLog.reducer";
 
 export function Filters({
@@ -40,49 +34,26 @@ export function Filters({
   return (
     <>
       <TitleFacet defaultValue={filterValues.title} dispatch={dispatch} />
-
-      <WorkFilters
-        kind={{
-          counts: kindCounts,
-          defaultValues: filterValues.kind,
-          onChange: (values) => dispatch(createKindFilterChangedAction(values)),
-          onClear: () => dispatch(createKindFilterChangedAction([])),
-          values: distinctKinds,
-        }}
-        workYear={{
-          defaultValues: filterValues.workYear,
-          onChange: (values) =>
-            dispatch(
-              createTitleYearFilterChangedAction(
-                values,
-                distinctTitleYears[0] ?? "",
-                distinctTitleYears.at(-1) ?? "",
-              ),
-            ),
-          values: distinctTitleYears,
-        }}
+      <TitleYearFacet
+        defaultValues={filterValues.titleYear}
+        dispatch={dispatch}
+        distinctYears={distinctTitleYears}
+      />
+      <KindFacet
+        defaultValues={filterValues.kind}
+        dispatch={dispatch}
+        distinctKinds={distinctKinds}
+        kindCounts={kindCounts}
       />
       <ReviewedStatusFacet
-        counts={reviewedStatusCounts}
         defaultValues={filterValues.reviewedStatus}
-        onChange={(values) =>
-          dispatch(createReviewedStatusFilterChangedAction(values))
-        }
-        onClear={() => dispatch(createReviewedStatusFilterChangedAction([]))}
+        dispatch={dispatch}
+        statusCounts={reviewedStatusCounts}
       />
-      <YearField
+      <ReadingYearFacet
         defaultValues={filterValues.readingYear}
-        label="Reading Year"
-        onYearChange={(values) =>
-          dispatch(
-            createReadingYearFilterChangedAction(
-              values,
-              distinctReadingYears[0] ?? "",
-              distinctReadingYears.at(-1) ?? "",
-            ),
-          )
-        }
-        years={distinctReadingYears}
+        dispatch={dispatch}
+        distinctYears={distinctReadingYears}
       />
       <EditionFacet
         defaultValues={filterValues.edition}

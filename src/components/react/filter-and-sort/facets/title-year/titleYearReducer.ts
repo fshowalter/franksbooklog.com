@@ -1,4 +1,4 @@
-import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
@@ -24,8 +24,8 @@ export function createTitleYearFilterChangedAction(
  * removes the filter on filters/removeAppliedFilter when id is "workYear".
  * Passes everything else through unchanged.
  */
-export function workYearFacetReducer<
-  TState extends { pendingFilterValues: { workYear?: [string, string] } },
+export function titleYearFacetReducer<
+  TState extends { pendingFilterValues: { titleYear?: [string, string] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case "filters/removeAppliedFilter": {
@@ -39,7 +39,7 @@ export function workYearFacetReducer<
         ),
       };
     }
-    case "workYear/changed": {
+    case "titleYear/changed": {
       const { availableMax, availableMin, values } =
         action as TitleYearFilterChangedAction;
       if (values[0] === availableMin && values[1] === availableMax) {

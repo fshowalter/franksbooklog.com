@@ -13,13 +13,8 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterReviews } from "./filterReviews";
 import {
-  createApplyFiltersAction,
-  createClearFiltersAction,
   createInitialState,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
   createShowMoreAction,
-  createSortAction,
   reducer,
   selectHasPendingFilters,
 } from "./Reviews.reducer";
@@ -137,6 +132,7 @@ export function Reviews({
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
+      dispatch={dispatch}
       filters={
         <ReviewsFilters
           dispatch={dispatch}
@@ -149,20 +145,9 @@ export function Reviews({
         />
       }
       hasPendingFilters={hasPendingFilters}
-      onApplyFilters={() => dispatch(createApplyFiltersAction())}
-      onClearFilters={() => {
-        dispatch(createClearFiltersAction());
-        dispatch(createApplyFiltersAction());
-      }}
-      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
-      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
-      onResetFilters={() => {
-        dispatch(createResetFiltersAction());
-      }}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (value) => dispatch(createSortAction(value)),
         sortOptions: [
           { label: "Author (A \u2192 Z)", value: "author-asc" },
           { label: "Author (Z \u2192 A)", value: "author-desc" },

@@ -1,18 +1,18 @@
-import type { FiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import type { GradeFilterChangedAction } from "~/components/react/filter-and-sort/facets/grade/gradeReducer";
 import type { KindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
 import type { ShowMoreAction } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
 import type { ReviewYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
 import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
 import type { SortAction } from "~/components/react/filter-and-sort/facets/sortReducer";
-import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
 import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
+import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
 
-import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import {
-  createInitialFiltersState,
-  filtersLifecycleReducer,
-} from "~/components/react/filter-and-sort/facets/filtersReducer";
+  createInitialFilterAndSortContainerState,
+  filterAndSortContainerReducer,
+} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import { gradeFacetReducer } from "~/components/react/filter-and-sort/facets/grade/gradeReducer";
 import { kindFacetReducer } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
 import {
@@ -22,25 +22,18 @@ import {
 import { reviewYearFacetReducer } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
 import { reviewedStatusFacetReducer } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
 import {
-  createInitialSortState,
   createSortActionCreator,
   sortReducer,
 } from "~/components/react/filter-and-sort/facets/sortReducer";
+import { titleYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/title/titleReducer";
-import { workYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 
-export { createApplyFiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
-export { createClearFiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
-export { createRemoveAppliedFilterAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
-export { createResetFiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
-export { selectHasPendingFilters } from "~/components/react/filter-and-sort/facets/filtersReducer";
-export { createGradeFilterChangedAction } from "~/components/react/filter-and-sort/facets/grade/gradeReducer";
-export { createKindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
+export { createApplyFiltersAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+export { createClearFiltersAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+export { createRemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+export { createResetFiltersAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+export { selectHasPendingFilters } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 export { createShowMoreAction } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
-export { createReviewYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
-export { createReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
-export { createTitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
-export { createTitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
@@ -49,7 +42,7 @@ import type { AuthorTitlesSort } from "./sortAuthorTitles";
  * Union of all actions the AuthorTitles reducer handles.
  */
 export type AuthorTitlesAction =
-  | FiltersAction
+  | FilterAndSortContainerAction
   | GradeFilterChangedAction
   | KindFilterChangedAction
   | ReviewedStatusFilterChangedAction
@@ -68,7 +61,7 @@ export type AuthorTitlesFiltersValues = {
   reviewedStatus?: readonly string[];
   reviewYear?: [string, string];
   title?: string;
-  workYear?: [string, string];
+  titleYear?: [string, string];
 };
 
 type AuthorTitlesState = {
@@ -82,10 +75,10 @@ type AuthorTitlesState = {
 const authorTitlesReducer = composeReducers<AuthorTitlesState>(
   kindFacetReducer,
   reviewedStatusFacetReducer,
-  filtersLifecycleReducer, // order doesn't matter — see composeReducers AIDEV-NOTE
+  filterAndSortContainerReducer,
   titleFacetReducer,
   gradeFacetReducer,
-  workYearFacetReducer,
+  titleYearFacetReducer,
   reviewYearFacetReducer,
   showMoreReducer,
   sortReducer,
@@ -102,9 +95,8 @@ export function createInitialState({
   values: AuthorTitlesValue[];
 }): AuthorTitlesState {
   return {
-    ...createInitialFiltersState({ values }),
+    ...createInitialFilterAndSortContainerState({ initialSort, values }),
     ...createInitialShowMoreState(),
-    ...createInitialSortState({ initialSort }),
   };
 }
 

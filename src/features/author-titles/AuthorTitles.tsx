@@ -13,13 +13,8 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
 import {
-  createApplyFiltersAction,
-  createClearFiltersAction,
   createInitialState,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
   createShowMoreAction,
-  createSortAction,
   reducer,
   selectHasPendingFilters,
 } from "./AuthorTitles.reducer";
@@ -143,6 +138,7 @@ export function AuthorTitles({
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
+      dispatch={dispatch}
       filters={
         <AuthorTitlesFilters
           dispatch={dispatch}
@@ -155,20 +151,9 @@ export function AuthorTitles({
         />
       }
       hasPendingFilters={hasPendingFilters}
-      onApplyFilters={() => dispatch(createApplyFiltersAction())}
-      onClearFilters={() => {
-        dispatch(createClearFiltersAction());
-        dispatch(createApplyFiltersAction());
-      }}
-      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
-      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
-      onResetFilters={() => {
-        dispatch(createResetFiltersAction());
-      }}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (value) => dispatch(createSortAction(value)),
         sortOptions: REVIEWED_WORK_SORT_OPTIONS,
       }}
       totalCount={totalCount}

@@ -1,4 +1,7 @@
 import type { SortProps } from "./FilterAndSortContainer";
+import type { FilterAndSortContainerAction } from "./filterAndSortContainerReducer";
+
+import { createSortAction } from "./filterAndSortContainerReducer";
 
 /**
  * Header component with filter toggle, sort options, and result count.
@@ -12,6 +15,7 @@ import type { SortProps } from "./FilterAndSortContainer";
  * @returns Header with filter/sort controls and result count
  */
 export function FilterAndSortToolbar<T extends string>({
+  dispatch,
   filterDrawerVisible,
   headerLink,
   onFilterClick,
@@ -19,6 +23,7 @@ export function FilterAndSortToolbar<T extends string>({
   toggleButtonRef,
   totalCount,
 }: {
+  dispatch: React.Dispatch<FilterAndSortContainerAction>;
   filterDrawerVisible: boolean;
   headerLink?: { href: string; text: string };
   onFilterClick: (event: React.MouseEvent) => void;
@@ -26,7 +31,7 @@ export function FilterAndSortToolbar<T extends string>({
   toggleButtonRef: React.RefObject<HTMLButtonElement | null>;
   totalCount: number;
 }): React.JSX.Element {
-  const { currentSortValue, onSortChange, sortOptions } = sortProps;
+  const { currentSortValue, sortOptions } = sortProps;
 
   return (
     <div
@@ -71,7 +76,7 @@ export function FilterAndSortToolbar<T extends string>({
               font-serif text-base font-normal tracking-normal text-ellipsis
               text-default shadow-all outline-accent
             `}
-            onChange={(e) => onSortChange(e.target.value as T)}
+            onChange={(e) => dispatch(createSortAction<T>(e.target.value as T))}
             value={currentSortValue}
           >
             {sortOptions.map(({ label, value }) => (

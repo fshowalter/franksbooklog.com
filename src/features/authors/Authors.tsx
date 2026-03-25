@@ -11,12 +11,7 @@ import type { AuthorsSort } from "./sortAuthors";
 
 import { AlphabetSideNav } from "./AlphabetSideNav";
 import {
-  createApplyFiltersAction,
-  createClearFiltersAction,
   createInitialState,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  createSortAction,
   reducer,
   selectHasPendingFilters,
 } from "./Authors.reducer";
@@ -99,6 +94,7 @@ export function Authors({
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
+      dispatch={dispatch}
       filters={
         <AuthorsFilters
           dispatch={dispatch}
@@ -106,23 +102,12 @@ export function Authors({
         />
       }
       hasPendingFilters={hasPendingFilters}
-      onApplyFilters={() => dispatch(createApplyFiltersAction())}
-      onClearFilters={() => {
-        dispatch(createClearFiltersAction());
-        dispatch(createApplyFiltersAction());
-      }}
-      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
-      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
-      onResetFilters={() => {
-        dispatch(createResetFiltersAction());
-      }}
       pendingFilteredCount={pendingFilteredCount}
       sideNav={
         <AlphabetSideNav groupedValues={groupedValues} sortValue={state.sort} />
       }
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (value) => dispatch(createSortAction(value)),
         sortOptions: [
           { label: "Name (A \u2192 Z)", value: "name-asc" },
           { label: "Name (Z \u2192 A)", value: "name-desc" },
@@ -133,6 +118,7 @@ export function Authors({
       totalCount={totalCount}
     >
       <GroupedAvatarList
+        className="grow"
         groupedValues={groupedValues}
         groupItemClassName={`scroll-mt-[calc(52px_+_var(--filter-and-sort-container-scroll-offset))]`}
       >

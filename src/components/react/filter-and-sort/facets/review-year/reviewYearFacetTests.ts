@@ -6,7 +6,7 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { fillReviewYearFilter } from "~/components/react/reviewed-work-filters/ReviewedWorkFilters.testHelper";
+import { fillYearField } from "~/components/react/filter-and-sort/fields/YearField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewYearFacetAdapter = {
@@ -56,7 +56,7 @@ export function reviewYearFilterFacetTests({
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillReviewYearFilter(user, "2023", "2023");
+      await fillYearField(user, "Review Year", "2023", "2023");
       await clickViewResults(user);
 
       const list = getList();
@@ -80,7 +80,7 @@ export function reviewYearFilterFacetTests({
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillReviewYearFilter(user, midYear, midYear);
+      await fillYearField(user, "Review Year", midYear, midYear);
       await clickViewResults(user);
 
       await clickToggleFilters(user);
@@ -99,7 +99,7 @@ export function reviewYearFilterFacetTests({
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillReviewYearFilter(user, midYear, midYear);
+      await fillYearField(user, "Review Year", midYear, midYear);
       await clickViewResults(user);
 
       const list = getList();

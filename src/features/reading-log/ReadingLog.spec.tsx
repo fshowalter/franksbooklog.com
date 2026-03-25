@@ -17,8 +17,8 @@ import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/k
 import { readingYearSortFacetTests } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFacetTests";
 import { clickReviewedStatusFilterOption } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet.testHelper";
 import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
-import { titleFilterFacetTests } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
 import { titleYearFilterFacetTests } from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
+import { titleFilterFacetTests } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";

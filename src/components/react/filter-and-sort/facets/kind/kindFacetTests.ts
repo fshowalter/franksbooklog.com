@@ -3,10 +3,12 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
+import { getAnimatedDetailsDisclosureElement } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure.testHelper";
 import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
+import { clickCheckboxListFieldOption } from "~/components/react/filter-and-sort/fields/CheckboxListField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type KindItem = {
@@ -121,11 +123,6 @@ export function kindFacetTests(
 }
 
 async function clickKindOption(user: UserEvent, value: string) {
-  const filter = screen.getByRole("group", { name: "Kind" });
-  const showMore = within(filter).queryByRole("button", { name: /show more/i });
-  if (showMore) await user.click(showMore);
-  const checkboxes = within(filter).getAllByRole("checkbox");
-  const cb = checkboxes.find((c) => (c as HTMLInputElement).value === value);
-  if (!cb) throw new Error(`Kind checkbox "${value}" not found`);
-  await user.click(cb);
+  const filter = getAnimatedDetailsDisclosureElement("Kind");
+  await clickCheckboxListFieldOption(filter, user, value);
 }

@@ -1,15 +1,14 @@
-import type { FiltersAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import type { NameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
 import type { SortAction } from "~/components/react/filter-and-sort/facets/sortReducer";
 
-import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import {
-  createInitialFiltersState,
-  filtersLifecycleReducer,
-} from "~/components/react/filter-and-sort/facets/filtersReducer";
+  createInitialFilterAndSortContainerState,
+  filterAndSortContainerReducer,
+} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import { nameFacetReducer } from "~/components/react/filter-and-sort/facets/name/nameReducer";
 import {
-  createInitialSortState,
   createSortActionCreator,
   sortReducer,
 } from "~/components/react/filter-and-sort/facets/sortReducer";
@@ -20,8 +19,7 @@ export {
   createRemoveAppliedFilterAction,
   createResetFiltersAction,
   selectHasPendingFilters,
-} from "~/components/react/filter-and-sort/facets/filtersReducer";
-export { createNameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
+} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";
@@ -30,7 +28,7 @@ import type { AuthorsSort } from "./sortAuthors";
  * Union type of all collection-specific filter and sort actions
  */
 export type AuthorsAction =
-  | FiltersAction
+  | FilterAndSortContainerAction
   | NameFilterChangedAction
   | SortAction<AuthorsSort>;
 
@@ -52,7 +50,7 @@ type AuthorsState = {
 };
 
 const authorsReducer = composeReducers<AuthorsState>(
-  filtersLifecycleReducer,
+  filterAndSortContainerReducer,
   nameFacetReducer,
   sortReducer,
 );
@@ -65,8 +63,7 @@ export function createInitialState({
   values: AuthorsValue[];
 }): AuthorsState {
   return {
-    ...createInitialFiltersState({ values }),
-    ...createInitialSortState({ initialSort }),
+    ...createInitialFilterAndSortContainerState({ initialSort, values }),
   };
 }
 

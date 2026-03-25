@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure";
-
 import { RangeSliderField } from "./RangeSliderField";
 import { SelectInput } from "./SelectInput";
 
@@ -23,7 +21,7 @@ export function YearField({
   onYearChange,
   years,
 }: {
-  defaultValues: [string, string] | undefined;
+  defaultValues: readonly [string, string] | undefined;
   label: string;
   onClear?: () => void;
   onYearChange: (values: [string, string]) => void;
@@ -92,72 +90,70 @@ export function YearField({
   };
 
   return (
-    <AnimatedDetailsDisclosure title={label}>
-      <div className="flex flex-col gap-4">
-        <fieldset aria-label={label} className="text-subtle">
-          <div className="flex items-baseline">
-            <label className="flex flex-1 items-center gap-x-[.5ch]">
-              <span className="min-w-10 text-left text-sm tracking-serif-wide">
-                From
-              </span>
-              <SelectInput
-                defaultValue={minYear}
-                onChange={(e) => handleMinChange(e.target.value)}
-              >
-                {years.map((year) => {
-                  return (
-                    <option key={year} value={year}>
-                      {year}
-                    </option>
-                  );
-                })}
-              </SelectInput>
-            </label>
-            <label className="flex flex-1 items-center">
-              <span className="min-w-10 text-center text-sm tracking-serif-wide">
-                to
-              </span>
-              <SelectInput
-                defaultValue={maxYear}
-                onChange={(e) => handleMaxChange(e.target.value)}
-              >
-                {[...years].reverse().map((year) => {
-                  return (
-                    <option key={year} value={year}>
-                      {year}
-                    </option>
-                  );
-                })}
-              </SelectInput>
-            </label>
-          </div>
-        </fieldset>
+    <div className="flex flex-col gap-4">
+      <fieldset aria-label={label} className="text-subtle">
+        <div className="flex items-baseline">
+          <label className="flex flex-1 items-center gap-x-[.5ch]">
+            <span className="min-w-10 text-left text-sm tracking-serif-wide">
+              From
+            </span>
+            <SelectInput
+              defaultValue={minYear}
+              onChange={(e) => handleMinChange(e.target.value)}
+            >
+              {years.map((year) => {
+                return (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                );
+              })}
+            </SelectInput>
+          </label>
+          <label className="flex flex-1 items-center">
+            <span className="min-w-10 text-center text-sm tracking-serif-wide">
+              to
+            </span>
+            <SelectInput
+              defaultValue={maxYear}
+              onChange={(e) => handleMaxChange(e.target.value)}
+            >
+              {[...years].reverse().map((year) => {
+                return (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                );
+              })}
+            </SelectInput>
+          </label>
+        </div>
+      </fieldset>
 
-        {/* Range slider beneath dropdowns - syncs bidirectionally */}
-        <RangeSliderField
-          fromValue={currentMinNum}
-          label={label}
-          max={maxYearNum}
-          min={minYearNum}
-          onChange={handleSliderChange}
-          onClear={handleClear}
-          toValue={currentMaxNum}
-        />
-      </div>
-    </AnimatedDetailsDisclosure>
+      {/* Range slider beneath dropdowns - syncs bidirectionally */}
+      <RangeSliderField
+        fromValue={currentMinNum}
+        label={label}
+        max={maxYearNum}
+        min={minYearNum}
+        onChange={handleSliderChange}
+        onClear={handleClear}
+        toValue={currentMaxNum}
+      />
+    </div>
   );
 }
 
 function defaultMaxValue(
   allValues: readonly string[],
-  selectedValues?: [string, string],
+  selectedValues?: readonly [string, string],
 ): string {
   return selectedValues ? selectedValues[1] : (allValues.at(-1) as string);
 }
 
 function defaultMinValue(
   allValues: readonly string[],
-  selectedValues?: [string, string],
+  selectedValues?: readonly [string, string],
 ): string {
   return selectedValues ? selectedValues[0] : allValues[0];
 }

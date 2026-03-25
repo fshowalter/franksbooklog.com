@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 
 import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure";
+import { RangeSliderField } from "~/components/react/filter-and-sort/fields/RangeSliderField";
+import { SelectInput } from "~/components/react/filter-and-sort/fields/SelectInput";
 import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
 
-import { RangeSliderField } from "./RangeSliderField";
-import { SelectInput } from "./SelectInput";
+import type { GradeFilterChangedAction } from "./gradeReducer";
+
+import { createGradeFilterChangedAction } from "./gradeReducer";
 
 const gradeOptions = Array.from(
   { length: GRADE_MAX - GRADE_MIN + 1 },
@@ -19,29 +22,18 @@ const gradeOptions = Array.from(
 
 const gradeOptionsReversed = [...gradeOptions].reverse();
 
-/**
- * Grade range selector with from/to letter grade dropdowns and range slider.
- * Spec requires BOTH dropdowns and slider - dual control pattern
- * @param props - Component props
- * @param props.defaultValues - Default [min, max] grade values
- * @param props.label - Field label text
- * @param props.onClear - Handler for clear action (resets to full range)
- * @param props.onGradeChange - Handler for grade range changes
- * @returns Grade range selector with dropdowns and slider, wrapped in FilterSection
- */
-export function GradeField({
+export function GradeFacet({
   defaultValues,
-  label,
-  onClear,
-  onGradeChange,
+  dispatch,
 }: {
   defaultValues: [number, number] | undefined;
-  label: string;
-  onClear?: () => void;
-  onGradeChange: (values: [number, number]) => void;
+  dispatch: React.Dispatch<GradeFilterChangedAction>;
 }): React.JSX.Element {
   const [minValue, setMinValue] = useState(defaultMinValue(defaultValues));
   const [maxValue, setMaxValue] = useState(defaultMaxValue(defaultValues));
+
+  const onGradeChange = (values: [number, number]): void =>
+    dispatch(createGradeFilterChangedAction(values));
 
   // Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
   useEffect(() => {
@@ -84,17 +76,13 @@ export function GradeField({
   const handleClear = (): void => {
     setMinValue(GRADE_MIN);
     setMaxValue(GRADE_MAX);
-    if (onClear) {
-      onClear();
-    } else {
-      onGradeChange([GRADE_MIN, GRADE_MAX]);
-    }
+    onGradeChange([GRADE_MIN, GRADE_MAX]);
   };
 
   return (
-    <AnimatedDetailsDisclosure title={label}>
+    <AnimatedDetailsDisclosure title={"Grade"}>
       <div className="flex flex-col gap-4">
-        <fieldset aria-label={label} className="text-subtle">
+        <fieldset aria-label={"Grade"} className="text-subtle">
           <div className="flex flex-wrap items-baseline">
             <label className="flex flex-1 items-center gap-x-[.5ch]">
               <span className="min-w-10 text-left text-sm tracking-serif-wide">
@@ -125,7 +113,7 @@ export function GradeField({
         <RangeSliderField
           formatValue={gradeToLetter}
           fromValue={minValue}
-          label={label}
+          label={"Grade"}
           max={GRADE_MAX}
           min={GRADE_MIN}
           onChange={handleSliderChange}

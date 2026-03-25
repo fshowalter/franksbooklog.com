@@ -1,3 +1,5 @@
+import type { UserEvent } from "@testing-library/user-event";
+
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
@@ -6,7 +8,6 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { fillGradeFilter } from "~/components/react/reviewed-work-filters/ReviewedWorkFilters.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type GradeItem = {
@@ -145,4 +146,17 @@ export function gradeSortFacetTests(
       );
     });
   });
+}
+
+async function fillGradeFilter(
+  user: UserEvent,
+  value1: string,
+  value2: string,
+) {
+  const fieldset = screen.getByRole("group", { name: "Grade" });
+  const fromInput = within(fieldset).getByLabelText("From");
+  const toInput = within(fieldset).getByLabelText("to");
+
+  await user.selectOptions(fromInput, value1);
+  await user.selectOptions(toInput, value2);
 }

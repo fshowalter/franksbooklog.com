@@ -3,8 +3,8 @@ import { filterSortedValues } from "~/components/react/filter-and-sort/facets/fi
 import { createKindFilter } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReadingYearFilter } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFilter";
 import { createReviewedStatusFilter } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
 import { createTitleYearFilter } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilter";
+import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
@@ -26,7 +26,7 @@ export function filterReadingLog(
     createReadingYearFilter(filterValues.readingYear),
     createReviewedStatusFilter(filterValues.reviewedStatus),
     createTitleFilter(filterValues.title),
-    createTitleYearFilter(filterValues.workYear),
+    createTitleYearFilter(filterValues.titleYear),
   ].filter((filterFn) => filterFn !== undefined);
 
   return filterSortedValues({ filters, sortedValues });

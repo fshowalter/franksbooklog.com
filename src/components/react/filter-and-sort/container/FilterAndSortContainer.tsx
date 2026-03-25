@@ -4,7 +4,16 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure";
 
+import type { FilterAndSortContainerAction } from "./filterAndSortContainerReducer";
+
 import { AppliedFiltersSection } from "./AppliedFiltersSection";
+import {
+  createApplyFiltersAction,
+  createClearFiltersAction,
+  createRemoveAppliedFilterAction,
+  createResetFiltersAction,
+  createSortAction,
+} from "./filterAndSortContainerReducer";
 import { FilterAndSortToolbar } from "./FilterAndSortToolbar";
 
 export type FilterChip = ComponentProps<
@@ -24,7 +33,6 @@ export type SortOption = {
  */
 export type SortProps<T extends string> = {
   currentSortValue: T;
-  onSortChange: (value: T) => void;
   sortOptions: readonly SortOption[];
 };
 
@@ -32,18 +40,13 @@ type Props<T extends string> = {
   activeFilters?: FilterChip[];
   children: React.ReactNode;
   className?: string;
+  dispatch: React.Dispatch<FilterAndSortContainerAction>;
   filters: React.ReactNode;
   hasPendingFilters: boolean;
   headerLink?: { href: string; text: string };
-  onApplyFilters: () => void;
-  onClearFilters: () => void;
-  onFilterDrawerOpen: () => void;
-  onRemoveFilter?: (id: string) => void;
-  onResetFilters: () => void;
   pendingFilteredCount: number;
   sideNav?: React.ReactNode;
   sortProps: SortProps<T>;
-  topNav?: React.ReactNode;
   totalCount: number;
 };
 
@@ -57,18 +60,13 @@ export function FilterAndSortContainer<T extends string>({
   activeFilters,
   children,
   className,
+  dispatch,
   filters,
   hasPendingFilters,
   headerLink,
-  onApplyFilters,
-  onClearFilters,
-  onFilterDrawerOpen,
-  onRemoveFilter,
-  onResetFilters,
   pendingFilteredCount,
   sideNav,
   sortProps,
-  topNav,
   totalCount,
 }: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
@@ -103,7 +101,7 @@ export function FilterAndSortContainer<T extends string>({
 
     const handleCancel = (): void => {
       // Escape pressed: reset pending filter/sort changes before dialog closes
-      onResetFilters();
+      dispatch(createResetFiltersAction());
       formRef.current?.reset();
       toggleButtonRef.current?.focus();
       // Do NOT preventDefault — let the browser close the dialog naturally
@@ -120,7 +118,7 @@ export function FilterAndSortContainer<T extends string>({
       dialog.removeEventListener("cancel", handleCancel);
       dialog.removeEventListener("close", handleClose);
     };
-  }, [onResetFilters]);
+  }, [dispatch]);
 
   // Scroll to top of list when sort changes via desktop select
   useEffect(() => {
@@ -139,18 +137,18 @@ export function FilterAndSortContainer<T extends string>({
       event.preventDefault();
 
       if (filterDrawerVisible) {
-        onResetFilters();
+        dispatch(createResetFiltersAction());
         formRef.current?.reset();
         dialogRef.current?.close();
         toggleButtonRef.current?.focus();
       } else {
         setFilterDrawerVisible(true);
         setDisplayedChips(activeFilters ?? []);
-        onFilterDrawerOpen();
+        dispatch(createResetFiltersAction());
         // Focus is handled natively by showModal()
       }
     },
-    [activeFilters, filterDrawerVisible, onFilterDrawerOpen, onResetFilters],
+    [activeFilters, filterDrawerVisible, dispatch],
   );
 
   return (
@@ -159,7 +157,6 @@ export function FilterAndSortContainer<T extends string>({
         ${className || ""}
       `}
     >
-      {topNav && topNav}
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
@@ -169,6 +166,7 @@ export function FilterAndSortContainer<T extends string>({
           `}
         >
           <FilterAndSortToolbar
+            dispatch={dispatch}
             filterDrawerVisible={filterDrawerVisible}
             headerLink={headerLink}
             onFilterClick={onFilterClick}
@@ -216,7 +214,7 @@ export function FilterAndSortContainer<T extends string>({
             onClick={(e) => {
               // Backdrop click: event.target is the dialog itself, not any child
               if (e.target === dialogRef.current) {
-                onResetFilters();
+                dispatch(createResetFiltersAction());
                 formRef.current?.reset();
                 dialogRef.current?.close();
                 toggleButtonRef.current?.focus();
@@ -242,7 +240,7 @@ export function FilterAndSortContainer<T extends string>({
                   tablet:right-[34px]
                 `}
                 onClick={() => {
-                  onResetFilters();
+                  dispatch(createResetFiltersAction());
                   formRef.current?.reset();
                   dialogRef.current?.close();
                   toggleButtonRef.current?.focus();
@@ -281,18 +279,18 @@ export function FilterAndSortContainer<T extends string>({
                     tablet-landscape:px-12
                   "
                 >
-                  {onRemoveFilter && displayedChips.length > 0 && (
+                  {displayedChips.length > 0 && (
                     <AppliedFiltersSection
                       filters={displayedChips}
                       onClearAll={() => {
                         setDisplayedChips([]);
-                        onClearFilters();
+                        dispatch(createClearFiltersAction());
                       }}
                       onRemove={(id) => {
                         setDisplayedChips((prev) =>
                           prev.filter((c) => c.id !== id),
                         );
-                        onRemoveFilter(id);
+                        dispatch(createRemoveAppliedFilterAction(id));
                       }}
                     />
                   )}
@@ -354,7 +352,7 @@ export function FilterAndSortContainer<T extends string>({
                     disabled={!hasPendingFilters}
                     onClick={() => {
                       if (hasPendingFilters) {
-                        onClearFilters();
+                        dispatch(createClearFiltersAction());
                       }
                     }}
                     type="reset"
@@ -381,8 +379,8 @@ export function FilterAndSortContainer<T extends string>({
                       const formData = new FormData(formRef.current!);
                       const sortValue = formData.get("sort") as T;
                       suppressSortScrollRef.current = true;
-                      sortProps.onSortChange(sortValue);
-                      onApplyFilters();
+                      dispatch(createSortAction(sortValue));
+                      dispatch(createApplyFiltersAction());
                       dialogRef.current?.close();
                       listRef.current?.scrollIntoView();
                     }}

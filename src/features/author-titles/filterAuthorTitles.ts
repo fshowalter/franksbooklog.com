@@ -3,8 +3,8 @@ import { createGradeFilter } from "~/components/react/filter-and-sort/facets/gra
 import { createKindFilter } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewYearFilter } from "~/components/react/filter-and-sort/facets/review-year/reviewYearFilter";
 import { createReviewedStatusFilter } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
 import { createTitleYearFilter } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilter";
+import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
@@ -26,7 +26,7 @@ export function filterAuthorTitles(
     createReviewYearFilter(filterValues.reviewYear),
     createReviewedStatusFilter(filterValues.reviewedStatus),
     createTitleFilter(filterValues.title),
-    createTitleYearFilter(filterValues.workYear),
+    createTitleYearFilter(filterValues.titleYear),
   ].filter((f) => f !== undefined);
   return filterSortedValues({ filters, sortedValues });
 }

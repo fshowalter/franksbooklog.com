@@ -1,4 +1,4 @@
-import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/facets/filtersReducer";
+import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
