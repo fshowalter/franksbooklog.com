@@ -20,13 +20,8 @@ export function createKindFilterChangedAction(
   return { type: ActionTypes.CHANGED, values };
 }
 
-/**
- * Facet reducer for the kind filter. Handles its own action and the
- * array-valued removeAppliedFilter case (id prefix "kind-"). Passes
- * everything else through unchanged.
- */
 export function kindFacetReducer<
-  TState extends { pendingFilterValues: { kind?: readonly string[] } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: readonly string[] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.CHANGED: {
@@ -42,13 +37,16 @@ export function kindFacetReducer<
       }
       return {
         ...state,
-        pendingFilterValues: { ...state.pendingFilterValues, kind: values },
+        pendingFilterValues: {
+          ...state.pendingFilterValues,
+          STATE_KEY: values,
+        },
       };
     }
     case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
       const { key, value } = action as RemoveAppliedFilterAction;
       if (key !== STATE_KEY) return state;
-      const current = state.pendingFilterValues.kind ?? [];
+      const current = state.pendingFilterValues[STATE_KEY] ?? [];
       const updated = current.filter((k) => k !== value);
       if (updated.length === 0) {
         return {
@@ -63,7 +61,7 @@ export function kindFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          kind: updated as readonly string[],
+          STATE_KEY: updated as readonly string[],
         },
       };
     }

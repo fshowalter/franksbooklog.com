@@ -20,13 +20,8 @@ export function createEditionFilterChangedAction(
   return { type: ActionTypes.CHANGED, values };
 }
 
-/**
- * Facet reducer for the edition filter. Handles its own action and the
- * array-valued removeAppliedFilter case (id prefix "edition-"). Passes
- * everything else through unchanged.
- */
 export function editionFacetReducer<
-  TState extends { pendingFilterValues: { edition?: readonly string[] } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: readonly string[] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.CHANGED: {
@@ -36,19 +31,22 @@ export function editionFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            "edition",
+            STATE_KEY,
           ),
         };
       }
       return {
         ...state,
-        pendingFilterValues: { ...state.pendingFilterValues, edition: values },
+        pendingFilterValues: {
+          ...state.pendingFilterValues,
+          STATE_KEY: values,
+        },
       };
     }
     case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
       const { key, value } = action as RemoveAppliedFilterAction;
       if (key !== STATE_KEY) return state;
-      const current = state.pendingFilterValues.edition ?? [];
+      const current = state.pendingFilterValues[STATE_KEY] ?? [];
       const updated = current.filter((e) => e !== value);
       if (updated.length === 0) {
         return {
@@ -63,7 +61,7 @@ export function editionFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          edition: updated as readonly string[],
+          STATE_KEY: updated as readonly string[],
         },
       };
     }

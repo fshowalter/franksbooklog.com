@@ -24,13 +24,8 @@ export function createTitleYearFilterChangedAction(
   return { availableMax, availableMin, type: ActionTypes.CHANGED, values };
 }
 
-/**
- * Facet reducer for the work year range filter. Handles its own action and
- * removes the filter on filters/removeAppliedFilter when id is "workYear".
- * Passes everything else through unchanged.
- */
 export function titleYearFacetReducer<
-  TState extends { pendingFilterValues: { titleYear?: [string, string] } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: [string, string] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.CHANGED: {
@@ -47,7 +42,10 @@ export function titleYearFacetReducer<
       }
       return {
         ...state,
-        pendingFilterValues: { ...state.pendingFilterValues, workYear: values },
+        pendingFilterValues: {
+          ...state.pendingFilterValues,
+          STATE_KEY: values,
+        },
       };
     }
     case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {

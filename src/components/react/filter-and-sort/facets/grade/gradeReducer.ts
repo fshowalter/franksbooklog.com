@@ -21,13 +21,8 @@ export function createGradeFilterChangedAction(
   return { type: ActionTypes.CHANGED, values };
 }
 
-/**
- * Facet reducer for the grade range filter. Handles its own action and removes
- * the filter on filters/removeAppliedFilter when id is GRADE_CHIP_ID. Passes
- * everything else through unchanged.
- */
 export function gradeFacetReducer<
-  TState extends { pendingFilterValues: { gradeValue?: [number, number] } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: [number, number] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.CHANGED: {
@@ -45,7 +40,7 @@ export function gradeFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          gradeValue: values,
+          STATE_KEY: values,
         },
       };
     }
