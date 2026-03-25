@@ -24,7 +24,7 @@ export function titleFacetReducer<
   TState extends { pendingFilterValues: { title?: string } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (id !== TITLE_CHIP_ID) return state;
       return {

@@ -24,7 +24,7 @@ export function nameFacetReducer<
   TState extends { pendingFilterValues: { name?: string } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (id !== NAME_CHIP_ID) return state;
       return {

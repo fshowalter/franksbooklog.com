@@ -25,7 +25,7 @@ export function kindFacetReducer<
   TState extends { pendingFilterValues: { kind?: readonly string[] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (!id.startsWith(`${KIND_CHIP_ID_PREFIX}-`)) return state;
       const kindToRemove = id.slice(`${KIND_CHIP_ID_PREFIX}-`.length);

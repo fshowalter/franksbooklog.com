@@ -27,7 +27,7 @@ export function gradeFacetReducer<
   TState extends { pendingFilterValues: { gradeValue?: [number, number] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (id !== GRADE_CHIP_ID) return state;
       return {

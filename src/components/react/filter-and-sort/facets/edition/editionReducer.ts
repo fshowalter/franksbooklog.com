@@ -44,7 +44,7 @@ export function editionFacetReducer<
         pendingFilterValues: { ...state.pendingFilterValues, edition: values },
       };
     }
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (!id.startsWith(`${EDITION_CHIP_ID_PREFIX}-`)) return state;
       const editionToRemove = id.slice(`${EDITION_CHIP_ID_PREFIX}-`.length);

@@ -27,7 +27,7 @@ export function reviewedStatusFacetReducer<
   },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (!id.startsWith(`${REVIEWED_STATUS_CHIP_ID_PREFIX}-`)) return state;
       const statusToRemove = id.slice(

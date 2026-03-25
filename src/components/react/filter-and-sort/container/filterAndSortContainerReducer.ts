@@ -10,29 +10,29 @@ export type FilterAndSortContainerAction =
 
 export type RemoveAppliedFilterAction = {
   id: string;
-  type: "filerAndSortContainer/removeAppliedFilter";
+  type: "filterAndSortContainer/removeAppliedFilter";
 };
 
 /**
  * Base Action Type Definitions
  */
 type ApplyFiltersAction = {
-  type: "filerAndSortContainer/applied";
+  type: "filterAndSortContainer/applied";
 };
 
 type ClearFiltersAction = {
-  type: "filerAndSortContainer/cleared";
+  type: "filterAndSortContainer/cleared";
 };
 
 type ResetFiltersAction = {
-  type: "filerAndSortContainer/reset";
+  type: "filterAndSortContainer/reset";
 };
 
 /**
  * Action for updating sort state.
  */
 type SortAction = {
-  type: "filerAndSortContainer/sort";
+  type: "filterAndSortContainer/sortChanged";
   value: string;
 };
 
@@ -41,7 +41,7 @@ type SortAction = {
  * @returns Apply filters action
  */
 export function createApplyFiltersAction(): ApplyFiltersAction {
-  return { type: "filerAndSortContainer/applied" };
+  return { type: "filterAndSortContainer/applied" };
 }
 
 /**
@@ -49,7 +49,7 @@ export function createApplyFiltersAction(): ApplyFiltersAction {
  * @returns Clear filters action
  */
 export function createClearFiltersAction(): ClearFiltersAction {
-  return { type: "filerAndSortContainer/cleared" };
+  return { type: "filterAndSortContainer/cleared" };
 }
 
 export function createInitialFilterAndSortContainerState<
@@ -72,7 +72,7 @@ export function createInitialFilterAndSortContainerState<
 export function createRemoveAppliedFilterAction(
   id: string,
 ): RemoveAppliedFilterAction {
-  return { id, type: "filerAndSortContainer/removeAppliedFilter" };
+  return { id, type: "filterAndSortContainer/removeAppliedFilter" };
 }
 
 /**
@@ -80,14 +80,14 @@ export function createRemoveAppliedFilterAction(
  * @returns Reset filters action
  */
 export function createResetFiltersAction(): ResetFiltersAction {
-  return { type: "filerAndSortContainer/reset" };
+  return { type: "filterAndSortContainer/reset" };
 }
 
 export function createSortAction<TSort extends string>(
   value: TSort,
 ): SortAction {
   return {
-    type: "filerAndSortContainer/sort",
+    type: "filterAndSortContainer/sortChanged",
     value,
   };
 }
@@ -109,7 +109,7 @@ export function filterAndSortContainerReducer<
     case "filerAndSortContainer/reset": {
       return { ...state, pendingFilterValues: { ...state.activeFilterValues } };
     }
-    case "filerAndSortContainer/sort": {
+    case "filerAndSortContainer/sortChanged": {
       const { value } = action as SortAction;
       return {
         ...state,

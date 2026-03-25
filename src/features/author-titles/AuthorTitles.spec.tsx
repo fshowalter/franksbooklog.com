@@ -27,13 +27,13 @@ import {
 } from "~/components/react/filter-and-sort/facets/review-year/reviewYearFacetTests";
 import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
 import {
-  titleFilterFacetTests,
-  titleSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
-import {
   titleYearFilterFacetTests,
   workYearSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
+import {
+  titleFilterFacetTests,
+  titleSortFacetTests,
+} from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";

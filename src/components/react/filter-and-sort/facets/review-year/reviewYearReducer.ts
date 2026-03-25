@@ -28,7 +28,7 @@ export function reviewYearFacetReducer<
   TState extends { pendingFilterValues: { reviewYear?: [string, string] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filters/removeAppliedFilter": {
+    case "filterAndSortContainer/removeAppliedFilter": {
       const { id } = action as RemoveAppliedFilterAction;
       if (id !== REVIEW_YEAR_CHIP_ID) return state;
       return {
