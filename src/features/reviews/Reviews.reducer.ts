@@ -4,7 +4,6 @@ import type { KindFilterChangedAction } from "~/components/react/filter-and-sort
 import type { ShowMoreAction } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
 import type { ReviewYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
 import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
-import type { SortAction } from "~/components/react/filter-and-sort/facets/sortReducer";
 import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
 
@@ -21,18 +20,9 @@ import {
 } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
 import { reviewYearFacetReducer } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
 import { reviewedStatusFacetReducer } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
-import {
-  createSortActionCreator,
-  sortReducer,
-} from "~/components/react/filter-and-sort/facets/sortReducer";
 import { titleYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/title/titleReducer";
 
-export { createApplyFiltersAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-export { createClearFiltersAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-export { createRemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-export { createResetFiltersAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-export { selectHasPendingFilters } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 export { createShowMoreAction } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
 
 import type { ReviewsValue } from "./Reviews";
@@ -42,13 +32,12 @@ import type { ReviewsSort } from "./sortReviews";
  * Union of all actions the Reviews reducer handles.
  */
 export type ReviewsAction =
-  | FilterAndSortContainerAction
+  | FilterAndSortContainerAction<ReviewsSort>
   | GradeFilterChangedAction
   | KindFilterChangedAction
   | ReviewedStatusFilterChangedAction
   | ReviewYearFilterChangedAction
   | ShowMoreAction
-  | SortAction<ReviewsSort>
   | TitleFilterChangedAction
   | TitleYearFilterChangedAction;
 
@@ -81,7 +70,6 @@ const reviewsReducer = composeReducers<ReviewsState>(
   titleYearFacetReducer,
   reviewYearFacetReducer,
   showMoreReducer,
-  sortReducer,
 );
 
 /**
@@ -109,8 +97,3 @@ export function reducer(
 ): ReviewsState {
   return reviewsReducer(state, action);
 }
-
-/**
- * Action creator for Reviews sort actions.
- */
-export const createSortAction = createSortActionCreator<ReviewsSort>();

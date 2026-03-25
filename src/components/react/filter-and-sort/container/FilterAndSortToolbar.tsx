@@ -23,7 +23,7 @@ export function FilterAndSortToolbar<T extends string>({
   toggleButtonRef,
   totalCount,
 }: {
-  dispatch: React.Dispatch<FilterAndSortContainerAction>;
+  dispatch: React.Dispatch<FilterAndSortContainerAction<T>>;
   filterDrawerVisible: boolean;
   headerLink?: { href: string; text: string };
   onFilterClick: (event: React.MouseEvent) => void;

@@ -16,7 +16,6 @@ import {
   createInitialState,
   createShowMoreAction,
   reducer,
-  selectHasPendingFilters,
 } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
@@ -128,7 +127,6 @@ export function AuthorTitles({
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
   const kindCounts = createKindCountMap(state.values);
 
-  const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(
     state.activeFilterValues,
     distinctTitleYears,
@@ -150,12 +148,12 @@ export function AuthorTitles({
           reviewedStatusCounts={reviewedStatusCounts}
         />
       }
-      hasPendingFilters={hasPendingFilters}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
         sortOptions: REVIEWED_WORK_SORT_OPTIONS,
       }}
+      state={state}
       totalCount={totalCount}
     >
       <div className="tablet:-mx-6 tablet:pt-5">

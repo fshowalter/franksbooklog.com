@@ -1,6 +1,5 @@
 import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import type { NameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
-import type { SortAction } from "~/components/react/filter-and-sort/facets/sortReducer";
 
 import {
   createInitialFilterAndSortContainerState,
@@ -8,18 +7,6 @@ import {
 } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import { nameFacetReducer } from "~/components/react/filter-and-sort/facets/name/nameReducer";
-import {
-  createSortActionCreator,
-  sortReducer,
-} from "~/components/react/filter-and-sort/facets/sortReducer";
-
-export {
-  createApplyFiltersAction,
-  createClearFiltersAction,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  selectHasPendingFilters,
-} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";
@@ -28,9 +15,8 @@ import type { AuthorsSort } from "./sortAuthors";
  * Union type of all collection-specific filter and sort actions
  */
 export type AuthorsAction =
-  | FilterAndSortContainerAction
-  | NameFilterChangedAction
-  | SortAction<AuthorsSort>;
+  | FilterAndSortContainerAction<AuthorsSort>
+  | NameFilterChangedAction;
 
 /**
  * Filter values for the Authors page.
@@ -52,7 +38,6 @@ type AuthorsState = {
 const authorsReducer = composeReducers<AuthorsState>(
   filterAndSortContainerReducer,
   nameFacetReducer,
-  sortReducer,
 );
 
 export function createInitialState({
@@ -77,8 +62,3 @@ export function reducer(
 ): AuthorsState {
   return authorsReducer(state, action);
 }
-
-/**
- * Action creator for sort actions specific to Authors.
- */
-export const createSortAction = createSortActionCreator<AuthorsSort>();

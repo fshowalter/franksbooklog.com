@@ -4,7 +4,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure";
 
-import type { FilterAndSortContainerAction } from "./filterAndSortContainerReducer";
+import type {
+  FilterAndSortContainerAction,
+  FilterAndSortContainerState,
+} from "./filterAndSortContainerReducer";
 
 import { AppliedFiltersSection } from "./AppliedFiltersSection";
 import {
@@ -13,6 +16,7 @@ import {
   createRemoveAppliedFilterAction,
   createResetFiltersAction,
   createSortAction,
+  selectHasPendingFilters,
 } from "./filterAndSortContainerReducer";
 import { FilterAndSortToolbar } from "./FilterAndSortToolbar";
 
@@ -40,13 +44,13 @@ type Props<T extends string> = {
   activeFilters?: FilterChip[];
   children: React.ReactNode;
   className?: string;
-  dispatch: React.Dispatch<FilterAndSortContainerAction>;
+  dispatch: React.Dispatch<FilterAndSortContainerAction<T>>;
   filters: React.ReactNode;
-  hasPendingFilters: boolean;
   headerLink?: { href: string; text: string };
   pendingFilteredCount: number;
   sideNav?: React.ReactNode;
   sortProps: SortProps<T>;
+  state: FilterAndSortContainerState<T>;
   totalCount: number;
 };
 
@@ -62,11 +66,11 @@ export function FilterAndSortContainer<T extends string>({
   className,
   dispatch,
   filters,
-  hasPendingFilters,
   headerLink,
   pendingFilteredCount,
   sideNav,
   sortProps,
+  state,
   totalCount,
 }: Props<T>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
@@ -84,6 +88,8 @@ export function FilterAndSortContainer<T extends string>({
   const suppressSortScrollRef = useRef(false);
   const formRef = useRef<HTMLFormElement | null>(null);
   const listRef = useRef<HTMLDivElement | null>(null);
+
+  const hasPendingFilters = selectHasPendingFilters(state);
 
   // Drive open/close imperatively from state
   useEffect(() => {

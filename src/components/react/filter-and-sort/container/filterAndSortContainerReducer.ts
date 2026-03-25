@@ -1,12 +1,18 @@
 /**
  * Union type for all filter-related actions.
  */
-export type FilterAndSortContainerAction =
+export type FilterAndSortContainerAction<T extends string> =
   | ApplyFiltersAction
   | ClearFiltersAction
   | RemoveAppliedFilterAction
   | ResetFiltersAction
-  | SortAction;
+  | SortAction<T>;
+
+export type FilterAndSortContainerState<TSort> = {
+  activeFilterValues: Record<string, unknown>;
+  pendingFilterValues: Record<string, unknown>;
+  sort: TSort;
+};
 
 export type RemoveAppliedFilterAction = {
   id: string;
@@ -31,9 +37,9 @@ type ResetFiltersAction = {
 /**
  * Action for updating sort state.
  */
-type SortAction = {
+type SortAction<T extends string> = {
   type: "filterAndSortContainer/sortChanged";
-  value: string;
+  value: T;
 };
 
 /**
@@ -85,7 +91,7 @@ export function createResetFiltersAction(): ResetFiltersAction {
 
 export function createSortAction<TSort extends string>(
   value: TSort,
-): SortAction {
+): SortAction<TSort> {
   return {
     type: "filterAndSortContainer/sortChanged",
     value,
@@ -93,24 +99,21 @@ export function createSortAction<TSort extends string>(
 }
 
 export function filterAndSortContainerReducer<
-  TState extends {
-    activeFilterValues: Record<string, unknown>;
-    pendingFilterValues: Record<string, unknown>;
-    sort: string;
-  },
+  TSort extends string,
+  TState extends FilterAndSortContainerState<TSort>,
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filerAndSortContainer/applied": {
+    case "filterAndSortContainer/applied": {
       return { ...state, activeFilterValues: { ...state.pendingFilterValues } };
     }
-    case "filerAndSortContainer/cleared": {
+    case "filterAndSortContainer/cleared": {
       return { ...state, pendingFilterValues: {} };
     }
-    case "filerAndSortContainer/reset": {
+    case "filterAndSortContainer/reset": {
       return { ...state, pendingFilterValues: { ...state.activeFilterValues } };
     }
-    case "filerAndSortContainer/sortChanged": {
-      const { value } = action as SortAction;
+    case "filterAndSortContainer/sortChanged": {
+      const { value } = action as SortAction<TSort>;
       return {
         ...state,
         sort: value,

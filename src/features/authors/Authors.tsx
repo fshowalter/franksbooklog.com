@@ -10,11 +10,7 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 import type { AuthorsSort } from "./sortAuthors";
 
 import { AlphabetSideNav } from "./AlphabetSideNav";
-import {
-  createInitialState,
-  reducer,
-  selectHasPendingFilters,
-} from "./Authors.reducer";
+import { createInitialState, reducer } from "./Authors.reducer";
 import { AuthorsFilters } from "./AuthorsFilters";
 import { AuthorsListItem } from "./AuthorsListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
@@ -88,7 +84,6 @@ export function Authors({
     state.pendingFilterValues,
   );
 
-  const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
@@ -101,7 +96,6 @@ export function Authors({
           filterValues={state.pendingFilterValues}
         />
       }
-      hasPendingFilters={hasPendingFilters}
       pendingFilteredCount={pendingFilteredCount}
       sideNav={
         <AlphabetSideNav groupedValues={groupedValues} sortValue={state.sort} />
@@ -115,6 +109,7 @@ export function Authors({
           { label: "Review Count (Fewest First)", value: "review-count-asc" },
         ],
       }}
+      state={state}
       totalCount={totalCount}
     >
       <GroupedAvatarList
