@@ -13,16 +13,15 @@ import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-d
  */
 
 type FilterChip = {
-  category: string; // Display category (e.g., "Kind", "Search")
   displayText: string; // Pre-assembled display string (e.g., "Novel", "Grade: A- to B+", "Search: dune")
-  id: string; // Unique identifier (e.g., "kind-novel", "title")
-  label: string; // Raw display value (e.g., "Novel", "dune")
+  key: string;
+  value: string | undefined;
 };
 
 type Props = {
   filters: FilterChip[];
   onClearAll: () => void;
-  onRemove: (id: string) => void;
+  onRemove: (key: string, value: string | undefined) => void;
 };
 
 export function AppliedFiltersSection({
@@ -51,8 +50,8 @@ export function AppliedFiltersSection({
                 hover:border-accent hover:bg-accent
                 focus:border-accent focus:bg-accent focus:outline-none
               "
-              key={filter.id}
-              onClick={() => onRemove(filter.id)}
+              key={`${filter.key}-${filter.value}`}
+              onClick={() => onRemove(filter.key, filter.value)}
               type="button"
             >
               <span>{displayText}</span>

@@ -1,22 +1,21 @@
 import type { FilterChip } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 
-import { toChipSlug } from "~/components/react/filter-and-sort/facets/toChipSlug";
-
 /**
  * Builds one chip per selected value for a multi-select filter.
  * Returns an empty array if values is empty or undefined.
  */
-export function buildMultiSelectChips(
-  values: readonly string[] | undefined,
-  category: string,
-  idPrefix: string,
-): FilterChip[] {
+export function buildMultiSelectChips({
+  key,
+  values,
+}: {
+  key: string;
+  values: readonly string[] | undefined;
+}): FilterChip[] {
   if (!values || values.length === 0) return [];
   return values.map((value) => ({
-    category,
     displayText: value,
-    id: `${idPrefix}-${toChipSlug(value)}`,
-    label: value,
+    key,
+    value,
   }));
 }
 
@@ -24,18 +23,20 @@ export function buildMultiSelectChips(
  * Builds a search chip for a text search field.
  * Returns an empty array if the value is blank or undefined.
  */
-export function buildSearchChip(
-  value: string | undefined,
-  fieldId: string,
-): FilterChip[] {
+export function buildSearchChip({
+  key,
+  value,
+}: {
+  key: string;
+  value: string | undefined;
+}): FilterChip[] {
   const trimmed = value?.trim();
   if (!trimmed) return [];
   return [
     {
-      category: "Search",
       displayText: `Search: ${trimmed}`,
-      id: fieldId,
-      label: trimmed,
+      key,
+      value: undefined,
     },
   ];
 }
@@ -44,24 +45,23 @@ export function buildSearchChip(
  * Builds a year-range chip for a range slider filter.
  * Returns an empty array when the selected range equals the full available range.
  */
-export function buildYearRangeChip(
-  value: readonly [string, string] | undefined,
-  distinctYears: readonly string[],
-  category: string,
-  fieldId: string,
-): FilterChip[] {
-  if (!value || distinctYears.length === 0) return [];
+export function buildYearRangeChip({
+  key,
+  label,
+  value,
+}: {
+  key: string;
+  label: string;
+  value: readonly [string, string] | undefined;
+}): FilterChip[] {
+  if (!value) return [];
   const [minYear, maxYear] = value;
-  const availableMin = distinctYears[0];
-  const availableMax = distinctYears.at(-1)!;
-  if (minYear === availableMin && maxYear === availableMax) return [];
-  const label = minYear === maxYear ? minYear : `${minYear} to ${maxYear}`;
+  const range = minYear === maxYear ? minYear : `${minYear} to ${maxYear}`;
   return [
     {
-      category,
-      displayText: `${category}: ${label}`,
-      id: fieldId,
-      label,
+      displayText: `${label}: ${range}`,
+      key,
+      value: undefined,
     },
   ];
 }

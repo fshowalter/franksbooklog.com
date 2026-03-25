@@ -2,10 +2,13 @@ import type { FilterChip } from "~/components/react/filter-and-sort/container/Fi
 
 import { buildMultiSelectChips } from "~/components/react/filter-and-sort/facets/filterChipBuilders";
 
-import { EDITION_CHIP_ID_PREFIX } from "./editionChipId";
+import { STATE_KEY } from "./editionReducer";
 
 export function buildEditionFilterChip(
-  edition: readonly string[] | undefined,
+  values: readonly string[] | undefined,
 ): FilterChip[] {
-  return buildMultiSelectChips(edition, "Edition", EDITION_CHIP_ID_PREFIX);
+  return buildMultiSelectChips({
+    key: STATE_KEY,
+    values,
+  });
 }

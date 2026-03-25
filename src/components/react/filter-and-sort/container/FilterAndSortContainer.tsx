@@ -292,11 +292,11 @@ export function FilterAndSortContainer<T extends string>({
                         setDisplayedChips([]);
                         dispatch(createClearFiltersAction());
                       }}
-                      onRemove={(id) => {
+                      onRemove={(key, value) => {
                         setDisplayedChips((prev) =>
-                          prev.filter((c) => c.id !== id),
+                          prev.filter((c) => c.key !== key),
                         );
-                        dispatch(createRemoveAppliedFilterAction(id));
+                        dispatch(createRemoveAppliedFilterAction(key, value));
                       }}
                     />
                   )}

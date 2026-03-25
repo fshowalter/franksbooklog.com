@@ -1,21 +1,24 @@
 import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
+import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 
-import { GRADE_CHIP_ID } from "./gradeChipId";
+export const STATE_KEY = "gradeValue" as const;
 
-const GRADE_STATE_KEY = "gradeValue" as const;
+const ActionTypes = {
+  CHANGED: "grade/changed",
+};
 
 export type GradeFilterChangedAction = {
-  type: "grade/changed";
+  type: typeof ActionTypes.CHANGED;
   values: [number, number];
 };
 
 export function createGradeFilterChangedAction(
   values: [number, number],
 ): GradeFilterChangedAction {
-  return { type: "grade/changed", values };
+  return { type: ActionTypes.CHANGED, values };
 }
 
 /**
@@ -27,25 +30,14 @@ export function gradeFacetReducer<
   TState extends { pendingFilterValues: { gradeValue?: [number, number] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filterAndSortContainer/removeAppliedFilter": {
-      const { id } = action as RemoveAppliedFilterAction;
-      if (id !== GRADE_CHIP_ID) return state;
-      return {
-        ...state,
-        pendingFilterValues: omitPendingKey(
-          state.pendingFilterValues,
-          GRADE_STATE_KEY,
-        ),
-      };
-    }
-    case "grade/changed": {
+    case ActionTypes.CHANGED: {
       const { values } = action as GradeFilterChangedAction;
       if (values[0] === GRADE_MIN && values[1] === GRADE_MAX) {
         return {
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            GRADE_STATE_KEY,
+            STATE_KEY,
           ),
         };
       }
@@ -55,6 +47,17 @@ export function gradeFacetReducer<
           ...state.pendingFilterValues,
           gradeValue: values,
         },
+      };
+    }
+    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
+      const { key } = action as RemoveAppliedFilterAction;
+      if (key !== STATE_KEY) return state;
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          STATE_KEY,
+        ),
       };
     }
     default: {

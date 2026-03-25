@@ -2,8 +2,11 @@ import type { FilterChip } from "~/components/react/filter-and-sort/container/Fi
 
 import { buildSearchChip } from "~/components/react/filter-and-sort/facets/filterChipBuilders";
 
-import { NAME_CHIP_ID } from "./nameChipId";
+import { STATE_KEY } from "./nameReducer";
 
 export function buildNameFilterChip(name: string | undefined): FilterChip[] {
-  return buildSearchChip(name, NAME_CHIP_ID);
+  return buildSearchChip({
+    key: STATE_KEY,
+    value: name,
+  });
 }

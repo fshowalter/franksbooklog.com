@@ -14,9 +14,14 @@ export type FilterAndSortContainerState<TSort> = {
   sort: TSort;
 };
 
+export const ActionTypes = {
+  REMOVE_APPLIED_FILTER: "filterAndSortContainer/removeAppliedFilter",
+};
+
 export type RemoveAppliedFilterAction = {
-  id: string;
-  type: "filterAndSortContainer/removeAppliedFilter";
+  key: string;
+  type: typeof ActionTypes.REMOVE_APPLIED_FILTER;
+  value: string | undefined;
 };
 
 /**
@@ -76,9 +81,10 @@ export function createInitialFilterAndSortContainerState<
  * @returns Remove applied filter action
  */
 export function createRemoveAppliedFilterAction(
-  id: string,
+  key: string,
+  value: string | undefined,
 ): RemoveAppliedFilterAction {
-  return { id, type: "filterAndSortContainer/removeAppliedFilter" };
+  return { key, type: ActionTypes.REMOVE_APPLIED_FILTER, value };
 }
 
 /**

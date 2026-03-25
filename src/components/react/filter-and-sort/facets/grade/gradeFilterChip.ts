@@ -1,8 +1,8 @@
 import type { FilterChip } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 
-import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
+import { gradeToLetter } from "~/utils/grades";
 
-import { GRADE_CHIP_ID } from "./gradeChipId";
+import { STATE_KEY } from "./gradeReducer";
 
 /**
  * Builds a grade-range chip for the grade slider filter (scale 2–16).
@@ -13,17 +13,15 @@ export function buildGradeFilterChip(
 ): FilterChip[] {
   if (!gradeValue) return [];
   const [minGrade, maxGrade] = gradeValue;
-  if (minGrade === GRADE_MIN && maxGrade === GRADE_MAX) return [];
   const minLetter = gradeToLetter(minGrade);
   const maxLetter = gradeToLetter(maxGrade);
   const label =
     minLetter === maxLetter ? minLetter : `${minLetter} to ${maxLetter}`;
   return [
     {
-      category: "Grade",
       displayText: `Grade: ${label}`,
-      id: GRADE_CHIP_ID,
-      label,
+      key: STATE_KEY,
+      value: undefined,
     },
   ];
 }
