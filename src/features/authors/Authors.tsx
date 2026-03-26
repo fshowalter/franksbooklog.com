@@ -111,24 +111,16 @@ export function Authors({
       state={state}
       totalCount={totalCount}
     >
-      <>
-        {/* <div className="absolute right-0">
-          <AlphabetSideNav
-            groupedValues={groupedValues}
-            sortValue={state.sort}
-          />
-        </div> */}
-        <GroupedAvatarList
-          className="
-            grow
-            desktop:-mr-10 desktop:pl-10
-          "
-          groupedValues={groupedValues}
-          groupItemClassName={`scroll-mt-[var(--filter-and-sort-container-scroll-offset)]`}
-        >
-          {(value) => <AuthorsListItem key={value.slug} value={value} />}
-        </GroupedAvatarList>
-      </>
+      <GroupedAvatarList
+        className="
+          grow
+          desktop:-mr-10 desktop:pl-10
+        "
+        groupedValues={groupedValues}
+        groupItemClassName={`scroll-mt-[var(--filter-and-sort-container-scroll-offset)]`}
+      >
+        {(value) => <AuthorsListItem key={value.slug} value={value} />}
+      </GroupedAvatarList>
     </FilterAndSortContainer>
   );
 }
