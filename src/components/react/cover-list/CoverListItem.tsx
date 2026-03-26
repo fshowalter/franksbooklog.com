@@ -14,17 +14,6 @@ export const CoverListItemImageConfig = {
   width: 250,
 };
 
-/**
- * Renders a cover list item with responsive layout and hover effects.
- * Displays a cover image alongside content, with different layouts for mobile
- * (horizontal) and tablet+ (vertical). Includes hover animations when reviews are available.
- *
- * @param props - The component props
- * @param props.children - Content to display alongside the cover image
- * @param props.coverImageProps - Image properties for the cover display
- * @param props.hasReview - Whether this item has an associated review (affects hover behavior)
- * @returns A JSX element containing the cover list item
- */
 export function CoverListItem({
   children,
   coverImageProps,
