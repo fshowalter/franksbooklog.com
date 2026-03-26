@@ -33,7 +33,7 @@ export function AlphabetSideNav({
         overflow-y-auto bg-sidenav
         tablet:top-24 tablet:h-[calc(100vh-96px)] tablet:px-4
         laptop:top-[97px]
-        ${className || ""}
+        ${className ?? ""}
       `}
     >
       <div className={`flex flex-col text-md font-semibold tracking-wide`}>
