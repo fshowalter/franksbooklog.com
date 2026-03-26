@@ -12,7 +12,7 @@ export type FilterAndSortContainerState<TSort, TValue> = {
   activeFilterValues: Record<string, unknown>;
   pendingFilterValues: Record<string, unknown>;
   sort: TSort;
-  values: TValue;
+  values: TValue[];
 };
 
 export const ActionTypes = {
@@ -71,7 +71,13 @@ export function createClearFiltersAction(): ClearFiltersAction {
 export function createInitialFilterAndSortContainerState<
   TValue,
   TSort extends string,
->({ initialSort, values }: { initialSort: TSort; values: TValue[] }) {
+>({
+  initialSort,
+  values,
+}: {
+  initialSort: TSort;
+  values: TValue[];
+}): FilterAndSortContainerState<TSort, TValue> {
   return {
     activeFilterValues: {} as Record<string, unknown>,
     pendingFilterValues: {} as Record<string, unknown>,
