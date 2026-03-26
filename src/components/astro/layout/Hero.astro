@@ -23,7 +23,7 @@ type Props = {
   };
   centerText?: boolean;
   deck: string;
-  size?: "default" | "large";
+  size?: "default" | "large" | "small";
   title: string;
   titleClassNames?: string;
 };
@@ -45,7 +45,10 @@ const defaultSizes =
 
 const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
-const sizes = size === "large" ? largeSizes : defaultSizes;
+const smallSizes = "min-h-[300px] max-h-[640px]";
+
+const sizes =
+  size === "large" ? largeSizes : size === "small" ? smallSizes : defaultSizes;
 
 const backdropImageProps = await getBackdropImageProps(
   backdropSlug,

@@ -9,9 +9,11 @@ import type { AuthorsSort } from "./sortAuthors";
  * @returns Alphabet navigation component or false if not sorting by name
  */
 export function AlphabetSideNav({
+  className,
   groupedValues,
   sortValue,
 }: {
+  className?: string;
   groupedValues: Map<string, AuthorsValue[]>;
   sortValue: AuthorsSort;
 }): false | React.JSX.Element {
@@ -27,10 +29,11 @@ export function AlphabetSideNav({
   return (
     <nav
       className={`
-        sticky top-[89px] z-nav-menu scrollbar-hidden h-[calc(100vh-148px)]
+        sticky top-[89px] z-nav-menu scrollbar-hidden h-[calc(100vh-88px)]
         overflow-y-auto bg-sidenav
         tablet:top-24 tablet:h-[calc(100vh-96px)] tablet:px-4
         laptop:top-[97px]
+        ${className || ""}
       `}
     >
       <div className={`flex flex-col text-md font-semibold tracking-wide`}>

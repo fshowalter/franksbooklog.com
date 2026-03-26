@@ -34,7 +34,7 @@ export async function reviewOpenGraphImageResponse({
   const gradeFile = fileForGrade(grade);
 
   if (gradeFile) {
-    gradeBuffer = await sharp(path.resolve(`./public${fileForGrade(grade)}`))
+    gradeBuffer = await sharp(path.resolve(`./public${gradeFile}`))
       .resize(240)
       .toBuffer();
   }

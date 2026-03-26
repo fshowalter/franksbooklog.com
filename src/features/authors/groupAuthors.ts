@@ -1,17 +1,41 @@
-import { groupCollections } from "~/groupers/groupCollections";
-
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";
 
-/**
- * Groups cast and crew members based on the current sort criteria.
- * @param filteredValues - Array of filtered cast/crew members
- * @param sort - Current sort criteria
- * @returns Grouped cast/crew members
- */
 export function groupAuthors(
   filteredValues: AuthorsValue[],
   sort: AuthorsSort,
 ) {
-  return groupCollections(filteredValues, sort);
+  const grouped = new Map<string, AuthorsValue[]>();
+
+  for (const value of filteredValues) {
+    const key = groupForTitleValue(value, sort);
+    const group = grouped.get(key) || [];
+    group.push(value);
+    grouped.set(key, group);
+  }
+
+  return grouped;
+}
+
+function getGroupLetter(str: string): string {
+  const letter = str.slice(0, 1);
+
+  if (letter.toLowerCase() === letter.toUpperCase()) {
+    return "#";
+  }
+
+  return letter.toLocaleUpperCase();
+}
+
+function groupForTitleValue(value: AuthorsValue, sort: AuthorsSort) {
+  switch (sort) {
+    case "name-asc":
+    case "name-desc": {
+      return getGroupLetter(value.sortName);
+    }
+    case "review-count-asc":
+    case "review-count-desc": {
+      return "";
+    }
+  }
 }
