@@ -7,7 +7,7 @@ import {
   getOpenGraphCover,
   getWorkCoverPath,
 } from "~/assets/covers";
-import { fileForGrade } from "~/components/utils/gradeMap";
+import { gradeMap } from "~/components/utils/gradeMap";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
@@ -72,6 +72,16 @@ export async function reviewOpenGraphImageResponse({
     />,
     fetchedResources,
   );
+}
+
+function fileForGrade(value: string): string | undefined {
+  if (!value || value == "Abandoned") {
+    return;
+  }
+
+  const [src] = gradeMap[value];
+
+  return src;
 }
 
 function ReviewOpenGraphImage({
