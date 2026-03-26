@@ -2,7 +2,7 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 
 import { getCollection } from "astro:content";
 
-import { reviewOpenGraphImageResponse } from "~/features/review/reviewOpenGraphImageResponse";
+import { createReviewOpenGraphImageResponse } from "~/features/review/createReviewOpenGraphImageResponse";
 
 /**
  * Props type inferred from getStaticPaths function, containing the complete review/work data
@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 export const GET: APIRoute = async function get({ props }) {
   const { reviewedWork } = props as Props;
 
-  return await reviewOpenGraphImageResponse({
+  return await createReviewOpenGraphImageResponse({
     authors: reviewedWork.authors,
     coverSlug: reviewedWork.review.id,
     grade: reviewedWork.grade,

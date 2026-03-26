@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { readingLogOpenGraphImageResponse } from "~/features/reading-log/readingLogOpenGraphImageResponse";
+import { createOpenGraphImageResponse } from "~/utils/createOpenGraphImageResponse";
 
 /**
  * Astro API endpoint that generates the Open Graph image for the reading log page.
@@ -10,5 +10,5 @@ import { readingLogOpenGraphImageResponse } from "~/features/reading-log/reading
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  return await readingLogOpenGraphImageResponse();
+  return await createOpenGraphImageResponse("Reading Log", "readings");
 };

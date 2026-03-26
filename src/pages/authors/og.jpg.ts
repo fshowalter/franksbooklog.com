@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { authorsOpenGraphImageResponse } from "~/features/authors/authorsOpenGraphImageResponse";
+import { createOpenGraphImageResponse } from "~/utils/createOpenGraphImageResponse";
 
 /**
  * Astro API endpoint that generates the Open Graph image for the authors index page.
@@ -10,5 +10,5 @@ import { authorsOpenGraphImageResponse } from "~/features/authors/authorsOpenGra
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  return await authorsOpenGraphImageResponse();
+  return await createOpenGraphImageResponse("Authors", "authors");
 };

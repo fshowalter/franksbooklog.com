@@ -9,7 +9,7 @@ type Props = {
   name: string;
 };
 
-export async function authorTitlesOpenGraphImageResponse({
+export async function createAuthorTitlesOpenGraphImageResponse({
   name,
 }: Props): Promise<Response> {
   const backdrop = await getOpenGraphBackdrop("author");
