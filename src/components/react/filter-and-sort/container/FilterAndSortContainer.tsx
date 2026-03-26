@@ -181,7 +181,12 @@ export function FilterAndSortContainer<T extends string, V>({
             totalCount={totalCount}
           />
         </div>
-        <div className="flex flex-row-reverse">
+        <div
+          className={`
+            flex flex-row-reverse
+            ${sideNav ? "mr-auto justify-start" : ""}
+          `}
+        >
           {sideNav && sideNav}
 
           <div
@@ -189,7 +194,14 @@ export function FilterAndSortContainer<T extends string, V>({
               mx-auto max-w-(--breakpoint-desktop) grow
               scroll-mt-(--filter-and-sort-container-scroll-offset,0px) pb-10
               [--filter-and-sort-container-scroll-offset:89px]
-              tablet:px-container
+              ${
+                sideNav
+                  ? `
+                    max-w-[calc(var(--breakpoint-desktop)-80px)]
+                    tablet:px-container
+                  `
+                  : ``
+              }
               tablet:[--filter-and-sort-container-scroll-offset:97px]
             `}
             id="list"
