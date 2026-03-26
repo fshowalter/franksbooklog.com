@@ -1,13 +1,18 @@
 import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
+import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
-import { REVIEW_YEAR_CHIP_ID } from "./reviewYearChipId";
+export const STATE_KEY = "reviewYear";
+
+const ActionTypes = {
+  CHANGED: "reviewYear/changed",
+};
 
 export type ReviewYearFilterChangedAction = {
   availableMax: string;
   availableMin: string;
-  type: "reviewYear/changed";
+  type: typeof ActionTypes.CHANGED;
   values: [string, string];
 };
 
@@ -16,7 +21,7 @@ export function createReviewYearFilterChangedAction(
   availableMin: string,
   availableMax: string,
 ): ReviewYearFilterChangedAction {
-  return { availableMax, availableMin, type: "reviewYear/changed", values };
+  return { availableMax, availableMin, type: ActionTypes.CHANGED, values };
 }
 
 /**
@@ -25,21 +30,10 @@ export function createReviewYearFilterChangedAction(
  * Passes everything else through unchanged.
  */
 export function reviewYearFacetReducer<
-  TState extends { pendingFilterValues: { reviewYear?: [string, string] } },
+  TState extends { pendingFilterValues: { [STATE_KEY]?: [string, string] } },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filterAndSortContainer/removeAppliedFilter": {
-      const { id } = action as RemoveAppliedFilterAction;
-      if (id !== REVIEW_YEAR_CHIP_ID) return state;
-      return {
-        ...state,
-        pendingFilterValues: omitPendingKey(
-          state.pendingFilterValues,
-          REVIEW_YEAR_CHIP_ID,
-        ),
-      };
-    }
-    case "reviewYear/changed": {
+    case ActionTypes.CHANGED: {
       const { availableMax, availableMin, values } =
         action as ReviewYearFilterChangedAction;
       if (values[0] === availableMin && values[1] === availableMax) {
@@ -47,7 +41,7 @@ export function reviewYearFacetReducer<
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            REVIEW_YEAR_CHIP_ID,
+            STATE_KEY,
           ),
         };
       }
@@ -55,8 +49,19 @@ export function reviewYearFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          reviewYear: values,
+          [STATE_KEY]: values,
         },
+      };
+    }
+    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
+      const { key } = action as RemoveAppliedFilterAction;
+      if (key !== STATE_KEY) return state;
+      return {
+        ...state,
+        pendingFilterValues: omitPendingKey(
+          state.pendingFilterValues,
+          STATE_KEY,
+        ),
       };
     }
     default: {

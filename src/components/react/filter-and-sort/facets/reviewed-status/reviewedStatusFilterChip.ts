@@ -2,14 +2,13 @@ import type { FilterChip } from "~/components/react/filter-and-sort/container/Fi
 
 import { buildMultiSelectChips } from "~/components/react/filter-and-sort/facets/filterChipBuilders";
 
-import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusChipId";
+import { STATE_KEY } from "./reviewedStatusReducer";
 
 export function buildReviewedStatusFilterChip(
-  reviewedStatus: readonly string[] | undefined,
+  values: readonly string[] | undefined,
 ): FilterChip[] {
-  return buildMultiSelectChips(
-    reviewedStatus,
-    "Status",
-    REVIEWED_STATUS_CHIP_ID_PREFIX,
-  );
+  return buildMultiSelectChips({
+    key: STATE_KEY,
+    values,
+  });
 }

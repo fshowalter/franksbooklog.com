@@ -3,7 +3,7 @@ import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-so
 import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
-export const ActionTypes = {
+const ActionTypes = {
   CHANGED: "kind/changed",
 };
 

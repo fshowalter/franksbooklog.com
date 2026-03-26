@@ -2,16 +2,14 @@ import type { FilterChip } from "~/components/react/filter-and-sort/container/Fi
 
 import { buildYearRangeChip } from "~/components/react/filter-and-sort/facets/filterChipBuilders";
 
-import { REVIEW_YEAR_CHIP_ID } from "./reviewYearChipId";
+import { STATE_KEY } from "./reviewYearReducer";
 
 export function buildReviewYearFilterChip(
   value: readonly [string, string] | undefined,
-  distinctReviewYears: readonly string[],
 ): FilterChip[] {
-  return buildYearRangeChip(
+  return buildYearRangeChip({
+    key: STATE_KEY,
+    label: "Review Year",
     value,
-    distinctReviewYears,
-    "Review Year",
-    REVIEW_YEAR_CHIP_ID,
-  );
+  });
 }

@@ -1,19 +1,23 @@
 import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
+import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
-import { toChipSlug } from "~/components/react/filter-and-sort/facets/toChipSlug";
 
-import { REVIEWED_STATUS_CHIP_ID_PREFIX } from "./reviewedStatusChipId";
+export const STATE_KEY = "reviewedStatus";
+
+const ActionTypes = {
+  CHANGED: "reviewedStatus/changed",
+};
 
 export type ReviewedStatusFilterChangedAction = {
-  type: "reviewedStatus/changed";
+  type: typeof ActionTypes.CHANGED;
   values: readonly string[];
 };
 
 export function createReviewedStatusFilterChangedAction(
   values: readonly string[],
 ): ReviewedStatusFilterChangedAction {
-  return { type: "reviewedStatus/changed", values };
+  return { type: ActionTypes.CHANGED, values };
 }
 
 /**
@@ -23,43 +27,18 @@ export function createReviewedStatusFilterChangedAction(
  */
 export function reviewedStatusFacetReducer<
   TState extends {
-    pendingFilterValues: { reviewedStatus?: readonly string[] };
+    pendingFilterValues: { [STATE_KEY]?: readonly string[] };
   },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filterAndSortContainer/removeAppliedFilter": {
-      const { id } = action as RemoveAppliedFilterAction;
-      if (!id.startsWith(`${REVIEWED_STATUS_CHIP_ID_PREFIX}-`)) return state;
-      const statusToRemove = id.slice(
-        `${REVIEWED_STATUS_CHIP_ID_PREFIX}-`.length,
-      );
-      const current = state.pendingFilterValues.reviewedStatus ?? [];
-      const updated = current.filter((s) => toChipSlug(s) !== statusToRemove);
-      if (updated.length === 0) {
-        return {
-          ...state,
-          pendingFilterValues: omitPendingKey(
-            state.pendingFilterValues,
-            "reviewedStatus",
-          ),
-        };
-      }
-      return {
-        ...state,
-        pendingFilterValues: {
-          ...state.pendingFilterValues,
-          reviewedStatus: updated as readonly string[],
-        },
-      };
-    }
-    case "reviewedStatus/changed": {
+    case ActionTypes.CHANGED: {
       const { values } = action as ReviewedStatusFilterChangedAction;
       if (values.length === 0) {
         return {
           ...state,
           pendingFilterValues: omitPendingKey(
             state.pendingFilterValues,
-            "reviewedStatus",
+            STATE_KEY,
           ),
         };
       }
@@ -67,7 +46,30 @@ export function reviewedStatusFacetReducer<
         ...state,
         pendingFilterValues: {
           ...state.pendingFilterValues,
-          reviewedStatus: values,
+          [STATE_KEY]: values,
+        },
+      };
+    }
+    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
+      const { key, value } = action as RemoveAppliedFilterAction;
+      if (key !== STATE_KEY) return state;
+
+      const current = state.pendingFilterValues[STATE_KEY] ?? [];
+      const updated = current.filter((s) => s !== value);
+      if (updated.length === 0) {
+        return {
+          ...state,
+          pendingFilterValues: omitPendingKey(
+            state.pendingFilterValues,
+            STATE_KEY,
+          ),
+        };
+      }
+      return {
+        ...state,
+        pendingFilterValues: {
+          ...state.pendingFilterValues,
+          [STATE_KEY]: updated as readonly string[],
         },
       };
     }
