@@ -1,4 +1,4 @@
-import { gradeMap } from "~/components/utils/gradeMap";
+import { gradeMap } from "~/utils/gradeMap";
 
 /**
  * Displays a grade as star icons with light/dark theme support.

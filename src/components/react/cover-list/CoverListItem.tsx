@@ -28,12 +28,10 @@ export const CoverListItemImageConfig = {
 export function CoverListItem({
   children,
   coverImageProps,
-  hasReview = true,
 }: {
   children: React.ReactNode;
   className?: string;
   coverImageProps: CoverImageProps;
-  hasReview?: boolean;
 }): React.JSX.Element {
   return (
     <li
@@ -43,15 +41,8 @@ export function CoverListItem({
         transition-transform duration-500
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:p-6
-        ${
-          hasReview
-            ? `
-              tablet:has-[a:hover]:-translate-y-2
-              tablet:has-[a:hover]:bg-default
-              tablet:has-[a:hover]:drop-shadow-2xl
-            `
-            : `bg-transparent`
-        }
+        tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default
+        tablet:has-[a:hover]:drop-shadow-2xl
       `}
     >
       <CoverListItemCover

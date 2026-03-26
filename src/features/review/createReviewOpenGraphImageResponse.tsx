@@ -7,9 +7,9 @@ import {
   getOpenGraphCover,
   getWorkCoverPath,
 } from "~/assets/covers";
-import { gradeMap } from "~/components/utils/gradeMap";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { gradeMap } from "~/utils/gradeMap";
 
 type Props = {
   authors: {
@@ -21,7 +21,7 @@ type Props = {
   title: string;
 };
 
-export async function reviewOpenGraphImageResponse({
+export async function createReviewOpenGraphImageResponse({
   authors,
   coverSlug,
   grade,

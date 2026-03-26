@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { alltimeStatsOpenGraphImageResponse } from "~/features/stats/alltimeStatsOpenGraphImageResponse";
+import { createOpenGraphImageResponse } from "~/utils/createOpenGraphImageResponse";
 
 /**
  * Astro API endpoint that generates the Open Graph image for the all-time reading statistics page.
@@ -10,5 +10,5 @@ import { alltimeStatsOpenGraphImageResponse } from "~/features/stats/alltimeStat
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  return await alltimeStatsOpenGraphImageResponse();
+  return await createOpenGraphImageResponse("All-Time Stats", "stats");
 };

@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { homeOpenGraphImageResponse } from "~/features/home/homeOpenGraphImageResponse";
+import { createHomeOpenGraphImageResponse } from "~/features/home/createHomeOpenGraphImageResponse";
 
 /**
  * Astro API endpoint that generates the Open Graph image for the home page.
@@ -10,5 +10,5 @@ import { homeOpenGraphImageResponse } from "~/features/home/homeOpenGraphImageRe
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  return await homeOpenGraphImageResponse();
+  return await createHomeOpenGraphImageResponse();
 };

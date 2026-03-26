@@ -3,7 +3,7 @@ import type { InferGetStaticPropsType } from "astro";
 
 import { getCollection } from "astro:content";
 
-import { yearStatsOpenGraphImageResponse } from "~/features/stats/yearStatsOpenGraphImageResponse";
+import { createOpenGraphImageResponse } from "~/utils/createOpenGraphImageResponse";
 
 /**
  * Props type inferred from getStaticPaths function, containing the year
@@ -45,5 +45,5 @@ export async function getStaticPaths() {
 export const GET: APIRoute = async function get({ props }) {
   const { year } = props as Props;
 
-  return await yearStatsOpenGraphImageResponse(year);
+  return await createOpenGraphImageResponse(`${year} Stats`, year);
 };
