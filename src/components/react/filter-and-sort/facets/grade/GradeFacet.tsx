@@ -70,9 +70,6 @@ export function GradeFacet({
     onGradeChange([from, to]);
   };
 
-  // When onClear is provided the parent owns the full reset — calling
-  // onGradeChange([min, max]) here too would produce a duplicate dispatch (same
-  // pattern as RangeSliderField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
     setMinValue(GRADE_MIN);
     setMaxValue(GRADE_MAX);
