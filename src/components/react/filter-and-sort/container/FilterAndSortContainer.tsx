@@ -40,7 +40,7 @@ export type SortProps<T extends string> = {
   sortOptions: readonly SortOption[];
 };
 
-type Props<T extends string> = {
+type Props<T extends string, V> = {
   activeFilters?: FilterChip[];
   children: React.ReactNode;
   className?: string;
@@ -50,7 +50,7 @@ type Props<T extends string> = {
   pendingFilteredCount: number;
   sideNav?: React.ReactNode;
   sortProps: SortProps<T>;
-  state: FilterAndSortContainerState<T>;
+  state: FilterAndSortContainerState<T, V>;
   totalCount: number;
 };
 
@@ -60,7 +60,7 @@ type Props<T extends string> = {
  * @param props - Component properties
  * @returns Filter and sort container with drawer and header controls
  */
-export function FilterAndSortContainer<T extends string>({
+export function FilterAndSortContainer<T extends string, V>({
   activeFilters,
   children,
   className,
@@ -72,7 +72,7 @@ export function FilterAndSortContainer<T extends string>({
   sortProps,
   state,
   totalCount,
-}: Props<T>): React.JSX.Element {
+}: Props<T, V>): React.JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
   // displayedChips is snapshotted from activeFilters when the drawer opens.
   // This prevents newly-selected pending filters from appearing in Applied Filters until

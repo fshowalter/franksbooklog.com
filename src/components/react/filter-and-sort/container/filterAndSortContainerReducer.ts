@@ -8,10 +8,11 @@ export type FilterAndSortContainerAction<T extends string> =
   | ResetFiltersAction
   | SortAction<T>;
 
-export type FilterAndSortContainerState<TSort> = {
+export type FilterAndSortContainerState<TSort, TValue> = {
   activeFilterValues: Record<string, unknown>;
   pendingFilterValues: Record<string, unknown>;
   sort: TSort;
+  values: TValue;
 };
 
 export const ActionTypes = {
@@ -24,7 +25,7 @@ export const ActionTypes = {
 
 export type RemoveFilterAction = {
   key: string;
-  type: ActionTypes.FILTER_REMOVED;
+  type: typeof ActionTypes.FILTER_REMOVED;
   value: string | undefined;
 };
 
@@ -110,7 +111,8 @@ export function createSortAction<TSort extends string>(
 
 export function filterAndSortContainerReducer<
   TSort extends string,
-  TState extends FilterAndSortContainerState<TSort>,
+  TValue,
+  TState extends FilterAndSortContainerState<TSort, TValue>,
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.FILTERS_APPLIED: {
