@@ -1,5 +1,9 @@
 import { BarGradient } from "~/components/react/bar-gradient/BarGradient";
-import { CoverListItem } from "~/components/react/cover-list/CoverListItem";
+import {
+  CoverListItem,
+  CoverListItemImageConfig,
+} from "~/components/react/cover-list/CoverListItem";
+import { CoverListItemCover } from "~/components/react/cover-list/CoverListItemCover";
 import { ListItemAuthors } from "~/components/react/list-item-authors/ListItemAuthors";
 import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
 
@@ -63,21 +67,33 @@ export function CalendarCell({
       </div>
       {hasEntries && (
         <div className="@container/cover-list">
-          <ol
-            className={`
-              flex flex-col [--cover-list-item-width:33.33%]
-              tablet:flex-row tablet:flex-wrap tablet:items-baseline
-              tablet-landscape:flex-col
-              tablet-landscape:[--cover-list-item-width:100%]
-              @min-[calc((250px*3)+1px)]/cover-list:[--cover-list-item-width:25%]
-            `}
-          >
+          <ol className={`flex flex-col`}>
             {value.entries!.map((reading) => (
-              <CoverListItem
-                className={`items-center`}
-                coverImageProps={reading.coverImageProps}
+              <li
+                className={`
+                  group/list-item relative mb-1 flex w-full
+                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
+                  bg-default px-container py-4 transition-transform duration-500
+                  tablet-landscape:w-(--cover-list-item-width)
+                  tablet-landscape:flex-col tablet-landscape:bg-transparent
+                  tablet-landscape:p-6
+                  ${
+                    reading.slug
+                      ? `
+                        tablet:has-[a:hover]:-translate-y-2
+                        tablet:has-[a:hover]:bg-default
+                        tablet:has-[a:hover]:drop-shadow-2xl
+                      `
+                      : `bg-transparent`
+                  }
+                `}
                 key={reading.sequence}
               >
+                <CoverListItemCover
+                  className={"tablet-landscape:w-auto"}
+                  imageConfig={CoverListItemImageConfig}
+                  imageProps={reading.coverImageProps}
+                />
                 <div
                   className={`
                     flex grow flex-col items-start gap-y-2
@@ -113,7 +129,7 @@ export function CalendarCell({
                     </div>
                   )}
                 </div>
-              </CoverListItem>
+              </li>
             ))}
           </ol>
         </div>

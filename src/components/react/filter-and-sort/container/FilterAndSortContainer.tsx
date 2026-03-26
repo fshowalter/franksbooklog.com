@@ -205,7 +205,7 @@ export function FilterAndSortContainer<T extends string, V>({
               max-w-[380px] translate-x-full flex-col items-start gap-y-5
               overflow-y-auto border-0 bg-default p-0 text-left drop-shadow-2xl
               transition-[translate,overlay,display] transition-discrete
-              duration-200 ease-in-out
+              duration-600 ease-[cubic-bezier(0.19,1,0.22,1)]
               backdrop:bg-[#000]/40 backdrop:opacity-0
               backdrop:transition-opacity backdrop:transition-discrete
               backdrop:duration-200
@@ -241,8 +241,8 @@ export function FilterAndSortContainer<T extends string, V>({
                 className={`
                   absolute top-7 right-4 z-10 flex size-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
-                  bg-canvas text-default drop-shadow-sm transition-transform
-                  hover:scale-105 hover:drop-shadow-md
+                  text-default drop-shadow-sm transition-transform
+                  hover:scale-125
                   tablet:right-[34px]
                 `}
                 onClick={() => {
