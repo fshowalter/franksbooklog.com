@@ -294,7 +294,9 @@ export function FilterAndSortContainer<T extends string>({
                       }}
                       onRemove={(key, value) => {
                         setDisplayedChips((prev) =>
-                          prev.filter((c) => c.key !== key),
+                          prev.filter(
+                            (c) => !(c.key === key && c.value === value),
+                          ),
                         );
                         dispatch(createRemoveAppliedFilterAction(key, value));
                       }}

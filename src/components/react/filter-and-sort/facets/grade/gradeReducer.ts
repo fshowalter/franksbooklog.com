@@ -7,7 +7,7 @@ import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
 export const STATE_KEY = "gradeValue" as const;
 
 const ActionTypes = {
-  CHANGED: "grade/changed",
+  CHANGED: "grade/changed" as const,
 };
 
 export type GradeFilterChangedAction = {

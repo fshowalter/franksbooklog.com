@@ -4,7 +4,7 @@ import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/r
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
 
 const ActionTypes = {
-  CHANGED: "kind/changed",
+  CHANGED: "kind/changed" as const,
 };
 
 export const STATE_KEY = "kind";

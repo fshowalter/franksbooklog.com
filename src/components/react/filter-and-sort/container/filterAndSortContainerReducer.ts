@@ -15,16 +15,16 @@ export type FilterAndSortContainerState<TSort> = {
 };
 
 export const ActionTypes = {
-  FILTER_REMOVED: "filterAndSortContainer/filterRemoved",
-  FILTERS_APPLIED: "filterAndSortContainer/filtersApplied",
-  FILTERS_CLEARED: "filterAndSortContainer/filtersCleared",
-  FILTERS_RESET: "filterAndSortContainer/filtersReset",
-  SORT_CHANGED: "filterAndSortContainer/sortChanged",
+  FILTER_REMOVED: "filterAndSortContainer/filterRemoved" as const,
+  FILTERS_APPLIED: "filterAndSortContainer/filtersApplied" as const,
+  FILTERS_CLEARED: "filterAndSortContainer/filtersCleared" as const,
+  FILTERS_RESET: "filterAndSortContainer/filtersReset" as const,
+  SORT_CHANGED: "filterAndSortContainer/sortChanged" as const,
 };
 
 export type RemoveFilterAction = {
   key: string;
-  type: typeof ActionTypes.FILTER_REMOVED;
+  type: ActionTypes.FILTER_REMOVED;
   value: string | undefined;
 };
 

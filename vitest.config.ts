@@ -5,12 +5,11 @@ export default getViteConfig({
   test: {
     coverage: {
       exclude: [
-        "src/**/*.astro",
         "src/assets/**",
-        "src/collections/*.ts",
-        "src/components/nav-drawer/**",
-        "src/components/open-graph-image/**",
-        "src/components/pagefind-search/**",
+        "src/collections/**",
+        "src/components/astro/**",
+        "src/components/react/open-graph-image/**",
+        "src/content.config.ts",
         "src/css",
         "src/features/**/*OpenGraphImageResponse.tsx",
         "src/features/**/get*Props.ts",

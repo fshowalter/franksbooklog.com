@@ -6,7 +6,7 @@ import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPe
 export const STATE_KEY = "titleYear";
 
 const ActionTypes = {
-  CHANGED: "titleYear/changed",
+  CHANGED: "titleYear/changed" as const,
 };
 
 export type TitleYearFilterChangedAction = {
