@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import { debounceOnChange } from "~/components/utils/debounce";
 
 /**
@@ -27,14 +29,13 @@ export function TextField({
   onInputChange: onChangeHandler;
   placeholder: string;
 }): React.JSX.Element {
-  const debouncedHandleChange = debounceOnChange(
-    onInputChange,
-    TEXT_FILTER_DEBOUNCE_MS,
+  const debouncedHandleChangeRef = useRef(
+    debounceOnChange(onInputChange, TEXT_FILTER_DEBOUNCE_MS),
   );
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const newValue = (e.target as HTMLInputElement).value;
-    debouncedHandleChange(newValue); // Debounce the callback
+    debouncedHandleChangeRef.current(newValue); // Debounce the callback
   };
 
   return (

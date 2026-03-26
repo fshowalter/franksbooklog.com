@@ -16,11 +16,11 @@ export function TitleFacet({
     <AnimatedDetailsDisclosure title="Title">
       <TextField
         defaultValue={defaultValue}
-        label="Name"
+        label="Title"
         onInputChange={(value) =>
           dispatch(createTitleFilterChangedAction(value))
         }
-        placeholder="Enter all or part of a name"
+        placeholder="Enter all or part of a title"
       />
     </AnimatedDetailsDisclosure>
   );
