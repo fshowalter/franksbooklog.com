@@ -134,11 +134,7 @@ export function CalendarCell({
   );
 }
 
-function Abandoned({
-  className,
-}: {
-  className?: string;
-}): false | React.JSX.Element {
+function Abandoned({ className }: { className?: string }): React.JSX.Element {
   return (
     <div
       className={`

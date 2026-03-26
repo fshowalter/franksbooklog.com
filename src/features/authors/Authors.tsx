@@ -4,7 +4,7 @@ import type { AvatarImageProps } from "~/assets/avatars";
 
 import { GroupedAvatarList } from "~/components/react/avatar-list/AvatarList";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
-import { useGroupedValues } from "~/hooks/useGroupedValues";
+import { useGroupedValues } from "~/features/authors/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorsSort } from "./sortAuthors";
@@ -98,7 +98,11 @@ export function Authors({
       }
       pendingFilteredCount={pendingFilteredCount}
       sideNav={
-        <AlphabetSideNav groupedValues={groupedValues} sortValue={state.sort} />
+        <AlphabetSideNav
+          className="max-w-20"
+          groupedValues={groupedValues}
+          sortValue={state.sort}
+        />
       }
       sortProps={{
         currentSortValue: state.sort,
@@ -107,13 +111,24 @@ export function Authors({
       state={state}
       totalCount={totalCount}
     >
-      <GroupedAvatarList
-        className="grow"
-        groupedValues={groupedValues}
-        groupItemClassName={`scroll-mt-[calc(52px_+_var(--filter-and-sort-container-scroll-offset))]`}
-      >
-        {(value) => <AuthorsListItem key={value.slug} value={value} />}
-      </GroupedAvatarList>
+      <>
+        {/* <div className="absolute right-0">
+          <AlphabetSideNav
+            groupedValues={groupedValues}
+            sortValue={state.sort}
+          />
+        </div> */}
+        <GroupedAvatarList
+          className="
+            grow
+            desktop:-mr-10 desktop:pl-10
+          "
+          groupedValues={groupedValues}
+          groupItemClassName={`scroll-mt-[var(--filter-and-sort-container-scroll-offset)]`}
+        >
+          {(value) => <AuthorsListItem key={value.slug} value={value} />}
+        </GroupedAvatarList>
+      </>
     </FilterAndSortContainer>
   );
 }
