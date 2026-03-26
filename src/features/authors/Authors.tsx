@@ -112,10 +112,7 @@ export function Authors({
       totalCount={totalCount}
     >
       <GroupedAvatarList
-        className="
-          grow
-          desktop:-mr-10 desktop:pl-10
-        "
+        className="grow"
         groupedValues={groupedValues}
         groupItemClassName={`scroll-mt-[var(--filter-and-sort-container-scroll-offset)]`}
       >
