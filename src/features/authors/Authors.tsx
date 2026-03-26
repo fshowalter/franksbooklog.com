@@ -3,30 +3,20 @@ import { useReducer } from "react";
 import type { AvatarImageProps } from "~/assets/avatars";
 
 import { GroupedAvatarList } from "~/components/react/avatar-list/AvatarList";
-import { COLLECTION_SORT_OPTIONS } from "~/components/react/collection-filters/CollectionSortOptions";
-import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { useGroupedValues } from "~/hooks/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorsSort } from "./sortAuthors";
 
 import { AlphabetSideNav } from "./AlphabetSideNav";
-import {
-  createApplyFiltersAction,
-  createClearFiltersAction,
-  createInitialState,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  createSortAction,
-  reducer,
-  selectHasPendingFilters,
-} from "./Authors.reducer";
+import { createInitialState, reducer } from "./Authors.reducer";
 import { AuthorsFilters } from "./AuthorsFilters";
 import { AuthorsListItem } from "./AuthorsListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthors } from "./filterAuthors";
 import { groupAuthors } from "./groupAuthors";
-import { sortAuthors } from "./sortAuthors";
+import { sortAuthors, sortOptions } from "./sortAuthors";
 
 /**
  * Props interface for the Authors page component.
@@ -94,41 +84,31 @@ export function Authors({
     state.pendingFilterValues,
   );
 
-  const hasPendingFilters = selectHasPendingFilters(state);
   const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
+      dispatch={dispatch}
       filters={
         <AuthorsFilters
           dispatch={dispatch}
           filterValues={state.pendingFilterValues}
         />
       }
-      hasPendingFilters={hasPendingFilters}
-      onApplyFilters={() => dispatch(createApplyFiltersAction())}
-      onClearFilters={() => {
-        dispatch(createClearFiltersAction());
-        dispatch(createApplyFiltersAction());
-      }}
-      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
-      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
-      onResetFilters={() => {
-        dispatch(createResetFiltersAction());
-      }}
       pendingFilteredCount={pendingFilteredCount}
       sideNav={
         <AlphabetSideNav groupedValues={groupedValues} sortValue={state.sort} />
       }
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (value) => dispatch(createSortAction(value)),
-        sortOptions: COLLECTION_SORT_OPTIONS,
+        sortOptions,
       }}
+      state={state}
       totalCount={totalCount}
     >
       <GroupedAvatarList
+        className="grow"
         groupedValues={groupedValues}
         groupItemClassName={`scroll-mt-[calc(52px_+_var(--filter-and-sort-container-scroll-offset))]`}
       >

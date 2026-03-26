@@ -1,19 +1,13 @@
-import { ReviewedWorkFilters } from "~/components/react/reviewed-work-filters/ReviewedWorkFilters";
-import { GRADE_MAX, GRADE_MIN } from "~/utils/grades";
+import { GradeFacet } from "~/components/react/filter-and-sort/facets/grade/GradeFacet";
+import { KindFacet } from "~/components/react/filter-and-sort/facets/kind/KindFacet";
+import { ReviewYearFacet } from "~/components/react/filter-and-sort/facets/review-year/ReviewYearFacet";
+import { ReviewedStatusFacet } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
+import { TitleYearFacet } from "~/components/react/filter-and-sort/facets/title-year/TitleYearFacet";
+import { TitleFacet } from "~/components/react/filter-and-sort/facets/title/TitleFacet";
 
 import type {
   AuthorTitlesAction,
   AuthorTitlesFiltersValues,
-} from "./AuthorTitles.reducer";
-
-import {
-  createGradeFilterChangedAction,
-  createKindFilterChangedAction,
-  createRemoveAppliedFilterAction,
-  createReviewedStatusFilterChangedAction,
-  createReviewYearFilterChangedAction,
-  createTitleFilterChangedAction,
-  createWorkYearFilterChangedAction,
 } from "./AuthorTitles.reducer";
 
 /**
@@ -25,7 +19,7 @@ import {
  * @param props.dispatch - Reducer dispatch function for filter actions
  * @param props.distinctKinds - Available work kinds for filtering dropdown
  * @param props.distinctReviewYears - Available review years for filtering
- * @param props.distinctWorkYears - Available work years for filtering
+ * @param props.distinctTitleYears - Available work years for filtering
  * @param props.filterValues - Current filter values from component state
  * @returns Filter controls for the author page
  */
@@ -33,7 +27,7 @@ export function AuthorTitlesFilters({
   dispatch,
   distinctKinds,
   distinctReviewYears,
-  distinctWorkYears,
+  distinctTitleYears,
   filterValues,
   kindCounts,
   reviewedStatusCounts,
@@ -41,62 +35,37 @@ export function AuthorTitlesFilters({
   dispatch: React.Dispatch<AuthorTitlesAction>;
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   filterValues: AuthorTitlesFiltersValues;
   kindCounts?: Map<string, number>;
   reviewedStatusCounts?: Map<string, number>;
 }): React.JSX.Element {
   return (
-    <ReviewedWorkFilters
-      grade={{
-        defaultValues: filterValues.gradeValue,
-        onChange: (values) => dispatch(createGradeFilterChangedAction(values)),
-        onClear: () =>
-          dispatch(createGradeFilterChangedAction([GRADE_MIN, GRADE_MAX])),
-      }}
-      kind={{
-        counts: kindCounts,
-        defaultValues: filterValues.kind,
-        onChange: (values) => dispatch(createKindFilterChangedAction(values)),
-        onClear: () => dispatch(createKindFilterChangedAction([])),
-        values: distinctKinds,
-      }}
-      reviewedStatus={{
-        counts: reviewedStatusCounts,
-        defaultValues: filterValues.reviewedStatus,
-        onChange: (values) =>
-          dispatch(createReviewedStatusFilterChangedAction(values)),
-        onClear: () => dispatch(createReviewedStatusFilterChangedAction([])),
-      }}
-      reviewYear={{
-        defaultValues: filterValues.reviewYear,
-        onChange: (values) =>
-          dispatch(
-            createReviewYearFilterChangedAction(
-              values,
-              distinctReviewYears[0] ?? "",
-              distinctReviewYears.at(-1) ?? "",
-            ),
-          ),
-        onClear: () => dispatch(createRemoveAppliedFilterAction("reviewYear")),
-        values: distinctReviewYears,
-      }}
-      title={{
-        defaultValue: filterValues.title,
-        onChange: (value) => dispatch(createTitleFilterChangedAction(value)),
-      }}
-      workYear={{
-        defaultValues: filterValues.workYear,
-        onChange: (values) =>
-          dispatch(
-            createWorkYearFilterChangedAction(
-              values,
-              distinctWorkYears[0] ?? "",
-              distinctWorkYears.at(-1) ?? "",
-            ),
-          ),
-        values: distinctWorkYears,
-      }}
-    />
+    <>
+      <TitleFacet defaultValue={filterValues.title} dispatch={dispatch} />
+      <TitleYearFacet
+        defaultValues={filterValues.titleYear}
+        dispatch={dispatch}
+        distinctYears={distinctTitleYears}
+      />
+      <KindFacet
+        defaultValues={filterValues.kind}
+        dispatch={dispatch}
+        distinctKinds={distinctKinds}
+        kindCounts={kindCounts}
+      />
+      <ReviewedStatusFacet
+        defaultValues={filterValues.reviewedStatus}
+        dispatch={dispatch}
+        excludeNotReviewed={true}
+        statusCounts={reviewedStatusCounts}
+      />
+      <GradeFacet defaultValues={filterValues.gradeValue} dispatch={dispatch} />
+      <ReviewYearFacet
+        defaultValues={filterValues.reviewYear}
+        dispatch={dispatch}
+        distinctYears={distinctReviewYears}
+      />
+    </>
   );
 }

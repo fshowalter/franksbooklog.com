@@ -1,25 +1,23 @@
-import type { FilterChip } from "~/components/react/applied-filters/AppliedFilters";
+import type { FilterChip } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 
-import { buildGradeFilterChip } from "~/components/react/grade-filter-chip/gradeFilterChip";
-import { buildKindFilterChip } from "~/components/react/kind-filter-chip/kindFilterChip";
-import { buildReviewYearFilterChip } from "~/components/react/review-year-filter-chip/reviewYearFilterChip";
-import { buildReviewedStatusFilterChip } from "~/components/react/reviewed-status-filter-chip/reviewedStatusFilterChip";
-import { buildTitleFilterChip } from "~/components/react/title-filter-chip/titleFilterChip";
-import { buildWorkYearFilterChip } from "~/components/react/work-year-filter-chip/workYearFilterChip";
+import { buildGradeFilterChip } from "~/components/react/filter-and-sort/facets/grade/gradeFilterChip";
+import { buildKindFilterChip } from "~/components/react/filter-and-sort/facets/kind/kindFilterChip";
+import { buildReviewYearFilterChip } from "~/components/react/filter-and-sort/facets/review-year/reviewYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilterChip";
+import { buildTitleYearFilterChip } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilterChip";
+import { buildTitleFilterChip } from "~/components/react/filter-and-sort/facets/title/titleFilterChip";
 
 import type { ReviewsFiltersValues } from "./Reviews.reducer";
 
 export function buildAppliedFilterChips(
   filterValues: ReviewsFiltersValues,
-  distinctWorkYears: readonly string[],
-  distinctReviewYears: readonly string[],
 ): FilterChip[] {
   return [
     ...buildTitleFilterChip(filterValues.title),
     ...buildKindFilterChip(filterValues.kind),
-    ...buildWorkYearFilterChip(filterValues.workYear, distinctWorkYears),
+    ...buildTitleYearFilterChip(filterValues.titleYear),
     ...buildGradeFilterChip(filterValues.gradeValue),
-    ...buildReviewYearFilterChip(filterValues.reviewYear, distinctReviewYears),
+    ...buildReviewYearFilterChip(filterValues.reviewYear),
     ...buildReviewedStatusFilterChip(filterValues.reviewedStatus),
   ];
 }

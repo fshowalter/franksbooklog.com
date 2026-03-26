@@ -2,32 +2,21 @@ import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { PaginatedCoverList } from "~/components/react/cover-list/PaginatedCoverList";
-import { FilterAndSortContainer } from "~/components/react/filter-and-sort-container/FilterAndSortContainer";
-import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/react/reviewed-work-filters/ReviewedWorkSortOptions";
-import { createKindCountMap } from "~/facets/kind/kindFilter";
-import { createReviewedStatusCountMap } from "~/facets/reviewed-status/reviewedStatusFilter";
+import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
+import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
+import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
+import { PaginatedCoverList } from "~/components/react/filter-and-sort/paginated-cover-list/PaginatedCoverList";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
-import {
-  createApplyFiltersAction,
-  createClearFiltersAction,
-  createInitialState,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  createShowMoreAction,
-  createSortAction,
-  reducer,
-  selectHasPendingFilters,
-} from "./AuthorTitles.reducer";
+import { createInitialState, reducer } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
-import { sortAuthorTitles } from "./sortAuthorTitles";
+import { sortAuthorTitles, sortOptions } from "./sortAuthorTitles";
 
 /**
  * Props interface for the Author page component.
@@ -39,7 +28,7 @@ export type AuthorTitlesProps = {
   /** Available review years for filter dropdown options */
   distinctReviewYears: readonly string[];
   /** Available work years for filter dropdown options */
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   /** Initial sort order to apply when page loads */
   initialSort: AuthorTitlesSort;
   /** Array of author's work data for display and filtering */
@@ -94,7 +83,7 @@ export type AuthorTitlesValue = {
  * @param props - Component props
  * @param props.distinctKinds - Available work kinds for filtering
  * @param props.distinctReviewYears - Available review years for filtering
- * @param props.distinctWorkYears - Available work years for filtering
+ * @param props.distinctTitleYears - Available work years for filtering
  * @param props.initialSort - Initial sort order for the list
  * @param props.values - Array of author's work data to display
  * @returns Author page component with filtering and sorting
@@ -102,7 +91,7 @@ export type AuthorTitlesValue = {
 export function AuthorTitles({
   distinctKinds,
   distinctReviewYears,
-  distinctWorkYears,
+  distinctTitleYears,
   initialSort,
   values,
 }: AuthorTitlesProps): React.JSX.Element {
@@ -133,62 +122,45 @@ export function AuthorTitles({
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
   const kindCounts = createKindCountMap(state.values);
 
-  const hasPendingFilters = selectHasPendingFilters(state);
-  const activeFilters = buildAppliedFilterChips(
-    state.activeFilterValues,
-    distinctWorkYears,
-    distinctReviewYears,
-  );
+  const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
+      dispatch={dispatch}
       filters={
         <AuthorTitlesFilters
           dispatch={dispatch}
           distinctKinds={distinctKinds}
           distinctReviewYears={distinctReviewYears}
-          distinctWorkYears={distinctWorkYears}
+          distinctTitleYears={distinctTitleYears}
           filterValues={state.pendingFilterValues}
           kindCounts={kindCounts}
           reviewedStatusCounts={reviewedStatusCounts}
         />
       }
-      hasPendingFilters={hasPendingFilters}
-      onApplyFilters={() => dispatch(createApplyFiltersAction())}
-      onClearFilters={() => {
-        dispatch(createClearFiltersAction());
-        dispatch(createApplyFiltersAction());
-      }}
-      onFilterDrawerOpen={() => dispatch(createResetFiltersAction())}
-      onRemoveFilter={(id) => dispatch(createRemoveAppliedFilterAction(id))}
-      onResetFilters={() => {
-        dispatch(createResetFiltersAction());
-      }}
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        onSortChange: (value) => dispatch(createSortAction(value)),
-        sortOptions: REVIEWED_WORK_SORT_OPTIONS,
+        sortOptions,
       }}
+      state={state}
       totalCount={totalCount}
     >
-      <div className="tablet:-mx-6 tablet:pt-5">
-        <PaginatedCoverList
-          onShowMore={() => dispatch(createShowMoreAction())}
-          totalCount={totalCount}
-          values={paginatedValues}
-          visibleCount={state.showCount}
-        >
-          {(value) => (
-            <AuthorWorksListItem
-              key={value.slug}
-              sortValue={state.sort}
-              value={value}
-            />
-          )}
-        </PaginatedCoverList>
-      </div>
+      <PaginatedCoverList
+        dispatch={dispatch}
+        totalCount={totalCount}
+        values={paginatedValues}
+        visibleCount={state.showCount}
+      >
+        {(value) => (
+          <AuthorWorksListItem
+            key={value.slug}
+            sortValue={state.sort}
+            value={value}
+          />
+        )}
+      </PaginatedCoverList>
     </FilterAndSortContainer>
   );
 }

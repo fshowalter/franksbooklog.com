@@ -1,27 +1,12 @@
-import type { FiltersAction } from "~/facets/filtersReducer";
-import type { NameFilterChangedAction } from "~/facets/name/nameReducer";
-import type { SortAction } from "~/facets/sortReducer";
+import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import type { NameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
 
-import { composeReducers } from "~/facets/composeReducers";
 import {
-  createInitialFiltersState,
-  filtersLifecycleReducer,
-} from "~/facets/filtersReducer";
-import { nameFacetReducer } from "~/facets/name/nameReducer";
-import {
-  createInitialSortState,
-  createSortActionCreator,
-  sortReducer,
-} from "~/facets/sortReducer";
-
-export {
-  createApplyFiltersAction,
-  createClearFiltersAction,
-  createRemoveAppliedFilterAction,
-  createResetFiltersAction,
-  selectHasPendingFilters,
-} from "~/facets/filtersReducer";
-export { createNameFilterChangedAction } from "~/facets/name/nameReducer";
+  createInitialFilterAndSortContainerState,
+  filterAndSortContainerReducer,
+} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
+import { nameFacetReducer } from "~/components/react/filter-and-sort/facets/name/nameReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";
@@ -30,9 +15,8 @@ import type { AuthorsSort } from "./sortAuthors";
  * Union type of all collection-specific filter and sort actions
  */
 export type AuthorsAction =
-  | FiltersAction
-  | NameFilterChangedAction
-  | SortAction<AuthorsSort>;
+  | FilterAndSortContainerAction<AuthorsSort>
+  | NameFilterChangedAction;
 
 /**
  * Filter values for the Authors page.
@@ -52,9 +36,8 @@ type AuthorsState = {
 };
 
 const authorsReducer = composeReducers<AuthorsState>(
-  filtersLifecycleReducer,
+  filterAndSortContainerReducer,
   nameFacetReducer,
-  sortReducer,
 );
 
 export function createInitialState({
@@ -65,8 +48,7 @@ export function createInitialState({
   values: AuthorsValue[];
 }): AuthorsState {
   return {
-    ...createInitialFiltersState({ values }),
-    ...createInitialSortState({ initialSort }),
+    ...createInitialFilterAndSortContainerState({ initialSort, values }),
   };
 }
 
@@ -80,8 +62,3 @@ export function reducer(
 ): AuthorsState {
   return authorsReducer(state, action);
 }
-
-/**
- * Action creator for sort actions specific to Authors.
- */
-export const createSortAction = createSortActionCreator<AuthorsSort>();

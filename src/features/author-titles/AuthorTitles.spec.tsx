@@ -8,32 +8,32 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/react/filter-and-sort-container/FilterAndSortContainer.testHelper";
+} from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/react/reviewed-work-filters/ReviewedWorkFilters.testHelper";
+} from "~/components/react/filter-and-sort/facet-groups/TitleFacets.testHelper";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
-} from "~/facets/grade/gradeFacetTests";
-import { kindFacetTests } from "~/facets/kind/kindFacetTests";
-import { paginationFacetTests } from "~/facets/pagination/paginationFacetTests";
+} from "~/components/react/filter-and-sort/facets/grade/gradeFacetTests";
+import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/kindFacetTests";
 import {
   reviewYearFilterFacetTests,
   reviewYearSortFacetTests,
-} from "~/facets/review-year/reviewYearFacetTests";
-import { reviewedStatusFacetTests } from "~/facets/reviewed-status/reviewedStatusFacetTests";
+} from "~/components/react/filter-and-sort/facets/review-year/reviewYearFacetTests";
+import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
+import {
+  titleYearFilterFacetTests,
+  workYearSortFacetTests,
+} from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
 import {
   titleFilterFacetTests,
   titleSortFacetTests,
-} from "~/facets/title/titleFacetTests";
-import {
-  workYearFilterFacetTests,
-  workYearSortFacetTests,
-} from "~/facets/work-year/workYearFacetTests";
+} from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
+import { paginationTests } from "~/components/react/filter-and-sort/paginated-cover-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
@@ -82,7 +82,7 @@ function resetTestIdCounter(): void {
 const baseProps: AuthorTitlesProps = {
   distinctKinds: ["All", "Novel", "Collection", "Non-Fiction", "Short Story"],
   distinctReviewYears: ["2020", "2021", "2022", "2023", "2024"],
-  distinctWorkYears: ["1980", "1985", "1990", "1995", "2000", "2005", "2010"],
+  distinctTitleYears: ["1980", "1985", "1990", "1995", "2000", "2005", "2010"],
   initialSort: "title-asc",
   values: [],
 };
@@ -133,8 +133,8 @@ describe("AuthorTitles", () => {
     render(<AuthorTitles {...baseProps} values={titles} />);
   }, getCoverList);
 
-  workYearFilterFacetTests({
-    distinctWorkYears: baseProps.distinctWorkYears,
+  titleYearFilterFacetTests({
+    distinctTitleYears: baseProps.distinctTitleYears,
     getList: getCoverList,
     renderItems: (items) => {
       const titles = items.map(({ title, workYear }) =>
@@ -179,7 +179,7 @@ describe("AuthorTitles", () => {
     render(<AuthorTitles {...baseProps} values={titles} />);
   }, getCoverList);
 
-  paginationFacetTests(
+  paginationTests(
     (titles) => {
       const values = titles.map((title) => createAuthorTitleValue({ title }));
       render(<AuthorTitles {...baseProps} values={values} />);

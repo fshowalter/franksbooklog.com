@@ -1,40 +1,22 @@
-import type { EditionFilterChangedAction } from "~/facets/edition/editionReducer";
-import type { FiltersAction } from "~/facets/filtersReducer";
-import type { KindFilterChangedAction } from "~/facets/kind/kindReducer";
-import type { ReadingYearFilterChangedAction } from "~/facets/reading-year/readingYearReducer";
-import type { ReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
-import type { SortAction } from "~/facets/sortReducer";
-import type { TitleFilterChangedAction } from "~/facets/title/titleReducer";
-import type { WorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
+import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import type { EditionFilterChangedAction } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
+import type { KindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
+import type { ReadingYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
+import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
+import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
+import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
 
-import { composeReducers } from "~/facets/composeReducers";
-import { editionFacetReducer } from "~/facets/edition/editionReducer";
 import {
-  createInitialFiltersState,
-  filtersLifecycleReducer,
-} from "~/facets/filtersReducer";
-import { kindFacetReducer } from "~/facets/kind/kindReducer";
-import { readingYearFacetReducer } from "~/facets/reading-year/readingYearReducer";
-import { reviewedStatusFacetReducer } from "~/facets/reviewed-status/reviewedStatusReducer";
-import {
-  createInitialSortState,
-  createSortActionCreator,
-  sortReducer,
-} from "~/facets/sortReducer";
-import { titleFacetReducer } from "~/facets/title/titleReducer";
-import { workYearFacetReducer } from "~/facets/work-year/workYearReducer";
-
-export { createEditionFilterChangedAction } from "~/facets/edition/editionReducer";
-export { createApplyFiltersAction } from "~/facets/filtersReducer";
-export { createClearFiltersAction } from "~/facets/filtersReducer";
-export { createRemoveAppliedFilterAction } from "~/facets/filtersReducer";
-export { createResetFiltersAction } from "~/facets/filtersReducer";
-export { selectHasPendingFilters } from "~/facets/filtersReducer";
-export { createKindFilterChangedAction } from "~/facets/kind/kindReducer";
-export { createReadingYearFilterChangedAction } from "~/facets/reading-year/readingYearReducer";
-export { createReviewedStatusFilterChangedAction } from "~/facets/reviewed-status/reviewedStatusReducer";
-export { createTitleFilterChangedAction } from "~/facets/title/titleReducer";
-export { createWorkYearFilterChangedAction } from "~/facets/work-year/workYearReducer";
+  createInitialFilterAndSortContainerState,
+  filterAndSortContainerReducer,
+} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
+import { editionFacetReducer } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
+import { kindFacetReducer } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
+import { readingYearFacetReducer } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
+import { reviewedStatusFacetReducer } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
+import { titleYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
+import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/title/titleReducer";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";
@@ -44,15 +26,14 @@ import type { ReadingLogSort } from "./sortReadingLog";
  */
 export type ReadingLogAction =
   | EditionFilterChangedAction
-  | FiltersAction
+  | FilterAndSortContainerAction<ReadingLogSort>
   | KindFilterChangedAction
   | NextMonthClickedAction
   | PreviousMonthClickedAction
   | ReadingYearFilterChangedAction
   | ReviewedStatusFilterChangedAction
-  | SortAction<ReadingLogSort>
   | TitleFilterChangedAction
-  | WorkYearFilterChangedAction;
+  | TitleYearFilterChangedAction;
 
 /**
  * Filter values for readings.
@@ -63,7 +44,7 @@ export type ReadingLogFiltersValues = {
   readingYear?: [string, string];
   reviewedStatus?: readonly string[];
   title?: string;
-  workYear?: [string, string];
+  titleYear?: [string, string];
 };
 
 type NextMonthClickedAction = {
@@ -144,11 +125,10 @@ const readingLogReducer = composeReducers<ReadingLogState>(
   kindFacetReducer,
   reviewedStatusFacetReducer,
   editionFacetReducer,
-  filtersLifecycleReducer, // order doesn't matter — see composeReducers AIDEV-NOTE
+  filterAndSortContainerReducer,
   titleFacetReducer,
-  workYearFacetReducer,
+  titleYearFacetReducer,
   readingYearFacetReducer,
-  sortReducer,
   selectedMonthDateReducer,
 );
 
@@ -167,8 +147,7 @@ export function createInitialState({
   values: ReadingLogValue[];
 }): ReadingLogState {
   return {
-    ...createInitialFiltersState({ values }),
-    ...createInitialSortState({ initialSort }),
+    ...createInitialFilterAndSortContainerState({ initialSort, values }),
   };
 }
 
@@ -184,8 +163,3 @@ export function reducer(
 ): ReadingLogState {
   return readingLogReducer(state, action);
 }
-
-/**
- * Action creator for reading log sort actions.
- */
-export const createSortAction = createSortActionCreator<ReadingLogSort>();

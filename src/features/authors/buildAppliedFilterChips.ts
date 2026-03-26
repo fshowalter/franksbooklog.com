@@ -1,6 +1,6 @@
-import type { FilterChip } from "~/components/react/applied-filters/AppliedFilters";
+import type { FilterChip } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 
-import { buildNameFilterChip } from "~/components/react/name-filter-chip/nameFilterChip";
+import { buildNameFilterChip } from "~/components/react/filter-and-sort/facets/name/nameFilterChip";
 
 import type { AuthorsFiltersValues } from "./Authors.reducer";
 

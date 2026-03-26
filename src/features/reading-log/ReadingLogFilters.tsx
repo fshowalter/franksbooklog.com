@@ -1,20 +1,13 @@
-import { CheckboxListField } from "~/components/react/fields/CheckboxListField";
-import { YearField } from "~/components/react/fields/YearField";
-import { ReviewedStatusFilter } from "~/components/react/reviewed-status-filter/ReviewedStatusFilter";
-import { WorkFilters } from "~/components/react/work-filters/WorkFilters";
+import { EditionFacet } from "~/components/react/filter-and-sort/facets/edition/EditionFacet";
+import { KindFacet } from "~/components/react/filter-and-sort/facets/kind/KindFacet";
+import { ReadingYearFacet } from "~/components/react/filter-and-sort/facets/reading-year/ReadingYearFacet";
+import { ReviewedStatusFacet } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
+import { TitleYearFacet } from "~/components/react/filter-and-sort/facets/title-year/TitleYearFacet";
+import { TitleFacet } from "~/components/react/filter-and-sort/facets/title/TitleFacet";
 
 import type {
   ReadingLogAction,
   ReadingLogFiltersValues,
-} from "./ReadingLog.reducer";
-
-import {
-  createEditionFilterChangedAction,
-  createKindFilterChangedAction,
-  createReadingYearFilterChangedAction,
-  createReviewedStatusFilterChangedAction,
-  createTitleFilterChangedAction,
-  createWorkYearFilterChangedAction,
 } from "./ReadingLog.reducer";
 
 export function Filters({
@@ -22,7 +15,7 @@ export function Filters({
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
-  distinctWorkYears,
+  distinctTitleYears,
   editionCounts,
   filterValues,
   kindCounts,
@@ -32,7 +25,7 @@ export function Filters({
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
-  distinctWorkYears: readonly string[];
+  distinctTitleYears: readonly string[];
   editionCounts?: Map<string, number>;
   filterValues: ReadingLogFiltersValues;
   kindCounts?: Map<string, number>;
@@ -40,67 +33,33 @@ export function Filters({
 }): React.JSX.Element {
   return (
     <>
-      <WorkFilters
-        kind={{
-          counts: kindCounts,
-          defaultValues: filterValues.kind,
-          onChange: (values) => dispatch(createKindFilterChangedAction(values)),
-          onClear: () => dispatch(createKindFilterChangedAction([])),
-          values: distinctKinds,
-        }}
-        title={{
-          defaultValue: filterValues.title,
-          onChange: (value) => dispatch(createTitleFilterChangedAction(value)),
-        }}
-        workYear={{
-          defaultValues: filterValues.workYear,
-          onChange: (values) =>
-            dispatch(
-              createWorkYearFilterChangedAction(
-                values,
-                distinctWorkYears[0] ?? "",
-                distinctWorkYears.at(-1) ?? "",
-              ),
-            ),
-          values: distinctWorkYears,
-        }}
+      <TitleFacet defaultValue={filterValues.title} dispatch={dispatch} />
+      <TitleYearFacet
+        defaultValues={filterValues.titleYear}
+        dispatch={dispatch}
+        distinctYears={distinctTitleYears}
       />
-      <ReviewedStatusFilter
-        counts={reviewedStatusCounts}
+      <KindFacet
+        defaultValues={filterValues.kind}
+        dispatch={dispatch}
+        distinctKinds={distinctKinds}
+        kindCounts={kindCounts}
+      />
+      <ReviewedStatusFacet
         defaultValues={filterValues.reviewedStatus}
-        onChange={(values) =>
-          dispatch(createReviewedStatusFilterChangedAction(values))
-        }
-        onClear={() => dispatch(createReviewedStatusFilterChangedAction([]))}
+        dispatch={dispatch}
+        statusCounts={reviewedStatusCounts}
       />
-      <YearField
+      <ReadingYearFacet
         defaultValues={filterValues.readingYear}
-        label="Reading Year"
-        onYearChange={(values) =>
-          dispatch(
-            createReadingYearFilterChangedAction(
-              values,
-              distinctReadingYears[0] ?? "",
-              distinctReadingYears.at(-1) ?? "",
-            ),
-          )
-        }
-        years={distinctReadingYears}
+        dispatch={dispatch}
+        distinctYears={distinctReadingYears}
       />
-      <CheckboxListField
+      <EditionFacet
         defaultValues={filterValues.edition}
-        label="Edition"
-        onChange={(values) =>
-          dispatch(createEditionFilterChangedAction(values))
-        }
-        onClear={() => dispatch(createEditionFilterChangedAction([]))}
-        options={distinctEditions
-          .filter((e) => e !== "All")
-          .map((e) => ({
-            count: editionCounts?.get(e) ?? 0,
-            label: e,
-            value: e,
-          }))}
+        dispatch={dispatch}
+        distinctEditions={distinctEditions}
+        editionCounts={editionCounts}
       />
     </>
   );

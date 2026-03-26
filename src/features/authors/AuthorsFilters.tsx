@@ -1,8 +1,6 @@
-import { CollectionFilters } from "~/components/react/collection-filters/CollectionFilters";
+import { NameFacet } from "~/components/react/filter-and-sort/facets/name/NameFacet";
 
 import type { AuthorsAction, AuthorsFiltersValues } from "./Authors.reducer";
-
-import { createNameFilterChangedAction } from "./Authors.reducer";
 
 /**
  * Authors page filters component providing name-based filtering controls.
@@ -22,12 +20,7 @@ export function AuthorsFilters({
 }): React.JSX.Element {
   return (
     <>
-      <CollectionFilters
-        name={{
-          defaultValue: filterValues.name,
-          onChange: (value) => dispatch(createNameFilterChangedAction(value)),
-        }}
-      />
+      <NameFacet defaultValue={filterValues.name} dispatch={dispatch} />
     </>
   );
 }

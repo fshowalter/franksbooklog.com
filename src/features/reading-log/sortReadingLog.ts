@@ -1,5 +1,5 @@
-import { createSorter } from "~/facets/createSorter";
-import { readingDateSortComparators } from "~/facets/reading-year/readingYearSort";
+import { createSorter } from "~/components/react/filter-and-sort/facets/createSorter";
+import { readingDateSortComparators } from "~/components/react/filter-and-sort/facets/reading-year/readingYearSort";
 
 import type { ReadingLogValue } from "./ReadingLog";
 
@@ -14,3 +14,8 @@ export type ReadingLogSort = "reading-date-asc" | "reading-date-desc";
 export const sortReadingLog = createSorter<ReadingLogValue, ReadingLogSort>(
   readingDateSortComparators,
 );
+
+export const sortOptions = [
+  { label: "Reading Date (Newest First)", value: "reading-date-desc" },
+  { label: "Reading Date (Oldest First)", value: "reading-date-asc" },
+];
