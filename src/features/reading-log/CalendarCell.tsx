@@ -1,8 +1,5 @@
 import { BarGradient } from "~/components/react/bar-gradient/BarGradient";
-import {
-  CoverListItem,
-  CoverListItemImageConfig,
-} from "~/components/react/cover-list/CoverListItem";
+import { CoverListItemImageConfig } from "~/components/react/cover-list/CoverListItem";
 import { CoverListItemCover } from "~/components/react/cover-list/CoverListItemCover";
 import { ListItemAuthors } from "~/components/react/list-item-authors/ListItemAuthors";
 import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
@@ -74,7 +71,6 @@ export function CalendarCell({
                   group/list-item relative mb-1 flex w-full
                   max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
                   bg-default px-container py-4 transition-transform duration-500
-                  tablet-landscape:w-(--cover-list-item-width)
                   tablet-landscape:flex-col tablet-landscape:bg-transparent
                   tablet-landscape:p-6
                   ${
