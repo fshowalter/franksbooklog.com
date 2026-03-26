@@ -24,7 +24,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
  *   async (user) => clickSortOption(user, "Title (A → Z)"),
  * );
  */
-export function paginationFacetTests(
+export function paginationTests(
   renderItems: (titles: string[]) => void,
   triggerChange: (user: UserEvent) => Promise<void>,
   getList: () => HTMLElement,

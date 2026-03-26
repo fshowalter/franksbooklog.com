@@ -13,3 +13,8 @@ export const titleSortComparators: Record<
   "title-asc": (a, b) => sortString(a.sortTitle, b.sortTitle),
   "title-desc": (a, b) => sortString(a.sortTitle, b.sortTitle) * -1,
 };
+
+export const titleSortOptions = [
+  { label: "Title (A \u2192 Z)", value: "title-asc" },
+  { label: "Title (Z \u2192 A)", value: "title-desc" },
+];

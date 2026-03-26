@@ -1,11 +1,11 @@
 import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import type { GradeFilterChangedAction } from "~/components/react/filter-and-sort/facets/grade/gradeReducer";
 import type { KindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
-import type { ShowMoreAction } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
 import type { ReviewYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
 import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
 import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
+import type { ShowMoreAction } from "~/components/react/filter-and-sort/paginated-cover-list/paginationReducer";
 
 import {
   createInitialFilterAndSortContainerState,
@@ -14,16 +14,14 @@ import {
 import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
 import { gradeFacetReducer } from "~/components/react/filter-and-sort/facets/grade/gradeReducer";
 import { kindFacetReducer } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
-import {
-  createInitialShowMoreState,
-  showMoreReducer,
-} from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
 import { reviewYearFacetReducer } from "~/components/react/filter-and-sort/facets/review-year/reviewYearReducer";
 import { reviewedStatusFacetReducer } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
 import { titleYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/title/titleReducer";
-
-export { createShowMoreAction } from "~/components/react/filter-and-sort/facets/pagination/paginationReducer";
+import {
+  createInitialShowMoreState,
+  showMoreReducer,
+} from "~/components/react/filter-and-sort/paginated-cover-list/paginationReducer";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";

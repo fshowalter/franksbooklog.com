@@ -1,4 +1,4 @@
-import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import type { RemoveFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
 import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
@@ -44,8 +44,8 @@ export function gradeFacetReducer<
         },
       };
     }
-    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
-      const { key } = action as RemoveAppliedFilterAction;
+    case FilterAndSortContainerActionTypes.FILTER_REMOVED: {
+      const { key } = action as RemoveFilterAction;
       if (key !== STATE_KEY) return state;
       return {
         ...state,

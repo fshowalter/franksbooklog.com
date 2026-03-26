@@ -26,8 +26,8 @@ type TitleYearSortAdapter = {
 };
 
 /**
- * Filter-only sub-suite for work year. Use this for features that have a work
- * year filter but no work year sort (e.g. ReadingLog).
+ * Filter-only sub-suite for title year. Use this for features that have a work
+ * year filter but no title year sort (e.g. ReadingLog).
  *
  * `distinctTitleYears` must have at least 5 entries; items for the test are
  * derived from indices 0, 2, and last so the filter range [idx 1, idx last-1]
@@ -47,8 +47,8 @@ export function titleYearFilterFacetTests({
   const filterFrom = distinctTitleYears[1];
   const filterTo = distinctTitleYears.at(-2)!;
 
-  describe("work year filter", () => {
-    it("filters to items within work year range", async ({ expect }) => {
+  describe("title year filter", () => {
+    it("filters to items within title year range", async ({ expect }) => {
       renderItems([
         { title: "Old Book", workYear: low },
         { title: "Mid Book", workYear: mid },
@@ -67,13 +67,13 @@ export function titleYearFilterFacetTests({
     });
   });
 
-  describe("work year filter chip", () => {
+  describe("title year filter chip", () => {
     // Filter to a single mid-range year so the chip appears (not the full range)
     // and items outside it are hidden, proving filter and chip work together.
     const earlyYear = distinctTitleYears[0];
     const midYear = distinctTitleYears[2];
 
-    it("shows work year chip after applying filter", async ({ expect }) => {
+    it("shows title year chip after applying filter", async ({ expect }) => {
       renderItems([
         { title: "Old Book", workYear: earlyYear },
         { title: "Mid Book", workYear: midYear },
@@ -87,12 +87,12 @@ export function titleYearFilterFacetTests({
       await clickToggleFilters(user);
       expect(
         screen.getByRole("button", {
-          name: `Remove Work Year: ${midYear} filter`,
+          name: `Remove Title Year: ${midYear} filter`,
         }),
       ).toBeInTheDocument();
     });
 
-    it("removing work year chip defers list update", async ({ expect }) => {
+    it("removing title year chip defers list update", async ({ expect }) => {
       renderItems([
         { title: "Old Book", workYear: earlyYear },
         { title: "Mid Book", workYear: midYear },
@@ -109,13 +109,13 @@ export function titleYearFilterFacetTests({
       await clickToggleFilters(user);
       await user.click(
         screen.getByRole("button", {
-          name: `Remove Work Year: ${midYear} filter`,
+          name: `Remove Title Year: ${midYear} filter`,
         }),
       );
 
       expect(
         screen.queryByRole("button", {
-          name: `Remove Work Year: ${midYear} filter`,
+          name: `Remove Title Year: ${midYear} filter`,
         }),
       ).not.toBeInTheDocument();
       // List still filtered (activeFilterValues not yet cleared)
@@ -128,14 +128,14 @@ export function titleYearFilterFacetTests({
 }
 
 /**
- * Sort-only sub-suite for work year. Use this for features that have work year
+ * Sort-only sub-suite for title year. Use this for features that have title year
  * sort (Reviews, AuthorTitles).
  */
 export function workYearSortFacetTests({
   getList,
   renderItems,
 }: TitleYearSortAdapter) {
-  describe("work year sort", () => {
+  describe("title year sort", () => {
     it("sorts oldest first", async ({ expect }) => {
       renderItems([
         { title: "Modern Book", workYear: "2000" },
@@ -144,7 +144,7 @@ export function workYearSortFacetTests({
       ]);
 
       const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Work Year (Oldest First)");
+      await clickSortOption(user, "Title Year (Oldest First)");
 
       const list = getList();
       const text = list.textContent ?? "";
@@ -164,7 +164,7 @@ export function workYearSortFacetTests({
       ]);
 
       const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Work Year (Newest First)");
+      await clickSortOption(user, "Title Year (Newest First)");
 
       const list = getList();
       const text = list.textContent ?? "";

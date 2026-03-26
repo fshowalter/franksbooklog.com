@@ -2,24 +2,19 @@ import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { PaginatedCoverList } from "~/components/react/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/react/reviewed-work-filters/ReviewedWorkSortOptions";
+import { PaginatedCoverList } from "~/components/react/filter-and-sort/paginated-cover-list/PaginatedCoverList";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterReviews } from "./filterReviews";
-import {
-  createInitialState,
-  createShowMoreAction,
-  reducer,
-} from "./Reviews.reducer";
+import { createInitialState, reducer } from "./Reviews.reducer";
 import { ReviewsFilters } from "./ReviewsFilters";
 import { ReviewsListItem } from "./ReviewsListItem";
-import { sortReviews } from "./sortReviews";
+import { sortOptions, sortReviews } from "./sortReviews";
 
 /**
  * Props interface for the Reviews page component.
@@ -121,11 +116,7 @@ export function Reviews({
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
   const kindCounts = createKindCountMap(state.values);
 
-  const activeFilters = buildAppliedFilterChips(
-    state.activeFilterValues,
-    distinctTitleYears,
-    distinctReviewYears,
-  );
+  const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
     <FilterAndSortContainer
@@ -145,31 +136,25 @@ export function Reviews({
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        sortOptions: [
-          { label: "Author (A \u2192 Z)", value: "author-asc" },
-          { label: "Author (Z \u2192 A)", value: "author-desc" },
-          ...REVIEWED_WORK_SORT_OPTIONS,
-        ],
+        sortOptions,
       }}
       state={state}
       totalCount={totalCount}
     >
-      <div className="tablet:-mx-6 tablet:pt-5">
-        <PaginatedCoverList
-          onShowMore={() => dispatch(createShowMoreAction())}
-          totalCount={totalCount}
-          values={paginatedValues}
-          visibleCount={state.showCount}
-        >
-          {(value) => (
-            <ReviewsListItem
-              key={value.slug}
-              sortValue={state.sort}
-              value={value}
-            />
-          )}
-        </PaginatedCoverList>
-      </div>
+      <PaginatedCoverList
+        dispatch={dispatch}
+        totalCount={totalCount}
+        values={paginatedValues}
+        visibleCount={state.showCount}
+      >
+        {(value) => (
+          <ReviewsListItem
+            key={value.slug}
+            sortValue={state.sort}
+            value={value}
+          />
+        )}
+      </PaginatedCoverList>
     </FilterAndSortContainer>
   );
 }

@@ -13,6 +13,6 @@ export async function clickCheckboxListFieldOption(
   if (showMore) await user.click(showMore);
   const checkboxes = within(element).getAllByRole("checkbox");
   const cb = checkboxes.find((c) => (c as HTMLInputElement).value === value);
-  if (!cb) throw new Error(`Kind checkbox "${value}" not found`);
+  if (!cb) throw new Error(`Checkbox "${value}" not found`);
   await user.click(cb);
 }

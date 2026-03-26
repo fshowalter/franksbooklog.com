@@ -1,8 +1,20 @@
 import { createSorter } from "~/components/react/filter-and-sort/facets/createSorter";
-import { gradeSortComparators } from "~/components/react/filter-and-sort/facets/grade/gradeSort";
-import { reviewYearSortComparators } from "~/components/react/filter-and-sort/facets/review-year/reviewYearSort";
-import { titleYearSortComparators } from "~/components/react/filter-and-sort/facets/title-year/titleYearSort";
-import { titleSortComparators } from "~/components/react/filter-and-sort/facets/title/titleSort";
+import {
+  gradeSortComparators,
+  gradeSortOptions,
+} from "~/components/react/filter-and-sort/facets/grade/gradeSort";
+import {
+  reviewYearSortComparators,
+  reviewYearSortOptions,
+} from "~/components/react/filter-and-sort/facets/review-year/reviewYearSort";
+import {
+  titleYearSortComparators,
+  titleYearSortOptions,
+} from "~/components/react/filter-and-sort/facets/title-year/titleYearSort";
+import {
+  titleSortComparators,
+  titleSortOptions,
+} from "~/components/react/filter-and-sort/facets/title/titleSort";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 
@@ -32,3 +44,10 @@ export const sortAuthorTitles = createSorter<
   ...titleSortComparators,
   ...titleYearSortComparators,
 });
+
+export const sortOptions = [
+  ...titleSortOptions,
+  ...gradeSortOptions,
+  ...titleYearSortOptions,
+  ...reviewYearSortOptions,
+];

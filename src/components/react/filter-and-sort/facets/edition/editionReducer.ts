@@ -1,4 +1,4 @@
-import type { RemoveAppliedFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import type { RemoveFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 
 import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
@@ -43,8 +43,8 @@ export function editionFacetReducer<
         },
       };
     }
-    case FilterAndSortContainerActionTypes.REMOVE_APPLIED_FILTER: {
-      const { key, value } = action as RemoveAppliedFilterAction;
+    case FilterAndSortContainerActionTypes.FILTER_REMOVED: {
+      const { key, value } = action as RemoveFilterAction;
       if (key !== STATE_KEY) return state;
       const current = state.pendingFilterValues[STATE_KEY] ?? [];
       const updated = current.filter((e) => e !== value);

@@ -11,18 +11,13 @@ import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
 
 export function buildAppliedFilterChips(
   filterValues: ReadingLogFiltersValues,
-  distinctTitleYears: readonly string[],
-  distinctReadingYears: readonly string[],
 ): FilterChip[] {
   return [
     ...buildTitleFilterChip(filterValues.title),
     ...buildKindFilterChip(filterValues.kind),
     ...buildEditionFilterChip(filterValues.edition),
-    ...buildTitleYearFilterChip(filterValues.titleYear, distinctTitleYears),
-    ...buildReadingYearFilterChip(
-      filterValues.readingYear,
-      distinctReadingYears,
-    ),
+    ...buildTitleYearFilterChip(filterValues.titleYear),
+    ...buildReadingYearFilterChip(filterValues.readingYear),
     ...buildReviewedStatusFilterChip(filterValues.reviewedStatus),
   ];
 }

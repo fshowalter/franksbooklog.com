@@ -13,3 +13,8 @@ export const gradeSortComparators: Record<
   "grade-asc": (a, b) => sortNumber(a.gradeValue, b.gradeValue),
   "grade-desc": (a, b) => sortNumber(a.gradeValue, b.gradeValue) * -1,
 };
+
+export const gradeSortOptions = [
+  { label: "Grade (Best First)", value: "grade-desc" },
+  { label: "Grade (Worst First)", value: "grade-asc" },
+];

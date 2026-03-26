@@ -20,7 +20,6 @@ import {
   gradeSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/grade/gradeFacetTests";
 import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/kindFacetTests";
-import { paginationFacetTests } from "~/components/react/filter-and-sort/facets/pagination/paginationFacetTests";
 import {
   reviewYearFilterFacetTests,
   reviewYearSortFacetTests,
@@ -34,6 +33,7 @@ import {
   titleFilterFacetTests,
   titleSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
+import { paginationTests } from "~/components/react/filter-and-sort/paginated-cover-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
@@ -179,7 +179,7 @@ describe("AuthorTitles", () => {
     render(<AuthorTitles {...baseProps} values={titles} />);
   }, getCoverList);
 
-  paginationFacetTests(
+  paginationTests(
     (titles) => {
       const values = titles.map((title) => createAuthorTitleValue({ title }));
       render(<AuthorTitles {...baseProps} values={values} />);

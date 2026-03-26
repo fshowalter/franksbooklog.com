@@ -2,26 +2,21 @@ import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
 
-import { PaginatedCoverList } from "~/components/react/cover-list/PaginatedCoverList";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { REVIEWED_WORK_SORT_OPTIONS } from "~/components/react/reviewed-work-filters/ReviewedWorkSortOptions";
+import { PaginatedCoverList } from "~/components/react/filter-and-sort/paginated-cover-list/PaginatedCoverList";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
-import {
-  createInitialState,
-  createShowMoreAction,
-  reducer,
-} from "./AuthorTitles.reducer";
+import { createInitialState, reducer } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
 import { AuthorWorksListItem } from "./AuthorTitlesListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
-import { sortAuthorTitles } from "./sortAuthorTitles";
+import { sortAuthorTitles, sortOptions } from "./sortAuthorTitles";
 
 /**
  * Props interface for the Author page component.
@@ -127,11 +122,7 @@ export function AuthorTitles({
   const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
   const kindCounts = createKindCountMap(state.values);
 
-  const activeFilters = buildAppliedFilterChips(
-    state.activeFilterValues,
-    distinctTitleYears,
-    distinctReviewYears,
-  );
+  const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
     <FilterAndSortContainer
@@ -151,27 +142,25 @@ export function AuthorTitles({
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        sortOptions: REVIEWED_WORK_SORT_OPTIONS,
+        sortOptions,
       }}
       state={state}
       totalCount={totalCount}
     >
-      <div className="tablet:-mx-6 tablet:pt-5">
-        <PaginatedCoverList
-          onShowMore={() => dispatch(createShowMoreAction())}
-          totalCount={totalCount}
-          values={paginatedValues}
-          visibleCount={state.showCount}
-        >
-          {(value) => (
-            <AuthorWorksListItem
-              key={value.slug}
-              sortValue={state.sort}
-              value={value}
-            />
-          )}
-        </PaginatedCoverList>
-      </div>
+      <PaginatedCoverList
+        dispatch={dispatch}
+        totalCount={totalCount}
+        values={paginatedValues}
+        visibleCount={state.showCount}
+      >
+        {(value) => (
+          <AuthorWorksListItem
+            key={value.slug}
+            sortValue={state.sort}
+            value={value}
+          />
+        )}
+      </PaginatedCoverList>
     </FilterAndSortContainer>
   );
 }

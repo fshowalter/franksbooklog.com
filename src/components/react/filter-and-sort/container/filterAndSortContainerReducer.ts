@@ -4,7 +4,7 @@
 export type FilterAndSortContainerAction<T extends string> =
   | ApplyFiltersAction
   | ClearFiltersAction
-  | RemoveAppliedFilterAction
+  | RemoveFilterAction
   | ResetFiltersAction
   | SortAction<T>;
 
@@ -15,12 +15,16 @@ export type FilterAndSortContainerState<TSort> = {
 };
 
 export const ActionTypes = {
-  REMOVE_APPLIED_FILTER: "filterAndSortContainer/removeAppliedFilter",
+  FILTER_REMOVED: "filterAndSortContainer/filterRemoved",
+  FILTERS_APPLIED: "filterAndSortContainer/filtersApplied",
+  FILTERS_CLEARED: "filterAndSortContainer/filtersCleared",
+  FILTERS_RESET: "filterAndSortContainer/filtersReset",
+  SORT_CHANGED: "filterAndSortContainer/sortChanged",
 };
 
-export type RemoveAppliedFilterAction = {
+export type RemoveFilterAction = {
   key: string;
-  type: typeof ActionTypes.REMOVE_APPLIED_FILTER;
+  type: typeof ActionTypes.FILTER_REMOVED;
   value: string | undefined;
 };
 
@@ -28,22 +32,22 @@ export type RemoveAppliedFilterAction = {
  * Base Action Type Definitions
  */
 type ApplyFiltersAction = {
-  type: "filterAndSortContainer/applied";
+  type: typeof ActionTypes.FILTERS_APPLIED;
 };
 
 type ClearFiltersAction = {
-  type: "filterAndSortContainer/cleared";
+  type: typeof ActionTypes.FILTERS_CLEARED;
 };
 
 type ResetFiltersAction = {
-  type: "filterAndSortContainer/reset";
+  type: typeof ActionTypes.FILTERS_RESET;
 };
 
 /**
  * Action for updating sort state.
  */
 type SortAction<T extends string> = {
-  type: "filterAndSortContainer/sortChanged";
+  type: typeof ActionTypes.SORT_CHANGED;
   value: T;
 };
 
@@ -52,7 +56,7 @@ type SortAction<T extends string> = {
  * @returns Apply filters action
  */
 export function createApplyFiltersAction(): ApplyFiltersAction {
-  return { type: "filterAndSortContainer/applied" };
+  return { type: ActionTypes.FILTERS_APPLIED };
 }
 
 /**
@@ -60,7 +64,7 @@ export function createApplyFiltersAction(): ApplyFiltersAction {
  * @returns Clear filters action
  */
 export function createClearFiltersAction(): ClearFiltersAction {
-  return { type: "filterAndSortContainer/cleared" };
+  return { type: ActionTypes.FILTERS_CLEARED };
 }
 
 export function createInitialFilterAndSortContainerState<
@@ -83,8 +87,8 @@ export function createInitialFilterAndSortContainerState<
 export function createRemoveAppliedFilterAction(
   key: string,
   value: string | undefined,
-): RemoveAppliedFilterAction {
-  return { key, type: ActionTypes.REMOVE_APPLIED_FILTER, value };
+): RemoveFilterAction {
+  return { key, type: ActionTypes.FILTER_REMOVED, value };
 }
 
 /**
@@ -92,14 +96,14 @@ export function createRemoveAppliedFilterAction(
  * @returns Reset filters action
  */
 export function createResetFiltersAction(): ResetFiltersAction {
-  return { type: "filterAndSortContainer/reset" };
+  return { type: ActionTypes.FILTERS_RESET };
 }
 
 export function createSortAction<TSort extends string>(
   value: TSort,
 ): SortAction<TSort> {
   return {
-    type: "filterAndSortContainer/sortChanged",
+    type: ActionTypes.SORT_CHANGED,
     value,
   };
 }
@@ -109,16 +113,16 @@ export function filterAndSortContainerReducer<
   TState extends FilterAndSortContainerState<TSort>,
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
-    case "filterAndSortContainer/applied": {
+    case ActionTypes.FILTERS_APPLIED: {
       return { ...state, activeFilterValues: { ...state.pendingFilterValues } };
     }
-    case "filterAndSortContainer/cleared": {
+    case ActionTypes.FILTERS_CLEARED: {
       return { ...state, pendingFilterValues: {} };
     }
-    case "filterAndSortContainer/reset": {
+    case ActionTypes.FILTERS_RESET: {
       return { ...state, pendingFilterValues: { ...state.activeFilterValues } };
     }
-    case "filterAndSortContainer/sortChanged": {
+    case ActionTypes.SORT_CHANGED: {
       const { value } = action as SortAction<TSort>;
       return {
         ...state,

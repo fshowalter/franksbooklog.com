@@ -11,15 +11,13 @@ import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
 
 export function buildAppliedFilterChips(
   filterValues: AuthorTitlesFiltersValues,
-  distinctTitleYears: readonly string[],
-  distinctReviewYears: readonly string[],
 ): FilterChip[] {
   return [
     ...buildTitleFilterChip(filterValues.title),
     ...buildKindFilterChip(filterValues.kind),
-    ...buildTitleYearFilterChip(filterValues.titleYear, distinctTitleYears),
+    ...buildTitleYearFilterChip(filterValues.titleYear),
     ...buildGradeFilterChip(filterValues.gradeValue),
-    ...buildReviewYearFilterChip(filterValues.reviewYear, distinctReviewYears),
+    ...buildReviewYearFilterChip(filterValues.reviewYear),
     ...buildReviewedStatusFilterChip(filterValues.reviewedStatus),
   ];
 }

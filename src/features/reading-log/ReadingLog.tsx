@@ -16,7 +16,7 @@ import { filterReadingLog } from "./filterReadingLog";
 import { MonthNavigationHeader } from "./MonthNavigationHeader";
 import { createInitialState, reducer } from "./ReadingLog.reducer";
 import { Filters } from "./ReadingLogFilters";
-import { sortReadingLog } from "./sortReadingLog";
+import { sortOptions, sortReadingLog } from "./sortReadingLog";
 import { useMonthNavigation } from "./useMonthNavigation";
 
 /**
@@ -150,11 +150,7 @@ export function ReadingLog({
     editionCounts.set(v.edition, (editionCounts.get(v.edition) ?? 0) + 1);
   }
 
-  const activeFilters = buildAppliedFilterChips(
-    state.activeFilterValues,
-    distinctTitleYears,
-    distinctReadingYears,
-  );
+  const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   const [previousMonthDate, currentMonthDate, nextMonthDate] =
     useMonthNavigation(filteredValues, state.sort, state.selectedMonthDate);
@@ -180,10 +176,7 @@ export function ReadingLog({
       pendingFilteredCount={pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sort,
-        sortOptions: [
-          { label: "Reading Date (Newest First)", value: "reading-date-desc" },
-          { label: "Reading Date (Oldest First)", value: "reading-date-asc" },
-        ],
+        sortOptions,
       }}
       state={state}
       totalCount={filteredValues.length}

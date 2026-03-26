@@ -16,7 +16,7 @@ import { AuthorsListItem } from "./AuthorsListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthors } from "./filterAuthors";
 import { groupAuthors } from "./groupAuthors";
-import { sortAuthors } from "./sortAuthors";
+import { sortAuthors, sortOptions } from "./sortAuthors";
 
 /**
  * Props interface for the Authors page component.
@@ -102,12 +102,7 @@ export function Authors({
       }
       sortProps={{
         currentSortValue: state.sort,
-        sortOptions: [
-          { label: "Name (A \u2192 Z)", value: "name-asc" },
-          { label: "Name (Z \u2192 A)", value: "name-desc" },
-          { label: "Review Count (Most First)", value: "review-count-desc" },
-          { label: "Review Count (Fewest First)", value: "review-count-asc" },
-        ],
+        sortOptions,
       }}
       state={state}
       totalCount={totalCount}

@@ -15,3 +15,8 @@ export const authorSortComparators: Record<
   "author-desc": (a, b) =>
     sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
 };
+
+export const authorSortOptions = [
+  { label: "Author (A \u2192 Z)", value: "author-asc" },
+  { label: "Author (Z \u2192 A)", value: "author-desc" },
+];

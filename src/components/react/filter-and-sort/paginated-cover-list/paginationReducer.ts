@@ -1,13 +1,19 @@
+import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+
 /**
  * Default number of items to show per page for paginated Title lists
  */
 const SHOW_COUNT_INCREMENT = 100;
 
+const ActionTypes = {
+  SHOW_MORE: "pagination/showMore",
+};
+
 /**
  * Action for showing more items in pagination.
  */
 export type ShowMoreAction = {
-  type: "showMore/showMore";
+  type: typeof ActionTypes.SHOW_MORE;
 };
 
 /**
@@ -32,7 +38,7 @@ export function createInitialShowMoreState(): ShowMoreState {
  * @returns Show more action
  */
 export function createShowMoreAction(): ShowMoreAction {
-  return { type: "showMore/showMore" };
+  return { type: ActionTypes.SHOW_MORE };
 }
 
 /**
@@ -46,13 +52,13 @@ export function showMoreReducer<TState extends ShowMoreState>(
   action: { type: string },
 ): TState {
   switch (action.type) {
-    case "filters/applied": {
-      return { ...state, showCount: SHOW_COUNT_INCREMENT };
-    }
-    case "showMore/showMore": {
+    case ActionTypes.SHOW_MORE: {
       return handleShowMoreAction<TState>(state);
     }
-    case "sort/sort": {
+    case FilterAndSortContainerActionTypes.FILTERS_APPLIED: {
+      return { ...state, showCount: SHOW_COUNT_INCREMENT };
+    }
+    case FilterAndSortContainerActionTypes.SORT_CHANGED: {
       return { ...state, showCount: SHOW_COUNT_INCREMENT };
     }
     default: {

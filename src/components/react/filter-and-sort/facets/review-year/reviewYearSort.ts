@@ -14,3 +14,8 @@ export const reviewYearSortComparators: Record<
   "review-date-desc": (a, b) =>
     sortString(a.reviewSequence, b.reviewSequence) * -1,
 };
+
+export const reviewYearSortOptions = [
+  { label: "Review Date (Newest First)", value: "review-date-desc" },
+  { label: "Review Date (Oldest First)", value: "review-date-asc" },
+];

@@ -3,7 +3,6 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen } from "@testing-library/react";
 
 import { fillTextField } from "~/components/react/filter-and-sort/fields/TextField.testHelper";
-import { fillYearField } from "~/components/react/filter-and-sort/fields/YearField.testHelper";
 
 /**
  * Test helper function to click a kind filter checkbox option.
@@ -34,21 +33,6 @@ export async function clickKindFilterOption(user: UserEvent, value: string) {
  */
 export async function fillTitleFilter(user: UserEvent, value: string) {
   await fillTextField(user, "Title", value);
-}
-
-/**
- * Test helper function to fill the work year filter range.
- *
- * @param user - User event instance for interaction simulation
- * @param value1 - The starting year value
- * @param value2 - The ending year value
- */
-export async function fillTitleYearFilter(
-  user: UserEvent,
-  value1: string,
-  value2: string,
-) {
-  await fillYearField(user, "Work Year", value1, value2);
 }
 
 /**
