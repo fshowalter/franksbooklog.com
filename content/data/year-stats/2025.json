@@ -1,6 +1,6 @@
 {
   "year": "2025",
-  "workCount": 10,
+  "titleCount": 10,
   "bookCount": 4,
   "kindDistribution": [
     {
@@ -60,9 +60,8 @@
     {
       "count": 3,
       "name": "Richard Laymon",
-      "slug": "richard-laymon",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "richard-laymon",
+      "readTitles": [
         {
           "title": "Night Show",
           "edition": "Ebook",
@@ -86,9 +85,8 @@
     {
       "count": 3,
       "name": "Philip Fracassi",
-      "slug": "philip-fracassi",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "philip-fracassi",
+      "readTitles": [
         {
           "title": "Commodore",
           "edition": "Ebook",
@@ -112,9 +110,8 @@
     {
       "count": 2,
       "name": "Karl Edward Wagner",
-      "slug": "karl-edward-wagner",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "karl-edward-wagner",
+      "readTitles": [
         {
           "title": "In the Pines",
           "edition": "Ebook",

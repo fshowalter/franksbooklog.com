@@ -22,7 +22,7 @@ type ReviewsListItemValue = {
   kind: string;
   slug: string;
   title: string;
-  workYear: string;
+  titleYear: string;
 };
 
 /**
@@ -66,7 +66,7 @@ function AuthorSortListItem({
       <ListItemDetails>
         <ListItemAuthors useSortName={true} values={value.authors} />
         <ListItemTitle slug={value.slug} title={value.title} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemGrade grade={value.grade} />
         <ListItemReviewDate displayDate={value.displayDate} />
       </ListItemDetails>
@@ -85,7 +85,7 @@ function GradeSortListItem({
         <ListItemGrade grade={value.grade} />
         <ListItemTitle slug={value.slug} title={value.title} />
         <ListItemAuthors values={value.authors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemReviewDate displayDate={value.displayDate} />
       </ListItemDetails>
     </CoverListItem>
@@ -103,7 +103,7 @@ function ReviewDateSortListItem({
         <ListItemReviewDate displayDate={value.displayDate} />
         <ListItemTitle slug={value.slug} title={value.title} />
         <ListItemAuthors values={value.authors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemGrade grade={value.grade} />
       </ListItemDetails>
     </CoverListItem>
@@ -120,7 +120,7 @@ function TitleSortListItem({
       <ListItemDetails>
         <ListItemTitle slug={value.slug} title={value.title} />
         <ListItemAuthors values={value.authors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemGrade grade={value.grade} />
         <ListItemReviewDate displayDate={value.displayDate} />
       </ListItemDetails>

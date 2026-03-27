@@ -4,15 +4,15 @@ import { getCollection } from "astro:content";
 import LongFormText from "~/components/astro/long-form-text/LongFormText.astro";
 import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
 import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
-import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
+import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 type Props = {
   content: string | undefined;
 };
 
 const { content } = Astro.props;
-const recentReviewedWorks = await mostRecentReviewedWorks(6);
-const reviewedWorks = await getCollection("reviewedWorks");
+const recentReviewedWorks = await mostRecentReviewedTitles(6);
+const reviewedTitles = await getCollection("reviewedTitles");
 ---
 
 <section class="flex flex-col items-center pt-16 pb-32">
@@ -21,7 +21,7 @@ const reviewedWorks = await getCollection("reviewedWorks");
       class={`max-w-prose`}
       text={linkReviewedWorks(
         content,
-        reviewedWorks.map((e) => e.id),
+        reviewedTitles.map((e) => e.id),
       )}
     />
   </div>

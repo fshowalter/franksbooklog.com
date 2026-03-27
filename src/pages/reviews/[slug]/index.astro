@@ -6,25 +6,25 @@ import { getCollection } from "astro:content";
 import ReviewPage from "~/features/review/ReviewPage.astro";
 
 type Props = {
-  reviewedWork: CollectionEntry<"reviewedWorks">["data"];
+  reviewedTitle: CollectionEntry<"reviewedTitles">["data"];
 };
 
 export async function getStaticPaths() {
-  const reviewedWorks = await getCollection("reviewedWorks");
+  const reviewedTitles = await getCollection("reviewedTitles");
 
-  return reviewedWorks.map(({ data: reviewedWork }) => {
+  return reviewedTitles.map(({ data: reviewedTitle }) => {
     return {
       params: {
-        slug: reviewedWork.review.id,
+        slug: reviewedTitle.review.id,
       },
       props: {
-        reviewedWork: reviewedWork,
+        reviewedTitle,
       },
     };
   });
 }
 
-const { reviewedWork } = Astro.props;
+const { reviewedTitle } = Astro.props;
 ---
 
-<ReviewPage reviewedWork={reviewedWork} />
+<ReviewPage reviewedTitle={reviewedTitle} />

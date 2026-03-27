@@ -1,7 +1,7 @@
 import { getEntry } from "astro:content";
 
 import { getUpdateCoverProps } from "~/assets/covers";
-import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
+import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 /**
  * Mapping object that converts letter grades to numeric star ratings.
@@ -34,25 +34,25 @@ const gradeToStars: Record<string, number> = {
  * @returns JSON response containing the latest 6 book reviews with structured data
  */
 export async function GET() {
-  const recentReviewedWorks = await mostRecentReviewedWorks(5);
+  const recentReviewedTitles = await mostRecentReviewedTitles(5);
 
   const updateItems = await Promise.all(
-    recentReviewedWorks.map(async ({ data: reviewedWork }) => {
-      const { data: review } = await getEntry(reviewedWork.review);
+    recentReviewedTitles.map(async ({ data: reviewedTitle }) => {
+      const { data: review } = await getEntry(reviewedTitle.review);
       const coverProps = await getUpdateCoverProps({
         slug: review.slug,
       });
 
       return {
-        authors: reviewedWork.authors.map((author) => author.name),
+        authors: reviewedTitle.authors.map((author) => author.name),
         date: review.date,
         excerpt: review.excerptHtml,
         image: coverProps.src,
-        kind: reviewedWork.kind,
+        kind: reviewedTitle.kind,
         slug: review.slug,
         stars: gradeToStars[review.grade],
-        title: reviewedWork.title,
-        workYear: reviewedWork.workYear,
+        title: reviewedTitle.title,
+        titleYear: reviewedTitle.titleYear,
       };
     }),
   );

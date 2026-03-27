@@ -48,7 +48,7 @@ const { values } = Astro.props;
                   tablet:text-sm
                 `}
               >
-                {value.reviewed ? (
+                {value.authorSlug ? (
                   <a
                     class={`
                       relative inline-block font-serif text-base/6 font-medium
@@ -59,7 +59,7 @@ const { values } = Astro.props;
                       after:duration-500
                       hover:after:scale-x-100
                     `}
-                    href={`/authors/${value.slug}/`}
+                    href={`/authors/${value.authorSlug}/`}
                   >
                     {value.name}
                   </a>
@@ -103,17 +103,17 @@ const { values } = Astro.props;
                   Details
                 </summary>
                 <CoverList class="rounded-md bg-subtle">
-                  {value.readWorks.map(async (readWork) => {
+                  {value.readTitles.map(async (readTitle) => {
                     return (
                       <CoverListItem
                         class={`
                           ${
-                            readWork.reviewSlug
+                            readTitle.reviewSlug
                               ? "bg-default"
                               : `bg-transparent`
                           }
                         `}
-                        coverSlug={readWork.reviewSlug || "default"}
+                        coverSlug={readTitle.reviewSlug || "default"}
                       >
                         <div
                           class={`
@@ -122,13 +122,13 @@ const { values } = Astro.props;
                           `}
                         >
                           <ListItemTitle
-                            slug={readWork.reviewSlug}
-                            title={readWork.title}
+                            slug={readTitle.reviewSlug}
+                            title={readTitle.title}
                           />
                           <ListItemReviewDate
-                            displayDate={toDisplayDate(readWork.readingDate)}
+                            displayDate={toDisplayDate(readTitle.readingDate)}
                           />
-                          <ListItemEdition value={readWork.edition} />
+                          <ListItemEdition value={readTitle.edition} />
                         </div>
                       </CoverListItem>
                     );

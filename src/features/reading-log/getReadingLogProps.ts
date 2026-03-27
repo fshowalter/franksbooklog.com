@@ -24,7 +24,7 @@ export async function getReadingLogProps(
       distinctEditions.add(entry.edition);
       distinctKinds.add(entry.kind);
       distinctReadingYears.add(toSortYear(entry.date));
-      distinctTitleYears.add(entry.workYear);
+      distinctTitleYears.add(entry.titleYear);
 
       const value: ReadingLogValue = {
         abandoned: entry.progress === "Abandoned",
@@ -42,7 +42,7 @@ export async function getReadingLogProps(
         sequence: index,
         slug: entry.reviewSlug,
         title: entry.title,
-        workYear: entry.workYear,
+        titleYear: entry.titleYear,
       };
 
       return value;

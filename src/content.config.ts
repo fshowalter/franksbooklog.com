@@ -2,7 +2,7 @@ import { pages } from "./collections/pages";
 import { readingLog } from "./collections/readingLog";
 import { readings } from "./collections/readings";
 import { reviewedAuthors } from "./collections/reviewedAuthors";
-import { reviewedWorks } from "./collections/reviewedWorks";
+import { reviewedTitles } from "./collections/reviewedTitles";
 import { reviews } from "./collections/reviews";
 import { alltimeStats, yearStats } from "./collections/stats";
 
@@ -12,7 +12,7 @@ export const collections = {
   readingLog,
   readings,
   reviewedAuthors,
-  reviewedWorks,
+  reviewedTitles,
   reviews,
   yearStats,
 };

@@ -15,7 +15,7 @@
     "2011"
   ],
   "reviewCount": 88,
-  "workCount": 195,
+  "titleCount": 195,
   "bookCount": 169,
   "gradeDistribution": [
     {
@@ -173,9 +173,8 @@
     {
       "count": 36,
       "name": "Richard Laymon",
-      "slug": "richard-laymon",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "richard-laymon",
+      "readTitles": [
         {
           "title": "The Cellar",
           "edition": "Paperback",
@@ -397,9 +396,8 @@
     {
       "count": 31,
       "name": "Stephen King",
-      "slug": "stephen-king",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "stephen-king",
+      "readTitles": [
         {
           "title": "The Shining",
           "edition": "Paperback",
@@ -591,9 +589,8 @@
     {
       "count": 16,
       "name": "Philip Fracassi",
-      "slug": "philip-fracassi",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "philip-fracassi",
+      "readTitles": [
         {
           "title": "Soft Construction of a Sunset",
           "edition": "Ebook",
@@ -695,9 +692,8 @@
     {
       "count": 7,
       "name": "Charlie Huston",
-      "slug": null,
-      "reviewed": false,
-      "readWorks": [
+      "authorSlug": null,
+      "readTitles": [
         {
           "title": "Caught Stealing",
           "edition": "Paperback",
@@ -745,9 +741,8 @@
     {
       "count": 6,
       "name": "Raymond Chandler",
-      "slug": "raymond-chandler",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "raymond-chandler",
+      "readTitles": [
         {
           "title": "The Big Sleep",
           "edition": "Paperback",
@@ -789,9 +784,8 @@
     {
       "count": 4,
       "name": "Robert E. Howard",
-      "slug": null,
-      "reviewed": false,
-      "readWorks": [
+      "authorSlug": null,
+      "readTitles": [
         {
           "title": "Black Canaan",
           "edition": "Paperback",
@@ -821,9 +815,8 @@
     {
       "count": 3,
       "name": "Jocko Willink",
-      "slug": "jocko-willink",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "jocko-willink",
+      "readTitles": [
         {
           "title": "Extreme Ownership",
           "edition": "Ebook",
@@ -847,9 +840,8 @@
     {
       "count": 3,
       "name": "Jeff Gelb",
-      "slug": null,
-      "reviewed": false,
-      "readWorks": [
+      "authorSlug": null,
+      "readTitles": [
         {
           "title": "Hot Blood",
           "edition": "Ebook",
@@ -873,9 +865,8 @@
     {
       "count": 3,
       "name": "James Kaplan",
-      "slug": null,
-      "reviewed": false,
-      "readWorks": [
+      "authorSlug": null,
+      "readTitles": [
         {
           "title": "Frank",
           "edition": "Paperback",
@@ -899,9 +890,8 @@
     {
       "count": 3,
       "name": "Karl Edward Wagner",
-      "slug": "karl-edward-wagner",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "karl-edward-wagner",
+      "readTitles": [
         {
           "title": "Dark Crusade",
           "edition": "Paperback",

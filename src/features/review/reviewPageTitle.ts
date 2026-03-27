@@ -3,15 +3,15 @@ import type { CollectionEntry } from "astro:content";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
 
 export function reviewPageTitle(
-  reviewedWork: CollectionEntry<"reviewedWorks">["data"],
+  reviewedTitle: CollectionEntry<"reviewedTitles">["data"],
 ) {
-  const titleAuthorNames = formatWorkAuthors(reviewedWork.authors, {
+  const titleAuthorNames = formatWorkAuthors(reviewedTitle.authors, {
     style: "short",
   });
 
-  const title = `${reviewedWork.title} by ${titleAuthorNames}`;
+  const title = `${reviewedTitle.title} by ${titleAuthorNames}`;
 
-  const kind = reviewedWork.kind == "Short Story" ? "story" : "book";
+  const kind = reviewedTitle.kind == "Short Story" ? "story" : "book";
 
   return `${title} ${kind} review`;
 }

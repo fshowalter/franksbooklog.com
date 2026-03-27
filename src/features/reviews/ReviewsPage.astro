@@ -5,10 +5,8 @@ import HeroLayout from "~/components/astro/layout/HeroLayout.astro";
 import { getReviewsProps } from "~/features/reviews/getReviewsProps";
 import { Reviews } from "~/features/reviews/Reviews";
 
-const reviewedWorks = await getCollection("reviewedWorks");
-const reviewsProps = await getReviewsProps(
-  reviewedWorks.map((entry) => entry.data),
-);
+const reviewedTitles = await getCollection("reviewedTitles");
+const reviewsProps = await getReviewsProps(reviewedTitles.map((e) => e.data));
 
 const title = "Reviews";
 const deck = `"You were always the best of them, Lloyd."`;

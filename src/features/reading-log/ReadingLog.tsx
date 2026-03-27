@@ -49,7 +49,7 @@ export type ReadingLogValue = {
   /** Title of the work */
   title: string;
   /** Year the work was originally published */
-  workYear: string;
+  titleYear: string;
 };
 
 /**

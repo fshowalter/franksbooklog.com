@@ -59,7 +59,7 @@ function createReadingValues(
       sequence: index,
       slug: `test-book-${index}`,
       title: `Test Book ${index}`,
-      workYear: "1970",
+      titleYear: "1970",
       ...override,
     };
   });
@@ -189,7 +189,7 @@ describe("ReadingLog", () => {
         <ReadingLog
           {...baseProps}
           values={createReadingValues(
-            items.map(({ title, workYear }) => ({ title, workYear })),
+            items.map(({ title, titleYear }) => ({ title, titleYear })),
           )}
         />,
       ),

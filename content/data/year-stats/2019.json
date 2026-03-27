@@ -1,6 +1,6 @@
 {
   "year": "2019",
-  "workCount": 26,
+  "titleCount": 26,
   "bookCount": 26,
   "kindDistribution": [
     {
@@ -56,9 +56,8 @@
     {
       "count": 6,
       "name": "Charlie Huston",
-      "slug": null,
-      "reviewed": false,
-      "readWorks": [
+      "authorSlug": null,
+      "readTitles": [
         {
           "title": "Already Dead",
           "edition": "Ebook",
@@ -100,9 +99,8 @@
     {
       "count": 6,
       "name": "Stephen King",
-      "slug": "stephen-king",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "stephen-king",
+      "readTitles": [
         {
           "title": "The Eyes of the Dragon",
           "edition": "Ebook",
@@ -144,9 +142,8 @@
     {
       "count": 4,
       "name": "Raymond Chandler",
-      "slug": "raymond-chandler",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "raymond-chandler",
+      "readTitles": [
         {
           "title": "Farewell, My Lovely",
           "edition": "Ebook",
@@ -176,9 +173,8 @@
     {
       "count": 4,
       "name": "Robert E. Howard",
-      "slug": null,
-      "reviewed": false,
-      "readWorks": [
+      "authorSlug": null,
+      "readTitles": [
         {
           "title": "Black Canaan",
           "edition": "Paperback",
@@ -208,9 +204,8 @@
     {
       "count": 4,
       "name": "Richard Laymon",
-      "slug": "richard-laymon",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "richard-laymon",
+      "readTitles": [
         {
           "title": "Darkness, Tell Us",
           "edition": "Ebook",

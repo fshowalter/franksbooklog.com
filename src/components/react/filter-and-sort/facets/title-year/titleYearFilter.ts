@@ -1,11 +1,13 @@
 /**
  * Create a Work Year filter function
  */
-export function createTitleYearFilter<TValue extends { workYear: string }>(
+export function createTitleYearFilter<TValue extends { titleYear: string }>(
   filterValue?: [string, string],
 ) {
   if (!filterValue) return;
   return (value: TValue): boolean => {
-    return value.workYear >= filterValue[0] && value.workYear <= filterValue[1];
+    return (
+      value.titleYear >= filterValue[0] && value.titleYear <= filterValue[1]
+    );
   };
 }

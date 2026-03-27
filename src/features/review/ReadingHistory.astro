@@ -14,19 +14,19 @@ import {
 } from "./readingHistoryDateFormats";
 
 type Props = {
-  reviewedWorkId: string;
+  reviewedTitleId: string;
 };
 
-const { reviewedWorkId } = Astro.props;
+const { reviewedTitleId } = Astro.props;
 
 const readings = await getCollection(
   "readings",
-  (entry) => entry.data.workId === reviewedWorkId,
+  (entry) => entry.data.titleId === reviewedTitleId,
 );
 
-const reviewedWorks = await getCollection("reviewedWorks");
+const reviewedTitles = await getCollection("reviewedTitles");
 
-const reviewedWorkSlugs = reviewedWorks.map((e) => e.id);
+const reviewedTitleSlugs = reviewedTitles.map((e) => e.id);
 
 readings.sort((a, b) => b.id.localeCompare(a.id));
 ---
@@ -92,7 +92,7 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                       class="rendered-markdown leading-none"
                       set:html={linkReviewedWorks(
                         reading.editionNotesHtml,
-                        reviewedWorkSlugs,
+                        reviewedTitleSlugs,
                       )}
                     />
                     )
@@ -187,7 +187,7 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                     "
                     set:html={linkReviewedWorks(
                       reading.readingNotesHtml,
-                      reviewedWorkSlugs,
+                      reviewedTitleSlugs,
                     )}
                   />
                 </div>
