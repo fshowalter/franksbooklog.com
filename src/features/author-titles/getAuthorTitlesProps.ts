@@ -1,5 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 
+import { getEntry } from "astro:content";
+
 import { getFluidCoverImageProps } from "~/assets/covers";
 import { CoverListItemImageConfig } from "~/components/react/cover-list/CoverListItem";
 import { gradeToValue } from "~/utils/grades";
@@ -17,6 +19,7 @@ export async function getAuthorTitlesProps(
 
   const values = await Promise.all(
     reviewedTitles.map(async (reviewedTitle) => {
+      const { data: review } = await getEntry(reviewedTitle.review);
       distinctKinds.add(reviewedTitle.kind);
       distinctReviewYears.add(
         reviewedTitle.reviewDate.getFullYear().toString(),
@@ -30,6 +33,7 @@ export async function getAuthorTitlesProps(
           CoverListItemImageConfig,
         ),
         displayDate: toDisplayDate(reviewedTitle.reviewDate),
+        excerptHtml: review.excerptHtml,
         grade: reviewedTitle.grade,
         gradeValue: gradeToValue(reviewedTitle.grade),
         kind: reviewedTitle.kind,

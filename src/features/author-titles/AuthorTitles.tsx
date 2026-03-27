@@ -5,7 +5,7 @@ import type { CoverImageProps } from "~/assets/covers";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { PaginatedCoverList } from "~/components/react/filter-and-sort/paginated-cover-list/PaginatedCoverList";
+import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -13,7 +13,6 @@ import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
 import { createInitialState, reducer } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
-import { AuthorWorksListItem } from "./AuthorTitlesListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
 import { sortAuthorTitles, sortOptions } from "./sortAuthorTitles";
@@ -46,6 +45,7 @@ export type AuthorTitlesValue = {
   coverImageProps: CoverImageProps;
   /** Formatted display date for the review */
   displayDate: string;
+  excerptHtml: string;
   /** Letter grade given to the work */
   grade: string;
   /** Numeric grade value for sorting */
@@ -71,6 +71,7 @@ export type AuthorTitlesValue = {
   sortTitle: string;
   /** Display title of the work */
   title: string;
+
   /** Year the work was originally published */
   titleYear: string;
 };
@@ -147,20 +148,48 @@ export function AuthorTitles({
       state={state}
       totalCount={totalCount}
     >
-      <PaginatedCoverList
-        dispatch={dispatch}
-        totalCount={totalCount}
-        values={paginatedValues}
-        visibleCount={state.showCount}
+      <nav
+        className={`
+          mx-auto w-full bg-subtle px-3
+          tablet:pt-5
+        `}
+        data-page-find-ignore
       >
-        {(value) => (
-          <AuthorWorksListItem
-            key={value.slug}
-            sortValue={state.sort}
-            value={value}
-          />
-        )}
-      </PaginatedCoverList>
+        <div
+          className={`
+            @container/card-list mx-auto
+            tablet:-mx-6
+          `}
+        >
+          <ol
+            className={`
+              grid flex-wrap gap-8
+              tablet-landscape:grid-cols-2
+            `}
+            data-testid="card-list"
+          >
+            {paginatedValues.map((value) => {
+              return (
+                <ReviewCard
+                  hasDate={true}
+                  key={value.slug}
+                  value={{
+                    coverImageProps: value.coverImageProps,
+                    date: value.reviewDate,
+                    excerptHtml: value.excerptHtml,
+                    grade: value.grade,
+                    kind: value.kind,
+                    otherAuthors: value.otherAuthors,
+                    slug: value.slug,
+                    title: value.title,
+                    titleYear: value.titleYear,
+                  }}
+                />
+              );
+            })}
+          </ol>
+        </div>
+      </nav>
     </FilterAndSortContainer>
   );
 }
