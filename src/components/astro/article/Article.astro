@@ -1,6 +1,8 @@
 ---
+import { getEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
+import { getFluidCoverImageProps } from "~/assets/covers";
 import LongFormText from "~/components/astro/long-form-text/LongFormText.astro";
 import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
 import { linkReviewedTitles } from "~/utils/linkReviewedTitles";
@@ -11,7 +13,7 @@ type Props = {
 };
 
 const { content } = Astro.props;
-const recentReviewedWorks = await mostRecentReviewedTitles(6);
+const recentReviewedTitles = await mostRecentReviewedTitles(6);
 const reviewedTitles = await getCollection("reviewedTitles");
 ---
 
@@ -35,12 +37,22 @@ const reviewedTitles = await getCollection("reviewedTitles");
   data-pagefind-ignore
 >
   <MoreReviews
-    cardProps={recentReviewedWorks.map((review) => {
-      return {
-        hasDate: false,
-        value: review.data,
-      };
-    })}
+    cardProps={await Promise.all(
+      recentReviewedTitles.map(async ({ data: reviewedTitle }) => {
+        const { data: review } = await getEntry(reviewedTitle.review);
+        return {
+          value: {
+            coverImageProps: await getFluidCoverImageProps(review.slug),
+            excerptHtml: review.excerptHtml,
+            grade: review.grade,
+            kind: reviewedTitle.kind,
+            slug: review.slug,
+            title: reviewedTitle.title,
+            titleYear: reviewedTitle.titleYear,
+          },
+        };
+      }),
+    )}
     headingProps={{
       accentText: "Reviews",
       href: `/reviews/`,

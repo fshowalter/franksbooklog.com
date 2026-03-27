@@ -1,19 +1,16 @@
 import type { CoverImageProps } from "~/assets/covers";
+import type { GradeType } from "~/utils/grades";
 
 import { Grade } from "~/components/grade/Grade";
 import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 
-/**
- * Configuration for cover images in review cards
- */
-export const CoverImageConfig = {
-  height: 372,
+const CoverImageConfig = {
   sizes:
     "(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)",
   width: 248,
 };
 
-export type ReviewCardValue = {
+type ReviewCardValue = {
   authors?: {
     name: string;
     notes: string | undefined;
@@ -21,9 +18,9 @@ export type ReviewCardValue = {
     sortName: string;
   }[];
   coverImageProps: CoverImageProps;
-  date: Date;
+  date?: Date;
   excerptHtml: string;
-  grade: string;
+  grade: GradeType;
   kind: string;
   otherAuthors?: {
     name: string;
@@ -34,11 +31,16 @@ export type ReviewCardValue = {
   titleYear: string;
 };
 
+const dateFormatter = new Intl.DateTimeFormat("en-GB", {
+  day: "2-digit",
+  month: "short",
+  timeZone: "UTC",
+  year: "numeric",
+});
+
 export function ReviewCard({
-  hasDate,
   value,
 }: {
-  hasDate: boolean;
   value: ReviewCardValue;
 }): React.JSX.Element {
   return (
@@ -132,7 +134,7 @@ export function ReviewCard({
             @min-[1128px]/card-list:mt-0 @min-[1128px]/card-list:px-0
           `}
         >
-          {hasDate && (
+          {value.date && (
             <div
               className={`
                 mb-1 font-sans text-xs/4 font-normal tracking-wider text-subtle
@@ -140,12 +142,7 @@ export function ReviewCard({
                 laptop:tracking-wide
               `}
             >
-              {value.date.toLocaleString("en-GB", {
-                day: "2-digit",
-                month: "short",
-                timeZone: "UTC",
-                year: "numeric",
-              })}
+              {dateFormatter.format(value.date)}
             </div>
           )}
           <a

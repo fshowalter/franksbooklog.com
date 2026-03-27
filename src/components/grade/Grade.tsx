@@ -1,3 +1,5 @@
+import type { GradeType } from "~/utils/grades";
+
 import { gradeMap } from "~/utils/gradeMap";
 
 /**
@@ -17,10 +19,10 @@ export function Grade({
 }: {
   className?: string;
   height: 15 | 16 | 18 | 24 | 32;
-  value?: string;
-}): false | React.JSX.Element {
-  if (!value || value == "Abandoned") {
-    return false;
+  value?: GradeType;
+}): React.JSX.Element | undefined {
+  if (!value || value === "Abandoned") {
+    return undefined;
   }
 
   const [src, alt] = gradeMap[value];

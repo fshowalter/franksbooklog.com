@@ -3,9 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/assets/covers";
-import { CoverListItemImageConfig } from "~/components/react/cover-list/CoverListItem";
 import { gradeToValue } from "~/utils/grades";
-import { toDisplayDate } from "~/utils/toDisplayDate";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
@@ -28,11 +26,7 @@ export async function getAuthorTitlesProps(
 
       const value: AuthorTitlesValue = {
         abandoned: reviewedTitle.grade === "Abandoned",
-        coverImageProps: await getFluidCoverImageProps(
-          { slug: reviewedTitle.id },
-          CoverListItemImageConfig,
-        ),
-        displayDate: toDisplayDate(reviewedTitle.reviewDate),
+        coverImageProps: await getFluidCoverImageProps(review.slug),
         excerptHtml: review.excerptHtml,
         grade: reviewedTitle.grade,
         gradeValue: gradeToValue(reviewedTitle.grade),

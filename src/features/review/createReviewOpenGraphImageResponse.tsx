@@ -1,11 +1,13 @@
 import path from "node:path";
 import sharp from "sharp";
 
+import type { GradeType } from "~/utils/grades";
+
 import {
   getCoverHeight,
   getCoverWidth,
   getOpenGraphCover,
-  getWorkCoverPath,
+  getTitleCoverPath,
 } from "~/assets/covers";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
@@ -17,7 +19,7 @@ type Props = {
     notes: string | undefined;
   }[];
   coverSlug: string;
-  grade: string;
+  grade: GradeType;
   title: string;
 };
 
@@ -40,10 +42,10 @@ export async function createReviewOpenGraphImageResponse({
   }
 
   let coverHeight = 630;
-  let coverWidth = await getCoverWidth({ slug: coverSlug }, coverHeight);
+  let coverWidth = await getCoverWidth(coverSlug, coverHeight);
 
   if (coverWidth > 500) {
-    const workCoverPath = getWorkCoverPath({ slug: coverSlug });
+    const workCoverPath = getTitleCoverPath(coverSlug);
     coverHeight = await getCoverHeight(workCoverPath, 500);
     coverWidth = 500;
   }
@@ -74,7 +76,7 @@ export async function createReviewOpenGraphImageResponse({
   );
 }
 
-function fileForGrade(value: string): string | undefined {
+function fileForGrade(value: GradeType): string | undefined {
   if (!value || value == "Abandoned") {
     return;
   }

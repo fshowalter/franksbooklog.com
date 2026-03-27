@@ -18,7 +18,7 @@ const CoverImageConfig = {
 const { coverSlug } = Astro.props;
 
 const coverImageProps = await getFixedCoverImageProps(
-  { slug: coverSlug },
+  coverSlug,
   CoverImageConfig,
 );
 ---

@@ -1,6 +1,7 @@
 import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
+import type { GradeType } from "~/utils/grades";
 
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
@@ -43,11 +44,9 @@ export type AuthorTitlesValue = {
   abandoned: boolean;
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
-  /** Formatted display date for the review */
-  displayDate: string;
   excerptHtml: string;
   /** Letter grade given to the work */
-  grade: string;
+  grade: GradeType;
   /** Numeric grade value for sorting */
   gradeValue: number;
   /** Type/category of the work (e.g., "Novel", "Collection") */
@@ -59,7 +58,6 @@ export type AuthorTitlesValue = {
   }[];
   /** Date the review was written */
   reviewDate: Date;
-  /** Always true — every item in the author-titles list has been reviewed */
   reviewed: boolean;
   /** Sequence number for review ordering */
   reviewSequence: string;
@@ -150,8 +148,8 @@ export function AuthorTitles({
     >
       <nav
         className={`
-          mx-auto w-full bg-subtle px-3
-          tablet:pt-5
+          mx-auto w-full bg-subtle
+          tablet:px-3 tablet:pt-8
         `}
         data-page-find-ignore
       >
@@ -171,7 +169,6 @@ export function AuthorTitles({
             {paginatedValues.map((value) => {
               return (
                 <ReviewCard
-                  hasDate={true}
                   key={value.slug}
                   value={{
                     coverImageProps: value.coverImageProps,

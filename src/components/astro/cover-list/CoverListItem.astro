@@ -24,10 +24,7 @@ type Props = {
 
 const { class: className, coverSlug, hasReview } = Astro.props;
 
-const coverImageProps = await getFluidCoverImageProps(
-  { slug: coverSlug },
-  CoverListItemImageConfig,
-);
+const coverImageProps = await getFluidCoverImageProps(coverSlug);
 ---
 
 <li

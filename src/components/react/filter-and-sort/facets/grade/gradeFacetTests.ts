@@ -3,6 +3,8 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
+import type { GradeType, GradeValueType } from "~/utils/grades";
+
 import {
   clickSortOption,
   clickToggleFilters,
@@ -11,8 +13,8 @@ import {
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type GradeItem = {
-  grade: string;
-  gradeValue: number;
+  grade: GradeType;
+  gradeValue: GradeValueType;
   title: string;
 };
 
@@ -114,7 +116,7 @@ export function gradeSortFacetTests(
       renderItems([
         { grade: "C", gradeValue: 6, title: "Okay Book" },
         { grade: "A+", gradeValue: 13, title: "Great Book" },
-        { grade: "F", gradeValue: 1, title: "Bad Book" },
+        { grade: "F", gradeValue: 2, title: "Bad Book" },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -131,7 +133,7 @@ export function gradeSortFacetTests(
     it("sorts worst first", async ({ expect }) => {
       renderItems([
         { grade: "A+", gradeValue: 13, title: "Great Book" },
-        { grade: "F", gradeValue: 1, title: "Bad Book" },
+        { grade: "F", gradeValue: 2, title: "Bad Book" },
         { grade: "C", gradeValue: 6, title: "Okay Book" },
       ]);
 

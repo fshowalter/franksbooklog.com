@@ -53,7 +53,6 @@ function createAuthorTitleValue(
       srcSet: "/cover.jpg 1x",
       width: 250,
     },
-    displayDate: "Jan 1, 2024",
     excerptHtml: "Test excerptHtml",
     grade: "B+",
     gradeValue: 10,

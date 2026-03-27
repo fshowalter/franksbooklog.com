@@ -5,8 +5,9 @@ import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
 import { getCollection } from "astro:content";
 
-import Grade from "~/components/astro/grade/Grade.astro";
+import { getFluidCoverImageProps } from "~/assets/covers";
 import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
+import { Grade } from "~/components/grade/Grade";
 import { linkReviewedTitles } from "~/utils/linkReviewedTitles";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
@@ -188,12 +189,22 @@ const reviewedTitles = await getCollection("reviewedTitles");
       `}
     >
       <MoreReviews
-        cardProps={moreReviews.map((value) => {
-          return {
-            hasDate: false,
-            value: value.data,
-          };
-        })}
+        cardProps={await Promise.all(
+          moreReviews.map(async ({ data: moreReviewsTitle }) => {
+            const { data: review } = await getEntry(moreReviewsTitle.review);
+            return {
+              value: {
+                coverImageProps: await getFluidCoverImageProps(review.slug),
+                excerptHtml: review.excerptHtml,
+                grade: review.grade,
+                kind: moreReviewsTitle.kind,
+                slug: review.slug,
+                title: moreReviewsTitle.title,
+                titleYear: moreReviewsTitle.titleYear,
+              },
+            };
+          }),
+        )}
         headingProps={{
           accentText: "Reviews",
           href: `/reviews/`,

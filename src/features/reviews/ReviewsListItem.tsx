@@ -1,9 +1,10 @@
 import type { CoverImageProps } from "~/assets/covers";
+import type { GradeType } from "~/utils/grades";
 
+import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
 import { CoverListItem } from "~/components/react/cover-list/CoverListItem";
 import { ListItemAuthors } from "~/components/react/list-item-authors/ListItemAuthors";
 import { ListItemDetails } from "~/components/react/list-item-details/ListItemDetails";
-import { ListItemGrade } from "~/components/react/list-item-grade/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/react/list-item-kind-and-year/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/react/list-item-review-date/ListItemReviewDate";
 import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
@@ -18,7 +19,7 @@ type ReviewsListItemValue = {
   }[];
   coverImageProps: CoverImageProps;
   displayDate: string;
-  grade: string;
+  grade: GradeType;
   kind: string;
   slug: string;
   title: string;
