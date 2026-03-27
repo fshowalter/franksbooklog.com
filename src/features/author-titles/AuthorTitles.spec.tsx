@@ -57,7 +57,7 @@ function createAuthorTitleValue(
     },
     excerptHtml: "Test excerptHtml",
     grade: "B+",
-    gradeValue: 10,
+    gradeValue: 13,
     kind: "Novel",
     otherAuthors: [],
     reviewDate: new Date("2024-01-01"),
