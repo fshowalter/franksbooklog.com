@@ -16,11 +16,13 @@ import type { GradeFilterChangedAction } from "./gradeReducer";
 
 import { createGradeFilterChangedAction } from "./gradeReducer";
 
-const gradeOptions = Object.entries(GRADE_TO_LETTER).map(([key, value]) => (
-  <option key={key} value={Number(key)}>
-    {value}
-  </option>
-));
+const gradeOptions = Object.entries(GRADE_TO_LETTER)
+  .filter((entry) => entry.at(1) !== "Abandoned")
+  .map(([key, value]) => (
+    <option key={key} value={Number(key)}>
+      {value}
+    </option>
+  ));
 
 const gradeOptionsReversed = [...gradeOptions].reverse();
 
