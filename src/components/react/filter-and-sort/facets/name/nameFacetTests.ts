@@ -1,3 +1,5 @@
+import type { UserEvent } from "@testing-library/user-event";
+
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
@@ -14,6 +16,14 @@ type NameItem = {
   name: string;
   sortName: string;
 };
+
+export async function fillNameFilter(user: UserEvent, value: string) {
+  await fillTextField(user, "Name", value);
+}
+
+export function getNameFilter() {
+  return screen.getByLabelText("Name");
+}
 
 /**
  * Shared test suite for the name filter facet.
