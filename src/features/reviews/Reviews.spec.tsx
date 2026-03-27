@@ -34,7 +34,7 @@ import {
   titleFilterFacetTests,
   titleSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
-import { paginationTests } from "~/components/react/filter-and-sort/paginated-cover-list/paginationTests";
+import { paginationTests } from "~/components/react/filter-and-sort/paginated-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";

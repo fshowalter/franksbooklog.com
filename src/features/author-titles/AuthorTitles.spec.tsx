@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, it, vi } from "vitest";
 import {
   clickClearFilters,
   clickCloseFilters,
+  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
@@ -31,6 +32,7 @@ import {
   titleFilterFacetTests,
   titleSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
+import { paginationTests } from "~/components/react/filter-and-sort/paginated-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
@@ -129,6 +131,15 @@ describe("AuthorTitles", () => {
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
   }, getCardList);
+
+  paginationTests(
+    (titles) => {
+      const values = titles.map((title) => createAuthorTitleValue({ title }));
+      render(<AuthorTitles {...baseProps} values={values} />);
+    },
+    async (user) => clickSortOption(user, "Title (A → Z)"),
+    getCardList,
+  );
 
   titleYearFilterFacetTests({
     distinctTitleYears: baseProps.distinctTitleYears,

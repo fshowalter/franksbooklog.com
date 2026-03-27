@@ -6,6 +6,7 @@ import type { GradeType } from "~/utils/grades";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
+import { PaginatedList } from "~/components/react/filter-and-sort/paginated-list/PaginatedList";
 import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
@@ -149,43 +150,49 @@ export function AuthorTitles({
       <nav
         className={`
           mx-auto w-full bg-subtle
-          tablet:px-3 tablet:pt-8
+          tablet:px-3 tablet:pt-6
         `}
         data-page-find-ignore
       >
-        <div
-          className={`
-            @container/card-list mx-auto
-            tablet:-mx-6
-          `}
+        <PaginatedList
+          dispatch={dispatch}
+          totalCount={totalCount}
+          visibleCount={state.showCount}
         >
-          <ol
+          <div
             className={`
-              grid flex-wrap gap-8
-              tablet-landscape:grid-cols-2
+              @container/card-list mx-auto
+              tablet:px-4
             `}
-            data-testid="card-list"
           >
-            {paginatedValues.map((value) => {
-              return (
-                <ReviewCard
-                  key={value.slug}
-                  value={{
-                    coverImageProps: value.coverImageProps,
-                    date: value.reviewDate,
-                    excerptHtml: value.excerptHtml,
-                    grade: value.grade,
-                    kind: value.kind,
-                    otherAuthors: value.otherAuthors,
-                    slug: value.slug,
-                    title: value.title,
-                    titleYear: value.titleYear,
-                  }}
-                />
-              );
-            })}
-          </ol>
-        </div>
+            <ol
+              className={`
+                grid flex-wrap gap-8
+                tablet-landscape:grid-cols-2
+              `}
+              data-testid="card-list"
+            >
+              {paginatedValues.map((value) => {
+                return (
+                  <ReviewCard
+                    key={value.slug}
+                    value={{
+                      coverImageProps: value.coverImageProps,
+                      date: value.reviewDate,
+                      excerptHtml: value.excerptHtml,
+                      grade: value.grade,
+                      kind: value.kind,
+                      otherAuthors: value.otherAuthors,
+                      slug: value.slug,
+                      title: value.title,
+                      titleYear: value.titleYear,
+                    }}
+                  />
+                );
+              })}
+            </ol>
+          </div>
+        </PaginatedList>
       </nav>
     </FilterAndSortContainer>
   );

@@ -3,10 +3,11 @@ import { useReducer } from "react";
 import type { CoverImageProps } from "~/assets/covers";
 import type { GradeType, GradeValueType } from "~/utils/grades";
 
+import { CoverList } from "~/components/react/cover-list/CoverList";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { PaginatedCoverList } from "~/components/react/filter-and-sort/paginated-cover-list/PaginatedCoverList";
+import { PaginatedList } from "~/components/react/filter-and-sort/paginated-list/PaginatedList";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -142,20 +143,21 @@ export function Reviews({
       state={state}
       totalCount={totalCount}
     >
-      <PaginatedCoverList
+      <PaginatedList
         dispatch={dispatch}
         totalCount={totalCount}
-        values={paginatedValues}
         visibleCount={state.showCount}
       >
-        {(value) => (
-          <ReviewsListItem
-            key={value.slug}
-            sortValue={state.sort}
-            value={value}
-          />
-        )}
-      </PaginatedCoverList>
+        <CoverList>
+          {paginatedValues.map((value) => (
+            <ReviewsListItem
+              key={value.slug}
+              sortValue={state.sort}
+              value={value}
+            />
+          ))}
+        </CoverList>
+      </PaginatedList>
     </FilterAndSortContainer>
   );
 }
