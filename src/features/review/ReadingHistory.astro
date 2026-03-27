@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 import BarGradient from "~/components/astro/bar-gradient/BarGradient.astro";
 import SubHeading from "~/components/astro/sub-heading/SubHeading.astro";
-import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
+import { linkReviewedTitles } from "~/utils/linkReviewedTitles";
 
 import {
   readingDayFormat,
@@ -90,7 +90,7 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                     (
                     <span
                       class="rendered-markdown leading-none"
-                      set:html={linkReviewedWorks(
+                      set:html={linkReviewedTitles(
                         reading.editionNotesHtml,
                         reviewedTitleSlugs,
                       )}
@@ -185,7 +185,7 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                     class="
                       rendered-markdown leading-normal tracking-prose text-muted
                     "
-                    set:html={linkReviewedWorks(
+                    set:html={linkReviewedTitles(
                       reading.readingNotesHtml,
                       reviewedTitleSlugs,
                     )}

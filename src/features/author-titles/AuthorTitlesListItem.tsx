@@ -4,7 +4,7 @@ import { ListItemGrade } from "~/components/react/list-item-grade/ListItemGrade"
 import { ListItemKindAndYear } from "~/components/react/list-item-kind-and-year/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/react/list-item-review-date/ListItemReviewDate";
 import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
-import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
@@ -72,7 +72,7 @@ function OtherAuthors({
 
   return (
     <div className="font-serif text-[15px]/5">
-      (with {formatWorkAuthors(values)})
+      (with {formatTitleAuthors(values)})
     </div>
   );
 }

@@ -13,8 +13,8 @@ const formatterMap: Record<string, Intl.ListFormat> = {
   short: shortFormatter,
 };
 
-export function formatWorkAuthors(
-  workAuthors: {
+export function formatTitleAuthors(
+  titleAuthors: {
     name: string;
     notes: string | undefined;
     sortName?: string | undefined;
@@ -29,10 +29,10 @@ export function formatWorkAuthors(
   const formatter = formatterMap[style];
 
   return formatter.format(
-    workAuthors.map((workAuthor) => {
-      const notes = workAuthor.notes ? ` (${workAuthor.notes})` : "";
+    titleAuthors.map((titleAuthor) => {
+      const notes = titleAuthor.notes ? ` (${titleAuthor.notes})` : "";
 
-      return `${useSortName ? (workAuthor.sortName ?? workAuthor.name) : workAuthor.name}${notes}`;
+      return `${useSortName ? (titleAuthor.sortName ?? titleAuthor.name) : titleAuthor.name}${notes}`;
     }),
   );
 }

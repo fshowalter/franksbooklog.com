@@ -8,7 +8,7 @@ import {
   getWorkCoverPath,
 } from "~/assets/covers";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
-import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 import { gradeMap } from "~/utils/gradeMap";
 
 type Props = {
@@ -176,7 +176,7 @@ function ReviewOpenGraphImage({
             textWrap: "balance",
           }}
         >
-          by {formatWorkAuthors(authors)}
+          by {formatTitleAuthors(authors)}
         </div>
         {grade ? (
           <img
