@@ -3,7 +3,6 @@ import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/assets/covers";
-import { gradeToValue } from "~/utils/grades";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
@@ -29,7 +28,7 @@ export async function getAuthorTitlesProps(
         coverImageProps: await getFluidCoverImageProps(review.slug),
         excerptHtml: review.excerptHtml,
         grade: reviewedTitle.grade,
-        gradeValue: gradeToValue(reviewedTitle.grade),
+        gradeValue: reviewedTitle.gradeValue,
         kind: reviewedTitle.kind,
         otherAuthors: reviewedTitle.authors.filter(
           (a) => a.slug !== reviewedAuthor.slug,

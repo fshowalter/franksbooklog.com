@@ -45,7 +45,7 @@ export const GRADE_TO_LETTER = {
   16: "A+",
 } as const;
 
-const GRADE_TO_VALUE = {
+export const GRADE_TO_VALUE = {
   A: 15,
   "A+": 16,
   "A-": 14,
