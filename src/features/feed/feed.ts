@@ -3,12 +3,12 @@ import { getEntry } from "astro:content";
 
 import { getFeedCoverProps } from "~/assets/covers";
 import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
-import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
+import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 import { textStarsForGrade } from "./textStarsForGrade";
 
 export async function feed() {
-  const recentReviewedWorks = await mostRecentReviewedWorks(10);
+  const recentReviewedWorks = await mostRecentReviewedTitles(10);
 
   return rss({
     customData:

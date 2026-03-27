@@ -1,6 +1,6 @@
 {
   "year": "2022",
-  "workCount": 48,
+  "titleCount": 48,
   "bookCount": 38,
   "kindDistribution": [
     {
@@ -80,9 +80,8 @@
     {
       "count": 10,
       "name": "Philip Fracassi",
-      "slug": "philip-fracassi",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "philip-fracassi",
+      "readTitles": [
         {
           "title": "Soft Construction of a Sunset",
           "edition": "Ebook",
@@ -148,9 +147,8 @@
     {
       "count": 4,
       "name": "Stephen King",
-      "slug": "stephen-king",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "stephen-king",
+      "readTitles": [
         {
           "title": "On Writing",
           "edition": "Ebook",
@@ -180,9 +178,8 @@
     {
       "count": 4,
       "name": "Richard Laymon",
-      "slug": "richard-laymon",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "richard-laymon",
+      "readTitles": [
         {
           "title": "The Cellar",
           "edition": "Ebook",
@@ -212,9 +209,8 @@
     {
       "count": 3,
       "name": "Ian Fleming",
-      "slug": "ian-fleming",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "ian-fleming",
+      "readTitles": [
         {
           "title": "Casino Royale",
           "edition": "Ebook",
@@ -238,9 +234,8 @@
     {
       "count": 2,
       "name": "Chuck Palahniuk",
-      "slug": "chuck-palahniuk",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "chuck-palahniuk",
+      "readTitles": [
         {
           "title": "Fight Club",
           "edition": "Audiobook",
@@ -258,9 +253,8 @@
     {
       "count": 2,
       "name": "Bret Easton Ellis",
-      "slug": "bret-easton-ellis",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "bret-easton-ellis",
+      "readTitles": [
         {
           "title": "Less Than Zero",
           "edition": "Ebook",

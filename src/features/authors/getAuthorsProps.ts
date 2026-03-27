@@ -14,7 +14,7 @@ export async function getAuthorsProps(
 
   const values = await Promise.all(
     sortedAuthors.map(async (author) => {
-      const reviewCount = author.reviewedWorks.length;
+      const reviewCount = author.reviewedTitles.length;
 
       const value: AuthorsValue = {
         avatarImageProps: await getAvatarImageProps(

@@ -6,7 +6,7 @@ import { CONTENT_ROOT } from "./contentRoot";
 import { loadJsonDirectory } from "./utils/loadJsonDirectory";
 import { loadSingleJsonFile } from "./utils/loadSingleJsonFile";
 
-const MostReadAuthorWorkSchema = z
+const MostReadAuthorTitleSchema = z
   .object({
     edition: z.string(),
     readingDate: z.coerce.date(),
@@ -23,18 +23,17 @@ const MostReadAuthorWorkSchema = z
 
 const MostReadAuthorSchema = z
   .object({
-    count: z.number(),
-    name: z.string(),
-    readWorks: z.array(MostReadAuthorWorkSchema),
-    reviewed: z.boolean(),
-    slug: z
+    authorSlug: z
       .nullable(z.string())
       .optional()
       .transform((v) => v ?? undefined),
+    count: z.number(),
+    name: z.string(),
+    readTitles: z.array(MostReadAuthorTitleSchema),
   })
-  .transform(({ count, name, readWorks, reviewed, slug }) => {
+  .transform(({ authorSlug, count, name, readTitles }) => {
     // fix zod making anything with undefined optional
-    return { count, name, readWorks, reviewed, slug };
+    return { authorSlug, count, name, readTitles };
   });
 
 export type MostReadAuthor = z.infer<typeof MostReadAuthorSchema>;
@@ -54,7 +53,7 @@ const YearStatsSchema = z.object({
   editionDistribution: z.array(DistributionSchema),
   kindDistribution: z.array(DistributionSchema),
   mostReadAuthors: z.array(MostReadAuthorSchema),
-  workCount: z.number(),
+  titleCount: z.number(),
   year: z.string(),
 });
 
@@ -67,7 +66,7 @@ const AlltimeStatsSchema = z.object({
   mostReadAuthors: z.array(MostReadAuthorSchema),
   reviewCount: z.number(),
   statsYears: z.array(z.string()),
-  workCount: z.number(),
+  titleCount: z.number(),
 });
 
 export const yearStats = defineCollection({

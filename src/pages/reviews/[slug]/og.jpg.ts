@@ -11,15 +11,15 @@ import { createReviewOpenGraphImageResponse } from "~/features/review/createRevi
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export async function getStaticPaths() {
-  const reviewedWorks = await getCollection("reviewedWorks");
+  const reviewedTitles = await getCollection("reviewedTitles");
 
-  return reviewedWorks.map(({ data: reviewedWork }) => {
+  return reviewedTitles.map(({ data: reviewedTitle }) => {
     return {
       params: {
-        slug: reviewedWork.review.id,
+        slug: reviewedTitle.review.id,
       },
       props: {
-        reviewedWork: reviewedWork,
+        reviewedTitle,
       },
     };
   });
@@ -42,12 +42,12 @@ export async function getStaticPaths() {
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get({ props }) {
-  const { reviewedWork } = props as Props;
+  const { reviewedTitle } = props as Props;
 
   return await createReviewOpenGraphImageResponse({
-    authors: reviewedWork.authors,
-    coverSlug: reviewedWork.review.id,
-    grade: reviewedWork.grade,
-    title: reviewedWork.title,
+    authors: reviewedTitle.authors,
+    coverSlug: reviewedTitle.review.id,
+    grade: reviewedTitle.grade,
+    title: reviewedTitle.title,
   });
 };

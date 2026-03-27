@@ -27,7 +27,7 @@ import {
 import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
 import {
   titleYearFilterFacetTests,
-  workYearSortFacetTests,
+  titleYearSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
 import {
   titleFilterFacetTests,
@@ -70,7 +70,7 @@ function createAuthorTitleValue(
     slug: `test-title-${testIdCounter}`,
     sortTitle: title.toLowerCase(),
     title,
-    workYear: "1990",
+    titleYear: "1990",
     ...overrides,
   };
 }
@@ -137,18 +137,18 @@ describe("AuthorTitles", () => {
     distinctTitleYears: baseProps.distinctTitleYears,
     getList: getCoverList,
     renderItems: (items) => {
-      const titles = items.map(({ title, workYear }) =>
-        createAuthorTitleValue({ title, workYear }),
+      const titles = items.map(({ title, titleYear }) =>
+        createAuthorTitleValue({ title, titleYear }),
       );
       render(<AuthorTitles {...baseProps} values={titles} />);
     },
   });
 
-  workYearSortFacetTests({
+  titleYearSortFacetTests({
     getList: getCoverList,
     renderItems: (items) => {
-      const titles = items.map(({ title, workYear }) =>
-        createAuthorTitleValue({ title, workYear }),
+      const titles = items.map(({ title, titleYear }) =>
+        createAuthorTitleValue({ title, titleYear }),
       );
       render(<AuthorTitles {...baseProps} values={titles} />);
     },

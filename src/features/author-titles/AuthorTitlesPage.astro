@@ -13,11 +13,11 @@ type Props = {
 
 const { reviewedAuthor } = Astro.props;
 
-const reviewedWorks = await getEntries(reviewedAuthor.reviewedWorks);
+const reviewedTitles = await getEntries(reviewedAuthor.reviewedTitles);
 
 const authorTitlesProps = await getAuthorTitlesProps(
   reviewedAuthor,
-  reviewedWorks.map((e) => e.data),
+  reviewedTitles.map((e) => e.data),
 );
 
 const reviewedWorkCount = authorTitlesProps.values.length;

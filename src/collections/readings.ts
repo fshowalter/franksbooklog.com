@@ -27,10 +27,10 @@ const ReadingFrontmatterSchema = z
     sequence: z.number(),
     slug: z.string(),
     timeline: z.array(TimelineEntrySchema),
-    workSlug: z.string(),
+    titleId: z.string(),
   })
   .transform(
-    ({ date, edition, editionNotes, sequence, slug, timeline, workSlug }) => {
+    ({ date, edition, editionNotes, sequence, slug, timeline, titleId }) => {
       // fix zod making anything with undefined optional
       return {
         date,
@@ -39,7 +39,7 @@ const ReadingFrontmatterSchema = z
         sequence,
         slug,
         timeline,
-        workSlug,
+        titleId,
       };
     },
   );
@@ -87,7 +87,7 @@ const ReadingSchema = z
     sequence: z.number(),
     slug: z.string(),
     timeline: z.array(TimelineEntrySchema),
-    workId: z.string(),
+    titleId: z.string(),
   })
   .transform(
     ({
@@ -102,7 +102,7 @@ const ReadingSchema = z
       sequence,
       slug,
       timeline,
-      workId,
+      titleId,
     }) => {
       // fix zod making anything with undefined optional
       return {
@@ -117,7 +117,7 @@ const ReadingSchema = z
         sequence,
         slug,
         timeline,
-        workId,
+        titleId,
       };
     },
   );
@@ -146,7 +146,7 @@ export const readings = defineCollection({
             sequence: parsedFrontmatter.sequence,
             slug: parsedFrontmatter.slug,
             timeline: parsedFrontmatter.timeline,
-            workId: parsedFrontmatter.workSlug,
+            titleId: parsedFrontmatter.titleId,
           };
         },
         directoryPath: path.join(CONTENT_ROOT, "readings"),

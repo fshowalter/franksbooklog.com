@@ -46,7 +46,7 @@ function GradeSortListItem({
         <ListItemGrade grade={value.grade} />
         <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemReviewDate displayDate={value.displayDate} />
       </ListItemDetails>
     </CoverListItem>
@@ -88,7 +88,7 @@ function ReviewDateListItem({
         <ListItemReviewDate displayDate={value.displayDate} />
         <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemGrade grade={value.grade} />
       </ListItemDetails>
     </CoverListItem>
@@ -105,7 +105,7 @@ function TitleSortListItem({
       <ListItemDetails>
         <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemKindAndYear kind={value.kind} year={value.titleYear} />
         <ListItemGrade grade={value.grade} />
         <ListItemReviewDate displayDate={value.displayDate} />
       </ListItemDetails>

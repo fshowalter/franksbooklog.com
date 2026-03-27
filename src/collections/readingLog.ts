@@ -34,7 +34,7 @@ const ReadingLogSchema = z
       .transform((v) => v ?? undefined),
     sequence: z.string(),
     title: z.string(),
-    workYear: z.string(),
+    titleYear: z.string(),
   })
   .transform(
     ({
@@ -47,7 +47,7 @@ const ReadingLogSchema = z
       reviewSlug,
       sequence,
       title,
-      workYear,
+      titleYear,
     }) => {
       // fix zod making anything with undefined optional
       return {
@@ -60,7 +60,7 @@ const ReadingLogSchema = z
         reviewSlug,
         sequence,
         title,
-        workYear,
+        titleYear,
       };
     },
   );

@@ -9,7 +9,7 @@ import { loadJsonDirectory } from "./utils/loadJsonDirectory";
 
 const ReviewedAuthorSchema = z.object({
   name: z.string(),
-  reviewedWorks: z.array(reference("reviewedWorks")),
+  reviewedTitles: z.array(reference("reviewedTitles")),
   slug: z.string(),
   sortName: z.string(),
 });

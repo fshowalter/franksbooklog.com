@@ -9,25 +9,21 @@ import { toSortYear } from "~/utils/toSortYear";
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
 
 export async function getReviewsProps(
-  reviewedWorks: CollectionEntry<"reviewedWorks">["data"][],
+  reviewedTitles: CollectionEntry<"reviewedTitles">["data"][],
 ): Promise<ReviewsProps> {
-  reviewedWorks.sort((a, b) =>
-    a.authors[0].sortName.localeCompare(b.authors[0].sortName),
-  );
-
   const distinctKinds = new Set<string>();
   const distinctReviewYears = new Set<string>();
   const distinctTitleYears = new Set<string>();
 
   const values = await Promise.all(
-    reviewedWorks.map(async (reviewedWork) => {
-      distinctKinds.add(reviewedWork.kind);
-      distinctReviewYears.add(toSortYear(reviewedWork.reviewDate));
-      distinctTitleYears.add(reviewedWork.workYear);
+    reviewedTitles.map(async (reviewedTitle) => {
+      distinctKinds.add(reviewedTitle.kind);
+      distinctReviewYears.add(toSortYear(reviewedTitle.reviewDate));
+      distinctTitleYears.add(reviewedTitle.titleYear);
 
       const value: ReviewsValue = {
-        abandoned: reviewedWork.grade === "Abandoned",
-        authors: reviewedWork.authors.map((author) => {
+        abandoned: reviewedTitle.grade === "Abandoned",
+        authors: reviewedTitle.authors.map((author) => {
           const authorValue: ReviewsValue["authors"][number] = {
             name: author.name,
             notes: author.notes,
@@ -37,19 +33,19 @@ export async function getReviewsProps(
           return authorValue;
         }),
         coverImageProps: await getFluidCoverImageProps(
-          { slug: reviewedWork.id },
+          { slug: reviewedTitle.id },
           CoverListItemImageConfig,
         ),
-        displayDate: toDisplayDate(reviewedWork.reviewDate),
-        grade: reviewedWork.grade,
-        gradeValue: gradeToValue(reviewedWork.grade),
-        kind: reviewedWork.kind,
-        reviewSequence: reviewedWork.reviewSequence,
-        reviewYear: toSortYear(reviewedWork.reviewDate),
-        slug: reviewedWork.review.id,
-        sortTitle: reviewedWork.sortTitle,
-        title: reviewedWork.title,
-        workYear: reviewedWork.workYear,
+        displayDate: toDisplayDate(reviewedTitle.reviewDate),
+        grade: reviewedTitle.grade,
+        gradeValue: gradeToValue(reviewedTitle.grade),
+        kind: reviewedTitle.kind,
+        reviewSequence: reviewedTitle.reviewSequence,
+        reviewYear: toSortYear(reviewedTitle.reviewDate),
+        slug: reviewedTitle.review.id,
+        sortTitle: reviewedTitle.sortTitle,
+        title: reviewedTitle.title,
+        titleYear: reviewedTitle.titleYear,
       };
 
       return value;

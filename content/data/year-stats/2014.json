@@ -1,6 +1,6 @@
 {
   "year": "2014",
-  "workCount": 29,
+  "titleCount": 29,
   "bookCount": 23,
   "kindDistribution": [
     {
@@ -56,9 +56,8 @@
     {
       "count": 17,
       "name": "Richard Laymon",
-      "slug": "richard-laymon",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "richard-laymon",
+      "readTitles": [
         {
           "title": "The Cellar",
           "edition": "Paperback",
@@ -166,9 +165,8 @@
     {
       "count": 10,
       "name": "Stephen King",
-      "slug": "stephen-king",
-      "reviewed": true,
-      "readWorks": [
+      "authorSlug": "stephen-king",
+      "readTitles": [
         {
           "title": "The Stand",
           "edition": "Paperback",

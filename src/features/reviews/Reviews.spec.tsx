@@ -28,7 +28,7 @@ import {
 import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
 import {
   titleYearFilterFacetTests,
-  workYearSortFacetTests,
+  titleYearSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
 import {
   titleFilterFacetTests,
@@ -71,7 +71,7 @@ function createReviewsValues(
       slug: `test-review-${index}`,
       sortTitle: title.toLowerCase(),
       title,
-      workYear: "1990",
+      titleYear: "1990",
       ...override,
     };
   });
@@ -143,17 +143,17 @@ describe("Reviews", () => {
     getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
-        items.map(({ title, workYear }) => ({ title, workYear })),
+        items.map(({ title, titleYear }) => ({ title, titleYear })),
       );
       render(<Reviews {...baseProps} values={reviews} />);
     },
   });
 
-  workYearSortFacetTests({
+  titleYearSortFacetTests({
     getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
-        items.map(({ title, workYear }) => ({ title, workYear })),
+        items.map(({ title, titleYear }) => ({ title, titleYear })),
       );
       render(<Reviews {...baseProps} values={reviews} />);
     },

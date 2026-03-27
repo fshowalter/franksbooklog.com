@@ -10,7 +10,7 @@ import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
 import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
-import IncludedWorks from "./IncludedWorks.astro";
+import IncludedTitles from "./IncludedTitles.astro";
 import ReadingHistory from "./ReadingHistory.astro";
 import ReviewCover from "./ReviewCover.astro";
 import { reviewDateFormat } from "./reviewDateFormat";
@@ -19,13 +19,13 @@ import { reviewPageTitle } from "./reviewPageTitle";
 import ReviewStructuredData from "./ReviewStructuredData.astro";
 
 type Props = {
-  reviewedWork: CollectionEntry<"reviewedWorks">["data"];
+  reviewedTitle: CollectionEntry<"reviewedTitles">["data"];
 };
 
-const { reviewedWork } = Astro.props;
-const { data: review } = await getEntry(reviewedWork.review);
-const moreReviews = await getEntries(reviewedWork.moreReviews);
-const reviewedWorks = await getCollection("reviewedWorks");
+const { reviewedTitle } = Astro.props;
+const { data: review } = await getEntry(reviewedTitle.review);
+const moreReviews = await getEntries(reviewedTitle.moreReviews);
+const reviewedTitles = await getCollection("reviewedTitles");
 ---
 
 <ReviewLayout
@@ -36,7 +36,7 @@ const reviewedWorks = await getCollection("reviewedWorks");
       description: review.description,
       type: "article",
     },
-    title: reviewPageTitle(reviewedWork),
+    title: reviewPageTitle(reviewedTitle),
   }}
 >
   <div class="flex flex-col" data-pagefind-body>
@@ -67,17 +67,17 @@ const reviewedWorks = await getCollection("reviewedWorks");
         `}
         data-pagefind-meta="title"
       >
-        {reviewedWork.title}
+        {reviewedTitle.title}
       </h1>
       {
-        reviewedWork.subtitle && (
+        reviewedTitle.subtitle && (
           <p
             class={`
               max-w-prose pt-2 text-center text-base font-light tracking-wider
               text-muted
             `}
           >
-            {reviewedWork.subtitle}
+            {reviewedTitle.subtitle}
           </p>
         )
       }
@@ -86,7 +86,7 @@ const reviewedWorks = await getCollection("reviewedWorks");
         {
           toSentenceArray(
             await Promise.all(
-              reviewedWork.authors.map((workAuthor) => {
+              reviewedTitle.authors.map((workAuthor) => {
                 return (
                   <div
                     class={`
@@ -134,7 +134,7 @@ const reviewedWorks = await getCollection("reviewedWorks");
           tablet:mb-6
         `}
       >
-        {reviewedWork.workYear} | {reviewedWork.kind}
+        {reviewedTitle.titleYear} | {reviewedTitle.kind}
       </div>
       <ReviewCover coverSlug={review.slug} />
       <div
@@ -171,13 +171,13 @@ const reviewedWorks = await getCollection("reviewedWorks");
         `}
         set:html={linkReviewedWorks(
           review.html,
-          reviewedWorks.map((e) => e.id),
+          reviewedTitles.map((e) => e.id),
         )}
       />
-      <IncludedWorks
-        includedWorks={await getEntries(reviewedWork.includedWorks)}
+      <IncludedTitles
+        includedTitles={await getEntries(reviewedTitle.includedTitles)}
       />
-      <ReadingHistory reviewedWorkId={reviewedWork.id} />
+      <ReadingHistory reviewedTitleId={reviewedTitle.id} />
     </div>
 
     <div
@@ -205,6 +205,6 @@ const reviewedWorks = await getCollection("reviewedWorks");
   <ReviewStructuredData
     grade={review.grade}
     slug={review.slug}
-    title={reviewedWork.title}
+    title={reviewedTitle.title}
   />
 </ReviewLayout>

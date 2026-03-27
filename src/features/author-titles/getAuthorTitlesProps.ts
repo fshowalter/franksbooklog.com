@@ -9,39 +9,41 @@ import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
 
 export async function getAuthorTitlesProps(
   reviewedAuthor: CollectionEntry<"reviewedAuthors">["data"],
-  reviewedWorks: CollectionEntry<"reviewedWorks">["data"][],
+  reviewedTitles: CollectionEntry<"reviewedTitles">["data"][],
 ): Promise<AuthorTitlesProps> {
   const distinctKinds = new Set<string>();
   const distinctReviewYears = new Set<string>();
   const distinctTitleYears = new Set<string>();
 
   const values = await Promise.all(
-    reviewedWorks.map(async (reviewedWork) => {
-      distinctKinds.add(reviewedWork.kind);
-      distinctReviewYears.add(reviewedWork.reviewDate.getFullYear().toString());
-      distinctTitleYears.add(reviewedWork.workYear);
+    reviewedTitles.map(async (reviewedTitle) => {
+      distinctKinds.add(reviewedTitle.kind);
+      distinctReviewYears.add(
+        reviewedTitle.reviewDate.getFullYear().toString(),
+      );
+      distinctTitleYears.add(reviewedTitle.titleYear);
 
       const value: AuthorTitlesValue = {
-        abandoned: reviewedWork.grade === "Abandoned",
+        abandoned: reviewedTitle.grade === "Abandoned",
         coverImageProps: await getFluidCoverImageProps(
-          { slug: reviewedWork.id },
+          { slug: reviewedTitle.id },
           CoverListItemImageConfig,
         ),
-        displayDate: toDisplayDate(reviewedWork.reviewDate),
-        grade: reviewedWork.grade,
-        gradeValue: gradeToValue(reviewedWork.grade),
-        kind: reviewedWork.kind,
-        otherAuthors: reviewedWork.authors.filter(
+        displayDate: toDisplayDate(reviewedTitle.reviewDate),
+        grade: reviewedTitle.grade,
+        gradeValue: gradeToValue(reviewedTitle.grade),
+        kind: reviewedTitle.kind,
+        otherAuthors: reviewedTitle.authors.filter(
           (a) => a.slug !== reviewedAuthor.slug,
         ),
-        reviewDate: reviewedWork.reviewDate,
-        reviewed: reviewedWork.grade !== "Abandoned",
-        reviewSequence: reviewedWork.reviewSequence,
-        reviewYear: reviewedWork.reviewDate.getFullYear().toString(),
-        slug: reviewedWork.id,
-        sortTitle: reviewedWork.sortTitle,
-        title: reviewedWork.title,
-        workYear: reviewedWork.workYear,
+        reviewDate: reviewedTitle.reviewDate,
+        reviewed: reviewedTitle.grade !== "Abandoned",
+        reviewSequence: reviewedTitle.reviewSequence,
+        reviewYear: reviewedTitle.reviewDate.getFullYear().toString(),
+        slug: reviewedTitle.id,
+        sortTitle: reviewedTitle.sortTitle,
+        title: reviewedTitle.title,
+        titleYear: reviewedTitle.titleYear,
       };
 
       return value;

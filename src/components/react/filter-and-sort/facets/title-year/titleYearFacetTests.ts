@@ -17,7 +17,7 @@ type TitleYearFacetAdapter = {
 
 type TitleYearItem = {
   title: string;
-  workYear: string;
+  titleYear: string;
 };
 
 type TitleYearSortAdapter = {
@@ -50,9 +50,9 @@ export function titleYearFilterFacetTests({
   describe("title year filter", () => {
     it("filters to items within title year range", async ({ expect }) => {
       renderItems([
-        { title: "Old Book", workYear: low },
-        { title: "Mid Book", workYear: mid },
-        { title: "New Book", workYear: high },
+        { title: "Old Book", titleYear: low },
+        { title: "Mid Book", titleYear: mid },
+        { title: "New Book", titleYear: high },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -75,8 +75,8 @@ export function titleYearFilterFacetTests({
 
     it("shows title year chip after applying filter", async ({ expect }) => {
       renderItems([
-        { title: "Old Book", workYear: earlyYear },
-        { title: "Mid Book", workYear: midYear },
+        { title: "Old Book", titleYear: earlyYear },
+        { title: "Mid Book", titleYear: midYear },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -94,8 +94,8 @@ export function titleYearFilterFacetTests({
 
     it("removing title year chip defers list update", async ({ expect }) => {
       renderItems([
-        { title: "Old Book", workYear: earlyYear },
-        { title: "Mid Book", workYear: midYear },
+        { title: "Old Book", titleYear: earlyYear },
+        { title: "Mid Book", titleYear: midYear },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -131,16 +131,16 @@ export function titleYearFilterFacetTests({
  * Sort-only sub-suite for title year. Use this for features that have title year
  * sort (Reviews, AuthorTitles).
  */
-export function workYearSortFacetTests({
+export function titleYearSortFacetTests({
   getList,
   renderItems,
 }: TitleYearSortAdapter) {
   describe("title year sort", () => {
     it("sorts oldest first", async ({ expect }) => {
       renderItems([
-        { title: "Modern Book", workYear: "2000" },
-        { title: "Classic Book", workYear: "1980" },
-        { title: "Mid Book", workYear: "1990" },
+        { title: "Modern Book", titleYear: "2000" },
+        { title: "Classic Book", titleYear: "1980" },
+        { title: "Mid Book", titleYear: "1990" },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -158,9 +158,9 @@ export function workYearSortFacetTests({
 
     it("sorts newest first", async ({ expect }) => {
       renderItems([
-        { title: "Classic Book", workYear: "1980" },
-        { title: "Modern Book", workYear: "2000" },
-        { title: "Mid Book", workYear: "1990" },
+        { title: "Classic Book", titleYear: "1980" },
+        { title: "Modern Book", titleYear: "2000" },
+        { title: "Mid Book", titleYear: "1990" },
       ]);
 
       const user = getUserWithFakeTimers();

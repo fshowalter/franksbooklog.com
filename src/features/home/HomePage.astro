@@ -2,13 +2,13 @@
 import HeroLayout from "~/components/astro/layout/HeroLayout.astro";
 import ReviewCard from "~/components/astro/review-card/ReviewCard.astro";
 import SubHeading from "~/components/astro/sub-heading/SubHeading.astro";
-import { mostRecentReviewedWorks } from "~/utils/mostRecentReviewedWorks";
+import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 const deck = "Literature is a relative term.";
 const metaDescription =
   "Quality reviews of current, cult, classic, and forgotten books, short stories, and non-fiction. Literature is a relative term.";
 
-const reviewedWorks = await mostRecentReviewedWorks(12);
+const reviewedWorks = await mostRecentReviewedTitles(12);
 ---
 
 <HeroLayout

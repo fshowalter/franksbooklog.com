@@ -67,7 +67,7 @@ export type ReviewsValue = {
   /** Display title of the work */
   title: string;
   /** Year the work was originally published */
-  workYear: string;
+  titleYear: string;
 };
 
 /**

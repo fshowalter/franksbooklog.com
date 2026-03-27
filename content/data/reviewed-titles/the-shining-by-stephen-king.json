@@ -1,0 +1,43 @@
+{
+  "id": "the-shining-by-stephen-king",
+  "title": "The Shining",
+  "sortTitle": "Shining",
+  "subtitle": null,
+  "titleYear": "1977",
+  "kind": "Novel",
+  "review": "the-shining-by-stephen-king",
+  "reviewDate": "2022-10-29",
+  "grade": "B",
+  "reviewSequence": "2022-10-29-02",
+  "authors": [
+    {
+      "name": "Stephen King",
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
+    }
+  ],
+  "includedTitles": [],
+  "includedInTitles": [],
+  "moreByAuthors": [
+    {
+      "author": "stephen-king",
+      "reviews": [
+        "carrie-by-stephen-king",
+        "salems-lot-by-stephen-king",
+        "rage-by-stephen-king",
+        "the-long-walk-by-stephen-king",
+        "night-shift-by-stephen-king",
+        "the-stand-by-stephen-king"
+      ]
+    }
+  ],
+  "moreReviews": [
+    "the-secret-history-by-donna-tartt",
+    "set-the-boy-free-by-johnny-marr",
+    "shiloh-by-philip-fracassi",
+    "the-skeptics-guide-to-the-universe-by-steven-novella",
+    "soft-construction-of-a-sunset-by-philip-fracassi",
+    "surfer-girl-by-philip-fracassi"
+  ]
+}

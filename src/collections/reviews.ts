@@ -39,7 +39,7 @@ const ReviewSchema = z.object({
   html: z.string(),
   slug: z.string(),
   synopsis: z.optional(z.string()),
-  work: reference("reviewedWorks"),
+  work: reference("reviewedTitles"),
 });
 
 export const reviews = defineCollection({
