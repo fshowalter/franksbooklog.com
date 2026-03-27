@@ -147,7 +147,7 @@ export function AuthorTitles({
       state={state}
       totalCount={totalCount}
     >
-      <nav
+      <div
         className={`
           mx-auto w-full bg-subtle
           tablet:px-3 tablet:pt-6
@@ -193,7 +193,7 @@ export function AuthorTitles({
             </ol>
           </div>
         </PaginatedList>
-      </nav>
+      </div>
     </FilterAndSortContainer>
   );
 }
