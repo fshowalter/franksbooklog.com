@@ -19,7 +19,12 @@ export function PaginatedCoverList<T>({
   visibleCount: number;
 }): React.JSX.Element {
   return (
-    <div className="tablet:-mx-6 tablet:pt-5">
+    <div
+      className="
+        tablet:-mx-6 tablet:pt-5
+        desktop:-mx-8
+      "
+    >
       <CoverList {...rest}>
         {[...values].map((value) => children(value))}
       </CoverList>

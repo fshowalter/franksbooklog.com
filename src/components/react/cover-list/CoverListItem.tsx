@@ -32,6 +32,7 @@ export function CoverListItem({
         tablet:p-6
         tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default
         tablet:has-[a:hover]:drop-shadow-2xl
+        desktop:p-8
       `}
     >
       <CoverListItemCover
