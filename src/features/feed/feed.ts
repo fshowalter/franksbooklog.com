@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import { getEntry } from "astro:content";
 
 import { getFeedCoverProps } from "~/assets/covers";
-import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 import { textStarsForGrade } from "./textStarsForGrade";
@@ -26,7 +26,7 @@ export async function feed() {
           content: `<img src="${cover.src}" alt="">${addGradeToExcerpt(review.excerptHtml, review.grade)}`,
           link: `https://www.franksbooklog.com/reviews/${review.slug}/`,
           pubDate: review.date,
-          title: `${reviewedWork.title} by ${formatWorkAuthors(reviewedWork.authors)}`,
+          title: `${reviewedWork.title} by ${formatTitleAuthors(reviewedWork.authors)}`,
         };
       }),
     ),

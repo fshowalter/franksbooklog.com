@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 import LongFormText from "~/components/astro/long-form-text/LongFormText.astro";
 import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
-import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
+import { linkReviewedTitles } from "~/utils/linkReviewedTitles";
 import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 type Props = {
@@ -19,7 +19,7 @@ const reviewedTitles = await getCollection("reviewedTitles");
   <div class="px-container">
     <LongFormText
       class={`max-w-prose`}
-      text={linkReviewedWorks(
+      text={linkReviewedTitles(
         content,
         reviewedTitles.map((e) => e.id),
       )}

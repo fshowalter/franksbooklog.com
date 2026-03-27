@@ -7,9 +7,9 @@
  * @param reviewedWorks - Array of reviewed works with slugs
  * @returns HTML text with work references converted to links
  */
-export function linkReviewedWorks(
+export function linkReviewedTitles(
   text: string | undefined,
-  reviewedWorkSlugs: string[],
+  reviewedTitleSlugs: string[],
 ) {
   if (!text) {
     return text;
@@ -25,7 +25,7 @@ export function linkReviewedWorks(
   const matches = [...text.matchAll(re)];
 
   for (const match of matches) {
-    const matchingSlug = reviewedWorkSlugs.find((slug) => slug === match[2]);
+    const matchingSlug = reviewedTitleSlugs.find((slug) => slug === match[2]);
 
     if (matchingSlug) {
       result = result.replace(

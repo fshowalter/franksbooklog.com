@@ -7,7 +7,7 @@ import { getCollection } from "astro:content";
 
 import Grade from "~/components/astro/grade/Grade.astro";
 import MoreReviews from "~/components/astro/more-reviews/MoreReviews.astro";
-import { linkReviewedWorks } from "~/utils/linkReviewedWorks";
+import { linkReviewedTitles } from "~/utils/linkReviewedTitles";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import IncludedTitles from "./IncludedTitles.astro";
@@ -169,7 +169,7 @@ const reviewedTitles = await getCollection("reviewedTitles");
           [&>p:first-child]:first-letter:text-[56px]
           [&>p:first-child]:first-letter:font-bold
         `}
-        set:html={linkReviewedWorks(
+        set:html={linkReviewedTitles(
           review.html,
           reviewedTitles.map((e) => e.id),
         )}

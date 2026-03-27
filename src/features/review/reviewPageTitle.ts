@@ -1,11 +1,11 @@
 import type { CollectionEntry } from "astro:content";
 
-import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 
 export function reviewPageTitle(
   reviewedTitle: CollectionEntry<"reviewedTitles">["data"],
 ) {
-  const titleAuthorNames = formatWorkAuthors(reviewedTitle.authors, {
+  const titleAuthorNames = formatTitleAuthors(reviewedTitle.authors, {
     style: "short",
   });
 

@@ -1,13 +1,13 @@
 ---
-import { formatWorkAuthors } from "~/utils/formatWorkAuthors";
+import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 
 type Props = {
-  values: Parameters<typeof formatWorkAuthors>[0];
+  values: Parameters<typeof formatTitleAuthors>[0];
 };
 
 const { values } = Astro.props;
 ---
 
 <div class={`text-[15px]/4 font-normal tracking-prose text-muted`}>
-  {formatWorkAuthors(values)}
+  {formatTitleAuthors(values)}
 </div>
