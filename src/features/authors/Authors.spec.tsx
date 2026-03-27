@@ -3,16 +3,16 @@ import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import { getGroupedAvatarList } from "~/components/react/avatar-list/AvatarList.testHelper";
 import {
-  fillNameFilter,
-  getNameFilter,
-} from "~/components/react/collection-filters/CollectionFilters.testHelper";
-import {
   clickClearFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { nameFacetTests } from "~/components/react/filter-and-sort/facets/name/nameFacetTests";
+import {
+  fillNameFilter,
+  getNameFilter,
+  nameFacetTests,
+} from "~/components/react/filter-and-sort/facets/name/nameFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";
