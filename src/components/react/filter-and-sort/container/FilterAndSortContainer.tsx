@@ -194,14 +194,8 @@ export function FilterAndSortContainer<T extends string, V>({
               mx-auto max-w-(--breakpoint-desktop) grow
               scroll-mt-(--filter-and-sort-container-scroll-offset,0px) pb-10
               [--filter-and-sort-container-scroll-offset:89px]
-              ${
-                sideNav
-                  ? `
-                    max-w-[calc(var(--breakpoint-desktop)-80px)]
-                    tablet:px-container
-                  `
-                  : ``
-              }
+              tablet:px-container
+              ${sideNav ? `max-w-[calc(var(--breakpoint-desktop)-80px)]` : ``}
               tablet:[--filter-and-sort-container-scroll-offset:97px]
             `}
             id="list"
