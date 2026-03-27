@@ -4,8 +4,30 @@
 
 export const GRADE_MIN = 2;
 export const GRADE_MAX = 16;
+export const GRADES = <const>[
+  "A+",
+  "A",
+  "A-",
+  "B+",
+  "B",
+  "B-",
+  "C+",
+  "C",
+  "C-",
+  "D+",
+  "D",
+  "D-",
+  "F+",
+  "F",
+  "F-",
+  "Abandoned",
+];
 
-const GRADE_TO_LETTER: Record<number, string> = {
+export type GradeType = (typeof GRADES)[number];
+export type GradeValueType = keyof typeof GRADE_TO_LETTER;
+
+export const GRADE_TO_LETTER = {
+  0: "Abandoned",
   2: "F-",
   3: "F",
   4: "F+",
@@ -21,12 +43,13 @@ const GRADE_TO_LETTER: Record<number, string> = {
   14: "A-",
   15: "A",
   16: "A+",
-};
+} as const;
 
-const GRADE_TO_VALUE: Record<string, number> = {
+export const GRADE_TO_VALUE = {
   A: 15,
   "A+": 16,
   "A-": 14,
+  Abandoned: 0,
   B: 12,
   "B+": 13,
   "B-": 11,
@@ -39,23 +62,12 @@ const GRADE_TO_VALUE: Record<string, number> = {
   F: 3,
   "F+": 4,
   "F-": 2,
-};
+} as const;
 
-/**
- * Maps a grade number (2-16) to its letter grade (F- to A+).
- * @param value - Grade as a number (2-16)
- * @returns Letter grade (e.g., "A+", "B-", "F")
- */
-export function gradeToLetter(value: number): string {
-  return GRADE_TO_LETTER[value] ?? String(value);
+export function gradeToLetter(value: keyof typeof GRADE_TO_LETTER): string {
+  return GRADE_TO_LETTER[value];
 }
 
-/**
- * Maps a letter grade to its numeric value (2-16).
- * Abandoned and unknown grades return 0 (below the slider range).
- * @param grade - Letter grade (e.g., "A+", "B-", "F", "Abandoned")
- * @returns Numeric grade value (2-16), or 0 for Abandoned/unknown
- */
-export function gradeToValue(grade: string): number {
-  return GRADE_TO_VALUE[grade] ?? 0; // Abandoned and unknown → 0
+export function gradeToValue(grade: (typeof GRADES)[number]): GradeValueType {
+  return GRADE_TO_VALUE[grade]; // Abandoned and unknown → 0
 }

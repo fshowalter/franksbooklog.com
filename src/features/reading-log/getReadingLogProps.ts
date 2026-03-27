@@ -7,8 +7,6 @@ import { toSortYear } from "~/utils/toSortYear";
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogProps } from "./ReadingLog";
 
-import { ReadingLogImageConfig } from "./ReadingLog";
-
 export async function getReadingLogProps(
   readingLogEntries: CollectionEntry<"readingLog">["data"][],
 ): Promise<ReadingLogProps> {
@@ -30,8 +28,7 @@ export async function getReadingLogProps(
         abandoned: entry.progress === "Abandoned",
         authors: entry.authors,
         coverImageProps: await getFluidCoverImageProps(
-          { slug: entry.reviewSlug || "default" },
-          ReadingLogImageConfig,
+          entry.reviewSlug || "default",
         ),
         edition: entry.edition,
         kind: entry.kind,

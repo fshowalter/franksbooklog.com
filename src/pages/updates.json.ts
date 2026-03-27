@@ -8,7 +8,7 @@ import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
  * Used to transform book review grades into a standardized 0.5-5 star scale
  * for external services and widgets that expect numeric ratings.
  */
-const gradeToStars: Record<string, number> = {
+const gradeToStars = {
   A: 5,
   "A+": 5,
   "A-": 4.5,
@@ -24,6 +24,7 @@ const gradeToStars: Record<string, number> = {
   "D-": 1.5,
   F: 1,
   "F+": 1,
+  "F-": 0.5,
 };
 
 /**
@@ -39,9 +40,7 @@ export async function GET() {
   const updateItems = await Promise.all(
     recentReviewedTitles.map(async ({ data: reviewedTitle }) => {
       const { data: review } = await getEntry(reviewedTitle.review);
-      const coverProps = await getUpdateCoverProps({
-        slug: review.slug,
-      });
+      const coverProps = await getUpdateCoverProps(review.slug);
 
       return {
         authors: reviewedTitle.authors.map((author) => author.name),

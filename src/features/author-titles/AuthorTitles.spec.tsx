@@ -1,7 +1,6 @@
-import { render, within } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import { getCoverList } from "~/components/react/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
@@ -33,7 +32,7 @@ import {
   titleFilterFacetTests,
   titleSortFacetTests,
 } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
-import { paginationTests } from "~/components/react/filter-and-sort/paginated-cover-list/paginationTests";
+import { paginationTests } from "~/components/react/filter-and-sort/paginated-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";
@@ -56,9 +55,9 @@ function createAuthorTitleValue(
       srcSet: "/cover.jpg 1x",
       width: 250,
     },
-    displayDate: "Jan 1, 2024",
+    excerptHtml: "Test excerptHtml",
     grade: "B+",
-    gradeValue: 10,
+    gradeValue: 13,
     kind: "Novel",
     otherAuthors: [],
     reviewDate: new Date("2024-01-01"),
@@ -103,39 +102,48 @@ describe("AuthorTitles", () => {
       createAuthorTitleValue({ sortTitle, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
+  }, getCardList);
 
   titleSortFacetTests((items) => {
     const titles = items.map(({ sortTitle, title }) =>
       createAuthorTitleValue({ sortTitle, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
+  }, getCardList);
 
   kindFacetTests((items) => {
     const titles = items.map(({ kind, title }) =>
       createAuthorTitleValue({ kind, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
+  }, getCardList);
 
   gradeFilterFacetTests((items) => {
     const titles = items.map(({ grade, gradeValue, title }) =>
       createAuthorTitleValue({ grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
+  }, getCardList);
 
   gradeSortFacetTests((items) => {
     const titles = items.map(({ grade, gradeValue, title }) =>
       createAuthorTitleValue({ grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
+  }, getCardList);
+
+  paginationTests(
+    (titles) => {
+      const values = titles.map((title) => createAuthorTitleValue({ title }));
+      render(<AuthorTitles {...baseProps} values={values} />);
+    },
+    async (user) => clickSortOption(user, "Title (A → Z)"),
+    getCardList,
+  );
 
   titleYearFilterFacetTests({
     distinctTitleYears: baseProps.distinctTitleYears,
-    getList: getCoverList,
+    getList: getCardList,
     renderItems: (items) => {
       const titles = items.map(({ title, titleYear }) =>
         createAuthorTitleValue({ title, titleYear }),
@@ -145,7 +153,7 @@ describe("AuthorTitles", () => {
   });
 
   titleYearSortFacetTests({
-    getList: getCoverList,
+    getList: getCardList,
     renderItems: (items) => {
       const titles = items.map(({ title, titleYear }) =>
         createAuthorTitleValue({ title, titleYear }),
@@ -156,7 +164,7 @@ describe("AuthorTitles", () => {
 
   reviewYearFilterFacetTests({
     distinctReviewYears: baseProps.distinctReviewYears,
-    getList: getCoverList,
+    getList: getCardList,
     renderItems: (items) => {
       const titles = items.map(({ reviewSequence, reviewYear, title }) =>
         createAuthorTitleValue({ reviewSequence, reviewYear, title }),
@@ -170,23 +178,14 @@ describe("AuthorTitles", () => {
       createAuthorTitleValue({ reviewSequence, reviewYear, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
+  }, getCardList);
 
   reviewedStatusFacetTests((items) => {
     const titles = items.map(({ abandoned, grade, gradeValue, title }) =>
       createAuthorTitleValue({ abandoned, grade, gradeValue, title }),
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
-  }, getCoverList);
-
-  paginationTests(
-    (titles) => {
-      const values = titles.map((title) => createAuthorTitleValue({ title }));
-      render(<AuthorTitles {...baseProps} values={values} />);
-    },
-    async (user) => clickSortOption(user, "Title (A → Z)"),
-    getCoverList,
-  );
+  }, getCardList);
 
   describe("when clearing filters", () => {
     it("clears all filters with clear button", async ({ expect }) => {
@@ -203,7 +202,7 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getCardList();
       expect(within(list).getByText("The Cellar")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
 
@@ -236,7 +235,7 @@ describe("AuthorTitles", () => {
       await fillTitleFilter(user, "The Cellar");
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getCardList();
       expect(within(list).getByText("The Cellar")).toBeInTheDocument();
       expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
 
@@ -272,10 +271,10 @@ describe("AuthorTitles", () => {
 
       render(<AuthorTitles {...baseProps} values={titles} />);
 
-      const list = getCoverList();
+      const list = getCardList();
 
       // Check that co-author is displayed with proper formatting (appears twice for two books)
-      const coAuthorElements = within(list).getAllByText(/with Peter Straub/);
+      const coAuthorElements = within(list).getAllByText(/Peter Straub/);
       expect(coAuthorElements).toHaveLength(2);
 
       // Solo book should not have co-author text
@@ -306,11 +305,11 @@ describe("AuthorTitles", () => {
 
       render(<AuthorTitles {...baseProps} values={titles} />);
 
-      const list = getCoverList();
+      const list = getCardList();
 
       // Check that both co-authors are displayed with proper conjunction
       const listText = list.textContent || "";
-      expect(listText).toContain("with Second Author");
+      expect(listText).toContain("Second Author");
       expect(listText).toContain("Third Author");
       // Should use "and" between the last two authors
       expect(
@@ -339,11 +338,11 @@ describe("AuthorTitles", () => {
       await clickKindFilterOption(user, "Novel");
       await clickViewResults(user);
 
-      const list = getCoverList();
+      const list = getCardList();
 
       // Should show co-authored novel
       expect(within(list).getByText("The Talisman")).toBeInTheDocument();
-      expect(within(list).getByText(/with Peter Straub/)).toBeInTheDocument();
+      expect(within(list).getByText(/Peter Straub/)).toBeInTheDocument();
 
       // Should not show solo collection
       expect(
@@ -352,3 +351,7 @@ describe("AuthorTitles", () => {
     });
   });
 });
+
+function getCardList(): HTMLElement {
+  return screen.getByTestId("card-list");
+}

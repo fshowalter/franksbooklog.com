@@ -5,7 +5,8 @@ import type { ReviewYearFilterChangedAction } from "~/components/react/filter-an
 import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
 import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
 import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
-import type { ShowMoreAction } from "~/components/react/filter-and-sort/paginated-cover-list/paginationReducer";
+import type { ShowMoreAction } from "~/components/react/filter-and-sort/paginated-list/paginationReducer";
+import type { GradeValueType } from "~/utils/grades";
 
 import {
   createInitialFilterAndSortContainerState,
@@ -21,7 +22,7 @@ import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/tit
 import {
   createInitialShowMoreState,
   showMoreReducer,
-} from "~/components/react/filter-and-sort/paginated-cover-list/paginationReducer";
+} from "~/components/react/filter-and-sort/paginated-list/paginationReducer";
 
 import type { ReviewsValue } from "./Reviews";
 import type { ReviewsSort } from "./sortReviews";
@@ -43,7 +44,7 @@ export type ReviewsAction =
  * All filter values for the Reviews page.
  */
 export type ReviewsFiltersValues = {
-  gradeValue?: [number, number];
+  gradeValue?: [GradeValueType, GradeValueType];
   kind?: readonly string[];
   reviewedStatus?: readonly string[];
   reviewYear?: [string, string];

@@ -1,8 +1,6 @@
 import type { CollectionEntry } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/assets/covers";
-import { CoverListItemImageConfig } from "~/components/react/cover-list/CoverListItem";
-import { gradeToValue } from "~/utils/grades";
 import { toDisplayDate } from "~/utils/toDisplayDate";
 import { toSortYear } from "~/utils/toSortYear";
 
@@ -32,13 +30,10 @@ export async function getReviewsProps(
 
           return authorValue;
         }),
-        coverImageProps: await getFluidCoverImageProps(
-          { slug: reviewedTitle.id },
-          CoverListItemImageConfig,
-        ),
+        coverImageProps: await getFluidCoverImageProps(reviewedTitle.id),
         displayDate: toDisplayDate(reviewedTitle.reviewDate),
         grade: reviewedTitle.grade,
-        gradeValue: gradeToValue(reviewedTitle.grade),
+        gradeValue: reviewedTitle.gradeValue,
         kind: reviewedTitle.kind,
         reviewSequence: reviewedTitle.reviewSequence,
         reviewYear: toSortYear(reviewedTitle.reviewDate),

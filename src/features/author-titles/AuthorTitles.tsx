@@ -1,11 +1,13 @@
 import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
+import type { GradeType, GradeValueType } from "~/utils/grades";
 
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
 import { createReviewedStatusCountMap } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { PaginatedCoverList } from "~/components/react/filter-and-sort/paginated-cover-list/PaginatedCoverList";
+import { PaginatedList } from "~/components/react/filter-and-sort/paginated-list/PaginatedList";
+import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -13,7 +15,6 @@ import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
 import { createInitialState, reducer } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
-import { AuthorWorksListItem } from "./AuthorTitlesListItem";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
 import { sortAuthorTitles, sortOptions } from "./sortAuthorTitles";
@@ -44,12 +45,11 @@ export type AuthorTitlesValue = {
   abandoned: boolean;
   /** Cover image props for displaying the work's cover */
   coverImageProps: CoverImageProps;
-  /** Formatted display date for the review */
-  displayDate: string;
+  excerptHtml: string;
   /** Letter grade given to the work */
-  grade: string;
+  grade: GradeType;
   /** Numeric grade value for sorting */
-  gradeValue: number;
+  gradeValue: GradeValueType;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
   /** Other authors who collaborated on this work */
@@ -59,7 +59,6 @@ export type AuthorTitlesValue = {
   }[];
   /** Date the review was written */
   reviewDate: Date;
-  /** Always true — every item in the author-titles list has been reviewed */
   reviewed: boolean;
   /** Sequence number for review ordering */
   reviewSequence: string;
@@ -71,6 +70,7 @@ export type AuthorTitlesValue = {
   sortTitle: string;
   /** Display title of the work */
   title: string;
+
   /** Year the work was originally published */
   titleYear: string;
 };
@@ -147,20 +147,53 @@ export function AuthorTitles({
       state={state}
       totalCount={totalCount}
     >
-      <PaginatedCoverList
-        dispatch={dispatch}
-        totalCount={totalCount}
-        values={paginatedValues}
-        visibleCount={state.showCount}
+      <div
+        className={`
+          mx-auto w-full bg-subtle
+          tablet:px-3 tablet:pt-6
+        `}
+        data-page-find-ignore
       >
-        {(value) => (
-          <AuthorWorksListItem
-            key={value.slug}
-            sortValue={state.sort}
-            value={value}
-          />
-        )}
-      </PaginatedCoverList>
+        <PaginatedList
+          dispatch={dispatch}
+          totalCount={totalCount}
+          visibleCount={state.showCount}
+        >
+          <div
+            className={`
+              @container/card-list mx-auto
+              tablet:px-4
+            `}
+          >
+            <ol
+              className={`
+                grid flex-wrap gap-8
+                tablet-landscape:grid-cols-2
+              `}
+              data-testid="card-list"
+            >
+              {paginatedValues.map((value) => {
+                return (
+                  <ReviewCard
+                    key={value.slug}
+                    value={{
+                      coverImageProps: value.coverImageProps,
+                      date: value.reviewDate,
+                      excerptHtml: value.excerptHtml,
+                      grade: value.grade,
+                      kind: value.kind,
+                      otherAuthors: value.otherAuthors,
+                      slug: value.slug,
+                      title: value.title,
+                      titleYear: value.titleYear,
+                    }}
+                  />
+                );
+              })}
+            </ol>
+          </div>
+        </PaginatedList>
+      </div>
     </FilterAndSortContainer>
   );
 }

@@ -1,22 +1,26 @@
 import { useEffect, useState } from "react";
 
+import type { GradeValueType } from "~/utils/grades";
+
 import { AnimatedDetailsDisclosure } from "~/components/react/animated-details-disclosure/AnimatedDetailsDisclosure";
 import { RangeSliderField } from "~/components/react/filter-and-sort/fields/RangeSliderField";
 import { SelectInput } from "~/components/react/filter-and-sort/fields/SelectInput";
-import { GRADE_MAX, GRADE_MIN, gradeToLetter } from "~/utils/grades";
+import {
+  GRADE_MAX,
+  GRADE_MIN,
+  GRADE_TO_LETTER,
+  gradeToLetter,
+} from "~/utils/grades";
 
 import type { GradeFilterChangedAction } from "./gradeReducer";
 
 import { createGradeFilterChangedAction } from "./gradeReducer";
 
-const gradeOptions = Array.from(
-  { length: GRADE_MAX - GRADE_MIN + 1 },
-  (_, i) => GRADE_MIN + i,
-)
-  .reverse()
-  .map((v) => (
-    <option key={v} value={v}>
-      {gradeToLetter(v)}
+const gradeOptions = Object.entries(GRADE_TO_LETTER)
+  .filter((entry) => entry.at(1) !== "Abandoned")
+  .map(([key, value]) => (
+    <option key={key} value={Number(key)}>
+      {value}
     </option>
   ));
 
@@ -26,13 +30,13 @@ export function GradeFacet({
   defaultValues,
   dispatch,
 }: {
-  defaultValues: [number, number] | undefined;
+  defaultValues: [GradeValueType, GradeValueType] | undefined;
   dispatch: React.Dispatch<GradeFilterChangedAction>;
 }): React.JSX.Element {
   const [minValue, setMinValue] = useState(defaultMinValue(defaultValues));
   const [maxValue, setMaxValue] = useState(defaultMaxValue(defaultValues));
 
-  const onGradeChange = (values: [number, number]): void =>
+  const onGradeChange = (values: [GradeValueType, GradeValueType]): void =>
     dispatch(createGradeFilterChangedAction(values));
 
   // Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
@@ -42,7 +46,7 @@ export function GradeFacet({
   }, [defaultValues]);
 
   const handleMinChange = (value: string): void => {
-    const newMin = Number.parseInt(value, 10);
+    const newMin = Number.parseInt(value, 10) as GradeValueType;
     setMinValue(newMin);
 
     if (newMin <= maxValue) {
@@ -53,7 +57,7 @@ export function GradeFacet({
   };
 
   const handleMaxChange = (value: string): void => {
-    const newMax = Number.parseInt(value, 10);
+    const newMax = Number.parseInt(value, 10) as GradeValueType;
     setMaxValue(newMax);
 
     if (minValue <= newMax) {
@@ -64,7 +68,10 @@ export function GradeFacet({
   };
 
   // Handle slider changes - updates dropdowns bidirectionally
-  const handleSliderChange = (from: number, to: number): void => {
+  const handleSliderChange = (
+    from: GradeValueType,
+    to: GradeValueType,
+  ): void => {
     setMinValue(from);
     setMaxValue(to);
     onGradeChange([from, to]);
@@ -122,10 +129,14 @@ export function GradeFacet({
   );
 }
 
-function defaultMaxValue(selectedValues?: [number, number]): number {
+function defaultMaxValue(
+  selectedValues?: [GradeValueType, GradeValueType],
+): GradeValueType {
   return selectedValues ? selectedValues[1] : GRADE_MAX;
 }
 
-function defaultMinValue(selectedValues?: [number, number]): number {
+function defaultMinValue(
+  selectedValues?: [GradeValueType, GradeValueType],
+): GradeValueType {
   return selectedValues ? selectedValues[0] : GRADE_MIN;
 }

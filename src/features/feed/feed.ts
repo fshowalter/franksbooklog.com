@@ -20,7 +20,7 @@ export async function feed() {
     items: await Promise.all(
       recentReviewedWorks.map(async ({ data: reviewedWork }) => {
         const { data: review } = await getEntry(reviewedWork.review);
-        const cover = await getFeedCoverProps({ slug: review.slug });
+        const cover = await getFeedCoverProps(review.slug);
 
         return {
           content: `<img src="${cover.src}" alt="">${addGradeToExcerpt(review.excerptHtml, review.grade)}`,

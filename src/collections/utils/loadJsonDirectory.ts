@@ -7,10 +7,14 @@ import { watchDirectory } from "./watchDirectory";
 
 /** Load a directory of JSON files, one entry per file. */
 export function loadJsonDirectory({
+  buildData,
   directoryPath,
   getId = (raw) => raw.id as string,
   loaderContext,
 }: {
+  buildData?: (opts: {
+    raw: Record<string, unknown>;
+  }) => Record<string, unknown>;
   directoryPath: string;
   getId?: (raw: Record<string, unknown>) => string;
   loaderContext: LoaderContext;
@@ -39,7 +43,9 @@ export function loadJsonDirectory({
         continue;
       }
 
-      const data = await loaderContext.parseData({ data: raw, id });
+      const rawData = buildData ? buildData({ raw }) : raw;
+
+      const data = await loaderContext.parseData({ data: rawData, id });
       loaderContext.store.set({ data, digest, id });
     }
 

@@ -20,6 +20,25 @@ import { sortOptions, sortReadingLog } from "./sortReadingLog";
 import { useMonthNavigation } from "./useMonthNavigation";
 
 /**
+ * Props interface for the Readings page component.
+ * Contains all data needed to render the reading calendar with filtering.
+ */
+export type ReadingLogProps = {
+  /** Available editions for filter dropdown options */
+  distinctEditions: readonly string[];
+  /** Available work kinds for filter dropdown options */
+  distinctKinds: readonly string[];
+  /** Available reading years for filter dropdown options */
+  distinctReadingYears: readonly string[];
+  /** Available work years for filter dropdown options */
+  distinctTitleYears: readonly string[];
+  /** Initial sort order to apply when page loads */
+  initialSort: ReadingLogSort;
+  /** Array of reading data for display and filtering */
+  values: ReadingLogValue[];
+};
+
+/**
  * Data structure representing a single reading entry.
  * Contains all information needed to display readings in the calendar view.
  */
@@ -50,39 +69,6 @@ export type ReadingLogValue = {
   title: string;
   /** Year the work was originally published */
   titleYear: string;
-};
-
-/**
- * Configuration for reading item cover images.
- * Defines dimensions and responsive sizes for covers in the calendar view.
- */
-export const ReadingLogImageConfig = {
-  /** Cover image height in pixels */
-  height: 375,
-  /** Responsive sizes string for different viewport widths */
-  sizes:
-    "(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)",
-  /** Cover image width in pixels */
-  width: 250,
-};
-
-/**
- * Props interface for the Readings page component.
- * Contains all data needed to render the reading calendar with filtering.
- */
-export type ReadingLogProps = {
-  /** Available editions for filter dropdown options */
-  distinctEditions: readonly string[];
-  /** Available work kinds for filter dropdown options */
-  distinctKinds: readonly string[];
-  /** Available reading years for filter dropdown options */
-  distinctReadingYears: readonly string[];
-  /** Available work years for filter dropdown options */
-  distinctTitleYears: readonly string[];
-  /** Initial sort order to apply when page loads */
-  initialSort: ReadingLogSort;
-  /** Array of reading data for display and filtering */
-  values: ReadingLogValue[];
 };
 
 /**

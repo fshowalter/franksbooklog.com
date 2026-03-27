@@ -1,7 +1,10 @@
 ---
+import { getEntry } from "astro:content";
+
+import { getFluidCoverImageProps } from "~/assets/covers";
 import HeroLayout from "~/components/astro/layout/HeroLayout.astro";
-import ReviewCard from "~/components/astro/review-card/ReviewCard.astro";
 import SubHeading from "~/components/astro/sub-heading/SubHeading.astro";
+import { ReviewCard } from "~/components/review-card/ReviewCard";
 import { mostRecentReviewedTitles } from "~/utils/mostRecentReviewedTitles";
 
 const deck = "Literature is a relative term.";
@@ -41,9 +44,25 @@ const reviewedWorks = await mostRecentReviewedTitles(12);
         `}
       >
         {
-          reviewedWorks.map((review) => {
-            return <ReviewCard hasDate={true} value={review.data} />;
-          })
+          await Promise.all(
+            reviewedWorks.map(async ({ data: reviewedTitle }) => {
+              const { data: review } = await getEntry(reviewedTitle.review);
+              return (
+                <ReviewCard
+                  value={{
+                    coverImageProps: await getFluidCoverImageProps(review.slug),
+                    date: review.date,
+                    excerptHtml: review.excerptHtml,
+                    grade: review.grade,
+                    kind: reviewedTitle.kind,
+                    slug: review.slug,
+                    title: reviewedTitle.title,
+                    titleYear: reviewedTitle.titleYear,
+                  }}
+                />
+              );
+            }),
+          )
         }
       </ol>
       <div

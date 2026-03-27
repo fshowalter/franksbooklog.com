@@ -1,4 +1,5 @@
 import type { RemoveFilterAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
+import type { GradeValueType } from "~/utils/grades";
 
 import { ActionTypes as FilterAndSortContainerActionTypes } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
 import { omitPendingKey } from "~/components/react/filter-and-sort/facets/omitPendingKey";
@@ -12,17 +13,19 @@ const ActionTypes = {
 
 export type GradeFilterChangedAction = {
   type: typeof ActionTypes.CHANGED;
-  values: [number, number];
+  values: [GradeValueType, GradeValueType];
 };
 
 export function createGradeFilterChangedAction(
-  values: [number, number],
+  values: [GradeValueType, GradeValueType],
 ): GradeFilterChangedAction {
   return { type: ActionTypes.CHANGED, values };
 }
 
 export function gradeFacetReducer<
-  TState extends { pendingFilterValues: { [STATE_KEY]?: [number, number] } },
+  TState extends {
+    pendingFilterValues: { [STATE_KEY]?: [GradeValueType, GradeValueType] };
+  },
 >(state: TState, action: { type: string }): TState {
   switch (action.type) {
     case ActionTypes.CHANGED: {

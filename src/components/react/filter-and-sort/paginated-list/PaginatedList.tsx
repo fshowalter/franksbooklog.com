@@ -1,21 +1,16 @@
-import { CoverList } from "~/components/react/cover-list/CoverList";
-
 import type { ShowMoreAction } from "./paginationReducer";
 
 import { createShowMoreAction } from "./paginationReducer";
 
-export function PaginatedCoverList<T>({
+export function PaginatedList({
   children,
   dispatch,
   totalCount,
-  values,
   visibleCount,
-  ...rest
 }: {
-  children: (item: T) => React.ReactNode;
+  children: React.ReactNode;
   dispatch: React.Dispatch<ShowMoreAction>;
   totalCount: number;
-  values: Iterable<T>;
   visibleCount: number;
 }): React.JSX.Element {
   return (
@@ -25,9 +20,7 @@ export function PaginatedCoverList<T>({
         desktop:-mx-8
       "
     >
-      <CoverList {...rest}>
-        {[...values].map((value) => children(value))}
-      </CoverList>
+      {children}
       <div className="flex flex-col items-center px-container py-10">
         {totalCount > visibleCount && (
           <button

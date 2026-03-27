@@ -1,16 +1,16 @@
 import type { ChangeEvent, KeyboardEvent } from "react";
 
-type FormatValueFunction = (value: number) => string;
+type FormatValueFunction<T> = (value: T) => string;
 
-type RangeSliderFieldProps = {
-  formatValue?: FormatValueFunction;
-  fromValue: number;
+type RangeSliderFieldProps<T> = {
+  formatValue?: FormatValueFunction<T>;
+  fromValue: T;
   label: string;
-  max: number;
-  min: number;
-  onChange: (from: number, to: number) => void;
+  max: T;
+  min: T;
+  onChange: (from: T, to: T) => void;
   onClear?: () => void;
-  toValue: number;
+  toValue: T;
 };
 
 /**
@@ -27,7 +27,7 @@ type RangeSliderFieldProps = {
  * @param props.toValue - Current "to" value (controlled)
  * @returns Dual-handle range slider with clear functionality
  */
-export function RangeSliderField({
+export function RangeSliderField<T extends number>({
   formatValue = (value: number): string => value.toString(),
   fromValue,
   label,
@@ -36,7 +36,7 @@ export function RangeSliderField({
   onChange,
   onClear,
   toValue,
-}: RangeSliderFieldProps): React.JSX.Element {
+}: RangeSliderFieldProps<T>): React.JSX.Element {
   const isFullRange = fromValue === min && toValue === max;
 
   // Calculate percentage positions for visual display
@@ -44,7 +44,7 @@ export function RangeSliderField({
   const toPercent = ((toValue - min) / (max - min)) * 100;
 
   const handleFromChange = (e: ChangeEvent<HTMLInputElement>): void => {
-    const newFrom = Number.parseInt(e.target.value, 10);
+    const newFrom = Number.parseInt(e.target.value, 10) as T;
     // Ensure from doesn't exceed to
     if (newFrom <= toValue) {
       onChange(newFrom, toValue);
@@ -54,7 +54,7 @@ export function RangeSliderField({
   };
 
   const handleToChange = (e: ChangeEvent<HTMLInputElement>): void => {
-    const newTo = Number.parseInt(e.target.value, 10);
+    const newTo = Number.parseInt(e.target.value, 10) as T;
     // Ensure to doesn't go below from
     if (newTo >= fromValue) {
       onChange(fromValue, newTo);
@@ -83,19 +83,19 @@ export function RangeSliderField({
 
     if (e.key === "ArrowLeft" || e.key === "ArrowDown") {
       e.preventDefault();
-      const newValue = Math.max(min, currentValue - step);
+      const newValue = Math.max(min, currentValue - step) as T;
       if (type === "from") {
-        onChange(Math.min(newValue, toValue), toValue);
+        onChange(Math.min(newValue, toValue) as T, toValue);
       } else {
-        onChange(fromValue, Math.max(newValue, fromValue));
+        onChange(fromValue, Math.max(newValue, fromValue) as T);
       }
     } else if (e.key === "ArrowRight" || e.key === "ArrowUp") {
       e.preventDefault();
       const newValue = Math.min(max, currentValue + step);
       if (type === "from") {
-        onChange(Math.min(newValue, toValue), toValue);
+        onChange(Math.min(newValue, toValue) as T, toValue);
       } else {
-        onChange(fromValue, Math.max(newValue, fromValue));
+        onChange(fromValue, Math.max(newValue, fromValue) as T);
       }
     }
   };

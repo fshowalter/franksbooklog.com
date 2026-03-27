@@ -1,6 +1,8 @@
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
+import type { GradeType, GradeValueType } from "~/utils/grades";
+
 import {
   clickToggleFilters,
   clickViewResults,
@@ -10,8 +12,8 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type ReviewedStatusItem = {
   abandoned: boolean;
-  grade?: string;
-  gradeValue?: number;
+  grade?: GradeType;
+  gradeValue?: GradeValueType;
   title: string;
 };
 

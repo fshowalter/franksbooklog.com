@@ -7,6 +7,8 @@ import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import remarkRehype from "remark-rehype";
 
+import { GRADE_TO_VALUE, GRADES, gradeToValue } from "~/utils/grades";
+
 import { CONTENT_ROOT } from "./contentRoot";
 import { getBaseMarkdownProcessor } from "./utils/getBaseMarkdownProcessor";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
@@ -30,12 +32,17 @@ function parseExcerpt(frontmatter: Record<string, unknown>, body: string) {
     .toString();
 }
 
+const ReviewFrontmatterSchema = z.object({
+  grade: z.enum(GRADES),
+});
+
 const ReviewSchema = z.object({
   body: z.string(),
   date: z.coerce.date(),
   description: z.string(),
   excerptHtml: z.string(),
-  grade: z.string(),
+  grade: z.enum(GRADES),
+  gradeValue: z.literal(Object.values(GRADE_TO_VALUE)),
   html: z.string(),
   slug: z.string(),
   synopsis: z.optional(z.string()),
@@ -48,13 +55,14 @@ export const reviews = defineCollection({
       loadMarkdownDirectory({
         buildData: ({ body, frontmatter }) => {
           const excerptHtml = parseExcerpt(frontmatter, body);
-
+          const { grade } = ReviewFrontmatterSchema.parse(frontmatter);
           return {
             body,
             date: frontmatter.date,
             description: markdownToDescription(body),
             excerptHtml,
-            grade: frontmatter.grade as string,
+            grade: grade,
+            gradeValue: gradeToValue(grade),
             html: markdownToHtml(body),
             slug: frontmatter.slug as string,
             synopsis: frontmatter.synopsis as string | undefined,
