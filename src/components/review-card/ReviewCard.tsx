@@ -4,12 +4,6 @@ import type { GradeText } from "~/utils/grades";
 import { Grade } from "~/components/grade/Grade";
 import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 
-const CoverImageConfig = {
-  sizes:
-    "(min-width: 1800px) 178px, (min-width: 1320px) 9.78vw, (min-width: 1280px) calc(-350vw + 4680px), (min-width: 1240px) calc(10vw + 7px), (min-width: 1060px) 200px, (min-width: 800px) 19.17vw, (min-width: 540px) 200px, calc(37.27vw + 6px)",
-  width: 248,
-};
-
 type ReviewCardValue = {
   authors?: {
     name: string;
@@ -18,6 +12,7 @@ type ReviewCardValue = {
     sortName: string;
   }[];
   coverImageProps: CoverImageProps;
+  coverImageSizes: string;
   date?: Date;
   excerptHtml: string;
   grade: GradeText;
@@ -114,7 +109,6 @@ export function ReviewCard({
                 <img
                   {...value.coverImageProps}
                   alt=""
-                  {...CoverImageConfig}
                   className={`
                     transform-gpu rounded-[2.5px] bg-default
                     transition-transform duration-500
@@ -122,6 +116,7 @@ export function ReviewCard({
                   `}
                   decoding="async"
                   loading="lazy"
+                  sizes={value.coverImageSizes}
                 />
               </div>
             </div>

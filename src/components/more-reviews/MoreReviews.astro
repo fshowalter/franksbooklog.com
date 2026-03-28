@@ -6,11 +6,16 @@ import { ReviewCard } from "~/components/review-card/ReviewCard";
 import MoreReviewsHeading from "./MoreReviewsHeading.astro";
 
 type Props = {
-  cardProps: ComponentProps<typeof ReviewCard>[];
+  cardProps: {
+    value: Omit<ComponentProps<typeof ReviewCard>["value"], "coverImageSizes">;
+  }[];
   headingProps: ComponentProps<typeof MoreReviewsHeading>;
 };
 
 const { cardProps, headingProps } = Astro.props;
+
+const coverImageSizes =
+  "(min-width: 1800px) 182px, (min-width: 1280px) 10.4vw, (min-width: 1180px) calc(12.5vw - 22px), (min-width: 1080px) 200px, (min-width: 1040px) 180px, (min-width: 580px) 200px, calc(37.69vw - 11px)";
 ---
 
 <nav
@@ -35,7 +40,7 @@ const { cardProps, headingProps } = Astro.props;
     >
       {
         cardProps.map((props) => {
-          return <ReviewCard {...props} />;
+          return <ReviewCard value={{ ...props.value, coverImageSizes }} />;
         })
       }
     </ol>
