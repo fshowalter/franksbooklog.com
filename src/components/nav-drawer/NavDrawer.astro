@@ -8,8 +8,8 @@
     aria-expanded="false"
     aria-label="Toggle navigation drawer"
     class={`
-      group/button relative z-nav-toggle ml-2 flex size-10 transform-gpu
-      cursor-pointer items-center justify-center transition-all duration-500
+      group/button relative z-nav-toggle ml-2 flex size-10 cursor-pointer
+      items-center justify-center
       laptop:hidden
     `}
     data-nav-drawer-toggle
@@ -18,14 +18,14 @@
     <span
       aria-hidden="true"
       class={`
-        relative flex h-0.5 w-6 origin-center transform-gpu bg-current
-        transition-all duration-200 ease-in-out
+        relative flex h-0.5 w-6 transform-gpu bg-current transition-all
+        duration-100 ease-in-out
         group-hover/button:bg-accent
         before:absolute before:-top-2 before:block before:h-0.5 before:w-6
-        before:bg-inherit before:transition before:duration-200
+        before:bg-inherit before:transition before:duration-100
         before:ease-in-out
         after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
-        after:bg-inherit after:transition after:duration-200 after:ease-in-out
+        after:bg-inherit after:transition after:duration-100 after:ease-in-out
       `}></span>
   </button>
   <dialog
@@ -33,15 +33,14 @@
     class={`
       group/dialog fixed top-0 right-0 left-auto m-0 size-full max-h-full
       translate-x-full overflow-y-auto border-0 bg-canvas p-0 pt-20 pr-[16%]
-      pb-5 pl-[12%] text-left text-default opacity-0 drop-shadow-2xl
-      transition-all transition-discrete duration-600
-      ease-[cubic-bezier(0.19,1,0.22,1)]
+      pb-5 pl-[12%] text-left text-default drop-shadow-2xl transition-all
+      transition-discrete duration-600 ease-[cubic-bezier(0.19,1,0.22,1)]
       backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
       backdrop:transition-discrete backdrop:duration-200
-      open:translate-x-0 open:opacity-100
+      open:translate-x-0
       open:backdrop:opacity-40
       tablet:max-w-[35vw] tablet:px-10 tablet:pt-40
-      starting:open:translate-x-full starting:open:opacity-0
+      starting:open:transform-[translateX(100%)]
       starting:open:backdrop:opacity-0
     `}
     data-nav-drawer
