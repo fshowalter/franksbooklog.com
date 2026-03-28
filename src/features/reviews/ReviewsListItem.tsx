@@ -2,9 +2,9 @@ import type { CoverImageProps } from "~/assets/covers";
 import type { GradeText } from "~/utils/grades";
 
 import { ListItemAuthors } from "~/components/list-item-authors/ListItemAuthors";
+import { ListItemDetails } from "~/components/list-item-details/ListItemDetails";
 import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
 import { CoverListItem } from "~/components/react/cover-list/CoverListItem";
-import { ListItemDetails } from "~/components/react/list-item-details/ListItemDetails";
 import { ListItemKindAndYear } from "~/components/react/list-item-kind-and-year/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/react/list-item-review-date/ListItemReviewDate";
 import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
