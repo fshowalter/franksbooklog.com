@@ -2,31 +2,37 @@
 // Used by GradeField, filter chip displays, and API layers across the site.
 // Scale: 2 (F-) to 16 (A+). Abandoned entries use gradeValue=0 (below slider range).
 
-export const GRADE_MIN = 2;
-export const GRADE_MAX = 16;
-export const GRADES = <const>[
-  "A+",
+export const GRADES = [
   "A",
+  "A+",
   "A-",
-  "B+",
-  "B",
-  "B-",
-  "C+",
-  "C",
-  "C-",
-  "D+",
-  "D",
-  "D-",
-  "F+",
-  "F",
-  "F-",
   "Abandoned",
-];
+  "B",
+  "B+",
+  "B-",
+  "C",
+  "C+",
+  "C-",
+  "D",
+  "D+",
+  "D-",
+  "F",
+  "F+",
+  "F-",
+] as const;
 
-export type GradeType = (typeof GRADES)[number];
-export type GradeValueType = keyof typeof GRADE_TO_LETTER;
+export type GradeText = (typeof GRADES)[number];
 
-export const GRADE_TO_LETTER = {
+export const GRADE_VALUES = [
+  0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+] as const;
+
+export const GRADE_MIN: GradeValue = 2;
+export const GRADE_MAX: GradeValue = 16;
+
+export type GradeValue = (typeof GRADE_VALUES)[number];
+
+export const GRADE_VALUE_TO_LETTER: Record<GradeValue, GradeText> = {
   0: "Abandoned",
   2: "F-",
   3: "F",
@@ -45,7 +51,7 @@ export const GRADE_TO_LETTER = {
   16: "A+",
 } as const;
 
-export const GRADE_TO_VALUE = {
+const GRADE_TEXT_TO_VALUE: Record<GradeText, GradeValue> = {
   A: 15,
   "A+": 16,
   "A-": 14,
@@ -64,10 +70,31 @@ export const GRADE_TO_VALUE = {
   "F-": 2,
 } as const;
 
-export function gradeToLetter(value: keyof typeof GRADE_TO_LETTER): string {
-  return GRADE_TO_LETTER[value];
+export function gradeToValue(grade: GradeText): GradeValue {
+  return GRADE_TEXT_TO_VALUE[grade];
 }
 
-export function gradeToValue(grade: (typeof GRADES)[number]): GradeValueType {
-  return GRADE_TO_VALUE[grade]; // Abandoned and unknown → 0
+export function gradeValueToLetter(gradeValue: GradeValue): GradeText {
+  return GRADE_VALUE_TO_LETTER[gradeValue];
 }
+
+export const GRADE_SVG_MAP: Record<
+  Exclude<GradeText, "Abandoned">,
+  { altText: string; src: string }
+> = {
+  A: { altText: "5 stars (out of 5)", src: "/svg/5-stars.svg" },
+  "A+": { altText: "5 stars (out of 5)", src: "/svg/5-stars.svg" },
+  "A-": { altText: "4.5 stars (out of 5)", src: "/svg/4-half-stars.svg" },
+  B: { altText: "4 stars (out of 5)", src: "/svg/4-stars.svg" },
+  "B+": { altText: "4 stars (out of 5)", src: "/svg/4-stars.svg" },
+  "B-": { altText: "3.5 stars (out of 5)", src: "/svg/3-half-stars.svg" },
+  C: { altText: "3 stars (out of 5)", src: "/svg/3-stars.svg" },
+  "C+": { altText: "3 stars (out of 5)", src: "/svg/3-stars.svg" },
+  "C-": { altText: "2.5 stars (out of 5)", src: "/svg/2-half-stars.svg" },
+  D: { altText: "2 stars (out of 5)", src: "/svg/2-stars.svg" },
+  "D+": { altText: "2 stars (out of 5)", src: "/svg/2-stars.svg" },
+  "D-": { altText: "1.5 stars (out of 5)", src: "/svg/1-half-stars.svg" },
+  F: { altText: "1 star (out of 5)", src: "/svg/1-star.svg" },
+  "F+": { altText: "1 star (out of 5)", src: "/svg/1-star.svg" },
+  "F-": { altText: "1/2 star (out of 5)", src: "/svg/half-star.svg" },
+} as const;

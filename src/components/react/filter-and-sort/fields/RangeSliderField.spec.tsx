@@ -4,7 +4,7 @@ import { act, fireEvent, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { describe, it, vi } from "vitest";
 
-import { gradeToLetter } from "~/utils/grades";
+import { gradeValueToLetter } from "~/utils/grades";
 
 import { RangeSliderField } from "./RangeSliderField";
 
@@ -60,7 +60,7 @@ describe("RangeSliderField", () => {
 
     it("uses formatValue function when provided", ({ expect }) => {
       const props = createDefaultProps({
-        formatValue: gradeToLetter as FormatValueFunction,
+        formatValue: gradeValueToLetter as FormatValueFunction,
         fromValue: 11,
         max: 16,
         min: 2,
@@ -341,7 +341,7 @@ describe("RangeSliderField", () => {
 
     it("uses formatted values in aria-valuetext", ({ expect }) => {
       const props = createDefaultProps({
-        formatValue: gradeToLetter as FormatValueFunction,
+        formatValue: gradeValueToLetter as FormatValueFunction,
         fromValue: 11,
         max: 16,
         min: 2,

@@ -1,5 +1,5 @@
 import type { CoverImageProps } from "~/assets/covers";
-import type { GradeType } from "~/utils/grades";
+import type { GradeText } from "~/utils/grades";
 
 import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
 import { CoverListItem } from "~/components/react/cover-list/CoverListItem";
@@ -19,7 +19,7 @@ type ReviewsListItemValue = {
   }[];
   coverImageProps: CoverImageProps;
   displayDate: string;
-  grade: GradeType;
+  grade: GradeText;
   kind: string;
   slug: string;
   title: string;

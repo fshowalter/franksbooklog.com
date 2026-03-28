@@ -1,5 +1,5 @@
 import type { CoverImageProps } from "~/assets/covers";
-import type { GradeType } from "~/utils/grades";
+import type { GradeText } from "~/utils/grades";
 
 import { Grade } from "~/components/grade/Grade";
 import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
@@ -20,7 +20,7 @@ type ReviewCardValue = {
   coverImageProps: CoverImageProps;
   date?: Date;
   excerptHtml: string;
-  grade: GradeType;
+  grade: GradeText;
   kind: string;
   otherAuthors?: {
     name: string;

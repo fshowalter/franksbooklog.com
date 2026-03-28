@@ -4,7 +4,7 @@ import { z } from "astro/zod";
 import { defineCollection, reference } from "astro:content";
 import path from "node:path";
 
-import { GRADE_TO_VALUE, GRADES, gradeToValue } from "~/utils/grades";
+import { GRADE_VALUES, GRADES, gradeToValue } from "~/utils/grades";
 
 import { CONTENT_ROOT } from "./contentRoot";
 import { loadJsonDirectory } from "./utils/loadJsonDirectory";
@@ -33,7 +33,7 @@ const ReviewedTitleSchema = z
   .object({
     authors: z.array(ReviewedTitleAuthorSchema),
     grade: z.enum(GRADES),
-    gradeValue: z.literal(Object.values(GRADE_TO_VALUE)),
+    gradeValue: z.literal(GRADE_VALUES),
     id: z.string(),
     includedInTitles: z.array(reference("reviewedTitles")),
     includedTitles: z.array(reference("reviewedTitles")),

@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
-import type { GradeType, GradeValueType } from "~/utils/grades";
+import type { GradeText, GradeValue } from "~/utils/grades";
 
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
 import { createKindCountMap } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
@@ -47,9 +47,9 @@ export type AuthorTitlesValue = {
   coverImageProps: CoverImageProps;
   excerptHtml: string;
   /** Letter grade given to the work */
-  grade: GradeType;
+  grade: GradeText;
   /** Numeric grade value for sorting */
-  gradeValue: GradeValueType;
+  gradeValue: GradeValue;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
   /** Other authors who collaborated on this work */

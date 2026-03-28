@@ -7,7 +7,7 @@ import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import remarkRehype from "remark-rehype";
 
-import { GRADE_TO_VALUE, GRADES, gradeToValue } from "~/utils/grades";
+import { GRADE_VALUES, GRADES, gradeToValue } from "~/utils/grades";
 
 import { CONTENT_ROOT } from "./contentRoot";
 import { getBaseMarkdownProcessor } from "./utils/getBaseMarkdownProcessor";
@@ -42,7 +42,7 @@ const ReviewSchema = z.object({
   description: z.string(),
   excerptHtml: z.string(),
   grade: z.enum(GRADES),
-  gradeValue: z.literal(Object.values(GRADE_TO_VALUE)),
+  gradeValue: z.literal(GRADE_VALUES),
   html: z.string(),
   slug: z.string(),
   synopsis: z.optional(z.string()),

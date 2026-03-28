@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 
 import type { CoverImageProps } from "~/assets/covers";
-import type { GradeType, GradeValueType } from "~/utils/grades";
+import type { GradeText, GradeValue } from "~/utils/grades";
 
 import { CoverList } from "~/components/react/cover-list/CoverList";
 import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
@@ -53,9 +53,9 @@ export type ReviewsValue = {
   /** Formatted display date for the review */
   displayDate: string;
   /** Letter grade given to the work */
-  grade: GradeType;
+  grade: GradeText;
   /** Numeric grade value for sorting */
-  gradeValue: GradeValueType;
+  gradeValue: GradeValue;
   /** Type/category of the work (e.g., "Novel", "Collection") */
   kind: string;
   /** Sequence string for chronological review ordering */

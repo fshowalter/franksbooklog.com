@@ -1,7 +1,7 @@
 import path from "node:path";
 import sharp from "sharp";
 
-import type { GradeType } from "~/utils/grades";
+import type { GradeText } from "~/utils/grades";
 
 import {
   getCoverHeight,
@@ -11,7 +11,7 @@ import {
 } from "~/assets/covers";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
-import { gradeMap } from "~/utils/gradeMap";
+import { GRADE_SVG_MAP } from "~/utils/grades";
 
 type Props = {
   authors: {
@@ -19,7 +19,7 @@ type Props = {
     notes: string | undefined;
   }[];
   coverSlug: string;
-  grade: GradeType;
+  grade: GradeText;
   title: string;
 };
 
@@ -76,12 +76,12 @@ export async function createReviewOpenGraphImageResponse({
   );
 }
 
-function fileForGrade(value: GradeType): string | undefined {
+function fileForGrade(value: GradeText): string | undefined {
   if (!value || value == "Abandoned") {
     return;
   }
 
-  const [src] = gradeMap[value];
+  const { src } = GRADE_SVG_MAP[value];
 
   return src;
 }

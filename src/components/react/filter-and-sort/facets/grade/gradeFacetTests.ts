@@ -3,7 +3,7 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import type { GradeType, GradeValueType } from "~/utils/grades";
+import type { GradeText, GradeValue } from "~/utils/grades";
 
 import {
   clickSortOption,
@@ -13,8 +13,8 @@ import {
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type GradeItem = {
-  grade: GradeType;
-  gradeValue: GradeValueType;
+  grade: GradeText;
+  gradeValue: GradeValue;
   title: string;
 };
 
