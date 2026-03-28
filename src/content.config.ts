@@ -6,6 +6,8 @@ import { reviewedTitles } from "./collections/reviewedTitles";
 import { reviews } from "./collections/reviews";
 import { alltimeStats, yearStats } from "./collections/stats";
 
+// cache bust v-1
+
 export const collections = {
   alltimeStats,
   pages,
