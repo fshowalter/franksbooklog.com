@@ -3,11 +3,11 @@ import type { CollectionEntry } from "astro:content";
 
 import { getEntry } from "astro:content";
 
-import ListItemAuthors from "~/components/astro/list-item-authors/ListItemAuthors.astro";
 import ListItemDetails from "~/components/astro/list-item-details/ListItemDetails.astro";
 import ListItemKindAndYear from "~/components/astro/list-item-kind-and-year/ListItemKindAndYear.astro";
 import ListItemTitle from "~/components/astro/list-item-title/ListItemTitle.astro";
 import SubHeading from "~/components/astro/sub-heading/SubHeading.astro";
+import { ListItemAuthors } from "~/components/list-item-authors/ListItemAuthors";
 import { ListItemGrade } from "~/components/list-item-grade/ListItemGrade";
 
 type Props = {
