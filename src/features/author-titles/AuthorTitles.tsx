@@ -36,6 +36,9 @@ export type AuthorTitlesProps = {
   values: AuthorTitlesValue[];
 };
 
+const coverImageSizes =
+  "(min-width: 1800px) 177px, (min-width: 1320px) calc(10.65vw - 13px), (min-width: 1280px) calc(-370vw + 4936px), (min-width: 1240px) calc(15vw - 60px), (min-width: 480px) 200px, calc(46.25vw - 13px)";
+
 /**
  * Data structure representing a single work by the author.
  * Contains all information needed to display the work in lists and apply filters/sorting.
@@ -178,6 +181,7 @@ export function AuthorTitles({
                     key={value.slug}
                     value={{
                       coverImageProps: value.coverImageProps,
+                      coverImageSizes,
                       date: value.reviewDate,
                       excerptHtml: value.excerptHtml,
                       grade: value.grade,

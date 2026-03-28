@@ -12,6 +12,9 @@ const metaDescription =
   "Quality reviews of current, cult, classic, and forgotten books, short stories, and non-fiction. Literature is a relative term.";
 
 const reviewedWorks = await mostRecentReviewedTitles(12);
+
+const coverImageSizes =
+  "(min-width: 1800px) 178px, (min-width: 1320px) 9.78vw, (min-width: 1280px) calc(-350vw + 4680px), (min-width: 1240px) calc(10vw + 7px), (min-width: 1060px) 200px, (min-width: 800px) 19.17vw, (min-width: 540px) 200px, calc(37.27vw + 6px)";
 ---
 
 <HeroLayout
@@ -51,6 +54,7 @@ const reviewedWorks = await mostRecentReviewedTitles(12);
                 <ReviewCard
                   value={{
                     coverImageProps: await getFluidCoverImageProps(review.slug),
+                    coverImageSizes,
                     date: review.date,
                     excerptHtml: review.excerptHtml,
                     grade: review.grade,
