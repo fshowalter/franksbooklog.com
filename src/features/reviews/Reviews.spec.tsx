@@ -1,40 +1,40 @@
 import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import { getCoverList } from "~/components/react/cover-list/CoverList.testHelper";
+import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import {
   clickClearFilters,
   clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/react/filter-and-sort/facet-groups/TitleFacets.testHelper";
-import { authorFacetTests } from "~/components/react/filter-and-sort/facets/author/authorFacetTests";
+} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
+import { authorFacetTests } from "~/components/filter-and-sort/facets/author/authorFacetTests";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/grade/gradeFacetTests";
-import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/kindFacetTests";
+} from "~/components/filter-and-sort/facets/grade/gradeFacetTests";
+import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
 import {
   reviewYearFilterFacetTests,
   reviewYearSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/review-year/reviewYearFacetTests";
-import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
+} from "~/components/filter-and-sort/facets/review-year/reviewYearFacetTests";
+import { reviewedStatusFacetTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
 import {
   titleYearFilterFacetTests,
   titleYearSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
+} from "~/components/filter-and-sort/facets/title-year/titleYearFacetTests";
 import {
   titleFilterFacetTests,
   titleSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
-import { paginationTests } from "~/components/react/filter-and-sort/paginated-list/paginationTests";
+} from "~/components/filter-and-sort/facets/title/titleFacetTests";
+import { paginationTests } from "~/components/filter-and-sort/paginated-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";

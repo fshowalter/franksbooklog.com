@@ -7,32 +7,32 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
   clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
-} from "~/components/react/filter-and-sort/facet-groups/TitleFacets.testHelper";
+} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/grade/gradeFacetTests";
-import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/kindFacetTests";
+} from "~/components/filter-and-sort/facets/grade/gradeFacetTests";
+import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
 import {
   reviewYearFilterFacetTests,
   reviewYearSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/review-year/reviewYearFacetTests";
-import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
+} from "~/components/filter-and-sort/facets/review-year/reviewYearFacetTests";
+import { reviewedStatusFacetTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
 import {
   titleYearFilterFacetTests,
   titleYearSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
+} from "~/components/filter-and-sort/facets/title-year/titleYearFacetTests";
 import {
   titleFilterFacetTests,
   titleSortFacetTests,
-} from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
-import { paginationTests } from "~/components/react/filter-and-sort/paginated-list/paginationTests";
+} from "~/components/filter-and-sort/facets/title/titleFacetTests";
+import { paginationTests } from "~/components/filter-and-sort/paginated-list/paginationTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorTitlesProps, AuthorTitlesValue } from "./AuthorTitles";

@@ -1,0 +1,82 @@
+---
+import NavDrawer from "~/components/nav-drawer/NavDrawer.astro";
+import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
+
+import Logo from "./Logo.astro";
+import SiteHierarchy, { siteHierarchy } from "./SiteHierarchy.astro";
+
+type Props = {
+  addGradient: boolean;
+  hasBackdrop: boolean;
+  hideLogo: boolean;
+};
+
+const { addGradient, hasBackdrop, hideLogo } = Astro.props;
+---
+
+<header
+  class={`
+    group z-30 flex w-full items-center justify-between px-container py-4
+    tablet:py-6
+    laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16
+    laptop:py-8 laptop:text-left
+    ${
+      hasBackdrop
+        ? `absolute [--mast-color:#fff]`
+        : `static [--mast-color:var(--color-default)]`
+    }
+    text-(--mast-color)
+  `}
+  style={{
+    backgroundImage: addGradient
+      ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
+      : "",
+  }}
+>
+  {hideLogo ? <div /> : <Logo />}
+  <div class="flex items-center">
+    <nav
+      class={`
+        hidden w-full
+        laptop:block laptop:w-auto
+      `}
+    >
+      <ul class={`flex flex-wrap justify-start gap-x-6 text-xl`}>
+        {
+          siteHierarchy.map((page) => {
+            return (
+              <li
+                class={`block leading-10 tracking-serif-wide whitespace-nowrap`}
+              >
+                <a
+                  class:list={[
+                    `
+                      relative block text-inherit transition-colors duration-500
+                      after:absolute after:bottom-1 after:left-0 after:h-px
+                      after:w-full after:origin-center after:scale-x-0
+                      after:bg-accent after:transition-transform
+                      after:duration-500
+                      hover:text-accent
+                      hover:after:scale-x-100
+                    `,
+                    {
+                      "mix-blend-hard-light text-shadow-lg hover:text-shadow-none":
+                        hasBackdrop,
+                    },
+                  ]}
+                  href={page.href}
+                >
+                  {page.title}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+    <PagefindSearch class="z-search-button" />
+    <NavDrawer>
+      <SiteHierarchy />
+    </NavDrawer>
+  </div>
+</header>

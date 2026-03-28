@@ -1,12 +1,12 @@
-import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-import type { NameFilterChangedAction } from "~/components/react/filter-and-sort/facets/name/nameReducer";
+import type { FilterAndSortContainerAction } from "~/components/filter-and-sort/container/filterAndSortContainerReducer";
+import type { NameFilterChangedAction } from "~/components/filter-and-sort/facets/name/nameReducer";
 
 import {
   createInitialFilterAndSortContainerState,
   filterAndSortContainerReducer,
-} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
-import { nameFacetReducer } from "~/components/react/filter-and-sort/facets/name/nameReducer";
+} from "~/components/filter-and-sort/container/filterAndSortContainerReducer";
+import { composeReducers } from "~/components/filter-and-sort/facets/composeReducers";
+import { nameFacetReducer } from "~/components/filter-and-sort/facets/name/nameReducer";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsSort } from "./sortAuthors";

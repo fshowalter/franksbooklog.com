@@ -7,18 +7,18 @@ import {
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
   fillTitleFilter,
   getTitleFilter,
-} from "~/components/react/filter-and-sort/facet-groups/TitleFacets.testHelper";
-import { editionFacetTests } from "~/components/react/filter-and-sort/facets/edition/editionFacetTests";
-import { kindFacetTests } from "~/components/react/filter-and-sort/facets/kind/kindFacetTests";
-import { readingYearSortFacetTests } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFacetTests";
-import { clickReviewedStatusFilterOption } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet.testHelper";
-import { reviewedStatusFacetTests } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
-import { titleYearFilterFacetTests } from "~/components/react/filter-and-sort/facets/title-year/titleYearFacetTests";
-import { titleFilterFacetTests } from "~/components/react/filter-and-sort/facets/title/titleFacetTests";
+} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
+import { editionFacetTests } from "~/components/filter-and-sort/facets/edition/editionFacetTests";
+import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
+import { readingYearSortFacetTests } from "~/components/filter-and-sort/facets/reading-year/readingYearFacetTests";
+import { clickReviewedStatusFilterOption } from "~/components/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet.testHelper";
+import { reviewedStatusFacetTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
+import { titleYearFilterFacetTests } from "~/components/filter-and-sort/facets/title-year/titleYearFacetTests";
+import { titleFilterFacetTests } from "~/components/filter-and-sort/facets/title/titleFacetTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";

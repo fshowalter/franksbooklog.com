@@ -1,5 +1,5 @@
-import { filterSortedValues } from "~/components/react/filter-and-sort/facets/filterSortedValues";
-import { createNameFilter } from "~/components/react/filter-and-sort/facets/name/nameFilter";
+import { filterSortedValues } from "~/components/filter-and-sort/facets/filterSortedValues";
+import { createNameFilter } from "~/components/filter-and-sort/facets/name/nameFilter";
 
 import type { AuthorsValue } from "./Authors";
 import type { AuthorsFiltersValues } from "./Authors.reducer";

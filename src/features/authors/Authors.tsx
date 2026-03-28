@@ -2,8 +2,8 @@ import { useReducer } from "react";
 
 import type { AvatarImageProps } from "~/assets/avatars";
 
-import { GroupedAvatarList } from "~/components/react/avatar-list/AvatarList";
-import { FilterAndSortContainer } from "~/components/react/filter-and-sort/container/FilterAndSortContainer";
+import { FilterAndSortContainer } from "~/components/filter-and-sort/container/FilterAndSortContainer";
+import { GroupedAvatarList } from "~/features/authors/GroupedAvatarList";
 import { useGroupedValues } from "~/features/authors/useGroupedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 

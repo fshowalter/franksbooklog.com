@@ -1,4 +1,4 @@
-import { NameFacet } from "~/components/react/filter-and-sort/facets/name/NameFacet";
+import { NameFacet } from "~/components/filter-and-sort/facets/name/NameFacet";
 
 import type { AuthorsAction, AuthorsFiltersValues } from "./Authors.reducer";
 

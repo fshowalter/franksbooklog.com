@@ -1,6 +1,6 @@
 import type { CollectionSort } from "~/features/authors/createCollectionSorter";
 
-import { nameSortOptions } from "~/components/react/filter-and-sort/facets/name/nameSort";
+import { nameSortOptions } from "~/components/filter-and-sort/facets/name/nameSort";
 import { createCollectionSorter } from "~/features/authors/createCollectionSorter";
 
 import type { AuthorsValue } from "./Authors";

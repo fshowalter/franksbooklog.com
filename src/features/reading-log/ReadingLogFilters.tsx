@@ -1,9 +1,9 @@
-import { EditionFacet } from "~/components/react/filter-and-sort/facets/edition/EditionFacet";
-import { KindFacet } from "~/components/react/filter-and-sort/facets/kind/KindFacet";
-import { ReadingYearFacet } from "~/components/react/filter-and-sort/facets/reading-year/ReadingYearFacet";
-import { ReviewedStatusFacet } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
-import { TitleYearFacet } from "~/components/react/filter-and-sort/facets/title-year/TitleYearFacet";
-import { TitleFacet } from "~/components/react/filter-and-sort/facets/title/TitleFacet";
+import { EditionFacet } from "~/components/filter-and-sort/facets/edition/EditionFacet";
+import { KindFacet } from "~/components/filter-and-sort/facets/kind/KindFacet";
+import { ReadingYearFacet } from "~/components/filter-and-sort/facets/reading-year/ReadingYearFacet";
+import { ReviewedStatusFacet } from "~/components/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
+import { TitleYearFacet } from "~/components/filter-and-sort/facets/title-year/TitleYearFacet";
+import { TitleFacet } from "~/components/filter-and-sort/facets/title/TitleFacet";
 
 import type {
   ReadingLogAction,

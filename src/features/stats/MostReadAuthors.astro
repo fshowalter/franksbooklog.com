@@ -1,9 +1,10 @@
 ---
 import type { MostReadAuthor } from "~/collections/stats";
 
-import CoverList from "~/components/astro/cover-list/CoverList.astro";
-import CoverListItem from "~/components/astro/cover-list/CoverListItem.astro";
-import ListItemEdition from "~/components/astro/list-item-edition/ListItemEdition.astro";
+import { getFluidCoverImageProps } from "~/assets/covers";
+import { CoverList } from "~/components/cover-list/CoverList";
+import { CoverListItem } from "~/components/cover-list/CoverListItem";
+import ListItemEdition from "~/components/list-item-edition/ListItemEdition.astro";
 import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemReviewDate";
 import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { toDisplayDate } from "~/utils/toDisplayDate";
@@ -102,18 +103,20 @@ const { values } = Astro.props;
                 >
                   Details
                 </summary>
-                <CoverList class="rounded-md bg-subtle">
+                <CoverList className="rounded-md bg-subtle">
                   {value.readTitles.map(async (readTitle) => {
                     return (
                       <CoverListItem
-                        class={`
+                        className={`
                           ${
                             readTitle.reviewSlug
                               ? "bg-default"
                               : `bg-transparent`
                           }
                         `}
-                        coverSlug={readTitle.reviewSlug || "default"}
+                        coverImageProps={await getFluidCoverImageProps(
+                          readTitle.reviewSlug || "default",
+                        )}
                       >
                         <div
                           class={`

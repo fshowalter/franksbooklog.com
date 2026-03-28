@@ -1,7 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 
 import { getAvatarImageProps } from "~/assets/avatars";
-import { AvatarListItemImageConfig } from "~/components/react/avatar-list/AvatarList";
+import { AvatarListItemImageConfig } from "~/features/authors/GroupedAvatarList";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";
 
