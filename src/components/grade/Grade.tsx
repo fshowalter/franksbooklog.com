@@ -1,6 +1,6 @@
-import type { GradeType } from "~/utils/grades";
+import type { GradeText } from "~/utils/grades";
 
-import { gradeMap } from "~/utils/gradeMap";
+import { GRADE_SVG_MAP } from "~/utils/grades";
 
 export function Grade({
   className,
@@ -9,13 +9,13 @@ export function Grade({
 }: {
   className?: string;
   height: 15 | 16 | 18 | 24 | 32;
-  value?: GradeType;
+  value?: GradeText;
 }): React.JSX.Element | undefined {
   if (!value || value === "Abandoned") {
     return undefined;
   }
 
-  const [src, alt] = gradeMap[value];
+  const { altText, src } = GRADE_SVG_MAP[value];
 
   const width = height * 5;
 
@@ -26,7 +26,7 @@ export function Grade({
         srcSet={src.replace(".svg", "-dark.svg")}
       />
       <img
-        alt={`${value}: ${alt}`}
+        alt={`${value}: ${altText}`}
         className={className}
         height={height}
         src={src}

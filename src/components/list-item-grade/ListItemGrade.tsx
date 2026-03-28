@@ -1,11 +1,11 @@
-import type { GradeType } from "~/utils/grades";
+import type { GradeText } from "~/utils/grades";
 
 import { Grade } from "~/components/grade/Grade";
 
 export function ListItemGrade({
   grade,
 }: {
-  grade: GradeType;
+  grade: GradeText;
 }): React.JSX.Element {
   if (grade === "Abandoned") {
     return (
