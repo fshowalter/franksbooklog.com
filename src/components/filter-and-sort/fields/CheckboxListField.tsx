@@ -12,28 +12,14 @@ type CheckboxListFieldProps = {
   defaultValues?: readonly string[];
   label: string;
   onChange: (values: string[]) => void;
-  onClear?: () => void;
   options: readonly CheckboxListFieldOption[];
   showMoreThreshold?: number;
 };
 
-/**
- * Checkbox list field for multi-selection with show more/less and clear functionality.
- * Selected items automatically move to top of list.
- * @param props - Component props
- * @param props.defaultValues - Default selected values
- * @param props.label - Field label text (visually hidden but accessible)
- * @param props.onChange - Handler for selection changes
- * @param props.onClear - Handler for clear action
- * @param props.options - Available options with labels, values, and counts
- * @param props.showMoreThreshold - Number of items to show before "Show more" (default: 3)
- * @returns Checkbox list field with show more and clear functionality
- */
 export function CheckboxListField({
   defaultValues,
   label,
   onChange,
-  onClear,
   options,
   showMoreThreshold = 3,
 }: CheckboxListFieldProps): React.JSX.Element {
@@ -95,11 +81,7 @@ export function CheckboxListField({
   // RangeSliderField and GradeField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
     setSelectedValues([]);
-    if (onClear) {
-      onClear();
-    } else {
-      onChange([]);
-    }
+    onChange([]);
   };
 
   const handleShowMore = (): void => {

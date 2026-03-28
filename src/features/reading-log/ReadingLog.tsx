@@ -3,8 +3,6 @@ import { useEffect, useReducer, useRef } from "react";
 import type { CoverImageProps } from "~/assets/covers";
 
 import { FilterAndSortContainer } from "~/components/filter-and-sort/container/FilterAndSortContainer";
-import { createKindCountMap } from "~/components/filter-and-sort/facets/kind/kindFilter";
-import { createReviewedStatusCountMap } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
 import { useFilteredValues } from "~/hooks/useFilteredValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
@@ -129,13 +127,6 @@ export function ReadingLog({
     state.pendingFilterValues,
   );
 
-  const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
-  const kindCounts = createKindCountMap(state.values);
-  const editionCounts = new Map<string, number>();
-  for (const v of state.values) {
-    editionCounts.set(v.edition, (editionCounts.get(v.edition) ?? 0) + 1);
-  }
-
   const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   const [previousMonthDate, currentMonthDate, nextMonthDate] =
@@ -152,10 +143,8 @@ export function ReadingLog({
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
           distinctTitleYears={distinctTitleYears}
-          editionCounts={editionCounts}
           filterValues={state.pendingFilterValues}
-          kindCounts={kindCounts}
-          reviewedStatusCounts={reviewedStatusCounts}
+          values={state.values}
         />
       }
       headerLink={{ href: "/readings/stats/", text: "stats" }}

@@ -10,7 +10,6 @@ import {
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
-  clickKindFilterOption,
   fillTitleFilter,
   getKindFilter,
   getTitleFilter,
@@ -20,7 +19,10 @@ import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
 } from "~/components/filter-and-sort/facets/grade/gradeFacetTests";
-import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
+import {
+  clickKindOption,
+  kindFacetTests,
+} from "~/components/filter-and-sort/facets/kind/kindFacetTests";
 import {
   reviewYearFilterFacetTests,
   reviewYearSortFacetTests,
@@ -255,7 +257,7 @@ describe("Reviews", () => {
 
       await clickToggleFilters(user);
       await fillTitleFilter(user, "Dracula");
-      await clickKindFilterOption(user, "Novel");
+      await clickKindOption(user, "Novel");
       await clickViewResults(user);
 
       const list = getCoverList();

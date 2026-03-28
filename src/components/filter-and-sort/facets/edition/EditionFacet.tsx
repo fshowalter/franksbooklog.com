@@ -3,19 +3,24 @@ import { CheckboxListField } from "~/components/filter-and-sort/fields/CheckboxL
 
 import type { EditionFilterChangedAction } from "./editionReducer";
 
+import { createEditionCountMap } from "./editionFilter";
 import { createEditionFilterChangedAction } from "./editionReducer";
 
-export function EditionFacet({
+export function EditionFacet<
+  TValue extends Parameters<typeof createEditionCountMap>[0][number],
+>({
   defaultValues,
   dispatch,
   distinctEditions,
-  editionCounts,
+  values,
 }: {
   defaultValues: readonly string[] | undefined;
   dispatch: React.Dispatch<EditionFilterChangedAction>;
   distinctEditions: readonly string[];
-  editionCounts: Map<string, number> | undefined;
+  values: readonly TValue[];
 }): React.JSX.Element {
+  const editionCounts = createEditionCountMap(values);
+
   return (
     <AnimatedDetailsDisclosure title="Edition">
       <CheckboxListField
@@ -24,14 +29,11 @@ export function EditionFacet({
         onChange={(values) =>
           dispatch(createEditionFilterChangedAction(values))
         }
-        onClear={() => dispatch(createEditionFilterChangedAction([]))}
-        options={distinctEditions
-          .filter((e) => e !== "All")
-          .map((e) => ({
-            count: editionCounts?.get(e) ?? 0,
-            label: e,
-            value: e,
-          }))}
+        options={distinctEditions.map((e) => ({
+          count: editionCounts.get(e) ?? 0,
+          label: e,
+          value: e,
+        }))}
       />
     </AnimatedDetailsDisclosure>
   );

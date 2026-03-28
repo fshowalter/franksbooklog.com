@@ -4,7 +4,7 @@ import { buildMultiSelectChips } from "~/components/filter-and-sort/facets/filte
 
 import { STATE_KEY } from "./kindReducer";
 
-export function buildKindFilterChip(
+export function buildKindFilterChips(
   values: readonly string[] | undefined,
 ): FilterChip[] {
   return buildMultiSelectChips({

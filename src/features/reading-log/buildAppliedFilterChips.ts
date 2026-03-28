@@ -1,7 +1,7 @@
 import type { FilterChip } from "~/components/filter-and-sort/container/FilterAndSortContainer";
 
 import { buildEditionFilterChip } from "~/components/filter-and-sort/facets/edition/editionFilterChip";
-import { buildKindFilterChip } from "~/components/filter-and-sort/facets/kind/kindFilterChip";
+import { buildKindFilterChips } from "~/components/filter-and-sort/facets/kind/kindFilterChips";
 import { buildReadingYearFilterChip } from "~/components/filter-and-sort/facets/reading-year/readingYearFilterChip";
 import { buildReviewedStatusFilterChip } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilterChip";
 import { buildTitleYearFilterChip } from "~/components/filter-and-sort/facets/title-year/titleYearFilterChip";
@@ -14,7 +14,7 @@ export function buildAppliedFilterChips(
 ): FilterChip[] {
   return [
     ...buildTitleFilterChip(filterValues.title),
-    ...buildKindFilterChip(filterValues.kind),
+    ...buildKindFilterChips(filterValues.kind),
     ...buildEditionFilterChip(filterValues.edition),
     ...buildTitleYearFilterChip(filterValues.titleYear),
     ...buildReadingYearFilterChip(filterValues.readingYear),

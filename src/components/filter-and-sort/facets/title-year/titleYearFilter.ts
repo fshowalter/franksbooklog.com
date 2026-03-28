@@ -1,6 +1,3 @@
-/**
- * Create a Work Year filter function
- */
 export function createTitleYearFilter<TValue extends { titleYear: string }>(
   filterValue?: [string, string],
 ) {

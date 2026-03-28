@@ -5,6 +5,7 @@ import { ReviewedStatusFacet } from "~/components/filter-and-sort/facets/reviewe
 import { TitleYearFacet } from "~/components/filter-and-sort/facets/title-year/TitleYearFacet";
 import { TitleFacet } from "~/components/filter-and-sort/facets/title/TitleFacet";
 
+import type { ReadingLogValue } from "./ReadingLog";
 import type {
   ReadingLogAction,
   ReadingLogFiltersValues,
@@ -16,20 +17,16 @@ export function Filters({
   distinctKinds,
   distinctReadingYears,
   distinctTitleYears,
-  editionCounts,
   filterValues,
-  kindCounts,
-  reviewedStatusCounts,
+  values,
 }: {
   dispatch: React.Dispatch<ReadingLogAction>;
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
   distinctTitleYears: readonly string[];
-  editionCounts?: Map<string, number>;
   filterValues: ReadingLogFiltersValues;
-  kindCounts?: Map<string, number>;
-  reviewedStatusCounts?: Map<string, number>;
+  values: readonly ReadingLogValue[];
 }): React.JSX.Element {
   return (
     <>
@@ -43,12 +40,12 @@ export function Filters({
         defaultValues={filterValues.kind}
         dispatch={dispatch}
         distinctKinds={distinctKinds}
-        kindCounts={kindCounts}
+        values={values}
       />
       <ReviewedStatusFacet
         defaultValues={filterValues.reviewedStatus}
         dispatch={dispatch}
-        statusCounts={reviewedStatusCounts}
+        values={values}
       />
       <ReadingYearFacet
         defaultValues={filterValues.readingYear}
@@ -59,7 +56,7 @@ export function Filters({
         defaultValues={filterValues.edition}
         dispatch={dispatch}
         distinctEditions={distinctEditions}
-        editionCounts={editionCounts}
+        values={values}
       />
     </>
   );
