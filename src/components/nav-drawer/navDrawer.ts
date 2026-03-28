@@ -18,9 +18,6 @@ class NavDrawer extends HTMLElement {
     const open = () => {
       navToggle.setAttribute("aria-expanded", "true");
       dialog.showModal();
-      requestAnimationFrame(() => {
-        dialog.querySelector<HTMLAnchorElement>("a[href]")?.focus();
-      });
     };
 
     const close = (returnFocus = false) => {
