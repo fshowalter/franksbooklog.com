@@ -1,17 +1,5 @@
 import { AnimatedDetailsDisclosure } from "~/components/animated-details-disclosure/AnimatedDetailsDisclosure";
 
-/**
- * AppliedFilters component displays active filters as removable chips
- * with a "Clear all" option. Hidden when no filters are active.
- *
- * Features:
- * - Individual chip removal via × button
- * - "Clear all" link to remove all filters
- * - Full keyboard support (Tab to chip, Enter/Space to remove)
- * - Proper ARIA attributes for accessibility
- * - Automatically hidden when filters array is empty
- */
-
 type FilterChip = {
   displayText: string; // Pre-assembled display string (e.g., "Novel", "Grade: A- to B+", "Search: dune")
   key: string;

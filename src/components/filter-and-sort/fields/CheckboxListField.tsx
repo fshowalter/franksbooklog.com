@@ -12,7 +12,6 @@ type CheckboxListFieldProps = {
   defaultValues?: readonly string[];
   label: string;
   onChange: (values: string[]) => void;
-  onClear?: () => void;
   options: readonly CheckboxListFieldOption[];
   showMoreThreshold?: number;
 };
@@ -33,7 +32,6 @@ export function CheckboxListField({
   defaultValues,
   label,
   onChange,
-  onClear,
   options,
   showMoreThreshold = 3,
 }: CheckboxListFieldProps): React.JSX.Element {
@@ -95,11 +93,7 @@ export function CheckboxListField({
   // RangeSliderField and GradeField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
     setSelectedValues([]);
-    if (onClear) {
-      onClear();
-    } else {
-      onChange([]);
-    }
+    onChange([]);
   };
 
   const handleShowMore = (): void => {

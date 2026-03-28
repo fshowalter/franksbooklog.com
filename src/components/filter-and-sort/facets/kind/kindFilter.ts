@@ -1,8 +1,3 @@
-/**
- * Counts items by kind.
- * @param values - Array of items to count
- * @returns Map from kind string to item count
- */
 export function createKindCountMap<TValue extends { kind: string }>(
   values: readonly TValue[],
 ): Map<string, number> {

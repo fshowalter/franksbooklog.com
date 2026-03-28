@@ -5,6 +5,7 @@ import { ReviewedStatusFacet } from "~/components/filter-and-sort/facets/reviewe
 import { TitleYearFacet } from "~/components/filter-and-sort/facets/title-year/TitleYearFacet";
 import { TitleFacet } from "~/components/filter-and-sort/facets/title/TitleFacet";
 
+import type { ReviewsValue } from "./Reviews";
 import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 
 /**
@@ -26,16 +27,14 @@ export function ReviewsFilters({
   distinctReviewYears,
   distinctTitleYears,
   filterValues,
-  kindCounts,
-  reviewedStatusCounts,
+  values,
 }: {
   dispatch: React.Dispatch<ReviewsAction>;
   distinctKinds: readonly string[];
   distinctReviewYears: readonly string[];
   distinctTitleYears: readonly string[];
   filterValues: ReviewsFiltersValues;
-  kindCounts?: Map<string, number>;
-  reviewedStatusCounts?: Map<string, number>;
+  values: readonly ReviewsValue[];
 }): React.JSX.Element {
   return (
     <>
@@ -49,13 +48,13 @@ export function ReviewsFilters({
         defaultValues={filterValues.kind}
         dispatch={dispatch}
         distinctKinds={distinctKinds}
-        kindCounts={kindCounts}
+        values={values}
       />
       <ReviewedStatusFacet
         defaultValues={filterValues.reviewedStatus}
         dispatch={dispatch}
         excludeNotReviewed={true}
-        statusCounts={reviewedStatusCounts}
+        values={values}
       />
       <GradeFacet defaultValues={filterValues.gradeValue} dispatch={dispatch} />
       <ReviewYearFacet

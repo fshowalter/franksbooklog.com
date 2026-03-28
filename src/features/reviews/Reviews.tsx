@@ -5,8 +5,6 @@ import type { GradeText, GradeValue } from "~/utils/grades";
 
 import { CoverList } from "~/components/cover-list/CoverList";
 import { FilterAndSortContainer } from "~/components/filter-and-sort/container/FilterAndSortContainer";
-import { createKindCountMap } from "~/components/filter-and-sort/facets/kind/kindFilter";
-import { createReviewedStatusCountMap } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
 import { PaginatedList } from "~/components/filter-and-sort/paginated-list/PaginatedList";
 import { usePaginatedValues } from "~/hooks/usePaginatedValues";
 import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
@@ -115,9 +113,6 @@ export function Reviews({
     state.pendingFilterValues,
   );
 
-  const reviewedStatusCounts = createReviewedStatusCountMap(state.values);
-  const kindCounts = createKindCountMap(state.values);
-
   const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
   return (
@@ -131,8 +126,7 @@ export function Reviews({
           distinctReviewYears={distinctReviewYears}
           distinctTitleYears={distinctTitleYears}
           filterValues={state.pendingFilterValues}
-          kindCounts={kindCounts}
-          reviewedStatusCounts={reviewedStatusCounts}
+          values={state.values}
         />
       }
       pendingFilteredCount={pendingFilteredCount}
