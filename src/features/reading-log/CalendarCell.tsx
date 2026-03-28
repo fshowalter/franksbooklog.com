@@ -1,8 +1,8 @@
 import { ListItemAuthors } from "~/components/list-item-authors/ListItemAuthors";
+import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { BarGradient } from "~/components/react/bar-gradient/BarGradient";
 import { CoverListItemImageConfig } from "~/components/react/cover-list/CoverListItem";
 import { CoverListItemCover } from "~/components/react/cover-list/CoverListItemCover";
-import { ListItemTitle } from "~/components/react/list-item-title/ListItemTitle";
 
 import type { CalendarCellData } from "./useCalendar";
 

@@ -4,8 +4,8 @@ import type { MostReadAuthor } from "~/collections/stats";
 import CoverList from "~/components/astro/cover-list/CoverList.astro";
 import CoverListItem from "~/components/astro/cover-list/CoverListItem.astro";
 import ListItemEdition from "~/components/astro/list-item-edition/ListItemEdition.astro";
-import ListItemReviewDate from "~/components/astro/list-item-review-date/ListItemReviewDate.astro";
-import ListItemTitle from "~/components/astro/list-item-title/ListItemTitle.astro";
+import { ListItemReviewDate } from "~/components/list-item-review-date/ListItemReviewDate";
+import { ListItemTitle } from "~/components/list-item-title/ListItemTitle";
 import { toDisplayDate } from "~/utils/toDisplayDate";
 
 type Props = {
