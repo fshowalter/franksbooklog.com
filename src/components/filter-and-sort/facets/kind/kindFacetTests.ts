@@ -16,6 +16,11 @@ type KindItem = {
   title: string;
 };
 
+export async function clickKindOption(user: UserEvent, value: string) {
+  const filter = getAnimatedDetailsDisclosureElement("Kind");
+  await clickCheckboxListFieldOption(filter, user, value);
+}
+
 /**
  * Shared test suite for the kind filter facet.
  *
@@ -120,9 +125,4 @@ export function kindFacetTests(
       expect(within(list).getByText("A Collection")).toBeInTheDocument();
     });
   });
-}
-
-async function clickKindOption(user: UserEvent, value: string) {
-  const filter = getAnimatedDetailsDisclosureElement("Kind");
-  await clickCheckboxListFieldOption(filter, user, value);
 }

@@ -29,13 +29,11 @@ export function EditionFacet<
         onChange={(values) =>
           dispatch(createEditionFilterChangedAction(values))
         }
-        options={distinctEditions
-          .filter((e) => e !== "All")
-          .map((e) => ({
-            count: editionCounts?.get(e) ?? 0,
-            label: e,
-            value: e,
-          }))}
+        options={distinctEditions.map((e) => ({
+          count: editionCounts.get(e) ?? 0,
+          label: e,
+          value: e,
+        }))}
       />
     </AnimatedDetailsDisclosure>
   );

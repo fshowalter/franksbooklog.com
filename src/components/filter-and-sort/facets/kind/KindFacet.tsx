@@ -28,7 +28,7 @@ export function KindFacet<
         label="Kind"
         onChange={(values) => dispatch(createKindFilterChangedAction(values))}
         options={distinctKinds.map((e) => ({
-          count: kindCounts?.get(e) ?? 0,
+          count: kindCounts.get(e) ?? 0,
           label: e,
           value: e,
         }))}

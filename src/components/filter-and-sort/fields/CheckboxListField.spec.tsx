@@ -31,7 +31,6 @@ const createDefaultProps = (
   defaultValues?: string[];
   label: string;
   onChange: (values: string[]) => void;
-  onClear?: () => void;
   options: CheckboxListFieldOption[];
   showMoreThreshold?: number;
 } => ({
@@ -407,22 +406,6 @@ describe("CheckboxListField", () => {
       );
 
       expect(onChange).toHaveBeenCalledExactlyOnceWith([]);
-    });
-
-    it('calls onClear callback when "Clear" is clicked', async ({ expect }) => {
-      const onClear = vi.fn();
-      const user = userEvent.setup();
-      const props = createDefaultProps({
-        defaultValues: ["action"],
-        onClear,
-      });
-      render(<CheckboxListField {...props} />);
-
-      await user.click(
-        screen.getByRole("button", { name: "Clear all Test Label selections" }),
-      );
-
-      expect(onClear).toHaveBeenCalledOnce();
     });
 
     it('shows both "Show more" and "Clear" when both are applicable', async ({
