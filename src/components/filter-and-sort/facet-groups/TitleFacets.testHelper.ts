@@ -5,27 +5,6 @@ import { screen } from "@testing-library/react";
 import { fillTextField } from "~/components/filter-and-sort/fields/TextField.testHelper";
 
 /**
- * Test helper function to click a kind filter checkbox option.
- * Finds the checkbox by its value attribute (not accessible name) to avoid
- * matching issues with count text appended to labels e.g. "Novel (0)".
- *
- * @param user - User event instance for interaction simulation
- * @param value - The kind value (checkbox value attribute) to click
- */
-export async function clickKindFilterOption(user: UserEvent, value: string) {
-  const checkboxes = screen.getAllByRole("checkbox");
-  const checkbox = checkboxes.find(
-    (cb) => (cb as HTMLInputElement).value === value,
-  );
-  if (!checkbox) {
-    throw new Error(
-      `Unable to find kind checkbox with value "${value}". Available: ${checkboxes.map((cb) => (cb as HTMLInputElement).value).join(", ")}`,
-    );
-  }
-  await user.click(checkbox);
-}
-
-/**
  * Test helper function to fill the title filter field.
  *
  * @param user - User event instance for interaction simulation
