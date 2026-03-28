@@ -6,7 +6,7 @@ import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 
 const CoverImageConfig = {
   sizes:
-    "(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)",
+    "(min-width: 1220px) 100vw, (min-width: 640px) calc(11.07vw + 1067px), 709px",
   width: 248,
 };
 
