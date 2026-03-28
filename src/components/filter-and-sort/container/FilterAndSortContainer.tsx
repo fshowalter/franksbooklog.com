@@ -212,11 +212,10 @@ export function FilterAndSortContainer<T extends string, V>({
               overflow-y-auto border-0 bg-default p-0 text-left drop-shadow-2xl
               transition-all transition-discrete duration-600
               ease-[cubic-bezier(0.19,1,0.22,1)]
-              backdrop:bg-[#000]/40 backdrop:opacity-0
-              backdrop:transition-opacity backdrop:transition-discrete
-              backdrop:duration-200
+              backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
+              backdrop:transition-discrete backdrop:duration-200
               open:flex open:translate-x-0
-              open:backdrop:opacity-100
+              open:backdrop:opacity-40
               tablet:gap-y-10
               starting:open:transform-[translateX(100%)]
               starting:open:backdrop:opacity-0
@@ -331,7 +330,7 @@ export function FilterAndSortContainer<T extends string, V>({
                               type="radio"
                               value={value}
                             />
-                            <span className="text-sm">{label}</span>
+                            <span className="font-sans text-base">{label}</span>
                           </label>
                         ))}
                       </div>
