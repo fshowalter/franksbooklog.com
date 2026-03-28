@@ -1,24 +1,24 @@
 import {
   authorSortComparators,
   authorSortOptions,
-} from "~/components/react/filter-and-sort/facets/author/authorSort";
-import { createSorter } from "~/components/react/filter-and-sort/facets/createSorter";
+} from "~/components/filter-and-sort/facets/author/authorSort";
+import { createSorter } from "~/components/filter-and-sort/facets/createSorter";
 import {
   gradeSortComparators,
   gradeSortOptions,
-} from "~/components/react/filter-and-sort/facets/grade/gradeSort";
+} from "~/components/filter-and-sort/facets/grade/gradeSort";
 import {
   reviewYearSortComparators,
   reviewYearSortOptions,
-} from "~/components/react/filter-and-sort/facets/review-year/reviewYearSort";
+} from "~/components/filter-and-sort/facets/review-year/reviewYearSort";
 import {
   titleYearSortComparators,
   titleYearSortOptions,
-} from "~/components/react/filter-and-sort/facets/title-year/titleYearSort";
+} from "~/components/filter-and-sort/facets/title-year/titleYearSort";
 import {
   titleSortComparators,
   titleSortOptions,
-} from "~/components/react/filter-and-sort/facets/title/titleSort";
+} from "~/components/filter-and-sort/facets/title/titleSort";
 
 import type { ReviewsValue } from "./Reviews";
 

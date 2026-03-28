@@ -1,22 +1,22 @@
-import type { FilterAndSortContainerAction } from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-import type { EditionFilterChangedAction } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
-import type { KindFilterChangedAction } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
-import type { ReadingYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
-import type { ReviewedStatusFilterChangedAction } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
-import type { TitleYearFilterChangedAction } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
-import type { TitleFilterChangedAction } from "~/components/react/filter-and-sort/facets/title/titleReducer";
+import type { FilterAndSortContainerAction } from "~/components/filter-and-sort/container/filterAndSortContainerReducer";
+import type { EditionFilterChangedAction } from "~/components/filter-and-sort/facets/edition/editionReducer";
+import type { KindFilterChangedAction } from "~/components/filter-and-sort/facets/kind/kindReducer";
+import type { ReadingYearFilterChangedAction } from "~/components/filter-and-sort/facets/reading-year/readingYearReducer";
+import type { ReviewedStatusFilterChangedAction } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
+import type { TitleYearFilterChangedAction } from "~/components/filter-and-sort/facets/title-year/titleYearReducer";
+import type { TitleFilterChangedAction } from "~/components/filter-and-sort/facets/title/titleReducer";
 
 import {
   createInitialFilterAndSortContainerState,
   filterAndSortContainerReducer,
-} from "~/components/react/filter-and-sort/container/filterAndSortContainerReducer";
-import { composeReducers } from "~/components/react/filter-and-sort/facets/composeReducers";
-import { editionFacetReducer } from "~/components/react/filter-and-sort/facets/edition/editionReducer";
-import { kindFacetReducer } from "~/components/react/filter-and-sort/facets/kind/kindReducer";
-import { readingYearFacetReducer } from "~/components/react/filter-and-sort/facets/reading-year/readingYearReducer";
-import { reviewedStatusFacetReducer } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
-import { titleYearFacetReducer } from "~/components/react/filter-and-sort/facets/title-year/titleYearReducer";
-import { titleFacetReducer } from "~/components/react/filter-and-sort/facets/title/titleReducer";
+} from "~/components/filter-and-sort/container/filterAndSortContainerReducer";
+import { composeReducers } from "~/components/filter-and-sort/facets/composeReducers";
+import { editionFacetReducer } from "~/components/filter-and-sort/facets/edition/editionReducer";
+import { kindFacetReducer } from "~/components/filter-and-sort/facets/kind/kindReducer";
+import { readingYearFacetReducer } from "~/components/filter-and-sort/facets/reading-year/readingYearReducer";
+import { reviewedStatusFacetReducer } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusReducer";
+import { titleYearFacetReducer } from "~/components/filter-and-sort/facets/title-year/titleYearReducer";
+import { titleFacetReducer } from "~/components/filter-and-sort/facets/title/titleReducer";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogSort } from "./sortReadingLog";

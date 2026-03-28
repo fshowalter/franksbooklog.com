@@ -1,18 +1,18 @@
 import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import { getGroupedAvatarList } from "~/components/react/avatar-list/AvatarList.testHelper";
 import {
   clickClearFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/react/filter-and-sort/container/FilterAndSortContainer.testHelper";
+} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import {
   fillNameFilter,
   getNameFilter,
   nameFacetTests,
-} from "~/components/react/filter-and-sort/facets/name/nameFacetTests";
+} from "~/components/filter-and-sort/facets/name/nameFacetTests";
+import { getGroupedAvatarList } from "~/features/authors/GroupedAvatarList.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";

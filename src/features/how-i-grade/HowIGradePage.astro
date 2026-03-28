@@ -1,8 +1,8 @@
 ---
 import { getEntry } from "astro:content";
 
-import Article from "~/components/astro/article/Article.astro";
-import HeroLayout from "~/components/astro/layout/HeroLayout.astro";
+import Article from "~/components/article/Article.astro";
+import HeroLayout from "~/components/layout/HeroLayout.astro";
 
 const slug = "how-i-grade";
 const page = await getEntry("pages", slug);

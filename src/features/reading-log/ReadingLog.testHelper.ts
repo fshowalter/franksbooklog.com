@@ -2,7 +2,7 @@ import type { UserEvent } from "@testing-library/user-event";
 
 import { screen, within } from "@testing-library/react";
 
-import { fillYearField } from "~/components/react/filter-and-sort/fields/YearField.testHelper";
+import { fillYearField } from "~/components/filter-and-sort/fields/YearField.testHelper";
 
 export async function clickEditionFilterOption(user: UserEvent, value: string) {
   const editionFilter = getEditionFilter();

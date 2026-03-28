@@ -1,4 +1,4 @@
-import { AvatarListItem } from "~/components/react/avatar-list/AvatarList";
+import { AvatarListItem } from "~/features/authors/GroupedAvatarList";
 
 import type { AuthorsValue } from "./Authors";
 

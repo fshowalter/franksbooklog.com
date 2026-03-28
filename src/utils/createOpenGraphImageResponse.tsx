@@ -1,5 +1,5 @@
 import { getOpenGraphBackdrop } from "~/assets/backdrops";
-import { OpenGraphImage } from "~/components/react/open-graph-image/OpenGraphImage";
+import { OpenGraphImage } from "~/components/open-graph-image/OpenGraphImage";
 import { componentToImageResponse } from "~/utils/componentToImageResponse";
 
 export async function createOpenGraphImageResponse(

@@ -1,10 +1,10 @@
-import { createEditionFilter } from "~/components/react/filter-and-sort/facets/edition/editionFilter";
-import { filterSortedValues } from "~/components/react/filter-and-sort/facets/filterSortedValues";
-import { createKindFilter } from "~/components/react/filter-and-sort/facets/kind/kindFilter";
-import { createReadingYearFilter } from "~/components/react/filter-and-sort/facets/reading-year/readingYearFilter";
-import { createReviewedStatusFilter } from "~/components/react/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
-import { createTitleYearFilter } from "~/components/react/filter-and-sort/facets/title-year/titleYearFilter";
-import { createTitleFilter } from "~/components/react/filter-and-sort/facets/title/titleFilter";
+import { createEditionFilter } from "~/components/filter-and-sort/facets/edition/editionFilter";
+import { filterSortedValues } from "~/components/filter-and-sort/facets/filterSortedValues";
+import { createKindFilter } from "~/components/filter-and-sort/facets/kind/kindFilter";
+import { createReadingYearFilter } from "~/components/filter-and-sort/facets/reading-year/readingYearFilter";
+import { createReviewedStatusFilter } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilter";
+import { createTitleYearFilter } from "~/components/filter-and-sort/facets/title-year/titleYearFilter";
+import { createTitleFilter } from "~/components/filter-and-sort/facets/title/titleFilter";
 
 import type { ReadingLogValue } from "./ReadingLog";
 import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";

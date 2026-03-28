@@ -1,5 +1,5 @@
-import { createSorter } from "~/components/react/filter-and-sort/facets/createSorter";
-import { readingDateSortComparators } from "~/components/react/filter-and-sort/facets/reading-year/readingYearSort";
+import { createSorter } from "~/components/filter-and-sort/facets/createSorter";
+import { readingDateSortComparators } from "~/components/filter-and-sort/facets/reading-year/readingYearSort";
 
 import type { ReadingLogValue } from "./ReadingLog";
 

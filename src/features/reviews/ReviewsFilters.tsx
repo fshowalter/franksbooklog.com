@@ -1,9 +1,9 @@
-import { GradeFacet } from "~/components/react/filter-and-sort/facets/grade/GradeFacet";
-import { KindFacet } from "~/components/react/filter-and-sort/facets/kind/KindFacet";
-import { ReviewYearFacet } from "~/components/react/filter-and-sort/facets/review-year/ReviewYearFacet";
-import { ReviewedStatusFacet } from "~/components/react/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
-import { TitleYearFacet } from "~/components/react/filter-and-sort/facets/title-year/TitleYearFacet";
-import { TitleFacet } from "~/components/react/filter-and-sort/facets/title/TitleFacet";
+import { GradeFacet } from "~/components/filter-and-sort/facets/grade/GradeFacet";
+import { KindFacet } from "~/components/filter-and-sort/facets/kind/KindFacet";
+import { ReviewYearFacet } from "~/components/filter-and-sort/facets/review-year/ReviewYearFacet";
+import { ReviewedStatusFacet } from "~/components/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet";
+import { TitleYearFacet } from "~/components/filter-and-sort/facets/title-year/TitleYearFacet";
+import { TitleFacet } from "~/components/filter-and-sort/facets/title/TitleFacet";
 
 import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 
