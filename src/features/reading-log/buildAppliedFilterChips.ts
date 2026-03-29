@@ -1,11 +1,11 @@
 import type { FilterChip } from "~/components/filter-and-sort/container/FilterAndSortContainer";
 
-import { buildEditionFilterChip } from "~/components/filter-and-sort/facets/edition/editionFilterChip";
-import { buildKindFilterChips } from "~/components/filter-and-sort/facets/kind/kindFilterChips";
-import { buildReadingYearFilterChip } from "~/components/filter-and-sort/facets/reading-year/readingYearFilterChip";
-import { buildReviewedStatusFilterChip } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilterChip";
-import { buildTitleYearFilterChip } from "~/components/filter-and-sort/facets/title-year/titleYearFilterChip";
-import { buildTitleFilterChip } from "~/components/filter-and-sort/facets/title/titleFilterChip";
+import { buildEditionFilterChip } from "~/components/filter-and-sort/facets/edition/buildEditionFilterChip";
+import { buildKindFilterChips } from "~/components/filter-and-sort/facets/kind/buildKindFilterChips";
+import { buildReadingYearFilterChip } from "~/components/filter-and-sort/facets/reading-year/buildReadingYearFilterChip";
+import { buildReviewedStatusFilterChip } from "~/components/filter-and-sort/facets/reviewed-status/buildReviewedStatusFilterChip";
+import { buildTitleYearFilterChip } from "~/components/filter-and-sort/facets/title-year/buildTitleYearFilterChip";
+import { buildTitleFilterChip } from "~/components/filter-and-sort/facets/title/buildTitleFilterChip";
 
 import type { ReadingLogFiltersValues } from "./readingLogReducer";
 

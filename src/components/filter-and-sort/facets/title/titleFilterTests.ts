@@ -5,32 +5,30 @@ import { describe, it } from "vitest";
 
 import {
   clickCloseFilters,
-  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { fillTextField } from "~/components/filter-and-sort/fields/TextField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type TitleItem = {
-  sortTitle: string;
-  title: string;
-};
+import type { FilterableValue } from "./titleFilter";
+
+type TitleItem = FilterableValue;
 
 /**
  * Filter-only sub-suite for title. Use this for features that have a title
  * filter but no title sort (e.g. ReadingLog).
  */
-export function titleFilterFacetTests(
+export function titleFilterTests(
   renderItems: (items: TitleItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("title filter", () => {
+  describe("titleFilter", () => {
     it("filters to matching titles", async ({ expect }) => {
       renderItems([
-        { sortTitle: "dracula", title: "Dracula" },
-        { sortTitle: "the shining", title: "The Shining" },
-        { sortTitle: "pet sematary", title: "Pet Sematary" },
+        { title: "Dracula" },
+        { title: "The Shining" },
+        { title: "Pet Sematary" },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -45,10 +43,7 @@ export function titleFilterFacetTests(
     });
 
     it("resets when closing drawer without applying", async ({ expect }) => {
-      renderItems([
-        { sortTitle: "dracula", title: "Dracula" },
-        { sortTitle: "the shining", title: "The Shining" },
-      ]);
+      renderItems([{ title: "Dracula" }, { title: "The Shining" }]);
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
@@ -73,10 +68,7 @@ export function titleFilterFacetTests(
 
   describe("title filter chip", () => {
     it("shows search chip after applying filter", async ({ expect }) => {
-      renderItems([
-        { sortTitle: "dracula", title: "Dracula" },
-        { sortTitle: "the shining", title: "The Shining" },
-      ]);
+      renderItems([{ title: "Dracula" }, { title: "The Shining" }]);
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
@@ -90,10 +82,7 @@ export function titleFilterFacetTests(
     });
 
     it("removing title chip defers list update", async ({ expect }) => {
-      renderItems([
-        { sortTitle: "dracula", title: "Dracula" },
-        { sortTitle: "the shining", title: "The Shining" },
-      ]);
+      renderItems([{ title: "Dracula" }, { title: "The Shining" }]);
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
@@ -116,57 +105,6 @@ export function titleFilterFacetTests(
 
       await clickViewResults(user);
       expect(within(list).getByText("The Shining")).toBeInTheDocument();
-    });
-  });
-}
-
-/**
- * Sort-only sub-suite for title. Use this for features that have title sort
- * (Reviews, AuthorTitles).
- */
-export function titleSortFacetTests(
-  renderItems: (items: TitleItem[]) => void,
-  getList: () => HTMLElement,
-) {
-  describe("title sort", () => {
-    it("sorts A → Z", async ({ expect }) => {
-      renderItems([
-        { sortTitle: "zebra", title: "Zebra Book" },
-        { sortTitle: "alpha", title: "Alpha Book" },
-        { sortTitle: "middle", title: "Middle Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Title (A → Z)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Alpha Book")).toBeLessThan(
-        text.indexOf("Middle Book"),
-      );
-      expect(text.indexOf("Middle Book")).toBeLessThan(
-        text.indexOf("Zebra Book"),
-      );
-    });
-
-    it("sorts Z → A", async ({ expect }) => {
-      renderItems([
-        { sortTitle: "alpha", title: "Alpha Book" },
-        { sortTitle: "zebra", title: "Zebra Book" },
-        { sortTitle: "middle", title: "Middle Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Title (Z → A)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Zebra Book")).toBeLessThan(
-        text.indexOf("Middle Book"),
-      );
-      expect(text.indexOf("Middle Book")).toBeLessThan(
-        text.indexOf("Alpha Book"),
-      );
     });
   });
 }

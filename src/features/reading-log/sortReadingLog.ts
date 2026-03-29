@@ -1,12 +1,14 @@
+import type { ReadingDateSortKeys } from "~/components/filter-and-sort/facets/reading-date/readingDateSort";
+
 import { createSorter } from "~/components/filter-and-sort/facets/createSorter";
-import { readingDateSortComparators } from "~/components/filter-and-sort/facets/reading-year/readingYearSort";
+import { readingDateSortComparators } from "~/components/filter-and-sort/facets/reading-date/readingDateSort";
 
 import type { ReadingLogValue } from "./ReadingLog";
 
 /**
  * Sort type for viewings.
  */
-export type ReadingLogSort = "reading-date-asc" | "reading-date-desc";
+export type ReadingLogSort = ReadingDateSortKeys;
 
 /**
  * Sorter function for viewings, supporting chronological sorting by viewing date.

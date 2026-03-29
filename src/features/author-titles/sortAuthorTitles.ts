@@ -1,12 +1,17 @@
+import type { GradeSortKeys } from "~/components/filter-and-sort/facets/grade/gradeSort";
+import type { ReviewDateSortKeys } from "~/components/filter-and-sort/facets/review-date/reviewDateSort";
+import type { TitleYearSortKeys } from "~/components/filter-and-sort/facets/title-year/titleYearSort";
+import type { TitleSortKeys } from "~/components/filter-and-sort/facets/title/titleSort";
+
 import { createSorter } from "~/components/filter-and-sort/facets/createSorter";
 import {
   gradeSortComparators,
   gradeSortOptions,
 } from "~/components/filter-and-sort/facets/grade/gradeSort";
 import {
-  reviewYearSortComparators,
-  reviewYearSortOptions,
-} from "~/components/filter-and-sort/facets/review-year/reviewYearSort";
+  reviewDateSortComparators,
+  reviewDateSortOptions,
+} from "~/components/filter-and-sort/facets/review-date/reviewDateSort";
 import {
   titleYearSortComparators,
   titleYearSortOptions,
@@ -22,14 +27,10 @@ import type { AuthorTitlesValue } from "./AuthorTitles";
  * Sort type for author titles.
  */
 export type AuthorTitlesSort =
-  | "grade-asc"
-  | "grade-desc"
-  | "review-date-asc"
-  | "review-date-desc"
-  | "title-asc"
-  | "title-desc"
-  | "work-year-asc"
-  | "work-year-desc";
+  | GradeSortKeys
+  | ReviewDateSortKeys
+  | TitleSortKeys
+  | TitleYearSortKeys;
 
 /**
  * Sorter function for author titles, supporting grade, review date, title,
@@ -40,7 +41,7 @@ export const sortAuthorTitles = createSorter<
   AuthorTitlesSort
 >({
   ...gradeSortComparators,
-  ...reviewYearSortComparators,
+  ...reviewDateSortComparators,
   ...titleSortComparators,
   ...titleYearSortComparators,
 });
@@ -49,5 +50,5 @@ export const sortOptions = [
   ...titleSortOptions,
   ...gradeSortOptions,
   ...titleYearSortOptions,
-  ...reviewYearSortOptions,
+  ...reviewDateSortOptions,
 ];

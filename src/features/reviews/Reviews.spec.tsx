@@ -3,25 +3,17 @@ import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
 import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { authorFacetTests } from "~/components/filter-and-sort/facets/author/authorFacetTests";
-import {
-  gradeFilterFacetTests,
-  gradeSortFacetTests,
-} from "~/components/filter-and-sort/facets/grade/gradeFacetTests";
-import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
-import {
-  reviewYearFilterFacetTests,
-  reviewYearSortFacetTests,
-} from "~/components/filter-and-sort/facets/review-year/reviewYearFacetTests";
-import { reviewedStatusFacetTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
-import {
-  titleYearFilterFacetTests,
-  titleYearSortFacetTests,
-} from "~/components/filter-and-sort/facets/title-year/titleYearFacetTests";
-import {
-  titleFilterFacetTests,
-  titleSortFacetTests,
-} from "~/components/filter-and-sort/facets/title/titleFacetTests";
+import { authorSortTests } from "~/components/filter-and-sort/facets/author/authorSortTests";
+import { gradeFilterTests } from "~/components/filter-and-sort/facets/grade/gradeFilterTests";
+import { gradeSortTests } from "~/components/filter-and-sort/facets/grade/gradeSortTests";
+import { kindFilterTests } from "~/components/filter-and-sort/facets/kind/kindFilterTests";
+import { reviewDateSortTests } from "~/components/filter-and-sort/facets/review-date/reviewDateSortTests";
+import { reviewYearFilterTests } from "~/components/filter-and-sort/facets/review-year/reviewYearFilterTests";
+import { reviewedStatusFilterTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilterTests";
+import { titleYearFilterTests } from "~/components/filter-and-sort/facets/title-year/titleYearFilterTests";
+import { titleYearSortTests } from "~/components/filter-and-sort/facets/title-year/titleYearSortTests";
+import { titleFilterTests } from "~/components/filter-and-sort/facets/title/titleFilterTests";
+import { titleSortTests } from "~/components/filter-and-sort/facets/title/titleSortTests";
 import { paginationTests } from "~/components/filter-and-sort/paginated-list/paginationTests";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
@@ -82,28 +74,26 @@ describe("Reviews", () => {
     vi.useRealTimers();
   });
 
-  titleFilterFacetTests((items) => {
+  titleFilterTests((items) => {
+    const reviews = createReviewsValues(items.map(({ title }) => ({ title })));
+    render(<Reviews {...baseProps} values={reviews} />);
+  }, getCoverList);
+
+  titleSortTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ sortTitle, title }) => ({ sortTitle, title })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
   }, getCoverList);
 
-  titleSortFacetTests((items) => {
-    const reviews = createReviewsValues(
-      items.map(({ sortTitle, title }) => ({ sortTitle, title })),
-    );
-    render(<Reviews {...baseProps} values={reviews} />);
-  }, getCoverList);
-
-  kindFacetTests((items) => {
+  kindFilterTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ kind, title }) => ({ kind, title })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
   }, getCoverList);
 
-  gradeFilterFacetTests((items) => {
+  gradeFilterTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ grade, gradeValue, title }) => ({
         grade,
@@ -114,10 +104,9 @@ describe("Reviews", () => {
     render(<Reviews {...baseProps} values={reviews} />);
   }, getCoverList);
 
-  gradeSortFacetTests((items) => {
+  gradeSortTests((items) => {
     const reviews = createReviewsValues(
-      items.map(({ grade, gradeValue, title }) => ({
-        grade,
+      items.map(({ gradeValue, title }) => ({
         gradeValue,
         title,
       })),
@@ -125,7 +114,7 @@ describe("Reviews", () => {
     render(<Reviews {...baseProps} values={reviews} />);
   }, getCoverList);
 
-  titleYearFilterFacetTests({
+  titleYearFilterTests({
     distinctTitleYears: baseProps.distinctTitleYears,
     getList: getCoverList,
     renderItems: (items) => {
@@ -136,7 +125,7 @@ describe("Reviews", () => {
     },
   });
 
-  titleYearSortFacetTests({
+  titleYearSortTests({
     getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
@@ -146,13 +135,12 @@ describe("Reviews", () => {
     },
   });
 
-  reviewYearFilterFacetTests({
+  reviewYearFilterTests({
     distinctReviewYears: baseProps.distinctReviewYears,
     getList: getCoverList,
     renderItems: (items) => {
       const reviews = createReviewsValues(
-        items.map(({ reviewSequence, reviewYear, title }) => ({
-          reviewSequence,
+        items.map(({ reviewYear, title }) => ({
           reviewYear,
           title,
         })),
@@ -161,7 +149,7 @@ describe("Reviews", () => {
     },
   });
 
-  reviewYearSortFacetTests((items) => {
+  reviewDateSortTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ reviewSequence, reviewYear, title }) => ({
         reviewSequence,
@@ -172,24 +160,22 @@ describe("Reviews", () => {
     render(<Reviews {...baseProps} values={reviews} />);
   }, getCoverList);
 
-  reviewedStatusFacetTests((items) => {
+  reviewedStatusFilterTests((items) => {
     const reviews = createReviewsValues(
-      items.map(({ abandoned, grade, gradeValue, title }) => ({
+      items.map(({ abandoned, title }) => ({
         abandoned,
-        grade,
-        gradeValue,
         title,
       })),
     );
     render(<Reviews {...baseProps} values={reviews} />);
   }, getCoverList);
 
-  authorFacetTests((items) => {
+  authorSortTests((items) => {
     const reviews = createReviewsValues(
       items.map(({ authors, title }) => ({
         authors: authors.map((a) => ({
-          name: a.name,
-          notes: a.notes,
+          name: a.sortName,
+          notes: undefined,
           sortName: a.sortName,
         })),
         title,

@@ -1,19 +1,17 @@
+import type { UserEvent } from "@testing-library/user-event";
+
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
-
-import type { GradeText, GradeValue } from "~/utils/grades";
 
 import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { clickReviewedStatusFilterOption } from "~/components/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type ReviewedStatusItem = {
-  abandoned: boolean;
-  grade?: GradeText;
-  gradeValue?: GradeValue;
+import type { FilterableValue } from "./reviewedStatusFilter";
+
+type ReviewedStatusItem = FilterableValue & {
   title: string;
 };
 
@@ -28,17 +26,15 @@ type ReviewedStatusItem = {
  * @example — with custom container (e.g. ReadingLog calendar)
  * reviewedStatusFacetTests((items) => { render(...) }, getCalendar);
  */
-export function reviewedStatusFacetTests(
+export function reviewedStatusFilterTests(
   renderItems: (items: ReviewedStatusItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("reviewed status filter", () => {
+  describe("reviewedStatusFilter", () => {
     it("filters to abandoned items", async ({ expect }) => {
       renderItems([
         {
           abandoned: true,
-          grade: "Abandoned",
-          gradeValue: 0,
           title: "Abandoned Book",
         },
         { abandoned: false, title: "Normal Book" },
@@ -58,8 +54,6 @@ export function reviewedStatusFacetTests(
       renderItems([
         {
           abandoned: true,
-          grade: "Abandoned",
-          gradeValue: 0,
           title: "Abandoned Book",
         },
         { abandoned: false, title: "Normal Book" },
@@ -76,4 +70,20 @@ export function reviewedStatusFacetTests(
       ).toBeInTheDocument();
     });
   });
+}
+
+async function clickReviewedStatusFilterOption(
+  user: UserEvent,
+  status: string,
+) {
+  const checkboxes = screen.getAllByRole("checkbox");
+  const checkbox = checkboxes.find(
+    (cb) => (cb as HTMLInputElement).value === status,
+  );
+  if (!checkbox) {
+    throw new Error(
+      `Unable to find status checkbox with value "${status}". Available: ${checkboxes.map((cb) => (cb as HTMLInputElement).value).join(", ")}`,
+    );
+  }
+  await user.click(checkbox);
 }

@@ -1,16 +1,16 @@
-type Filters = { reviewedStatus?: readonly string[] };
-
 // abandoned: boolean is a computed field added at the props layer.
 // For reviews/author-titles: abandoned = grade === "Abandoned".
 // For reading-log: abandoned = progress === "Abandoned".
 // The filter does not depend on the raw progress string or grade string.
-type Value = {
+export type FilterableValue = {
   abandoned: boolean;
   reviewed?: boolean;
 };
 
+type Filters = { reviewedStatus?: readonly string[] };
+
 export function createReviewedStatusCountMap<
-  TValue extends Value,
+  TValue extends FilterableValue,
   TFilters extends Filters,
 >(
   values: readonly TValue[],
@@ -39,7 +39,7 @@ export function createReviewedStatusCountMap<
  * @param filterValue - Array of status strings to match
  * @returns Filter function or undefined if no filter value
  */
-export function createReviewedStatusFilter<TValue extends Value>(
+export function createReviewedStatusFilter<TValue extends FilterableValue>(
   filters: Filters,
 ) {
   const filterValue = filters.reviewedStatus;
@@ -50,7 +50,7 @@ export function createReviewedStatusFilter<TValue extends Value>(
   };
 }
 
-function getStatus(value: Value): string {
+function getStatus(value: FilterableValue): string {
   if (value.abandoned) return "Abandoned";
   return value.reviewed ? "Reviewed" : "Not Reviewed";
 }

@@ -1,11 +1,9 @@
 import { render } from "@testing-library/react";
 import { afterEach, beforeEach, describe, vi } from "vitest";
 
-import {
-  nameFacetFilterTests,
-  nameFacetSortTests,
-} from "~/components/filter-and-sort/facets/name/nameFacetTests";
-import { reviewCountFacetSortTests } from "~/components/filter-and-sort/facets/review-count/reviewCountFacetTests";
+import { nameFilterTests } from "~/components/filter-and-sort/facets/name/nameFilterTests";
+import { nameSortTests } from "~/components/filter-and-sort/facets/name/nameSortTests";
+import { reviewCountSortTests } from "~/components/filter-and-sort/facets/review-count/reviewCountSortTests";
 import { getGroupedAvatarList } from "~/features/authors/GroupedAvatarList.testHelper";
 
 import type { AuthorsProps, AuthorsValue } from "./Authors";
@@ -43,21 +41,21 @@ describe("Authors", () => {
     vi.useRealTimers();
   });
 
-  nameFacetFilterTests((items) => {
+  nameFilterTests((items) => {
     const authors = items.map(({ name, sortName }) =>
       createAuthorValue(sortName, { name }),
     );
     render(<Authors {...baseProps} values={authors} />);
   });
 
-  nameFacetSortTests((items) => {
+  nameSortTests((items) => {
     const authors = items.map(({ name, sortName }) =>
       createAuthorValue(sortName, { name }),
     );
     render(<Authors {...baseProps} values={authors} />);
   });
 
-  reviewCountFacetSortTests((items) => {
+  reviewCountSortTests((items) => {
     const authors = items.map(({ name, reviewCount }) =>
       createAuthorValue(name, { reviewCount }),
     );

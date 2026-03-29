@@ -1,73 +1,15 @@
-import type { UserEvent } from "@testing-library/user-event";
-
 import { within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import {
-  clickSortOption,
-  clickToggleFilters,
-  clickViewResults,
-} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { fillYearField } from "~/components/filter-and-sort/fields/YearField.testHelper";
-import {
-  clickPreviousMonthButton,
-  getCalendar,
-  queryPreviousMonthButton,
-} from "~/features/reading-log/ReadingLog.testHelper";
+import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type ReadingYearFilterItem = {
+import type { SortableByReadingDate } from "./readingDateSort";
+
+type ReadingDateItem = SortableByReadingDate & {
   readingDate: string;
-  readingYear: string;
   title: string;
 };
-
-type ReadingYearSortItem = {
-  readingDate: string;
-  readingYear: string;
-  sequence: number;
-  title: string;
-};
-
-export function readingYearFacetFilterTests({
-  renderItems,
-}: {
-  renderItems: (items: ReadingYearFilterItem[]) => void;
-}) {
-  it("filters by reading year range", async ({ expect }) => {
-    renderItems([
-      {
-        readingDate: "2012-03-01",
-        readingYear: "2012",
-        title: "Book 2012",
-      },
-      {
-        readingDate: "2013-04-01",
-        readingYear: "2013",
-        title: "Book 2013",
-      },
-      {
-        readingDate: "2014-05-01",
-        readingYear: "2014",
-        title: "Book 2014",
-      },
-    ]);
-
-    const user = getUserWithFakeTimers();
-    await clickToggleFilters(user);
-    await fillReadingYearFilter(user, "2012", "2013");
-    await clickViewResults(user);
-
-    const calendar = getCalendar();
-    expect(within(calendar).getByText("Book 2013")).toBeInTheDocument();
-
-    await clickPreviousMonthButton(user);
-    expect(within(calendar).getByText("Book 2012")).toBeInTheDocument();
-
-    const prevButton = queryPreviousMonthButton();
-    expect(prevButton).not.toBeInTheDocument();
-  });
-}
 
 /**
  * Shared test suite for the reading date sort (reading-date-asc/desc).
@@ -77,38 +19,36 @@ export function readingYearFacetFilterTests({
  * they require calendar month navigation helpers that are feature-specific.
  *
  * @example
- * readingYearSortFacetTests({
+ * readingDateSortTests({
  *   getList: getCalendar,
  *   renderItems: (items) => render(<ReadingLog {...baseProps} values={items.map(createValue)} />),
  * });
  */
-export function readingYearFacetSortTests({
+export function readingDateSortTests({
   getList,
   renderItems,
 }: {
   /** Pass `getCalendar` from ReadingLog.testHelper or equivalent container getter */
   getList: () => HTMLElement;
-  renderItems: (items: ReadingYearSortItem[]) => void;
+  renderItems: (items: ReadingDateItem[]) => void;
 }) {
   // Items in two different months so that sort direction changes which month
   // the calendar displays first. The calendar shows one month at a time;
   // filteredValues[0] after sorting determines the initial month.
-  const items: ReadingYearSortItem[] = [
+  const items: ReadingDateItem[] = [
     {
       readingDate: "2024-01-15",
-      readingYear: "2024",
       sequence: 2,
       title: "Recent Reading",
     },
     {
       readingDate: "2023-12-10",
-      readingYear: "2023",
       sequence: 1,
       title: "Earlier Reading",
     },
   ];
 
-  describe("reading year sort", () => {
+  describe("readingDateSort", () => {
     it("sorts newest first — calendar opens on most recent month", async ({
       expect,
     }) => {
@@ -141,12 +81,4 @@ export function readingYearFacetSortTests({
       ).not.toBeInTheDocument();
     });
   });
-}
-
-async function fillReadingYearFilter(
-  user: UserEvent,
-  year1: string,
-  year2: string,
-) {
-  await fillYearField(user, "Reading Year", year1, year2);
 }

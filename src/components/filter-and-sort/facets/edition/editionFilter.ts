@@ -1,8 +1,8 @@
+export type FilterableValue = { edition: string };
 type Filters = { edition?: readonly string[] };
-type Value = { edition: string };
 
 export function createEditionCountMap<
-  TValue extends Value,
+  TValue extends FilterableValue,
   TFilters extends Filters,
 >(
   values: readonly TValue[],
@@ -21,7 +21,9 @@ export function createEditionCountMap<
   return counts;
 }
 
-export function createEditionFilter<TValue extends Value>(filters: Filters) {
+export function createEditionFilter<TValue extends FilterableValue>(
+  filters: Filters,
+) {
   const filterValue = filters.edition;
   if (!filterValue || filterValue.length === 0) return;
   return (value: TValue) => filterValue.includes(value.edition);

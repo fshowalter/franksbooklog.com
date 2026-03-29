@@ -1,8 +1,8 @@
 import { sortString } from "~/components/filter-and-sort/facets/createSorter";
 
-type AuthorSortKeys = "author-asc" | "author-desc";
+export type AuthorSortKeys = "author-asc" | "author-desc";
 
-type SortableByAuthor = {
+export type SortableByAuthor = {
   authors: readonly { sortName: string }[];
 };
 
@@ -13,7 +13,7 @@ export const authorSortComparators: Record<
   "author-asc": (a, b) =>
     sortString(a.authors[0].sortName, b.authors[0].sortName),
   "author-desc": (a, b) =>
-    sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
+    sortString(b.authors[0].sortName, a.authors[0].sortName),
 };
 
 export const authorSortOptions = [

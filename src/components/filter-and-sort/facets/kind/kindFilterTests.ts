@@ -11,8 +11,9 @@ import {
 import { clickCheckboxListFieldOption } from "~/components/filter-and-sort/fields/CheckboxListField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type KindItem = {
-  kind: string;
+import type { FilterableValue } from "./kindFilter";
+
+type KindItem = FilterableValue & {
   title: string;
 };
 
@@ -32,11 +33,11 @@ export async function clickKindOption(user: UserEvent, value: string) {
  * @example — with custom container (e.g. ReadingLog calendar)
  * kindFacetTests((items) => { render(...) }, getCalendar);
  */
-export function kindFacetTests(
+export function kindFilterTests(
   renderItems: (items: KindItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("kind filter", () => {
+  describe("kindFilter", () => {
     it("filters to a single kind", async ({ expect }) => {
       renderItems([
         { kind: "Novel", title: "A Novel" },

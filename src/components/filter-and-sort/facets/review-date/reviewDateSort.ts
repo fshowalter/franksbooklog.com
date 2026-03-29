@@ -1,21 +1,20 @@
 import { sortString } from "~/components/filter-and-sort/facets/createSorter";
 
-type ReviewYearSortKeys = "review-date-asc" | "review-date-desc";
+export type ReviewDateSortKeys = "review-date-asc" | "review-date-desc";
 
-type SortableByReviewDate = {
+export type SortableByReviewDate = {
   reviewSequence: string;
 };
 
-export const reviewYearSortComparators: Record<
-  ReviewYearSortKeys,
+export const reviewDateSortComparators: Record<
+  ReviewDateSortKeys,
   (a: SortableByReviewDate, b: SortableByReviewDate) => number
 > = {
   "review-date-asc": (a, b) => sortString(a.reviewSequence, b.reviewSequence),
-  "review-date-desc": (a, b) =>
-    sortString(a.reviewSequence, b.reviewSequence) * -1,
+  "review-date-desc": (a, b) => sortString(b.reviewSequence, a.reviewSequence),
 };
 
-export const reviewYearSortOptions = [
+export const reviewDateSortOptions = [
   { label: "Review Date (Newest First)", value: "review-date-desc" },
   { label: "Review Date (Oldest First)", value: "review-date-asc" },
 ];
