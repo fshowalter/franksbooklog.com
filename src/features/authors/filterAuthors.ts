@@ -14,7 +14,7 @@ export function filterAuthors(
   sortedValues: AuthorsValue[],
   filterValues: AuthorsFiltersValues,
 ) {
-  const filters = [createNameFilter(filterValues.name)].filter(
+  const filters = [createNameFilter(filterValues)].filter(
     (f) => f !== undefined,
   );
   return filterSortedValues({ filters, sortedValues });

@@ -21,12 +21,12 @@ export function filterReadingLog(
   filterValues: ReadingLogFiltersValues,
 ) {
   const filters = [
-    createEditionFilter(filterValues.edition),
-    createKindFilter(filterValues.kind),
-    createReadingYearFilter(filterValues.readingYear),
-    createReviewedStatusFilter(filterValues.reviewedStatus),
-    createTitleFilter(filterValues.title),
-    createTitleYearFilter(filterValues.titleYear),
+    createEditionFilter(filterValues),
+    createKindFilter(filterValues),
+    createReadingYearFilter(filterValues),
+    createReviewedStatusFilter(filterValues),
+    createTitleFilter(filterValues),
+    createTitleYearFilter(filterValues),
   ].filter((filterFn) => filterFn !== undefined);
 
   return filterSortedValues({ filters, sortedValues });

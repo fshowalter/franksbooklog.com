@@ -1,6 +1,9 @@
+type Filters = { edition?: readonly string[] };
+type Value = { edition: string };
+
 export function createEditionCountMap<
-  TValue extends { edition: string },
-  TFilters extends { edition?: readonly string[] },
+  TValue extends Value,
+  TFilters extends Filters,
 >(
   values: readonly TValue[],
   filters: TFilters,
@@ -18,9 +21,11 @@ export function createEditionCountMap<
   return counts;
 }
 
-export function createEditionFilter<TValue extends { edition: string }>(
-  filterValue?: readonly string[],
-) {
+export function createEditionFilter<
+  TValue extends Value,
+  TFilters extends Filters,
+>(filters: TFilters) {
+  const filterValue = filters.edition;
   if (!filterValue || filterValue.length === 0) return;
   return (value: TValue) => filterValue.includes(value.edition);
 }
