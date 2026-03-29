@@ -17,7 +17,7 @@ export function titleSortTests(
   renderItems: (items: TitleItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("title sort", () => {
+  describe("titleSort", () => {
     it("sorts A → Z", async ({ expect }) => {
       renderItems([
         { sortTitle: "zebra", title: "Zebra Book" },

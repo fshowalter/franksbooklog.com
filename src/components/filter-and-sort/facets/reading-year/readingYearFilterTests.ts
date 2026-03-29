@@ -1,7 +1,7 @@
 import type { UserEvent } from "@testing-library/user-event";
 
 import { within } from "@testing-library/react";
-import { it } from "vitest";
+import { describe, it } from "vitest";
 
 import {
   clickToggleFilters,
@@ -27,38 +27,40 @@ export function readingYearFilterTests({
 }: {
   renderItems: (items: ReadingYearFilterItem[]) => void;
 }) {
-  it("filters by reading year range", async ({ expect }) => {
-    renderItems([
-      {
-        readingDate: "2012-03-01",
-        readingYear: "2012",
-        title: "Book 2012",
-      },
-      {
-        readingDate: "2013-04-01",
-        readingYear: "2013",
-        title: "Book 2013",
-      },
-      {
-        readingDate: "2014-05-01",
-        readingYear: "2014",
-        title: "Book 2014",
-      },
-    ]);
+  describe("readingYearFilter", () => {
+    it("filters by reading year range", async ({ expect }) => {
+      renderItems([
+        {
+          readingDate: "2012-03-01",
+          readingYear: "2012",
+          title: "Book 2012",
+        },
+        {
+          readingDate: "2013-04-01",
+          readingYear: "2013",
+          title: "Book 2013",
+        },
+        {
+          readingDate: "2014-05-01",
+          readingYear: "2014",
+          title: "Book 2014",
+        },
+      ]);
 
-    const user = getUserWithFakeTimers();
-    await clickToggleFilters(user);
-    await fillReadingYearFilter(user, "2012", "2013");
-    await clickViewResults(user);
+      const user = getUserWithFakeTimers();
+      await clickToggleFilters(user);
+      await fillReadingYearFilter(user, "2012", "2013");
+      await clickViewResults(user);
 
-    const calendar = getCalendar();
-    expect(within(calendar).getByText("Book 2013")).toBeInTheDocument();
+      const calendar = getCalendar();
+      expect(within(calendar).getByText("Book 2013")).toBeInTheDocument();
 
-    await clickPreviousMonthButton(user);
-    expect(within(calendar).getByText("Book 2012")).toBeInTheDocument();
+      await clickPreviousMonthButton(user);
+      expect(within(calendar).getByText("Book 2012")).toBeInTheDocument();
 
-    const prevButton = queryPreviousMonthButton();
-    expect(prevButton).not.toBeInTheDocument();
+      const prevButton = queryPreviousMonthButton();
+      expect(prevButton).not.toBeInTheDocument();
+    });
   });
 }
 

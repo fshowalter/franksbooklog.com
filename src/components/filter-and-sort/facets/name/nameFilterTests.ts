@@ -30,7 +30,7 @@ type NameFilterItem = FilterableValue;
 export function nameFilterTests(
   renderItems: (items: NameFilterItem[]) => void,
 ) {
-  describe("name filter", () => {
+  describe("nameFilter", () => {
     it("filters to matching names", async ({ expect }) => {
       renderItems([
         { name: "Bram Stoker", sortName: "Stoker, Bram" },

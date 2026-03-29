@@ -23,7 +23,7 @@ export function titleFilterTests(
   renderItems: (items: TitleItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("title filter", () => {
+  describe("titleFilter", () => {
     it("filters to matching titles", async ({ expect }) => {
       renderItems([
         { title: "Dracula" },

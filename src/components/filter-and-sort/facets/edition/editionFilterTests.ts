@@ -33,7 +33,7 @@ export function editionFilterTests({
   getList: () => HTMLElement;
   renderItems: (items: EditionItem[]) => void;
 }) {
-  describe("edition filter", () => {
+  describe("editionFilter", () => {
     it("filters to a single edition", async ({ expect }) => {
       renderItems([
         { edition: "Paperback", title: "Book in Paperback" },

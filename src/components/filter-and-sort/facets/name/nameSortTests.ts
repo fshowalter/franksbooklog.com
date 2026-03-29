@@ -11,7 +11,7 @@ type NameSortItem = SortableByName & {
 };
 
 export function nameSortTests(renderItems: (items: NameSortItem[]) => void) {
-  describe("name sort", () => {
+  describe("nameSort", () => {
     it("sorts by sort name A to Z", async ({ expect }) => {
       renderItems([
         { name: "Arthur Conan Doyle", sortName: "Doyle, Arthur Conan" },
@@ -26,7 +26,7 @@ export function nameSortTests(renderItems: (items: NameSortItem[]) => void) {
       const list = getGroupedAvatarList();
       const allText = list.textContent || "";
       const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
-      const shellyIndex = allText.indexOf("Shelley, Mar");
+      const shellyIndex = allText.indexOf("Shelley, Mary");
       const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
 
       expect(doyleIndex).toBeLessThan(fitzgeraldIndex);
@@ -47,7 +47,7 @@ export function nameSortTests(renderItems: (items: NameSortItem[]) => void) {
       const list = getGroupedAvatarList();
       const allText = list.textContent || "";
       const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
-      const shellyIndex = allText.indexOf("Shelley, Mar");
+      const shellyIndex = allText.indexOf("Shelley, Mary");
       const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
 
       expect(shellyIndex).toBeLessThan(fitzgeraldIndex);

@@ -22,7 +22,7 @@ export function authorSortTests(
   renderItems: (items: AuthorItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("author sort", () => {
+  describe("authorSort", () => {
     it("sorts A → Z by first author", async ({ expect }) => {
       renderItems([
         {

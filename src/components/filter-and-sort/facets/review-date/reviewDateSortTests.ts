@@ -14,7 +14,7 @@ export function reviewDateSortTests(
   renderItems: (items: ReviewDateItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("review date sort", () => {
+  describe("reviewDateSort", () => {
     it("sorts newest first", async ({ expect }) => {
       renderItems([
         { reviewSequence: "3", reviewYear: "2024", title: "New Review" },

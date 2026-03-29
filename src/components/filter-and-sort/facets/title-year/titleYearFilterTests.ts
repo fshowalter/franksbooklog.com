@@ -40,7 +40,7 @@ export function titleYearFilterTests({
   const filterFrom = distinctTitleYears[1];
   const filterTo = distinctTitleYears.at(-2)!;
 
-  describe("title year filter", () => {
+  describe("titleYearFilter", () => {
     it("filters to items within title year range", async ({ expect }) => {
       renderItems([
         { title: "Old Book", titleYear: low },

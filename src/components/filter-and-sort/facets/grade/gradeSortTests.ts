@@ -21,7 +21,7 @@ export function gradeSortTests(
   renderItems: (items: GradeItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("grade sort", () => {
+  describe("gradeSort", () => {
     it("sorts best first", async ({ expect }) => {
       renderItems([
         { gradeValue: 9, title: "Okay Book" },

@@ -13,7 +13,7 @@ export function reviewCountSortTests(
   renderItems: (items: ReviewCountItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("reviewCount sort", () => {
+  describe("reviewCountSort", () => {
     it("sorts by review count fewest first", async ({ expect }) => {
       renderItems([
         { name: "Popular Author", reviewCount: 20 },

@@ -30,7 +30,7 @@ export function reviewedStatusFilterTests(
   renderItems: (items: ReviewedStatusItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("reviewed status filter", () => {
+  describe("reviewedStatusFilter", () => {
     it("filters to abandoned items", async ({ expect }) => {
       renderItems([
         {

@@ -30,7 +30,7 @@ export function gradeFilterTests(
   renderItems: (items: GradeItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("grade filter", () => {
+  describe("gradeFilter", () => {
     it("filters to items within grade range", async ({ expect }) => {
       renderItems([
         { grade: "F", gradeValue: 3, title: "Bad Book" },

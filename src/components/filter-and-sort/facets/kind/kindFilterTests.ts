@@ -37,7 +37,7 @@ export function kindFilterTests(
   renderItems: (items: KindItem[]) => void,
   getList: () => HTMLElement,
 ) {
-  describe("kind filter", () => {
+  describe("kindFilter", () => {
     it("filters to a single kind", async ({ expect }) => {
       renderItems([
         { kind: "Novel", title: "A Novel" },

@@ -38,7 +38,7 @@ export function reviewYearFilterTests({
       `reviewYearFilterFacetTests: distinctReviewYears must have at least 3 elements (got ${distinctReviewYears.length.toString()})`,
     );
   }
-  describe("review year filter", () => {
+  describe("reviewYearFilter", () => {
     it("filters to items within review year range", async ({ expect }) => {
       renderItems([
         { reviewYear: "2022", title: "2022 Review" },

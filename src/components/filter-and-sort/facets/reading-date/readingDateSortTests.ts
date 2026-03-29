@@ -48,7 +48,7 @@ export function readingDateSortTests({
     },
   ];
 
-  describe("reading year sort", () => {
+  describe("readingDateSort", () => {
     it("sorts newest first — calendar opens on most recent month", async ({
       expect,
     }) => {

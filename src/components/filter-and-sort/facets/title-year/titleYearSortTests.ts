@@ -20,7 +20,7 @@ export function titleYearSortTests({
   getList: () => HTMLElement;
   renderItems: (items: TitleYearItem[]) => void;
 }) {
-  describe("title year sort", () => {
+  describe("titleYearSort", () => {
     it("sorts oldest first", async ({ expect }) => {
       renderItems([
         { title: "Modern Book", titleYear: "2000" },
