@@ -207,16 +207,16 @@ export function FilterAndSortContainer<T extends string, V>({
           <dialog
             aria-label="Filters"
             className={`
-              fixed top-0 right-0 left-auto m-0 size-full max-h-full
-              max-w-[380px] translate-x-full flex-col items-start gap-y-5
-              overflow-y-auto border-0 bg-default p-0 text-left drop-shadow-2xl
-              transition-all transition-discrete duration-600
+              group/dialog fixed top-0 right-0 left-auto m-0 size-full
+              max-h-full max-w-[380px] translate-x-full flex-col items-start
+              gap-y-5 overflow-y-auto border-0 bg-default p-0 text-left
+              drop-shadow-2xl transition-all transition-discrete duration-600
               ease-[cubic-bezier(0.19,1,0.22,1)]
               backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
               backdrop:transition-discrete backdrop:duration-200
               open:flex open:translate-x-0
               open:backdrop:opacity-40
-              tablet:gap-y-10
+              tablet:max-w-[420px] tablet:gap-y-10
               starting:open:transform-[translateX(100%)]
               starting:open:backdrop:opacity-0
             `}
@@ -341,9 +341,13 @@ export function FilterAndSortContainer<T extends string, V>({
               </fieldset>
               <div
                 className={`
-                  sticky bottom-0 z-filter-footer mt-auto w-full border-t
-                  border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  sticky bottom-0 z-filter-footer mt-auto w-full
+                  translate-y-full border-t border-t-default bg-default px-8
+                  py-4 drop-shadow-2xl transition-all transition-discrete
+                  duration-600
+                  group-open/dialog:translate-y-0
                   tablet-landscape:px-12
+                  group-open/dialog:starting:transform-[translateY(100%)]
                 `}
               >
                 <div className="flex gap-x-4">
