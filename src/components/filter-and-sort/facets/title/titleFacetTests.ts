@@ -1,3 +1,5 @@
+import type { UserEvent } from "@testing-library/user-event";
+
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
@@ -7,10 +9,7 @@ import {
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import {
-  fillTitleFilter,
-  getTitleFilter,
-} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
+import { fillTextField } from "~/components/filter-and-sort/fields/TextField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 type TitleItem = {
@@ -170,4 +169,12 @@ export function titleSortFacetTests(
       );
     });
   });
+}
+
+async function fillTitleFilter(user: UserEvent, value: string) {
+  await fillTextField(user, "Title", value);
+}
+
+function getTitleFilter() {
+  return screen.getByLabelText("Title");
 }

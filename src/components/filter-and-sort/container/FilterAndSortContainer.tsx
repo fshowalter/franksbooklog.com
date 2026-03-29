@@ -203,7 +203,7 @@ export function FilterAndSortContainer<T extends string, V>({
           >
             {children}
           </div>
-
+          {/* have to use [translateX(100%)] vs translate-x-full due to Safari bug: https://github.com/tailwindlabs/tailwindcss/discussions/18304 */}
           <dialog
             aria-label="Filters"
             className={`
