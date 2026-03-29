@@ -13,14 +13,14 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./titleFilter";
 
-type TitleItem = FilterableValue;
+type TitleFilterItem = FilterableValue;
 
 /**
  * Filter-only sub-suite for title. Use this for features that have a title
  * filter but no title sort (e.g. ReadingLog).
  */
 export function titleFilterTests(
-  renderItems: (items: TitleItem[]) => void,
+  renderItems: (items: TitleFilterItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("titleFilter", () => {

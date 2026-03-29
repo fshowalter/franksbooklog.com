@@ -5,7 +5,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByGrade } from "./gradeSort";
 
-type GradeItem = SortableByGrade & {
+type GradeSortItem = SortableByGrade & {
   title: string;
 };
 
@@ -18,7 +18,7 @@ type GradeItem = SortableByGrade & {
  * });
  */
 export function gradeSortTests(
-  renderItems: (items: GradeItem[]) => void,
+  renderItems: (items: GradeSortItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("gradeSort", () => {

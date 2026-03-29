@@ -10,7 +10,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./titleYearFilter";
 
-type TitleYearItem = FilterableValue & {
+type TitleYearFilterItem = FilterableValue & {
   title: string;
 };
 
@@ -29,7 +29,7 @@ export function titleYearFilterTests({
 }: {
   distinctTitleYears: readonly string[];
   getList: () => HTMLElement;
-  renderItems: (items: TitleYearItem[]) => void;
+  renderItems: (items: TitleYearFilterItem[]) => void;
 }) {
   // Derive three non-adjacent years for items and a middle filter range so the
   // suite works with any distinctTitleYears list without hardcoding values that

@@ -6,7 +6,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByReadingDate } from "./readingDateSort";
 
-type ReadingDateItem = SortableByReadingDate & {
+type ReadingDateSortItem = SortableByReadingDate & {
   readingDate: string;
   title: string;
 };
@@ -30,12 +30,12 @@ export function readingDateSortTests({
 }: {
   /** Pass `getCalendar` from ReadingLog.testHelper or equivalent container getter */
   getList: () => HTMLElement;
-  renderItems: (items: ReadingDateItem[]) => void;
+  renderItems: (items: ReadingDateSortItem[]) => void;
 }) {
   // Items in two different months so that sort direction changes which month
   // the calendar displays first. The calendar shows one month at a time;
   // filteredValues[0] after sorting determines the initial month.
-  const items: ReadingDateItem[] = [
+  const items: ReadingDateSortItem[] = [
     {
       readingDate: "2024-01-15",
       sequence: 2,

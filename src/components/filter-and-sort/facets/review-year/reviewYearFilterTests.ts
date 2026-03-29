@@ -10,7 +10,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./reviewYearFilter";
 
-type ReviewYearItem = FilterableValue & {
+type ReviewYearFilterItem = FilterableValue & {
   title: string;
 };
 
@@ -31,7 +31,7 @@ export function reviewYearFilterTests({
 }: {
   distinctReviewYears: readonly string[];
   getList: () => HTMLElement;
-  renderItems: (items: ReviewYearItem[]) => void;
+  renderItems: (items: ReviewYearFilterItem[]) => void;
 }) {
   if (distinctReviewYears.length < 3) {
     throw new Error(

@@ -5,7 +5,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByTitleYear } from "./titleYearSort";
 
-type TitleYearItem = SortableByTitleYear & {
+type TitleYearSortItem = SortableByTitleYear & {
   title: string;
 };
 
@@ -18,7 +18,7 @@ export function titleYearSortTests({
   renderItems,
 }: {
   getList: () => HTMLElement;
-  renderItems: (items: TitleYearItem[]) => void;
+  renderItems: (items: TitleYearSortItem[]) => void;
 }) {
   describe("titleYearSort", () => {
     it("sorts oldest first", async ({ expect }) => {

@@ -11,7 +11,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./reviewedStatusFilter";
 
-type ReviewedStatusItem = FilterableValue & {
+type ReviewedStatusFilterItem = FilterableValue & {
   title: string;
 };
 
@@ -27,7 +27,7 @@ type ReviewedStatusItem = FilterableValue & {
  * reviewedStatusFacetTests((items) => { render(...) }, getCalendar);
  */
 export function reviewedStatusFilterTests(
-  renderItems: (items: ReviewedStatusItem[]) => void,
+  renderItems: (items: ReviewedStatusFilterItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("reviewedStatusFilter", () => {

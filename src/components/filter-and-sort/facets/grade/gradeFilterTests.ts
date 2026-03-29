@@ -13,7 +13,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./gradeFilter";
 
-type GradeItem = FilterableValue & {
+type GradeFilterItem = FilterableValue & {
   grade: GradeText;
   title: string;
 };
@@ -27,7 +27,7 @@ type GradeItem = FilterableValue & {
  * });
  */
 export function gradeFilterTests(
-  renderItems: (items: GradeItem[]) => void,
+  renderItems: (items: GradeFilterItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("gradeFilter", () => {
