@@ -8,18 +8,25 @@ import { createReviewedStatusFilterChangedAction } from "./reviewedStatusReducer
 
 export function ReviewedStatusFacet<
   TValue extends Parameters<typeof createReviewedStatusCountMap>[0][number],
+  TFilters extends Parameters<typeof createReviewedStatusCountMap>[1],
 >({
-  defaultValues,
   dispatch,
   excludeNotReviewed = false,
+  filterer,
+  filterValues,
   values,
 }: {
-  defaultValues?: readonly string[];
   dispatch: React.Dispatch<ReviewedStatusFilterChangedAction>;
   excludeNotReviewed?: boolean;
+  filterer: (values: readonly TValue[], filters: TFilters) => TValue[];
+  filterValues: TFilters;
   values: readonly TValue[];
 }): React.JSX.Element {
-  const statusCounts = createReviewedStatusCountMap(values);
+  const statusCounts = createReviewedStatusCountMap(
+    values,
+    filterValues,
+    filterer,
+  );
 
   const allOptions = [
     {
@@ -45,7 +52,7 @@ export function ReviewedStatusFacet<
   return (
     <AnimatedDetailsDisclosure title="Status">
       <CheckboxListField
-        defaultValues={defaultValues}
+        defaultValues={filterValues.reviewedStatus}
         label="Status"
         onChange={(values) =>
           dispatch(createReviewedStatusFilterChangedAction(values))

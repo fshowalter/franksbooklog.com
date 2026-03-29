@@ -11,6 +11,8 @@ import type {
   ReadingLogFiltersValues,
 } from "./ReadingLog.reducer";
 
+import { filterReadingLog } from "./filterReadingLog";
+
 export function Filters({
   dispatch,
   distinctEditions,
@@ -37,14 +39,16 @@ export function Filters({
         distinctYears={distinctTitleYears}
       />
       <KindFacet
-        defaultValues={filterValues.kind}
         dispatch={dispatch}
         distinctKinds={distinctKinds}
+        filterer={filterReadingLog}
+        filterValues={filterValues}
         values={values}
       />
       <ReviewedStatusFacet
-        defaultValues={filterValues.reviewedStatus}
         dispatch={dispatch}
+        filterer={filterReadingLog}
+        filterValues={filterValues}
         values={values}
       />
       <ReadingYearFacet
@@ -53,9 +57,10 @@ export function Filters({
         distinctYears={distinctReadingYears}
       />
       <EditionFacet
-        defaultValues={filterValues.edition}
         dispatch={dispatch}
         distinctEditions={distinctEditions}
+        filterer={filterReadingLog}
+        filterValues={filterValues}
         values={values}
       />
     </>

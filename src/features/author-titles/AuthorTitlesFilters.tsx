@@ -11,6 +11,8 @@ import type {
   AuthorTitlesFiltersValues,
 } from "./AuthorTitles.reducer";
 
+import { filterAuthorTitles } from "./filterAuthorTitles";
+
 /**
  * Author page filters component providing filtering controls for the author's works.
  * Includes filters for grade, work kind, review year, title search, and work year.
@@ -48,15 +50,17 @@ export function AuthorTitlesFilters({
         distinctYears={distinctTitleYears}
       />
       <KindFacet
-        defaultValues={filterValues.kind}
         dispatch={dispatch}
         distinctKinds={distinctKinds}
+        filterer={filterAuthorTitles}
+        filterValues={filterValues}
         values={values}
       />
       <ReviewedStatusFacet
-        defaultValues={filterValues.reviewedStatus}
         dispatch={dispatch}
         excludeNotReviewed={true}
+        filterer={filterAuthorTitles}
+        filterValues={filterValues}
         values={values}
       />
       <GradeFacet defaultValues={filterValues.gradeValue} dispatch={dispatch} />

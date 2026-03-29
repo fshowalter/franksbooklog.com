@@ -17,7 +17,7 @@ import type { ReviewsFiltersValues } from "./Reviews.reducer";
  * @returns Filtered array of reviews
  */
 export function filterReviews(
-  sortedValues: ReviewsValue[],
+  sortedValues: readonly ReviewsValue[],
   filterValues: ReviewsFiltersValues,
 ) {
   const filters = [

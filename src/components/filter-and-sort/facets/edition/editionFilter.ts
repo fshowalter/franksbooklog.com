@@ -1,10 +1,21 @@
-export function createEditionCountMap<TValue extends { edition: string }>(
+export function createEditionCountMap<
+  TValue extends { edition: string },
+  TFilters extends { edition?: readonly string[] },
+>(
   values: readonly TValue[],
+  filters: TFilters,
+  filterer: (values: readonly TValue[], filters: TFilters) => TValue[],
 ): Map<string, number> {
+  // Apply all filters EXCEPT this one
+  const otherFilters = { ...filters, edition: undefined };
+  const filtered = filterer(values, otherFilters);
+
+  // Count occurrences of each unique value
   const counts = new Map<string, number>();
-  for (const value of values) {
-    counts.set(value.edition, (counts.get(value.edition) ?? 0) + 1);
+  for (const value of filtered) {
+    counts.set(value.edition, (counts.get(value.edition) || 0) + 1);
   }
+
   return counts;
 }
 

@@ -8,6 +8,8 @@ import { TitleFacet } from "~/components/filter-and-sort/facets/title/TitleFacet
 import type { ReviewsValue } from "./Reviews";
 import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
 
+import { filterReviews } from "./filterReviews";
+
 /**
  * Filter controls component for the Reviews page.
  * Provides filtering interface for grade, kind, review year, title, and work year.
@@ -45,15 +47,17 @@ export function ReviewsFilters({
         distinctYears={distinctTitleYears}
       />
       <KindFacet
-        defaultValues={filterValues.kind}
         dispatch={dispatch}
         distinctKinds={distinctKinds}
+        filterer={filterReviews}
+        filterValues={filterValues}
         values={values}
       />
       <ReviewedStatusFacet
-        defaultValues={filterValues.reviewedStatus}
         dispatch={dispatch}
         excludeNotReviewed={true}
+        filterer={filterReviews}
+        filterValues={filterValues}
         values={values}
       />
       <GradeFacet defaultValues={filterValues.gradeValue} dispatch={dispatch} />

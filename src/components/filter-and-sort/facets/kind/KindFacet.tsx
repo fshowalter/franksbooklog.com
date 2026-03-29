@@ -8,23 +8,26 @@ import { createKindFilterChangedAction } from "./kindReducer";
 
 export function KindFacet<
   TValue extends Parameters<typeof createKindCountMap>[0][number],
+  TFilters extends Parameters<typeof createKindCountMap>[1],
 >({
-  defaultValues,
   dispatch,
   distinctKinds,
+  filterer,
+  filterValues,
   values,
 }: {
-  defaultValues: readonly string[] | undefined;
   dispatch: React.Dispatch<KindFilterChangedAction>;
   distinctKinds: readonly string[];
+  filterer: (values: readonly TValue[], filters: TFilters) => TValue[];
+  filterValues: TFilters;
   values: readonly TValue[];
 }): React.JSX.Element {
-  const kindCounts = createKindCountMap(values);
+  const kindCounts = createKindCountMap(values, filterValues, filterer);
 
   return (
     <AnimatedDetailsDisclosure title="Kind">
       <CheckboxListField
-        defaultValues={defaultValues}
+        defaultValues={filterValues.kind}
         label="Kind"
         onChange={(values) => dispatch(createKindFilterChangedAction(values))}
         options={distinctKinds.map((e) => ({

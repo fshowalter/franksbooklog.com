@@ -17,7 +17,7 @@ import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
  * @returns Filtered array of reading log entries
  */
 export function filterReadingLog(
-  sortedValues: ReadingLogValue[],
+  sortedValues: readonly ReadingLogValue[],
   filterValues: ReadingLogFiltersValues,
 ) {
   const filters = [
