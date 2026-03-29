@@ -152,7 +152,7 @@ export function nameFacetSortTests(renderItems: (items: NameItem[]) => void) {
     it("sorts by sort name A to Z", async ({ expect }) => {
       renderItems([
         { name: "Arthur Conan Doyle", sortName: "Doyle, Arthur Conan" },
-        { name: "Zeldat Fitzgerald", sortName: "Fitzgerald, Zelda" },
+        { name: "Zelda Fitzgerald", sortName: "Fitzgerald, Zelda" },
         { name: "Mary Shelley", sortName: "Shelley, Mary" },
       ]);
 
@@ -173,7 +173,7 @@ export function nameFacetSortTests(renderItems: (items: NameItem[]) => void) {
     it("sorts by sort name Z to A", async ({ expect }) => {
       renderItems([
         { name: "Arthur Conan Doyle", sortName: "Doyle, Arthur Conan" },
-        { name: "Zeldat Fitzgerald", sortName: "Fitzgerald, Zelda" },
+        { name: "Zelda Fitzgerald", sortName: "Fitzgerald, Zelda" },
         { name: "Mary Shelley", sortName: "Shelley, Mary" },
       ]);
 

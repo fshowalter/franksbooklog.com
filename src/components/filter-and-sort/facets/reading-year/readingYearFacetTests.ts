@@ -10,10 +10,8 @@ import {
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { fillYearField } from "~/components/filter-and-sort/fields/YearField.testHelper";
 import {
-  clickNextMonthButton,
   clickPreviousMonthButton,
   getCalendar,
-  queryNextMonthButton,
   queryPreviousMonthButton,
 } from "~/features/reading-log/ReadingLog.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";

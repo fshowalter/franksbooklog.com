@@ -1,6 +1,6 @@
 import { sortNumber } from "~/components/filter-and-sort/facets/createSorter";
 
-type ReviewCountSortKeys = "review-count-asc" | "review-count-desc";
+export type ReviewCountSortKeys = "review-count-asc" | "review-count-desc";
 
 type SortableByReviewCount = {
   reviewCount: number;
