@@ -7,21 +7,25 @@ type FilterableMaybeReviewedTitle = {
   reviewed?: boolean;
 };
 
-/**
- * Counts items by reviewed status ("Reviewed", "Not Reviewed", "Abandoned").
- * Uses the same classification logic as createReviewedStatusFilter.
- * @param values - Array of items to count
- * @returns Map from status string to item count
- */
 export function createReviewedStatusCountMap<
   TValue extends FilterableMaybeReviewedTitle,
->(values: readonly TValue[]): Map<string, number> {
+  TFilters extends { reviewedStatus?: readonly string[] },
+>(
+  values: readonly TValue[],
+  filters: TFilters,
+  filterer: (values: readonly TValue[], filters: TFilters) => TValue[],
+): Map<string, number> {
+  // Apply all filters EXCEPT this one
+  const otherFilters = { ...filters, reviewedStatus: undefined };
+  const filtered = filterer(values, otherFilters);
+
   const counts = new Map<string, number>([
     ["Abandoned", 0],
     ["Not Reviewed", 0],
     ["Reviewed", 0],
   ]);
-  for (const value of values) {
+
+  for (const value of filtered) {
     const status = getStatus(value);
     counts.set(status, (counts.get(status) ?? 0) + 1);
   }

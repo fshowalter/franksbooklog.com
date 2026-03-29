@@ -17,7 +17,7 @@ import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
  * @returns Filtered array of author titles
  */
 export function filterAuthorTitles(
-  sortedValues: AuthorTitlesValue[],
+  sortedValues: readonly AuthorTitlesValue[],
   filterValues: AuthorTitlesFiltersValues,
 ) {
   const filters = [

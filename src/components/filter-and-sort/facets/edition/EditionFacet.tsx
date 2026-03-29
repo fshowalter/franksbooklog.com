@@ -8,23 +8,26 @@ import { createEditionFilterChangedAction } from "./editionReducer";
 
 export function EditionFacet<
   TValue extends Parameters<typeof createEditionCountMap>[0][number],
+  TFilters extends Parameters<typeof createEditionCountMap>[1],
 >({
-  defaultValues,
   dispatch,
   distinctEditions,
+  filterer,
+  filterValues,
   values,
 }: {
-  defaultValues: readonly string[] | undefined;
   dispatch: React.Dispatch<EditionFilterChangedAction>;
   distinctEditions: readonly string[];
+  filterer: (values: readonly TValue[], filters: TFilters) => TValue[];
+  filterValues: TFilters;
   values: readonly TValue[];
 }): React.JSX.Element {
-  const editionCounts = createEditionCountMap(values);
+  const editionCounts = createEditionCountMap(values, filterValues, filterer);
 
   return (
     <AnimatedDetailsDisclosure title="Edition">
       <CheckboxListField
-        defaultValues={defaultValues}
+        defaultValues={filterValues.edition}
         label="Edition"
         onChange={(values) =>
           dispatch(createEditionFilterChangedAction(values))
