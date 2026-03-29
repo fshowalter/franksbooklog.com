@@ -1,6 +1,9 @@
+type Filters = { kind?: readonly string[] };
+type Value = { kind: string };
+
 export function createKindCountMap<
-  TValue extends { kind: string },
-  TFilters extends { kind?: readonly string[] },
+  TValue extends Value,
+  TFilters extends Filters,
 >(
   values: readonly TValue[],
   filters: TFilters,
@@ -21,9 +24,11 @@ export function createKindCountMap<
 /**
  * Create a Kind filter function (multi-select OR logic)
  */
-export function createKindFilter<TValue extends { kind: string }>(
-  filterValue?: readonly string[],
-) {
+export function createKindFilter<
+  TValue extends Value,
+  TFilters extends Filters,
+>(filters: TFilters) {
+  const filterValue = filters.kind;
   if (!filterValue || filterValue.length === 0) return;
   return (value: TValue) => filterValue.includes(value.kind);
 }

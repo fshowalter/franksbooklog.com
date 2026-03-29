@@ -21,12 +21,12 @@ export function filterAuthorTitles(
   filterValues: AuthorTitlesFiltersValues,
 ) {
   const filters = [
-    createGradeFilter(filterValues.gradeValue),
-    createKindFilter(filterValues.kind),
-    createReviewYearFilter(filterValues.reviewYear),
-    createReviewedStatusFilter(filterValues.reviewedStatus),
-    createTitleFilter(filterValues.title),
-    createTitleYearFilter(filterValues.titleYear),
+    createGradeFilter(filterValues),
+    createKindFilter(filterValues),
+    createReviewYearFilter(filterValues),
+    createReviewedStatusFilter(filterValues),
+    createTitleFilter(filterValues),
+    createTitleYearFilter(filterValues),
   ].filter((f) => f !== undefined);
   return filterSortedValues({ filters, sortedValues });
 }
