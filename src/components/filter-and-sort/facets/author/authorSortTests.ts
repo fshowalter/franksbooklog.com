@@ -3,8 +3,9 @@ import { describe, it } from "vitest";
 import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type AuthorItem = {
-  authors: readonly { name: string; notes?: string; sortName: string }[];
+import type { SortableByAuthor } from "./authorSort";
+
+type AuthorItem = SortableByAuthor & {
   title: string;
 };
 
@@ -17,7 +18,7 @@ type AuthorItem = {
  *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
  * });
  */
-export function authorFacetTests(
+export function authorSortTests(
   renderItems: (items: AuthorItem[]) => void,
   getList: () => HTMLElement,
 ) {
@@ -27,8 +28,6 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
               sortName: "Fitzgerald, Zelda",
             },
           ],
@@ -37,8 +36,6 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
               sortName: "Doyle, Arthur Conan",
             },
           ],
@@ -47,8 +44,6 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Mary Shelley",
-              notes: undefined,
               sortName: "Shelley, Mary",
             },
           ],
@@ -74,8 +69,6 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
               sortName: "Doyle, Arthur Conan",
             },
           ],
@@ -84,8 +77,6 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
               sortName: "Fitzgerald, Zelda",
             },
           ],
@@ -94,8 +85,6 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Mary Shelley",
-              notes: undefined,
               sortName: "Shelley, Mary",
             },
           ],
@@ -123,16 +112,9 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
-              // "Aelda" (not "Zelda") is intentional: it places this book between
-              // "Doyle, Arthur" and "Fitzgerald, Zelda" alphabetically, verifying
-              // that sort uses the first author's sortName, not their visible name.
-              sortName: "Fitzgerald, Aelda",
+              sortName: "Fitzgerald, Zelda",
             },
             {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
               sortName: "Doyle, Arthur",
             },
           ],
@@ -141,13 +123,9 @@ export function authorFacetTests(
         {
           authors: [
             {
-              name: "Arthur Conan Doyle",
-              notes: undefined,
               sortName: "Doyle, Arthur",
             },
             {
-              name: "Zelda Fitzgerald",
-              notes: undefined,
               sortName: "Fitzgerald, Zelda",
             },
           ],

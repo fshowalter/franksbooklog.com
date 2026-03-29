@@ -11,13 +11,9 @@ import {
 import { clickCheckboxListFieldOption } from "~/components/filter-and-sort/fields/CheckboxListField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type EditionFacetAdapter = {
-  getList: () => HTMLElement;
-  renderItems: (items: EditionItem[]) => void;
-};
+import type { FilterableValue } from "./editionFilter";
 
-type EditionItem = {
-  edition: string;
+type EditionItem = FilterableValue & {
   title: string;
 };
 
@@ -30,10 +26,13 @@ type EditionItem = {
  *   renderItems: (items) => render(<ReadingLog {...baseProps} values={items.map(createValue)} />),
  * });
  */
-export function editionFacetTests({
+export function editionFilterTests({
   getList,
   renderItems,
-}: EditionFacetAdapter) {
+}: {
+  getList: () => HTMLElement;
+  renderItems: (items: EditionItem[]) => void;
+}) {
   describe("edition filter", () => {
     it("filters to a single edition", async ({ expect }) => {
       renderItems([

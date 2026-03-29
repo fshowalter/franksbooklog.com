@@ -1,7 +1,7 @@
+export type FilterableValue = { readingYear: string };
 type Filters = { readingYear?: [string, string] };
-type Value = { readingYear: string };
 
-export function createReadingYearFilter<TValue extends Value>(
+export function createReadingYearFilter<TValue extends FilterableValue>(
   filters: Filters,
 ) {
   const filterValue = filters.readingYear;

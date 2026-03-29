@@ -3,18 +3,18 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
-import type { GradeText, GradeValue } from "~/utils/grades";
+import type { GradeText } from "~/utils/grades";
 
 import {
-  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type GradeItem = {
+import type { FilterableValue } from "./gradeFilter";
+
+type GradeItem = FilterableValue & {
   grade: GradeText;
-  gradeValue: GradeValue;
   title: string;
 };
 
@@ -26,7 +26,7 @@ type GradeItem = {
  *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
  * });
  */
-export function gradeFilterFacetTests(
+export function gradeFilterTests(
   renderItems: (items: GradeItem[]) => void,
   getList: () => HTMLElement,
 ) {
@@ -95,57 +95,6 @@ export function gradeFilterFacetTests(
 
       await clickViewResults(user);
       expect(within(list).getByText("Bad Book")).toBeInTheDocument();
-    });
-  });
-}
-
-/**
- * Sort-only sub-suite for grade. Covers grade sort options.
- *
- * @example
- * gradeSortFacetTests((items) => {
- *   render(<Reviews {...baseProps} values={items.map(createValue)} />);
- * });
- */
-export function gradeSortFacetTests(
-  renderItems: (items: GradeItem[]) => void,
-  getList: () => HTMLElement,
-) {
-  describe("grade sort", () => {
-    it("sorts best first", async ({ expect }) => {
-      renderItems([
-        { grade: "C", gradeValue: 9, title: "Okay Book" },
-        { grade: "A+", gradeValue: 16, title: "Great Book" },
-        { grade: "F", gradeValue: 3, title: "Bad Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Grade (Best First)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Great Book")).toBeLessThan(
-        text.indexOf("Okay Book"),
-      );
-      expect(text.indexOf("Okay Book")).toBeLessThan(text.indexOf("Bad Book"));
-    });
-
-    it("sorts worst first", async ({ expect }) => {
-      renderItems([
-        { grade: "A+", gradeValue: 16, title: "Great Book" },
-        { grade: "F", gradeValue: 3, title: "Bad Book" },
-        { grade: "C", gradeValue: 9, title: "Okay Book" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Grade (Worst First)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Bad Book")).toBeLessThan(text.indexOf("Okay Book"));
-      expect(text.indexOf("Okay Book")).toBeLessThan(
-        text.indexOf("Great Book"),
-      );
     });
   });
 }

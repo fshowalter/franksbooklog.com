@@ -3,12 +3,13 @@ import { describe, it } from "vitest";
 import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type ReviewCountItem = {
+import type { SortableByReviewCount } from "./reviewCountSort";
+
+type ReviewCountItem = SortableByReviewCount & {
   name: string;
-  reviewCount: number;
 };
 
-export function reviewCountFacetSortTests(
+export function reviewCountSortTests(
   renderItems: (items: ReviewCountItem[]) => void,
   getList: () => HTMLElement,
 ) {

@@ -2,27 +2,16 @@ import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import {
-  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { fillYearField } from "~/components/filter-and-sort/fields/YearField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type TitleYearFacetAdapter = {
-  distinctTitleYears: readonly string[];
-  getList: () => HTMLElement;
-  renderItems: (items: TitleYearItem[]) => void;
-};
+import type { FilterableValue } from "./titleYearFilter";
 
-type TitleYearItem = {
+type TitleYearItem = FilterableValue & {
   title: string;
-  titleYear: string;
-};
-
-type TitleYearSortAdapter = {
-  getList: () => HTMLElement;
-  renderItems: (items: TitleYearItem[]) => void;
 };
 
 /**
@@ -33,11 +22,15 @@ type TitleYearSortAdapter = {
  * derived from indices 0, 2, and last so the filter range [idx 1, idx last-1]
  * keeps only the middle item.
  */
-export function titleYearFilterFacetTests({
+export function titleYearFilterTests({
   distinctTitleYears,
   getList,
   renderItems,
-}: TitleYearFacetAdapter) {
+}: {
+  distinctTitleYears: readonly string[];
+  getList: () => HTMLElement;
+  renderItems: (items: TitleYearItem[]) => void;
+}) {
   // Derive three non-adjacent years for items and a middle filter range so the
   // suite works with any distinctTitleYears list without hardcoding values that
   // may not be present (e.g. ReadingLog uses different years than Reviews).
@@ -123,57 +116,6 @@ export function titleYearFilterFacetTests({
 
       await clickViewResults(user);
       expect(within(list).getByText("Old Book")).toBeInTheDocument();
-    });
-  });
-}
-
-/**
- * Sort-only sub-suite for title year. Use this for features that have title year
- * sort (Reviews, AuthorTitles).
- */
-export function titleYearSortFacetTests({
-  getList,
-  renderItems,
-}: TitleYearSortAdapter) {
-  describe("title year sort", () => {
-    it("sorts oldest first", async ({ expect }) => {
-      renderItems([
-        { title: "Modern Book", titleYear: "2000" },
-        { title: "Classic Book", titleYear: "1980" },
-        { title: "Mid Book", titleYear: "1990" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Title Year (Oldest First)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Classic Book")).toBeLessThan(
-        text.indexOf("Mid Book"),
-      );
-      expect(text.indexOf("Mid Book")).toBeLessThan(
-        text.indexOf("Modern Book"),
-      );
-    });
-
-    it("sorts newest first", async ({ expect }) => {
-      renderItems([
-        { title: "Classic Book", titleYear: "1980" },
-        { title: "Modern Book", titleYear: "2000" },
-        { title: "Mid Book", titleYear: "1990" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Title Year (Newest First)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Modern Book")).toBeLessThan(
-        text.indexOf("Mid Book"),
-      );
-      expect(text.indexOf("Mid Book")).toBeLessThan(
-        text.indexOf("Classic Book"),
-      );
     });
   });
 }

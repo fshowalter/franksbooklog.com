@@ -1,6 +1,6 @@
 import type { FilterChip } from "~/components/filter-and-sort/container/FilterAndSortContainer";
 
-import { buildNameFilterChip } from "~/components/filter-and-sort/facets/name/nameFilterChip";
+import { buildNameFilterChip } from "~/components/filter-and-sort/facets/name/buildNameFilterChip";
 
 import type { AuthorsFiltersValues } from "./authorsReducer";
 

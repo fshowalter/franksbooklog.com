@@ -2,27 +2,15 @@ import { screen, within } from "@testing-library/react";
 import { describe, it } from "vitest";
 
 import {
-  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { fillYearField } from "~/components/filter-and-sort/fields/YearField.testHelper";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
-type ReviewYearFacetAdapter = {
-  /**
-   * Distinct review years available in the filter, in ascending order.
-   * Must contain at least 3 elements so that index [2] is a valid mid-range
-   * year distinct from both the minimum ([0]) and the maximum (last element).
-   */
-  distinctReviewYears: readonly string[];
-  getList: () => HTMLElement;
-  renderItems: (items: ReviewYearItem[]) => void;
-};
+import type { FilterableValue } from "./reviewYearFilter";
 
-type ReviewYearItem = {
-  reviewSequence: string;
-  reviewYear: string;
+type ReviewYearItem = FilterableValue & {
   title: string;
 };
 
@@ -36,11 +24,15 @@ type ReviewYearItem = {
  *   renderItems: (items) => render(<Reviews {...baseProps} values={items.map(createValue)} />),
  * });
  */
-export function reviewYearFilterFacetTests({
+export function reviewYearFilterTests({
   distinctReviewYears,
   getList,
   renderItems,
-}: ReviewYearFacetAdapter) {
+}: {
+  distinctReviewYears: readonly string[];
+  getList: () => HTMLElement;
+  renderItems: (items: ReviewYearItem[]) => void;
+}) {
   if (distinctReviewYears.length < 3) {
     throw new Error(
       `reviewYearFilterFacetTests: distinctReviewYears must have at least 3 elements (got ${distinctReviewYears.length.toString()})`,
@@ -49,9 +41,9 @@ export function reviewYearFilterFacetTests({
   describe("review year filter", () => {
     it("filters to items within review year range", async ({ expect }) => {
       renderItems([
-        { reviewSequence: "1", reviewYear: "2022", title: "2022 Review" },
-        { reviewSequence: "2", reviewYear: "2023", title: "2023 Review" },
-        { reviewSequence: "3", reviewYear: "2024", title: "2024 Review" },
+        { reviewYear: "2022", title: "2022 Review" },
+        { reviewYear: "2023", title: "2023 Review" },
+        { reviewYear: "2024", title: "2024 Review" },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -74,8 +66,8 @@ export function reviewYearFilterFacetTests({
 
     it("shows review year chip after applying filter", async ({ expect }) => {
       renderItems([
-        { reviewSequence: "1", reviewYear: earlyYear, title: "Early Review" },
-        { reviewSequence: "2", reviewYear: midYear, title: "Mid Review" },
+        { reviewYear: earlyYear, title: "Early Review" },
+        { reviewYear: midYear, title: "Mid Review" },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -93,8 +85,8 @@ export function reviewYearFilterFacetTests({
 
     it("removing review year chip defers list update", async ({ expect }) => {
       renderItems([
-        { reviewSequence: "1", reviewYear: earlyYear, title: "Early Review" },
-        { reviewSequence: "2", reviewYear: midYear, title: "Mid Review" },
+        { reviewYear: earlyYear, title: "Early Review" },
+        { reviewYear: midYear, title: "Mid Review" },
       ]);
 
       const user = getUserWithFakeTimers();
@@ -122,62 +114,6 @@ export function reviewYearFilterFacetTests({
 
       await clickViewResults(user);
       expect(within(list).getByText("Early Review")).toBeInTheDocument();
-    });
-  });
-}
-
-/**
- * Sort-only sub-suite for review year. Covers review date sort options.
- *
- * @example
- * reviewYearSortFacetTests(
- *   (items) => render(<Reviews {...baseProps} values={items.map(createValue)} />),
- *   getCoverList,
- * );
- */
-export function reviewYearSortFacetTests(
-  renderItems: (items: ReviewYearItem[]) => void,
-  getList: () => HTMLElement,
-) {
-  describe("review date sort", () => {
-    it("sorts newest first", async ({ expect }) => {
-      renderItems([
-        { reviewSequence: "3", reviewYear: "2024", title: "New Review" },
-        { reviewSequence: "1", reviewYear: "2022", title: "Old Review" },
-        { reviewSequence: "2", reviewYear: "2023", title: "Mid Review" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Review Date (Newest First)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("New Review")).toBeLessThan(
-        text.indexOf("Mid Review"),
-      );
-      expect(text.indexOf("Mid Review")).toBeLessThan(
-        text.indexOf("Old Review"),
-      );
-    });
-
-    it("sorts oldest first", async ({ expect }) => {
-      renderItems([
-        { reviewSequence: "3", reviewYear: "2024", title: "New Review" },
-        { reviewSequence: "1", reviewYear: "2022", title: "Old Review" },
-        { reviewSequence: "2", reviewYear: "2023", title: "Mid Review" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      await clickSortOption(user, "Review Date (Oldest First)");
-
-      const list = getList();
-      const text = list.textContent ?? "";
-      expect(text.indexOf("Old Review")).toBeLessThan(
-        text.indexOf("Mid Review"),
-      );
-      expect(text.indexOf("Mid Review")).toBeLessThan(
-        text.indexOf("New Review"),
-      );
     });
   });
 }

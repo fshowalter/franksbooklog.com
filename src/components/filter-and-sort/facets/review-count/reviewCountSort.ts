@@ -2,7 +2,7 @@ import { sortNumber } from "~/components/filter-and-sort/facets/createSorter";
 
 export type ReviewCountSortKeys = "review-count-asc" | "review-count-desc";
 
-type SortableByReviewCount = {
+export type SortableByReviewCount = {
   reviewCount: number;
 };
 

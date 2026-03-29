@@ -2,15 +2,13 @@ import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import { editionFacetTests } from "~/components/filter-and-sort/facets/edition/editionFacetTests";
-import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
-import {
-  readingYearFacetFilterTests,
-  readingYearFacetSortTests,
-} from "~/components/filter-and-sort/facets/reading-year/readingYearFacetTests";
-import { reviewedStatusFacetTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
-import { titleYearFilterFacetTests } from "~/components/filter-and-sort/facets/title-year/titleYearFacetTests";
-import { titleFilterFacetTests } from "~/components/filter-and-sort/facets/title/titleFacetTests";
+import { editionFilterTests } from "~/components/filter-and-sort/facets/edition/editionFilterTests";
+import { kindFilterTests } from "~/components/filter-and-sort/facets/kind/kindFilterTests";
+import { readingDateSortTests } from "~/components/filter-and-sort/facets/reading-date/readingDateSortTests";
+import { readingYearFilterTests } from "~/components/filter-and-sort/facets/reading-year/readingYearFilterTests";
+import { reviewedStatusFilterTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFilterTests";
+import { titleYearFilterTests } from "~/components/filter-and-sort/facets/title-year/titleYearFilterTests";
+import { titleFilterTests } from "~/components/filter-and-sort/facets/title/titleFilterTests";
 import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";
@@ -93,7 +91,7 @@ describe("ReadingLog", () => {
   });
 
   // Shared facet test suites
-  kindFacetTests(
+  kindFilterTests(
     (items) =>
       render(
         <ReadingLog
@@ -110,7 +108,7 @@ describe("ReadingLog", () => {
     getCalendar,
   );
 
-  reviewedStatusFacetTests(
+  reviewedStatusFilterTests(
     (items) =>
       render(
         <ReadingLog
@@ -128,7 +126,7 @@ describe("ReadingLog", () => {
     getCalendar,
   );
 
-  editionFacetTests({
+  editionFilterTests({
     getList: getCalendar,
     renderItems: (items) =>
       render(
@@ -145,7 +143,7 @@ describe("ReadingLog", () => {
       ),
   });
 
-  readingYearFacetSortTests({
+  readingDateSortTests({
     getList: getCalendar,
     renderItems: (items) =>
       render(
@@ -157,20 +155,18 @@ describe("ReadingLog", () => {
       ),
   });
 
-  titleFilterFacetTests(
+  titleFilterTests(
     (items) =>
       render(
         <ReadingLog
           {...baseProps}
-          values={createReadingValues(
-            items.map(({ sortTitle, title }) => ({ sortTitle, title })),
-          )}
+          values={createReadingValues(items.map(({ title }) => ({ title })))}
         />,
       ),
     getCalendar,
   );
 
-  titleYearFilterFacetTests({
+  titleYearFilterTests({
     distinctTitleYears: baseProps.distinctTitleYears,
     getList: getCalendar,
     renderItems: (items) =>
@@ -184,7 +180,7 @@ describe("ReadingLog", () => {
       ),
   });
 
-  readingYearFacetFilterTests({
+  readingYearFilterTests({
     renderItems: (items) =>
       render(
         <ReadingLog

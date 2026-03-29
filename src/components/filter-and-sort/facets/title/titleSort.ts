@@ -1,17 +1,17 @@
 import { sortString } from "~/components/filter-and-sort/facets/createSorter";
 
-type SortableByTitle = {
+export type SortableByTitle = {
   sortTitle: string;
 };
 
-type TitleSortKeys = "title-asc" | "title-desc";
+export type TitleSortKeys = "title-asc" | "title-desc";
 
 export const titleSortComparators: Record<
   TitleSortKeys,
   (a: SortableByTitle, b: SortableByTitle) => number
 > = {
   "title-asc": (a, b) => sortString(a.sortTitle, b.sortTitle),
-  "title-desc": (a, b) => sortString(a.sortTitle, b.sortTitle) * -1,
+  "title-desc": (a, b) => sortString(b.sortTitle, a.sortTitle),
 };
 
 export const titleSortOptions = [
