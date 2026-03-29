@@ -7,7 +7,7 @@ import { createTitleYearFilter } from "~/components/filter-and-sort/facets/title
 import { createTitleFilter } from "~/components/filter-and-sort/facets/title/titleFilter";
 
 import type { AuthorTitlesValue } from "./AuthorTitles";
-import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
+import type { AuthorTitlesFiltersValues } from "./authorTitlesReducer";
 
 /**
  * Filters author titles based on grade, kind, work year, review year,

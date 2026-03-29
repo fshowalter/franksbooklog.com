@@ -3,15 +3,6 @@ import type { UserEvent } from "@testing-library/user-event";
 import { screen } from "@testing-library/react";
 
 /**
- * Test helper function to click the "Clear all filters" button.
- *
- * @param user - User event instance for interaction simulation
- */
-export async function clickClearFilters(user: UserEvent) {
-  return user.click(screen.getByRole("button", { name: "Clear all filters" }));
-}
-
-/**
  * Test helper function to click the "Close filters" button.
  *
  * @param user - User event instance for interaction simulation

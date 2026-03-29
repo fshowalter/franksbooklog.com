@@ -9,7 +9,7 @@ import type { ReadingLogValue } from "./ReadingLog";
 import type {
   ReadingLogAction,
   ReadingLogFiltersValues,
-} from "./ReadingLog.reducer";
+} from "./readingLogReducer";
 
 import { filterReadingLog } from "./filterReadingLog";
 

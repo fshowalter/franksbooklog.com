@@ -11,8 +11,8 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import type { AuthorTitlesSort } from "./sortAuthorTitles";
 
-import { createInitialState, reducer } from "./AuthorTitles.reducer";
 import { AuthorTitlesFilters } from "./AuthorTitlesFilters";
+import { createInitialState, reducer } from "./authorTitlesReducer";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthorTitles } from "./filterAuthorTitles";
 import { sortAuthorTitles, sortOptions } from "./sortAuthorTitles";

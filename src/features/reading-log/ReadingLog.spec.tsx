@@ -1,15 +1,13 @@
 import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import {
-  clickSortOption,
-  clickToggleFilters,
-  clickViewResults,
-} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
+import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { editionFacetTests } from "~/components/filter-and-sort/facets/edition/editionFacetTests";
 import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
-import { readingYearSortFacetTests } from "~/components/filter-and-sort/facets/reading-year/readingYearFacetTests";
-import { clickReviewedStatusFilterOption } from "~/components/filter-and-sort/facets/reviewed-status/ReviewedStatusFacet.testHelper";
+import {
+  readingYearFacetFilterTests,
+  readingYearFacetSortTests,
+} from "~/components/filter-and-sort/facets/reading-year/readingYearFacetTests";
 import { reviewedStatusFacetTests } from "~/components/filter-and-sort/facets/reviewed-status/reviewedStatusFacetTests";
 import { titleYearFilterFacetTests } from "~/components/filter-and-sort/facets/title-year/titleYearFacetTests";
 import { titleFilterFacetTests } from "~/components/filter-and-sort/facets/title/titleFacetTests";
@@ -18,15 +16,14 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";
 
 import { ReadingLog } from "./ReadingLog";
-import { selectedMonthDateReducer } from "./ReadingLog.reducer";
 import {
   clickNextMonthButton,
   clickPreviousMonthButton,
-  fillReadingYearFilter,
   getCalendar,
   queryNextMonthButton,
   queryPreviousMonthButton,
 } from "./ReadingLog.testHelper";
+import { selectedMonthDateReducer } from "./readingLogReducer";
 
 function createReadingValues(
   overrides: Partial<ReadingLogValue>[] = [],
@@ -148,7 +145,7 @@ describe("ReadingLog", () => {
       ),
   });
 
-  readingYearSortFacetTests({
+  readingYearFacetSortTests({
     getList: getCalendar,
     renderItems: (items) =>
       render(
@@ -187,120 +184,20 @@ describe("ReadingLog", () => {
       ),
   });
 
-  describe("filtering", () => {
-    it("filters by reviewed status", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          reviewed: true,
-          slug: "reviewed-book",
-          title: "Reviewed Book",
-        },
-        {
-          reviewed: false,
-          slug: undefined,
-          title: "Unreviewed Book",
-        },
-        {
-          reviewed: true,
-          slug: "another-reviewed",
-          title: "Another Reviewed",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickReviewedStatusFilterOption(user, "Reviewed");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("Reviewed Book")).toBeInTheDocument();
-      expect(
-        within(calendar).getByText("Another Reviewed"),
-      ).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Unreviewed Book"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by unreviewed status", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          reviewed: true,
-          slug: "reviewed-book",
-          title: "Reviewed Book",
-        },
-        {
-          reviewed: false,
-          slug: undefined,
-          title: "Unreviewed Book",
-        },
-        {
-          reviewed: false,
-          slug: undefined,
-          title: "Another Unreviewed",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await clickReviewedStatusFilterOption(user, "Not Reviewed");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("Unreviewed Book")).toBeInTheDocument();
-      expect(
-        within(calendar).getByText("Another Unreviewed"),
-      ).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Reviewed Book"),
-      ).not.toBeInTheDocument();
-    });
-
-    it("filters by reading year range", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          readingDate: "2012-06-15",
-          readingYear: "2012",
-          title: "Book 2012",
-        },
-        {
-          readingDate: "2013-06-15",
-          readingYear: "2013",
-          title: "Book 2013",
-        },
-        {
-          readingDate: "2014-06-15",
-          readingYear: "2014",
-          title: "Book 2014",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
+  readingYearFacetFilterTests({
+    renderItems: (items) =>
       render(
         <ReadingLog
           {...baseProps}
-          initialSort="reading-date-asc"
-          values={readings}
+          values={createReadingValues(
+            items.map(({ readingDate, readingYear, title }) => ({
+              readingDate,
+              readingYear,
+              title,
+            })),
+          )}
         />,
-      );
-
-      await clickToggleFilters(user);
-      await fillReadingYearFilter(user, "2012", "2013");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("Book 2012")).toBeInTheDocument();
-
-      await clickNextMonthButton(user);
-      expect(within(calendar).getByText("Book 2013")).toBeInTheDocument();
-
-      const nextButton = queryNextMonthButton();
-      expect(nextButton).not.toBeInTheDocument();
-    });
+      ),
   });
 
   describe("sorting", () => {

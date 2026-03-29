@@ -7,7 +7,7 @@ import { buildReviewedStatusFilterChip } from "~/components/filter-and-sort/face
 import { buildTitleYearFilterChip } from "~/components/filter-and-sort/facets/title-year/titleYearFilterChip";
 import { buildTitleFilterChip } from "~/components/filter-and-sort/facets/title/titleFilterChip";
 
-import type { AuthorTitlesFiltersValues } from "./AuthorTitles.reducer";
+import type { AuthorTitlesFiltersValues } from "./authorTitlesReducer";
 
 export function buildAppliedFilterChips(
   filterValues: AuthorTitlesFiltersValues,

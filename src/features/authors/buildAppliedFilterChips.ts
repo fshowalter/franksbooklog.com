@@ -2,7 +2,7 @@ import type { FilterChip } from "~/components/filter-and-sort/container/FilterAn
 
 import { buildNameFilterChip } from "~/components/filter-and-sort/facets/name/nameFilterChip";
 
-import type { AuthorsFiltersValues } from "./Authors.reducer";
+import type { AuthorsFiltersValues } from "./authorsReducer";
 
 export function buildAppliedFilterChips(
   filterValues: AuthorsFiltersValues,

@@ -5,6 +5,7 @@ import { describe, it } from "vitest";
 
 import {
   clickCloseFilters,
+  clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
@@ -17,14 +18,6 @@ type NameItem = {
   sortName: string;
 };
 
-export async function fillNameFilter(user: UserEvent, value: string) {
-  await fillTextField(user, "Name", value);
-}
-
-export function getNameFilter() {
-  return screen.getByLabelText("Name");
-}
-
 /**
  * Shared test suite for the name filter facet.
  * Call this inside a feature's describe block, passing a render adapter
@@ -36,7 +29,7 @@ export function getNameFilter() {
  *   render(<Authors {...baseProps} values={values} />);
  * });
  */
-export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
+export function nameFacetFilterTests(renderItems: (items: NameItem[]) => void) {
   describe("name filter", () => {
     it("filters to matching names", async ({ expect }) => {
       renderItems([
@@ -47,7 +40,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillTextField(user, "Name", "Stoker");
+      await fillNameFilter(user, "Stoker");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -65,7 +58,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillTextField(user, "Name", "H.");
+      await fillNameFilter(user, "H.");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -84,7 +77,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillTextField(user, "Name", "Bram Stoker");
+      await fillNameFilter(user, "Bram Stoker");
       await clickViewResults(user);
 
       await clickToggleFilters(user);
@@ -105,7 +98,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillTextField(user, "Name", "Bram Stoker");
+      await fillNameFilter(user, "Bram Stoker");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -137,7 +130,7 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
 
       const user = getUserWithFakeTimers();
       await clickToggleFilters(user);
-      await fillTextField(user, "Name", "Bram Stoker");
+      await fillNameFilter(user, "Bram Stoker");
       await clickViewResults(user);
 
       const list = getGroupedAvatarList();
@@ -145,11 +138,61 @@ export function nameFacetTests(renderItems: (items: NameItem[]) => void) {
       expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
 
       await clickToggleFilters(user);
-      await fillTextField(user, "Name", "Different Author");
+      await fillNameFilter(user, "Different Author");
       await clickCloseFilters(user);
 
       expect(within(list).getByText("Stoker, Bram")).toBeInTheDocument();
       expect(within(list).queryByText("King, Stephen")).not.toBeInTheDocument();
     });
   });
+}
+
+export function nameFacetSortTests(renderItems: (items: NameItem[]) => void) {
+  describe("name sort", () => {
+    it("sorts by sort name A to Z", async ({ expect }) => {
+      renderItems([
+        { name: "Arthur Conan Doyle", sortName: "Doyle, Arthur Conan" },
+        { name: "Zelda Fitzgerald", sortName: "Fitzgerald, Zelda" },
+        { name: "Mary Shelley", sortName: "Shelley, Mary" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+
+      await clickSortOption(user, "Name (A → Z)");
+
+      const list = getGroupedAvatarList();
+      const allText = list.textContent || "";
+      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
+      const shellyIndex = allText.indexOf("Shelley, Mar");
+      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
+
+      expect(doyleIndex).toBeLessThan(fitzgeraldIndex);
+      expect(fitzgeraldIndex).toBeLessThan(shellyIndex);
+    });
+
+    it("sorts by sort name Z to A", async ({ expect }) => {
+      renderItems([
+        { name: "Arthur Conan Doyle", sortName: "Doyle, Arthur Conan" },
+        { name: "Zelda Fitzgerald", sortName: "Fitzgerald, Zelda" },
+        { name: "Mary Shelley", sortName: "Shelley, Mary" },
+      ]);
+
+      const user = getUserWithFakeTimers();
+
+      await clickSortOption(user, "Name (Z → A)");
+
+      const list = getGroupedAvatarList();
+      const allText = list.textContent || "";
+      const doyleIndex = allText.indexOf("Doyle, Arthur Conan");
+      const shellyIndex = allText.indexOf("Shelley, Mar");
+      const fitzgeraldIndex = allText.indexOf("Fitzgerald, Zelda");
+
+      expect(shellyIndex).toBeLessThan(fitzgeraldIndex);
+      expect(fitzgeraldIndex).toBeLessThan(doyleIndex);
+    });
+  });
+}
+
+async function fillNameFilter(user: UserEvent, value: string) {
+  await fillTextField(user, "Name", value);
 }

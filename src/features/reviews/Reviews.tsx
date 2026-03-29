@@ -11,9 +11,9 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterReviews } from "./filterReviews";
-import { createInitialState, reducer } from "./Reviews.reducer";
 import { ReviewsFilters } from "./ReviewsFilters";
 import { ReviewsListItem } from "./ReviewsListItem";
+import { createInitialState, reducer } from "./reviewsReducer";
 import { sortOptions, sortReviews } from "./sortReviews";
 
 /**
