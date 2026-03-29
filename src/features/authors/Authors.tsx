@@ -86,6 +86,14 @@ export function Authors({
 
   const activeFilters = buildAppliedFilterChips(state.activeFilterValues);
 
+  const sideNav = state.sort.startsWith("name-") ? (
+    <AlphabetSideNav
+      className="max-w-20"
+      groupedValues={groupedValues}
+      sortValue={state.sort}
+    />
+  ) : undefined;
+
   return (
     <FilterAndSortContainer
       activeFilters={activeFilters}
@@ -97,13 +105,7 @@ export function Authors({
         />
       }
       pendingFilteredCount={pendingFilteredCount}
-      sideNav={
-        <AlphabetSideNav
-          className="max-w-20"
-          groupedValues={groupedValues}
-          sortValue={state.sort}
-        />
-      }
+      sideNav={sideNav}
       sortProps={{
         currentSortValue: state.sort,
         sortOptions,
