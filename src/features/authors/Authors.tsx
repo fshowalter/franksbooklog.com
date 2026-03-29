@@ -10,9 +10,9 @@ import { usePendingFilterCount } from "~/hooks/usePendingFilterCount";
 import type { AuthorsSort } from "./sortAuthors";
 
 import { AlphabetSideNav } from "./AlphabetSideNav";
-import { createInitialState, reducer } from "./Authors.reducer";
 import { AuthorsFilters } from "./AuthorsFilters";
 import { AuthorsListItem } from "./AuthorsListItem";
+import { createInitialState, reducer } from "./authorsReducer";
 import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { filterAuthors } from "./filterAuthors";
 import { groupAuthors } from "./groupAuthors";

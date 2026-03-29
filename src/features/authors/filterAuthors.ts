@@ -2,7 +2,7 @@ import { filterSortedValues } from "~/components/filter-and-sort/facets/filterSo
 import { createNameFilter } from "~/components/filter-and-sort/facets/name/nameFilter";
 
 import type { AuthorsValue } from "./Authors";
-import type { AuthorsFiltersValues } from "./Authors.reducer";
+import type { AuthorsFiltersValues } from "./authorsReducer";
 
 /**
  * Filters authors based on name.

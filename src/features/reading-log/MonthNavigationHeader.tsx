@@ -1,9 +1,9 @@
-import type { ReadingLogAction } from "./ReadingLog.reducer";
+import type { ReadingLogAction } from "./readingLogReducer";
 
 import {
   createNextMonthClickedAction,
   createPreviousMonthClickedAction,
-} from "./ReadingLog.reducer";
+} from "./readingLogReducer";
 
 /**
  * Header component for calendar month navigation.

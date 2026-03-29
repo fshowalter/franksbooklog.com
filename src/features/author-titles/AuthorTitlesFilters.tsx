@@ -9,7 +9,7 @@ import type { AuthorTitlesValue } from "./AuthorTitles";
 import type {
   AuthorTitlesAction,
   AuthorTitlesFiltersValues,
-} from "./AuthorTitles.reducer";
+} from "./authorTitlesReducer";
 
 import { filterAuthorTitles } from "./filterAuthorTitles";
 

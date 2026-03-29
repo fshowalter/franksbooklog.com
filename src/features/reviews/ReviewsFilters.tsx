@@ -6,7 +6,7 @@ import { TitleYearFacet } from "~/components/filter-and-sort/facets/title-year/T
 import { TitleFacet } from "~/components/filter-and-sort/facets/title/TitleFacet";
 
 import type { ReviewsValue } from "./Reviews";
-import type { ReviewsAction, ReviewsFiltersValues } from "./Reviews.reducer";
+import type { ReviewsAction, ReviewsFiltersValues } from "./reviewsReducer";
 
 import { filterReviews } from "./filterReviews";
 

@@ -2,8 +2,6 @@ import type { UserEvent } from "@testing-library/user-event";
 
 import { screen } from "@testing-library/react";
 
-import { fillYearField } from "~/components/filter-and-sort/fields/YearField.testHelper";
-
 export async function clickNextMonthButton(user: UserEvent) {
   // Find and click the next month button first to ensure we can go back
   const nextMonthButton = await screen.findByRole("button", {
@@ -18,14 +16,6 @@ export async function clickPreviousMonthButton(user: UserEvent) {
     name: /Navigate to previous month:/,
   });
   await user.click(previousMonthButton);
-}
-
-export async function fillReadingYearFilter(
-  user: UserEvent,
-  year1: string,
-  year2: string,
-) {
-  await fillYearField(user, "Reading Year", year1, year2);
 }
 
 export function getCalendar() {

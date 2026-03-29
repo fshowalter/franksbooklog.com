@@ -7,7 +7,7 @@ import { createTitleYearFilter } from "~/components/filter-and-sort/facets/title
 import { createTitleFilter } from "~/components/filter-and-sort/facets/title/titleFilter";
 
 import type { ReadingLogValue } from "./ReadingLog";
-import type { ReadingLogFiltersValues } from "./ReadingLog.reducer";
+import type { ReadingLogFiltersValues } from "./readingLogReducer";
 
 /**
  * Filters reading log entries based on edition, kind, reading year, reviewed

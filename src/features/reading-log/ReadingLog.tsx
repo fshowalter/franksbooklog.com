@@ -12,8 +12,8 @@ import { buildAppliedFilterChips } from "./buildAppliedFilterChips";
 import { CalendarMonth } from "./CalendarMonth";
 import { filterReadingLog } from "./filterReadingLog";
 import { MonthNavigationHeader } from "./MonthNavigationHeader";
-import { createInitialState, reducer } from "./ReadingLog.reducer";
 import { Filters } from "./ReadingLogFilters";
+import { createInitialState, reducer } from "./readingLogReducer";
 import { sortOptions, sortReadingLog } from "./sortReadingLog";
 import { useMonthNavigation } from "./useMonthNavigation";
 

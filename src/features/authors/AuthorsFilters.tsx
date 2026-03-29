@@ -1,6 +1,6 @@
 import { NameFacet } from "~/components/filter-and-sort/facets/name/NameFacet";
 
-import type { AuthorsAction, AuthorsFiltersValues } from "./Authors.reducer";
+import type { AuthorsAction, AuthorsFiltersValues } from "./authorsReducer";
 
 /**
  * Authors page filters component providing name-based filtering controls.

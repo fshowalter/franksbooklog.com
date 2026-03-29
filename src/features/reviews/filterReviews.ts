@@ -7,7 +7,7 @@ import { createTitleYearFilter } from "~/components/filter-and-sort/facets/title
 import { createTitleFilter } from "~/components/filter-and-sort/facets/title/titleFilter";
 
 import type { ReviewsValue } from "./Reviews";
-import type { ReviewsFiltersValues } from "./Reviews.reducer";
+import type { ReviewsFiltersValues } from "./reviewsReducer";
 
 /**
  * Filters reviews based on grade, kind, work year, review year, reviewed
