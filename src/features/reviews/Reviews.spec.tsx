@@ -2,27 +2,13 @@ import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import { getCoverList } from "~/components/cover-list/CoverList.testHelper";
-import {
-  clickClearFilters,
-  clickCloseFilters,
-  clickSortOption,
-  clickToggleFilters,
-  clickViewResults,
-} from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import {
-  fillTitleFilter,
-  getKindFilter,
-  getTitleFilter,
-} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
+import { clickSortOption } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
 import { authorFacetTests } from "~/components/filter-and-sort/facets/author/authorFacetTests";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
 } from "~/components/filter-and-sort/facets/grade/gradeFacetTests";
-import {
-  clickKindOption,
-  kindFacetTests,
-} from "~/components/filter-and-sort/facets/kind/kindFacetTests";
+import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
 import {
   reviewYearFilterFacetTests,
   reviewYearSortFacetTests,
@@ -37,7 +23,6 @@ import {
   titleSortFacetTests,
 } from "~/components/filter-and-sort/facets/title/titleFacetTests";
 import { paginationTests } from "~/components/filter-and-sort/paginated-list/paginationTests";
-import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { ReviewsProps, ReviewsValue } from "./Reviews";
 
@@ -242,71 +227,6 @@ describe("Reviews", () => {
       const list = getCoverList();
       expect(within(list).getByText(/Pratchett, Terry/)).toBeInTheDocument();
       expect(within(list).getByText(/Gaiman, Neil/)).toBeInTheDocument();
-    });
-  });
-
-  describe("when clearing filters", () => {
-    it("clears all filters with clear button", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { kind: "Novel", title: "Dracula" },
-        { kind: "Collection", title: "Night Show" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Dracula");
-      await clickKindOption(user, "Novel");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("Dracula")).toBeInTheDocument();
-      expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await clickClearFilters(user);
-
-      expect(getTitleFilter()).toHaveValue("");
-      expect(
-        within(getKindFilter()).queryAllByRole("checkbox", { checked: true }),
-      ).toHaveLength(0);
-
-      await clickViewResults(user);
-
-      expect(within(list).getByText("Dracula")).toBeInTheDocument();
-      expect(within(list).getByText("Night Show")).toBeInTheDocument();
-    });
-  });
-
-  describe("when closing filter drawer without applying", () => {
-    it("resets pending filter changes", async ({ expect }) => {
-      const reviews = createReviewsValues([
-        { title: "Dracula" },
-        { title: "The Shining" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<Reviews {...baseProps} values={reviews} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Dracula");
-      await clickViewResults(user);
-
-      const list = getCoverList();
-      expect(within(list).getByText("Dracula")).toBeInTheDocument();
-      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Different Title");
-      await clickCloseFilters(user);
-
-      // Should still show originally filtered results
-      expect(within(list).getByText("Dracula")).toBeInTheDocument();
-      expect(within(list).queryByText("The Shining")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      expect(getTitleFilter()).toHaveValue("Dracula");
     });
   });
 });

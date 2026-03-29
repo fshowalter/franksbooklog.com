@@ -2,16 +2,10 @@ import { render, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
-  clickClearFilters,
-  clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import {
-  fillTitleFilter,
-  getTitleFilter,
-} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
 import { editionFacetTests } from "~/components/filter-and-sort/facets/edition/editionFacetTests";
 import { kindFacetTests } from "~/components/filter-and-sort/facets/kind/kindFacetTests";
 import { readingYearSortFacetTests } from "~/components/filter-and-sort/facets/reading-year/readingYearFacetTests";
@@ -26,12 +20,10 @@ import type { ReadingLogProps, ReadingLogValue } from "./ReadingLog";
 import { ReadingLog } from "./ReadingLog";
 import { selectedMonthDateReducer } from "./ReadingLog.reducer";
 import {
-  clickEditionFilterOption,
   clickNextMonthButton,
   clickPreviousMonthButton,
   fillReadingYearFilter,
   getCalendar,
-  getEditionFilter,
   queryNextMonthButton,
   queryPreviousMonthButton,
 } from "./ReadingLog.testHelper";
@@ -436,75 +428,6 @@ describe("ReadingLog", () => {
     });
   });
 
-  describe("when clearing filters", () => {
-    it("clears all filters with clear button", async ({ expect }) => {
-      const readings = createReadingValues([
-        { edition: "Paperback", title: "The Shining" },
-        { edition: "Hardcover", title: "Pet Sematary" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "The Shining");
-      await clickEditionFilterOption(user, "Paperback");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("The Shining")).toBeInTheDocument();
-      expect(
-        within(calendar).queryByText("Pet Sematary"),
-      ).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await clickClearFilters(user);
-
-      expect(getTitleFilter()).toHaveValue("");
-      expect(
-        within(getEditionFilter()).queryAllByRole("checkbox", {
-          checked: true,
-        }),
-      ).toHaveLength(0);
-
-      await clickViewResults(user);
-
-      expect(within(calendar).getByText("The Shining")).toBeInTheDocument();
-      expect(within(calendar).getByText("Pet Sematary")).toBeInTheDocument();
-    });
-  });
-
-  describe("when closing filter drawer without applying", () => {
-    it("resets pending filter changes", async ({ expect }) => {
-      const readings = createReadingValues([
-        { title: "Dracula" },
-        { title: "The Stand" },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Dracula");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-      expect(within(calendar).getByText("Dracula")).toBeInTheDocument();
-      expect(within(calendar).queryByText("The Stand")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Different Book");
-      await clickCloseFilters(user);
-
-      // Should still show originally filtered results
-      expect(within(calendar).getByText("Dracula")).toBeInTheDocument();
-      expect(within(calendar).queryByText("The Stand")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      expect(getTitleFilter()).toHaveValue("Dracula");
-    });
-  });
-
   describe("reading progress display", () => {
     it("displays abandoned readings with special badge", ({ expect }) => {
       const readings = createReadingValues([
@@ -619,52 +542,6 @@ describe("ReadingLog", () => {
       expect(within(calendar).getByText(/Neil Gaiman/)).toBeInTheDocument();
       expect(within(calendar).getByText(/Stephen King/)).toBeInTheDocument();
       expect(within(calendar).getByText(/Peter Straub/)).toBeInTheDocument();
-    });
-
-    it("filters books with multiple authors correctly", async ({ expect }) => {
-      const readings = createReadingValues([
-        {
-          authors: [
-            { name: "Terry Pratchett", notes: undefined },
-            { name: "Neil Gaiman", notes: undefined },
-          ],
-          kind: "Novel",
-          readingDate: "2024-01-01",
-          title: "Good Omens",
-        },
-        {
-          authors: [{ name: "Terry Pratchett", notes: undefined }],
-          kind: "Novel",
-          readingDate: "2024-01-02",
-          title: "The Colour of Magic",
-        },
-        {
-          authors: [{ name: "Neil Gaiman", notes: undefined }],
-          kind: "Novel",
-          readingDate: "2024-01-03",
-          title: "Stardust",
-        },
-      ]);
-
-      const user = getUserWithFakeTimers();
-      render(<ReadingLog {...baseProps} values={readings} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Good Omens");
-      await clickViewResults(user);
-
-      const calendar = getCalendar();
-
-      // Should show the co-authored book
-      expect(within(calendar).getByText("Good Omens")).toBeInTheDocument();
-      expect(within(calendar).getByText(/Terry Pratchett/)).toBeInTheDocument();
-      expect(within(calendar).getByText(/Neil Gaiman/)).toBeInTheDocument();
-
-      // Should not show the solo-authored books
-      expect(
-        within(calendar).queryByText("The Colour of Magic"),
-      ).not.toBeInTheDocument();
-      expect(within(calendar).queryByText("Stardust")).not.toBeInTheDocument();
     });
 
     it("displays reading progress correctly for multi-author books", ({

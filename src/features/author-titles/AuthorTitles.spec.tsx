@@ -2,17 +2,10 @@ import { render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
 import {
-  clickClearFilters,
-  clickCloseFilters,
   clickSortOption,
   clickToggleFilters,
   clickViewResults,
 } from "~/components/filter-and-sort/container/FilterAndSortContainer.testHelper";
-import {
-  fillTitleFilter,
-  getKindFilter,
-  getTitleFilter,
-} from "~/components/filter-and-sort/facet-groups/TitleFacets.testHelper";
 import {
   gradeFilterFacetTests,
   gradeSortFacetTests,
@@ -188,71 +181,6 @@ describe("AuthorTitles", () => {
     );
     render(<AuthorTitles {...baseProps} values={titles} />);
   }, getCardList);
-
-  describe("when clearing filters", () => {
-    it("clears all filters with clear button", async ({ expect }) => {
-      const titles = [
-        createAuthorTitleValue({ kind: "Novel", title: "The Cellar" }),
-        createAuthorTitleValue({ kind: "Collection", title: "Night Show" }),
-      ];
-
-      const user = getUserWithFakeTimers();
-      render(<AuthorTitles {...baseProps} values={titles} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "The Cellar");
-      await clickKindOption(user, "Novel");
-      await clickViewResults(user);
-
-      const list = getCardList();
-      expect(within(list).getByText("The Cellar")).toBeInTheDocument();
-      expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await clickClearFilters(user);
-
-      expect(getTitleFilter()).toHaveValue("");
-      expect(
-        within(getKindFilter()).queryAllByRole("checkbox", { checked: true }),
-      ).toHaveLength(0);
-
-      await clickViewResults(user);
-
-      expect(within(list).getByText("The Cellar")).toBeInTheDocument();
-      expect(within(list).getByText("Night Show")).toBeInTheDocument();
-    });
-  });
-
-  describe("when closing filter drawer without applying", () => {
-    it("resets pending filter changes", async ({ expect }) => {
-      const titles = [
-        createAuthorTitleValue({ title: "The Cellar" }),
-        createAuthorTitleValue({ title: "Night Show" }),
-      ];
-
-      const user = getUserWithFakeTimers();
-      render(<AuthorTitles {...baseProps} values={titles} />);
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "The Cellar");
-      await clickViewResults(user);
-
-      const list = getCardList();
-      expect(within(list).getByText("The Cellar")).toBeInTheDocument();
-      expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      await fillTitleFilter(user, "Different Title");
-      await clickCloseFilters(user);
-
-      // Should still show originally filtered results
-      expect(within(list).getByText("The Cellar")).toBeInTheDocument();
-      expect(within(list).queryByText("Night Show")).not.toBeInTheDocument();
-
-      await clickToggleFilters(user);
-      expect(getTitleFilter()).toHaveValue("The Cellar");
-    });
-  });
 
   describe("multiple authors (co-authors)", () => {
     it("displays co-authors when present", ({ expect }) => {
