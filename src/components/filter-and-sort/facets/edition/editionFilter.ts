@@ -10,10 +10,9 @@ export function createEditionCountMap<
   const otherFilters = { ...filters, edition: undefined };
   const filtered = filterer(values, otherFilters);
 
-  // Count occurrences of each unique value
   const counts = new Map<string, number>();
   for (const value of filtered) {
-    counts.set(value.edition, (counts.get(value.edition) || 0) + 1);
+    counts.set(value.edition, (counts.get(value.edition) ?? 0) + 1);
   }
 
   return counts;

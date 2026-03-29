@@ -10,10 +10,9 @@ export function createKindCountMap<
   const otherFilters = { ...filters, kind: undefined };
   const filtered = filterer(values, otherFilters);
 
-  // Count occurrences of each unique value
   const counts = new Map<string, number>();
   for (const value of filtered) {
-    counts.set(value.kind, (counts.get(value.kind) || 0) + 1);
+    counts.set(value.kind, (counts.get(value.kind) ?? 0) + 1);
   }
 
   return counts;
