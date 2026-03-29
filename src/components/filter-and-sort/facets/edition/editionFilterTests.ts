@@ -13,7 +13,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./editionFilter";
 
-type EditionItem = FilterableValue & {
+type EditionFilterItem = FilterableValue & {
   title: string;
 };
 
@@ -31,7 +31,7 @@ export function editionFilterTests({
   renderItems,
 }: {
   getList: () => HTMLElement;
-  renderItems: (items: EditionItem[]) => void;
+  renderItems: (items: EditionFilterItem[]) => void;
 }) {
   describe("editionFilter", () => {
     it("filters to a single edition", async ({ expect }) => {

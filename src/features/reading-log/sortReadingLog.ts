@@ -1,7 +1,10 @@
 import type { ReadingDateSortKeys } from "~/components/filter-and-sort/facets/reading-date/readingDateSort";
 
 import { createSorter } from "~/components/filter-and-sort/facets/createSorter";
-import { readingDateSortComparators } from "~/components/filter-and-sort/facets/reading-date/readingDateSort";
+import {
+  readingDateSortComparators,
+  readingDateSortOptions,
+} from "~/components/filter-and-sort/facets/reading-date/readingDateSort";
 
 import type { ReadingLogValue } from "./ReadingLog";
 
@@ -17,7 +20,4 @@ export const sortReadingLog = createSorter<ReadingLogValue, ReadingLogSort>(
   readingDateSortComparators,
 );
 
-export const sortOptions = [
-  { label: "Reading Date (Newest First)", value: "reading-date-desc" },
-  { label: "Reading Date (Oldest First)", value: "reading-date-asc" },
-];
+export const sortOptions = [...readingDateSortOptions];

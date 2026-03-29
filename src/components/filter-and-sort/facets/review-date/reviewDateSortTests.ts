@@ -5,13 +5,13 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByReviewDate } from "./reviewDateSort";
 
-type ReviewDateItem = SortableByReviewDate & {
+type ReviewDateSortItem = SortableByReviewDate & {
   reviewYear: string;
   title: string;
 };
 
 export function reviewDateSortTests(
-  renderItems: (items: ReviewDateItem[]) => void,
+  renderItems: (items: ReviewDateSortItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("reviewDateSort", () => {

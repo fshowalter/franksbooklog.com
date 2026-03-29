@@ -13,7 +13,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { FilterableValue } from "./kindFilter";
 
-type KindItem = FilterableValue & {
+type KindFilterItem = FilterableValue & {
   title: string;
 };
 
@@ -34,7 +34,7 @@ export async function clickKindOption(user: UserEvent, value: string) {
  * kindFacetTests((items) => { render(...) }, getCalendar);
  */
 export function kindFilterTests(
-  renderItems: (items: KindItem[]) => void,
+  renderItems: (items: KindFilterItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("kindFilter", () => {

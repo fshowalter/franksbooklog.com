@@ -5,12 +5,12 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByReviewCount } from "./reviewCountSort";
 
-type ReviewCountItem = SortableByReviewCount & {
+type ReviewCountSortItem = SortableByReviewCount & {
   name: string;
 };
 
 export function reviewCountSortTests(
-  renderItems: (items: ReviewCountItem[]) => void,
+  renderItems: (items: ReviewCountSortItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("reviewCountSort", () => {

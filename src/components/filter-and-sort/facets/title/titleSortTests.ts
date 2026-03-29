@@ -5,7 +5,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByTitle } from "./titleSort";
 
-type TitleItem = SortableByTitle & {
+type TitleSortItem = SortableByTitle & {
   title: string;
 };
 
@@ -14,7 +14,7 @@ type TitleItem = SortableByTitle & {
  * (Reviews, AuthorTitles).
  */
 export function titleSortTests(
-  renderItems: (items: TitleItem[]) => void,
+  renderItems: (items: TitleSortItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("titleSort", () => {

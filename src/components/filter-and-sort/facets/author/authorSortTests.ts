@@ -5,7 +5,7 @@ import { getUserWithFakeTimers } from "~/utils/testUtils";
 
 import type { SortableByAuthor } from "./authorSort";
 
-type AuthorItem = SortableByAuthor & {
+type AuthorSortItem = SortableByAuthor & {
   title: string;
 };
 
@@ -19,7 +19,7 @@ type AuthorItem = SortableByAuthor & {
  * });
  */
 export function authorSortTests(
-  renderItems: (items: AuthorItem[]) => void,
+  renderItems: (items: AuthorSortItem[]) => void,
   getList: () => HTMLElement,
 ) {
   describe("authorSort", () => {
