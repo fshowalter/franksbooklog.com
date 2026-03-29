@@ -10,10 +10,7 @@ type Value = { gradeValue: GradeValue };
  * Full range [GRADE_MIN, GRADE_MAX] is treated as no-op to avoid excluding
  * Abandoned entries (gradeValue=0) when the slider is cleared.
  */
-export function createGradeFilter<
-  TValue extends Value,
-  TFilters extends Filters,
->(filters: TFilters) {
+export function createGradeFilter<TValue extends Value>(filters: Filters) {
   const filterValue = filters.gradeValue;
 
   if (

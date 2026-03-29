@@ -39,10 +39,9 @@ export function createReviewedStatusCountMap<
  * @param filterValue - Array of status strings to match
  * @returns Filter function or undefined if no filter value
  */
-export function createReviewedStatusFilter<
-  TValue extends Value,
-  TFilters extends Filters,
->(filters: TFilters) {
+export function createReviewedStatusFilter<TValue extends Value>(
+  filters: Filters,
+) {
   const filterValue = filters.reviewedStatus;
 
   if (!filterValue || filterValue.length === 0) return;

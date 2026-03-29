@@ -24,10 +24,7 @@ export function createKindCountMap<
 /**
  * Create a Kind filter function (multi-select OR logic)
  */
-export function createKindFilter<
-  TValue extends Value,
-  TFilters extends Filters,
->(filters: TFilters) {
+export function createKindFilter<TValue extends Value>(filters: Filters) {
   const filterValue = filters.kind;
   if (!filterValue || filterValue.length === 0) return;
   return (value: TValue) => filterValue.includes(value.kind);

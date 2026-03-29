@@ -21,10 +21,7 @@ export function createEditionCountMap<
   return counts;
 }
 
-export function createEditionFilter<
-  TValue extends Value,
-  TFilters extends Filters,
->(filters: TFilters) {
+export function createEditionFilter<TValue extends Value>(filters: Filters) {
   const filterValue = filters.edition;
   if (!filterValue || filterValue.length === 0) return;
   return (value: TValue) => filterValue.includes(value.edition);

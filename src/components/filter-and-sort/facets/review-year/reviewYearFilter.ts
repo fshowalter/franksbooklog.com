@@ -1,10 +1,7 @@
 type Filters = { reviewYear?: [string, string] };
 type Value = { reviewYear: string };
 
-export function createReviewYearFilter<
-  TValue extends Value,
-  TFilters extends Filters,
->(filters: TFilters) {
+export function createReviewYearFilter<TValue extends Value>(filters: Filters) {
   const filterValue = filters.reviewYear;
   if (!filterValue) return;
   return (value: TValue): boolean => {

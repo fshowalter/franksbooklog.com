@@ -1,10 +1,7 @@
 type Filters = { name?: string };
 type Value = { name: string; sortName: string };
 
-export function createNameFilter<
-  TValue extends Value,
-  TFilters extends Filters,
->(filters: TFilters) {
+export function createNameFilter<TValue extends Value>(filters: Filters) {
   const filterValue = filters.name;
   if (!filterValue) return;
   const regex = new RegExp(filterValue, "i");
