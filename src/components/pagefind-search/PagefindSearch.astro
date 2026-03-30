@@ -160,7 +160,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
 
           {/* Load More Button */}
           <div
-            class="hidden border-t border-default bg-default p-4"
+            class="hidden border-t border-default bg-subtle p-4"
             id="search-box-load-more-wrapper"
           >
             <div class="has-[button:hover]:drop-shadow-lg">
@@ -168,9 +168,9 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
                 aria-controls="search-box-results"
                 class={`
                   mx-auto block h-10 w-full max-w-107.5 cursor-pointer
-                  rounded-sm bg-accent font-sans text-sm font-bold text-white
+                  rounded-sm bg-default font-sans text-sm font-bold text-accent
                   uppercase transition-all
-                  hover:scale-105
+                  hover:scale-105 hover:bg-accent hover:text-white
                 `}
                 id="search-box-load-more"
                 type="button"
@@ -280,6 +280,11 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
             `}
             data-field="link"
             href=""></a>
+          <div class="font-sans text-sm font-normal">
+            <span class="text-subtle">by </span><span
+              class="text-default"
+              data-field="authors"></span>
+          </div>
         </h3>
         <p class="text-base text-default" data-field="excerpt"></p>
       </div>

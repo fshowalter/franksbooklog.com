@@ -84,33 +84,35 @@ const reviewedTitles = await getCollection("reviewedTitles");
       }
       <div class={`mt-4 text-center text-md text-muted`}>
         by{" "}
-        {
-          toSentenceArray(
-            await Promise.all(
-              reviewedTitle.authors.map((workAuthor) => {
-                return (
-                  <div
-                    class={`
-                      relative inline-block transform-gpu text-accent
-                      transition-transform
-                      after:absolute after:bottom-0 after:left-0 after:h-px
-                      after:w-full after:origin-center after:scale-x-0
-                      after:bg-(--color-accent) after:transition-transform
-                      hover:after:scale-x-100
-                    `}
-                  >
-                    <a href={`/authors/${workAuthor.slug}/`}>
-                      {workAuthor.name}
-                      {workAuthor.notes && (
-                        <span class="text-subtle"> ({workAuthor.notes})</span>
-                      )}
-                    </a>
-                  </div>
-                );
-              }),
-            ),
-          )
-        }
+        <span data-pagefind-meta="authors"
+          >{
+            toSentenceArray(
+              await Promise.all(
+                reviewedTitle.authors.map((workAuthor) => {
+                  return (
+                    <div
+                      class={`
+                        relative inline-block transform-gpu text-accent
+                        transition-transform
+                        after:absolute after:bottom-0 after:left-0 after:h-px
+                        after:w-full after:origin-center after:scale-x-0
+                        after:bg-(--color-accent) after:transition-transform
+                        hover:after:scale-x-100
+                      `}
+                    >
+                      <a href={`/authors/${workAuthor.slug}/`}>
+                        {workAuthor.name}
+                        {workAuthor.notes && (
+                          <span class="text-subtle"> ({workAuthor.notes})</span>
+                        )}
+                      </a>
+                    </div>
+                  );
+                }),
+              ),
+            )
+          }</span
+        >
       </div>
       <div class="mt-4">
         {

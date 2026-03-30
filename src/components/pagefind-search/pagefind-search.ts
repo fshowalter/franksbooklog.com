@@ -11,6 +11,7 @@ type Pagefind = {
 };
 
 type PagefindDocument = {
+  authors: string;
   excerpt: string;
   meta: { image?: string; image_alt?: string; title: string };
   url: string;
@@ -265,6 +266,12 @@ class PagefindSearch extends HTMLElement {
     const link = clone.querySelector<HTMLAnchorElement>("[data-field='link']")!;
     link.href = doc.url;
     link.textContent = doc.meta.title;
+
+    const authors = clone.querySelector<HTMLSpanElement>(
+      "[data-field='authors']",
+    )!;
+
+    authors.textContent = doc.meta.authors;
 
     clone.querySelector("[data-field='excerpt']")!.innerHTML = doc.excerpt;
 
