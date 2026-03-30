@@ -55,19 +55,26 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
       fixed inset-x-4 m-auto mt-16 w-full scale-0 rounded-lg border
       border-default bg-default shadow-lg transition-all duration-500
       backdrop:bg-footer/60 backdrop:transition-normal
-      open:flex open:scale-100 open:flex-col
+      open:block open:scale-100
       open:backdrop:backdrop-filter-[blur(1px)]
-      tablet:mx-auto tablet:h-min tablet:max-h-[min(100vh-128px,900px)]
-      tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl
+      tablet:mx-auto tablet:h-min tablet:max-w-[min(100vw-64px,36rem)]
+      tablet:rounded-xl
       starting:open:scale-0
     `}
   >
-    <div class="contents" data-dialog-frame>
+    <div
+      class={`
+        flex max-h-[calc(100vh-160px)] safari-border-radius-fix flex-col
+        tablet:max-h-[min(100vh-128px,900px)]
+      `}
+      data-dialog-frame
+    >
       <button
         class={`
-          absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none
-          bg-subtle px-2 font-mono text-xs font-light text-muted
-          hover:bg-inverse hover:text-white
+          absolute right-4 z-sticky mt-5 h-6 cursor-pointer rounded-sm
+          border-none bg-subtle px-2 font-mono text-xs font-light text-muted
+          transition-all
+          hover:scale-105 hover:bg-accent hover:text-white
           focus:outline-accent
           tablet:right-6
           laptop:right-8
@@ -75,7 +82,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
         data-close-search>ESC</button
       >
       {/* Fixed Search Input Section */}
-      <div class="shrink-0">
+      <div class="flex flex-none flex-col">
         {/* Search Form with magnifying glass icon */}
         <form aria-label="Site search" onsubmit="return false" role="search">
           <div class="relative">
@@ -120,33 +127,6 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
               spellcheck="false"
               type="search"
             />
-
-            {/* Clear button */}
-            <button
-              aria-label="Clear search"
-              class={`
-                absolute top-6 right-24 hidden size-4 rounded-full bg-subtle
-                text-subtle
-                hover:text-default
-                focus:outline-accent
-              `}
-              id="search-box-clear"
-              type="button"
-            >
-              <svg
-                class="size-full"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z"
-                ></path>
-              </svg>
-            </button>
-
-            {/* Border line after input */}
-            <div class={`absolute inset-x-0 bottom-0 h-px bg-border`}></div>
           </div>
         </form>
 
@@ -155,7 +135,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
           aria-atomic="true"
           aria-live="polite"
           class={`
-            border-b border-default p-4 font-sans text-xs font-normal
+            border-y border-default p-4 font-sans text-xs font-normal
             text-subtle
             empty:hidden
           `}
@@ -164,42 +144,48 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
         >
         </div>
       </div>
+      <div class={`flex flex-auto flex-col overflow-auto`}>
+        {/* Scrollable Results Area */}
+        <div
+          aria-label="Search results"
+          class={`
+            flex-1 overflow-x-clip -outline-offset-2
+            focus:outline-accent
+          `}
+          id="search-box-results-wrapper"
+          role="region"
+          tabindex="0"
+        >
+          <div class={`bg-subtle`} id="search-box-results"></div>
 
-      {/* Scrollable Results Area */}
-      <div
-        aria-label="Search results"
-        class={`
-          min-h-0 flex-1 overflow-x-clip overflow-y-auto overscroll-contain
-          -outline-offset-2
-          focus:outline-accent
-        `}
-        id="search-box-results-wrapper"
-        role="region"
-        tabindex="0"
-      >
-        <div id="search-box-results"></div>
-
-        {/* Load More Button */}
-        <div class="hidden p-4" id="search-box-load-more-wrapper">
-          <button
-            aria-controls="search-box-results"
-            class={`
-              mx-auto block h-10 w-full max-w-107.5 cursor-pointer bg-canvas
-              font-sans text-xs font-medium tracking-wide text-default uppercase
-              hover:bg-inverse hover:text-white
-              focus:-outline-offset-2 focus:outline-accent
-            `}
-            id="search-box-load-more"
-            type="button"
+          {/* Load More Button */}
+          <div
+            class="hidden border-t border-default bg-default p-4"
+            id="search-box-load-more-wrapper"
           >
-            Load more results
-          </button>
+            <div class="has-[button:hover]:drop-shadow-lg">
+              <button
+                aria-controls="search-box-results"
+                class={`
+                  mx-auto block h-10 w-full max-w-107.5 cursor-pointer
+                  rounded-sm bg-accent font-sans text-sm font-bold text-white
+                  uppercase transition-all
+                  hover:scale-105
+                `}
+                id="search-box-load-more"
+                type="button"
+              >
+                Load more results
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
       <div
         class={`
-          p-4 font-sans text-xs font-light tracking-wide text-subtle
+          flex flex-none items-center justify-start border-t border-t-default
+          bg-default p-4 font-sans text-xs font-light tracking-wide text-subtle
+          drop-shadow-2xl
           tablet:px-6
           laptop:block laptop:px-8
         `}
@@ -227,38 +213,75 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
   <template data-result-item>
     <li
       class={`
-        relative grid grid-cols-[min(25%,80px)_1fr] gap-x-6 border-t
-        border-border px-[8%] py-6 transition-all
-        first-of-type:border-none
-        last-of-type:border-b
-        focus-within:bg-subtle focus-within:outline-1
-        focus-within:-outline-offset-2 focus-within:outline-[rgb(38,132,255)]
-        hover:bg-subtle
+        group/item relative mb-1 grid transform-gpu
+        grid-cols-[min(25%,80px)_1fr] gap-x-6 bg-default px-[8%] py-6
+        transition-all
         tablet:px-6
+        tablet-landscape:has-[a:hover]:z-5
+        tablet-landscape:has-[a:hover]:-translate-y-2
+        tablet-landscape:has-[a:hover]:drop-shadow-2xl
         laptop:px-8
       `}
     >
-      <div class="shrink-0 drop-shadow-md" data-field="image-wrapper">
-        <img
-          alt=""
-          class="h-auto w-full"
-          data-field="image"
-          loading="lazy"
-          src=""
-        />
+      <div
+        class={`
+          relative max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm
+          shadow-all transition-transform
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/item:after:opacity-0
+        `}
+        data-field="image-wrapper"
+      >
+        <div
+          class={`
+            relative
+            after:absolute after:top-0 after:left-0 after:z-sticky after:block
+            after:size-full after:rounded-[2.5px]
+            after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+            after:mix-blend-multiply
+          `}
+        >
+          <div
+            class={`
+              relative z-10
+              before:absolute before:top-0 before:left-0 before:z-10
+              before:block before:size-full before:rounded-[2.5px]
+              before:bg-[url(/assets/spine-light.png)]
+              before:bg-size-[100%_100%]
+              after:absolute after:top-0 after:left-0 after:block
+              after:size-full after:rounded-[2.5px]
+              after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%]
+              after:mix-blend-soft-light
+            `}
+          >
+            <img
+              alt=""
+              class={`
+                h-auto w-full transform-gpu rounded-[2.5px] bg-default
+                transition-transform duration-500
+                group-has-[a:hover]/item:scale-110
+              `}
+              data-field="image"
+              loading="lazy"
+              src=""
+            />
+          </div>
+        </div>
       </div>
       <div class="min-w-0 flex-1">
-        <h3 class="font-serif text-base font-semibold text-default">
+        <h3 class={`mb-2 font-serif text-md/6 font-semibold text-default`}>
           <a
             class={`
-              block
-              after:absolute after:size-full after:opacity-0
+              block text-default transition-colors
+              after:absolute after:top-0 after:left-0 after:size-full
+              after:opacity-0
               hover:text-accent
             `}
             data-field="link"
             href=""></a>
         </h3>
-        <p class="text-sm/normal text-default" data-field="excerpt"></p>
+        <p class="text-base text-default" data-field="excerpt"></p>
       </div>
     </li>
   </template>
