@@ -37,7 +37,6 @@ type SearchState =
   | { kind: "loading"; query: string };
 
 class PagefindSearch extends HTMLElement {
-  private clearButton!: HTMLButtonElement;
   private clickHandler: ((e: MouseEvent) => void) | undefined;
   private readonly config = {
     bundlePath: import.meta.env.BASE_URL.replace(/\/$/, "") + "/pagefind/",
@@ -92,8 +91,6 @@ class PagefindSearch extends HTMLElement {
 
     // Cache element refs — IDs prefixed with search-box- to avoid collisions
     this.input = this.querySelector<HTMLInputElement>("#search-box-input")!;
-    this.clearButton =
-      this.querySelector<HTMLButtonElement>("#search-box-clear")!;
     this.resultsCounter = this.querySelector<HTMLElement>(
       "#search-box-counter",
     )!;
@@ -124,7 +121,6 @@ class PagefindSearch extends HTMLElement {
 
     if (
       !this.input ||
-      !this.clearButton ||
       !this.resultsCounter ||
       !this.resultsContainer ||
       !this.loadMoreWrapper ||
@@ -150,7 +146,9 @@ class PagefindSearch extends HTMLElement {
 
       if (link?.href) {
         // For links, only close modal after a small delay to allow navigation
-        setTimeout(() => closeModal(), 100);
+        setTimeout(() => {
+          closeModal();
+        }, 100);
         return;
       }
 
@@ -158,6 +156,7 @@ class PagefindSearch extends HTMLElement {
         win.document.body.contains(event.target as Node) &&
         !dialogFrame.contains(event.target as Node)
       ) {
+        this.clearSearch();
         closeModal();
       }
     };
@@ -195,7 +194,10 @@ class PagefindSearch extends HTMLElement {
       }
     };
 
-    const closeModal = () => dialog.close();
+    const closeModal = () => {
+      this.clearSearch();
+      dialog.close();
+    };
 
     openBtn.addEventListener("click", (e) => void openModal(e));
     openBtn.disabled = false;
@@ -251,7 +253,6 @@ class PagefindSearch extends HTMLElement {
 
   private clearSearch(): void {
     this.input.value = "";
-    this.clearButton.classList.add("hidden");
     this.state = { kind: "idle" };
     this.render();
   }
@@ -274,12 +275,11 @@ class PagefindSearch extends HTMLElement {
     if (imageWrapper) {
       const { image, image_alt } = doc.meta;
       if (image) {
-        const resultUrl = new URL(doc.url);
-        const imageUrl = `${resultUrl.protocol}//${resultUrl.host}/${image}`;
+        const imageUrl = new URL(image, document.baseURI);
         const img = clone.querySelector<HTMLImageElement>(
           "[data-field='image']",
         )!;
-        img.src = imageUrl;
+        img.src = imageUrl.toString();
         img.alt = image_alt ?? "";
       } else {
         imageWrapper.remove();
@@ -479,9 +479,6 @@ class PagefindSearch extends HTMLElement {
     this.input.addEventListener("input", (e) => {
       const target = e.target as HTMLInputElement;
 
-      // Show/hide clear button based on input content
-      this.clearButton.classList.toggle("hidden", !target.value);
-
       this.debouncedSearch(target.value);
     });
 
@@ -490,14 +487,6 @@ class PagefindSearch extends HTMLElement {
       if (e.key === "Enter") {
         this.input.blur();
       }
-    });
-
-    // Clear button — stopPropagation prevents the click from reaching the modal's
-    // global onClick handler, which would otherwise attempt to close the modal.
-    this.clearButton.addEventListener("click", (e) => {
-      e.stopPropagation();
-      this.clearSearch();
-      this.input.focus();
     });
 
     // Load more button
