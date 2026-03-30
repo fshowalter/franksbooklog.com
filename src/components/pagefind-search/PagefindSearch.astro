@@ -1,13 +1,16 @@
 ---
 type Props = {
   class?: string;
+  isGlobal?: boolean;
   variant?: "button" | "text";
 };
 
-const { class: className, variant = "button" } = Astro.props;
+const { class: className, isGlobal = false, variant = "button" } = Astro.props;
+
+const dataProperties = isGlobal ? { "data-global": true } : {};
 ---
 
-<pagefind-search class={className}>
+<pagefind-search class={className} {...dataProperties}>
   <div class="transition-colors">
     <button
       aria-keyshortcuts="Control+K"
@@ -16,6 +19,7 @@ const { class: className, variant = "button" } = Astro.props;
         flex transform-gpu cursor-pointer items-center justify-center
         overflow-hidden text-sm/6 ring-default transition-all duration-500
         hover:text-accent
+        laptop:ml-6
       `}
       data-open-search
       disabled
@@ -25,11 +29,7 @@ const { class: className, variant = "button" } = Astro.props;
       {variant === "text" && <span class="pr-3 text-2xl">Search</span>}
       <div
         class:list={[
-          variant === "button" &&
-            `
-              flex size-10 items-center justify-center
-              laptop:ml-6
-            `,
+          variant === "button" && `flex size-10 items-center justify-center`,
         ]}
       >
         <svg
@@ -52,13 +52,15 @@ const { class: className, variant = "button" } = Astro.props;
   <dialog
     aria-label="Search"
     class={`
-      fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default
-      bg-default shadow-lg
-      backdrop:bg-[#000] backdrop:opacity-40 backdrop:backdrop-blur-xs
-      open:flex open:flex-col
+      fixed inset-x-4 m-auto h-screen w-full scale-0 rounded-lg border
+      border-default bg-default shadow-lg transition-all transition-discrete
+      duration-500
+      open:flex open:scale-100 open:flex-col
+      open:backdrop:backdrop-filter-[blur(2px)]
       tablet:mx-auto tablet:mt-16 tablet:h-min
       tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)]
       tablet:rounded-xl
+      starting:open:scale-0
     `}
   >
     <div class="contents" data-dialog-frame>

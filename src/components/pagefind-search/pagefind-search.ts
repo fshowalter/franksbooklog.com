@@ -67,6 +67,7 @@ class PagefindSearch extends HTMLElement {
   private readonly win = globalThis as unknown as Window;
 
   connectedCallback(): void {
+    const isGlobal = "global" in this.dataset;
     const { win } = this;
 
     const openBtn = this.querySelector<HTMLButtonElement>(
@@ -142,9 +143,11 @@ class PagefindSearch extends HTMLElement {
 
     this.setupEventListeners();
 
-    // ios safari doesn't bubble click events unless a parent has a listener
-    this.iosHandler = () => {};
-    win.document.body.addEventListener("click", this.iosHandler);
+    if (isGlobal) {
+      // ios safari doesn't bubble click events unless a parent has a listener
+      this.iosHandler = () => {};
+      win.document.body.addEventListener("click", this.iosHandler);
+    }
 
     /** Close the modal if a user clicks on a link or outside of the modal. */
     const onClick = (event: MouseEvent) => {
@@ -208,16 +211,18 @@ class PagefindSearch extends HTMLElement {
       win.removeEventListener("click", onClick);
     });
 
-    // Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
-    this.keydownHandler = (e: KeyboardEvent) => {
-      if ((e.metaKey === true || e.ctrlKey === true) && e.key === "k") {
-        if (dialog.open) closeModal();
-        else void openModal();
-        e.preventDefault();
-      }
-    };
+    if (isGlobal) {
+      // Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
+      this.keydownHandler = (e: KeyboardEvent) => {
+        if ((e.metaKey === true || e.ctrlKey === true) && e.key === "k") {
+          if (dialog.open) closeModal();
+          else void openModal();
+          e.preventDefault();
+        }
+      };
 
-    win.addEventListener("keydown", this.keydownHandler);
+      win.addEventListener("keydown", this.keydownHandler);
+    }
   }
 
   disconnectedCallback(): void {
