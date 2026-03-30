@@ -139,6 +139,11 @@ class PagefindSearch extends HTMLElement {
 
     this.setupEventListeners();
 
+    const closeModal = () => {
+      this.clearSearch();
+      dialog.close();
+    };
+
     /** Close the modal if a user clicks on a link or outside of the modal. */
     const onClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
@@ -156,7 +161,6 @@ class PagefindSearch extends HTMLElement {
         win.document.body.contains(event.target as Node) &&
         !dialogFrame.contains(event.target as Node)
       ) {
-        this.clearSearch();
         closeModal();
       }
     };
@@ -194,11 +198,6 @@ class PagefindSearch extends HTMLElement {
       }
     };
 
-    const closeModal = () => {
-      this.clearSearch();
-      dialog.close();
-    };
-
     openBtn.addEventListener("click", (e) => void openModal(e));
     openBtn.disabled = false;
     closeBtn.addEventListener("click", closeModal);
@@ -218,7 +217,7 @@ class PagefindSearch extends HTMLElement {
 
         // Safari dialog modals don't close on escape if a text input has focus.
         if (e.key === "Escape" && dialog.open) {
-          dialog.close();
+          closeModal();
         }
       };
 
