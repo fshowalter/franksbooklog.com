@@ -43,7 +43,7 @@
       backdrop:transition-discrete backdrop:duration-200
       open:translate-x-0
       open:backdrop:opacity-40
-      tablet:max-w-[35vw] tablet:px-10 tablet:pt-40
+      tablet:max-w-[35vw] tablet:gap-y-10 tablet:px-12 tablet:pt-40
       starting:open:transform-[translateX(100%)]
       starting:open:backdrop:opacity-0
     `}
@@ -78,7 +78,15 @@
           group-open/dialog:after:transform-[rotate(90deg)]
         `}></span>
     </button>
-    <nav class="flex flex-col gap-y-6">
+    <nav
+      class={`
+        flex translate-x-0 flex-col gap-y-6 opacity-0 transition-all
+        transition-discrete delay-50 duration-600
+        group-open/dialog:opacity-100
+        group-open/dialog:starting:transform-[translateX(100%)]
+        group-open/dialog:starting:opacity-0
+      `}
+    >
       <slot />
     </nav>
   </dialog>
