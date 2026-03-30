@@ -53,6 +53,7 @@ const coverImageSizes =
               return (
                 <ReviewCard
                   value={{
+                    authors: reviewedTitle.authors,
                     coverImageProps: await getFluidCoverImageProps(review.slug),
                     coverImageSizes,
                     date: review.date,
