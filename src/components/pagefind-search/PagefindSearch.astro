@@ -64,7 +64,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
   >
     <div
       class={`
-        flex max-h-[calc(100vh-160px)] flex-col
+        flex max-h-[calc(100vh-160px)] safari-border-radius-fix flex-col
         tablet:max-h-[min(100vh-128px,900px)]
       `}
       data-dialog-frame
@@ -149,7 +149,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
         <div
           aria-label="Search results"
           class={`
-            flex-1 overflow-x-clip overflow-y-auto -outline-offset-2
+            flex-1 overflow-x-clip -outline-offset-2
             focus:outline-accent
           `}
           id="search-box-results-wrapper"

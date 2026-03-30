@@ -152,7 +152,7 @@ class PagefindSearch extends HTMLElement {
       if (link?.href) {
         // For links, only close modal after a small delay to allow navigation
         setTimeout(() => {
-          closeModal();
+          dialog.close();
         }, 100);
         return;
       }
