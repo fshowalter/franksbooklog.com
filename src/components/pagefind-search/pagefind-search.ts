@@ -219,6 +219,10 @@ class PagefindSearch extends HTMLElement {
           else void openModal();
           e.preventDefault();
         }
+
+        if (e.key === "Escape" && dialog.open) {
+          dialog.close();
+        }
       };
 
       win.addEventListener("keydown", this.keydownHandler);
