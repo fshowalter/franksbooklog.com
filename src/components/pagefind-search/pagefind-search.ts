@@ -75,7 +75,7 @@ class PagefindSearch extends HTMLElement {
     );
     if (!openBtn) return;
 
-    if (/(Mac|iPhone|iPod|iPad)/i.test(win.navigator.userAgent)) {
+    if (isGlobal && /(Mac|iPhone|iPod|iPad)/i.test(win.navigator.userAgent)) {
       openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
       openBtn.setAttribute("title", "Search: ⌘K");
     }
@@ -142,12 +142,6 @@ class PagefindSearch extends HTMLElement {
     }, this.config.debounceTimeoutMs);
 
     this.setupEventListeners();
-
-    if (isGlobal) {
-      // ios safari doesn't bubble click events unless a parent has a listener
-      this.iosHandler = () => {};
-      win.document.body.addEventListener("click", this.iosHandler);
-    }
 
     /** Close the modal if a user clicks on a link or outside of the modal. */
     const onClick = (event: MouseEvent) => {
@@ -220,6 +214,7 @@ class PagefindSearch extends HTMLElement {
           e.preventDefault();
         }
 
+        // Safari dialog modals don't close on escape if a text input has focus.
         if (e.key === "Escape" && dialog.open) {
           dialog.close();
         }
@@ -236,9 +231,6 @@ class PagefindSearch extends HTMLElement {
     }
     if (this.clickHandler) {
       win.removeEventListener("click", this.clickHandler);
-    }
-    if (this.iosHandler) {
-      win.document.body.removeEventListener("click", this.iosHandler);
     }
     // disconnectedCallback is synchronous so fire-and-forget is intentional here.
     void this.pagefind?.destroy();
