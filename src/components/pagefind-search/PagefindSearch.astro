@@ -55,7 +55,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
       fixed inset-x-4 m-auto mt-16 w-full scale-0 rounded-lg border
       border-default bg-default shadow-lg transition-all duration-500
       backdrop:bg-footer/60 backdrop:transition-normal
-      open:block open:scale-100 open:flex-col
+      open:block open:scale-100
       open:backdrop:backdrop-filter-[blur(1px)]
       tablet:mx-auto tablet:h-min tablet:max-w-[min(100vw-64px,36rem)]
       tablet:rounded-xl
@@ -71,9 +71,10 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
     >
       <button
         class={`
-          absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none
-          bg-subtle px-2 font-mono text-xs font-light text-muted
-          hover:bg-accent hover:text-white
+          absolute right-4 z-sticky mt-5 h-6 cursor-pointer rounded-sm
+          border-none bg-subtle px-2 font-mono text-xs font-light text-muted
+          transition-all
+          hover:scale-105 hover:bg-accent hover:text-white
           focus:outline-accent
           tablet:right-6
           laptop:right-8
@@ -148,32 +149,35 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
         <div
           aria-label="Search results"
           class={`
-            flex-1 grow overflow-x-clip overflow-y-scroll -outline-offset-2
+            flex-1 overflow-x-clip overflow-y-auto -outline-offset-2
             focus:outline-accent
           `}
           id="search-box-results-wrapper"
           role="region"
           tabindex="0"
         >
-          <div
-            class={`*:flex *:flex-col *:gap-y-[2px] *:bg-subtle`}
-            id="search-box-results"
-          >
-          </div>
+          <div class={`bg-subtle`} id="search-box-results"></div>
 
           {/* Load More Button */}
-          <div class="hidden bg-default p-4" id="search-box-load-more-wrapper">
-            <button
-              aria-controls="search-box-results"
-              class={`
-                mx-auto block h-10 w-full max-w-107.5 cursor-pointer bg-accent
-                font-sans text-sm font-bold text-white uppercase transition-all
-              `}
-              id="search-box-load-more"
-              type="button"
-            >
-              Load more results
-            </button>
+          <div
+            class="hidden border-t border-default bg-default p-4"
+            id="search-box-load-more-wrapper"
+          >
+            <div class="has-[button:hover]:drop-shadow-lg">
+              <button
+                aria-controls="search-box-results"
+                class={`
+                  mx-auto block h-10 w-full max-w-107.5 cursor-pointer
+                  rounded-sm bg-accent font-sans text-sm font-bold text-white
+                  uppercase transition-all
+                  hover:scale-105
+                `}
+                id="search-box-load-more"
+                type="button"
+              >
+                Load more results
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -209,8 +213,9 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
   <template data-result-item>
     <li
       class={`
-        group/item relative grid transform-gpu grid-cols-[min(25%,80px)_1fr]
-        gap-x-6 border border-transparent bg-default px-[8%] py-6 transition-all
+        group/item relative mb-1 grid transform-gpu
+        grid-cols-[min(25%,80px)_1fr] gap-x-6 bg-default px-[8%] py-6
+        transition-all
         tablet:px-6
         tablet-landscape:has-[a:hover]:z-5
         tablet-landscape:has-[a:hover]:-translate-y-2
@@ -224,8 +229,7 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
           shadow-all transition-transform
           after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
           after:bg-default after:opacity-15 after:transition-opacity
-          group-has-[a:hover]/list-item:after:opacity-0
-          @min-[1128px]/card-list:w-full
+          group-has-[a:hover]/item:after:opacity-0
         `}
       >
         <div
@@ -270,7 +274,8 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
           <a
             class={`
               block text-default transition-colors
-              after:absolute after:size-full after:opacity-0
+              after:absolute after:top-0 after:left-0 after:size-full
+              after:opacity-0
               hover:text-accent
             `}
             data-field="link"
