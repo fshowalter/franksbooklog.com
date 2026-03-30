@@ -11,9 +11,8 @@ type Pagefind = {
 };
 
 type PagefindDocument = {
-  authors: string;
   excerpt: string;
-  meta: { image?: string; image_alt?: string; title: string };
+  meta: { authors: string; image?: string; image_alt?: string; title: string };
   url: string;
 };
 
