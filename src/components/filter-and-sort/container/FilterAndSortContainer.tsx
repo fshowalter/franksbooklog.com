@@ -203,24 +203,23 @@ export function FilterAndSortContainer<T extends string, V>({
           >
             {children}
           </div>
-          {/* have to use [translateX(100%)] vs translate-x-full due to Safari bug: https://github.com/tailwindlabs/tailwindcss/discussions/18304 */}
+
           <dialog
             aria-label="Filters"
             className={`
-              group/dialog fixed top-0 right-0 left-auto m-0 size-full
-              max-h-full max-w-[380px] translate-x-full flex-col items-start
-              gap-y-5 overflow-y-auto border-0 bg-default p-0 text-left
-              drop-shadow-2xl transition-all transition-discrete duration-600
+              group/dialog fixed top-0 right-0 left-auto z-nav-menu m-0
+              size-full max-h-full max-w-[380px] translate-x-full
+              overflow-hidden border-0 bg-default p-0 text-left drop-shadow-2xl
+              transition-all transition-discrete duration-600
               ease-[cubic-bezier(0.19,1,0.22,1)]
               backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
               backdrop:transition-discrete backdrop:duration-200
-              open:flex open:translate-x-0
+              open:translate-x-0
               open:backdrop:opacity-40
-              tablet:max-w-[420px] tablet:gap-y-10
+              tablet:max-w-[420px]
               starting:open:transform-[translateX(100%)]
               starting:open:backdrop:opacity-0
             `}
-            data-filter-drawer=""
             id="filters"
             onClick={(e) => {
               // Backdrop click: event.target is the dialog itself, not any child
@@ -235,55 +234,65 @@ export function FilterAndSortContainer<T extends string, V>({
           >
             <form
               className={`
-                flex size-full flex-col text-sm
+                flex size-full flex-col overflow-hidden text-sm
                 tablet:text-base
               `}
               ref={formRef}
             >
-              {/* Close button */}
-              <button
-                aria-label="Close filters"
-                className={`
-                  absolute top-7 right-4 z-10 flex size-10 transform-gpu
-                  cursor-pointer items-center justify-center rounded-full
-                  text-default drop-shadow-sm transition-transform
-                  hover:scale-125
-                  tablet:right-[34px]
-                `}
-                onClick={() => {
-                  dispatch(createResetFiltersAction());
-                  formRef.current?.reset();
-                  dialogRef.current?.close();
-                  toggleButtonRef.current?.focus();
-                }}
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="size-4 transform-gpu"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 28 28"
-                >
-                  <path
-                    d="M7 21L21 7M7 7l14 14"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-              <fieldset className={`mt-0 flex grow-0 flex-col`}>
-                <legend
+              <div className="grow overflow-auto">
+                <header
                   className={`
-                    mb-0 block w-full px-container py-7 font-sans text-base/10
-                    font-bold tracking-wide text-subtle uppercase shadow-bottom
+                    flex w-full items-center justify-between px-container py-7
+                    shadow-bottom
                     tablet-landscape:px-12
                   `}
                 >
-                  Filter
-                </legend>
-
+                  <h3
+                    className={`
+                      mb-0 block font-sans text-base/10 font-bold tracking-wide
+                      text-subtle uppercase
+                    `}
+                  >
+                    Filter
+                  </h3>
+                  {/* Close button */}
+                  <button
+                    aria-label="Close filters"
+                    className={`
+                      size-6 safari-border-radius-fix cursor-pointer
+                      rounded-full text-default transition-all
+                      hover:scale-125 hover:text-accent
+                    `}
+                    onClick={() => {
+                      dispatch(createResetFiltersAction());
+                      formRef.current?.reset();
+                      dialogRef.current?.close();
+                      toggleButtonRef.current?.focus();
+                    }}
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className={`
+                        size-6 rotate-0 transform-gpu transition-all delay-200
+                        duration-300
+                        group-open/dialog:rotate-0
+                        group-open/dialog:starting:rotate-45
+                      `}
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 18 18 6M6 6l12 12"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </header>
                 <div
                   className="
                     px-container
@@ -330,7 +339,9 @@ export function FilterAndSortContainer<T extends string, V>({
                               type="radio"
                               value={value}
                             />
-                            <span className="font-sans text-base">{label}</span>
+                            <span className="font-sans text-base text-default">
+                              {label}
+                            </span>
                           </label>
                         ))}
                       </div>
@@ -338,7 +349,7 @@ export function FilterAndSortContainer<T extends string, V>({
                   </div>
                   {filters}
                 </div>
-              </fieldset>
+              </div>
               <div
                 className={`
                   sticky bottom-0 z-filter-footer mt-auto w-full
