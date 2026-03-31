@@ -29,9 +29,9 @@ export function AlphabetSideNav({
   return (
     <nav
       className={`
-        sticky top-[89px] z-nav-menu scrollbar-hidden h-[calc(100vh-88px)]
+        sticky top-[89px] z-nav-menu scrollbar-hidden h-[calc(100dvh-88px)]
         overflow-y-auto bg-sidenav
-        tablet:top-24 tablet:h-[calc(100vh-96px)] tablet:px-4
+        tablet:top-24 tablet:h-[calc(100dvh-96px)]
         laptop:top-[97px]
         ${className ?? ""}
       `}
@@ -62,7 +62,7 @@ export function AlphabetSideNav({
                 {href ? (
                   <a
                     className={`
-                      group/item block transform-gpu px-4 py-3 transition-all
+                      group/item block transform-gpu px-8 py-3 transition-all
                       hover:scale-110 hover:text-emphasis
                     `}
                     href={href}
@@ -70,7 +70,7 @@ export function AlphabetSideNav({
                     {letter}
                   </a>
                 ) : (
-                  <div className={`px-4 py-3`}>{letter}</div>
+                  <div className={`px-8 py-3`}>{letter}</div>
                 )}
               </li>
             );

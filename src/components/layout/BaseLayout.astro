@@ -36,7 +36,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 <html class="scroll-smooth" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     {canonical && <link href={canonicalUrl} rel="canonical" />}
     <link href="/favicon.ico" rel="icon" sizes="48x48" />
     <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
@@ -80,7 +80,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     }
     <title>{pageTitle}</title>
   </head>
-  <body class={`size-full bg-canvas text-default`}>
+  <body class={`bg-canvas text-default`}>
     <div class="group">
       <a
         class={`
