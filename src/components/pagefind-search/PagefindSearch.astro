@@ -15,12 +15,14 @@ const dataProperties = isGlobal ? { "data-global": true } : {};
     <button
       aria-keyshortcuts="Control+K"
       aria-label="Search"
-      class={`
-        flex transform-gpu cursor-pointer items-center justify-center
-        overflow-hidden text-sm/6 ring-default transition-all duration-500
-        hover:text-accent
-        ${variant === "button" && "laptop:ml-6"}
-      `}
+      class:list={[
+        `
+          flex transform-gpu cursor-pointer items-center justify-center
+          overflow-hidden text-sm/6 ring-default transition-all duration-500
+          hover:text-accent
+        `,
+        variant === "button" && "laptop:ml-6",
+      ]}
       data-open-search
       disabled
       title="Search: Control+K"
