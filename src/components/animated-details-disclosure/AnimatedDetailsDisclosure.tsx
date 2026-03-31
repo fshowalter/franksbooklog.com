@@ -154,7 +154,7 @@ export function AnimatedDetailsDisclosure({
         <svg
           aria-hidden="true"
           className="
-            mr-0.5 ml-auto size-5 text-subtle transition-transform duration-200
+            mr-0.5 size-5 text-subtle transition-transform duration-200
             group-open:rotate-180
           "
           fill="none"
