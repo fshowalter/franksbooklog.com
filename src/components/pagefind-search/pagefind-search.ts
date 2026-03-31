@@ -1,4 +1,4 @@
-import { debounce } from "~/components/utils/debounce";
+import { debounce } from "~/utils/debounce";
 
 // Minimal browser-side Pagefind types — only fields the production code reads.
 // The `pagefind` npm package only ships types for its Node.js build/indexing API;

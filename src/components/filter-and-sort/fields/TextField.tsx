@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import { debounceOnChange } from "~/components/utils/debounce";
+import { debounceOnChange } from "~/utils/debounce";
 
 /**
  * Debounce delay for text filter input in milliseconds.
