@@ -8,37 +8,39 @@
     aria-expanded="false"
     aria-label="Toggle navigation drawer"
     class={`
-      group/button relative z-nav-toggle ml-2 flex size-10 cursor-pointer
-      items-center justify-center
+      group/button relative ml-2 flex size-10 cursor-pointer items-center
+      justify-center
       laptop:hidden
     `}
     data-nav-drawer-toggle
     type="button"
   >
-    <span
+    <svg
       aria-hidden="true"
       class={`
-        relative flex h-0.5 w-6 transform-gpu bg-current transition-all
-        duration-100 ease-in-out
-        group-hover/button:bg-accent
-        before:absolute before:-top-2 before:block before:h-0.5 before:w-6
-        before:bg-inherit before:transition before:duration-100
-        before:ease-in-out
-        after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
-        after:bg-inherit after:transition after:duration-100 after:ease-in-out
-      `}></span>
+        size-8
+        group-hover/button:text-accent
+      `}
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
   </button>
-  {
-    /* have to use [translateX(100%)] vs translate-x-full due to Safari bug: https://github.com/tailwindlabs/tailwindcss/discussions/18304 */
-  }
   <dialog
     aria-label="Main navigation"
     class={`
-      group/dialog fixed top-0 right-0 left-auto m-0 size-full max-h-full
-      max-w-[300px] translate-x-full overflow-y-auto border-0 bg-canvas p-0
-      pt-20 pr-[25%] pb-5 pl-[12%] text-left text-default drop-shadow-2xl
-      transition-all transition-discrete duration-600
-      ease-[cubic-bezier(0.19,1,0.22,1)]
+      group/dialog fixed top-0 right-0 left-auto z-nav-menu m-0 size-full
+      max-h-full max-w-[300px] translate-x-full overflow-y-auto border-0
+      bg-canvas p-0 pt-20 pr-[25%] pb-5 pl-[12%] text-left text-default
+      drop-shadow-2xl transition-all transition-discrete duration-600
+      ease-in-out
       backdrop:bg-[#000] backdrop:opacity-0 backdrop:transition-opacity
       backdrop:transition-discrete backdrop:duration-200
       open:translate-x-0
@@ -53,30 +55,32 @@
     <button
       aria-label="Close navigation"
       class={`
-        group/close absolute top-4 right-(--container-padding) flex size-10
-        cursor-pointer items-center justify-center
+        absolute top-4 right-(--container-padding) flex size-10 cursor-pointer
+        items-center justify-center
+        hover:text-accent
         tablet:top-6
+        laptop:top-8 laptop:right-16
       `}
       data-nav-close-trigger
       type="button"
     >
-      <span
+      <svg
         aria-hidden="true"
         class={`
-          relative flex h-0.5 w-6 origin-center transform-gpu
-          bg-(--color-default) transition-all duration-200 ease-in-out
-          group-open/dialog:transform-[rotate(45deg)]
-          group-hover/button:bg-accent
-          before:absolute before:-top-2 before:block before:h-0.5 before:w-6
-          before:bg-inherit before:transition before:duration-200
-          before:ease-in-out
-          group-open/dialog:before:top-0
-          group-open/dialog:before:transform-[rotate(90deg)]
-          after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
-          after:bg-inherit after:transition after:duration-200 after:ease-in-out
-          group-open/dialog:after:bottom-0
-          group-open/dialog:after:transform-[rotate(90deg)]
-        `}></span>
+          size-8 rotate-0 transition-[rotate] delay-300 duration-200
+          group-open/dialog:starting:rotate-45
+        `}
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 18 18 6M6 6l12 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
     </button>
     <nav
       class={`

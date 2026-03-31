@@ -154,14 +154,20 @@ export function AnimatedDetailsDisclosure({
         <svg
           aria-hidden="true"
           className="
-            ml-auto size-3 transition-transform duration-300
+            mr-0.5 ml-auto size-5 text-subtle transition-transform duration-200
             group-open:rotate-180
           "
-          fill="currentColor"
-          viewBox="0 0 12 8"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Path draws UP-pointing triangle (inverted from down-pointing) */}
-          <path d="M12 6.5L10.5 8 6 3.5 1.5 8 0 6.5 6 0.5z" />
+          <path
+            d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </summary>
       {/* Panel: handles height transition  */}
