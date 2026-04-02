@@ -259,9 +259,11 @@ export function FilterAndSortContainer<T extends string, V>({
                   <button
                     aria-label="Close filters"
                     className={`
-                      size-6 safari-border-radius-fix cursor-pointer
-                      rounded-full text-default transition-all
-                      hover:scale-125 hover:text-accent
+                      size-6 rotate-0 transform-gpu cursor-pointer rounded-full
+                      text-default transition-[rotate] delay-200 duration-300
+                      group-open/dialog:rotate-0
+                      hover:text-accent
+                      group-open/dialog:starting:rotate-45
                     `}
                     onClick={() => {
                       dispatch(createResetFiltersAction());
@@ -273,12 +275,7 @@ export function FilterAndSortContainer<T extends string, V>({
                   >
                     <svg
                       aria-hidden="true"
-                      className={`
-                        size-6 rotate-0 transform-gpu transition-all delay-200
-                        duration-300
-                        group-open/dialog:rotate-0
-                        group-open/dialog:starting:rotate-45
-                      `}
+                      className={`size-6`}
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.5"

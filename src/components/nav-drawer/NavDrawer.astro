@@ -55,21 +55,20 @@
     <button
       aria-label="Close navigation"
       class={`
-        absolute top-4 right-(--container-padding) flex size-10 cursor-pointer
-        items-center justify-center
+        absolute top-4 right-(--container-padding) flex size-10 rotate-0
+        transform-gpu cursor-pointer items-center justify-center rounded-full
+        transition-[rotate] delay-300 duration-200
         hover:text-accent
         tablet:top-6
         laptop:top-8 laptop:right-16
+        group-open/dialog:starting:rotate-45
       `}
       data-nav-close-trigger
       type="button"
     >
       <svg
         aria-hidden="true"
-        class={`
-          size-8 rotate-0 transition-[rotate] delay-300 duration-200
-          group-open/dialog:starting:rotate-45
-        `}
+        class={`size-8`}
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"

@@ -158,7 +158,9 @@ export function CheckboxListField({
                 <span className="flex-1 text-base text-default">
                   {option.label}
                 </span>
-                <span className="text-base text-subtle">({option.count})</span>
+                <span className="text-base text-subtle tabular-nums">
+                  ({option.count})
+                </span>
               </label>
             );
           })}
