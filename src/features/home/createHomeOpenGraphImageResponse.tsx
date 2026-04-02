@@ -1,5 +1,5 @@
 import { getOpenGraphBackdrop } from "~/assets/backdrops";
-import { componentToImageResponse } from "~/utils/componentToImageResponse";
+import { componentToImageResponse } from "~/utils/componentToImage";
 
 export async function createHomeOpenGraphImageResponse(): Promise<Response> {
   const backdrop = await getOpenGraphBackdrop("home");

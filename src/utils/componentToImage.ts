@@ -40,23 +40,30 @@ const renderer = new Renderer({
   fonts,
 });
 
-export async function componentToImageResponse(
+export async function componentToImageBytes(
   component: Parameters<typeof fromJsx>[0],
   fetchedResources: { data: ArrayBuffer; src: string }[],
-): Promise<Response> {
+): Promise<Buffer> {
   const { node, stylesheets } = await fromJsx(component);
 
-  const image = await renderer.render(node, {
+  return await renderer.render(node, {
     fetchedResources,
     format: "jpeg",
     height: 630,
     stylesheets,
     width: 1200,
   });
+}
+
+export async function componentToImageResponse(
+  component: Parameters<typeof fromJsx>[0],
+  fetchedResources: { data: ArrayBuffer; src: string }[],
+): Promise<Response> {
+  const image = await componentToImageBytes(component, fetchedResources);
 
   return new Response(image as ArrayBufferView<ArrayBuffer>, {
     headers: {
-      "Content-Type": "image/jpg",
+      "Content-Type": "image/jpeg",
     },
   });
 }

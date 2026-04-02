@@ -1,26 +1,46 @@
+import { cacheDir } from "astro:config/server";
+import { createHash } from "node:crypto";
+import { promises as fs } from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
 import type { GradeText } from "~/utils/grades";
 
-import {
-  getCoverHeight,
-  getCoverWidth,
-  getOpenGraphCover,
-  getTitleCoverPath,
-} from "~/assets/covers";
-import { componentToImageResponse } from "~/utils/componentToImageResponse";
+import { componentToImageBytes } from "~/utils/componentToImage";
 import { formatTitleAuthors } from "~/utils/formatTitleAuthors";
 import { GRADE_SVG_MAP } from "~/utils/grades";
 
-type Props = {
-  authors: {
-    name: string;
-    notes: string | undefined;
-  }[];
-  coverSlug: string;
-  grade: GradeText;
-  title: string;
+const assetsCacheDir = new URL("reviewOpenGraphImages/", cacheDir);
+await fs.mkdir(assetsCacheDir, { recursive: true });
+
+const sourceComponentHash = createHash("md5")
+  .update(
+    await fs.readFile(
+      `./src/features/review/createReviewOpenGraphImageResponse.tsx`,
+      "utf8",
+    ),
+  )
+  .digest("hex");
+
+const gradeCache: Record<
+  Exclude<GradeText, "Abandoned">,
+  undefined | { buffer: Buffer; hash: string }
+> = {
+  A: undefined,
+  "A+": undefined,
+  "A-": undefined,
+  B: undefined,
+  "B+": undefined,
+  "B-": undefined,
+  C: undefined,
+  "C+": undefined,
+  "C-": undefined,
+  D: undefined,
+  "D+": undefined,
+  "D-": undefined,
+  F: undefined,
+  "F+": undefined,
+  "F-": undefined,
 };
 
 export async function createReviewOpenGraphImageResponse({
@@ -28,62 +48,173 @@ export async function createReviewOpenGraphImageResponse({
   coverSlug,
   grade,
   title,
-}: Props): Promise<Response> {
-  const cover = await getOpenGraphCover(coverSlug);
+}: {
+  authors: {
+    name: string;
+    notes: string | undefined;
+  }[];
+  coverSlug: string;
+  grade: GradeText;
+  title: string;
+}): Promise<Response> {
+  const image = await getReviewOpenGraphImage({
+    authors,
+    coverSlug,
+    grade,
+    title,
+  });
 
+  return new Response(image as ArrayBufferView<ArrayBuffer>, {
+    headers: {
+      "Content-Type": "image/jpeg",
+    },
+  });
+}
+
+async function getCoverHeight(
+  coverBuffer: Buffer,
+  targetWidth: number,
+): Promise<number> {
+  const { height, width } = await sharp(coverBuffer).metadata();
+
+  return (height / width) * targetWidth;
+}
+
+async function getCoverWidth(
+  coverBuffer: Buffer,
+  targetHeight: number,
+): Promise<number> {
+  const { height, width } = await sharp(coverBuffer).metadata();
+
+  return (width / height) * targetHeight;
+}
+
+async function getGradeBuffer(
+  grade: GradeText,
+): Promise<undefined | { buffer: Buffer; hash: string }> {
+  if (grade === "Abandoned") {
+    return undefined;
+  }
+
+  const gradeCacheEntry = gradeCache[grade];
+  let gradeHash;
   let gradeBuffer;
 
-  const gradeFile = fileForGrade(grade);
+  if (gradeCacheEntry) {
+    gradeHash = gradeCacheEntry.hash;
+    gradeBuffer = gradeCacheEntry.buffer;
+  } else {
+    const { src: gradeFile } = GRADE_SVG_MAP[grade];
 
-  if (gradeFile) {
     gradeBuffer = await sharp(path.resolve(`./public${gradeFile}`))
       .resize(240)
       .toBuffer();
+
+    gradeHash = createHash("md5").update(gradeBuffer).digest("hex");
+
+    gradeCache[grade] = { buffer: gradeBuffer, hash: gradeHash };
   }
 
+  return { buffer: gradeBuffer, hash: gradeHash };
+}
+
+async function getReviewOpenGraphImage({
+  authors,
+  coverSlug,
+  grade,
+  title,
+}: {
+  authors: {
+    name: string;
+    notes: string | undefined;
+  }[];
+  coverSlug: string;
+  grade: GradeText;
+  title: string;
+}): Promise<Buffer> {
+  const coverBuffer = await fs.readFile(
+    `./content/assets/covers/${coverSlug}.png`,
+  );
+
   let coverHeight = 630;
-  let coverWidth = await getCoverWidth(coverSlug, coverHeight);
+  let coverWidth = await getCoverWidth(coverBuffer, coverHeight);
 
   if (coverWidth > 500) {
-    const workCoverPath = getTitleCoverPath(coverSlug);
-    coverHeight = await getCoverHeight(workCoverPath, 500);
+    coverHeight = await getCoverHeight(coverBuffer, 500);
     coverWidth = 500;
+  }
+
+  const coverHash = createHash("md5").update(coverBuffer).digest("hex");
+
+  const gradeBuffer = await getGradeBuffer(grade);
+
+  const cacheProps = gradeBuffer
+    ? {
+        authors,
+        coverHash,
+        gradeBuffer: gradeBuffer.hash,
+        sourceComponentHash,
+        title,
+      }
+    : {
+        authors,
+        coverHash,
+        sourceComponentHash,
+        title,
+      };
+
+  const cacheDigest = createHash("md5")
+    .update(JSON.stringify(cacheProps))
+    .digest("hex");
+
+  const cacheFilePath = new URL(
+    `${coverSlug}.${cacheDigest}.jpg`,
+    assetsCacheDir,
+  );
+
+  const cached = await fs
+    .readFile(cacheFilePath)
+    .catch((error: Error & { code: unknown }) => {
+      if (error.code !== "ENOENT") {
+        throw new Error(
+          `An error was encountered while reading the cache file. Error: ${error}`,
+        );
+      }
+    });
+
+  if (cached) {
+    console.log(` (reused cache entry)`);
+    return cached;
   }
 
   const fetchedResources = [
     {
-      data: cover,
+      data: new Uint8Array(coverBuffer).buffer,
       src: "cover",
     },
   ];
 
   if (gradeBuffer) {
     fetchedResources.push({
-      data: new Uint8Array(gradeBuffer).buffer,
+      data: new Uint8Array(gradeBuffer.buffer).buffer,
       src: "grade",
     });
   }
 
-  return await componentToImageResponse(
+  const heroImage = await componentToImageBytes(
     <ReviewOpenGraphImage
       authors={authors}
       coverHeight={coverHeight}
       coverWidth={coverWidth}
-      grade={Boolean(gradeFile)}
+      grade={grade}
       title={title}
     />,
     fetchedResources,
   );
-}
 
-function fileForGrade(value: GradeText): string | undefined {
-  if (!value || value == "Abandoned") {
-    return;
-  }
+  await fs.writeFile(cacheFilePath, heroImage);
 
-  const { src } = GRADE_SVG_MAP[value];
-
-  return src;
+  return heroImage;
 }
 
 function ReviewOpenGraphImage({
@@ -99,7 +230,7 @@ function ReviewOpenGraphImage({
   }[];
   coverHeight: number;
   coverWidth: number;
-  grade: boolean;
+  grade: GradeText;
   title: string;
 }): React.JSX.Element {
   "use no memo";
@@ -180,14 +311,7 @@ function ReviewOpenGraphImage({
         >
           by {formatTitleAuthors(authors)}
         </div>
-        {grade ? (
-          <img
-            height={48}
-            src="grade"
-            style={{ marginTop: "36px" }}
-            width={240}
-          />
-        ) : (
+        {grade === "Abandoned" ? (
           <div
             style={{
               backgroundColor: "#c02b30",
@@ -201,6 +325,13 @@ function ReviewOpenGraphImage({
           >
             Abandoned
           </div>
+        ) : (
+          <img
+            height={48}
+            src="grade"
+            style={{ marginTop: "36px" }}
+            width={240}
+          />
         )}
       </div>
     </div>
