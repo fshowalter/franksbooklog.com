@@ -163,8 +163,6 @@ async function getReviewOpenGraphImage({
         title,
       };
 
-  console.log(cacheProps);
-
   const cacheDigest = createHash("md5")
     .update(JSON.stringify(cacheProps))
     .digest("hex");
@@ -204,8 +202,6 @@ async function getReviewOpenGraphImage({
       src: "grade",
     });
   }
-
-  console.log(fetchedResources);
 
   const heroImage = await componentToImageBytes(
     <ReviewOpenGraphImage
