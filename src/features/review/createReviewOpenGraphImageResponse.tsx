@@ -187,11 +187,9 @@ async function getReviewOpenGraphImage({
     return cached;
   }
 
-  const cover = await sharp(coverBuffer).toBuffer();
-
   const fetchedResources = [
     {
-      data: new Uint8Array(cover).buffer,
+      data: new Uint8Array(coverBuffer).buffer,
       src: "cover",
     },
   ];
