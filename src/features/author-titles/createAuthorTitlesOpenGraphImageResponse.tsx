@@ -1,5 +1,5 @@
 import { getOpenGraphBackdrop } from "~/assets/backdrops";
-import { componentToImageResponse } from "~/utils/componentToImageResponse";
+import { componentToImageResponse } from "~/utils/componentToImage";
 
 /**
  * Props for the Author Open Graph image component

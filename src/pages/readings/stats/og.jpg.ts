@@ -10,5 +10,9 @@ import { createOpenGraphImageResponse } from "~/utils/createOpenGraphImageRespon
  * @returns HTTP response containing the generated JPEG image with appropriate content-type headers
  */
 export const GET: APIRoute = async function get() {
-  return await createOpenGraphImageResponse("All-Time Stats", "stats");
+  return await createOpenGraphImageResponse({
+    backdropSlug: "stats",
+    cacheSlug: "stats",
+    title: "All-Time Stats",
+  });
 };

@@ -14,29 +14,6 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
 
-export async function getCoverHeight(coverPath: string, targetWidth: number) {
-  try {
-    const { height, width } = await sharp(coverPath).metadata();
-
-    return (height / width) * targetWidth;
-  } catch (error) {
-    console.error("Error:", error);
-    return 0;
-  }
-}
-
-export async function getCoverWidth(slug: string, targetHeight: number) {
-  try {
-    const coverPath = getTitleCoverPath(slug);
-    const { height, width } = await sharp(coverPath).metadata();
-
-    return (width / height) * targetHeight;
-  } catch (error) {
-    console.error(`Error processing cover ${slug}:`, error);
-    return 0;
-  }
-}
-
 export async function getFeedCoverProps(
   slug: string,
 ): Promise<CoverImageProps> {
@@ -109,12 +86,6 @@ export async function getFluidCoverImageProps(
   };
 }
 
-export async function getOpenGraphCover(slug: string) {
-  const buffer = await sharp(getTitleCoverPath(slug)).resize(420).toBuffer();
-
-  return new Uint8Array(buffer).buffer;
-}
-
 export async function getStructuredDataCoverSrc(slug: string): Promise<string> {
   const titleCoverFile = await getTitleCoverFile(slug);
 
@@ -127,16 +98,6 @@ export async function getStructuredDataCoverSrc(slug: string): Promise<string> {
   });
 
   return optimizedImage.src;
-}
-
-export function getTitleCoverPath(slug: string) {
-  const titleCover = coverPath(slug);
-
-  if (titleCover) {
-    return titleCover;
-  }
-
-  return coverPath("default") || "";
 }
 
 export async function getUpdateCoverProps(
@@ -172,6 +133,17 @@ function coverPath(slug: string) {
   return;
 }
 
+async function getCoverHeight(coverPath: string, targetWidth: number) {
+  try {
+    const { height, width } = await sharp(coverPath).metadata();
+
+    return (height / width) * targetWidth;
+  } catch (error) {
+    console.error("Error:", error);
+    return 0;
+  }
+}
+
 async function getTitleCoverFile(slug: string) {
   const coverKey = Object.keys(images).find((image) => {
     return image.endsWith(`${slug}.png`);
@@ -186,4 +158,14 @@ async function getTitleCoverFile(slug: string) {
   })!;
 
   return await images[defaultCoverKey]();
+}
+
+function getTitleCoverPath(slug: string) {
+  const titleCover = coverPath(slug);
+
+  if (titleCover) {
+    return titleCover;
+  }
+
+  return coverPath("default") || "";
 }
