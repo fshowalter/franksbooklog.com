@@ -89,6 +89,35 @@ async function getCoverWidth(
   return (width / height) * targetHeight;
 }
 
+async function getGradeBuffer(
+  grade: GradeText,
+): Promise<undefined | { buffer: Buffer; hash: string }> {
+  if (grade === "Abandoned") {
+    return undefined;
+  }
+
+  const gradeCacheEntry = gradeCache[grade];
+  let gradeHash;
+  let gradeBuffer;
+
+  if (gradeCacheEntry) {
+    gradeHash = gradeCacheEntry.hash;
+    gradeBuffer = gradeCacheEntry.buffer;
+  } else {
+    const { src: gradeFile } = GRADE_SVG_MAP[grade];
+
+    gradeBuffer = await sharp(path.resolve(`./public${gradeFile}`))
+      .resize(240)
+      .toBuffer();
+
+    gradeHash = createHash("md5").update(gradeBuffer).digest("hex");
+
+    gradeCache[grade] = { buffer: gradeBuffer, hash: gradeHash };
+  }
+
+  return { buffer: gradeBuffer, hash: gradeHash };
+}
+
 async function getReviewOpenGraphImage({
   authors,
   coverSlug,
@@ -117,43 +146,24 @@ async function getReviewOpenGraphImage({
 
   const coverHash = createHash("md5").update(coverBuffer).digest("hex");
 
-  let gradeBuffer: Buffer | undefined = undefined;
-  let cacheProps;
+  const gradeBuffer = await getGradeBuffer(grade);
 
-  if (grade === "Abandoned") {
-    cacheProps = {
-      authors,
-      coverHash,
-      sourceComponentHash,
-      title,
-    };
-  } else {
-    const gradeCacheEntry = gradeCache[grade];
-    let gradeHash: string;
-
-    if (gradeCacheEntry) {
-      gradeHash = gradeCacheEntry.hash;
-      gradeBuffer = gradeCacheEntry.buffer;
-    } else {
-      const { src: gradeFile } = GRADE_SVG_MAP[grade];
-
-      gradeBuffer = await sharp(path.resolve(`./public${gradeFile}`))
-        .resize(240)
-        .toBuffer();
-
-      gradeHash = createHash("md5").update(gradeBuffer).digest("hex");
-
-      gradeCache[grade] = { buffer: gradeBuffer, hash: gradeHash };
-
-      cacheProps = {
+  const cacheProps = gradeBuffer
+    ? {
         authors,
         coverHash,
-        gradeHash,
+        gradeBuffer: gradeBuffer.hash,
+        sourceComponentHash,
+        title,
+      }
+    : {
+        authors,
+        coverHash,
         sourceComponentHash,
         title,
       };
-    }
-  }
+
+  console.log(cacheProps);
 
   const cacheDigest = createHash("md5")
     .update(JSON.stringify(cacheProps))
@@ -190,10 +200,12 @@ async function getReviewOpenGraphImage({
 
   if (gradeBuffer) {
     fetchedResources.push({
-      data: new Uint8Array(gradeBuffer).buffer,
+      data: new Uint8Array(gradeBuffer.buffer).buffer,
       src: "grade",
     });
   }
+
+  console.log(fetchedResources);
 
   const heroImage = await componentToImageBytes(
     <ReviewOpenGraphImage

@@ -63,7 +63,7 @@ export async function componentToImageResponse(
 
   return new Response(image as ArrayBufferView<ArrayBuffer>, {
     headers: {
-      "Content-Type": "image/jpg",
+      "Content-Type": "image/jpeg",
     },
   });
 }
