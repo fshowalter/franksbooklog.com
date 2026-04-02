@@ -1,6 +1,5 @@
 ---
 import { getEntry } from "astro:content";
-import { getCollection } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/assets/covers";
 import LongFormText from "~/components/long-form-text/LongFormText.astro";
@@ -14,17 +13,13 @@ type Props = {
 
 const { content } = Astro.props;
 const recentReviewedTitles = await mostRecentReviewedTitles(6);
-const reviewedTitles = await getCollection("reviewedTitles");
 ---
 
 <section class="flex flex-col items-center pt-16 pb-32" data-pagefind-ignore>
   <div class="px-container">
     <LongFormText
       class={`max-w-prose`}
-      text={linkReviewedTitles(
-        content,
-        reviewedTitles.map((e) => e.id),
-      )}
+      text={await linkReviewedTitles(content)}
     />
   </div>
 </section>
