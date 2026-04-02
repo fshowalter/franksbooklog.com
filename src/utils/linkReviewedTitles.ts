@@ -2,7 +2,7 @@ import { getCollection } from "astro:content";
 
 let titleIdToSlugCache: Record<string, string | undefined>;
 
-const re = new RegExp(/(<span data-title-id="(tt\d+)">)(.*?)(<\/span>)/, "g");
+const re = new RegExp(/(<span data-title-id="([^"]*)">)(.*?)(<\/span>)/, "g");
 
 export async function linkReviewedTitles(text: string | undefined) {
   if (!text) {
