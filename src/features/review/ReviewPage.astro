@@ -3,7 +3,6 @@ import type { CollectionEntry } from "astro:content";
 
 import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
-import { getCollection } from "astro:content";
 
 import { getFluidCoverImageProps } from "~/assets/covers";
 import { Grade } from "~/components/grade/Grade";
@@ -26,7 +25,6 @@ type Props = {
 const { reviewedTitle } = Astro.props;
 const { data: review } = await getEntry(reviewedTitle.review);
 const moreReviews = await getEntries(reviewedTitle.moreReviews);
-const reviewedTitles = await getCollection("reviewedTitles");
 ---
 
 <ReviewLayout
@@ -172,10 +170,7 @@ const reviewedTitles = await getCollection("reviewedTitles");
           [&>p:first-child]:first-letter:text-[56px]
           [&>p:first-child]:first-letter:font-bold
         `}
-        set:html={linkReviewedTitles(
-          review.html,
-          reviewedTitles.map((e) => e.id),
-        )}
+        set:html={await linkReviewedTitles(review.html)}
       />
       <IncludedTitles
         includedTitles={await getEntries(reviewedTitle.includedTitles)}
