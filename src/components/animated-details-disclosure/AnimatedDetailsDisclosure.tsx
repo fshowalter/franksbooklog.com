@@ -115,9 +115,7 @@ export function AnimatedDetailsDisclosure({
     const handleTransitionEnd = (evt: TransitionEvent): void => {
       if (evt.target !== content) return;
 
-      if (details.classList.contains("is-opening")) {
-        details.classList.remove("is-opening");
-      }
+      details.classList.remove("is-opening");
 
       if (details.classList.contains("is-closing")) {
         details.classList.remove("is-closing");
