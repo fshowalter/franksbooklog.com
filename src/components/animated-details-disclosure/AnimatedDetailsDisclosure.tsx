@@ -77,8 +77,12 @@ export function AnimatedDetailsDisclosure({
       // Set height to 0 before opening
       content.style.height = "0px";
 
-      // Open the details element
       details.open = true;
+
+      // Add is-opening class for styling during transition
+      // Using direct classList manipulation instead of React state
+      // to avoid re-render conflicts with manual open attribute control
+      details.classList.add("is-opening");
 
       // Set height to scrollHeight to trigger transition
       // Use requestAnimationFrame to ensure browser has painted the open state
@@ -110,6 +114,10 @@ export function AnimatedDetailsDisclosure({
      */
     const handleTransitionEnd = (evt: TransitionEvent): void => {
       if (evt.target !== content) return;
+
+      if (details.classList.contains("is-opening")) {
+        details.classList.remove("is-opening");
+      }
 
       if (details.classList.contains("is-closing")) {
         details.classList.remove("is-closing");
@@ -156,6 +164,7 @@ export function AnimatedDetailsDisclosure({
           className="
             mr-0.5 size-5 text-subtle transition-transform duration-200
             group-open:rotate-180
+            group-[.is-closing]:rotate-0
           "
           fill="none"
           stroke="currentColor"
