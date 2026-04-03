@@ -77,7 +77,6 @@ export function AnimatedDetailsDisclosure({
       // Set height to 0 before opening
       content.style.height = "0px";
 
-      // Open the details element
       details.open = true;
 
       // Set height to scrollHeight to trigger transition
@@ -156,6 +155,7 @@ export function AnimatedDetailsDisclosure({
           className="
             mr-0.5 size-5 text-subtle transition-transform duration-200
             group-open:rotate-180
+            group-[.is-closing]:rotate-0
           "
           fill="none"
           stroke="currentColor"
