@@ -73,6 +73,7 @@ export function CalendarCell({
                   bg-default px-container py-4 transition-transform duration-500
                   tablet-landscape:flex-col tablet-landscape:bg-transparent
                   tablet-landscape:p-6
+                  desktop:p-7
                   ${
                     reading.slug
                       ? `
