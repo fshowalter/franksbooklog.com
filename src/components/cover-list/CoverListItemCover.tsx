@@ -28,7 +28,7 @@ export function CoverListItemCover({
       className={`
         relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
         rounded-sm shadow-all transition-transform
-        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:absolute after:top-0 after:left-0 after:z-above after:size-full
         after:bg-default after:opacity-15 after:transition-opacity
         group-has-[a:hover]/list-item:after:opacity-0
         ${className ?? "tablet:w-auto"}
@@ -37,7 +37,7 @@ export function CoverListItemCover({
       <div
         className={`
           relative
-          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:absolute after:top-0 after:left-0 after:z-above after:block
           after:size-full after:rounded-sm
           after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
           after:mix-blend-multiply
@@ -45,9 +45,9 @@ export function CoverListItemCover({
       >
         <div
           className={`
-            relative z-10
-            before:absolute before:top-0 before:left-0 before:z-10 before:block
-            before:size-full before:rounded-sm
+            relative z-above
+            before:absolute before:top-0 before:left-0 before:z-above
+            before:block before:size-full before:rounded-sm
             before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
             after:absolute after:top-0 after:left-0 after:block after:size-full
             after:rounded-sm after:bg-[url(/assets/spot.png)]

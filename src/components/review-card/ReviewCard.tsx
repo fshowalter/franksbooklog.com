@@ -76,8 +76,8 @@ export function ReviewCard({
           <div
             className={`
               relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden
-              rounded-sm shadow-all transition-transform
-              after:absolute after:top-0 after:left-0 after:z-sticky
+              rounded-sm shadow-xl transition-transform
+              after:absolute after:top-0 after:left-0 after:z-above
               after:size-full after:bg-default after:opacity-15
               after:transition-opacity
               group-has-[a:hover]/list-item:after:opacity-0
@@ -87,7 +87,7 @@ export function ReviewCard({
             <div
               className={`
                 relative
-                after:absolute after:top-0 after:left-0 after:z-sticky
+                after:absolute after:top-0 after:left-0 after:z-above
                 after:block after:size-full after:rounded-[2.5px]
                 after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
                 after:mix-blend-multiply
@@ -95,8 +95,8 @@ export function ReviewCard({
             >
               <div
                 className={`
-                  relative z-10
-                  before:absolute before:top-0 before:left-0 before:z-10
+                  relative z-above
+                  before:absolute before:top-0 before:left-0 before:z-above
                   before:block before:size-full before:rounded-[2.5px]
                   before:bg-[url(/assets/spine-light.png)]
                   before:bg-size-[100%_100%]
@@ -143,7 +143,7 @@ export function ReviewCard({
           <a
             className={`
               block text-2xl font-medium transition-colors duration-500
-              after:absolute after:top-0 after:left-0 after:z-sticky
+              after:absolute after:top-0 after:left-0 after:z-above
               after:size-full
               hover:text-accent
               hover:before:opacity-0
