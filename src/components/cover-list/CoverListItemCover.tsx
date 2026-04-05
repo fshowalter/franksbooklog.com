@@ -46,8 +46,8 @@ export function CoverListItemCover({
         <div
           className={`
             relative z-above
-            before:absolute before:top-0 before:left-0 before:z-above before:block
-            before:size-full before:rounded-sm
+            before:absolute before:top-0 before:left-0 before:z-above
+            before:block before:size-full before:rounded-sm
             before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
             after:absolute after:top-0 after:left-0 after:block after:size-full
             after:rounded-sm after:bg-[url(/assets/spot.png)]

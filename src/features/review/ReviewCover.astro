@@ -45,8 +45,9 @@ const coverImageProps = await getFixedCoverImageProps(
   <div
     class={`
       relative -top-[2.5%]
-      after:absolute after:top-0 after:left-0 after:z-[calc(var(--z-index-above)_+_1)] after:block
-      after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+      after:absolute after:top-0 after:left-0
+      after:z-[calc(var(--z-index-above)+1)] after:block after:size-full
+      after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
       after:bg-size-[100%_100%] after:mix-blend-soft-light
     `}
   >
