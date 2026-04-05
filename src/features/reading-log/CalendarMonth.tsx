@@ -45,7 +45,7 @@ export function CalendarMonth({
             hidden transform-gpu bg-calendar
             tablet-landscape:sticky
             tablet-landscape:top-(--calendar-scroll-offset)
-            tablet-landscape:z-sticky tablet-landscape:table-header-group
+            tablet-landscape:z-above tablet-landscape:table-header-group
           `}
         >
           <tr className={`tablet-landscape:shadow-all`}>

@@ -166,7 +166,7 @@ export function FilterAndSortContainer<T extends string, V>({
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
-            sticky top-0 z-nav-backdrop scroll-mt-0 border-b border-default
+            sticky top-0 z-above scroll-mt-0 border-b border-default
             bg-default text-xs
             tablet:col-span-full
           `}
@@ -207,7 +207,7 @@ export function FilterAndSortContainer<T extends string, V>({
           <dialog
             aria-label="Filters"
             className={`
-              group/dialog fixed top-0 right-0 left-auto z-nav-menu m-0
+              group/dialog fixed top-0 right-0 left-auto m-0
               size-full max-h-full max-w-[380px] translate-x-full
               overflow-hidden border-0 bg-default p-0 text-left drop-shadow-2xl
               transition-all transition-discrete duration-600
@@ -349,7 +349,7 @@ export function FilterAndSortContainer<T extends string, V>({
               </div>
               <div
                 className={`
-                  sticky bottom-0 z-filter-footer mt-auto w-full
+                  sticky bottom-0 z-above mt-auto w-full
                   translate-y-full border-t border-t-default bg-default px-8
                   py-4 drop-shadow-2xl transition-all transition-discrete
                   duration-600

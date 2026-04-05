@@ -40,7 +40,7 @@ const moreReviews = await getEntries(reviewedTitle.moreReviews);
 >
   <div class="flex flex-col" data-pagefind-body>
     <header
-      class={`relative z-base mb-12 flex flex-col items-center px-[8%] pt-10`}
+      class={`relative z-above mb-12 flex flex-col items-center px-[8%] pt-10`}
     >
       <nav class={`transform-gpu pb-2 transition-transform`}>
         <a
@@ -142,7 +142,7 @@ const moreReviews = await getEntries(reviewedTitle.moreReviews);
         class={`
           relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
           text-subtle uppercase
-          after:absolute after:top-1/2 after:left-[-11%] after:-z-10
+          after:absolute after:top-1/2 after:left-[-11%] after:z-behind
           after:w-[122%] after:border-t after:border-subtle
           tablet:mt-6
         `}

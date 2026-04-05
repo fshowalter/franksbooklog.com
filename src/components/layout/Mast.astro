@@ -16,10 +16,10 @@ const { addGradient, hasBackdrop, hideLogo } = Astro.props;
 
 <header
   class={`
-    group z-30 flex w-full items-center justify-between px-container py-4
+    group z-nav flex w-full items-center justify-between px-container py-4
     tablet:py-6
-    laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16
-    laptop:py-8 laptop:text-left
+    laptop:inset-x-0 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8
+    laptop:text-left
     ${
       hasBackdrop
         ? `absolute [--mast-color:#fff]`

@@ -36,7 +36,7 @@ export function AvatarListItem({
         group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) flex-row
         gap-x-4 bg-default px-container py-4 transition-all
         tablet:gap-x-6 tablet:px-4
-        tablet-landscape:has-[a:hover]:z-5
+        tablet-landscape:has-[a:hover]:z-above
         tablet-landscape:has-[a:hover]:scale-[102.5%]
         tablet-landscape:has-[a:hover]:transform-gpu
         tablet-landscape:has-[a:hover]:shadow-all
