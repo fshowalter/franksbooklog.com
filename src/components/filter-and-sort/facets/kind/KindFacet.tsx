@@ -27,7 +27,6 @@ export function KindFacet<
   return (
     <AnimatedDetailsDisclosure title="Kind">
       <CheckboxListField
-        defaultValues={filterValues.kind}
         label="Kind"
         onChange={(values) => dispatch(createKindFilterChangedAction(values))}
         options={distinctKinds.map((e) => ({
@@ -35,6 +34,7 @@ export function KindFacet<
           label: e,
           value: e,
         }))}
+        selectedValues={filterValues.kind}
       />
     </AnimatedDetailsDisclosure>
   );

@@ -38,6 +38,8 @@ export function AnimatedDetailsDisclosure({
   useEffect(() => {
     const details = detailsRef.current;
     const content = contentRef.current;
+    let timeoutId: NodeJS.Timeout | undefined;
+
     if (!details || !content) return;
 
     const summary = details.querySelector("summary");
@@ -99,7 +101,7 @@ export function AnimatedDetailsDisclosure({
       details.classList.add("is-closing");
 
       // Animate to 0 after a slight delay
-      setTimeout(() => {
+      timeoutId = setTimeout(() => {
         content.style.height = "0px";
       }, 1); // Minimal delay to ensure scrollHeight is applied
     };
@@ -129,6 +131,9 @@ export function AnimatedDetailsDisclosure({
     return (): void => {
       summary.removeEventListener("click", handleClick);
       content.removeEventListener("transitionend", handleTransitionEnd);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
   }, [defaultOpen]);
 

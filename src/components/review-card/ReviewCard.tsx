@@ -175,6 +175,7 @@ export function ReviewCard({
             className={`
               rendered-markdown mb-6 text-lg/normal tracking-prose text-muted
             `}
+            // eslint-disable-next-line @eslint-react/dom-no-dangerously-set-innerhtml
             dangerouslySetInnerHTML={{ __html: value.excerptHtml }}
           />
         </div>

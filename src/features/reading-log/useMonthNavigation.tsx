@@ -8,7 +8,7 @@ import type { ReadingLogSort } from "./sortReadingLog";
  * @param selectedMonthDate - Currently selected month date
  * @returns Tuple of [previousMonthDate, currentMonthDate, nextMonthDate]
  */
-export function useMonthNavigation(
+export function useMonthNavigation( // eslint-disable-line @eslint-react/no-unnecessary-use-prefix
   filteredValues: ReadingLogValue[],
   sort: ReadingLogSort,
   selectedMonthDate?: string,

@@ -17,7 +17,6 @@ export function TitleYearFacet({
   return (
     <AnimatedDetailsDisclosure title="Year">
       <YearField
-        defaultValues={defaultValues}
         label="Title Year"
         onYearChange={(values) =>
           dispatch(
@@ -28,6 +27,7 @@ export function TitleYearFacet({
             ),
           )
         }
+        values={defaultValues}
         years={distinctYears}
       />
     </AnimatedDetailsDisclosure>

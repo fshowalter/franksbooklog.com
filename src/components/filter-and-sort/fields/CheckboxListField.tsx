@@ -9,23 +9,20 @@ type CheckboxListFieldOption = {
 };
 
 type CheckboxListFieldProps = {
-  defaultValues?: readonly string[];
   label: string;
   onChange: (values: string[]) => void;
   options: readonly CheckboxListFieldOption[];
+  selectedValues?: readonly string[];
   showMoreThreshold?: number;
 };
 
 export function CheckboxListField({
-  defaultValues,
   label,
   onChange,
   options,
+  selectedValues = [],
   showMoreThreshold = 3,
 }: CheckboxListFieldProps): React.JSX.Element {
-  const [selectedValues, setSelectedValues] = useState<string[]>(
-    defaultValues ? [...defaultValues] : [],
-  );
   const [showAll, setShowAll] = useState(false);
   const fieldsetRef = useRef<HTMLFieldSetElement | null>(null);
 
@@ -72,7 +69,6 @@ export function CheckboxListField({
       ? [...selectedValues, value]
       : selectedValues.filter((v) => v !== value);
 
-    setSelectedValues(newValues);
     onChange(newValues);
   };
 
@@ -80,19 +76,12 @@ export function CheckboxListField({
   // onChange([]) here too would produce a duplicate dispatch (same pattern as
   // RangeSliderField and GradeField). Local state is still reset immediately for UI.
   const handleClear = (): void => {
-    setSelectedValues([]);
     onChange([]);
   };
 
   const handleShowMore = (): void => {
     setShowAll(true);
   };
-
-  // Sync selectedValues when defaultValues changes from parent
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentionally syncing controlled state from props
-    setSelectedValues(defaultValues ? [...defaultValues] : []);
-  }, [defaultValues]);
 
   // Listen for form reset events and clear selections when form is reset.
   // Uses closest("form") on the fieldset ref to find the containing form rather than
@@ -102,7 +91,6 @@ export function CheckboxListField({
     if (!form) return;
 
     const handleFormReset = (): void => {
-      setSelectedValues(defaultValues ? [...defaultValues] : []);
       setShowAll(false);
     };
 
@@ -111,7 +99,7 @@ export function CheckboxListField({
     return (): void => {
       form.removeEventListener("reset", handleFormReset);
     };
-  }, [defaultValues]);
+  }, []);
 
   const fieldsetId = `checkbox-list-${label.toLowerCase().replaceAll(/\s+/g, "-")}`;
   const hasSelections = selectedValues.length > 0;

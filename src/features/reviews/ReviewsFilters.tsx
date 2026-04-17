@@ -60,7 +60,7 @@ export function ReviewsFilters({
         filterValues={filterValues}
         values={values}
       />
-      <GradeFacet defaultValues={filterValues.gradeValue} dispatch={dispatch} />
+      <GradeFacet dispatch={dispatch} gradeValues={filterValues.gradeValue} />
       <ReviewYearFacet
         defaultValues={filterValues.reviewYear}
         dispatch={dispatch}

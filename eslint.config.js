@@ -1,10 +1,9 @@
+import eslintReact from "@eslint-react/eslint-plugin";
 import eslint from "@eslint/js";
 import vitest from "@vitest/eslint-plugin";
 import eslintPluginAstro from "eslint-plugin-astro";
 import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 import perfectionist from "eslint-plugin-perfectionist";
-import react from "eslint-plugin-react";
-import reactHooks from "eslint-plugin-react-hooks";
 import eslintPluginSeparateTypeImports from "eslint-plugin-separate-type-imports";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import { defineConfig } from "eslint/config";
@@ -17,7 +16,6 @@ export default defineConfig(
   eslint.configs.recommended,
   eslintPluginUnicorn.configs.recommended,
   eslintPluginSeparateTypeImports.configs.recommended,
-  reactHooks.configs.flat.recommended,
   perfectionist.configs["recommended-natural"],
   tsEslint.configs.recommendedTypeChecked,
   eslintPluginAstro.configs.recommended,
@@ -72,21 +70,11 @@ export default defineConfig(
     },
   },
   {
+    extends: [eslintReact.configs["recommended-typescript"]],
     files: ["**/*.tsx"],
-    plugins: {
-      react,
-    },
     rules: {
-      ...react.configs.recommended.rules,
+      "@eslint-react/no-array-index-key": "off",
       "@typescript-eslint/explicit-function-return-type": "error",
-      "react/boolean-prop-naming": "error",
-      "react/button-has-type": "error",
-      "react/react-in-jsx-scope": "off",
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
     },
   },
   {

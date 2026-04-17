@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import { RangeSliderField } from "./RangeSliderField";
 import { SelectInput } from "./SelectInput";
 
@@ -15,52 +13,41 @@ import { SelectInput } from "./SelectInput";
  * @returns Year range selector with dropdowns and slider, wrapped in FilterSection
  */
 export function YearField({
-  defaultValues,
   label,
   onClear,
   onYearChange,
+  values,
   years,
 }: {
-  defaultValues: readonly [string, string] | undefined;
   label: string;
   onClear?: () => void;
   onYearChange: (values: [string, string]) => void;
+  values: readonly [string, string] | undefined;
   years: readonly string[];
 }): React.JSX.Element {
-  const [minYear, setMinYear] = useState(defaultMinValue(years, defaultValues));
-  const [maxYear, setMaxYear] = useState(defaultMaxValue(years, defaultValues));
-
-  // Sync internal state when defaultValues changes (e.g., when cleared via applied filters)
-  useEffect(() => {
-    setMinYear(defaultMinValue(years, defaultValues));
-    setMaxYear(defaultMaxValue(years, defaultValues));
-  }, [defaultValues, years]);
-
   // Convert year strings to numbers for slider
   const minYearNum = Number.parseInt(years[0], 10);
   const maxYearNum = Number.parseInt(years.at(-1)!, 10);
-  const currentMinNum = Number.parseInt(minYear, 10);
-  const currentMaxNum = Number.parseInt(maxYear, 10);
+  const currentMinNum = Number.parseInt(minYear(years, values), 10);
+  const currentMaxNum = Number.parseInt(maxYear(years, values), 10);
 
   const handleMinChange = (value: string): void => {
     const newMin = value;
-    setMinYear(newMin);
 
-    if (newMin <= maxYear) {
-      onYearChange([newMin, maxYear]);
+    if (newMin <= maxYear(years, values)) {
+      onYearChange([newMin, maxYear(years, values)]);
     } else {
-      onYearChange([maxYear, newMin]);
+      onYearChange([maxYear(years, values), newMin]);
     }
   };
 
   const handleMaxChange = (value: string): void => {
     const newMax = value;
-    setMaxYear(newMax);
 
-    if (minYear <= newMax) {
-      onYearChange([minYear, newMax]);
+    if (minYear(years, values) <= newMax) {
+      onYearChange([minYear(years, values), newMax]);
     } else {
-      onYearChange([newMax, minYear]);
+      onYearChange([newMax, minYear(years, values)]);
     }
   };
 
@@ -69,8 +56,6 @@ export function YearField({
     // Find closest valid year in the years array
     const fromStr = findClosestYear(years, from);
     const toStr = findClosestYear(years, to);
-    setMinYear(fromStr);
-    setMaxYear(toStr);
     onYearChange([fromStr, toStr]);
   };
 
@@ -80,8 +65,6 @@ export function YearField({
   const handleClear = (): void => {
     const fullMin = years[0];
     const fullMax = years.at(-1)!;
-    setMinYear(fullMin);
-    setMaxYear(fullMax);
     if (onClear) {
       onClear();
     } else {
@@ -98,7 +81,7 @@ export function YearField({
               From
             </span>
             <SelectInput
-              defaultValue={minYear}
+              defaultValue={minYear(years, values)}
               onChange={(e) => handleMinChange(e.target.value)}
             >
               {years.map((year) => {
@@ -115,7 +98,7 @@ export function YearField({
               to
             </span>
             <SelectInput
-              defaultValue={maxYear}
+              defaultValue={maxYear(years, values)}
               onChange={(e) => handleMaxChange(e.target.value)}
             >
               {[...years].reverse().map((year) => {
@@ -144,20 +127,6 @@ export function YearField({
   );
 }
 
-function defaultMaxValue(
-  allValues: readonly string[],
-  selectedValues?: readonly [string, string],
-): string {
-  return selectedValues ? selectedValues[1] : (allValues.at(-1) as string);
-}
-
-function defaultMinValue(
-  allValues: readonly string[],
-  selectedValues?: readonly [string, string],
-): string {
-  return selectedValues ? selectedValues[0] : allValues[0];
-}
-
 /**
  * Find the closest year in the years array to the target year.
  * This handles sparse year arrays (e.g., ["1930", "1943", "1978"]) where
@@ -180,4 +149,18 @@ function findClosestYear(years: readonly string[], target: number): string {
   }
 
   return closest;
+}
+
+function maxYear(
+  allValues: readonly string[],
+  selectedValues?: readonly [string, string],
+): string {
+  return selectedValues ? selectedValues[1] : (allValues.at(-1) as string);
+}
+
+function minYear(
+  allValues: readonly string[],
+  selectedValues?: readonly [string, string],
+): string {
+  return selectedValues ? selectedValues[0] : allValues[0];
 }
