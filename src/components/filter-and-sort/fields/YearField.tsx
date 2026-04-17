@@ -1,17 +1,6 @@
 import { RangeSliderField } from "./RangeSliderField";
 import { SelectInput } from "./SelectInput";
 
-/**
- * Year range selector with from/to dropdowns and range slider.
- * Spec requires BOTH dropdowns and slider - dual control pattern
- * @param props - Component props
- * @param props.defaultValues - Default [min, max] year values
- * @param props.label - Field label text
- * @param props.onClear - Handler for clear action (resets to full range)
- * @param props.onYearChange - Handler for year range changes
- * @param props.years - Available years to select from
- * @returns Year range selector with dropdowns and slider, wrapped in FilterSection
- */
 export function YearField({
   label,
   onClear,

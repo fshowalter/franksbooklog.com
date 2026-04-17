@@ -37,8 +37,6 @@ export function GradeFacet({
   const handleMinChange = (value: string): void => {
     const newMin = Number.parseInt(value, 10) as GradeValue;
 
-    // setMinValue(newMin);
-
     if (newMin <= maxValue(gradeValues)) {
       onGradeChange([newMin, maxValue(gradeValues)]);
     } else {
@@ -48,7 +46,6 @@ export function GradeFacet({
 
   const handleMaxChange = (value: string): void => {
     const newMax = Number.parseInt(value, 10) as GradeValue;
-    // setMaxValue(newMax);
 
     if (minValue(gradeValues) <= newMax) {
       onGradeChange([minValue(gradeValues), newMax]);

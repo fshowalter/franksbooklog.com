@@ -6,13 +6,13 @@ import type { TitleYearFilterChangedAction } from "./titleYearReducer";
 import { createTitleYearFilterChangedAction } from "./titleYearReducer";
 
 export function TitleYearFacet({
-  defaultValues,
   dispatch,
   distinctYears,
+  values,
 }: {
-  defaultValues: readonly [string, string] | undefined;
   dispatch: React.Dispatch<TitleYearFilterChangedAction>;
   distinctYears: readonly string[];
+  values: readonly [string, string] | undefined;
 }): React.JSX.Element {
   return (
     <AnimatedDetailsDisclosure title="Year">
@@ -27,7 +27,7 @@ export function TitleYearFacet({
             ),
           )
         }
-        values={defaultValues}
+        values={values}
         years={distinctYears}
       />
     </AnimatedDetailsDisclosure>

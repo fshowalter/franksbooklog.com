@@ -6,13 +6,13 @@ import type { ReviewYearFilterChangedAction } from "./reviewYearReducer";
 import { createReviewYearFilterChangedAction } from "./reviewYearReducer";
 
 export function ReviewYearFacet({
-  defaultValues,
   dispatch,
   distinctYears,
+  values,
 }: {
-  defaultValues: readonly [string, string] | undefined;
   dispatch: React.Dispatch<ReviewYearFilterChangedAction>;
   distinctYears: readonly string[];
+  values: readonly [string, string] | undefined;
 }): React.JSX.Element {
   return (
     <AnimatedDetailsDisclosure title="Review Year">
@@ -27,7 +27,7 @@ export function ReviewYearFacet({
             ),
           )
         }
-        values={defaultValues}
+        values={values}
         years={distinctYears}
       />
     </AnimatedDetailsDisclosure>

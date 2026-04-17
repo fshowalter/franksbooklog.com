@@ -45,9 +45,9 @@ export function AuthorTitlesFilters({
     <>
       <TitleFacet defaultValue={filterValues.title} dispatch={dispatch} />
       <TitleYearFacet
-        defaultValues={filterValues.titleYear}
         dispatch={dispatch}
         distinctYears={distinctTitleYears}
+        values={filterValues.titleYear}
       />
       <KindFacet
         dispatch={dispatch}
@@ -63,11 +63,11 @@ export function AuthorTitlesFilters({
         filterValues={filterValues}
         values={values}
       />
-      <GradeFacet defaultValues={filterValues.gradeValue} dispatch={dispatch} />
+      <GradeFacet dispatch={dispatch} gradeValues={filterValues.gradeValue} />
       <ReviewYearFacet
-        defaultValues={filterValues.reviewYear}
         dispatch={dispatch}
         distinctYears={distinctReviewYears}
+        values={filterValues.reviewYear}
       />
     </>
   );
