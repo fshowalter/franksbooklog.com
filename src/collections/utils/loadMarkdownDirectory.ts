@@ -1,9 +1,9 @@
 import type { LoaderContext } from "astro/loaders";
 
-import matter from "gray-matter";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
+import { parseFrontmatter } from "./parseFrontmatter";
 import { watchDirectory } from "./watchDirectory";
 
 /** Load a directory of Markdown files, one entry per file.
@@ -12,6 +12,7 @@ import { watchDirectory } from "./watchDirectory";
 export function loadMarkdownDirectory({
   buildData,
   directoryPath,
+  getId,
   loaderContext,
 }: {
   buildData: (opts: {
@@ -20,6 +21,7 @@ export function loadMarkdownDirectory({
     id: string;
   }) => Record<string, unknown>;
   directoryPath: string;
+  getId?: (raw: string, filePath: string) => string;
   loaderContext: LoaderContext;
 }): Promise<void> {
   const sync = async () => {
@@ -32,7 +34,10 @@ export function loadMarkdownDirectory({
     for (const entry of mdFiles) {
       const filePath = path.join(directoryPath, entry.name);
       const fileContents = await fs.readFile(filePath, "utf8");
-      const id = path.parse(filePath).name;
+
+      const id = getId
+        ? getId(fileContents, filePath)
+        : path.parse(filePath).name;
       newIds.add(id);
 
       // Digest raw content to skip expensive remark/rehype re-processing
@@ -45,7 +50,7 @@ export function loadMarkdownDirectory({
         continue;
       }
 
-      const { content: body, data: frontmatter } = matter(fileContents);
+      const { body, frontmatter } = parseFrontmatter(fileContents, filePath);
 
       // buildData runs remark/rehype WITHOUT linkReviewedWorks (applied in API layer)
       const data = await loaderContext.parseData({
