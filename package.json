@@ -46,6 +46,7 @@
     "unist-util-visit": "5.1.0"
   },
   "devDependencies": {
+    "@eslint-react/eslint-plugin": "4.2.3",
     "@eslint/js": "9.39.4",
     "@testing-library/dom": "10.4.1",
     "@testing-library/jest-dom": "6.9.1",
@@ -61,12 +62,10 @@
     "@vitest/eslint-plugin": "1.6.15",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
     "chokidar": "5.0.0",
-    "eslint": "9.39.4",
+    "eslint": "10.0.0",
     "eslint-plugin-astro": "1.7.0",
     "eslint-plugin-better-tailwindcss": "4.4.1",
     "eslint-plugin-perfectionist": "5.8.0",
-    "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "7.0.1",
     "eslint-plugin-separate-type-imports": "git://github.com/fshowalter/eslint-plugin-separate-type-imports.git",
     "eslint-plugin-unicorn": "64.0.0",
     "jsdom": "29.0.2",

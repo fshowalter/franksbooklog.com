@@ -52,12 +52,12 @@ export function ReviewedStatusFacet<
   return (
     <AnimatedDetailsDisclosure title="Status">
       <CheckboxListField
-        defaultValues={filterValues.reviewedStatus}
         label="Status"
         onChange={(values) =>
           dispatch(createReviewedStatusFilterChangedAction(values))
         }
         options={statusOptions}
+        selectedValues={filterValues.reviewedStatus}
       />
     </AnimatedDetailsDisclosure>
   );

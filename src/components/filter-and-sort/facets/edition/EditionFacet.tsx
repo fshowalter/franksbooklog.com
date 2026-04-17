@@ -27,7 +27,6 @@ export function EditionFacet<
   return (
     <AnimatedDetailsDisclosure title="Edition">
       <CheckboxListField
-        defaultValues={filterValues.edition}
         label="Edition"
         onChange={(values) =>
           dispatch(createEditionFilterChangedAction(values))
@@ -37,6 +36,7 @@ export function EditionFacet<
           label: e,
           value: e,
         }))}
+        selectedValues={filterValues.edition}
       />
     </AnimatedDetailsDisclosure>
   );

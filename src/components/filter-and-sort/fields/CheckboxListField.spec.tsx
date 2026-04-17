@@ -28,10 +28,10 @@ const checkboxAt = (index: number): HTMLInputElement => {
 const createDefaultProps = (
   overrides = {},
 ): {
-  defaultValues?: string[];
   label: string;
   onChange: (values: string[]) => void;
   options: CheckboxListFieldOption[];
+  selectedValues?: string[];
   showMoreThreshold?: number;
 } => ({
   label: "Test Label",
@@ -98,9 +98,9 @@ describe("CheckboxListField", () => {
       expect(screen.getByText("(42)")).toBeInTheDocument();
     });
 
-    it("renders with default selected values", ({ expect }) => {
+    it("renders with selected values", ({ expect }) => {
       const props = createDefaultProps({
-        defaultValues: ["action", "horror"],
+        selectedValues: ["action", "horror"],
       });
       render(<CheckboxListField {...props} />);
 
@@ -185,41 +185,20 @@ describe("CheckboxListField", () => {
       await user.click(getCheckboxByLabel("Action"));
 
       expect(onChange).toHaveBeenCalledExactlyOnceWith(["action"]);
-      expect(getCheckboxByLabel("Action").checked).toBe(true);
     });
 
     it("unchecks checkbox when clicked again", async ({ expect }) => {
       const onChange = vi.fn();
       const user = userEvent.setup();
       const props = createDefaultProps({
-        defaultValues: ["action"],
         onChange,
+        selectedValues: ["action"],
       });
       render(<CheckboxListField {...props} />);
 
       await user.click(getCheckboxByLabel("Action"));
 
       expect(onChange).toHaveBeenCalledExactlyOnceWith([]);
-      expect(getCheckboxByLabel("Action").checked).toBe(false);
-    });
-
-    it("allows multiple selections", async ({ expect }) => {
-      const onChange = vi.fn();
-      const user = userEvent.setup();
-      const props = createDefaultProps({ onChange });
-      render(<CheckboxListField {...props} />);
-
-      await user.click(getCheckboxByLabel("Action"));
-      await user.click(getCheckboxByLabel("Comedy"));
-      await user.click(getCheckboxByLabel("Drama"));
-
-      expect(onChange).toHaveBeenNthCalledWith(1, ["action"]);
-      expect(onChange).toHaveBeenNthCalledWith(2, ["action", "comedy"]);
-      expect(onChange).toHaveBeenNthCalledWith(3, [
-        "action",
-        "comedy",
-        "drama",
-      ]);
     });
 
     it("toggles checkbox with Space key", async ({ expect }) => {
@@ -233,13 +212,6 @@ describe("CheckboxListField", () => {
       await user.keyboard(" ");
 
       expect(onChange).toHaveBeenCalledExactlyOnceWith(["action"]);
-      expect(checkbox.checked).toBe(true);
-
-      // Press space again to uncheck
-      await user.keyboard(" ");
-
-      expect(onChange).toHaveBeenLastCalledWith([]);
-      expect(checkbox.checked).toBe(false);
     });
   });
 
@@ -248,7 +220,7 @@ describe("CheckboxListField", () => {
       expect,
     }) => {
       const props = createDefaultProps({
-        defaultValues: ["horror"],
+        selectedValues: ["horror"],
         showMoreThreshold: 3, // Show more needed (7 options > 3 threshold)
       });
       render(<CheckboxListField {...props} />);
@@ -266,6 +238,7 @@ describe("CheckboxListField", () => {
     }) => {
       const user = userEvent.setup();
       const props = createDefaultProps({
+        selectedValues: ["action", "comedy", "drama"],
         showMoreThreshold: 3, // Show more needed (7 options > 3 threshold)
       });
       render(<CheckboxListField {...props} />);
@@ -279,33 +252,6 @@ describe("CheckboxListField", () => {
       expect(checkboxAt(0).value).toBe("drama");
       expect(checkboxAt(1).value).toBe("comedy");
       expect(checkboxAt(2).value).toBe("action");
-    });
-
-    it('returns unchecked items to alphabetical order when "Show more" is needed', async ({
-      expect,
-    }) => {
-      const user = userEvent.setup();
-      const props = createDefaultProps({
-        defaultValues: ["horror"],
-        showMoreThreshold: 3, // Show more needed (7 options > 3 threshold)
-      });
-      render(<CheckboxListField {...props} />);
-
-      // Horror should be first (selected) when show more hasn't been clicked
-      let checkboxes = screen.getAllByRole("checkbox");
-      expect((checkboxes[0] as HTMLInputElement).value).toBe("horror");
-
-      // Uncheck Horror
-      await user.click(getCheckboxByLabel("Horror"));
-
-      // Should return to alphabetical position - only first 3 visible now (no selections)
-      checkboxes = screen.getAllByRole("checkbox");
-      expect(checkboxes).toHaveLength(3);
-      expect(checkboxAt(0).value).toBe("action");
-      expect(checkboxAt(1).value).toBe("comedy");
-      expect(checkboxAt(2).value).toBe("drama");
-      // Horror is no longer visible (it's 4th alphabetically, but only 3 shown)
-      expect(queryCheckboxByLabel("Horror")).not.toBeInTheDocument();
     });
 
     it('maintains alphabetical order after "Show more" is clicked', async ({
@@ -329,7 +275,6 @@ describe("CheckboxListField", () => {
       expect(checkboxAt(1).value).toBe("comedy");
       expect(checkboxAt(2).value).toBe("drama");
       expect(checkboxAt(3).value).toBe("horror");
-      expect(checkboxAt(3).checked).toBe(true);
     });
 
     it('does not re-sort when selections change after "Show more" is clicked', async ({
@@ -337,7 +282,7 @@ describe("CheckboxListField", () => {
     }) => {
       const user = userEvent.setup();
       const props = createDefaultProps({
-        defaultValues: ["horror"],
+        selectedValues: ["horror"],
         showMoreThreshold: 3, // Show more needed (7 options > 3 threshold)
       });
       render(<CheckboxListField {...props} />);
@@ -360,7 +305,6 @@ describe("CheckboxListField", () => {
       // Should remain in alphabetical order (not re-sort)
       expect(checkboxAt(0).value).toBe("action");
       expect(checkboxAt(3).value).toBe("horror");
-      expect(checkboxAt(3).checked).toBe(false);
 
       // Check Drama
       await user.click(getCheckboxByLabel("Drama"));
@@ -368,13 +312,11 @@ describe("CheckboxListField", () => {
       // Should still remain in alphabetical order
       expect(checkboxAt(0).value).toBe("action");
       expect(checkboxAt(2).value).toBe("drama");
-      expect(checkboxAt(2).checked).toBe(true);
     });
   });
 
   describe('"Clear" functionality', () => {
-    it('shows "Clear" link only when selections exist', async ({ expect }) => {
-      const user = userEvent.setup();
+    it('shows "Clear" link only when selections exist', ({ expect }) => {
       const props = createDefaultProps();
       render(<CheckboxListField {...props} />);
 
@@ -384,7 +326,7 @@ describe("CheckboxListField", () => {
       ).not.toBeInTheDocument();
 
       // Select an item
-      await user.click(getCheckboxByLabel("Action"));
+      render(<CheckboxListField {...props} selectedValues={["horror"]} />);
 
       // Clear link should now be visible
       expect(
@@ -396,8 +338,8 @@ describe("CheckboxListField", () => {
       const onChange = vi.fn();
       const user = userEvent.setup();
       const props = createDefaultProps({
-        defaultValues: ["action", "comedy"],
         onChange,
+        selectedValues: ["action", "comedy"],
       });
       render(<CheckboxListField {...props} />);
 
@@ -413,7 +355,7 @@ describe("CheckboxListField", () => {
     }) => {
       const user = userEvent.setup();
       const props = createDefaultProps({
-        defaultValues: ["action"],
+        selectedValues: ["action"],
         showMoreThreshold: 3,
       });
       render(<CheckboxListField {...props} />);
@@ -441,69 +383,6 @@ describe("CheckboxListField", () => {
   });
 
   describe("form reset behavior", () => {
-    it("resets to default values when form is reset", async ({ expect }) => {
-      const onChange = vi.fn();
-      const user = userEvent.setup();
-      const props = createDefaultProps({
-        defaultValues: ["action", "comedy"],
-        onChange,
-      });
-      const { container } = render(
-        <form>
-          <CheckboxListField {...props} />
-        </form>,
-      );
-
-      // Verify initial state
-      expect(getCheckboxByLabel("Action").checked).toBe(true);
-      expect(getCheckboxByLabel("Comedy").checked).toBe(true);
-
-      // Select additional option
-      await user.click(getCheckboxByLabel("Drama"));
-      expect(onChange).toHaveBeenLastCalledWith(["action", "comedy", "drama"]);
-
-      // Reset the form
-      const form = container.querySelector("form");
-      act(() => {
-        form?.reset();
-      });
-
-      // Should reset to default values
-      expect(getCheckboxByLabel("Action").checked).toBe(true);
-      expect(getCheckboxByLabel("Comedy").checked).toBe(true);
-      expect(getCheckboxByLabel("Drama").checked).toBe(false);
-    });
-
-    it("clears all selections when form is reset with no defaults", async ({
-      expect,
-    }) => {
-      const onChange = vi.fn();
-      const user = userEvent.setup();
-      const props = createDefaultProps({ onChange });
-      const { container } = render(
-        <form>
-          <CheckboxListField {...props} />
-        </form>,
-      );
-
-      // Select options
-      await user.click(getCheckboxByLabel("Action"));
-      await user.click(getCheckboxByLabel("Comedy"));
-
-      expect(getCheckboxByLabel("Action").checked).toBe(true);
-      expect(getCheckboxByLabel("Comedy").checked).toBe(true);
-
-      // Reset the form
-      const form = container.querySelector("form");
-      act(() => {
-        form?.reset();
-      });
-
-      // Should clear all selections
-      expect(getCheckboxByLabel("Action").checked).toBe(false);
-      expect(getCheckboxByLabel("Comedy").checked).toBe(false);
-    });
-
     it("collapses expanded list when form is reset", async ({ expect }) => {
       const user = userEvent.setup();
       const props = createDefaultProps({
@@ -558,13 +437,11 @@ describe("CheckboxListField", () => {
       expect(checkbox.getAttribute("type")).toBe("checkbox");
     });
 
-    it("announces selection count to screen readers", async ({ expect }) => {
-      const user = userEvent.setup();
-      const props = createDefaultProps();
+    it("announces selection count to screen readers", ({ expect }) => {
+      const props = createDefaultProps({
+        selectedValues: ["action", "comedy"],
+      });
       render(<CheckboxListField {...props} />);
-
-      await user.click(getCheckboxByLabel("Action"));
-      await user.click(getCheckboxByLabel("Comedy"));
 
       // Should have screen reader text for count
       const countText = screen.getByText("2 options selected");
@@ -654,7 +531,7 @@ describe("CheckboxListField", () => {
       expect,
     }) => {
       const props = createDefaultProps({
-        defaultValues: ["thriller"], // Thriller is last alphabetically, beyond threshold
+        selectedValues: ["thriller"], // Thriller is last alphabetically, beyond threshold
         showMoreThreshold: 3,
       });
       render(<CheckboxListField {...props} />);

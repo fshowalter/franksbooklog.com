@@ -34,9 +34,9 @@ export function Filters({
     <>
       <TitleFacet defaultValue={filterValues.title} dispatch={dispatch} />
       <TitleYearFacet
-        defaultValues={filterValues.titleYear}
         dispatch={dispatch}
         distinctYears={distinctTitleYears}
+        values={filterValues.titleYear}
       />
       <KindFacet
         dispatch={dispatch}
@@ -52,9 +52,9 @@ export function Filters({
         values={values}
       />
       <ReadingYearFacet
-        defaultValues={filterValues.readingYear}
         dispatch={dispatch}
         distinctYears={distinctReadingYears}
+        values={filterValues.readingYear}
       />
       <EditionFacet
         dispatch={dispatch}
