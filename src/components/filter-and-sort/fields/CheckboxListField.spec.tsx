@@ -437,8 +437,7 @@ describe("CheckboxListField", () => {
       expect(checkbox.getAttribute("type")).toBe("checkbox");
     });
 
-    it("announces selection count to screen readers", async ({ expect }) => {
-      const user = userEvent.setup();
+    it("announces selection count to screen readers", ({ expect }) => {
       const props = createDefaultProps({
         selectedValues: ["action", "comedy"],
       });
