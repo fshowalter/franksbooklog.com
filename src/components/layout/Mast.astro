@@ -27,7 +27,7 @@ const { hasBackdrop, hideLogo } = Astro.props;
     text-(--mast-color)
   `}
 >
-  {hideLogo ? <div /> : <Logo />}
+  {hideLogo ? <div /> : <Logo dropShadow={hasBackdrop} />}
   <div class="flex items-center">
     <nav
       class={`
