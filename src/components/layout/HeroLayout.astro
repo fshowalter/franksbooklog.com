@@ -15,7 +15,7 @@ const { baseLayoutProps, heroProps, hideLogo = false, ...rest } = Astro.props;
 ---
 
 <BaseLayout {...baseLayoutProps} {...rest}>
-  <Mast addGradient={true} hasBackdrop={true} hideLogo={hideLogo} slot="mast" />
+  <Mast hasBackdrop={true} hideLogo={hideLogo} slot="mast" />
   <Hero {...heroProps} />
   <slot />
 </BaseLayout>
