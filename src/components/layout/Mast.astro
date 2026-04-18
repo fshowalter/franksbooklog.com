@@ -6,12 +6,11 @@ import Logo from "./Logo.astro";
 import SiteHierarchy, { siteHierarchy } from "./SiteHierarchy.astro";
 
 type Props = {
-  addGradient: boolean;
   hasBackdrop: boolean;
   hideLogo: boolean;
 };
 
-const { addGradient, hasBackdrop, hideLogo } = Astro.props;
+const { hasBackdrop, hideLogo } = Astro.props;
 ---
 
 <header
@@ -27,11 +26,6 @@ const { addGradient, hasBackdrop, hideLogo } = Astro.props;
     }
     text-(--mast-color)
   `}
-  style={{
-    backgroundImage: addGradient
-      ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
-      : "",
-  }}
 >
   {hideLogo ? <div /> : <Logo />}
   <div class="flex items-center">
@@ -46,12 +40,23 @@ const { addGradient, hasBackdrop, hideLogo } = Astro.props;
           siteHierarchy.map((page) => {
             return (
               <li
-                class={`block leading-10 tracking-serif-wide whitespace-nowrap`}
+                class:list={[
+                  `
+                    relative block leading-10 tracking-serif-wide
+                    whitespace-nowrap
+                  `,
+                  hasBackdrop &&
+                    `
+                      after:absolute after:top-0 after:left-0 after:size-full
+                      after:bg-[rgba(0,0,0,.9)] after:blur-3xl
+                    `,
+                ]}
               >
                 <a
                   class:list={[
                     `
-                      relative block text-inherit transition-colors duration-500
+                      relative z-above block text-inherit transition-colors
+                      duration-500
                       after:absolute after:bottom-1 after:left-0 after:h-px
                       after:w-full after:origin-center after:scale-x-0
                       after:bg-accent after:transition-transform
@@ -59,10 +64,11 @@ const { addGradient, hasBackdrop, hideLogo } = Astro.props;
                       hover:text-accent
                       hover:after:scale-x-100
                     `,
-                    {
-                      "mix-blend-hard-light text-shadow-lg hover:text-shadow-none":
-                        hasBackdrop,
-                    },
+                    hasBackdrop &&
+                      `
+                        [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
+                        hover:text-shadow-none
+                      `,
                   ]}
                   href={page.href}
                 >

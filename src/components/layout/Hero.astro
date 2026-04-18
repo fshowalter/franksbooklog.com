@@ -16,7 +16,6 @@ const AvatarImageConfig = {
 type Props = {
   avatarSlug?: string | undefined;
   backdropSlug: string;
-  bottomShadow?: boolean;
   breadcrumb?: {
     href: string;
     text: string;
@@ -31,7 +30,6 @@ type Props = {
 const {
   avatarSlug,
   backdropSlug,
-  bottomShadow = true,
   breadcrumb,
   centerText = false,
   deck,
@@ -68,8 +66,6 @@ if (avatarSlug) {
     `
       relative flex w-full flex-col content-start items-center justify-end gap-6
       bg-[#2A2B2A] pt-40 pb-8 text-inverse
-      tablet:pt-40 tablet:pb-10
-      laptop:pt-40 laptop:pb-16
     `,
   ]}
 >
@@ -90,15 +86,13 @@ if (avatarSlug) {
   </div>
   <div
     class:list={[
-      { "items-center": centerText },
+      centerText ? "items-center" : "mr-auto",
       `
-        z-above mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
-        px-container
+        relative z-above col-start-1 flex max-w-(--breakpoint-desktop) flex-col
+        px-container pt-6 pb-8
+        after:absolute after:top-0 after:left-0 after:z-behind after:size-full
+        after:bg-[rgba(0,0,0,0.3)] after:blur-3xl
       `,
-      {
-        "after:absolute after:top-0 after:left-0 after:z-behind after:size-full after:bg-(image:--hero-gradient)":
-          bottomShadow,
-      },
     ]}
   >
     {
@@ -107,7 +101,8 @@ if (avatarSlug) {
           <a
             class={`
               relative inline-block font-sans text-sm/relaxed font-bold
-              tracking-wide text-white/85 uppercase transition-all duration-500
+              tracking-wide text-accent uppercase transition-all duration-500
+              [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-center after:scale-x-0 after:bg-accent
               after:transition-transform after:duration-500
@@ -158,8 +153,8 @@ if (avatarSlug) {
     <p
       class:list={[
         `
-          text-base font-normal text-white/90 mix-blend-hard-light
-          [text-shadow:1px_1px_2px_black]
+          text-base font-normal text-white
+          [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
           tablet:mt-1
           laptop:text-xl
         `,
