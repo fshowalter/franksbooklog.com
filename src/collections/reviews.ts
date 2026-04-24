@@ -64,7 +64,7 @@ export const reviews = defineCollection({
             grade: grade,
             gradeValue: gradeToValue(grade),
             html: markdownToHtml(body),
-            slug: frontmatter.slu,
+            slug: frontmatter.slug,
             synopsis: frontmatter.synopsis,
             work: frontmatter.slug,
           };
