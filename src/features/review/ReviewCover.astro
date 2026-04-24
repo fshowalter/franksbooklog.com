@@ -34,7 +34,7 @@ const coverImageProps = await getFixedCoverImageProps(
       bg-cover bg-center clip-path-cover
       after:absolute after:size-full after:backdrop-blur-sm
       after:clip-path-cover
-      tablet:-left-[2.5%] tablet:w-[105%]
+      tablet:left-[-2.5%] tablet:w-[105%]
     `}
     style={{
       "background-color": "var(--background-color-default)",
@@ -44,7 +44,7 @@ const coverImageProps = await getFixedCoverImageProps(
   </div>
   <div
     class={`
-      relative -top-[2.5%]
+      relative top-[-2.5%]
       after:absolute after:top-0 after:left-0
       after:z-[calc(var(--z-index-above)+1)] after:block after:size-full
       after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
