@@ -24,8 +24,8 @@ export const pages = defineCollection({
             body,
             description: markdownToDescription(body),
             html: markdownToHtml(body),
-            slug: frontmatter.slug as string,
-            title: frontmatter.title as string,
+            slug: frontmatter.slug,
+            title: frontmatter.title,
           };
         },
         directoryPath: path.join(CONTENT_ROOT, "pages"),

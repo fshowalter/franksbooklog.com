@@ -34,7 +34,7 @@ export function TextField({
   );
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    const newValue = (e.target as HTMLInputElement).value;
+    const newValue = e.target.value;
     debouncedHandleChangeRef.current(newValue); // Debounce the callback
   };
 
