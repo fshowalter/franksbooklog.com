@@ -22,6 +22,7 @@ type Props = {
   };
   centerText?: boolean;
   deck: string;
+  objectFit?: string;
   size?: "default" | "large" | "small";
   title: string;
   titleClassNames?: string;
@@ -33,6 +34,7 @@ const {
   breadcrumb,
   centerText = false,
   deck,
+  objectFit = "object-top",
   size = "default",
   title,
   titleClassNames,
@@ -70,7 +72,10 @@ if (avatarSlug) {
   ]}
 >
   <img
-    class={`absolute inset-0 size-full object-cover object-top`}
+    class={`
+      absolute inset-0 size-full object-cover
+      ${objectFit}
+    `}
     {...backdropImageProps}
     {...HeroImageConfig}
     alt=""
@@ -86,81 +91,88 @@ if (avatarSlug) {
   </div>
   <div
     class:list={[
-      centerText ? "items-center" : "mr-auto",
-      `
-        relative z-above flex max-w-(--breakpoint-desktop) flex-col px-container
-        pt-6 pb-8
-        after:absolute after:top-0 after:left-0 after:z-behind after:size-full
-        after:bg-[rgba(0,0,0,0.3)] after:blur-3xl
-      `,
+      `mx-auto flex w-full max-w-(--breakpoint-desktop)`,
+      centerText && "justify-center",
     ]}
   >
-    {
-      breadcrumb && (
-        <p class="tablet:mb-1">
-          <a
-            class={`
-              relative inline-block font-sans text-sm/relaxed font-bold
-              tracking-wide text-accent uppercase transition-all duration-500
-              [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
-              after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-              after:origin-center after:scale-x-0 after:bg-accent
-              after:transition-transform after:duration-500
-              hover:text-accent
-              hover:after:scale-x-100
-            `}
-            href={breadcrumb.href}
-          >
-            {breadcrumb.text}
-          </a>
-        </p>
-      )
-    }
-    {
-      avatarImageProps && (
-        <div
-          class={`
-            mx-auto my-2 w-4/5 max-w-[250px] transform-gpu overflow-hidden
-            rounded-full shadow-all
-            tablet:mb-4
-          `}
-        >
-          <img
-            data-pagefind-meta="image[src]"
-            {...avatarImageProps}
-            alt=""
-            decoding="async"
-            height={250}
-            loading="eager"
-            width={250}
-          />
-        </div>
-      )
-    }
-    <h1
-      class={titleClassNames ||
-        `
-          ${centerText ? "text-center" : ""}
-          text-[2rem]/10 font-extrabold
-          [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
-          tablet:text-4xl
-          laptop:text-7xl
-        `}
-      data-pagefind-weight="10"
-    >
-      {title}
-    </h1>
-    <p
+    <div
       class:list={[
+        centerText && "items-center",
         `
-          text-base font-normal text-white
-          [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
-          tablet:mt-1
-          laptop:text-xl
+          relative z-above flex max-w-(--breakpoint-desktop) flex-col
+          px-container pt-6 pb-8
+          after:absolute after:top-0 after:left-0 after:z-behind after:size-full
+          after:bg-[rgba(0,0,0,0.3)] after:blur-3xl
         `,
-        { "text-center": centerText },
       ]}
-      set:html={deck}
-    />
+    >
+      {
+        breadcrumb && (
+          <p class="tablet:mb-1">
+            <a
+              class={`
+                relative inline-block font-sans text-sm/relaxed font-bold
+                tracking-wide text-accent uppercase transition-all duration-500
+                [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
+                after:absolute after:bottom-0 after:left-0 after:h-px
+                after:w-full after:origin-center after:scale-x-0 after:bg-accent
+                after:transition-transform after:duration-500
+                hover:text-accent
+                hover:after:scale-x-100
+              `}
+              href={breadcrumb.href}
+            >
+              {breadcrumb.text}
+            </a>
+          </p>
+        )
+      }
+      {
+        avatarImageProps && (
+          <div
+            class={`
+              mx-auto my-2 w-4/5 max-w-[250px] transform-gpu overflow-hidden
+              rounded-full shadow-all
+              tablet:mb-4
+            `}
+          >
+            <img
+              data-pagefind-meta="image[src]"
+              {...avatarImageProps}
+              alt=""
+              decoding="async"
+              height={250}
+              loading="eager"
+              width={250}
+            />
+          </div>
+        )
+      }
+      <h1
+        class={titleClassNames ||
+          `
+            ${centerText ? "text-center" : ""}
+            text-[2rem]/10 font-extrabold
+            [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
+            tablet:text-4xl
+            laptop:text-7xl
+          `}
+        data-pagefind-weight="10"
+      >
+        {title}
+      </h1>
+      <p
+        class:list={[
+          `
+            text-base font-normal text-white
+            [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
+            tablet:mt-1
+            laptop:text-xl
+          `,
+          { "text-center": centerText },
+        ]}
+        set:html={deck}
+      />
+    </div>
   </div>
 </header>
