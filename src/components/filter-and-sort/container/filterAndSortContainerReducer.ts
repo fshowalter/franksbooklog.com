@@ -79,8 +79,8 @@ export function createInitialFilterAndSortContainerState<
   values: TValue[];
 }): FilterAndSortContainerState<TSort, TValue> {
   return {
-    activeFilterValues: {} as Record<string, unknown>,
-    pendingFilterValues: {} as Record<string, unknown>,
+    activeFilterValues: {},
+    pendingFilterValues: {},
     sort: initialSort,
     values,
   };
