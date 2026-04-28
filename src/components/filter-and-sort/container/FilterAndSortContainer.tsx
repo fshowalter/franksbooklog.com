@@ -25,14 +25,6 @@ export type FilterChip = ComponentProps<
 >["filters"][number];
 
 /**
- * Sort option configuration.
- */
-export type SortOption = {
-  label: string;
-  value: string;
-};
-
-/**
  * Props for sort functionality.
  */
 export type SortProps<T extends string> = {
@@ -52,6 +44,14 @@ type Props<T extends string, V> = {
   sortProps: SortProps<T>;
   state: FilterAndSortContainerState<T, V>;
   totalCount: number;
+};
+
+/**
+ * Sort option configuration.
+ */
+type SortOption = {
+  label: string;
+  value: string;
 };
 
 /**
