@@ -17,10 +17,13 @@ if (typeof HTMLDialogElement !== "undefined") {
   HTMLDialogElement.prototype.showModal = vi.fn(function (
     this: HTMLDialogElement,
   ) {
+    // eslint-disable-next-line unicorn/no-this-outside-of-class
     this.setAttribute("open", "");
   });
   HTMLDialogElement.prototype.close = vi.fn(function (this: HTMLDialogElement) {
+    // eslint-disable-next-line unicorn/no-this-outside-of-class
     this.removeAttribute("open");
+    // eslint-disable-next-line unicorn/no-this-outside-of-class
     this.dispatchEvent(new Event("close"));
   });
 }
