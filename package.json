@@ -68,7 +68,7 @@
     "eslint-plugin-better-tailwindcss": "4.5.0",
     "eslint-plugin-perfectionist": "5.9.0",
     "eslint-plugin-separate-type-imports": "git://github.com/fshowalter/eslint-plugin-separate-type-imports.git",
-    "eslint-plugin-unicorn": "64.0.0",
+    "eslint-plugin-unicorn": "65.0.1",
     "jsdom": "29.1.1",
     "knip": "6.16.1",
     "prettier": "3.8.4",
@@ -85,5 +85,10 @@
   "engines": {
     "node": "24.16.0",
     "npm": "11.16.0"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "fsevents@2.3.3": true,
+    "sharp@0.34.5": true
   }
 }

@@ -20,6 +20,7 @@ export function rootAsSpan() {
 }
 
 function pluginFunction(tree: HastRoot) {
+  // eslint-disable-next-line unicorn/better-dom-traversing
   const firstChild = tree.children[0];
 
   if (firstChild && firstChild.type === "element") {
