@@ -54,7 +54,7 @@ function pagefind(): AstroIntegration {
       "astro:config:setup": ({ config }) => {
         outDir = fileURLToPath(config.outDir);
 
-        assets = config.build.assetsPrefix ? null : config.build.assets; //eslint-disable-line unicorn/no-null
+        assets = config.build.assetsPrefix ? null : config.build.assets;
       },
       "astro:server:setup": ({ logger, server }) => {
         if (!outDir) {
