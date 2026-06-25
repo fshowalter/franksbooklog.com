@@ -16,6 +16,7 @@ type Props = {
 };
 
 const { grade, slug, title } = Astro.props;
+const image = await getStructuredDataCoverSrc(slug);
 ---
 
 {
@@ -31,7 +32,7 @@ const { grade, slug, title } = Astro.props;
         },
         itemReviewed: {
           "@type": "Book",
-          image: await getStructuredDataCoverSrc(slug),
+          image,
           name: title,
         },
         reviewRating: {
