@@ -4,7 +4,7 @@ import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
 
 import Logo from "./Logo.astro";
 import { siteHierarchy } from "./siteHierarchy";
-import TableOfContents from "./TableOfContents.astro";
+import SiteNav from "./SiteNav.astro";
 
 type Props = {
   hasBackdrop: boolean;
@@ -83,7 +83,7 @@ const { hasBackdrop, hideLogo } = Astro.props;
     </nav>
     <PagefindSearch isGlobal={true} />
     <NavDrawer>
-      <TableOfContents />
+      <SiteNav />
     </NavDrawer>
   </div>
 </header>
