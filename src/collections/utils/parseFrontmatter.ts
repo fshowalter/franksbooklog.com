@@ -1,4 +1,4 @@
-import yaml from "js-yaml";
+import { load } from "js-yaml";
 
 // Capture frontmatter wrapped with `---`, including any characters and new lines within it.
 // Only capture if `---` exists near the top of the file, including:
@@ -21,10 +21,7 @@ export function parseFrontmatter(
 
   const rawFrontmatter = frontmatterMatches[1];
 
-  const parsedFrontmatter = yaml.load(rawFrontmatter) as Record<
-    string,
-    unknown
-  >;
+  const parsedFrontmatter = load(rawFrontmatter) as Record<string, unknown>;
 
   return {
     body: fileContent.slice(
