@@ -3,7 +3,8 @@ import NavDrawer from "~/components/nav-drawer/NavDrawer.astro";
 import PagefindSearch from "~/components/pagefind-search/PagefindSearch.astro";
 
 import Logo from "./Logo.astro";
-import SiteHierarchy, { siteHierarchy } from "./SiteHierarchy.astro";
+import { siteHierarchy } from "./siteHierarchy";
+import TableOfContents from "./TableOfContents.astro";
 
 type Props = {
   hasBackdrop: boolean;
@@ -82,7 +83,7 @@ const { hasBackdrop, hideLogo } = Astro.props;
     </nav>
     <PagefindSearch isGlobal={true} />
     <NavDrawer>
-      <SiteHierarchy />
+      <TableOfContents />
     </NavDrawer>
   </div>
 </header>
