@@ -24,6 +24,7 @@ export default defineConfig(
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-imports": "off", // Turned off in favor of our custom rule
+      "astro/no-omitted-end-tags": "off",
       "no-restricted-imports": [
         "error",
         {
