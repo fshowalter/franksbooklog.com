@@ -22,7 +22,6 @@ const { accentText, href, level = "h2", text } = Astro.props;
     `}
     href={href}
   >
-    {text}
-    <span class={`text-accent`}>{accentText}</span>
+    {text}{" "}<span class={`text-accent`}>{accentText}</span>
   </a>
 </SubHeading>
