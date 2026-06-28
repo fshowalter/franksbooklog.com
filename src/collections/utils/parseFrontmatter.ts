@@ -4,7 +4,7 @@ import { load } from "js-yaml";
 // Only capture if `---` exists near the top of the file, including:
 // 1. Start of file (including if has BOM encoding)
 // 2. Start of file with any whitespace (but `---` or `+++` must still start on a new line)
-const frontmatterRE = /(?:^\uFEFF?|^\s*\n)(?:---)([\s\S]*?\n)(?:---)/;
+const frontmatterRE = /(?:^\u{FEFF}?|^\s*\n)(?:---)([\s\S]*?\n)(?:---)/u;
 
 export function parseFrontmatter(
   fileContent: string,

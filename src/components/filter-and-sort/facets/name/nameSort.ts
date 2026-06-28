@@ -14,6 +14,6 @@ export const nameSortComparators: Record<
 };
 
 export const nameSortOptions = [
-  { label: "Name (A \u2192 Z)", value: "name-asc" },
-  { label: "Name (Z \u2192 A)", value: "name-desc" },
+  { label: "Name (A \u{2192} Z)", value: "name-asc" },
+  { label: "Name (Z \u{2192} A)", value: "name-desc" },
 ];

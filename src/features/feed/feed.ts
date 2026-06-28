@@ -47,6 +47,6 @@ export async function feed() {
  * @returns HTML string with star rating metadata prepended to the excerpt
  */
 function addGradeToExcerpt(excerpt: string, grade: string) {
-  const meta = `${textStarsForGrade(grade)}`;
+  const meta = textStarsForGrade(grade);
   return `<p>${meta}</p>${excerpt}`;
 }

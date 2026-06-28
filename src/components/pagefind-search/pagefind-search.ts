@@ -283,7 +283,7 @@ class PagefindSearch extends HTMLElement {
         const img = clone.querySelector<HTMLImageElement>(
           "[data-field='image']",
         )!;
-        img.src = imageUrl.toString();
+        img.src = imageUrl.href;
         img.alt = image_alt ?? "";
       } else {
         imageWrapper.remove();
@@ -410,7 +410,7 @@ class PagefindSearch extends HTMLElement {
   private renderEmpty(): void {
     if (this.state.kind !== "empty") return;
     this.resultsCounter.textContent = formatCounter(0, this.state.query);
-    this.resultsContainer.innerHTML = "";
+    this.resultsContainer.replaceChildren();
     this.resultsContainer.append(this.emptyTemplate.content.cloneNode(true));
     this.loadMoreWrapper.classList.add("hidden");
   }
@@ -418,7 +418,7 @@ class PagefindSearch extends HTMLElement {
   private renderError(): void {
     if (this.state.kind !== "error") return;
     this.resultsCounter.textContent = "";
-    this.resultsContainer.innerHTML = "";
+    this.resultsContainer.replaceChildren();
     const clone = this.errorTemplate.content.cloneNode(
       true,
     ) as DocumentFragment;
@@ -430,13 +430,13 @@ class PagefindSearch extends HTMLElement {
 
   private renderIdle(): void {
     this.resultsCounter.textContent = "";
-    this.resultsContainer.innerHTML = "";
+    this.resultsContainer.replaceChildren();
     this.loadMoreWrapper.classList.add("hidden");
   }
 
   private renderLoading(): void {
     this.resultsCounter.textContent = "";
-    this.resultsContainer.innerHTML = "";
+    this.resultsContainer.replaceChildren();
     for (let i = 0; i < 3; i++) {
       this.resultsContainer.append(
         this.skeletonTemplate.content.cloneNode(true),
@@ -460,7 +460,7 @@ class PagefindSearch extends HTMLElement {
     for (const result of results) {
       ol.append(this.cloneResult(result));
     }
-    this.resultsContainer.innerHTML = "";
+    this.resultsContainer.replaceChildren();
     this.resultsContainer.append(ol);
 
     const remaining = allResults.length - visibleCount;

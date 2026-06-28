@@ -103,13 +103,15 @@ export function ReadingLog({
 
   // Scroll to top of calendar when month changes
   useEffect(() => {
-    if (prevMonthRef.current !== state.selectedMonthDate) {
-      prevMonthRef.current = state.selectedMonthDate;
-      if (typeof document !== "undefined") {
-        document
-          .querySelector("#calendar")
-          ?.scrollIntoView({ behavior: "smooth" });
-      }
+    if (prevMonthRef.current === state.selectedMonthDate) {
+      return;
+    }
+
+    prevMonthRef.current = state.selectedMonthDate;
+    if (typeof document !== "undefined") {
+      document
+        .querySelector("#calendar")
+        ?.scrollIntoView({ behavior: "smooth" });
     }
   }, [state.selectedMonthDate]);
 

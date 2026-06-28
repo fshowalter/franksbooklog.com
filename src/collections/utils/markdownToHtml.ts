@@ -9,7 +9,7 @@ export function markdownToHtml(markdown: string): string {
   return getBaseMarkdownProcessor()
     .use(remarkRehype, {
       allowDangerousHtml: true,
-      footnoteBackContent: "↩\uFE0E",
+      footnoteBackContent: "↩\u{FE0E}",
     })
     .use(rehypeRaw)
     .use(rehypeStringify)
