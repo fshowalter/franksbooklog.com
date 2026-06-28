@@ -15,6 +15,6 @@ export const titleSortComparators: Record<
 };
 
 export const titleSortOptions = [
-  { label: "Title (A \u2192 Z)", value: "title-asc" },
-  { label: "Title (Z \u2192 A)", value: "title-desc" },
+  { label: "Title (A \u{2192} Z)", value: "title-asc" },
+  { label: "Title (Z \u{2192} A)", value: "title-desc" },
 ];

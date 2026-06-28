@@ -15,13 +15,13 @@ export function useMonthNavigation( // eslint-disable-line @eslint-react/no-unne
 ): [string | undefined, string | undefined, string | undefined] {
   "use memo";
 
-  let nextMonthDate;
-  let previousMonthDate;
-  let currentMonthValue;
-
   if (filteredValues.length === 0) {
     return [undefined, undefined, undefined];
   }
+  let nextMonthDate;
+  let previousMonthDate;
+
+  let currentMonthValue;
 
   selectedMonthDate = selectedMonthDate || filteredValues[0].readingDate;
 

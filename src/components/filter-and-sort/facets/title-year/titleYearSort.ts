@@ -11,7 +11,7 @@ export const titleYearSortComparators: Record<
   (a: SortableByTitleYear, b: SortableByTitleYear) => number
 > = {
   "title-year-asc": (a, b) => sortString(a.titleYear, b.titleYear),
-  "title-year-desc": (a, b) => sortString(a.titleYear, b.titleYear) * -1,
+  "title-year-desc": (a, b) => -sortString(a.titleYear, b.titleYear),
 };
 
 export const titleYearSortOptions = [

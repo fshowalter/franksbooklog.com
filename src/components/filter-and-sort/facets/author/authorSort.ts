@@ -17,6 +17,6 @@ export const authorSortComparators: Record<
 };
 
 export const authorSortOptions = [
-  { label: "Author (A \u2192 Z)", value: "author-asc" },
-  { label: "Author (Z \u2192 A)", value: "author-desc" },
+  { label: "Author (A \u{2192} Z)", value: "author-asc" },
+  { label: "Author (Z \u{2192} A)", value: "author-desc" },
 ];

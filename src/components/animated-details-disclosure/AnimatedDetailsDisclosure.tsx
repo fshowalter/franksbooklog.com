@@ -38,12 +38,12 @@ export function AnimatedDetailsDisclosure({
   useEffect(() => {
     const details = detailsRef.current;
     const content = contentRef.current;
-    let timeoutId: NodeJS.Timeout | undefined;
-
     if (!details || !content) return;
 
     const summary = details.querySelector("summary");
     if (!summary) return;
+
+    let timeoutId: NodeJS.Timeout | undefined;
 
     /**
      * Check if transitions are enabled

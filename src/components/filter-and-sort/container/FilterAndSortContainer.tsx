@@ -128,13 +128,15 @@ export function FilterAndSortContainer<T extends string, V>({
 
   // Scroll to top of list when sort changes via desktop select
   useEffect(() => {
-    if (prevSortValueRef.current !== sortProps.currentSortValue) {
-      prevSortValueRef.current = sortProps.currentSortValue;
-      if (suppressSortScrollRef.current) {
-        suppressSortScrollRef.current = false;
-      } else {
-        listRef.current?.scrollIntoView({ behavior: "smooth" });
-      }
+    if (prevSortValueRef.current === sortProps.currentSortValue) {
+      return;
+    }
+
+    prevSortValueRef.current = sortProps.currentSortValue;
+    if (suppressSortScrollRef.current) {
+      suppressSortScrollRef.current = false;
+    } else {
+      listRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [sortProps.currentSortValue]);
 
@@ -187,7 +189,7 @@ export function FilterAndSortContainer<T extends string, V>({
             ${sideNav ? "mr-auto justify-start" : ""}
           `}
         >
-          {sideNav && sideNav}
+          {sideNav}
 
           <div
             className={`
@@ -223,12 +225,14 @@ export function FilterAndSortContainer<T extends string, V>({
             id="filters"
             onClick={(e) => {
               // Backdrop click: event.target is the dialog itself, not any child
-              if (e.target === dialogRef.current) {
-                dispatch(createResetFiltersAction());
-                formRef.current?.reset();
-                dialogRef.current?.close();
-                toggleButtonRef.current?.focus();
+              if (e.target !== dialogRef.current) {
+                return;
               }
+
+              dispatch(createResetFiltersAction());
+              formRef.current?.reset();
+              dialogRef.current?.close();
+              toggleButtonRef.current?.focus();
             }}
             ref={dialogRef}
           >
