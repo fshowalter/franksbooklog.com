@@ -27,10 +27,7 @@ import type { AuthorTitlesValue } from "./AuthorTitles";
  * Sort type for author titles.
  */
 export type AuthorTitlesSort =
-  | GradeSortKeys
-  | ReviewDateSortKeys
-  | TitleSortKeys
-  | TitleYearSortKeys;
+  GradeSortKeys | ReviewDateSortKeys | TitleSortKeys | TitleYearSortKeys;
 
 /**
  * Sorter function for author titles, supporting grade, review date, title,
