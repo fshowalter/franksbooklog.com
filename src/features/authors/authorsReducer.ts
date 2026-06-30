@@ -15,8 +15,7 @@ import type { AuthorsSort } from "./sortAuthors";
  * Union type of all collection-specific filter and sort actions
  */
 export type AuthorsAction =
-  | FilterAndSortContainerAction<AuthorsSort>
-  | NameFilterChangedAction;
+  FilterAndSortContainerAction<AuthorsSort> | NameFilterChangedAction;
 
 /**
  * Filter values for the Authors page.
