@@ -58,7 +58,7 @@
     "@types/node": "24.13.2",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
-    "@vitest/coverage-v8": "4.1.9",
+    "@vitest/coverage-v8": "4.1.10",
     "@vitest/eslint-plugin": "1.6.21",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
     "chokidar": "5.0.0",
@@ -78,7 +78,7 @@
     "stylelint-order": "8.1.1",
     "typescript": "6.0.3",
     "typescript-eslint": "8.62.1",
-    "vitest": "4.1.9",
+    "vitest": "4.1.10",
     "vitest-fail-on-console": "0.10.1"
   },
   "engines": {
