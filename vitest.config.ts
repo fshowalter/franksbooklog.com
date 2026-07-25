@@ -7,7 +7,7 @@ export default getViteConfig({
       exclude: [
         "src/assets/**",
         // Collection definitions and loaders are exercised by `astro build`, not
-        // by unit tests. The markdown utils under src/collections/utils are.
+        // by unit tests.
         "src/collections/*.ts",
         "src/collections/utils/load*.ts",
         "src/collections/utils/watch*.ts",
@@ -29,14 +29,6 @@ export default getViteConfig({
     },
     globals: true, // needed for testing-library teardown
     projects: [
-      {
-        extends: true,
-        test: {
-          environment: "node",
-          include: ["src/collections/**/*.spec.ts"],
-          name: "collections-node",
-        },
-      },
       {
         extends: true,
         test: {

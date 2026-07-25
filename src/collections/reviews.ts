@@ -2,14 +2,12 @@ import type { LoaderContext } from "astro/loaders";
 
 import { z } from "astro/zod";
 import { defineCollection, reference } from "astro:content";
+import { renderExcerpt, renderMarkdown, renderPlainText } from "markdown-utils";
 import path from "node:path";
 
 import { GRADE_VALUES, GRADES, gradeToValue } from "~/utils/grades";
 
 import { CONTENT_ROOT } from "./contentRoot";
-import { buildDescription } from "./markdown/buildDescription";
-import { renderExcerpt } from "./markdown/renderExcerpt";
-import { renderMarkdown } from "./markdown/renderMarkdown";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
 
 const ReviewFrontmatterSchema = z.object({
@@ -36,7 +34,7 @@ export const reviews = defineCollection({
           const { grade } = ReviewFrontmatterSchema.parse(frontmatter);
           return {
             date: frontmatter.date,
-            description: buildDescription(source),
+            description: renderPlainText(source),
             excerptHtml: renderExcerpt(frontmatter, source),
             grade: grade,
             gradeValue: gradeToValue(grade),
