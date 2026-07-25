@@ -1,15 +1,11 @@
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
 import path from "node:path";
-import rehypeRaw from "rehype-raw";
-import rehypeStringify from "rehype-stringify";
-import remarkRehype from "remark-rehype";
 
 import { CONTENT_ROOT } from "./contentRoot";
-import { getBaseMarkdownProcessor } from "./utils/getBaseMarkdownProcessor";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
-import { rootAsSpan } from "./utils/markdown-plugins/rootAsSpan";
 import { markdownToHtml } from "./utils/markdownToHtml";
+import { toInlineSpanHtml } from "./utils/toInlineSpanHtml";
 
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
@@ -58,17 +54,6 @@ function computeReadingTime(readingFrontmatter: ReadingFrontmatter): number {
   return (
     Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1
   );
-}
-
-/** Inline span HTML pipeline — wraps in <span>, no linkReviewedWorks */
-function toInlineSpanHtml(content: string): string {
-  return getBaseMarkdownProcessor()
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeRaw)
-    .use(rootAsSpan)
-    .use(rehypeStringify)
-    .processSync(content)
-    .toString();
 }
 
 const ReadingSchema = z
