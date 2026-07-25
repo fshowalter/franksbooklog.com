@@ -2,49 +2,38 @@ import { describe, it } from "vitest";
 
 import { renderInlineHtml } from "./renderInlineHtml";
 
-// Used for readings.editionNotesHtml, which is dropped into an inline
-// <span class="rendered-markdown"> in ReadingHistory.astro — a <p> there would
-// break the layout.
+// Feeds readings.editionNotesHtml, which ReadingHistory.astro drops into an
+// existing <span class="rendered-markdown leading-none"> — so this must emit no
+// block wrapper of its own.
 
 describe("renderInlineHtml", () => {
-  it("renders a single paragraph as a span", ({ expect }) => {
+  it("renders a single line with no wrapping element", ({ expect }) => {
     expect(renderInlineHtml("New American Library, 1986")).toBe(
-      "<span>New American Library, 1986</span>",
+      "New American Library, 1986",
     );
   });
 
-  it("keeps inline markup inside the span", ({ expect }) => {
-    expect(renderInlineHtml("Read _Dracula_ here")).toBe(
-      "<span>Read <em>Dracula</em> here</span>",
-    );
+  it("keeps inline markup", ({ expect }) => {
+    expect(
+      renderInlineHtml("_In a Lonely Place_, Valancourt Books, 2023"),
+    ).toBe("<em>In a Lonely Place</em>, Valancourt Books, 2023");
   });
 
-  it("keeps a raw span inside the wrapper", ({ expect }) => {
+  it("keeps a raw span", ({ expect }) => {
     expect(
       renderInlineHtml('Notes <span data-title-id="t">"T"</span> end'),
-    ).toBe('<span>Notes <span data-title-id="t">“T”</span> end</span>');
+    ).toBe('Notes <span data-title-id="t">“T”</span> end');
   });
 
-  it("only retags the first block, leaving later ones as paragraphs", ({
-    expect,
-  }) => {
-    expect(renderInlineHtml("first\n\nsecond")).toBe(
-      "<span>first</span>\n<p>second</p>",
+  it("applies smart punctuation", ({ expect }) => {
+    expect(renderInlineHtml("Gollancz, 1975--reissued")).toBe(
+      "Gollancz, 1975—reissued",
     );
   });
 
-  // AIDEV-NOTE: Deliberate narrowing. The remark implementation retagged
-  // `tree.children[0]` whatever it was, so a leading heading, list, or blockquote
-  // also became a <span> — which produced invalid markup like `<span><li>`. This
-  // version only retags a leading paragraph. Every edition note in content is a
-  // single short line, so no real input reaches the difference.
-  it("leaves a leading heading as a heading", ({ expect }) => {
-    expect(renderInlineHtml("## Head")).toBe("<h2>Head</h2>");
-  });
-
-  it("leaves a leading list alone", ({ expect }) => {
-    expect(renderInlineHtml("- one\n- two")).toBe(
-      "<ul>\n<li>one</li>\n<li>two</li>\n</ul>",
+  it("encodes an ampersand", ({ expect }) => {
+    expect(renderInlineHtml("Thomas & Mercer, 2012")).toBe(
+      "Thomas &amp; Mercer, 2012",
     );
   });
 
@@ -54,5 +43,17 @@ describe("renderInlineHtml", () => {
 
   it("returns an empty string for whitespace-only input", ({ expect }) => {
     expect(renderInlineHtml(" ".repeat(3))).toBe("");
+  });
+
+  // Guard rather than a feature: edition notes are always one line, but silently
+  // stripping the first <p> of a multi-block string would corrupt it.
+  it("leaves multi-paragraph input wrapped", ({ expect }) => {
+    expect(renderInlineHtml("first\n\nsecond")).toBe(
+      "<p>first</p>\n<p>second</p>",
+    );
+  });
+
+  it("leaves a non-paragraph block alone", ({ expect }) => {
+    expect(renderInlineHtml("## Head")).toBe("<h2>Head</h2>");
   });
 });
