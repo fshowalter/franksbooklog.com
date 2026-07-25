@@ -2,7 +2,7 @@ import type { LoaderContext } from "astro/loaders";
 
 import { z } from "astro/zod";
 import { defineCollection, reference } from "astro:content";
-import { renderExcerpt, renderMarkdown, renderPlainText } from "markdown-utils";
+import { renderExcerpt, renderHtml, renderPlainText } from "markdown-utils";
 import path from "node:path";
 
 import { GRADE_VALUES, GRADES, gradeToValue } from "~/utils/grades";
@@ -38,7 +38,7 @@ export const reviews = defineCollection({
             excerptHtml: renderExcerpt(frontmatter, source),
             grade: grade,
             gradeValue: gradeToValue(grade),
-            html: renderMarkdown(source),
+            html: renderHtml(source),
             slug: frontmatter.slug,
             synopsis: frontmatter.synopsis,
             work: frontmatter.slug,

@@ -1,6 +1,6 @@
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
-import { renderMarkdown, renderPlainText } from "markdown-utils";
+import { renderHtml, renderPlainText } from "markdown-utils";
 import path from "node:path";
 
 import { CONTENT_ROOT } from "./contentRoot";
@@ -20,7 +20,7 @@ export const pages = defineCollection({
         buildData: ({ frontmatter, source }) => {
           return {
             description: renderPlainText(source),
-            html: renderMarkdown(source),
+            html: renderHtml(source),
             slug: frontmatter.slug,
             title: frontmatter.title,
           };

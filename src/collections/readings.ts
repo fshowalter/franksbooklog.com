@@ -1,6 +1,6 @@
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
-import { renderInlineHtml, renderMarkdown } from "markdown-utils";
+import { renderHtml, renderInlineHtml } from "markdown-utils";
 import path from "node:path";
 
 import { CONTENT_ROOT } from "./contentRoot";
@@ -122,7 +122,7 @@ export const readings = defineCollection({
               : undefined,
             isAbandoned: isAbandoned,
             // Most readings are frontmatter only; an empty render means no notes.
-            readingNotesHtml: renderMarkdown(source) || undefined,
+            readingNotesHtml: renderHtml(source) || undefined,
             readingTime: computeReadingTime(parsedFrontmatter),
             sequence: parsedFrontmatter.sequence,
             slug: parsedFrontmatter.slug,
