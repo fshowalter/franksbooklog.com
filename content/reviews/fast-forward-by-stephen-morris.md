@@ -24,7 +24,7 @@ The quartet gelled and began accumulating new songs as Morris continued his fasc
 >
 > ‘And why did you think that might be useful? We’ve all got hands, even Rob.’
 >
-> ‘Well, I, er, um, thought . . .’
+> ‘Well, I, er, um, thought...’
 >
 > The device did not garner approval from my fellow musicians. They were immune to its charm and potential. The box would sit there clapping away to itself in what was, I finally had to admit, a particularly monotonous and annoying manner.
 >

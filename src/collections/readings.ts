@@ -1,15 +1,11 @@
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
 import path from "node:path";
-import rehypeRaw from "rehype-raw";
-import rehypeStringify from "rehype-stringify";
-import remarkRehype from "remark-rehype";
 
 import { CONTENT_ROOT } from "./contentRoot";
-import { getBaseMarkdownProcessor } from "./utils/getBaseMarkdownProcessor";
+import { renderInlineHtml } from "./markdown/renderInlineHtml";
+import { renderMarkdown } from "./markdown/renderMarkdown";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
-import { rootAsSpan } from "./utils/markdown-plugins/rootAsSpan";
-import { markdownToHtml } from "./utils/markdownToHtml";
 
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
@@ -60,20 +56,8 @@ function computeReadingTime(readingFrontmatter: ReadingFrontmatter): number {
   );
 }
 
-/** Inline span HTML pipeline — wraps in <span>, no linkReviewedWorks */
-function toInlineSpanHtml(content: string): string {
-  return getBaseMarkdownProcessor()
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeRaw)
-    .use(rootAsSpan)
-    .use(rehypeStringify)
-    .processSync(content)
-    .toString();
-}
-
 const ReadingSchema = z
   .object({
-    body: z.string(),
     date: z.coerce.date(),
     edition: z.string(),
     editionNotes: z
@@ -91,7 +75,6 @@ const ReadingSchema = z
   })
   .transform(
     ({
-      body,
       date,
       edition,
       editionNotes,
@@ -106,7 +89,6 @@ const ReadingSchema = z
     }) => {
       // fix zod making anything with undefined optional
       return {
-        body,
         date,
         edition,
         editionNotes,
@@ -126,22 +108,22 @@ export const readings = defineCollection({
   loader: {
     load: (loaderContext) =>
       loadMarkdownDirectory({
-        buildData: ({ body, frontmatter }) => {
+        buildData: ({ frontmatter, source }) => {
           const parsedFrontmatter = ReadingFrontmatterSchema.parse(frontmatter);
 
           const isAbandoned =
             parsedFrontmatter.timeline.at(-1)?.progress === "Abandoned";
 
           return {
-            body,
             date: parsedFrontmatter.date,
             edition: parsedFrontmatter.edition,
             editionNotes: parsedFrontmatter.editionNotes,
             editionNotesHtml: parsedFrontmatter.editionNotes?.trim()
-              ? toInlineSpanHtml(parsedFrontmatter.editionNotes)
+              ? renderInlineHtml(parsedFrontmatter.editionNotes)
               : undefined,
             isAbandoned: isAbandoned,
-            readingNotesHtml: body.trim() ? markdownToHtml(body) : undefined,
+            // Most readings are frontmatter only; an empty render means no notes.
+            readingNotesHtml: renderMarkdown(source) || undefined,
             readingTime: computeReadingTime(parsedFrontmatter),
             sequence: parsedFrontmatter.sequence,
             slug: parsedFrontmatter.slug,

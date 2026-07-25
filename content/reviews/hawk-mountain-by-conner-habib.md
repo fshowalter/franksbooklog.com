@@ -32,7 +32,7 @@ Or later, when Todd prepares to graduate high school:
 
 Habib also proves adept at going for the emotional jugular when necessary, such as this scene between Todd and his former girlfriend, Hannah:
 
-> “You’re . . .” She considers her words quickly. “You’re, like, a problem now. I don’t want to get barked at in the halls or . . . I don’t want to have to carry whatever it is you’re going through. I’ve got enough to deal with.”
+> “You’re...” She considers her words quickly. “You’re, like, a problem now. I don’t want to get barked at in the halls or... I don’t want to have to carry whatever it is you’re going through. I’ve got enough to deal with.”
 >
 > “But school is almost over,” Todd says. This feels as bad as the note from the guidance counselor.
 >

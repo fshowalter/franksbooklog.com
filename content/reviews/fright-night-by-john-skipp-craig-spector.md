@@ -41,7 +41,7 @@ Less harmless, however, are the details it adds to Jerry's backstory.
 
 Yes, there's a vampire community, and Jerry's an (un)living legend. We also learn Jerry calls Transylvania home, and that he's over four-hundred-years-old. Rather than enhance the character, these details only diminish his mystique.
 
-It's impressive how much Chris Sarandon brought to the role of Jerry. In the film, he's often munching fruit, an affectation missing in the novelization that Sarandon added via his biography that saw Jerry as descended from fruit bats. Also absent is Jerry's witty black humor. Indeed, the book replaces two of his best lines ("Welcome to Fright Night.... _for real_," and "See you Charlie... _soon_") with wordier alternatives that lack the film version's zing.
+It's impressive how much Chris Sarandon brought to the role of Jerry. In the film, he's often munching fruit, an affectation missing in the novelization that Sarandon added via his biography that saw Jerry as descended from fruit bats. Also absent is Jerry's witty black humor. Indeed, the book replaces two of his best lines ("Welcome to Fright Night... _for real_," and "See you Charlie... _soon_") with wordier alternatives that lack the film version's zing.
 
 Indeed, the Jerry character, while described as attractive, lacks the film version's charm. Instead, he relies on mind-control. Telling us characters find Jerry charming pales next to Jerry charming us. The result reduces him to a one-dimensional predator.
 
