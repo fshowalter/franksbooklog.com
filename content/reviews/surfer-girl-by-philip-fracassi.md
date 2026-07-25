@@ -12,6 +12,6 @@ Fracassi injects new life into the tired "birth of a serial killer" premise by t
 
 Still, credit Fracassi with a terrific opening line:
 
-> Adolf's father melted the day after he became a man.
+> Adolf’s father melted the day after he became a man.
 
 That's how you hook a reader.
