@@ -1,10 +1,9 @@
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
+import { renderInlineHtml, renderMarkdown } from "markdown-utils";
 import path from "node:path";
 
 import { CONTENT_ROOT } from "./contentRoot";
-import { renderInlineHtml } from "./markdown/renderInlineHtml";
-import { renderMarkdown } from "./markdown/renderMarkdown";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
 
 const TimelineEntrySchema = z.object({

@@ -1,9 +1,8 @@
 import type { LoaderContext } from "astro/loaders";
 
+import { parseFrontmatter } from "markdown-utils";
 import { promises as fs } from "node:fs";
 import path from "node:path";
-
-import { parseFrontmatter } from "~/collections/markdown/parseFrontmatter";
 
 import { watchDirectory } from "./watchDirectory";
 

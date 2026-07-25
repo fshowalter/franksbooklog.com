@@ -1,10 +1,9 @@
 import { z } from "astro/zod";
 import { defineCollection } from "astro:content";
+import { renderMarkdown, renderPlainText } from "markdown-utils";
 import path from "node:path";
 
 import { CONTENT_ROOT } from "./contentRoot";
-import { buildDescription } from "./markdown/buildDescription";
-import { renderMarkdown } from "./markdown/renderMarkdown";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
 
 const PageSchema = z.object({
@@ -20,7 +19,7 @@ export const pages = defineCollection({
       loadMarkdownDirectory({
         buildData: ({ frontmatter, source }) => {
           return {
-            description: buildDescription(source),
+            description: renderPlainText(source),
             html: renderMarkdown(source),
             slug: frontmatter.slug,
             title: frontmatter.title,
