@@ -3,9 +3,9 @@ import { defineCollection } from "astro:content";
 import path from "node:path";
 
 import { CONTENT_ROOT } from "./contentRoot";
+import { renderInlineHtml } from "./markdown/renderInlineHtml";
+import { renderMarkdown } from "./markdown/renderMarkdown";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
-import { markdownToHtml } from "./utils/markdownToHtml";
-import { toInlineSpanHtml } from "./utils/toInlineSpanHtml";
 
 const TimelineEntrySchema = z.object({
   date: z.coerce.date(),
@@ -58,7 +58,6 @@ function computeReadingTime(readingFrontmatter: ReadingFrontmatter): number {
 
 const ReadingSchema = z
   .object({
-    body: z.string(),
     date: z.coerce.date(),
     edition: z.string(),
     editionNotes: z
@@ -76,7 +75,6 @@ const ReadingSchema = z
   })
   .transform(
     ({
-      body,
       date,
       edition,
       editionNotes,
@@ -91,7 +89,6 @@ const ReadingSchema = z
     }) => {
       // fix zod making anything with undefined optional
       return {
-        body,
         date,
         edition,
         editionNotes,
@@ -111,22 +108,22 @@ export const readings = defineCollection({
   loader: {
     load: (loaderContext) =>
       loadMarkdownDirectory({
-        buildData: ({ body, frontmatter }) => {
+        buildData: ({ frontmatter, source }) => {
           const parsedFrontmatter = ReadingFrontmatterSchema.parse(frontmatter);
 
           const isAbandoned =
             parsedFrontmatter.timeline.at(-1)?.progress === "Abandoned";
 
           return {
-            body,
             date: parsedFrontmatter.date,
             edition: parsedFrontmatter.edition,
             editionNotes: parsedFrontmatter.editionNotes,
             editionNotesHtml: parsedFrontmatter.editionNotes?.trim()
-              ? toInlineSpanHtml(parsedFrontmatter.editionNotes)
+              ? renderInlineHtml(parsedFrontmatter.editionNotes)
               : undefined,
             isAbandoned: isAbandoned,
-            readingNotesHtml: body.trim() ? markdownToHtml(body) : undefined,
+            // Most readings are frontmatter only; an empty render means no notes.
+            readingNotesHtml: renderMarkdown(source) || undefined,
             readingTime: computeReadingTime(parsedFrontmatter),
             sequence: parsedFrontmatter.sequence,
             slug: parsedFrontmatter.slug,

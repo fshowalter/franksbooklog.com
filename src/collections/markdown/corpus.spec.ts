@@ -4,21 +4,18 @@ import { describe, it } from "vitest";
 
 import { CONTENT_ROOT } from "~/collections/contentRoot";
 
-import { markdownToDescription } from "./markdownToDescription";
-import { markdownToHtml } from "./markdownToHtml";
-import { parseExcerpt } from "./parseExcerpt";
+import { buildDescription } from "./buildDescription";
 import { parseFrontmatter } from "./parseFrontmatter";
-import { toInlineSpanHtml } from "./toInlineSpanHtml";
+import { renderExcerpt } from "./renderExcerpt";
+import { renderInlineHtml } from "./renderInlineHtml";
+import { renderMarkdown } from "./renderMarkdown";
 
-// AIDEV-NOTE: Golden snapshots of real content rendered through every pipeline.
-// Hand-written unit tests state the contract; this states "and nothing else moved".
-// It is the widest net we have for the Sätteri migration — a diff here during the
-// engine swap must be explained before it is accepted.
-//
-// Snapshots live in ./__snapshots__ and are excluded from Prettier, which would
-// otherwise reformat the HTML and desync them.
+// AIDEV-NOTE: Golden snapshots of real content through every pipeline. The unit
+// tests state the contract; this states "and nothing else moved". Snapshots live
+// in ./__snapshots__ and are excluded from Prettier, which would otherwise
+// reformat the HTML and desync them.
 
-// The five reviews that use footnotes, plus one with heavy raw-HTML cross-references.
+// The five reviews that use footnotes, plus two with heavy raw-HTML cross-references.
 const REVIEWS = [
   "behold-the-void-by-philip-fracassi",
   "carrie-by-stephen-king",
@@ -38,17 +35,17 @@ describe("content corpus", () => {
     for (const slug of REVIEWS) {
       it(`renders ${slug}`, async ({ expect }) => {
         const source = readContent(path.join("reviews", `${slug}.md`));
-        const { body, frontmatter } = parseFrontmatter(source, `${slug}.md`);
+        const frontmatter = parseFrontmatter(source, `${slug}.md`);
 
         const rendered = [
           "=== html ===",
-          markdownToHtml(body),
+          renderMarkdown(source),
           "",
           "=== excerptHtml ===",
-          parseExcerpt(frontmatter, body),
+          renderExcerpt(frontmatter, source),
           "",
           "=== description ===",
-          markdownToDescription(body),
+          buildDescription(source),
         ].join("\n");
 
         await expect(rendered).toMatchFileSnapshot(
@@ -61,14 +58,13 @@ describe("content corpus", () => {
   describe("pages", () => {
     it("renders how-i-grade", async ({ expect }) => {
       const source = readContent(path.join("pages", "how-i-grade.md"));
-      const { body } = parseFrontmatter(source, "how-i-grade.md");
 
       const rendered = [
         "=== html ===",
-        markdownToHtml(body),
+        renderMarkdown(source),
         "",
         "=== description ===",
-        markdownToDescription(body),
+        buildDescription(source),
       ].join("\n");
 
       await expect(rendered).toMatchFileSnapshot(
@@ -82,10 +78,10 @@ describe("content corpus", () => {
       const source = readContent(
         path.join("readings", "2011-11-06-01-the-shining-by-stephen-king.md"),
       );
-      const { frontmatter } = parseFrontmatter(source, "a-reading.md");
+      const frontmatter = parseFrontmatter(source, "a-reading.md");
 
       await expect(
-        toInlineSpanHtml(frontmatter.editionNotes as string),
+        renderInlineHtml(frontmatter.editionNotes as string),
       ).toMatchFileSnapshot("./__snapshots__/reading-edition-notes.txt");
     });
   });

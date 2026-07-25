@@ -3,12 +3,16 @@ import type { LoaderContext } from "astro/loaders";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
-import { parseFrontmatter } from "./parseFrontmatter";
+import { parseFrontmatter } from "~/collections/markdown/parseFrontmatter";
+
 import { watchDirectory } from "./watchDirectory";
 
 /** Load a directory of Markdown files, one entry per file.
- *  getId derives the entry ID cheaply (no I/O); buildData runs the remark/rehype
- *  pipeline and is only called when the digest shows the file has changed. */
+ *  getId derives the entry ID cheaply (no I/O); buildData renders the markdown
+ *  and is only called when the digest shows the file has changed.
+ *
+ *  buildData receives the whole file as `source` — Sätteri skips the frontmatter
+ *  block when rendering, so there is no separate body to pass. */
 export function loadMarkdownDirectory({
   buildData,
   directoryPath,
@@ -16,9 +20,9 @@ export function loadMarkdownDirectory({
   loaderContext,
 }: {
   buildData: (opts: {
-    body: string;
     frontmatter: Record<string, unknown>;
     id: string;
+    source: string;
   }) => Record<string, unknown>;
   directoryPath: string;
   getId?: (raw: string, filePath: string) => string;
@@ -40,7 +44,7 @@ export function loadMarkdownDirectory({
         : path.parse(filePath).name;
       newIds.add(id);
 
-      // Digest raw content to skip expensive remark/rehype re-processing
+      // Digest raw content to skip re-rendering unchanged files
       const digest = loaderContext.generateDigest(fileContents);
 
       if (
@@ -50,11 +54,11 @@ export function loadMarkdownDirectory({
         continue;
       }
 
-      const { body, frontmatter } = parseFrontmatter(fileContents, filePath);
+      const frontmatter = parseFrontmatter(fileContents, filePath);
 
-      // buildData runs remark/rehype WITHOUT linkReviewedWorks (applied in API layer)
+      // buildData renders WITHOUT linkReviewedTitles (applied in the render layer)
       const data = await loaderContext.parseData({
-        data: buildData({ body, frontmatter, id }),
+        data: buildData({ frontmatter, id, source: fileContents }),
         id,
       });
       loaderContext.store.set({ data, digest, id });

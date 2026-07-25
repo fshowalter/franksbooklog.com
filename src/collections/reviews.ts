@@ -7,17 +7,16 @@ import path from "node:path";
 import { GRADE_VALUES, GRADES, gradeToValue } from "~/utils/grades";
 
 import { CONTENT_ROOT } from "./contentRoot";
+import { buildDescription } from "./markdown/buildDescription";
+import { renderExcerpt } from "./markdown/renderExcerpt";
+import { renderMarkdown } from "./markdown/renderMarkdown";
 import { loadMarkdownDirectory } from "./utils/loadMarkdownDirectory";
-import { markdownToDescription } from "./utils/markdownToDescription";
-import { markdownToHtml } from "./utils/markdownToHtml";
-import { parseExcerpt } from "./utils/parseExcerpt";
 
 const ReviewFrontmatterSchema = z.object({
   grade: z.enum(GRADES),
 });
 
 const ReviewSchema = z.object({
-  body: z.string(),
   date: z.coerce.date(),
   description: z.string(),
   excerptHtml: z.string(),
@@ -33,17 +32,15 @@ export const reviews = defineCollection({
   loader: {
     load: (loaderContext: LoaderContext) =>
       loadMarkdownDirectory({
-        buildData: ({ body, frontmatter }) => {
-          const excerptHtml = parseExcerpt(frontmatter, body);
+        buildData: ({ frontmatter, source }) => {
           const { grade } = ReviewFrontmatterSchema.parse(frontmatter);
           return {
-            body,
             date: frontmatter.date,
-            description: markdownToDescription(body),
-            excerptHtml,
+            description: buildDescription(source),
+            excerptHtml: renderExcerpt(frontmatter, source),
             grade: grade,
             gradeValue: gradeToValue(grade),
-            html: markdownToHtml(body),
+            html: renderMarkdown(source),
             slug: frontmatter.slug,
             synopsis: frontmatter.synopsis,
             work: frontmatter.slug,
