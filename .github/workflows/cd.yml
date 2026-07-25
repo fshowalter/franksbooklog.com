@@ -38,18 +38,18 @@ jobs:
         uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: node_modules/.astro
-          key: astro-cache-v2-pr-no-save
+          key: astro-cache-v3-pr-no-save
           restore-keys: |
-            astro-cache-v2-
+            astro-cache-v3-
 
       - name: get astro cache (main)
         if: github.event_name == 'push'
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: node_modules/.astro
-          key: astro-cache-v2-${{ github.run_id }}
+          key: astro-cache-v3-${{ github.run_id }}
           restore-keys: |
-            astro-cache-v2-
+            astro-cache-v3-
 
       - name: build
         run: npm run build
