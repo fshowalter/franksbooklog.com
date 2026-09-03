@@ -58,12 +58,12 @@ jobs:
 
           # Claude arguments for tool configuration
           claude_args: |
-            --allowedTools Bash(npm run test -- --max-workers=2),Bash(npm run lint),Bash(npm run check)
+            --allowedTools "Bash(npm run test -- --max-workers=2)","Bash(npm run lint)","Bash(npm run check)"
 
           # Optional: Specify model (defaults to Claude Sonnet 4.5, uncomment for Claude Opus 4.5)
           # claude_args: |
           #   --model claude-opus-4-5-20251101
-          #   --allowedTools Bash(npm run test -- --max-workers=2),Bash(npm run lint),Bash(npm run check)
+          #   --allowedTools "Bash(npm run test -- --max-workers=2)","Bash(npm run lint)","Bash(npm run check)"
 
           # Optional: Customize review based on file types
           # prompt: |
