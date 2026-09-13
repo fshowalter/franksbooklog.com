@@ -87,8 +87,7 @@ if (avatarSlug) {
       after:absolute after:top-0 after:left-0 after:size-full
       after:bg-[#322f2f]/20
     `}
-  >
-  </div>
+  ></div>
   <div
     class:list={[
       `mx-auto flex w-full max-w-(--breakpoint-desktop)`,
@@ -106,11 +105,10 @@ if (avatarSlug) {
         `,
       ]}
     >
-      {
-        breadcrumb && (
-          <p class="tablet:mb-1">
-            <a
-              class={`
+      {breadcrumb && (
+        <p class="tablet:mb-1">
+          <a
+            class={`
                 relative inline-block font-sans text-sm/relaxed font-bold
                 tracking-wide text-accent uppercase transition-all duration-500
                 [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
@@ -120,43 +118,42 @@ if (avatarSlug) {
                 hover:text-accent
                 hover:after:scale-x-100
               `}
-              href={breadcrumb.href}
-            >
-              {breadcrumb.text}
-            </a>
-          </p>
-        )
-      }
-      {
-        avatarImageProps && (
-          <div
-            class={`
+            href={breadcrumb.href}
+          >
+            {breadcrumb.text}
+          </a>
+        </p>
+      )}
+      {avatarImageProps && (
+        <div
+          class={`
               mx-auto my-2 w-4/5 max-w-[250px] transform-gpu overflow-hidden
               rounded-full shadow-all
               tablet:mb-4
             `}
-          >
-            <img
-              data-pagefind-meta="image[src]"
-              {...avatarImageProps}
-              alt=""
-              decoding="async"
-              height={250}
-              loading="eager"
-              width={250}
-            />
-          </div>
-        )
-      }
+        >
+          <img
+            data-pagefind-meta="image[src]"
+            {...avatarImageProps}
+            alt=""
+            decoding="async"
+            height={250}
+            loading="eager"
+            width={250}
+          />
+        </div>
+      )}
       <h1
-        class={titleClassNames ||
+        class={
+          titleClassNames ||
           `
             ${centerText ? "text-center" : ""}
             text-[2rem]/10 font-extrabold
             [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
             tablet:text-4xl
             laptop:text-7xl
-          `}
+          `
+        }
         data-pagefind-weight="10"
       >
         {title}

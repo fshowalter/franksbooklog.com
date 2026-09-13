@@ -38,11 +38,9 @@ const coverImageSizes =
         tablet-landscape:grid-cols-2
       `}
     >
-      {
-        cardProps.map((props) => {
-          return <ReviewCard value={{ ...props.value, coverImageSizes }} />;
-        })
-      }
+      {cardProps.map((props) => {
+        return <ReviewCard value={{ ...props.value, coverImageSizes }} />;
+      })}
     </ol>
   </div>
 </nav>

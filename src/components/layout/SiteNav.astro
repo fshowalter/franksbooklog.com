@@ -5,17 +5,16 @@ import { siteHierarchy } from "./siteHierarchy";
 ---
 
 <ol class={`flex flex-col gap-y-6`}>
-  {
-    siteHierarchy.map((page) => {
-      return (
-        <li
-          class={`
+  {siteHierarchy.map((page) => {
+    return (
+      <li
+        class={`
             block w-1/2 text-2xl whitespace-nowrap
             laptop:w-full
           `}
-        >
-          <a
-            class={`
+      >
+        <a
+          class={`
               relative inline-block origin-left transform-gpu transition-all
               duration-500
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
@@ -24,22 +23,22 @@ import { siteHierarchy } from "./siteHierarchy";
               hover:text-accent
               hover:after:scale-x-100
             `}
-            href={page.href}
-          >
-            {page.title}
-          </a>
-          {page.subPages.length > 0 && (
-            <ol class="mt-4">
-              {page.subPages.map((subPage) => {
-                return (
-                  <li
-                    class={`
+          href={page.href}
+        >
+          {page.title}
+        </a>
+        {page.subPages.length > 0 && (
+          <ol class="mt-4">
+            {page.subPages.map((subPage) => {
+              return (
+                <li
+                  class={`
                       mb-3 ml-1 font-sans text-[13px] font-medium tracking-wider
                       text-subtle uppercase
                     `}
-                  >
-                    <a
-                      class={`
+                >
+                  <a
+                    class={`
                         relative inline-block origin-left transform-gpu pb-1
                         transition-all duration-500
                         after:absolute after:bottom-0 after:left-0 after:h-px
@@ -49,19 +48,18 @@ import { siteHierarchy } from "./siteHierarchy";
                         hover:text-accent
                         hover:after:scale-x-100
                       `}
-                      href={subPage.href}
-                    >
-                      {subPage.title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ol>
-          )}
-        </li>
-      );
-    })
-  }
+                    href={subPage.href}
+                  >
+                    {subPage.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        )}
+      </li>
+    );
+  })}
   <li
     class={`
       block w-1/2 text-2xl whitespace-nowrap

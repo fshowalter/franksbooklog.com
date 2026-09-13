@@ -16,27 +16,26 @@ type Props = {
 const { includedTitles } = Astro.props;
 ---
 
-{
-  includedTitles.length > 0 && (
-    <div class="w-full max-w-popout">
-      <SubHeading class="text-center shadow-bottom" level="h2">
-        Included Works
-      </SubHeading>
-      <div
-        class={`
+{includedTitles.length > 0 && (
+  <div class="w-full max-w-popout">
+    <SubHeading class="text-center shadow-bottom" level="h2">
+      Included Works
+    </SubHeading>
+    <div
+      class={`
           w-full max-w-popout bg-subtle px-container py-8
           tablet:pt-12
         `}
-      >
-        <ul>
-          {includedTitles.map(async ({ data: reviewedTitle }) => {
-            const { data: includedTitleReview } = await getEntry(
-              reviewedTitle.review,
-            );
+    >
+      <ul>
+        {includedTitles.map(async ({ data: reviewedTitle }) => {
+          const { data: includedTitleReview } = await getEntry(
+            reviewedTitle.review,
+          );
 
-            return (
-              <li
-                class={`
+          return (
+            <li
+              class={`
                   relative mb-1 transform-gpu bg-default px-container py-4
                   transition-transform
                   last-of-type:mb-0
@@ -45,26 +44,25 @@ const { includedTitles } = Astro.props;
                   tablet:gap-x-6 tablet:px-4
                   desktop:px-6
                 `}
-              >
-                <ListItemDetails>
-                  <ListItemTitle
-                    slug={includedTitleReview.slug}
-                    title={reviewedTitle.title}
-                  />
-                  <ListItemAuthors values={reviewedTitle.authors} />
-                  <ListItemKindAndYear
-                    kind={reviewedTitle.kind}
-                    year={reviewedTitle.titleYear}
-                  />
-                  {includedTitleReview.grade && (
-                    <ListItemGrade grade={includedTitleReview.grade} />
-                  )}
-                </ListItemDetails>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+            >
+              <ListItemDetails>
+                <ListItemTitle
+                  slug={includedTitleReview.slug}
+                  title={reviewedTitle.title}
+                />
+                <ListItemAuthors values={reviewedTitle.authors} />
+                <ListItemKindAndYear
+                  kind={reviewedTitle.kind}
+                  year={reviewedTitle.titleYear}
+                />
+                {includedTitleReview.grade && (
+                  <ListItemGrade grade={includedTitleReview.grade} />
+                )}
+              </ListItemDetails>
+            </li>
+          );
+        })}
+      </ul>
     </div>
-  )
-}
+  </div>
+)}

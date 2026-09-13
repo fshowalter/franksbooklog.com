@@ -37,25 +37,24 @@ const { hasBackdrop, hideLogo } = Astro.props;
       `}
     >
       <ul class={`flex flex-wrap justify-start gap-x-6 text-xl`}>
-        {
-          siteHierarchy.map((page) => {
-            return (
-              <li
-                class:list={[
-                  `
+        {siteHierarchy.map((page) => {
+          return (
+            <li
+              class:list={[
+                `
                     relative block leading-10 tracking-serif-wide
                     whitespace-nowrap
                   `,
-                  hasBackdrop &&
-                    `
+                hasBackdrop &&
+                  `
                       after:absolute after:top-0 after:left-0 after:size-full
                       after:bg-[rgba(0,0,0,.9)] after:blur-3xl
                     `,
-                ]}
-              >
-                <a
-                  class:list={[
-                    `
+              ]}
+            >
+              <a
+                class:list={[
+                  `
                       relative z-above block text-inherit transition-colors
                       duration-500
                       after:absolute after:bottom-1 after:left-0 after:h-px
@@ -65,20 +64,19 @@ const { hasBackdrop, hideLogo } = Astro.props;
                       hover:text-accent
                       hover:after:scale-x-100
                     `,
-                    hasBackdrop &&
-                      `
+                  hasBackdrop &&
+                    `
                         [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
                         hover:text-shadow-none
                       `,
-                  ]}
-                  href={page.href}
-                >
-                  {page.title}
-                </a>
-              </li>
-            );
-          })
-        }
+                ]}
+                href={page.href}
+              >
+                {page.title}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </nav>
     <PagefindSearch isGlobal={true} />

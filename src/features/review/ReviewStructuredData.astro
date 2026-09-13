@@ -19,28 +19,26 @@ const { grade, slug, title } = Astro.props;
 const image = await getStructuredDataCoverSrc(slug);
 ---
 
-{
-  grade != "Abandoned" && (
-    <script
-      is:inline
-      set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Frank Showalter",
-        },
-        itemReviewed: {
-          "@type": "Book",
-          image,
-          name: title,
-        },
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: structuredDataGradeMap[grade[0]],
-        },
-      })}
-      type="application/ld+json"
-    />
-  )
-}
+{grade != "Abandoned" && (
+  <script
+    is:inline
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Frank Showalter",
+      },
+      itemReviewed: {
+        "@type": "Book",
+        image,
+        name: title,
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: structuredDataGradeMap[grade[0]],
+      },
+    })}
+    type="application/ld+json"
+  ></script>
+)}
