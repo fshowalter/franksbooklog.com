@@ -42,33 +42,33 @@ const { hasBackdrop, hideLogo } = Astro.props;
             <li
               class:list={[
                 `
-                    relative block leading-10 tracking-serif-wide
-                    whitespace-nowrap
-                  `,
+                  relative block leading-10 tracking-serif-wide
+                  whitespace-nowrap
+                `,
                 hasBackdrop &&
                   `
-                      after:absolute after:top-0 after:left-0 after:size-full
-                      after:bg-[rgba(0,0,0,.9)] after:blur-3xl
-                    `,
+                    after:absolute after:top-0 after:left-0 after:size-full
+                    after:bg-[rgba(0,0,0,.9)] after:blur-3xl
+                  `,
               ]}
             >
               <a
                 class:list={[
                   `
-                      relative z-above block text-inherit transition-colors
-                      duration-500
-                      after:absolute after:bottom-1 after:left-0 after:h-px
-                      after:w-full after:origin-center after:scale-x-0
-                      after:bg-accent after:transition-transform
-                      after:duration-500
-                      hover:text-accent
-                      hover:after:scale-x-100
-                    `,
+                    relative z-above block text-inherit transition-colors
+                    duration-500
+                    after:absolute after:bottom-1 after:left-0 after:h-px
+                    after:w-full after:origin-center after:scale-x-0
+                    after:bg-accent after:transition-transform
+                    after:duration-500
+                    hover:text-accent
+                    hover:after:scale-x-100
+                  `,
                   hasBackdrop &&
                     `
-                        [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
-                        hover:text-shadow-none
-                      `,
+                      [text-shadow:1px_1px_2px_rgba(0,0,0,.55)]
+                      hover:text-shadow-none
+                    `,
                 ]}
                 href={page.href}
               >

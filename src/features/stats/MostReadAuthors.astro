@@ -37,28 +37,27 @@ const { values } = Astro.props;
         <div class="py-3">
           <div
             class={`
-                flex justify-between px-container
-                tablet:px-0
-              `}
+              flex justify-between px-container
+              tablet:px-0
+            `}
           >
             <div
               class={`
-                  transform-gpu font-sans text-xs text-muted
-                  transition-transform
-                  tablet:text-sm
-                `}
+                transform-gpu font-sans text-xs text-muted transition-transform
+                tablet:text-sm
+              `}
             >
               {value.authorSlug ? (
                 <a
                   class={`
-                      relative inline-block font-serif text-base/6 font-medium
-                      text-accent
-                      after:absolute after:bottom-0 after:left-0 after:h-px
-                      after:w-full after:origin-bottom-left after:scale-x-0
-                      after:bg-(--color-accent) after:transition-all
-                      after:duration-500
-                      hover:after:scale-x-100
-                    `}
+                    relative inline-block font-serif text-base/6 font-medium
+                    text-accent
+                    after:absolute after:bottom-0 after:left-0 after:h-px
+                    after:w-full after:origin-bottom-left after:scale-x-0
+                    after:bg-(--color-accent) after:transition-all
+                    after:duration-500
+                    hover:after:scale-x-100
+                  `}
                   href={`/authors/${value.authorSlug}/`}
                 >
                   {value.name}
@@ -66,8 +65,8 @@ const { values } = Astro.props;
               ) : (
                 <span
                   class={`
-                      inline-block font-serif text-base/6 font-normal text-muted
-                    `}
+                    inline-block font-serif text-base/6 font-normal text-muted
+                  `}
                 >
                   {value.name}
                 </span>
@@ -75,30 +74,30 @@ const { values } = Astro.props;
             </div>
             <div
               class={`
-                  col-start-2 self-center pr-1 pb-1 text-right font-sans text-sm
-                  text-nowrap text-subtle tabular-nums
-                `}
+                col-start-2 self-center pr-1 pb-1 text-right font-sans text-sm
+                text-nowrap text-subtle tabular-nums
+              `}
             >
               {value.count}
             </div>
           </div>
           <div
             class={`
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              `}
+              col-span-2 row-start-2 px-container
+              tablet:px-0
+            `}
           >
             <details
               class={`
-                  rounded-md bg-canvas px-2
-                  open:pb-2
-                `}
+                rounded-md bg-canvas px-2
+                open:pb-2
+              `}
             >
               <summary
                 class={`
-                    cursor-pointer rounded-sm py-1 font-sans text-sm
-                    tracking-prose text-subtle
-                  `}
+                  cursor-pointer rounded-sm py-1 font-sans text-sm
+                  tracking-prose text-subtle
+                `}
               >
                 Details
               </summary>
@@ -107,21 +106,19 @@ const { values } = Astro.props;
                   return (
                     <CoverListItem
                       className={`
-                          ${
-                            readTitle.reviewSlug
-                              ? "bg-default"
-                              : `bg-transparent`
-                          }
-                        `}
+                        ${
+                          readTitle.reviewSlug ? "bg-default" : `bg-transparent`
+                        }
+                      `}
                       coverImageProps={await getFluidCoverImageProps(
                         readTitle.reviewSlug || "default",
                       )}
                     >
                       <div
                         class={`
-                            flex grow flex-col items-start gap-y-1
-                            tablet:mt-2 tablet:w-full tablet:px-1
-                          `}
+                          flex grow flex-col items-start gap-y-1
+                          tablet:mt-2 tablet:w-full tablet:px-1
+                        `}
                       >
                         <ListItemTitle
                           slug={readTitle.reviewSlug}

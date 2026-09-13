@@ -42,29 +42,33 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
         return (
           <li
             class={`
-                mb-1 flex flex-col bg-subtle px-container font-sans
-                tablet:px-6
-              `}
+              mb-1 flex flex-col bg-subtle px-container font-sans
+              tablet:px-6
+            `}
           >
             <div
               class={`
-                  flex gap-x-4 py-4
-                  tablet:gap-x-6
-                `}
+                flex gap-x-4 py-4
+                tablet:gap-x-6
+              `}
             >
               <div class="size-auto self-start">
                 <div class="bg-subtle py-2 text-center">
                   <div
                     class={`
-                        px-4 pb-2 font-serif text-md font-normal text-subtle
-                      `}
+                      px-4 pb-2 font-serif text-md font-normal text-subtle
+                    `}
                   >
                     {readingYearFormat.format(reading.date)}
                   </div>
                   <div class="bg-default py-1 text-subtle">
                     {readingMonthFormat.format(reading.date)}
                   </div>
-                  <div class="bg-default font-serif text-md font-normal text-default">
+                  <div
+                    class={`
+                      bg-default font-serif text-md font-normal text-default
+                    `}
+                  >
                     {readingDayFormat.format(reading.date)}
                   </div>
                   <div class="bg-default py-1 text-subtle">
@@ -91,23 +95,23 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                 )}
                 <details
                   class={`
-                      rounded-md bg-canvas px-2 text-subtle
-                      open:pb-2
-                    `}
+                    rounded-md bg-canvas px-2 text-subtle
+                    open:pb-2
+                  `}
                 >
                   <summary
                     class={`
-                        cursor-pointer rounded-sm py-1 font-sans text-sm
-                        tracking-prose text-subtle
-                      `}
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
+                      tracking-prose text-subtle
+                    `}
                   >
                     {summaryText} {reading.readingTime} Days
                   </summary>
                   <ol
                     class={`
-                        grid w-full grid-cols-[auto_1fr_auto] rounded-md
-                        bg-default px-2 py-3
-                      `}
+                      grid w-full grid-cols-[auto_1fr_auto] rounded-md
+                      bg-default px-2 py-3
+                    `}
                   >
                     {reading.timeline.map((entry) => {
                       let progressValue;
@@ -128,24 +132,23 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
                       return (
                         <li
                           class={`
-                              relative col-span-3 grid grid-cols-subgrid
-                              grid-rows-[1fr_auto_auto_1fr] p-1 font-normal
-                              even:bg-subtle
-                            `}
+                            relative col-span-3 grid grid-cols-subgrid
+                            grid-rows-[1fr_auto_auto_1fr] p-1 font-normal
+                            even:bg-subtle
+                          `}
                         >
                           <div
                             class={`
-                                col-span-2 col-start-2 row-start-2 grid
-                                grid-cols-subgrid font-sans text-sm
-                                tracking-prose
-                              `}
+                              col-span-2 col-start-2 row-start-2 grid
+                              grid-cols-subgrid font-sans text-sm tracking-prose
+                            `}
                           >
                             <div>{entryDate}</div>
                             <div
                               class={`
-                                  col-start-3 self-center pb-1 text-right
-                                  font-sans text-sm text-nowrap
-                                `}
+                                col-start-3 self-center pb-1 text-right
+                                font-sans text-sm text-nowrap
+                              `}
                             >
                               <div>{entry.progress}</div>
                             </div>
@@ -169,13 +172,14 @@ readings.sort((a, b) => b.id.localeCompare(a.id));
               {reading.readingNotesHtml && (
                 <div
                   class={`
-                      px-2 pb-6 text-sm font-light
-                      tablet:mx-24 tablet:px-0
-                    `}
+                    px-2 pb-6 text-sm font-light
+                    tablet:mx-24 tablet:px-0
+                  `}
                 >
                   <div
-                    class="rendered-markdown leading-normal tracking-prose
-                        text-muted"
+                    class={`
+                      rendered-markdown leading-normal tracking-prose text-muted
+                    `}
                     set:html={await linkReviewedTitles(
                       reading.readingNotesHtml,
                     )}

@@ -71,9 +71,9 @@ const moreReviews = await getEntries(reviewedTitle.moreReviews);
       {reviewedTitle.subtitle && (
         <p
           class={`
-              max-w-prose pt-2 text-center text-base font-light tracking-wider
-              text-muted
-            `}
+            max-w-prose pt-2 text-center text-base font-light tracking-wider
+            text-muted
+          `}
         >
           {reviewedTitle.subtitle}
         </p>
@@ -87,13 +87,13 @@ const moreReviews = await getEntries(reviewedTitle.moreReviews);
                 return (
                   <div
                     class={`
-                        relative inline-block transform-gpu text-accent
-                        transition-transform
-                        after:absolute after:bottom-0 after:left-0 after:h-px
-                        after:w-full after:origin-center after:scale-x-0
-                        after:bg-(--color-accent) after:transition-transform
-                        hover:after:scale-x-100
-                      `}
+                      relative inline-block transform-gpu text-accent
+                      transition-transform
+                      after:absolute after:bottom-0 after:left-0 after:h-px
+                      after:w-full after:origin-center after:scale-x-0
+                      after:bg-(--color-accent) after:transition-transform
+                      hover:after:scale-x-100
+                    `}
                   >
                     <a href={`/authors/${workAuthor.slug}/`}>
                       {workAuthor.name}
@@ -112,9 +112,9 @@ const moreReviews = await getEntries(reviewedTitle.moreReviews);
         {review.grade == "Abandoned" ? (
           <div
             class={`
-                bg-abandoned px-2 py-1 font-sans text-sm font-medium
-                tracking-wide text-white uppercase
-              `}
+              bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide
+              text-white uppercase
+            `}
           >
             Abandoned
           </div>
