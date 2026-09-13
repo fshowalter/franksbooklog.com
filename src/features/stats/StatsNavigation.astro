@@ -24,88 +24,84 @@ const { class: className, currentYear, linkFunc, years } = Astro.props;
         ${"all" === currentYear ? "text-inverse" : `text-grey`}
       `}
     >
-      {
-        "all" === currentYear ? (
-          <div
+      {"all" === currentYear ? (
+        <div
+          class={`
+            bg-subtle p-4 whitespace-nowrap text-default
+            laptop:py-4
+          `}
+        >
+          All-Time
+        </div>
+      ) : (
+        <a
+          class={`
+            group/all-time block transform-gpu px-4 pt-4 pb-3 whitespace-nowrap
+            transition-all duration-500
+            hover:bg-accent hover:text-inverse
+          `}
+          href={linkFunc("all")}
+        >
+          <span
             class={`
-              bg-subtle p-4 whitespace-nowrap text-default
-              laptop:py-4
+              relative inline-block pb-1
+              after:absolute after:bottom-0 after:left-0 after:h-0.5
+              after:w-full after:origin-center after:scale-x-0
+              after:bg-(--color-inverse) after:transition-transform
+              after:duration-500
+              group-hover/all-time:after:scale-x-100
             `}
           >
             All-Time
-          </div>
-        ) : (
-          <a
-            class={`
-              group/all-time block transform-gpu px-4 pt-4 pb-3
-              whitespace-nowrap transition-all duration-500
-              hover:bg-accent hover:text-inverse
-            `}
-            href={linkFunc("all")}
-          >
-            <span
-              class={`
-                relative inline-block pb-1
-                after:absolute after:bottom-0 after:left-0 after:h-0.5
-                after:w-full after:origin-center after:scale-x-0
-                after:bg-(--color-inverse) after:transition-transform
-                after:duration-500
-                group-hover/all-time:after:scale-x-100
-              `}
-            >
-              All-Time
-            </span>
-          </a>
-        )
-      }
+          </span>
+        </a>
+      )}
     </li>
-    {
-      [...years]
-        .toSorted()
-        .reverse()
-        .map((year) => {
-          return (
-            <li
-              class={`
-                snap-start text-center
-                ${year === currentYear ? "text-inverse" : `text-grey`}
-              `}
-            >
-              {year === currentYear ? (
-                <div
+    {[...years]
+      .toSorted()
+      .reverse()
+      .map((year) => {
+        return (
+          <li
+            class={`
+              snap-start text-center
+              ${year === currentYear ? "text-inverse" : `text-grey`}
+            `}
+          >
+            {year === currentYear ? (
+              <div
+                class={`
+                  bg-subtle p-4 text-default
+                  laptop:py-4
+                `}
+              >
+                {year}
+              </div>
+            ) : (
+              <a
+                class={`
+                  group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+                  duration-500
+                  hover:bg-accent hover:text-inverse
+                `}
+                href={linkFunc(year)}
+              >
+                <span
                   class={`
-                    bg-subtle p-4 text-default
-                    laptop:py-4
+                    relative inline-block pb-1
+                    after:absolute after:bottom-0 after:left-0 after:h-0.5
+                    after:w-full after:origin-center after:scale-x-0
+                    after:bg-(--color-inverse) after:transition-transform
+                    after:duration-500
+                    group-hover/year:after:scale-x-100
                   `}
                 >
                   {year}
-                </div>
-              ) : (
-                <a
-                  class={`
-                    group/year block transform-gpu px-4 pt-4 pb-3 transition-all
-                    duration-500
-                    hover:bg-accent hover:text-inverse
-                  `}
-                  href={linkFunc(year)}
-                >
-                  <span
-                    class={`
-                      relative inline-block pb-1
-                      after:absolute after:bottom-0 after:left-0 after:h-0.5
-                      after:w-full after:origin-center after:scale-x-0
-                      after:bg-(--color-inverse) after:transition-transform
-                      after:duration-500
-                      group-hover/year:after:scale-x-100
-                    `}
-                  >
-                    {year}
-                  </span>
-                </a>
-              )}
-            </li>
-          );
-        })
-    }
+                </span>
+              </a>
+            )}
+          </li>
+        );
+      })}
   </ul>
 </nav>

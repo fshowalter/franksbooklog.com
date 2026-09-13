@@ -46,29 +46,27 @@ const coverImageSizes =
           @min-[700px]/card-list:grid-cols-2
         `}
       >
-        {
-          await Promise.all(
-            reviewedWorks.map(async ({ data: reviewedTitle }) => {
-              const { data: review } = await getEntry(reviewedTitle.review);
-              return (
-                <ReviewCard
-                  value={{
-                    authors: reviewedTitle.authors,
-                    coverImageProps: await getFluidCoverImageProps(review.slug),
-                    coverImageSizes,
-                    date: review.date,
-                    excerptHtml: review.excerptHtml,
-                    grade: review.grade,
-                    kind: reviewedTitle.kind,
-                    slug: review.slug,
-                    title: reviewedTitle.title,
-                    titleYear: reviewedTitle.titleYear,
-                  }}
-                />
-              );
-            }),
-          )
-        }
+        {await Promise.all(
+          reviewedWorks.map(async ({ data: reviewedTitle }) => {
+            const { data: review } = await getEntry(reviewedTitle.review);
+            return (
+              <ReviewCard
+                value={{
+                  authors: reviewedTitle.authors,
+                  coverImageProps: await getFluidCoverImageProps(review.slug),
+                  coverImageSizes,
+                  date: review.date,
+                  excerptHtml: review.excerptHtml,
+                  grade: review.grade,
+                  kind: reviewedTitle.kind,
+                  slug: review.slug,
+                  title: reviewedTitle.title,
+                  titleYear: reviewedTitle.titleYear,
+                }}
+              />
+            );
+          }),
+        )}
       </ol>
       <div
         class={`

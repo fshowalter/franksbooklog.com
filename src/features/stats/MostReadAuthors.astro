@@ -32,116 +32,111 @@ const { values } = Astro.props;
     Most Read Authors
   </h2>
   <div class={`w-full`}>
-    {
-      values.map(async (value) => {
-        return (
-          <div class="py-3">
+    {values.map(async (value) => {
+      return (
+        <div class="py-3">
+          <div
+            class={`
+              flex justify-between px-container
+              tablet:px-0
+            `}
+          >
             <div
               class={`
-                flex justify-between px-container
-                tablet:px-0
+                transform-gpu font-sans text-xs text-muted transition-transform
+                tablet:text-sm
               `}
             >
-              <div
-                class={`
-                  transform-gpu font-sans text-xs text-muted
-                  transition-transform
-                  tablet:text-sm
-                `}
-              >
-                {value.authorSlug ? (
-                  <a
-                    class={`
-                      relative inline-block font-serif text-base/6 font-medium
-                      text-accent
-                      after:absolute after:bottom-0 after:left-0 after:h-px
-                      after:w-full after:origin-bottom-left after:scale-x-0
-                      after:bg-(--color-accent) after:transition-all
-                      after:duration-500
-                      hover:after:scale-x-100
-                    `}
-                    href={`/authors/${value.authorSlug}/`}
-                  >
-                    {value.name}
-                  </a>
-                ) : (
-                  <span
-                    class={`
-                      inline-block font-serif text-base/6 font-normal text-muted
-                    `}
-                  >
-                    {value.name}
-                  </span>
-                )}
-              </div>
-              <div
-                class={`
-                  col-start-2 self-center pr-1 pb-1 text-right font-sans text-sm
-                  text-nowrap text-subtle tabular-nums
-                `}
-              >
-                {value.count}
-              </div>
-            </div>
-            <div
-              class={`
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              `}
-            >
-              <details
-                class={`
-                  rounded-md bg-canvas px-2
-                  open:pb-2
-                `}
-              >
-                <summary
+              {value.authorSlug ? (
+                <a
                   class={`
-                    cursor-pointer rounded-sm py-1 font-sans text-sm
-                    tracking-prose text-subtle
+                    relative inline-block font-serif text-base/6 font-medium
+                    text-accent
+                    after:absolute after:bottom-0 after:left-0 after:h-px
+                    after:w-full after:origin-bottom-left after:scale-x-0
+                    after:bg-(--color-accent) after:transition-all
+                    after:duration-500
+                    hover:after:scale-x-100
+                  `}
+                  href={`/authors/${value.authorSlug}/`}
+                >
+                  {value.name}
+                </a>
+              ) : (
+                <span
+                  class={`
+                    inline-block font-serif text-base/6 font-normal text-muted
                   `}
                 >
-                  Details
-                </summary>
-                <CoverList className="rounded-md bg-subtle">
-                  {value.readTitles.map(async (readTitle) => {
-                    return (
-                      <CoverListItem
-                        className={`
-                          ${
-                            readTitle.reviewSlug
-                              ? "bg-default"
-                              : `bg-transparent`
-                          }
-                        `}
-                        coverImageProps={await getFluidCoverImageProps(
-                          readTitle.reviewSlug || "default",
-                        )}
-                      >
-                        <div
-                          class={`
-                            flex grow flex-col items-start gap-y-1
-                            tablet:mt-2 tablet:w-full tablet:px-1
-                          `}
-                        >
-                          <ListItemTitle
-                            slug={readTitle.reviewSlug}
-                            title={readTitle.title}
-                          />
-                          <ListItemReviewDate
-                            displayDate={toDisplayDate(readTitle.readingDate)}
-                          />
-                          <ListItemEdition value={readTitle.edition} />
-                        </div>
-                      </CoverListItem>
-                    );
-                  })}
-                </CoverList>
-              </details>
+                  {value.name}
+                </span>
+              )}
+            </div>
+            <div
+              class={`
+                col-start-2 self-center pr-1 pb-1 text-right font-sans text-sm
+                text-nowrap text-subtle tabular-nums
+              `}
+            >
+              {value.count}
             </div>
           </div>
-        );
-      })
-    }
+          <div
+            class={`
+              col-span-2 row-start-2 px-container
+              tablet:px-0
+            `}
+          >
+            <details
+              class={`
+                rounded-md bg-canvas px-2
+                open:pb-2
+              `}
+            >
+              <summary
+                class={`
+                  cursor-pointer rounded-sm py-1 font-sans text-sm
+                  tracking-prose text-subtle
+                `}
+              >
+                Details
+              </summary>
+              <CoverList className="rounded-md bg-subtle">
+                {value.readTitles.map(async (readTitle) => {
+                  return (
+                    <CoverListItem
+                      className={`
+                        ${
+                          readTitle.reviewSlug ? "bg-default" : `bg-transparent`
+                        }
+                      `}
+                      coverImageProps={await getFluidCoverImageProps(
+                        readTitle.reviewSlug || "default",
+                      )}
+                    >
+                      <div
+                        class={`
+                          flex grow flex-col items-start gap-y-1
+                          tablet:mt-2 tablet:w-full tablet:px-1
+                        `}
+                      >
+                        <ListItemTitle
+                          slug={readTitle.reviewSlug}
+                          title={readTitle.title}
+                        />
+                        <ListItemReviewDate
+                          displayDate={toDisplayDate(readTitle.readingDate)}
+                        />
+                        <ListItemEdition value={readTitle.edition} />
+                      </div>
+                    </CoverListItem>
+                  );
+                })}
+              </CoverList>
+            </details>
+          </div>
+        </div>
+      );
+    })}
   </div>
 </section>

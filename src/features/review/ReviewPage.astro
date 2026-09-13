@@ -68,65 +68,59 @@ const moreReviews = await getEntries(reviewedTitle.moreReviews);
       >
         {reviewedTitle.title}
       </h1>
-      {
-        reviewedTitle.subtitle && (
-          <p
-            class={`
-              max-w-prose pt-2 text-center text-base font-light tracking-wider
-              text-muted
-            `}
-          >
-            {reviewedTitle.subtitle}
-          </p>
-        )
-      }
+      {reviewedTitle.subtitle && (
+        <p
+          class={`
+            max-w-prose pt-2 text-center text-base font-light tracking-wider
+            text-muted
+          `}
+        >
+          {reviewedTitle.subtitle}
+        </p>
+      )}
       <div class={`mt-4 text-center text-md text-muted`}>
         by{" "}
-        <span data-pagefind-meta="authors"
-          >{
-            toSentenceArray(
-              await Promise.all(
-                reviewedTitle.authors.map((workAuthor) => {
-                  return (
-                    <div
-                      class={`
-                        relative inline-block transform-gpu text-accent
-                        transition-transform
-                        after:absolute after:bottom-0 after:left-0 after:h-px
-                        after:w-full after:origin-center after:scale-x-0
-                        after:bg-(--color-accent) after:transition-transform
-                        hover:after:scale-x-100
-                      `}
-                    >
-                      <a href={`/authors/${workAuthor.slug}/`}>
-                        {workAuthor.name}
-                        {workAuthor.notes && (
-                          <span class="text-subtle"> ({workAuthor.notes})</span>
-                        )}
-                      </a>
-                    </div>
-                  );
-                }),
-              ),
-            )
-          }</span
-        >
+        <span data-pagefind-meta="authors">
+          {toSentenceArray(
+            await Promise.all(
+              reviewedTitle.authors.map((workAuthor) => {
+                return (
+                  <div
+                    class={`
+                      relative inline-block transform-gpu text-accent
+                      transition-transform
+                      after:absolute after:bottom-0 after:left-0 after:h-px
+                      after:w-full after:origin-center after:scale-x-0
+                      after:bg-(--color-accent) after:transition-transform
+                      hover:after:scale-x-100
+                    `}
+                  >
+                    <a href={`/authors/${workAuthor.slug}/`}>
+                      {workAuthor.name}
+                      {workAuthor.notes && (
+                        <span class="text-subtle"> ({workAuthor.notes})</span>
+                      )}
+                    </a>
+                  </div>
+                );
+              }),
+            ),
+          )}
+        </span>
       </div>
       <div class="mt-4">
-        {
-          review.grade == "Abandoned" ? (
-            <div
-              class={`
-                bg-abandoned px-2 py-1 font-sans text-sm font-medium
-                tracking-wide text-white uppercase
-              `}
-            >
-              Abandoned
-            </div>
-          ) : (
-            <Grade height={32} value={review.grade} />
-          )
-        }
+        {review.grade == "Abandoned" ? (
+          <div
+            class={`
+              bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide
+              text-white uppercase
+            `}
+          >
+            Abandoned
+          </div>
+        ) : (
+          <Grade height={32} value={review.grade} />
+        )}
       </div>
       <div
         class={`
