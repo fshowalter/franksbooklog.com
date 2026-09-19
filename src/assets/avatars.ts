@@ -70,9 +70,5 @@ async function getAvatarFile(slug: string) {
     return path.endsWith(`${slug}.png`);
   });
 
-  if (!imagePath) {
-    return;
-  }
-
-  return await images[imagePath]();
+  return imagePath ? await images[imagePath]() : undefined;
 }

@@ -31,33 +31,33 @@ export function titleFacetReducer<
   switch (action.type) {
     case ActionTypes.CHANGED: {
       const { value } = action as TitleFilterChangedAction;
-      if (value === "") {
-        return {
-          ...state,
-          pendingFilterValues: omitPendingKey(
-            state.pendingFilterValues,
-            STATE_KEY,
-          ),
-        };
-      }
-      return {
-        ...state,
-        pendingFilterValues: {
-          ...state.pendingFilterValues,
-          [STATE_KEY]: value,
-        },
-      };
+      return value === ""
+        ? {
+            ...state,
+            pendingFilterValues: omitPendingKey(
+              state.pendingFilterValues,
+              STATE_KEY,
+            ),
+          }
+        : {
+            ...state,
+            pendingFilterValues: {
+              ...state.pendingFilterValues,
+              [STATE_KEY]: value,
+            },
+          };
     }
     case FilterAndSortContainerActionTypes.FILTER_REMOVED: {
       const { key } = action as RemoveFilterAction;
-      if (key !== STATE_KEY) return state;
-      return {
-        ...state,
-        pendingFilterValues: omitPendingKey(
-          state.pendingFilterValues,
-          STATE_KEY,
-        ),
-      };
+      return key === STATE_KEY
+        ? {
+            ...state,
+            pendingFilterValues: omitPendingKey(
+              state.pendingFilterValues,
+              STATE_KEY,
+            ),
+          }
+        : state;
     }
     default: {
       return state;

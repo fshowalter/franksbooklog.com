@@ -126,11 +126,7 @@ export async function getUpdateCoverProps(
 
 function coverPath(slug: string) {
   const coverPath = path.resolve(`./content/assets/covers/${slug}.png`);
-  if (fs.existsSync(coverPath)) {
-    return coverPath;
-  }
-
-  return;
+  return fs.existsSync(coverPath) ? coverPath : undefined;
 }
 
 async function getCoverHeight(coverPath: string, targetWidth: number) {
@@ -161,11 +157,5 @@ async function getTitleCoverFile(slug: string) {
 }
 
 function getTitleCoverPath(slug: string) {
-  const titleCover = coverPath(slug);
-
-  if (titleCover) {
-    return titleCover;
-  }
-
-  return coverPath("default") || "";
+  return coverPath(slug) || coverPath("default") || "";
 }

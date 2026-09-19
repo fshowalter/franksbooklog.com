@@ -44,10 +44,11 @@ export function createReviewedStatusFilter<TValue extends FilterableValue>(
 ) {
   const filterValue = filters.reviewedStatus;
 
-  if (!filterValue || filterValue.length === 0) return;
-  return (value: TValue): boolean => {
-    return filterValue.includes(getStatus(value));
-  };
+  return !filterValue || filterValue.length === 0
+    ? undefined
+    : (value: TValue): boolean => {
+        return filterValue.includes(getStatus(value));
+      };
 }
 
 function getStatus(value: FilterableValue): string {

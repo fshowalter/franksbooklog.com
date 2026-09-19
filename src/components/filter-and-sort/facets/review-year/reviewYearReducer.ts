@@ -36,33 +36,33 @@ export function reviewYearFacetReducer<
     case ActionTypes.CHANGED: {
       const { availableMax, availableMin, values } =
         action as ReviewYearFilterChangedAction;
-      if (values[0] === availableMin && values[1] === availableMax) {
-        return {
-          ...state,
-          pendingFilterValues: omitPendingKey(
-            state.pendingFilterValues,
-            STATE_KEY,
-          ),
-        };
-      }
-      return {
-        ...state,
-        pendingFilterValues: {
-          ...state.pendingFilterValues,
-          [STATE_KEY]: values,
-        },
-      };
+      return values[0] === availableMin && values[1] === availableMax
+        ? {
+            ...state,
+            pendingFilterValues: omitPendingKey(
+              state.pendingFilterValues,
+              STATE_KEY,
+            ),
+          }
+        : {
+            ...state,
+            pendingFilterValues: {
+              ...state.pendingFilterValues,
+              [STATE_KEY]: values,
+            },
+          };
     }
     case FilterAndSortContainerActionTypes.FILTER_REMOVED: {
       const { key } = action as RemoveFilterAction;
-      if (key !== STATE_KEY) return state;
-      return {
-        ...state,
-        pendingFilterValues: omitPendingKey(
-          state.pendingFilterValues,
-          STATE_KEY,
-        ),
-      };
+      return key === STATE_KEY
+        ? {
+            ...state,
+            pendingFilterValues: omitPendingKey(
+              state.pendingFilterValues,
+              STATE_KEY,
+            ),
+          }
+        : state;
     }
     default: {
       return state;

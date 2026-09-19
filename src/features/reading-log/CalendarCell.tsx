@@ -156,9 +156,7 @@ function parseProgress(progress: string): number {
     return 100;
   }
 
-  if (!Number.isNaN(Number(progressNumber))) {
-    return Number.parseInt(progressNumber);
-  }
-
-  return 100;
+  return Number.isNaN(Number(progressNumber))
+    ? 100
+    : Number.parseInt(progressNumber);
 }

@@ -20,11 +20,9 @@ export function groupAuthors(
 function getGroupLetter(str: string): string {
   const letter = str.slice(0, 1);
 
-  if (letter.toLowerCase() === letter.toUpperCase()) {
-    return "#";
-  }
-
-  return letter.toLocaleUpperCase();
+  return letter.toLowerCase() === letter.toUpperCase()
+    ? "#"
+    : letter.toLocaleUpperCase();
 }
 
 function groupForTitleValue(value: AuthorsValue, sort: AuthorsSort) {
