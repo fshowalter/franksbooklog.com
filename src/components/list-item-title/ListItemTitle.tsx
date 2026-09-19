@@ -8,11 +8,11 @@ export function ListItemTitle({
   return slug ? (
     <a
       className={`
-          text-base/5 font-semibold text-default transition-all duration-500
-          after:absolute after:top-0 after:left-0 after:z-above after:size-full
-          after:opacity-0
-          hover:text-accent
-        `}
+        text-base/5 font-semibold text-default transition-all duration-500
+        after:absolute after:top-0 after:left-0 after:z-above after:size-full
+        after:opacity-0
+        hover:text-accent
+      `}
       href={`/reviews/${slug}/`}
     >
       {title}

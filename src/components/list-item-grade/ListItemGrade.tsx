@@ -10,9 +10,9 @@ export function ListItemGrade({
   return grade === "Abandoned" ? (
     <div
       className={`
-          rounded-sm bg-abandoned px-2 py-1 font-sans text-xxs font-bold
-          tracking-prose text-inverse uppercase
-        `}
+        rounded-sm bg-abandoned px-2 py-1 font-sans text-xxs font-bold
+        tracking-prose text-inverse uppercase
+      `}
     >
       Abandoned
     </div>
