@@ -25,6 +25,7 @@ export function createEditionFilter<TValue extends FilterableValue>(
   filters: Filters,
 ) {
   const filterValue = filters.edition;
-  if (!filterValue || filterValue.length === 0) return;
-  return (value: TValue) => filterValue.includes(value.edition);
+  return !filterValue || filterValue.length === 0
+    ? undefined
+    : (value: TValue) => filterValue.includes(value.edition);
 }

@@ -50,11 +50,11 @@ export function ReviewsListItem({
     return <GradeSortListItem value={value} />;
   }
 
-  if (sortValue.startsWith("review-date-")) {
-    return <ReviewDateSortListItem value={value} />;
-  }
-
-  return <TitleSortListItem value={value} />;
+  return sortValue.startsWith("review-date-") ? (
+    <ReviewDateSortListItem value={value} />
+  ) : (
+    <TitleSortListItem value={value} />
+  );
 }
 
 function AuthorSortListItem({

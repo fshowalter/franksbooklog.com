@@ -33,6 +33,7 @@ chokidar
       dest = `${import.meta.dirname}/../content/data/${name}`;
     }
 
+    // eslint-disable-next-line unicorn/prefer-early-return
     if (dest) {
       const destPath = path.parse(dest).dir;
 

@@ -35,11 +35,9 @@ export function Avatar({
   imageProps,
   ...rest
 }: AvatarProps): React.JSX.Element {
-  if (imageProps) {
-    return <img {...imageProps} alt="" {...rest} className={className} />;
-  }
-
-  return (
+  return imageProps ? (
+    <img {...imageProps} alt="" {...rest} className={className} />
+  ) : (
     <div className={className}>
       <svg
         fill={fill || "var(--background-color-subtle)"}

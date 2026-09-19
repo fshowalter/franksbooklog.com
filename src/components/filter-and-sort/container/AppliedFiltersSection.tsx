@@ -18,11 +18,9 @@ export function AppliedFiltersSection({
   onRemove,
 }: Props): false | React.JSX.Element {
   // Don't render anything if no filters are active
-  if (filters.length === 0) {
-    return false;
-  }
-
-  return (
+  return filters.length === 0 ? (
+    false
+  ) : (
     <AnimatedDetailsDisclosure title="Applied Filters">
       <div className="mb-3 flex flex-wrap gap-2">
         {filters.map((filter) => {

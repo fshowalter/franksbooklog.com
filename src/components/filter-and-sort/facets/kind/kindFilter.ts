@@ -25,6 +25,7 @@ export function createKindFilter<TValue extends FilterableValue>(
   filters: Filters,
 ) {
   const filterValue = filters.kind;
-  if (!filterValue || filterValue.length === 0) return;
-  return (value: TValue) => filterValue.includes(value.kind);
+  return !filterValue || filterValue.length === 0
+    ? undefined
+    : (value: TValue) => filterValue.includes(value.kind);
 }
