@@ -18,42 +18,42 @@ export function AppliedFiltersSection({
   onRemove,
 }: Props): false | React.JSX.Element {
   // Don't render anything if no filters are active
-  return filters.length === 0 ? (
-    false
-  ) : (
-    <AnimatedDetailsDisclosure title="Applied Filters">
-      <div className="mb-3 flex flex-wrap gap-2">
-        {filters.map((filter) => {
-          const { displayText } = filter;
+  return (
+    filters.length != 0 && (
+      <AnimatedDetailsDisclosure title="Applied Filters">
+        <div className="mb-3 flex flex-wrap gap-2">
+          {filters.map((filter) => {
+            const { displayText } = filter;
 
-          return (
-            <button
-              aria-label={`Remove ${displayText} filter`}
-              className="
-                inline-flex items-center gap-2 rounded-sm border border-default
-                bg-canvas px-3 py-1.5 font-sans text-sm text-default
-                transition-colors
-                hover:border-accent hover:bg-accent
-                focus:border-accent focus:bg-accent focus:outline-none
-              "
-              key={`${filter.key}-${filter.value}`}
-              onClick={() => onRemove(filter.key, filter.value)}
-              type="button"
-            >
-              <span>{displayText}</span>
-              <span aria-hidden="true">×</span>
-            </button>
-          );
-        })}
-      </div>
+            return (
+              <button
+                aria-label={`Remove ${displayText} filter`}
+                className="
+                  inline-flex items-center gap-2 rounded-sm border
+                  border-default bg-canvas px-3 py-1.5 font-sans text-sm
+                  text-default transition-colors
+                  hover:border-accent hover:bg-accent
+                  focus:border-accent focus:bg-accent focus:outline-none
+                "
+                key={`${filter.key}-${filter.value}`}
+                onClick={() => onRemove(filter.key, filter.value)}
+                type="button"
+              >
+                <span>{displayText}</span>
+                <span aria-hidden="true">×</span>
+              </button>
+            );
+          })}
+        </div>
 
-      <button
-        className="font-sans text-sm text-accent underline"
-        onClick={onClearAll}
-        type="button"
-      >
-        Clear all
-      </button>
-    </AnimatedDetailsDisclosure>
+        <button
+          className="font-sans text-sm text-accent underline"
+          onClick={onClearAll}
+          type="button"
+        >
+          Clear all
+        </button>
+      </AnimatedDetailsDisclosure>
+    )
   );
 }
