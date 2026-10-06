@@ -39,6 +39,7 @@ export default defineConfig(
       "unicorn/no-array-reverse": "off",
       "unicorn/no-top-level-side-effects": "off",
       "unicorn/prefer-await": "off",
+      "unicorn/prefer-default-parameters": "off",
       "unicorn/prefer-minimal-ternary": "off",
       "unicorn/prefer-number-coercion": "off",
       "unicorn/require-array-sort-compare": "off",
