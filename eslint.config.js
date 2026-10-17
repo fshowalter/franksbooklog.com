@@ -42,6 +42,8 @@ export default defineConfig(
       "unicorn/prefer-default-parameters": "off",
       "unicorn/prefer-minimal-ternary": "off",
       "unicorn/prefer-number-coercion": "off",
+      "unicorn/prefer-ternary": "off",
+      "unicorn/relative-url-style": "off",
       "unicorn/require-array-sort-compare": "off",
     },
   },
