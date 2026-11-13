@@ -16,8 +16,8 @@
     "2011"
   ],
   "reviewCount": 91,
-  "titleCount": 198,
-  "bookCount": 172,
+  "titleCount": 199,
+  "bookCount": 173,
   "gradeDistribution": [
     {
       "name": "A",
@@ -91,7 +91,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 57
+      "count": 58
     },
     {
       "name": "Novel",
@@ -109,7 +109,7 @@
   "editionDistribution": [
     {
       "name": "Audiobook",
-      "count": 32
+      "count": 33
     },
     {
       "name": "Ebook",
@@ -159,7 +159,7 @@
     },
     {
       "name": "2000s",
-      "count": 22
+      "count": 23
     },
     {
       "name": "2010s",
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "count": 31,
+      "count": 32,
       "name": "Stephen King",
       "authorSlug": "stephen-king",
       "readTitles": [
@@ -584,6 +584,12 @@
           "edition": "Ebook",
           "readingDate": "2023-01-14",
           "reviewSlug": "doctor-sleep-by-stephen-king"
+        },
+        {
+          "title": "On Writing",
+          "edition": "Audiobook",
+          "readingDate": "2026-10-31",
+          "reviewSlug": "on-writing-by-stephen-king"
         }
       ]
     },
