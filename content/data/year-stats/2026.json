@@ -1,14 +1,22 @@
 {
   "year": "2026",
-  "titleCount": 2,
-  "bookCount": 2,
+  "titleCount": 3,
+  "bookCount": 3,
   "kindDistribution": [
+    {
+      "name": "Nonfiction",
+      "count": 1
+    },
     {
       "name": "Novel",
       "count": 2
     }
   ],
   "editionDistribution": [
+    {
+      "name": "Audiobook",
+      "count": 1
+    },
     {
       "name": "Ebook",
       "count": 2
@@ -17,7 +25,7 @@
   "decadeDistribution": [
     {
       "name": "2020s",
-      "count": 2
+      "count": 3
     }
   ],
   "mostReadAuthors": []
