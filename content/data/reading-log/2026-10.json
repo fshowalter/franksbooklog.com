@@ -57,23 +57,6 @@
     "edition": "Audiobook",
     "kind": "Nonfiction",
     "date": "2026-10-13",
-    "progress": "76%",
-    "titleYear": "2022",
-    "title": "Long Live Mortal Kombat",
-    "authors": [
-      {
-        "name": "David L. Craddock",
-        "notes": null
-      }
-    ]
-  },
-  {
-    "id": "2026-10-16-01-long-live-mortal-kombat-by-david-l-craddock-13",
-    "sequence": "2026-10-13-2026-10-16-01-long-live-mortal-kombat-by-david-l-craddock",
-    "reviewSlug": "long-live-mortal-kombat-by-david-l-craddock",
-    "edition": "Audiobook",
-    "kind": "Nonfiction",
-    "date": "2026-10-13",
     "progress": "87%",
     "titleYear": "2022",
     "title": "Long Live Mortal Kombat",
@@ -85,7 +68,7 @@
     ]
   },
   {
-    "id": "2026-10-16-01-long-live-mortal-kombat-by-david-l-craddock-14",
+    "id": "2026-10-16-01-long-live-mortal-kombat-by-david-l-craddock-13",
     "sequence": "2026-10-16-2026-10-16-01-long-live-mortal-kombat-by-david-l-craddock",
     "reviewSlug": "long-live-mortal-kombat-by-david-l-craddock",
     "edition": "Audiobook",
@@ -97,6 +80,108 @@
     "authors": [
       {
         "name": "David L. Craddock",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-01-on-writing-by-stephen-king-0",
+    "sequence": "2026-10-24-2026-10-31-01-on-writing-by-stephen-king",
+    "reviewSlug": "on-writing-by-stephen-king",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2026-10-24",
+    "progress": "32%",
+    "titleYear": "2000",
+    "title": "On Writing",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-01-on-writing-by-stephen-king-1",
+    "sequence": "2026-10-26-2026-10-31-01-on-writing-by-stephen-king",
+    "reviewSlug": "on-writing-by-stephen-king",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2026-10-26",
+    "progress": "42%",
+    "titleYear": "2000",
+    "title": "On Writing",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-01-on-writing-by-stephen-king-2",
+    "sequence": "2026-10-27-2026-10-31-01-on-writing-by-stephen-king",
+    "reviewSlug": "on-writing-by-stephen-king",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2026-10-27",
+    "progress": "53%",
+    "titleYear": "2000",
+    "title": "On Writing",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-01-on-writing-by-stephen-king-3",
+    "sequence": "2026-10-29-2026-10-31-01-on-writing-by-stephen-king",
+    "reviewSlug": "on-writing-by-stephen-king",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2026-10-29",
+    "progress": "76%",
+    "titleYear": "2000",
+    "title": "On Writing",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-01-on-writing-by-stephen-king-4",
+    "sequence": "2026-10-30-2026-10-31-01-on-writing-by-stephen-king",
+    "reviewSlug": "on-writing-by-stephen-king",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2026-10-30",
+    "progress": "86%",
+    "titleYear": "2000",
+    "title": "On Writing",
+    "authors": [
+      {
+        "name": "Stephen King",
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "2026-10-31-01-on-writing-by-stephen-king-5",
+    "sequence": "2026-10-31-2026-10-31-01-on-writing-by-stephen-king",
+    "reviewSlug": "on-writing-by-stephen-king",
+    "edition": "Audiobook",
+    "kind": "Nonfiction",
+    "date": "2026-10-31",
+    "progress": "Finished",
+    "titleYear": "2000",
+    "title": "On Writing",
+    "authors": [
+      {
+        "name": "Stephen King",
         "notes": null
       }
     ]
